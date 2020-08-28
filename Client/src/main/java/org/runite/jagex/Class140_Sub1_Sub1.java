@@ -494,18 +494,18 @@ final class Class140_Sub1_Sub1 extends Model {
                               if(var39 != -1) {
                                  if(var15 == null) {
                                     this.aClass18_3843 = new Class18();
-                                    var15 = this.aClass18_3843.aShortArray417 = OutputStream_Sub1.method65(23032, this.aShortArray3810);
-                                    var16 = this.aClass18_3843.aShortArray419 = OutputStream_Sub1.method65(23032, this.aShortArray3826);
-                                    var17 = this.aClass18_3843.aShortArray418 = OutputStream_Sub1.method65(23032, this.aShortArray3837);
-                                    var18 = this.aClass18_3843.aShortArray416 = OutputStream_Sub1.method65(23032, this.aShortArray3841);
+                                    var15 = this.aClass18_3843.aShortArray417 = OutputStream_Sub1.method65(this.aShortArray3810);
+                                    var16 = this.aClass18_3843.aShortArray419 = OutputStream_Sub1.method65(this.aShortArray3826);
+                                    var17 = this.aClass18_3843.aShortArray418 = OutputStream_Sub1.method65(this.aShortArray3837);
+                                    var18 = this.aClass18_3843.aShortArray416 = OutputStream_Sub1.method65(this.aShortArray3841);
                                  }
 
                                  if(var19 == null) {
                                     Class18 var47 = var6.aClass18_3843 = new Class18();
-                                    var19 = var47.aShortArray417 = OutputStream_Sub1.method65(23032, var11);
-                                    var20 = var47.aShortArray419 = OutputStream_Sub1.method65(23032, var12);
-                                    var21 = var47.aShortArray418 = OutputStream_Sub1.method65(23032, var13);
-                                    var22 = var47.aShortArray416 = OutputStream_Sub1.method65(23032, var14);
+                                    var19 = var47.aShortArray417 = OutputStream_Sub1.method65(var11);
+                                    var20 = var47.aShortArray419 = OutputStream_Sub1.method65(var12);
+                                    var21 = var47.aShortArray418 = OutputStream_Sub1.method65(var13);
+                                    var22 = var47.aShortArray416 = OutputStream_Sub1.method65(var14);
                                  }
 
                                  short var46 = this.aShortArray3810[var35];
@@ -563,7 +563,7 @@ final class Class140_Sub1_Sub1 extends Model {
       }
    }
 
-   final void method1893(int var1, int var2, int var3, int var4, int var5, int var6, int var7, long var8) {
+   final void method1893(int var2, int var3, int var4, int var5, int var6, int var7) {
       if(this.anInt3833 != 0) {
          javax.media.opengl.GL var10 = HDToolKit.gl;
          var10.glPushMatrix();
@@ -576,8 +576,8 @@ final class Class140_Sub1_Sub1 extends Model {
             var10.glRotatef((float)var2 * 0.17578125F, 0.0F, 1.0F, 0.0F);
          }
 
-         if(var1 != 0) {
-            var10.glRotatef((float)var1 * 0.17578125F, 1.0F, 0.0F, 0.0F);
+         if(0 != 0) {
+            var10.glRotatef((float) 0 * 0.17578125F, 1.0F, 0.0F, 0.0F);
          }
 
          if(var3 != 0) {
@@ -1713,13 +1713,13 @@ final class Class140_Sub1_Sub1 extends Model {
       }
    }
 
-   final void method1920(boolean var1, boolean var2, boolean var3, boolean var4, boolean var5, boolean var6, boolean var7) {
+   final void method1920(boolean var1, boolean var2, boolean var3, boolean var5, boolean var6, boolean var7) {
       if(this.aByte3836 != 0) {
          throw new IllegalArgumentException();
       } else if(this.anInt3833 != 0) {
          if(var7) {
             boolean var8 = !this.aClass121_3814.aBoolean1640 && (var2 || var3 && !Class106.aBoolean1441);
-            this.method1922(false, !this.aClass121_3839.aBoolean1640 && var1, var8, this.aClass121_3815 != null && !this.aClass121_3815.aBoolean1640 && var3, !this.aClass121_3817.aBoolean1640 && var4);
+            this.method1922(false, !this.aClass121_3839.aBoolean1640 && var1, var8, this.aClass121_3815 != null && !this.aClass121_3815.aBoolean1640 && var3, !this.aClass121_3817.aBoolean1640 && true);
             if(!this.aClass121_3846.aBoolean1640 && var5 && var2) {
                this.method1912();
             }
@@ -1761,7 +1761,7 @@ final class Class140_Sub1_Sub1 extends Model {
             }
          }
 
-         if(var4) {
+         if(true) {
             if(this.aClass121_3817.aBoolean1640) {
                this.aFloatArray3824 = null;
                this.aFloatArray3847 = null;
@@ -1987,14 +1987,14 @@ final class Class140_Sub1_Sub1 extends Model {
                for(var9 = 0; var9 < this.anInt3833; ++var9) {
                   var30 = this.aShortArray3841[var9];
                   if(var30 == 0) {
-                     aClass3_Sub30_3818.method801(881, (float)this.aShortArray3810[var9] * var26);
-                     aClass3_Sub30_3818.method801(881, (float)this.aShortArray3826[var9] * var26);
-                     aClass3_Sub30_3818.method801(881, (float)this.aShortArray3837[var9] * var26);
+                     aClass3_Sub30_3818.method801((float)this.aShortArray3810[var9] * var26);
+                     aClass3_Sub30_3818.method801((float)this.aShortArray3826[var9] * var26);
+                     aClass3_Sub30_3818.method801((float)this.aShortArray3837[var9] * var26);
                   } else {
                      var32 = var27 / (float)var30;
-                     aClass3_Sub30_3818.method801(881, (float)this.aShortArray3810[var9] * var32);
-                     aClass3_Sub30_3818.method801(881, (float)this.aShortArray3826[var9] * var32);
-                     aClass3_Sub30_3818.method801(881, (float)this.aShortArray3837[var9] * var32);
+                     aClass3_Sub30_3818.method801((float)this.aShortArray3810[var9] * var32);
+                     aClass3_Sub30_3818.method801((float)this.aShortArray3826[var9] * var32);
+                     aClass3_Sub30_3818.method801((float)this.aShortArray3837[var9] * var32);
                   }
 
                   aClass3_Sub30_3818.index += var6 - 12;
@@ -2022,8 +2022,8 @@ final class Class140_Sub1_Sub1 extends Model {
             aClass3_Sub30_3818.index = this.aClass121_3817.anInt1639;
             if(HDToolKit.aBoolean1790) {
                for(var7 = 0; var7 < this.anInt3833; ++var7) {
-                  aClass3_Sub30_3818.method801(881, this.aFloatArray3824[var7]);
-                  aClass3_Sub30_3818.method801(881, this.aFloatArray3847[var7]);
+                  aClass3_Sub30_3818.method801(this.aFloatArray3824[var7]);
+                  aClass3_Sub30_3818.method801(this.aFloatArray3847[var7]);
                   aClass3_Sub30_3818.index += var6 - 8;
                }
             } else {
@@ -2349,7 +2349,7 @@ final class Class140_Sub1_Sub1 extends Model {
       }
    }
 
-   final Class140_Sub1_Sub1 method1926(boolean var1, boolean var2, boolean var3, boolean var4, boolean var5, boolean var6, boolean var7, boolean var8, boolean var9, boolean var10, boolean var11) {
+   final Class140_Sub1_Sub1 method1926(boolean var1, boolean var2, boolean var3, boolean var5, boolean var6, boolean var7, boolean var8, boolean var10, boolean var11) {
       Class140_Sub1_Sub1 var12 = new Class140_Sub1_Sub1();
       var12.anInt3823 = this.anInt3823;
       var12.anInt3833 = this.anInt3833;
@@ -2379,16 +2379,16 @@ final class Class140_Sub1_Sub1 extends Model {
       if(var3) {
          var12.aShortArray3808 = this.aShortArray3808;
       } else {
-         var12.aShortArray3808 = OutputStream_Sub1.method65(23032, this.aShortArray3808);
+         var12.aShortArray3808 = OutputStream_Sub1.method65(this.aShortArray3808);
       }
 
-      if(var4) {
+      if(true) {
          var12.aByteArray3816 = this.aByteArray3816;
       } else {
-         var12.aByteArray3816 = Class108.method1655((byte)-46, this.aByteArray3816);
+         var12.aByteArray3816 = Class108.method1655(this.aByteArray3816);
       }
 
-      if(var3 && var4 && var5 && (var8 && var6 || Class106.aBoolean1441)) {
+      if(var3 && true && var5 && (var8 && var6 || Class106.aBoolean1441)) {
          var12.aClass121_3814 = this.aClass121_3814;
       } else {
          var12.aClass121_3814 = new Class121();
@@ -2400,10 +2400,10 @@ final class Class140_Sub1_Sub1 extends Model {
          var12.aShortArray3837 = this.aShortArray3837;
          var12.aShortArray3841 = this.aShortArray3841;
       } else {
-         var12.aShortArray3810 = OutputStream_Sub1.method65(23032, this.aShortArray3810);
-         var12.aShortArray3826 = OutputStream_Sub1.method65(23032, this.aShortArray3826);
-         var12.aShortArray3837 = OutputStream_Sub1.method65(23032, this.aShortArray3837);
-         var12.aShortArray3841 = OutputStream_Sub1.method65(23032, this.aShortArray3841);
+         var12.aShortArray3810 = OutputStream_Sub1.method65(this.aShortArray3810);
+         var12.aShortArray3826 = OutputStream_Sub1.method65(this.aShortArray3826);
+         var12.aShortArray3837 = OutputStream_Sub1.method65(this.aShortArray3837);
+         var12.aShortArray3841 = OutputStream_Sub1.method65(this.aShortArray3841);
       }
 
       if(Class106.aBoolean1441) {
@@ -2416,7 +2416,7 @@ final class Class140_Sub1_Sub1 extends Model {
          var12.aClass121_3815 = null;
       }
 
-      if(var9) {
+      if(true) {
          var12.aFloatArray3824 = this.aFloatArray3824;
          var12.aFloatArray3847 = this.aFloatArray3847;
          var12.aClass121_3817 = this.aClass121_3817;
@@ -2432,16 +2432,16 @@ final class Class140_Sub1_Sub1 extends Model {
          var12.aShortArray3831 = this.aShortArray3831;
          var12.aClass121_3846 = this.aClass121_3846;
       } else {
-         var12.aShortArray3811 = OutputStream_Sub1.method65(23032, this.aShortArray3811);
-         var12.aShortArray3830 = OutputStream_Sub1.method65(23032, this.aShortArray3830);
-         var12.aShortArray3831 = OutputStream_Sub1.method65(23032, this.aShortArray3831);
+         var12.aShortArray3811 = OutputStream_Sub1.method65(this.aShortArray3811);
+         var12.aShortArray3830 = OutputStream_Sub1.method65(this.aShortArray3830);
+         var12.aShortArray3831 = OutputStream_Sub1.method65(this.aShortArray3831);
          var12.aClass121_3846 = new Class121();
       }
 
       if(var11) {
          var12.aShortArray3827 = this.aShortArray3827;
       } else {
-         var12.aShortArray3827 = OutputStream_Sub1.method65(23032, this.aShortArray3827);
+         var12.aShortArray3827 = OutputStream_Sub1.method65(this.aShortArray3827);
       }
 
       var12.anIntArray3844 = this.anIntArray3844;
@@ -3005,7 +3005,7 @@ final class Class140_Sub1_Sub1 extends Model {
             short var7 = this.aShortArray3827[var5];
             if(var7 == -1) {
                HDToolKit.bindTexture2D(-1);
-               Class3_Sub28_Sub4.method551(0, 0, 0);
+               Class3_Sub28_Sub4.method551(0, 0);
             } else {
                Class51.anInterface2_838.method8(var7 & '\uffff', true);
             }
@@ -3073,12 +3073,12 @@ final class Class140_Sub1_Sub1 extends Model {
       this.aClass121_3839.aBoolean1640 = false;
    }
 
-   final void method1932(int var1) {
+   final void method1932() {
       if(this.aShortArray3810 == null) {
-         this.method1876(var1);
+         this.method1876(256);
       } else {
-         int var2 = Class51.anIntArray840[var1];
-         int var3 = Class51.anIntArray851[var1];
+         int var2 = Class51.anIntArray840[256];
+         int var3 = Class51.anIntArray851[256];
 
          int var4;
          int var5;
@@ -3140,7 +3140,7 @@ final class Class140_Sub1_Sub1 extends Model {
             var1.anInt1467 = var1.anInt1468 = var7;
             var1.method1671();
          } else {
-            var8 = new LDIndexedSprite(var6, var7, 0);
+            var8 = new LDIndexedSprite(var6, var7);
          }
 
          var8.anInt1470 = var2;

@@ -125,7 +125,7 @@ final class Class141 {
       HDToolKit.method1847(1);
       HDToolKit.method1823();
       HDToolKit.method1837(false);
-      Class3_Sub28_Sub4.method551(0, 0, 0);
+      Class3_Sub28_Sub4.method551(0, 0);
       var6.glDepthMask(false);
 
       for(int var7 = 0; var7 < anInt1844; ++var7) {
@@ -247,10 +247,10 @@ final class Class141 {
       }
    }
 
-   static final void method2041(int var0, int var1) {
-      anInt1844 = var0 + 7 >> 3;
-      anInt1842 = var1 + 7 >> 3;
-      aClass109_Sub1_1840 = new LDIndexedSprite(anInt1844 * 128 + 2, anInt1842 * 128 + 2, 0);
+   static final void method2041() {
+      anInt1844 = 104 + 7 >> 3;
+      anInt1842 = 104 + 7 >> 3;
+      aClass109_Sub1_1840 = new LDIndexedSprite(anInt1844 * 128 + 2, anInt1842 * 128 + 2);
       aClass169ArrayArray1841 = new Class169[anInt1844][anInt1842];
 
       for(int var2 = 0; var2 < anInt1844; ++var2) {

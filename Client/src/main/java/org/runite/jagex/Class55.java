@@ -9,13 +9,13 @@ final class Class55 {
    private int anInt883;
 
 
-   final Class3_Sub28_Sub16_Sub2 method1179(byte var1) {
+   final Class3_Sub28_Sub16_Sub2 method1179() {
       try {
-         Class3_Sub28_Sub16_Sub2 var2 = (Class3_Sub28_Sub16_Sub2)Class163_Sub1.aClass93_2984.get((long)this.anInt883, (byte)121);
+         Class3_Sub28_Sub16_Sub2 var2 = (Class3_Sub28_Sub16_Sub2)Class163_Sub1.aClass93_2984.get((long)this.anInt883);
          if(null != var2) {
             return var2;
-         } else if(var1 == 95) {
-            var2 = Class3_Sub28_Sub7.method562(AnimationDefinition.aClass153_1852, 0, this.anInt883, (byte)39);
+         } else if((byte) 95 == 95) {
+            var2 = Class3_Sub28_Sub7.method562(AnimationDefinition.aClass153_1852, this.anInt883);
             if(var2 != null) {
                Class163_Sub1.aClass93_2984.put((byte)-87, var2, (long)this.anInt883);
             }
@@ -25,13 +25,13 @@ final class Class55 {
             return (Class3_Sub28_Sub16_Sub2)null;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ia.F(" + var1 + ')');
+         throw Class44.clientError(var3, "ia.F(" + (byte) 95 + ')');
       }
    }
 
    static final void method1180(byte var0, Class140_Sub4 var1) {
       try {
-         RenderAnimationDefinition var2 = var1.method1965(false);
+         RenderAnimationDefinition var2 = var1.method1965();
          var1.anInt2764 = var2.anInt368;
          if(var0 >= -5) {
             anIntArray882 = (int[])null;
@@ -41,7 +41,7 @@ final class Class55 {
             var1.anInt2824 = 0;
          } else {
             if(var1.anInt2771 != -1 && 0 == var1.anInt2828) {
-               AnimationDefinition var3 = Client.getAnimationDefinition(var1.anInt2771, (byte)-20);
+               AnimationDefinition var3 = Client.getAnimationDefinition(var1.anInt2771);
                if(var1.anInt2811 > 0 && var3.anInt1866 == 0) {
                   ++var1.anInt2824;
                   return;
@@ -55,8 +55,8 @@ final class Class55 {
 
             int var18 = var1.anInt2819;
             int var4 = var1.anInt2829;
-            int var5 = var1.anIntArray2767[-1 + var1.anInt2816] * 128 - -(var1.getSize((byte)114) * 64);
-            int var6 = 128 * var1.anIntArray2755[-1 + var1.anInt2816] - -(var1.getSize((byte)114) * 64);
+            int var5 = var1.anIntArray2767[-1 + var1.anInt2816] * 128 - -(var1.getSize() * 64);
+            int var6 = 128 * var1.anIntArray2755[-1 + var1.anInt2816] - -(var1.getSize() * 64);
             if(var5 + -var18 > 256 || -var18 + var5 < -256 || var6 - var4 > 256 || -256 > var6 - var4) {
                var1.anInt2819 = var5;
                var1.anInt2829 = var6;
@@ -281,16 +281,16 @@ final class Class55 {
                return;
             }
 
-            this.method1183(-18426, var2, var4, var1);
+            this.method1183(var2, var4, var1);
          }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "ia.G(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
       }
    }
 
-   private final void method1183(int var1, int var2, int var3, RSByteBuffer var4) {
+   private final void method1183(int var2, int var3, RSByteBuffer var4) {
       try {
-         if(var1 != -18426) {
+         if(-18426 != -18426) {
             this.anInt881 = -82;
          }
 
@@ -304,7 +304,7 @@ final class Class55 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "ia.D(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "ia.D(" + -18426 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -355,15 +355,15 @@ final class Class55 {
       }
    }
 
-   static final int method1185(int var0) {
+   static final int method1185() {
       try {
-         if(var0 != 6098) {
+         if(6098 != 6098) {
             method1180((byte)-98, (Class140_Sub4)null);
          }
 
          return 2;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ia.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ia.B(" + 6098 + ')');
       }
    }
 

@@ -16,7 +16,7 @@ final class Class17 {
    static final void method904(int var0, Class140_Sub4 var1) {
       try {
          if(var1.anInt2779 != 0) {
-            RenderAnimationDefinition var2 = var1.method1965(false);
+            RenderAnimationDefinition var2 = var1.method1965();
             int var4;
             int var5;
             if(var1.anInt2772 != -1 && '\u8000' > var1.anInt2772) {

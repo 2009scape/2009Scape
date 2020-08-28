@@ -56,13 +56,13 @@ final class Class3_Sub28_Sub18 extends Node {
       Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[3][var0][var1] = null;
    }
 
-   static final void method710(byte var0) {
+   static final void method710() {
       try {
-         if(var0 >= 122) {
+         if((byte) 126 >= 122) {
             Class44.aClass93_725.method1523((byte)-104);
          }
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "sd.C(" + var0 + ')');
+         throw Class44.clientError(var2, "sd.C(" + (byte) 126 + ')');
       }
    }
 
@@ -74,9 +74,9 @@ final class Class3_Sub28_Sub18 extends Node {
       }
    }
 
-   final void method712(byte var1) {
+   final void method712() {
       try {
-         int var2 = Class27.method961(var1 + 1530);
+         int var2 = Class27.method961((byte) 6 + 1530);
          if((1 & var2) == 0) {
             HDToolKit.bindTexture2D(this.anInt3759);
          }
@@ -89,14 +89,14 @@ final class Class3_Sub28_Sub18 extends Node {
             HDToolKit.method1847(0);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "sd.E(" + var1 + ')');
+         throw Class44.clientError(var3, "sd.E(" + (byte) 6 + ')');
       }
    }
 
-   static final void method713(int var0) {
+   static final void method713() {
       try {
          try {
-            Method var1 = Runtime.class.getMethod("maxMemory", new Class[var0]);
+            Method var1 = Runtime.class.getMethod("maxMemory", new Class[0]);
             if(null != var1) {
                try {
                   Runtime var2 = Runtime.getRuntime();
@@ -111,7 +111,7 @@ final class Class3_Sub28_Sub18 extends Node {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "sd.A(" + var0 + ')');
+         throw Class44.clientError(var6, "sd.A(" + 0 + ')');
       }
    }
 

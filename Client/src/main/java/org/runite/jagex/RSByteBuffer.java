@@ -43,11 +43,11 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final void method739(int var1, int var2, long var3) {
+	final void method739(int var2, long var3) {
 		try {
 			--var2;
 			if(var2 >= 0 && var2 <= 7) {
-				if(var1 == 0) {
+				if(0 == 0) {
 					for(int var5 = var2 * 8; 0 <= var5; var5 -= 8) {
 						this.buffer[this.index++] = (byte)((int)(var3 >> var5));
 					}
@@ -57,7 +57,7 @@ class RSByteBuffer extends Class3 {
 				throw new IllegalArgumentException();
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "wa.OB(" + var1 + ',' + var2 + ',' + var3 + ')');
+			throw Class44.clientError(var6, "wa.OB(" + 0 + ',' + var2 + ',' + var3 + ')');
 		}
 	}
 
@@ -93,57 +93,57 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final void method742(int var1, int var2) {
+	final void method742(int var2) {
 		try {
 			this.buffer[-4 + this.index + -var2] = (byte)(var2 >> 24);
 			this.buffer[-var2 + this.index - 3] = (byte)(var2 >> 16);
 			this.buffer[-2 + this.index + -var2] = (byte)(var2 >> 8);
-			if(var1 < 78) {
+			if(83 < 78) {
 				this.method771(-102, 37);
 			}
 
 			this.buffer[-var2 + this.index + -1] = (byte)var2;
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "wa.VB(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.VB(" + 83 + ',' + var2 + ')');
 		}
 	}
 
-	final void putByteS(int var1, int var2) {
+	final void putByteS(int var2) {
 		try {
 			this.buffer[this.index++] = (byte)(-var2 + 128);
-			if(var1 != 10213) {
+			if(10213 != 10213) {
 				this.putIntB(-121, -23);
 			}
 
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "wa.PC(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.PC(" + 10213 + ',' + var2 + ')');
 		}
 	}
 
-	static final void method744(boolean var0) {
+	static final void method744() {
 		try {
-			if(!var0) {
+			if(!true) {
 				method784(-10, -32, -21);
 			}
 
 			++KeyboardListener.anInt1908;
 		} catch (RuntimeException var2) {
-			throw Class44.clientError(var2, "wa.HA(" + var0 + ')');
+			throw Class44.clientError(var2, "wa.HA(" + true + ')');
 		}
 	}
 
-	final void putString(int var1, RSString var2) {
+	final void putString(RSString var2) {
 		try {
-			this.index += var2.method1580(true, this.buffer, this.index, var1, var2.length(-65));
+			this.index += var2.method1580(this.buffer, this.index, 0, var2.length(-65));
 			this.buffer[this.index++] = 0;
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "wa.LA(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var4, "wa.LA(" + 0 + ',' + (var2 != null?"{...}":"null") + ')');
 		}
 	}
 
 	static final void method746(byte var0) {
 		try {
-			Class67.aClass93_1013.method1524(3);
+			Class67.aClass93_1013.method1524();
 			if(var0 == -29) {
 				;
 			}
@@ -152,11 +152,11 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final int getShortAs(int var1) {
+	final int getShortAs() {
 		try {
 			this.index += 2;
 			int var2 = (this.buffer[-2 + this.index] << 8 & '\uff00') - -(-128 + this.buffer[this.index + -1] & 255);
-			if(var1 != -58) {
+			if(-58 != -58) {
 				this.getByte();
 			}
 
@@ -166,7 +166,7 @@ class RSByteBuffer extends Class3 {
 
 			return var2;
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.NA(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.NA(" + -58 + ')');
 		}
 	}
 
@@ -179,17 +179,17 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final byte method749(boolean var1) {
+	final byte method749() {
 		try {
-			return var1?-79:(byte)(-this.buffer[this.index++] + 128);
+			return false ?-79:(byte)(-this.buffer[this.index++] + 128);
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.JB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.JB(" + false + ')');
 		}
 	}
 
-	final RSString method750(byte var1) {
+	final RSString method750() {
 		try {
-			if(var1 != 78) {
+			if((byte) 78 != 78) {
 				return (RSString)null;
 			} else if(this.buffer[this.index] == 0) {
 				++this.index;
@@ -198,7 +198,7 @@ class RSByteBuffer extends Class3 {
 				return this.getString();
 			}
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.IB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.IB(" + (byte) 78 + ')');
 		}
 	}
 
@@ -224,40 +224,40 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final void putBytes(byte[] var1, int var2, int var3, int var4) {
+	final void putBytes(byte[] var1, int var3, int var4) {
 		try {
-			int var5 = var2;
+			int var5 = 0;
 			if(var4 >= 37) {
-				while(var2 + var3 > var5) {
+				while(0 + var3 > var5) {
 					this.buffer[this.index++] = var1[var5];
 					++var5;
 				}
 
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "wa.QC(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+			throw Class44.clientError(var6, "wa.QC(" + (var1 != null?"{...}":"null") + ',' + 0 + ',' + var3 + ',' + var4 + ')');
 		}
 	}
 
-	final int getByteS(boolean var1) {
+	final int getByteS() {
 		try {
-			if(!var1) {
+			if(!true) {
 				this.index = 61;
 			}
 
 			return -this.buffer[this.index++] + 128 & 255;
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.PB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.PB(" + true + ')');
 		}
 	}
 
-	final int getTriByte2(byte var1) {
+	final int getTriByte2() {
 		try {
 			this.index += 3;
-			int var2 = 40 % ((-7 - var1) / 47);
+			int var2 = 40 % ((-7 - (byte) -118) / 47);
 			return ((this.buffer[this.index + -2] & 255) << 8) + ((this.buffer[-1 + this.index] & 255) << 16) + (this.buffer[-3 + this.index] & 255);
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.BA(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.BA(" + (byte) -118 + ')');
 		}
 	}
 
@@ -279,7 +279,7 @@ class RSByteBuffer extends Class3 {
 		try {
 			this.buffer[this.index++] = (byte)var1;
 			if(var2 < 54) {
-				this.method749(false);
+				this.method749();
 			}
 
 			this.buffer[this.index++] = (byte)(var1 >> 8);
@@ -318,7 +318,7 @@ class RSByteBuffer extends Class3 {
 
 	RSByteBuffer(int var1) {
 		try {
-			this.buffer = Class134.method1807(66, var1);
+			this.buffer = Class134.method1807(var1);
 			this.index = 0;
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "wa.<init>(" + var1 + ')');
@@ -347,7 +347,7 @@ class RSByteBuffer extends Class3 {
 					;
 				}
 
-				return Class3_Sub13_Sub3.method178(this.buffer, -4114, this.index - (var3 - -1), var3);
+				return Class3_Sub13_Sub3.method178(this.buffer, this.index - (var3 - -1), var3);
 			} else {
 				throw new IllegalStateException("Bad version number in gjstr2");
 			}
@@ -378,18 +378,18 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final void method764(int var1, int var2, byte[] var3, byte var4) {
+	final void method764(int var2, byte[] var3) {
 		try {
-			if(var4 != 93) {
-				method802(122, true);
+			if((byte) 93 != 93) {
+				method802(122);
 			}
 
-			for(int var5 = var1; var1 + var2 > var5; ++var5) {
+			for(int var5 = 0; 0 + var2 > var5; ++var5) {
 				var3[var5] = this.buffer[this.index++];
 			}
 
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "wa.SB(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+			throw Class44.clientError(var6, "wa.SB(" + 0 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (byte) 93 + ')');
 		}
 	}
 
@@ -455,11 +455,11 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final void method770(int[] var1, int var2, int var3, int var4) {
+	final void method770(int[] var1, int var4) {
 		try {
 			int var5 = this.index;
-			this.index = var3;
-			int var6 = (-var3 + var4) / 8;
+			this.index = 5;
+			int var6 = (-5 + var4) / 8;
 
 			for(int var7 = 0; var6 > var7; ++var7) {
 				int var10 = -957401312;
@@ -477,13 +477,13 @@ class RSByteBuffer extends Class3 {
 				this.putInt(-121, var9);
 			}
 
-			if(var2 <= 102) {
+			if(120 <= 102) {
 				anIntArray2591 = (int[])null;
 			}
 
 			this.index = var5;
 		} catch (RuntimeException var13) {
-			throw Class44.clientError(var13, "wa.SC(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+			throw Class44.clientError(var13, "wa.SC(" + (var1 != null?"{...}":"null") + ',' + 120 + ',' + 5 + ',' + var4 + ')');
 		}
 	}
 
@@ -535,11 +535,11 @@ class RSByteBuffer extends Class3 {
 			if(var1 >= -120) {
 				return 3;
 			} else {
-				int var3 = this.getSmart(true);
+				int var3 = this.getSmart();
 
 				int var2;
 				for(var2 = 0; 32767 == var3; var2 += 32767) {
-					var3 = this.getSmart(true);
+					var3 = this.getSmart();
 				}
 
 				var2 += var3;
@@ -550,16 +550,16 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final void method774(int var1, int var2, byte[] var3, int var4) {
+	final void method774(int var2, byte[] var3) {
 		try {
-			if(var1 == 2) {
-				for(int var5 = var4 - (-var2 - -1); var5 >= var4; --var5) {
+			if(2 == 2) {
+				for(int var5 = 0 - (-var2 - -1); var5 >= 0; --var5) {
 					var3[var5] = this.buffer[this.index++];
 				}
 
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "wa.HC(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+			throw Class44.clientError(var6, "wa.HC(" + 2 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + 0 + ')');
 		}
 	}
 
@@ -582,13 +582,13 @@ class RSByteBuffer extends Class3 {
 				;
 			}
 
-			return Class3_Sub13_Sub3.method178(this.buffer, -4114, -var2 + (this.index - 1), var2);
+			return Class3_Sub13_Sub3.method178(this.buffer, -var2 + (this.index - 1), var2);
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "wa.FC()");
 		}
 	}
 
-	static final void method777(Class91[] var0, boolean var1, int var2, int var3, int var4, int var5, int var6, byte[] var7) {
+	static final void method777(Class91[] var0, boolean var1, int var2, int var3, int var5, int var6, byte[] var7) {
 		try {
 			int var10;
 			int var11;
@@ -741,7 +741,7 @@ class RSByteBuffer extends Class3 {
 				}
 			}
 
-			if(var4 == 4) {
+			if(4 == 4) {
 				int var23;
 				if(HDToolKit.highDetail && !var1) {
 					Class86 var22 = null;
@@ -762,7 +762,7 @@ class RSByteBuffer extends Class3 {
 								for(var14 = 0; var23 > var14; ++var14) {
 									Class43 var25 = new Class43(var20);
 									if(var25.anInt705 == 31) {
-										Class57 var26 = Class81.method1401(1001, var20.getShort(1));
+										Class57 var26 = Class81.method1401(var20.getShort(1));
 										var25.method1060((byte)-67, var26.anInt896, var26.anInt908, var26.anInt899, var26.anInt907);
 									}
 
@@ -811,34 +811,34 @@ class RSByteBuffer extends Class3 {
 
 			}
 		} catch (RuntimeException var19) {
-			throw Class44.clientError(var19, "wa.OA(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var19, "wa.OA(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + 4 + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
 		}
 	}
 
-	final int getSmart(boolean var1) {
+	final int getSmart() {
 		try {
-			if(!var1) {
+			if(!true) {
 				TextCore.LoadedInterfaces = (RSString)null;
 			}
 
 			int var2 = this.buffer[this.index] & 255;
 			return 128 <= var2?-32768 + this.getShort(1):this.getByte((byte)-74);
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.JA(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.JA(" + true + ')');
 		}
 	}
 
-	final void putTriByte(int var1, int var2) {
+	final void putTriByte(int var1) {
 		try {
 			this.buffer[this.index++] = (byte)(var1 >> 16);
 			this.buffer[this.index++] = (byte)(var1 >> 8);
-			if(var2 != 6517) {
+			if(6517 != 6517) {
 				aClass94_2598 = (RSString)null;
 			}
 
 			this.buffer[this.index++] = (byte)var1;
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "wa.FB(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.FB(" + var1 + ',' + 6517 + ')');
 		}
 	}
 
@@ -859,7 +859,7 @@ class RSByteBuffer extends Class3 {
 		try {
 			this.index += 2;
 			if(var1 > -84) {
-				this.method749(false);
+				this.method749();
 			}
 
 			return (this.buffer[-1 + this.index] << 322035176 & '\uff00') - -(255 & -128 + this.buffer[this.index + -2]);
@@ -920,15 +920,15 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final int getByteC(boolean var1) {
+	final int getByteC() {
 		try {
-			if(!var1) {
+			if(!true) {
 				this.index = 46;
 			}
 
 			return 255 & 0 + -this.buffer[this.index++];
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.CB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.CB(" + true + ')');
 		}
 	}
 
@@ -952,11 +952,11 @@ class RSByteBuffer extends Class3 {
 	
 
 	
-	final int method788(int var1) {
+	final int method788() {
 		try {
 			this.index += 2;
 			int var2 = ((this.buffer[this.index - 1] & 255) << 1510012168) - -(this.buffer[-2 + this.index] - 128 & 255);
-			if(var1 != -1741292848) {
+			if(-1741292848 != -1741292848) {
 				this.encryptRSA((BigInteger)null, (BigInteger)null, 11);
 			}
 
@@ -966,15 +966,15 @@ class RSByteBuffer extends Class3 {
 
 			return var2;
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.EC(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.EC(" + -1741292848 + ')');
 		}
 	}
 
-	final byte method789(int var1) {
+	final byte method789() {
 		try {
-			return var1 != 0?-51:(byte)(-128 + this.buffer[this.index++]);
+			return 0 != 0?-51:(byte)(-128 + this.buffer[this.index++]);
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.CA(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.CA(" + 0 + ')');
 		}
 	}
 
@@ -990,10 +990,10 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final int getLEShort(byte var1) {
+	final int getLEShort() {
 		try {
 			this.index += 2;
-			if(var1 != 10) {
+			if((byte) 10 != 10) {
 				this.getByteA((byte)109);
 			}
 
@@ -1004,7 +1004,7 @@ class RSByteBuffer extends Class3 {
 
 			return var2;
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.SA(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.SA(" + (byte) 10 + ')');
 		}
 	}
 	
@@ -1016,16 +1016,16 @@ class RSByteBuffer extends Class3 {
 	static final void method792(int var0) {
 		try {
 			if(var0 == 9179409) {
-				int var1 = Class137.method1817((byte)70);
+				int var1 = Class137.method1817();
 				if(0 == var1) {
 					Class158.aByteArrayArrayArray2008 = (byte[][][])null;
 					Class136.method1816(0, -7);
 				} else if(var1 == 1) {
-					Class3_Sub5.method112((byte)0, (byte)55);
+					Class3_Sub5.method112((byte)0);
 					Class136.method1816(512, -7);
-					Class3_Sub13_Sub18.method257((byte)125);
+					Class3_Sub13_Sub18.method257();
 				} else {
-					Class3_Sub5.method112((byte)(-4 + Class79.anInt1127 & 255), (byte)55);
+					Class3_Sub5.method112((byte)(-4 + Class79.anInt1127 & 255));
 					Class136.method1816(2, -7);
 				}
 
@@ -1035,9 +1035,9 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final int method793(byte var1, int var2) {
+	final int method793(int var2) {
 		try {
-			if(var1 < 1) {
+			if((byte) 86 < 1) {
 				return 65;
 			} else {
 				int var3 = Class99.method1599(var2, this.index, this.buffer, (byte)-49);
@@ -1045,7 +1045,7 @@ class RSByteBuffer extends Class3 {
 				return var3;
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "wa.QB(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.QB(" + (byte) 86 + ',' + var2 + ')');
 		}
 	}
 
@@ -1062,15 +1062,15 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	static final void method795(byte var0, int var1) {
+	static final void method795() {
 		try {
-			if(var0 != 14) {
+			if((byte) 14 != 14) {
 				anIntArray2591 = (int[])null;
 			}
 
-			CS2Script.aClass93_2450.method1522(var0 ^ -114, var1);
+			CS2Script.aClass93_2450.method1522((byte) 14 ^ -114, 5);
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.OC(" + var0 + ',' + var1 + ')');
+			throw Class44.clientError(var3, "wa.OC(" + (byte) 14 + ',' + 5 + ')');
 		}
 	}
 
@@ -1110,10 +1110,10 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	static final void method799(int var0, int var1, int var2, int var3, int var4) {
+	static final void method799(int var0, int var2, int var3, int var4) {
 		try {
 			if(Class140_Sub3.anInt2737 < 100) {
-				Class3_Sub28_Sub14.method626(64);
+				Class3_Sub28_Sub14.method626();
 			}
 
 			if(HDToolKit.highDetail) {
@@ -1133,7 +1133,7 @@ class RSByteBuffer extends Class3 {
 				int var8 = Class3_Sub4.anInt2251 + (int)((float)var3 / Class44.aFloat727);
 				var7 = (int)((float)var4 / Class44.aFloat727) + Class3_Sub28_Sub1.anInt3536;
 				Class49.anInt817 = (int)((float)(var4 * 2) / Class44.aFloat727);
-				if(var1 != 64) {
+				if(64 != 64) {
 					aClass94Array2596 = (RSString[])null;
 				}
 
@@ -1145,13 +1145,13 @@ class RSByteBuffer extends Class3 {
 
 					Class74.method1319(Class3_Sub13_Sub19.aClass3_Sub28_Sub16_Sub2_3221.anIntArray4081, var4, var3);
 					Node.method523(var4, 0, 0, var7, var6, 0, var8, var3, var15);
-					Class23.method938(var4, 0, var7, var8, var3, 0, 1, var15, var6);
+					Class23.method938(var4, 0, var7, var8, var3, 0, var15, var6);
 					Class3_Sub5.method111((byte)-54, 0, 0, var15, var4, var8, var6, var7, var3);
 					Class22.method926(Class3_Sub13_Sub19.aClass3_Sub28_Sub16_Sub2_3221.anIntArray4081, var0, var2, var4, var3);
 					Class74.anIntArray1100 = null;
 				} else {
 					Node.method523(var4 + var0, var2, 0, var7, var6, var0, var8, var2 - -var3, var15);
-					Class23.method938(var0 + var4, var0, var7, var8, var3 + var2, var2, 1, var15, var6);
+					Class23.method938(var0 + var4, var0, var7, var8, var3 + var2, var2, var15, var6);
 					Class3_Sub5.method111((byte)-100, var0, var2, var15, var0 - -var4, var8, var6, var7, var3 + var2);
 				}
 
@@ -1200,7 +1200,7 @@ class RSByteBuffer extends Class3 {
 				Class168.aClass3_Sub28_Sub17_2096.method699(TextCore.LoadingGeneral, var6, var5 + var7, 16777215, -1);
 			}
 		} catch (RuntimeException var14) {
-			throw Class44.clientError(var14, "wa.FA(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+			throw Class44.clientError(var14, "wa.FA(" + var0 + ',' + 64 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
 		}
 	}
 
@@ -1209,7 +1209,7 @@ class RSByteBuffer extends Class3 {
 			int var4 = this.index;
 			this.index = 0;
 			byte[] var5 = new byte[var4];
-			this.method764(0, var4, var5, (byte)93);
+			this.method764(var4, var5);
 			BigInteger var6 = new BigInteger(var5);
 			BigInteger var7 = null;
 			if (Configurations.USE_RSA)
@@ -1219,35 +1219,35 @@ class RSByteBuffer extends Class3 {
 			byte[] var8 = var7.toByteArray();
 			this.index = 0;
 			this.putByte((byte)-23, var8.length);
-			this.putBytes(var8, 0, var8.length, var3 + 348);
+			this.putBytes(var8, var8.length, var3 + 348);
 		} catch (RuntimeException var9) {
 			throw Class44.clientError(var9, "wa.KB(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
 		}
 	}
 
-	final void method801(int var1, float var2) {
+	final void method801(float var2) {
 		try {
 			int var3 = Float.floatToRawIntBits(var2);
 			this.buffer[this.index++] = (byte)(var3 >> -1164789608);
 			this.buffer[this.index++] = (byte)(var3 >> -259929904);
 			this.buffer[this.index++] = (byte)(var3 >> 1414718216);
-			if(var1 == 881) {
+			if(881 == 881) {
 				this.buffer[this.index++] = (byte)var3;
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "wa.QA(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.QA(" + 881 + ',' + var2 + ')');
 		}
 	}
 
-	static final RSString method802(int var0, boolean var1) {
+	static final RSString method802(int var0) {
 		try {
-			if(!var1) {
+			if(!true) {
 				method746((byte)-33);
 			}
 
 			return Class163_Sub2_Sub1.aClass94Array4016[var0].length(-26) > 0 ?RenderAnimationDefinition.method903(new RSString[]{Class140_Sub7.aClass94Array2935[var0], TextCore.Spacer, Class163_Sub2_Sub1.aClass94Array4016[var0]}, (byte)-86):Class140_Sub7.aClass94Array2935[var0];
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.RB(" + var0 + ',' + var1 + ')');
+			throw Class44.clientError(var3, "wa.RB(" + var0 + ',' + true + ')');
 		}
 	}
 

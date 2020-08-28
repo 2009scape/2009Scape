@@ -5,7 +5,7 @@ final class GraphicDefinition {
 	static int anInt529;
 	private int anInt530 = 128;
 	static int CAMERA_DIRECTION = 0;
-	static Class3_Sub30_Sub1 incomingBuffer = new Class3_Sub30_Sub1(5000);
+	static Class3_Sub30_Sub1 incomingBuffer = new Class3_Sub30_Sub1();
 	private short[] aShortArray533;
 	private short[] aShortArray534;
 	private short[] aShortArray535;
@@ -23,9 +23,9 @@ final class GraphicDefinition {
 	static int anInt548 = 0;
 	static volatile int anInt549 = 0;
 
-	final void parse(RSByteBuffer var1, byte var2) {
+	final void parse(RSByteBuffer var1) {
 		try {
-			if(var2 != -113) {
+			if((byte) -113 != -113) {
 				method967(88, -118, 75, -51, -96, -50, 45, 127);
 			}
 
@@ -35,10 +35,10 @@ final class GraphicDefinition {
 					return;
 				}
 
-				this.method965(var1, var3, 128);
+				this.method965(var1, var3);
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "eg.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+			throw Class44.clientError(var4, "eg.A(" + (var1 != null?"{...}":"null") + ',' + (byte) -113 + ')');
 		}
 	}
 
@@ -53,10 +53,10 @@ final class GraphicDefinition {
 		}
 	}
 
-	private final void method965(RSByteBuffer var1, int var2, int var3) {
+	private final void method965(RSByteBuffer var1, int var2) {
 		try {
 			if(var2 == 1) {
-				this.anInt541 = var1.getShort(var3 + -127);
+				this.anInt541 = var1.getShort(128 + -127);
 			} else if(2 == var2) {
 				this.anInt542 = var1.getShort(1);
 			} else if(var2 == 4) {
@@ -66,7 +66,7 @@ final class GraphicDefinition {
 					this.anInt540 = var1.getShort(1);
 				} else {
 					if(6 == var2) {
-						this.anInt543 = var1.getShort(var3 + -127);
+						this.anInt543 = var1.getShort(128 + -127);
 					} else if(var2 == 7) {
 						this.anInt538 = var1.getByte((byte)-47);
 					} else if(var2 == 8) {
@@ -84,7 +84,7 @@ final class GraphicDefinition {
 
 								for(var5 = 0; var4 > var5; ++var5) {
 									this.aShortArray533[var5] = (short)var1.getShort(1);
-									this.aShortArray545[var5] = (short)var1.getShort(var3 + -127);
+									this.aShortArray545[var5] = (short)var1.getShort(128 + -127);
 								}
 							} else {
 								if(41 == var2) {
@@ -94,7 +94,7 @@ final class GraphicDefinition {
 
 									for(var5 = 0; var5 < var4; ++var5) {
 										this.aShortArray534[var5] = (short)var1.getShort(1);
-										this.aShortArray535[var5] = (short)var1.getShort(var3 + -127);
+										this.aShortArray535[var5] = (short)var1.getShort(128 + -127);
 									}
 								}
 							}
@@ -103,21 +103,21 @@ final class GraphicDefinition {
 				}
 			}
 
-			if(var3 != 128) {
+			if(128 != 128) {
 				this.aShortArray545 = (short[])null;
 			}
 
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "eg.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+			throw Class44.clientError(var6, "eg.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + 128 + ')');
 		}
 	}
 
-	final Model method966(int var1, byte var2, int var3, int var4) {
+	final Model method966(int var1, int var3, int var4) {
 		try {
-			Model var5 = (Model)Class27.aClass93_511.get((long)this.graphicId, (byte)121);
-			if(var2 == -30) {
+			Model var5 = (Model)Class27.aClass93_511.get((long)this.graphicId);
+			if((byte) -30 == -30) {
 				if(var5 == null) {
-					Model_Sub1 var6 = Model_Sub1.method2015(Class3_Sub28_Sub7_Sub1.aClass153_4048, this.anInt541, 0);
+					Model_Sub1 var6 = Model_Sub1.method2015(Class3_Sub28_Sub7_Sub1.aClass153_4048, this.anInt541);
 					if(null == var6) {
 						return null;
 					}
@@ -143,7 +143,7 @@ final class GraphicDefinition {
 				if(this.anInt542 == -1 || var3 == -1) {
 					var9 = var5.method1882(true, true, true);
 				} else {
-					var9 = Client.getAnimationDefinition(this.anInt542, (byte)-20).method2059(var1, var4, var3, (byte)-52, var5);
+					var9 = Client.getAnimationDefinition(this.anInt542).method2059(var1, var4, var3, var5);
 				}
 
 				if(128 != this.anInt530 || 128 != this.anInt540) {
@@ -169,13 +169,13 @@ final class GraphicDefinition {
 				return (Model)null;
 			}
 		} catch (RuntimeException var8) {
-			throw Class44.clientError(var8, "eg.C(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+			throw Class44.clientError(var8, "eg.C(" + var1 + ',' + (byte) -30 + ',' + var3 + ',' + var4 + ')');
 		}
 	}
 
 	static final void method967(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
 		try {
-			if(Canvas_Sub2.loadInterface(var5, 104)) {
+			if(Canvas_Sub2.loadInterface(var5)) {
 				if(var2 == 2) {
 					Client.handleItemSwitch(GameObject.aClass11ArrayArray1834[var5], -1, var6, var1, var4, var7, var0, var3);
 				}

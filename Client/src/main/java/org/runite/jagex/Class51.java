@@ -659,7 +659,7 @@ final class Class51 {
 
    static final void method1137(float var0) {
       method1152(var0);
-      method1150(0, 512);
+      method1150();
    }
 
    static final void method1138(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18) {
@@ -3081,10 +3081,10 @@ final class Class51 {
       }
    }
 
-   private static final void method1150(int var0, int var1) {
-      int var2 = var0 * 128;
+   private static final void method1150() {
+      int var2 = 0 * 128;
 
-      for(int var3 = var0; var3 < var1; ++var3) {
+      for(int var3 = 0; var3 < 512; ++var3) {
          double var4 = (double)(var3 >> 3) / 64.0D + 0.0078125D;
          double var6 = (double)(var3 & 7) / 8.0D + 0.0625D;
 

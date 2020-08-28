@@ -13,12 +13,12 @@ abstract class Class3_Sub28_Sub7 extends Node {
    static int updateStamp;
 
 
-   static final Class3_Sub28_Sub16_Sub2 method562(CacheIndex var0, int var1, int var2, byte var3) {
+   static final Class3_Sub28_Sub16_Sub2 method562(CacheIndex var0, int var2) {
       try {
     	//  System.out.println("Class 3_Sub28_Sub16_Sub2 " + var2);
-         return Class75_Sub4.method1351(var0, var1, var2, -30901)?(var3 != 39?(Class3_Sub28_Sub16_Sub2)null:Class3_Sub28_Sub9.method578(var3 ^ 84)):null;
+         return Class75_Sub4.method1351(var0, 0, var2, -30901)?((byte) 39 != 39?(Class3_Sub28_Sub16_Sub2)null:Class3_Sub28_Sub9.method578((byte) 39 ^ 84)):null;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "gf.O(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "gf.O(" + (var0 != null?"{...}":"null") + ',' + 0 + ',' + var2 + ',' + (byte) 39 + ')');
       }
    }
 
@@ -36,7 +36,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
       }
    }
 
-   static final void method564(Signlink var0, int var1) {
+   static final void method564(Signlink var0) {
       try {
          Class3_Sub28_Sub10.anInt3625 = 3;
          Class25.method957(96, true);
@@ -66,7 +66,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
             Class127_Sub1.method1758(0);
          }
 
-         RSString.anInt2148 = var1;
+         RSString.anInt2148 = 0;
          Class3_Sub20.anInt2488 = 0;
          Class15.aBoolean346 = false;
          Class163_Sub3.aBoolean3004 = true;
@@ -78,7 +78,7 @@ abstract class Class3_Sub28_Sub7 extends Node {
             Class64 var3 = var0.method1433("runescape", 12);
 
             while(0 == var3.anInt978) {
-               Class3_Sub13_Sub34.method331(1L, var1 ^ 64);
+               Class3_Sub13_Sub34.method331(1L, 0 ^ 64);
             }
 
             if(var3.anInt978 == 1) {
@@ -87,13 +87,13 @@ abstract class Class3_Sub28_Sub7 extends Node {
 
                int var6;
                for(int var5 = 0; var4.length > var5; var5 += var6) {
-                  var6 = var2.method1739(var5, var1 + 0, var4.length - var5, var4);
+                  var6 = var2.method1739(var5, 0 + 0, var4.length - var5, var4);
                   if(var6 == -1) {
                      throw new IOException("EOF");
                   }
                }
 
-               Class79.method1390(new RSByteBuffer(var4), -1);
+               Class79.method1390(new RSByteBuffer(var4));
             }
          } catch (Exception var8) {
             ;
@@ -108,14 +108,14 @@ abstract class Class3_Sub28_Sub7 extends Node {
          }
 
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "gf.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var9, "gf.F(" + (var0 != null?"{...}":"null") + ',' + 0 + ')');
       }
    }
 
-   static final void method565(byte var0, int var1, int var2) {
+   static final void method565(int var1, int var2) {
       try {
          Class82.anInt1150 = -Class3_Sub13_Sub21.anInt3256 + var1;
-         if(var0 != 86) {
+         if((byte) 86 != 86) {
             anIntArray3607 = (int[])null;
          }
 
@@ -141,26 +141,26 @@ abstract class Class3_Sub28_Sub7 extends Node {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "gf.E(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var7, "gf.E(" + (byte) 86 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
-   static final void method566(RSString var0, int var1, int var2) {
+   static final void method566(RSString var0, int var2) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(var1 + 4, 3, var2);
-         var3.g((byte)33);
-         if(var1 != 0) {
+         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(0 + 4, 3, var2);
+         var3.g();
+         if(0 != 0) {
             anInt3603 = 112;
          }
 
          var3.aClass94_3599 = var0;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "gf.P(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "gf.P(" + (var0 != null?"{...}":"null") + ',' + 0 + ',' + var2 + ')');
       }
    }
 
-   abstract Object method567(boolean var1);
+   abstract Object method567();
 
-   abstract boolean method568(int var1);
+   abstract boolean method568();
 
 }

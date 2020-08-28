@@ -29,7 +29,7 @@ final class Class65 {
       }
    }
 
-   static final int method1234(int var0, int var1, int var2, int var3) {
+   static final int method1234(int var0, int var1, int var2) {
       try {
          int var4 = var1 / var0;
          int var6 = var2 / var0;
@@ -38,7 +38,7 @@ final class Class65 {
          int var8 = Class3_Sub28_Sub3.method543(var4, var6, (byte)-82);
          int var9 = Class3_Sub28_Sub3.method543(var4 + 1, var6, (byte)-104);
          int var10 = Class3_Sub28_Sub3.method543(var4, 1 + var6, (byte)-100);
-         if(var3 == 512) {
+         if(512 == 512) {
             int var11 = Class3_Sub28_Sub3.method543(1 + var4, var6 + 1, (byte)-109);
             int var12 = Class3_Sub13_Sub23.method275(var8, var9, var5, 96, var0);
             int var13 = Class3_Sub13_Sub23.method275(var10, var11, var5, 16, var0);
@@ -47,17 +47,17 @@ final class Class65 {
             return -57;
          }
       } catch (RuntimeException var14) {
-         throw Class44.clientError(var14, "ja.G(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var14, "ja.G(" + var0 + ',' + var1 + ',' + var2 + ',' + 512 + ')');
       }
    }
 
-   static final void method1235(int var0, int var1, int var2, int var3, byte var4) {
+   static final void method1235(int var0, int var1, int var2, int var3) {
       try {
          if(Class36.anInt638 == 1) {
             Class139.aClass3_Sub28_Sub16Array1825[Class151_Sub1.anInt2958 / 100].method643(-8 + Class70.anInt1053, -8 + Class3_Sub28_Sub10_Sub1.anInt4062);
          }
 
-         if(var4 != -121) {
+         if((byte) -121 != -121) {
             currentChunkX = -21;
          }
 
@@ -65,26 +65,26 @@ final class Class65 {
             Class139.aClass3_Sub28_Sub16Array1825[4 + Class151_Sub1.anInt2958 / 100].method643(Class70.anInt1053 + -8, -8 + Class3_Sub28_Sub10_Sub1.anInt4062);
          }
 
-         Class3_Sub13_Sub37.method347(true);
+         Class3_Sub13_Sub37.method347();
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "ja.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ja.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + (byte) -121 + ')');
       }
    }
 
-   static final void method1236(CacheIndex var0, CacheIndex var1, int var2) {
+   static final void method1236(CacheIndex var0, CacheIndex var1) {
       try {
          Class47.quickChatMessages = var1;
          NodeList.aClass153_332 = var0;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ja.F(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ja.F(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + -117 + ')');
       }
    }
 
-   static final void method1237(int var0, int var1) {
+   static final void method1237(int var0) {
       try {
-         WorldListEntry.anInt2626 = var1 / var0;
+         WorldListEntry.anInt2626 = 1000 / var0;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ja.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ja.D(" + var0 + ',' + 1000 + ')');
       }
    }
 
@@ -185,7 +185,7 @@ final class Class65 {
       }
    }
 
-   static final void method1240(boolean var0) {
+   static final void method1240() {
       try {
          Class126.aClass3_Sub28_Sub17_1669 = null;
          Class75_Sub3.aClass3_Sub28_Sub16Array2656 = null;
@@ -206,12 +206,12 @@ final class Class65 {
          Class166.aClass3_Sub28_Sub16Array2072 = null;
          Class3_Sub13_Sub31.aClass3_Sub28_Sub16Array3373 = null;
          GameObject.aClass109Array1831 = null;
-         if(var0) {
+         if(false) {
             method1233((int[])null, -51);
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ja.E(" + var0 + ')');
+         throw Class44.clientError(var2, "ja.E(" + false + ')');
       }
    }
 

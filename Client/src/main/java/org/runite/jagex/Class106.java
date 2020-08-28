@@ -15,14 +15,14 @@ final class Class106 {
    static boolean hasInternetExplorer6 = false;
 
 
-   static final void method1642(int var0, RSString var1) {
+   static final void method1642(RSString var1) {
       try {
          if(null != Class3_Sub28_Sub15.aClass3_Sub19Array3694) {
-            if(var0 != 3803) {
+            if(3803 != 3803) {
                aClass67_1443 = (Class67)null;
             }
 
-            long var3 = var1.toLong(var0 + -3930);
+            long var3 = var1.toLong(3803 + -3930);
             int var2 = 0;
             if(var3 != 0L) {
                while(Class3_Sub28_Sub15.aClass3_Sub19Array3694.length > var2 && var3 != Class3_Sub28_Sub15.aClass3_Sub19Array3694[var2].aLong71) {
@@ -37,17 +37,17 @@ final class Class106 {
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "od.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "od.C(" + 3803 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
-   static final int method1643(int var0, boolean var1, int var2, int var3) {
+   static final int method1643(boolean var1, int var2, int var3) {
       try {
-         if(var0 != 10131) {
+         if(10131 != 10131) {
             method1644((byte)95);
          }
 
-         Class3_Sub25 var4 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var2, var0 + -10131);
+         Class3_Sub25 var4 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var2, 10131 + -10131);
          if(null == var4) {
             return 0;
          } else {
@@ -72,7 +72,7 @@ final class Class106 {
             return var5;
          }
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "od.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var9, "od.B(" + 10131 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 

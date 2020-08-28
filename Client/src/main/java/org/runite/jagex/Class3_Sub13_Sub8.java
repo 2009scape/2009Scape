@@ -73,17 +73,17 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 				if(Class3_Sub13_Sub39.anInt3460 == NPCDefinition.anInt1297 && Class38_Sub1.anInt2612 == Class168.anInt2099) {
 					Class3_Sub28_Sub13.anInt3660 = 0;
 					if(Class101.aBoolean1419 && ObjectDefinition.aBooleanArray1490[81] && Class3_Sub13_Sub34.anInt3415 > 2) {
-						Class3_Sub30_Sub1.method806(2597, Class3_Sub13_Sub34.anInt3415 + -2);
+						Class3_Sub30_Sub1.method806(Class3_Sub13_Sub34.anInt3415 + -2);
 					} else {
-						Class3_Sub30_Sub1.method806(2597, Class3_Sub13_Sub34.anInt3415 + -1);
+						Class3_Sub30_Sub1.method806(Class3_Sub13_Sub34.anInt3415 + -1);
 					}
 				}
 			} else if(NPCDefinition.anInt1297 == Class163_Sub1.anInt2993 && Class38_Sub1.anInt2614 == Class38_Sub1.anInt2612) {
 				Class3_Sub28_Sub13.anInt3660 = 0;
 				if(Class101.aBoolean1419 && ObjectDefinition.aBooleanArray1490[81] && Class3_Sub13_Sub34.anInt3415 > 2) {
-					Class3_Sub30_Sub1.method806(2597, Class3_Sub13_Sub34.anInt3415 - 2);
+					Class3_Sub30_Sub1.method806(Class3_Sub13_Sub34.anInt3415 - 2);
 				} else {
-					Class3_Sub30_Sub1.method806(2597, Class3_Sub13_Sub34.anInt3415 - 1);
+					Class3_Sub30_Sub1.method806(Class3_Sub13_Sub34.anInt3415 - 1);
 				}
 			} else {
 				Class168.anInt2099 = Class38_Sub1.anInt2614;
@@ -114,7 +114,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 		}
 	}
 
-	static final void method205(CacheIndex var0, int var1, CacheIndex var2, Interface4 var3) {
+	static final void method205(CacheIndex var0, CacheIndex var2, Interface4 var3) {
 		try {
 			Class154.aClass153_1967 = var0;
 			Class58.anInterface4_915 = var3;
@@ -127,7 +127,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 				RenderAnimationDefinition.anInt377 = Class154.aClass153_1967.getFileAmount(1, (byte)83);
 			}
 		} catch (RuntimeException var5) {
-			throw Class44.clientError(var5, "ej.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var5, "ej.E(" + (var0 != null?"{...}":"null") + ',' + 115 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -149,7 +149,7 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 	final int[] method154(int var1, byte var2) {
 		try {
 			int var3 = -34 / ((var2 - 30) / 36);
-			int[] var4 = this.aClass114_2382.method1709(-16409, var1);
+			int[] var4 = this.aClass114_2382.method1709(var1);
 			if(this.aClass114_2382.aBoolean1580) {
 				int[] var5 = this.method152(0, !this.aBoolean3104?var1:Class3_Sub20.anInt2487 + -var1, 32755);
 				if(this.aBoolean3100) {

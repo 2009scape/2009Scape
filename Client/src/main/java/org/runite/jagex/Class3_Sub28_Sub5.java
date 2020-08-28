@@ -35,8 +35,8 @@ final class Class3_Sub28_Sub5 extends Node {
             int var21;
             int var22;
             if(var5 >= Class159.anInt2020 && Class57.anInt902 >= var5) {
-               var21 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var2 + var4, (byte)0, Class101.anInt1425);
-               var22 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, -var2 + var4, (byte)0, Class101.anInt1425);
+               var21 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var2 + var4, Class101.anInt1425);
+               var22 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, -var2 + var4, Class101.anInt1425);
                Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var5], var22, 91, var21, var0);
             }
 
@@ -66,8 +66,8 @@ final class Class3_Sub28_Sub5 extends Node {
                var13 += -var20;
                var22 = var7 + var5;
                if(var22 >= Class159.anInt2020 && var21 <= Class57.anInt902) {
-                  int var23 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var6 + var4, (byte)0, Class101.anInt1425);
-                  int var24 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, -var6 + var4, (byte)0, Class101.anInt1425);
+                  int var23 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var6 + var4, Class101.anInt1425);
+                  int var24 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, -var6 + var4, Class101.anInt1425);
                   if(var21 >= Class159.anInt2020) {
                      Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var21], var24, 121, var23, var0);
                   }
@@ -114,21 +114,21 @@ final class Class3_Sub28_Sub5 extends Node {
       }
    }
 
-   final boolean method559(int var1, int var2) {
+   final boolean method559(int var2) {
       try {
-         return var1 != 1317095745?false:this.animations[var2].aBoolean1386;
+         return 1317095745 != 1317095745?false:this.animations[var2].aBoolean1386;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "cl.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "cl.D(" + 1317095745 + ',' + var2 + ')');
       }
    }
 
-   static final void method560(int var0) {
+   static final void method560() {
       try {
          for(int var1 = 0; var1 < 5; ++var1) {
             Class104.aBooleanArray2169[var1] = false;
          }
 
-         if(var0 != -21556) {
+         if(-21556 != -21556) {
             method556(21, 1, 64, (byte)40, -34, -70);
          }
 
@@ -138,7 +138,7 @@ final class Class3_Sub28_Sub5 extends Node {
          Class3_Sub7.anInt2293 = -1;
          Class133.anInt1753 = 1;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "cl.A(" + var0 + ')');
+         throw Class44.clientError(var2, "cl.A(" + -21556 + ')');
       }
    }
 
@@ -264,11 +264,11 @@ final class Class3_Sub28_Sub5 extends Node {
          Class61 var5 = new Class61();
          int size = cacheIndex0.getFileAmount(frame, (byte)69);
          this.animations = new AnimationHeader[size];
-         int[] fileIds = cacheIndex0.getFileIds((byte)-128, frame);
+         int[] fileIds = cacheIndex0.getFileIds(frame);
          int var8 = 0;
 
          while(fileIds.length > var8) {
-            byte[] var9 = cacheIndex0.getFile(frame, (byte)-122, fileIds[var8]);
+            byte[] var9 = cacheIndex0.getFile(frame, fileIds[var8]);
             int skinId = 255 & var9[1] | (var9[0] & 255) << 8;
             Class3_Sub17 var12 = (Class3_Sub17) var5.method1222();
             Class3_Sub17 skin = null;
@@ -286,9 +286,9 @@ final class Class3_Sub28_Sub5 extends Node {
                if(null == skin) {
                   byte[] var13;
                   if(var4) {
-                     var13 = var2.method2140(skinId, 0, 0);
+                     var13 = var2.method2140(skinId, 0);
                   } else {
-                     var13 = var2.method2140(0, skinId, 0);
+                     var13 = var2.method2140(0, skinId);
                   }
 
                   skin = new Class3_Sub17(skinId, var13);

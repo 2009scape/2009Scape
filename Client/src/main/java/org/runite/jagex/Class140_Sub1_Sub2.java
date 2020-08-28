@@ -655,7 +655,7 @@ final class Class140_Sub1_Sub2 extends Model {
       this.aBoolean3897 = false;
    }
 
-   final void method1893(int var1, int var2, int var3, int var4, int var5, int var6, int var7, long var8) {
+   final void method1893(int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
          if(!this.aBoolean3897) {
             this.method1947();
@@ -663,8 +663,8 @@ final class Class140_Sub1_Sub2 extends Model {
 
          int var10 = Class51.anInt846;
          int var11 = Class51.anInt835;
-         int var12 = Class51.anIntArray840[var1];
-         int var13 = Class51.anIntArray851[var1];
+         int var12 = Class51.anIntArray840[0];
+         int var13 = Class51.anIntArray851[0];
          int var14 = Class51.anIntArray840[var2];
          int var15 = Class51.anIntArray851[var2];
          int var16 = Class51.anIntArray840[var3];
@@ -684,7 +684,7 @@ final class Class140_Sub1_Sub2 extends Model {
                var22 = var25;
             }
 
-            if(var1 != 0) {
+            if(0 != 0) {
                var25 = var23 * var13 - var24 * var12 >> 16;
                var24 = var23 * var12 + var24 * var13 >> 16;
                var23 = var25;
@@ -711,7 +711,7 @@ final class Class140_Sub1_Sub2 extends Model {
             }
          }
 
-         this.method1945(false, var8 >= 0L, var8, this.aShort3886, this.aShort3886 << 1, (Class127_Sub1)null);
+         this.method1945(false, (long) -1 >= 0L, (long) -1, this.aShort3886, this.aShort3886 << 1, (Class127_Sub1)null);
       } catch (RuntimeException var26) {
          ;
       }
@@ -926,7 +926,7 @@ final class Class140_Sub1_Sub2 extends Model {
    }
 
    final Model method1943(Model var1) {
-      return new Class140_Sub1_Sub2(new Class140_Sub1_Sub2[]{this, (Class140_Sub1_Sub2)var1}, 2);
+      return new Class140_Sub1_Sub2(new Class140_Sub1_Sub2[]{this, (Class140_Sub1_Sub2)var1});
    }
 
    final int method1883() {
@@ -1520,7 +1520,7 @@ final class Class140_Sub1_Sub2 extends Model {
       this.aBoolean3897 = false;
    }
 
-   final void method1946(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   final void method1946(int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       try {
          if(!this.aBoolean3897) {
             this.method1947();
@@ -1528,8 +1528,8 @@ final class Class140_Sub1_Sub2 extends Model {
 
          int var9 = Class51.anInt846;
          int var10 = Class51.anInt835;
-         int var11 = Class51.anIntArray840[var1];
-         int var12 = Class51.anIntArray851[var1];
+         int var11 = Class51.anIntArray840[0];
+         int var12 = Class51.anIntArray851[0];
          int var13 = Class51.anIntArray840[var2];
          int var14 = Class51.anIntArray851[var2];
          int var15 = Class51.anIntArray840[var3];
@@ -1549,7 +1549,7 @@ final class Class140_Sub1_Sub2 extends Model {
                var21 = var24;
             }
 
-            if(var1 != 0) {
+            if(0 != 0) {
                var24 = var22 * var12 - var23 * var11 >> 16;
                var23 = var22 * var11 + var23 * var12 >> 16;
                var22 = var24;
@@ -2461,7 +2461,7 @@ final class Class140_Sub1_Sub2 extends Model {
 
    }
 
-   private Class140_Sub1_Sub2(Class140_Sub1_Sub2[] var1, int var2) {
+   private Class140_Sub1_Sub2(Class140_Sub1_Sub2[] var1) {
       boolean var3 = false;
       boolean var4 = false;
       boolean var5 = false;
@@ -2475,7 +2475,7 @@ final class Class140_Sub1_Sub2 extends Model {
 
       int var9;
       Class140_Sub1_Sub2 var10;
-      for(var9 = 0; var9 < var2; ++var9) {
+      for(var9 = 0; var9 < 2; ++var9) {
          var10 = var1[var9];
          if(var10 != null) {
             this.anInt3891 += var10.anInt3891;
@@ -2545,7 +2545,7 @@ final class Class140_Sub1_Sub2 extends Model {
       boolean var13 = false;
       boolean var12 = false;
 
-      for(var9 = 0; var9 < var2; ++var9) {
+      for(var9 = 0; var9 < 2; ++var9) {
          var10 = var1[var9];
          if(var10 != null) {
             int var11;

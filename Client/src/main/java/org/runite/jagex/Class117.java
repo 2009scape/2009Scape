@@ -8,15 +8,15 @@ final class Class117 {
    static int anInt1616 = 0;
 
 
-   static final void method1719(int var0, int var1) {
+   static final void method1719(int var0) {
       try {
          if(Class143.loadingStage != var0) {
             if(Class143.loadingStage == 0) {
-               Class93.method1517((byte)-118);
+               Class93.method1517();
             }
 
             if(var0 == 40) {
-               Class24.method951(0);
+               Class24.method951();
             }
 
             boolean var2 = var0 == 5 || var0 == 10 || var0 == 28;
@@ -35,7 +35,7 @@ final class Class117 {
             }
 
             if(var0 == 25 || var0 == 10) {
-               Class72.method1293(true);
+               Class72.method1293();
             }
 
             if(var0 == 5) {
@@ -44,19 +44,19 @@ final class Class117 {
                Class3_Sub13_Sub17.method247((byte)-121);
             }
 
-            boolean var3 = var1 == Class143.loadingStage || Class143.loadingStage == 10 || Class143.loadingStage == 28;
+            boolean var3 = 5 == Class143.loadingStage || Class143.loadingStage == 10 || Class143.loadingStage == 28;
             if(var3 == !var2) {
                if(var2) {
                   Class129.anInt1691 = KeyboardListener.anInt1912;
                   if(Class9.anInt120 == 0) {
-                     NodeList.method882(-1, 2);
+                     NodeList.method882();
                   } else {
-                     Class151.method2099(true, KeyboardListener.anInt1912, 0, Class75_Sub2.aClass153_2645, false, 255, 2);
+                     Class151.method2099(KeyboardListener.anInt1912, Class75_Sub2.aClass153_2645, 255);
                   }
 
                   Class58.aClass66_917.method1247(false, true);
                } else {
-                  NodeList.method882(-1, 2);
+                  NodeList.method882();
                   Class58.aClass66_917.method1247(true, true);
                }
             }
@@ -68,7 +68,7 @@ final class Class117 {
             Class143.loadingStage = var0;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "pl.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "pl.C(" + var0 + ',' + 5 + ')');
       }
    }
 

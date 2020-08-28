@@ -61,7 +61,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
    final void method158(int var1) {
       try {
          if(var1 == 16251) {
-            this.method303((byte)59);
+            this.method303();
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "pk.P(" + var1 + ')');
@@ -71,7 +71,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
    final int[] method154(int var1, byte var2) {
       try {
          int var3 = -79 % ((var2 - 30) / 36);
-         int[] var4 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var4 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int var8 = Class95.anInt1343 * this.anInt3350 >> 12;
             int[] var9 = this.method152(0, Class3_Sub20.anInt2487 & var1 + -1, 32755);
@@ -129,7 +129,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
                   if(var2.anInt2919 > 0) {
                      NPC var3 = Class3_Sub13_Sub24.npcs[-1 + var2.anInt2919];
                      if(null != var3 && var3.anInt2819 >= 0 && 13312 > var3.anInt2819 && var3.anInt2829 >= 0 && var3.anInt2829 < 13312) {
-                        var2.method2024(var3.anInt2829, 1, Class44.anInt719, Class121.method1736(var2.anInt2907, 1, var3.anInt2819, var3.anInt2829) + -var2.anInt2903, var3.anInt2819);
+                        var2.method2024(var3.anInt2829, Class44.anInt719, Class121.method1736(var2.anInt2907, 1, var3.anInt2819, var3.anInt2829) + -var2.anInt2903, var3.anInt2819);
                      }
                   }
 
@@ -143,11 +143,11 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
                      }
 
                      if(null != var6 && var6.anInt2819 >= 0 && var6.anInt2819 < 13312 && var6.anInt2829 >= 0 && var6.anInt2829 < 13312) {
-                        var2.method2024(var6.anInt2829, 1, Class44.anInt719, Class121.method1736(var2.anInt2907, 1, var6.anInt2819, var6.anInt2829) - var2.anInt2903, var6.anInt2819);
+                        var2.method2024(var6.anInt2829, Class44.anInt719, Class121.method1736(var2.anInt2907, 1, var6.anInt2819, var6.anInt2829) - var2.anInt2903, var6.anInt2819);
                      }
                   }
 
-                  var2.method2023((byte)-59, Class106.anInt1446);
+                  var2.method2023(Class106.anInt1446);
                   Class20.method907(WorldListCountry.localPlane, (int)var2.aDouble2920, (int)var2.aDouble2900, (int)var2.aDouble2914, 60, var2, var2.anInt2924, -1L, false);
                }
             } else {
@@ -160,11 +160,11 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
       }
    }
 
-   private final void method303(byte var1) {
+   private final void method303() {
       try {
          double var2 = Math.cos((double)((float)this.anInt3354 / 4096.0F));
          this.anIntArray3348[0] = (int)(4096.0D * var2 * Math.sin((double)((float)this.anInt3347 / 4096.0F)));
-         if(var1 >= 46) {
+         if((byte) 59 >= 46) {
             this.anIntArray3348[1] = (int)(Math.cos((double)((float)this.anInt3347 / 4096.0F)) * var2 * 4096.0D);
             this.anIntArray3348[2] = (int)(4096.0D * Math.sin((double)((float)this.anInt3354 / 4096.0F)));
             int var6 = this.anIntArray3348[2] * this.anIntArray3348[2] >> 12;
@@ -179,7 +179,7 @@ final class Class3_Sub13_Sub28 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "pk.B(" + var1 + ')');
+         throw Class44.clientError(var8, "pk.B(" + (byte) 59 + ')');
       }
    }
 

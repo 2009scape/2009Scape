@@ -41,9 +41,9 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
       }
    }
 
-   private final void method239(int var1, int var2, int var3, int var4) {
+   private final void method239(int var1, int var2, int var4) {
       try {
-         int var6 = 32 / ((15 - var3) / 45);
+         int var6 = 32 / ((15 - 107) / 45);
          int var5 = var1 <= 2048?var1 * (4096 + var2) >> 12:-(var1 * var2 >> 12) + var1 + var2;
          if(var5 > 0) {
             var4 *= 6;
@@ -93,7 +93,7 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var15) {
-         throw Class44.clientError(var15, "hk.C(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var15, "hk.C(" + var1 + ',' + var2 + ',' + 107 + ',' + var4 + ')');
       }
    }
 
@@ -187,7 +187,7 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
                   this.anInt3180 -= 4096;
                }
 
-               this.method239(this.anInt3188, this.anInt3189, 107, this.anInt3180);
+               this.method239(this.anInt3188, this.anInt3189, this.anInt3180);
                var8[var11] = this.anInt3186;
                var9[var11] = this.anInt3174;
                var10[var11] = this.anInt3182;

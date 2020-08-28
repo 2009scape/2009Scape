@@ -10,7 +10,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
 
    final int[] method154(int var1, byte var2) {
       try {
-         int[] var3 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int[] var4 = this.method152(0, var1, 32755);
 
@@ -84,28 +84,28 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
       }
    }
 
-   static final Class3_Sub28_Sub1 getQuickChatMessage(int fileId, byte var1) {
+   static final Class3_Sub28_Sub1 getQuickChatMessage(int fileId) {
       try {
          Class3_Sub28_Sub1 var2 = (Class3_Sub28_Sub1)Class3_Sub13_Sub11.aClass47_3137.method1092((long)fileId, 1400);
          if(null == var2) {
             byte[] var3;
             if(fileId < '\u8000') {
-               var3 = Class47.quickChatMessages.getFile(0, (byte)-122, fileId);
+               var3 = Class47.quickChatMessages.getFile(0, fileId);
             } else {
-               var3 = NodeList.aClass153_332.getFile(0, (byte)-122, fileId & 32767);
+               var3 = NodeList.aClass153_332.getFile(0, fileId & 32767);
             }
 
             var2 = new Class3_Sub28_Sub1();
             if(null != var3) {
-               var2.method530(new RSByteBuffer(var3), (byte)116);
+               var2.method530(new RSByteBuffer(var3));
             }
 
-            if(var1 != -54) {
+            if((byte) -54 != -54) {
                method337(19);
             }
 
             if(fileId >= 32768) {
-               var2.method525(-85);
+               var2.method525();
             }
 
             Class3_Sub13_Sub11.aClass47_3137.method1097(var2, (long)fileId, (byte)40);
@@ -114,7 +114,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "tb.B(" + fileId + ',' + var1 + ')');
+         throw Class44.clientError(var4, "tb.B(" + fileId + ',' + (byte) -54 + ')');
       }
    }
 

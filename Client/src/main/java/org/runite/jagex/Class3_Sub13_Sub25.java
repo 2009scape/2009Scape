@@ -33,7 +33,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
    final int[] method154(int var1, byte var2) {
       try {
          int var4 = 105 % ((30 - var2) / 36);
-         int[] var3 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int[][] var5 = this.aClass114_2382.method1710((byte)97);
             int var9 = 0;
@@ -125,7 +125,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
                                           var36 = Class113.anInt1559;
                                        }
 
-                                       this.method291(var34, var22, var8 + var35, -var35 + var36, (byte)-69, -var34 + var23, var5);
+                                       this.method291(var34, var22, var8 + var35, -var35 + var36, -var34 + var23, var5);
                                     }
                                  }
                               }
@@ -150,7 +150,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
 
                      int[] var40;
                      if(Class113.anInt1559 == var26) {
-                        this.method291(var23, var22, var7 + var9, var24, (byte)-69, var25, var5);
+                        this.method291(var23, var22, var7 + var9, var24, var25, var5);
                         if(var11) {
                            return var3;
                         }
@@ -196,7 +196,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
                         var40[1] = var26;
                         var40[2] = var25 + var23;
                         var40[0] = var9;
-                        this.method291(var23, var22, var9 + var7, var24, (byte)-69, var25, var5);
+                        this.method291(var23, var22, var9 + var7, var24, var25, var5);
                         var9 = var26;
                      }
                   }
@@ -224,9 +224,9 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
       super(0, true);
    }
 
-   private final void method291(int var1, Random var2, int var3, int var4, byte var5, int var6, int[][] var7) {
+   private final void method291(int var1, Random var2, int var3, int var4, int var6, int[][] var7) {
       try {
-         if(var5 == -69) {
+         if((byte) -69 == -69) {
             int var8 = this.anInt3316 > 0 ?4096 + -Class100.method1603((byte)-128, this.anInt3316, var2):4096;
             int var9 = this.anInt3299 * this.anInt3314 >> 12;
             int var10 = this.anInt3314 - (0 < var9?Class100.method1603((byte)39, var9, var2):0);
@@ -329,7 +329,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var23) {
-         throw Class44.clientError(var23, "ol.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var23, "ol.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + (byte) -69 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
       }
    }
 
@@ -380,12 +380,12 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
       return var4 == null?true:Class56.method1189(var0, var8, var9, var10 - var8 + 1, var11 - var9 + 1, var1, var2, var3, var4, var5, true, var6);
    }
 
-   static final int method293(int var0, int var1, boolean var2, int var3) {
+   static final int method293(int var0, int var1, int var3) {
       try {
          var1 &= 3;
-         return var2?120:(0 == var1?var3:(1 != var1?(var1 != 2 ?var0:-var3 + 1023):-var0 + 1023));
+         return false ?120:(0 == var1?var3:(1 != var1?(var1 != 2 ?var0:-var3 + 1023):-var0 + 1023));
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ol.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ol.E(" + var0 + ',' + var1 + ',' + false + ',' + var3 + ')');
       }
    }
 

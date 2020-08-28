@@ -72,7 +72,7 @@ abstract class Class75 {
       try {
          if(var1 == 0) {
             for(Class3_Sub28_Sub3 var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1222(); var2 != null; var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1221()) {
-               if(var2.aClass94_3561.method1528((byte)-42, var0)) {
+               if(var2.aClass94_3561.method1528(var0)) {
                   RSByteBuffer.aClass3_Sub28_Sub3_2600 = var2;
                   return;
                }
@@ -84,9 +84,9 @@ abstract class Class75 {
       }
    }
 
-   static final void method1340(int var0, int var1, byte var2, int var3, int var4) {
+   static final void method1340(int var0, int var1, int var3, int var4) {
       try {
-         if(var2 != -40) {
+         if((byte) -40 != -40) {
             anInt1105 = 43;
          }
 
@@ -97,10 +97,10 @@ abstract class Class75 {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "kf.I(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "kf.I(" + var0 + ',' + var1 + ',' + (byte) -40 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
-   abstract void method1341(int var1, int var2, int var3);
+   abstract void method1341(int var2, int var3);
 
 }

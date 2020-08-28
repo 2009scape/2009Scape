@@ -13,26 +13,26 @@ class Class164_Sub1 extends Class164 {
    static int anInt3017;
 
 
-   final void method2237(int var1, int var2, int var3) {
+   final void method2237(int var1, int var2) {
       try {
          this.anInt3010 += var1 * this.anIntArray3014[var2] >> 12;
-         if(var3 != -20975) {
+         if(-20975 != -20975) {
             method2239(-22, -68, -14, 89);
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "vd.H(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "vd.H(" + var1 + ',' + var2 + ',' + -20975 + ')');
       }
    }
 
-   static final void method2238(int var0, int var1, int var2, int var3, byte var4, int var5) {
+   static final void method2238(int var0, int var1, int var2, int var3, int var5) {
       try {
          Class75.anInt1105 = var2;
          Class157.anInt1996 = var1;
          Class163_Sub2_Sub1.anInt4014 = var5;
          MouseListeningClass.anInt1923 = var3;
          GraphicDefinition.anInt529 = var0;
-         if(var4 != -21) {
+         if((byte) -21 != -21) {
             aClass94_3013 = (RSString)null;
          }
 
@@ -57,7 +57,7 @@ class Class164_Sub1 extends Class164 {
 
          Class133.anInt1753 = 2;
       } catch (RuntimeException var13) {
-         throw Class44.clientError(var13, "vd.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var13, "vd.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + (byte) -21 + ',' + var5 + ')');
       }
    }
 
@@ -261,29 +261,29 @@ class Class164_Sub1 extends Class164 {
       }
    }
 
-   final void method2233(int var1) {
+   final void method2233() {
       try {
-         if(var1 == -949697716) {
+         if(-949697716 == -949697716) {
             this.anInt3016 = 0;
             this.anInt3010 = 0;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "vd.C(" + var1 + ')');
+         throw Class44.clientError(var3, "vd.C(" + -949697716 + ')');
       }
    }
 
-   Class164_Sub1(int var1, int var2, int var3, int var4, int var5, float var6) {
-      super(var1, var2, var3, var4, var5);
+   Class164_Sub1() {
+      super(12, 5, 16, 2, 2);
 
       try {
          this.anIntArray3014 = new int[this.anInt2062];
 
          for(int var7 = 0; var7 < this.anInt2062; ++var7) {
-            this.anIntArray3014[var7] = (short)((int)(Math.pow((double)var6, (double)var7) * 4096.0D));
+            this.anIntArray3014[var7] = (short)((int)(Math.pow((double) (float) 0.45, (double)var7) * 4096.0D));
          }
 
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "vd.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "vd.<init>(" + 12 + ',' + 5 + ',' + 16 + ',' + 2 + ',' + 2 + ',' + (float) 0.45 + ')');
       }
    }
 

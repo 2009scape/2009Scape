@@ -25,14 +25,14 @@ final class Class113 {
    int anInt1566;
 
 
-   static final void method1702(byte var0, boolean var1) {
+   static final void method1702(boolean var1) {
       try {
          if(!var1 != !Class14.aBoolean337) {
             Class14.aBoolean337 = var1;
             Class3_Sub10.method139(76);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "pe.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "pe.B(" + (byte) -124 + ',' + var1 + ')');
       }
    }
 

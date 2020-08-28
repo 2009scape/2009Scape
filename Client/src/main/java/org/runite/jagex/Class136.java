@@ -14,7 +14,7 @@ final class Class136 {
    static int anInt1780;
 
 
-   static final void method1814(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
+   static final void method1814(int var0, int var1, int var2, int var3, int var4, int var8, int var9, int var10) {
       try {
          int var11 = var2 - var4;
          int var13 = -1;
@@ -31,8 +31,8 @@ final class Class136 {
          int var16 = 983040 / var3;
 
          for(int var17 = -var15; var17 < var11 - -var15; ++var17) {
-            int var18 = var5 - -(var17 * var8) >> 16;
-            int var19 = var8 * (var17 + 1) + var5 >> 16;
+            int var18 = 0 - -(var17 * var8) >> 16;
+            int var19 = var8 * (var17 + 1) + 0 >> 16;
             int var20 = -var18 + var19;
             if(var20 > 0) {
                int var21 = var4 + var17 >> 6;
@@ -42,8 +42,8 @@ final class Class136 {
                   int[][] var22 = Class44.anIntArrayArrayArray720[var21];
 
                   for(int var23 = -var16; var23 < var12 - -var16; ++var23) {
-                     int var25 = var6 - -(var3 * (var23 - -1)) >> 16;
-                     int var24 = var23 * var3 + var6 >> 16;
+                     int var25 = 0 - -(var3 * (var23 - -1)) >> 16;
+                     int var24 = var23 * var3 + 0 >> 16;
                      int var26 = var25 + -var24;
                      if(0 < var26) {
                         var24 += var10;
@@ -73,19 +73,19 @@ final class Class136 {
             }
          }
 
-         if(var7 >= 124) {
+         if(127 >= 124) {
             for(Class3_Sub23 var32 = (Class3_Sub23)Class101.aClass61_1424.method1222(); null != var32; var32 = (Class3_Sub23)Class101.aClass61_1424.method1221()) {
-               Class74.method1330(var32.anInt2531, var32.anInt2539, 15, 16776960, var13);
-               Class74.method1330(var32.anInt2531, var32.anInt2539, 13, 16776960, var13);
-               Class74.method1330(var32.anInt2531, var32.anInt2539, 11, 16776960, var13);
-               Class74.method1330(var32.anInt2531, var32.anInt2539, 9, 16776960, var13);
+               Class74.method1330(var32.anInt2531, var32.anInt2539, 15, var13);
+               Class74.method1330(var32.anInt2531, var32.anInt2539, 13, var13);
+               Class74.method1330(var32.anInt2531, var32.anInt2539, 11, var13);
+               Class74.method1330(var32.anInt2531, var32.anInt2539, 9, var13);
                GameObject.aClass3_Sub28_Sub16_Sub2Array1839[var32.anInt2532].method643(-7 + var32.anInt2531, -7 + var32.anInt2539);
             }
 
             Class101.aClass61_1424.method1211(-76);
          }
       } catch (RuntimeException var31) {
-         throw Class44.clientError(var31, "sm.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
+         throw Class44.clientError(var31, "sm.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + 0 + ',' + 0 + ',' + 127 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
       }
    }
 

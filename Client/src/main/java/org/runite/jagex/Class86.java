@@ -19,16 +19,16 @@ final class Class86 {
    static Class130 aClass130_1194;
    static int anInt1195;
 
-   static final void method1427(boolean var0, int var1) {
+   static final void method1427(int var1) {
       try {
          if(-1 == var1 && !Class83.aBoolean1158) {
-            GameObject.method1870(false);
+            GameObject.method1870();
          } else if(var1 != -1 && (Class129.anInt1691 != var1 || !Class79.method1391(-1)) && Class9.anInt120 != 0 && !Class83.aBoolean1158) {
-            Class151.method2099(true, var1, 0, Class75_Sub2.aClass153_2645, false, Class9.anInt120, 2);
+            Class151.method2099(var1, Class75_Sub2.aClass153_2645, Class9.anInt120);
          }
          Class129.anInt1691 = var1;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "li.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "li.B(" + true + ',' + var1 + ')');
       }
    }
 
@@ -71,9 +71,9 @@ final class Class86 {
    static final Class3_Sub28_Sub17_Sub1 method1430(int var0, int var1) {
       try {
          if(var0 == -28922) {
-            Class3_Sub28_Sub17_Sub1 var2 = (Class3_Sub28_Sub17_Sub1)Class80.aClass93_1135.get((long)var1, (byte)121);
+            Class3_Sub28_Sub17_Sub1 var2 = (Class3_Sub28_Sub17_Sub1)Class80.aClass93_1135.get((long)var1);
             if(var2 == null) {
-               byte[] var3 = CacheIndex.aClass153_1948.getFile(var1, (byte)-122, 0);
+               byte[] var3 = CacheIndex.aClass153_1948.getFile(var1, 0);
                var2 = new Class3_Sub28_Sub17_Sub1(var3);
                var2.method697(Class3_Sub13_Sub22.aClass109Array3270, (int[])null);
                Class80.aClass93_1135.put((byte)-96, var2, (long)var1);

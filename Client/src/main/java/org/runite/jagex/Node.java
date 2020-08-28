@@ -15,34 +15,34 @@ class Node extends Class3 {
    Node aClass3_Sub28_2578;
 
 
-   static final void method518(Player var0, int var1) {
+   static final void method518(Player var0) {
       try {
          Class3_Sub9 var2 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1780(var0.displayName.toLong(-121), 0);
-         if(var1 >= -85) {
+         if(-110 >= -85) {
             method523(40, -17, -52, -32, 9, -51, -85, -84, -19);
          }
 
          if(var2 == null) {
-            Class70.method1286(var0.anIntArray2755[0], false, (ObjectDefinition)null, 0, (NPC)null, var0.anIntArray2767[0], WorldListCountry.localPlane, var0);
+            Class70.method1286(var0.anIntArray2755[0], (ObjectDefinition)null, 0, (NPC)null, var0.anIntArray2767[0], WorldListCountry.localPlane, var0);
          } else {
-            var2.method134(1);
+            var2.method134();
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "rg.UA(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "rg.UA(" + (var0 != null?"{...}":"null") + ',' + -110 + ')');
       }
    }
 
-   static final int method519(int var0, boolean var1, int var2, int var3) {
+   static final int method519(int var0, int var2, int var3) {
       try {
          var0 &= 3;
-         if(!var1) {
+         if(!true) {
             method520((byte)-89);
          }
 
          return 0 != var0?(var0 != 1 ?(var0 == 2 ?-var3 + 7:-var2 + 7):var2):var3;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "rg.RA(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "rg.RA(" + var0 + ',' + true + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -69,9 +69,9 @@ class Node extends Class3 {
 
    static final NPCDefinition method522(int var0, int var1) {
       try {
-         NPCDefinition def = (NPCDefinition)Class3_Sub28_Sub7_Sub1.aClass93_4043.get((long)var0, (byte)121);
+         NPCDefinition def = (NPCDefinition)Class3_Sub28_Sub7_Sub1.aClass93_4043.get((long)var0);
          if(null == def) {
-            byte[] var3 = Class29.aClass153_557.getFile(Class38_Sub1.method1031(var0, 2), (byte)-122, Canvas_Sub1.method54(var0, false));
+            byte[] var3 = Class29.aClass153_557.getFile(Class38_Sub1.method1031(var0), Canvas_Sub1.method54(var0));
             def = new NPCDefinition();
             if(var1 != 27112) {
                clanSize = -67;
@@ -79,10 +79,10 @@ class Node extends Class3 {
 
             def.npcId = var0;
             if(null != var3) {
-               def.method1478(new RSByteBuffer(var3), 74);
+               def.method1478(new RSByteBuffer(var3));
             }
 
-            def.method1481(98);
+            def.method1481();
             Class3_Sub28_Sub7_Sub1.aClass93_4043.put((byte)-95, def, (long)var0);
             return def;
          } else {
@@ -105,20 +105,20 @@ class Node extends Class3 {
       }
    }
 
-   final void method524(byte var1) {
+   final void method524() {
       try {
          if(this.aClass3_Sub28_2570 != null) {
             this.aClass3_Sub28_2570.aClass3_Sub28_2578 = this.aClass3_Sub28_2578;
             this.aClass3_Sub28_2578.aClass3_Sub28_2570 = this.aClass3_Sub28_2570;
             this.aClass3_Sub28_2578 = null;
             this.aClass3_Sub28_2570 = null;
-            if(var1 != -107) {
+            if((byte) -107 != -107) {
                this.aClass3_Sub28_2578 = (Node)null;
             }
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "rg.TA(" + var1 + ')');
+         throw Class44.clientError(var3, "rg.TA(" + (byte) -107 + ')');
       }
    }
 

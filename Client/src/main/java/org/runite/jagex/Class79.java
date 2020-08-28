@@ -12,20 +12,20 @@ final class Class79 {
    static RSString aClass94_1129 = RSString.createRSString("Clientscript error )2 check log for details");
 
 
-   static final void method1385(int var0, int var1, byte var2) {
+   static final void method1385(int var0, int var1) {
       try {
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 6, var1);
-         var3.g((byte)33);
+         var3.g();
          var3.anInt3598 = var0;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "kk.E(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "kk.E(" + var0 + ',' + var1 + ',' + (byte) -127 + ')');
       }
    }
 
-   static final int method1386(boolean var0, KeyEvent var1) {
+   static final int method1386(KeyEvent var1) {
       try {
          int var2 = var1.getKeyChar();
-         if(!var0) {
+         if(!true) {
             return -90;
          } else if(8364 == var2) {
             return 128;
@@ -37,23 +37,23 @@ final class Class79 {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "kk.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "kk.C(" + true + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
-   final void method1387(RSByteBuffer var1, int var2) {
+   final void method1387(RSByteBuffer var1) {
       try {
          while(true) {
             int var3 = var1.getByte((byte)-41);
             if(var3 == 0) {
-               var3 = -26 % ((-36 - var2) / 58);
+               var3 = -26 % ((-36 - -111) / 58);
                return;
             }
 
-            this.method1389(var1, 1, var3);
+            this.method1389(var1, var3);
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "kk.G(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "kk.G(" + (var1 != null?"{...}":"null") + ',' + -111 + ')');
       }
    }
 
@@ -69,20 +69,20 @@ final class Class79 {
       }
    }
 
-   private final void method1389(RSByteBuffer var1, int var2, int var3) {
+   private final void method1389(RSByteBuffer var1, int var3) {
       try {
-         if(var2 == var3) {
-            this.anInt1128 = var1.getShort(var2 + 0);
+         if(1 == var3) {
+            this.anInt1128 = var1.getShort(1 + 0);
             this.anInt1123 = var1.getByte((byte)-30);
             this.anInt1125 = var1.getByte((byte)-89);
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "kk.B(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "kk.B(" + (var1 != null?"{...}":"null") + ',' + 1 + ',' + var3 + ')');
       }
    }
 
-   static final void method1390(RSByteBuffer var0, int var1) {
+   static final void method1390(RSByteBuffer var0) {
       try {
          if(-var0.index + var0.buffer.length >= 1) {
             int var2 = var0.getByte((byte)-23);
@@ -130,7 +130,7 @@ final class Class79 {
                      Class3_Sub28_Sub10.anInt3625 = 1;
                   }
 
-                  Class25.method957(var1 + 97, 1 == var0.getByte((byte)-40));
+                  Class25.method957(-1 + 97, 1 == var0.getByte((byte)-40));
                   Class3_Sub28_Sub7.aBoolean3604 = var0.getByte((byte)-44) == 1;
                   KeyboardListener.aBoolean1905 = 1 == var0.getByte((byte)-39);
                   Class25.aBoolean488 = 1 == var0.getByte((byte)-85);
@@ -192,7 +192,7 @@ final class Class79 {
                      RSString.anInt2148 = var0.getInt();
                   }
 
-                  if(var1 != -1) {
+                  if(-1 != -1) {
                      aClass94_1129 = (RSString)null;
                   }
 
@@ -224,7 +224,7 @@ final class Class79 {
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "kk.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var5, "kk.F(" + (var0 != null?"{...}":"null") + ',' + -1 + ')');
       }
    }
 

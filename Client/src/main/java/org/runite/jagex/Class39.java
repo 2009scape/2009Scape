@@ -29,7 +29,7 @@ final class Class39 {
 			if(Class3_Sub29.isDynamicSceneGraph) {
 				sceneX = GraphicDefinition.incomingBuffer.getLEShortA((byte)-109);
 				var3 = GraphicDefinition.incomingBuffer.getLEShortA((byte)-120);
-				plane = GraphicDefinition.incomingBuffer.getByteS(true);
+				plane = GraphicDefinition.incomingBuffer.getByteS();
 				var5 = GraphicDefinition.incomingBuffer.getLEShortA((byte)-91);
 				GraphicDefinition.incomingBuffer.setBitAccess((byte)112);
 
@@ -47,7 +47,7 @@ final class Class39 {
 					}
 				}
 
-				GraphicDefinition.incomingBuffer.method818(false);
+				GraphicDefinition.incomingBuffer.method818();
 				var6 = (-GraphicDefinition.incomingBuffer.index + Class130.incomingPacketLength) / 16;
 				Class3_Sub9.regionXteaKeys = new int[var6][4];
 
@@ -92,10 +92,10 @@ final class Class39 {
 					Class3_Sub24_Sub3.anIntArray3494[var6] = var14;
 					int var16 = var14 & 255;
 					var15 = ('\uff6c' & var14) >> 8;
-				Client.anIntArray2200[var6] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class3_Sub30_Sub1.aClass94_3807, Class72.method1298((byte)9, var15), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var16)}, (byte)-90), (byte)-30);
-				Class101.anIntArray1426[var6] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class161.aClass94_2029, Class72.method1298((byte)9, var15), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var16)}, (byte)-117), (byte)-30);
-				Class3_Sub13_Sub15.anIntArray3181[var6] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class95.aClass94_1333, Class72.method1298((byte)9, var15), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var16)}, (byte)-85), (byte)-30);
-				Class3_Sub28_Sub5.anIntArray3587[var6] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{TextCore.HasULLookUp, Class72.method1298((byte)9, var15), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var16)}, (byte)-93), (byte)-30);
+				Client.anIntArray2200[var6] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class3_Sub30_Sub1.aClass94_3807, Class72.method1298((byte)9, var15), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var16)}, (byte)-90));
+				Class101.anIntArray1426[var6] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class161.aClass94_2029, Class72.method1298((byte)9, var15), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var16)}, (byte)-117));
+				Class3_Sub13_Sub15.anIntArray3181[var6] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class95.aClass94_1333, Class72.method1298((byte)9, var15), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var16)}, (byte)-85));
+				Class3_Sub28_Sub5.anIntArray3587[var6] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{TextCore.HasULLookUp, Class72.method1298((byte)9, var15), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var16)}, (byte)-93));
 				++var6;
 				}
 							}
@@ -104,7 +104,7 @@ final class Class39 {
 				}
 
 								// plane, regY, regX, sceneY, .....sceneX
-				Class73.method1301(plane, var7, var3, var5, false, sceneX, true);
+				Class73.method1301(plane, var7, var3, var5, false, sceneX);
 			} else {
 				sceneX = GraphicDefinition.incomingBuffer.getShortA(-128);
 				var3 = (Class130.incomingPacketLength - GraphicDefinition.incomingBuffer.index) / 16;
@@ -116,7 +116,7 @@ final class Class39 {
 					}
 				}
 
-				plane = GraphicDefinition.incomingBuffer.getByteS(true);
+				plane = GraphicDefinition.incomingBuffer.getByteS();
 				var5 = GraphicDefinition.incomingBuffer.getShort(1);
 				var6 = GraphicDefinition.incomingBuffer.getShortA(107);
 				var7 = GraphicDefinition.incomingBuffer.getShortA(-124);
@@ -152,16 +152,16 @@ final class Class39 {
 							Class3_Sub28_Sub5.anIntArray3587[var3] = -1;
 						} else {
 							Class3_Sub24_Sub3.anIntArray3494[var3] = var11;
-							Client.anIntArray2200[var3] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class3_Sub30_Sub1.aClass94_3807, Class72.method1298((byte)9, var9), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var10)}, (byte)-69), (byte)-30);
-							Class101.anIntArray1426[var3] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class161.aClass94_2029, Class72.method1298((byte)9, var9), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var10)}, (byte)-77), (byte)-30);
-							Class3_Sub13_Sub15.anIntArray3181[var3] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class95.aClass94_1333, Class72.method1298((byte)9, var9), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var10)}, (byte)-107), (byte)-30);
-							Class3_Sub28_Sub5.anIntArray3587[var3] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{TextCore.HasULLookUp, Class72.method1298((byte)9, var9), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var10)}, (byte)-91), (byte)-30);
+							Client.anIntArray2200[var3] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class3_Sub30_Sub1.aClass94_3807, Class72.method1298((byte)9, var9), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var10)}, (byte)-69));
+							Class101.anIntArray1426[var3] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class161.aClass94_2029, Class72.method1298((byte)9, var9), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var10)}, (byte)-77));
+							Class3_Sub13_Sub15.anIntArray3181[var3] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{Class95.aClass94_1333, Class72.method1298((byte)9, var9), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var10)}, (byte)-107));
+							Class3_Sub28_Sub5.anIntArray3587[var3] = Class3_Sub13_Sub6.aClass153_3077.getArchiveForName(RenderAnimationDefinition.method903(new RSString[]{TextCore.HasULLookUp, Class72.method1298((byte)9, var9), Class3_Sub13_Sub14.aClass94_3161, Class72.method1298((byte)9, var10)}, (byte)-91));
 						}
 
 						++var3;
 					}
 				}
-				Class73.method1301(plane, var6, var5, var7, false, sceneX, true);
+				Class73.method1301(plane, var6, var5, var7, false, sceneX);
 			}
 
 			if(var0 != 0) {
@@ -253,10 +253,10 @@ final class Class39 {
 	}
 
 
-	static final void method1036(int var0) {
+	static final void method1036() {
 		try {
 			Class86 var1 = new Class86();
-			if(var0 <= 101) {
+			if(118 <= 101) {
 				method1039(22, (CacheIndex)null);
 			}
 
@@ -267,7 +267,7 @@ final class Class39 {
 			}
 
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "g.D(" + var0 + ')');
+			throw Class44.clientError(var4, "g.D(" + 118 + ')');
 		}
 	}
 
@@ -292,7 +292,7 @@ final class Class39 {
 			int var6;
 			int var7;
 			if(RSString.incomingOpcode == 195) {
-				var1 = GraphicDefinition.incomingBuffer.getByteC(true);
+				var1 = GraphicDefinition.incomingBuffer.getByteC();
 				var3 = var1 & 3;
 				var2 = var1 >> 2;
 				var4 = Class75.anIntArray1107[var2];
@@ -318,7 +318,7 @@ final class Class39 {
 					}
 
 					Class3_Sub13_Sub22.aClass61ArrayArrayArray3273[WorldListCountry.localPlane][var3][var4].method1215(true, new Class3_Sub28_Sub14(var31));
-					Class128.method1760(var4, (byte)65, var3);
+					Class128.method1760(var4, var3);
 				}
 
 			} else {
@@ -353,7 +353,7 @@ final class Class39 {
 						var3 = 64 * var3;
 						var2 = 64 * var2;
 						var36 = new Class140_Sub6(var7, WorldListCountry.localPlane, var2, var3, Class121.method1736(WorldListCountry.localPlane, 1, var2, var3) + -var8, Class44.anInt719 + var10, var11 + Class44.anInt719, var35, var13, var6, var28);
-						var36.method2024(var5, 1, Class44.anInt719 + var10, -var28 + Class121.method1736(WorldListCountry.localPlane, 1, var4, var5), var4);
+						var36.method2024(var5, Class44.anInt719 + var10, -var28 + Class121.method1736(WorldListCountry.localPlane, 1, var4, var5), var4);
 						Class3_Sub13_Sub30.aClass61_3364.method1215(true, new Class3_Sub28_Sub19(var36));
 					}
 
@@ -385,10 +385,10 @@ final class Class39 {
 					}
 
 				} else if(RSString.incomingOpcode == 20) {
-					var1 = GraphicDefinition.incomingBuffer.getByteS(true);
+					var1 = GraphicDefinition.incomingBuffer.getByteS();
 					var2 = ((var1 & 125) >> 4) + Class65.currentChunkX;
 					var3 = Class107.currentChunkY + (7 & var1);
-					var4 = GraphicDefinition.incomingBuffer.getByteS(true);
+					var4 = GraphicDefinition.incomingBuffer.getByteS();
 					var5 = var4 >> 2;
 					var6 = 3 & var4;
 					var7 = Class75.anIntArray1107[var5];
@@ -407,16 +407,16 @@ final class Class39 {
 						var4 = GraphicDefinition.incomingBuffer.getByte((byte)-90);
 						var5 = (var4 >> 4 & 7) + Class65.currentChunkX;
 						var6 = (7 & var4) + Class107.currentChunkY;
-						byte var25 = GraphicDefinition.incomingBuffer.method789(0);
-						byte var30 = GraphicDefinition.incomingBuffer.method789(0);
-						byte var9 = GraphicDefinition.incomingBuffer.method749(false);
+						byte var25 = GraphicDefinition.incomingBuffer.method789();
+						byte var30 = GraphicDefinition.incomingBuffer.method789();
+						byte var9 = GraphicDefinition.incomingBuffer.method749();
 						var10 = GraphicDefinition.incomingBuffer.getShortA(-106);
 						var11 = GraphicDefinition.incomingBuffer.getLEShort(-116);
 						byte var12 = GraphicDefinition.incomingBuffer.getByte();
 						var13 = GraphicDefinition.incomingBuffer.getShort(1);
-						var14 = GraphicDefinition.incomingBuffer.method788(-1741292848);
+						var14 = GraphicDefinition.incomingBuffer.method788();
 						if(!HDToolKit.highDetail) {
-							Class3_Sub13_Sub23.method280(var12, var13, var14, var11, var6, var9, var3, var25, var5, var2, -745213428, var30, var10);
+							Class3_Sub13_Sub23.method280(var12, var13, var14, var11, var6, var9, var3, var25, var5, var2, var30, var10);
 						}
 					}
 
@@ -438,13 +438,13 @@ final class Class39 {
 									}
 								}
 
-								Class128.method1760(var3, (byte)65, var2);
+								Class128.method1760(var3, var2);
 							}
 						}
 
 					} else if(135 == RSString.incomingOpcode) {
 						var1 = GraphicDefinition.incomingBuffer.getLEShortA((byte)-113);
-						var2 = GraphicDefinition.incomingBuffer.getByteC(true);
+						var2 = GraphicDefinition.incomingBuffer.getByteC();
 						var4 = Class107.currentChunkY + (7 & var2);
 						var3 = (7 & var2 >> 4) + Class65.currentChunkX;
 						var5 = GraphicDefinition.incomingBuffer.getLEShort(-66);
@@ -458,7 +458,7 @@ final class Class39 {
 							}
 
 							Class3_Sub13_Sub22.aClass61ArrayArrayArray3273[WorldListCountry.localPlane][var3][var4].method1215(true, new Class3_Sub28_Sub14(var27));
-							Class128.method1760(var4, (byte)65, var3);
+							Class128.method1760(var4, var3);
 						}
 
 					} else if(var0 <= -67) {
@@ -486,7 +486,7 @@ final class Class39 {
 								var2 = 128 * var2 + 64;
 								var4 = 128 * var4 + 64;
 								var36 = new Class140_Sub6(var7, WorldListCountry.localPlane, var2, var3, Class121.method1736(WorldListCountry.localPlane, 1, var2, var3) + -var8, var10 + Class44.anInt719, var11 + Class44.anInt719, var35, var13, var6, var28);
-								var36.method2024(var5, 1, Class44.anInt719 + var10, Class121.method1736(WorldListCountry.localPlane, 1, var4, var5) - var28, var4);
+								var36.method2024(var5, Class44.anInt719 + var10, Class121.method1736(WorldListCountry.localPlane, 1, var4, var5) - var28, var4);
 								Class3_Sub13_Sub30.aClass61_3364.method1215(true, new Class3_Sub28_Sub19(var36));
 							}
 
@@ -536,7 +536,7 @@ final class Class39 {
 									}
 
 									if (var16 != null) {
-										RenderAnimationDefinition var38 = ((Class140_Sub4) var16).method1965(false);
+										RenderAnimationDefinition var38 = ((Class140_Sub4) var16).method1965();
 										if (var38.anIntArrayArray359 != null && null != var38.anIntArrayArray359[var15]) {
 											var18 = var38.anIntArrayArray359[var15][0];
 											var28 -= var38.anIntArrayArray359[var15][1];
@@ -552,7 +552,7 @@ final class Class39 {
 								}
 
 								Class140_Sub6 var37 = new Class140_Sub6(var8, WorldListCountry.localPlane, var2, var3, -var28 + Class121.method1736(WorldListCountry.localPlane, 1, var2, var3), var11 + Class44.anInt719, var35 + Class44.anInt719, var13, var14, var7, var10);
-								var37.method2024(var5, 1, var11 + Class44.anInt719, -var10 + Class121.method1736(WorldListCountry.localPlane, 1, var4, var5), var4);
+								var37.method2024(var5, var11 + Class44.anInt719, -var10 + Class121.method1736(WorldListCountry.localPlane, 1, var4, var5), var4);
 								Class3_Sub13_Sub30.aClass61_3364.method1215(true, new Class3_Sub28_Sub19(var37));
 							}
 
@@ -582,7 +582,7 @@ final class Class39 {
 							}
 
 						} else if (RSString.incomingOpcode == 240) {
-							var1 = GraphicDefinition.incomingBuffer.getByteS(true);
+							var1 = GraphicDefinition.incomingBuffer.getByteS();
 							var3 = Class107.currentChunkY + (var1 & 7);
 							var2 = ((113 & var1) >> 4) + Class65.currentChunkX;
 							var4 = GraphicDefinition.incomingBuffer.getShort(1);
@@ -600,7 +600,7 @@ final class Class39 {
 										Class3_Sub13_Sub22.aClass61ArrayArrayArray3273[WorldListCountry.localPlane][var2][var3] = null;
 									}
 
-									Class128.method1760(var3, (byte) 65, var2);
+									Class128.method1760(var3, var2);
 								}
 							}
 
@@ -615,28 +615,28 @@ final class Class39 {
 
 	static final void method1039(int var0, CacheIndex var1) {
 		try {
-			Class96.anInt1352 = var1.getArchiveForName(RSString.createRSString("p11_full"), (byte)-30);
-			Class75_Sub2.anInt2643 = var1.getArchiveForName(RSString.createRSString("p12_full"), (byte)-30);
-			Class3_Sub13_Sub11.anInt3132 = var1.getArchiveForName(RSString.createRSString("b12_full"), (byte)-30);
-			Class168.anInt2104 = var1.getArchiveForName(RSString.createRSString("mapfunction"), (byte)-30);
-			Class3_Sub13_Sub23_Sub1.hitMarkIndex = var1.getArchiveForName(RSString.createRSString("hitmarks"), (byte)-30);
-			Client.anInt2195 = var1.getArchiveForName(RSString.createRSString("hitbar_default"), (byte)-30);
-			Node.anInt2575 = var1.getArchiveForName(RSString.createRSString("headicons_pk"), (byte)-30);
+			Class96.anInt1352 = var1.getArchiveForName(RSString.createRSString("p11_full"));
+			Class75_Sub2.anInt2643 = var1.getArchiveForName(RSString.createRSString("p12_full"));
+			Class3_Sub13_Sub11.anInt3132 = var1.getArchiveForName(RSString.createRSString("b12_full"));
+			Class168.anInt2104 = var1.getArchiveForName(RSString.createRSString("mapfunction"));
+			Class3_Sub13_Sub23_Sub1.hitMarkIndex = var1.getArchiveForName(RSString.createRSString("hitmarks"));
+			Client.anInt2195 = var1.getArchiveForName(RSString.createRSString("hitbar_default"));
+			Node.anInt2575 = var1.getArchiveForName(RSString.createRSString("headicons_pk"));
 			if(var0 != 208) {
 				anInt670 = 0;
 			}
 
-			RenderAnimationDefinition.anInt380 = var1.getArchiveForName(RSString.createRSString("headicons_prayer"), (byte)-30);
-			Class3_Sub13_Sub29.anInt3356 = var1.getArchiveForName(RSString.createRSString("hint_headicons"), (byte)-30);
-			Class129_Sub1.anInt2689 = var1.getArchiveForName(RSString.createRSString("hint_mapmarkers"), (byte)-30);
-			Class3_Sub13_Sub4.anInt3061 = var1.getArchiveForName(RSString.createRSString("mapflag"), (byte)-30);
-			Class75_Sub1.anInt2633 = var1.getArchiveForName(RSString.createRSString("cross"), (byte)-30);
-			Class40.anInt678 = var1.getArchiveForName(RSString.createRSString("mapdots"), (byte)-30);
-			Class3_Sub15.anInt2436 = var1.getArchiveForName(RSString.createRSString("scrollbar"), (byte)-30);
-			Class3_Sub28_Sub18.anInt3757 = var1.getArchiveForName(RSString.createRSString("name_icons"), (byte)-30);
-			Class45.anInt735 = var1.getArchiveForName(RSString.createRSString("floorshadows"), (byte)-30);
-			Class93.anInt1325 = var1.getArchiveForName(RSString.createRSString("compass"), (byte)-30);
-			Class3_Sub18.anInt2471 = var1.getArchiveForName(RSString.createRSString("hint_mapedge"), (byte)-30);
+			RenderAnimationDefinition.anInt380 = var1.getArchiveForName(RSString.createRSString("headicons_prayer"));
+			Class3_Sub13_Sub29.anInt3356 = var1.getArchiveForName(RSString.createRSString("hint_headicons"));
+			Class129_Sub1.anInt2689 = var1.getArchiveForName(RSString.createRSString("hint_mapmarkers"));
+			Class3_Sub13_Sub4.anInt3061 = var1.getArchiveForName(RSString.createRSString("mapflag"));
+			Class75_Sub1.anInt2633 = var1.getArchiveForName(RSString.createRSString("cross"));
+			Class40.anInt678 = var1.getArchiveForName(RSString.createRSString("mapdots"));
+			Class3_Sub15.anInt2436 = var1.getArchiveForName(RSString.createRSString("scrollbar"));
+			Class3_Sub28_Sub18.anInt3757 = var1.getArchiveForName(RSString.createRSString("name_icons"));
+			Class45.anInt735 = var1.getArchiveForName(RSString.createRSString("floorshadows"));
+			Class93.anInt1325 = var1.getArchiveForName(RSString.createRSString("compass"));
+			Class3_Sub18.anInt2471 = var1.getArchiveForName(RSString.createRSString("hint_mapedge"));
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "g.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
 		}

@@ -21,7 +21,7 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
    final void method158(int var1) {
       try {
          if(var1 == 16251) {
-            this.method202(1);
+            this.method202();
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "d.P(" + var1 + ')');
@@ -55,9 +55,9 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
       }
    }
 
-   private final void method202(int var1) {
+   private final void method202() {
       try {
-         if(var1 == 1) {
+         if(1 == 1) {
             int var2 = 0;
             this.anIntArray3091 = new int[this.anInt3085 + 1];
             int var3 = 4096 / this.anInt3085;
@@ -74,7 +74,7 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
             this.anIntArray3091[this.anInt3085] = this.anIntArray3091[0] + 4096;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "d.B(" + var1 + ')');
+         throw Class44.clientError(var6, "d.B(" + 1 + ')');
       }
    }
 
@@ -106,7 +106,7 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
    final int[] method154(int var1, byte var2) {
       try {
          int var4 = -12 / ((30 - var2) / 36);
-         int[] var3 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int var5 = Class163_Sub3.anIntArray2999[var1];
             int var7;

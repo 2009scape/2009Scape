@@ -134,10 +134,10 @@ abstract class Class3_Sub13 extends Class3 {
          }
 
          if(this.aBoolean2375) {
-            this.aClass114_2382.method1706(1127165736);
+            this.aClass114_2382.method1706();
             this.aClass114_2382 = null;
          } else {
-            this.aClass97_2376.method1590((byte)-22);
+            this.aClass97_2376.method1590();
             this.aClass97_2376 = null;
          }
 
@@ -162,12 +162,12 @@ abstract class Class3_Sub13 extends Class3 {
       }
    }
 
-   static final Class3_Sub28_Sub17_Sub1 method163(byte[] var0, int var1) {
+   static final Class3_Sub28_Sub17_Sub1 method163(byte[] var0) {
       try {
          if(var0 == null) {
             return null;
          } else {
-            if(var1 != 25208) {
+            if(25208 != 25208) {
                anInt2378 = 5;
             }
 
@@ -176,7 +176,7 @@ abstract class Class3_Sub13 extends Class3 {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "j.WA(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "j.WA(" + (var0 != null?"{...}":"null") + ',' + 25208 + ')');
       }
    }
 
@@ -197,14 +197,14 @@ abstract class Class3_Sub13 extends Class3 {
             }
 
             Class126.aClass3_Sub28_Sub17_1669.method676(var2, var4, var5, var6, var7, 16777215, -1, 1, 1, 0);
-            Class75.method1340(var4 + -var3, var6 + (var3 - -var3), (byte)-40, -var3 + var5, var3 + var7 + var3);
+            Class75.method1340(var4 + -var3, var6 + (var3 - -var3), -var3 + var5, var3 + var7 + var3);
             if(var1) {
                if(HDToolKit.highDetail) {
                   HDToolKit.method1826();
                } else {
                   try {
                      Graphics var8 = Class3_Sub28_Sub12.aCanvas3648.getGraphics();
-                     Class164_Sub1.aClass158_3009.method2179(0, 0, var8, 0);
+                     Class164_Sub1.aClass158_3009.method2179(var8);
                   } catch (Exception var9) {
                      Class3_Sub28_Sub12.aCanvas3648.repaint();
                   }
@@ -228,19 +228,19 @@ abstract class Class3_Sub13 extends Class3 {
       }
    }
 
-   static final void method165(int var0) {
+   static final void method165() {
       try {
          Class95.aClass3_Sub28_Sub16_1339 = null;
          Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 = null;
          Class50.aClass3_Sub28_Sub16_824 = null;
-         if(var0 != -7878) {
+         if(-7878 != -7878) {
             method164((byte)102, false, (RSString)null);
          }
 
          Class108.aClass3_Sub28_Sub16_1457 = null;
          Class3_Sub26.aClass3_Sub28_Sub16_2560 = null;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "j.VA(" + var0 + ')');
+         throw Class44.clientError(var2, "j.VA(" + -7878 + ')');
       }
    }
 

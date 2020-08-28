@@ -38,13 +38,13 @@ final class Class3_Sub13_Sub14 extends Class3_Sub13 {
       }
    }
 
-   static final void method236(byte var0) {
+   static final void method236() {
       try {
-         if(var0 == 64) {
+         if((byte) 64 == 64) {
             Class3_Sub13_Sub32.aBoolean3387 = true;
          }
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "gm.C(" + var0 + ')');
+         throw Class44.clientError(var2, "gm.C(" + (byte) 64 + ')');
       }
    }
 
@@ -54,9 +54,9 @@ final class Class3_Sub13_Sub14 extends Class3_Sub13 {
       try {
          Class66.maskUpdateCount = 0;
          Class139.anInt1829 = 0;
-         Class24.renderLocalNPCs((byte)-11);
+         Class24.renderLocalNPCs();
          NPC_RENDER_LOG[0] = GraphicDefinition.incomingBuffer.index;
-         Class167.addLocalNPCs(113);
+         Class167.addLocalNPCs();
          NPC_RENDER_LOG[1] = GraphicDefinition.incomingBuffer.index;
          Class75_Sub4.renderNPCMasks(var0 ^ 8106);
          NPC_RENDER_LOG[2] = GraphicDefinition.incomingBuffer.index;
@@ -65,11 +65,11 @@ final class Class3_Sub13_Sub14 extends Class3_Sub13 {
          for(var1 = 0; Class139.anInt1829 > var1; ++var1) {
             int var2 = Class3_Sub7.anIntArray2292[var1];
             if(Class44.anInt719 != Class3_Sub13_Sub24.npcs[var2].anInt2838) {
-               if(Class3_Sub13_Sub24.npcs[var2].definition.method1474(-1)) {
-                  Class3_Sub28_Sub8.method574(Class3_Sub13_Sub24.npcs[var2], false);
+               if(Class3_Sub13_Sub24.npcs[var2].definition.method1474()) {
+                  Class3_Sub28_Sub8.method574(Class3_Sub13_Sub24.npcs[var2]);
                }
 
-               Class3_Sub13_Sub24.npcs[var2].setDefinitions(-1, (NPCDefinition)null);
+               Class3_Sub13_Sub24.npcs[var2].setDefinitions((NPCDefinition)null);
                Class3_Sub13_Sub24.npcs[var2] = null;
             }
          }
@@ -99,7 +99,7 @@ final class Class3_Sub13_Sub14 extends Class3_Sub13 {
    final int[] method154(int var1, byte var2) {
       try {
          int var4 = -72 % ((30 - var2) / 36);
-         int[] var3 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             for(int var5 = 0; var5 < Class113.anInt1559; ++var5) {
                int var7 = this.anInt3165 + (Class163_Sub3.anIntArray2999[var1] << 12) / this.anInt3164;

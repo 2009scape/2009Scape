@@ -36,23 +36,23 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
             this.method158(-93);
          }
 
-         this.method263(0);
+         this.method263();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "mc.P(" + var1 + ')');
       }
    }
 
-   static final void method260(int var0, int var1, int var2) {
+   static final void method260(int var1, int var2) {
       try {
-         if(var0 != -16207) {
+         if(-16207 != -16207) {
             aClass94_3232 = (RSString)null;
          }
 
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 7, var1);
-         var3.g((byte)33);
+         var3.g();
          var3.anInt3598 = var2;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "mc.O(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "mc.O(" + -16207 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
@@ -115,7 +115,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
       }
    }
 
-   static final void method262(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+   static final void method262(int var0, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
          int var8 = var5 + var2;
          int var10 = var5 + var7;
@@ -132,7 +132,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
             Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var12], var7, 103, var6, var0);
          }
 
-         if(var1 > 118) {
+         if(119 > 118) {
             for(var12 = var8; var12 <= var9; ++var12) {
                int[] var13 = Class38.anIntArrayArray663[var12];
                Class3_Sub13_Sub23_Sub1.method282(var13, var7, 117, var10, var0);
@@ -142,11 +142,11 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
          }
       } catch (RuntimeException var14) {
-         throw Class44.clientError(var14, "mc.Q(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var14, "mc.Q(" + var0 + ',' + 119 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
       }
    }
 
-   private final void method263(int var1) {
+   private final void method263() {
       try {
          Random var2 = new Random((long)this.anInt3233);
          this.anInt3222 = 4096 / this.anInt3233;
@@ -156,7 +156,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
          this.anIntArray3230 = new int[this.anInt3233 - -1];
          this.anIntArrayArray3240 = new int[this.anInt3233][this.anInt3242];
          this.anInt3235 = 4096 / this.anInt3242;
-         this.anIntArray3230[0] = var1;
+         this.anIntArray3230[0] = 0;
          int var3 = this.anInt3235 / 2;
 
          for(int var5 = 0; this.anInt3233 > var5; ++var5) {
@@ -187,7 +187,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
          this.anIntArray3230[this.anInt3233] = 4096;
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "mc.E(" + var1 + ')');
+         throw Class44.clientError(var9, "mc.E(" + 0 + ')');
       }
    }
 
@@ -198,7 +198,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
          for(Class3_Sub31 var1 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1776(124); null != var1; var1 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1778(-79)) {
             if(var1.anInt2603 == 0) {
-               Class3_Sub13_Sub18.method254(true, var1, false);
+               Class3_Sub13_Sub18.method254(true, var1);
             }
          }
 
@@ -218,7 +218,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
 
    final int[] method154(int var1, byte var2) {
       try {
-         int[] var3 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var3 = this.aClass114_2382.method1709(var1);
          int var4;
          if(this.aClass114_2382.aBoolean1580) {
             int var7 = 0;
@@ -283,16 +283,16 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
       super(0, true);
    }
 
-   static final void method265(byte var0, int var1) {
+   static final void method265(int var1) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 8, var1);
          var2.a(true);
-         if(var0 != -42) {
+         if((byte) -42 != -42) {
             aClass94_3239 = (RSString)null;
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "mc.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "mc.B(" + (byte) -42 + ',' + var1 + ')');
       }
    }
 

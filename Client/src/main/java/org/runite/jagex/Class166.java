@@ -58,18 +58,18 @@ final class Class166 {
             aClass3_Sub28_Sub16Array2072 = (Class3_Sub28_Sub16[])null;
          }
 
-         Class163_Sub2_Sub1.aClass93_4015.method1524(3);
+         Class163_Sub2_Sub1.aClass93_4015.method1524();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "wh.F(" + var0 + ')');
       }
    }
 
-   static final void method2258(int var0, int var1, RSString var2) {
+   static final void method2258(int var0, RSString var2) {
       try {
-         RSString var3 = var2.method1579(-17).method1545((byte)-50);
+         RSString var3 = var2.method1579().method1545();
          boolean var4 = false;
 
-         for(int var5 = var1; Class159.localPlayerCount > var5; ++var5) {
+         for(int var5 = 0; Class159.localPlayerCount > var5; ++var5) {
             Player var6 = Class3_Sub13_Sub22.players[Class56.localPlayerIndexes[var5]];
             if(null != var6 && null != var6.displayName && var6.displayName.equals(-110, var3)) {
                var4 = true;
@@ -84,7 +84,7 @@ final class Class166 {
                   Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(Class56.localPlayerIndexes[var5]);
                } else if (5 == var0) {
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(4);
-                  Class3_Sub13_Sub1.outgoingBuffer.putLEShort(var1 + -1, Class56.localPlayerIndexes[var5]);
+                  Class3_Sub13_Sub1.outgoingBuffer.putLEShort(0 + -1, Class56.localPlayerIndexes[var5]);
                   ++IOHandler.anInt1240;
                } else if (var0 == 6) {
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(133);
@@ -104,11 +104,11 @@ final class Class166 {
          }
 
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "wh.D(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var7, "wh.D(" + var0 + ',' + 0 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
-   static final AbstractIndexedSprite method2259(byte var0) {
+   static final AbstractIndexedSprite method2259() {
       try {
          Object var1;
          if(HDToolKit.highDetail) {
@@ -117,25 +117,25 @@ final class Class166 {
             var1 = new LDIndexedSprite(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[0], RSByteBuffer.anIntArray2591[0], Class140_Sub7.anIntArray2931[0], Class3_Sub13_Sub6.anIntArray3076[0], Class163_Sub1.aByteArrayArray2987[0], Class3_Sub13_Sub38.spritePalette);
          }
 
-         if(var0 != -40) {
+         if((byte) -40 != -40) {
             method2257(83);
          }
 
          Class39.method1035((byte)116);
          return (AbstractIndexedSprite)var1;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "wh.A(" + var0 + ')');
+         throw Class44.clientError(var2, "wh.A(" + (byte) -40 + ')');
       }
    }
 
-   static final void method2260(int var0, int var1) {
+   static final void method2260(int var0) {
       try {
-         Class3_Sub13_Sub34.aClass93_3412.method1522(var0 + 919, var1);
+         Class3_Sub13_Sub34.aClass93_3412.method1522(var0 + 919, 5);
          if(var0 == -1045) {
-            Class3_Sub13_Sub31.aClass93_3369.method1522(var0 ^ 1130, var1);
+            Class3_Sub13_Sub31.aClass93_3369.method1522(var0 ^ 1130, 5);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "wh.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "wh.E(" + var0 + ',' + 5 + ')');
       }
    }
 

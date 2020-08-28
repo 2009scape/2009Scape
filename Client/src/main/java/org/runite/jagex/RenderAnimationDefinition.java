@@ -66,9 +66,9 @@ final class RenderAnimationDefinition {
 
    static final GraphicDefinition getGraphicDefinition(byte var0, int graphicId) {
       try {
-         GraphicDefinition def = (GraphicDefinition)Class3_Sub31.aClass93_2604.get((long)graphicId, (byte)121);
+         GraphicDefinition def = (GraphicDefinition)Class3_Sub31.aClass93_2604.get((long)graphicId);
          if(def == null) {
-            byte[] var3 = Class3_Sub13_Sub18.aClass153_3214.getFile(InputStream_Sub1.method64(true, graphicId), (byte)-122, Class75.method1338(graphicId, var0 ^ 7));
+            byte[] var3 = Class3_Sub13_Sub18.aClass153_3214.getFile(InputStream_Sub1.method64(graphicId), Class75.method1338(graphicId, var0 ^ 7));
             def = new GraphicDefinition();
             def.graphicId = graphicId;
             if(var0 != 42) {
@@ -76,7 +76,7 @@ final class RenderAnimationDefinition {
             }
 
             if(null != var3) {
-               def.parse(new RSByteBuffer(var3), (byte)-113);
+               def.parse(new RSByteBuffer(var3));
             }
 
             Class3_Sub31.aClass93_2604.put((byte)-109, def, (long)graphicId);
@@ -89,14 +89,14 @@ final class RenderAnimationDefinition {
       }
    }
 
-   final void method899(int var1) {
+   final void method899() {
       try {
-         if(var1 <= 68) {
+         if(96 <= 68) {
             method900((Class140_Sub4)null, -23);
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ck.B(" + var1 + ')');
+         throw Class44.clientError(var3, "ck.B(" + 96 + ')');
       }
    }
 
@@ -105,7 +105,7 @@ final class RenderAnimationDefinition {
          var0.aBoolean2810 = false;
          AnimationDefinition var2;
          if(-1 != var0.anInt2764) {
-            var2 = Client.getAnimationDefinition(var0.anInt2764, (byte)-20);
+            var2 = Client.getAnimationDefinition(var0.anInt2764);
             if(null == var2 || null == var2.frames) {
                var0.anInt2764 = -1;
             } else {
@@ -136,7 +136,7 @@ final class RenderAnimationDefinition {
             if(var6 == -1) {
                var0.anInt2842 = -1;
             } else {
-               AnimationDefinition var3 = Client.getAnimationDefinition(var6, (byte)-20);
+               AnimationDefinition var3 = Client.getAnimationDefinition(var6);
                if(var3 == null || var3.frames == null) {
                   var0.anInt2842 = -1;
                } else {
@@ -165,7 +165,7 @@ final class RenderAnimationDefinition {
          }
 
          if(var0.anInt2771 != -1 && var0.anInt2828 <= 1) {
-            var2 = Client.getAnimationDefinition(var0.anInt2771, (byte)-20);
+            var2 = Client.getAnimationDefinition(var0.anInt2771);
             if(var2.anInt1866 == 1 && var0.anInt2811 > 0 && var0.anInt2800 <= Class44.anInt719 && Class44.anInt719 > var0.anInt2790) {
                var0.anInt2828 = 1;
                return;
@@ -174,7 +174,7 @@ final class RenderAnimationDefinition {
 
          if(var1 == -11973) {
             if(var0.anInt2771 != -1 && var0.anInt2828 == 0) {
-               var2 = Client.getAnimationDefinition(var0.anInt2771, (byte)-20);
+               var2 = Client.getAnimationDefinition(var0.anInt2771);
                if(var2 == null || var2.frames == null) {
                   var0.anInt2771 = -1;
                } else {
@@ -223,7 +223,7 @@ final class RenderAnimationDefinition {
                Class145 var7 = var0.aClass145Array2809[var6];
                if(null != var7) {
                   if(var7.anInt1900 <= 0) {
-                     AnimationDefinition var4 = Client.getAnimationDefinition(var7.animationId, (byte)-20);
+                     AnimationDefinition var4 = Client.getAnimationDefinition(var7.animationId);
                      if(null == var4 || var4.frames == null) {
                         var0.aClass145Array2809[var6] = null;
                      } else {
@@ -284,14 +284,14 @@ final class RenderAnimationDefinition {
                return;
             }
 
-            this.parseOpcode(opcode, (byte)-106, var2);
+            this.parseOpcode(opcode, var2);
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ck.H(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
-   private final void parseOpcode(int var1, byte var2, RSByteBuffer var3) {
+   private final void parseOpcode(int var1, RSByteBuffer var3) {
       try {
          if(var1 == 1) {
             this.anInt368 = var3.getShort(1);
@@ -304,9 +304,9 @@ final class RenderAnimationDefinition {
                this.anInt368 = -1;
             }
          } else if(var1 == 2) {
-            this.anInt398 = var3.getShort(var2 ^ -105);
+            this.anInt398 = var3.getShort((byte) -106 ^ -105);
          } else if(var1 == 3) {
-            this.anInt372 = var3.getShort(var2 ^ -105);
+            this.anInt372 = var3.getShort((byte) -106 ^ -105);
          } else if (4 == var1) {
             this.anInt406 = var3.getShort(1);
          } else if (var1 == 5) {
@@ -362,19 +362,19 @@ final class RenderAnimationDefinition {
          } else if (var1 == 42) {
             this.anInt364 = var3.getShort(1);
          } else if (var1 == 43) {
-            var3.getShort(var2 ^ -105);
+            var3.getShort((byte) -106 ^ -105);
          } else if (var1 == 44) {
             var3.getShort(1);
          } else if (var1 == 45) {
             var3.getShort(1);
          }
 
-         if(var2 != -106) {
+         if((byte) -106 != -106) {
             this.parse(96, (RSByteBuffer)null);
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "ck.E(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "ck.E(" + var1 + ',' + (byte) -106 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -384,7 +384,7 @@ final class RenderAnimationDefinition {
             if(var1 >= -57) {
                method897(-13, (Class3_Sub24_Sub4)null, (CacheIndex)null, (CacheIndex)null, (CacheIndex)null);
             }
-            return Class67.method1261(0, var0.length, var0, 2774);
+            return Class67.method1261(0, var0.length, var0);
          } else {
             throw new IllegalArgumentException();
          }

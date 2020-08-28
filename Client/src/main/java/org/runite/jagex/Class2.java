@@ -45,22 +45,22 @@ final class Class2 {
 					return;
 				}
 
-				this.method79(var4, var2, var3, 95);
+				this.method79(var4, var2, var3);
 			}
 		} catch (RuntimeException var5) {
 			throw Class44.clientError(var5, "aa.F(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
 		}
 	}
 
-	static final void method75(RSInterface[] var0, boolean var1, int var2) {
+	static final void method75(RSInterface[] var0, int var2) {
 		try {
-			if(var1) {
+			if(true) {
 				for(int var3 = 0; var0.length > var3; ++var3) {
 					RSInterface var4 = var0[var3];
 					if(null != var4) {
 						if(var4.type == 0) {
 							if(null != var4.aClass11Array262) {
-								method75(var4.aClass11Array262, true, var2);
+								method75(var4.aClass11Array262, var2);
 							}
 
 							Class3_Sub31 var5 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)var4.anInt279, 0);
@@ -95,11 +95,11 @@ final class Class2 {
 
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "aa.I(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var6, "aa.I(" + (var0 != null?"{...}":"null") + ',' + true + ',' + var2 + ')');
 		}
 	}
 
-	static final boolean method76(int var0, int var1, int var2, int var3, int var4, boolean var5, int var6, int var7, int var8, int var9, int var10, int var11) {
+	static final boolean method76(int var0, int var1, int var2, int var3, int var4, boolean var5, int var6, int var7, int var8, int var9, int var11) {
 		try {
 			int var12;
 			int var13;
@@ -308,17 +308,17 @@ final class Class2 {
 				return true;
 			}
 		} catch (RuntimeException var26) {
-			throw Class44.clientError(var26, "aa.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ')');
+			throw Class44.clientError(var26, "aa.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + 127 + ',' + var11 + ')');
 		}
 	}
 
 	final LDIndexedSprite method77(int var1, byte var2) {
 		try {
-			LDIndexedSprite var3 = (LDIndexedSprite)Class3_Sub13_Sub31.aClass93_3369.get((long)(var1 << 16 | this.anInt64), (byte)121);
+			LDIndexedSprite var3 = (LDIndexedSprite)Class3_Sub13_Sub31.aClass93_3369.get((long)(var1 << 16 | this.anInt64));
 			if(var3 == null) {
 				KeyboardListener.aClass153_1916.method2144(0, this.anInt64);
 				int var4 = 125 % ((var2 - -21) / 50);
-				var3 = RSString.method1539(0, true, this.anInt64, KeyboardListener.aClass153_1916);
+				var3 = RSString.method1539(0, this.anInt64, KeyboardListener.aClass153_1916);
 				if(var3 != null) {
 					var3.method1668(Class102.anInt2136, Class46.anInt740, Class158.anInt2015);
 					var3.anInt1469 = var3.anInt1461;
@@ -340,20 +340,20 @@ final class Class2 {
 		}
 	}
 
-	static final void method78(int var0, boolean var1, int var2) {
+	static final void method78(int var0, int var2) {
 		try {
 			++CacheIndex.anInt1944;
 			Class3_Sub13_Sub1.outgoingBuffer.putOpcode(132);
 			Class3_Sub13_Sub1.outgoingBuffer.putIntA(var2);
-			if(!var1) {
+			if(!false) {
 				Class3_Sub13_Sub1.outgoingBuffer.putLEShort(-1, var0);
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "aa.E(" + var0 + ',' + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "aa.E(" + var0 + ',' + false + ',' + var2 + ')');
 		}
 	}
 
-	private final void method79(int var1, RSByteBuffer var2, int var3, int var4) {
+	private final void method79(int var1, RSByteBuffer var2, int var3) {
 		try {
 			if(var1 == 1) {
 				this.anInt64 = var2.getShort(1);
@@ -369,12 +369,12 @@ final class Class2 {
 				}
 			}
 
-			if(var4 <= 7) {
+			if(95 <= 7) {
 				anInt65 = 123;
 			}
 
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "aa.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+			throw Class44.clientError(var6, "aa.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + 95 + ')');
 		}
 	}
 
@@ -390,10 +390,10 @@ final class Class2 {
 		}
 	}
 
-	static final void method81(byte var0, RSInterface var1) {
+	static final void method81(RSInterface var1) {
 		try {
-			if(var0 != -128) {
-				method75((RSInterface[])null, true, 21);
+			if((byte) -128 != -128) {
+				method75((RSInterface[])null, 21);
 			}
 
 			int var2 = var1.anInt189;
@@ -435,7 +435,7 @@ final class Class2 {
 							var1.anInt182 = 150;
 							var1.anInt308 = 2047 & (int)(256.0D * Math.sin((double)Class44.anInt719 / 40.0D));
 							var1.modelType = 5;
-							var1.itemId = 2047 + ((int)Class102.player.displayName.toLong(var0 + 18) << 11);
+							var1.itemId = 2047 + ((int)Class102.player.displayName.toLong((byte) -128 + 18) << 11);
 							var1.anInt260 = Class102.player.anInt2793;
 							var1.anInt267 = 0;
 							var1.animationId = Class102.player.anInt2764;
@@ -445,7 +445,7 @@ final class Class2 {
 				}
 			}
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "aa.H(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var3, "aa.H(" + (byte) -128 + ',' + (var1 != null?"{...}":"null") + ')');
 		}
 	}
 

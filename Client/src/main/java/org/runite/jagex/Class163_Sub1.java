@@ -13,18 +13,18 @@ class Class163_Sub1 extends Class163 {
    static int anInt2994;
 
 
-   static final void method2210(byte var0, boolean var1) {
+   static final void method2210(boolean var1) {
       try {
          Class58.method1194(-16385);
          if(30 == Class143.loadingStage || Class143.loadingStage == 25) {
             ++Class3_Sub13_Sub23_Sub1.anInt4032;
             if(Class3_Sub13_Sub23_Sub1.anInt4032 >= 50 || var1) {
                Class3_Sub13_Sub23_Sub1.anInt4032 = 0;
-               if(var0 == -90) {
+               if((byte) -90 == -90) {
                   if(!Class3_Sub28_Sub18.aBoolean3769 && Class3_Sub15.aClass89_2429 != null) {
                      Class3_Sub13_Sub1.outgoingBuffer.putOpcode(93);
                       try {
-                        Class3_Sub15.aClass89_2429.sendBytes(false, 0, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
+                        Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
                         Class3_Sub13_Sub1.outgoingBuffer.index = 0;
                      } catch (IOException var3) {
                         Class3_Sub28_Sub18.aBoolean3769 = true;
@@ -33,12 +33,12 @@ class Class163_Sub1 extends Class163 {
                      ++Class3_Sub28_Sub4.anInt3569;
                   }
 
-                  Class58.method1194(var0 ^ 16473);
+                  Class58.method1194((byte) -90 ^ 16473);
                }
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ah.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "ah.B(" + (byte) -90 + ',' + var1 + ')');
       }
    }
 
@@ -57,7 +57,7 @@ class Class163_Sub1 extends Class163 {
                         var11 = Class126.anInt1676;
                         if(AbstractIndexedSprite.anInt1462 - 10 > var11 || Class3_Sub28_Sub3.anInt3552 + (AbstractIndexedSprite.anInt1462 - -10) < var11 || var3 < -10 + Class3_Sub13_Sub33.anInt3395 || Class3_Sub28_Sub1.anInt3537 + (Class3_Sub13_Sub33.anInt3395 - -10) < var3) {
                            Class38_Sub1.aBoolean2615 = false;
-                           Class75.method1340(AbstractIndexedSprite.anInt1462, Class3_Sub28_Sub3.anInt3552, (byte)-40, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537);
+                           Class75.method1340(AbstractIndexedSprite.anInt1462, Class3_Sub28_Sub3.anInt3552, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537);
                         }
                      }
 
@@ -83,11 +83,11 @@ class Class163_Sub1 extends Class163 {
                         }
 
                         if(var7 != -1) {
-                           Class3_Sub30_Sub1.method806(2597, var7);
+                           Class3_Sub30_Sub1.method806(var7);
                         }
 
                         Class38_Sub1.aBoolean2615 = false;
-                        Class75.method1340(AbstractIndexedSprite.anInt1462, Class3_Sub28_Sub3.anInt3552, (byte)-40, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537);
+                        Class75.method1340(AbstractIndexedSprite.anInt1462, Class3_Sub28_Sub3.anInt3552, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537);
                      }
                   } else {
                      if(var1 == 1 && 0 < Class3_Sub13_Sub34.anInt3415) {
@@ -97,7 +97,7 @@ class Class163_Sub1 extends Class163 {
                            var4 = Class27.anIntArray512[Class3_Sub13_Sub34.anInt3415 + -1];
                            RSInterface var5 = Class7.getRSInterface((byte)113, var4);
                            Class3_Sub1 var6 = Client.method44(var5);
-                           if(var6.method100((byte)-9) || var6.method93(572878952)) {
+                           if(var6.method100() || var6.method93()) {
                               Class40.anInt677 = 0;
                               Class72.aBoolean1074 = false;
                               if(Class67.aClass11_1017 != null) {

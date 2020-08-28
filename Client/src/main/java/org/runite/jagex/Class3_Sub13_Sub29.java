@@ -12,7 +12,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
 
    final int[] method154(int var1, byte var2) {
       try {
-         int[] var3 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             Class76.method1359(var3, 0, Class113.anInt1559, Class163_Sub3.anIntArray2999[var1]);
          }
@@ -24,16 +24,16 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
       }
    }
 
-   static final void method304(int var0) {
+   static final void method304() {
       try {
-         if(var0 != 6799) {
+         if(6799 != 6799) {
             method305((Signlink)null, (RSByteBuffer)null, -13, (byte)41);
          }
 
-         Class3_Sub13_Sub34.aClass93_3412.method1524(3);
-         Class3_Sub13_Sub31.aClass93_3369.method1524(3);
+         Class3_Sub13_Sub34.aClass93_3412.method1524();
+         Class3_Sub13_Sub31.aClass93_3369.method1524();
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "qg.F(" + var0 + ')');
+         throw Class44.clientError(var2, "qg.F(" + 6799 + ')');
       }
    }
 
@@ -73,7 +73,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
                         for(int var13 = 0; var13 < var10; ++var13) {
                            var14 = var1.getInt();
                            var21[var13] = new byte[var14];
-                           var1.method764(0, var14, var21[var13], (byte)93);
+                           var1.method764(var14, var21[var13]);
                         }
                      }
 
@@ -81,10 +81,10 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
                      Class[] var22 = new Class[var10];
 
                      for(var14 = 0; var10 > var14; ++var14) {
-                        var22[var14] = Class3_Sub13_Sub1.method170(6092, var11[var14]);
+                        var22[var14] = Class3_Sub13_Sub1.method170(var11[var14]);
                      }
 
-                     var4.aClass64Array2298[var6] = var0.method1443(Class3_Sub13_Sub1.method170(6092, var8), var22, -80, var9);
+                     var4.aClass64Array2298[var6] = var0.method1443(Class3_Sub13_Sub1.method170(var8), var22, -80, var9);
                      var4.aByteArrayArrayArray2302[var6] = var21;
                   }
                } else {
@@ -97,7 +97,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
 
                   var4.anIntArray2301[var6] = var7;
                   var4.anIntArray2299[var6] = var10;
-                  var4.aClass64Array2303[var6] = var0.method1447(-41, var9, Class3_Sub13_Sub1.method170(6092, var8));
+                  var4.aClass64Array2303[var6] = var0.method1447(-41, var9, Class3_Sub13_Sub1.method170(var8));
                }
             } catch (ClassNotFoundException var15) {
                var4.anIntArray2300[var6] = -1;
@@ -118,11 +118,11 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
       }
    }
 
-   static final void method306(int var0, boolean var1, int var2) {
+   static final void method306(int var0, int var2) {
       try {
          Class79 var3 = CS2Script.method378(var0, (byte)127);
          int var6 = var3.anInt1125;
-         if(!var1) {
+         if(!false) {
             int var5 = var3.anInt1123;
             int var4 = var3.anInt1128;
             int var7 = Class3_Sub6.anIntArray2288[var6 - var5];
@@ -134,7 +134,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
             Class86.method1428(var4, 72, var7 & var2 << var5 | Class163_Sub1.anIntArray2985[var4] & ~var7);
          }
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "qg.Q(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var8, "qg.Q(" + var0 + ',' + false + ',' + var2 + ')');
       }
    }
 
@@ -189,12 +189,12 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
       }
    }
 
-   static final Class55 method311(int var0, int var1) {
+   static final Class55 method311(int var0) {
       try {
-         Class55 var2 = (Class55)Class41.aClass93_684.get((long)var0, (byte)121);
+         Class55 var2 = (Class55)Class41.aClass93_684.get((long)var0);
          if(var2 == null) {
-            byte[] var3 = Class3_Sub13_Sub19.aClass153_3227.getFile(33, (byte)-122, var0);
-            if(var1 != 5) {
+            byte[] var3 = Class3_Sub13_Sub19.aClass153_3227.getFile(33, var0);
+            if(5 != 5) {
                aClass94_3357 = (RSString)null;
             }
 
@@ -209,7 +209,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "qg.O(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "qg.O(" + var0 + ',' + 5 + ')');
       }
    }
 

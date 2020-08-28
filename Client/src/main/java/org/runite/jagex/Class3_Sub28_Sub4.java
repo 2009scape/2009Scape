@@ -14,40 +14,40 @@ final class Class3_Sub28_Sub4 extends Node {
    static RSString aClass94_3577 = RSString.createRSString(": ");
    static Class83 aClass83_3579;
 
-   final void method545(RSByteBuffer var1, int[] var2, boolean var3) {
+   final void method545(RSByteBuffer var1, int[] var2) {
       try {
-         if(!var3) {
+         if(!false) {
             if(this.anIntArray3566 != null) {
                for(int var4 = 0; var4 < this.anIntArray3566.length && var2.length > var4; ++var4) {
                   int var5 = RuntimeException_Sub1.anIntArray2113[this.method550(89, var4)];
                   if(var5 > 0) {
-                     var1.method739(0, var5, (long)var2[var4]);
+                     var1.method739(var5, (long)var2[var4]);
                   }
                }
 
             }
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "cb.O(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var6, "cb.O(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + false + ')');
       }
    }
 
-   final void method546(RSByteBuffer var1, int var2) {
+   final void method546(RSByteBuffer var1) {
       try {
          while(true) {
             int var3 = var1.getByte((byte)-43);
             if(0 == var3) {
-               if(var2 != -1) {
+               if(-1 != -1) {
                   this.anIntArray3567 = (int[])null;
                }
 
                return;
             }
 
-            this.method553(var1, var3, -14637);
+            this.method553(var1, var3);
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "cb.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "cb.D(" + (var1 != null?"{...}":"null") + ',' + -1 + ')');
       }
    }
 
@@ -72,7 +72,7 @@ final class Class3_Sub28_Sub4 extends Node {
          }
 
          if(var1 != 60) {
-            this.method552(true);
+            this.method552();
          }
 
       } catch (RuntimeException var3) {
@@ -80,15 +80,15 @@ final class Class3_Sub28_Sub4 extends Node {
       }
    }
 
-   final int method549(int var1, int var2, int var3) {
+   final int method549(int var2, int var3) {
       try {
-         if(var1 > -99) {
+         if(-117 > -99) {
             aClass94_3577 = (RSString)null;
          }
 
          return null != this.anIntArray3566 && var3 >= 0 && this.anIntArray3566.length >= var3 ?(this.anIntArrayArray3570[var3] != null && var2 >= 0 && this.anIntArrayArray3570[var3].length >= var2 ?this.anIntArrayArray3570[var3][var2]:-1):-1;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "cb.P(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "cb.P(" + -117 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -104,9 +104,9 @@ final class Class3_Sub28_Sub4 extends Node {
       }
    }
 
-   static final void method551(int var0, int var1, int var2) {
+   static final void method551(int var1, int var2) {
       try {
-         if(var0 == 0) {
+         if(0 == 0) {
             if(4 == var2 && !Class128.aBoolean1685) {
                var2 = 2;
                var1 = 2;
@@ -138,21 +138,21 @@ final class Class3_Sub28_Sub4 extends Node {
 
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "cb.A(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "cb.A(" + 0 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
-   final int method552(boolean var1) {
+   final int method552() {
       try {
-         return !var1?-22:(this.anIntArray3566 != null?this.anIntArray3566.length:0);
+         return !true ?-22:(this.anIntArray3566 != null?this.anIntArray3566.length:0);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "cb.E(" + var1 + ')');
+         throw Class44.clientError(var3, "cb.E(" + true + ')');
       }
    }
 
-   private final void method553(RSByteBuffer var1, int var2, int var3) {
+   private final void method553(RSByteBuffer var1, int var2) {
       try {
-         if(var3 != -14637) {
+         if(-14637 != -14637) {
             this.method548(-20);
          }
 
@@ -192,13 +192,13 @@ final class Class3_Sub28_Sub4 extends Node {
          }
 
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "cb.R(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var8, "cb.R(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + -14637 + ')');
       }
    }
 
-   final RSString method554(int var1) {
+   final RSString method554() {
       try {
-         if(var1 == -1) {
+         if(-1 == -1) {
             RSString var2 = Class47.method1090((byte)-118, 80);
             if(null == this.aClass94Array3571) {
                return Class3_Sub13_Sub29.aClass94_3357;
@@ -210,13 +210,13 @@ final class Class3_Sub28_Sub4 extends Node {
                   var2.method1533(this.aClass94Array3571[var3], true);
                }
 
-               return var2.method1576((byte)90);
+               return var2.method1576();
             }
          } else {
             return (RSString)null;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "cb.C(" + var1 + ')');
+         throw Class44.clientError(var4, "cb.C(" + -1 + ')');
       }
    }
 
@@ -230,12 +230,12 @@ final class Class3_Sub28_Sub4 extends Node {
          if(this.anIntArray3566 != null) {
             for(int var4 = 0; var4 < this.anIntArray3566.length; ++var4) {
                var3.method1533(this.aClass94Array3571[var4], true);
-               var3.method1533(Class49.method1124(this.anIntArrayArray3570[var4], var2.method772(Class3_Sub1.anIntArray2209[this.anIntArray3566[var4]], var1 + -28021), this.anIntArray3566[var4], false), true);
+               var3.method1533(Class49.method1124(this.anIntArrayArray3570[var4], var2.method772(Class3_Sub1.anIntArray2209[this.anIntArray3566[var4]], var1 + -28021), this.anIntArray3566[var4]), true);
             }
          }
 
          var3.method1533(this.aClass94Array3571[-1 + this.aClass94Array3571.length], true);
-         return var3.method1576((byte)90);
+         return var3.method1576();
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "cb.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }

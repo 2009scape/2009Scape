@@ -20,39 +20,39 @@ final class Class3_Sub15 extends Class3 {
    static int anInt2436;
 
 
-   final void method369(byte var1) {
+   final void method369() {
       try {
-         int var2 = 127 % ((-70 - var1) / 42);
+         int var2 = 127 % ((-70 - (byte) -124) / 42);
          this.anIntArray2423 = null;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "jk.A(" + var1 + ')');
+         throw Class44.clientError(var3, "jk.A(" + (byte) -124 + ')');
       }
    }
 
-   static final void method370(byte var0) {
+   static final void method370() {
       try {
          //int var1 = -125 / ((0 - var0) / 59);
-         Class154.aClass93_1955.method1524(3);
+         Class154.aClass93_1955.method1524();
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "jk.B(" + var0 + ')');
+         throw Class44.clientError(var2, "jk.B(" + (byte) -73 + ')');
       }
    }
 
-   static final Class3_Sub28_Sub3 method371(int var0, RSString var1) {
+   static final Class3_Sub28_Sub3 method371(RSString var1) {
       try {
-         if(var0 != 2) {
+         if(2 != 2) {
             method372(false);
          }
 
          for(Class3_Sub28_Sub3 var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1222(); var2 != null; var2 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1221()) {
-            if(var2.aClass94_3561.method1528((byte)-42, var1)) {
+            if(var2.aClass94_3561.method1528(var1)) {
                return var2;
             }
          }
 
          return null;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "jk.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "jk.C(" + 2 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -68,9 +68,9 @@ final class Class3_Sub15 extends Class3 {
       }
    }
 
-   final boolean method373(int var1, int[] var2, Class83 var3, byte[] var4) {
+   final boolean method373(int[] var2, Class83 var3, byte[] var4) {
       try {
-         if(var1 == 17904) {
+         if(17904 == 17904) {
             int var6 = 0;
             Class3_Sub12_Sub1 var7 = null;
             boolean var5 = true;
@@ -84,7 +84,7 @@ final class Class3_Sub15 extends Class3 {
                         if((var9 & 1) == 0) {
                            var7 = var3.method1413(var9 >> 2, 33, var2);
                         } else {
-                           var7 = var3.method1416(10089, var9 >> 2, var2);
+                           var7 = var3.method1416(var9 >> 2, var2);
                         }
 
                         if(var7 == null) {
@@ -105,11 +105,11 @@ final class Class3_Sub15 extends Class3 {
             return false;
          }
       } catch (RuntimeException var10) {
-         throw Class44.clientError(var10, "jk.E(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var10, "jk.E(" + 17904 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
-   static final void method374(int var0, boolean var1, byte[] var2, int var3, int var4, Class91[] var5) {
+   static final void method374(int var0, boolean var1, byte[] var2, int var3, Class91[] var5) {
       try {
          RSByteBuffer var6 = new RSByteBuffer(var2);
          int objectId = -1;
@@ -117,7 +117,7 @@ final class Class3_Sub15 extends Class3 {
          while(var6.buffer.length > 0) {
             int var8 = var6.method773((byte)-126);
             if(0 == var8) {
-               if(var4 != 0) {
+               if(0 != 0) {
                   method372(true);
                }
 
@@ -128,7 +128,7 @@ final class Class3_Sub15 extends Class3 {
             int data = 0;
 
             while(true) {
-               int var10 = var6.getSmart(true);
+               int var10 = var6.getSmart();
                if(var10 == 0) {
                   break;
                }
@@ -155,12 +155,12 @@ final class Class3_Sub15 extends Class3 {
                      }
                   }
 
-                  Class110.method1683(var13 % 4, !var1, var13, var1, var19, objectId, var15, var17, (byte)50, var18, var16);
+                  Class110.method1683(var13 % 4, !var1, var13, var1, var19, objectId, var15, var17, var18, var16);
                }
             }
          }
       } catch (RuntimeException var21) {
-         throw Class44.clientError(var21, "jk.F(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var21, "jk.F(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + 0 + ',' + (var5 != null?"{...}":"null") + ')');
       }
    }
 

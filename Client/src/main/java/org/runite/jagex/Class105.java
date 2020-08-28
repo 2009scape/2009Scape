@@ -577,11 +577,11 @@ final class Class105 {
       return (byte)method1633(1, var0);
    }
 
-   static final int method1640(byte[] var0, int var1, byte[] var2, int var3, int var4) {
+   static final int method1640(byte[] var0, int var1, byte[] var2, int var3) {
       Class9 var5 = aClass9_1438;
       synchronized(var5) {
          aClass9_1438.aByteArray127 = var2;
-         aClass9_1438.anInt116 = var4;
+         aClass9_1438.anInt116 = 9;
          aClass9_1438.aByteArray117 = var0;
          aClass9_1438.anInt118 = 0;
          aClass9_1438.anInt126 = var1;

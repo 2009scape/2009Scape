@@ -26,10 +26,10 @@ final class Class8 {
       }
    }
 
-   final boolean method837(int var1) {
+   final boolean method837() {
       try {
          if(null == this.aClass3_Sub30_99) {
-            if(var1 != 255) {
+            if(255 != 255) {
                anInt104 = 119;
             }
 
@@ -44,7 +44,7 @@ final class Class8 {
             if(this.aClass3_Sub28_Sub10_Sub2_100.aBoolean3632) {
                return false;
             } else {
-               this.aClass3_Sub30_99 = new RSByteBuffer(this.aClass3_Sub28_Sub10_Sub2_100.method587(false));
+               this.aClass3_Sub30_99 = new RSByteBuffer(this.aClass3_Sub28_Sub10_Sub2_100.method587());
                this.aClass151_Sub1Array107 = new Class151_Sub1[(this.aClass3_Sub30_99.buffer.length + -5) / 8];
                return true;
             }
@@ -52,45 +52,45 @@ final class Class8 {
             return true;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "al.J(" + var1 + ')');
+         throw Class44.clientError(var3, "al.J(" + 255 + ')');
       }
    }
 
-   final void method838(byte var1) {
+   final void method838() {
       try {
          if(null != this.aClass151_Sub1Array107) {
             int var2;
             for(var2 = 0; var2 < this.aClass151_Sub1Array107.length; ++var2) {
                if(this.aClass151_Sub1Array107[var2] != null) {
-                  this.aClass151_Sub1Array107[var2].method2110(0);
+                  this.aClass151_Sub1Array107[var2].method2110();
                }
             }
 
             for(var2 = 0; this.aClass151_Sub1Array107.length > var2; ++var2) {
                if(this.aClass151_Sub1Array107[var2] != null) {
-                  this.aClass151_Sub1Array107[var2].method2107(true);
+                  this.aClass151_Sub1Array107[var2].method2107();
                }
             }
 
-            if(var1 >= -56) {
+            if((byte) -70 >= -56) {
                this.aClass3_Sub28_Sub10_Sub2_100 = (Class3_Sub28_Sub10_Sub2)null;
             }
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "al.E(" + var1 + ')');
+         throw Class44.clientError(var3, "al.E(" + (byte) -70 + ')');
       }
    }
 
-   private final Class151_Sub1 method839(int var1, int var2, Class41 var3, Class41 var4) {
+   private final Class151_Sub1 method839(int var2, Class41 var3, Class41 var4) {
       try {
-         if(var1 != -1824885439) {
-            getCacheIndex(true, false, false, -22, true);
+         if(-1824885439 != -1824885439) {
+            getCacheIndex(true, false, false, -22);
          }
 
-         return this.method847(var4, -125, var2, true, var3);
+         return this.method847(var4, var2, var3);
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "al.L(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "al.L(" + -1824885439 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -154,7 +154,7 @@ final class Class8 {
       }
    }
 
-   static final void method841(boolean var0) {
+   static final void method841() {
       try {
          GameObject.aClass11Array1836 = null;
          Class3_Sub13_Sub1.method171(-101, Class3_Sub28_Sub12.anInt3655, 0, Class23.anInt454, 0, -1, Class140_Sub7.anInt2934, 0, 0);
@@ -163,33 +163,33 @@ final class Class8 {
             GameObject.aClass11Array1836 = null;
          }
 
-         if(!var0) {
+         if(!true) {
             method844((byte)-24);
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "al.G(" + var0 + ')');
+         throw Class44.clientError(var2, "al.G(" + true + ')');
       }
    }
 
-   static final CacheIndex getCacheIndex(boolean var0, boolean var1, boolean var2, int var3, boolean var4) {
+   static final CacheIndex getCacheIndex(boolean var0, boolean var1, boolean var2, int var3) {
       try {
-         if(var4) {
+         if(true) {
             Class41 var5 = null;
             if(null != Class101.aClass30_1422) {
                var5 = new Class41(var3, Class101.aClass30_1422, Class163_Sub2.aClass30Array2998[var3], 1000000);
             }
 
-            RSByteBuffer.aClass151_Sub1Array2601[var3] = Class151.aClass8_1936.method839(-1824885439, var3, Class86.aClass41_1186, var5);
+            RSByteBuffer.aClass151_Sub1Array2601[var3] = Class151.aClass8_1936.method839(var3, Class86.aClass41_1186, var5);
             if(var1) {
-               RSByteBuffer.aClass151_Sub1Array2601[var3].method2101(true);
+               RSByteBuffer.aClass151_Sub1Array2601[var3].method2101();
             }
             return new CacheIndex(RSByteBuffer.aClass151_Sub1Array2601[var3], var0, var2);
          } else {
             return (CacheIndex)null;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "al.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "al.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + true + ')');
       }
    }
 
@@ -223,18 +223,18 @@ final class Class8 {
       }
    }
 
-   static final void method845(boolean var0, int var1) {
+   static final void method845(boolean var0) {
       try {
          if(var0 == !Class139.aBoolean1827) {
             Class139.aBoolean1827 = var0;
-            if(var1 != 255) {
+            if(255 != 255) {
                aClass94_106 = (RSString)null;
             }
 
             Class104.method1626((byte)-126);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "al.H(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "al.H(" + var0 + ',' + 255 + ')');
       }
    }
 
@@ -257,19 +257,19 @@ final class Class8 {
       }
    }
 
-   private final Class151_Sub1 method847(Class41 var1, int var2, int var3, boolean var4, Class41 var5) {
+   private final Class151_Sub1 method847(Class41 var1, int var3, Class41 var5) {
       try {
          if(null == this.aClass3_Sub30_99) {
             throw new RuntimeException();
          } else {
             this.aClass3_Sub30_99.index = 5 + var3 * 8;
-            if(var2 >= -1) {
+            if(-125 >= -1) {
                return (Class151_Sub1)null;
             } else if(this.aClass3_Sub30_99.buffer.length > this.aClass3_Sub30_99.index) {
                if(null == this.aClass151_Sub1Array107[var3]) {
                   int var6 = this.aClass3_Sub30_99.getInt();
                   int var7 = this.aClass3_Sub30_99.getInt();
-                  Class151_Sub1 var8 = new Class151_Sub1(var3, var1, var5, this.aClass66_102, this.aClass73_103, var6, var7, var4);
+                  Class151_Sub1 var8 = new Class151_Sub1(var3, var1, var5, this.aClass66_102, this.aClass73_103, var6, var7, true);
                   this.aClass151_Sub1Array107[var3] = var8;
                   return var8;
                } else {
@@ -280,7 +280,7 @@ final class Class8 {
             }
          }
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "al.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var9, "al.A(" + (var1 != null?"{...}":"null") + ',' + -125 + ',' + var3 + ',' + true + ',' + (var5 != null?"{...}":"null") + ')');
       }
    }
 

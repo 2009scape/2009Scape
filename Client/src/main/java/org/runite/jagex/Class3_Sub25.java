@@ -10,7 +10,7 @@ final class Class3_Sub25 extends Class3 {
    static Class129 aClass129_2552;
 
 
-   static final void method509(int var0, int var1) {
+   static final void method509(int var1) {
       try {
          --Class3_Sub13_Sub34.anInt3415;
          if(Class3_Sub13_Sub34.anInt3415 != var1) {
@@ -19,11 +19,11 @@ final class Class3_Sub25 extends Class3 {
             Class76.method1358(Class114.anIntArray1578, 1 + var1, Class114.anIntArray1578, var1, -var1 + Class3_Sub13_Sub34.anInt3415);
             Class76.method1361(Class3_Sub13_Sub7.aShortArray3095, 1 + var1, Class3_Sub13_Sub7.aShortArray3095, var1, Class3_Sub13_Sub34.anInt3415 + -var1);
             Class76.method1356(Class3_Sub13_Sub22.aLongArray3271, 1 + var1, Class3_Sub13_Sub22.aLongArray3271, var1, -var1 + Class3_Sub13_Sub34.anInt3415);
-            Class76.method1358(Class117.anIntArray1613, var1 + var0, Class117.anIntArray1613, var1, -var1 + Class3_Sub13_Sub34.anInt3415);
+            Class76.method1358(Class117.anIntArray1613, var1 + 1, Class117.anIntArray1613, var1, -var1 + Class3_Sub13_Sub34.anInt3415);
             Class76.method1358(Class27.anIntArray512, 1 + var1, Class27.anIntArray512, var1, Class3_Sub13_Sub34.anInt3415 + -var1);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "qe.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "qe.A(" + 1 + ',' + var1 + ')');
       }
    }
 

@@ -30,14 +30,14 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
    static final void method2220(int var0) {
       try {
          if(var0 == 0) {
-            Class140_Sub4.aClass93_2792.method1524(3);
+            Class140_Sub4.aClass93_2792.method1524();
          }
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "t.H(" + var0 + ')');
       }
    }
 
-   static final void method2221(int var0, int var1, int var2, boolean var3, int var4, int var5, int var6) {
+   static final void method2221(int var0, int var1, int var2, int var4, int var5, int var6) {
       try {
          int var8 = 0;
 
@@ -51,26 +51,26 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
             }
          }
 
-         if(!var3) {
+         if(!true) {
             aBoolean4018 = true;
          }
 
       } catch (RuntimeException var10) {
-         throw Class44.clientError(var10, "t.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var10, "t.E(" + var0 + ',' + var1 + ',' + var2 + ',' + true + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
-   static final void method2222(byte var0) {
+   static final void method2222() {
       try {
          Class3_Sub28_Sub7_Sub1.aClass93_4043.method1523((byte)-117);
          CS2Script.aClass93_2442.method1523((byte)-108);
          Class154.aClass93_1964.method1523((byte)-117);
-         if(var0 <= 122) {
+         if((byte) 127 <= 122) {
             method2223(true, (byte)-67);
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "t.G(" + var0 + ')');
+         throw Class44.clientError(var2, "t.G(" + (byte) 127 + ')');
       }
    }
 
@@ -103,7 +103,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
 
                         for(int var14 = 0; Class3_Sub24_Sub3.anIntArray3494.length > var14; ++var14) {
                            if(var13 == Class3_Sub24_Sub3.anIntArray3494[var14] && var4[var14] != null) {
-                              Class3_Sub13_Sub30.parseObjectMapping(Class86.aClass91Array1182, var5, var4[var14], var9, var10, 8 * var6, var7 * 8, var0, (var11 & 7) * 8, 8 * (7 & var12), (byte)-54);
+                              Class3_Sub13_Sub30.parseObjectMapping(Class86.aClass91Array1182, var5, var4[var14], var9, var10, 8 * var6, var7 * 8, var0, (var11 & 7) * 8, 8 * (7 & var12));
                               break;
                            }
                         }
@@ -118,10 +118,10 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
       }
    }
 
-   static final boolean method2224(byte var0, long var1, int var3, int var4) {
+   static final boolean method2224(long var1, int var3, int var4) {
       try {
          int var5 = (int)var1 >> 14 & 31;
-         if(var0 != 39) {
+         if((byte) 39 != 39) {
             method2220(-62);
          }
 
@@ -155,7 +155,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
          Class70.anInt1053 = Class163_Sub1.anInt2993;
          return true;
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "t.D(" + var0 + ',' + var1 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var12, "t.D(" + (byte) 39 + ',' + var1 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -264,7 +264,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
                         } else {
                            if(var28 instanceof RSString) {
                               var0.putByte((byte)-52, 2);
-                              var0.putString(0, (RSString)var28);
+                              var0.putString((RSString)var28);
                            } else {
                               var0.putByte((byte)-94, 4);
                            }
@@ -305,7 +305,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
                }
             }
 
-            var0.method793((byte)86, var5);
+            var0.method793(var5);
             var0.method769((byte)-127, var0.index - var5);
             var3.method86(-1024);
          }

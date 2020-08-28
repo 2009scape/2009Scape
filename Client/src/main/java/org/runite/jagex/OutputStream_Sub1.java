@@ -11,9 +11,9 @@ final class OutputStream_Sub1 extends OutputStream {
    static int[] anIntArray49;
 
 
-   static final short[] method65(int var0, short[] var1) {
+   static final short[] method65(short[] var1) {
       try {
-         if(var0 != 23032) {
+         if(23032 != 23032) {
             return (short[])null;
          } else if(null == var1) {
             return null;
@@ -23,13 +23,13 @@ final class OutputStream_Sub1 extends OutputStream {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "vg.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "vg.A(" + 23032 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
    static final void method66(RSString var0, int var1, int var2, byte var3, int var4) {
       try {
-         RSInterface var5 = Class3_Sub28_Sub16.method638((byte)-19, var4, var1);
+         RSInterface var5 = Class3_Sub28_Sub16.method638(var4, var1);
          if(null != var5) {
             if(var5.anObjectArray314 != null) {
                CS2Script var6 = new CS2Script();
@@ -42,7 +42,7 @@ final class OutputStream_Sub1 extends OutputStream {
 
             boolean var8 = true;
             if(0 < var5.anInt189) {
-               var8 = Class3_Sub28_Sub19.method715(205, var5);
+               var8 = Class3_Sub28_Sub19.method715(var5);
             }
 
             if(var8) {
@@ -140,11 +140,11 @@ final class OutputStream_Sub1 extends OutputStream {
       }
    }
 
-   static final void method68(int var0, int var1, Class140_Sub4 var2) {
+   static final void method68(int var0, Class140_Sub4 var2) {
       try {
          if(var2.anInt2800 <= Class44.anInt719) {
             if(var2.anInt2790 >= Class44.anInt719) {
-               Class168.method2270(var2, (byte)-56);
+               Class168.method2270(var2);
             } else {
                Class55.method1180((byte)-22, var2);
             }
@@ -157,19 +157,19 @@ final class OutputStream_Sub1 extends OutputStream {
             var2.anInt2842 = -1;
             var2.anInt2800 = 0;
             var2.anInt2790 = 0;
-            var2.anInt2819 = 128 * var2.anIntArray2767[0] - -(64 * var2.getSize((byte)114));
-            var2.anInt2829 = var2.anIntArray2755[0] * 128 + var2.getSize((byte)114) * 64;
-            var2.method1973(var1 + -2395);
+            var2.anInt2819 = 128 * var2.anIntArray2767[0] - -(64 * var2.getSize());
+            var2.anInt2829 = var2.anIntArray2755[0] * 128 + var2.getSize() * 64;
+            var2.method1973(2279 + -2395);
          }
 
-         if(var1 == 2279) {
+         if(2279 == 2279) {
             if(var2 == Class102.player && (var2.anInt2819 < 1536 || var2.anInt2829 < 1536 || var2.anInt2819 >= 11776 || var2.anInt2829 >= 11776)) {
                var2.anInt2842 = -1;
                var2.anInt2800 = 0;
                var2.anInt2790 = 0;
                var2.anInt2771 = -1;
-               var2.anInt2819 = var2.anIntArray2767[0] * 128 + var2.getSize((byte)114) * 64;
-               var2.anInt2829 = 128 * var2.anIntArray2755[0] + 64 * var2.getSize((byte)114);
+               var2.anInt2819 = var2.anIntArray2767[0] * 128 + var2.getSize() * 64;
+               var2.anInt2829 = 128 * var2.anIntArray2755[0] + 64 * var2.getSize();
                var2.method1973(-98);
             }
 
@@ -177,7 +177,7 @@ final class OutputStream_Sub1 extends OutputStream {
             RenderAnimationDefinition.method900(var2, -11973);
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "vg.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "vg.C(" + var0 + ',' + 2279 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 

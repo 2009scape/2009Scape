@@ -118,7 +118,7 @@ final class Class71 {
 
    private static final int method1291(int var0, int var1) {
       int var2;
-      for(var2 = (int)Math.pow((double)var0, 1.0D / (double)var1) + 1; Class140_Sub6.method2028(var1, var2, -122) > var0; --var2) {
+      for(var2 = (int)Math.pow((double)var0, 1.0D / (double)var1) + 1; Class140_Sub6.method2028(var1, var2) > var0; --var2) {
          ;
       }
 

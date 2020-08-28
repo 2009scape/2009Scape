@@ -12,7 +12,7 @@ final class Class32 {
             anInt590 = 22;
          }
 
-         return Class140_Sub7.method2033(var0, 1, 32767);
+         return Class140_Sub7.method2033(var0);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "fc.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
@@ -20,7 +20,7 @@ final class Class32 {
 
    static final int method993(int var0, int var1, int var2) {
       try {
-         int var3 = -128 + (Class65.method1234(4, var2 + '\ub135', var0 - -91923, 512) + (Class65.method1234(2, var2 + 10294, '\u93bd' + var0, 512) + -128 >> 1) - -(Class65.method1234(1, var2, var0, 512) + -128 >> 2));
+         int var3 = -128 + (Class65.method1234(4, var2 + '\ub135', var0 - -91923) + (Class65.method1234(2, var2 + 10294, '\u93bd' + var0) + -128 >> 1) - -(Class65.method1234(1, var2, var0) + -128 >> 2));
          var3 = 35 + (int)(0.3D * (double)var3);
          if(var1 < 110) {
             return 102;
@@ -99,9 +99,9 @@ final class Class32 {
 
    }
 
-   static final void method996(int var0) {
+   static final void method996() {
       try {
-         if(var0 >= -35) {
+         if(-43 >= -35) {
             method993(3, 100, -24);
          }
 
@@ -131,7 +131,7 @@ final class Class32 {
             Class134.anInt1762 = Class25.anInt491;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "fc.E(" + var0 + ')');
+         throw Class44.clientError(var5, "fc.E(" + -43 + ')');
       }
    }
 

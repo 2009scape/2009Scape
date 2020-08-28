@@ -21,7 +21,7 @@ final class Class3_Sub24_Sub2 extends Class3_Sub24 {
    }
 
    final synchronized void method457(Class3_Sub24 var1) {
-      this.aClass61_3485.method1216(64, var1);
+      this.aClass61_3485.method1216(var1);
    }
 
    final synchronized void method413(int[] var1, int var2, int var3) {
@@ -138,7 +138,7 @@ final class Class3_Sub24_Sub2 extends Class3_Sub24 {
          var1 = var1.aClass3_74;
       }
 
-      AbstractIndexedSprite.method1662(var2, var1, -16);
+      AbstractIndexedSprite.method1662(var2, var1);
       this.anInt3488 = ((Class3_Sub3)this.aClass61_3486.aClass3_940.aClass3_74).anInt2247;
    }
 

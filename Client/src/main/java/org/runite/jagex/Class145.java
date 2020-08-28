@@ -24,26 +24,26 @@ final class Class145 {
       }
    }
 
-   static final void method2072(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+   static final void method2072(int var0, int var1, int var2, int var3, int var4, int var5) {
       try {
          if(Class101.anInt1425 <= var1 && Class3_Sub28_Sub18.anInt3765 >= var3 && var2 >= Class159.anInt2020 && var4 <= Class57.anInt902) {
             if(var5 == 1) {
                Class77.method1367(var0, var3, var2, (byte)34, var4, var1);
             } else {
-               AbstractIndexedSprite.method1665(var6 + -19617, var3, var2, var0, var4, var5, var1);
+               AbstractIndexedSprite.method1665(-2 + -19617, var3, var2, var0, var4, var5, var1);
             }
          } else if(1 == var5) {
-            Class102.method1617(var0, var1, var4, var3, var2, (byte)29);
+            Class102.method1617(var0, var1, var4, var3, var2);
          } else {
-            Class3_Sub13_Sub3.method184(var4, var5, var3, var1, 1, var0, var2);
+            Class3_Sub13_Sub3.method184(var4, var5, var3, var1, var0, var2);
          }
 
-         if(var6 != -2) {
+         if(-2 != -2) {
             method2075(89, (byte)-73);
          }
 
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "ub.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "ub.F(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + -2 + ')');
       }
    }
 
@@ -51,7 +51,7 @@ final class Class145 {
       Class163_Sub1.aClass61_2990.method1215(true, var0);
 
       while(true) {
-         Class3_Sub2 var2 = (Class3_Sub2)Class163_Sub1.aClass61_2990.method1220((byte)-3);
+         Class3_Sub2 var2 = (Class3_Sub2)Class163_Sub1.aClass61_2990.method1220();
          if(var2 == null) {
             return;
          }
@@ -74,7 +74,7 @@ final class Class145 {
                   if(var10 != IOHandler.anInt1244) {
                      IOHandler.anInt1244 = var10;
                      Class3_Sub28_Sub2.method535((byte)56, var10);
-                     Class92.method1512(Class72.method1297((byte)-50));
+                     Class92.method1512(Class72.method1297());
                   }
 
                   var11 = var9 >>> 24 << 3;
@@ -84,7 +84,7 @@ final class Class145 {
                   }
 
                   var12 = Class58.anIntArrayArrayArray914[0][var3][var4] + Class58.anIntArrayArrayArray914[0][var3 + 1][var4] + Class58.anIntArrayArrayArray914[0][var3][var4 + 1] + Class58.anIntArrayArrayArray914[0][var3 + 1][var4 + 1] >> 2;
-                  Class3_Sub28_Sub4.method551(0, -var12, 3);
+                  Class3_Sub28_Sub4.method551(-var12, 3);
                   var8 = 201.5F;
                   HDToolKit.method1832(var8);
                } else {
@@ -758,9 +758,9 @@ final class Class145 {
       }
    }
 
-   static final void method2074(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+   static final void method2074(int var0, int var1, int var2, int var3, int var4, int var6) {
       try {
-         RSInterface var7 = Class3_Sub28_Sub16.method638((byte)-19, var0, var1);
+         RSInterface var7 = Class3_Sub28_Sub16.method638(var0, var1);
          if(null != var7 && null != var7.anObjectArray203) {
             CS2Script var8 = new CS2Script();
             var8.aClass11_2449 = var7;
@@ -770,7 +770,7 @@ final class Class145 {
 
          RSInterface.anInt278 = var1;
          Class69.anInt1038 = var3;
-         if(var5 < -110) {
+         if(-120 < -110) {
             Class54.anInt872 = var0;
             Class164.anInt2051 = var2;
             GameObject.aBoolean1837 = true;
@@ -779,7 +779,7 @@ final class Class145 {
             Class20.method909(126, var7);
          }
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "ub.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var9, "ub.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + -120 + ',' + var6 + ')');
       }
    }
 
@@ -794,9 +794,9 @@ final class Class145 {
 
    static final Class29 method2076(int var0, int var1) {
       try {
-         Class29 var2 = (Class29)Class136.aClass93_1772.get((long)var1, (byte)121);
+         Class29 var2 = (Class29)Class136.aClass93_1772.get((long)var1);
          if(var2 == null) {
-            byte[] var3 = Class3_Sub13_Sub13.aClass153_3154.getFile(16, (byte)-122, var1);
+            byte[] var3 = Class3_Sub13_Sub13.aClass153_3154.getFile(16, var1);
             if(var0 > -4) {
                return (Class29)null;
             } else {
@@ -816,12 +816,12 @@ final class Class145 {
       }
    }
 
-   static final void method2077(boolean var0) {
+   static final void method2077() {
       try {
-         Class3_Sub31.aClass93_2604.method1524(3);
-         Class27.aClass93_511.method1524(3);
+         Class3_Sub31.aClass93_2604.method1524();
+         Class27.aClass93_511.method1524();
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ub.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ub.B(" + true + ')');
       }
    }
 

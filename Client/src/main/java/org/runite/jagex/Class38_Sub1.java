@@ -15,10 +15,10 @@ final class Class38_Sub1 extends Class38 {
    static int anInt2618;
 
 
-   static final void method1030(RSInterface var0, Class3_Sub28_Sub16 var1, int var2, int var3, int var4, byte var5, int var6) {
+   static final void method1030(RSInterface var0, Class3_Sub28_Sub16 var1, int var2, int var3, int var4, int var6) {
       try {
          if(null != var1) {
-            if(var5 != 11) {
+            if((byte) 11 != 11) {
                method1032(true);
             }
 
@@ -33,7 +33,7 @@ final class Class38_Sub1 extends Class38 {
                int var12 = var10 * var2 - -(var3 * var11) >> 16;
                int var13 = var11 * var2 + -(var3 * var10) >> 16;
                if(HDToolKit.highDetail) {
-                  ((Class3_Sub28_Sub16_Sub1)var1).method645(var0.anInt168 / 2 + var6 + var12 - var1.anInt3697 / 2, var0.anInt193 / 2 + var4 - (var13 + var1.anInt3706 / 2), (Class3_Sub28_Sub16_Sub1)var0.method866((byte)-113, false));
+                  ((Class3_Sub28_Sub16_Sub1)var1).method645(var0.anInt168 / 2 + var6 + var12 - var1.anInt3697 / 2, var0.anInt193 / 2 + var4 - (var13 + var1.anInt3706 / 2), (Class3_Sub28_Sub16_Sub1)var0.method866(false));
                } else {
                   ((Class3_Sub28_Sub16_Sub2)var1).method666(var0.anInt168 / 2 + var6 - -var12 + -(var1.anInt3697 / 2), -(var1.anInt3706 / 2) + var0.anInt193 / 2 + var4 + -var13, var0.anIntArray207, var0.anIntArray291);
                }
@@ -41,19 +41,19 @@ final class Class38_Sub1 extends Class38 {
             }
          }
       } catch (RuntimeException var14) {
-         throw Class44.clientError(var14, "em.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var14, "em.B(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (byte) 11 + ',' + var6 + ')');
       }
    }
 
-   static final int method1031(int var0, int var1) {
+   static final int method1031(int var0) {
       try {
-         if(var1 != 2) {
+         if(2 != 2) {
             aClass94_2610 = (RSString)null;
          }
 
          return var0 >>> 7;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "em.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "em.C(" + var0 + ',' + 2 + ')');
       }
    }
 

@@ -44,7 +44,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
    final int[][] method166(int var1, int var2) {
       try {
          if(var1 != -1) {
-            method175(2, -7, -114, true, -24, 102, -125);
+            method175(2, -7, -114, -24, 102, -125);
          }
 
          int[][] var3 = this.aClass97_2376.method1594((byte)-119, var2);
@@ -109,21 +109,21 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
       }
    }
 
-   static final void method174(int var0, int var1) {
+   static final void method174() {
       try {
-         Class163_Sub2_Sub1.aClass93_4015.method1522(-127, var1);
-         if(var0 != 4096) {
+         Class163_Sub2_Sub1.aClass93_4015.method1522(-127, 5);
+         if(4096 != 4096) {
             method176(92);
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "aj.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "aj.E(" + 4096 + ',' + 5 + ')');
       }
    }
 
-   static final void method175(int var0, int var1, int var2, boolean var3, int var4, int var5, int var6) {
+   static final void method175(int var0, int var1, int var2, int var4, int var5, int var6) {
       try {
-         MouseListeningClass.method2091(var5, 4);
+         MouseListeningClass.method2091(var5);
          int var8 = var5 - var1;
          int var7 = 0;
          if(var8 < 0) {
@@ -142,7 +142,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
          Class3_Sub13_Sub23_Sub1.method282(var15, -var5 + var6, -40, var16, var0);
          Class3_Sub13_Sub23_Sub1.method282(var15, var16, -51, var17, var4);
          Class3_Sub13_Sub23_Sub1.method282(var15, var17, -41, var6 - -var5, var0);
-         if(!var3) {
+         if(!true) {
             anIntArray3045 = (int[])null;
          }
 
@@ -213,7 +213,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var25) {
-         throw Class44.clientError(var25, "aj.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var25, "aj.C(" + var0 + ',' + var1 + ',' + var2 + ',' + true + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -245,7 +245,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
    final int[] method154(int var1, byte var2) {
       try {
          int var4 = -52 % ((var2 - 30) / 36);
-         int[] var3 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int[] var5 = this.method152(0, var1, 32755);
 

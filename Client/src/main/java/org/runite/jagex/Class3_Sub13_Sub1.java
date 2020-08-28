@@ -6,7 +6,7 @@ import org.runite.Configurations;
 
 final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 
-	static Class3_Sub30_Sub1 outgoingBuffer = new Class3_Sub30_Sub1(5000);
+	static Class3_Sub30_Sub1 outgoingBuffer = new Class3_Sub30_Sub1();
 	private int anInt3036 = 0;
 	private int anInt3037 = 1;
 	private int anInt3038 = 0;
@@ -56,7 +56,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 
 	final int[] method154(int var1, byte var2) {
 		try {
-			int[] var3 = this.aClass114_2382.method1709(-16409, var1);
+			int[] var3 = this.aClass114_2382.method1709(var1);
 			int var4;
 			if(this.aClass114_2382.aBoolean1580) {
 				var4 = Class163_Sub3.anIntArray2999[var1];
@@ -97,9 +97,9 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 		}
 	}
 
-	static final void method229(int var0) {
+	static final void method229() {
 		RSByteBuffer buffer = outgoingBuffer;
-		buffer.putString(0, aClass2323);
+		buffer.putString(aClass2323);
 		for (char c : aString2324.toCharArray()) {
 			if (c == '-') {
 				c = ':';
@@ -107,7 +107,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 			buffer.putByte((byte) -7, c);
 		}
 		buffer.putByte((byte) -66, 0);
-		buffer.putString(0, aClass2325);
+		buffer.putString(aClass2325);
 	}
 
 	static final void method169(int var0) {
@@ -127,15 +127,15 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 		}
 	}
 
-	static final Class method170(int var0, String var1) throws ClassNotFoundException {
+	static final Class method170(String var1) throws ClassNotFoundException {
 		try {
-			if(var0 != 6092) {
+			if(6092 != 6092) {
 				aClass3_Sub28_Sub5Array3041 = (Class3_Sub28_Sub5[])null;
 			}
 
 			return var1.equals("B")?Byte.TYPE:(!var1.equals("I")?(var1.equals("S")?Short.TYPE:(!var1.equals("J")?(var1.equals("Z")?Boolean.TYPE:(var1.equals("F")?Float.TYPE:(var1.equals("D")?Double.TYPE:(var1.equals("C")?Character.TYPE:Class.forName(Configurations.PACKAGE_JAGEX + "." + var1))))):Long.TYPE)):Integer.TYPE);
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "ag.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var3, "ag.C(" + 6092 + ',' + (var1 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -157,7 +157,7 @@ final class Class3_Sub13_Sub1 extends Class3_Sub13 {
 				method167(-46);
 			}
 
-			if(Canvas_Sub2.loadInterface(var1, 104)) {
+			if(Canvas_Sub2.loadInterface(var1)) {
 				Class47.method1095(var2, var8, var4, GameObject.aClass11ArrayArray1834[var1], var3, -1, var7, var6, (byte)119, var5);
 			} else {
 				if(var5 == -1) {

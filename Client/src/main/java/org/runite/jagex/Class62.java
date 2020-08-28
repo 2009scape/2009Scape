@@ -95,11 +95,11 @@ final class Class62 {
       }
    }
 
-   static final void method1225(int var0) {
+   static final void method1225() {
       try {
          MouseListeningClass var1 = Class3_Sub28_Sub7_Sub1.aClass149_4047;
          synchronized(var1) {
-            if(var0 != 18074) {
+            if(18074 != 18074) {
                aClass94_946 = (RSString)null;
             }
 
@@ -114,11 +114,11 @@ final class Class62 {
             Class140_Sub3.anInt2743 = 0;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ii.D(" + var0 + ')');
+         throw Class44.clientError(var4, "ii.D(" + 18074 + ')');
       }
    }
 
-   private final void method1226(int var1, byte[] var2) {
+   private final void method1226(byte[] var2) {
       try {
          RSByteBuffer buffer = new RSByteBuffer(Class3_Sub28_Sub13.method623((byte)-114, var2));
          int var4 = buffer.getByte((byte)-34);
@@ -131,7 +131,7 @@ final class Class62 {
 
             int info = buffer.getByte((byte)-127);
             int var6 = 0;
-            this.validArchiveAmount = buffer.getShort(var1 ^ 3);
+            this.validArchiveAmount = buffer.getShort(2 ^ 3);
             int var7 = -1;
             this.validArchiveIds = new int[this.validArchiveAmount];
 
@@ -232,15 +232,15 @@ final class Class62 {
             throw new RuntimeException();
          }
       } catch (RuntimeException var14) {
-         throw Class44.clientError(var14, "ii.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var14, "ii.C(" + 2 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
    Class62(byte[] var1, int var2) {
       try {
-         this.anInt964 = Class38.method1026(var1, var1.length, false);
+         this.anInt964 = Class38.method1026(var1, var1.length);
          if(var2 == this.anInt964) {
-            this.method1226(2, var1);
+            this.method1226(var1);
          } else {
             throw new RuntimeException();
          }

@@ -11,7 +11,7 @@ public class Display {
    private DisplayMode aDisplayMode446;
 
 
-   private void method917(Frame var1, byte var2) {
+   private void method917(Frame var1) {
       boolean var3 = false;
 
       Field var4;
@@ -33,7 +33,7 @@ public class Display {
       try {
          var5 = true;
          this.aGraphicsDevice445.setFullScreenWindow(var1);
-         if(var2 == -63) {
+         if((byte) -63 == -63) {
             var5 = false;
          } else {
             this.method918(90, -112, -67, 27, (Frame)null, -49);
@@ -73,7 +73,7 @@ public class Display {
       } else {
          var5.setUndecorated(true);
          var5.enableInputMethods(false);
-         this.method917(var5, (byte)-63);
+         this.method917(var5);
          if(var2 == 0) {
             int var7 = this.aDisplayMode446.getRefreshRate();
             DisplayMode[] var8 = this.aGraphicsDevice445.getDisplayModes();
@@ -126,7 +126,7 @@ public class Display {
          this.aDisplayMode446 = null;
       }
 
-      this.method917((Frame)null, (byte)-63);
+      this.method917((Frame)null);
       int var2 = -121 / ((-64 - var1) / 47);
    }
 

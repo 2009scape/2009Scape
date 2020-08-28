@@ -12,28 +12,28 @@ final class Class3_Sub28_Sub19 extends Node {
    static int[] anIntArray3780 = new int[32];
 
 
-   static final boolean method715(int var0, RSInterface var1) {
+   static final boolean method715(RSInterface var1) {
       try {
-         if(var0 == var1.anInt189) {
+         if(205 == var1.anInt189) {
             Class159.anInt2023 = 250;
             return true;
          } else {
             return false;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ud.B(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "ud.B(" + 205 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
-   static final void method716(int var0) {
+   static final void method716() {
       try {
-         Class136.aClass93_1772.method1524(3);
-         if(var0 != 14073) {
+         Class136.aClass93_1772.method1524();
+         if(14073 != 14073) {
             method717(9);
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ud.A(" + var0 + ')');
+         throw Class44.clientError(var2, "ud.A(" + 14073 + ')');
       }
    }
 

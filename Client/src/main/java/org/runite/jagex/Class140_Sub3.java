@@ -32,10 +32,10 @@ final class Class140_Sub3 extends GameObject {
    private int anInt2752 = -1;
 
 
-   static final Model method1957(int var0, boolean var1, AnimationDefinition var2, int var3, int var4, int var5, int var6, int var7, Model var8, int var9, int var10, int var11, int var12, byte var13) {
+   static final Model method1957(int var0, boolean var1, AnimationDefinition var2, int var3, int var4, int var5, int var6, int var7, Model var8, int var9, int var10, int var11, int var12) {
       try {
          long var14 = ((long)var4 << 48) + (long)(var7 + (var0 << 16) - -(var12 << 24)) + ((long)var6 << 32);
-         Model var16 = (Model)Class158_Sub1.aClass93_2982.get(var14, (byte)121);
+         Model var16 = (Model)Class158_Sub1.aClass93_2982.get(var14);
          int var21;
          int var23;
          int var25;
@@ -59,8 +59,8 @@ final class Class140_Sub3 extends GameObject {
 
             int[] var19 = new int[]{64, 96, 128};
             byte var18 = 3;
-            Model_Sub1 var20 = new Model_Sub1(1 + var18 * var17, -var17 + var17 * var18 * 2, 0);
-            var21 = var20.method2014(0, 0, 0);
+            Model_Sub1 var20 = new Model_Sub1(1 + var18 * var17, -var17 + var17 * var18 * 2);
+            var21 = var20.method2014(0, 0);
             int[][] var22 = new int[var18][var17];
 
             for(var23 = 0; var18 > var23; ++var23) {
@@ -71,7 +71,7 @@ final class Class140_Sub3 extends GameObject {
                   int var27 = (var26 << 11) / var17;
                   int var29 = var5 - -(Class51.anIntArray851[var27] * var25) >> 16;
                   var28 = var3 + Class51.anIntArray840[var27] * var24 >> 16;
-                  var22[var23][var26] = var20.method2014(var28, 0, var29);
+                  var22[var23][var26] = var20.method2014(var28, var29);
                }
             }
 
@@ -83,10 +83,10 @@ final class Class140_Sub3 extends GameObject {
 
                for(var28 = 0; var28 < var17; ++var28) {
                   if(var23 == 0) {
-                     var20.method2005(var21, var22[0][(1 + var28) % var17], var22[0][var28], (byte)1, var39, var38);
+                     var20.method2005(var21, var22[0][(1 + var28) % var17], var22[0][var28], var39, var38);
                   } else {
-                     var20.method2005(var22[var23 - 1][var28], var22[var23 + -1][(var28 + 1) % var17], var22[var23][(var28 - -1) % var17], (byte)1, var39, var38);
-                     var20.method2005(var22[-1 + var23][var28], var22[var23][(1 + var28) % var17], var22[var23][var28], (byte)1, var39, var38);
+                     var20.method2005(var22[var23 - 1][var28], var22[var23 + -1][(var28 + 1) % var17], var22[var23][(var28 - -1) % var17], var39, var38);
+                     var20.method2005(var22[-1 + var23][var28], var22[var23][(1 + var28) % var17], var22[var23][var28], var39, var38);
                   }
                }
             }
@@ -96,7 +96,7 @@ final class Class140_Sub3 extends GameObject {
          }
 
          int var32 = var7 * 64 + -1;
-         if(var13 == -49) {
+         if((byte) -49 == -49) {
             int var33 = -var32;
             int var31 = -var32;
             int var34 = var32;
@@ -155,7 +155,7 @@ final class Class140_Sub3 extends GameObject {
                var16.resize((var23 + -var35) / 2, 128, (var25 - var24) / 2);
                var16.method1897((var35 + var23) / 2, 0, (var24 - -var25) / 2);
             } else {
-               var16 = var16.method1882(!var40.method559(1317095745, var10), !var40.method561(var10, (byte)115), true);
+               var16 = var16.method1882(!var40.method559(var10), !var40.method561(var10, (byte)115), true);
                var16.resize((var23 + -var35) / 2, 128, (var25 + -var24) / 2);
                var16.method1897((var35 + var23) / 2, 0, (var24 + var25) / 2);
                var16.method1877(var40, var10);
@@ -167,9 +167,9 @@ final class Class140_Sub3 extends GameObject {
 
             if(HDToolKit.highDetail) {
                Class140_Sub1_Sub1 var36 = (Class140_Sub1_Sub1)var16;
-               if(var11 != Class121.method1736(WorldListCountry.localPlane, var13 ^ -50, var3 - -var35, var24 + var5) || var11 != Class121.method1736(WorldListCountry.localPlane, 1, var23 + var3, var5 - -var25)) {
+               if(var11 != Class121.method1736(WorldListCountry.localPlane, (byte) -49 ^ -50, var3 - -var35, var24 + var5) || var11 != Class121.method1736(WorldListCountry.localPlane, 1, var23 + var3, var5 - -var25)) {
                   for(var28 = 0; var28 < var36.anInt3823; ++var28) {
-                     var36.anIntArray3845[var28] += -var11 + Class121.method1736(WorldListCountry.localPlane, Class93.method1519(var13, -50), var36.anIntArray3822[var28] - -var3, var5 + var36.anIntArray3848[var28]);
+                     var36.anIntArray3845[var28] += -var11 + Class121.method1736(WorldListCountry.localPlane, Class93.method1519((byte) -49, -50), var36.anIntArray3822[var28] - -var3, var5 + var36.anIntArray3848[var28]);
                   }
 
                   var36.aClass6_3835.aBoolean98 = false;
@@ -191,7 +191,7 @@ final class Class140_Sub3 extends GameObject {
             return (Model)null;
          }
       } catch (RuntimeException var30) {
-         throw Class44.clientError(var30, "dc.E(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ',' + var13 + ')');
+         throw Class44.clientError(var30, "dc.E(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + (var8 != null?"{...}":"null") + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ',' + (byte) -49 + ')');
       }
    }
 
@@ -214,7 +214,7 @@ final class Class140_Sub3 extends GameObject {
          if(HDToolKit.highDetail) {
             this.method1962(true, -2);
          } else {
-            this.method1961(var5, var4, -101);
+            this.method1961(var5, var4);
          }
 
       } catch (RuntimeException var7) {
@@ -238,7 +238,7 @@ final class Class140_Sub3 extends GameObject {
 
    final void animate(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, long var9, int var11, Class127_Sub1 var12) {
       try {
-         GameObject var13 = this.method1963(3);
+         GameObject var13 = this.method1963();
          if(null != var13) {
             var13.animate(var1, var2, var3, var4, var5, var6, var7, var8, var9, var11, this.aClass127_Sub1_2742);
          }
@@ -247,23 +247,23 @@ final class Class140_Sub3 extends GameObject {
       }
    }
 
-   final void method1960(int var1) {
+   final void method1960() {
       try {
          if(this.aClass109_Sub1_2738 != null) {
             Class141.method2047(this.aClass109_Sub1_2738, this.anInt2725, this.anInt2720, this.anInt2748);
          }
 
          this.anInt2750 = -1;
-         this.anInt2752 = var1;
+         this.anInt2752 = -1;
          this.aClass109_Sub1_2738 = null;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "dc.F(" + var1 + ')');
+         throw Class44.clientError(var3, "dc.F(" + -1 + ')');
       }
    }
 
    protected final void finalize() {}
 
-   private final void method1961(int var1, int var2, int var3) {
+   private final void method1961(int var1, int var2) {
       try {
          if(this.aClass142_2722 != null) {
             int var4 = Class44.anInt719 - this.anInt2749;
@@ -317,11 +317,11 @@ final class Class140_Sub3 extends GameObject {
             this.anInt2749 = -var4 + Class44.anInt719;
          }
 
-         if(var3 == -101) {
+         if(-101 == -101) {
             ;
          }
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "dc.A(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var8, "dc.A(" + var1 + ',' + var2 + ',' + -101 + ')');
       }
    }
 
@@ -336,7 +336,7 @@ final class Class140_Sub3 extends GameObject {
 
          if(null == var4) {
             if(HDToolKit.highDetail && !var3) {
-               this.method1960(-1);
+               this.method1960();
             }
 
             return null;
@@ -351,7 +351,7 @@ final class Class140_Sub3 extends GameObject {
                if(var6 == -1) {
                   this.aClass142_2722 = null;
                } else {
-                  this.aClass142_2722 = Client.getAnimationDefinition(var6, (byte)-20);
+                  this.aClass142_2722 = Client.getAnimationDefinition(var6);
                }
 
                if(null != this.aClass142_2722) {
@@ -380,7 +380,7 @@ final class Class140_Sub3 extends GameObject {
             int var9 = (var7 >> 1) + this.anInt2736;
             int var11 = (var8 >> 1) + this.anInt2730;
             int var12 = (var8 - -1 >> 1) + this.anInt2730;
-            this.method1961(128 * var11, var9 * 128, -101);
+            this.method1961(128 * var11, var9 * 128);
             boolean var13 = !var3 && var4.aBoolean1503 && (var4.objectId != this.anInt2750 || (this.anInt2752 != this.anInt2726 || this.aClass142_2722 != null && (this.aClass142_2722.aBoolean1872 || Class3_Sub26.aBoolean2558) && this.anInt2733 != this.anInt2726) && Class80.anInt1137 >= 2);
             if(var1 && !var13) {
                return null;
@@ -454,11 +454,11 @@ final class Class140_Sub3 extends GameObject {
       }
    }
 
-   final GameObject method1963(int var1) {
+   final GameObject method1963() {
       try {
-         return this.method1962(false, var1 + -5);
+         return this.method1962(false, 3 + -5);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "dc.C(" + var1 + ')');
+         throw Class44.clientError(var3, "dc.C(" + 3 + ')');
       }
    }
 
@@ -470,7 +470,7 @@ final class Class140_Sub3 extends GameObject {
       }
    }
 
-   static final void renderLocalPlayers(boolean var0) {
+   static final void renderLocalPlayers() {
       try {
          int localPlayerAmount = GraphicDefinition.incomingBuffer.getBits((byte)-11, 8);
          int var2;
@@ -483,7 +483,7 @@ final class Class140_Sub3 extends GameObject {
          if(Class159.localPlayerCount >= localPlayerAmount) {
             Class159.localPlayerCount = 0;
             var2 = 0;
-            if(var0) {
+            if(false) {
                method1959(-121, -69, 115, false);
             }
 
@@ -544,7 +544,7 @@ final class Class140_Sub3 extends GameObject {
             throw new RuntimeException("gppov1");
          }
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "dc.B(" + var0 + ')');
+         throw Class44.clientError(var9, "dc.B(" + false + ')');
       }
    }
 
@@ -559,7 +559,7 @@ final class Class140_Sub3 extends GameObject {
          ObjectDefinition var10;
          if(HDToolKit.highDetail && null != var9) {
             if(var9 instanceof Class140_Sub3) {
-               ((Class140_Sub3)var9).method1960(-1);
+               ((Class140_Sub3)var9).method1960();
             } else {
                var10 = Class162.getObjectDefinition(4, this.objectId);
                if(var10.ChildrenIds != null) {
@@ -573,7 +573,7 @@ final class Class140_Sub3 extends GameObject {
          }
 
          if(-1 != animationId) {
-            this.aClass142_2722 = Client.getAnimationDefinition(animationId, (byte)-20);
+            this.aClass142_2722 = Client.getAnimationDefinition(animationId);
             this.anInt2726 = 0;
             if(1 >= this.aClass142_2722.frames.length) {
                this.anInt2733 = 0;

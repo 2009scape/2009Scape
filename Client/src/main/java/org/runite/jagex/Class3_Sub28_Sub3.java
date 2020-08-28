@@ -20,16 +20,16 @@ final class Class3_Sub28_Sub3 extends Node {
    static int anInt3564 = 0;
 
 
-   final boolean method537(int var1, byte var2, int var3) {
+   final boolean method537(int var1, int var3) {
       try {
          if(var3 >= this.anInt3555 && var3 <= this.anInt3559 && var1 >= this.anInt3562 && var1 <= this.anInt3549) {
             for(Class3_Sub21 var4 = (Class3_Sub21)this.aClass61_3560.method1222(); var4 != null; var4 = (Class3_Sub21)this.aClass61_3560.method1221()) {
-               if(var4.method393((byte)-45, var1, var3)) {
+               if(var4.method393(var1, var3)) {
                   return true;
                }
             }
 
-            if(var2 != 97) {
+            if((byte) 97 != 97) {
                method544(-51, 82);
             }
 
@@ -38,15 +38,15 @@ final class Class3_Sub28_Sub3 extends Node {
             return false;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "bn.B(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "bn.B(" + var1 + ',' + (byte) 97 + ',' + var3 + ')');
       }
    }
 
-   final void method538(byte var1) {
+   final void method538() {
       try {
          this.anInt3562 = 12800;
          this.anInt3559 = 0;
-         if(var1 != 103) {
+         if((byte) 103 != 103) {
             aClass11_3551 = (RSInterface)null;
          }
 
@@ -72,25 +72,25 @@ final class Class3_Sub28_Sub3 extends Node {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bn.F(" + var1 + ')');
+         throw Class44.clientError(var3, "bn.F(" + (byte) 103 + ')');
       }
    }
 
-   static final void method539(int var0, int var1) {
+   static final void method539(int var0) {
       try {
          if(var0 != 0) {
             method542((byte)73);
          }
 
-         Class136.aClass93_1772.method1522(var0 ^ -126, var1);
+         Class136.aClass93_1772.method1522(var0 ^ -126, 5);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bn.O(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "bn.O(" + var0 + ',' + 5 + ')');
       }
    }
 
-   static final int method540(int var0, int var1, int var2) {
+   static final int method540(int var0, int var2) {
       try {
-         if(var1 == -14314) {
+         if(-14314 == -14314) {
             int var3;
             for(var3 = 0; var0 > 0; --var0) {
                var3 = var3 << 1 | 1 & var2;
@@ -102,22 +102,22 @@ final class Class3_Sub28_Sub3 extends Node {
             return 116;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "bn.P(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "bn.P(" + var0 + ',' + -14314 + ',' + var2 + ')');
       }
    }
 
-   static final void method541(byte var0, boolean var1, RSString var2) {
+   static final void method541(boolean var1, RSString var2) {
       try {
          var2 = var2.method1534(-98);
          int var4 = 0;
-         int var5 = -26 / ((62 - var0) / 58);
+         int var5 = -26 / ((62 - (byte) 123) / 58);
          short[] var3 = new short[16];
          int var6 = !var1?0:'\u8000';
          int var7 = (!var1?Class83.anInt1156:RenderAnimationDefinition.anInt377) + var6;
 
          for(int var8 = var6; var8 < var7; ++var8) {
             Class3_Sub28_Sub4 var9 = Class3_Sub29.method733(12345678, var8);
-            if(var9.aBoolean3568 && var9.method554(-1).method1534(-98).indexOf(var2, 112) != -1) {
+            if(var9.aBoolean3568 && var9.method554().method1534(-98).indexOf(var2, 112) != -1) {
                if(var4 >= 50) {
                   Class62.anInt952 = -1;
                   Class99.aShortArray1398 = null;
@@ -144,12 +144,12 @@ final class Class3_Sub28_Sub3 extends Node {
          RSString[] var13 = new RSString[Class62.anInt952];
 
          for(int var14 = 0; Class62.anInt952 > var14; ++var14) {
-            var13[var14] = Class3_Sub29.method733(12345678, var3[var14]).method554(-1);
+            var13[var14] = Class3_Sub29.method733(12345678, var3[var14]).method554();
          }
 
          Class3_Sub13_Sub29.method307(var13, Class99.aShortArray1398, 100);
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "bn.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var12, "bn.C(" + (byte) 123 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 

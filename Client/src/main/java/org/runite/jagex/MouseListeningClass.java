@@ -35,12 +35,12 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	  }
 	  
-	  static final void method2087(byte var0)
+	  static final void method2087()
 	  {
 	    try
 	    {
 	      Class3_Sub4 var1 = (Class3_Sub4)Class3_Sub13_Sub6.aClass61_3075.method1222();
-	      for (int var2 = -37 / ((-21 - var0) / 48); var1 != null; var1 = (Class3_Sub4)Class3_Sub13_Sub6.aClass61_3075.method1221())
+	      for (int var2 = -37 / ((-21 - (byte) -82) / 48); var1 != null; var1 = (Class3_Sub4)Class3_Sub13_Sub6.aClass61_3075.method1221())
 	      {
 	        if (var1.anInt2259 > 0) {
 	          var1.anInt2259 -= 1;
@@ -70,7 +70,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.clientError(var3, "ug.A(" + var0 + ')');
+	      throw Class44.clientError(var3, "ug.A(" + (byte) -82 + ')');
 	    }
 	  }
 	  
@@ -104,16 +104,16 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	  }
 	  
-	  static final void method2089(byte var0)
+	  static final void method2089()
 	  {
 	    try
 	    {
 	      Class158_Sub1.aClass93_2982.method1523((byte)-105);
-	      if (var0 < 84) {}
+	      if ((byte) 115 < 84) {}
 	    }
 	    catch (RuntimeException var2)
 	    {
-	      throw Class44.clientError(var2, "ug.D(" + var0 + ')');
+	      throw Class44.clientError(var2, "ug.D(" + (byte) 115 + ')');
 	    }
 	  }
 	  
@@ -191,7 +191,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	  
 	  public final void focusGained(FocusEvent var1) {}
 	  
-	  static final void method2090(int var0)
+	  static final void method2090()
 	  {
 	    try
 	    {
@@ -203,11 +203,11 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	          Class3_Sub28_Sub7_Sub1.aClass149_4047 = null;
 	        }
 	      }
-	      if (var0 != 8) {}
+	      if (8 != 8) {}
 	    }
 	    catch (RuntimeException var4)
 	    {
-	      throw Class44.clientError(var4, "ug.F(" + var0 + ')');
+	      throw Class44.clientError(var4, "ug.F(" + 8 + ')');
 	    }
 	  }
 	  
@@ -275,20 +275,20 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	  }
 	  
-	  static final void method2091(int var0, int var1)
+	  static final void method2091(int var0)
 	  {
 	    try
 	    {
 	      if ((GameObject.anIntArray1838 == null) || (GameObject.anIntArray1838.length < var0)) {
 	        GameObject.anIntArray1838 = new int[var0];
 	      }
-	      if (var1 != 4) {
+	      if (4 != 4) {
 	        anInt1926 = -75;
 	      }
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.clientError(var3, "ug.E(" + var0 + ',' + var1 + ')');
+	      throw Class44.clientError(var3, "ug.E(" + var0 + ',' + 4 + ')');
 	    }
 	  }
 	  
@@ -309,7 +309,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	  }
 	  
-	  static final void method2092(int var0, byte var1)
+	  static final void method2092(int var0)
 	  {
 	    try
 	    {
@@ -318,7 +318,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	    }
 	    catch (RuntimeException var3)
 	    {
-	      throw Class44.clientError(var3, "ug.B(" + var0 + ',' + var1 + ')');
+	      throw Class44.clientError(var3, "ug.B(" + var0 + ',' + (byte) -47 + ')');
 	    }
 	  }
 	}

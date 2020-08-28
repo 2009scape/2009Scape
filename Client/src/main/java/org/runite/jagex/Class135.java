@@ -45,13 +45,13 @@ final class Class135 {
    }
 
    static final Class135 method1811(CacheIndex var0, int var1, int var2) {
-      byte[] var3 = var0.getFile(var1, (byte)-122, var2);
+      byte[] var3 = var0.getFile(var1, var2);
       return var3 == null?null:new Class135(new RSByteBuffer(var3));
    }
 
    final Class3_Sub12_Sub1 method1812() {
       byte[] var1 = this.method1810();
-      return new Class3_Sub12_Sub1(22050, var1, 22050 * this.anInt1769 / 1000, 22050 * this.anInt1767 / 1000);
+      return new Class3_Sub12_Sub1(var1, 22050 * this.anInt1769 / 1000, 22050 * this.anInt1767 / 1000);
    }
 
    final int method1813() {

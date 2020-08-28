@@ -30,17 +30,17 @@ final class Canvas_Sub1 extends Canvas implements FocusListener {
       }
    }
 
-   static final int method54(int var0, boolean var1) {
+   static final int method54(int var0) {
       try {
-         return var1?-81:var0 & 127;
+         return false ?-81:var0 & 127;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "oe.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "oe.A(" + var0 + ',' + false + ')');
       }
    }
 
-   static final void method55(int var0) {
+   static final void method55() {
       try {
-         if(var0 != 22683) {
+         if(22683 != 22683) {
             method53(43);
          }
 
@@ -49,7 +49,7 @@ final class Canvas_Sub1 extends Canvas implements FocusListener {
          Class3_Sub28_Sub7_Sub1.aClass93_4051.method1523((byte)-101);
          Class154.aClass93_1965.method1523((byte)-119);
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "oe.B(" + var0 + ')');
+         throw Class44.clientError(var2, "oe.B(" + 22683 + ')');
       }
    }
 

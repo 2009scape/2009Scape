@@ -17,10 +17,10 @@ final class Class91 {
    static short[] aShortArray1311;
 
 
-   final void method1485(int var1, boolean var2, int var3, int var4, int var5, int var6) {
+   final void method1485(int var1, boolean var2, int var4, int var5, int var6) {
       try {
          var6 -= this.anInt1309;
-         if(var3 > -101) {
+         if(-104 > -101) {
             method1495(-88, -61, -44, 72, 121);
          }
 
@@ -168,167 +168,167 @@ final class Class91 {
          }
 
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "mj.L(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "mj.L(" + var1 + ',' + var2 + ',' + -104 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
-   final void method1486(int var1, int var2, int var3, boolean var4, int var5, int var6) {
+   final void method1486(int var1, int var3, boolean var4, int var5, int var6) {
       try {
          var6 -= this.anInt1309;
          var5 -= this.anInt1306;
          if(var3 == 0) {
             if(0 == var1) {
-               this.method1490(128, (byte)-80, var6, var5);
-               this.method1490(8, (byte)-80, -1 + var6, var5);
+               this.method1490(128, var6, var5);
+               this.method1490(8, -1 + var6, var5);
             }
 
             if(var1 == 1) {
-               this.method1490(2, (byte)-80, var6, var5);
-               this.method1490(32, (byte)-80, var6, 1 + var5);
+               this.method1490(2, var6, var5);
+               this.method1490(32, var6, 1 + var5);
             }
 
             if(var1 == 2) {
-               this.method1490(8, (byte)-80, var6, var5);
-               this.method1490(128, (byte)-80, 1 + var6, var5);
+               this.method1490(8, var6, var5);
+               this.method1490(128, 1 + var6, var5);
             }
 
             if(var1 == 3) {
-               this.method1490(32, (byte)-80, var6, var5);
-               this.method1490(2, (byte)-80, var6, -1 + var5);
+               this.method1490(32, var6, var5);
+               this.method1490(2, var6, -1 + var5);
             }
          }
 
-         if(var2 == 2) {
+         if(2 == 2) {
             if(var3 == 1 || var3 == 3) {
                if(var1 == 0) {
-                  this.method1490(1, (byte)-80, var6, var5);
-                  this.method1490(16, (byte)-80, var6 + -1, 1 + var5);
+                  this.method1490(1, var6, var5);
+                  this.method1490(16, var6 + -1, 1 + var5);
                }
 
                if(var1 == 1) {
-                  this.method1490(4, (byte)-80, var6, var5);
-                  this.method1490(64, (byte)-80, var6 - -1, var5 + 1);
+                  this.method1490(4, var6, var5);
+                  this.method1490(64, var6 - -1, var5 + 1);
                }
 
                if(var1 == 2) {
-                  this.method1490(16, (byte)-80, var6, var5);
-                  this.method1490(1, (byte)-80, 1 + var6, -1 + var5);
+                  this.method1490(16, var6, var5);
+                  this.method1490(1, 1 + var6, -1 + var5);
                }
 
                if(var1 == 3) {
-                  this.method1490(64, (byte)-80, var6, var5);
-                  this.method1490(4, (byte)-80, -1 + var6, var5 + -1);
+                  this.method1490(64, var6, var5);
+                  this.method1490(4, -1 + var6, var5 + -1);
                }
             }
 
             if(var3 == 2) {
                if(var1 == 0) {
-                  this.method1490(130, (byte)-80, var6, var5);
-                  this.method1490(8, (byte)-80, -1 + var6, var5);
-                  this.method1490(32, (byte)-80, var6, var5 - -1);
+                  this.method1490(130, var6, var5);
+                  this.method1490(8, -1 + var6, var5);
+                  this.method1490(32, var6, var5 - -1);
                }
 
                if(var1 == 1) {
-                  this.method1490(10, (byte)-80, var6, var5);
-                  this.method1490(32, (byte)-80, var6, 1 + var5);
-                  this.method1490(128, (byte)-80, var6 - -1, var5);
+                  this.method1490(10, var6, var5);
+                  this.method1490(32, var6, 1 + var5);
+                  this.method1490(128, var6 - -1, var5);
                }
 
                if(var1 == 2) {
-                  this.method1490(40, (byte)-80, var6, var5);
-                  this.method1490(128, (byte)-80, 1 + var6, var5);
-                  this.method1490(2, (byte)-80, var6, var5 + -1);
+                  this.method1490(40, var6, var5);
+                  this.method1490(128, 1 + var6, var5);
+                  this.method1490(2, var6, var5 + -1);
                }
 
                if(var1 == 3) {
-                  this.method1490(160, (byte)-80, var6, var5);
-                  this.method1490(2, (byte)-80, var6, -1 + var5);
-                  this.method1490(8, (byte)-80, -1 + var6, var5);
+                  this.method1490(160, var6, var5);
+                  this.method1490(2, var6, -1 + var5);
+                  this.method1490(8, -1 + var6, var5);
                }
             }
 
             if(var4) {
                if(var3 == 0) {
                   if(0 == var1) {
-                     this.method1490(65536, (byte)-80, var6, var5);
-                     this.method1490(4096, (byte)-80, var6 - 1, var5);
+                     this.method1490(65536, var6, var5);
+                     this.method1490(4096, var6 - 1, var5);
                   }
 
                   if(var1 == 1) {
-                     this.method1490(1024, (byte)-80, var6, var5);
-                     this.method1490(16384, (byte)-80, var6, var5 + 1);
+                     this.method1490(1024, var6, var5);
+                     this.method1490(16384, var6, var5 + 1);
                   }
 
                   if(var1 == 2) {
-                     this.method1490(4096, (byte)-80, var6, var5);
-                     this.method1490(65536, (byte)-80, 1 + var6, var5);
+                     this.method1490(4096, var6, var5);
+                     this.method1490(65536, 1 + var6, var5);
                   }
 
                   if(var1 == 3) {
-                     this.method1490(16384, (byte)-80, var6, var5);
-                     this.method1490(1024, (byte)-80, var6, var5 - 1);
+                     this.method1490(16384, var6, var5);
+                     this.method1490(1024, var6, var5 - 1);
                   }
                }
 
                if(var3 == 1 || var3 == 3) {
                   if(0 == var1) {
-                     this.method1490(512, (byte)-80, var6, var5);
-                     this.method1490(8192, (byte)-80, -1 + var6, 1 + var5);
+                     this.method1490(512, var6, var5);
+                     this.method1490(8192, -1 + var6, 1 + var5);
                   }
 
                   if(var1 == 1) {
-                     this.method1490(2048, (byte)-80, var6, var5);
-                     this.method1490('\u8000', (byte)-80, 1 + var6, var5 + 1);
+                     this.method1490(2048, var6, var5);
+                     this.method1490('\u8000', 1 + var6, var5 + 1);
                   }
 
                   if(var1 == 2) {
-                     this.method1490(8192, (byte)-80, var6, var5);
-                     this.method1490(512, (byte)-80, var6 - -1, var5 + -1);
+                     this.method1490(8192, var6, var5);
+                     this.method1490(512, var6 - -1, var5 + -1);
                   }
 
                   if(3 == var1) {
-                     this.method1490('\u8000', (byte)-80, var6, var5);
-                     this.method1490(2048, (byte)-80, -1 + var6, var5 - 1);
+                     this.method1490('\u8000', var6, var5);
+                     this.method1490(2048, -1 + var6, var5 - 1);
                   }
                }
 
                if(2 == var3) {
                   if(var1 == 0) {
-                     this.method1490(66560, (byte)-80, var6, var5);
-                     this.method1490(4096, (byte)-80, -1 + var6, var5);
-                     this.method1490(16384, (byte)-80, var6, 1 + var5);
+                     this.method1490(66560, var6, var5);
+                     this.method1490(4096, -1 + var6, var5);
+                     this.method1490(16384, var6, 1 + var5);
                   }
 
                   if(var1 == 1) {
-                     this.method1490(5120, (byte)-80, var6, var5);
-                     this.method1490(16384, (byte)-80, var6, var5 - -1);
-                     this.method1490(65536, (byte)-80, 1 + var6, var5);
+                     this.method1490(5120, var6, var5);
+                     this.method1490(16384, var6, var5 - -1);
+                     this.method1490(65536, 1 + var6, var5);
                   }
 
                   if(var1 == 2) {
-                     this.method1490(20480, (byte)-80, var6, var5);
-                     this.method1490(65536, (byte)-80, var6 + 1, var5);
-                     this.method1490(1024, (byte)-80, var6, -1 + var5);
+                     this.method1490(20480, var6, var5);
+                     this.method1490(65536, var6 + 1, var5);
+                     this.method1490(1024, var6, -1 + var5);
                   }
 
                   if(var1 == 3) {
-                     this.method1490(81920, (byte)-80, var6, var5);
-                     this.method1490(1024, (byte)-80, var6, var5 - 1);
-                     this.method1490(4096, (byte)-80, -1 + var6, var5);
+                     this.method1490(81920, var6, var5);
+                     this.method1490(1024, var6, var5 - 1);
+                     this.method1490(4096, -1 + var6, var5);
                   }
                }
             }
 
          }
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "mj.N(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "mj.N(" + var1 + ',' + 2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
-   private final boolean method1487(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, byte var9) {
+   private final boolean method1487(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
       try {
          if(var2 + var3 > var8 && var3 < var1 + var8) {
-            if(var9 != -125) {
+            if((byte) -125 != -125) {
                this.method1488(92, -42, true, -119, -67, -14, -88, 5);
             }
 
@@ -337,7 +337,7 @@ final class Class91 {
             return false;
          }
       } catch (RuntimeException var11) {
-         throw Class44.clientError(var11, "mj.M(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
+         throw Class44.clientError(var11, "mj.M(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + (byte) -125 + ')');
       }
    }
 
@@ -672,7 +672,7 @@ final class Class91 {
                if(var8 >= 0 && var8 < this.anInt1300) {
                   for(int var9 = var4; var9 < var6 + var4; ++var9) {
                      if(0 <= var9 && var9 < this.anInt1303) {
-                        this.method1490(var7, (byte)-80, var8, var9);
+                        this.method1490(var7, var8, var9);
                      }
                   }
                }
@@ -684,15 +684,15 @@ final class Class91 {
       }
    }
 
-   private final void method1490(int var1, byte var2, int var3, int var4) {
+   private final void method1490(int var1, int var3, int var4) {
       try {
-         if(var2 != -80) {
+         if((byte) -80 != -80) {
             this.method1498(false, 25, 78, -38, 60, 54, 58, 117, 109);
          }
 
          this.anIntArrayArray1304[var3][var4] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArrayArray1304[var3][var4], var1);
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "mj.J(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "mj.J(" + var1 + ',' + (byte) -80 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -861,40 +861,40 @@ final class Class91 {
       }
    }
 
-   static final void method1493(int var0, int var1, RSInterface var2, int var3, byte var4) {
+   static final void method1493(int var0, int var1, RSInterface var2, int var3) {
       try {
-         if(var4 == 59) {
+         if((byte) 59 == 59) {
             if(HDToolKit.highDetail) {
                Class22.method935(var0, var1, var2.anInt168 + var0, var2.anInt193 + var1);
             }
 
             if(Class161.anInt2028 >= 3) {
                if(HDToolKit.highDetail) {
-                  Class3_Sub28_Sub16 var5 = var2.method866((byte)-113, false);
+                  Class3_Sub28_Sub16 var5 = var2.method866(false);
                   if(null != var5) {
                      var5.method643(var0, var1);
                   }
                } else {
-                  Class74.method1332(var0, var1, 0, var2.anIntArray207, var2.anIntArray291);
+                  Class74.method1332(var0, var1, var2.anIntArray207, var2.anIntArray291);
                }
             } else if(HDToolKit.highDetail) {
-               ((Class3_Sub28_Sub16_Sub1)Class57.aClass3_Sub28_Sub16_895).method647(var0, var1, var2.anInt168, var2.anInt193, Class57.aClass3_Sub28_Sub16_895.anInt3707 / 2, Class57.aClass3_Sub28_Sub16_895.anInt3696 / 2, GraphicDefinition.CAMERA_DIRECTION, 256, (Class3_Sub28_Sub16_Sub1)var2.method866((byte)-113, false));
+               ((Class3_Sub28_Sub16_Sub1)Class57.aClass3_Sub28_Sub16_895).method647(var0, var1, var2.anInt168, var2.anInt193, Class57.aClass3_Sub28_Sub16_895.anInt3707 / 2, Class57.aClass3_Sub28_Sub16_895.anInt3696 / 2, GraphicDefinition.CAMERA_DIRECTION, 256, (Class3_Sub28_Sub16_Sub1)var2.method866(false));
             } else {
-               ((Class3_Sub28_Sub16_Sub2)Class57.aClass3_Sub28_Sub16_895).method667(var0, var1, var2.anInt168, var2.anInt193, Class57.aClass3_Sub28_Sub16_895.anInt3707 / 2, Class57.aClass3_Sub28_Sub16_895.anInt3696 / 2, GraphicDefinition.CAMERA_DIRECTION, 256, var2.anIntArray207, var2.anIntArray291);
+               ((Class3_Sub28_Sub16_Sub2)Class57.aClass3_Sub28_Sub16_895).method667(var0, var1, var2.anInt168, var2.anInt193, Class57.aClass3_Sub28_Sub16_895.anInt3707 / 2, Class57.aClass3_Sub28_Sub16_895.anInt3696 / 2, GraphicDefinition.CAMERA_DIRECTION, var2.anIntArray207, var2.anIntArray291);
             }
 
             Class163_Sub1_Sub1.aBooleanArray4008[var3] = true;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "mj.K(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "mj.K(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (byte) 59 + ')');
       }
    }
 
-   private final boolean method1494(int var1, int var2, int var3, int var4, boolean var5, int var6, int var7, int var8, int var9, int var10) {
+   private final boolean method1494(int var1, int var2, int var3, int var4, int var6, int var7, int var8, int var9, int var10) {
       try {
          int var11 = var7 + var9;
          int var12 = var8 + var10;
-         if(var5) {
+         if(true) {
             int var13 = var3 + var1;
             int var14 = var2 - -var6;
             int var15;
@@ -970,7 +970,7 @@ final class Class91 {
             return true;
          }
       } catch (RuntimeException var17) {
-         throw Class44.clientError(var17, "mj.O(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
+         throw Class44.clientError(var17, "mj.O(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + true + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
       }
    }
 
@@ -1013,22 +1013,22 @@ final class Class91 {
       }
    }
 
-   final void method1497(int var1, int var2, int var3) {
+   final void method1497(int var1, int var3) {
       try {
-         if(var2 == 7605) {
+         if(7605 == 7605) {
             var1 -= this.anInt1306;
             var3 -= this.anInt1309;
             this.anIntArrayArray1304[var3][var1] = Class3_Sub13_Sub29.bitwiseOr(this.anIntArrayArray1304[var3][var1], 2097152);
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "mj.E(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "mj.E(" + var1 + ',' + 7605 + ',' + var3 + ')');
       }
    }
 
    final boolean method1498(boolean var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
          if(var5 > 1) {
-            return this.method1487(var5, var6, var2, var9, var3, var8, var5, var4, (byte)-125)?true:this.method1494(var2, var8, var6, var7, true, var9, var4, var3, var5, var5);
+            return this.method1487(var5, var6, var2, var9, var3, var8, var5, var4)?true:this.method1494(var2, var8, var6, var7, var9, var4, var3, var5, var5);
          } else {
             int var10 = -1 + var6 + var2;
             int var11 = var8 + (var9 - 1);
@@ -1047,40 +1047,40 @@ final class Class91 {
       }
    }
 
-   final void method1499(int var1, byte var2, int var3) {
+   final void method1499(int var1, int var3) {
       try {
          var3 -= this.anInt1309;
          var1 -= this.anInt1306;
          this.anIntArrayArray1304[var3][var1] = Class3_Sub28_Sub15.method633(this.anIntArrayArray1304[var3][var1], -262145);
-         if(var2 != -73) {
+         if((byte) -73 != -73) {
             this.method1502(-117, 28, -110, true, 123, -33, 13);
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "mj.I(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "mj.I(" + var1 + ',' + (byte) -73 + ',' + var3 + ')');
       }
    }
 
-   Class91(int var1, int var2) {
+   Class91() {
       try {
-         this.anInt1303 = var2;
+         this.anInt1303 = 104;
          this.anInt1306 = 0;
          this.anInt1309 = 0;
-         this.anInt1300 = var1;
+         this.anInt1300 = 104;
          this.anIntArrayArray1304 = new int[this.anInt1300][this.anInt1303];
          this.method1496(0);
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "mj.<init>(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "mj.<init>(" + 104 + ',' + 104 + ')');
       }
    }
 
-   final boolean method1500(int var1, int var2, int var3, int var4, int var5) {
+   final boolean method1500(int var2, int var3, int var4, int var5) {
       try {
          if(var5 == var4 && var3 == var2) {
             return true;
          } else {
             var3 -= this.anInt1306;
-            if(var1 != -2) {
+            if(-2 != -2) {
                this.anInt1309 = -82;
             }
 
@@ -1190,7 +1190,7 @@ final class Class91 {
             }
          }
       } catch (RuntimeException var10) {
-         throw Class44.clientError(var10, "mj.G(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var10, "mj.G(" + -2 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 

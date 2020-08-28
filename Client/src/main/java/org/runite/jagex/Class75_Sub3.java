@@ -26,47 +26,47 @@ final class Class75_Sub3 extends Class75 {
          int var9 = var1 * this.anInt2652 >> 12;
          int var10 = this.anInt2659 * var3 >> 12;
          int var11 = var1 * this.anInt2650 >> 12;
-         Class108.method1652(var6, var10, var9, var11, var5, var4, var8, var7, this.anInt1104, 0);
+         Class108.method1652(var6, var10, var9, var11, var5, var4, var8, var7, this.anInt1104);
       } catch (RuntimeException var12) {
          throw Class44.clientError(var12, "re.E(" + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
-   static final void method1346(int var0) {
+   static final void method1346() {
       try {
-         Class3_Sub13_Sub2.method174(4096, 5);
+         Class3_Sub13_Sub2.method174();
          Class38.method1027(5, (byte)69);
-         Class3_Sub24_Sub3.method465(5, true);
-         Class3_Sub24_Sub4.method474(2, 5);
-         Class140_Sub6.method2025((byte)-62, 5);
-         Class114.method1711(5, var0 + -25956);
+         Class3_Sub24_Sub3.method465();
+         Class3_Sub24_Sub4.method474();
+         Class140_Sub6.method2025();
+         Class114.method1711(5, 26211 + -25956);
          Class3_Sub9.method137(5, (byte)-118);
-         Class3_Sub19.method386(5, var0 ^ -26138);
-         RSByteBuffer.method795((byte)14, 5);
-         Class3_Sub28_Sub3.method539(var0 ^ var0, 5);
+         Class3_Sub19.method386(26211 ^ -26138);
+         RSByteBuffer.method795();
+         Class3_Sub28_Sub3.method539(26211 ^ 26211);
          Class3_Sub13_Sub4.method188(5, 0);
-         Class166.method2260(var0 + -27256, 5);
-         Class3_Sub28_Sub10_Sub1.method594(var0 + -26090, 5);
-         Class3_Sub28_Sub10_Sub1.method595(5, 109);
+         Class166.method2260(26211 + -27256);
+         Class3_Sub28_Sub10_Sub1.method594(26211 + -26090, 5);
+         Class3_Sub28_Sub10_Sub1.method595();
          Class3_Sub31.method820(5, 64);
-         Class25.method953(-13508, 50);
+         Class25.method953();
          Class3_Sub13_Sub21.method269(-5, 5);
          Class77.method1366(104, 5);
          Class3_Sub13_Sub11.aClass93_3130.method1522(-125, 5);
-         Class80.aClass93_1135.method1522(var0 ^ -26142, 5);
+         Class80.aClass93_1135.method1522(26211 ^ -26142, 5);
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "re.K(" + var0 + ')');
+         throw Class44.clientError(var2, "re.K(" + 26211 + ')');
       }
    }
 
-   final void method1341(int var1, int var2, int var3) {
+   final void method1341(int var2, int var3) {
       try {
-         if(var1 != 2) {
+         if(2 != 2) {
             aClass153_2660 = (CacheIndex)null;
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "re.A(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "re.A(" + 2 + ',' + var2 + ',' + var3 + ')');
       }
    }
 

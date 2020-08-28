@@ -36,35 +36,35 @@ final class Class133 {
       }
    }
 
-   static final void method1803(byte var0) {
+   static final void method1803() {
       try {
-         if(var0 >= 4) {
+         if((byte) 22 >= 4) {
             Class82.aClass93_1146.method1523((byte)-119);
             Class159.aClass93_2016.method1523((byte)-103);
          }
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "sg.D(" + var0 + ')');
+         throw Class44.clientError(var2, "sg.D(" + (byte) 22 + ')');
       }
    }
 
-   final int method1804(boolean var1) {
+   final int method1804() {
       try {
-         if(var1) {
+         if(false) {
             anInt1753 = -21;
          }
 
          return this.aByte1742 & 7;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "sg.B(" + var1 + ')');
+         throw Class44.clientError(var3, "sg.B(" + false + ')');
       }
    }
 
-   final int method1805(byte var1) {
+   final int method1805() {
       try {
-         int var2 = -74 % ((var1 - 73) / 35);
+         int var2 = -74 % (((byte) -33 - 73) / 35);
          return 8 != (this.aByte1742 & 8)?0:1;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "sg.C(" + var1 + ')');
+         throw Class44.clientError(var3, "sg.C(" + (byte) -33 + ')');
       }
    }
 

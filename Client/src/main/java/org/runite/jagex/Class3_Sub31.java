@@ -37,10 +37,10 @@ final class Class3_Sub31 extends Class3 {
       }
    }
 
-   static final RSString[] method822(int var0, RSString[] var1) {
+   static final RSString[] method822(RSString[] var1) {
       try {
          RSString[] var2 = new RSString[5];
-         if(var0 != 19406) {
+         if(19406 != 19406) {
             method821(-26);
          }
 
@@ -54,7 +54,7 @@ final class Class3_Sub31 extends Class3 {
 
          return var2;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "wk.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "wk.A(" + 19406 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 

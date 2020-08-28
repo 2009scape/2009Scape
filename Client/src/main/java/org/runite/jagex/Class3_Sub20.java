@@ -16,7 +16,7 @@ final class Class3_Sub20 extends Class3 {
       try {
          //int var1 = 44 / ((-2 - var0) / 52);
          if(Class3_Sub13_Sub19.aClass94_3220 != null) {
-            Class3_Sub10.method138(Class3_Sub13_Sub19.aClass94_3220, 0);
+            Class3_Sub10.method138(Class3_Sub13_Sub19.aClass94_3220);
             Class3_Sub13_Sub19.aClass94_3220 = null;
          }
 
@@ -25,21 +25,21 @@ final class Class3_Sub20 extends Class3 {
       }
    }
    
-   static final void method389(boolean var0) {
+   static final void method389() {
 	      try {
 	         Class32.method995();
 	         Class49.aClass3_Sub28_Sub16_812 = null;
 	         Class58.anInt909 = -1;
 	         Class3_Sub13_Sub30.method313((byte)55);
-	         Class3_Sub28_Sub21.aClass47_3801.method1101(2);
+	         Class3_Sub28_Sub21.aClass47_3801.method1101();
 	         Class100.aClass136_1413 = new Class136();
 	         ((Class102)Class51.anInterface2_838).method1618(0);
 	         Class68.anInt1032 = 0;
 	         Class68.aClass43Array1021 = new Class43[255];
 	         Class140_Sub1_Sub1.method1929();
 	         Class141.method2043();
-	         Class65.method1240(false);
-	         Class66.method1250(17, var0);
+	         Class65.method1240();
+	         Class66.method1250(17, false);
 	         Class3_Sub13_Sub17.method247((byte)51);
 
 	         for(int var1 = 0; 2048 > var1; ++var1) {
@@ -50,12 +50,12 @@ final class Class3_Sub20 extends Class3 {
 	         }
 
 	         if(HDToolKit.highDetail) {
-	            Class141.method2041(104, 104);
+	            Class141.method2041();
 	            Class127_Sub1.method1755();
 	         }
 
-	         Class3_Sub28_Sub9.method581(CacheIndex.aClass153_1948, 0, Class140_Sub6.spritesCacheIndex);
-	         Class14.method887(21, Class140_Sub6.spritesCacheIndex);
+	         Class3_Sub28_Sub9.method581(CacheIndex.aClass153_1948, Class140_Sub6.spritesCacheIndex);
+	         Class14.method887(Class140_Sub6.spritesCacheIndex);
 	         Class3_Sub26.aClass3_Sub28_Sub16_2560 = null;
 	         Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 = null;
 	         Class50.aClass3_Sub28_Sub16_824 = null;
@@ -66,15 +66,15 @@ final class Class3_Sub20 extends Class3 {
 	         }
 
 	         if(10 == Class143.loadingStage) {
-	            Class3_Sub13_Sub11.method219(false, 3000);
+	            Class3_Sub13_Sub11.method219(false);
 	         }
 
 	         if(Class143.loadingStage == 30) {
-	            Class117.method1719(25, 5);
+	            Class117.method1719(25);
 	         }
 
 	      } catch (RuntimeException var3) {
-	         throw Class44.clientError(var3, "lb.C(" + var0 + ')');
+	         throw Class44.clientError(var3, "lb.C(" + false + ')');
 	      }
 	   }
 
@@ -120,14 +120,14 @@ final class Class3_Sub20 extends Class3 {
       }
    }
 
-   static final void method392(CacheIndex var0, CacheIndex var1, int var2, CacheIndex var3) {
+   static final void method392(CacheIndex var0, CacheIndex var1, CacheIndex var3) {
       try {
          AnimationDefinition.aClass153_1860 = var1;
         // int var4 = -110 / ((-7 - var2) / 43);
          Class7.aClass153_2160 = var0;
          Class131.aClass153_1723 = var3;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "lb.E(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "lb.E(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + -77 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 

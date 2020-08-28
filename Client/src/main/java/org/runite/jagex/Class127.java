@@ -58,7 +58,7 @@ class Class127 {
                   Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-40, 14);
                   int nameHash = (int)(var1 >> 16 & 31L);
                   Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-39, nameHash);
-                  Class3_Sub15.aClass89_2429.sendBytes(false, 0, Class3_Sub13_Sub1.outgoingBuffer.buffer, 2);
+                  Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, 2);
                   if(WorldListEntry.aClass155_2627 != null) {
                      WorldListEntry.aClass155_2627.method2159(106);
                   }
@@ -107,8 +107,8 @@ class Class127 {
                   Class3_Sub13_Sub1.outgoingBuffer.putInt(-127, var9[2]);
                   Class3_Sub13_Sub1.outgoingBuffer.putInt(var0 + -111, var9[3]);
                   Class3_Sub13_Sub1.outgoingBuffer.putLong(Class3_Sub28_Sub14.username.toLong(var0 + -116), var0 + -2037491431);
-                  Class3_Sub13_Sub1.outgoingBuffer.putString(0, Class3_Sub28_Sub14.password);
-                  Class3_Sub13_Sub1.method229((byte) 9);
+                  Class3_Sub13_Sub1.outgoingBuffer.putString(Class3_Sub28_Sub14.password);
+                  Class3_Sub13_Sub1.method229();
                   Class3_Sub13_Sub1.outgoingBuffer.encryptRSA(Class3_Sub13_Sub14.aBigInteger3162, Class3_Sub13_Sub37.aBigInteger3441, -296);
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.index = 0;
                   if(40 == Class143.loadingStage) {
@@ -127,9 +127,9 @@ class Class127 {
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.putShort(Class140_Sub7.anInt2934);
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.putByte((byte)-39, Class3_Sub28_Sub14.anInt3671);
                   Class81.putRandomDataFile(Class151_Sub1.aClass3_Sub30_Sub1_2942, true);
-                  Class151_Sub1.aClass3_Sub30_Sub1_2942.putString(0, Class163_Sub2.aClass94_2996);
+                  Class151_Sub1.aClass3_Sub30_Sub1_2942.putString(Class163_Sub2.aClass94_2996);
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.putInt(var0 ^ 118, Class3_Sub26.anInt2554);
-                  Class151_Sub1.aClass3_Sub30_Sub1_2942.putInt(-121, Class84.method1421(-2));
+                  Class151_Sub1.aClass3_Sub30_Sub1_2942.putInt(-121, Class84.method1421());
                   Class140_Sub2.aBoolean2705 = true;
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.putShort(Class113.interfacePacketCounter);
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.putInt(-122, Class75_Sub3.aClass153_2660.getCRCValue((byte)-126));
@@ -161,15 +161,15 @@ class Class127 {
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.putInt(-120, Class97.aClass153_1376.getCRCValue((byte)-123));
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.putInt(-120, Class132.aClass153_1735.getCRCValue((byte)-124));
                   Class151_Sub1.aClass3_Sub30_Sub1_2942.putInt(-120, Class132.libIndex.getCRCValue((byte)-124));
-                  Class151_Sub1.aClass3_Sub30_Sub1_2942.putBytes(Class3_Sub13_Sub1.outgoingBuffer.buffer, 0, Class3_Sub13_Sub1.outgoingBuffer.index, var0 + 117);
-                  Class3_Sub15.aClass89_2429.sendBytes(false, 0, Class151_Sub1.aClass3_Sub30_Sub1_2942.buffer, Class151_Sub1.aClass3_Sub30_Sub1_2942.index);
-                  Class3_Sub13_Sub1.outgoingBuffer.method814(var9, false);
+                  Class151_Sub1.aClass3_Sub30_Sub1_2942.putBytes(Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index, var0 + 117);
+                  Class3_Sub15.aClass89_2429.sendBytes(false, Class151_Sub1.aClass3_Sub30_Sub1_2942.buffer, Class151_Sub1.aClass3_Sub30_Sub1_2942.index);
+                  Class3_Sub13_Sub1.outgoingBuffer.method814(var9);
 
                   for(int var2 = 0; var2 < 4; ++var2) {
                      var9[var2] += 50;
                   }
 
-                  GraphicDefinition.incomingBuffer.method814(var9, false);
+                  GraphicDefinition.incomingBuffer.method814(var9);
                   Class3_Sub13_Sub25.loginStage = 4;
                }
 
@@ -220,7 +220,7 @@ class Class127 {
                if(6 == Class3_Sub13_Sub25.loginStage) {
                   Class3_Sub13_Sub1.outgoingBuffer.index = 0;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(17);
-                  Class3_Sub15.aClass89_2429.sendBytes(false, 0, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
+                  Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
                   Class3_Sub13_Sub25.loginStage = 4;
                   return;
                }
@@ -268,8 +268,8 @@ class Class127 {
                   Class3_Sub1.localIndex = GraphicDefinition.incomingBuffer.getShort(var0 + 10);
                   Class3_Sub13_Sub29.disableGEBoxes = GraphicDefinition.incomingBuffer.getByte((byte)-127) == 1;
                   Class2.isMember = GraphicDefinition.incomingBuffer.getByte((byte) -112) == 1;
-                  Class113.method1702((byte)-124, Class2.isMember);
-                  Class8.method845(Class2.isMember, 255);
+                  Class113.method1702(Class2.isMember);
+                  Class8.method845(Class2.isMember);
                   if(!Class3_Sub28_Sub19.aBoolean3779) {
                      if((!Class3_Sub15.aBoolean2433 || Class3_Sub28_Sub10_Sub1.aBoolean4063) && !Class3_Sub13_Sub29.disableGEBoxes) {
                         try {
@@ -286,7 +286,7 @@ class Class127 {
                      }
                   }
 
-                  RSString.incomingOpcode = GraphicDefinition.incomingBuffer.getOpcode(0);
+                  RSString.incomingOpcode = GraphicDefinition.incomingBuffer.getOpcode();
                   dynamic = RSString.incomingOpcode == 214;
                   Class130.incomingPacketLength = GraphicDefinition.incomingBuffer.getShort(1);
                   Class3_Sub13_Sub25.loginStage = 9;
@@ -301,7 +301,7 @@ class Class127 {
                   Class3_Sub15.aClass89_2429.readBytes(0, Class130.incomingPacketLength, -18455, GraphicDefinition.incomingBuffer.buffer);
                   Class158.anInt2005 = 2;
                   Class3_Sub13_Sub25.loginStage = 0;
-                  AnimationDefinition.method2061(true);
+                  AnimationDefinition.method2061();
                   Class3_Sub28_Sub7.anInt3606 = -1;
                   Class39.updateSceneGraph(0, dynamic);
                   RSString.incomingOpcode = -1;

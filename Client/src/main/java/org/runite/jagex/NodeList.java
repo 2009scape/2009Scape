@@ -49,17 +49,17 @@ final class NodeList {
       }
    }
 
-   final Node method877(int var1) {
+   final Node method877() {
       try {
          Node var2 = this.aClass3_Sub28_333.aClass3_Sub28_2578;
          if(var2 == this.aClass3_Sub28_333) {
             return null;
          } else {
-            var2.method524((byte)-107);
-            return var1 != -1?(Node)null:var2;
+            var2.method524();
+            return -1 != -1?(Node)null:var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ce.B(" + var1 + ')');
+         throw Class44.clientError(var3, "ce.B(" + -1 + ')');
       }
    }
 
@@ -83,7 +83,7 @@ final class NodeList {
       try {
          int var3 = 88 / ((-90 - var2) / 35);
          if(var1.aClass3_Sub28_2570 != null) {
-            var1.method524((byte)-107);
+            var1.method524();
          }
 
          var1.aClass3_Sub28_2570 = this.aClass3_Sub28_333.aClass3_Sub28_2570;
@@ -152,23 +152,23 @@ final class NodeList {
       }
    }
 
-   static final void method882(int var0, int var1) {
+   static final void method882() {
       try {
          Class3_Sub13_Sub36.anInt3423 = 0;
          Class132.anInt1741 = -1;
          Class10.anInt154 = 1;
-         GraphicDefinition.anInt546 = var1;
+         GraphicDefinition.anInt546 = 2;
          Class3_Sub9.aBoolean2311 = false;
          Class101.aClass153_1423 = null;
-         Class3_Sub13_Sub39.anInt3463 = var0;
+         Class3_Sub13_Sub39.anInt3463 = -1;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ce.F(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ce.F(" + -1 + ',' + 2 + ')');
       }
    }
 
-   final void method883(int var1) {
+   final void method883() {
       try {
-         if(var1 != 17126) {
+         if(17126 != 17126) {
             method880(-21, (byte[])null);
          }
 
@@ -179,10 +179,10 @@ final class NodeList {
                return;
             }
 
-            var2.method524((byte)-107);
+            var2.method524();
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ce.I(" + var1 + ')');
+         throw Class44.clientError(var3, "ce.I(" + 17126 + ')');
       }
    }
 
@@ -191,7 +191,7 @@ final class NodeList {
          Class3_Sub28_Sub3 var3 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1222();
 
          for(int var4 = -82 % ((var1 - 11) / 32); var3 != null; var3 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1221()) {
-            if(var3.aBoolean3553 && var3.method537(var2, (byte)97, var0)) {
+            if(var3.aBoolean3553 && var3.method537(var2, var0)) {
                return var3;
             }
          }

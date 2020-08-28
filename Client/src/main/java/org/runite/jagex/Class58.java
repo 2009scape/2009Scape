@@ -37,11 +37,11 @@ final class Class58 {
       try {
          if(var0 == -16385) {
             if(null != Class3_Sub21.aClass155_2491) {
-               Class3_Sub21.aClass155_2491.method2153((byte)-34);
+               Class3_Sub21.aClass155_2491.method2153();
             }
 
             if(null != WorldListEntry.aClass155_2627) {
-               WorldListEntry.aClass155_2627.method2153((byte)-34);
+               WorldListEntry.aClass155_2627.method2153();
             }
 
          }
@@ -124,30 +124,30 @@ final class Class58 {
       }
    }
 
-   static final void method1196(int var0, int var1, byte var2, int var3, int var4) {
+   static final void method1196(int var3, int var4) {
       try {
          Class3_Sub28_Sub18.anInt3765 = var4;
-         if(var2 != 111) {
+         if((byte) 111 != 111) {
             aBoolean913 = true;
          }
 
-         Class101.anInt1425 = var1;
-         Class159.anInt2020 = var0;
+         Class101.anInt1425 = 0;
+         Class159.anInt2020 = 0;
          Class57.anInt902 = var3;
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "id.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "id.B(" + 0 + ',' + 0 + ',' + (byte) 111 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
-   static final void method1197(CacheIndex var0, byte var1) {
+   static final void method1197(CacheIndex var0) {
       try {
-         if(var1 != 69) {
+         if((byte) 69 != 69) {
             method1195(-53, (Signlink)null, (Component)null, 79, 12);
          }
 
          Class46.aClass153_737 = var0;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "id.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "id.E(" + (var0 != null?"{...}":"null") + ',' + (byte) 69 + ')');
       }
    }
 

@@ -18,16 +18,16 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
          }
 
          if(this.anIntArrayArray3438 == null) {
-            this.method345(1, false);
+            this.method345(1);
          }
 
-         this.method346(114);
+         this.method346();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "um.P(" + var1 + ')');
       }
    }
 
-   private final void method345(int var1, boolean var2) {
+   private final void method345(int var1) {
       try {
          if(var1 != 0) {
             if(var1 == 1) {
@@ -221,12 +221,12 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
             }
          }
 
-         if(var2) {
+         if(false) {
             aClass3_Sub28_Sub17_Sub1_3440 = (Class3_Sub28_Sub17_Sub1)null;
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "um.B(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "um.B(" + var1 + ',' + false + ')');
       }
    }
 
@@ -249,7 +249,7 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
                      this.anIntArrayArray3438[var5][3] = var2.getByte((byte)-28) << 4;
                   }
                } else {
-                  this.method345(var4, false);
+                  this.method345(var4);
                }
             }
 
@@ -259,9 +259,9 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
       }
    }
 
-   private final void method346(int var1) {
+   private final void method346() {
       try {
-         if(var1 <= 95) {
+         if(114 <= 95) {
             method350((byte)-28, -113);
          }
 
@@ -328,15 +328,15 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var13) {
-         throw Class44.clientError(var13, "um.E(" + var1 + ')');
+         throw Class44.clientError(var13, "um.E(" + 114 + ')');
       }
    }
 
-   static final void method347(boolean var0) {
+   static final void method347() {
       try {
          WorldListEntry.inTutorialIsland = 0;
-         if(!var0) {
-            method347(true);
+         if(!true) {
+            method347();
          }
 
          int var1 = Class131.anInt1716 + (Class102.player.anInt2819 >> 7);
@@ -354,7 +354,7 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "um.O(" + var0 + ')');
+         throw Class44.clientError(var3, "um.O(" + true + ')');
       }
    }
 
@@ -476,13 +476,13 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
 
    static final Class168 method350(byte var0, int var1) {
       try {
-         Class168 var2 = (Class168)Class163_Sub2_Sub1.aClass93_4015.get((long)var1, (byte)121);
+         Class168 var2 = (Class168)Class163_Sub2_Sub1.aClass93_4015.get((long)var1);
          if(null == var2) {
             int var3 = 70 % ((var0 - 43) / 57);
-            byte[] var4 = Class3_Sub28_Sub5.aClass153_3580.getFile(4, (byte)-122, var1);
+            byte[] var4 = Class3_Sub28_Sub5.aClass153_3580.getFile(4, var1);
             var2 = new Class168();
             if(var4 != null) {
-               var2.method2274(24559, new RSByteBuffer(var4), var1);
+               var2.method2274(new RSByteBuffer(var4), var1);
             }
 
             Class163_Sub2_Sub1.aClass93_4015.put((byte)-109, var2, (long)var1);

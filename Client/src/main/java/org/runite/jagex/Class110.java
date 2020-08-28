@@ -37,7 +37,7 @@ final class Class110 {
       }
    }
 
-   static final void method1683(int var0, boolean var1, int var2, boolean var3, Class91 var4, int objectId, int type, int var7, byte var8, int var9, int var10) {
+   static final void method1683(int var0, boolean var1, int var2, boolean var3, Class91 var4, int objectId, int type, int var7, int var9, int var10) {
       try {
     	 var2 %= 4;
          if(var1 && !NPC.method1986(103) && 0 == (2 & Class9.aByteArrayArrayArray113[0][var7][var9])) {
@@ -45,7 +45,7 @@ final class Class110 {
                return;
             }
 
-            if(Class140_Sub3.anInt2745 != PacketParser.method823(var9, var7, var8 ^ -127, var2)) {
+            if(Class140_Sub3.anInt2745 != PacketParser.method823(var9, var7, (byte) 50 ^ -127, var2)) {
                return;
             }
          }
@@ -87,7 +87,7 @@ final class Class110 {
             }
 
             int[][] var18 = Class44.anIntArrayArrayArray723[var0];
-            if(var8 == 50) {
+            if((byte) 50 == 50) {
                int var20 = (var12 << 6) + (var7 << 7);
                int var21 = (var13 << 6) + (var9 << 7);
                int var19 = var18[var14][var17] + var18[var15][var16] + var18[var14][var16] + var18[var15][var17] >> 2;
@@ -118,8 +118,8 @@ final class Class110 {
                   var24 |= 2147483648L;
                }
 
-               if(def.method1690(28933)) {
-                  Class70.method1286(var9, false, def, var10, (NPC)null, var7, var2, (Player)null);
+               if(def.method1690()) {
+                  Class70.method1286(var9, def, var10, (NPC)null, var7, var2, (Player)null);
                }
 
                boolean var26 = def.aBoolean1503 & !var3;
@@ -140,7 +140,7 @@ final class Class110 {
                      }
 
                      if(object != null) {
-                        boolean var37 = Class7.method835(var2, var7, var9, var19, var12, var13, (GameObject)object, 0, var24);
+                        boolean var37 = Class7.method835(var2, var7, var9, var19, var12, var13, (GameObject)object, var24);
                         if(def.aBoolean1525 && var37 && var1) {
                            int var29 = 15;
                            if(object instanceof Model) {
@@ -177,7 +177,7 @@ final class Class110 {
                            object = new Class140_Sub3(objectId, type, var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject)null);
                         }
 
-                        Class7.method835(var2, var7, var9, var19, 1, 1, (GameObject)object, 0, var24);
+                        Class7.method835(var2, var7, var9, var19, 1, 1, (GameObject)object, var24);
                         if(var1 && 12 <= type && type <= 17 && type != 13 && var2 > 0) {
                            Class38_Sub1.anIntArrayArrayArray2609[var2][var7][var9] = Class3_Sub13_Sub29.bitwiseOr(Class38_Sub1.anIntArrayArrayArray2609[var2][var7][var9], 4);
                         }
@@ -244,7 +244,7 @@ final class Class110 {
                         }
 
                         if(0 != def.ClipType && var4 != null) {
-                           var4.method1486(var10, 2, type, def.ProjectileClipped, var9, var7);
+                           var4.method1486(var10, type, def.ProjectileClipped, var9, var7);
                         }
 
                         if(def.anInt1528 != 16) {
@@ -281,7 +281,7 @@ final class Class110 {
                         }
 
                         if(def.ClipType != 0 && null != var4) {
-                           var4.method1486(var10, 2, type, def.ProjectileClipped, var9, var7);
+                           var4.method1486(var10, type, def.ProjectileClipped, var9, var7);
                         }
 
                      } else {
@@ -330,7 +330,7 @@ final class Class110 {
                            }
 
                            if(def.ClipType != 0 && var4 != null) {
-                              var4.method1486(var10, 2, type, def.ProjectileClipped, var9, var7);
+                              var4.method1486(var10, type, def.ProjectileClipped, var9, var7);
                            }
 
                            if(def.anInt1528 != 16) {
@@ -367,7 +367,7 @@ final class Class110 {
                            }
 
                            if(0 != def.ClipType && var4 != null) {
-                              var4.method1486(var10, 2, type, def.ProjectileClipped, var9, var7);
+                              var4.method1486(var10, type, def.ProjectileClipped, var9, var7);
                            }
 
                         } else if(type == 9) {
@@ -382,7 +382,7 @@ final class Class110 {
                               object = new Class140_Sub3(objectId, type, var10, var0, var7, var9, def.animationId, def.aBoolean1492, (GameObject)null);
                            }
 
-                           Class7.method835(var2, var7, var9, var19, 1, 1, (GameObject)object, 0, var24);
+                           Class7.method835(var2, var7, var9, var19, 1, 1, (GameObject)object, var24);
                            if(def.ClipType != 0 && var4 != null) {
                               var4.method1489(var7, def.ProjectileClipped, (byte)127, var9, var12, var13);
                            }
@@ -515,14 +515,14 @@ final class Class110 {
                   }
                   Class3_Sub13_Sub23.method276(var2, var7, var9, var19, (GameObject)object, var24, def.aBoolean1502);
                   if(def.ClipType == 1 && null != var4) {
-                     var4.method1503(var7, var9, var8 + -55);
+                     var4.method1503(var7, var9, (byte) 50 + -55);
                   }
 
                }
             }
          }
       } catch (RuntimeException var36) {
-         throw Class44.clientError(var36, "p.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + objectId + ',' + type + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ')');
+         throw Class44.clientError(var36, "p.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + objectId + ',' + type + ',' + var7 + ',' + (byte) 50 + ',' + var9 + ',' + var10 + ')');
       }
    }
 

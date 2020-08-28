@@ -29,14 +29,14 @@ final class Class95 {
       }
    }
 
-   static final void method1583(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   static final void method1583(int var0, int var1, int var2, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
-         if(var3 != 3) {
+         if(3 != 3) {
             method1582(45);
          }
 
          if(var1 == var0 && var2 == var9 && var8 == var7 && var5 == var6) {
-            Class3_Sub13_Sub34.method330(var4, var3 + -111, var5, var0, var9, var7);
+            Class3_Sub13_Sub34.method330(var4, 3 + -111, var5, var0, var9, var7);
          } else {
             int var10 = var0;
             int var13 = 3 * var9;
@@ -71,13 +71,13 @@ final class Class95 {
          }
 
       } catch (RuntimeException var35) {
-         throw Class44.clientError(var35, "nb.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
+         throw Class44.clientError(var35, "nb.B(" + var0 + ',' + var1 + ',' + var2 + ',' + 3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
       }
    }
 
-   static final void method1584(int var0, int var1, int var2, int var3, int var4, int var5) {
+   static final void method1584(int var0, int var1, int var2, int var3, int var5) {
       try {
-         if(var4 != -26571) {
+         if(-26571 != -26571) {
             method1586(92, 25);
          }
 
@@ -92,7 +92,7 @@ final class Class95 {
 
          }
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "nb.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "nb.E(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + -26571 + ',' + var5 + ')');
       }
    }
 

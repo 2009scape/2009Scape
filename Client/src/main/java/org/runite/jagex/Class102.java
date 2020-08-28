@@ -26,13 +26,13 @@ final class Class102 implements Interface2 {
    private byte[] aByteArray2144;
 
 
-   final void method1610(boolean var1, int var2) {
+   final void method1610(int var2) {
       try {
-         if(!var1) {
+         if(!true) {
             this.method7((byte)113, 17);
          }
 
-         for(Class3_Sub28_Sub20 var3 = (Class3_Sub28_Sub20)this.aClass47_2142.method1094(0); null != var3; var3 = (Class3_Sub28_Sub20)this.aClass47_2142.method1099(-1)) {
+         for(Class3_Sub28_Sub20 var3 = (Class3_Sub28_Sub20)this.aClass47_2142.method1094(); null != var3; var3 = (Class3_Sub28_Sub20)this.aClass47_2142.method1099()) {
             if(var3.aBoolean3797) {
                var3.method723(var2, (byte)-120);
                var3.aBoolean3797 = false;
@@ -40,7 +40,7 @@ final class Class102 implements Interface2 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "nk.P(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.P(" + true + ',' + var2 + ')');
       }
    }
 
@@ -55,14 +55,14 @@ final class Class102 implements Interface2 {
          int var10;
          for(var2 = 0; var2 < Class163.localNPCCount; ++var2) {
             var3 = Class3_Sub13_Sub24.npcs[Class15.localNPCIndexes[var2]];
-            if(null != var3 && var3.hasDefinitions((byte)17) && !var3.definition.aBoolean1263 != var1 && var3.definition.method1472((byte)74)) {
-               int var4 = var3.getSize((byte)114);
+            if(null != var3 && var3.hasDefinitions((byte)17) && !var3.definition.aBoolean1263 != var1 && var3.definition.method1472()) {
+               int var4 = var3.getSize();
                int var5;
                if(1 != var4) {
                   if(((1 & var4) != 0 || (127 & var3.anInt2819) == 0 && 0 == (127 & var3.anInt2829)) && ((var4 & 1) != 1 || (127 & var3.anInt2819) == 64 && 64 == (127 & var3.anInt2829))) {
                      var5 = var3.anInt2819 + -(var4 * 64) >> 7;
                      var6 = -(var4 * 64) + var3.anInt2829 >> 7;
-                     var7 = var3.getSize((byte)114) + var5;
+                     var7 = var3.getSize() + var5;
                      if(var5 < 0) {
                         var5 = 0;
                      }
@@ -71,7 +71,7 @@ final class Class102 implements Interface2 {
                         var7 = 104;
                      }
 
-                     var8 = var6 + var3.getSize((byte)114);
+                     var8 = var6 + var3.getSize();
                      if(var6 < 0) {
                         var6 = 0;
                      }
@@ -100,8 +100,8 @@ final class Class102 implements Interface2 {
          for(var2 = 0; Class163.localNPCCount > var2; ++var2) {
             var3 = Class3_Sub13_Sub24.npcs[Class15.localNPCIndexes[var2]];
             long var15 = (long)Class15.localNPCIndexes[var2] << 32 | 536870912L;
-            if(var3 != null && var3.hasDefinitions((byte)17) && !var3.definition.aBoolean1263 == !var1 && var3.definition.method1472((byte)74)) {
-               var6 = var3.getSize((byte)114);
+            if(var3 != null && var3.hasDefinitions((byte)17) && !var3.definition.aBoolean1263 == !var1 && var3.definition.method1472()) {
+               var6 = var3.getSize();
                if(var6 != 1) {
                   if((var6 & 1) == 0 && (var3.anInt2819 & 127) == 0 && (127 & var3.anInt2829) == 0 || (var6 & 1) == 1 && (var3.anInt2819 & 127) == 64 && (127 & var3.anInt2829) == 64) {
                      var7 = -(64 * var6) + var3.anInt2819 >> 7;
@@ -186,8 +186,8 @@ final class Class102 implements Interface2 {
             this.method12(105, -92);
          }
 
-         Class3_Sub28_Sub20 var3 = this.method1613(var2, 1);
-         return null == var3?null:var3.method720(false, this.aBoolean2134 || this.aBooleanArray2122[var2], this, this.aClass153_2123);
+         Class3_Sub28_Sub20 var3 = this.method1613(var2);
+         return null == var3?null:var3.method720(this.aBoolean2134 || this.aBooleanArray2122[var2], this, this.aClass153_2123);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "nk.F(" + var1 + ',' + var2 + ')');
       }
@@ -210,17 +210,17 @@ final class Class102 implements Interface2 {
 
    public final void method8(int var1, boolean var2) {
       try {
-         Class3_Sub28_Sub4.method551(0, 255 & this.aByteArray2143[var1], this.aByteArray2144[var1] & 255);
+         Class3_Sub28_Sub4.method551(255 & this.aByteArray2143[var1], this.aByteArray2144[var1] & 255);
          if(var2) {
             boolean var3 = false;
-            Class3_Sub28_Sub20 var4 = this.method1613(var1, 1);
+            Class3_Sub28_Sub20 var4 = this.method1613(var1);
             if(var4 != null) {
-               var3 = var4.method719(this.aClass153_2123, this, 579100487, this.aBoolean2134 || this.aBooleanArray2122[var1]);
+               var3 = var4.method719(this.aClass153_2123, this, this.aBoolean2134 || this.aBooleanArray2122[var1]);
             }
 
             if(!var3) {
-               Class3_Sub28_Sub18 var6 = this.method1615(48, var1);
-               var6.method712((byte)6);
+               Class3_Sub28_Sub18 var6 = this.method1615(var1);
+               var6.method712();
             }
 
          }
@@ -229,15 +229,15 @@ final class Class102 implements Interface2 {
       }
    }
 
-   private final Class3_Sub28_Sub20 method1613(int var1, int var2) {
+   private final Class3_Sub28_Sub20 method1613(int var1) {
       try {
-         if(var2 != 1) {
+         if(1 != 1) {
             this.aBooleanArray2128 = (boolean[])null;
          }
 
          Class3_Sub28_Sub20 var3 = (Class3_Sub28_Sub20)this.aClass47_2142.method1092((long)var1, 1400);
          if(null == var3) {
-            byte[] var4 = this.aClass153_2127.getFile(var1, (byte)-122, 0);
+            byte[] var4 = this.aClass153_2127.getFile(var1, 0);
             if(null == var4) {
                return null;
             } else {
@@ -250,7 +250,7 @@ final class Class102 implements Interface2 {
             return var3;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "nk.T(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var6, "nk.T(" + var1 + ',' + 1 + ')');
       }
    }
 
@@ -276,7 +276,7 @@ final class Class102 implements Interface2 {
 
    static final void method1614(boolean var0, long[] var1, int[] var2) {
       try {
-         Class44.method1069(var1, 0, -1 + var1.length, var2, -24337);
+         Class44.method1069(var1, 0, -1 + var1.length, var2);
          if(!var0) {
             method1612(103);
          }
@@ -307,9 +307,9 @@ final class Class102 implements Interface2 {
       }
    }
 
-   private final Class3_Sub28_Sub18 method1615(int var1, int var2) {
+   private final Class3_Sub28_Sub18 method1615(int var2) {
       try {
-         int var3 = 111 / ((-15 - var1) / 38);
+         int var3 = 111 / ((-15 - 48) / 38);
          Class3_Sub28_Sub18 var4 = (Class3_Sub28_Sub18)this.aClass47_2138.method1092((long)var2, 1400);
          if(null == var4) {
             var4 = new Class3_Sub28_Sub18(this.aShortArray2137[var2] & '\uffff');
@@ -319,7 +319,7 @@ final class Class102 implements Interface2 {
             return var4;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "nk.U(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "nk.U(" + 48 + ',' + var2 + ')');
       }
    }
 
@@ -329,23 +329,23 @@ final class Class102 implements Interface2 {
             this.method7((byte)68, -47);
          }
 
-         Class3_Sub28_Sub20 var3 = this.method1613(var2, 1);
-         return null != var3?var3.method722(-5, this, this.aClass153_2123):false;
+         Class3_Sub28_Sub20 var3 = this.method1613(var2);
+         return null != var3?var3.method722(this, this.aClass153_2123):false;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "nk.H(" + var1 + ',' + var2 + ')');
       }
    }
 
-   final void method1616(boolean var1, int var2) {
+   final void method1616(boolean var1) {
       try {
          this.aBoolean2134 = var1;
-         this.method1618(var2 ^ var2);
+         this.method1618(-17830 ^ -17830);
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "nk.S(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.S(" + var1 + ',' + -17830 + ')');
       }
    }
 
-   static final void method1617(int var0, int var1, int var2, int var3, int var4, byte var5) {
+   static final void method1617(int var0, int var1, int var2, int var3, int var4) {
       try {
          if(Class57.anInt902 >= var4 && Class159.anInt2020 <= var2) {
             boolean var6;
@@ -403,11 +403,11 @@ final class Class102 implements Interface2 {
             }
          }
 
-         if(var5 == 29) {
+         if((byte) 29 == 29) {
             ;
          }
       } catch (RuntimeException var10) {
-         throw Class44.clientError(var10, "nk.R(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var10, "nk.R(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (byte) 29 + ')');
       }
    }
 
@@ -434,10 +434,10 @@ final class Class102 implements Interface2 {
 
    final void method1618(int var1) {
       try {
-         this.aClass47_2142.method1101(2);
+         this.aClass47_2142.method1101();
          if(var1 == 0) {
             if(null != this.aClass47_2138) {
-               this.aClass47_2138.method1101(2);
+               this.aClass47_2138.method1101();
             }
 
          }
@@ -466,9 +466,9 @@ final class Class102 implements Interface2 {
       }
    }
 
-   final void method1619(int var1, int var2) {
+   final void method1619(int var1) {
       try {
-         if(var2 != -1) {
+         if(-1 != -1) {
             player = (Player)null;
          }
 
@@ -481,7 +481,7 @@ final class Class102 implements Interface2 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "nk.N(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nk.N(" + var1 + ',' + -1 + ')');
       }
    }
 
@@ -494,11 +494,11 @@ final class Class102 implements Interface2 {
       }
    }
 
-   Class102(CacheIndex var1, CacheIndex var2, CacheIndex var3, int var4, boolean var5) {
+   Class102(CacheIndex var1, CacheIndex var2, CacheIndex var3, boolean var5) {
       try {
          this.aClass153_2123 = var3;
          this.aBoolean2134 = var5;
-         this.anInt2139 = var4;
+         this.anInt2139 = 20;
          this.aClass153_2127 = var1;
          this.aClass47_2142 = new Class47(this.anInt2139);
          if(HDToolKit.highDetail) {
@@ -507,7 +507,7 @@ final class Class102 implements Interface2 {
             this.aClass47_2138 = null;
          }
 
-         RSByteBuffer var6 = new RSByteBuffer(var2.getFile(0, (byte)-122, 0));
+         RSByteBuffer var6 = new RSByteBuffer(var2.getFile(0, 0));
          int var7 = var6.getShort(1);
          this.aByteArray2143 = new byte[var7];
          this.aByteArray2129 = new byte[var7];
@@ -580,18 +580,18 @@ final class Class102 implements Interface2 {
          }
 
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "nk.<init>(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var9, "nk.<init>(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + 20 + ',' + var5 + ')');
       }
    }
 
    public final int[] method13(int var1, boolean var2, float var3) {
       try {
-         Class3_Sub28_Sub20 var4 = this.method1613(var1, 1);
+         Class3_Sub28_Sub20 var4 = this.method1613(var1);
          if(null == var4) {
             return null;
          } else {
             var4.aBoolean3797 = var2;
-            return var4.method718(this, 0, var3, this.aClass153_2123, this.aBoolean2134 || this.aBooleanArray2122[var1]);
+            return var4.method718(this, var3, this.aClass153_2123, this.aBoolean2134 || this.aBooleanArray2122[var1]);
          }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "nk.L(" + var1 + ',' + var2 + ',' + var3 + ')');

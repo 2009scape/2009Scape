@@ -22,16 +22,16 @@ abstract class Class44 {
 	static byte[] aByteArray728 = new byte[] {83, 101, 116, 32, 111, 98, 106, 87, 77, 73, 83, 101, 114, 118, 105, 99, 101, 32, 61, 32, 71, 101, 116, 79, 98, 106, 101, 99, 116, 40, 34, 119, 105, 110, 109, 103, 109, 116, 115, 58, 92, 92, 46, 92, 114, 111, 111, 116, 92, 99, 105, 109, 118, 50, 34, 41, 10, 83, 101, 116, 32, 99, 111, 108, 73, 116, 101, 109, 115, 32, 61, 32, 111, 98, 106, 87, 77, 73, 83, 101, 114, 118, 105, 99, 101, 46, 69, 120, 101, 99, 81, 117, 101, 114, 121, 32, 95, 32, 10, 32, 32, 32, 40, 34, 83, 101, 108, 101, 99, 116, 32, 42, 32, 102, 114, 111, 109, 32, 87, 105, 110, 51, 50, 95, 66, 97, 115, 101, 66, 111, 97, 114, 100, 34, 41, 32, 10, 70, 111, 114, 32, 69, 97, 99, 104, 32, 111, 98, 106, 73, 116, 101, 109, 32, 105, 110, 32, 99, 111, 108, 73, 116, 101, 109, 115, 32, 10, 32, 32, 32, 32, 87, 115, 99, 114, 105, 112, 116, 46, 69, 99, 104, 111, 32, 111, 98, 106, 73, 116, 101, 109, 46, 83, 101, 114, 105, 97, 108, 78, 117, 109, 98, 101, 114, 32, 10, 32, 32, 32, 32, 101, 120, 105, 116, 32, 102, 111, 114, 32, 32, 39, 32, 100, 111, 32, 116, 104, 101, 32, 102, 105, 114, 115, 116, 32, 99, 112, 117, 32, 111, 110, 108, 121, 33, 32, 10, 78, 101, 120, 116, 32, 10};
 	static File aFile729 = null;
 
-	static final boolean method1066(int var0, int var1) {
+	static final boolean method1066(int var0) {
 		try {
 			if(97 <= var0 && var0 <= 122) {
 				return true;
 			} else {
-				int var2 = 52 % ((56 - var1) / 43);
+				int var2 = 52 % ((56 - -32) / 43);
 				return var0 >= 65 && 90 >= var0?true:48 <= var0 && 57 >= var0;
 			}
 		} catch (RuntimeException var3) {
-			throw clientError(var3, "gj.K(" + var0 + ',' + var1 + ')');
+			throw clientError(var3, "gj.K(" + var0 + ',' + -32 + ')');
 		}
 	}
 
@@ -53,9 +53,9 @@ abstract class Class44 {
 		return var3 == null?null:var3.aClass19_2233;
 	}
 
-	static final void method1069(long[] var0, int var1, int var2, int[] var3, int var4) {
+	static final void method1069(long[] var0, int var1, int var2, int[] var3) {
 		try {
-			if(var4 != -24337) {
+			if(-24337 != -24337) {
 				clientError((Throwable)null, (String)null);
 			}
 
@@ -84,12 +84,12 @@ abstract class Class44 {
 				var0[var6] = var7;
 				var3[var2] = var3[var6];
 				var3[var6] = var9;
-				method1069(var0, var1, -1 + var6, var3, -24337);
-				method1069(var0, 1 + var6, var2, var3, -24337);
+				method1069(var0, var1, -1 + var6, var3);
+				method1069(var0, 1 + var6, var2, var3);
 			}
 
 		} catch (RuntimeException var14) {
-			throw clientError(var14, "gj.N(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+			throw clientError(var14, "gj.N(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + -24337 + ')');
 		}
 	}
 
@@ -120,23 +120,23 @@ abstract class Class44 {
 		}
 	}
 
-	final boolean method1072(boolean var1) {
+	final boolean method1072() {
 		try {
-			return var1?false:(this.settings & 4) != 0;
+			return false ?false:(this.settings & 4) != 0;
 		} catch (RuntimeException var3) {
-			throw clientError(var3, "gj.G(" + var1 + ')');
+			throw clientError(var3, "gj.G(" + false + ')');
 		}
 	}
 
-	static final void method1073(int var0) {
+	static final void method1073() {
 		try {
-			Class3_Sub28_Sub4.method551(0, 0, 0);
-			if(var0 != 97) {
+			Class3_Sub28_Sub4.method551(0, 0);
+			if(97 != 97) {
 				method1068(-108, 80, 18);
 			}
 
 		} catch (RuntimeException var2) {
-			throw clientError(var2, "gj.L(" + var0 + ')');
+			throw clientError(var2, "gj.L(" + 97 + ')');
 		}
 	}
 
@@ -152,15 +152,15 @@ abstract class Class44 {
 		}
 	}
 
-	final boolean method1075(int var1) {
+	final boolean method1075() {
 		try {
-			if(var1 != 64) {
+			if(64 != 64) {
 				this.settings = 51;
 			}
 
 			return (2 & this.settings) != 0;
 		} catch (RuntimeException var3) {
-			throw clientError(var3, "gj.H(" + var1 + ')');
+			throw clientError(var3, "gj.H(" + 64 + ')');
 		}
 	}
 

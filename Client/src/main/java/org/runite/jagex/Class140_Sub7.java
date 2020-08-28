@@ -21,7 +21,7 @@ final class Class140_Sub7 extends GameObject {
          if(var0 > -116) {
             return false;
          } else {
-            byte[] var3 = var1.method2138(var2, 0);
+            byte[] var3 = var1.method2138(var2);
             if(null == var3) {
                return false;
             } else {
@@ -252,35 +252,35 @@ final class Class140_Sub7 extends GameObject {
 
    final void method1867(int var1, int var2, int var3, int var4, int var5) {}
 
-   static final int method2032(int var0, int var1) {
+   static final int method2032(int var0) {
       try {
-         if(var1 != 5439488) {
+         if(5439488 != 5439488) {
             anInt2937 = 102;
          }
 
          return var0 >>> 10;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "uj.E(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "uj.E(" + var0 + ',' + 5439488 + ')');
       }
    }
 
-   static final RSString method2033(RSByteBuffer var0, int var1, int var2) {
+   static final RSString method2033(RSByteBuffer var0) {
       try {
          try {
-            int var3 = var0.getSmart(true);
-            if(var2 < var3) {
-               var3 = var2;
+            int var3 = var0.getSmart();
+            if(32767 < var3) {
+               var3 = 32767;
             }
 
             byte[] var4 = new byte[var3];
-            var0.index += Class3_Sub13_Sub9.aClass36_3112.method1017(0, var3, var4, var1 ^ -1247, var0.buffer, var0.index);
-            RSString var5 = Class3_Sub13_Sub3.method178(var4, -4114, var3, 0);
-            return var1 != 1?(RSString)null:var5;
+            var0.index += Class3_Sub13_Sub9.aClass36_3112.method1017(0, var3, var4, 1 ^ -1247, var0.buffer, var0.index);
+            RSString var5 = Class3_Sub13_Sub3.method178(var4, var3, 0);
+            return 1 != 1?(RSString)null:var5;
          } catch (Exception var6) {
             return Class159.aClass94_2018;
          }
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "uj.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var7, "uj.D(" + (var0 != null?"{...}":"null") + ',' + 1 + ',' + 32767 + ')');
       }
    }
 

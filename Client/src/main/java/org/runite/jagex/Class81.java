@@ -19,7 +19,7 @@ final class Class81 {
          if(null != Class69.aClass30_1039) {
             try {
                Class69.aClass30_1039.method984(-41, 0L);
-               Class69.aClass30_1039.method982(false, var2);
+               Class69.aClass30_1039.method982(var2);
 
                int var3;
                for(var3 = 0; var3 < 24 && var2[var3] == 0; ++var3) {
@@ -36,7 +36,7 @@ final class Class81 {
             }
          }
 
-         var0.putBytes(var2, 0, 24, 88);
+         var0.putBytes(var2, 24, 88);
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "la.G(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
@@ -49,7 +49,7 @@ final class Class81 {
          }
 
          int var2 = var1.anInt3963;
-         RenderAnimationDefinition var3 = var1.method1965(false);
+         RenderAnimationDefinition var3 = var1.method1965();
          if(var1.anInt2764 == var3.anInt368) {
             var2 = var1.anInt3952;
          } else if(var3.anInt393 != var1.anInt2764 && var1.anInt2764 != var3.anInt386 && var1.anInt2764 != var3.anInt375 && var3.anInt373 != var1.anInt2764) {
@@ -66,12 +66,12 @@ final class Class81 {
       }
    }
 
-   static final void method1399(int var0, long var1) {
+   static final void method1399(long var1) {
       try {
          if(var1 != 0L) {
             if(Class3_Sub28_Sub5.anInt3591 < 100) {
-               int var3 = -103 / ((var0 - -20) / 41);
-               RSString var4 = Class41.method1052(-29664, var1).method1545((byte)-50);
+               int var3 = -103 / ((32 - -20) / 41);
+               RSString var4 = Class41.method1052(-29664, var1).method1545();
 
                int var5;
                for(var5 = 0; var5 < Class3_Sub28_Sub5.anInt3591; ++var5) {
@@ -88,7 +88,7 @@ final class Class81 {
                   }
                }
 
-               if(var4.method1528((byte)-42, Class102.player.displayName)) {
+               if(var4.method1528(Class102.player.displayName)) {
                   Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, TextCore.HasOnOwnIgnoreList, -1);
                } else {
                   ++Class3_Sub13_Sub22.anInt3267;
@@ -103,7 +103,7 @@ final class Class81 {
             }
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "la.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var6, "la.B(" + 32 + ',' + var1 + ')');
       }
    }
 
@@ -128,14 +128,14 @@ final class Class81 {
       }
    }
 
-   static final Class57 method1401(int var0, int var1) {
+   static final Class57 method1401(int var1) {
       try {
-         Class57 var2 = (Class57)Class128.aClass93_1683.get((long)var1, (byte)121);
+         Class57 var2 = (Class57)Class128.aClass93_1683.get((long)var1);
          if(var2 == null) {
-            byte[] var3 = Class46.aClass153_737.getFile(31, (byte)-122, var1);
+            byte[] var3 = Class46.aClass153_737.getFile(31, var1);
             var2 = new Class57();
             if(var3 != null) {
-               var2.method1190(2, new RSByteBuffer(var3), var1);
+               var2.method1190(new RSByteBuffer(var3), var1);
             }
 
             Class128.aClass93_1683.put((byte)-75, var2, (long)var1);
@@ -144,7 +144,7 @@ final class Class81 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "la.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "la.D(" + 1001 + ',' + var1 + ')');
       }
    }
 
@@ -159,17 +159,17 @@ final class Class81 {
 
    static final Class131 method1403(int var0, RSString var1, CacheIndex var2) {
       try {
-         int var3 = var2.getArchiveForName(var1, (byte)-30);
+         int var3 = var2.getArchiveForName(var1);
          if(var3 == -1) {
             return new Class131(0);
          } else if(var0 > -38) {
             return (Class131)null;
          } else {
-            int[] var4 = var2.getFileIds((byte)-128, var3);
+            int[] var4 = var2.getFileIds(var3);
             Class131 var5 = new Class131(var4.length);
 
             for(int var6 = 0; var5.anInt1720 > var6; ++var6) {
-               RSByteBuffer var7 = new RSByteBuffer(var2.getFile(var3, (byte)-122, var4[var6]));
+               RSByteBuffer var7 = new RSByteBuffer(var2.getFile(var3, var4[var6]));
                var5.aClass94Array1721[var6] = var7.getString();
                var5.aByteArray1730[var6] = var7.getByte();
                var5.aShortArray1727[var6] = (short)var7.getShort(1);

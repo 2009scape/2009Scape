@@ -514,19 +514,19 @@ final class Class74 {
       }
    }
 
-   static final void method1330(int var0, int var1, int var2, int var3, int var4) {
+   static final void method1330(int var0, int var1, int var2, int var4) {
       if(var4 != 0) {
          if(var4 == 256) {
-            method1329(var0, var1, var2, var3);
+            method1329(var0, var1, var2, 16776960);
          } else {
             if(var2 < 0) {
                var2 = -var2;
             }
 
             int var5 = 256 - var4;
-            int var6 = (var3 >> 16 & 255) * var4;
-            int var7 = (var3 >> 8 & 255) * var4;
-            int var8 = (var3 & 255) * var4;
+            int var6 = (16776960 >> 16 & 255) * var4;
+            int var7 = (16776960 >> 8 & 255) * var4;
+            int var8 = (16776960 & 255) * var4;
             int var12 = var1 - var2;
             if(var12 < anInt1095) {
                var12 = anInt1095;
@@ -633,14 +633,14 @@ final class Class74 {
       method1310();
    }
 
-   static final void method1332(int var0, int var1, int var2, int[] var3, int[] var4) {
+   static final void method1332(int var0, int var1, int[] var3, int[] var4) {
       int var5 = var0 + var1 * anInt1092;
 
       for(var1 = 0; var1 < var3.length; ++var1) {
          int var6 = var5 + var3[var1];
 
          for(var0 = -var4[var1]; var0 < 0; ++var0) {
-            anIntArray1100[var6++] = var2;
+            anIntArray1100[var6++] = 0;
          }
 
          var5 += anInt1092;

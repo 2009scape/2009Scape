@@ -312,7 +312,7 @@ final class Model_Sub1 extends GameObject {
       }
    }
 
-   final Model_Sub1 method1999(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7, boolean var8, boolean var9) {
+   final Model_Sub1 method1999(int var1, int var2, int[][] var3, int[][] var4, int var5, int var6, int var7) {
       this.method1993();
       int var10 = var5 + this.aShort2850;
       int var11 = var5 + this.aShort2873;
@@ -340,7 +340,7 @@ final class Model_Sub1 extends GameObject {
          }
 
           Model_Sub1 var14;
-         if(var8) {
+         if(true) {
             var14 = new Model_Sub1();
             var14.anInt2887 = this.anInt2887;
             var14.anInt2849 = this.anInt2849;
@@ -473,7 +473,7 @@ final class Model_Sub1 extends GameObject {
             }
          }
 
-         if(var9) {
+         if(false) {
             var14.method2007();
          } else {
             this.aBoolean2853 = false;
@@ -483,8 +483,8 @@ final class Model_Sub1 extends GameObject {
       }
    }
 
-   final Class140_Sub1_Sub2 method2000(int var1, int var2, int var3, int var4, int var5) {
-      return new Class140_Sub1_Sub2(this, var1, var2, var3, var4, var5);
+   final Class140_Sub1_Sub2 method2000(int var1, int var2) {
+      return new Class140_Sub1_Sub2(this, var1, var2, -50, -10, -50);
    }
 
    final void method1867(int var1, int var2, int var3, int var4, int var5) {}
@@ -931,11 +931,11 @@ final class Model_Sub1 extends GameObject {
       return var1;
    }
 
-   final int method2005(int var1, int var2, int var3, byte var4, short var5, byte var6) {
+   final int method2005(int var1, int var2, int var3, short var5, byte var6) {
       this.anIntArray2865[this.anInt2849] = var1;
       this.anIntArray2878[this.anInt2849] = var2;
       this.anIntArray2864[this.anInt2849] = var3;
-      this.aByteArray2859[this.anInt2849] = var4;
+      this.aByteArray2859[this.anInt2849] = (byte) 1;
       this.aByteArray2866[this.anInt2849] = -1;
       this.aShortArray2870[this.anInt2849] = var5;
       this.aShortArray2858[this.anInt2849] = -1;
@@ -1085,9 +1085,9 @@ final class Model_Sub1 extends GameObject {
       }
    }
 
-   final void method2011(int var1) {
-      int var2 = anIntArray2871[var1];
-      int var3 = anIntArray2863[var1];
+   final void method2011() {
+      int var2 = anIntArray2871[256];
+      int var3 = anIntArray2863[256];
 
       for(int var4 = 0; var4 < this.anInt2887; ++var4) {
          int var5 = this.anIntArray2892[var4] * var2 + this.anIntArray2885[var4] * var3 >> 16;
@@ -1197,21 +1197,21 @@ final class Model_Sub1 extends GameObject {
 
    }
 
-   final int method2014(int var1, int var2, int var3) {
+   final int method2014(int var1, int var3) {
       for(int var4 = 0; var4 < this.anInt2887; ++var4) {
-         if(this.anIntArray2885[var4] == var1 && this.anIntArray2881[var4] == var2 && this.anIntArray2892[var4] == var3) {
+         if(this.anIntArray2885[var4] == var1 && this.anIntArray2881[var4] == 0 && this.anIntArray2892[var4] == var3) {
             return var4;
          }
       }
 
       this.anIntArray2885[this.anInt2887] = var1;
-      this.anIntArray2881[this.anInt2887] = var2;
+      this.anIntArray2881[this.anInt2887] = 0;
       this.anIntArray2892[this.anInt2887] = var3;
       return this.anInt2887++;
    }
 
-   static final Model_Sub1 method2015(CacheIndex var0, int var1, int var2) {
-      byte[] var3 = var0.getFile(var1, (byte)-122, var2);
+   static final Model_Sub1 method2015(CacheIndex var0, int var1) {
+      byte[] var3 = var0.getFile(var1, 0);
       return var3 == null?null:new Model_Sub1(var3);
    }
 
@@ -1521,7 +1521,7 @@ final class Model_Sub1 extends GameObject {
 
    }
 
-   Model_Sub1(int var1, int var2, int var3) {
+   Model_Sub1(int var1, int var2) {
       this.anIntArray2885 = new int[var1];
       this.anIntArray2881 = new int[var1];
       this.anIntArray2892 = new int[var1];
@@ -1536,19 +1536,19 @@ final class Model_Sub1 extends GameObject {
       this.aShortArray2858 = new short[var2];
       this.aByteArray2866 = new byte[var2];
       this.anIntArray2847 = new int[var2];
-      if(var3 > 0) {
-         this.aByteArray2857 = new byte[var3];
-         this.aShortArray2884 = new short[var3];
-         this.aShortArray2846 = new short[var3];
-         this.aShortArray2891 = new short[var3];
-         this.aShortArray2888 = new short[var3];
-         this.aShortArray2882 = new short[var3];
-         this.aShortArray2851 = new short[var3];
-         this.aByteArray2845 = new byte[var3];
-         this.aByteArray2867 = new byte[var3];
-         this.aByteArray2877 = new byte[var3];
-         this.aByteArray2852 = new byte[var3];
-         this.aByteArray2869 = new byte[var3];
+      if(0 > 0) {
+         this.aByteArray2857 = new byte[0];
+         this.aShortArray2884 = new short[0];
+         this.aShortArray2846 = new short[0];
+         this.aShortArray2891 = new short[0];
+         this.aShortArray2888 = new short[0];
+         this.aShortArray2882 = new short[0];
+         this.aShortArray2851 = new short[0];
+         this.aByteArray2845 = new byte[0];
+         this.aByteArray2867 = new byte[0];
+         this.aByteArray2877 = new byte[0];
+         this.aByteArray2852 = new byte[0];
+         this.aByteArray2869 = new byte[0];
       }
 
    }
@@ -1739,7 +1739,7 @@ final class Model_Sub1 extends GameObject {
 
    }
 
-   Model_Sub1(Model_Sub1 var1, boolean var2, boolean var3, boolean var4, boolean var5) {
+   Model_Sub1(Model_Sub1 var1, boolean var2, boolean var3, boolean var4) {
       this.anInt2887 = var1.anInt2887;
       this.anInt2849 = var1.anInt2849;
       this.anInt2862 = var1.anInt2862;
@@ -1780,7 +1780,7 @@ final class Model_Sub1 extends GameObject {
          }
       }
 
-       if(var5) {
+       if(true) {
          this.aByteArray2843 = var1.aByteArray2843;
       } else {
          this.aByteArray2843 = new byte[this.anInt2849];

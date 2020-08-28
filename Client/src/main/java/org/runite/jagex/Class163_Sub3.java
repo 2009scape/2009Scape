@@ -25,25 +25,25 @@ final class Class163_Sub3 extends Class163 {
 
    static final int[] PLAYER_RENDER_LOG = new int[4];
    
-   static final void renderPlayers(byte var0) {
+   static final void renderPlayers() {
       try {
          Class66.maskUpdateCount = 0;
          Class139.anInt1829 = 0;
-         Class151_Sub1.updateLocalPosition((byte)81);
+         Class151_Sub1.updateLocalPosition();
          PLAYER_RENDER_LOG[0] = GraphicDefinition.incomingBuffer.index;
-         Class140_Sub3.renderLocalPlayers(false);
+         Class140_Sub3.renderLocalPlayers();
          PLAYER_RENDER_LOG[1] = GraphicDefinition.incomingBuffer.index;
-         Class131.addLocalPlayers(-59);
+         Class131.addLocalPlayers();
          PLAYER_RENDER_LOG[2] = GraphicDefinition.incomingBuffer.index;
          Canvas_Sub2.parsePlayerMasks(-102);
          PLAYER_RENDER_LOG[3] = GraphicDefinition.incomingBuffer.index;
-         if(var0 <= -69) {
+         if((byte) -122 <= -69) {
             int var1;
             for(var1 = 0; Class139.anInt1829 > var1; ++var1) {
                int var2 = Class3_Sub7.anIntArray2292[var1];
                if(Class44.anInt719 != Class3_Sub13_Sub22.players[var2].anInt2838) {
                   if(0 < Class3_Sub13_Sub22.players[var2].anInt3969) {
-                     Class162.method2203(Class3_Sub13_Sub22.players[var2], 8);
+                     Class162.method2203(Class3_Sub13_Sub22.players[var2]);
                   }
 
                   Class3_Sub13_Sub22.players[var2] = null;
@@ -66,16 +66,16 @@ final class Class163_Sub3 extends Class163 {
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "fb.B(" + var0 + ')');
+         throw Class44.clientError(var3, "fb.B(" + (byte) -122 + ')');
       }
    }
 
-   static final void method2229(long var0, byte var2) {
+   static final void method2229(long var0) {
       try {
          if(var0 != 0) {
             if((100 > Class8.anInt104 || Class3_Sub13_Sub29.disableGEBoxes) && Class8.anInt104 < 200) {
-               RSString var3 = Class41.method1052(-29664, var0).method1545((byte)-50);
-               if(var2 != -91) {
+               RSString var3 = Class41.method1052(-29664, var0).method1545();
+               if((byte) -91 != -91) {
                   method2227((byte)22);
                }
 
@@ -94,7 +94,7 @@ final class Class163_Sub3 extends Class163 {
                   }
                }
 
-               if(var3.method1528((byte)-42, Class102.player.displayName)) {
+               if(var3.method1528(Class102.player.displayName)) {
                   Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, TextCore.HasOnOwnFriendsList, -1);
                } else {
                   ++GraphicDefinition.anInt544;
@@ -107,14 +107,14 @@ final class Class163_Sub3 extends Class163 {
                   ++Class8.anInt104;
                   Class110.anInt1472 = Class3_Sub13_Sub17.anInt3213;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(120);
-                  Class3_Sub13_Sub1.outgoingBuffer.putLong(var0, var2 ^ 2037491381);
+                  Class3_Sub13_Sub1.outgoingBuffer.putLong(var0, (byte) -91 ^ 2037491381);
                }
             } else {
                Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, TextCore.HasFriendsListFull, -1);
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "fb.C(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "fb.C(" + var0 + ',' + (byte) -91 + ')');
       }
    }
 

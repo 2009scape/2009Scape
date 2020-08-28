@@ -161,14 +161,14 @@ final class Class33 {
 
    }
 
-   final void method1003(RSString var1, int var2, int var3, int var4, boolean var5) {
+   final void method1003(RSString var1, int var2, int var3, int var4) {
       int var6 = this.method1005(var1) / 2;
       int var7 = this.method1006();
       if(var2 - var6 <= Class74.anInt1096) {
          if(var2 + var6 >= Class74.anInt1093) {
             if(var3 - var7 <= Class74.anInt1099) {
                if(var3 >= 0) {
-                  this.method997(var1, var2 - var6, var3, var4, var5);
+                  this.method997(var1, var2 - var6, var3, var4, true);
                }
             }
          }
@@ -312,10 +312,10 @@ final class Class33 {
       return this.aByteArray594[6];
    }
 
-   Class33(int var1, boolean var2, Component var3) {
+   Class33(int var1, Component var3) {
       this.anInt596 = anInt598 * 9;
       this.aBoolean595 = false;
-      Font var4 = new Font("Helvetica", var2?1:0, var1);
+      Font var4 = new Font("Helvetica", true ?1:0, var1);
       FontMetrics var5 = var3.getFontMetrics(var4);
 
       int var6;
@@ -323,7 +323,7 @@ final class Class33 {
          this.method1004(var4, var5, aString597.charAt(var6), var6, false);
       }
 
-      if(var2 && this.aBoolean595) {
+      if(true && this.aBoolean595) {
          this.anInt596 = anInt598 * 9;
          this.aBoolean595 = false;
          var4 = new Font("Helvetica", 0, var1);

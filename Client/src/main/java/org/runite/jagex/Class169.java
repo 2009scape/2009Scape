@@ -23,11 +23,11 @@ final class Class169 {
       for(int var5 = 0; var5 <= 8; ++var5) {
          for(var6 = 0; var6 <= 8; ++var6) {
             if(HDToolKit.aBoolean1790) {
-               var4.method801(881, (float)var6 / 8.0F);
-               var4.method801(881, (float)var5 / 8.0F);
-               var4.method801(881, (float)(var6 * 128));
-               var4.method801(881, (float)var1[var6 + var2][var5 + var3]);
-               var4.method801(881, (float)(var5 * 128));
+               var4.method801((float)var6 / 8.0F);
+               var4.method801((float)var5 / 8.0F);
+               var4.method801((float)(var6 * 128));
+               var4.method801((float)var1[var6 + var2][var5 + var3]);
+               var4.method801((float)(var5 * 128));
             } else {
                var4.method762((float)var6 / 8.0F, (byte)104);
                var4.method762((float)var5 / 8.0F, (byte)65);

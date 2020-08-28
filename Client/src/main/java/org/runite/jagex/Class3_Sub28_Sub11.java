@@ -10,10 +10,10 @@ final class Class3_Sub28_Sub11 extends Node {
    static int anInt3644 = 0;
 
 
-   static final int method599(int var0, CacheIndex var1) {
+   static final int method599(CacheIndex var1) {
       try {
          int var2 = 0;
-         if(var0 != -20916) {
+         if(-20916 != -20916) {
             return -88;
          } else {
             if(var1.method2144(0, Class154.anInt1966)) {
@@ -27,30 +27,30 @@ final class Class3_Sub28_Sub11 extends Node {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "lk.F(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "lk.F(" + -20916 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
-   final int method600(int var1, int var2, byte var3) {
+   final int method600(int var1, int var2) {
       try {
          if(this.aClass130_3636 != null) {
-            if(var3 != -29) {
+            if((byte) -29 != -29) {
                this.method604((RSString)null, (byte)56, 110);
             }
 
-            Class3_Sub18 var4 = (Class3_Sub18)this.aClass130_3636.method1780((long)var1, var3 ^ -29);
+            Class3_Sub18 var4 = (Class3_Sub18)this.aClass130_3636.method1780((long)var1, (byte) -29 ^ -29);
             return null == var4?var2:var4.anInt2467;
          } else {
             return var2;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "lk.Q(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "lk.Q(" + var1 + ',' + var2 + ',' + (byte) -29 + ')');
       }
    }
 
-   private final void method601(RSByteBuffer var1, int var2, byte var3) {
+   private final void method601(RSByteBuffer var1, int var2) {
       try {
-         if(var3 < -2) {
+         if((byte) -5 < -2) {
             if(249 == var2) {
                int var4 = var1.getByte((byte)-52);
                int var5;
@@ -75,7 +75,7 @@ final class Class3_Sub28_Sub11 extends Node {
 
          }
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "lk.P(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var9, "lk.P(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (byte) -5 + ')');
       }
    }
 
@@ -234,7 +234,7 @@ final class Class3_Sub28_Sub11 extends Node {
                         Class135 var8 = Class135.method1811(Class146.aClass153_1902, var1.anInt2332, 0);
                         if(null != var8) {
                            Class3_Sub12_Sub1 var9 = var8.method1812().method151(Class27.aClass157_524);
-                           Class3_Sub24_Sub1 var10 = Class3_Sub24_Sub1.method437(var9, 100, var7);
+                           Class3_Sub24_Sub1 var10 = Class3_Sub24_Sub1.method437(var9, var7);
                            var10.method429(-1);
                            Class3_Sub26.aClass3_Sub24_Sub2_2563.method457(var10);
                            var1.aClass3_Sub24_Sub1_2312 = var10;
@@ -246,7 +246,7 @@ final class Class3_Sub28_Sub11 extends Node {
 
                   if(null != var1.aClass3_Sub24_Sub1_2315) {
                      var1.aClass3_Sub24_Sub1_2315.method419(var7);
-                     if(!var1.aClass3_Sub24_Sub1_2315.method82(0)) {
+                     if(!var1.aClass3_Sub24_Sub1_2315.method82()) {
                         var1.aClass3_Sub24_Sub1_2315 = null;
                      }
                   } else if(var1.anIntArray2333 != null && ~(var1.anInt2316 -= var3) >= -1) {
@@ -254,7 +254,7 @@ final class Class3_Sub28_Sub11 extends Node {
                      Class135 var14 = Class135.method1811(Class146.aClass153_1902, var1.anIntArray2333[var13], 0);
                      if(null != var14) {
                         Class3_Sub12_Sub1 var15 = var14.method1812().method151(Class27.aClass157_524);
-                        Class3_Sub24_Sub1 var11 = Class3_Sub24_Sub1.method437(var15, 100, var7);
+                        Class3_Sub24_Sub1 var11 = Class3_Sub24_Sub1.method437(var15, var7);
                         var11.method429(0);
                         Class3_Sub26.aClass3_Sub24_Sub2_2563.method457(var11);
                         var1.anInt2316 = (int)((double)(-var1.anInt2310 + var1.anInt2325) * Math.random()) + var1.anInt2310;
@@ -283,22 +283,22 @@ final class Class3_Sub28_Sub11 extends Node {
 
 
 
-   final void method608(int var1, RSByteBuffer var2) {
+   final void method608(RSByteBuffer var2) {
       try {
          while(true) {
             int var3 = var2.getByte((byte)-76);
             if(0 == var3) {
-               if(var1 != 5) {
+               if(5 != 5) {
                   Translation.englishToGerman(false);
                }
 
                return;
             }
 
-            this.method601(var2, var3, (byte)-5);
+            this.method601(var2, var3);
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "lk.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "lk.C(" + 5 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 

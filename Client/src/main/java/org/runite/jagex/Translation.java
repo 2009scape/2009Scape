@@ -6,7 +6,7 @@ public class Translation {
 
 
     //Class 9 englishToFrench
-    static final void englishToFrench(byte var0) {
+    static final void englishToFrench() {
         try {
             TextCore.LoadedConfig = RSString.createRSString("Fichiers config charg-Bs");
             TextCore.LoadingConfig = RSString.createRSString("Chargement des fichiers config )2 ");
@@ -27,7 +27,7 @@ public class Translation {
             TextCore.TextColorRed = RSString.createRSString("rouge:");
             TextCore.TextWave = RSString.createRSString("ondulation:");
             TextCore.LoadingConnecting = RSString.createRSString("Connexion au serveur de mise -9 jour en cours");
-            if(var0 != 121) {
+            if((byte) 121 != 121) {
                 Class9.method848(-68);
             }
             TextCore.HasFriendsAlready = RSString.createRSString(" est d-Bj-9 dans votre liste d(Wamis)3");
@@ -102,7 +102,7 @@ public class Translation {
             TextCore.HasScroll = RSString.createRSString("d-Broulement:");
             TextCore.LoadingWLD = RSString.createRSString("Chargement de la liste des serveurs");
         } catch (RuntimeException var2) {
-            throw Class44.clientError(var2, "bb.C(" + var0 + ')');
+            throw Class44.clientError(var2, "bb.C(" + (byte) 121 + ')');
         }
     }
 

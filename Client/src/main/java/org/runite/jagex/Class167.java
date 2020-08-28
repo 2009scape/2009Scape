@@ -7,7 +7,7 @@ final class Class167 {
    static int anInt2087 = 0;
 
 
-   static final void addLocalNPCs(int var0) {
+   static final void addLocalNPCs() {
       try {
          while(true) {
             if(GraphicDefinition.incomingBuffer.method815(Class130.incomingPacketLength, 32666) >= 27) {
@@ -22,8 +22,8 @@ final class Class167 {
                   NPC var3 = Class3_Sub13_Sub24.npcs[var1];
                   Class15.localNPCIndexes[Class163.localNPCCount++] = var1;
                   var3.anInt2838 = Class44.anInt719;
-                  if(null != var3.definition && var3.definition.method1474(-1)) {
-                     Class3_Sub28_Sub8.method574(var3, false);
+                  if(null != var3.definition && var3.definition.method1474()) {
+                     Class3_Sub28_Sub8.method574(var3);
                   }
 
                   int var4 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 1);
@@ -38,7 +38,7 @@ final class Class167 {
                   }
 
                   int var7 = GraphicDefinition.incomingBuffer.getBits((byte)-11, 5);
-                  var3.setDefinitions(-1, Node.method522(GraphicDefinition.incomingBuffer.getBits((byte)-11, 14), 27112));
+                  var3.setDefinitions(Node.method522(GraphicDefinition.incomingBuffer.getBits((byte)-11, 14), 27112));
                   if(15 < var7) {
                      var7 -= 32;
                   }
@@ -55,23 +55,23 @@ final class Class167 {
                      var3.anInt2785 = 0;
                   }
 
-                  var3.method1967(-2, var3.getSize((byte)114), Class102.player.anIntArray2767[0] + var8, var7 + Class102.player.anIntArray2755[0], var4 == 1);
-                  if(var3.definition.method1474(-1)) {
-                     Class70.method1286(var3.anIntArray2755[0], false, (ObjectDefinition)null, 0, var3, var3.anIntArray2767[0], WorldListCountry.localPlane, (Player)null);
+                  var3.method1967(-2, var3.getSize(), Class102.player.anIntArray2767[0] + var8, var7 + Class102.player.anIntArray2755[0], var4 == 1);
+                  if(var3.definition.method1474()) {
+                     Class70.method1286(var3.anIntArray2755[0], (ObjectDefinition)null, 0, var3, var3.anIntArray2767[0], WorldListCountry.localPlane, (Player)null);
                   }
                   continue;
                }
             }
 
-            GraphicDefinition.incomingBuffer.method818(false);
-            if(var0 <= 0) {
+            GraphicDefinition.incomingBuffer.method818();
+            if(113 <= 0) {
                method2265(-16);
             }
 
             return;
          }
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "wj.E(" + var0 + ')');
+         throw Class44.clientError(var9, "wj.E(" + 113 + ')');
       }
    }
 
@@ -115,20 +115,20 @@ final class Class167 {
 
    static final void method2265(int var0) {
       try {
-         CS2Script.aClass93_2442.method1524(3);
+         CS2Script.aClass93_2442.method1524();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "wj.B(" + var0 + ')');
       }
    }
 
-   static final void method2266(int var0, int var1, byte var2) {
+   static final void method2266(int var0, int var1) {
       try {
          if(Class9.anInt120 != 0 && var1 != -1) {
-            Class70.method1285(Node.aClass153_2573, false, var1, 0, false, Class9.anInt120);
+            Class70.method1285(Node.aClass153_2573, var1, Class9.anInt120);
             Class83.aBoolean1158 = true;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "wj.D(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "wj.D(" + var0 + ',' + var1 + ',' + (byte) -1 + ')');
       }
    }
 
@@ -249,7 +249,7 @@ final class Class167 {
 
          Class66.method1250(62, false);
          System.gc();
-         NodeList.method882(-1, 2);
+         NodeList.method882();
          Class83.aBoolean1158 = false;
          Class129.anInt1691 = -1;
          Class164_Sub1.method2241((byte)-77, true);
@@ -286,10 +286,10 @@ final class Class167 {
             }
          }
 
-         Class3_Sub28_Sub5.method560(-21556);
+         Class3_Sub28_Sub5.method560();
          Class113.interfacePacketCounter = 0;
          Class3_Sub13_Sub2.method176(var0 + -161);
-         Class3_Sub13_Sub11.method219(true, 3000);
+         Class3_Sub13_Sub11.method219(true);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "wj.C(" + var0 + ')');
       }

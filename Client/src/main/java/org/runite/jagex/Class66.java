@@ -25,15 +25,15 @@ final class Class66 {
 	private Class3_Sub28_Sub10_Sub2 aClass3_Sub28_Sub10_Sub2_1012;
 
 
-	final boolean method1241(int var1) {
+	final boolean method1241() {
 		try {
-			if(var1 != -30064) {
+			if(-30064 != -30064) {
 				this.aClass13_1000 = (NodeList)null;
 			}
 
 			return 20 <= this.method1246(11706);
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "jb.N(" + var1 + ')');
+			throw Class44.clientError(var3, "jb.N(" + -30064 + ')');
 		}
 	}
 
@@ -50,7 +50,7 @@ final class Class66 {
 		}
 	}
 
-	final boolean method1243(byte var1) {
+	final boolean method1243() {
 		try {
 			int var4;
 			if(null != this.aClass89_1005) {
@@ -74,30 +74,30 @@ final class Class66 {
 			}
 
 			if(this.aClass89_1005 == null) {
-				return 0 == this.method1253(4) && this.method1246(11706) == 0;
+				return 0 == this.method1253() && this.method1246(11706) == 0;
 			} else {
 				try {
-					this.aClass89_1005.method1466(127);
+					this.aClass89_1005.method1466();
 
 					Class3_Sub28_Sub10_Sub2 var21;
 					for(var21 = (Class3_Sub28_Sub10_Sub2)this.highPriorityRequests.method876((byte)125); null != var21; var21 = (Class3_Sub28_Sub10_Sub2)this.highPriorityRequests.method878(119)) {
 						this.aClass3_Sub30_1007.index = 0;
 						this.aClass3_Sub30_1007.putByte((byte)-26, 1); //High priority JS5 request
-						this.aClass3_Sub30_1007.putTriByte((int)var21.aLong2569, 6517);
+						this.aClass3_Sub30_1007.putTriByte((int)var21.aLong2569);
 						
-						this.aClass89_1005.sendBytes(false, 0, this.aClass3_Sub30_1007.buffer, 4);
+						this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
 						this.aClass13_1000.method879(var21, (byte)-125);
 					}
 
 					for(var21 = (Class3_Sub28_Sub10_Sub2)this.lowPriorityRequests.method876((byte)51); var21 != null; var21 = (Class3_Sub28_Sub10_Sub2)this.lowPriorityRequests.method878(-53)) {
 						this.aClass3_Sub30_1007.index = 0;
 						this.aClass3_Sub30_1007.putByte((byte)-22, 0); //Low priority JS5 request
-						this.aClass3_Sub30_1007.putTriByte((int)var21.aLong2569, 6517);
-						this.aClass89_1005.sendBytes(false, 0, this.aClass3_Sub30_1007.buffer, 4);
+						this.aClass3_Sub30_1007.putTriByte((int)var21.aLong2569);
+						this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
 						this.aClass13_1003.method879(var21, (byte)-128);
 					}
 
-					int var22 = 100 % ((33 - var1) / 54);
+					int var22 = 100 % ((33 - (byte) -61) / 54);
 
 					for(int var3 = 0; 100 > var3; ++var3) {
 						var4 = this.aClass89_1005.availableBytes(-18358);
@@ -143,7 +143,7 @@ final class Class66 {
 							this.aClass3_Sub28_Sub10_Sub2_1012.anInt4067 += var7;
 							this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.index += var7;
 							if(var6 == this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.index) {
-								this.aClass3_Sub28_Sub10_Sub2_1012.method524((byte)-107);
+								this.aClass3_Sub28_Sub10_Sub2_1012.method524();
 								this.aClass3_Sub28_Sub10_Sub2_1012.aBoolean3632 = false;
 								this.aClass3_Sub28_Sub10_Sub2_1012 = null;
 							} else {
@@ -225,26 +225,26 @@ final class Class66 {
 					this.anInt1010 = -2;
 					++this.anInt1011;
 					this.aClass89_1005 = null;
-					return 0 == this.method1253(4) && this.method1246(11706) == 0;
+					return 0 == this.method1253() && this.method1246(11706) == 0;
 				}
 			}
 		} catch (RuntimeException var20) {
-			throw Class44.clientError(var20, "jb.H(" + var1 + ')');
+			throw Class44.clientError(var20, "jb.H(" + (byte) -61 + ')');
 		}
 	}
 
-	final void method1244(boolean var1) {
+	final void method1244() {
 		try {
 			if(this.aClass89_1005 != null) {
 				try {
 					this.aClass3_Sub30_1007.index = 0;
-					if(!var1) {
+					if(!true) {
 						this.method1256((byte)21);
 					}
 
 					this.aClass3_Sub30_1007.putByte((byte)-48, 7);
-					this.aClass3_Sub30_1007.putTriByte(0, 6517);
-					this.aClass89_1005.sendBytes(false, 0, this.aClass3_Sub30_1007.buffer, 4);
+					this.aClass3_Sub30_1007.putTriByte(0);
+					this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
 				} catch (IOException var5) {
 					var5.printStackTrace();
 					try {
@@ -260,20 +260,20 @@ final class Class66 {
 
 			}
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "jb.O(" + var1 + ')');
+			throw Class44.clientError(var6, "jb.O(" + true + ')');
 		}
 	}
 
-	static final Class3_Sub15 method1245(int var0, CacheIndex var1, int var2) {
+	static final Class3_Sub15 method1245(CacheIndex var1, int var2) {
 		try {
-			if(var0 <= 12) {
+			if(117 <= 12) {
 				wlPacketSize = 107;
 			}
 
-			byte[] var3 = var1.method2138(var2, 0);
+			byte[] var3 = var1.method2138(var2);
 			return var3 != null?new Class3_Sub15(var3):null;
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "jb.F(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+			throw Class44.clientError(var4, "jb.F(" + 117 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
 		}
 	}
 
@@ -296,8 +296,8 @@ final class Class66 {
 					try {
 						this.aClass3_Sub30_1007.index = 0;
 						this.aClass3_Sub30_1007.putByte((byte)-27, var1?2:3);
-						this.aClass3_Sub30_1007.putTriByte(0, 6517);
-						this.aClass89_1005.sendBytes(false, 0, this.aClass3_Sub30_1007.buffer, 4);
+						this.aClass3_Sub30_1007.putTriByte(0);
+						this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
 					} catch (IOException var6) {
 						var6.printStackTrace();
 						try {
@@ -318,9 +318,9 @@ final class Class66 {
 		}
 	}
 
-	final void method1248(int var1) {
+	final void method1248() {
 		try {
-			if(var1 != -29340) {
+			if(-29340 != -29340) {
 				this.method1246(-28);
 			}
 
@@ -329,7 +329,7 @@ final class Class66 {
 			}
 
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "jb.P(" + var1 + ')');
+			throw Class44.clientError(var3, "jb.P(" + -29340 + ')');
 		}
 	}
 
@@ -352,10 +352,10 @@ final class Class66 {
 			this.aClass3_Sub28_Sub10_Sub2_1012 = null;
 
 			while(true) {
-				Class3_Sub28_Sub10_Sub2 var4 = (Class3_Sub28_Sub10_Sub2)this.aClass13_1000.method877(-1);
+				Class3_Sub28_Sub10_Sub2 var4 = (Class3_Sub28_Sub10_Sub2)this.aClass13_1000.method877();
 				if(null == var4) {
 					while(true) {
-						var4 = (Class3_Sub28_Sub10_Sub2)this.aClass13_1003.method877(-1);
+						var4 = (Class3_Sub28_Sub10_Sub2)this.aClass13_1003.method877();
 						if(var4 == null) {
 							if(this.aByte1009 != var3) {
 								try {
@@ -363,7 +363,7 @@ final class Class66 {
 									this.aClass3_Sub30_1007.putByte((byte)-52, 4);
 									this.aClass3_Sub30_1007.putByte((byte)-24, this.aByte1009);
 									this.aClass3_Sub30_1007.putShort(0);
-									this.aClass89_1005.sendBytes(false, 0, this.aClass3_Sub30_1007.buffer, 4);
+									this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
 								} catch (IOException var7) {
 					            	var7.printStackTrace();
 									try {
@@ -440,7 +440,7 @@ final class Class66 {
 	final boolean method1251(byte var1) {
 		try {
 			int var2 = 33 % ((2 - var1) / 58);
-			return 20 <= this.method1253(4);
+			return 20 <= this.method1253();
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "jb.L(" + var1 + ')');
 		}
@@ -465,30 +465,30 @@ final class Class66 {
 		}
 	}
 
-	final int method1253(int var1) {
+	final int method1253() {
 		try {
-			if(var1 != 4) {
+			if(4 != 4) {
 				this.method1252((byte)-45);
 			}
 
 			return this.highPriorityRequests.method874(-127) - -this.aClass13_1000.method874(-108);
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "jb.C(" + var1 + ')');
+			throw Class44.clientError(var3, "jb.C(" + 4 + ')');
 		}
 	}
 
-	final void method1254(boolean var1) {
+	final void method1254() {
 		try {
 			if(this.aClass89_1005 != null) {
 				this.aClass89_1005.close(14821);
 			}
 
-			if(var1) {
+			if(false) {
 				this.method1247(true, false);
 			}
 
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "jb.D(" + var1 + ')');
+			throw Class44.clientError(var3, "jb.D(" + false + ')');
 		}
 	}
 
@@ -501,7 +501,7 @@ final class Class66 {
 			var8.aByte4064 = var3;
 			int var9 = 120 / ((63 - var1) / 47);
 			if(highPriority) {
-				if(this.method1253(4) >= 20) {
+				if(this.method1253() >= 20) {
 					throw new RuntimeException();
 				}
 
@@ -527,8 +527,8 @@ final class Class66 {
 					try {
 						this.aClass3_Sub30_1007.index = 0;
 						this.aClass3_Sub30_1007.putByte((byte)-125, 6);
-						this.aClass3_Sub30_1007.putTriByte(3, 6517);
-						this.aClass89_1005.sendBytes(false, 0, this.aClass3_Sub30_1007.buffer, 4);
+						this.aClass3_Sub30_1007.putTriByte(3);
+						this.aClass89_1005.sendBytes(false, this.aClass3_Sub30_1007.buffer, 4);
 					} catch (IOException var5) {
 		            	var5.printStackTrace();
 						try {

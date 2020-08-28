@@ -35,27 +35,27 @@ final class Class70 {
       }
    }
 
-   static final void method1285(CacheIndex var0, boolean var1, int var2, int var3, boolean var4, int var5) {
+   static final void method1285(CacheIndex var0, int var2, int var5) {
       try {
          Class101.aClass153_1423 = var0;
          Class10.anInt154 = 1;
          Class3_Sub13_Sub36.anInt3423 = var5;
-         Class132.anInt1741 = var3;
+         Class132.anInt1741 = 0;
          Class3_Sub13_Sub39.anInt3463 = var2;
-         Class3_Sub9.aBoolean2311 = var4;
-         if(var1) {
+         Class3_Sub9.aBoolean2311 = false;
+         if(false) {
             anInt1053 = 125;
          }
 
          GraphicDefinition.anInt546 = 10000;
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "jh.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "jh.D(" + (var0 != null?"{...}":"null") + ',' + false + ',' + var2 + ',' + 0 + ',' + false + ',' + var5 + ')');
       }
    }
 
-   static final void method1286(int var0, boolean var1, ObjectDefinition var2, int var3, NPC var4, int var5, int var6, Player var7) {
+   static final void method1286(int var0, ObjectDefinition var2, int var3, NPC var4, int var5, int var6, Player var7) {
       try {
-         if(var1) {
+         if(false) {
             anInt1047 = 94;
          }
 
@@ -81,14 +81,14 @@ final class Class70 {
             var8.anInt2321 = (var5 + var9) * 128;
             if(var2.ChildrenIds != null) {
                var8.aBoolean2329 = true;
-               var8.method134(1);
+               var8.method134();
             }
 
             if(null != var8.anIntArray2333) {
                var8.anInt2316 = var8.anInt2310 - -((int)(Math.random() * (double)(-var8.anInt2310 + var8.anInt2325)));
             }
 
-            Class3.aClass61_78.method1215(!var1, var8);
+            Class3.aClass61_78.method1215(!false, var8);
          } else if(null != var4) {
             var8.aClass140_Sub4_Sub2_2324 = var4;
             NPCDefinition var12 = var4.definition;
@@ -107,32 +107,32 @@ final class Class70 {
             IOHandler.aClass61_1242.method1215(true, var8);
          } else if(null != var7) {
             var8.aClass140_Sub4_Sub1_2327 = var7;
-            var8.anInt2321 = (var7.getSize((byte)114) + var5) * 128;
-            var8.anInt2307 = 128 * (var7.getSize((byte)114) + var0);
+            var8.anInt2321 = (var7.getSize() + var5) * 128;
+            var8.anInt2307 = 128 * (var7.getSize() + var0);
             var8.anInt2332 = Class81.method1398(0, var7);
             var8.anInt2328 = 128 * var7.anInt3969;
             Class3_Sub28_Sub7_Sub1.aClass130_4046.method1779(1, var8, var7.displayName.toLong(-112));
          }
 
       } catch (RuntimeException var11) {
-         throw Class44.clientError(var11, "jh.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var11, "jh.C(" + var0 + ',' + false + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + (var7 != null?"{...}":"null") + ')');
       }
    }
 
-   static final Class3_Sub28_Sub17_Sub1 method1287(int var0, int var1, CacheIndex var2, CacheIndex var3, int var4) {
+   static final Class3_Sub28_Sub17_Sub1 method1287(int var0, CacheIndex var2, CacheIndex var3) {
       try {
     	// System.out.println("Class 70 " + var0);
-         if(Class75_Sub4.method1351(var3, var1, var0, var4 ^ 30900)) {
-            if(var4 != -1) {
+         if(Class75_Sub4.method1351(var3, 0, var0, -1 ^ 30900)) {
+            if(-1 != -1) {
                method1284((byte)-124);
             }
 
-            return Class3_Sub13.method163(var2.getFile(var0, (byte)-122, var1), 25208);
+            return Class3_Sub13.method163(var2.getFile(var0, 0));
          } else {
             return null;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "jh.B(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+         throw Class44.clientError(var6, "jh.B(" + var0 + ',' + 0 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + -1 + ')');
       }
    }
 

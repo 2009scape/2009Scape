@@ -138,7 +138,7 @@ final class Class165 implements Interface5 {
             var2.glActiveTexture('\u84c2');
          }
 
-         var2.glTexEnvfv(8960, 8705, Class72.method1297((byte)-50), 0);
+         var2.glTexEnvfv(8960, 8705, Class72.method1297(), 0);
          if(var1 >= 0) {
             this.aFloatArray2190[0] = 0.0F;
             this.aFloatArray2190[1] = 1.0F / (float)Class3_Sub13_Sub23.anInt3285;

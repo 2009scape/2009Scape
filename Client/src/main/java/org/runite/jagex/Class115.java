@@ -13,14 +13,14 @@ final class Class115 {
       }
    }
 
-   static final void method1713(byte var0) {
+   static final void method1713() {
       try {
-         if(var0 > -45) {
+         if((byte) -91 > -45) {
             aClass86ArrayArray1581 = (Class86[][])((Class86[][])null);
          }
 
          while(true) {
-            Class3_Sub5 var1 = (Class3_Sub5)Class3_Sub18.aClass61_2468.method1220((byte)-3);
+            Class3_Sub5 var1 = (Class3_Sub5)Class3_Sub18.aClass61_2468.method1220();
             if(var1 == null) {
                return;
             }
@@ -120,20 +120,20 @@ final class Class115 {
             }
          }
       } catch (RuntimeException var19) {
-         throw Class44.clientError(var19, "ph.A(" + var0 + ')');
+         throw Class44.clientError(var19, "ph.A(" + (byte) -91 + ')');
       }
    }
 
-   static final void method1714(byte var0) {
+   static final void method1714() {
       try {
          KeyboardListener.aClass93_1911.method1523((byte)-112);
-         if(var0 != -6) {
+         if((byte) -6 != -6) {
             method1712(-114);
          }
 
          Class80.aClass93_1131.method1523((byte)-100);
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ph.C(" + var0 + ')');
+         throw Class44.clientError(var2, "ph.C(" + (byte) -6 + ')');
       }
    }
 

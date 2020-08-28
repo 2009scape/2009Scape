@@ -14,13 +14,13 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
    private int anInt3127 = 3072;
    private int anInt3128 = 1024;
 
-   static final int method210(int var0, int var1, int var2, int var3) {
+   static final int method210(int var1, int var2, int var3) {
       try {
          if(var3 == var2) {
             return var2;
          } else {
             int var4 = -var1 + 128;
-            if(var0 != 18348) {
+            if(18348 != 18348) {
                method213(82, -103, 50, -59, (GameObject)null, 126L, (GameObject)null, (GameObject)null);
             }
 
@@ -29,7 +29,7 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
             return var5 - -(var6 >> 7);
          }
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "fh.O(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var7, "fh.O(" + 18348 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -71,7 +71,7 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
    final int[] method154(int var1, byte var2) {
       try {
          int var3 = 71 / ((var2 - 30) / 36);
-         int[] var7 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var7 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int[] var4 = this.method152(0, var1, 32755);
 
@@ -86,10 +86,10 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
       }
    }
 
-   static final void method212(long var0, int var2) {
+   static final void method212(long var0) {
       try {
          if(0L != var0) {
-            for(int var3 = var2; Class3_Sub28_Sub5.anInt3591 > var3; ++var3) {
+            for(int var3 = 0; Class3_Sub28_Sub5.anInt3591 > var3; ++var3) {
                if(Class114.ignores[var3] == var0) {
                   ++Class137.anInt1781;
                   --Class3_Sub28_Sub5.anInt3591;
@@ -108,7 +108,7 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "fh.E(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "fh.E(" + var0 + ',' + 0 + ')');
       }
    }
 
@@ -288,10 +288,10 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
       super(1, false);
    }
 
-   static final void method216(RSByteBuffer var0, int var1) {
+   static final void method216(RSByteBuffer var0) {
       try {
          for(int var2 = 0; var2 < Class57.activeWorldListSize; ++var2) {
-            int var3 = var0.getSmart(true);
+            int var3 = var0.getSmart();
             int var4 = var0.getShort(1);
             if(var4 == 65535) {
                var4 = -1;
@@ -302,12 +302,12 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
             }
          }
 
-         if(var1 != -14991) {
+         if(-14991 != -14991) {
             COMMAND_NOCLIP = (RSString)null;
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "fh.Q(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var5, "fh.Q(" + (var0 != null?"{...}":"null") + ',' + -14991 + ')');
       }
    }
 

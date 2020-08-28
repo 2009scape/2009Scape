@@ -6,17 +6,17 @@ final class Class77 {
    static Class52 aClass52_1112 = new Class52();
 
 
-   static final LDIndexedSprite method1364(byte var0) {
+   static final LDIndexedSprite method1364() {
       try {
          LDIndexedSprite var1 = new LDIndexedSprite(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[0], RSByteBuffer.anIntArray2591[0], Class140_Sub7.anIntArray2931[0], Class3_Sub13_Sub6.anIntArray3076[0], Class163_Sub1.aByteArrayArray2987[0], Class3_Sub13_Sub38.spritePalette);
-         if(var0 <= 55) {
+         if((byte) 82 <= 55) {
             method1366(86, -88);
          }
 
          Class39.method1035((byte)127);
          return var1;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "kh.B(" + var0 + ')');
+         throw Class44.clientError(var2, "kh.B(" + (byte) 82 + ')');
       }
    }
 
@@ -60,14 +60,14 @@ final class Class77 {
       }
    }
 
-   static final void method1368(int var0) {
+   static final void method1368() {
       try {
          ++Class163_Sub3.anInt3001;
-         int var1 = -126 / ((-26 - var0) / 52);
+         int var1 = -126 / ((-26 - -90) / 52);
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(104);
          Class3_Sub13_Sub1.outgoingBuffer.putLong(0L, -2037491440);
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "kh.D(" + var0 + ')');
+         throw Class44.clientError(var2, "kh.D(" + -90 + ')');
       }
    }
 

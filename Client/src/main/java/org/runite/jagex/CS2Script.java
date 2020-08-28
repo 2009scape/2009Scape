@@ -21,13 +21,13 @@ final class CS2Script extends Class3 {
    static int anInt2453 = 127;
 
 
-   static final void method375(int var0, CacheIndex var1, CacheIndex var2) {
+   static final void method375(CacheIndex var1, CacheIndex var2) {
       try {
          Class10.aClass153_152 = var1;
          Class127.aClass153_1680 = var2;
-         Class25.anInt497 = Class127.aClass153_1680.getFileAmount(var0, (byte)95);
+         Class25.anInt497 = Class127.aClass153_1680.getFileAmount(3, (byte)95);
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "jl.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "jl.D(" + 3 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -45,7 +45,7 @@ final class CS2Script extends Class3 {
       }
    }
 
-   static final void sendRegistryRequest(int year, int country, int day, int month, int stage) {
+   static final void sendRegistryRequest(int year, int country, int day, int month) {
       try {
     	//  System.out.println("CS2Script year=" + year + ", country=" + country + ", day=" + day + ", month=" + month + ", stage=" + stage + ", " + System.currentTimeMillis());
          Class3_Sub13_Sub1.outgoingBuffer.index = 0;
@@ -56,24 +56,24 @@ final class CS2Script extends Class3 {
          Class3_Sub13_Sub1.outgoingBuffer.putShort(country);
          Class132.anInt1734 = 0;
          GraphicDefinition.anInt548 = 0;
-         Canvas_Sub1.registryStage = stage;
+         Canvas_Sub1.registryStage = 1;
          Class130.anInt1711 = -3;
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "jl.C(" + year + ',' + country + ',' + day + ',' + month + ',' + stage + ')');
+         throw Class44.clientError(var6, "jl.C(" + year + ',' + country + ',' + day + ',' + month + ',' + 1 + ')');
       }
    }
 
    static final Class79 method378(int var0, byte var1) {
       try {
-         Class79 var2 = (Class79)aClass93_2450.get((long)var0, (byte)121);
+         Class79 var2 = (Class79)aClass93_2450.get((long)var0);
          if(var2 == null) {
             if(var1 < 126) {
                return (Class79)null;
             } else {
-               byte[] var3 = Class101.aClass153_1420.getFile(Class140_Sub7.method2032(var0, 5439488), (byte)-122, Class164.method2234(var0, -127));
+               byte[] var3 = Class101.aClass153_1420.getFile(Class140_Sub7.method2032(var0), Class164.method2234(var0, -127));
                var2 = new Class79();
                if(var3 != null) {
-                  var2.method1387(new RSByteBuffer(var3), -111);
+                  var2.method1387(new RSByteBuffer(var3));
                }
 
                aClass93_2450.put((byte)-84, var2, (long)var0);

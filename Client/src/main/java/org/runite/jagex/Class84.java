@@ -17,11 +17,11 @@ final class Class84 {
          }
 
          if(Class143.loadingStage == 10 && HDToolKit.highDetail) {
-            Class117.method1719(28, 5);
+            Class117.method1719(28);
          }
 
          if(Class143.loadingStage == 30) {
-            Class117.method1719(25, 5);
+            Class117.method1719(25);
          }
 
       } catch (RuntimeException var2) {
@@ -70,7 +70,7 @@ final class Class84 {
       }
    }
 
-   static final void method1419(int var0) {
+   static final void method1419() {
       try {
          int var2 = Class3_Sub13_Sub33.anInt3395;
          int var3 = Class3_Sub28_Sub3.anInt3552;
@@ -90,7 +90,7 @@ final class Class84 {
          Class168.aClass3_Sub28_Sub17_2096.method681(TextCore.HasChooseOptions, var1 - -3, var2 + 14, var5, -1);
          int var7 = Class130.anInt1709;
          int var6 = Class126.anInt1676;
-         if(var0 >= -113) {
+         if(-117 >= -113) {
             anIntArrayArray1160 = (int[][])((int[][])null);
          }
 
@@ -101,19 +101,19 @@ final class Class84 {
                var10 = 16776960;
             }
 
-            Class168.aClass3_Sub28_Sub17_2096.method681(RSByteBuffer.method802(var8, true), var1 - -3, var9, var10, 0);
+            Class168.aClass3_Sub28_Sub17_2096.method681(RSByteBuffer.method802(var8), var1 - -3, var9, var10, 0);
          }
 
          Class69.method1282(AbstractIndexedSprite.anInt1462, (byte)107, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537, Class3_Sub28_Sub3.anInt3552);
       } catch (RuntimeException var11) {
-         throw Class44.clientError(var11, "lf.A(" + var0 + ')');
+         throw Class44.clientError(var11, "lf.A(" + -117 + ')');
       }
    }
 
    static final void method1420(int var0, int var1, int var2, int var3, byte var4) {
       try {
          Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(4, 10, var0);
-         var5.g((byte)33);
+         var5.g();
          var5.anInt3597 = var2;
          var5.anInt3598 = var3;
          var5.anInt3596 = var1;
@@ -126,15 +126,15 @@ final class Class84 {
       }
    }
 
-   static final int method1421(int var0) {
+   static final int method1421() {
       try {
-         if(var0 != -2) {
+         if(-2 != -2) {
             method1422((byte)26);
          }
 
          return ((Class3_Sub13_Sub15.aBoolean3184?1:0) << 19) + (((Class38.aBoolean661?1:0) << 16) + ((!Class128.aBoolean1685?0:1) << 15) + ((!Class106.aBoolean1441?0:1) << 13) + ((Class140_Sub6.aBoolean2910?1:0) << 10) + ((Class3_Sub13_Sub22.aBoolean3275?1:0) << 9) + ((RSInterface.aBoolean236?1:0) << 7) + ((!Class25.aBoolean488?0:1) << 6) + ((KeyboardListener.aBoolean1905?1:0) << 5) + (((!Class3_Sub28_Sub13.aBoolean3665?0:1) << 3) + (Class3_Sub28_Sub10.anInt3625 & 7) - (-((!Class3_Sub28_Sub7.aBoolean3604?0:1) << 4) + -((WorldListEntry.aBoolean2623?1:0) << 8)) - (-(Class80.anInt1137 << 11 & 6144) + -((CS2Script.anInt2453 == 0 ?0:1) << 20) - (((Class9.anInt120 != 0 ?1:0) << 21) + ((Class14.anInt340 == 0 ?0:1) << 22)))) - -(Class127_Sub1.method1757() << 23));
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "lf.F(" + var0 + ')');
+         throw Class44.clientError(var2, "lf.F(" + -2 + ')');
       }
    }
 

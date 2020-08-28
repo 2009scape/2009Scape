@@ -47,7 +47,7 @@ final class Class127_Sub1 extends Class127 {
    final void method1759() {}
 
    static {
-      new Class128(8);
+      new Class128();
       anInt2682 = 2;
       new RSByteBuffer(131056);
    }

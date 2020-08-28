@@ -15,7 +15,7 @@ final class Class57 {
    int anInt908 = 2048;
 
 
-   final void method1190(int var1, RSByteBuffer var2, int var3) {
+   final void method1190(RSByteBuffer var2, int var3) {
       try {
          while(true) {
             int var4 = var2.getByte((byte)-88);
@@ -24,14 +24,14 @@ final class Class57 {
                return;
             }
 
-            this.method1191(var4, var2, var3, true);
+            this.method1191(var4, var2, var3);
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ic.A(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ic.A(" + 2 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
-   private final void method1191(int var1, RSByteBuffer var2, int var3, boolean var4) {
+   private final void method1191(int var1, RSByteBuffer var2, int var3) {
       try {
          if(1 == var1) {
             this.anInt896 = var2.getByte((byte)-78);
@@ -45,12 +45,12 @@ final class Class57 {
             }
          }
 
-         if(!var4) {
+         if(!true) {
             method1192((byte)123);
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "ic.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ic.C(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + true + ')');
       }
    }
 

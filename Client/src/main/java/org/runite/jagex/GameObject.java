@@ -60,7 +60,7 @@ abstract class GameObject {
       }
    }
 
-   static final void graphicsSettings(boolean var0, int var1, int var2, int var3, int var4) {
+   static final void graphicsSettings(boolean var0, int var1, int var3, int var4) {
       try {
          Class53.aLong866 = 0L;
          int var5 = Class83.method1411(0);
@@ -72,7 +72,7 @@ abstract class GameObject {
             var0 = true;
          }
 
-         if(var2 != -8914) {
+         if(-8914 != -8914) {
             method1864(false, (byte)90, (CacheIndex)null, (Class3_Sub28_Sub17_Sub1)null, (CacheIndex)null);
          }
 
@@ -87,11 +87,11 @@ abstract class GameObject {
 
          Class3_Sub28_Sub10_Sub2.method598(var0, var1, var6, var5, false, var3, var4);
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "th.EC(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var7, "th.EC(" + var0 + ',' + var1 + ',' + -8914 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
-   static final int method1863(int var0, int var1, byte var2, int var3, int var4, int var5, int var6) {
+   static final int method1863(int var0, int var1, int var3, int var4, int var5, int var6) {
       try {
          int var7;
          if((1 & var5) == 1) {
@@ -100,11 +100,11 @@ abstract class GameObject {
             var3 = var7;
          }
 
-         var7 = 121 % ((var2 - 75) / 50);
+         var7 = 121 % (((byte) 126 - 75) / 50);
          var1 &= 3;
          return var1 == 0 ?var6:(1 != var1?(var1 != 2 ?var4:-var3 + 1 + -var6 + 7):-var4 + 7 + -var0 - -1);
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "th.JC(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "th.JC(" + var0 + ',' + var1 + ',' + (byte) 126 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -114,7 +114,7 @@ abstract class GameObject {
          Class3_Sub29.aClass153_2581 = var4;
          int var6 = -127 / ((var1 - -87) / 32);
          Class97.aClass153_1370 = var2;
-         int var5 = Class97.aClass153_1370.method2121(0) - 1;
+         int var5 = Class97.aClass153_1370.method2121() - 1;
          Class3_Sub13_Sub23.itemDefinitionSize = Class97.aClass153_1370.getFileAmount(var5, (byte)101) + var5 * 256;
          RuntimeException_Sub1.aClass94Array2119 = new RSString[]{null, null, null, null, TextCore.HasDrop};
          RSByteBuffer.aClass94Array2596 = new RSString[]{null, null, TextCore.HasTake, null, null};
@@ -144,7 +144,7 @@ abstract class GameObject {
          int var7 = var4 + -var5;
          if(var7 == 0) {
             if(var6 != 0) {
-               Class3_Sub13_Sub16.method244(2, var3, var5, var2, var1);
+               Class3_Sub13_Sub16.method244(var3, var5, var2, var1);
             }
 
          } else if(0 == var6) {
@@ -216,15 +216,15 @@ abstract class GameObject {
       }
    }
 
-   static final void method1870(boolean var0) {
+   static final void method1870() {
       try {
          Class101.aClass3_Sub24_Sub4_1421.method505((byte)-128);
          Class10.anInt154 = 1;
-         if(!var0) {
+         if(!false) {
             Class101.aClass153_1423 = null;
          }
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "th.GC(" + var0 + ')');
+         throw Class44.clientError(var2, "th.GC(" + false + ')');
       }
    }
 

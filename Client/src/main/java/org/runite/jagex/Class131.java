@@ -15,7 +15,7 @@ final class Class131 {
    static int[] anIntArray1729 = new int[]{12543016, 15504954, 15914854, 16773818};
    byte[] aByteArray1730;
 
-   static final void addLocalPlayers(int var0) {
+   static final void addLocalPlayers() {
       try {
          while(true) {
             if(GraphicDefinition.incomingBuffer.method815(Class130.incomingPacketLength, 32666) >= 11) {
@@ -54,32 +54,32 @@ final class Class131 {
                      var8 -= 32;
                   }
 
-                  var3.method1981((byte)126, var5 + Class102.player.anIntArray2767[0], var7 == 1, Class102.player.anIntArray2755[0] + var8);
+                  var3.method1981(var5 + Class102.player.anIntArray2767[0], var7 == 1, Class102.player.anIntArray2755[0] + var8);
                   continue;
                }
             }
 
-            if(var0 >= -46) {
+            if(-59 >= -46) {
                return;
             }
 
-            GraphicDefinition.incomingBuffer.method818(false);
+            GraphicDefinition.incomingBuffer.method818();
             return;
          }
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "se.D(" + var0 + ')');
+         throw Class44.clientError(var9, "se.D(" + -59 + ')');
       }
    }
 
-   final boolean method1787(int var1, byte var2) {
+   final boolean method1787(int var1) {
       try {
-         if(var2 != -124) {
+         if((byte) -124 != -124) {
             method1793((RSString)null, (RSString)null, -17, (byte)94);
          }
 
          return (this.aByteArray1730[var1] & 8) != 0;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "se.G(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "se.G(" + var1 + ',' + (byte) -124 + ')');
       }
    }
 
@@ -113,7 +113,7 @@ final class Class131 {
    static final void method1790(int var0, int var1, int var2) {
       try {
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, 5, var0);
-         var3.g((byte)33);
+         var3.g();
          var3.anInt3598 = var1;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "se.B(" + var0 + ',' + var1 + ',' + var2 + ')');
@@ -145,7 +145,7 @@ final class Class131 {
          Class3_Sub28_Sub14.password = var1;
          Class7.anInt2161 = var2;
          Class3_Sub28_Sub14.username = var0;
-         if(Class3_Sub28_Sub14.username.method1528((byte) -42, Class3_Sub28_Sub14.aClass94_3672) || Class3_Sub28_Sub14.password.method1528((byte) -42, Class3_Sub28_Sub14.aClass94_3672)) {
+         if(Class3_Sub28_Sub14.username.method1528(Class3_Sub28_Sub14.aClass94_3672) || Class3_Sub28_Sub14.password.method1528(Class3_Sub28_Sub14.aClass94_3672)) {
             Class158.anInt2005 = 3;
          } else {
             if(CS2Script.anInt2451 == -1) {
@@ -159,16 +159,16 @@ final class Class131 {
                var4.putShort(530);
                var4.putLong(Class3_Sub28_Sub14.username.toLong(-117), -2037491440);
                var4.putInt(-123, (int)(Math.random() * 9.9999999E7D));
-               var4.putString(0, Class3_Sub28_Sub14.password);
+               var4.putString(Class3_Sub28_Sub14.password);
                var4.putInt(-128, (int)(Math.random() * 9.9999999E7D));
                int var5 = 9 / ((var3 - 29) / 60);
                var4.encryptRSA(Class3_Sub13_Sub14.aBigInteger3162, Class3_Sub13_Sub37.aBigInteger3441, -296);
                Class3_Sub13_Sub1.outgoingBuffer.index = 0;
                Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-29, 210);
                Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-121, var4.index);
-               Class3_Sub13_Sub1.outgoingBuffer.putBytes(var4.buffer, 0, var4.index, 125);
+               Class3_Sub13_Sub1.outgoingBuffer.putBytes(var4.buffer, var4.index, 125);
             } else {
-               Class24.method951(0);
+               Class24.method951();
             }
          }
       } catch (RuntimeException var6) {

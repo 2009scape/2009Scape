@@ -21,26 +21,26 @@ final class RSString implements Interface3 {
    int length;
    static int[] anIntArray2157 = new int[50];
 
-   final URL method1527(boolean var1) throws MalformedURLException {
+   final URL method1527() throws MalformedURLException {
       try {
-         if(var1) {
+         if(false) {
             this.method1548(true, 22);
          }
 
          return new URL(new String(this.byteArray, 0, this.length));
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "na.W(" + var1 + ')');
+         throw Class44.clientError(var3, "na.W(" + false + ')');
       }
    }
 
-   final boolean method1528(byte var1, RSString var2) {
+   final boolean method1528(RSString var2) {
       try {
          if(var2 == null) {
             return false;
          } else if(this == var2) {
             return true;
          } else if(this.length == var2.length) {
-            if(var1 != -42) {
+            if((byte) -42 != -42) {
                this.method1568(-127);
             }
 
@@ -58,11 +58,11 @@ final class RSString implements Interface3 {
             return false;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "na.F(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "na.F(" + (byte) -42 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
-   static final boolean method1529(int var0, int var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {
+   static final boolean method1529(int var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       try {
          long var8 = Class157.method2174(var6, var1 + var5, var3 + var0);
          int var10;
@@ -186,18 +186,18 @@ final class RSString implements Interface3 {
             var10 = (int)var8 >> 20 & 3;
             var11 = (int)(var8 >>> 32) & Integer.MAX_VALUE;
             ObjectDefinition var18 = Class162.getObjectDefinition(4, var11);
-            if(var18.anInt1516 != -1 && !Class15.method888(var1, var18, !var7, var0, var5, var3, var10)) {
+            if(var18.anInt1516 != -1 && !Class15.method888(var1, var18, !true, var0, var5, var3, var10)) {
                return false;
             }
          }
 
-         if(!var7) {
+         if(!true) {
             aBoolean2150 = true;
          }
 
          return true;
       } catch (RuntimeException var17) {
-         throw Class44.clientError(var17, "na.N(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var17, "na.N(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + true + ')');
       }
    }
 
@@ -436,11 +436,11 @@ final class RSString implements Interface3 {
       }
    }
 
-   static final Class3_Sub28_Sub16_Sub2 method1537(CacheIndex var0, int var1, boolean var2) {
+   static final Class3_Sub28_Sub16_Sub2 method1537(CacheIndex var0, int var1) {
       try {
          if(Class140_Sub7.method2029((byte) -118, var0, var1)) {
-            if(var2) {
-               method1539(-39, true, -93, (CacheIndex)null);
+            if(false) {
+               method1539(-39, -93, (CacheIndex)null);
             }
 
             return Class117.method1722(-93);
@@ -448,7 +448,7 @@ final class RSString implements Interface3 {
             return null;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "na.GB(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "na.GB(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + false + ')');
       }
    }
 
@@ -465,15 +465,15 @@ final class RSString implements Interface3 {
       }
    }
 
-   static final LDIndexedSprite method1539(int var0, boolean var1, int var2, CacheIndex var3) {
+   static final LDIndexedSprite method1539(int var0, int var2, CacheIndex var3) {
       try {
-         if(!var1) {
+         if(!true) {
             method1535((WorldListEntry)null, (WorldListEntry)null, -64, -40, 23, false, false);
          }
        //  System.out.println("RSString " + var2);
-         return Class75_Sub4.method1351(var3, var0, var2, -30901)?Class77.method1364((byte)82):null;
+         return Class75_Sub4.method1351(var3, var0, var2, -30901)?Class77.method1364():null;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "na.MA(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "na.MA(" + var0 + ',' + true + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -497,7 +497,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   final RSString method1542(int var1, RSString var2, int var3, int var4) {
+   final RSString method1542(RSString var2, int var3, int var4) {
       try {
          if(!this.aBoolean2152) {
             throw new IllegalArgumentException();
@@ -520,7 +520,7 @@ final class RSString implements Interface3 {
             throw new IllegalArgumentException();
          }
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "na.O(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var7, "na.O(" + 1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -530,7 +530,7 @@ final class RSString implements Interface3 {
             this.method1552((byte)114);
          }
 
-         return this.method1561(10, true);
+         return this.method1561(10);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "na.I(" + var1 + ')');
       }
@@ -555,14 +555,14 @@ final class RSString implements Interface3 {
       }
    }
 
-   final RSString method1545(byte var1) {
+   final RSString method1545() {
       try {
          RSString var2 = new RSString();
          var2.length = this.length;
          var2.byteArray = new byte[this.length];
          boolean var3 = true;
          int var4 = 0;
-         if(var1 != -50) {
+         if((byte) -50 != -50) {
             this.toString();
          }
 
@@ -582,7 +582,7 @@ final class RSString implements Interface3 {
 
          return var2;
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "na.G(" + var1 + ')');
+         throw Class44.clientError(var6, "na.G(" + (byte) -50 + ')');
       }
    }
 
@@ -651,15 +651,15 @@ final class RSString implements Interface3 {
       }
    }
 
-   final URL method1547(URL var1, boolean var2) throws MalformedURLException {
+   final URL method1547(URL var1) throws MalformedURLException {
       try {
-         if(!var2) {
+         if(!true) {
             this.byteArray = (byte[])null;
          }
 
          return new URL(var1, new String(this.byteArray, 0, this.length));
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "na.EB(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "na.EB(" + (var1 != null?"{...}":"null") + ',' + true + ')');
       }
    }
 
@@ -680,11 +680,11 @@ final class RSString implements Interface3 {
       }
    }
 
-   final void method1549(boolean var1) {
+   final void method1549() {
       try {
          String var2;
          try {
-            if(var1) {
+            if(false) {
                return;
             }
 
@@ -695,7 +695,7 @@ final class RSString implements Interface3 {
 
         // System.out.println(var2);
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "na.BA(" + var1 + ')');
+         throw Class44.clientError(var5, "na.BA(" + false + ')');
       }
    }
 
@@ -724,7 +724,7 @@ final class RSString implements Interface3 {
 
    final int indexOf(RSString var1, int var2) {
       try {
-         return var2 <= 49?-20:this.method1566(var1, 0, -1);
+         return var2 <= 49?-20:this.method1566(var1, 0);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "na.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
@@ -742,7 +742,7 @@ final class RSString implements Interface3 {
       }
    }
 
-   final void method1553(int var1, boolean var2) {
+   final void method1553(int var1) {
       try {
          if(!this.aBoolean2152) {
             throw new IllegalArgumentException();
@@ -764,14 +764,14 @@ final class RSString implements Interface3 {
                this.byteArray[var3] = 32;
             }
 
-            if(var2) {
+            if(false) {
                anIntArray2157 = (int[])null;
             }
 
             this.length = var1;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "na.RA(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "na.RA(" + var1 + ',' + false + ')');
       }
    }
 
@@ -782,21 +782,21 @@ final class RSString implements Interface3 {
 		return new String(byteArray);
 	}
 
-   final void method1554(boolean var1, Applet var2) throws Throwable {
+   final void method1554(Applet var2) throws Throwable {
       try {
-         if(var1) {
+         if(true) {
             String var3 = new String(this.byteArray, 0, this.length);
-            Class42.method1057(var2, !var1, var3);
+            Class42.method1057(var2, !true, var3);
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "na.AA(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "na.AA(" + true + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
-   final int method1555(int var1, int var2, int var3) {
+   final int method1555(int var1, int var2) {
       try {
          byte var4 = (byte)var1;
-         if(var3 == 1536) {
+         if(1536 == 1536) {
             for(int var5 = var2; this.length > var5; ++var5) {
                if(this.byteArray[var5] == var4) {
                   return var5;
@@ -808,19 +808,19 @@ final class RSString implements Interface3 {
             return 123;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "na.NA(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var6, "na.NA(" + var1 + ',' + var2 + ',' + 1536 + ')');
       }
    }
 
-   final RSString method1556(int var1, byte var2) {
+   final RSString method1556(int var1) {
       try {
-         if(var2 != -74) {
+         if((byte) -74 != -74) {
             this.toString();
          }
 
-         return this.method1557(this.length, var2 ^ -74, var1);
+         return this.method1557(this.length, (byte) -74 ^ -74, var1);
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "na.CA(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "na.CA(" + var1 + ',' + (byte) -74 + ')');
       }
    }
 
@@ -836,10 +836,10 @@ final class RSString implements Interface3 {
       }
    }
 
-   final boolean method1558(RSString var1, int var2) {
+   final boolean method1558(RSString var1) {
       try {
          if(var1.length <= this.length) {
-            for(int var3 = var2; var3 < var1.length; ++var3) {
+            for(int var3 = 0; var3 < var1.length; ++var3) {
                if(var1.byteArray[var3] != this.byteArray[var3]) {
                   return false;
                }
@@ -850,14 +850,14 @@ final class RSString implements Interface3 {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "na.UA(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "na.UA(" + (var1 != null?"{...}":"null") + ',' + 0 + ')');
       }
    }
 
    public final boolean equals(Object var1) {
       try {
          if(var1 instanceof RSString) {
-            return this.method1528((byte)-42, (RSString)var1);
+            return this.method1528((RSString)var1);
          } else {
             throw new IllegalArgumentException();
          }
@@ -908,13 +908,13 @@ final class RSString implements Interface3 {
          int var6 = 0;
 
          while(true) {
-            int var7 = this.method1566(var3, var6, -1);
+            int var7 = this.method1566(var3, var6);
             if(0 > var7) {
                var6 = 0;
                RSString var10 = Class47.method1090((byte)-104, var4);
 
                while(true) {
-                  int var8 = this.method1566(var3, var6, -1);
+                  int var8 = this.method1566(var3, var6);
                   if(0 > var8) {
                      while(this.length > var6) {
                         var10.method1572(255 & this.byteArray[var6++], (byte)117);
@@ -946,19 +946,19 @@ final class RSString implements Interface3 {
 
    public final int hashCode() {
       try {
-         return this.method1574(false);
+         return this.method1574();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "na.hashCode()");
       }
    }
 
-   private final boolean method1561(int var1, boolean var2) {
+   private final boolean method1561(int var1) {
       try {
          if(var1 < 1 || var1 > 36) {
             var1 = 10;
          }
 
-         if(!var2) {
+         if(!true) {
             aBoolean2146 = false;
          }
 
@@ -1010,7 +1010,7 @@ final class RSString implements Interface3 {
 
          return var4;
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "na.P(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var9, "na.P(" + var1 + ',' + true + ')');
       }
    }
 
@@ -1092,14 +1092,14 @@ final class RSString implements Interface3 {
       }
    }
 
-   final RSString method1565(int var1, int var2, int var3) {
+   final RSString method1565() {
       try {
-         byte var4 = (byte)var3;
+         byte var4 = (byte) 47;
          RSString var6 = new RSString();
-         byte var5 = (byte)var1;
+         byte var5 = (byte) 32;
          var6.length = this.length;
          var6.byteArray = new byte[this.length];
-         if(var2 < 3) {
+         if(40 < 3) {
             aBoolean2146 = true;
          }
 
@@ -1114,11 +1114,11 @@ final class RSString implements Interface3 {
 
          return var6;
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "na.HA(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var9, "na.HA(" + 32 + ',' + 40 + ',' + 47 + ')');
       }
    }
 
-   final int method1566(RSString var1, int var2, int var3) {
+   final int method1566(RSString var1, int var2) {
       try {
          int var4 = var1.length;
          if(var2 >= this.length) {
@@ -1128,7 +1128,7 @@ final class RSString implements Interface3 {
                var2 = 0;
             }
 
-            if(var3 == ~var4) {
+            if(-1 == ~var4) {
                return var2;
             } else {
                int var7 = this.length - var4;
@@ -1174,7 +1174,7 @@ final class RSString implements Interface3 {
             }
          }
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "na.CB(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var12, "na.CB(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + -1 + ')');
       }
    }
 
@@ -1251,7 +1251,7 @@ final class RSString implements Interface3 {
             }
          }
 
-         Class140_Sub1_Sub2 var21 = item.method1120(18206);
+         Class140_Sub1_Sub2 var21 = item.method1120();
          if(null == var21) {
             return null;
          } else {
@@ -1289,7 +1289,7 @@ final class RSString implements Interface3 {
 
             int var18 = Class51.anIntArray851[item.anInt786] * var16 >> 16;
             int var17 = Class51.anIntArray840[item.anInt786] * var16 >> 16;
-            var21.method1893(0, item.anInt799, item.anInt768, item.anInt786, item.anInt792, var17 - (var21.method1871() / 2 + -item.anInt754), item.anInt754 + var18, -1L);
+            var21.method1893(item.anInt799, item.anInt768, item.anInt786, item.anInt792, var17 - (var21.method1871() / 2 + -item.anInt754), item.anInt754 + var18);
             if(var5 >= 1) {
                var15.method657(1);
                if(var5 >= 2) {
@@ -1327,24 +1327,24 @@ final class RSString implements Interface3 {
       }
    }
 
-   final RSString method1571(byte var1) {
+   final RSString method1571() {
       try {
-         long var2 = this.method1538(var1 + 90);
+         long var2 = this.method1538((byte) 32 + 90);
          Class var4 = RSString.class;
          synchronized(var4) {
             Class3_Sub29 var5;
             if(Class86.aClass130_1194 == null) {
                Class86.aClass130_1194 = new Class130(4096);
             } else {
-               for(var5 = (Class3_Sub29)Class86.aClass130_1194.method1780(var2, var1 ^ 32); null != var5; var5 = (Class3_Sub29)Class86.aClass130_1194.method1784(0)) {
-                  if(this.method1528((byte)-42, var5.aClass94_2586)) {
+               for(var5 = (Class3_Sub29)Class86.aClass130_1194.method1780(var2, (byte) 32 ^ 32); null != var5; var5 = (Class3_Sub29)Class86.aClass130_1194.method1784()) {
+                  if(this.method1528(var5.aClass94_2586)) {
                      return var5.aClass94_2586;
                   }
                }
             }
 
             var5 = new Class3_Sub29();
-            if(var1 != 32) {
+            if((byte) 32 != 32) {
                return (RSString)null;
             }
 
@@ -1355,7 +1355,7 @@ final class RSString implements Interface3 {
 
          return this;
       } catch (RuntimeException item) {
-         throw Class44.clientError(item, "na.BB(" + var1 + ')');
+         throw Class44.clientError(item, "na.BB(" + (byte) 32 + ')');
       }
    }
 
@@ -1399,16 +1399,16 @@ final class RSString implements Interface3 {
 
          String var3 = new String(this.byteArray, 0, this.length);
          String var4 = var2.getParameter(var3);
-         return null == var4?null:Class3_Sub29.method732(var4, 27307);
+         return null == var4?null:Class3_Sub29.method732(var4);
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "na.DB(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
-   final int method1574(boolean var1) {
+   final int method1574() {
       try {
          int var2 = 0;
-         if(var1) {
+         if(false) {
             anIntArray2157 = (int[])null;
          }
 
@@ -1418,13 +1418,13 @@ final class RSString implements Interface3 {
 
          return var2;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "na.J(" + var1 + ')');
+         throw Class44.clientError(var4, "na.J(" + false + ')');
       }
    }
 
-   final int method1575(int var1, FontMetrics var2) {
+   final int method1575(FontMetrics var2) {
       try {
-         if(var1 == -21018) {
+         if(-21018 == -21018) {
             String var3;
             try {
                var3 = new String(this.byteArray, 0, this.length, "ISO-8859-1");
@@ -1437,14 +1437,14 @@ final class RSString implements Interface3 {
             return 63;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "na.V(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "na.V(" + -21018 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
-   final RSString method1576(byte var1) {
+   final RSString method1576() {
       try {
          if(this.aBoolean2152) {
-            if(var1 != 90) {
+            if((byte) 90 != 90) {
                incomingOpcode = -84;
             }
 
@@ -1459,21 +1459,21 @@ final class RSString implements Interface3 {
             throw new IllegalArgumentException();
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "na.PA(" + var1 + ')');
+         throw Class44.clientError(var3, "na.PA(" + (byte) 90 + ')');
       }
    }
 
    final Object method1577(int var1, Applet var2) throws Throwable {
       try {
          String var3 = new String(this.byteArray, 0, this.length);
-         Object var4 = Class42.method1055(var3, (byte)-111, var2);
+         Object var4 = Class42.method1055(var3, var2);
          if(var4 instanceof String) {
             byte[] var5 = ((String)var4).getBytes();
-            var4 = Class3_Sub13_Sub3.method178(var5, -4114, var5.length, 0);
+            var4 = Class3_Sub13_Sub3.method178(var5, var5.length, 0);
          }
 
          if(var1 != -1857) {
-            this.method1553(116, false);
+            this.method1553(116);
          }
 
          return var4;
@@ -1510,25 +1510,25 @@ final class RSString implements Interface3 {
       }
    }
 
-   final RSString method1579(int var1) {
+   final RSString method1579() {
       try {
          RSString var2 = Class41.method1052(-29664, this.toLong(-112));
-         return var1 >= -4?(RSString)null:(null == var2?Class134.aClass94_1760:var2);
+         return -17 >= -4?(RSString)null:(null == var2?Class134.aClass94_1760:var2);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "na.Q(" + var1 + ')');
+         throw Class44.clientError(var3, "na.Q(" + -17 + ')');
       }
    }
 
-   final int method1580(boolean var1, byte[] var2, int var3, int var4, int var5) {
+   final int method1580(byte[] var2, int var3, int var4, int var5) {
       try {
          Class76.method1357(this.byteArray, var4, var2, var3, -var4 + var5);
-         if(!var1) {
+         if(!true) {
             method1570(42, (byte)-117, true, -47, false, 3, -26, true);
          }
 
          return -var4 + var5;
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "na.LA(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "na.LA(" + true + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -1556,8 +1556,8 @@ static final RSString createRSString(String string) {
 				var4.byteArray[var4.length++] = (byte)var6;
 			}
 		}
-		var4.method1576((byte)90);
-		return var4.method1571((byte)32);
+		var4.method1576();
+		return var4.method1571();
 	} catch (RuntimeException var8) {
 		throw Class44.clientError(var8, "cd.D(" + (string != null?"{...}":"null") + ',' + -1 + ')');
 	}

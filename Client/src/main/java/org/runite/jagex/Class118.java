@@ -8,13 +8,13 @@ abstract class Class118 {
    static int anInt1623;
 
 
-   static final RSString method1723(byte var0, boolean var1, int var2, int var3) {
+   static final RSString method1723(byte var0, boolean var1, int var3) {
       try {
-         if(var2 >= 2 && 36 >= var2) {
+         if(10 >= 2 && 36 >= 10) {
             int var4 = 1;
 
-            for(int var5 = var3 / var2; 0 != var5; ++var4) {
-               var5 /= var2;
+            for(int var5 = var3 / 10; 0 != var5; ++var4) {
+               var5 /= 10;
             }
 
             int var6 = var4;
@@ -32,7 +32,7 @@ abstract class Class118 {
             }
 
             for(int var8 = 0; var4 > var8; ++var8) {
-               int var9 = var3 % var2;
+               int var9 = var3 % 10;
                if(var9 < 0) {
                   var9 = -var9;
                }
@@ -42,7 +42,7 @@ abstract class Class118 {
                }
 
                var7[var6 + -var8 + -1] = (byte)(48 + var9);
-               var3 /= var2;
+               var3 /= 10;
             }
 
             if(var0 >= -111) {
@@ -54,10 +54,10 @@ abstract class Class118 {
             var11.length = var6;
             return var11;
          } else {
-            throw new IllegalArgumentException("Invalid radix:" + var2);
+            throw new IllegalArgumentException("Invalid radix:" + 10);
          }
       } catch (RuntimeException var10) {
-         throw Class44.clientError(var10, "q.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var10, "q.A(" + var0 + ',' + var1 + ',' + 10 + ',' + var3 + ')');
       }
    }
 
@@ -120,7 +120,7 @@ abstract class Class118 {
             method1726(-123);
          }
 
-         return KeyboardListener.aClass93_1911.method1520(-12623);
+         return KeyboardListener.aClass93_1911.method1520();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "q.D(" + var0 + ')');
       }

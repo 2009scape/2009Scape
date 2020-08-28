@@ -12,14 +12,14 @@ final class Class45 {
 	static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_736;
 
 
-	static final void parsePlayerMask(int var0, int var1, byte var2, Player var3) {
+	static final void parsePlayerMask(int var0, int var1, Player var3) {
 		try {
 			int var4;
 			int chatIcon;
 			int var7;
 			//Ordinal: 0 Chat
 			if(0 != (var0 & 128)) {
-				var4 = GraphicDefinition.incomingBuffer.getLEShort(var2 + -47);
+				var4 = GraphicDefinition.incomingBuffer.getLEShort((byte) -79 + -47);
 				chatIcon = GraphicDefinition.incomingBuffer.getByte((byte)-54);
 				int var6 = GraphicDefinition.incomingBuffer.getByte((byte)-57);
 				var7 = GraphicDefinition.incomingBuffer.index;
@@ -42,15 +42,15 @@ final class Class45 {
 
 					if(!var11 && 0 == WorldListEntry.inTutorialIsland) {
 						Class161.aClass3_Sub30_2030.index = 0;
-						GraphicDefinition.incomingBuffer.method774(2, var6, Class161.aClass3_Sub30_2030.buffer, 0);
+						GraphicDefinition.incomingBuffer.method774(var6, Class161.aClass3_Sub30_2030.buffer);
 						Class161.aClass3_Sub30_2030.index = 0;
 						int var13 = -1;
 						RSString message;
 						if(var8) {
-							Class10 var14 = Class155.method2156(1024, Class161.aClass3_Sub30_2030);
+							Class10 var14 = Class155.method2156(Class161.aClass3_Sub30_2030);
 							var4 &= 32767;
 							var13 = var14.anInt149;
-							message = var14.aClass3_Sub28_Sub4_151.method555(var2 + 28100, Class161.aClass3_Sub30_2030);
+							message = var14.aClass3_Sub28_Sub4_151.method555((byte) -79 + 28100, Class161.aClass3_Sub30_2030);
 						} else {
 							message = Class3_Sub28_Sub17.method686(Class32.method992(Class161.aClass3_Sub30_2030, 29488).method1536(78));
 						}
@@ -60,7 +60,7 @@ final class Class45 {
 						var3.textCycle = 150;
 						var3.textColor = var4 >> 8;
 						if (chatIcon == 2) {
-							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:1, message, (RSString)null, RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (chatIcon-1) + ">"), var3.getName(var2 + 79)}, (byte)-116));
+							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:1, message, (RSString)null, RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<img=" + (chatIcon-1) + ">"), var3.getName((byte) -79 + 79)}, (byte)-116));
 						} else if (chatIcon == 1) {
 							Class3_Sub28_Sub12.sendGameMessage(var13, var8?17:1, message, (RSString)null, RenderAnimationDefinition.method903(new RSString[]{Class32.aClass94_592, var3.getName(0)}, (byte)-127));
 						} else {
@@ -73,11 +73,11 @@ final class Class45 {
 
 			//Ordinal: 1 Hit
 			if((var0 & 1) != 0) {
-				var4 = GraphicDefinition.incomingBuffer.getSmart(true);
+				var4 = GraphicDefinition.incomingBuffer.getSmart();
 				chatIcon = GraphicDefinition.incomingBuffer.getByteA((byte)-99);
 				var3.method1970(chatIcon, -8, Class44.anInt719, var4);
 				var3.anInt2781 = 300 + Class44.anInt719;
-				var3.anInt2775 = GraphicDefinition.incomingBuffer.getByteS(true);
+				var3.anInt2775 = GraphicDefinition.incomingBuffer.getByteS();
 			}
 
 			//Ordinal: 2 Animation
@@ -96,7 +96,7 @@ final class Class45 {
 				var4 = GraphicDefinition.incomingBuffer.getByteA((byte)-118);
 				byte[] var16 = new byte[var4];
 				RSByteBuffer var19 = new RSByteBuffer(var16);
-				GraphicDefinition.incomingBuffer.method764(0, var4, var16, (byte)93);
+				GraphicDefinition.incomingBuffer.method764(var4, var16);
 				Class65.aClass3_Sub30Array986[var1] = var19;
 				var3.parseAppearance(-15, var19);
 			}
@@ -111,13 +111,13 @@ final class Class45 {
 
 			//Ordinal: 5 Force movement
 			if((1024 & var0) != 0) {
-				var3.anInt2784 = GraphicDefinition.incomingBuffer.getByteC(true);
+				var3.anInt2784 = GraphicDefinition.incomingBuffer.getByteC();
 				var3.anInt2835 = GraphicDefinition.incomingBuffer.getByte((byte)-24);
 				var3.anInt2823 = GraphicDefinition.incomingBuffer.getByteA((byte)-106);
 				var3.anInt2798 = GraphicDefinition.incomingBuffer.getByte((byte)-37);
 				var3.anInt2800 = GraphicDefinition.incomingBuffer.getLEShort(-90) + Class44.anInt719;
 				var3.anInt2790 = GraphicDefinition.incomingBuffer.getLEShort(-99) - -Class44.anInt719;
-				var3.anInt2840 = GraphicDefinition.incomingBuffer.getByteC(true);
+				var3.anInt2840 = GraphicDefinition.incomingBuffer.getByteC();
 				var3.anInt2816 = 1;
 				var3.anInt2811 = 0;
 			}
@@ -126,10 +126,10 @@ final class Class45 {
 			if((var0 & 32) != 0) {
 				var3.textSpoken = GraphicDefinition.incomingBuffer.getString();
 				if(var3.textSpoken.charAt(0, (byte) -45) == 126) {
-					var3.textSpoken = var3.textSpoken.method1556(1, (byte)-74);
-					Class3_Sub30_Sub1.addChatMessage(var3.getName(0), 2, var3.textSpoken, var2 ^ 78);
+					var3.textSpoken = var3.textSpoken.method1556(1);
+					Class3_Sub30_Sub1.addChatMessage(var3.getName(0), 2, var3.textSpoken, (byte) -79 ^ 78);
 				} else if(var3 == Class102.player) {
-					Class3_Sub30_Sub1.addChatMessage(var3.getName(0), 2, var3.textSpoken, var2 + 78);
+					Class3_Sub30_Sub1.addChatMessage(var3.getName(0), 2, var3.textSpoken, (byte) -79 + 78);
 				}
 
 				var3.textEffect = 0;
@@ -139,14 +139,14 @@ final class Class45 {
 
 			//Ordinal: 7 Hit 2
 			if((var0 & 512) != 0) {
-				var4 = GraphicDefinition.incomingBuffer.getSmart(true);
-				chatIcon = GraphicDefinition.incomingBuffer.getByteS(true);
-				var3.method1970(chatIcon, var2 + 71, Class44.anInt719, var4);
+				var4 = GraphicDefinition.incomingBuffer.getSmart();
+				chatIcon = GraphicDefinition.incomingBuffer.getByteS();
+				var3.method1970(chatIcon, (byte) -79 + 71, Class44.anInt719, var4);
 			}
 
 			//Ordinal: 8
 			if((2048 & var0) != 0) {
-				var4 = GraphicDefinition.incomingBuffer.getByteC(true);
+				var4 = GraphicDefinition.incomingBuffer.getByteC();
 				int[] var18 = new int[var4];
 				int[] var17 = new int[var4];
 				int[] var20 = new int[var4];
@@ -159,7 +159,7 @@ final class Class45 {
 
 					var18[var22] = var23;
 					var17[var22] = GraphicDefinition.incomingBuffer.getByteA((byte)125);
-					var20[var22] = GraphicDefinition.incomingBuffer.getShort(Class93.method1519(var2, -80));
+					var20[var22] = GraphicDefinition.incomingBuffer.getShort(Class93.method1519((byte) -79, -80));
 				}
 
 				Class75_Sub1.method1342(var17, var18, var3, (byte)-113, var20);
@@ -174,7 +174,7 @@ final class Class45 {
 
 				chatIcon = GraphicDefinition.incomingBuffer.getIntB((byte)-73);
 				boolean var21 = true;
-				if(var4 != -1 && var3.anInt2842 != -1 && Client.getAnimationDefinition(RenderAnimationDefinition.getGraphicDefinition((byte)42, var4).anInt542, (byte)-20).anInt1857 < Client.getAnimationDefinition(RenderAnimationDefinition.getGraphicDefinition((byte)42, var3.anInt2842).anInt542, (byte)-20).anInt1857) {
+				if(var4 != -1 && var3.anInt2842 != -1 && Client.getAnimationDefinition(RenderAnimationDefinition.getGraphicDefinition((byte)42, var4).anInt542).anInt1857 < Client.getAnimationDefinition(RenderAnimationDefinition.getGraphicDefinition((byte)42, var3.anInt2842).anInt542).anInt1857) {
 					var21 = false;
 				}
 
@@ -192,7 +192,7 @@ final class Class45 {
 					if(var3.anInt2842 != -1 && Class44.anInt719 == var3.anInt2759) {
 						var7 = RenderAnimationDefinition.getGraphicDefinition((byte)42, var3.anInt2842).anInt542;
 						if(var7 != -1) {
-							AnimationDefinition var24 = Client.getAnimationDefinition(var7, (byte)-20);
+							AnimationDefinition var24 = Client.getAnimationDefinition(var7);
 							if(null != var24 && var24.frames != null) {
 								IOHandler.method1470(var3.anInt2829, var24, 183921384, var3.anInt2819, var3 == Class102.player, 0);
 							}
@@ -201,7 +201,7 @@ final class Class45 {
 				}
 			}
 
-			if(var2 == -79) {
+			if((byte) -79 == -79) {
 				//Ordinal: 10 Face location
 				if((var0 & 64) != 0) {
 					var3.anInt2786 = GraphicDefinition.incomingBuffer.getShort(1);
@@ -210,7 +210,7 @@ final class Class45 {
 
 			}
 		} catch (RuntimeException var15) {
-			throw Class44.clientError(var15, "gk.A(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var15, "gk.A(" + var0 + ',' + var1 + ',' + (byte) -79 + ',' + (var3 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -328,29 +328,29 @@ final class Class45 {
 
 	static final void method1083(byte var0) {
 		try {
-			Class3_Sub13_Sub9.anIntArray3107 = InputStream_Sub1.method62(true, 14585, 8, 2048, 4, 0.4F, 8, 35);
+			Class3_Sub13_Sub9.anIntArray3107 = InputStream_Sub1.method62();
 			int var1 = -5 / ((var0 - 45) / 59);
 		} catch (RuntimeException var2) {
 			throw Class44.clientError(var2, "gk.C(" + var0 + ')');
 		}
 	}
 
-	static final void method1084(Node var0, Node var1, byte var2) {
+	static final void method1084(Node var0, Node var1) {
 		try {
 			if(var1.aClass3_Sub28_2570 != null) {
-				var1.method524((byte)-107);
+				var1.method524();
 			}
 
 			var1.aClass3_Sub28_2570 = var0;
 			var1.aClass3_Sub28_2578 = var0.aClass3_Sub28_2578;
 			var1.aClass3_Sub28_2570.aClass3_Sub28_2578 = var1;
-			if(var2 <= 101) {
+			if((byte) 121 <= 101) {
 				aBoolean732 = true;
 			}
 
 			var1.aClass3_Sub28_2578.aClass3_Sub28_2570 = var1;
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "gk.D(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+			throw Class44.clientError(var4, "gk.D(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (byte) 121 + ')');
 		}
 	}
 

@@ -19,15 +19,15 @@ final class Class3_Sub28_Sub15 extends Node {
    static Class3_Sub19[] aClass3_Sub19Array3694;
    static int anInt3695;
 
-   static final Class100 method629(boolean var0, int var1) {
+   static final Class100 method629(int var1) {
       try {
-         Class100 var2 = (Class100)Class44.aClass93_725.get((long)var1, (byte)121);
+         Class100 var2 = (Class100)Class44.aClass93_725.get((long)var1);
          if(var2 == null) {
-            if(var0) {
-               byte[] var3 = Class3_Sub23.aClass153_2536.getFile(1, (byte)-122, var1);
+            if(true) {
+               byte[] var3 = Class3_Sub23.aClass153_2536.getFile(1, var1);
                var2 = new Class100();
                if(null != var3) {
-                  var2.method1601(var1, new RSByteBuffer(var3), 255);
+                  var2.method1601(var1, new RSByteBuffer(var3));
                }
 
                Class44.aClass93_725.put((byte)-104, var2, (long)var1);
@@ -39,26 +39,26 @@ final class Class3_Sub28_Sub15 extends Node {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "qc.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "qc.B(" + true + ',' + var1 + ')');
       }
    }
 
-   static final int method630(byte var0, int var1) {
+   static final int method630(int var1) {
       try {
          return 127 & var1 >> 11;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "qc.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "qc.A(" + (byte) -34 + ',' + var1 + ')');
       }
    }
 
-   static final void method631(boolean var0, CacheIndex var1) {
+   static final void method631(CacheIndex var1) {
       try {
-         if(!var0) {
+         if(!false) {
             Class3_Sub28_Sub5.aClass153_3580 = var1;
             Class54.anInt869 = Class3_Sub28_Sub5.aClass153_3580.getFileAmount(4, (byte)112);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "qc.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "qc.D(" + false + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 

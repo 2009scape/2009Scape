@@ -49,20 +49,20 @@ final class Class67 implements Runnable {
             method1258((byte)-35);
          }
 
-         return Class3_Sub13_Sub17.method251(-1);
+         return Class3_Sub13_Sub17.method251();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "jd.D(" + var0 + ')');
       }
    }
 
-   static final void method1259(int var0, byte var1) {
+   static final void method1259(int var0) {
       try {
-         if(var1 > 12) {
+         if((byte) 109 > 12) {
             Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 12, var0);
             var2.a(true);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "jd.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "jd.A(" + var0 + ',' + (byte) 109 + ')');
       }
    }
 
@@ -98,7 +98,7 @@ final class Class67 implements Runnable {
                      }
 
                      if(var6 != -1) {
-                        AnimationDefinition var7 = Client.getAnimationDefinition(var6, (byte)-20);
+                        AnimationDefinition var7 = Client.getAnimationDefinition(var6);
                         if(null != var7) {
                            for(var4.anInt267 += Class106.anInt1446; var7.duration[var4.anInt283] < var4.anInt267; Class20.method909(115, var4)) {
                               var4.anInt267 -= var7.duration[var4.anInt283];
@@ -144,7 +144,7 @@ final class Class67 implements Runnable {
       }
    }
 
-   static final RSString method1261(int var0, int var1, RSString[] var2, int var3) {
+   static final RSString method1261(int var0, int var1, RSString[] var2) {
       try {
          int var4 = 0;
 
@@ -167,14 +167,14 @@ final class Class67 implements Runnable {
 
          RSString var11 = new RSString();
          var11.length = var4;
-         if(var3 != 2774) {
+         if(2774 != 2774) {
             method1262(83, 28);
          }
 
          var11.byteArray = var10;
          return var11;
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "jd.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var9, "jd.C(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + 2774 + ')');
       }
    }
 

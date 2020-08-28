@@ -59,7 +59,7 @@ final class NPC extends Class140_Sub4 {
 				return null;
 			} else if(var1 instanceof byte[]) {
 				byte[] var5 = (byte[])((byte[])var1);
-				return var2?Class12.method873((byte)62, var5):var5;
+				return var2?Class12.method873(var5):var5;
 			} else {
 				if(var0 > -118) {
 					method1983(19);
@@ -67,7 +67,7 @@ final class NPC extends Class140_Sub4 {
 
 				if(var1 instanceof Class144) {
 					Class144 var3 = (Class144)var1;
-					return var3.method2064(26);
+					return var3.method2064();
 				} else {
 					throw new IllegalArgumentException();
 				}
@@ -80,8 +80,8 @@ final class NPC extends Class140_Sub4 {
 	final void animate(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, long var9, int var11, Class127_Sub1 var12) {
 		try {
 			if(this.definition != null) {
-				AnimationDefinition var13 = this.anInt2771 != -1 && this.anInt2828 == 0 ?Client.getAnimationDefinition(this.anInt2771, (byte)-20):null;
-				AnimationDefinition var14 = -1 != this.anInt2764 && (this.method1965(false).anInt368 != this.anInt2764 || var13 == null)?Client.getAnimationDefinition(this.anInt2764, (byte)-20):null;
+				AnimationDefinition var13 = this.anInt2771 != -1 && this.anInt2828 == 0 ?Client.getAnimationDefinition(this.anInt2771):null;
+				AnimationDefinition var14 = -1 != this.anInt2764 && (this.method1965().anInt368 != this.anInt2764 || var13 == null)?Client.getAnimationDefinition(this.anInt2764):null;
 				Model var15 = this.definition.method1476(this.aClass145Array2809, this.anInt2793, (byte)-116, this.anInt2813, this.anInt2776, this.anInt2760, this.anInt2832, var14, this.anInt2802, var13);
 				if(var15 != null) {
 					this.anInt2820 = var15.method1871();
@@ -92,7 +92,7 @@ final class NPC extends Class140_Sub4 {
 
 					Model var17;
 					if(Class140_Sub6.aBoolean2910 && var16.aBoolean1249) {
-						var17 = Class140_Sub3.method1957(this.definition.aByte1287, this.aBoolean2810, null == var14?var13:var14, this.anInt2819, this.definition.aShort1256, this.anInt2829, this.definition.aShort1286, this.definition.size, var15, var1, null != var14?this.anInt2813:this.anInt2832, this.anInt2831, this.definition.aByte1275, (byte)-49);
+						var17 = Class140_Sub3.method1957(this.definition.aByte1287, this.aBoolean2810, null == var14?var13:var14, this.anInt2819, this.definition.aShort1256, this.anInt2829, this.definition.aShort1286, this.definition.size, var15, var1, null != var14?this.anInt2813:this.anInt2832, this.anInt2831, this.definition.aByte1275);
 						if(HDToolKit.highDetail) {
 							float var18 = HDToolKit.method1852();
 							float var19 = HDToolKit.method1839();
@@ -111,7 +111,7 @@ final class NPC extends Class140_Sub4 {
 					var17 = null;
 					if(this.anInt2842 != -1 && -1 != this.anInt2805) {
 						GraphicDefinition var21 = RenderAnimationDefinition.getGraphicDefinition((byte)42, this.anInt2842);
-						var17 = var21.method966(this.anInt2826, (byte)-30, this.anInt2805, this.anInt2761);
+						var17 = var21.method966(this.anInt2826, this.anInt2805, this.anInt2761);
 						if(var17 != null) {
 							var17.method1897(0, -this.anInt2799, 0);
 							if(var21.aBoolean536) {
@@ -162,9 +162,9 @@ final class NPC extends Class140_Sub4 {
 		}
 	}
 
-	final int getRenderAnimationId(int var1) {
+	final int getRenderAnimationId() {
 		try {
-			if(~Class158.anInt2014 != var1 && this.definition.childNPCs != null) {
+			if(~Class158.anInt2014 != -1 && this.definition.childNPCs != null) {
 				NPCDefinition var2 = this.definition.method1471((byte)21);
 				if(var2 != null && var2.renderAnimationId != -1) {
 					return var2.renderAnimationId;
@@ -173,7 +173,7 @@ final class NPC extends Class140_Sub4 {
 
 			return this.renderAnimationId;
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "km.B(" + var1 + ')');
+			throw Class44.clientError(var3, "km.B(" + -1 + ')');
 		}
 	}
 
@@ -211,21 +211,21 @@ final class NPC extends Class140_Sub4 {
 		}
 	}
 
-	final void setDefinitions(int var1, NPCDefinition var2) {
+	final void setDefinitions(NPCDefinition var2) {
 		try {
 			this.definition = var2;
-			if(var1 == -1) {
+			if(-1 == -1) {
 				if(this.aClass127_Sub1_2801 != null) {
 					this.aClass127_Sub1_2801.method1759();
 				}
 
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "km.R(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var4, "km.R(" + -1 + ',' + (var2 != null?"{...}":"null") + ')');
 		}
 	}
 
-	static final boolean method1988(boolean var0) {
+	static final boolean method1988() {
 		try {
 			try {
 				if(Class10.anInt154 == 2) {
@@ -240,10 +240,10 @@ final class NPC extends Class140_Sub4 {
 						Class3_Sub28_Sub4.aClass83_3579 = new Class83(Class40.aClass153_679, Class3_Sub28_Sub20.aClass153_3786);
 					}
 
-					if(Class101.aClass3_Sub24_Sub4_1421.method470(Class83.aClass3_Sub27_1154, -122, Class124.aClass153_1661, Class3_Sub28_Sub4.aClass83_3579, 22050)) {
-						Class101.aClass3_Sub24_Sub4_1421.method471((byte)53);
-						Class101.aClass3_Sub24_Sub4_1421.method506(128, Class3_Sub13_Sub36.anInt3423);
-						Class101.aClass3_Sub24_Sub4_1421.method490(Class3_Sub9.aBoolean2311, Class83.aClass3_Sub27_1154, 17774);
+					if(Class101.aClass3_Sub24_Sub4_1421.method470(Class83.aClass3_Sub27_1154, Class124.aClass153_1661, Class3_Sub28_Sub4.aClass83_3579)) {
+						Class101.aClass3_Sub24_Sub4_1421.method471();
+						Class101.aClass3_Sub24_Sub4_1421.method506(Class3_Sub13_Sub36.anInt3423);
+						Class101.aClass3_Sub24_Sub4_1421.method490(Class3_Sub9.aBoolean2311, Class83.aClass3_Sub27_1154);
 						Class10.anInt154 = 0;
 						Class83.aClass3_Sub27_1154 = null;
 						Class3_Sub28_Sub4.aClass83_3579 = null;
@@ -262,7 +262,7 @@ final class NPC extends Class140_Sub4 {
 
 			return false;
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "km.P(" + var0 + ')');
+			throw Class44.clientError(var3, "km.P(" + false + ')');
 		}
 	}
 

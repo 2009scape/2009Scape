@@ -20,7 +20,7 @@ final class Class96 {
    static int anInt1361;
 
 
-   static final void method1587(byte var0, RSByteBuffer var1) {
+   static final void method1587(RSByteBuffer var1) {
       try {
          label134:
          while(true) {
@@ -129,11 +129,11 @@ final class Class96 {
                }
             }
 
-            int var4 = -58 % ((var0 - 42) / 32);
+            int var4 = -58 % (((byte) -83 - 42) / 32);
             return;
          }
       } catch (RuntimeException var17) {
-         throw Class44.clientError(var17, "nc.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var17, "nc.A(" + (byte) -83 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 

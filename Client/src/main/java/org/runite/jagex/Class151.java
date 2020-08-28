@@ -27,7 +27,7 @@ abstract class Class151 {
 
    abstract Class62 method2094(int var1);
 
-   abstract void method2095(int var1, int var2);
+   abstract void method2095(int var1);
 
    static final boolean method2096(int var0, int var1, int var2, long var3) {
       Class3_Sub2 var5 = Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2];
@@ -52,23 +52,23 @@ abstract class Class151 {
 
    abstract int method2097(int var1, int var2);
 
-   abstract byte[] method2098(int var1, int var2);
+   abstract byte[] method2098(int var1);
 
-   static final void method2099(boolean var0, int var1, int var2, CacheIndex var3, boolean var4, int var5, int var6) {
+   static final void method2099(int var1, CacheIndex var3, int var5) {
       try {
          Class101.aClass153_1423 = var3;
-         Class132.anInt1741 = var2;
+         Class132.anInt1741 = 0;
          Class3_Sub13_Sub39.anInt3463 = var1;
-         Class3_Sub9.aBoolean2311 = var4;
+         Class3_Sub9.aBoolean2311 = false;
          Class10.anInt154 = 1;
-         GraphicDefinition.anInt546 = var6;
-         if(!var0) {
+         GraphicDefinition.anInt546 = 2;
+         if(!true) {
             method2096(-8, 46, 45, -6L);
          }
 
          Class3_Sub13_Sub36.anInt3423 = var5;
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "v.Q(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "v.Q(" + true + ',' + var1 + ',' + 0 + ',' + (var3 != null?"{...}":"null") + ',' + false + ',' + var5 + ',' + 2 + ')');
       }
    }
 

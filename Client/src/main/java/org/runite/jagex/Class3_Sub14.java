@@ -122,7 +122,7 @@ final class Class3_Sub14 extends Class3 {
          } while(var6 >= 255);
 
          byte[] var7 = new byte[var5];
-         var2.method764(0, var5, var7, (byte)93);
+         var2.method764(var5, var7);
          this.aByteArrayArray2410[var4] = var7;
       }
 
@@ -149,7 +149,7 @@ final class Class3_Sub14 extends Class3 {
 
    private static final boolean method362(CacheIndex var0) {
       if(!aBoolean2405) {
-         byte[] var1 = var0.getFile(0, (byte)-122, 0);
+         byte[] var1 = var0.getFile(0, 0);
          if(var1 == null) {
             return false;
          }
@@ -163,7 +163,7 @@ final class Class3_Sub14 extends Class3 {
 
    static final Class3_Sub14 method363(CacheIndex var0, int var1, int var2) {
       if(method362(var0)) {
-         byte[] var3 = var0.getFile(var1, (byte)-122, var2);
+         byte[] var3 = var0.getFile(var1, var2);
          return var3 == null?null:new Class3_Sub14(var3);
       } else {
          var0.method2129((byte)95, var2, var1);
@@ -179,14 +179,14 @@ final class Class3_Sub14 extends Class3 {
       return var0;
    }
 
-   private static final void method365(byte[] var0, int var1) {
+   private static final void method365(byte[] var0) {
       aByteArray2417 = var0;
-      anInt2404 = var1;
+      anInt2404 = 0;
       anInt2414 = 0;
    }
 
    private final float[] method366(int var1) {
-      method365(this.aByteArrayArray2410[var1], 0);
+      method365(this.aByteArrayArray2410[var1]);
       method364();
       int var2 = method368(Class3_Sub26.method513(anIntArray2420.length - 1, 4));
       boolean var3 = aBooleanArray2393[var2];
@@ -436,7 +436,7 @@ final class Class3_Sub14 extends Class3 {
    }
 
    private static final void method367(byte[] var0) {
-      method365(var0, 0);
+      method365(var0);
       anInt2402 = 1 << method368(4);
       anInt2396 = 1 << method368(4);
       aFloatArray2403 = new float[anInt2396];
@@ -476,7 +476,7 @@ final class Class3_Sub14 extends Class3 {
          int var10 = Class3_Sub26.method513(var5 - 1, 4);
 
          for(int var11 = 0; var11 < var5; ++var11) {
-            var15[var11] = Class3_Sub28_Sub3.method540(var10, -14314, var11);
+            var15[var11] = Class3_Sub28_Sub3.method540(var10, var11);
          }
 
          if(var1 == 0) {

@@ -10,10 +10,10 @@ final class Class10 {
    static int anInt154 = 0;
 
 
-   static final Class3_Sub28_Sub16_Sub2[] method851(boolean var0) {
+   static final Class3_Sub28_Sub16_Sub2[] method851() {
       try {
          Class3_Sub28_Sub16_Sub2[] var1 = new Class3_Sub28_Sub16_Sub2[Class95.anInt1338];
-         if(!var0) {
+         if(!true) {
             method852((byte)127, -18);
          }
 
@@ -32,7 +32,7 @@ final class Class10 {
          Class39.method1035((byte)113);
          return var1;
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "bd.B(" + var0 + ')');
+         throw Class44.clientError(var7, "bd.B(" + true + ')');
       }
    }
 

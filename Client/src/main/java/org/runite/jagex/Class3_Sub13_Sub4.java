@@ -37,10 +37,10 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
       }
    }
 
-   final void method186(boolean var1, int var2, int[] var3) {
+   final void method186(int var2, int[] var3) {
       try {
          int var5 = this.anInt3056 * Class163_Sub3.anIntArray2999[var2];
-         if(var1) {
+         if(true) {
             int var4;
             int var6;
             int var8;
@@ -146,7 +146,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var19) {
-         throw Class44.clientError(var19, "bi.C(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var19, "bi.C(" + true + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -166,7 +166,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
    final void method158(int var1) {
       try {
          this.aByteArray3059 = Class49.method1123(16711935, this.anInt3067);
-         this.method191(true);
+         this.method191();
 
          for(int var2 = -1 + this.anInt3058; var2 >= 1; --var2) {
             short var3 = this.aShortArray3066[var2];
@@ -198,9 +198,9 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
       }
    }
 
-   static final void method189(byte var0) {
+   static final void method189() {
       try {
-         int var2 = -18 / ((28 - var0) / 32);
+         int var2 = -18 / ((28 - (byte) -62) / 32);
 
          int var1;
          for(var1 = -1; Class159.localPlayerCount > var1; ++var1) {
@@ -232,7 +232,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "bi.B(" + var0 + ')');
+         throw Class44.clientError(var5, "bi.B(" + (byte) -62 + ')');
       }
    }
 
@@ -325,7 +325,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
       }
    }
 
-   private final void method191(boolean var1) {
+   private final void method191() {
       try {
          int var2;
          if(this.anInt3062 <= 0) {
@@ -346,12 +346,12 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
             }
          }
 
-         if(!var1) {
+         if(!true) {
             this.method192(54, 5, -23, 103, -114, -67, -27);
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bi.F(" + var1 + ')');
+         throw Class44.clientError(var3, "bi.F(" + true + ')');
       }
    }
 
@@ -440,9 +440,9 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
    final int[] method154(int var1, byte var2) {
       try {
          int var4 = 111 % ((30 - var2) / 36);
-         int[] var3 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
-            this.method186(true, var1, var3);
+            this.method186(var1, var3);
          }
 
          return var3;

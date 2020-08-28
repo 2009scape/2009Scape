@@ -32,7 +32,7 @@ final class AnimationDefinition {
 	boolean aBoolean1872 = false;
 
 
-	static final Class3_Sub11 method2052(Class130 var0, boolean var1, Class168 var2) {
+	static final Class3_Sub11 method2052(Class130 var0, Class168 var2) {
 		try {
 			long var3 = (long)((var2.anInt2095 - -1 << 16) + var2.anInt2090) + (((long)var2.anInt2100 << 56) - -((long)var2.anInt2094 << 32));
 			Class3_Sub11 var5 = (Class3_Sub11)var0.method1780(var3, 0);
@@ -43,7 +43,7 @@ final class AnimationDefinition {
 
 			return var5;
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "tk.J(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var6, "tk.J(" + (var0 != null?"{...}":"null") + ',' + false + ',' + (var2 != null?"{...}":"null") + ')');
 		}
 	}
 
@@ -60,25 +60,25 @@ final class AnimationDefinition {
 					return;
 				}
 				//System.out.print(var3 + ", ");
-				this.method2060(var3, (byte)-73, var1);
+				this.method2060(var3, var1);
 			}
 		} catch (RuntimeException var4) {
 			throw Class44.clientError(var4, "tk.I(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
 		}
 	}
 
-	final Model method2054(int var1, int var2, int var3, Model var4, int var5, int var6) {
+	final Model method2054(int var2, int var3, Model var4, int var5, int var6) {
 		try {
 			int var7 = this.duration[var2];
 			var2 = this.frames[var2];
-			Class3_Sub28_Sub5 var8 = Class3_Sub9.method133(var2 >> 16, var1 + -19749);
+			Class3_Sub28_Sub5 var8 = Class3_Sub9.method133(var2 >> 16, 19749 + -19749);
 			var2 &= '\uffff';
 			if(var8 == null) {
 				return var4.method1890(true, true, true);
 			} else {
 				var5 &= 3;
 				Class3_Sub28_Sub5 var9 = null;
-				if(var1 != 19749) {
+				if(19749 != 19749) {
 					this.method2053((RSByteBuffer)null, (byte)-126);
 				}
 
@@ -90,9 +90,9 @@ final class AnimationDefinition {
 
 				Model var10;
 				if(var9 == null) {
-					var10 = var4.method1890(!var8.method559(1317095745, var2), !var8.method561(var2, (byte)121), !this.aBoolean1848);
+					var10 = var4.method1890(!var8.method559(var2), !var8.method561(var2, (byte)121), !this.aBoolean1848);
 				} else {
-					var10 = var4.method1890(!var8.method559(1317095745, var2) & !var9.method559(1317095745, var3), !var8.method561(var2, (byte)125) & !var9.method561(var3, (byte)118), !this.aBoolean1848);
+					var10 = var4.method1890(!var8.method559(var2) & !var9.method559(var3), !var8.method561(var2, (byte)125) & !var9.method561(var3, (byte)118), !this.aBoolean1848);
 				}
 
 				if(HDToolKit.highDetail && this.aBoolean1848) {
@@ -131,7 +131,7 @@ final class AnimationDefinition {
 				return var10;
 			}
 		} catch (RuntimeException var11) {
-			throw Class44.clientError(var11, "tk.D(" + var1 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ')');
+			throw Class44.clientError(var11, "tk.D(" + 19749 + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ')');
 		}
 	}
 
@@ -174,20 +174,20 @@ final class AnimationDefinition {
 					}
 				}
 
-				boolean var15 = !var8.method559(1317095745, var7);
+				boolean var15 = !var8.method559(var7);
 				boolean var16 = !var8.method561(var7, (byte)119);
 				if(var10 != null) {
-					var15 &= !var10.method559(1317095745, var13);
+					var15 &= !var10.method559(var13);
 					var16 &= !var10.method561(var13, (byte)115);
 				}
 
 				if(null != var9) {
-					var15 &= !var9.method559(1317095745, var3);
+					var15 &= !var9.method559(var3);
 					var16 &= !var9.method561(var3, (byte)123);
 				}
 
 				if(null != var11) {
-					var15 &= !var11.method559(1317095745, var14);
+					var15 &= !var11.method559(var14);
 					var16 &= !var11.method561(var14, (byte)121);
 				}
 
@@ -204,28 +204,28 @@ final class AnimationDefinition {
 		}
 	}
 
-	final Model method2056(int var1, int var2, int var3, int var4, Model var5, int var6) {
+	final Model method2056(int var1, int var2, int var3, int var4, Model var5) {
 		try {
 			int var7 = this.duration[var2];
 			var2 = this.frames[var2];
-			Class3_Sub28_Sub5 var8 = Class3_Sub9.method133(var2 >> 16, var6 + -3);
+			Class3_Sub28_Sub5 var8 = Class3_Sub9.method133(var2 >> 16, 3 + -3);
 			var2 &= '\uffff';
 			if(null == var8) {
 				return var5.method1894(true, true, true);
 			} else {
-				var4 &= var6;
+				var4 &= 3;
 				Class3_Sub28_Sub5 var9 = null;
 				if((this.aBoolean1846 || Class3_Sub26.aBoolean2558) && var1 != -1 && this.frames.length > var1) {
 					var1 = this.frames[var1];
-					var9 = Class3_Sub9.method133(var1 >> 16, var6 + -3);
+					var9 = Class3_Sub9.method133(var1 >> 16, 3 + -3);
 					var1 &= '\uffff';
 				}
 
 				Model var10;
 				if(null == var9) {
-					var10 = var5.method1894(!var8.method559(1317095745, var2), !var8.method561(var2, (byte)123), !this.aBoolean1848);
+					var10 = var5.method1894(!var8.method559(var2), !var8.method561(var2, (byte)123), !this.aBoolean1848);
 				} else {
-					var10 = var5.method1894(!var8.method559(1317095745, var2) & !var9.method559(1317095745, var1), !var8.method561(var2, (byte)125) & !var9.method561(var1, (byte)123), !this.aBoolean1848);
+					var10 = var5.method1894(!var8.method559(var2) & !var9.method559(var1), !var8.method561(var2, (byte)125) & !var9.method561(var1, (byte)123), !this.aBoolean1848);
 				}
 
 				if(this.aBoolean1848 && HDToolKit.highDetail) {
@@ -268,7 +268,7 @@ final class AnimationDefinition {
 				return var10;
 			}
 		} catch (RuntimeException var11) {
-			throw Class44.clientError(var11, "tk.B(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ')');
+			throw Class44.clientError(var11, "tk.B(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + 3 + ')');
 		}
 	}
 
@@ -287,9 +287,9 @@ final class AnimationDefinition {
 		}
 	}
 
-	final void method2058(byte var1) {
+	final void method2058() {
 		try {
-			if(var1 == -41) {
+			if((byte) -41 == -41) {
 				if(this.anInt1866 == -1) {
 					if(null == this.aBooleanArray1855) {
 						this.anInt1866 = 0;
@@ -308,13 +308,13 @@ final class AnimationDefinition {
 
 			}
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "tk.C(" + var1 + ')');
+			throw Class44.clientError(var3, "tk.C(" + (byte) -41 + ')');
 		}
 	}
 
-	final Model method2059(int var1, int var2, int var3, byte var4, Model var5) {
+	final Model method2059(int var1, int var2, int var3, Model var5) {
 		try {
-			int var8 = 43 / ((var4 - 4) / 54);
+			int var8 = 43 / (((byte) -52 - 4) / 54);
 			int var6 = this.duration[var3];
 			var3 = this.frames[var3];
 			Class3_Sub28_Sub5 var7 = Class3_Sub9.method133(var3 >> 16, 0);
@@ -331,20 +331,20 @@ final class AnimationDefinition {
 
 				Model var10;
 				if(null == var9) {
-					var10 = var5.method1882(!var7.method559(1317095745, var3), !var7.method561(var3, (byte)118), !this.aBoolean1848);
+					var10 = var5.method1882(!var7.method559(var3), !var7.method561(var3, (byte)118), !this.aBoolean1848);
 				} else {
-					var10 = var5.method1882(!var7.method559(1317095745, var3) & !var9.method559(1317095745, var1), !var7.method561(var3, (byte)119) & !var9.method561(var1, (byte)118), !this.aBoolean1848);
+					var10 = var5.method1882(!var7.method559(var3) & !var9.method559(var1), !var7.method561(var3, (byte)119) & !var9.method561(var1, (byte)118), !this.aBoolean1848);
 				}
 
 				var10.method1880(var7, var3, var9, var1, var2 + -1, var6, this.aBoolean1848);
 				return var10;
 			}
 		} catch (RuntimeException var11) {
-			throw Class44.clientError(var11, "tk.G(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var11, "tk.G(" + var1 + ',' + var2 + ',' + var3 + ',' + (byte) -52 + ',' + (var5 != null?"{...}":"null") + ')');
 		}
 	}
 
-	private final void method2060(int var1, byte var2, RSByteBuffer var3) {
+	private final void method2060(int var1, RSByteBuffer var3) {
 		try {
 			int var4;
 			int var5;
@@ -424,13 +424,13 @@ final class AnimationDefinition {
 				this.aBoolean1872 = true;
 			}
 
-			var4 = 49 % ((-12 - var2) / 34);
+			var4 = 49 % ((-12 - (byte) -73) / 34);
 		} catch (RuntimeException var8) {
-			throw Class44.clientError(var8, "tk.H(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+			throw Class44.clientError(var8, "tk.H(" + var1 + ',' + (byte) -73 + ',' + (var3 != null?"{...}":"null") + ')');
 		}
 	}
 
-	static final void method2061(boolean var0) {
+	static final void method2061() {
 		try {
 			Class3_Sub26.anInt2556 = 0;
 			Class140_Sub4.aBoolean2774 = true;
@@ -638,7 +638,7 @@ final class AnimationDefinition {
 			Class96.anInt1357 = 0;
 			Class8.anInt104 = 0;
 			Class3_Sub13_Sub2.method176(-114);
-			Class3_Sub2.method103((byte)24);
+			Class3_Sub2.method103();
 			Class75.anInt1105 = 0;
 			Class163_Sub2_Sub1.anInt4014 = 0;
 			Class157.anInt1996 = 0;
@@ -659,7 +659,7 @@ final class AnimationDefinition {
 			}
 
 			for(Class3_Sub31 var7 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1776(82); var7 != null; var7 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1778(-104)) {
-				Class3_Sub13_Sub18.method254(true, var7, false);
+				Class3_Sub13_Sub18.method254(true, var7);
 			}
 
 			Class3_Sub28_Sub12.anInt3655 = -1;
@@ -668,7 +668,7 @@ final class AnimationDefinition {
 			Class3_Sub13_Sub7.aClass11_3087 = null;
 			Class38_Sub1.aBoolean2615 = false;
 			Class3_Sub13_Sub34.anInt3415 = 0;
-			Class77.aClass52_1112.method1161(new int[]{0, 0, 0, 0, 0}, -1, false, 0, (int[])null, -1);
+			Class77.aClass52_1112.method1161(new int[]{0, 0, 0, 0, 0}, -1, false, (int[])null, -1);
 
 			for(var1 = 0; 8 > var1; ++var1) {
 				Class91.aClass94Array1299[var1] = null;
@@ -698,19 +698,19 @@ final class AnimationDefinition {
 			}
 
 			if(HDToolKit.highDetail) {
-				Class3_Sub13_Sub14.method236((byte)64);
+				Class3_Sub13_Sub14.method236();
 			}
 
-			Class3_Sub28_Sub10_Sub2.aBoolean4068 = var0;
+			Class3_Sub28_Sub10_Sub2.aBoolean4068 = true;
 			Class113.interfacePacketCounter = 0;
 			Class3_Sub13_Sub28.aClass94_3353 = TextCore.HasWalkHere;
 			Class73.aBoolean1084 = false;
 			Class3_Sub13_Sub38.aShortArray3455 = Class3_Sub13_Sub9.aShortArray3110 = Class136.aShortArray1779 = Class3_Sub13_Sub38.aShortArray3453 = new short[256];
-			Class3_Sub13.method165(-7878);
+			Class3_Sub13.method165();
 			CacheIndex.aBoolean1951 = false;
 			Class3_Sub13_Sub8.method204(-3);
 		} catch (RuntimeException var6) {
-			throw Class44.clientError(var6, "tk.A(" + var0 + ')');
+			throw Class44.clientError(var6, "tk.A(" + true + ')');
 		}
 	}
 

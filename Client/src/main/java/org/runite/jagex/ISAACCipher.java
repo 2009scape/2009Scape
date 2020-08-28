@@ -14,9 +14,9 @@ final class ISAACCipher {
    private int anInt972;
 
 
-   private final void method1227(boolean var1) {
+   private final void method1227() {
       try {
-         if(!var1) {
+         if(!true) {
             this.method1229(82);
          }
 
@@ -146,7 +146,7 @@ final class ISAACCipher {
          this.method1229(-1879);
          this.anInt968 = 256;
       } catch (RuntimeException var11) {
-         throw Class44.clientError(var11, "ij.E(" + var1 + ')');
+         throw Class44.clientError(var11, "ij.E(" + true + ')');
       }
    }
 
@@ -209,8 +209,8 @@ final class ISAACCipher {
          int var3 = Class3_Sub28_Sub3.anInt3552;
          if(Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 == null || null == Class108.aClass3_Sub28_Sub16_1457) {
             if(Class140_Sub6.spritesCacheIndex.method2144(0, WorldListCountry.anInt502) && Class140_Sub6.spritesCacheIndex.method2144(0, Class99.anInt1400)) {
-               Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, 0, WorldListCountry.anInt502, (byte)39);
-               Class108.aClass3_Sub28_Sub16_1457 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, 0, Class99.anInt1400, (byte)39);
+               Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, WorldListCountry.anInt502);
+               Class108.aClass3_Sub28_Sub16_1457 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, Class99.anInt1400);
                if(HDToolKit.highDetail) {
                   if(Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
                      Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2)Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099);
@@ -267,9 +267,9 @@ final class ISAACCipher {
          }
 
          if((Class95.aClass3_Sub28_Sub16_1339 == null || Class50.aClass3_Sub28_Sub16_824 == null || null == Class3_Sub26.aClass3_Sub28_Sub16_2560) && Class140_Sub6.spritesCacheIndex.method2144(0, Class46.anInt739) && Class140_Sub6.spritesCacheIndex.method2144(0, Class79.anInt1126) && Class140_Sub6.spritesCacheIndex.method2144(0, Class140_Sub7.anInt2937)) {
-            Class95.aClass3_Sub28_Sub16_1339 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, 0, Class46.anInt739, (byte)39);
-            Class50.aClass3_Sub28_Sub16_824 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, 0, Class79.anInt1126, (byte)39);
-            Class3_Sub26.aClass3_Sub28_Sub16_2560 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, 0, Class140_Sub7.anInt2937, (byte)39);
+            Class95.aClass3_Sub28_Sub16_1339 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, Class46.anInt739);
+            Class50.aClass3_Sub28_Sub16_824 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, Class79.anInt1126);
+            Class3_Sub26.aClass3_Sub28_Sub16_2560 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, Class140_Sub7.anInt2937);
             if(HDToolKit.highDetail) {
                if(Class95.aClass3_Sub28_Sub16_1339 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
                   Class95.aClass3_Sub28_Sub16_1339 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2)Class95.aClass3_Sub28_Sub16_1339);
@@ -317,7 +317,7 @@ final class ISAACCipher {
                var9 = Class154.anInt1957;
             }
 
-            Class168.aClass3_Sub28_Sub17_2096.method681(RSByteBuffer.method802(var7, true), 3 + var1, var8, var9, 0);
+            Class168.aClass3_Sub28_Sub17_2096.method681(RSByteBuffer.method802(var7), 3 + var1, var8, var9, 0);
          }
 
          Class69.method1282(AbstractIndexedSprite.anInt1462, (byte)122, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537, Class3_Sub28_Sub3.anInt3552);
@@ -349,7 +349,7 @@ final class ISAACCipher {
             }
 
             int var3 = var2.anInt1293;
-            RenderAnimationDefinition var4 = var0.method1965(false);
+            RenderAnimationDefinition var4 = var0.method1965();
             if(var0.anInt2764 == var4.anInt368) {
                var3 = var2.anInt1262;
             } else if(var4.anInt393 != var0.anInt2764 && var4.anInt386 != var0.anInt2764 && var0.anInt2764 != var4.anInt375 && var0.anInt2764 != var4.anInt373) {
@@ -380,7 +380,7 @@ final class ISAACCipher {
             this.anIntArray970[var2] = var1[var2];
          }
 
-         this.method1227(true);
+         this.method1227();
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ij.<init>(" + (var1 != null?"{...}":"null") + ')');
       }

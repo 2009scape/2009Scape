@@ -18,7 +18,7 @@ final class Class88 {
       byte[] var1;
       if(aByteBuffer1226 == null) {
          Class164_Sub2_Sub1 var0 = new Class164_Sub2_Sub1();
-         var1 = var0.method2250(64, 64, 64);
+         var1 = var0.method2250();
          aByteBuffer1226 = ByteBuffer.allocateDirect(var1.length);
          aByteBuffer1226.position(0);
          aByteBuffer1226.put(var1);
@@ -27,7 +27,7 @@ final class Class88 {
 
       if(aByteBuffer1225 == null) {
          Class164_Sub1_Sub1 var2 = new Class164_Sub1_Sub1();
-         var1 = var2.method2243(64, 64, 64);
+         var1 = var2.method2243();
          aByteBuffer1225 = ByteBuffer.allocateDirect(var1.length);
          aByteBuffer1225.position(0);
          aByteBuffer1225.put(var1);

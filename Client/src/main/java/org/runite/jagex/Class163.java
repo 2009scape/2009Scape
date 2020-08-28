@@ -39,7 +39,7 @@ class Class163 {
          }
 
          var7 <<= var5;
-         Class3_Sub13_Sub23.method281((byte)99, var1 << var5 & var7 | ~var7 & Class57.anIntArray898[var4], var4);
+         Class3_Sub13_Sub23.method281(var1 << var5 & var7 | ~var7 & Class57.anIntArray898[var4], var4);
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "wd.K(" + var0 + ',' + var1 + ',' + var2 + ')');
       }

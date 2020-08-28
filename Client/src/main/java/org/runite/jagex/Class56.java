@@ -12,14 +12,14 @@ final class Class56 {
    static RSString aClass94_892 = RSString.createRSString(" )2> <col=ffffff>");
    static int anInt893 = 0;
 
-   static final int method1186(int var0, int var1) {
+   static final int method1186(int var1) {
       try {
          double var2 = (double)(255 & var1 >> 16) / 256.0D;
          double var4 = (double)(255 & var1 >> 8) / 256.0D;
          double var12 = 0.0D;
          double var6 = (double)(255 & var1) / 256.0D;
          double var8 = var2;
-         double var14 = (double)var0;
+         double var14 = (double) 0;
          double var10 = var2;
          if(var2 > var4) {
             var8 = var4;
@@ -90,7 +90,7 @@ final class Class56 {
 
          return (var18 >> 2 << 10) + (var19 >> 5 << 7) + (var20 >> 1);
       } catch (RuntimeException var21) {
-         throw Class44.clientError(var21, "ib.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var21, "ib.A(" + 0 + ',' + var1 + ')');
       }
    }
 
@@ -110,7 +110,7 @@ final class Class56 {
       }
    }
 
-   static final void method1188(int var0) {
+   static final void method1188() {
       try {
          MouseListeningClass.anIntArray1920 = null;
          Class38_Sub1.anIntArrayArrayArray2609 = (int[][][])null;
@@ -124,7 +124,7 @@ final class Class56 {
          Class129.anIntArray1695 = null;
          Class3_Sub31.anIntArray2606 = null;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ib.D(" + var0 + ')');
+         throw Class44.clientError(var2, "ib.D(" + -113 + ')');
       }
    }
 

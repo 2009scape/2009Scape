@@ -7,7 +7,7 @@ final class Class107 {
    static RSInterface aClass11_1453;
 
 
-   static final void method1645(CacheIndex var0, CacheIndex var1, byte var2) {
+   static final void method1645(CacheIndex var0, CacheIndex var1) {
       try {
          KeyboardListener.aClass153_1916 = var1;
          int var4 = (int)(21.0D * Math.random()) - 10;
@@ -17,12 +17,12 @@ final class Class107 {
          int var3 = (int)(Math.random() * 21.0D) + -10;
          int var6 = -20 + (int)(41.0D * Math.random());
          Class158.anInt2015 = var6 + var5;
-         if(var2 == -67) {
+         if((byte) -67 == -67) {
             Class46.anInt740 = var4 + var6;
             Class102.anInt2136 = var6 + var3;
          }
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "og.F(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var7, "og.F(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (byte) -67 + ')');
       }
    }
 
@@ -35,15 +35,15 @@ final class Class107 {
       }
    }
 
-   static final void method1647(byte var0, int var1, int var2, Class140_Sub4 var3, int var4, int var5, int var6) {
+   static final void method1647(int var1, int var2, Class140_Sub4 var3, int var4, int var5, int var6) {
       try {
-         if(var0 != 122) {
+         if((byte) 122 != 122) {
             method1648((CacheIndex)null, 7);
          }
 
          Class118.method1724(var6, var2, var3.anInt2829, var5, var1, var3.anInt2819, (byte)-85, var4);
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "og.A(" + var0 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var8, "og.A(" + (byte) 122 + ',' + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + var6 + ')');
       }
    }
 
@@ -70,19 +70,19 @@ final class Class107 {
       }
    }
 
-   static final void method1650(int var0) {
+   static final void method1650() {
       try {
          Class61.aClass93_939.method1523((byte)-113);
-         if(var0 != 21) {
+         if(21 != 21) {
             aClass11_1453 = (RSInterface)null;
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "og.G(" + var0 + ')');
+         throw Class44.clientError(var2, "og.G(" + 21 + ')');
       }
    }
 
-   static final int method1651(int var0, int var1, int var2) {
+   static final int method1651(int var1, int var2) {
       try {
          int var3;
          if(var1 > var2) {
@@ -97,13 +97,13 @@ final class Class107 {
             var1 = var3;
          }
 
-         if(var0 != 19067) {
+         if(19067 != 19067) {
             aClass94Array1454 = (RSString[])null;
          }
 
          return var2;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "og.D(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "og.D(" + 19067 + ',' + var1 + ',' + var2 + ')');
       }
    }
 

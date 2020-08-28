@@ -30,7 +30,7 @@ final class Class119 {
       }
    }
 
-   static final void method1729(boolean var0) {
+   static final void method1729() {
       try {
          Object var1;
          if(null == Class3_Sub13_Sub10.aFrame3121) {
@@ -80,19 +80,19 @@ final class Class119 {
             Class124.method1746(true, (byte)-125);
          }
 
-         if(!var0) {
+         if(!true) {
             method1728(39);
          }
 
          Class80.method1396(-1);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "qh.C(" + var0 + ')');
+         throw Class44.clientError(var3, "qh.C(" + true + ')');
       }
    }
 
-   static final void method1730(Signlink var0, byte var1) {
+   static final void method1730(Signlink var0) {
       try {
-         if(var1 == 14) {
+         if((byte) 14 == 14) {
             Class122 var2 = null;
 
             try {
@@ -104,7 +104,7 @@ final class Class119 {
 
                if(var3.anInt978 == 1) {
                   var2 = (Class122)var3.anObject974;
-                  RSByteBuffer var4 = Class23.method939((byte)-116);
+                  RSByteBuffer var4 = Class23.method939();
                   var2.method1738(116, var4.buffer, var4.index, 0);
                }
             } catch (Exception var6) {
@@ -121,7 +121,7 @@ final class Class119 {
 
          }
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "qh.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var7, "qh.A(" + (var0 != null?"{...}":"null") + ',' + (byte) 14 + ')');
       }
    }
 

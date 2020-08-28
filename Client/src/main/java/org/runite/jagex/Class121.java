@@ -93,9 +93,9 @@ final class Class121 {
             var26 += (-var26 + var7[1 + var6][var14 - -1]) * var22;
             var20 += (-var20 + var7[var6 - -1][var14]) * var22;
             var20 += (-var20 + var26) * var23;
-            int var27 = Class3_Sub13_Sub10.method210(18348, var15, var2, var3);
-            int var28 = Class3_Sub13_Sub10.method210(18348, var15, var0, var8);
-            var21 = Class3_Sub13_Sub10.method210(18348, var17, var27, var28);
+            int var27 = Class3_Sub13_Sub10.method210(var15, var2, var3);
+            int var28 = Class3_Sub13_Sub10.method210(var15, var0, var8);
+            var21 = Class3_Sub13_Sub10.method210(var17, var27, var28);
          }
 
          if(var9 > -111) {
@@ -111,7 +111,7 @@ final class Class121 {
       }
    }
 
-   static final int method1735(int var0) {
+   static final int method1735() {
       try {
          try {
             if(Class43.anInt692 == 0) {
@@ -148,8 +148,8 @@ final class Class121 {
                }
 
                Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-67, 255);
-               Class3_Sub13_Sub1.outgoingBuffer.putInt(var0 + -30105, wlUpdateStamp);
-               Class3_Sub15.aClass89_2429.sendBytes(false, 0, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
+               Class3_Sub13_Sub1.outgoingBuffer.putInt(29984 + -30105, wlUpdateStamp);
+               Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
                if(null != WorldListEntry.aClass155_2627) {
                   WorldListEntry.aClass155_2627.method2159(67);
                }
@@ -158,14 +158,14 @@ final class Class121 {
                   Class3_Sub21.aClass155_2491.method2159(101);
                }
 
-               var2 = Class3_Sub15.aClass89_2429.readByte(var0 ^ 29984);
+               var2 = Class3_Sub15.aClass89_2429.readByte(29984 ^ 29984);
                //System.out.println(var2); //Not sure what this was debugging
                if(WorldListEntry.aClass155_2627 != null) {
                   WorldListEntry.aClass155_2627.method2159(55);
                }
 
                if(null != Class3_Sub21.aClass155_2491) {
-                  Class3_Sub21.aClass155_2491.method2159(var0 ^ 30075);
+                  Class3_Sub21.aClass155_2491.method2159(29984 ^ 30075);
                }
 
                if(var2 != 0) {
@@ -189,7 +189,7 @@ final class Class121 {
             }
 
             if(Class43.anInt692 == 3) {
-               wlUpdateStamp = Class3_Sub15.aClass89_2429.availableBytes(var0 + -48342);
+               wlUpdateStamp = Class3_Sub15.aClass89_2429.availableBytes(29984 + -48342);
                if(1 > wlUpdateStamp) {
                   return -1;
                }
@@ -201,7 +201,7 @@ final class Class121 {
                Class3_Sub15.aClass89_2429.readBytes(Class3_Sub20.wlPacketIndex, wlUpdateStamp, -18455, Class3_Sub13_Sub33.aByteArray3396);
                Class3_Sub20.wlPacketIndex += wlUpdateStamp;
                if(Class3_Sub20.wlPacketIndex >= Class66.wlPacketSize) {
-                  if(Class3_Sub13_Sub23.handleWorldListUpdate(4, Class3_Sub13_Sub33.aByteArray3396)) {
+                  if(Class3_Sub13_Sub23.handleWorldListUpdate(Class3_Sub13_Sub33.aByteArray3396)) {
                      Class3_Sub13_Sub16.aClass44_Sub1Array3201 = new WorldListEntry[Class57.activeWorldListSize];
                      var2 = 0;
 
@@ -231,13 +231,13 @@ final class Class121 {
             return Class3_Sub13_Sub3.method179((byte)92, 1003);
          }
 
-         if(var0 != 29984) {
+         if(29984 != 29984) {
             method1734(13, 0.10791027F, 20, 124, (int[][])((int[][])null), (int[][])((int[][])null), -85, (float[][])((float[][])null), -119, (byte)-105, -5, false, (Class3_Sub11)null, (float[][])((float[][])null), 5, -100, (float[][])((float[][])null), -36);
          }
 
          return -1;
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "ql.D(" + var0 + ')');
+         throw Class44.clientError(var6, "ql.D(" + 29984 + ')');
       }
    }
 

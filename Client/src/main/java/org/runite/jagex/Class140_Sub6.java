@@ -48,10 +48,10 @@ final class Class140_Sub6 extends GameObject {
       }
    }
 
-   static final void method2020(int var0, ObjectDefinition var1, byte var2, int var3, int var4) {
+   static final void method2020(int var0, ObjectDefinition var1, int var3, int var4) {
       try {
          Class3_Sub9 var5 = (Class3_Sub9)Class3.aClass61_78.method1222();
-         if(var2 != -73) {
+         if((byte) -73 != -73) {
             method2019(true);
          }
 
@@ -75,7 +75,7 @@ final class Class140_Sub6 extends GameObject {
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "ra.E(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ra.E(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (byte) -73 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
@@ -93,13 +93,13 @@ final class Class140_Sub6 extends GameObject {
 
    final void method1867(int var1, int var2, int var3, int var4, int var5) {}
 
-   private final Model method2022(int var1) {
+   private final Model method2022() {
       try {
-         if(var1 >= -6) {
+         if(-126 >= -6) {
             return (Model)null;
          } else {
             GraphicDefinition var2 = RenderAnimationDefinition.getGraphicDefinition((byte)42, this.anInt2915);
-            Model var3 = var2.method966(this.anInt2898, (byte)-30, this.anInt2922, this.anInt2896);
+            Model var3 = var2.method966(this.anInt2898, this.anInt2922, this.anInt2896);
             if(null == var3) {
                return null;
             } else {
@@ -108,11 +108,11 @@ final class Class140_Sub6 extends GameObject {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ra.G(" + var1 + ')');
+         throw Class44.clientError(var4, "ra.G(" + -126 + ')');
       }
    }
 
-   final void method2023(byte var1, int var2) {
+   final void method2023(int var2) {
       try {
          this.aDouble2920 += this.aDouble2895 * (double)var2;
          this.aDouble2900 += this.aDouble2918 * (double)var2;
@@ -126,7 +126,7 @@ final class Class140_Sub6 extends GameObject {
 
          this.anInt2924 = 1024 + (int)(325.949D * Math.atan2(this.aDouble2895, this.aDouble2918)) & 2047;
          this.anInt2917 = 2047 & (int)(325.949D * Math.atan2(this.aDouble2913, this.aDouble2921));
-         if(var1 != -59) {
+         if((byte) -59 != -59) {
             this.animate(121, 74, -127, 12, -105, -18, 65, 117, 43L, 84, (Class127_Sub1)null);
          }
 
@@ -154,11 +154,11 @@ final class Class140_Sub6 extends GameObject {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ra.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ra.D(" + (byte) -59 + ',' + var2 + ')');
       }
    }
 
-   final void method2024(int var1, int var2, int var3, int var4, int var5) {
+   final void method2024(int var1, int var3, int var4, int var5) {
       try {
          double var6;
          if(!this.aBoolean2904) {
@@ -170,7 +170,7 @@ final class Class140_Sub6 extends GameObject {
             this.aDouble2920 = (double)this.anInt2897 * var6 / var10 + (double)this.anInt2902;
          }
 
-         var6 = (double)(-var3 + var2 + this.anInt2899);
+         var6 = (double)(-var3 + 1 + this.anInt2899);
          this.aDouble2918 = ((double)var1 - this.aDouble2900) / var6;
          this.aDouble2895 = (-this.aDouble2920 + (double)var5) / var6;
          this.aDouble2921 = Math.sqrt(this.aDouble2918 * this.aDouble2918 + this.aDouble2895 * this.aDouble2895);
@@ -185,13 +185,13 @@ final class Class140_Sub6 extends GameObject {
          }
 
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "ra.J(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var12, "ra.J(" + var1 + ',' + 1 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
    final void animate(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, long var9, int var11, Class127_Sub1 var12) {
       try {
-         Model var13 = this.method2022(-126);
+         Model var13 = this.method2022();
          if(null != var13) {
             var13.animate(var1, var2, var3, var4, var5, var6, var7, var8, var9, var11, this.aClass127_Sub1_2909);
             this.anInt2912 = var13.method1871();
@@ -201,15 +201,15 @@ final class Class140_Sub6 extends GameObject {
       }
    }
 
-   static final void method2025(byte var0, int var1) {
+   static final void method2025() {
       try {
-         if(var0 <= -25) {
-            Class3_Sub28_Sub7_Sub1.aClass93_4043.method1522(-128, var1);
-            CS2Script.aClass93_2442.method1522(-126, var1);
-            Class154.aClass93_1964.method1522(-127, var1);
+         if((byte) -62 <= -25) {
+            Class3_Sub28_Sub7_Sub1.aClass93_4043.method1522(-128, 5);
+            CS2Script.aClass93_2442.method1522(-126, 5);
+            Class154.aClass93_1964.method1522(-127, 5);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ra.F(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ra.F(" + (byte) -62 + ',' + 5 + ')');
       }
    }
 
@@ -221,31 +221,31 @@ final class Class140_Sub6 extends GameObject {
       }
    }
 
-   static final void method2026(byte var0, int interfaceHash, int amount, int itemId) {
+   static final void method2026(int interfaceHash, int amount, int itemId) {
       try {
-         if(var0 > 114) {
+         if((byte) 122 > 114) {
             Class3_Sub28_Sub6 var4 = Class3_Sub24_Sub3.method466(4, 9, interfaceHash);
-            var4.g((byte)33);
+            var4.g();
             var4.anInt3598 = itemId;
             var4.anInt3597 = amount;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ra.I(" + var0 + ',' + interfaceHash + ',' + amount + ',' + itemId + ')');
+         throw Class44.clientError(var5, "ra.I(" + (byte) 122 + ',' + interfaceHash + ',' + amount + ',' + itemId + ')');
       }
    }
 
-   static final Class3_Sub28_Sub16[] getSprites(int var0, byte var1, int archiveId, CacheIndex var3) {
+   static final Class3_Sub28_Sub16[] getSprites(int archiveId, CacheIndex var3) {
       try {
     	 // System.out.println(archiveId);
-         return !Class75_Sub4.method1351(var3, var0, archiveId, -30901)?null:(var1 != 11?(Class3_Sub28_Sub16[])null:Class75_Sub3.method1347(-26802));
+         return !Class75_Sub4.method1351(var3, 0, archiveId, -30901)?null:((byte) 11 != 11?(Class3_Sub28_Sub16[])null:Class75_Sub3.method1347(-26802));
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ra.B(" + var0 + ',' + var1 + ',' + archiveId + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "ra.B(" + 0 + ',' + (byte) 11 + ',' + archiveId + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
-   static final int method2028(int var0, int var1, int var2) {
+   static final int method2028(int var0, int var1) {
       try {
-         int var3 = 96 / ((var2 - -75) / 33);
+         int var3 = 96 / ((-122 - -75) / 33);
 
          int var4;
          for(var4 = 1; 1 < var0; var0 >>= 1) {
@@ -262,7 +262,7 @@ final class Class140_Sub6 extends GameObject {
             return var4;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ra.A(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "ra.A(" + var0 + ',' + var1 + ',' + -122 + ')');
       }
    }
 
@@ -284,7 +284,7 @@ final class Class140_Sub6 extends GameObject {
          if(var12 == -1) {
             this.aClass142_2923 = null;
          } else {
-            this.aClass142_2923 = Client.getAnimationDefinition(var12, (byte)-20);
+            this.aClass142_2923 = Client.getAnimationDefinition(var12);
          }
 
       } catch (RuntimeException var13) {

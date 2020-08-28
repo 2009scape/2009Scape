@@ -15,14 +15,14 @@ final class Class3_Sub13_Sub22 extends Class3_Sub13 {
    static int anInt3277;
 
 
-   private Class3_Sub13_Sub22(int var1) {
+   protected Class3_Sub13_Sub22() {
       super(0, true);
       this.anInt3276 = 4096;
 
       try {
-         this.anInt3276 = var1;
+         this.anInt3276 = 4096;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "mi.<init>(" + var1 + ')');
+         throw Class44.clientError(var3, "mi.<init>(" + 4096 + ')');
       }
    }
 
@@ -41,14 +41,10 @@ final class Class3_Sub13_Sub22 extends Class3_Sub13 {
       }
    }
 
-   public Class3_Sub13_Sub22() {
-      this(4096);
-   }
-
-   static final void method273(int[] var0, byte var1, NPC var2, int[] var3, int[] var4) {
+   static final void method273(int[] var0, NPC var2, int[] var3, int[] var4) {
       try {
          int var5 = 0;
-         if(var1 > 81) {
+         if((byte) 92 > 81) {
             while(var5 < var4.length) {
                int var6 = var4[var5];
                int var7 = var0[var5];
@@ -59,12 +55,12 @@ final class Class3_Sub13_Sub22 extends Class3_Sub13 {
                      if(var6 == -1) {
                         var2.aClass145Array2809[var9] = null;
                      } else {
-                        AnimationDefinition var10 = Client.getAnimationDefinition(var6, (byte)-20);
+                        AnimationDefinition var10 = Client.getAnimationDefinition(var6);
                         Class145 var12 = var2.aClass145Array2809[var9];
                         int var11 = var10.anInt1845;
                         if(null != var12) {
                            if(var12.animationId != var6) {
-                              if(Client.getAnimationDefinition(var12.animationId, (byte) -20).anInt1857 <= var10.anInt1857) {
+                              if(Client.getAnimationDefinition(var12.animationId).anInt1857 <= var10.anInt1857) {
                                  var12 = var2.aClass145Array2809[var9] = null;
                               }
                            } else if(var11 == 0) {
@@ -102,14 +98,14 @@ final class Class3_Sub13_Sub22 extends Class3_Sub13 {
 
          }
       } catch (RuntimeException var13) {
-         throw Class44.clientError(var13, "mi.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var13, "mi.B(" + (var0 != null?"{...}":"null") + ',' + (byte) 92 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
    final int[] method154(int var1, byte var2) {
       try {
          int var3 = 14 / ((30 - var2) / 36);
-         int[] var4 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var4 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             Class76.method1359(var4, 0, Class113.anInt1559, this.anInt3276);
          }

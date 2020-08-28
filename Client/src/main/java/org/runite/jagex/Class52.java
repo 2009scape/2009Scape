@@ -17,32 +17,32 @@ final class Class52 {
    boolean aBoolean864;
 
 
-   final Model method1157(int var1, int var2, int var3, int var4, AnimationDefinition var5, int var6, int var7, int var8) {
+   final Model method1157(int var1, int var2, int var3, int var4, AnimationDefinition var5, int var6, int var7) {
       try {
-         if(var8 != -2012759707) {
+         if(-2012759707 != -2012759707) {
             this.pnpcId = -32;
          }
 
          long var9 = (long)var3 | (long)(var7 << 16) | (long)var2 << 32;
-         Model var11 = (Model)Class80.aClass93_1131.get(var9, (byte)121);
+         Model var11 = (Model)Class80.aClass93_1131.get(var9);
          if(null == var11) {
             Model_Sub1[] var12 = new Model_Sub1[3];
             int var13 = 0;
-            if(!Class3_Sub13_Sub13.method231(var3, 0).method948(var8 ^ -2012744886) || !Class3_Sub13_Sub13.method231(var7, 0).method948(18991) || !Class3_Sub13_Sub13.method231(var2, 0).method948(18991)) {
+            if(!Class3_Sub13_Sub13.method231(var3, 0).method948(-2012759707 ^ -2012744886) || !Class3_Sub13_Sub13.method231(var7, 0).method948(18991) || !Class3_Sub13_Sub13.method231(var2, 0).method948(18991)) {
                return null;
             }
 
-            Model_Sub1 var14 = Class3_Sub13_Sub13.method231(var3, 0).method941(true);
+            Model_Sub1 var14 = Class3_Sub13_Sub13.method231(var3, 0).method941();
             if(null != var14) {
                var12[var13++] = var14;
             }
 
-            var14 = Class3_Sub13_Sub13.method231(var7, 0).method941(true);
+            var14 = Class3_Sub13_Sub13.method231(var7, 0).method941();
             if(var14 != null) {
                var12[var13++] = var14;
             }
 
-            var14 = Class3_Sub13_Sub13.method231(var2, 0).method941(true);
+            var14 = Class3_Sub13_Sub13.method231(var2, 0).method941();
             if(var14 != null) {
                var12[var13++] = var14;
             }
@@ -69,7 +69,7 @@ final class Class52 {
 
          return var11;
       } catch (RuntimeException var16) {
-         throw Class44.clientError(var16, "hh.J(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var16, "hh.J(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ',' + var6 + ',' + var7 + ',' + -2012759707 + ')');
       }
    }
 
@@ -122,7 +122,7 @@ final class Class52 {
 
    static final void method1160(int var0, int var1) {
       try {
-         if(Canvas_Sub2.loadInterface(var1, 104)) {
+         if(Canvas_Sub2.loadInterface(var1)) {
             if(var0 > -100) {
                method1168(52);
             }
@@ -134,7 +134,7 @@ final class Class52 {
       }
    }
 
-   final void method1161(int[] var1, int var2, boolean var3, int var4, int[] look, int render) {
+   final void method1161(int[] var1, int var2, boolean var3, int[] look, int render) {
       try {
          if(render != this.renderAnim) {
             this.renderAnim = render;
@@ -157,56 +157,56 @@ final class Class52 {
 
          this.pnpcId = var2;
          this.aBoolean864 = var3;
-         if(var4 == 0) {
+         if(0 == 0) {
             this.anIntArray862 = var1;
             this.lookInfo = look;
-            this.method1158(var4 + 459557008);
+            this.method1158(0 + 459557008);
          }
       } catch (RuntimeException var10) {
-         throw Class44.clientError(var10, "hh.G(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (look != null?"{...}":"null") + ',' + render + ')');
+         throw Class44.clientError(var10, "hh.G(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + 0 + ',' + (look != null?"{...}":"null") + ',' + render + ')');
       }
    }
 
-   final void method1162(int var1, boolean var2, int var3) {
+   final void method1162(int var1, int var3) {
       try {
          this.anIntArray862[var1] = var3;
          this.method1158(459557008);
-         if(var2) {
+         if(false) {
             this.method1159(false, false);
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "hh.L(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "hh.L(" + var1 + ',' + false + ',' + var3 + ')');
       }
    }
 
-   final int method1163(int var1) {
+   final int method1163() {
       try {
-         if(var1 != -24861) {
+         if(-24861 != -24861) {
             anIntArray859 = (int[])null;
          }
 
-         return this.pnpcId != -1?305419896 + Node.method522(this.pnpcId, var1 + '\ucb05').npcId:(this.lookInfo[8] << 10) + ((this.anIntArray862[0] << 25) - -(this.anIntArray862[4] << 20)) - (-(this.lookInfo[0] << 15) - ((this.lookInfo[11] << 5) + this.lookInfo[1]));
+         return this.pnpcId != -1?305419896 + Node.method522(this.pnpcId, -24861 + '\ucb05').npcId:(this.lookInfo[8] << 10) + ((this.anIntArray862[0] << 25) - -(this.anIntArray862[4] << 20)) - (-(this.lookInfo[0] << 15) - ((this.lookInfo[11] << 5) + this.lookInfo[1]));
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "hh.E(" + var1 + ')');
+         throw Class44.clientError(var3, "hh.E(" + -24861 + ')');
       }
    }
 
-   final void method1164(int var1, int var2, int var3) {
+   final void method1164(int var1, int var2) {
       try {
          int var4 = Class163.anIntArray2043[var1];
          if(-1 != ~this.lookInfo[var4]) {
-            if(Class3_Sub13_Sub13.method231(var2, var3) != null) {
+            if(Class3_Sub13_Sub13.method231(var2, 0) != null) {
                this.lookInfo[var4] = Class3_Sub13_Sub29.bitwiseOr(var2, Integer.MIN_VALUE);
                this.method1158(459557008);
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "hh.I(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "hh.I(" + var1 + ',' + var2 + ',' + 0 + ')');
       }
    }
 
-   final Model method1165(Class145[] var1, int var2, AnimationDefinition var3, AnimationDefinition var4, int var5, int var6, int var7, int var8, boolean var9, int var10, int var11) {
+   final Model method1165(Class145[] var1, int var2, AnimationDefinition var3, AnimationDefinition var4, int var5, int var6, int var7, int var8, int var10, int var11) {
       try {
          int var12 = 102 % ((var7 - -39) / 61);
          if(0 != ~this.pnpcId) {
@@ -242,7 +242,7 @@ final class Class52 {
                }
             }
 
-            Model var37 = (Model) KeyboardListener.aClass93_1911.get(var13, (byte)121);
+            Model var37 = (Model) KeyboardListener.aClass93_1911.get(var13);
             boolean var17;
             int var23;
             int var22;
@@ -262,17 +262,17 @@ final class Class52 {
                for(int var18 = 0; -13 < ~var18; ++var18) {
                   var19 = var15[var18];
                   if(~(var19 & 1073741824) != -1) {
-                     if(!Class38.getItemDefinition(1073741823 & var19, (byte)92).method1108((byte)95, this.aBoolean864)) {
+                     if(!Class38.getItemDefinition(1073741823 & var19, (byte)92).method1108(this.aBoolean864)) {
                         var17 = true;
                      }
-                  } else if(~(var19 & Integer.MIN_VALUE) != -1 && !Class3_Sub13_Sub13.method231(1073741823 & var19, 0).method942(101)) {
+                  } else if(~(var19 & Integer.MIN_VALUE) != -1 && !Class3_Sub13_Sub13.method231(1073741823 & var19, 0).method942()) {
                      var17 = true;
                   }
                }
 
                if(var17) {
                   if(this.aLong855 != -1L) {
-                     var37 = (Model) KeyboardListener.aClass93_1911.get(this.aLong855, (byte)121);
+                     var37 = (Model) KeyboardListener.aClass93_1911.get(this.aLong855);
                   }
 
                   if(null == var37) {
@@ -289,13 +289,13 @@ final class Class52 {
                      Model_Sub1 var21;
                      if(~(var20 & 1073741824) == -1) {
                         if(-1 != ~(Integer.MIN_VALUE & var20)) {
-                           var21 = Class3_Sub13_Sub13.method231(var20 & 1073741823, 0).method947((byte)-26);
+                           var21 = Class3_Sub13_Sub13.method231(var20 & 1073741823, 0).method947();
                            if(null != var21) {
                               var39[var19] = var21;
                            }
                         }
                      } else {
-                        var21 = Class38.getItemDefinition(var20 & 1073741823, (byte)115).method1117(this.aBoolean864, 80);
+                        var21 = Class38.getItemDefinition(var20 & 1073741823, (byte)115).method1117(this.aBoolean864);
                         if(null != var21) {
                            var39[var19] = var21;
                         }
@@ -304,7 +304,7 @@ final class Class52 {
 
                   RenderAnimationDefinition var40 = null;
                   if(this.renderAnim != -1) {
-                     var40 = Class3_Sub10.getRenderAnimationDefinition(false, this.renderAnim);
+                     var40 = Class3_Sub10.getRenderAnimationDefinition(this.renderAnim);
                   }
 
                   if(var40 != null && null != var40.anIntArrayArray359) {
@@ -380,10 +380,10 @@ final class Class52 {
 
                   var37 = var43.method2008(64, 850, -30, -50, -30);
                   if(HDToolKit.highDetail) {
-                     ((Class140_Sub1_Sub1)var37).method1920(false, false, true, true, false, false, true);
+                     ((Class140_Sub1_Sub1)var37).method1920(false, false, true, false, false, true);
                   }
 
-                  if(var9) {
+                  if(true) {
                      KeyboardListener.aClass93_1911.put((byte)-115, var37, var13);
                      this.aLong855 = var13;
                   }
@@ -399,7 +399,7 @@ final class Class52 {
             int var47;
             for(var22 = 0; ~var45 < ~var22; ++var22) {
                if(var1[var22] != null) {
-                  AnimationDefinition var41 = Client.getAnimationDefinition(var1[var22].animationId, (byte)-20);
+                  AnimationDefinition var41 = Client.getAnimationDefinition(var1[var22].animationId);
                   if(var41.frames != null) {
                      var17 = true;
                      Class123.aClass142Array1654[var22] = var41;
@@ -411,7 +411,7 @@ final class Class52 {
                      GameObject.anIntArray1833[var22] = frame;
                      if(Class166.aClass3_Sub28_Sub5Array2070[var22] != null) {
                         var42 |= Class166.aClass3_Sub28_Sub5Array2070[var22].method561(frame, (byte)119);
-                        var38 |= Class166.aClass3_Sub28_Sub5Array2070[var22].method559(1317095745, frame);
+                        var38 |= Class166.aClass3_Sub28_Sub5Array2070[var22].method559(frame);
                         var44 |= var41.aBoolean1848;
                      }
 
@@ -424,7 +424,7 @@ final class Class52 {
                         Class127.anIntArray1679[var22] = var47;
                         if(null != Class75.aClass3_Sub28_Sub5Array1103[var22]) {
                            var42 |= Class75.aClass3_Sub28_Sub5Array1103[var22].method561(var47, (byte)117);
-                           var38 |= Class75.aClass3_Sub28_Sub5Array1103[var22].method559(1317095745, var47);
+                           var38 |= Class75.aClass3_Sub28_Sub5Array1103[var22].method559(var47);
                         }
                      } else {
                         Class154.anIntArray1960[var22] = 0;
@@ -451,7 +451,7 @@ final class Class52 {
                   var22 &= '\uffff';
                   if(var46 != null) {
                      var42 |= var46.method561(var22, (byte)124);
-                     var38 |= var46.method559(1317095745, var22);
+                     var38 |= var46.method559(var22);
                      var44 |= var4.aBoolean1848;
                   }
 
@@ -468,7 +468,7 @@ final class Class52 {
 
                      if(null != var48) {
                         var42 |= var48.method561(var23, (byte)122);
-                        var38 |= var48.method559(1317095745, var23);
+                        var38 |= var48.method559(var23);
                      }
                   }
                }
@@ -485,7 +485,7 @@ final class Class52 {
                   var49 = Class3_Sub9.method133(var32, 0);
                   if(null != var49) {
                      var42 |= var49.method561(var47, (byte)123);
-                     var38 |= var49.method559(1317095745, var47);
+                     var38 |= var49.method559(var47);
                      var44 |= var3.aBoolean1848;
                   }
 
@@ -502,7 +502,7 @@ final class Class52 {
 
                      if(null != var50) {
                         var42 |= var50.method561(var28, (byte)122);
-                        var38 |= var50.method559(1317095745, var28);
+                        var38 |= var50.method559(var28);
                      }
                   }
                }
@@ -538,11 +538,11 @@ final class Class52 {
             }
          }
       } catch (RuntimeException var36) {
-         throw Class44.clientError(var36, "hh.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ')');
+         throw Class44.clientError(var36, "hh.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + true + ',' + var10 + ',' + var11 + ')');
       }
    }
 
-   static final boolean method1166(int var0, byte var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, boolean var11, int var12) {
+   static final boolean method1166(int var0, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, boolean var11, int var12) {
       try {
          int var13;
          int var14;
@@ -558,7 +558,7 @@ final class Class52 {
          Class84.anIntArrayArray1160[var9][var12] = 99;
          Class97.anIntArrayArray1373[var9][var12] = 0;
          byte var15 = 0;
-         if(var1 != 34) {
+         if((byte) 34 != 34) {
             return true;
          } else {
             Class3_Sub13_Sub38.anIntArray3456[var15] = var9;
@@ -848,15 +848,15 @@ final class Class52 {
             }
          }
       } catch (RuntimeException var27) {
-         throw Class44.clientError(var27, "hh.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ')');
+         throw Class44.clientError(var27, "hh.C(" + var0 + ',' + (byte) 34 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ')');
       }
    }
 
-   final Model method1167(int var1, byte var2, AnimationDefinition var3, int var4, int var5) {
+   final Model method1167(int var1, AnimationDefinition var3, int var4, int var5) {
       try {
          if(this.pnpcId == -1) {
-            Model var6 = (Model)Class80.aClass93_1131.get(this.aLong860, (byte)121);
-            if(var2 < 122) {
+            Model var6 = (Model)Class80.aClass93_1131.get(this.aLong860);
+            if((byte) 127 < 122) {
                this.anIntArray862 = (int[])null;
             }
 
@@ -870,7 +870,7 @@ final class Class52 {
                      if(~(var9 & Integer.MIN_VALUE) != -1 && !Class3_Sub13_Sub13.method231(var9 & 1073741823, 0).method948(18991)) {
                         var7 = true;
                      }
-                  } else if(!Class38.getItemDefinition(1073741823 & var9, (byte)127).method1102(this.aBoolean864, false)) {
+                  } else if(!Class38.getItemDefinition(1073741823 & var9, (byte)127).method1102(this.aBoolean864)) {
                      var7 = true;
                   }
                }
@@ -888,13 +888,13 @@ final class Class52 {
                   Model_Sub1 var12;
                   if((1073741824 & var11) == 0) {
                      if(0 != (Integer.MIN_VALUE & var11)) {
-                        var12 = Class3_Sub13_Sub13.method231(1073741823 & var11, 0).method941(true);
+                        var12 = Class3_Sub13_Sub13.method231(1073741823 & var11, 0).method941();
                         if(null != var12) {
                            var14[var9++] = var12;
                         }
                      }
                   } else {
-                     var12 = Class38.getItemDefinition(var11 & 1073741823, (byte)89).method1116(this.aBoolean864, (byte)-109);
+                     var12 = Class38.getItemDefinition(var11 & 1073741823, (byte)89).method1116(this.aBoolean864);
                      if(var12 != null) {
                         var14[var9++] = var12;
                      }
@@ -926,7 +926,7 @@ final class Class52 {
             return Node.method522(this.pnpcId, 27112).getChatModel(var3, var1, var5, -109, var4);
          }
       } catch (RuntimeException var13) {
-         throw Class44.clientError(var13, "hh.F(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var13, "hh.F(" + var1 + ',' + (byte) 127 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ')');
       }
    }
 

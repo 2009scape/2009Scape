@@ -76,25 +76,25 @@ final class Class3_Sub13_Sub5 extends Class3_Sub13 {
       }
    }
 
-   static final void method194(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+   static final void method194(int var0, int var1, int var2, int var3, int var4, int var6, int var7) {
       try {
          if(var7 >= Class101.anInt1425 && Class3_Sub28_Sub18.anInt3765 >= var6 && var4 >= Class159.anInt2020 && var1 <= Class57.anInt902) {
-            Class3_Sub13_Sub19.method262(var3, 119, var4, var1, var2, var0, var6, var7);
+            Class3_Sub13_Sub19.method262(var3, var4, var1, var2, var0, var6, var7);
          } else {
-            Class143.method2062(var6, var2, var5 + -4185, var1, var0, var3, var4, var7);
+            Class143.method2062(var6, var2, 4096 + -4185, var1, var0, var3, var4, var7);
          }
 
-         if(var5 == 4096) {
+         if(4096 == 4096) {
             ;
          }
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "bl.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ')');
+         throw Class44.clientError(var9, "bl.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + 4096 + ',' + var6 + ',' + var7 + ')');
       }
    }
 
    final int[] method154(int var1, byte var2) {
       try {
-         int[] var3 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var3 = this.aClass114_2382.method1709(var1);
          int var4 = 51 / ((30 - var2) / 36);
          if(this.aClass114_2382.aBoolean1580) {
             int[] var5 = this.method152(0, var1, 32755);

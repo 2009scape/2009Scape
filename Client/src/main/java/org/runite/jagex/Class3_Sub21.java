@@ -11,15 +11,15 @@ final class Class3_Sub21 extends Class3 {
    static RSString aClass94_2498 = RSString.createRSString("(U (X");
 
 
-   final boolean method393(byte var1, int var2, int var3) {
+   final boolean method393(int var2, int var3) {
       try {
-         if(var1 != -45) {
+         if((byte) -45 != -45) {
             method394(6, -105);
          }
 
          return var3 >= this.anInt2492 && var3 <= this.anInt2495 && this.anInt2494 <= var2 && var2 <= this.anInt2497;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "lh.D(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "lh.D(" + (byte) -45 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -128,13 +128,13 @@ final class Class3_Sub21 extends Class3 {
 
    static final void method397(byte var0) {
       try {
-         Class114.aClass93_1569.method1524(3);
-         Class3_Sub15.aClass93_2428.method1524(3);
+         Class114.aClass93_1569.method1524();
+         Class3_Sub15.aClass93_2428.method1524();
          if(var0 != -41) {
             method394(14, 52);
          }
 
-         Class47.aClass93_743.method1524(3);
+         Class47.aClass93_743.method1524();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "lh.C(" + var0 + ')');
       }

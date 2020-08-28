@@ -14,7 +14,7 @@ final class Class3_Sub13_Sub24 extends Class3_Sub13 {
    final int[] method154(int var1, byte var2) {
       try {
          int var3 = 74 % ((30 - var2) / 36);
-         int[] var4 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var4 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int var5 = 1 + this.anInt3297 + this.anInt3297;
             int var6 = 65536 / var5;
@@ -62,7 +62,7 @@ final class Class3_Sub13_Sub24 extends Class3_Sub13 {
    public static void method288(byte var0) {
       try {
          if(var0 < 31) {
-            method289(false);
+            method289();
          }
 
          npcSpawnCacheIndices = null;
@@ -77,9 +77,9 @@ final class Class3_Sub13_Sub24 extends Class3_Sub13 {
       super(1, false);
    }
 
-   static final void method289(boolean var0) {
+   static final void method289() {
       try {
-         if(var0) {
+         if(false) {
             aClass94_3295 = (RSString)null;
          }
 
@@ -88,10 +88,10 @@ final class Class3_Sub13_Sub24 extends Class3_Sub13 {
          } else {
             Class163_Sub2_Sub1.aClass89_4012 = Class3_Sub15.aClass89_2429;
             Class3_Sub15.aClass89_2429 = null;
-            Class117.method1719(40, 5);
+            Class117.method1719(40);
          }
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "nm.B(" + var0 + ')');
+         throw Class44.clientError(var2, "nm.B(" + false + ')');
       }
    }
 

@@ -36,9 +36,9 @@ class Class163_Sub2 extends Class163 {
       }
    }
 
-   static final void method2219(RSByteBuffer var0, boolean var1) {
+   static final void method2219(RSByteBuffer var0) {
       try {
-         if(var1) {
+         if(false) {
             aClass30Array2998 = (Class30[])null;
          }
 
@@ -93,7 +93,7 @@ class Class163_Sub2 extends Class163 {
          }
 
       } catch (RuntimeException var15) {
-         throw Class44.clientError(var15, "dk.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var15, "dk.C(" + (var0 != null?"{...}":"null") + ',' + false + ')');
       }
    }
 

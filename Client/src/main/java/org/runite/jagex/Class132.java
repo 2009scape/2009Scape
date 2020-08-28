@@ -85,7 +85,7 @@ final class Class132 {
          int var2;
          int var3;
          for(var2 = 0; Class3_Sub13_Sub34.anInt3415 > var2; ++var2) {
-            var3 = Class168.aClass3_Sub28_Sub17_2096.method682(RSByteBuffer.method802(var2, true));
+            var3 = Class168.aClass3_Sub28_Sub17_2096.method682(RSByteBuffer.method802(var2));
             if(var3 > var1) {
                var1 = var3;
             }

@@ -11,11 +11,11 @@ class Class3 {
    static Class61 aClass61_78 = new Class61();
 
 
-   final boolean method82(int var1) {
+   final boolean method82() {
       try {
-         return var1 != 0?false:null != this.aClass3_76;
+         return 0 != 0?false:null != this.aClass3_76;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ab.I(" + var1 + ')');
+         throw Class44.clientError(var3, "ab.I(" + 0 + ')');
       }
    }
 
@@ -35,21 +35,21 @@ class Class3 {
 
    static final void method84(RSString var0, int var1) {
       try {
-         int var2 = Class100.method1602(0, var0);
+         int var2 = Class100.method1602(var0);
          if(var2 != -1) {
-            Class3_Sub28_Sub7.method565((byte)86, Class119.aClass131_1624.aShortArray1727[var2], Class119.aClass131_1624.aShortArray1718[var2]);
+            Class3_Sub28_Sub7.method565(Class119.aClass131_1624.aShortArray1727[var2], Class119.aClass131_1624.aShortArray1718[var2]);
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ab.N(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }
    }
 
-   static final void method85(byte var0) {
+   static final void method85() {
       try {
-         int var1 = -122 % ((var0 - -63) / 48);
+         int var1 = -122 % (((byte) -114 - -63) / 48);
          Class136.aClass93_1772.method1523((byte)-99);
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ab.G(" + var0 + ')');
+         throw Class44.clientError(var2, "ab.G(" + (byte) -114 + ')');
       }
    }
 
@@ -85,7 +85,7 @@ class Class3 {
                   throw new RuntimeException();
                }
 
-               Translation.englishToFrench((byte)121);
+               Translation.englishToFrench();
             }
 
          }
@@ -94,14 +94,14 @@ class Class3 {
       }
    }
 
-   static final Class106[] method88(byte var0) {
+   static final Class106[] method88() {
       try {
-         if(var0 != 28) {
+         if((byte) 28 != 28) {
             aBooleanArray73 = (boolean[])null;
          }
 
          if(Class56.aClass106Array890 == null) {
-            Class106[] var1 = Class3_Sub28_Sub10_Sub2.method596(var0 ^ 22, Class38.aClass87_665);
+            Class106[] var1 = Class3_Sub28_Sub10_Sub2.method596((byte) 28 ^ 22, Class38.aClass87_665);
             Class106[] var2 = new Class106[var1.length];
             int var3 = 0;
 
@@ -138,24 +138,24 @@ class Class3 {
 
          return Class56.aClass106Array890;
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "ab.M(" + var0 + ')');
+         throw Class44.clientError(var8, "ab.M(" + (byte) 28 + ')');
       }
    }
 
-   static final void method89(boolean var0, CacheIndex var1, CacheIndex var2, CacheIndex var3, CacheIndex var4) {
+   static final void method89(CacheIndex var1, CacheIndex var2, CacheIndex var3, CacheIndex var4) {
       try {
          Class12.aClass153_323 = var2;
          Class97.aClass153_1378 = var1;
          Class3_Sub13_Sub29.aClass153_3361 = var3;
          Class119.aClass153_1628 = var4;
-         if(!var0) {
+         if(!true) {
             method87(-98, 11);
          }
 
-         GameObject.aClass11ArrayArray1834 = new RSInterface[Class3_Sub13_Sub29.aClass153_3361.method2121(0)][];
-         Class130.aBooleanArray1703 = new boolean[Class3_Sub13_Sub29.aClass153_3361.method2121(0)];
+         GameObject.aClass11ArrayArray1834 = new RSInterface[Class3_Sub13_Sub29.aClass153_3361.method2121()][];
+         Class130.aBooleanArray1703 = new boolean[Class3_Sub13_Sub29.aClass153_3361.method2121()];
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "ab.J(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "ab.J(" + true + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 

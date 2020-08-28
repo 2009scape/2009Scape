@@ -24,13 +24,13 @@ final class Class25 {
    long aLong498 = 0L;
    static int[][] anIntArrayArray499 = new int[][]{new int[0], {128, 0, 128, 128, 0, 128}, {0, 0, 128, 0, 128, 128, 64, 128}, {0, 128, 0, 0, 128, 0, 64, 128}, {0, 0, 64, 128, 0, 128}, {128, 128, 64, 128, 128, 0}, {64, 0, 128, 0, 128, 128, 64, 128}, {128, 0, 128, 128, 0, 128, 0, 64, 64, 0}, {0, 0, 64, 0, 0, 64}, {0, 0, 128, 0, 128, 128, 64, 96, 32, 64}, {0, 128, 0, 0, 32, 64, 64, 96, 128, 128}, {0, 128, 0, 0, 32, 32, 96, 32, 128, 0, 128, 128}};
 
-   static final void method953(int var0, int var1) {
+   static final void method953() {
       try {
-         Class114.aClass93_1569.method1522(var0 ^ 13501, var1);
-         Class3_Sub15.aClass93_2428.method1522(-126, var1);
-         Class47.aClass93_743.method1522(-126, var1);
+         Class114.aClass93_1569.method1522(-13508 ^ 13501, 50);
+         Class3_Sub15.aClass93_2428.method1522(-126, 50);
+         Class47.aClass93_743.method1522(-126, 50);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ec.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ec.D(" + -13508 + ',' + 50 + ')');
       }
    }
 
@@ -122,7 +122,7 @@ final class Class25 {
       try {
          if(GameObject.aBoolean1837) {
             int var2 = 88 / ((57 - var0) / 59);
-            RSInterface var1 = Class3_Sub28_Sub16.method638((byte)-19, Class54.anInt872, RSInterface.anInt278);
+            RSInterface var1 = Class3_Sub28_Sub16.method638(Class54.anInt872, RSInterface.anInt278);
             if(null != var1 && var1.anObjectArray303 != null) {
                CS2Script var3 = new CS2Script();
                var3.arguments = var1.anObjectArray303;
@@ -139,15 +139,15 @@ final class Class25 {
       }
    }
 
-   static final void method959(int var0) {
+   static final void method959() {
       try {
-         CS2Script.aClass93_2450.method1524(3);
-         if(var0 != 0) {
+         CS2Script.aClass93_2450.method1524();
+         if(0 != 0) {
             method957(121, true);
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ec.B(" + var0 + ')');
+         throw Class44.clientError(var2, "ec.B(" + 0 + ')');
       }
    }
 

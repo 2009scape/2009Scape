@@ -36,18 +36,18 @@ final class Class69 {
       }
    }
 
-   static final LDIndexedSprite[] method1281(int var0) {
+   static final LDIndexedSprite[] method1281() {
       try {
          LDIndexedSprite[] var1 = new LDIndexedSprite[Class95.anInt1338];
 
-         for(int var2 = var0; Class95.anInt1338 > var2; ++var2) {
+         for(int var2 = 0; Class95.anInt1338 > var2; ++var2) {
             var1[var2] = new LDIndexedSprite(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[var2], RSByteBuffer.anIntArray2591[var2], Class140_Sub7.anIntArray2931[var2], Class3_Sub13_Sub6.anIntArray3076[var2], Class163_Sub1.aByteArrayArray2987[var2], Class3_Sub13_Sub38.spritePalette);
          }
 
          Class39.method1035((byte)116);
          return var1;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "jg.A(" + var0 + ')');
+         throw Class44.clientError(var3, "jg.A(" + 0 + ')');
       }
    }
 

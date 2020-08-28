@@ -43,7 +43,7 @@ abstract class Class164 {
             var41[var42] = (var42 << 12) / var3;
          }
 
-         this.method2233(-949697716);
+         this.method2233();
 
          for(int var37 = 0; var37 < var3; ++var37) {
             for(int var36 = 0; var36 < var4; ++var36) {
@@ -115,7 +115,7 @@ abstract class Class164 {
                      var30 = Class131.method1788(var20, var22, var21, this.aShortArray2047[var12 + var28], true);
                      var32 = var29 + ((-var29 + var30) * var17 >> 12);
                      int var34 = var31 - -((var32 + -var31) * var18 >> 12);
-                     this.method2237(((-var33 + var34) * var19 >> 12) + var33, var38, -20975);
+                     this.method2237(((-var33 + var34) * var19 >> 12) + var33, var38);
                   }
 
                   this.method2231((byte)-92);
@@ -130,11 +130,11 @@ abstract class Class164 {
 
    abstract void method2231(byte var1);
 
-   private final void method2232(byte var1) {
+   private final void method2232() {
       try {
          this.aShortArray2049 = new short[this.anInt2062];
          int var2 = 0;
-         if(var1 != -60) {
+         if((byte) -60 != -60) {
             method2234(-92, 105);
          }
 
@@ -144,11 +144,11 @@ abstract class Class164 {
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "wf.L(" + var1 + ')');
+         throw Class44.clientError(var3, "wf.L(" + (byte) -60 + ')');
       }
    }
 
-   abstract void method2233(int var1);
+   abstract void method2233();
 
    static final int method2234(int var0, int var1) {
       try {
@@ -199,7 +199,7 @@ abstract class Class164 {
       }
    }
 
-   abstract void method2237(int var1, int var2, int var3);
+   abstract void method2237(int var1, int var2);
 
    Class164(int var1, int var2, int var3, int var4, int var5) {
       try {
@@ -208,7 +208,7 @@ abstract class Class164 {
          this.anInt2054 = var1;
          this.anInt2060 = var5;
          this.anInt2057 = var3;
-         this.method2232((byte)-60);
+         this.method2232();
          this.method2236(-190126388);
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "wf.<init>(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');

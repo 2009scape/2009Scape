@@ -65,7 +65,7 @@ final class Class3_Sub23 extends Class3 {
       }
    }
 
-   static final RSString method407(int var0, boolean var1, int var2, long var3, int var5) {
+   static final RSString method407(int var0, boolean var1, int var2, long var3) {
       try {
          RSString var6 = Class47.method1090((byte)-99, 0);
          if(var3 < 0) {
@@ -116,8 +116,8 @@ final class Class3_Sub23 extends Class3 {
             var9 = var12;
          }
 
-         if(var5 == 2) {
-            if(var10.length(var5 ^ -47) > 0) {
+         if(2 == 2) {
+            if(var10.length(2 ^ -47) > 0) {
                var10.method1533(var7, true);
             }
 
@@ -126,7 +126,7 @@ final class Class3_Sub23 extends Class3 {
             return (RSString)null;
          }
       } catch (RuntimeException var13) {
-         throw Class44.clientError(var13, "oj.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var5 + ')');
+         throw Class44.clientError(var13, "oj.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + 2 + ')');
       }
    }
 

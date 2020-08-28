@@ -10,12 +10,12 @@ final class Class143 {
 
    static final void method2062(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
-         int var12 = Class40.method1040(Class57.anInt902, var6, (byte)0, Class159.anInt2020);
-         int var13 = Class40.method1040(Class57.anInt902, var3, (byte)0, Class159.anInt2020);
-         int var14 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var7, (byte)0, Class101.anInt1425);
-         int var15 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var0, (byte)0, Class101.anInt1425);
-         int var8 = Class40.method1040(Class57.anInt902, var4 + var6, (byte)0, Class159.anInt2020);
-         int var9 = Class40.method1040(Class57.anInt902, -var4 + var3, (byte)0, Class159.anInt2020);
+         int var12 = Class40.method1040(Class57.anInt902, var6, Class159.anInt2020);
+         int var13 = Class40.method1040(Class57.anInt902, var3, Class159.anInt2020);
+         int var14 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var7, Class101.anInt1425);
+         int var15 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var0, Class101.anInt1425);
+         int var8 = Class40.method1040(Class57.anInt902, var4 + var6, Class159.anInt2020);
+         int var9 = Class40.method1040(Class57.anInt902, -var4 + var3, Class159.anInt2020);
 
          int var16;
          for(var16 = var12; var8 > var16; ++var16) {
@@ -26,8 +26,8 @@ final class Class143 {
             Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var16], var14, 94, var15, var5);
          }
 
-         int var10 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var4 + var7, (byte)0, Class101.anInt1425);
-         int var11 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, -var4 + var0, (byte)0, Class101.anInt1425);
+         int var10 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var4 + var7, Class101.anInt1425);
+         int var11 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, -var4 + var0, Class101.anInt1425);
 
          for(var16 = var8; var9 >= var16; ++var16) {
             int[] var17 = Class38.anIntArrayArray663[var16];

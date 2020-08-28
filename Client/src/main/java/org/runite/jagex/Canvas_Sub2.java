@@ -11,17 +11,17 @@ final class Canvas_Sub2 extends Canvas {
    static int anInt31 = 0;
    private Component aComponent33;
 
-   static final void method56(int var0, int var1) {
+   static final void method56(int var0) {
       try {
-         int var3 = 81 % ((39 - var1) / 41);
+         int var3 = 81 % ((39 - 99) / 41);
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 6, var0);
          var2.a(true);
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "tm.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "tm.C(" + var0 + ',' + 99 + ')');
       }
    }
 
-   static final boolean loadInterface(int archive, int var1) {
+   static final boolean loadInterface(int archive) {
       try {
          if(!Class130.aBooleanArray1703[archive]) {
             if(Class3_Sub13_Sub29.aClass153_3361.method2117(-99, archive)) {
@@ -36,12 +36,12 @@ final class Canvas_Sub2 extends Canvas {
 
                   for(int fileId = 0; fileId < fileLength; ++fileId) {
                      if(null == GameObject.aClass11ArrayArray1834[archive][fileId]) { 
-                        byte[] var4 = Class3_Sub13_Sub29.aClass153_3361.getFile(archive, (byte)-122, fileId);
+                        byte[] var4 = Class3_Sub13_Sub29.aClass153_3361.getFile(archive, fileId);
                         if(var4 != null) {
                            RSInterface var5 = GameObject.aClass11ArrayArray1834[archive][fileId] = new RSInterface();
                            var5.anInt279 = fileId + (archive << 16);
                            if(-1 == var4[0]) {
-                              var5.decodeScriptFormat(var1 ^ -105, new RSByteBuffer(var4));
+                              var5.decodeScriptFormat(104 ^ -105, new RSByteBuffer(var4));
                            } else {
                               var5.decodeNoScripts(-115, new RSByteBuffer(var4));
                            }
@@ -50,7 +50,7 @@ final class Canvas_Sub2 extends Canvas {
                   }
 
                   Class130.aBooleanArray1703[archive] = true;
-                  if(var1 != 104) {
+                  if(104 != 104) {
                      parsePlayerMasks(100);
                   }
 
@@ -63,7 +63,7 @@ final class Canvas_Sub2 extends Canvas {
             return true;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "tm.A(" + archive + ',' + var1 + ')');
+         throw Class44.clientError(var6, "tm.A(" + archive + ',' + 104 + ')');
       }
    }
 
@@ -82,7 +82,7 @@ final class Canvas_Sub2 extends Canvas {
                var4 += GraphicDefinition.incomingBuffer.getByte((byte)-43) << 8;
             }
 
-            Class45.parsePlayerMask(var4, var2, (byte)-79, var3);
+            Class45.parsePlayerMask(var4, var2, var3);
             ++var1;
          }
 
@@ -136,7 +136,7 @@ final class Canvas_Sub2 extends Canvas {
             for(var14 = 0; var14 < 64; ++var14) {
                for(var15 = 0; var15 < 64; ++var15) {
                   if(var13 == var7 && var9 <= var14 && 8 + var9 > var14 && var8 <= var15 && var15 < 8 + var8) {
-                     Class167.method2267(0, 0, var10, var25, Class3_Sub13_Sub29.method310(var0, (byte)-117, 7 & var14, 7 & var15) + var4, Node.method519(var0, true, var15 & 7, var14 & 7) + var1, (byte)63, var0, var2);
+                     Class167.method2267(0, 0, var10, var25, Class3_Sub13_Sub29.method310(var0, (byte)-117, 7 & var14, 7 & var15) + var4, Node.method519(var0, var15 & 7, var14 & 7) + var1, (byte)63, var0, var2);
                   } else {
                      Class167.method2267(0, 0, var10, var25, -1, -1, (byte)123, 0, 0);
                   }
@@ -168,7 +168,7 @@ final class Canvas_Sub2 extends Canvas {
                               for(var20 = var17; var17 + 4 > var20; ++var20) {
                                  for(var21 = var18; var21 < 4 + var18; ++var21) {
                                     if(var9 <= var20 && 8 + var9 > var20 && var8 <= var21 && var8 < var8 + 8) {
-                                       var22 = var1 - -Node.method519(var0, true, var21 & 7, var20 & 7);
+                                       var22 = var1 - -Node.method519(var0, var21 & 7, var20 & 7);
                                        int var23 = Class3_Sub13_Sub29.method310(var0, (byte)-97, 7 & var20, var21 & 7) + var4;
                                        if(0 <= var22 && 104 > var22 && var23 >= 0 && var23 < 104) {
                                           Class136.aByteArrayArrayArray1774[var2][var22][var23] = var19;
@@ -244,15 +244,15 @@ final class Canvas_Sub2 extends Canvas {
                      for(var17 = 0; var28 > var17; ++var17) {
                         Class43 var30 = new Class43(var25);
                         if(var30.anInt705 == 31) {
-                           Class57 var31 = Class81.method1401(1001, var25.getShort(1));
+                           Class57 var31 = Class81.method1401(var25.getShort(1));
                            var30.method1060((byte)123, var31.anInt896, var31.anInt908, var31.anInt899, var31.anInt907);
                         }
 
                         var29 = var30.anInt703 >> 7;
                         var20 = var30.anInt708 >> 7;
                         if(var30.anInt704 == var7 && var9 <= var29 && var9 - -8 > var29 && var20 >= var8 && var20 < var8 - -8) {
-                           var21 = Class3_Sub26.method514(var0, var30.anInt703 & 1023, (byte)-83, 1023 & var30.anInt708) + (var1 << 7);
-                           var22 = Class3_Sub13_Sub25.method293(var30.anInt703 & 1023, var0, false, 1023 & var30.anInt708) + (var4 << 7);
+                           var21 = Class3_Sub26.method514(var0, var30.anInt703 & 1023, 1023 & var30.anInt708) + (var1 << 7);
+                           var22 = Class3_Sub13_Sub25.method293(var30.anInt703 & 1023, var0, 1023 & var30.anInt708) + (var4 << 7);
                            var30.anInt703 = var21;
                            var30.anInt708 = var22;
                            var29 = var30.anInt703 >> 7;

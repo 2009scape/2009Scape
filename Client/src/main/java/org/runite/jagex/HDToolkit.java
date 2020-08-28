@@ -61,7 +61,7 @@ final class HDToolKit {
          var1 = var0.getBytes();
       }
 
-      return Class3_Sub13_Sub3.method178(var1, -4114, var1.length, 0);
+      return Class3_Sub13_Sub3.method178(var1, var1.length, 0);
    }
 
    static final void method1821(int var0, int var1, int var2, int var3) {
@@ -69,7 +69,7 @@ final class HDToolKit {
    }
 
    static final void method1822() {
-      Class3_Sub28_Sub4.method551(0, 0, 0);
+      Class3_Sub28_Sub4.method551(0, 0);
       method1836();
       method1856(1);
       method1847(1);
@@ -90,7 +90,7 @@ final class HDToolKit {
    }
 
    static final void method1824() {
-      Class3_Sub28_Sub4.method551(0, 0, 0);
+      Class3_Sub28_Sub4.method551(0, 0);
       method1836();
       method1856(0);
       method1847(0);
@@ -145,7 +145,7 @@ final class HDToolKit {
    }
 
    static final void method1828() {
-      Class3_Sub28_Sub4.method551(0, 0, 0);
+      Class3_Sub28_Sub4.method551(0, 0);
       method1836();
       method1856(0);
       method1847(0);
@@ -170,7 +170,7 @@ final class HDToolKit {
       aBoolean1796 = true;
       aBoolean1805 = true;
       aBoolean1816 = true;
-      Class44.method1073(97);
+      Class44.method1073();
       gl.glActiveTexture('\u84c1');
       gl.glTexEnvi(8960, 8704, '\u8570');
       gl.glTexEnvi(8960, '\u8571', 8448);
@@ -262,7 +262,7 @@ final class HDToolKit {
    }
 
    static final void method1835() {
-      Class3_Sub28_Sub4.method551(0, 0, 0);
+      Class3_Sub28_Sub4.method551(0, 0);
       method1836();
       bindTexture2D(-1);
       method1837(false);
@@ -369,7 +369,7 @@ final class HDToolKit {
          RSString var13 = method1820(aString1786).method1534(-98);
          if(var13.indexOf(aClass94_1819, 57) != -1) {
             int var6 = 0;
-            RSString[] var7 = var13.method1565(32, 40, 47).method1567(32, (byte)-98);
+            RSString[] var7 = var13.method1565().method1567(32, (byte)-98);
 
             for(int var8 = 0; var8 < var7.length; ++var8) {
                RSString var9 = var7[var8];
@@ -412,7 +412,7 @@ final class HDToolKit {
    static final void method1842() {
       if(gl != null) {
          try {
-            Class101.method1609(90);
+            Class101.method1609();
          } catch (Throwable var4) {
             ;
          }
@@ -454,13 +454,13 @@ final class HDToolKit {
       highDetail = false;
    }
 
-   static final void method1843(float var0, float var1, float var2) {
+   static final void method1843(float var0, float var1) {
       gl.glMatrixMode(5890);
       if(aBoolean1788) {
          gl.glLoadIdentity();
       }
 
-      gl.glTranslatef(var0, var1, var2);
+      gl.glTranslatef(var0, var1, (float) 0.0);
       gl.glMatrixMode(5888);
       aBoolean1788 = true;
    }
@@ -472,7 +472,7 @@ final class HDToolKit {
       int var13 = (var1 + var3 - var5 << 8) / var9;
       gl.glMatrixMode(5889);
       gl.glLoadIdentity();
-      method1848((float)var10 * aFloat1801, (float)var11 * aFloat1801, (float)(-var13) * aFloat1801, (float)(-var12) * aFloat1801, 50.0F, 3584.0F);
+      method1848((float)var10 * aFloat1801, (float)var11 * aFloat1801, (float)(-var13) * aFloat1801, (float)(-var12) * aFloat1801);
       gl.glViewport(var0, anInt1811 - var1 - var3, var2, var3);
       gl.glMatrixMode(5888);
       gl.glLoadIdentity();
@@ -533,8 +533,8 @@ final class HDToolKit {
       }
    }
 
-   private static final void method1848(float var0, float var1, float var2, float var3, float var4, float var5) {
-      float var6 = var4 * 2.0F;
+   private static final void method1848(float var0, float var1, float var2, float var3) {
+      float var6 = (float) 50.0 * 2.0F;
       aFloatArray1808[0] = var6 / (var1 - var0);
       aFloatArray1808[1] = 0.0F;
       aFloatArray1808[2] = 0.0F;
@@ -545,11 +545,11 @@ final class HDToolKit {
       aFloatArray1808[7] = 0.0F;
       aFloatArray1808[8] = (var1 + var0) / (var1 - var0);
       aFloatArray1808[9] = (var3 + var2) / (var3 - var2);
-      aFloatArray1808[10] = aFloat1787 = -(var5 + var4) / (var5 - var4);
+      aFloatArray1808[10] = aFloat1787 = -((float) 3584.0 + (float) 50.0) / ((float) 3584.0 - (float) 50.0);
       aFloatArray1808[11] = -1.0F;
       aFloatArray1808[12] = 0.0F;
       aFloatArray1808[13] = 0.0F;
-      aFloatArray1808[14] = aFloat1795 = -(var6 * var5) / (var5 - var4);
+      aFloatArray1808[14] = aFloat1795 = -(var6 * (float) 3584.0) / ((float) 3584.0 - (float) 50.0);
       aFloatArray1808[15] = 0.0F;
       gl.glLoadMatrixf(aFloatArray1808, 0);
       aFloat1797 = 0.0F;

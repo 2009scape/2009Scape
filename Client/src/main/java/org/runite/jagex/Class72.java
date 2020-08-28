@@ -21,10 +21,10 @@ final class Class72 {
          Class3_Sub28_Sub11 var2 = (Class3_Sub28_Sub11)Class3_Sub13_Sub34.aClass47_3407.method1092((long)var1, 1400);
          if(var2 == null) {
 
-            byte[] var3 = Class12.aClass153_322.getFile(26, (byte)-122, var1);
+            byte[] var3 = Class12.aClass153_322.getFile(26, var1);
             var2 = new Class3_Sub28_Sub11();
             if(var3 != null) {
-               var2.method608(5, new RSByteBuffer(var3));
+               var2.method608(new RSByteBuffer(var3));
             }
 
             Class3_Sub13_Sub34.aClass47_3407.method1097(var2, (long)var1, (byte)59);
@@ -37,12 +37,12 @@ final class Class72 {
       }
    }
 
-   static final void method1293(boolean var0) {
+   static final void method1293() {
       try {
          if(!Class3_Sub28_Sub19.aBoolean3779 && Class44.anInt718 != 2) {
             try {
                InputStream_Sub1.aClass94_38.method1577(-1857, Class126.aClient1671);
-               if(!var0) {
+               if(!true) {
                   method1298((byte)-25, 1);
                }
             } catch (Throwable var2) {
@@ -51,7 +51,7 @@ final class Class72 {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "jj.G(" + var0 + ')');
+         throw Class44.clientError(var3, "jj.G(" + true + ')');
       }
    }
 
@@ -249,13 +249,13 @@ final class Class72 {
       }
    }
 
-   static final float[] method1297(byte var0) {
+   static final float[] method1297() {
       try {
          float var1 = Class92.method1514() + Class92.getLightingModelAmbient();
          int var2 = Class92.screenColorRgb();
          float var3 = (float)(255 & var2 >> 16) / 255.0F;
          MouseListeningClass.aFloatArray1919[3] = 1.0F;
-         if(var0 == -50) {
+         if((byte) -50 == -50) {
             float var4 = (float)(('\uff59' & var2) >> 8) / 255.0F;
             float var6 = 0.58823526F;
             float var5 = (float)(255 & var2) / 255.0F;
@@ -267,13 +267,13 @@ final class Class72 {
             return (float[])null;
          }
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "jj.A(" + var0 + ')');
+         throw Class44.clientError(var7, "jj.A(" + (byte) -50 + ')');
       }
    }
 
    static final RSString method1298(byte var0, int var1) {
       try {
-         return var0 != 9?(RSString)null:Class118.method1723((byte)-117, false, 10, var1);
+         return var0 != 9?(RSString)null:Class118.method1723((byte)-117, false, var1);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "jj.C(" + var0 + ',' + var1 + ')');
       }

@@ -85,27 +85,27 @@ final class Class12 {
       }
    }
 
-   static final int method872(int var0, int var1, int var2) {
+   static final int method872(int var1, int var2) {
       try {
          Class3_Sub25 var3 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var1, 0);
-         return null == var3?0:(var0 >= ~var2 && var2 < var3.anIntArray2551.length?var3.anIntArray2551[var2]:0);
+         return null == var3?0:(-1 >= ~var2 && var2 < var3.anIntArray2551.length?var3.anIntArray2551[var2]:0);
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "bm.C(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "bm.C(" + -1 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
-   static final byte[] method873(byte var0, byte[] var1) {
+   static final byte[] method873(byte[] var1) {
       try {
          int var2 = var1.length;
          byte[] var3 = new byte[var2];
-         if(var0 == 62) {
+         if((byte) 62 == 62) {
             Class76.method1357(var1, 0, var3, 0, var2);
             return var3;
          } else {
             return (byte[])null;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "bm.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "bm.D(" + (byte) 62 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 

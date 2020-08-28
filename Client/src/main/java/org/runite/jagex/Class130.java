@@ -23,7 +23,7 @@ final class Class130 {
    static final void method1772(int plane, int animId, int dummy, NPC var3) {
       try {
          if(var3.anInt2771 == animId && -1 != animId) {
-            AnimationDefinition var4 = Client.getAnimationDefinition(animId, (byte)-20);
+            AnimationDefinition var4 = Client.getAnimationDefinition(animId);
             int var5 = var4.anInt1845;
             if(var5 == 1) {
                var3.anInt2776 = 1;
@@ -37,7 +37,7 @@ final class Class130 {
             if(var5 == 2) {
                var3.anInt2773 = 0;
             }
-         } else if(animId == -1 || -1 == var3.anInt2771 || Client.getAnimationDefinition(animId, (byte)-20).anInt1857 >= Client.getAnimationDefinition(var3.anInt2771, (byte)-20).anInt1857) {
+         } else if(animId == -1 || -1 == var3.anInt2771 || Client.getAnimationDefinition(animId).anInt1857 >= Client.getAnimationDefinition(var3.anInt2771).anInt1857) {
             var3.anInt2760 = 0;
             var3.anInt2771 = animId;
             var3.anInt2776 = 1;
@@ -46,7 +46,7 @@ final class Class130 {
             var3.anInt2811 = var3.anInt2816;
             var3.anInt2832 = 0;
             if(var3.anInt2771 != -1) {
-               IOHandler.method1470(var3.anInt2829, Client.getAnimationDefinition(var3.anInt2771, (byte)-20), dummy + 183921345, var3.anInt2819, false, var3.anInt2832);
+               IOHandler.method1470(var3.anInt2829, Client.getAnimationDefinition(var3.anInt2771), dummy + 183921345, var3.anInt2819, false, var3.anInt2832);
             }
          }
 
@@ -392,13 +392,13 @@ final class Class130 {
       }
    }
 
-   final Class3 method1784(int var1) {
+   final Class3 method1784() {
       try {
          if(null == this.aClass3_1706) {
             return null;
          } else {
             Class3 var2 = this.aClass3Array1697[(int)(this.aLong1708 & (long)(-1 + this.anInt1700))];
-            if(var1 != 0) {
+            if(0 != 0) {
                method1772(-100, 110, -46, (NPC)null);
             }
 
@@ -416,7 +416,7 @@ final class Class130 {
             return null;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "sc.A(" + var1 + ')');
+         throw Class44.clientError(var4, "sc.A(" + 0 + ')');
       }
    }
 

@@ -57,7 +57,7 @@ final class Class3_Sub17 extends Class3 {
 
 			if(Class3_Sub28_Sub12.anInt3655 != -1) {
 				Class3_Sub28_Sub3.anInt3557 = 0;
-				Class8.method841(true);
+				Class8.method841();
 			}
 
 			if(HDToolKit.highDetail) {

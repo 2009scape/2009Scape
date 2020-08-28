@@ -13,9 +13,9 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
    static boolean aBoolean4063 = false;
 
 
-   final byte[] method587(boolean var1) {
+   final byte[] method587() {
       try {
-         if(var1) {
+         if(false) {
             aBoolean4063 = true;
          }
 
@@ -25,7 +25,7 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
             return this.aByteArray4059;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "c.E(" + var1 + ')');
+         throw Class44.clientError(var3, "c.E(" + false + ')');
       }
    }
 
@@ -60,9 +60,9 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
       }
    }
 
-   static final void method593(Frame var0, boolean var1, Signlink var2) {
+   static final void method593(Frame var0, Signlink var2) {
       try {
-         if(!var1) {
+         if(!true) {
             method594(110, 94);
          }
 
@@ -82,19 +82,19 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
             Class3_Sub13_Sub34.method331(100L, 64);
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "c.R(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "c.R(" + (var0 != null?"{...}":"null") + ',' + true + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
-   final int method586(boolean var1) {
+   final int method586() {
       try {
-         if(var1) {
+         if(false) {
             this.aClass41_4056 = (Class41)null;
          }
 
          return this.aBoolean3632?0:100;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "c.A(" + var1 + ')');
+         throw Class44.clientError(var3, "c.A(" + false + ')');
       }
    }
 
@@ -110,14 +110,14 @@ final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
       }
    }
 
-   static final void method595(int var0, int var1) {
+   static final void method595() {
       try {
-         if(var1 > 108) {
-            Class41.aClass93_684.method1522(-128, var0);
-            Class163_Sub1.aClass93_2984.method1522(-125, var0);
+         if(109 > 108) {
+            Class41.aClass93_684.method1522(-128, 5);
+            Class163_Sub1.aClass93_2984.method1522(-125, 5);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "c.O(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "c.O(" + 5 + ',' + 109 + ')');
       }
    }
 

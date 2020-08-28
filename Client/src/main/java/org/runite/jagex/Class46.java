@@ -18,22 +18,22 @@ final class Class46 {
       }
    }
 
-   static final void method1086(CacheIndex var0, int var1) {
+   static final void method1086(CacheIndex var0) {
       try {
          Class45.aClass153_731 = var0;
-         if(var1 != -6) {
+         if(-6 != -6) {
             aClass153_737 = (CacheIndex)null;
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "gl.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "gl.C(" + (var0 != null?"{...}":"null") + ',' + -6 + ')');
       }
    }
 
    static final void method1087(int var0, int var1) {
       try {
-         Class3_Sub30_Sub1.method819(false);
-         Class3_Sub13_Sub17.method252(8);
+         Class3_Sub30_Sub1.method819();
+         Class3_Sub13_Sub17.method252();
          if(var0 < 38) {
             anInt741 = 118;
          }

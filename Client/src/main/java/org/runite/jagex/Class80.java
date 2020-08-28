@@ -17,9 +17,9 @@ final class Class80 {
    static int[] anIntArray1138;
 
 
-   final Class3 method1392(int var1) {
+   final Class3 method1392() {
       try {
-         if(var1 != 0) {
+         if(0 != 0) {
             method1396(-100);
          }
 
@@ -41,20 +41,20 @@ final class Class80 {
             return var2;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "l.D(" + var1 + ')');
+         throw Class44.clientError(var3, "l.D(" + 0 + ')');
       }
    }
 
-   final Class3 method1393(byte var1) {
+   final Class3 method1393() {
       try {
-         if(var1 < 79) {
+         if((byte) 125 < 79) {
             this.anInt1132 = 78;
          }
 
          this.anInt1132 = 0;
-         return this.method1392(0);
+         return this.method1392();
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "l.C(" + var1 + ')');
+         throw Class44.clientError(var3, "l.C(" + (byte) 125 + ')');
       }
    }
 

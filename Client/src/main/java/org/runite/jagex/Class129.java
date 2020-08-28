@@ -39,10 +39,10 @@ abstract class Class129 {
 
    abstract int method1767(int var1, int var2, int var3);
 
-   static final void method1768(int var0, int var1, int var2) {
+   static final void method1768(int var0, int var2) {
       try {
          if(KeyboardListener.anInt1908 > 0) {
-            Class159.method2195(KeyboardListener.anInt1908, 0);
+            Class159.method2195(KeyboardListener.anInt1908);
             KeyboardListener.anInt1908 = 0;
          }
 
@@ -88,7 +88,7 @@ abstract class Class129 {
             var5 += Class74.anInt1092 + -128;
          }
 
-         if(var1 > 70) {
+         if(95 > 70) {
             if(HDToolKit.highDetail) {
                Class22.method926(Class97.aClass3_Sub28_Sub16_Sub2_1381.anIntArray4081, var0, var2, Class97.aClass3_Sub28_Sub16_Sub2_1381.anInt3707, Class97.aClass3_Sub28_Sub16_Sub2_1381.anInt3696);
             } else {
@@ -97,11 +97,11 @@ abstract class Class129 {
 
          }
       } catch (RuntimeException var14) {
-         throw Class44.clientError(var14, "s.F(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var14, "s.F(" + var0 + ',' + 95 + ',' + var2 + ')');
       }
    }
 
-   static final void method1769(float[][] var0, byte[][] var1, byte[][] var2, Class43[] var3, int var4, int var5, float[][] var6, byte[][] var7, byte[][] var8, int[][] var9, int var10, float[][] var11) {
+   static final void method1769(float[][] var0, byte[][] var1, byte[][] var2, Class43[] var3, int var4, int var5, float[][] var6, byte[][] var7, byte[][] var8, int[][] var9, float[][] var11) {
       try {
          for(int var12 = 0; var5 > var12; ++var12) {
             Class43 var13 = var3[var12];
@@ -411,15 +411,15 @@ abstract class Class129 {
             }
          }
 
-         if(var10 != -8771) {
+         if(-8771 != -8771) {
             method1765(-30, -124);
          }
 
       } catch (RuntimeException var37) {
-         throw Class44.clientError(var37, "s.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ',' + (var7 != null?"{...}":"null") + ',' + (var8 != null?"{...}":"null") + ',' + (var9 != null?"{...}":"null") + ',' + var10 + ',' + (var11 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var37, "s.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ',' + var5 + ',' + (var6 != null?"{...}":"null") + ',' + (var7 != null?"{...}":"null") + ',' + (var8 != null?"{...}":"null") + ',' + (var9 != null?"{...}":"null") + ',' + -8771 + ',' + (var11 != null?"{...}":"null") + ')');
       }
    }
 
-   abstract void method1770(int var1);
+   abstract void method1770();
 
 }

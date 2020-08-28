@@ -30,15 +30,15 @@ final class Class3_Sub28_Sub2 extends Node {
       }
    }
 
-   static final Class75_Sub3 method536(byte var0, RSByteBuffer var1) {
+   static final Class75_Sub3 method536(RSByteBuffer var1) {
       try {
-         if(var0 != 54) {
+         if((byte) 54 != 54) {
             method534(117);
          }
 
          return new Class75_Sub3(var1.getShort((byte)25), var1.getShort((byte)73), var1.getShort((byte)114), var1.getShort((byte)33), var1.getShort((byte)78), var1.getShort((byte)91), var1.getShort((byte)120), var1.getShort((byte)113), var1.getTriByte((byte)115), var1.getByte((byte)-64));
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bk.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "bk.C(" + (byte) 54 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 

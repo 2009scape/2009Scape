@@ -66,12 +66,12 @@ final class KeyboardListener implements KeyListener, FocusListener {
              * Tab to reply
              */
 			if (var1.getKeyCode() == KeyEvent.VK_TAB) {
-				Class73.ClientCommands(RSString.createRSString("::reply"), false);
+				Class73.ClientCommands(RSString.createRSString("::reply"));
 			}
 
 			if (var1.getKeyCode() == KeyEvent.VK_ESCAPE)
             {
-               Class73.ClientCommands(RSString.createRSString("::shutdowninterface"), false);
+               Class73.ClientCommands(RSString.createRSString("::shutdowninterface"));
             }
 			
 			//causing issues when in other interfaces, such as GE interface. My quick thing impl didn't work - Jamix77
@@ -118,7 +118,7 @@ final class KeyboardListener implements KeyListener, FocusListener {
       try {
     	 
          if(Class3_Sub13_Sub3.aClass148_3049 != null) {
-            int var2 = Class79.method1386(true, var1);
+            int var2 = Class79.method1386(var1);
             if(var2 >= 0) {
                int var3 = 1 + Class25.anInt491 & 127;
                if(var3 != Class3_Sub28_Sub9.anInt3620) {
@@ -195,9 +195,9 @@ final class KeyboardListener implements KeyListener, FocusListener {
       }
    }
 
-   static final void method2086(byte var0) {
+   static final void method2086() {
       try {
-         if(var0 >= 62) {
+         if((byte) 68 >= 62) {
             int var1 = Class102.player.anInt2819 + Class3_Sub13_Sub18.anInt3216;
             int var2 = Class102.player.anInt2829 - -InputStream_Sub1.anInt42;
             if(-var1 + Class3_Sub13_Sub13.anInt3155 < -500 || -var1 + Class3_Sub13_Sub13.anInt3155 > 500 || Class62.anInt942 + -var2 < -500 || -var2 + Class62.anInt942 > 500) {
@@ -258,7 +258,7 @@ final class KeyboardListener implements KeyListener, FocusListener {
             Class47.method1098((byte)-94);
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "uf.B(" + var0 + ')');
+         throw Class44.clientError(var5, "uf.B(" + (byte) 68 + ')');
       }
    }
 

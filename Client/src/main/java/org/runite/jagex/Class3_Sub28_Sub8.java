@@ -9,24 +9,24 @@ final class Class3_Sub28_Sub8 extends Node {
    static int anInt3613;
 
 
-   static final int method571(int var0) {
+   static final int method571() {
       try {
-         return var0 >= -57?-107:((double)NPC.aFloat3979 == 3.0D?37:((double)NPC.aFloat3979 == 4.0D?50:(6.0D != (double)NPC.aFloat3979?((double)NPC.aFloat3979 == 8.0D?100:200):75)));
+         return -109 >= -57?-107:((double)NPC.aFloat3979 == 3.0D?37:((double)NPC.aFloat3979 == 4.0D?50:(6.0D != (double)NPC.aFloat3979?((double)NPC.aFloat3979 == 8.0D?100:200):75)));
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "hc.E(" + var0 + ')');
+         throw Class44.clientError(var2, "hc.E(" + -109 + ')');
       }
    }
 
-   static final Class3_Sub28_Sub15 method572(int var0, byte var1) {
+   static final Class3_Sub28_Sub15 method572(int var0) {
       try {
          Class3_Sub28_Sub15 var2 = (Class3_Sub28_Sub15)Class56.aClass47_885.method1092((long)var0, 1400);
          if(var2 == null) {
-            byte[] var3 = Class3_Sub1.interfaceScriptsIndex.getFile(var0, (byte)-122, 0);
+            byte[] var3 = Class3_Sub1.interfaceScriptsIndex.getFile(var0, 0);
             if(var3 == null) {
                return null;
             } else {
                var2 = new Class3_Sub28_Sub15();
-               if(var1 != -91) {
+               if((byte) -91 != -91) {
                   aClass113Array3610 = (Class113[])null;
                }
 
@@ -36,9 +36,9 @@ final class Class3_Sub28_Sub8 extends Node {
                int var6 = -12 + var4.buffer.length + -2 - var5;
                var4.index = var6;
                int var7 = var4.getInt();
-               var2.anInt3680 = var4.getShort(var1 ^ -92);
+               var2.anInt3680 = var4.getShort((byte) -91 ^ -92);
                var2.anInt3687 = var4.getShort(1);
-               var2.anInt3678 = var4.getShort(var1 ^ -92);
+               var2.anInt3678 = var4.getShort((byte) -91 ^ -92);
                var2.anInt3682 = var4.getShort(1);
                int var8 = var4.getByte((byte)-70);
                int var9;
@@ -60,13 +60,13 @@ final class Class3_Sub28_Sub8 extends Node {
                }
 
                var4.index = 0;
-               var2.aClass94_3686 = var4.method750((byte)78);
+               var2.aClass94_3686 = var4.method750();
                var2.anIntArray3683 = new int[var7];
                var2.aClass94Array3688 = new RSString[var7];
                var9 = 0;
 
                for(var2.anIntArray3690 = new int[var7]; var4.index < var6; var2.anIntArray3683[var9++] = var10) {
-                  var10 = var4.getShort(var1 ^ -92);
+                  var10 = var4.getShort((byte) -91 ^ -92);
                   if(var10 == 3) {
                      var2.aClass94Array3688[var9] = var4.getString();
                   } else {
@@ -85,7 +85,7 @@ final class Class3_Sub28_Sub8 extends Node {
             return var2;
          }
       } catch (RuntimeException var14) {
-         throw Class44.clientError(var14, "hc.O(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var14, "hc.O(" + var0 + ',' + (byte) -91 + ')');
       }
    }
 
@@ -101,9 +101,9 @@ final class Class3_Sub28_Sub8 extends Node {
       }
    }
 
-   static final void method574(NPC var0, boolean var1) {
+   static final void method574(NPC var0) {
       try {
-         if(!var1) {
+         if(!false) {
             for(Class3_Sub9 var2 = (Class3_Sub9)IOHandler.aClass61_1242.method1222(); var2 != null; var2 = (Class3_Sub9)IOHandler.aClass61_1242.method1221()) {
                if(var0 == var2.aClass140_Sub4_Sub2_2324) {
                   if(var2.aClass3_Sub24_Sub1_2312 != null) {
@@ -118,7 +118,7 @@ final class Class3_Sub28_Sub8 extends Node {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "hc.D(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hc.D(" + (var0 != null?"{...}":"null") + ',' + false + ')');
       }
    }
 
@@ -134,16 +134,16 @@ final class Class3_Sub28_Sub8 extends Node {
       }
    }
 
-   static final int method576(RSString var0, boolean var1) {
+   static final int method576(RSString var0) {
       try {
          if(Class119.aClass131_1624 == null || var0.length(-65) == 0) {
             return -1;
          } else {
-            if(var1) {
+            if(false) {
                return -117;
             } else {
                for(int var2 = 0; var2 < Class119.aClass131_1624.anInt1720; ++var2) {
-                  if(Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, !var1, Class3_Sub28_Sub10_Sub2.aClass94_4066).method1528((byte)-42, var0)) {
+                  if(Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, !false, Class3_Sub28_Sub10_Sub2.aClass94_4066).method1528(var0)) {
                      return var2;
                   }
                }
@@ -152,7 +152,7 @@ final class Class3_Sub28_Sub8 extends Node {
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "hc.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hc.F(" + (var0 != null?"{...}":"null") + ',' + false + ')');
       }
    }
 

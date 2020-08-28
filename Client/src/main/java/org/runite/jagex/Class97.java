@@ -24,10 +24,10 @@ final class Class97 {
    static Class3_Sub28_Sub16_Sub2 aClass3_Sub28_Sub16_Sub2_1381;
 
 
-   final int[][][] method1589(byte var1) {
+   final int[][][] method1589() {
       try {
          if(this.anInt1367 == this.anInt1369) {
-            if(var1 > -12) {
+            if((byte) -56 > -12) {
                this.anInt1365 = -104;
             }
 
@@ -40,13 +40,13 @@ final class Class97 {
             throw new RuntimeException("Can only retrieve a full image cache");
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "nd.F(" + var1 + ')');
+         throw Class44.clientError(var3, "nd.F(" + (byte) -56 + ')');
       }
    }
 
-   final void method1590(byte var1) {
+   final void method1590() {
       try {
-         if(var1 < -1) {
+         if((byte) -22 < -1) {
             for(int var2 = 0; var2 < this.anInt1367; ++var2) {
                this.anIntArrayArrayArray1362[var2][0] = null;
                this.anIntArrayArrayArray1362[var2][1] = null;
@@ -60,11 +60,11 @@ final class Class97 {
             this.aClass61_1366 = null;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "nd.E(" + var1 + ')');
+         throw Class44.clientError(var3, "nd.E(" + (byte) -22 + ')');
       }
    }
 
-   static final void method1591(boolean var0, Class3_Sub24 var1) {
+   static final void method1591(Class3_Sub24 var1) {
       try {
          if(var1.aClass3_Sub12_2544 != null) {
             var1.aClass3_Sub12_2544.anInt2374 = 0;
@@ -73,15 +73,15 @@ final class Class97 {
          var1.aBoolean2545 = false;
 
          for(Class3_Sub24 var2 = var1.method411(); var2 != null; var2 = var1.method414()) {
-            method1591(true, var2);
+            method1591(var2);
          }
 
-         if(!var0) {
+         if(!true) {
             anInt1375 = -103;
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "nd.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "nd.A(" + true + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -107,8 +107,8 @@ final class Class97 {
 
    static final void method1593(int var0, CacheIndex var1) {
       try {
-         Class154.anInt1966 = var1.getArchiveForName(Class3_Sub28_Sub4.aClass94_3574, (byte)-30);
-         Class79.anInt1124 = var1.getArchiveForName(Class95.aClass94_1341, (byte)-30);
+         Class154.anInt1966 = var1.getArchiveForName(Class3_Sub28_Sub4.aClass94_3574);
+         Class79.anInt1124 = var1.getArchiveForName(Class95.aClass94_1341);
          if(var0 <= 108) {
             method1593(14, (CacheIndex)null);
          }
@@ -138,7 +138,7 @@ final class Class97 {
                      var4 = new Class3_Sub20(var2, this.anInt1368);
                      ++this.anInt1368;
                   } else {
-                     Class3_Sub20 var5 = (Class3_Sub20)this.aClass61_1366.method1212(2);
+                     Class3_Sub20 var5 = (Class3_Sub20)this.aClass61_1366.method1212();
                      var4 = new Class3_Sub20(var2, var5.anInt2483);
                      this.aClass3_Sub20Array1371[var5.anInt2489] = null;
                      var5.method86(-1024);
@@ -149,7 +149,7 @@ final class Class97 {
                   this.aBoolean1379 = false;
                }
 
-               this.aClass61_1366.method1216(64, var4);
+               this.aClass61_1366.method1216(var4);
                return this.anIntArrayArrayArray1362[var4.anInt2483];
             }
          }

@@ -26,9 +26,9 @@ final class Class3_Sub1 extends Class3 {
                            if (var6.aClass12_2230 != null && var6.aClass12_2230.object instanceof Class140_Sub1_Sub1) {
                               var7 = (Class140_Sub1_Sub1) var6.aClass12_2230.object;
                               if ((var6.aClass12_2230.aLong328 & Long.MIN_VALUE) == 0) {
-                                 var7.method1920(false, true, true, true, false, true, true);
+                                 var7.method1920(false, true, true, false, true, true);
                               } else {
-                                 var7.method1920(true, true, true, true, true, true, true);
+                                 var7.method1920(true, true, true, true, true, true);
                               }
                            }
 
@@ -36,18 +36,18 @@ final class Class3_Sub1 extends Class3 {
                               if (var6.aClass19_2233.aClass140_429 instanceof Class140_Sub1_Sub1) {
                                  var7 = (Class140_Sub1_Sub1) var6.aClass19_2233.aClass140_429;
                                  if (0L == (var6.aClass19_2233.aLong428 & Long.MIN_VALUE)) {
-                                    var7.method1920(false, true, true, true, false, true, true);
+                                    var7.method1920(false, true, true, false, true, true);
                                  } else {
-                                    var7.method1920(true, true, true, true, true, true, true);
+                                    var7.method1920(true, true, true, true, true, true);
                                  }
                               }
 
                               if (var6.aClass19_2233.aClass140_423 instanceof Class140_Sub1_Sub1) {
                                  var7 = (Class140_Sub1_Sub1) var6.aClass19_2233.aClass140_423;
                                  if ((Long.MIN_VALUE & var6.aClass19_2233.aLong428) == 0) {
-                                    var7.method1920(false, true, true, true, false, true, true);
+                                    var7.method1920(false, true, true, false, true, true);
                                  } else {
-                                    var7.method1920(true, true, true, true, true, true, true);
+                                    var7.method1920(true, true, true, true, true, true);
                                  }
                               }
                            }
@@ -56,18 +56,18 @@ final class Class3_Sub1 extends Class3 {
                               if (var6.aClass70_2234.aClass140_1049 instanceof Class140_Sub1_Sub1) {
                                  var7 = (Class140_Sub1_Sub1) var6.aClass70_2234.aClass140_1049;
                                  if ((var6.aClass70_2234.aLong1048 & Long.MIN_VALUE) == 0) {
-                                    var7.method1920(false, true, true, true, false, true, true);
+                                    var7.method1920(false, true, true, false, true, true);
                                  } else {
-                                    var7.method1920(true, true, true, true, true, true, true);
+                                    var7.method1920(true, true, true, true, true, true);
                                  }
                               }
 
                               if (var6.aClass70_2234.aClass140_1052 instanceof Class140_Sub1_Sub1) {
                                  var7 = (Class140_Sub1_Sub1) var6.aClass70_2234.aClass140_1052;
                                  if ((Long.MIN_VALUE & var6.aClass70_2234.aLong1048) == 0) {
-                                    var7.method1920(false, true, true, true, false, true, true);
+                                    var7.method1920(false, true, true, false, true, true);
                                  } else {
-                                    var7.method1920(true, true, true, true, true, true, true);
+                                    var7.method1920(true, true, true, true, true, true);
                                  }
                               }
                            }
@@ -76,9 +76,9 @@ final class Class3_Sub1 extends Class3 {
                               if (var6.aClass25Array2221[var10].aClass140_479 instanceof Class140_Sub1_Sub1) {
                                  Class140_Sub1_Sub1 var8 = (Class140_Sub1_Sub1) var6.aClass25Array2221[var10].aClass140_479;
                                  if ((Long.MIN_VALUE & var6.aClass25Array2221[var10].aLong498) == 0) {
-                                    var8.method1920(false, true, true, true, false, true, true);
+                                    var8.method1920(false, true, true, false, true, true);
                                  } else {
-                                    var8.method1920(true, true, true, true, true, true, true);
+                                    var8.method1920(true, true, true, true, true, true);
                                  }
                               }
                            }
@@ -118,35 +118,35 @@ final class Class3_Sub1 extends Class3 {
       }
    }
 
-   final boolean method93(int var1) {
+   final boolean method93() {
       try {
-         return var1 != 572878952 || 0 != (572878952 & this.anInt2205) >> 29;
+         return 572878952 != 572878952 || 0 != (572878952 & this.anInt2205) >> 29;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bf.S(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.S(" + 572878952 + ')');
       }
    }
 
-   final int method94(byte var1) {
+   final int method94() {
       try {
-         if(var1 != -74) {
+         if((byte) -74 != -74) {
             this.method96(90);
          }
 
          return this.anInt2205 >> 18 & 7;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bf.A(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.A(" + (byte) -74 + ')');
       }
    }
 
-   final boolean method95(int var1) {
+   final boolean method95() {
       try {
-         if(var1 != -13081) {
+         if(-13081 != -13081) {
             anInt2212 = 71;
          }
 
          return (1 & this.anInt2205) != 0;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bf.Q(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.Q(" + -13081 + ')');
       }
    }
 
@@ -158,11 +158,11 @@ final class Class3_Sub1 extends Class3 {
       }
    }
 
-   final boolean method97(int var1) {
+   final boolean method97() {
       try {
-         return var1 != -20710 || 0 != (1 & this.anInt2205 >> 22);
+         return -20710 != -20710 || 0 != (1 & this.anInt2205 >> 22);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bf.R(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.R(" + -20710 + ')');
       }
    }
 
@@ -175,35 +175,35 @@ final class Class3_Sub1 extends Class3 {
       }
    }
 
-   final boolean method98(boolean var1) {
+   final boolean method98() {
       try {
-         if(var1) {
+         if(false) {
             anIntArray2209 = (int[])null;
          }
 
          return (this.anInt2205 >> 21 & 1) != 0;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bf.E(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.E(" + false + ')');
       }
    }
 
-   final boolean method99(int var1) {
+   final boolean method99() {
       try {
-         if(var1 != 31595) {
+         if(31595 != 31595) {
             interfaceScriptsIndex = (CacheIndex)null;
          }
 
          return (1738913629 & this.anInt2205) >> 30 != 0;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bf.F(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.F(" + 31595 + ')');
       }
    }
 
-   final boolean method100(byte var1) {
+   final boolean method100() {
       try {
-         return var1 != -9 || (this.anInt2205 & 455226656) >> 28 != 0;
+         return (byte) -9 != -9 || (this.anInt2205 & 455226656) >> 28 != 0;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bf.O(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.O(" + (byte) -9 + ')');
       }
    }
 
@@ -213,7 +213,7 @@ final class Class3_Sub1 extends Class3 {
             anInt2208 = -42;
          }
 
-         return Class3_Sub28_Sub15.method630((byte)-34, this.anInt2205);
+         return Class3_Sub28_Sub15.method630(this.anInt2205);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bf.B(" + var1 + ')');
       }

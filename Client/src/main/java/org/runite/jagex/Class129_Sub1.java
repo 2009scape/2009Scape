@@ -34,16 +34,16 @@ final class Class129_Sub1 extends Class129 {
       }
    }
 
-   final void method1770(int var1) {
+   final void method1770() {
       try {
          int var2;
          for(var2 = 0; var2 < 10; ++var2) {
             this.aLongArray2694[var2] = 0L;
          }
 
-         var2 = -114 % ((var1 - -82) / 42);
+         var2 = -114 % ((-124 - -82) / 42);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "lj.A(" + var1 + ')');
+         throw Class44.clientError(var3, "lj.A(" + -124 + ')');
       }
    }
 

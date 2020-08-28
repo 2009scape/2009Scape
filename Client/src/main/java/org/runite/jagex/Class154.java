@@ -54,10 +54,10 @@ final class Class154 {
       return var3 == null?null:var3.aClass70_2234;
    }
 
-   static final RSString method2148(int var0, byte var1) {
+   static final RSString method2148(int var0) {
       try {
          if(999999999 <= var0) {
-            if(var1 != -78) {
+            if((byte) -78 != -78) {
                method2145((byte)-8);
             }
 
@@ -66,7 +66,7 @@ final class Class154 {
             return Class72.method1298((byte)9, var0);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "vf.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "vf.C(" + var0 + ',' + (byte) -78 + ')');
       }
    }
 

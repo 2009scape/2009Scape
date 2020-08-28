@@ -149,8 +149,8 @@ final class Class125 implements Interface5 {
             javax.media.opengl.GL var2 = HDToolKit.gl;
             var2.glGenProgramsARB(1, var1, 0);
             this.anInt2184 = var1[0];
-            int[][] var3 = Class15.method895(false, 3, 64, 256, 0, 4, 8, 0.4F, (byte)-73);
-            int[][] var4 = Class15.method895(false, 3, 64, 256, 8, 4, 8, 0.4F, (byte)-109);
+            int[][] var3 = Class15.method895(0, (byte)-73);
+            int[][] var4 = Class15.method895(8, (byte)-109);
             RSByteBuffer var5 = new RSByteBuffer(262144);
 
             for(int var6 = 0; var6 < 256; ++var6) {
@@ -159,10 +159,10 @@ final class Class125 implements Interface5 {
 
                for(int var9 = 0; var9 < 64; ++var9) {
                   if(HDToolKit.aBoolean1790) {
-                     var5.method801(881, (float)var7[var9] / 4096.0F);
-                     var5.method801(881, (float)var8[var9] / 4096.0F);
-                     var5.method801(881, 1.0F);
-                     var5.method801(881, 1.0F);
+                     var5.method801((float)var7[var9] / 4096.0F);
+                     var5.method801((float)var8[var9] / 4096.0F);
+                     var5.method801(1.0F);
+                     var5.method801(1.0F);
                   } else {
                      var5.method762((float)var7[var9] / 4096.0F, (byte)109);
                      var5.method762((float)var8[var9] / 4096.0F, (byte)66);

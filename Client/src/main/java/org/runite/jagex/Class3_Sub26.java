@@ -26,17 +26,17 @@ final class Class3_Sub26 extends Class3 {
       }
    }
 
-   static final void method512(byte var0) {
+   static final void method512() {
       try {
-         Class3_Sub28_Sub7_Sub1.aClass93_4043.method1524(3);
-         CS2Script.aClass93_2442.method1524(3);
-         Class154.aClass93_1964.method1524(3);
-         if(var0 != -108) {
+         Class3_Sub28_Sub7_Sub1.aClass93_4043.method1524();
+         CS2Script.aClass93_2442.method1524();
+         Class154.aClass93_1964.method1524();
+         if((byte) -108 != -108) {
             aClass3_Sub24_Sub2_2563 = (Class3_Sub24_Sub2)null;
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "qi.D(" + var0 + ')');
+         throw Class44.clientError(var2, "qi.D(" + (byte) -108 + ')');
       }
    }
 
@@ -83,16 +83,16 @@ final class Class3_Sub26 extends Class3 {
       }
    }
 
-   static final int method514(int var0, int var1, byte var2, int var3) {
+   static final int method514(int var0, int var1, int var3) {
       try {
          var0 &= 3;
-         if(var2 >= -66) {
+         if((byte) -83 >= -66) {
             method513(-92, 76);
          }
 
          return var0 == 0 ?var1:(1 == var0?var3:(2 != var0?-var3 + 1023:1023 + -var1));
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "qi.C(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "qi.C(" + var0 + ',' + var1 + ',' + (byte) -83 + ',' + var3 + ')');
       }
    }
 

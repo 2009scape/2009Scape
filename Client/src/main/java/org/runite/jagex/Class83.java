@@ -115,7 +115,7 @@ final class Class83 {
                               var35 = var42[var28] != null?var42[var28][var31]:0;
                               var36 = var35 & 252;
                               if(var36 != 0 && var16 > 1 && var27 > 1) {
-                                 Class168.method2272(Class74.anIntArray1100, var33, var14, var35 & 3, var32, var36 >> 2, var27, var16, var25, true, (byte)21);
+                                 Class168.method2272(Class74.anIntArray1100, var33, var14, var35 & 3, var32, var36 >> 2, var27, var16, var25, true);
                               } else {
                                  Class74.method1323(var14, var25, var16, var27, var33);
                               }
@@ -132,7 +132,7 @@ final class Class83 {
                                  Class74.method1323(var14, var25, var16, var27, var34);
                               }
 
-                              Class168.method2272(Class74.anIntArray1100, var34, var14, var35 & 3, 0, var36 >> 2, var27, var16, var25, var33 == 0, (byte)21);
+                              Class168.method2272(Class74.anIntArray1100, var34, var14, var35 & 3, 0, var36 >> 2, var27, var16, var25, var33 == 0);
                            }
                         }
 
@@ -267,7 +267,7 @@ final class Class83 {
                               var26 = 16383 & var25;
                               if(var26 != 0) {
                                  var28 = ('\ud228' & var25) >> 14;
-                                 Class2 var47 = Class3_Sub28_Sub6.c(-1 + var26, 0);
+                                 Class2 var47 = Class3_Sub28_Sub6.c(-1 + var26);
                                  LDIndexedSprite var48 = var47.method77(var28, (byte)-71);
                                  if(var48 != null) {
                                     var31 = var22 * var48.anInt1468 / 4;
@@ -327,9 +327,9 @@ final class Class83 {
       }
    }
 
-   private final Class3_Sub12_Sub1 method1412(int[] var1, int var2, int var3, int var4) {
+   private final Class3_Sub12_Sub1 method1412(int[] var1, int var3, int var4) {
       try {
-         if(var2 == 31947) {
+         if(31947 == 31947) {
             int var5 = var4 ^ (var3 >>> 12 | var3 << 4 & '\ufff3');
             var5 |= var3 << 16;
             long var6 = (long)var5;
@@ -356,17 +356,17 @@ final class Class83 {
             return (Class3_Sub12_Sub1)null;
          }
       } catch (RuntimeException var10) {
-         throw Class44.clientError(var10, "le.B(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var10, "le.B(" + (var1 != null?"{...}":"null") + ',' + 31947 + ',' + var3 + ',' + var4 + ')');
       }
    }
 
    final Class3_Sub12_Sub1 method1413(int var1, int var2, int[] var3) {
       try {
-         if(1 == this.aClass153_1153.method2121(0)) {
-            return this.method1412(var3, 31947, 0, var1);
+         if(1 == this.aClass153_1153.method2121()) {
+            return this.method1412(var3, 0, var1);
          } else {
             if(this.aClass153_1153.getFileAmount(var1, (byte) 83) == 1) {
-               return this.method1412(var3, 31947, var1, 0);
+               return this.method1412(var3, var1, 0);
             } else {
                if(var2 < 0) {
                   this.aClass130_1159 = (Class130)null;
@@ -392,7 +392,7 @@ final class Class83 {
       }
    }
 
-   private final Class3_Sub12_Sub1 method1415(int var1, int[] var2, int var3, byte var4) {
+   private final Class3_Sub12_Sub1 method1415(int var1, int[] var2, int var3) {
       try {
          int var5 = var3 ^ (var1 >>> 12 | '\ufff3' & var1 << 4);
          var5 |= var1 << 16;
@@ -419,7 +419,7 @@ final class Class83 {
             } else {
                var9.method86(-1024);
                this.aClass130_1159.method1779(1, var8, var6);
-               if(var4 != 11) {
+               if((byte) 11 != 11) {
                   this.method1413(64, -18, (int[])null);
                }
 
@@ -428,23 +428,23 @@ final class Class83 {
          }
       } catch (RuntimeException var10) {
     	 // var10.printStackTrace();
-    	  throw Class44.clientError(var10, "le.F(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+    	  throw Class44.clientError(var10, "le.F(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (byte) 11 + ')');
       }
    }
 
-   final Class3_Sub12_Sub1 method1416(int var1, int var2, int[] var3) {
+   final Class3_Sub12_Sub1 method1416(int var2, int[] var3) {
       try {
-         if(var1 != 10089) {
+         if(10089 != 10089) {
             return (Class3_Sub12_Sub1)null;
-         } else if(this.aClass153_1157.method2121(0) == 1) {
-            return this.method1415(0, var3, var2, (byte)11);
+         } else if(this.aClass153_1157.method2121() == 1) {
+            return this.method1415(0, var3, var2);
          } else if(this.aClass153_1157.getFileAmount(var2, (byte) 99) == 1) {
-            return this.method1415(var2, var3, 0, (byte)11);
+            return this.method1415(var2, var3, 0);
          } else {
             throw new RuntimeException();
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "le.G(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "le.G(" + 10089 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 

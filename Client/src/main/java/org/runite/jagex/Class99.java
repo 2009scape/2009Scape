@@ -20,7 +20,7 @@ final class Class99 {
          if(var2) {
             if(HDToolKit.highDetail && Class3_Sub28_Sub6.aBoolean3594) {
                try {
-                  Class42.method1056(Class38.aClass87_665.anApplet1219, "openjs", new Object[]{var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase(), true).toString()}, (byte)117);
+                  Class42.method1056(Class38.aClass87_665.anApplet1219, new Object[]{var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase()).toString()});
                   return;
                } catch (Throwable var6) {
                   ;
@@ -28,13 +28,13 @@ final class Class99 {
             }
 
             try {
-               Class3_Sub29.anApplet_Sub1_2588.getAppletContext().showDocument(var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase(), true), "_blank");
+               Class3_Sub29.anApplet_Sub1_2588.getAppletContext().showDocument(var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase()), "_blank");
             } catch (Exception var4) {
                ;
             }
          } else {
             try {
-               Class3_Sub29.anApplet_Sub1_2588.getAppletContext().showDocument(var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase(), true), "_top");
+               Class3_Sub29.anApplet_Sub1_2588.getAppletContext().showDocument(var0.method1547(Class3_Sub29.anApplet_Sub1_2588.getCodeBase()), "_top");
             } catch (Exception var5) {
                ;
             }
@@ -45,7 +45,7 @@ final class Class99 {
       }
    }
 
-   static final Frame method1597(int var0, int var1, int var2, int var3, int var4, Signlink var5) {
+   static final Frame method1597(int var2, int var3, int var4, Signlink var5) {
       try {
          if(var5.method1432(false)) {
             if(0 == var2) {
@@ -57,7 +57,7 @@ final class Class99 {
                boolean var7 = false;
 
                for(int var8 = 0; var6.length > var8; ++var8) {
-                  if(var4 == var6[var8].anInt1447 && var3 == var6[var8].anInt1449 && (var1 == 0 || var1 == var6[var8].anInt1448) && (!var7 || var6[var8].anInt1450 > var2)) {
+                  if(var4 == var6[var8].anInt1447 && var3 == var6[var8].anInt1449 && (0 == 0 || 0 == var6[var8].anInt1448) && (!var7 || var6[var8].anInt1450 > var2)) {
                      var2 = var6[var8].anInt1450;
                      var7 = true;
                   }
@@ -68,7 +68,7 @@ final class Class99 {
                }
             }
 
-            Class64 var10 = var5.method1450(var1, var2, var3, var4, -121);
+            Class64 var10 = var5.method1450(0, var2, var3, var4, -121);
 
             while(0 == var10.anInt978) {
                Class3_Sub13_Sub34.method331(10L, 64);
@@ -78,8 +78,8 @@ final class Class99 {
             if(null == var11) {
                return null;
             } else {
-               if(var0 == var10.anInt978) {
-                  Class3_Sub28_Sub10_Sub1.method593(var11, true, var5);
+               if(2 == var10.anInt978) {
+                  Class3_Sub28_Sub10_Sub1.method593(var11, var5);
                   return null;
                } else {
                   return var11;
@@ -89,7 +89,7 @@ final class Class99 {
             return null;
          }
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "nf.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var9, "nf.D(" + 2 + ',' + 0 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + (var5 != null?"{...}":"null") + ')');
       }
    }
 

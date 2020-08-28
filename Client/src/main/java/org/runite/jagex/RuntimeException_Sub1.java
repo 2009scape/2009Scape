@@ -13,29 +13,29 @@ final class RuntimeException_Sub1 extends RuntimeException {
    static String worldListHost;
 
 
-   static final void method2285(int var0, int var1, int var2, int var3, boolean var4, int var5) {
+   static final void method2285(int var0, int var1, int var2, int var3, int var5) {
       try {
          Class3_Sub29.anInt2587 = var1;
-         if(!var4) {
+         if(!false) {
             Class3_Sub13_Sub8.anInt3103 = var5;
             Class140_Sub7.anInt2938 = var0;
             Class9.anInt144 = var3;
             Class3_Sub28_Sub15.anInt3695 = var2;
          }
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "ld.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var7, "ld.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + false + ',' + var5 + ')');
       }
    }
 
-   static final int method2286(byte var0) {
+   static final int method2286() {
       try {
-         if(var0 != -5) {
+         if((byte) -5 != -5) {
             worldListHost = (String)null;
          }
 
          return 6;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ld.A(" + var0 + ')');
+         throw Class44.clientError(var2, "ld.A(" + (byte) -5 + ')');
       }
    }
 

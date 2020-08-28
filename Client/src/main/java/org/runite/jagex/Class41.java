@@ -15,9 +15,9 @@ final class Class41 {
    static int anInt689;
 
 
-   static final void method1047(int var0, int var1, int var2, boolean var3, int var4, boolean var5, boolean var6) {
+   static final void method1047(int var0, int var1, int var2, boolean var3, int var4, boolean var5) {
       try {
-         if(!var6) {
+         if(!false) {
             if(var2 > var4) {
                int var7 = (var2 + var4) / 2;
                int var8 = var4;
@@ -35,13 +35,13 @@ final class Class41 {
 
                Class3_Sub13_Sub16.aClass44_Sub1Array3201[var2] = Class3_Sub13_Sub16.aClass44_Sub1Array3201[var8];
                Class3_Sub13_Sub16.aClass44_Sub1Array3201[var8] = var9;
-               method1047(var0, var1, -1 + var8, var3, var4, var5, false);
-               method1047(var0, var1, var2, var3, var8 - -1, var5, false);
+               method1047(var0, var1, -1 + var8, var3, var4, var5);
+               method1047(var0, var1, var2, var3, var8 - -1, var5);
             }
 
          }
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "ge.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var12, "ge.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + false + ')');
       }
    }
 
@@ -77,11 +77,11 @@ final class Class41 {
                var8 = var2 + 1;
             }
 
-            Class20.method910(-96, var4, var1, var2, var7, var8, Class86.aClass91Array1182[var2]);
+            Class20.method910(var4, var1, var2, var7, var8, Class86.aClass91Array1182[var2]);
             if(0 <= var0) {
                boolean var9 = KeyboardListener.aBoolean1905;
                KeyboardListener.aBoolean1905 = true;
-               Class110.method1683(var8, false, var2, false, Class86.aClass91Array1182[var2], var0, var6, var1, (byte)50, var4, var3);
+               Class110.method1683(var8, false, var2, false, Class86.aClass91Array1182[var2], var0, var6, var1, var4, var3);
                KeyboardListener.aBoolean1905 = var9;
             }
          }
@@ -104,11 +104,11 @@ final class Class41 {
       }
    }
 
-   final boolean method1050(int var1, int var2, byte[] var3, byte var4) {
+   final boolean method1050(int var1, int var2, byte[] var3) {
       try {
          Class30 var5 = this.aClass30_681;
          synchronized(var5) {
-            if(var4 != -41) {
+            if((byte) -41 != -41) {
                return true;
             } else if(0 <= var2 && var2 <= this.anInt687) {
                boolean var6 = this.method1054((byte)87, var2, var1, var3, true);
@@ -122,7 +122,7 @@ final class Class41 {
             }
          }
       } catch (RuntimeException var9) {
-         throw Class44.clientError(var9, "ge.D(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+         throw Class44.clientError(var9, "ge.D(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (byte) -41 + ')');
       }
    }
 
@@ -138,7 +138,7 @@ final class Class41 {
                }
 
                this.aClass30_683.method984(-35, (long)(6 * var1));
-               this.aClass30_683.method978(0, Class162.aByteArray2040, 6, 0);
+               this.aClass30_683.method978(0, Class162.aByteArray2040, 6);
                int var5 = ((255 & Class162.aByteArray2040[3]) << 16) - (-(Class162.aByteArray2040[4] << 8 & '\uff00') + -(255 & Class162.aByteArray2040[5]));
                int var6 = 24 / ((-4 - var2) / 40);
                int var4 = (Class162.aByteArray2040[2] & 255) + ('\uff00' & Class162.aByteArray2040[1] << 8) + (16711680 & Class162.aByteArray2040[0] << 16);
@@ -164,7 +164,7 @@ final class Class41 {
                         var10 = 512;
                      }
 
-                     this.aClass30_681.method978(0, Class162.aByteArray2040, 8 + var10, 0);
+                     this.aClass30_681.method978(0, Class162.aByteArray2040, 8 + var10);
                      int var11 = (Class162.aByteArray2040[0] << 8 & '\uff00') - -(255 & Class162.aByteArray2040[1]);
                      int var12 = (Class162.aByteArray2040[3] & 255) + ('\uff00' & Class162.aByteArray2040[2] << 8);
                      int var14 = 255 & Class162.aByteArray2040[7];
@@ -216,7 +216,7 @@ final class Class41 {
 
                byte[] var6 = new byte[var3];
                if(var0 != -29664) {
-                  method1047(2, -55, -50, false, 52, false, false);
+                  method1047(2, -55, -50, false, 52, false);
                }
 
                while(0L != var1) {
@@ -239,12 +239,12 @@ final class Class41 {
       }
    }
 
-   static final void method1053(byte var0, CacheIndex var1) {
+   static final void method1053(CacheIndex var1) {
       try {
          Class97.aClass153_1372 = var1;
-         int var2 = -52 / ((var0 - -55) / 36);
+         int var2 = -52 / (((byte) -117 - -55) / 36);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ge.F(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "ge.F(" + (byte) -117 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -273,7 +273,7 @@ final class Class41 {
                   }
 
                   this.aClass30_683.method984(-116, (long)(6 * var3));
-                  this.aClass30_683.method978(0, Class162.aByteArray2040, 6, 0);
+                  this.aClass30_683.method978(0, Class162.aByteArray2040, 6);
                   var7 = (16711680 & Class162.aByteArray2040[3] << 16) + ('\uff00' & Class162.aByteArray2040[4] << 8) + (Class162.aByteArray2040[5] & 255);
                   if(var7 <= 0 || (long) var7 > this.aClass30_681.method976(0) / 520L) {
                      var10000 = false;
@@ -310,7 +310,7 @@ final class Class41 {
                            this.aClass30_681.method984(-116, (long)(520 * var7));
 
                            try {
-                              this.aClass30_681.method978(0, Class162.aByteArray2040, 8, 0);
+                              this.aClass30_681.method978(0, Class162.aByteArray2040, 8);
                            } catch (EOFException var15) {
                               break label146;
                            }

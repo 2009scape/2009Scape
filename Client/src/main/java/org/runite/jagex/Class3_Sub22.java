@@ -122,7 +122,7 @@ final class Class3_Sub22 extends Class3 {
          Class146.method2083(var0, var1, var2, (byte[][][])null, 0, (byte)0, var13, var14);
          if(HDToolKit.highDetail) {
             Class3_Sub13_Sub17.aBoolean3207 = false;
-            Class3_Sub28_Sub4.method551(0, 0, 0);
+            Class3_Sub28_Sub4.method551(0, 0);
             Class92.method1512((float[])null);
             Class68.method1265();
          }
@@ -143,19 +143,19 @@ final class Class3_Sub22 extends Class3 {
       }
    }
 
-   static final void method400(long var0, int var2) {
+   static final void method400(long var0) {
       try {
-         if((long)var2 != var0) {
+         if((long) 0 != var0) {
             Class3_Sub13_Sub1.outgoingBuffer.putOpcode(104);
-            Class3_Sub13_Sub1.outgoingBuffer.putLong(var0, var2 ^ -2037491440);
+            Class3_Sub13_Sub1.outgoingBuffer.putLong(var0, 0 ^ -2037491440);
             ++Class163_Sub3.anInt3001;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "mf.F(" + var0 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "mf.F(" + var0 + ',' + 0 + ')');
       }
    }
 
-   final void method401(int var1) {
+   final void method401() {
       try {
          this.aClass166_2504 = null;
          this.aClass3_Sub12_Sub1_2509 = null;
@@ -163,11 +163,11 @@ final class Class3_Sub22 extends Class3 {
          this.aClass3_Sub15_2527 = null;
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "mf.A(" + var1 + ')');
+         throw Class44.clientError(var3, "mf.A(" + 221 + ')');
       }
    }
 
-   static final void method402(int var0) {
+   static final void method402() {
       try {
          if(Signlink.javaVendor.toLowerCase().indexOf("microsoft") == -1) {
             if(null == Signlink.aMethod1222) {
@@ -203,12 +203,12 @@ final class Class3_Sub22 extends Class3 {
             Class117.anIntArray1611[189] = 26;
          }
 
-         if(var0 != 74) {
+         if(74 != 74) {
             method398(125, -50, 10, -49, 88, (byte[][][])((byte[][][])null), (int[])null, (int[])null, (int[])null, (int[])null, (int[])null, 57, (byte)-58, 88, -74);
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "mf.O(" + var0 + ')');
+         throw Class44.clientError(var2, "mf.O(" + 74 + ')');
       }
    }
 
@@ -237,11 +237,11 @@ final class Class3_Sub22 extends Class3 {
       HDToolKit.method1830();
    }
 
-   static final Class75_Sub4 method404(byte var0, RSByteBuffer var1) {
+   static final Class75_Sub4 method404(RSByteBuffer var1) {
       try {
-         return var0 > -55?(Class75_Sub4)null:new Class75_Sub4(var1.getShort((byte)93), var1.getShort((byte)55), var1.getShort((byte)81), var1.getShort((byte)95), var1.getTriByte((byte)124), var1.getTriByte((byte)120), var1.getByte((byte)-103));
+         return (byte) -110 > -55?(Class75_Sub4)null:new Class75_Sub4(var1.getShort((byte)93), var1.getShort((byte)55), var1.getShort((byte)81), var1.getShort((byte)95), var1.getTriByte((byte)124), var1.getTriByte((byte)120), var1.getByte((byte)-103));
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "mf.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "mf.C(" + (byte) -110 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 

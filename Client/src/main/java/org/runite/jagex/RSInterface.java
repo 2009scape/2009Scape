@@ -168,7 +168,7 @@ final class RSInterface {
    int anInt318;
 
 
-   final void method854(int var1, int var2, byte var3) {
+   final void method854(int var1, int var2) {
       try {
          if(this.anIntArray249 == null || var1 >= this.anIntArray249.length) {
             int[] var4 = new int[1 + var1];
@@ -187,19 +187,19 @@ final class RSInterface {
          }
 
          this.anIntArray249[var1] = var2;
-         if(var3 != 43) {
+         if((byte) 43 != 43) {
             this.anIntArray211 = (int[])null;
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "be.P(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var6, "be.P(" + var1 + ',' + var2 + ',' + (byte) 43 + ')');
       }
    }
 
-   final boolean method855(int var1) {
+   final boolean method855() {
       try {
          if(this.anIntArray207 == null) {
-            LDIndexedSprite var2 = RSString.method1539(0, true, this.spriteArchiveId, Class12.aClass153_323);
+            LDIndexedSprite var2 = RSString.method1539(0, this.spriteArchiveId, Class12.aClass153_323);
             if(null == var2) {
                return false;
             } else {
@@ -237,7 +237,7 @@ final class RSInterface {
                   }
                }
 
-               if(var1 != -30721) {
+               if(-30721 != -30721) {
                   this.anInt205 = -68;
                }
 
@@ -247,13 +247,13 @@ final class RSInterface {
             return true;
          }
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "be.G(" + var1 + ')');
+         throw Class44.clientError(var7, "be.G(" + -30721 + ')');
       }
    }
 
-   static final RSString method856(boolean var0) {
+   static final RSString method856() {
       try {
-         if(!var0) {
+         if(!true) {
             method869(127, -68);
          }
 
@@ -269,11 +269,11 @@ final class RSInterface {
 
          return RenderAnimationDefinition.method903(new RSString[]{Class30.aClass94_577, var1, Class3_Sub28_Sub7.aClass94_3601, Class72.method1298((byte)9, Class3_Sub20.language), Class151.aClass94_1932, Class72.method1298((byte)9, Class3_Sub26.anInt2554), var2, Class140_Sub3.aClass94_2735}, (byte)-61);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "be.N(" + var0 + ')');
+         throw Class44.clientError(var3, "be.N(" + true + ')');
       }
    }
 
-   final void method857(byte var1, RSString var2, int var3) {
+   final void method857(RSString var2, int var3) {
       try {
          if(null == this.aClass94Array171 || var3 >= this.aClass94Array171.length) {
             RSString[] var4 = new RSString[1 + var3];
@@ -287,9 +287,9 @@ final class RSInterface {
          }
 
          this.aClass94Array171[var3] = var2;
-         int var7 = -124 % ((-10 - var1) / 60);
+         int var7 = -124 % ((-10 - (byte) 112) / 60);
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "be.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var6, "be.B(" + (byte) 112 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
       }
    }
 
@@ -562,17 +562,17 @@ final class RSInterface {
       }
    }
 
-   final Class3_Sub28_Sub16 method859(boolean var1, int var2) {
+   final Class3_Sub28_Sub16 method859(int var2) {
       try {
          GameShell.aBoolean6 = false;
-         if(!var1) {
+         if(!true) {
             return (Class3_Sub28_Sub16)null;
          } else if(var2 >= 0 && var2 < this.anIntArray197.length) {
             int var3 = this.anIntArray197[var2];
             if(var3 == -1) {
                return null;
             } else {
-               Class3_Sub28_Sub16 var4 = (Class3_Sub28_Sub16)Class114.aClass93_1569.get((long)var3, (byte)121);
+               Class3_Sub28_Sub16 var4 = (Class3_Sub28_Sub16)Class114.aClass93_1569.get((long)var3);
                if(var4 == null) {
                   var4 = Class3_Sub28_Sub11.method602(0, var3, (byte)-18, Class12.aClass153_323);
                   if(null == var4) {
@@ -590,7 +590,7 @@ final class RSInterface {
             return null;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "be.I(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "be.I(" + true + ',' + var2 + ')');
       }
    }
 
@@ -647,14 +647,14 @@ final class RSInterface {
       }
    }
 
-   private final int[] method863(RSByteBuffer var1, boolean var2) {
+   private final int[] method863(RSByteBuffer var1) {
       try {
          int var3 = var1.getByte((byte)-125);
          if(var3 == 0) {
             return null;
          } else {
             int[] var4 = new int[var3];
-            if(var2) {
+            if(false) {
                this.anInt312 = 20;
             }
 
@@ -665,7 +665,7 @@ final class RSInterface {
             return var4;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "be.H(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var6, "be.H(" + (var1 != null?"{...}":"null") + ',' + false + ')');
       }
    }
 
@@ -709,9 +709,9 @@ final class RSInterface {
             } else {
                Model var10;
                if(1 == var8) {
-                  var10 = (Model)Class3_Sub15.aClass93_2428.get((long)((var8 << 16) - -var9), (byte)121);
+                  var10 = (Model)Class3_Sub15.aClass93_2428.get((long)((var8 << 16) - -var9));
                   if(var10 == null) {
-                     Model_Sub1 var18 = Model_Sub1.method2015(Class119.aClass153_1628, var9, 0);
+                     Model_Sub1 var18 = Model_Sub1.method2015(Class119.aClass153_1628, var9);
                      if(var18 == null) {
                         GameShell.aBoolean6 = true;
                         return null;
@@ -762,7 +762,7 @@ final class RSInterface {
                            int var15 = this.itemId >>> 16;
                            int var11 = this.itemId & '\uffff';
                            int var12 = this.anInt265;
-                           Model var13 = var7.method1157(var1, var12, var15, var5, var2, var3, var11, -2012759707);
+                           Model var13 = var7.method1157(var1, var12, var15, var5, var2, var3, var11);
                            if(var13 == null) {
                               GameShell.aBoolean6 = true;
                               return null;
@@ -774,7 +774,7 @@ final class RSInterface {
                   } else if(null == var7) {
                      return null;
                   } else {
-                     var10 = var7.method1167(var5, (byte)127, var2, var3, var1);
+                     var10 = var7.method1167(var5, var2, var3, var1);
                      if(null == var10) {
                         GameShell.aBoolean6 = true;
                         return null;
@@ -790,7 +790,7 @@ final class RSInterface {
       }
    }
 
-   final Class3_Sub28_Sub16 method866(byte var1, boolean var2) {
+   final Class3_Sub28_Sub16 method866(boolean var2) {
       try {
          GameShell.aBoolean6 = false;
          int archiveId;
@@ -803,11 +803,11 @@ final class RSInterface {
             return null;
          } else {
             long var4 = ((this.aBoolean178?1L:0L) << 38) + ((!this.aBoolean157?0L:1L) << 35) + (long)archiveId + ((long)this.anInt288 << 36) + ((this.aBoolean199?1L:0L) << 39) + ((long)this.anInt287 << 40);
-            Class3_Sub28_Sub16 var6 = (Class3_Sub28_Sub16)Class114.aClass93_1569.get(var4, (byte)121);
+            Class3_Sub28_Sub16 var6 = (Class3_Sub28_Sub16)Class114.aClass93_1569.get(var4);
             if(var6 == null) {
                Class3_Sub28_Sub16_Sub2 var7;
                if(this.aBoolean157) {
-                  var7 = Class3_Sub28_Sub7.method562(Class12.aClass153_323, 0, archiveId, (byte)39);
+                  var7 = Class3_Sub28_Sub7.method562(Class12.aClass153_323, archiveId);
                } else {
                   var7 = Class40.method1043(0, Class12.aClass153_323, -3178, archiveId);
                }
@@ -815,7 +815,7 @@ final class RSInterface {
                if(null == var7) {
                   GameShell.aBoolean6 = true;
                   return null;
-               } else if(var1 == -113) {
+               } else if((byte) -113 == -113) {
                   if(this.aBoolean178) {
                      var7.method663();
                   }
@@ -861,7 +861,7 @@ final class RSInterface {
             }
          }
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "be.O(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var8, "be.O(" + (byte) -113 + ',' + var2 + ')');
       }
    }
 
@@ -1027,7 +1027,7 @@ final class RSInterface {
          this.aBoolean200 = buffer.getByte((byte)-119) == 1;
          var8 = var1;
          this.aClass94_245 = buffer.getString();
-         if(0 != Class3_Sub28_Sub15.method630((byte)-34, var3)) {
+         if(0 != Class3_Sub28_Sub15.method630(var3)) {
             var8 = buffer.getShort(1);
             this.anInt266 = buffer.getShort(1);
             if(var8 == 65535) {
@@ -1065,25 +1065,25 @@ final class RSInterface {
          this.anObjectArray183 = this.method862(-65536, buffer);
          this.anObjectArray161 = this.method862(-65536, buffer);
          this.anObjectArray221 = this.method862(-65536, buffer);
-         this.anIntArray286 = this.method863(buffer, false);
-         this.anIntArray175 = this.method863(buffer, false);
-         this.anIntArray274 = this.method863(buffer, false);
-         this.anIntArray211 = this.method863(buffer, false);
-         this.anIntArray185 = this.method863(buffer, false);
+         this.anIntArray286 = this.method863(buffer);
+         this.anIntArray175 = this.method863(buffer);
+         this.anIntArray274 = this.method863(buffer);
+         this.anIntArray211 = this.method863(buffer);
+         this.anIntArray185 = this.method863(buffer);
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "be.C(" + var1 + ',' + (buffer != null?"{...}":"null") + ')');
       }
    }
 
-   final Class3_Sub28_Sub17 method868(AbstractIndexedSprite[] var1, int var2) {
+   final Class3_Sub28_Sub17 method868(AbstractIndexedSprite[] var1) {
       try {
          GameShell.aBoolean6 = false;
          if(this.anInt270 == -1) {
             return null;
          } else {
-            Class3_Sub28_Sub17 var3 = (Class3_Sub28_Sub17)Class47.aClass93_743.get((long)this.anInt270, (byte)121);
+            Class3_Sub28_Sub17 var3 = (Class3_Sub28_Sub17)Class47.aClass93_743.get((long)this.anInt270);
             if(null == var3) {
-               var3 = Class73.method1300(var2, this.anInt270, (byte)127, Class12.aClass153_323, Class97.aClass153_1378);
+               var3 = Class73.method1300(0, this.anInt270, (byte)127, Class12.aClass153_323, Class97.aClass153_1378);
                if(null == var3) {
                   GameShell.aBoolean6 = true;
                } else {
@@ -1097,13 +1097,13 @@ final class RSInterface {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "be.A(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "be.A(" + (var1 != null?"{...}":"null") + ',' + 0 + ')');
       }
    }
 
    static final int method869(int var0, int var1) {
       try {
-         return var1 != 16711935 ?(var0 < 97?-63:Class56.method1186(0, var1)):-1;
+         return var1 != 16711935 ?(var0 < 97?-63:Class56.method1186(var1)):-1;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "be.D(" + var0 + ',' + var1 + ')');
       }

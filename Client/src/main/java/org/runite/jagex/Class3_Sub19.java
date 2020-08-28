@@ -11,15 +11,15 @@ final class Class3_Sub19 extends Class3 {
    static int anInt2479;
 
 
-   static final Class75_Sub2 method384(RSByteBuffer var0, byte var1) {
+   static final Class75_Sub2 method384(RSByteBuffer var0) {
       try {
-         if(var1 <= 40) {
+         if((byte) 80 <= 40) {
             aClass153_2474 = (CacheIndex)null;
          }
 
          return new Class75_Sub2(var0.getShort((byte)38), var0.getShort((byte)51), var0.getShort((byte)66), var0.getShort((byte)68), var0.getTriByte((byte)86), var0.getTriByte((byte)86), var0.getByte((byte)-85));
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "kl.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "kl.C(" + (var0 != null?"{...}":"null") + ',' + (byte) 80 + ')');
       }
    }
 
@@ -124,21 +124,21 @@ final class Class3_Sub19 extends Class3 {
 
          for(var6 = 1; var6 < 103; ++var6) {
             for(var7 = 1; 103 > var7; ++var7) {
-               if(0 == (Class9.aByteArrayArrayArray113[var1][var7 + var2][var6 - -var3] & 24) && !RSString.method1529(var3, var7, var18, var6, var5, var2, var1, true)) {
+               if(0 == (Class9.aByteArrayArrayArray113[var1][var7 + var2][var6 - -var3] & 24) && !RSString.method1529(var3, var7, var18, var6, var5, var2, var1)) {
                   if(HDToolKit.highDetail) {
                      Class74.anIntArray1100 = null;
                   } else {
-                     Class164_Sub1.aClass158_3009.method2182(0);
+                     Class164_Sub1.aClass158_3009.method2182();
                   }
 
                   return false;
                }
 
-               if(var1 < 3 && (Class9.aByteArrayArrayArray113[1 + var1][var7 + var2][var6 + var3] & 8) != 0 && !RSString.method1529(var3, var7, var18, var6, var5, var2, 1 + var1, true)) {
+               if(var1 < 3 && (Class9.aByteArrayArrayArray113[1 + var1][var7 + var2][var6 + var3] & 8) != 0 && !RSString.method1529(var3, var7, var18, var6, var5, var2, 1 + var1)) {
                   if(HDToolKit.highDetail) {
                      Class74.anIntArray1100 = null;
                   } else {
-                     Class164_Sub1.aClass158_3009.method2182(0);
+                     Class164_Sub1.aClass158_3009.method2182();
                   }
 
                   return false;
@@ -164,7 +164,7 @@ final class Class3_Sub19 extends Class3 {
          if(HDToolKit.highDetail) {
             Class74.anIntArray1100 = null;
          } else {
-            Class164_Sub1.aClass158_3009.method2182(0);
+            Class164_Sub1.aClass158_3009.method2182();
          }
 
          Class27.aClass3_Sub28_Sub16_Sub2_518 = null;
@@ -174,14 +174,14 @@ final class Class3_Sub19 extends Class3 {
       }
    }
 
-   static final void method386(int var0, int var1) {
+   static final void method386(int var1) {
       try {
-         Class3_Sub31.aClass93_2604.method1522(-128, var0);
+         Class3_Sub31.aClass93_2604.method1522(-128, 5);
          if(var1 <= -109) {
-            Class27.aClass93_511.method1522(-126, var0);
+            Class27.aClass93_511.method1522(-126, 5);
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "kl.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "kl.D(" + 5 + ',' + var1 + ')');
       }
    }
 

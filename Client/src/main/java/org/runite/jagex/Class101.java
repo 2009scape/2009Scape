@@ -74,16 +74,16 @@ final class Class101 {
       }
    }
 
-   static final void method1609(int var0) {
+   static final void method1609() {
       try {
          Class2.anInterface5Array70 = null;
-         if(var0 <= 49) {
+         if(90 <= 49) {
             method1608((byte)96);
          }
 
          Class88.method1455();
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "nj.B(" + var0 + ')');
+         throw Class44.clientError(var2, "nj.B(" + 90 + ')');
       }
    }
 

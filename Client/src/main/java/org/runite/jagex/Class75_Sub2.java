@@ -16,17 +16,17 @@ final class Class75_Sub2 extends Class75 {
    static Class33 aClass33_2648;
 
 
-   final void method1341(int var1, int var2, int var3) {
+   final void method1341(int var2, int var3) {
       try {
          int var4 = this.anInt2646 * var2 >> 12;
          int var5 = var2 * this.anInt2636 >> 12;
          int var6 = this.anInt2644 * var3 >> 12;
          int var7 = this.anInt2647 * var3 >> 12;
-         if(var1 == 2) {
-            Class95.method1584(this.anInt1101, var7, var4, var6, -26571, var5);
+         if(2 == 2) {
+            Class95.method1584(this.anInt1101, var7, var4, var6, var5);
          }
       } catch (RuntimeException var8) {
-         throw Class44.clientError(var8, "kc.A(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var8, "kc.A(" + 2 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -80,7 +80,7 @@ final class Class75_Sub2 extends Class75 {
          int var7 = this.anInt2647 * var1 >> 12;
          int var6 = this.anInt2644 * var1 >> 12;
          int var5 = this.anInt2636 * var2 >> 12;
-         Class3_Sub13_Sub12.method223(true, this.anInt1106, var4, var6, var7, this.anInt1104, this.anInt1101, var5);
+         Class3_Sub13_Sub12.method223(this.anInt1106, var4, var6, var7, this.anInt1104, this.anInt1101, var5);
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "kc.D(" + var1 + ',' + var2 + ',' + var3 + ')');
       }

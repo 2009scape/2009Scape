@@ -278,18 +278,18 @@ final class Class116 {
       }
 
       for(int var3 = 0; var3 < 10; ++var3) {
-         int var4 = var1.getSmart(true);
+         int var4 = var1.getSmart();
          if(var4 == 0) {
             break;
          }
 
          this.anIntArray1596[var3] = var4;
          this.anIntArray1605[var3] = var1.getSmart(-21208);
-         this.anIntArray1597[var3] = var1.getSmart(true);
+         this.anIntArray1597[var3] = var1.getSmart();
       }
 
-      this.anInt1590 = var1.getSmart(true);
-      this.anInt1604 = var1.getSmart(true);
+      this.anInt1590 = var1.getSmart();
+      this.anInt1604 = var1.getSmart();
       this.anInt1586 = var1.getShort(1);
       this.anInt1593 = var1.getShort(1);
       this.aClass103_1606 = new Class103();

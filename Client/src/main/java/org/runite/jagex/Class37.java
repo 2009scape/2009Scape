@@ -93,9 +93,9 @@ final class Class37 {
             var2.putByte((byte)-7, this.aByteArray644[var3]);
             var2.putByte((byte)-126, this.aByteArray650[var3]);
             var2.putByte((byte)-13, 255);
-            var2.method801(881, (float)this.anIntArray645[var3]);
-            var2.method801(881, (float)this.anIntArray649[var3]);
-            var2.method801(881, (float)this.anIntArray648[var3]);
+            var2.method801((float)this.anIntArray645[var3]);
+            var2.method801((float)this.anIntArray649[var3]);
+            var2.method801((float)this.anIntArray648[var3]);
          }
 
          for(var3 = 0; var3 < this.anInt655; ++var3) {

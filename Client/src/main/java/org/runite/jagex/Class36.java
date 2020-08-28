@@ -15,10 +15,10 @@ final class Class36 {
    static int anInt641;
 
 
-   static final Class129 method1012(byte var0) {
+   static final Class129 method1012() {
       try {
          try {
-            if(var0 != -31) {
+            if((byte) -31 != -31) {
                aClass3_Sub28_Sub16_637 = (Class3_Sub28_Sub16)null;
             }
 
@@ -27,7 +27,7 @@ final class Class36 {
             return new Class129_Sub1();
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "fi.F(" + var0 + ')');
+         throw Class44.clientError(var3, "fi.F(" + (byte) -31 + ')');
       }
    }
 
@@ -38,7 +38,7 @@ final class Class36 {
             return (RSString)null;
          } else {
             for(int var3 = var2.length(-123) + -3; var3 > 0; var3 -= 3) {
-               var2 = RenderAnimationDefinition.method903(new RSString[]{var2.method1557(var3, 0, 0), Class3_Sub13_Sub22.aClass94_3268, var2.method1556(var3, (byte)-74)}, (byte)-62);
+               var2 = RenderAnimationDefinition.method903(new RSString[]{var2.method1557(var3, 0, 0), Class3_Sub13_Sub22.aClass94_3268, var2.method1556(var3)}, (byte)-62);
             }
 
             return var2.length(-50) > 9?RenderAnimationDefinition.method903(new RSString[]{ColorCore.MillionStackColor, var2.method1557(-8 + var2.length(-50), 0, 0), TextCore.MillionM, Class72.LEFT_PARENTHESES, var2, Class66.aClass94_995}, (byte)-113):(6 < var2.length(-63)?RenderAnimationDefinition.method903(new RSString[]{ColorCore.ThousandStackColor, var2.method1557(-4 + var2.length(-65), 0, 0), TextCore.ThousandK, Class72.LEFT_PARENTHESES, var2, Class66.aClass94_995}, (byte)-112):RenderAnimationDefinition.method903(new RSString[]{ColorCore.DefaultStackColor, var2, Class3_Sub29.aClass94_2584}, (byte)-82));
@@ -48,9 +48,9 @@ final class Class36 {
       }
    }
 
-   static final void method1014(int var0, int var1, int var2) {
+   static final void method1014(int var1, int var2) {
       try {
-         int var3 = 120 / ((15 - var0) / 41);
+         int var3 = 120 / ((15 - -120) / 41);
 
          for(int var4 = 0; var4 < Class54.anInt869; ++var4) {
             Class168 var5 = Class3_Sub13_Sub37.method350((byte)120, var4);
@@ -99,11 +99,11 @@ final class Class36 {
          }
 
       } catch (RuntimeException var11) {
-         throw Class44.clientError(var11, "fi.B(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var11, "fi.B(" + -120 + ',' + var1 + ',' + var2 + ')');
       }
    }
 
-   final int method1015(int var1, int var2, byte[] var3, byte[] var4, int var5, int var6) {
+   final int method1015(int var1, byte[] var3, byte[] var4, int var5, int var6) {
       try {
          var1 += var5;
          int var7 = 0;
@@ -146,13 +146,13 @@ final class Class36 {
             }
          }
 
-         if(var2 >= -73) {
+         if(-81 >= -73) {
             this.anIntArray633 = (int[])null;
          }
 
          return -var6 + (var8 + 7 >> 3);
       } catch (RuntimeException var15) {
-         throw Class44.clientError(var15, "fi.A(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ')');
+         throw Class44.clientError(var15, "fi.A(" + var1 + ',' + -81 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ')');
       }
    }
 

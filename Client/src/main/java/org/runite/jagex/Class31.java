@@ -64,7 +64,7 @@ final class Class31 {
       int var1 = 0;
 
       while(true) {
-         Class3_Sub18 var2 = (Class3_Sub18)aClass61_581.method1220((byte)-3);
+         Class3_Sub18 var2 = (Class3_Sub18)aClass61_581.method1220();
          if(var2 == null) {
             if(var1 > 0) {
                var0.glDeleteBuffersARB(var1, anIntArray589, 0);
@@ -72,10 +72,10 @@ final class Class31 {
             }
 
             while(true) {
-               var2 = (Class3_Sub18)aClass61_586.method1220((byte)-3);
+               var2 = (Class3_Sub18)aClass61_586.method1220();
                if(var2 == null) {
                   while(true) {
-                     var2 = (Class3_Sub18)aClass61_587.method1220((byte)-3);
+                     var2 = (Class3_Sub18)aClass61_587.method1220();
                      if(var2 == null) {
                         if(var1 > 0) {
                            var0.glDeleteTextures(var1, anIntArray589, 0);
@@ -83,7 +83,7 @@ final class Class31 {
                         }
 
                         while(true) {
-                           var2 = (Class3_Sub18)aClass61_588.method1220((byte)-3);
+                           var2 = (Class3_Sub18)aClass61_588.method1220();
                            if(var2 == null) {
                               if(anInt585 + memory2D + anInt580 > 100663296 && Class5.method830((byte)-55) > aLong583 + 60000L) {
                                  System.gc();

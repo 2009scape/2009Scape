@@ -54,19 +54,19 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
       }
    }
 
-   static final boolean handleWorldListUpdate(int var0, byte[] buf) {
+   static final boolean handleWorldListUpdate(byte[] buf) {
       try {
-         if(var0 == 4) {
+         if(4 == 4) {
             RSByteBuffer buffer = new RSByteBuffer(buf);
             int opcode = buffer.getByte((byte)-67);
             //System.out.println(opcode);
             if(1 == opcode) {
                boolean updated = buffer.getByte((byte) -70) == 1;
                if(updated) {
-                  Class53.parseWorldList(buffer, var0 ^ -84);
+                  Class53.parseWorldList(buffer, 4 ^ -84);
                }
 
-               Class3_Sub13_Sub10.method216(buffer, -14991);
+               Class3_Sub13_Sub10.method216(buffer);
                return true;
             } else {
                return false;
@@ -75,7 +75,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
             return false;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "nh.AA(" + var0 + ',' + (buf != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "nh.AA(" + 4 + ',' + (buf != null?"{...}":"null") + ')');
       }
    }
 
@@ -86,7 +86,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
             if(this.anInt3278 < 0) {
                return false;
             } else {
-               Class3_Sub28_Sub16_Sub2 var3 = Class126.anInt1668 < 0 ?RSString.method1537(Class104.aClass153_2172, this.anInt3278, false):Class40.method1043(this.anInt3278, Class104.aClass153_2172, -3178, Class126.anInt1668);
+               Class3_Sub28_Sub16_Sub2 var3 = Class126.anInt1668 < 0 ?RSString.method1537(Class104.aClass153_2172, this.anInt3278):Class40.method1043(this.anInt3278, Class104.aClass153_2172, -3178, Class126.anInt1668);
                var3.method665();
                this.anInt3283 = var3.anInt3696;
                this.anInt3280 = var3.anInt3707;
@@ -113,10 +113,10 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
       super(0, false);
    }
 
-   static final void method280(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12) {
+   static final void method280(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var11, int var12) {
       try {
          Class3_Sub5 var13 = new Class3_Sub5();
-         if(var10 == -745213428) {
+         if(-745213428 == -745213428) {
             var13.anInt2284 = var6;
             var13.anInt2283 = var3;
             var13.anInt2266 = var1;
@@ -132,7 +132,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
             Class3_Sub18.aClass61_2468.method1215(true, var13);
          }
       } catch (RuntimeException var14) {
-         throw Class44.clientError(var14, "nh.V(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ')');
+         throw Class44.clientError(var14, "nh.V(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + -745213428 + ',' + var11 + ',' + var12 + ')');
       }
    }
 
@@ -189,7 +189,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
       }
    }
 
-   static final void method281(byte var0, int var1, int var2) {
+   static final void method281(int var1, int var2) {
       try {
          Class57.anIntArray898[var2] = var1;
          Class3_Sub7 var3 = (Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1780((long)var2, 0);
@@ -201,7 +201,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "nh.W(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "nh.W(" + (byte) 99 + ',' + var1 + ',' + var2 + ')');
       }
    }
 

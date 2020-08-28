@@ -12,9 +12,9 @@ class Class38 {
 
    static final ItemDefinition getItemDefinition(int itemId, byte var1) {
       try {
-         ItemDefinition var2 = (ItemDefinition)Class3_Sub28_Sub4.aClass93_3572.get((long)itemId, (byte)121);
+         ItemDefinition var2 = (ItemDefinition)Class3_Sub28_Sub4.aClass93_3572.get((long)itemId);
          if(var2 == null) {
-            byte[] var3 = Class97.aClass153_1370.getFile(Class140_Sub2.method1951(itemId, (byte)-115), (byte)-122, Class145.method2075(itemId, (byte)102));
+            byte[] var3 = Class97.aClass153_1370.getFile(Class140_Sub2.method1951(itemId), Class145.method2075(itemId, (byte)102));
             if(var1 <= 68) {
                method1027(-113, (byte)110);
             }
@@ -25,13 +25,13 @@ class Class38 {
                var2.parseDefinitions(1, new RSByteBuffer(var3));
             }
 
-            var2.method1112(5401);
+            var2.method1112();
             if(var2.anInt791 != -1) {
-               var2.method1118(getItemDefinition(var2.anInt789, (byte)70), getItemDefinition(var2.anInt791, (byte)73), false);
+               var2.method1118(getItemDefinition(var2.anInt789, (byte)70), getItemDefinition(var2.anInt791, (byte)73));
             }
 
             if(var2.anInt762 != -1) {
-               var2.method1109((byte)69, getItemDefinition(var2.anInt795, (byte)111), getItemDefinition(var2.anInt762, (byte)86));
+               var2.method1109(getItemDefinition(var2.anInt795, (byte)111), getItemDefinition(var2.anInt762, (byte)86));
             }
 
             if(!Class139.aBoolean1827 && var2.membersItem) {
@@ -80,11 +80,11 @@ class Class38 {
       }
    }
 
-   static final int method1026(byte[] var0, int var1, boolean var2) {
+   static final int method1026(byte[] var0, int var1) {
       try {
-         return var2?-3:Class99.method1599(0, var1, var0, (byte)-35);
+         return false ?-3:Class99.method1599(0, var1, var0, (byte)-35);
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "fk.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "fk.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + false + ')');
       }
    }
 
@@ -97,7 +97,7 @@ class Class38 {
       }
    }
 
-   static final void method1028(int var0) {
+   static final void method1028() {
       try {
          for(int var1 = -1; Class159.localPlayerCount > var1; ++var1) {
             int var2;
@@ -109,12 +109,12 @@ class Class38 {
 
             Player var3 = Class3_Sub13_Sub22.players[var2];
             if(var3 != null) {
-               OutputStream_Sub1.method68(var3.getSize((byte)114), 2279, var3);
+               OutputStream_Sub1.method68(var3.getSize(), var3);
             }
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "fk.G(" + var0 + ')');
+         throw Class44.clientError(var4, "fk.G(" + -102 + ')');
       }
    }
 

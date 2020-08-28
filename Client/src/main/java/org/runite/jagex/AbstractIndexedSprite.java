@@ -13,7 +13,7 @@ abstract class AbstractIndexedSprite {
    int anInt1470;
 
 
-   static final void method1662(Class3 var0, Class3 var1, int var2) {
+   static final void method1662(Class3 var0, Class3 var1) {
       try {
          if(null != var0.aClass3_76) {
             var0.method86(-1024);
@@ -21,12 +21,12 @@ abstract class AbstractIndexedSprite {
 
          var0.aClass3_74 = var1;
          var0.aClass3_76 = var1.aClass3_76;
-         if(var2 == -16) {
+         if(-16 == -16) {
             var0.aClass3_76.aClass3_74 = var0;
             var0.aClass3_74.aClass3_76 = var0;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ok.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ok.C(" + (var0 != null?"{...}":"null") + ',' + (var1 != null?"{...}":"null") + ',' + -16 + ')');
       }
    }
 
@@ -41,20 +41,20 @@ abstract class AbstractIndexedSprite {
       }
    }
 
-   static final NodeList method1664(int var0, int var1, byte var2) {
+   static final NodeList method1664(int var0, int var1) {
       try {
          NodeList var3 = new NodeList();
 
          for(Class3_Sub28_Sub3 var4 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1222(); var4 != null; var4 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1221()) {
-            if(var4.aBoolean3553 && var4.method537(var1, (byte)97, var0)) {
+            if(var4.aBoolean3553 && var4.method537(var1, var0)) {
                var3.method879(var4, (byte)-127);
             }
          }
 
-         int var6 = 30 % ((64 - var2) / 54);
+         int var6 = 30 % ((64 - (byte) -118) / 54);
          return var3;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ok.B(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var5, "ok.B(" + var0 + ',' + var1 + ',' + (byte) -118 + ')');
       }
    }
 

@@ -21,14 +21,14 @@ final class Class75_Sub1 extends Class75 {
       }
    }
 
-   final void method1341(int var1, int var2, int var3) {
+   final void method1341(int var2, int var3) {
       try {
-         if(var1 != 2) {
+         if(2 != 2) {
             method1342((int[])null, (int[])null, (Player)null, (byte)-68, (int[])null);
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ci.A(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ci.A(" + 2 + ',' + var2 + ',' + var3 + ')');
       }
    }
 
@@ -49,7 +49,7 @@ final class Class75_Sub1 extends Class75 {
                   if(var6 == -1) {
                      var2.aClass145Array2809[var9] = null;
                   } else {
-                     AnimationDefinition var10 = Client.getAnimationDefinition(var6, (byte)-20);
+                     AnimationDefinition var10 = Client.getAnimationDefinition(var6);
                      int var11 = var10.anInt1845;
                      Class145 var12 = var2.aClass145Array2809[var9];
                      if(var12 != null) {
@@ -68,7 +68,7 @@ final class Class75_Sub1 extends Class75 {
                                  var12.anInt1894 = 0;
                               }
                            }
-                        } else if(var10.anInt1857 >= Client.getAnimationDefinition(var12.animationId, (byte)-20).anInt1857) {
+                        } else if(var10.anInt1857 >= Client.getAnimationDefinition(var12.animationId).anInt1857) {
                            var12 = var2.aClass145Array2809[var9] = null;
                         }
                      }

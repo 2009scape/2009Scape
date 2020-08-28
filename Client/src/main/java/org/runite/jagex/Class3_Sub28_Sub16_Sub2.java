@@ -738,24 +738,24 @@ class Class3_Sub28_Sub16_Sub2 extends Class3_Sub28_Sub16 {
 
    }
 
-   void method660(int var1, int var2, int var3, int var4, int var5, int var6, double var7, int var9) {
+   void method660(int var1, int var2, double var7) {
       try {
-         int var10 = -var3 / 2;
-         int var11 = -var4 / 2;
+         int var10 = -20 / 2;
+         int var11 = -20 / 2;
          int var12 = (int)(Math.sin(var7) * 65536.0D);
          int var13 = (int)(Math.cos(var7) * 65536.0D);
-         var12 = var12 * var9 >> 8;
-         var13 = var13 * var9 >> 8;
-         int var14 = (var5 << 16) + var11 * var12 + var10 * var13;
-         int var15 = (var6 << 16) + (var11 * var13 - var10 * var12);
+         var12 = var12 * 256 >> 8;
+         var13 = var13 * 256 >> 8;
+         int var14 = (15 << 16) + var11 * var12 + var10 * var13;
+         int var15 = (15 << 16) + (var11 * var13 - var10 * var12);
          int var16 = var1 + var2 * Class74.anInt1092;
 
-         for(var2 = 0; var2 < var4; ++var2) {
+         for(var2 = 0; var2 < 20; ++var2) {
             int var17 = var16;
             int var18 = var14;
             int var19 = var15;
 
-            for(var1 = -var3; var1 < 0; ++var1) {
+            for(var1 = -20; var1 < 0; ++var1) {
                int var20 = this.anIntArray4081[(var18 >> 16) + (var19 >> 16) * this.anInt3707];
                if(var20 == 0) {
                   ++var17;
@@ -1135,14 +1135,14 @@ class Class3_Sub28_Sub16_Sub2 extends Class3_Sub28_Sub16 {
       this.anInt3701 = this.anInt3698 = 0;
    }
 
-   void method667(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int[] var9, int[] var10) {
+   void method667(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int[] var9, int[] var10) {
       try {
          int var11 = -var3 / 2;
          int var12 = -var4 / 2;
          int var13 = (int)(Math.sin((double)var7 / 326.11D) * 65536.0D);
          int var14 = (int)(Math.cos((double)var7 / 326.11D) * 65536.0D);
-         var13 = var13 * var8 >> 8;
-         var14 = var14 * var8 >> 8;
+         var13 = var13 * 256 >> 8;
+         var14 = var14 * 256 >> 8;
          int var15 = (var5 << 16) + var12 * var13 + var11 * var14;
          int var16 = (var6 << 16) + (var12 * var14 - var11 * var13);
          int var17 = var1 + var2 * Class74.anInt1092;

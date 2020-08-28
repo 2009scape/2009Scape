@@ -94,12 +94,12 @@ abstract class Class140_Sub4 extends GameObject {
    int anInt2842 = -1;
 
 
-   final RenderAnimationDefinition method1965(boolean var1) {
+   final RenderAnimationDefinition method1965() {
       try {
-         int var2 = this.getRenderAnimationId(-1);
-         return var1?(RenderAnimationDefinition)null:(var2 == -1 ?PacketParser.aClass16_84:Class3_Sub10.getRenderAnimationDefinition(false, var2));
+         int var2 = this.getRenderAnimationId();
+         return false ?(RenderAnimationDefinition)null:(var2 == -1 ?PacketParser.aClass16_84:Class3_Sub10.getRenderAnimationDefinition(var2));
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "fe.D(" + var1 + ')');
+         throw Class44.clientError(var3, "fe.D(" + false + ')');
       }
    }
 
@@ -117,7 +117,7 @@ abstract class Class140_Sub4 extends GameObject {
 
    final void method1967(int var1, int var2, int var3, int var4, boolean var5) {
       try {
-         if(this.anInt2771 != -1 && Client.getAnimationDefinition(this.anInt2771, (byte) -20).anInt1850 == 1) {
+         if(this.anInt2771 != -1 && Client.getAnimationDefinition(this.anInt2771).anInt1850 == 1) {
             this.anInt2771 = -1;
          }
 
@@ -154,7 +154,7 @@ abstract class Class140_Sub4 extends GameObject {
          }
 
          if(HDToolKit.highDetail && Class102.player == this) {
-            Class3_Sub13_Sub14.method236((byte)64);
+            Class3_Sub13_Sub14.method236();
          }
 
       } catch (RuntimeException var9) {
@@ -171,7 +171,7 @@ abstract class Class140_Sub4 extends GameObject {
             ++var5;
          }
 
-         if(this.anInt2771 != -1 && 1 == Client.getAnimationDefinition(this.anInt2771, (byte)-20).anInt1850) {
+         if(this.anInt2771 != -1 && 1 == Client.getAnimationDefinition(this.anInt2771).anInt1850) {
             this.anInt2771 = -1;
          }
 
@@ -235,7 +235,7 @@ abstract class Class140_Sub4 extends GameObject {
          Class3_Sub28_Sub9.anInt3623 = 0;
          Class3_Sub13_Sub16.anInt3198 = 0;
          Class3_Sub13_Sub9.anInt3111 = 0;
-         RenderAnimationDefinition var4 = this.method1965(false);
+         RenderAnimationDefinition var4 = this.method1965();
          int var5 = var4.anInt395;
          int var6 = var4.anInt381;
          if(var5 != 0 && var6 != 0) {
@@ -315,7 +315,7 @@ abstract class Class140_Sub4 extends GameObject {
             this.setSize(1, -96);
          }
 
-         RenderAnimationDefinition var3 = this.method1965(false);
+         RenderAnimationDefinition var3 = this.method1965();
          if(0 != var3.anInt400 || 0 != var3.anInt371) {
             int var4 = 0;
             int var5 = 0;
@@ -532,7 +532,7 @@ abstract class Class140_Sub4 extends GameObject {
       }
    }
 
-   abstract int getRenderAnimationId(int var1);
+   abstract int getRenderAnimationId();
 
    final void method1973(int var1) {
       try {
@@ -581,11 +581,11 @@ abstract class Class140_Sub4 extends GameObject {
       }
    }
 
-   int getSize(byte var1) {
+   int getSize() {
       try {
-         return var1 != 114?-24:this.size;
+         return (byte) 114 != 114?-24:this.size;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "fe.H(" + var1 + ')');
+         throw Class44.clientError(var3, "fe.H(" + (byte) 114 + ')');
       }
    }
 

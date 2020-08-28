@@ -9,10 +9,10 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
    static int[] anIntArray3218 = new int[]{1, 4};
 
 
-   static final void method254(boolean var0, Class3_Sub31 var1, boolean var2) {
+   static final void method254(boolean var0, Class3_Sub31 var1) {
       try {
          int var4 = (int)var1.aLong71;
-         if(var2) {
+         if(false) {
             method258(25);
          }
 
@@ -33,19 +33,19 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
          int var7;
          for(var7 = 0; var6 > var7; ++var7) {
             if(Class2.method73(Class3_Sub13_Sub7.aShortArray3095[var7], 121)) {
-               Class3_Sub25.method509(1, var7);
+               Class3_Sub25.method509(var7);
             }
          }
 
          if(Class3_Sub13_Sub34.anInt3415 == 1) {
             Class38_Sub1.aBoolean2615 = false;
-            Class75.method1340(AbstractIndexedSprite.anInt1462, Class3_Sub28_Sub3.anInt3552, (byte)-40, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537);
+            Class75.method1340(AbstractIndexedSprite.anInt1462, Class3_Sub28_Sub3.anInt3552, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537);
          } else {
-            Class75.method1340(AbstractIndexedSprite.anInt1462, Class3_Sub28_Sub3.anInt3552, (byte)-40, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537);
+            Class75.method1340(AbstractIndexedSprite.anInt1462, Class3_Sub28_Sub3.anInt3552, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537);
             var7 = Class168.aClass3_Sub28_Sub17_2096.method682(TextCore.HasChooseOptions);
 
             for(int var8 = 0; Class3_Sub13_Sub34.anInt3415 > var8; ++var8) {
-               int var9 = Class168.aClass3_Sub28_Sub17_2096.method682(RSByteBuffer.method802(var8, true));
+               int var9 = Class168.aClass3_Sub28_Sub17_2096.method682(RSByteBuffer.method802(var8));
                if(var7 < var9) {
                   var7 = var9;
                }
@@ -60,14 +60,14 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var10) {
-         throw Class44.clientError(var10, "ke.O(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var10, "ke.O(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + false + ')');
       }
    }
 
    static final void method255(int var0, int var1, int var2) {
       try {
          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(4, var2, var0);
-         var3.g((byte)33);
+         var3.g();
          var3.anInt3598 = var1;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ke.Q(" + var0 + ',' + var1 + ',' + var2 + ')');
@@ -115,7 +115,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
    final int[] method154(int var1, byte var2) {
       try {
          int var3 = -89 / ((30 - var2) / 36);
-         int[] var4 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var4 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int[] var5 = this.method152(1, var1, 32755);
             int[] var6 = this.method152(2, var1, 32755);
@@ -160,7 +160,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
    static final void method256(int var0, int var1, int var2, byte var3, int var4) {
       try {
          Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(4, 4, var2);
-         var5.g((byte)33);
+         var5.g();
          var5.anInt3597 = var4;
          var5.anInt3596 = var0;
          if(var3 >= -108) {
@@ -173,10 +173,10 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
       }
    }
 
-   static final void method257(byte var0) {
+   static final void method257() {
       try {
          int var1 = 0;
-         if(var0 <= 122) {
+         if((byte) 125 <= 122) {
             method259((Class126)null, 69, 54, -87, 72, -85, 88, 37, true);
          }
 
@@ -193,7 +193,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ke.C(" + var0 + ')');
+         throw Class44.clientError(var4, "ke.C(" + (byte) 125 + ')');
       }
    }
 

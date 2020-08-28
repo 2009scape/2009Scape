@@ -18,7 +18,7 @@ final class Class100 {
    int anInt1417;
    int anInt1418;
 
-   private final void method1600(int var1, byte var2) {
+   private final void method1600(int var1) {
       try {
          double var3 = (double)(255 & var1 >> 16) / 256.0D;
          double var5 = (double)(255 & var1 >> 8) / 256.0D;
@@ -33,7 +33,7 @@ final class Class100 {
          }
 
          double var11 = var3;
-         int var13 = 77 % ((var2 - 21) / 57);
+         int var13 = 77 % (((byte) 81 - 21) / 57);
          double var14 = 0.0D;
          if(var5 > var3) {
             var11 = var5;
@@ -98,35 +98,35 @@ final class Class100 {
          }
 
       } catch (RuntimeException var20) {
-         throw Class44.clientError(var20, "ni.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var20, "ni.D(" + var1 + ',' + (byte) 81 + ')');
       }
    }
 
-   final void method1601(int var1, RSByteBuffer var2, int var3) {
+   final void method1601(int var1, RSByteBuffer var2) {
       try {
          while(true) {
             int var4 = var2.getByte((byte)-43);
             if(var4 == 0) {
-               if(var3 != 255) {
+               if(255 != 255) {
                   anInt1407 = -8;
                }
 
                return;
             }
 
-            this.method1604((byte)-52, var4, var2, var1);
+            this.method1604(var4, var2, var1);
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ni.F(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "ni.F(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + 255 + ')');
       }
    }
 
-   static final int method1602(int var0, RSString var1) {
+   static final int method1602(RSString var1) {
       try {
-         if(Class119.aClass131_1624 == null || var1.length(var0 ^ -107) == 0) {
+         if(Class119.aClass131_1624 == null || var1.length(0 ^ -107) == 0) {
             return -1;
          } else {
-            for(int var2 = var0; var2 < Class119.aClass131_1624.anInt1720; ++var2) {
+            for(int var2 = 0; var2 < Class119.aClass131_1624.anInt1720; ++var2) {
                if(Class119.aClass131_1624.aClass94Array1721[var2].method1560(Class3_Sub13_Sub16.aClass94_3192, true, Class3_Sub28_Sub10_Sub2.aClass94_4066).method1562((byte)-32, var1)) {
                   return var2;
                }
@@ -135,7 +135,7 @@ final class Class100 {
             return -1;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ni.G(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "ni.G(" + 0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -161,11 +161,11 @@ final class Class100 {
       }
    }
 
-   private final void method1604(byte var1, int var2, RSByteBuffer var3, int var4) {
+   private final void method1604(int var2, RSByteBuffer var3, int var4) {
       try {
          if(var2 == 1) {
             this.anInt1404 = var3.getTriByte((byte)93);
-            this.method1600(this.anInt1404, (byte)81);
+            this.method1600(this.anInt1404);
          } else {
             if(var2 == 2) {
                this.anInt1412 = var3.getShort(1);
@@ -181,25 +181,25 @@ final class Class100 {
             }
          }
 
-         if(var1 != -52) {
+         if((byte) -52 != -52) {
             anInt1407 = -121;
          }
 
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "ni.E(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ni.E(" + (byte) -52 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + var4 + ')');
       }
    }
 
-   static final void method1605(int var0, RSString var1, int var2) {
+   static final void method1605(RSString var1, int var2) {
       try {
          ++Class19.anInt421;
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(188);
-         Class3_Sub13_Sub1.outgoingBuffer.putByteA(var2, var0 + -13326);
-         if(var0 == 255) {
+         Class3_Sub13_Sub1.outgoingBuffer.putByteA(var2, 255 + -13326);
+         if(255 == 255) {
             Class3_Sub13_Sub1.outgoingBuffer.putLong(var1.toLong(-126), -2037491440);
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ni.B(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ni.B(" + 255 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');
       }
    }
 

@@ -12,31 +12,31 @@ final class Class85 {
    static int anInt1174 = 99;
 
 
-   static final int method1423(boolean var0, RSByteBuffer var1, RSString var2) {
+   static final int method1423(RSByteBuffer var1, RSString var2) {
       try {
-         if(var0) {
+         if(false) {
             method1426(17);
          }
 
          int var3 = var1.index;
          byte[] var4 = var2.method1568(0);
          var1.method768(-32769, var4.length);
-         var1.index += Class3_Sub13_Sub9.aClass36_3112.method1015(var4.length, -81, var1.buffer, var4, 0, var1.index);
+         var1.index += Class3_Sub13_Sub9.aClass36_3112.method1015(var4.length, var1.buffer, var4, 0, var1.index);
          return var1.index + -var3;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "lg.A(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "lg.A(" + false + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
-   static final AbstractIndexedSprite[] method1424(CacheIndex var0, byte var1, int var2, int var3) {
+   static final AbstractIndexedSprite[] method1424(CacheIndex var0, int var3) {
 	      try {
-	         if(var1 != -12) {
+	         if((byte) -12 != -12) {
 	            anInt1174 = 37;
 	         }
 
-	         return Class75_Sub4.method1351(var0, var2, var3, -30901)?Class3_Sub13_Sub36.method343(1854847236):null;
+	         return Class75_Sub4.method1351(var0, 0, var3, -30901)?Class3_Sub13_Sub36.method343():null;
 	      } catch (RuntimeException var5) {
-	         throw Class44.clientError(var5, "lg.C(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var2 + ',' + var3 + ')');
+	         throw Class44.clientError(var5, "lg.C(" + (var0 != null?"{...}":"null") + ',' + (byte) -12 + ',' + 0 + ',' + var3 + ')');
 	      }
 	   }
 

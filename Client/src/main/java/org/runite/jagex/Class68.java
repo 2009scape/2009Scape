@@ -150,10 +150,10 @@ final class Class68 {
       }
    }
 
-   static final void method1267(int var0, int var1, int var2) {
-      anInt1030 = var0;
-      anInt1036 = var1;
-      anInt1035 = var2;
+   static final void method1267() {
+      anInt1030 = 4;
+      anInt1036 = 104;
+      anInt1035 = 104;
       anIntArrayArrayArray1027 = new int[anInt1030][anInt1036][anInt1035];
    }
 
@@ -225,7 +225,7 @@ final class Class68 {
 
    static final void method1269(int var0, boolean var1) {
       for(int var2 = 0; var2 < anInt1032; ++var2) {
-         aClass43Array1021[var2].method1063(var1, var0, -3696);
+         aClass43Array1021[var2].method1063(var1, var0);
       }
 
       anInt1029 = -1;
@@ -383,7 +383,7 @@ final class Class68 {
    static final void method1277(int var0, int var1, Class3_Sub2[][][] var2) {
       if(Class106.aBoolean1441) {
          javax.media.opengl.GL var3 = HDToolKit.gl;
-         Class3_Sub28_Sub4.method551(0, 0, 0);
+         Class3_Sub28_Sub4.method551(0, 0);
          HDToolKit.method1856(0);
          HDToolKit.method1823();
          HDToolKit.bindTexture2D(HDToolKit.anInt1810);

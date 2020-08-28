@@ -9,10 +9,10 @@ final class Class162 {
    static byte[] aByteArray2040 = new byte[520];
 
 
-   static final void method2203(Player var0, int var1) {
+   static final void method2203(Player var0) {
       try {
-         Class3_Sub9 var2 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1780(var0.displayName.toLong(var1 + -126), 0);
-         if(var1 != 8) {
+         Class3_Sub9 var2 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1780(var0.displayName.toLong(8 + -126), 0);
+         if(8 != 8) {
             method2204((RSByteBuffer)null, -44);
          }
 
@@ -22,11 +22,11 @@ final class Class162 {
                var2.aClass3_Sub24_Sub1_2312 = null;
             }
 
-            var2.method86(var1 ^ -1016);
+            var2.method86(8 ^ -1016);
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "wc.B(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "wc.B(" + (var0 != null?"{...}":"null") + ',' + 8 + ')');
       }
    }
 
@@ -62,12 +62,12 @@ final class Class162 {
       }
    }
 
-   static final void method2206(boolean var0, int var1) {
+   static final void method2206(int var1) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 4, var1);
-         var2.a(var0);
+         var2.a(true);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "wc.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "wc.A(" + true + ',' + var1 + ')');
       }
    }
 
@@ -78,9 +78,9 @@ final class Class162 {
          }
          //36873, 24065, 22418
 
-         ObjectDefinition var2 = (ObjectDefinition)Canvas_Sub1.aClass93_21.get((long)objectId, (byte)121);
+         ObjectDefinition var2 = (ObjectDefinition)Canvas_Sub1.aClass93_21.get((long)objectId);
          if(var2 == null) {
-            byte[] var3 = Class85.aClass153_1171.getFile(Class3_Sub13_Sub36.method340(objectId, -51), (byte)-122, Class15.method893(objectId, (byte)110));
+            byte[] var3 = Class85.aClass153_1171.getFile(Class3_Sub13_Sub36.method340(objectId), Class15.method893(objectId));
             var2 = new ObjectDefinition();
             var2.objectId = objectId;
             if(null != var3) {

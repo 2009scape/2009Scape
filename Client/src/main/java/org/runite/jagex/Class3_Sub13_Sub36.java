@@ -13,10 +13,10 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
    private int anInt3434 = -1;
    static float aFloat3435;
 
-   static final void method338(int var0, int var1, boolean var2, int var3, int var4, int var5) {
+   static final void method338(int var1, boolean var2, int var3, int var4, int var5) {
       try {
          ++Class79.anInt1127;
-         Class124.method1745(0);
+         Class124.method1745();
          if(!var2) {
             Class3_Sub5.method116(true, 670232012);
             Class102.method1611(71, true);
@@ -28,7 +28,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
             Class3_Sub13_Sub28.method302(2);
          }
 
-         Class144.method2067(false);
+         Class144.method2067();
          if(HDToolKit.highDetail) {
             Class65.method1239(var4, 125, var5, var1, var3, true);
             var3 = Class163_Sub1.anInt2989;
@@ -50,10 +50,10 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
                var6 = 128 + Class166.anIntArray2073[4];
             }
 
-            Class140_Sub2.method1952(Class3_Sub13_Sub13.anInt3155, -1907397104, var1, Class121.method1736(WorldListCountry.localPlane, 1, Class102.player.anInt2819, Class102.player.anInt2829) + -50, Client.ZOOM - -(var6 * 3), var7, Class62.anInt942, var6);
+            Class140_Sub2.method1952(Class3_Sub13_Sub13.anInt3155, var1, Class121.method1736(WorldListCountry.localPlane, 1, Class102.player.anInt2819, Class102.player.anInt2829) + -50, Client.ZOOM - -(var6 * 3), var7, Class62.anInt942, var6);
          }
 
-         if(var0 == -6403) {
+         if(-6403 == -6403) {
             var7 = Class7.anInt2162;
             var6 = NPC.anInt3995;
             int var8 = Class77.anInt1111;
@@ -125,47 +125,47 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
             }
 
             Class58.method1194(-16385);
-            byte var19 = Class137.method1817((byte) 70) != 2 ?1:(byte)Class79.anInt1127;
+            byte var19 = Class137.method1817() != 2 ?1:(byte)Class79.anInt1127;
             if(HDToolKit.highDetail) {
                HDToolKit.method1846();
                HDToolKit.method1831(true);
                boolean var18 = false;
                HDToolKit.method1827(true);
                if(Class143.loadingStage == 10) {
-                  var12 = Class3_Sub30_Sub1.method809(Class106.anInt1446, Class77.anInt1111 >> 10, Class3_Sub28_Sub10.anInt3625, NPC.anInt3995 >> 10, var0 + 6404);
+                  var12 = Class3_Sub30_Sub1.method809(Class106.anInt1446, Class77.anInt1111 >> 10, Class3_Sub28_Sub10.anInt3625, NPC.anInt3995 >> 10, -6403 + 6404);
                } else {
                   var12 = Class3_Sub30_Sub1.method809(Class106.anInt1446, Class102.player.anIntArray2755[0] >> 3, Class3_Sub28_Sub10.anInt3625, Class102.player.anIntArray2767[0] >> 3, 1);
                }
 
                Class68.method1269(Class44.anInt719, !WorldListEntry.aBoolean2623);
                HDToolKit.method1849(var12);
-               RuntimeException_Sub1.method2285(Class139.anInt1823, Class77.anInt1111, Class7.anInt2162, NPC.anInt3995, false, Class3_Sub13_Sub25.anInt3315);
+               RuntimeException_Sub1.method2285(Class139.anInt1823, Class77.anInt1111, Class7.anInt2162, NPC.anInt3995, Class3_Sub13_Sub25.anInt3315);
                HDToolKit.anInt1791 = Class44.anInt719;
                Class3_Sub22.method398(NPC.anInt3995, Class7.anInt2162, Class77.anInt1111, Class139.anInt1823, Class3_Sub13_Sub25.anInt3315, Class158.aByteArrayArrayArray2008, Class41.anIntArray686, Class129_Sub1.anIntArray2696, Class159.anIntArray2021, Player.anIntArray3959, AnimationDefinition.anIntArray1871, WorldListCountry.localPlane + 1, var19, Class102.player.anInt2819 >> 7, Class102.player.anInt2829 >> 7);
                OutputStream_Sub1.aBoolean47 = true;
                Class68.method1265();
-               RuntimeException_Sub1.method2285(0, 0, 0, 0, false, 0);
+               RuntimeException_Sub1.method2285(0, 0, 0, 0, 0);
                Class58.method1194(-16385);
                Class130.method1775();
                Class82.method1405(var5, var4, var3, Class130.anInt1705, var1, Class130.anInt1705, -7397);
-               Class163_Sub2_Sub1.method2221(var4, var3, var1, true, Class130.anInt1705, Class130.anInt1705, var5);
+               Class163_Sub2_Sub1.method2221(var4, var3, var1, Class130.anInt1705, Class130.anInt1705, var5);
             } else {
                Class74.method1323(var3, var5, var4, var1, 0);
                Class3_Sub22.method398(NPC.anInt3995, Class7.anInt2162, Class77.anInt1111, Class139.anInt1823, Class3_Sub13_Sub25.anInt3315, Class158.aByteArrayArrayArray2008, Class41.anIntArray686, Class129_Sub1.anIntArray2696, Class159.anIntArray2021, Player.anIntArray3959, AnimationDefinition.anIntArray1871, WorldListCountry.localPlane - -1, var19, Class102.player.anInt2819 >> 7, Class102.player.anInt2829 >> 7);
-               Class58.method1194(var0 + -9982);
+               Class58.method1194(-6403 + -9982);
                Class130.method1775();
-               Class82.method1405(var5, var4, var3, 256, var1, 256, var0 + -994);
-               Class163_Sub2_Sub1.method2221(var4, var3, var1, true, 256, 256, var5);
+               Class82.method1405(var5, var4, var3, 256, var1, 256, -6403 + -994);
+               Class163_Sub2_Sub1.method2221(var4, var3, var1, 256, 256, var5);
             }
 
-            ((Class102)Class51.anInterface2_838).method1610(true, Class106.anInt1446);
-            Class65.method1235(var4, var5, var1, var3, (byte)-121);
+            ((Class102)Class51.anInterface2_838).method1610(Class106.anInt1446);
+            Class65.method1235(var4, var5, var1, var3);
             Class139.anInt1823 = var9;
             Class77.anInt1111 = var8;
             Class7.anInt2162 = var7;
             NPC.anInt3995 = var6;
             Class3_Sub13_Sub25.anInt3315 = var10;
-            if(Class3_Sub13_Sub4.aBoolean3064 && Class58.aClass66_917.method1253(4) == 0) {
+            if(Class3_Sub13_Sub4.aBoolean3064 && Class58.aClass66_917.method1253() == 0) {
                Class3_Sub13_Sub4.aBoolean3064 = false;
             }
 
@@ -180,12 +180,12 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
             }
 
             if(!var2 && !Class3_Sub13_Sub4.aBoolean3064 && !Class38_Sub1.aBoolean2615 && var3 <= NPCDefinition.anInt1297 && var4 + var3 > NPCDefinition.anInt1297 && Class38_Sub1.anInt2612 >= var5 && var1 + var5 > Class38_Sub1.anInt2612) {
-               Class104.method1628(var5, var4, var1, var3, Class38_Sub1.anInt2612, NPCDefinition.anInt1297, (byte)97);
+               Class104.method1628(var5, var4, var1, var3, Class38_Sub1.anInt2612, NPCDefinition.anInt1297);
             }
 
          }
       } catch (RuntimeException var15) {
-         throw Class44.clientError(var15, "ui.OA(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
+         throw Class44.clientError(var15, "ui.OA(" + -6403 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ')');
       }
    }
 
@@ -196,7 +196,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
          }
 
          int[][] var3 = this.aClass97_2376.method1594((byte)-120, var2);
-         if(this.aClass97_2376.aBoolean1379 && this.method339(false)) {
+         if(this.aClass97_2376.aBoolean1379 && this.method339()) {
             int var4 = (this.anInt3433 != Class101.anInt1427?this.anInt3433 * var2 / Class101.anInt1427:var2) * this.anInt3431;
             int[] var5 = var3[0];
             int[] var6 = var3[1];
@@ -227,9 +227,9 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
       }
    }
 
-   private final boolean method339(boolean var1) {
+   private final boolean method339() {
       try {
-         if(var1) {
+         if(false) {
             return true;
          } else if(this.anIntArray3425 == null) {
             if(this.anInt3434 < 0) {
@@ -248,16 +248,16 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
             return true;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ui.LA(" + var1 + ')');
+         throw Class44.clientError(var5, "ui.LA(" + false + ')');
       }
    }
 
-   static final int method340(int var0, int var1) {
+   static final int method340(int var0) {
       try {
-         int var2 = 74 % ((8 - var1) / 54);
+         int var2 = 74 % ((8 - -51) / 54);
          return var0 >>> 8;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ui.NA(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "ui.NA(" + var0 + ',' + -51 + ')');
       }
    }
 
@@ -300,18 +300,18 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
       }
    }
 
-   static final Class3_Sub28_Sub13 method342(int var0, boolean var1) {
+   static final Class3_Sub28_Sub13 method342(int var0) {
       try {
          Class3_Sub28_Sub13 var2 = (Class3_Sub28_Sub13)Class129_Sub1.aClass47_2686.method1092((long)var0, 1400);
          if(var2 == null) {
-            byte[] var3 = Class45.aClass153_731.getFile(Class53.method1170((byte)44, var0), (byte)-122, Class3_Sub30_Sub1.method810((byte)3, var0));
+            byte[] var3 = Class45.aClass153_731.getFile(Class53.method1170((byte)44, var0), Class3_Sub30_Sub1.method810(var0));
             var2 = new Class3_Sub28_Sub13();
-            if(!var1) {
+            if(!true) {
                method344(-42, 33);
             }
 
             if(null != var3) {
-               var2.method625(new RSByteBuffer(var3), -122);
+               var2.method625(new RSByteBuffer(var3));
             }
 
             Class129_Sub1.aClass47_2686.method1097(var2, (long)var0, (byte)-115);
@@ -320,11 +320,11 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ui.IA(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "ui.IA(" + var0 + ',' + true + ')');
       }
    }
 
-   static final AbstractIndexedSprite[] method343(int var0) {
+   static final AbstractIndexedSprite[] method343() {
 	      try {
 	         AbstractIndexedSprite[] var1 = new AbstractIndexedSprite[Class95.anInt1338];
 
@@ -338,7 +338,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
 	         Class39.method1035((byte)113);
 	         return var1;
 	      } catch (RuntimeException var3) {
-	         throw Class44.clientError(var3, "ui.JA(" + var0 + ')');
+	         throw Class44.clientError(var3, "ui.JA(" + 1854847236 + ')');
 	      }
 	   }
 

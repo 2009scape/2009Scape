@@ -10,29 +10,29 @@ abstract class Class144 {
    static int anInt1886;
    static int anInt1887;
 
-   abstract byte[] method2064(int var1);
+   abstract byte[] method2064();
 
-   static final void method2065(byte var0, CacheIndex var1, CacheIndex var2) {
+   static final void method2065(CacheIndex var1, CacheIndex var2) {
       try {
          Class3_Sub13_Sub19.aClass153_3227 = var1;
-         if(var0 <= -103) {
+         if((byte) -125 <= -103) {
             AnimationDefinition.aClass153_1852 = var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "u.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var4, "u.D(" + (byte) -125 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
    abstract void method2066(int var1, byte[] var2);
 
-   static final void method2067(boolean var0) {
+   static final void method2067() {
       try {
-         if(!var0) {
+         if(!false) {
             for(Class3_Sub28_Sub2 var1 = (Class3_Sub28_Sub2)Class3_Sub13_Sub15.aClass61_3177.method1222(); null != var1; var1 = (Class3_Sub28_Sub2)Class3_Sub13_Sub15.aClass61_3177.method1221()) {
                Class140_Sub2 var2 = var1.aClass140_Sub2_3545;
                if(WorldListCountry.localPlane == var2.anInt2717 && !var2.aBoolean2718) {
                   if(Class44.anInt719 >= var2.anInt2703) {
-                     var2.method1955(true, Class106.anInt1446);
+                     var2.method1955(Class106.anInt1446);
                      if(var2.aBoolean2718) {
                         var1.method86(-1024);
                      } else {
@@ -46,7 +46,7 @@ abstract class Class144 {
 
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "u.G(" + var0 + ')');
+         throw Class44.clientError(var3, "u.G(" + false + ')');
       }
    }
    // static final void method2068(NPCDefinition var0, int var1, int var2, int var3, int var4) {
@@ -70,8 +70,8 @@ abstract class Class144 {
                      Class54.method1177(Class99.anInt1403, (long)var3, (byte)-125, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, ColorCore.TextColor, var5}, (byte)-125), var1, (short)26, TextCore.HasUse, var4);
                      ++Class49.anInt816;
                   } else if(GameObject.aBoolean1837) {
-                     Class3_Sub28_Sub9 var12 = -1 == Class69.anInt1038?null:Class61.method1210(64, Class69.anInt1038);
-                     if((2 & Class164.anInt2051) != 0 && (var12 == null || var0.method1475(Class69.anInt1038, -26460, var12.anInt3614) != var12.anInt3614)) {
+                     Class3_Sub28_Sub9 var12 = -1 == Class69.anInt1038?null:Class61.method1210(Class69.anInt1038);
+                     if((2 & Class164.anInt2051) != 0 && (var12 == null || var0.method1475(Class69.anInt1038, var12.anInt3614) != var12.anInt3614)) {
                         Class54.method1177(anInt1887, (long)var3, (byte)-93, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, ColorCore.TextColor, var5}, (byte)-65), var1, (short)45, Class3_Sub28_Sub9.aClass94_3621, var4);
                         ++Class119.anInt1629;
                      }
@@ -79,7 +79,7 @@ abstract class Class144 {
                      ++RSByteBuffer.anInt2592;
                      RSString[] var11 = var0.options;
                      if(Class123.aBoolean1656) {
-                        var11 = Class3_Sub31.method822(19406, var11);
+                        var11 = Class3_Sub31.method822(var11);
                      }
 
                      int var7;
@@ -180,7 +180,7 @@ abstract class Class144 {
          } else {
             Class3_Sub28_Sub12 var2 = (Class3_Sub28_Sub12)Class49.aClass47_818.method1092((long)var0, 1400);
             if(null == var2) {
-               byte[] var3 = Class8.aClass153_105.getFile(5, (byte)-122, var0);
+               byte[] var3 = Class8.aClass153_105.getFile(5, var0);
                var2 = new Class3_Sub28_Sub12();
                if(var3 != null) {
                   var2.method610(new RSByteBuffer(var3), 0);

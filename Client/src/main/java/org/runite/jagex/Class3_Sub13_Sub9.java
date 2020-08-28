@@ -13,15 +13,15 @@ final class Class3_Sub13_Sub9 extends Class3_Sub13 {
    static int[][] anIntArrayArray3115;
 
 
-   static final int method208(int var0) {
+   static final int method208() {
       try {
-         if(var0 > -22) {
+         if(-119 > -22) {
             aShortArray3110 = (short[])null;
          }
 
          return 15;
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "f.B(" + var0 + ')');
+         throw Class44.clientError(var2, "f.B(" + -119 + ')');
       }
    }
 
@@ -64,7 +64,7 @@ final class Class3_Sub13_Sub9 extends Class3_Sub13 {
    final int[] method154(int var1, byte var2) {
       try {
          int var3 = -24 / ((var2 - 30) / 36);
-         int[] var4 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var4 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             for(int var5 = 0; Class113.anInt1559 > var5; ++var5) {
                int var6 = Class102.anIntArray2125[var5];

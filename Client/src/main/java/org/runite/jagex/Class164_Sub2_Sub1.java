@@ -6,12 +6,12 @@ final class Class164_Sub2_Sub1 extends Class164_Sub2 {
 
 
    public Class164_Sub2_Sub1() {
-      super(8, 5, 8, 8, 2, 0.1F, 0.55F, 3.0F);
+      super();
    }
 
-   final byte[] method2250(int var1, int var2, int var3) {
-      this.aByteArray4029 = new byte[var1 * var2 * var3 * 2];
-      this.method2230(-98, var1, var3, var2);
+   final byte[] method2250() {
+      this.aByteArray4029 = new byte[64 * 64 * 64 * 2];
+      this.method2230(-98, 64, 64, 64);
       return this.aByteArray4029;
    }
 

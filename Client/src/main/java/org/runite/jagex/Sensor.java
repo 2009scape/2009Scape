@@ -26,12 +26,12 @@ class Sensor {
 
    Sensor() throws Exception {}
 
-   void method1796(int var1, int var2, int var3) {
-      int var4 = -58 / ((var2 - -29) / 57);
+   void method1796(int var1, int var3) {
+      int var4 = -58 / ((-112 - -29) / 57);
       this.aRobot1732.mouseMove(var1, var3);
    }
 
-   void method1797(Component var1, int var2, boolean var3) {
+   void method1797(Component var1, boolean var3) {
       if(var3) {
          var1 = null;
       } else {
@@ -41,7 +41,7 @@ class Sensor {
       }
 
        if(var1 != this.aComponent1733) {
-         if(var2 != 1) {
+         if(1 != 1) {
             this.method1795((byte)-12, (Point)null, -10, (Component)null, -51, (int[])null);
          }
 

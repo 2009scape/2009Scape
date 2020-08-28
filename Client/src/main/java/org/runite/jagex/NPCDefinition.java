@@ -65,7 +65,7 @@ final class NPCDefinition {
                var2 = Class163_Sub1.anIntArray2985[this.configFileId];
             }
          } else {
-            var2 = method1484(64835055, this.configId);
+            var2 = method1484(this.configId);
          }
 
          int var3;
@@ -81,9 +81,9 @@ final class NPCDefinition {
       }
    }
 
-   final boolean method1472(byte var1) {
+   final boolean method1472() {
       try {
-         if(var1 != 74) {
+         if((byte) 74 != 74) {
             return true;
          } else if(null == this.childNPCs) {
             return true;
@@ -94,7 +94,7 @@ final class NPCDefinition {
                   var2 = Class163_Sub1.anIntArray2985[this.configFileId];
                }
             } else {
-               var2 = method1484(64835055, this.configId);
+               var2 = method1484(this.configId);
             }
 
             if(var2 >= 0 && var2 < -1 + this.childNPCs.length && -1 != this.childNPCs[var2]) {
@@ -105,7 +105,7 @@ final class NPCDefinition {
             }
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "me.L(" + var1 + ')');
+         throw Class44.clientError(var4, "me.L(" + (byte) 74 + ')');
       }
    }
 
@@ -120,9 +120,9 @@ final class NPCDefinition {
       }
    }
 
-   final boolean method1474(int var1) {
+   final boolean method1474() {
       try {
-         if(var1 != -1) {
+         if(-1 != -1) {
             method1480(false, (RSString)null, -57);
          }
 
@@ -141,11 +141,11 @@ final class NPCDefinition {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "me.E(" + var1 + ')');
+         throw Class44.clientError(var4, "me.E(" + -1 + ')');
       }
    }
 
-   final int method1475(int var1, int var2, int var3) {
+   final int method1475(int var1, int var3) {
       try {
          if(null == this.aClass130_1272) {
             return var3;
@@ -154,14 +154,14 @@ final class NPCDefinition {
             return var4 != null?var4.anInt2467:var3;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "me.N(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "me.N(" + var1 + ',' + -26460 + ',' + var3 + ')');
       }
    }
 
    final Model method1476(Class145[] var1, int var2, byte var3, int var4, int var5, int var6, int var7, AnimationDefinition var8, int var9, AnimationDefinition var10) {
       try {
          if(this.childNPCs == null) {
-            Model var11 = (Model)CS2Script.aClass93_2442.get((long)this.npcId, (byte)121);
+            Model var11 = (Model)CS2Script.aClass93_2442.get((long)this.npcId);
             boolean var12;
             int var17;
             int var16;
@@ -191,7 +191,7 @@ final class NPCDefinition {
 
                for(int var15 = 0; var15 < this.models.length; ++var15) {
                   if(this.models[var15] != -1) {
-                     var14[var15] = Model_Sub1.method2015(Class3_Sub13_Sub14.aClass153_3173, this.models[var15], 0);
+                     var14[var15] = Model_Sub1.method2015(Class3_Sub13_Sub14.aClass153_3173, this.models[var15]);
                      if(null != this.anIntArrayArray1261 && this.anIntArrayArray1261[var15] != null && var14[var15] != null) {
                         var14[var15].method2001(this.anIntArrayArray1261[var15][0], this.anIntArrayArray1261[var15][1], this.anIntArrayArray1261[var15][2]);
                      }
@@ -200,7 +200,7 @@ final class NPCDefinition {
 
                RenderAnimationDefinition render = null;
                if(-1 != this.renderAnimationId) {
-                  render = Class3_Sub10.getRenderAnimationDefinition(false, this.renderAnimationId);
+                  render = Class3_Sub10.getRenderAnimationDefinition(this.renderAnimationId);
                }
 
                if(render != null && null != render.anIntArrayArray359) {
@@ -287,7 +287,7 @@ final class NPCDefinition {
 
                var11 = var34.method2008(this.anInt1251 + 64, this.anInt1282 + 850, -30, -50, -30);
                if(HDToolKit.highDetail) {
-                  ((Class140_Sub1_Sub1)var11).method1920(false, false, false, true, false, false, true);
+                  ((Class140_Sub1_Sub1)var11).method1920(false, false, false, false, false, true);
                }
 
                CS2Script.aClass93_2442.put((byte)-90, var11, (long)this.npcId);
@@ -300,7 +300,7 @@ final class NPCDefinition {
             var16 = null != var1?var1.length:0;
             for(var17 = 0; var17 < var16; ++var17) {
                if(var1[var17] != null) {
-                  AnimationDefinition def = Client.getAnimationDefinition(var1[var17].animationId, (byte)-20);
+                  AnimationDefinition def = Client.getAnimationDefinition(var1[var17].animationId);
                   if(null != def.frames) {
                      Class85.aClass142Array1168[var17] = def;
                      var20 = var1[var17].anInt1891;
@@ -312,7 +312,7 @@ final class NPCDefinition {
                      Class58.anIntArray912[var17] = var21;
                      if(Class3_Sub13_Sub1.aClass3_Sub28_Sub5Array3041[var17] != null) {
                         var35 |= Class3_Sub13_Sub1.aClass3_Sub28_Sub5Array3041[var17].method561(var21, (byte)124);
-                        var37 |= Class3_Sub13_Sub1.aClass3_Sub28_Sub5Array3041[var17].method559(1317095745, var21);
+                        var37 |= Class3_Sub13_Sub1.aClass3_Sub28_Sub5Array3041[var17].method559(var21);
                         var36 |= def.aBoolean1848;
                      }
 
@@ -325,7 +325,7 @@ final class NPCDefinition {
                         Class30.anIntArray574[var17] = var22;
                         if(null != Class3_Sub13_Sub23_Sub1.aClass3_Sub28_Sub5Array4031[var17]) {
                            var35 |= Class3_Sub13_Sub23_Sub1.aClass3_Sub28_Sub5Array4031[var17].method561(var22, (byte)124);
-                           var37 |= Class3_Sub13_Sub23_Sub1.aClass3_Sub28_Sub5Array4031[var17].method559(1317095745, var22);
+                           var37 |= Class3_Sub13_Sub23_Sub1.aClass3_Sub28_Sub5Array4031[var17].method559(var22);
                         }
                      } else {
                         Class38.anIntArray664[var17] = 0;
@@ -357,7 +357,7 @@ final class NPCDefinition {
                   var40 = Class3_Sub9.method133(var22, 0);
                   if(null != var40) {
                      var35 |= var40.method561(var17, (byte)126);
-                     var37 |= var40.method559(1317095745, var17);
+                     var37 |= var40.method559(var17);
                      var36 |= var10.aBoolean1848;
                   }
 
@@ -374,7 +374,7 @@ final class NPCDefinition {
 
                      if(var43 != null) {
                         var35 |= var43.method561(var18, (byte)115);
-                        var37 |= var43.method559(1317095745, var18);
+                        var37 |= var43.method559(var18);
                      }
                   }
                }
@@ -395,7 +395,7 @@ final class NPCDefinition {
                   var44 = Class3_Sub9.method133(var27, 0);
                   if(var44 != null) {
                      var35 |= var44.method561(var22, (byte)124);
-                     var37 |= var44.method559(1317095745, var22);
+                     var37 |= var44.method559(var22);
                      var36 |= var8.aBoolean1848;
                   }
 
@@ -412,7 +412,7 @@ final class NPCDefinition {
 
                      if(null != var46) {
                         var35 |= var46.method561(var42, (byte)124);
-                        var37 |= var46.method559(1317095745, var42);
+                        var37 |= var46.method559(var42);
                      }
                   }
                }
@@ -459,39 +459,39 @@ final class NPCDefinition {
       }
    }
 
-   final RSString method1477(int var1, RSString var2, boolean var3) {
+   final RSString method1477(int var1, RSString var2) {
       try {
          if(null == this.aClass130_1272) {
             return var2;
          } else {
             Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_1272.method1780((long)var1, 0);
-            return !var3?(RSString)null:(null == var4?var2:var4.aClass94_2586);
+            return !true ?(RSString)null:(null == var4?var2:var4.aClass94_2586);
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "me.I(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var5, "me.I(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + true + ')');
       }
    }
 
-   final void method1478(RSByteBuffer var1, int var2) {
+   final void method1478(RSByteBuffer var1) {
       try {
          while(true) {
             int var3 = var1.getByte((byte)-123);
             if(var3 == 0) {
-               var3 = -88 % ((5 - var2) / 52);
+               var3 = -88 % ((5 - 74) / 52);
                return;
             }
 
             this.parseOpcode(27, var3, var1);
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "me.F(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "me.F(" + (var1 != null?"{...}":"null") + ',' + 74 + ')');
       }
    }
 
-   static final void method1479(int var0, byte var1) {
+   static final void method1479(int var0) {
       try {
          Class3_Sub13_Sub30.anInt3362 = -1;
-         if(var1 < 5) {//@splinter
+         if((byte) 56 < 5) {//@splinter
             anIntArray1277 = (int[])null;
          }
 
@@ -513,7 +513,7 @@ final class NPCDefinition {
 
          Class3_Sub13_Sub30.anInt3362 = -1;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "me.C(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "me.C(" + var0 + ',' + (byte) 56 + ')');
       }
    }
 
@@ -562,11 +562,11 @@ final class NPCDefinition {
       }
    }
 
-   final void method1481(int var1) {
+   final void method1481() {
       try {
-         int var2 = 36 % ((12 - var1) / 41);
+         int var2 = 36 % ((12 - 98) / 41);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "me.D(" + var1 + ')');
+         throw Class44.clientError(var3, "me.D(" + 98 + ')');
       }
    }
 
@@ -576,7 +576,7 @@ final class NPCDefinition {
             if(null == this.anIntArray1250) {
                return null;
             } else {
-               Model var12 = (Model)Class154.aClass93_1964.get((long)this.npcId, (byte)121);
+               Model var12 = (Model)Class154.aClass93_1964.get((long)this.npcId);
                if(var12 == null) {
                   boolean var7 = false;
 
@@ -593,7 +593,7 @@ final class NPCDefinition {
                   Model_Sub1[] var14 = new Model_Sub1[this.anIntArray1250.length];
 
                   for(int var9 = 0; this.anIntArray1250.length > var9; ++var9) {
-                     var14[var9] = Model_Sub1.method2015(Class3_Sub13_Sub14.aClass153_3173, this.anIntArray1250[var9], 0);
+                     var14[var9] = Model_Sub1.method2015(Class3_Sub13_Sub14.aClass153_3173, this.anIntArray1250[var9]);
                   }
 
                   Model_Sub1 var15;
@@ -909,9 +909,9 @@ final class NPCDefinition {
       this.anInt1298 = -1;
    }
 
-   static final int method1484(int var0, int var1) {
+   static final int method1484(int var1) {
       try {
-         if(var0 != 64835055) {
+         if(64835055 != 64835055) {
             anIntArray1277 = (int[])null;
          }
 
@@ -922,7 +922,7 @@ final class NPCDefinition {
          int var6 = Class3_Sub6.anIntArray2288[var5 + -var4];
          return Class163_Sub1.anIntArray2985[var3] >> var4 & var6;
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "me.B(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var7, "me.B(" + 64835055 + ',' + var1 + ')');
       }
    }
 

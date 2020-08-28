@@ -9,9 +9,9 @@ final class Class157 {
    static Class3_Sub28_Sub17_Sub1 aClass3_Sub28_Sub17_Sub1_2000;
    private int anInt2001;
 
-   final byte[] method2173(byte[] var1, byte var2) {
+   final byte[] method2173(byte[] var1) {
       try {
-         int var3 = 53 % ((var2 - -39) / 50);
+         int var3 = 53 % (((byte) -105 - -39) / 50);
          if(null != this.anIntArrayArray1999) {
             int var4 = 14 + (int)((long)var1.length * (long)this.anInt2001 / (long)this.anInt1997);
             int[] var5 = new int[var4];
@@ -52,7 +52,7 @@ final class Class157 {
 
          return var1;
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "vj.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var12, "vj.E(" + (var1 != null?"{...}":"null") + ',' + (byte) -105 + ')');
       }
    }
 
@@ -77,7 +77,7 @@ final class Class157 {
                method2176(-111, 55, -18, (CacheIndex)null);
             }
 
-            return Class10.method851(true);
+            return Class10.method851();
          } else {
             return null;
          }
@@ -86,21 +86,21 @@ final class Class157 {
       }
    }
 
-   final int method2177(int var1, byte var2) {
+   final int method2177(int var1) {
       try {
          if(null != this.anIntArrayArray1999) {
             var1 = (int)((long)this.anInt2001 * (long)var1 / (long)this.anInt1997);
          }
 
-         return var2 != 90?81:var1;
+         return (byte) 90 != 90?81:var1;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "vj.C(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "vj.C(" + var1 + ',' + (byte) 90 + ')');
       }
    }
 
-   final int method2178(boolean var1, int var2) {
+   final int method2178(int var2) {
       try {
-         if(var1) {
+         if(false) {
             return -69;
          } else {
             if(null != this.anIntArrayArray1999) {
@@ -110,14 +110,14 @@ final class Class157 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "vj.D(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "vj.D(" + false + ',' + var2 + ')');
       }
    }
 
    Class157(int var1, int var2) {
       try {
          if(var2 != var1) {
-            int var3 = Class107.method1651(19067, var2, var1);
+            int var3 = Class107.method1651(var2, var1);
             var2 /= var3;
             this.anInt2001 = var2;
             var1 /= var3;

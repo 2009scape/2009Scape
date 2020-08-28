@@ -38,9 +38,9 @@ final class Class3_Sub9 extends Class3 {
          if(var1 != 0) {
             method135(-59, 112, 16, -6, 77, -69);
          }
-         Class3_Sub28_Sub5 var2 = (Class3_Sub28_Sub5)Class159.aClass93_2016.get((long)var0, (byte)121);
+         Class3_Sub28_Sub5 var2 = (Class3_Sub28_Sub5)Class159.aClass93_2016.get((long)var0);
          if(var2 == null) {
-            var2 = Class47.method1089(Class131.aClass153_1723, false, Class7.aClass153_2160, (byte)118, var0);
+            var2 = Class47.method1089(Class131.aClass153_1723, Class7.aClass153_2160, var0);
             if(null != var2) {
                Class159.aClass93_2016.put((byte)-75, var2, (long)var0);
             }
@@ -54,7 +54,7 @@ final class Class3_Sub9 extends Class3 {
       }
    }
 
-   final void method134(int var1) {
+   final void method134() {
       try {
          int var2 = this.anInt2332;
          if(null != this.aClass111_2320) {
@@ -74,11 +74,11 @@ final class Class3_Sub9 extends Class3 {
             }
          } else if(this.aClass140_Sub4_Sub2_2324 == null) {
             if(null != this.aClass140_Sub4_Sub1_2327) {
-               this.anInt2332 = Class81.method1398(var1 + -1, this.aClass140_Sub4_Sub1_2327);
+               this.anInt2332 = Class81.method1398(1 + -1, this.aClass140_Sub4_Sub1_2327);
                this.anInt2328 = 128 * this.aClass140_Sub4_Sub1_2327.anInt3969;
             }
          } else {
-            int var6 = ISAACCipher.method1232(this.aClass140_Sub4_Sub2_2324, var1 ^ -2);
+            int var6 = ISAACCipher.method1232(this.aClass140_Sub4_Sub2_2324, 1 ^ -2);
             if(var2 != var6) {
                NPCDefinition var4 = this.aClass140_Sub4_Sub2_2324.definition;
                this.anInt2332 = var6;
@@ -94,7 +94,7 @@ final class Class3_Sub9 extends Class3 {
             }
          }
 
-         if(var1 == 1) {
+         if(1 == 1) {
             if(this.anInt2332 != var2 && this.aClass3_Sub24_Sub1_2312 != null) {
                Class3_Sub26.aClass3_Sub24_Sub2_2563.method461(this.aClass3_Sub24_Sub1_2312);
                this.aClass3_Sub24_Sub1_2312 = null;
@@ -102,7 +102,7 @@ final class Class3_Sub9 extends Class3 {
 
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "fl.A(" + var1 + ')');
+         throw Class44.clientError(var5, "fl.A(" + 1 + ')');
       }
    }
 

@@ -12,22 +12,22 @@ final class Class54 {
    static CacheIndex aClass153_878;
 
 
-   static final void method1175(int var0, int var1) {
+   static final void method1175(int var0) {
       try {
          Class3_Sub13_Sub30.anInt3362 = -1;
          Class82.anInt1150 = -1;
-         if(var1 <= 55) {
+         if(112 <= 55) {
             method1177(-67, 28L, (byte)76, (RSString)null, -45, (short)94, (RSString)null, -125);
          }
 
          Class3_Sub28_Sub1.anInt3536 = var0;
          Class3_Sub5.method117((byte)87);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "hj.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hj.D(" + var0 + ',' + 112 + ')');
       }
    }
 
-   static final boolean method1176(RSString var0, byte var1) {
+   static final boolean method1176(RSString var0) {
       try {
          if(var0 == null) {
             return false;
@@ -39,14 +39,14 @@ final class Class54 {
             }
 
 
-            if(var0.equals(var1 + -46, Class102.player.displayName)) {
+            if(var0.equals((byte) -82 + -46, Class102.player.displayName)) {
                return true;
             } else {
                return false;
             }
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "hj.A(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
+         throw Class44.clientError(var3, "hj.A(" + (var0 != null?"{...}":"null") + ',' + (byte) -82 + ')');
       }
    }
 

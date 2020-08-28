@@ -11,12 +11,12 @@ final class WorldListEntry extends Class44 {
    static Class155 aClass155_2627;
 
 
-   static final void method1076(int var0) {
+   static final void method1076() {
       try {
-         Class154.aClass93_1964.method1524(3);
-         int var1 = -86 % ((var0 - -55) / 41);
+         Class154.aClass93_1964.method1524();
+         int var1 = -86 % ((88 - -55) / 41);
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ba.C(" + var0 + ')');
+         throw Class44.clientError(var2, "ba.C(" + 88 + ')');
       }
    }
 
@@ -40,7 +40,7 @@ final class WorldListEntry extends Class44 {
       }
    }
 
-   static final int method1079(int var0, byte var1) {
+   static final int method1079(int var0) {
       try {
          if(0 > var0) {
             return 0;
@@ -48,7 +48,7 @@ final class WorldListEntry extends Class44 {
             Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0, 0);
             if(var2 == null) {
                return Class144.method2069(var0, -126).anInt3647;
-            } else if(var1 > -56) {
+            } else if((byte) -80 > -56) {
                return -13;
             } else {
                int var3 = 0;
@@ -64,7 +64,7 @@ final class WorldListEntry extends Class44 {
             }
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ba.D(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var5, "ba.D(" + var0 + ',' + (byte) -80 + ')');
       }
    }
 

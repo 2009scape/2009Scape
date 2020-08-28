@@ -13,19 +13,19 @@ final class MouseWheel extends Class146 implements MouseWheelListener {
    static boolean ctrlDown = false;
 
 
-   final void method2082(boolean var1, Component var2) {
-      if(var1) {
+   final void method2082(Component var2) {
+      if(false) {
          this.mouseWheelMoved((MouseWheelEvent)null);
       }
 
       var2.removeMouseWheelListener(this);
    }
 
-   final synchronized int method2078(int var1) {
+   final synchronized int method2078() {
       int var2 = this.anInt2941;
       this.anInt2941 = 0;
       isMoved = false;
-      if(var1 != -1) {
+      if(-1 != -1) {
          this.anInt2941 = -53;
       }
 

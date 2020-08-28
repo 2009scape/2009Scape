@@ -25,16 +25,16 @@ final class Class3_Sub28_Sub20 extends Node {
    private boolean aBoolean3800;
 
 
-   final int[] method718(Interface2 var1, int var2, float var3, CacheIndex var4, boolean var5) {
+   final int[] method718(Interface2 var1, float var3, CacheIndex var4, boolean var5) {
       try {
-         if(var2 == 0) {
+         if(0 == 0) {
             if(null == this.anIntArray3793 || this.aFloat3782 != var3) {
-               if(!this.aClass82_3790.method1408(true, var1, var4)) {
+               if(!this.aClass82_3790.method1408(var1, var4)) {
                   return null;
                }
 
                int var6 = !var5?128:64;
-               this.anIntArray3793 = this.aClass82_3790.method1404(var6, this.aBoolean3800, var6, (double)var3, var2 ^ 327680, var4, var1, true);
+               this.anIntArray3793 = this.aClass82_3790.method1404(var6, this.aBoolean3800, var6, (double)var3, 0 ^ 327680, var4, var1, true);
                this.aFloat3782 = var3;
                if(this.aBoolean3789) {
                   int[] var7 = new int[var6];
@@ -131,15 +131,15 @@ final class Class3_Sub28_Sub20 extends Node {
             return (int[])null;
          }
       } catch (RuntimeException var32) {
-         throw Class44.clientError(var32, "uh.D(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ')');
+         throw Class44.clientError(var32, "uh.D(" + (var1 != null?"{...}":"null") + ',' + 0 + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ')');
       }
    }
 
-   final boolean method719(CacheIndex var1, Interface2 var2, int var3, boolean var4) {
+   final boolean method719(CacheIndex var1, Interface2 var2, boolean var4) {
       try {
-         if(var3 != 579100487) {
+         if(579100487 != 579100487) {
             return false;
-         } else if(this.aClass82_3790.method1408(true, var2, var1)) {
+         } else if(this.aClass82_3790.method1408(var2, var1)) {
             GL var5 = HDToolKit.gl;
             int var6 = !var4?128:64;
             int var7 = Class27.method961(1536);
@@ -150,7 +150,7 @@ final class Class3_Sub28_Sub20 extends Node {
                   this.anInt3791 = Class31.anInt582;
                   this.anInt3795 = var8[0];
                   HDToolKit.bindTexture2D(this.anInt3795);
-                  ByteBuffer var9 = ByteBuffer.wrap(this.aClass82_3790.method1407(var6, var6, this.aBoolean3800, var2, 0.7D, 8839, var1));
+                  ByteBuffer var9 = ByteBuffer.wrap(this.aClass82_3790.method1407(var6, var6, this.aBoolean3800, var2, var1));
                   if(2 == this.anInt3788) {
                      GLU var14 = new GLU();
                      var14.gluBuild2DMipmaps(3553, 6408, var6, var6, 6408, 5121, var9);
@@ -173,7 +173,7 @@ final class Class3_Sub28_Sub20 extends Node {
                               break;
                            }
 
-                           var9 = ByteBuffer.wrap(this.aClass82_3790.method1407(var6, var6, this.aBoolean3800, var2, 0.7D, 8839, var1));
+                           var9 = ByteBuffer.wrap(this.aClass82_3790.method1407(var6, var6, this.aBoolean3800, var2, var1));
                         }
                      } else {
                         var5.glTexImage2D(3553, 0, 6408, var6, var6, 0, 6408, 5121, var9);
@@ -205,7 +205,7 @@ final class Class3_Sub28_Sub20 extends Node {
                } else {
                   float var12 = (float)(this.anInt3799 * HDToolKit.anInt1791) / (float)var6;
                   float var13 = (float)(this.anInt3783 * HDToolKit.anInt1791) / (float)var6;
-                  HDToolKit.method1843(var13, var12, 0.0F);
+                  HDToolKit.method1843(var13, var12);
                }
             }
 
@@ -214,24 +214,24 @@ final class Class3_Sub28_Sub20 extends Node {
             return false;
          }
       } catch (RuntimeException var11) {
-         throw Class44.clientError(var11, "uh.F(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var11, "uh.F(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + 579100487 + ',' + var4 + ')');
       }
    }
 
-   final int[] method720(boolean var1, boolean var2, Interface2 var3, CacheIndex var4) {
+   final int[] method720(boolean var2, Interface2 var3, CacheIndex var4) {
       try {
-         if(var1) {
+         if(false) {
             this.method723(45, (byte)75);
          }
 
-         if(this.aClass82_3790.method1408(true, var3, var4)) {
+         if(this.aClass82_3790.method1408(var3, var4)) {
             int var5 = !var2?128:64;
             return this.aClass82_3790.method1404(var5, this.aBoolean3800, var5, 1.0D, 327680, var4, var3, false);
          } else {
             return null;
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "uh.O(" + var1 + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var6, "uh.O(" + false + ',' + var2 + ',' + (var3 != null?"{...}":"null") + ',' + (var4 != null?"{...}":"null") + ')');
       }
    }
 
@@ -248,11 +248,11 @@ final class Class3_Sub28_Sub20 extends Node {
       }
    }
 
-   final boolean method722(int var1, Interface2 var2, CacheIndex var3) {
+   final boolean method722(Interface2 var2, CacheIndex var3) {
       try {
-         return var1 != -5?true:this.aClass82_3790.method1408(true, var2, var3);
+         return -5 != -5?true:this.aClass82_3790.method1408(var2, var3);
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "uh.P(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "uh.P(" + -5 + ',' + (var2 != null?"{...}":"null") + ',' + (var3 != null?"{...}":"null") + ')');
       }
    }
 
@@ -296,15 +296,15 @@ final class Class3_Sub28_Sub20 extends Node {
       }
    }
 
-   static final void method724(int var0) {
+   static final void method724() {
       try {
          Class163_Sub2_Sub1.aClass93_4015.method1523((byte)-102);
-         if(var0 > -106) {
+         if(-109 > -106) {
             method725(71);
          }
 
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "uh.B(" + var0 + ')');
+         throw Class44.clientError(var2, "uh.B(" + -109 + ')');
       }
    }
 
@@ -325,7 +325,7 @@ final class Class3_Sub28_Sub20 extends Node {
    static final void method725(int var0) {
       try {
          int var1 = 67 / ((-60 - var0) / 41);
-         if(Class137.method1817((byte) 70) == 2) {
+         if(Class137.method1817() == 2) {
             byte var2 = (byte)(255 & Class79.anInt1127 + -4);
             int var3 = Class79.anInt1127 % 104;
 

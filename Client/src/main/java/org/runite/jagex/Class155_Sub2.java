@@ -51,7 +51,7 @@ final class Class155_Sub2 extends Class155 {
          this.aSourceDataLine2972.start();
          this.anInt2971 = var1;
       } catch (LineUnavailableException var3) {
-         if(Class146.method2080(var1, -125) == 1) {
+         if(Class146.method2080(var1) == 1) {
             this.aSourceDataLine2972 = null;
             throw var3;
          } else {

@@ -93,7 +93,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                   }
                   Class3_Sub15.aClass89_2429 = new IOHandler((Socket)Class3_Sub9.aClass64_2318.anObject974, Class38.aClass87_665);
                   Class3_Sub9.aClass64_2318 = null;
-                  Class3_Sub15.aClass89_2429.sendBytes(false, 0, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
+                  Class3_Sub15.aClass89_2429.sendBytes(false, Class3_Sub13_Sub1.outgoingBuffer.buffer, Class3_Sub13_Sub1.outgoingBuffer.index);
                    if(WorldListEntry.aClass155_2627 != null) {
                      WorldListEntry.aClass155_2627.method2159(63);
                   }
@@ -208,7 +208,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
    final int[] method154(int var1, byte var2) {
       try {
          int var4 = 15 % ((30 - var2) / 36);
-         int[] var3 = this.aClass114_2382.method1709(-16409, var1);
+         int[] var3 = this.aClass114_2382.method1709(var1);
          if(this.aClass114_2382.aBoolean1580) {
             int var5 = -2048 + Class163_Sub3.anIntArray2999[var1];
 
@@ -226,7 +226,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                int var11 = var5 - -this.anInt3262;
                var11 = -2048 > var11?var11 + 4096:var11;
                var11 = var11 > 2048 ?var11 - 4096:var11;
-               var3[var6] = !this.method271(var8, var9, (byte)113) && !this.method270((byte)-44, var10, var11)?0:4096;
+               var3[var6] = !this.method271(var8, var9) && !this.method270((byte)-44, var10, var11)?0:4096;
             }
          }
 
@@ -265,10 +265,10 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
       }
    }
 
-   private final boolean method271(int var1, int var2, byte var3) {
+   private final boolean method271(int var1, int var2) {
       try {
          int var4 = (var2 - var1) * this.anInt3257 >> 12;
-         if(var3 != 113) {
+         if((byte) 113 != 113) {
             this.method270((byte)-91, -79, -4);
          }
 
@@ -278,7 +278,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
          var5 = var5 * this.anInt3254 >> 12;
          return var5 > var2 + var1 && -var5 < var2 + var1;
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "mh.F(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var6, "mh.F(" + var1 + ',' + var2 + ',' + (byte) 113 + ')');
       }
    }
 
@@ -323,7 +323,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                      NPC npc = Class3_Sub13_Sub24.npcs[var6];
                      Class15.localNPCIndexes[Class163.localNPCCount++] = var6;
                      npc.anInt2838 = Class44.anInt719;
-                     npc.setDefinitions(-1, var13);
+                     npc.setDefinitions(var13);
                      npc.setSize(npc.definition.size, 2);
                      npc.anInt2806 = npc.anInt2785 = Class27.anIntArray510[npc.definition.aByte1268];
                      npc.anInt2779 = npc.definition.anInt1274;
@@ -332,7 +332,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                      }
 
                      npc.renderAnimationId = npc.definition.renderAnimationId;
-                     npc.method1967(-2, npc.getSize((byte)114), var11, var12, true);
+                     npc.method1967(-2, npc.getSize(), var11, var12, true);
                   }
                }
             }

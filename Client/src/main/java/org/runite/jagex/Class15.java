@@ -20,7 +20,7 @@ final class Class15 implements Runnable {
 
    static final boolean method888(int var0, ObjectDefinition var1, boolean var2, int var3, int var4, int var5, int var6) {
       try {
-         Class2 var7 = Class3_Sub28_Sub6.c(var1.anInt1516, 0);
+         Class2 var7 = Class3_Sub28_Sub6.c(var1.anInt1516);
          if(var7.anInt64 == -1) {
             return true;
          } else {
@@ -127,7 +127,7 @@ final class Class15 implements Runnable {
                if(var27 > var14) {
                   var15 = 255 & var4[var14][var34];
                   if(var15 > 0) {
-                     Class100 var16 = Class3_Sub28_Sub15.method629(true, var15 - 1);
+                     Class100 var16 = Class3_Sub28_Sub15.method629(var15 - 1);
                      var28[var34] += var16.anInt1408;
                      var29[var34] += var16.anInt1406;
                      var30[var34] += var16.anInt1417;
@@ -140,7 +140,7 @@ final class Class15 implements Runnable {
                if(var15 >= 0) {
                   var35 = var4[var15][var34] & 255;
                   if(0 < var35) {
-                     Class100 var17 = Class3_Sub28_Sub15.method629(true, -1 + var35);
+                     Class100 var17 = Class3_Sub28_Sub15.method629(-1 + var35);
                      var28[var34] -= var17.anInt1408;
                      var29[var34] -= var17.anInt1406;
                      var30[var34] -= var17.anInt1417;
@@ -179,7 +179,7 @@ final class Class15 implements Runnable {
 
                   if(var19 >= 0 && 0 < var18) {
                      int[] var22 = var33[var19 >> 6];
-                     int var23 = var36 != 0?Class3_Sub8.method129(var35 / var18, 2, var15 / var18, var14 * 256 / var36):0;
+                     int var23 = var36 != 0?Class3_Sub8.method129(var35 / var18, var15 / var18, var14 * 256 / var36):0;
                      if(var4[var12][var19] == 0) {
                         if(var22 != null) {
                            var22[Class3_Sub28_Sub15.method633(4032, var19 << 6) - -Class3_Sub28_Sub15.method633(var12, 63)] = 0;
@@ -197,7 +197,7 @@ final class Class15 implements Runnable {
                         }
 
                         int var25 = var24 + (896 & var23) + (var23 + var2 & '\ufc00');
-                        var22[Class3_Sub28_Sub15.method633(4032, var19 << 6) + Class3_Sub28_Sub15.method633(63, var12)] = Class51.anIntArray834[Class47.method1100(96, true, var25)];
+                        var22[Class3_Sub28_Sub15.method633(4032, var19 << 6) + Class3_Sub28_Sub15.method633(63, var12)] = Class51.anIntArray834[Class47.method1100(96, var25)];
                      }
                   }
                }
@@ -209,7 +209,7 @@ final class Class15 implements Runnable {
       }
    }
 
-   static final Object method890(boolean var0, int var1, byte[] var2) {
+   static final Object method890(int var1, byte[] var2) {
       try {
          if(var2 == null) {
             return null;
@@ -228,10 +228,10 @@ final class Class15 implements Runnable {
                }
             }
 
-            return var0?Class12.method873((byte)62, var2):var2;
+            return false ?Class12.method873(var2):var2;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "cj.E(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var5, "cj.E(" + false + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
@@ -244,7 +244,7 @@ final class Class15 implements Runnable {
                for(int var1 = 0; var1 < 2; ++var1) {
                   Class155 var2 = this.aClass155Array352[var1];
                   if(var2 != null) {
-                     var2.method2153((byte)-34);
+                     var2.method2153();
                   }
                }
 
@@ -306,12 +306,12 @@ final class Class15 implements Runnable {
       }
    }
 
-   static final int method893(int var0, byte var1) {
+   static final int method893(int var0) {
       try {
-         int var2 = -66 / ((67 - var1) / 41);
+         int var2 = -66 / ((67 - (byte) 110) / 41);
          return var0 & 255;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "cj.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "cj.A(" + var0 + ',' + (byte) 110 + ')');
       }
    }
 
@@ -335,29 +335,29 @@ final class Class15 implements Runnable {
       }
    }
 
-   static final int[][] method895(boolean var0, int var1, int var2, int var3, int var4, int var5, int var6, float var7, byte var8) {
+   static final int[][] method895(int var4, byte var8) {
       try {
          if(var8 >= -52) {
             method891(115);
          }
 
-         int[][] var9 = new int[var3][var2];
+         int[][] var9 = new int[256][64];
          Class3_Sub13_Sub4 var10 = new Class3_Sub13_Sub4();
-         var10.anInt3062 = (int)(var7 * 4096.0F);
-         var10.anInt3058 = var1;
-         var10.anInt3056 = var5;
-         var10.aBoolean3065 = var0;
-         var10.anInt3060 = var6;
+         var10.anInt3062 = (int)((float) 0.4 * 4096.0F);
+         var10.anInt3058 = 3;
+         var10.anInt3056 = 4;
+         var10.aBoolean3065 = false;
+         var10.anInt3060 = 8;
          var10.method158(16251);
-         Class3_Sub13_Sub3.method180(122, var3, var2);
+         Class3_Sub13_Sub3.method180(122, 256, 64);
 
-         for(int var11 = 0; var11 < var3; ++var11) {
-            var10.method186(true, var11, var9[var11]);
+         for(int var11 = 0; var11 < 256; ++var11) {
+            var10.method186(var11, var9[var11]);
          }
 
          return var9;
       } catch (RuntimeException var12) {
-         throw Class44.clientError(var12, "cj.B(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ')');
+         throw Class44.clientError(var12, "cj.B(" + false + ',' + 3 + ',' + 64 + ',' + 256 + ',' + var4 + ',' + 4 + ',' + 8 + ',' + (float) 0.4 + ',' + var8 + ')');
       }
    }
 

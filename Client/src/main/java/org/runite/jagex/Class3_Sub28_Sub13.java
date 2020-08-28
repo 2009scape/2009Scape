@@ -70,21 +70,21 @@ final class Class3_Sub28_Sub13 extends Node {
       }
    }
 
-   final boolean method617(RSString var1, int var2) {
+   final boolean method617(RSString var1) {
       try {
          if(null == this.aClass130_3663) {
             return false;
          } else {
-            if(var2 != 8729) {
+            if(8729 != 8729) {
                this.method615(-97, (RSByteBuffer)null, (byte)-91);
             }
 
             if(null == this.aClass130_3666) {
-               this.method618(0);
+               this.method618();
             }
 
-            for(Class3_Sub10 var3 = (Class3_Sub10)this.aClass130_3666.method1780(var1.method1538(23), var2 + -8729); var3 != null; var3 = (Class3_Sub10)this.aClass130_3666.method1784(0)) {
-               if(var3.aClass94_2341.method1528((byte)-42, var1)) {
+            for(Class3_Sub10 var3 = (Class3_Sub10)this.aClass130_3666.method1780(var1.method1538(23), 8729 + -8729); var3 != null; var3 = (Class3_Sub10)this.aClass130_3666.method1784()) {
+               if(var3.aClass94_2341.method1528(var1)) {
                   return true;
                }
             }
@@ -92,15 +92,15 @@ final class Class3_Sub28_Sub13 extends Node {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ml.F(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ml.F(" + (var1 != null?"{...}":"null") + ',' + 8729 + ')');
       }
    }
 
-   private final void method618(int var1) {
+   private final void method618() {
       try {
          this.aClass130_3666 = new Class130(this.aClass130_3663.method1785(81));
-         Class3_Sub29 var2 = (Class3_Sub29)this.aClass130_3663.method1776(var1 + 88);
-         if(var1 == 0) {
+         Class3_Sub29 var2 = (Class3_Sub29)this.aClass130_3663.method1776(0 + 88);
+         if(0 == 0) {
             while(var2 != null) {
                Class3_Sub10 var3 = new Class3_Sub10(var2.aClass94_2586, (int)var2.aLong71);
                this.aClass130_3666.method1779(1, var3, var2.aClass94_2586.method1538(61));
@@ -109,41 +109,41 @@ final class Class3_Sub28_Sub13 extends Node {
 
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ml.O(" + var1 + ')');
+         throw Class44.clientError(var4, "ml.O(" + 0 + ')');
       }
    }
 
    static final LDIndexedSprite[] method619(byte var0, int var1, CacheIndex var2) {
       try {
-         return Class140_Sub7.method2029((byte)-119, var2, var1)?(var0 <= 52?(LDIndexedSprite[])null:Class69.method1281(0)):null;
+         return Class140_Sub7.method2029((byte)-119, var2, var1)?(var0 <= 52?(LDIndexedSprite[])null:Class69.method1281()):null;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ml.A(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
-   final int method620(int var1, int var2) {
+   final int method620(int var2) {
       try {
          if(this.aClass130_3663 == null) {
             return this.anInt3667;
          } else {
-            Class3_Sub18 var3 = (Class3_Sub18)this.aClass130_3663.method1780((long)var2, var1);
+            Class3_Sub18 var3 = (Class3_Sub18)this.aClass130_3663.method1780((long)var2, 0);
             return var3 != null?var3.anInt2467:this.anInt3667;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ml.E(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ml.E(" + 0 + ',' + var2 + ')');
       }
    }
 
-   final boolean method621(int var1, int var2) {
+   final boolean method621(int var2) {
       try {
          if(null == this.aClass130_3663) {
             return false;
          } else {
             if(this.aClass130_3666 == null) {
-               this.method622(109);
+               this.method622();
             }
 
-            if(var1 != -8143) {
+            if(-8143 != -8143) {
                method619((byte)68, -100, (CacheIndex)null);
             }
 
@@ -151,14 +151,14 @@ final class Class3_Sub28_Sub13 extends Node {
             return var3 != null;
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ml.B(" + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ml.B(" + -8143 + ',' + var2 + ')');
       }
    }
 
-   private final void method622(int var1) {
+   private final void method622() {
       try {
          this.aClass130_3666 = new Class130(this.aClass130_3663.method1785(93));
-         int var3 = -48 % ((26 - var1) / 58);
+         int var3 = -48 % ((26 - 109) / 58);
 
          for(Class3_Sub18 var2 = (Class3_Sub18)this.aClass130_3663.method1776(123); null != var2; var2 = (Class3_Sub18)this.aClass130_3663.method1778(-88)) {
             Class3_Sub18 var4 = new Class3_Sub18((int)var2.aLong71);
@@ -166,7 +166,7 @@ final class Class3_Sub28_Sub13 extends Node {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ml.D(" + var1 + ')');
+         throw Class44.clientError(var5, "ml.D(" + 109 + ')');
       }
    }
 
@@ -182,16 +182,16 @@ final class Class3_Sub28_Sub13 extends Node {
          if(0 <= var4 && (Class75.anInt1108 == 0 || var4 <= Class75.anInt1108)) {
             if(var3 == 0) {
                byte[] var8 = new byte[var4];
-               var2.method764(0, var4, var8, (byte)93);
+               var2.method764(var4, var8);
                return var8;
             } else {
                int var5 = var2.getInt();
                if(0 <= var5 && (Class75.anInt1108 == 0 || var5 <= Class75.anInt1108)) {
                   byte[] var6 = new byte[var5];
                   if(1 == var3) {
-                     Class105.method1640(var6, var5, var1, var4, 9);
+                     Class105.method1640(var6, var5, var1, var4);
                   } else {
-                     Class3_Sub22.aClass49_2505.method1128(var6, var2, false);
+                     Class3_Sub22.aClass49_2505.method1128(var6, var2);
                   }
 
                   return var6;
@@ -219,19 +219,19 @@ final class Class3_Sub28_Sub13 extends Node {
       }
    }
 
-   final void method625(RSByteBuffer var1, int var2) {
+   final void method625(RSByteBuffer var1) {
       try {
          while(true) {
             int var3 = var1.getByte((byte)-83);
             if(var3 == 0) {
-               var3 = 68 % ((-84 - var2) / 35);
+               var3 = 68 % ((-84 - -122) / 35);
                return;
             }
 
             this.method615(var3, var1, (byte)-84);
          }
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ml.Q(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ml.Q(" + (var1 != null?"{...}":"null") + ',' + -122 + ')');
       }
    }
 

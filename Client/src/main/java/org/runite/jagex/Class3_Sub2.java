@@ -50,13 +50,13 @@ final class Class3_Sub2 extends Class3 {
       }
    }
 
-   static final void method103(byte var0) {
+   static final void method103() {
       try {
          Client.aClass130_2194.method1773(122);
-         Class81.aClass13_1139.method883(17126);
-         Class126.aClass13_1666.method883(17126);
+         Class81.aClass13_1139.method883();
+         Class126.aClass13_1666.method883();
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "bj.B(" + var0 + ')');
+         throw Class44.clientError(var2, "bj.B(" + (byte) 24 + ')');
       }
    }
 

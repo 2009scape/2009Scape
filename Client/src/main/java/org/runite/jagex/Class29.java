@@ -64,14 +64,14 @@ final class Class29 {
                return;
             }
 
-            this.method972(var2, (byte)-117, var3);
+            this.method972(var2, var3);
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "eh.B(" + var1 + ',' + (var2 != null?"{...}":"null") + ')');
       }
    }
 
-   static final void method971(int var0, int[][] var1, float[][] var2, int var3, float[][] var4, int var5, byte var6, int var7, int var8, byte var9, boolean var10, byte var11, int var12, float[][] var13, int var14, Class3_Sub11 var15) {
+   static final void method971(int var0, int[][] var1, float[][] var2, int var3, float[][] var4, int var5, byte var6, int var7, int var8, boolean var10, byte var11, int var12, float[][] var13, int var14, Class3_Sub11 var15) {
       try {
          int var16 = 255 + (var0 << 8);
          int var17 = (var5 << 8) - -255;
@@ -85,7 +85,7 @@ final class Class29 {
             var22[var23] = Class121.method1734(var19, 0.0F, var16, var17, (int[][])null, var1, var3, var13, var18, (byte)-125, var6, false, var15, var2, var12, var20[var23 + var23], var4, var20[var23 + var23 + 1]);
          }
 
-         if(var9 == 88) {
+         if((byte) 88 == 88) {
             int[] var21 = null;
             if(var10) {
                int var24;
@@ -198,13 +198,13 @@ final class Class29 {
             var15.method150(var7, var3, var12, var22, var21, false);
          }
       } catch (RuntimeException var26) {
-         throw Class44.clientError(var26, "eh.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ',' + var12 + ',' + (var13 != null?"{...}":"null") + ',' + var14 + ',' + (var15 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var26, "eh.C(" + var0 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ',' + (var4 != null?"{...}":"null") + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + (byte) 88 + ',' + var10 + ',' + var11 + ',' + var12 + ',' + (var13 != null?"{...}":"null") + ',' + var14 + ',' + (var15 != null?"{...}":"null") + ')');
       }
    }
 
-   private final void method972(RSByteBuffer var1, byte var2, int var3) {
+   private final void method972(RSByteBuffer var1, int var3) {
       try {
-         if(var2 > -86) {
+         if((byte) -117 > -86) {
             this.method970(-83, (RSByteBuffer)null);
          }
 
@@ -213,7 +213,7 @@ final class Class29 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "eh.F(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "eh.F(" + (var1 != null?"{...}":"null") + ',' + (byte) -117 + ',' + var3 + ')');
       }
    }
 

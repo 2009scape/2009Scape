@@ -315,7 +315,7 @@ abstract class Model extends GameObject {
       }
    }
 
-   abstract void method1893(int var1, int var2, int var3, int var4, int var5, int var6, int var7, long var8);
+   abstract void method1893(int var2, int var3, int var4, int var5, int var6, int var7);
 
    abstract Model method1894(boolean var1, boolean var2, boolean var3);
 

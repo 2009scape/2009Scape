@@ -69,9 +69,9 @@ final class Class49 {
       }
    }
 
-   static final RSInterface method1122(int var0, RSInterface var1) {
+   static final RSInterface method1122(RSInterface var1) {
       try {
-         if(var0 != 0) {
+         if(0 != 0) {
             method1123(103, 118);
          }
 
@@ -82,7 +82,7 @@ final class Class49 {
 
          return var2;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "ha.J(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "ha.J(" + 0 + ',' + (var1 != null?"{...}":"null") + ')');
       }
    }
 
@@ -116,9 +116,9 @@ final class Class49 {
       }
    }
 
-   static final RSString method1124(int[] var0, long var1, int var3, boolean var4) {
+   static final RSString method1124(int[] var0, long var1, int var3) {
       try {
-         if(var4) {
+         if(false) {
             return (RSString)null;
          } else {
             if(Class58.anInterface4_915 != null) {
@@ -131,7 +131,7 @@ final class Class49 {
             return Class3_Sub28_Sub12.method612(var1, (byte)124);
          }
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "ha.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var6, "ha.H(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + var3 + ',' + false + ')');
       }
    }
 
@@ -143,7 +143,7 @@ final class Class49 {
       try {
          String var3 = "";
          if(null != var1) {
-            var3 = Class53.method1172(-95, var1);
+            var3 = Class53.method1172(var1);
          }
 
          if(var0 != null) {
@@ -154,7 +154,7 @@ final class Class49 {
             var3 = var3 + var0;
          }
 
-         Class7.method831(104, var3);
+         Class7.method831(var3);
          var3 = Class3_Sub28_Sub6.a(":", "%3a", 126, var3);
          var3 = Class3_Sub28_Sub6.a("@", "%40", -31, var3);
          var3 = Class3_Sub28_Sub6.a("&", "%26", -16, var3);
@@ -180,13 +180,13 @@ final class Class49 {
 
    }
 
-   static final void method1126(int var0, int var1) {
+   static final void method1126(int var1) {
       try {
          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, 2, var1);
-         int var3 = -67 % ((var0 - -37) / 48);
+         int var3 = -67 % ((-94 - -37) / 48);
          var2.a(true);
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ha.I(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var4, "ha.I(" + -94 + ',' + var1 + ')');
       }
    }
 
@@ -237,7 +237,7 @@ final class Class49 {
             Class3_Sub23.anInt2535 = Class44.anInt719;
             if(Class3_Sub28_Sub12.anInt3655 != -1) {
                Class3_Sub28_Sub3.anInt3557 = 0;
-               Class8.method841(true);
+               Class8.method841();
             }
 
             if(HDToolKit.highDetail) {
@@ -251,7 +251,7 @@ final class Class49 {
                if(CacheIndex.aBoolean1951) {
                   ISAACCipher.method1230((byte)116);
                } else {
-                  Class84.method1419(-117);
+                  Class84.method1419();
                }
             } else if(null == Class3_Sub28_Sub16.aClass11_3708) {
                if(Class53.anInt865 != -1) {
@@ -293,7 +293,7 @@ final class Class49 {
                }
             }
 
-            Class61.method1214(Class106.anInt1446, Class102.player.anInt2819, Class102.player.anInt2829, WorldListCountry.localPlane, 1);
+            Class61.method1214(Class106.anInt1446, Class102.player.anInt2819, Class102.player.anInt2829, WorldListCountry.localPlane);
             Class106.anInt1446 = 0;
          }
       } catch (RuntimeException var3) {
@@ -301,9 +301,9 @@ final class Class49 {
       }
    }
 
-   final void method1128(byte[] var1, RSByteBuffer var2, boolean var3) {
+   final void method1128(byte[] var1, RSByteBuffer var2) {
       try {
-         if(var3) {
+         if(false) {
             anInt815 = -81;
          }
 
@@ -326,22 +326,18 @@ final class Class49 {
          }
       } catch (RuntimeException var6) {
 //    	  var6.printStackTrace();
-         throw Class44.clientError(var6, "ha.D(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+         throw Class44.clientError(var6, "ha.D(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + false + ')');
       }
    }
 
-   public Class49() {
-      this(-1, 1000000, 1000000);
-   }
-
-   static final void method1129(int var0, int var1, int var2, int var3, int var4) {
+   static final void method1129(int var0, int var1, int var2, int var4) {
       try {
-         int var5 = var3;
+         int var5 = 0;
          int var6 = var2;
          int var7 = -var2;
          int var8 = -1;
-         int var9 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var2 + var4, (byte)0, Class101.anInt1425);
-         int var10 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var4 - var2, (byte)0, Class101.anInt1425);
+         int var9 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var2 + var4, Class101.anInt1425);
+         int var10 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var4 - var2, Class101.anInt1425);
          Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var1], var10, -98, var9, var0);
 
          while(var6 > var5) {
@@ -357,10 +353,10 @@ final class Class49 {
                var7 -= var6 << 1;
                var12 = var1 + var6;
                if(var12 >= Class159.anInt2020 && var11 <= Class57.anInt902) {
-                  var13 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var4 - -var5, (byte)0, Class101.anInt1425);
-                  var14 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, -var5 + var4, (byte)0, Class101.anInt1425);
+                  var13 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var4 - -var5, Class101.anInt1425);
+                  var14 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, -var5 + var4, Class101.anInt1425);
                   if(Class57.anInt902 >= var12) {
-                     Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var12], var14, var3 ^ 111, var13, var0);
+                     Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var12], var14, 0 ^ 111, var13, var0);
                   }
 
                   if(Class159.anInt2020 <= var11) {
@@ -373,8 +369,8 @@ final class Class49 {
             var11 = -var5 + var1;
             var12 = var5 + var1;
             if(var12 >= Class159.anInt2020 && var11 <= Class57.anInt902) {
-               var13 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var4 - -var6, (byte)0, Class101.anInt1425);
-               var14 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, -var6 + var4, (byte)0, Class101.anInt1425);
+               var13 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, var4 - -var6, Class101.anInt1425);
+               var14 = Class40.method1040(Class3_Sub28_Sub18.anInt3765, -var6 + var4, Class101.anInt1425);
                if(var12 <= Class57.anInt902) {
                   Class3_Sub13_Sub23_Sub1.method282(Class38.anIntArrayArray663[var12], var14, 90, var13, var0);
                }
@@ -386,11 +382,9 @@ final class Class49 {
          }
 
       } catch (RuntimeException var15) {
-         throw Class44.clientError(var15, "ha.A(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var15, "ha.A(" + var0 + ',' + var1 + ',' + var2 + ',' + 0 + ',' + var4 + ')');
       }
    }
-
-   private Class49(int var1, int var2, int var3) {}
 
    public static void method1130(int var0) {
       try {

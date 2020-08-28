@@ -31,9 +31,9 @@ final class Class43 {
       try {
          int var5 = 25 % ((25 - var4) / 52);
          if(Class101.anInt1425 <= var1 + -var0 && Class3_Sub28_Sub18.anInt3765 >= var0 + var1 && var3 + -var0 >= Class159.anInt2020 && Class57.anInt902 >= var0 + var3) {
-            Class24.method949(var1, (byte)118, var0, var2, var3);
+            Class24.method949(var1, var0, var2, var3);
          } else {
-            Class49.method1129(var2, var3, var0, 0, var1);
+            Class49.method1129(var2, var3, var0, var1);
          }
 
       } catch (RuntimeException var6) {
@@ -61,13 +61,13 @@ final class Class43 {
       }
    }
 
-   private final void method1061(int var1) {
+   private final void method1061() {
       try {
          int var2 = (this.anInt698 << 7) - -64;
          this.aFloat710 = 1.0F / (float)(var2 * var2);
-         int var3 = 9 % ((9 - var1) / 57);
+         int var3 = 9 % ((9 - 66) / 57);
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "gi.C(" + var1 + ')');
+         throw Class44.clientError(var4, "gi.C(" + 66 + ')');
       }
    }
 
@@ -98,9 +98,9 @@ final class Class43 {
       }
    }
 
-   final void method1063(boolean var1, int var2, int var3) {
+   final void method1063(boolean var1, int var2) {
       try {
-         if(var3 != -3696) {
+         if(-3696 != -3696) {
             method1058(-127, -32, -68, -32, (byte)-77);
          }
 
@@ -135,11 +135,11 @@ final class Class43 {
          this.aFloatArray717[2] = var8 * (float)Class3_Sub28_Sub15.method633(255, this.anInt713);
          this.aFloatArray717[1] = (float)(Class3_Sub28_Sub15.method633(this.anInt713, '\uffe7') >> 8) * var8;
       } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "gi.A(" + var1 + ',' + var2 + ',' + var3 + ')');
+         throw Class44.clientError(var7, "gi.A(" + var1 + ',' + var2 + ',' + -3696 + ')');
       }
    }
 
-   private final void method1064(int var1) {
+   private final void method1064() {
       try {
          int var2 = this.anInt705;
          if(var2 == 2) {
@@ -236,12 +236,12 @@ final class Class43 {
             }
          }
 
-         if(var1 != 3) {
+         if(3 != 3) {
             this.anInt714 = -84;
          }
 
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "gi.G(" + var1 + ')');
+         throw Class44.clientError(var3, "gi.G(" + 3 + ')');
       }
    }
 
@@ -259,7 +259,7 @@ final class Class43 {
             Class45.method1083((byte)-90);
          }
 
-         this.method1064(3);
+         this.method1064();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "gi.<init>()");
       }
@@ -279,7 +279,7 @@ final class Class43 {
          this.anInt708 = var1.getShort(1);
          this.anInt697 = var1.getShort(1);
          this.anInt698 = var1.getByte((byte)-78);
-         this.method1061(66);
+         this.method1061();
          this.aShortArray706 = new short[this.anInt698 * 2 + 1];
 
          int var2;
@@ -292,7 +292,7 @@ final class Class43 {
          this.anInt714 = 1792 & var2 << 3;
          this.anInt705 = var2 & 31;
          if(31 != this.anInt705) {
-            this.method1064(3);
+            this.method1064();
          }
 
       } catch (RuntimeException var3) {

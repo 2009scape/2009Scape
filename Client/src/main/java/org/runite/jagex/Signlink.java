@@ -315,11 +315,11 @@ public class Signlink implements Runnable {
                      } else if (var2 == 14) {
                         int var22 = var1.anInt980;
                         int var23 = var1.anInt979;
-                        this.aSensor1206.method1796(var23, -112, var22);
+                        this.aSensor1206.method1796(var23, var22);
                      } else if (15 == var2) {
                         boolean var21 = var1.anInt979 != 0;
                         Component var27 = (Component) var1.anObject977;
-                        this.aSensor1206.method1797(var27, 1, var21);
+                        this.aSensor1206.method1797(var27, var21);
                      } else if (17 == var2) {
                         var3 = (Object[]) var1.anObject977;
                         this.aSensor1206.method1795((byte) 113, (Point) var3[2], var1.anInt979, (Component) var3[0], var1.anInt980, (int[]) var3[1]);
@@ -368,7 +368,7 @@ public class Signlink implements Runnable {
    public void createLibs(int archive) throws Throwable {
 	   String jogl = archive < 2 ? "jogl.dll" : archive < 4 ? "libjogl.jnilib" : "libjogl.so";
 	   String joglAwt = archive < 2 ? "jogl_awt.dll" : archive < 4 ? "libjogl_awt.jnilib" : "libjogl_awt.so";
-	   byte[] bs = Class132.libIndex.getFile(archive, (byte)-122, 0);
+	   byte[] bs = Class132.libIndex.getFile(archive, 0);
 	   if (bs == null || bs.length < 1) {
 		   System.err.println("Could not create native lib " + joglAwt + ", archive=" + archive + "!");
 		   return;
@@ -377,7 +377,7 @@ public class Signlink implements Runnable {
 	   fos.write(bs);
 	   fos.flush();
 	   fos.close();
-	   bs = Class132.libIndex.getFile(archive, (byte)-122, 1);
+	   bs = Class132.libIndex.getFile(archive, 1);
 	   if (bs == null || bs.length < 1) {
 		   System.err.println("Could not create native lib " + jogl + ", archive=" + archive + "!");
 		   return;
@@ -387,7 +387,7 @@ public class Signlink implements Runnable {
 	   fos.flush();
 	   fos.close();
 	   if (archive > 3) {
-		   bs = Class132.libIndex.getFile(archive, (byte)-122, 2);
+		   bs = Class132.libIndex.getFile(archive, 2);
 		   if (bs == null || bs.length < 1) {
 			   System.err.println("Could not create native lib libgluegen-rt.so, archive=" + archive + "!");
 			   return;

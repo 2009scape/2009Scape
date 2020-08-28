@@ -22,7 +22,7 @@ final class Class3_Sub5 extends Class3 {
       try {
          if(var0 < -47) {
             for(int var9 = 0; var9 < Class119.aClass131_1624.anInt1720; ++var9) {
-               if(Class119.aClass131_1624.method1787(var9, (byte)-124)) {
+               if(Class119.aClass131_1624.method1787(var9)) {
                   int var10 = -Class3_Sub13_Sub21.anInt3256 + Class119.aClass131_1624.aShortArray1727[var9];
                   int var11 = Class2.anInt65 - (Class119.aClass131_1624.aShortArray1718[var9] - -1 - Class108.anInt1460);
                   int var12 = var1 + (-var1 + var4) * (var10 - var3) / (-var3 + var7);
@@ -97,10 +97,10 @@ final class Class3_Sub5 extends Class3 {
                      for(int var18 = 0; var18 < var17; ++var18) {
                         RSString var19 = Class158_Sub1.aClass94Array2977[var18];
                         if(-1 + var17 > var18) {
-                           var19.method1553(-4 + var19.length(-101), false);
+                           var19.method1553(-4 + var19.length(-101));
                         }
 
-                        var16.method1003(var19, var12, var13, var15, true);
+                        var16.method1003(var19, var12, var13, var15);
                         var13 += var16.method998();
                      }
                   }
@@ -113,13 +113,13 @@ final class Class3_Sub5 extends Class3 {
       }
    }
 
-   static final void method112(byte var0, byte var1) {
+   static final void method112(byte var0) {
       try {
          if(null == Class158.aByteArrayArrayArray2008) {
             Class158.aByteArrayArrayArray2008 = new byte[4][104][104];
          }
 
-         if(var1 != 55) {
+         if((byte) 55 != 55) {
             anInt2281 = -87;
          }
 
@@ -132,7 +132,7 @@ final class Class3_Sub5 extends Class3 {
          }
 
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "cn.A(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var5, "cn.A(" + var0 + ',' + (byte) 55 + ')');
       }
    }
 
@@ -144,9 +144,9 @@ final class Class3_Sub5 extends Class3 {
       }
    }
 
-   static final void method114(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   static final void method114(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
       try {
-         if(var0 != 3) {
+         if(3 != 3) {
             method117((byte)-26);
          }
 
@@ -186,18 +186,18 @@ final class Class3_Sub5 extends Class3 {
          }
 
       } catch (RuntimeException var35) {
-         throw Class44.clientError(var35, "cn.O(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
+         throw Class44.clientError(var35, "cn.O(" + 3 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ')');
       }
    }
 
-   static final int method115(boolean var0, int var1) {
+   static final int method115(boolean var0) {
       try {
          long var2 = Class5.method830((byte)-55);
-         if(var1 != -1) {
+         if(-1 != -1) {
             method116(false, 11);
          }
 
-         for(Class3_Sub7 var4 = !var0?(Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1778(-123):(Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1776(var1 + 56); var4 != null; var4 = (Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1778(-64)) {
+         for(Class3_Sub7 var4 = !var0?(Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1778(-123):(Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1776(-1 + 56); var4 != null; var4 = (Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1778(-64)) {
             if((4611686018427387903L & var4.aLong2295) < var2) {
                if((4611686018427387904L & var4.aLong2295) != 0) {
                   int var5 = (int)var4.aLong71;
@@ -206,13 +206,13 @@ final class Class3_Sub5 extends Class3 {
                   return var5;
                }
 
-               var4.method86(var1 ^ 1023);
+               var4.method86(-1 ^ 1023);
             }
          }
 
          return -1;
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "cn.F(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var6, "cn.F(" + var0 + ',' + -1 + ')');
       }
    }
 
@@ -242,7 +242,7 @@ final class Class3_Sub5 extends Class3 {
             }
 
             if(null != var4 && var4.hasDefinitions((byte)17)) {
-               int var5 = var4.getSize((byte)114);
+               int var5 = var4.getSize();
                int var6;
                if(var5 == 1) {
                   if((127 & var4.anInt2819) == 64 && 64 == (127 & var4.anInt2829)) {
@@ -255,7 +255,7 @@ final class Class3_Sub5 extends Class3 {
                } else if(((1 & var5) != 0 || (var4.anInt2819 & 127) == 0 && (127 & var4.anInt2829) == 0) && ((1 & var5) != 1 || (var4.anInt2819 & 127) == 64 && (127 & var4.anInt2829) == 64)) {
                   var6 = var4.anInt2819 + -(var5 * 64) >> 7;
                   var7 = var4.anInt2829 + -(var5 * 64) >> 7;
-                  var8 = var4.getSize((byte)114) + var6;
+                  var8 = var4.getSize() + var6;
                   if(104 < var8) {
                      var8 = 104;
                   }
@@ -264,7 +264,7 @@ final class Class3_Sub5 extends Class3 {
                      var6 = 0;
                   }
 
-                  var9 = var7 + var4.getSize((byte)114);
+                  var9 = var7 + var4.getSize();
                   if(var7 < 0) {
                      var7 = 0;
                   }
@@ -296,11 +296,11 @@ final class Class3_Sub5 extends Class3 {
 
                if(var4 != null && var4.hasDefinitions((byte)17)) {
                   var4.aBoolean3968 = false;
-                  if((RSInterface.aBoolean236 && Class159.localPlayerCount > 200 || 50 < Class159.localPlayerCount) && !var0 && var4.anInt2764 == var4.method1965(false).anInt368) {
+                  if((RSInterface.aBoolean236 && Class159.localPlayerCount > 200 || 50 < Class159.localPlayerCount) && !var0 && var4.anInt2764 == var4.method1965().anInt368) {
                      var4.aBoolean3968 = true;
                   }
 
-                  var7 = var4.getSize((byte)114);
+                  var7 = var4.getSize();
                   if(var7 == 1) {
                      if(64 == (127 & var4.anInt2819) && (127 & var4.anInt2829) == 64) {
                         var8 = var4.anInt2819 >> 7;

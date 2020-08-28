@@ -63,7 +63,7 @@ final class Class1 {
                      continue;
                   }
 
-                  Class3_Sub11 var18 = AnimationDefinition.method2052(var12, false, var17);
+                  Class3_Sub11 var18 = AnimationDefinition.method2052(var12, var17);
                   byte var19 = var8[var13][var14];
                   int[] var20 = Class134.anIntArrayArray1763[var19];
                   var18.anInt2342 += var20.length / 2;
@@ -286,7 +286,7 @@ final class Class1 {
                      boolean[] var80 = Class3_Sub13_Sub39.aBooleanArrayArray3468[var23 == var74?var60:0];
                      var81 = Class3_Sub13_Sub39.aBooleanArrayArray3468[var26 == var74?var22:0];
                      Class168 var37 = Class3_Sub13_Sub37.method350((byte)113, -1 + var74);
-                     Class3_Sub11 var38 = AnimationDefinition.method2052(var12, false, var37);
+                     Class3_Sub11 var38 = AnimationDefinition.method2052(var12, var37);
                      var38.anInt2342 += 5;
                      var38.anInt2342 += -2 + var80.length;
                      var38.anInt2342 += -2 + var79.length;
@@ -321,14 +321,14 @@ final class Class1 {
                      continue;
                   }
 
-                  Class3_Sub11 var66 = AnimationDefinition.method2052(var12, false, var62);
+                  Class3_Sub11 var66 = AnimationDefinition.method2052(var12, var62);
                   byte var67 = var8[var13][var14];
                   byte var68 = var5[var13][var14];
                   var22 = Class3_Sub13_Sub4.method190(var62.anInt2095, var62.anInt2103, (byte)-111, var6[var13][var14]);
                   var23 = Class3_Sub13_Sub4.method190(var62.anInt2095, var62.anInt2103, (byte)65, var6[var13 + 1][var14]);
                   var24 = Class3_Sub13_Sub4.method190(var62.anInt2095, var62.anInt2103, (byte)68, var6[1 + var13][var14 + 1]);
                   var25 = Class3_Sub13_Sub4.method190(var62.anInt2095, var62.anInt2103, (byte)-84, var6[var13][var14 - -1]);
-                  Class29.method971(var22, var2, var1, var13, var0, var23, var68, var15, var24, (byte)88, var16 != 0 && var62.aBoolean2092, var67, var14, var4, var25, var66);
+                  Class29.method971(var22, var2, var1, var13, var0, var23, var68, var15, var24, var16 != 0 && var62.aBoolean2092, var67, var14, var4, var25, var66);
                }
 
                if((var9[var13][var14] & 255) != 0 || var58 != 0 && 0 == var8[var13][var14]) {
@@ -541,7 +541,7 @@ final class Class1 {
                      var81 = Class3_Sub13_Sub39.aBooleanArrayArray3468[var26 == var78 ?var22:0];
                      boolean[] var84 = Class3_Sub13_Sub39.aBooleanArrayArray3468[var78 != var27?0:var23];
                      Class168 var82 = Class3_Sub13_Sub37.method350((byte)121, -1 + var78);
-                     Class3_Sub11 var39 = AnimationDefinition.method2052(var12, false, var82);
+                     Class3_Sub11 var39 = AnimationDefinition.method2052(var12, var82);
                      int var40 = Class3_Sub13_Sub4.method190(var82.anInt2095, var82.anInt2103, (byte)-76, var6[var13][var14]) << 8 | 255;
                      byte var44 = 6;
                      int var41 = 255 | Class3_Sub13_Sub4.method190(var82.anInt2095, var82.anInt2103, (byte)-85, var6[1 + var13][var14]) << 8;
@@ -630,7 +630,7 @@ final class Class1 {
       }
    }
 
-   static final void method72(int var0, int var1, int var2, int var3, int var4) {
+   static final void method72(int var0, int var1, int var2, int var4) {
       try {
          if(HDToolKit.highDetail) {
             Class22.method935(var0, var4, var2 + var0, var1 + var4);
@@ -654,12 +654,12 @@ final class Class1 {
                if(HDToolKit.highDetail) {
                   Class74.anIntArray1100 = null;
                } else {
-                  Class164_Sub1.aClass158_3009.method2182(0);
+                  Class164_Sub1.aClass158_3009.method2182();
                }
             }
 
             Class36.aClass3_Sub28_Sub16_637.method635(var0, var4);
-            if(var3 != 19481) {
+            if(19481 != 19481) {
                method70((float[][])((float[][])null), (float[][])((float[][])null), (int[][])((int[][])null), 126, (float[][])((float[][])null), (byte[][])((byte[][])null), (int[][])((int[][])null), -1, (byte[][])((byte[][])null), (byte[][])((byte[][])null), (byte[][])((byte[][])null), (byte[][][])((byte[][][])null));
             }
 
@@ -703,13 +703,13 @@ final class Class1 {
 
          }
       } catch (RuntimeException var14) {
-         throw Class44.clientError(var14, "a.D(" + var0 + ',' + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');
+         throw Class44.clientError(var14, "a.D(" + var0 + ',' + var1 + ',' + var2 + ',' + 19481 + ',' + var4 + ')');
       }
    }
 
    static {
       for(int var0 = 0; var0 < 4096; ++var0) {
-         anIntArray52[var0] = Class164_Sub2.method2246((byte)83, var0);
+         anIntArray52[var0] = Class164_Sub2.method2246(var0);
       }
 
       aBooleanArray54 = new boolean[8];
