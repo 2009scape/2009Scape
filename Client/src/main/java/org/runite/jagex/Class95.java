@@ -103,19 +103,12 @@ final class Class95 {
 
    static RSString method1586() {
       try {
-         if(160 > 0 && 160 <= 255) {
-            RSString var2 = new RSString();
-            if(23161 != 23161) {
-               aClass3_Sub28_Sub16_1339 = (Class3_Sub28_Sub16)null;
-            }
+         RSString var2 = new RSString();
 
-            var2.length = 1;
-            var2.byteArray = new byte[1];
-            var2.byteArray[0] = (byte) 160;
-            return var2;
-         } else {
-            throw new IllegalArgumentException();
-         }
+         var2.length = 1;
+         var2.byteArray = new byte[1];
+         var2.byteArray[0] = (byte) 160;
+         return var2;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "nb.A(" + 23161 + ',' + 160 + ')');
       }

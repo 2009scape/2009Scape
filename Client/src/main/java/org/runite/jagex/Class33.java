@@ -10,8 +10,8 @@ import java.awt.image.PixelGrabber;
 final class Class33 {
 
    private byte[] aByteArray594 = new byte[100000];
-   private boolean aBoolean595 = false;
-   private int anInt596 = 0;
+   private boolean aBoolean595;
+   private int anInt596;
    private static String aString597 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"??$%^&*()-_=+[{]};:\'@#~,<.>/?\\| " + String.valueOf('\u00c4') + '\u00cb' + '\u00cf' + '\u00d6' + '\u00dc' + '\u00e4' + '\u00eb' + '\u00ef' + '\u00f6' + '\u00fc' + '\u00ff' + '\u00df' + '\u00c1' + '\u00c0' + '\u00c9' + '\u00c8' + '\u00cd' + '\u00cc' + '\u00d3' + '\u00d2' + '\u00da' + '\u00d9' + '\u00e1' + '\u00e0' + '\u00e9' + '\u00e8' + '\u00ed' + '\u00ec' + '\u00f3' + '\u00f2' + '\u00fa' + '\u00f9' + '\u00c2' + '\u00ca' + '\u00ce' + '\u00d4' + '\u00db' + '\u00e2' + '\u00ea' + '\u00ee' + '\u00f4' + '\u00fb' + '\u00c6' + '\u00e6';
    private static final int anInt598 = aString597.length();
    private static int[] anIntArray599 = new int[256];
@@ -214,8 +214,7 @@ final class Class33 {
       }
 
       var11.flush();
-      var11 = null;
-      int var15 = 0;
+       int var15 = 0;
       int var16 = 0;
       int var17 = var6;
       int var18 = var9;
@@ -343,9 +342,7 @@ final class Class33 {
 
       byte[] var8 = new byte[this.anInt596];
 
-      for(int var7 = 0; var7 < this.anInt596; ++var7) {
-         var8[var7] = this.aByteArray594[var7];
-      }
+      if (this.anInt596 >= 0) System.arraycopy(this.aByteArray594, 0, var8, 0, this.anInt596);
 
       this.aByteArray594 = var8;
    }

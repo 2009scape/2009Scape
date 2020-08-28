@@ -37,9 +37,7 @@ final class Class162 {
             }
          }
 
-         if(120 >= 45) {
-            var0.index += 24;
-         }
+          var0.index += 24;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "wc.E(" + "null" + ',' + 120 + ')');
       }
@@ -69,10 +67,7 @@ final class Class162 {
 
    static ObjectDefinition getObjectDefinition(int objectId) {
       try {
-         if(4 != 4) {
-            method2205(95);
-         }
-         //36873, 24065, 22418
+          //36873, 24065, 22418
 
          ObjectDefinition var2 = (ObjectDefinition)Canvas_Sub1.aClass93_21.get((long)objectId);
          if(var2 == null) {

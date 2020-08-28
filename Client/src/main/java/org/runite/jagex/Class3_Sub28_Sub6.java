@@ -244,9 +244,6 @@ final class Class3_Sub28_Sub6 extends Node {
    static void h() {
       try {
          Class114.aClass93_1569.method1523((byte)-109);
-         if((byte) 3 != 3) {
-            aBoolean3594 = false;
-         }
 
          Class3_Sub15.aClass93_2428.method1523((byte)-123);
          Class47.aClass93_743.method1523((byte)-106);

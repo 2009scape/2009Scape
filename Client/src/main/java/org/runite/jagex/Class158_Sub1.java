@@ -688,194 +688,190 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
          Class97.anIntArrayArray1373[var2][var10] = 0;
          byte var14 = 0;
          boolean var16 = false;
-         if(-1001 == -1001) {
-            int var15 = 0;
-            Class3_Sub13_Sub38.anIntArray3456[var14] = var2;
-            int var27 = var14 + 1;
-            Class45.anIntArray729[var14] = var10;
-            int[][] var17 = Class86.aClass91Array1182[WorldListCountry.localPlane].anIntArrayArray1304;
+          int var15 = 0;
+          Class3_Sub13_Sub38.anIntArray3456[var14] = var2;
+          int var27 = var14 + 1;
+          Class45.anIntArray729[var14] = var10;
+          int[][] var17 = Class86.aClass91Array1182[WorldListCountry.localPlane].anIntArrayArray1304;
 
-            int var18;
-            while(var15 != var27) {
-               var13 = Class45.anIntArray729[var15];
-               var12 = Class3_Sub13_Sub38.anIntArray3456[var15];
-               var15 = 4095 & var15 + 1;
-               if(var12 == var0 && var13 == var4) {
-                  var16 = true;
-                  break;
-               }
+          int var18;
+          while(var15 != var27) {
+             var13 = Class45.anIntArray729[var15];
+             var12 = Class3_Sub13_Sub38.anIntArray3456[var15];
+             var15 = 4095 & var15 + 1;
+             if(var12 == var0 && var13 == var4) {
+                var16 = true;
+                break;
+             }
 
-               if(var9 != 0) {
-                  if((var9 < 5 || 10 == var9) && Class86.aClass91Array1182[WorldListCountry.localPlane].method1488(var4, var12, var13, var0, var9 + -1, 1, var7)) {
-                     var16 = true;
-                     break;
-                  }
+             if(var9 != 0) {
+                if((var9 < 5 || 10 == var9) && Class86.aClass91Array1182[WorldListCountry.localPlane].method1488(var4, var12, var13, var0, var9 + -1, 1, var7)) {
+                   var16 = true;
+                   break;
+                }
 
-                  if(var9 < 10 && Class86.aClass91Array1182[WorldListCountry.localPlane].method1492(var4, -1 + var9, var0, var13, 1, var7, var12, 95)) {
-                     var16 = true;
-                     break;
-                  }
-               }
+                if(var9 < 10 && Class86.aClass91Array1182[WorldListCountry.localPlane].method1492(var4, -1 + var9, var0, var13, 1, var7, var12, 95)) {
+                   var16 = true;
+                   break;
+                }
+             }
 
-               if(var11 != 0 && 0 != var6 && Class86.aClass91Array1182[WorldListCountry.localPlane].method1498(var0, var13, var12, 1, var11, var1, var4, var6)) {
-                  var16 = true;
-                  break;
-               }
+             if(var11 != 0 && 0 != var6 && Class86.aClass91Array1182[WorldListCountry.localPlane].method1498(var0, var13, var12, 1, var11, var1, var4, var6)) {
+                var16 = true;
+                break;
+             }
 
-               var18 = 1 + Class97.anIntArrayArray1373[var12][var13];
-               if(0 < var12 && Class84.anIntArrayArray1160[var12 + -1][var13] == 0 && (19661064 & var17[var12 + -1][var13]) == 0) {
-                  Class3_Sub13_Sub38.anIntArray3456[var27] = -1 + var12;
-                  Class45.anIntArray729[var27] = var13;
-                  var27 = var27 - -1 & 4095;
-                  Class84.anIntArrayArray1160[-1 + var12][var13] = 2;
-                  Class97.anIntArrayArray1373[-1 + var12][var13] = var18;
-               }
+             var18 = 1 + Class97.anIntArrayArray1373[var12][var13];
+             if(0 < var12 && Class84.anIntArrayArray1160[var12 + -1][var13] == 0 && (19661064 & var17[var12 + -1][var13]) == 0) {
+                Class3_Sub13_Sub38.anIntArray3456[var27] = -1 + var12;
+                Class45.anIntArray729[var27] = var13;
+                var27 = var27 - -1 & 4095;
+                Class84.anIntArrayArray1160[-1 + var12][var13] = 2;
+                Class97.anIntArrayArray1373[-1 + var12][var13] = var18;
+             }
 
-               if(103 > var12 && Class84.anIntArrayArray1160[var12 + 1][var13] == 0 && (var17[var12 + 1][var13] & 19661184) == 0) {
-                  Class3_Sub13_Sub38.anIntArray3456[var27] = var12 - -1;
-                  Class45.anIntArray729[var27] = var13;
-                  var27 = 1 + var27 & 4095;
-                  Class84.anIntArrayArray1160[var12 - -1][var13] = 8;
-                  Class97.anIntArrayArray1373[1 + var12][var13] = var18;
-               }
+             if(103 > var12 && Class84.anIntArrayArray1160[var12 + 1][var13] == 0 && (var17[var12 + 1][var13] & 19661184) == 0) {
+                Class3_Sub13_Sub38.anIntArray3456[var27] = var12 - -1;
+                Class45.anIntArray729[var27] = var13;
+                var27 = 1 + var27 & 4095;
+                Class84.anIntArrayArray1160[var12 - -1][var13] = 8;
+                Class97.anIntArrayArray1373[1 + var12][var13] = var18;
+             }
 
-               if(var13 > 0 && Class84.anIntArrayArray1160[var12][var13 - 1] == 0 && (19661058 & var17[var12][-1 + var13]) == 0) {
-                  Class3_Sub13_Sub38.anIntArray3456[var27] = var12;
-                  Class45.anIntArray729[var27] = -1 + var13;
-                  Class84.anIntArrayArray1160[var12][var13 - 1] = 1;
-                  var27 = var27 + 1 & 4095;
-                  Class97.anIntArrayArray1373[var12][-1 + var13] = var18;
-               }
+             if(var13 > 0 && Class84.anIntArrayArray1160[var12][var13 - 1] == 0 && (19661058 & var17[var12][-1 + var13]) == 0) {
+                Class3_Sub13_Sub38.anIntArray3456[var27] = var12;
+                Class45.anIntArray729[var27] = -1 + var13;
+                Class84.anIntArrayArray1160[var12][var13 - 1] = 1;
+                var27 = var27 + 1 & 4095;
+                Class97.anIntArrayArray1373[var12][-1 + var13] = var18;
+             }
 
-               if(103 > var13 && Class84.anIntArrayArray1160[var12][1 + var13] == 0 && (19661088 & var17[var12][var13 + 1]) == 0) {
-                  Class3_Sub13_Sub38.anIntArray3456[var27] = var12;
-                  Class45.anIntArray729[var27] = var13 - -1;
-                  var27 = 1 + var27 & 4095;
-                  Class84.anIntArrayArray1160[var12][1 + var13] = 4;
-                  Class97.anIntArrayArray1373[var12][var13 - -1] = var18;
-               }
+             if(103 > var13 && Class84.anIntArrayArray1160[var12][1 + var13] == 0 && (19661088 & var17[var12][var13 + 1]) == 0) {
+                Class3_Sub13_Sub38.anIntArray3456[var27] = var12;
+                Class45.anIntArray729[var27] = var13 - -1;
+                var27 = 1 + var27 & 4095;
+                Class84.anIntArrayArray1160[var12][1 + var13] = 4;
+                Class97.anIntArrayArray1373[var12][var13 - -1] = var18;
+             }
 
-               if(var12 > 0 && var13 > 0 && Class84.anIntArrayArray1160[-1 + var12][var13 - 1] == 0 && (var17[var12 - 1][-1 + var13] & 19661070) == 0 && (19661064 & var17[var12 - 1][var13]) == 0 && (19661058 & var17[var12][-1 + var13]) == 0) {
-                  Class3_Sub13_Sub38.anIntArray3456[var27] = -1 + var12;
-                  Class45.anIntArray729[var27] = var13 + -1;
-                  var27 = 1 + var27 & 4095;
-                  Class84.anIntArrayArray1160[-1 + var12][-1 + var13] = 3;
-                  Class97.anIntArrayArray1373[var12 - 1][var13 + -1] = var18;
-               }
+             if(var12 > 0 && var13 > 0 && Class84.anIntArrayArray1160[-1 + var12][var13 - 1] == 0 && (var17[var12 - 1][-1 + var13] & 19661070) == 0 && (19661064 & var17[var12 - 1][var13]) == 0 && (19661058 & var17[var12][-1 + var13]) == 0) {
+                Class3_Sub13_Sub38.anIntArray3456[var27] = -1 + var12;
+                Class45.anIntArray729[var27] = var13 + -1;
+                var27 = 1 + var27 & 4095;
+                Class84.anIntArrayArray1160[-1 + var12][-1 + var13] = 3;
+                Class97.anIntArrayArray1373[var12 - 1][var13 + -1] = var18;
+             }
 
-               if(var12 < 103 && 0 < var13 && Class84.anIntArrayArray1160[var12 - -1][var13 - 1] == 0 && 0 == (19661187 & var17[var12 - -1][-1 + var13]) && (19661184 & var17[var12 - -1][var13]) == 0 && (19661058 & var17[var12][-1 + var13]) == 0) {
-                  Class3_Sub13_Sub38.anIntArray3456[var27] = var12 + 1;
-                  Class45.anIntArray729[var27] = -1 + var13;
-                  var27 = 4095 & var27 + 1;
-                  Class84.anIntArrayArray1160[1 + var12][var13 + -1] = 9;
-                  Class97.anIntArrayArray1373[var12 - -1][-1 + var13] = var18;
-               }
+             if(var12 < 103 && 0 < var13 && Class84.anIntArrayArray1160[var12 - -1][var13 - 1] == 0 && 0 == (19661187 & var17[var12 - -1][-1 + var13]) && (19661184 & var17[var12 - -1][var13]) == 0 && (19661058 & var17[var12][-1 + var13]) == 0) {
+                Class3_Sub13_Sub38.anIntArray3456[var27] = var12 + 1;
+                Class45.anIntArray729[var27] = -1 + var13;
+                var27 = 4095 & var27 + 1;
+                Class84.anIntArrayArray1160[1 + var12][var13 + -1] = 9;
+                Class97.anIntArrayArray1373[var12 - -1][-1 + var13] = var18;
+             }
 
-               if(0 < var12 && var13 < 103 && 0 == Class84.anIntArrayArray1160[var12 + -1][var13 + 1] && 0 == (19661112 & var17[var12 + -1][1 + var13]) && 0 == (var17[var12 + -1][var13] & 19661064) && (19661088 & var17[var12][1 + var13]) == 0) {
-                  Class3_Sub13_Sub38.anIntArray3456[var27] = var12 - 1;
-                  Class45.anIntArray729[var27] = 1 + var13;
-                  Class84.anIntArrayArray1160[-1 + var12][var13 - -1] = 6;
-                  var27 = 4095 & 1 + var27;
-                  Class97.anIntArrayArray1373[-1 + var12][1 + var13] = var18;
-               }
+             if(0 < var12 && var13 < 103 && 0 == Class84.anIntArrayArray1160[var12 + -1][var13 + 1] && 0 == (19661112 & var17[var12 + -1][1 + var13]) && 0 == (var17[var12 + -1][var13] & 19661064) && (19661088 & var17[var12][1 + var13]) == 0) {
+                Class3_Sub13_Sub38.anIntArray3456[var27] = var12 - 1;
+                Class45.anIntArray729[var27] = 1 + var13;
+                Class84.anIntArrayArray1160[-1 + var12][var13 - -1] = 6;
+                var27 = 4095 & 1 + var27;
+                Class97.anIntArrayArray1373[-1 + var12][1 + var13] = var18;
+             }
 
-               if(var12 < 103 && var13 < 103 && Class84.anIntArrayArray1160[var12 - -1][1 + var13] == 0 && (19661280 & var17[1 + var12][var13 + 1]) == 0 && (var17[1 + var12][var13] & 19661184) == 0 && (19661088 & var17[var12][var13 - -1]) == 0) {
-                  Class3_Sub13_Sub38.anIntArray3456[var27] = var12 + 1;
-                  Class45.anIntArray729[var27] = var13 - -1;
-                  Class84.anIntArrayArray1160[var12 + 1][1 + var13] = 12;
-                  var27 = var27 - -1 & 4095;
-                  Class97.anIntArrayArray1373[1 + var12][var13 - -1] = var18;
-               }
-            }
+             if(var12 < 103 && var13 < 103 && Class84.anIntArrayArray1160[var12 - -1][1 + var13] == 0 && (19661280 & var17[1 + var12][var13 + 1]) == 0 && (var17[1 + var12][var13] & 19661184) == 0 && (19661088 & var17[var12][var13 - -1]) == 0) {
+                Class3_Sub13_Sub38.anIntArray3456[var27] = var12 + 1;
+                Class45.anIntArray729[var27] = var13 - -1;
+                Class84.anIntArrayArray1160[var12 + 1][1 + var13] = 12;
+                var27 = var27 - -1 & 4095;
+                Class97.anIntArrayArray1373[1 + var12][var13 - -1] = var18;
+             }
+          }
 
-            Class129.anInt1692 = 0;
-            int var19;
-            if(!var16) {
-               if(!var8) {
-                  return false;
-               }
+          Class129.anInt1692 = 0;
+          int var19;
+          if(!var16) {
+             if(!var8) {
+                return false;
+             }
 
-               var18 = 1000;
-               var19 = 100;
-               byte var20 = 10;
+             var18 = 1000;
+             var19 = 100;
+             byte var20 = 10;
 
-               for(int var21 = var0 + -var20; var20 + var0 >= var21; ++var21) {
-                  for(int var22 = var4 + -var20; var4 - -var20 >= var22; ++var22) {
-                     if(var21 >= 0 && var22 >= 0 && 104 > var21 && var22 < 104 && 100 > Class97.anIntArrayArray1373[var21][var22]) {
-                        int var24 = 0;
-                        if(var4 > var22) {
-                           var24 = var4 + -var22;
-                        } else if(var6 + var4 - 1 < var22) {
-                           var24 = 1 + (-var4 - var6) + var22;
-                        }
+             for(int var21 = var0 + -var20; var20 + var0 >= var21; ++var21) {
+                for(int var22 = var4 + -var20; var4 - -var20 >= var22; ++var22) {
+                   if(var21 >= 0 && var22 >= 0 && 104 > var21 && var22 < 104 && 100 > Class97.anIntArrayArray1373[var21][var22]) {
+                      int var24 = 0;
+                      if(var4 > var22) {
+                         var24 = var4 + -var22;
+                      } else if(var6 + var4 - 1 < var22) {
+                         var24 = 1 + (-var4 - var6) + var22;
+                      }
 
-                        int var23 = 0;
-                        if(var0 <= var21) {
-                           if(-1 + var11 + var0 < var21) {
-                              var23 = 1 - var11 - (var0 - var21);
-                           }
-                        } else {
-                           var23 = var0 + -var21;
-                        }
+                      int var23 = 0;
+                      if(var0 <= var21) {
+                         if(-1 + var11 + var0 < var21) {
+                            var23 = 1 - var11 - (var0 - var21);
+                         }
+                      } else {
+                         var23 = var0 + -var21;
+                      }
 
-                        int var25 = var24 * var24 + var23 * var23;
-                        if(var18 > var25 || var18 == var25 && Class97.anIntArrayArray1373[var21][var22] < var19) {
-                           var13 = var22;
-                           var18 = var25;
-                           var12 = var21;
-                           var19 = Class97.anIntArrayArray1373[var21][var22];
-                        }
-                     }
-                  }
-               }
+                      int var25 = var24 * var24 + var23 * var23;
+                      if(var18 > var25 || var18 == var25 && Class97.anIntArrayArray1373[var21][var22] < var19) {
+                         var13 = var22;
+                         var18 = var25;
+                         var12 = var21;
+                         var19 = Class97.anIntArrayArray1373[var21][var22];
+                      }
+                   }
+                }
+             }
 
-               if(var18 == 1000) {
-                  return false;
-               }
+             if(var18 == 1000) {
+                return false;
+             }
 
-               if(var2 == var12 && var10 == var13) {
-                  return false;
-               }
+             if(var2 == var12 && var10 == var13) {
+                return false;
+             }
 
-               Class129.anInt1692 = 1;
-            }
+             Class129.anInt1692 = 1;
+          }
 
-            byte var28 = 0;
-            Class3_Sub13_Sub38.anIntArray3456[var28] = var12;
-            var15 = var28 + 1;
-            Class45.anIntArray729[var28] = var13;
+          byte var28 = 0;
+          Class3_Sub13_Sub38.anIntArray3456[var28] = var12;
+          var15 = var28 + 1;
+          Class45.anIntArray729[var28] = var13;
 
-            for(var18 = var19 = Class84.anIntArrayArray1160[var12][var13]; var2 != var12 || var13 != var10; var18 = Class84.anIntArrayArray1160[var12][var13]) {
-               if(var19 != var18) {
-                  var19 = var18;
-                  Class3_Sub13_Sub38.anIntArray3456[var15] = var12;
-                  Class45.anIntArray729[var15++] = var13;
-               }
+          for(var18 = var19 = Class84.anIntArrayArray1160[var12][var13]; var2 != var12 || var13 != var10; var18 = Class84.anIntArrayArray1160[var12][var13]) {
+             if(var19 != var18) {
+                var19 = var18;
+                Class3_Sub13_Sub38.anIntArray3456[var15] = var12;
+                Class45.anIntArray729[var15++] = var13;
+             }
 
-               if((var18 & 2) == 0) {
-                  if(0 != (8 & var18)) {
-                     --var12;
-                  }
-               } else {
-                  ++var12;
-               }
+             if((var18 & 2) == 0) {
+                if(0 != (8 & var18)) {
+                   --var12;
+                }
+             } else {
+                ++var12;
+             }
 
-               if((1 & var18) == 0) {
-                  if(0 != (4 & var18)) {
-                     --var13;
-                  }
-               } else {
-                  ++var13;
-               }
-            }
+             if((1 & var18) == 0) {
+                if(0 != (4 & var18)) {
+                   --var13;
+                }
+             } else {
+                ++var13;
+             }
+          }
 
-            if(var15 > 0) {
-               Class3_Sub13_Sub27.method299(100, var15, var5);
-               return true;
-            } else return var5 != 1;
-         } else {
-            return false;
-         }
+          if(var15 > 0) {
+             Class3_Sub13_Sub27.method299(100, var15, var5);
+             return true;
+          } else return var5 != 1;
       } catch (RuntimeException var26) {
          throw Class44.clientError(var26, "di.J(" + var0 + ',' + var1 + ',' + var2 + ',' + -1001 + ',' + var4 + ',' + var5 + ',' + var6 + ',' + var7 + ',' + var8 + ',' + var9 + ',' + var10 + ',' + var11 + ')');
       }

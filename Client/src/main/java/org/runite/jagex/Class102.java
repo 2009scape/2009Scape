@@ -12,12 +12,12 @@ final class Class102 implements Interface2 {
    private final byte[] aByteArray2129;
    static int anInt2130;
    static Class135[] aClass135Array2131 = new Class135[50];
-   private boolean aBoolean2134 = false;
+   private boolean aBoolean2134;
    private final boolean[] aBooleanArray2135;
    static int anInt2136;
    private final short[] aShortArray2137;
    private Class47 aClass47_2138;
-   private int anInt2139 = 50;
+   private int anInt2139;
    static Class3_Sub28_Sub16_Sub2[] aClass3_Sub28_Sub16_Sub2Array2140;
    static Player player;
    private Class47 aClass47_2142;
@@ -170,7 +170,6 @@ final class Class102 implements Interface2 {
             }
          }
 
-         var2 = -28 / ((var0 - -7) / 34);
       } catch (RuntimeException var14) {
          throw Class44.clientError(var14, "nk.V(" + var0 + ',' + var1 + ')');
       }

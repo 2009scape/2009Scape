@@ -19,19 +19,15 @@ final class Class32 {
       try {
          int var3 = -128 + (Class65.method1234(4, var2 + '\ub135', var0 - -91923) + (Class65.method1234(2, var2 + 10294, '\u93bd' + var0) + -128 >> 1) - -(Class65.method1234(1, var2, var0) + -128 >> 2));
          var3 = 35 + (int)(0.3D * (double)var3);
-         if(125 < 110) {
-            return 102;
-         } else {
-            if(var3 >= 10) {
-               if(var3 > 60) {
-                  var3 = 60;
-               }
-            } else {
-               var3 = 10;
-            }
+          if(var3 >= 10) {
+             if(var3 > 60) {
+                var3 = 60;
+             }
+          } else {
+             var3 = 10;
+          }
 
-            return var3;
-         }
+          return var3;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "fc.B(" + var0 + ',' + 125 + ',' + var2 + ')');
       }
@@ -75,7 +71,6 @@ final class Class32 {
       Class3_Sub13_Sub28.aClass3_Sub11ArrayArray3346 = (Class3_Sub11[][])null;
       Class3_Sub4.anInt2249 = 0;
       if(Class3_Sub28_Sub8.aClass113Array3610 != null) {
-         var0 = 0;
       }
 
       if(AnimationDefinition.aClass25Array1868 != null) {

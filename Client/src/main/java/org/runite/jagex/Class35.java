@@ -258,8 +258,6 @@ final class Class35 {
          var34 = var9;
       }
 
-      var33 /= 14;
-      var34 /= 14;
    }
 
 }

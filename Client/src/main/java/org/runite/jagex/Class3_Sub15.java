@@ -482,9 +482,7 @@ final class Class3_Sub15 extends Class3 {
                var46 = var31;
             }
 
-            var41 = null;
-
-            for(var44 = var48; var44 < 128; ++var44) {
+             for(var44 = var48; var44 < 128; ++var44) {
                this.aByteArray2430[var44] = (byte)(32 + this.aByteArray2430[var44] * var46 >> 6);
             }
          }

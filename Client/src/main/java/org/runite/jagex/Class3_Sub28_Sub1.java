@@ -31,7 +31,6 @@ final class Class3_Sub28_Sub1 extends Node {
             }
          }
 
-         var2 = 46 / ((-85 - -27) / 38);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bc.O(" + -85 + ')');
       }

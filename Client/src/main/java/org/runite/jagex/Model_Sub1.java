@@ -877,9 +877,7 @@ final class Model_Sub1 extends GameObject {
       if(this.aByteArray2859 != null) {
          var1.aByteArray2859 = new byte[this.anInt2849];
 
-         for(int var2 = 0; var2 < this.anInt2849; ++var2) {
-            var1.aByteArray2859[var2] = this.aByteArray2859[var2];
-         }
+          if (this.anInt2849 >= 0) System.arraycopy(this.aByteArray2859, 0, var1.aByteArray2859, 0, this.anInt2849);
       }
 
       var1.anInt2887 = this.anInt2887;

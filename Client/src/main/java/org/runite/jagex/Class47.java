@@ -439,7 +439,6 @@ final class Class47 {
                            var28 = var47 * 100 / var25;
                            RSString var55 = RenderAnimationDefinition.method903(new RSString[]{Class20.aClass94_436, Class3_Sub23.method407(0, true, 2, (long) var29), Class3_Sub21.aClass94_2498, Class72.method1298((byte) 9, var28), Class10.aClass94_148}, (byte) -113);
                            Class3_Sub13.aClass3_Sub28_Sub17_2379.method688(var55, var20, var21, var24, -1);
-                           var21 += 12;
                            Class3_Sub28_Sub14.aBooleanArray3674[var12] = true;
                            Class163_Sub1_Sub1.aBooleanArray4008[var12] = true;
                            continue;
@@ -540,8 +539,6 @@ final class Class47 {
                                           }
                                        }
                                     } else {
-                                       var39 = false;
-                                       var46 = false;
                                        var47 = var11.itemAmounts[var20] + -1;
                                        if (var0 < 32 + var23 && var4 > var23 && var24 - -32 > var6 && var7 > var24 || var11 == Class67.aClass11_1017 && var20 == PacketParser.anInt86) {
                                           Class3_Sub28_Sub16 var54;
@@ -1131,8 +1128,8 @@ final class Class47 {
             quickChatMessages = (CacheIndex)null;
          }
 
-         int var1 = Class3_Sub13_Sub13.anInt3155 >> -971224825;
-         int var2 = Class62.anInt942 >> -694284537;
+         int var1 = Class3_Sub13_Sub13.anInt3155 >> 7;
+         int var2 = Class62.anInt942 >> 7;
          int var3 = Class121.method1736(WorldListCountry.localPlane, 1, Class3_Sub13_Sub13.anInt3155, Class62.anInt942);
          int var4 = 0;
          int var5;
@@ -1189,7 +1186,7 @@ final class Class47 {
             return 12345678;
          } else {
 
-            var0 = var0 * (127 & var2) >> 2137332647;
+            var0 = var0 * (127 & var2) >> 7;
             if(2 <= var0) {
                if(126 < var0) {
                   var0 = 126;

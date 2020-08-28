@@ -50,7 +50,6 @@ final class Class12 {
             }
          }
 
-         var6 = 56 % ((var1 - -18) / 50);
          if(var3 >= 0 && var2 >= 0 && var3 < 104 && var2 < 104) {
             if(var0 != 0) {
                if(var3 > 0 && Class44.anIntArrayArrayArray723[-1 + var0][var3 + -1][var2] != Class44.anIntArrayArrayArray723[var0][-1 + var3][var2]) {
@@ -87,7 +86,7 @@ final class Class12 {
    static int method872(int var1, int var2) {
       try {
          Class3_Sub25 var3 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var1, 0);
-         return null == var3?0:(-1 >= ~var2 && var2 < var3.anIntArray2551.length?var3.anIntArray2551[var2]:0);
+         return null == var3?0:(var2 >= 0 && var2 < var3.anIntArray2551.length?var3.anIntArray2551[var2]:0);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "bm.C(" + -1 + ',' + var1 + ',' + var2 + ')');
       }

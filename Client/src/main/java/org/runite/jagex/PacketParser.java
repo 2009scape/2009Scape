@@ -409,7 +409,6 @@ final class PacketParser {
                                                                 }
                                                             }
 
-                                                            var32 = false;
                                                             clanChatIcon = Node.clanSize;
 
                                                             while (clanChatIcon > 0) {
@@ -892,7 +891,7 @@ final class PacketParser {
                                                                         }
                                                                     }
 
-                                                                    boolean var45 = false;
+                                                                    boolean var45;
                                                                     if (null != var46 && 200 > Class8.anInt104) {
                                                                         Class50.aLongArray826[Class8.anInt104] = var2;
                                                                         Class70.aClass94Array1046[Class8.anInt104] = var46;
@@ -981,7 +980,7 @@ final class PacketParser {
                                                                     chatIcon = GraphicDefinition.incomingBuffer.getByte((byte) -28);
                                                                     var33 = GraphicDefinition.incomingBuffer.getShort(1);
                                                                     boolean var49 = false;
-                                                                    long var51 = (nameAsLong << -737495840) - -var29;
+                                                                    long var51 = (nameAsLong << 32) - -var29;
                                                                     int var59 = 0;
 
                                                                     label1603:
@@ -1557,7 +1556,7 @@ final class PacketParser {
 
                                                                             if (Class146.updateInterfacePacketCounter(nodeModelId)) {
                                                                                 for (var30 = counter; var30 <= var19; ++var30) {
-                                                                                    var36 = ((long) modelId << -1381724512) - -((long) var30);
+                                                                                    var36 = ((long) modelId << 32) - -((long) var30);
                                                                                     var47 = (Class3_Sub1) Class124.aClass130_1659.method1780(var36, 0);
                                                                                     if (var47 == null) {
                                                                                         if (-1 == var30) {

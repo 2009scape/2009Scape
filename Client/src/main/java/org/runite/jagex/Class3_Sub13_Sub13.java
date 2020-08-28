@@ -22,26 +22,24 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
             var0 = -1;
          }
 
-         if(20827 == 20827) {
-            if(var0 != Class65.anInt991) {
-               if(var0 != -1) {
-                  Class55 var2 = Class3_Sub13_Sub29.method311(var0);
-                  Class3_Sub28_Sub16_Sub2 var3 = var2.method1179();
-                  if(null == var3) {
-                     var0 = -1;
-                  } else {
-                     Class38.aClass87_665.method1434(var3.method655(), 10000, var3.anInt3697, Class3_Sub28_Sub12.aCanvas3648, new Point(var2.anInt881, var2.anInt879), var3.anInt3706);
-                     Class65.anInt991 = var0;
-                  }
-               }
+          if(var0 != Class65.anInt991) {
+             if(var0 != -1) {
+                Class55 var2 = Class3_Sub13_Sub29.method311(var0);
+                Class3_Sub28_Sub16_Sub2 var3 = var2.method1179();
+                if(null == var3) {
+                   var0 = -1;
+                } else {
+                   Class38.aClass87_665.method1434(var3.method655(), 10000, var3.anInt3697, Class3_Sub28_Sub12.aCanvas3648, new Point(var2.anInt881, var2.anInt879), var3.anInt3706);
+                   Class65.anInt991 = var0;
+                }
+             }
 
-               if(var0 == -1 && Class65.anInt991 != -1) {
-                  Class38.aClass87_665.method1434((int[])null, 10000, -1, Class3_Sub28_Sub12.aCanvas3648, new Point(), -1);
-                  Class65.anInt991 = -1;
-               }
+             if(var0 == -1 && Class65.anInt991 != -1) {
+                Class38.aClass87_665.method1434((int[])null, 10000, -1, Class3_Sub28_Sub12.aCanvas3648, new Point(), -1);
+                Class65.anInt991 = -1;
+             }
 
-            }
-         }
+          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "gg.C(" + var0 + ',' + 20827 + ')');
       }

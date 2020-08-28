@@ -70,8 +70,6 @@ static boolean aBoolean1080 = false;
             Class3_Sub13_Sub21.aClass3_Sub28_Sub3_3264 = NodeList.method884(8 * Class3_Sub28_Sub7.anInt3606, (byte)88, 8 * Class3_Sub7.anInt2294);
             int var10 = -var8 + Class82.anInt1152;
             int var9 = Class131.anInt1716 + -var7;
-            var7 = Class131.anInt1716;
-            var8 = Class82.anInt1152;
             Class3_Sub13_Sub35.aClass131_3421 = null;
             int var11;
             NPC var12;
@@ -229,7 +227,7 @@ static boolean aBoolean1080 = false;
 
    static RSString method1303(RSInterface var0, RSString var1) {
       try {
-         if(~var1.indexOf(Class24.aClass94_468, 102) == 0) {
+         if(var1.indexOf(Class24.aClass94_468, 102) == -1) {
             return var1;
          } else {
             while(true) {
@@ -308,8 +306,6 @@ static boolean aBoolean1080 = false;
          }
 
          this.aThread1090 = null;
-         if(3208 != 3208) {
-         }
 
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "k.B(" + 3208 + ')');

@@ -304,11 +304,8 @@ final class Class24 {
    final boolean method948() {
       try {
          boolean var2 = true;
-         if(18991 != 18991) {
-            this.aShortArray460 = (short[])null;
-         }
 
-         for(int var3 = 0; var3 < 5; ++var3) {
+          for(int var3 = 0; var3 < 5; ++var3) {
             if(-1 != this.anIntArray475[var3] && !Class10.aClass153_152.method2129((byte)95, 0, this.anIntArray475[var3])) {
                var2 = false;
             }

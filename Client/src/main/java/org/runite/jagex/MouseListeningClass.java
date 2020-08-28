@@ -59,7 +59,7 @@ final class MouseListeningClass implements MouseListener, MouseMotionListener, F
 	            }
 	          }
 	        }
-	        else if ((-1 < (~var1.anInt2254)) || (Class3_Sub28_Sub10.method590((byte)-66, var1.anInt2254, var1.anInt2253)))
+	        else if ((var1.anInt2254 < 0) || (Class3_Sub28_Sub10.method590((byte)-66, var1.anInt2254, var1.anInt2253)))
 	        {
 	          Class41.method1048(var1.anInt2254, var1.anInt2264, var1.anInt2250, var1.anInt2257, var1.anInt2248, -71, var1.anInt2253, var1.anInt2263);
 	          var1.method86(-1024);

@@ -49,10 +49,7 @@ final class AnimationDefinition {
 
 	final void method2053(RSByteBuffer var1) {
 		try {
-			if((byte) -102 != -102) {
-				this.method2055((Model)null, (byte)88, 7, 103, 54);
-			}
-		//	System.out.print("Animation " + animId + " - parsed [");
+			//	System.out.print("Animation " + animId + " - parsed [");
 			while(true) {
 				int var3 = var1.getByte((byte)-46);
 				if(var3 == 0) {
@@ -412,7 +409,6 @@ final class AnimationDefinition {
 				this.aBoolean1872 = true;
 			}
 
-			var4 = 0;
 		} catch (RuntimeException var8) {
 			throw Class44.clientError(var8, "tk.H(" + var1 + ',' + (byte) -73 + ',' + (var3 != null?"{...}":"null") + ')');
 		}

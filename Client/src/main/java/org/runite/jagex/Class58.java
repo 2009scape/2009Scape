@@ -83,9 +83,6 @@ final class Class58 {
 
                return var9;
             } catch (Throwable var7) {
-               if(14 != 14) {
-                  anInt909 = 124;
-               }
 
                try {
                   Class155_Sub1 var5 = new Class155_Sub1(var1, var3);
@@ -97,7 +94,7 @@ final class Class58 {
                   if(Class3_Sub24_Sub4.anInt3507 > 0 && null == Class38_Sub1.aClass15_2613) {
                      Class38_Sub1.aClass15_2613 = new Class15();
                      Class38_Sub1.aClass15_2613.aClass87_350 = var1;
-                     var1.method1451(14 ^ 14, Class3_Sub24_Sub4.anInt3507, Class38_Sub1.aClass15_2613);
+                     var1.method1451(0, Class3_Sub24_Sub4.anInt3507, Class38_Sub1.aClass15_2613);
                   }
 
                   if(Class38_Sub1.aClass15_2613 != null) {

@@ -170,9 +170,6 @@ final class Class3_Sub28_Sub11 extends Node {
             return var1;
          } else {
             Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_3636.method1780((long)var3, 0);
-            if((byte) -44 != -44) {
-               Translation.englishToGerman(false);
-            }
 
             return null != var4?var4.aClass94_2586:var1;
          }

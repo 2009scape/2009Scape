@@ -245,9 +245,6 @@ final class Class3_Sub28_Sub20 extends Node {
 
    final void method723(int var1) {
       try {
-         if((byte) -120 != -120) {
-            method721(-42);
-         }
 
          if(this.anIntArray3793 != null) {
             if(0 != this.anInt3799 || this.anInt3783 != 0) {

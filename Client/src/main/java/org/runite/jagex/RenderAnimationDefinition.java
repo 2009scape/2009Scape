@@ -269,9 +269,6 @@ final class RenderAnimationDefinition {
 
    final void parse(RSByteBuffer var2) {
       try {
-         if(-1 != -1) {
-            method900((Class140_Sub4)null, -18);
-         }
 
          while(true) {
             int opcode = var2.getByte((byte)-34);

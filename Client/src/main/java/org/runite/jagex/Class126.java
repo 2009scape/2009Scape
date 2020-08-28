@@ -14,7 +14,7 @@ final class Class126 {
    static Client aClient1671;
    static int anInt1672 = 0;
    int anInt1673;
-   boolean aBoolean1674 = true;
+   boolean aBoolean1674;
    int anInt1675;
    static int anInt1676 = 0;
    static int anInt1677;

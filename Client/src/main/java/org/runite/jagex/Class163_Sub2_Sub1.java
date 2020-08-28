@@ -29,9 +29,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
 
    static void method2220() {
       try {
-         if(0 == 0) {
-            Class140_Sub4.aClass93_2792.method1524();
-         }
+          Class140_Sub4.aClass93_2792.method1524();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "t.H(" + 0 + ')');
       }

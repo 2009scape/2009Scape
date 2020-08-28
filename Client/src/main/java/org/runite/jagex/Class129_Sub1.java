@@ -41,7 +41,6 @@ final class Class129_Sub1 extends Class129 {
             this.aLongArray2694[var2] = 0L;
          }
 
-         var2 = -114 % ((-124 - -82) / 42);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "lj.A(" + -124 + ')');
       }

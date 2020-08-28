@@ -186,9 +186,6 @@ final class Class3_Sub28_Sub14 extends Node {
 
    static void method628(int var1, int var2, Player var3) {
       try {
-         if(0 != 0) {
-            aBooleanArray3674 = (boolean[])null;
-         }
 
          if(var3.anInt2771 == var2 && var2 != -1) {
             AnimationDefinition var4 = Client.getAnimationDefinition(var2);

@@ -113,7 +113,7 @@ final class Class151_Sub1 extends Class151 {
                   return null;
                }
 
-               this.aClass3_Sub28_Sub10_2950 = this.aClass66_2953.addJS5Request(0 ^ 115, 255, (byte)0, this.anInt2957, true);
+               this.aClass3_Sub28_Sub10_2950 = this.aClass66_2953.addJS5Request(115, 255, (byte)0, this.anInt2957, true);
             }
 
             if(this.aClass3_Sub28_Sub10_2950.aBoolean3632) {
@@ -249,9 +249,6 @@ final class Class151_Sub1 extends Class151 {
             if (null == var2) {
                return 0;
             } else {
-               if (1 != 1) {
-                  this.anInt2964 = -91;
-               }
 
                return (int) var2.aLong71;
             }

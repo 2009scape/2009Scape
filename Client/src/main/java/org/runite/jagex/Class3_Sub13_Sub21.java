@@ -235,9 +235,6 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
    private boolean method270(int var2, int var3) {
       try {
          int var4 = this.anInt3257 * (var2 + var3) >> 12;
-         if((byte) -44 > -17) {
-            method267((byte)89);
-         }
 
          int var5 = Class75_Sub2.anIntArray2639[var4 * 255 >> 12 & 255];
          var5 = (var5 << 12) / this.anInt3257;

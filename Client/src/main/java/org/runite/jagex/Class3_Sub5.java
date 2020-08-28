@@ -268,97 +268,95 @@ final class Class3_Sub5 extends Class3 {
             }
          }
 
-         if(670232012 == 670232012) {
-            label226:
-            for(var3 = 0; var3 < var2; ++var3) {
-               long var16;
-               if(var0) {
-                  var4 = Class102.player;
-                  var16 = 8791798054912L;
-               } else {
-                  var4 = Class3_Sub13_Sub22.players[Class56.localPlayerIndexes[var3]];
-                  var16 = (long)Class56.localPlayerIndexes[var3] << 32;
-               }
+          label226:
+          for(var3 = 0; var3 < var2; ++var3) {
+             long var16;
+             if(var0) {
+                var4 = Class102.player;
+                var16 = 8791798054912L;
+             } else {
+                var4 = Class3_Sub13_Sub22.players[Class56.localPlayerIndexes[var3]];
+                var16 = (long)Class56.localPlayerIndexes[var3] << 32;
+             }
 
-               if(var4 != null && var4.hasDefinitions()) {
-                  var4.aBoolean3968 = (RSInterface.aBoolean236 && Class159.localPlayerCount > 200 || 50 < Class159.localPlayerCount) && !var0 && var4.anInt2764 == var4.method1965().anInt368;
+             if(var4 != null && var4.hasDefinitions()) {
+                var4.aBoolean3968 = (RSInterface.aBoolean236 && Class159.localPlayerCount > 200 || 50 < Class159.localPlayerCount) && !var0 && var4.anInt2764 == var4.method1965().anInt368;
 
-                  var7 = var4.getSize();
-                  if(var7 == 1) {
-                     if(64 == (127 & var4.anInt2819) && (127 & var4.anInt2829) == 64) {
-                        var8 = var4.anInt2819 >> 7;
-                        var9 = var4.anInt2829 >> 7;
-                        if(var8 < 0 || var8 >= 104 || var9 < 0 || 104 <= var9) {
-                           continue;
-                        }
+                var7 = var4.getSize();
+                if(var7 == 1) {
+                   if(64 == (127 & var4.anInt2819) && (127 & var4.anInt2829) == 64) {
+                      var8 = var4.anInt2819 >> 7;
+                      var9 = var4.anInt2829 >> 7;
+                      if(var8 < 0 || var8 >= 104 || var9 < 0 || 104 <= var9) {
+                         continue;
+                      }
 
-                        if(Class163_Sub1_Sub1.anIntArrayArray4010[var8][var9] > 1) {
-                           --Class163_Sub1_Sub1.anIntArrayArray4010[var8][var9];
-                           continue;
-                        }
-                     }
-                  } else if((1 & var7) == 0 && (127 & var4.anInt2819) == 0 && (var4.anInt2829 & 127) == 0 || 1 == (1 & var7) && (127 & var4.anInt2819) == 64 && (var4.anInt2829 & 127) == 0) {
-                     var8 = var4.anInt2819 + -(64 * var7) >> 7;
-                     var10 = var7 + var8;
-                     var9 = -(var7 * 64) + var4.anInt2829 >> 7;
-                     if(var10 > 104) {
-                        var10 = 104;
-                     }
+                      if(Class163_Sub1_Sub1.anIntArrayArray4010[var8][var9] > 1) {
+                         --Class163_Sub1_Sub1.anIntArrayArray4010[var8][var9];
+                         continue;
+                      }
+                   }
+                } else if((1 & var7) == 0 && (127 & var4.anInt2819) == 0 && (var4.anInt2829 & 127) == 0 || 1 == (1 & var7) && (127 & var4.anInt2819) == 64 && (var4.anInt2829 & 127) == 0) {
+                   var8 = var4.anInt2819 + -(64 * var7) >> 7;
+                   var10 = var7 + var8;
+                   var9 = -(var7 * 64) + var4.anInt2829 >> 7;
+                   if(var10 > 104) {
+                      var10 = 104;
+                   }
 
-                     if(0 > var8) {
-                        var8 = 0;
-                     }
+                   if(0 > var8) {
+                      var8 = 0;
+                   }
 
-                     var11 = var7 + var9;
-                     if(var9 < 0) {
-                        var9 = 0;
-                     }
+                   var11 = var7 + var9;
+                   if(var9 < 0) {
+                      var9 = 0;
+                   }
 
-                     boolean var12 = true;
-                     if(var11 > 104) {
-                        var11 = 104;
-                     }
+                   boolean var12 = true;
+                   if(var11 > 104) {
+                      var11 = 104;
+                   }
 
-                     int var13;
-                     int var14;
-                     for(var13 = var8; var10 > var13; ++var13) {
-                        for(var14 = var9; var14 < var11; ++var14) {
-                           if(Class163_Sub1_Sub1.anIntArrayArray4010[var13][var14] <= 1) {
-                              var12 = false;
-                              break;
-                           }
-                        }
-                     }
+                   int var13;
+                   int var14;
+                   for(var13 = var8; var10 > var13; ++var13) {
+                      for(var14 = var9; var14 < var11; ++var14) {
+                         if(Class163_Sub1_Sub1.anIntArrayArray4010[var13][var14] <= 1) {
+                            var12 = false;
+                            break;
+                         }
+                      }
+                   }
 
-                     if(var12) {
-                        var13 = var8;
+                   if(var12) {
+                      var13 = var8;
 
-                        while(true) {
-                           if(var10 <= var13) {
-                              continue label226;
-                           }
+                      while(true) {
+                         if(var10 <= var13) {
+                            continue label226;
+                         }
 
-                           for(var14 = var9; var14 < var11; ++var14) {
-                              --Class163_Sub1_Sub1.anIntArrayArray4010[var13][var14];
-                           }
+                         for(var14 = var9; var14 < var11; ++var14) {
+                            --Class163_Sub1_Sub1.anIntArrayArray4010[var13][var14];
+                         }
 
-                           ++var13;
-                        }
-                     }
-                  }
+                         ++var13;
+                      }
+                   }
+                }
 
-                  if(null != var4.anObject2796 && var4.anInt2797 <= Class44.anInt719 && Class44.anInt719 < var4.anInt2778) {
-                     var4.aBoolean3968 = false;
-                     var4.anInt2831 = Class121.method1736(WorldListCountry.localPlane, 1, var4.anInt2819, var4.anInt2829);
-                     Class3_Sub13_Sub25.method292(WorldListCountry.localPlane, var4.anInt2819, var4.anInt2829, var4.anInt2831, var4, var4.anInt2785, var16, var4.anInt2788, var4.anInt2777, var4.anInt2818, var4.anInt2817);
-                  } else {
-                     var4.anInt2831 = Class121.method1736(WorldListCountry.localPlane, 1, var4.anInt2819, var4.anInt2829);
-                     Class20.method907(WorldListCountry.localPlane, var4.anInt2819, var4.anInt2829, var4.anInt2831, 64 * (var7 - 1) + 60, var4, var4.anInt2785, var16, var4.aBoolean2810);
-                  }
-               }
-            }
+                if(null != var4.anObject2796 && var4.anInt2797 <= Class44.anInt719 && Class44.anInt719 < var4.anInt2778) {
+                   var4.aBoolean3968 = false;
+                   var4.anInt2831 = Class121.method1736(WorldListCountry.localPlane, 1, var4.anInt2819, var4.anInt2829);
+                   Class3_Sub13_Sub25.method292(WorldListCountry.localPlane, var4.anInt2819, var4.anInt2829, var4.anInt2831, var4, var4.anInt2785, var16, var4.anInt2788, var4.anInt2777, var4.anInt2818, var4.anInt2817);
+                } else {
+                   var4.anInt2831 = Class121.method1736(WorldListCountry.localPlane, 1, var4.anInt2819, var4.anInt2829);
+                   Class20.method907(WorldListCountry.localPlane, var4.anInt2819, var4.anInt2829, var4.anInt2831, 64 * (var7 - 1) + 60, var4, var4.anInt2785, var16, var4.aBoolean2810);
+                }
+             }
+          }
 
-         }
       } catch (RuntimeException var15) {
          throw Class44.clientError(var15, "cn.C(" + var0 + ',' + 670232012 + ')');
       }

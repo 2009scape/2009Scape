@@ -224,7 +224,6 @@ final class Class83 {
                      Class74.method1323(var14, var20, var16, var22, var19);
                   }
 
-                  var10000 = var15 + var5;
                }
             }
          }
@@ -236,7 +235,6 @@ final class Class83 {
             if(var16 > 0) {
                var14 += var5;
                var17 = var6 + var13 >> 6;
-               var10000 = var15 + var5;
                if(var17 >= 0 && Class29.anIntArrayArrayArray558.length + -1 >= var17) {
                   var41 = Class29.anIntArrayArrayArray558[var17];
 
@@ -247,7 +245,6 @@ final class Class83 {
                      if(var22 > 0) {
                         var20 += var0;
                         int var44 = var19 - -var3 >> 6;
-                        var10000 = var21 + var0;
                         if(var44 >= 0 && var44 <= -1 + var41.length) {
                            var24 = ((63 & var3 + var19) << 6) - -(var13 - -var6 & 63);
                            if(null != var41[var44]) {
@@ -351,11 +348,8 @@ final class Class83 {
          } else if (this.aClass153_1153.getFileAmount(var1, (byte) 83) == 1) {
             return this.method1412(var3, var1, 0);
          } else {
-            if (33 < 0) {
-               this.aClass130_1159 = (Class130) null;
-            }
 
-            throw new RuntimeException();
+             throw new RuntimeException();
          }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "le.A(" + var1 + ',' + 33 + ',' + (var3 != null?"{...}":"null") + ')');

@@ -82,10 +82,6 @@ final class Class9 {
             Class3_Sub5.method117();
          }
 
-         if(4 != 4) {
-            aClass94_132 = (RSString)null;
-         }
-
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bb.A(" + 4 + ')');
       }

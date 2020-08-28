@@ -196,10 +196,10 @@ final class Class105 {
    }
 
    private static void method1638(Class9 var0) {
-      int var22 = 0;
-      int[] var23 = null;
-      int[] var24 = null;
-      int[] var25 = null;
+      int var22;
+      int[] var23;
+      int[] var24;
+      int[] var25;
       var0.anInt142 = 1;
       if(Class129.anIntArray1690 == null) {
          Class129.anIntArray1690 = new int[var0.anInt142 * 100000];
@@ -337,7 +337,7 @@ final class Class105 {
 
          int var42 = var0.anInt137 + 1;
          int var41 = -1;
-         byte var43 = 0;
+         byte var43;
 
          for(var35 = 0; var35 <= 255; ++var35) {
             var0.anIntArray134[var35] = 0;

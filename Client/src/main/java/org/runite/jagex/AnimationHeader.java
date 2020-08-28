@@ -4,8 +4,8 @@ package org.runite.jagex;
 final class AnimationHeader {
 
 	boolean aBoolean1382 = false;
-	int anInt1383 = -1;
-	Class3_Sub17 skins = null;
+	int anInt1383;
+	Class3_Sub17 skins;
 	short[] aShortArray1385;
 	boolean aBoolean1386 = false;
 	short[] aShortArray1387;

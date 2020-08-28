@@ -304,23 +304,19 @@ final class RSString implements Interface3 {
    final RSString method1533(RSString var1) {
       try {
          if(this.aBoolean2152) {
-            if(true) {
-               if(var1.length + this.length > this.byteArray.length) {
-                  int var3;
-                  for(var3 = 1; var3 < var1.length + this.length; var3 += var3) {
-                  }
-
-                  byte[] var4 = new byte[var3];
-                  Class76.method1357(this.byteArray, 0, var4, 0, this.length);
-                  this.byteArray = var4;
+            if(var1.length + this.length > this.byteArray.length) {
+               int var3;
+               for(var3 = 1; var3 < var1.length + this.length; var3 += var3) {
                }
 
-               Class76.method1357(var1.byteArray, 0, this.byteArray, this.length, var1.length);
-               this.length += var1.length;
-               return this;
-            } else {
-               return (RSString)null;
+               byte[] var4 = new byte[var3];
+               Class76.method1357(this.byteArray, 0, var4, 0, this.length);
+               this.byteArray = var4;
             }
+
+            Class76.method1357(var1.byteArray, 0, this.byteArray, this.length, var1.length);
+            this.length += var1.length;
+            return this;
          } else {
             throw new IllegalArgumentException();
          }
@@ -653,19 +649,7 @@ final class RSString implements Interface3 {
    }
 
    final void method1549() {
-      try {
-         String var2;
-         try {
 
-            var2 = new String(this.byteArray, 0, this.length, "ISO-8859-1");
-         } catch (UnsupportedEncodingException var4) {
-            var2 = new String(this.byteArray, 0, this.length);
-         }
-
-        // System.out.println(var2);
-      } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "na.BA(" + false + ')');
-      }
    }
 
    final boolean endsWith(byte var1, RSString var2) {
@@ -1027,9 +1011,7 @@ final class RSString implements Interface3 {
             var4.length = var3 + -var2;
             var4.byteArray = new byte[var4.length];
 
-            for(int var5 = 0; var5 < var4.length; ++var5) {
-               var4.byteArray[var5] = this.byteArray[var2 + var5];
-            }
+            if (var4.length >= 0) System.arraycopy(this.byteArray, var2 + 0, var4.byteArray, 0, var4.length);
 
             return var4;
          }
@@ -1071,7 +1053,7 @@ final class RSString implements Interface3 {
                var2 = 0;
             }
 
-            if(-1 == ~var4) {
+            if(var4 == 0) {
                return var2;
             } else {
                int var7 = this.length - var4;
@@ -1344,7 +1326,7 @@ final class RSString implements Interface3 {
          int var2 = 0;
 
          for(int var3 = 0; var3 < this.length; ++var3) {
-            var2 = (255 & this.byteArray[var3]) + -var2 + (var2 << 998234309);
+            var2 = (255 & this.byteArray[var3]) + -var2 + (var2 << 5);
          }
 
          return var2;

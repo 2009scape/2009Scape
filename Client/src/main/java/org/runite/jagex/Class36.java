@@ -379,7 +379,6 @@ final class Class36 {
                      this.anIntArray633 = var13;
                   }
 
-                  var12 >>>= 1;
                }
 
                this.anIntArray633[var10] = ~var5;

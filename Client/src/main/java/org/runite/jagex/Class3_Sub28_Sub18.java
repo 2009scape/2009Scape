@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 final class Class3_Sub28_Sub18 extends Node {
 
    static int anInt3757;
-   private int anInt3759 = -1;
+   private int anInt3759;
    private final int anInt3760;
    static int anInt3764;
    static int anInt3765 = 100;

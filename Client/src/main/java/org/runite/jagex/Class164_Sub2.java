@@ -257,11 +257,8 @@ class Class164_Sub2 extends Class164 {
    static void method2249(int var1) {
       try {
          Class3 var2 = Class124.aClass130_1659.method1776((byte) 83 + -6);
-         if((byte) 83 != 83) {
-            aClass33_3019 = (Class33)null;
-         }
 
-         for(; var2 != null; var2 = Class124.aClass130_1659.method1778(-97)) {
+          for(; var2 != null; var2 = Class124.aClass130_1659.method1778(-97)) {
             if((long) var1 == (65535L & var2.aLong71 >> 48)) {
                var2.method86(-1024);
             }
@@ -276,7 +273,6 @@ class Class164_Sub2 extends Class164 {
       try {
          int anInt3023;
          if(0 == var2) {
-            anInt3023 = 4096;
             this.anInt3024 = -(var1 >= 0 ?var1:-var1) + this.anInt3026;
             this.anInt3024 = this.anInt3024 * this.anInt3024 >> 12;
             this.anInt3029 = this.anInt3024;

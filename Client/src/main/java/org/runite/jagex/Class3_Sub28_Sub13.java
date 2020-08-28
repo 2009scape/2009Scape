@@ -16,9 +16,6 @@ final class Class3_Sub28_Sub13 extends Node {
 
    private void method615(int var1, RSByteBuffer var2) {
       try {
-         if((byte) -84 > -29) {
-            anInt3657 = 70;
-         }
 
          if(var1 == 1) {
             this.anInt3662 = var2.getByte((byte)-47);

@@ -166,7 +166,7 @@ final class NPC extends Class140_Sub4 {
 
 	final int getRenderAnimationId() {
 		try {
-			if(~Class158.anInt2014 != -1 && this.definition.childNPCs != null) {
+			if(Class158.anInt2014 != 0 && this.definition.childNPCs != null) {
 				NPCDefinition var2 = this.definition.method1471((byte)21);
 				if(var2 != null && var2.renderAnimationId != -1) {
 					return var2.renderAnimationId;
@@ -188,9 +188,6 @@ final class NPC extends Class140_Sub4 {
 
 	final boolean hasDefinitions() {
 		try {
-			if((byte) 17 != 17) {
-				method1984(-101, -40, 63);
-			}
 
 			return null != this.definition;
 		} catch (RuntimeException var3) {

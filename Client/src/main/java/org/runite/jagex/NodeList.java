@@ -96,7 +96,7 @@ final class NodeList {
       try {
          if(null == var1) {
             return null;
-         } else if (-22376 == -22376) {
+         } else {
             Object var2;
             if (HDToolKit.highDetail) {
                var2 = new Class3_Sub28_Sub17_Sub2(var1, Class164.anIntArray2048, RSByteBuffer.anIntArray2591, Class140_Sub7.anIntArray2931, Class3_Sub13_Sub6.anIntArray3076, Class163_Sub1.aByteArrayArray2987);
@@ -106,8 +106,6 @@ final class NodeList {
 
             Class39.method1035((byte) 106);
             return (Class3_Sub28_Sub17) var2;
-         } else {
-            return (Class3_Sub28_Sub17) null;
          }
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "ce.G(" + -22376 + ',' + "{...}" + ')');

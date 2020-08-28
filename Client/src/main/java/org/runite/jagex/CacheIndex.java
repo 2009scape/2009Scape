@@ -189,7 +189,7 @@ final class CacheIndex {
 
    final byte[] method2123(RSString var2, RSString var3) {
       try {
-         if(this.method2122(0 ^ 3)) {
+         if(this.method2122(3)) {
             var3 = var3.method1534();
             var2 = var2.method1534();
             int var4 = this.aClass62_1949.aClass69_949.method1280(var3.method1574());

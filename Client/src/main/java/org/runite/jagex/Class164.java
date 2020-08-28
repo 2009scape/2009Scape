@@ -9,15 +9,15 @@ abstract class Class164 {
    static int anInt2050;
    static int anInt2051;
    static CacheIndex aClass153_2052;
-   private int anInt2054 = 0;
+   private int anInt2054;
    static RSInterface aClass11_2055;
-   private int anInt2056 = 4;
-   private int anInt2057 = 4;
+   private int anInt2056;
+   private int anInt2057;
    static Model_Sub1[] aClass140_Sub5Array2058 = new Model_Sub1[4];
    static int anInt2059;
-   private int anInt2060 = 4;
+   private int anInt2060;
    static RSString aClass94_2061 = RSString.createRSString("Forced tweening disabled)3");
-   int anInt2062 = 4;
+   int anInt2062;
 
 
    final void method2230(int var1) {

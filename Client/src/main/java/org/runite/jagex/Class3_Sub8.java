@@ -295,10 +295,6 @@ final class Class3_Sub8 extends Class3 {
             method127(var0, var1, var2, var6 - -1);
          }
 
-         if(-909 != -909) {
-            method125(-13, (byte)113, -27, -120, (RSInterface)null);
-         }
-
       } catch (RuntimeException var12) {
          throw Class44.clientError(var12, "ed.E(" + (var0 != null?"{...}":"null") + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + -909 + ',' + var4 + ')');
       }

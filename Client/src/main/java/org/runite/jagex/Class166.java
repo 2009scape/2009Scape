@@ -53,11 +53,8 @@ final class Class166 {
 
    static void method2257() {
       try {
-         if(96 < 60) {
-            aClass3_Sub28_Sub16Array2072 = (Class3_Sub28_Sub16[])null;
-         }
 
-         Class163_Sub2_Sub1.aClass93_4015.method1524();
+          Class163_Sub2_Sub1.aClass93_4015.method1524();
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "wh.F(" + 96 + ')');
       }

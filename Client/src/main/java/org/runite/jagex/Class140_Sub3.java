@@ -215,13 +215,9 @@ final class Class140_Sub3 extends GameObject {
 
    static void method1959(boolean var3) {
       try {
-         if(22050 >= 8000 && 22050 <= '\ubb80') {
-            Class3_Sub24_Sub4.anInt3507 = 2;
-            RSString.aBoolean2150 = var3;
-            Class21.anInt443 = 22050;
-         } else {
-            throw new IllegalArgumentException();
-         }
+         Class3_Sub24_Sub4.anInt3507 = 2;
+         RSString.aBoolean2150 = var3;
+         Class21.anInt443 = 22050;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "dc.D(" + 256 + ',' + 2 + ',' + 22050 + ',' + var3 + ')');
       }
@@ -356,7 +352,7 @@ final class Class140_Sub3 extends GameObject {
             var6 = this.anInt2724 & 3;
             int var7;
             int var8;
-            if(~var6 == -2 || var6 == 3) {
+            if(var6 == 1 || var6 == 3) {
                var8 = var4.SizeX;
                var7 = var4.SizeY;
             } else {

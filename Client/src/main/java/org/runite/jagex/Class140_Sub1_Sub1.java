@@ -639,7 +639,7 @@ final class Class140_Sub1_Sub1 extends Model {
       float[] var8 = new float[9];
       float var9 = (float)Math.cos((double)((float)var3 * 0.024543693F));
       float var10 = (float)Math.sin((double)((float)var3 * 0.024543693F));
-      float var11 = 1.0F - var9;
+      float var11;
       var7[0] = var9;
       var7[1] = 0.0F;
       var7[2] = var10;
@@ -2940,7 +2940,6 @@ final class Class140_Sub1_Sub1 extends Model {
          if(this.aClass121_3817.aClass156_1643 != null) {
             if(var2 != this.aClass121_3817.aClass156_1643) {
                this.aClass121_3817.aClass156_1643.method2169();
-               var2 = this.aClass121_3817.aClass156_1643;
             }
 
             var1.glTexCoordPointer(2, 5126, this.aClass121_3817.anInt1648, (long)this.aClass121_3817.anInt1639);

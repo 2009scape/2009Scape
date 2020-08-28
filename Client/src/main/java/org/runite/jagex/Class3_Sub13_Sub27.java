@@ -97,7 +97,6 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
             }
          }
 
-         var4 = -73 / ((30 - var2) / 36);
          return var3;
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "pi.D(" + var1 + ',' + var2 + ')');

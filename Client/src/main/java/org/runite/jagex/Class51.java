@@ -1383,8 +1383,7 @@ final class Class51 {
                      var2 += var16;
                      var3 = var1[(var2 & 4032) + (var2 >>> 26)];
                      var0[var4++] = ((var3 & 16711935) * var15 & -16711936) + ((var3 & '\uff00') * var15 & 16711680) >> 8;
-                     var10000 = var2 + var16;
-                     var18 = var20;
+                      var18 = var20;
                      var19 = var21;
                      var9 += var12;
                      var10 += var13;
@@ -1465,8 +1464,7 @@ final class Class51 {
                      }
 
                      ++var4;
-                     var10000 = var2 + var16;
-                     var18 = var20;
+                      var18 = var20;
                      var19 = var21;
                      var9 += var12;
                      var10 += var13;
@@ -1558,8 +1556,7 @@ final class Class51 {
                      var2 += var16;
                      var3 = var1[(var2 & 16256) + (var2 >>> 25)];
                      var0[var4++] = ((var3 & 16711935) * var15 & -16711936) + ((var3 & '\uff00') * var15 & 16711680) >> 8;
-                     var10000 = var2 + var16;
-                     var18 = var20;
+                      var18 = var20;
                      var19 = var21;
                      var9 += var12;
                      var10 += var13;
@@ -1640,8 +1637,7 @@ final class Class51 {
                      }
 
                      ++var4;
-                     var10000 = var2 + var16;
-                     var18 = var20;
+                      var18 = var20;
                      var19 = var21;
                      var9 += var12;
                      var10 += var13;

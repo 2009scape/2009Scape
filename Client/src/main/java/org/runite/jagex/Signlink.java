@@ -22,16 +22,16 @@ public class Signlink implements Runnable {
 
    public static String javaVersion;
    public Class122[] aClass122Array1197;
-   public Class122 aClass122_1198 = null;
+   public Class122 aClass122_1198;
    public EventQueue anEventQueue1199;
    private final Thread aThread1200;
-   private boolean aBoolean1201 = false;
+   private boolean aBoolean1201;
    public static String osName;
    private Class64 aClass64_1203 = null;
-   public Class122 aClass122_1204 = null;
+   public Class122 aClass122_1204;
    public static String osNameCS;
    private Sensor aSensor1206;
-   public Class122 aClass122_1207 = null;
+   public Class122 aClass122_1207;
    private Display aDisplay1208;
    private static String homeDirectory;
    public static String osVersion;
@@ -43,7 +43,7 @@ public class Signlink implements Runnable {
    public static String javaVendor;
    private Interface1 anInterface1_1217;
    public static String osArchitecture;
-   public Applet anApplet1219 = null;
+   public Applet anApplet1219;
    public static Method aMethod1220;
    static volatile long aLong1221 = 0L;
    public static Method aMethod1222;
@@ -227,7 +227,7 @@ public class Signlink implements Runnable {
                         throw new IOException();
                      }
 
-                     var4 = (var1.anInt979 >> 24 & 255) + "." + (var1.anInt979 >> 16 & 255) + "." + (var1.anInt979 >> -168961752 & 255) + "." + (255 & var1.anInt979);
+                     var4 = (var1.anInt979 >> 24 & 255) + "." + (var1.anInt979 >> 16 & 255) + "." + (var1.anInt979 >> 8 & 255) + "." + (255 & var1.anInt979);
                      var1.anObject974 = InetAddress.getByName(var4).getHostName();
                   } else if (var2 == 5) {
                      var1.anObject974 = this.aDisplay1208.method919(true);
@@ -499,7 +499,6 @@ public class Signlink implements Runnable {
                      try {
                         if (var11 != null) {
                            var11.close();
-                           var11 = null;
                         }
                      } catch (Exception var15) {
                      }

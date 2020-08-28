@@ -251,8 +251,7 @@ static RSString[] aClass94Array3238 = new RSString[]{aClass94_3237, aClass94_324
             }
          }
 
-         var4 = -48 % ((30 - var2) / 36);
-         return var3;
+          return var3;
       } catch (RuntimeException var17) {
          throw Class44.clientError(var17, "mc.D(" + var1 + ',' + var2 + ')');
       }

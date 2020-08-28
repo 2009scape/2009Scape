@@ -4,13 +4,13 @@ import java.io.IOException;
 
 final class Class41 {
 
-   private Class30 aClass30_681 = null;
+   private Class30 aClass30_681;
    int cacheIndex;
-   private Class30 aClass30_683 = null;
+   private Class30 aClass30_683;
    static Class93 aClass93_684 = new Class93(64);
    static int anInt685;
    static int[] anIntArray686 = new int[2];
-   private int anInt687 = '\ufde8';
+   private int anInt687;
    static int anInt688 = 0;
    static int anInt689;
 
@@ -257,16 +257,14 @@ final class Class41 {
                boolean var10000;
                if(var5) {
                   if(this.aClass30_683.method976(var1 ^ 87) < (long)(6 + var3 * 6)) {
-                     var10000 = false;
-                     return false;
+                      return false;
                   }
 
                   this.aClass30_683.method984(-116, (long)(6 * var3));
                   this.aClass30_683.method978(0, Class162.aByteArray2040, 6);
                   var7 = (16711680 & Class162.aByteArray2040[3] << 16) + ('\uff00' & Class162.aByteArray2040[4] << 8) + (Class162.aByteArray2040[5] & 255);
                   if(var7 <= 0 || (long) var7 > this.aClass30_681.method976(0) / 520L) {
-                     var10000 = false;
-                     return false;
+                      return false;
                   }
                } else {
                   var7 = (int)((this.aClass30_681.method976(var1 + -87) - -519L) / 520L);
@@ -309,13 +307,11 @@ final class Class41 {
                            int var13 = 255 & Class162.aByteArray2040[7];
                            int var12 = (Class162.aByteArray2040[3] & 255) + (Class162.aByteArray2040[2] << 8 & '\uff00');
                            if(var11 != var3 || var12 != var9 || var13 != this.cacheIndex) {
-                              var10000 = false;
-                              return false;
+                               return false;
                            }
 
                            if(var10 < 0 || this.aClass30_681.method976(0) / 520L < (long) var10) {
-                              var10000 = false;
-                              return false;
+                               return false;
                            }
                         }
 
@@ -358,8 +354,7 @@ final class Class41 {
                      }
                   }
 
-                  var10000 = true;
-                  return true;
+                   return true;
                }
             } catch (IOException var16) {
                return false;

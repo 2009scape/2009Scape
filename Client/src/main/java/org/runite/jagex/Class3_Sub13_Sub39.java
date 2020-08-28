@@ -107,7 +107,6 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
             }
          }
 
-         var2 = -74 % ((-11 - 50) / 33);
       } catch (RuntimeException var21) {
          throw Class44.clientError(var21, "wi.E(" + -11 + ')');
       }

@@ -12,7 +12,7 @@ final class Class140_Sub6 extends GameObject {
    static int anInt2901;
    private final int anInt2902;
    int anInt2903;
-   private boolean aBoolean2904 = false;
+   private boolean aBoolean2904;
    static int anInt2905 = 0;
    static CacheIndex spritesCacheIndex;
    int anInt2907;

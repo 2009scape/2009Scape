@@ -164,7 +164,7 @@ final class Class66 {
 									int var10 = this.aClass3_Sub30_1008.getInt();
 									int var11 = 127 & var9;
 									boolean var12 = (var9 & 128) != 0;
-									Class3_Sub28_Sub10_Sub2 var15 = null;
+									Class3_Sub28_Sub10_Sub2 var15;
 									long var13 = (long)((var7 << 16) - -var8);
 									if(var12) {
 										for(var15 = (Class3_Sub28_Sub10_Sub2)this.aClass13_1003.method876((byte)76); null != var15 && var13 != var15.aLong2569; var15 = (Class3_Sub28_Sub10_Sub2)this.aClass13_1003.method878(122)) {
@@ -260,9 +260,6 @@ final class Class66 {
 
 	private int method1246() {
 		try {
-			if(11706 != 11706) {
-				aClass3_Sub28_Sub16Array996 = (Class3_Sub28_Sub16[])null;
-			}
 
 			return this.lowPriorityRequests.method874(-79) - -this.aClass13_1003.method874(-118);
 		} catch (RuntimeException var3) {
@@ -272,26 +269,24 @@ final class Class66 {
 
 	final void method1247(boolean var1) {
 		try {
-			if(true) {
-				if(null != this.aClass89_1005) {
+			if(null != this.aClass89_1005) {
+				try {
+					this.aClass3_Sub30_1007.index = 0;
+					this.aClass3_Sub30_1007.putByte((byte)-27, var1?2:3);
+					this.aClass3_Sub30_1007.putTriByte(0);
+					this.aClass89_1005.sendBytes(this.aClass3_Sub30_1007.buffer, 4);
+				} catch (IOException var6) {
+					var6.printStackTrace();
 					try {
-						this.aClass3_Sub30_1007.index = 0;
-						this.aClass3_Sub30_1007.putByte((byte)-27, var1?2:3);
-						this.aClass3_Sub30_1007.putTriByte(0);
-						this.aClass89_1005.sendBytes(this.aClass3_Sub30_1007.buffer, 4);
-					} catch (IOException var6) {
-						var6.printStackTrace();
-						try {
-							this.aClass89_1005.close(14821);
-						} catch (Exception var5) {
-						}
-
-						++this.anInt1011;
-						this.anInt1010 = -2;
-						this.aClass89_1005 = null;
+						this.aClass89_1005.close(14821);
+					} catch (Exception var5) {
 					}
 
+					++this.anInt1011;
+					this.anInt1010 = -2;
+					this.aClass89_1005 = null;
 				}
+
 			}
 		} catch (RuntimeException var7) {
 			throw Class44.clientError(var7, "jb.B(" + var1 + ',' + ')');
@@ -314,7 +309,7 @@ final class Class66 {
 		try {
 			if(null != this.aClass89_1005) {
 				try {
-					this.aClass89_1005.close(0 ^ 14821);
+					this.aClass89_1005.close(14821);
 				} catch (Exception var8) {
 				}
 

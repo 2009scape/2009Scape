@@ -181,11 +181,7 @@ final class Class40 {
                }
             }
 
-            if(-117 >= -92) {
-               method1042(true);
-            }
-
-            if(var1) {
+             if(var1) {
                if(Class163_Sub2_Sub1.anInt4019 != 0) {
                   Class3_Sub13.method164((byte)-24, true, RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingPleaseWait2, Class140_Sub2.aClass94_2707}, (byte)-127));
                }
@@ -281,7 +277,6 @@ final class Class40 {
                }
 
                if(WorldListCountry.localPlane + -1 > var12) {
-                  var12 = -1 + WorldListCountry.localPlane;
                }
 
                if(NPC.method1986(39)) {

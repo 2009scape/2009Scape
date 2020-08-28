@@ -57,11 +57,8 @@ final class Class29 {
          while(true) {
             int var3 = var2.getByte((byte)-74);
             if(0 == var3) {
-               if(-20638 != -20638) {
-                  method969((CacheIndex)null, 55);
-               }
 
-               return;
+                return;
             }
 
             this.method972(var2, var3);

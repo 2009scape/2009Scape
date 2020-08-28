@@ -145,7 +145,7 @@ final class Class3_Sub1 extends Class3 {
 
    final boolean method96() {
       try {
-         return -2063688673 == -2063688673 && (this.anInt2205 >> 31 & 1) != 0;
+         return (this.anInt2205 >> 31 & 1) != 0;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bf.T(" + -2063688673 + ')');
       }

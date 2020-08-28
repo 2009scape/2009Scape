@@ -29,11 +29,8 @@ final class Class75_Sub1 extends Class75 {
    static void method1342(int[] var0, int[] var1, Player var2, int[] var4) {
       try {
          int var5 = 0;
-         if((byte) -113 > -97) {
-            method1343(true);
-         }
 
-         while(var1.length > var5) {
+          while(var1.length > var5) {
             int var6 = var1[var5];
             int var7 = var4[var5];
             int var8 = var0[var5];

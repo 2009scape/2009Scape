@@ -700,8 +700,7 @@ final class Class82 {
          }
 
          this.aClass3_Sub13_1145 = this.aClass3_Sub13Array1147[var1.getByte((byte)-85)];
-         var5 = (int[][])null;
-         this.aClass3_Sub13_1148 = this.aClass3_Sub13Array1147[var1.getByte((byte)-87)];
+          this.aClass3_Sub13_1148 = this.aClass3_Sub13Array1147[var1.getByte((byte)-87)];
       } catch (RuntimeException var11) {
          throw Class44.clientError(var11, "lc.<init>(" + (var1 != null?"{...}":"null") + ')');
       }

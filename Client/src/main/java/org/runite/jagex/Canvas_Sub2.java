@@ -65,11 +65,8 @@ final class Canvas_Sub2 extends Canvas {
    static void parsePlayerMasks() {
       try {
          int var1 = 0;
-         if(-102 >= -46) {
-            method60(95, -37, -27, (Class91[])null, -59, (byte)-121, (byte[])null, -69, -50, -72, false);
-         }
 
-         while(var1 < Class66.maskUpdateCount) {
+          while(var1 < Class66.maskUpdateCount) {
             int var2 = Class21.maskUpdateIndexes[var1];
             Player var3 = Class3_Sub13_Sub22.players[var2];
             int var4 = GraphicDefinition.incomingBuffer.getByte((byte)-43);

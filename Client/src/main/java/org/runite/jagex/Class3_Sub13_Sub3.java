@@ -112,7 +112,6 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
             Class113.anInt1559 = var2;
          }
 
-         var3 = 111 / ((56 - var0) / 38);
          if(Class101.anInt1427 != var1) {
             if(Class113.anInt1559 == var1) {
                Class163_Sub3.anIntArray2999 = Class102.anIntArray2125;
@@ -172,9 +171,6 @@ final class Class3_Sub13_Sub3 extends Class3_Sub13 {
 
    static void method183() {
       try {
-         if(-108 > -91) {
-            aClass148_3049 = (KeyboardListener)null;
-         }
 
          Class41.aClass93_684.method1524();
          Class163_Sub1.aClass93_2984.method1524();

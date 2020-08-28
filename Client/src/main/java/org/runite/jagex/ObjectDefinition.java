@@ -211,7 +211,7 @@ final class ObjectDefinition {
          boolean var12;
          var12 = this.anInt1496 != 0 || this.anInt1511 != 0 || 0 != this.SecondBool;
 
-         Model_Sub1 var13 = new Model_Sub1(Objects.requireNonNull(var4), -1 == ~var1 && !var11 && !var12, this.OriginalColors == null, null == this.aShortArray1476);
+         Model_Sub1 var13 = new Model_Sub1(Objects.requireNonNull(var4), var1 == 0 && !var11 && !var12, this.OriginalColors == null, null == this.aShortArray1476);
          if(var2 == 4 && var1 > 3) {
             var13.method2011();
             var13.method2001(45, 0, -45);
@@ -614,7 +614,7 @@ final class ObjectDefinition {
       try {
          int var6 = this.anInt1494 + 64;
          int var7 = 5 * this.anInt1489 + 768;
-         Class140_Sub1_Sub1 var5 = null;
+         Class140_Sub1_Sub1 var5;
          int var8;
          int var12;
          if(this.configuration == null) {
@@ -919,7 +919,6 @@ final class ObjectDefinition {
 
             if(this.aByte1505 != 0) {
                if(!var19) {
-                  var19 = true;
                   var22 = (Class140_Sub1_Sub1)var22.method1890(true, true, true);
                }
 
@@ -963,7 +962,6 @@ final class ObjectDefinition {
             if(this.aByte1505 != 0) {
                if(!var21) {
                   var17 = (Class140_Sub1_Sub2)var17.method1890(true, true, true);
-                  var21 = true;
                }
 
                var17 = var17.method1941(this.aByte1505, this.aShort1500, var7, var11, var2, var4, var1, false);

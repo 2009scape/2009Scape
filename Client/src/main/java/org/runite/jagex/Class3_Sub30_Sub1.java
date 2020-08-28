@@ -1013,23 +1013,19 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 			int var4 = 8 + -(7 & this.anInt3806);
 			int var5 = 0;
 			this.anInt3806 += var2;
-			if((byte) -11 == -11) {
-				while(var2 > var4) {
-					var5 += (Class140_Sub2.anIntArray2709[var4] & this.buffer[var3++]) << -var4 + var2;
-					var2 -= var4;
-					var4 = 8;
-				}
-
-				if(var2 == var4) {
-					var5 += this.buffer[var3] & Class140_Sub2.anIntArray2709[var4];
-				} else {
-					var5 += this.buffer[var3] >> var4 - var2 & Class140_Sub2.anIntArray2709[var2];
-				}
-
-				return var5;
-			} else {
-				return -10;
+			while(var2 > var4) {
+				var5 += (Class140_Sub2.anIntArray2709[var4] & this.buffer[var3++]) << -var4 + var2;
+				var2 -= var4;
+				var4 = 8;
 			}
+
+			if(var2 == var4) {
+				var5 += this.buffer[var3] & Class140_Sub2.anIntArray2709[var4];
+			} else {
+				var5 += this.buffer[var3] >> var4 - var2 & Class140_Sub2.anIntArray2709[var2];
+			}
+
+			return var5;
 		} catch (RuntimeException var6) {
 			throw Class44.clientError(var6, "i.C(" + (byte) -11 + ',' + var2 + ')');
 		}
@@ -1056,9 +1052,6 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 
 	final int method815(int var1) {
 		try {
-			if(32666 != 32666) {
-				this.method811((byte)96, 46, (byte[])null, -50);
-			}
 
 			return var1 * 8 - this.anInt3806;
 		} catch (RuntimeException var4) {

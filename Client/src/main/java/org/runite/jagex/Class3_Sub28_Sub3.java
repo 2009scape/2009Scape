@@ -3,10 +3,10 @@ package org.runite.jagex;
 final class Class3_Sub28_Sub3 extends Node {
 
    int anInt3549 = 0;
-   int anInt3550 = -1;
+   int anInt3550;
    static RSInterface aClass11_3551;
    static int anInt3552;
-   boolean aBoolean3553 = true;
+   boolean aBoolean3553;
    RSString aClass94_3554;
    int anInt3555 = 12800;
    int anInt3556;
@@ -16,7 +16,7 @@ final class Class3_Sub28_Sub3 extends Node {
    Class61 aClass61_3560;
    RSString aClass94_3561;
    int anInt3562 = 12800;
-   int anInt3563 = -1;
+   int anInt3563;
    static int anInt3564 = 0;
 
 
@@ -70,7 +70,7 @@ final class Class3_Sub28_Sub3 extends Node {
    static void method539() {
       try {
 
-         Class136.aClass93_1772.method1522(0 ^ -126, 5);
+         Class136.aClass93_1772.method1522(-126, 5);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bn.O(" + 0 + ',' + 5 + ')');
       }
@@ -110,9 +110,7 @@ final class Class3_Sub28_Sub3 extends Node {
                if(var4 >= var3.length) {
                   short[] var10 = new short[2 * var3.length];
 
-                  for(int var11 = 0; var4 > var11; ++var11) {
-                     var10[var11] = var3[var11];
-                  }
+                  System.arraycopy(var3, 0, var10, 0, var4);
 
                   var3 = var10;
                }
@@ -165,7 +163,7 @@ final class Class3_Sub28_Sub3 extends Node {
 
    static boolean method544(int var1) {
       try {
-         return -49 != -49 || var1 >= 48 && 57 >= var1;
+         return var1 >= 48 && 57 >= var1;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "bn.E(" + -49 + ',' + var1 + ')');
       }

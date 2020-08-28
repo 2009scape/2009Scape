@@ -146,7 +146,6 @@ final class Class75_Sub4 extends Class75 {
             }
          }
 
-         i = 44 % ((27 - var0) / 39);
       } catch (RuntimeException var11) {
          throw Class44.clientError(var11, "ta.M(" + var0 + ')');
       }

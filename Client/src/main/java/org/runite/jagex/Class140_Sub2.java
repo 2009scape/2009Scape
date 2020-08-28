@@ -17,7 +17,7 @@ final class Class140_Sub2 extends GameObject {
    private int anInt2715 = -32768;
    int anInt2716;
    int anInt2717;
-   boolean aBoolean2718 = false;
+   boolean aBoolean2718;
    private int anInt2719 = 0;
 
 
@@ -43,28 +43,26 @@ final class Class140_Sub2 extends GameObject {
       try {
          int var2 = var0.anInt2800 - Class44.anInt719;
          int var3 = 128 * var0.anInt2784 - -(64 * var0.getSize());
-         if(true) {
-            int var4 = 128 * var0.anInt2835 - -(var0.getSize() * 64);
-            if(0 == var0.anInt2840) {
-               var0.anInt2806 = 1024;
-            }
+          int var4 = 128 * var0.anInt2835 - -(var0.getSize() * 64);
+          if(0 == var0.anInt2840) {
+             var0.anInt2806 = 1024;
+          }
 
-            var0.anInt2819 += (-var0.anInt2819 + var3) / var2;
-            var0.anInt2829 += (var4 + -var0.anInt2829) / var2;
-            if(var0.anInt2840 == 1) {
-               var0.anInt2806 = 1536;
-            }
+          var0.anInt2819 += (-var0.anInt2819 + var3) / var2;
+          var0.anInt2829 += (var4 + -var0.anInt2829) / var2;
+          if(var0.anInt2840 == 1) {
+             var0.anInt2806 = 1536;
+          }
 
-            var0.anInt2824 = 0;
-            if(var0.anInt2840 == 2) {
-               var0.anInt2806 = 0;
-            }
+          var0.anInt2824 = 0;
+          if(var0.anInt2840 == 2) {
+             var0.anInt2806 = 0;
+          }
 
-            if(var0.anInt2840 == 3) {
-               var0.anInt2806 = 512;
-            }
+          if(var0.anInt2840 == 3) {
+             var0.anInt2806 = 512;
+          }
 
-         }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "bh.F(" + (var0 != null?"{...}":"null") + ',' + true + ')');
       }

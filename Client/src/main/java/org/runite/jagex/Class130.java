@@ -79,8 +79,7 @@ final class Class130 {
          }
 
          this.aClass3_1713 = null;
-         var2 = 1 % ((73 - var1) / 34);
-         this.aClass3_1706 = null;
+          this.aClass3_1706 = null;
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "sc.G(" + var1 + ')');
       }

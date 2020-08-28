@@ -614,11 +614,8 @@ final class Class39 {
 			Class3_Sub13_Sub23_Sub1.hitMarkIndex = var1.getArchiveForName(RSString.createRSString("hitmarks"));
 			Client.anInt2195 = var1.getArchiveForName(RSString.createRSString("hitbar_default"));
 			Node.anInt2575 = var1.getArchiveForName(RSString.createRSString("headicons_pk"));
-			if(208 != 208) {
-				anInt670 = 0;
-			}
 
-			RenderAnimationDefinition.anInt380 = var1.getArchiveForName(RSString.createRSString("headicons_prayer"));
+            RenderAnimationDefinition.anInt380 = var1.getArchiveForName(RSString.createRSString("headicons_prayer"));
 			Class3_Sub13_Sub29.anInt3356 = var1.getArchiveForName(RSString.createRSString("hint_headicons"));
 			Class129_Sub1.anInt2689 = var1.getArchiveForName(RSString.createRSString("hint_mapmarkers"));
 			Class3_Sub13_Sub4.anInt3061 = var1.getArchiveForName(RSString.createRSString("mapflag"));

@@ -105,11 +105,8 @@ abstract class Class140_Sub4 extends GameObject {
 
    boolean hasDefinitions() {
       try {
-         if((byte) 17 != 17) {
-            this.method1975(-109);
-         }
 
-         return false;
+          return false;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "fe.L(" + (byte) 17 + ')');
       }
@@ -216,7 +213,6 @@ abstract class Class140_Sub4 extends GameObject {
          }
 
          this.anIntArray2767[0] = var4;
-         var6 = -106 / ((var2 - -10) / 40);
          this.anIntArray2755[0] = var5;
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "fe.E(" + var1 + ',' + var2 + ',' + var3 + ')');

@@ -198,7 +198,7 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
 
    static void method189() {
       try {
-         int var2 = -18 / ((28 - (byte) -62) / 32);
+         int var2;
 
          int var1;
          for(var1 = -1; Class159.localPlayerCount > var1; ++var1) {

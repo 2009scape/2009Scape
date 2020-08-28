@@ -1154,9 +1154,6 @@ final class Class91 {
          var2 -= this.anInt1309;
          var7 -= this.anInt1306;
          int var8 = 256;
-         if(20851 != 20851) {
-            aClass33_1305 = (Class33)null;
-         }
 
          if(var4) {
             var8 += 131072;

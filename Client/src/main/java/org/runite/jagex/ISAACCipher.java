@@ -369,9 +369,7 @@ final class ISAACCipher {
          this.anIntArray970 = new int[256];
          this.anIntArray971 = new int[256];
 
-         for(int var2 = 0; var1.length > var2; ++var2) {
-            this.anIntArray970[var2] = var1[var2];
-         }
+          System.arraycopy(var1, 0, this.anIntArray970, 0, var1.length);
 
          this.method1227();
       } catch (RuntimeException var3) {

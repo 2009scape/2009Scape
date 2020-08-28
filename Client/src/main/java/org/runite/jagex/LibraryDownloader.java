@@ -171,7 +171,7 @@ public class LibraryDownloader {
 	private void unzip(ZipInputStream zin, String s) throws IOException {
 		FileOutputStream out = new FileOutputStream(s);
 		byte [] b = new byte[BUFFER];
-		int len = 0;
+		int len;
 		while ((len = zin.read(b)) != -1) {
 			out.write(b,0,len);
 		}

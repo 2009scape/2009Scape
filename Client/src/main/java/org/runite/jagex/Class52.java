@@ -194,9 +194,7 @@ final class Class52 {
             if(var4 != null && (~var4.anInt1854 <= -1 || ~var4.anInt1849 <= -1)) {
                var15 = new int[12];
 
-               for(int var16 = 0; 12 > var16; ++var16) {
-                  var15[var16] = this.lookInfo[var16];
-               }
+               System.arraycopy(this.lookInfo, 0, var15, 0, 12);
 
                if(0 <= var4.anInt1854) {
                   if(-65536 == ~var4.anInt1854) {

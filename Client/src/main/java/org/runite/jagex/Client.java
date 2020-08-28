@@ -68,10 +68,6 @@ public final class Client extends GameShell {
 					GameObject.graphicsSettings(false, Node.anInt2577, -1, -1);
 				}
 
-				if(40 != 40) {
-					method44((RSInterface)null);
-				}
-
 				boolean var10 = false;
 				if(Class3_Sub13_Sub10.aBoolean3116) {
 					var10 = true;
@@ -791,8 +787,8 @@ public final class Client extends GameShell {
 									var4.aByteArray2795[0] = 1;
 									var4.anIntArray2767[0] = var6 + (var4.anInt2819 >> 7);
 									var4.anIntArray2755[0] = var7 + (var4.anInt2829 >> 7);
-									Class86.aClass91Array1182[WorldListCountry.localPlane].method1502(var4.anInt2819 >> 7, var4.getSize(), false, 0, var4.getSize(), var4.anInt2829 >> 1442151015);
-									if(0 <= var4.anIntArray2767[0] && var4.anIntArray2767[0] <= 104 + -var4.getSize() && 0 <= var4.anIntArray2755[0] && var4.anIntArray2755[0] <= 104 - var4.getSize() && Class86.aClass91Array1182[WorldListCountry.localPlane].method1500(var4.anInt2829 >> 2135388679, var4.anIntArray2755[0], var4.anIntArray2767[0], var4.anInt2819 >> 627928135)) {
+									Class86.aClass91Array1182[WorldListCountry.localPlane].method1502(var4.anInt2819 >> 7, var4.getSize(), false, 0, var4.getSize(), var4.anInt2829 >> 7);
+									if(0 <= var4.anIntArray2767[0] && var4.anIntArray2767[0] <= 104 + -var4.getSize() && 0 <= var4.anIntArray2755[0] && var4.anIntArray2755[0] <= 104 - var4.getSize() && Class86.aClass91Array1182[WorldListCountry.localPlane].method1500(var4.anInt2829 >> 7, var4.anIntArray2755[0], var4.anIntArray2767[0], var4.anInt2819 >> 7)) {
 										if(var4.getSize() > 1) {
 											for(int var8 = var4.anIntArray2767[0]; var8 < var4.anIntArray2767[0] - -var4.getSize(); ++var8) {
 												for(int var9 = var4.anIntArray2755[0]; var4.anIntArray2755[0] + var4.getSize() > var9; ++var9) {
@@ -1995,8 +1991,7 @@ public final class Client extends GameShell {
 					Class40.method1046();
 				}
 
-				 var4 = 121;
-	            if(10 == Class143.loadingStage) {
+				 if(10 == Class143.loadingStage) {
 	               this.method47();
 	               Class3_Sub13_Sub21.method267((byte)36);
 	               Class163_Sub1_Sub1.method2216();

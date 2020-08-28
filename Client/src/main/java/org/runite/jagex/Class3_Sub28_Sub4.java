@@ -68,10 +68,6 @@ final class Class3_Sub28_Sub4 extends Node {
             }
          }
 
-         if(60 != 60) {
-            this.method552();
-         }
-
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "cb.Q(" + 60 + ')');
       }

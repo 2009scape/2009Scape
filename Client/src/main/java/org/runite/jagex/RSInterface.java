@@ -267,9 +267,7 @@ final class RSInterface {
          if(null == this.aClass94Array171 || var3 >= this.aClass94Array171.length) {
             RSString[] var4 = new RSString[1 + var3];
             if(null != this.aClass94Array171) {
-               for(int var5 = 0; var5 < this.aClass94Array171.length; ++var5) {
-                  var4[var5] = this.aClass94Array171[var5];
-               }
+               System.arraycopy(this.aClass94Array171, 0, var4, 0, this.aClass94Array171.length);
             }
 
             this.aClass94Array171 = var4;
@@ -602,27 +600,23 @@ final class RSInterface {
 
    private Object[] method862(RSByteBuffer var2) {
       try {
-         if(-65536 == -65536) {
-            int var3 = var2.getByte((byte)-103);
-            if(var3 == 0) {
-               return null;
-            } else {
-               Object[] var4 = new Object[var3];
-
-               for(int var5 = 0; var3 > var5; ++var5) {
-                  int var6 = var2.getByte((byte)-115);
-                  if(0 == var6) {
-                     var4[var5] = new Integer(var2.getInt());
-                  } else if (var6 == 1) {
-                     var4[var5] = var2.getString();
-                  }
-               }
-
-               this.aBoolean195 = true;
-               return var4;
-            }
+         int var3 = var2.getByte((byte)-103);
+         if(var3 == 0) {
+            return null;
          } else {
-            return (Object[])null;
+            Object[] var4 = new Object[var3];
+
+            for(int var5 = 0; var3 > var5; ++var5) {
+               int var6 = var2.getByte((byte)-115);
+               if(0 == var6) {
+                  var4[var5] = new Integer(var2.getInt());
+               } else if (var6 == 1) {
+                  var4[var5] = var2.getString();
+               }
+            }
+
+            this.aBoolean195 = true;
+            return var4;
          }
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "be.K(" + -65536 + ',' + (var2 != null?"{...}":"null") + ')');
@@ -855,7 +849,7 @@ final class RSInterface {
          this.aByte241 = buffer.getByte();
          this.aByte273 = buffer.getByte();
          this.aByte162 = buffer.getByte();
-         this.parentId = buffer.getShort(-1 ^ -2);
+         this.parentId = buffer.getShort(~-2);
          if(this.parentId == 65535) {
             this.parentId = -1;
          } else {

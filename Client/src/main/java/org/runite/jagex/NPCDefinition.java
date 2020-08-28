@@ -72,8 +72,7 @@ final class NPCDefinition {
 
          int var3;
          if(0 <= var2 && -1 + this.childNPCs.length > var2 && this.childNPCs[var2] != -1) {
-            var3 = -24 % ((-46 - var1) / 41);
-            return Node.method522(this.childNPCs[var2]);
+             return Node.method522(this.childNPCs[var2]);
          } else {
             var3 = this.childNPCs[-1 + this.childNPCs.length];
             return var3 == -1 ?null:Node.method522(var3);
@@ -523,9 +522,7 @@ final class NPCDefinition {
                if(var3.length <= var4) {
                   short[] var7 = new short[2 * var3.length];
 
-                  for(int var8 = 0; var8 < var4; ++var8) {
-                     var7[var8] = var3[var8];
-                  }
+                  System.arraycopy(var3, 0, var7, 0, var4);
 
                   var3 = var7;
                }
@@ -819,7 +816,6 @@ final class NPCDefinition {
             }
          }
 
-         var4 = 11 % ((-39 - var1) / 60);
       } catch (RuntimeException var9) {
          throw Class44.clientError(var9, "me.H(" + var1 + ',' + opcode + ',' + (buffer != null?"{...}":"null") + ')');
       }

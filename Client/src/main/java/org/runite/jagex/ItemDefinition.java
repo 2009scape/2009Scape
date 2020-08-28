@@ -286,8 +286,8 @@ final class ItemDefinition {
 						Class3_Sub28_Sub15 class3_sub28_sub15_1 = Class3_Sub28_Sub8.method572(i4);
 						int ai2[] = new int[class3_sub28_sub15_1.anInt3680];
 						RSString aclass94[] = new RSString[class3_sub28_sub15_1.anInt3687];
-						for (int l75 = 0; class3_sub28_sub15_1.anInt3678 > l75; l75++)
-							ai2[l75] = Class140_Sub7.anIntArray2929[l75 + (k - class3_sub28_sub15_1.anInt3678)];
+						if (class3_sub28_sub15_1.anInt3678 >= 0)
+							System.arraycopy(Class140_Sub7.anIntArray2929, 0 + (k - class3_sub28_sub15_1.anInt3678), ai2, 0, class3_sub28_sub15_1.anInt3678);
 
 						for (int i76 = 0; class3_sub28_sub15_1.anInt3682 > i76; i76++)
 							aclass94[i76] = Class3.aClass94Array75[i76 + -class3_sub28_sub15_1.anInt3682 + l];
@@ -390,8 +390,8 @@ final class ItemDefinition {
 							class11_21.aClass11Array262 = new RSInterface[k66 + 1];
 						if (k66 >= class11_21.aClass11Array262.length) {
 							RSInterface aclass11[] = new RSInterface[k66 + 1];
-							for (int k81 = 0; class11_21.aClass11Array262.length > k81; k81++)
-								aclass11[k81] = class11_21.aClass11Array262[k81];
+							if (class11_21.aClass11Array262.length >= 0)
+								System.arraycopy(class11_21.aClass11Array262, 0, aclass11, 0, class11_21.aClass11Array262.length);
 
 							class11_21.aClass11Array262 = aclass11;
 						}
@@ -1973,7 +1973,7 @@ final class ItemDefinition {
 																	}
 																	if (j1 == 5206) {
 																		int i30 = Class140_Sub7.anIntArray2929[--k];
-																		Class3_Sub28_Sub3 class3_sub28_sub3_4 = NodeList.method884(0x3fff & i30 >> 0x36628f6e, (byte) 111, 0x3fff & i30);
+																		Class3_Sub28_Sub3 class3_sub28_sub3_4 = NodeList.method884(0x3fff & i30 >> 14, (byte) 111, 0x3fff & i30);
 																		if (class3_sub28_sub3_4 != null)
 																			Class3.aClass94Array75[l++] = class3_sub28_sub3_4.aClass94_3561;
 																		else
@@ -2052,14 +2052,14 @@ final class ItemDefinition {
 																	}
 																	if (j1 == 5214) {
 																		int l30 = Class140_Sub7.anIntArray2929[--k];
-																		Class3_Sub28_Sub7.method565(0x3fff & l30 >> 0xa1b3276e, 0x3fff & l30);
+																		Class3_Sub28_Sub7.method565(0x3fff & l30 >> 14, 0x3fff & l30);
 																		continue;
 																	}
 																	if (j1 == 5215) {
 																		int i31 = Class140_Sub7.anIntArray2929[--k];
 																		RSString class94_53 = Class3.aClass94Array75[--l];
 																		boolean flag10 = false;
-																		NodeList class13 = AbstractIndexedSprite.method1664(0x3fff & i31 >> 0xa4e408ae, 0x3fff & i31);
+																		NodeList class13 = AbstractIndexedSprite.method1664(0x3fff & i31 >> 14, 0x3fff & i31);
 																		Class3_Sub28_Sub3 class3_sub28_sub3_5 = (Class3_Sub28_Sub3) class13.method876((byte) 116);
 																		do {
 																			if (class3_sub28_sub3_5 == null)
@@ -2204,13 +2204,13 @@ final class ItemDefinition {
 																		int i33 = Class140_Sub7.anIntArray2929[k];
 																		int k59 = Class140_Sub7.anIntArray2929[1 + k];
 																		if (i33 >= 0 && i33 < 2)
-																			Class58.anIntArrayArrayArray911[i33] = new int[k59 << 0x27e6541][4];
+																			Class58.anIntArrayArrayArray911[i33] = new int[k59 << 1][4];
 																		continue;
 																	}
 																	if (j1 == 5406) {
 																		k -= 7;
 																		int j33 = Class140_Sub7.anIntArray2929[k];
-																		int l59 = Class140_Sub7.anIntArray2929[1 + k] << 0xee994ea1;
+																		int l59 = Class140_Sub7.anIntArray2929[1 + k] << 1;
 																		int k77 = Class140_Sub7.anIntArray2929[k - -3];
 																		int l71 = Class140_Sub7.anIntArray2929[2 + k];
 																		int j80 = Class140_Sub7.anIntArray2929[4 + k];
@@ -2218,16 +2218,16 @@ final class ItemDefinition {
 																		int l81 = Class140_Sub7.anIntArray2929[5 + k];
 																		if (j33 >= 0 && j33 < 2 && null != Class58.anIntArrayArrayArray911[j33] && l59 >= 0 && Class58.anIntArrayArrayArray911[j33].length > l59) {
 																			Class58.anIntArrayArrayArray911[j33][l59] = (new int[]{
-																					(Class3_Sub28_Sub15.method633(0xfffc3b9, l71) >> 0x5f43122e) * 128, k77, 128 * Class3_Sub28_Sub15.method633(l71, 16383), j82
+																					(Class3_Sub28_Sub15.method633(0xfffc3b9, l71) >> 14) * 128, k77, 128 * Class3_Sub28_Sub15.method633(l71, 16383), j82
 																			});
 																			Class58.anIntArrayArrayArray911[j33][l59 + 1] = (new int[]{
-																					128 * (Class3_Sub28_Sub15.method633(j80, 0xfffed27) >> 0xe3e5364e), l81, 128 * Class3_Sub28_Sub15.method633(j80, 16383)
+																					128 * (Class3_Sub28_Sub15.method633(j80, 0xfffed27) >> 14), l81, 128 * Class3_Sub28_Sub15.method633(j80, 16383)
 																			});
 																		}
 																		continue;
 																	}
 																	if (j1 == 5407) {
-																		int k33 = Class58.anIntArrayArrayArray911[Class140_Sub7.anIntArray2929[--k]].length >> 0x2b932e01;
+																		int k33 = Class58.anIntArrayArrayArray911[Class140_Sub7.anIntArray2929[--k]].length >> 1;
 																		Class140_Sub7.anIntArray2929[k++] = k33;
 																		continue;
 																	}
@@ -2349,7 +2349,7 @@ final class ItemDefinition {
 																		int l77 = Class140_Sub7.anIntArray2929[k - -3];
 																		int j72 = Class140_Sub7.anIntArray2929[k - -2];
 																		int i60 = Class140_Sub7.anIntArray2929[k + 1];
-																		Class3_Sub20.method390(false, j72, i60, l77, (byte) -128, -Class82.anInt1152 + (0x3fff & l33), ((0xffffe30 & l33) >> 0x372f8c2e) - Class131.anInt1716);
+																		Class3_Sub20.method390(false, j72, i60, l77, (byte) -128, -Class82.anInt1152 + (0x3fff & l33), ((0xffffe30 & l33) >> 14) - Class131.anInt1716);
 																		continue;
 																	}
 																	if (j1 == 5501) {
@@ -2358,7 +2358,7 @@ final class ItemDefinition {
 																		int i34 = Class140_Sub7.anIntArray2929[k];
 																		int i78 = Class140_Sub7.anIntArray2929[k - -3];
 																		int k72 = Class140_Sub7.anIntArray2929[k + 2];
-																		Class164_Sub1.method2238(j60, (0x3fff & i34) - Class82.anInt1152, k72, -Class131.anInt1716 + ((0xffff221 & i34) >> 0xcd90732e), i78);
+																		Class164_Sub1.method2238(j60, (0x3fff & i34) - Class82.anInt1152, k72, -Class131.anInt1716 + ((0xffff221 & i34) >> 14), i78);
 																		continue;
 																	}
 																	if (j1 == 5502) {
@@ -2368,7 +2368,7 @@ final class ItemDefinition {
 																			throw new RuntimeException();
 																		NPCDefinition.anInt1252 = j34;
 																		int k60 = Class140_Sub7.anIntArray2929[k - -1];
-																		if (1 + k60 >= Class58.anIntArrayArrayArray911[NPCDefinition.anInt1252].length >> 0x84afc601)
+																		if (1 + k60 >= Class58.anIntArrayArrayArray911[NPCDefinition.anInt1252].length >> 1)
 																			throw new RuntimeException();
 																		Class73.anInt1081 = k60;
 																		Class163_Sub2_Sub1.anInt4020 = 0;
@@ -2379,7 +2379,7 @@ final class ItemDefinition {
 																			throw new RuntimeException();
 																		Class3_Sub7.anInt2293 = l72;
 																		int j78 = Class140_Sub7.anIntArray2929[5 + k];
-																		if (Class58.anIntArrayArrayArray911[Class3_Sub7.anInt2293].length >> 0x4d73ee21 <= 1 + j78)
+																		if (Class58.anIntArrayArrayArray911[Class3_Sub7.anInt2293].length >> 1 <= 1 + j78)
 																			throw new RuntimeException();
 																		Class39.anInt670 = j78;
 																		Class133.anInt1753 = 3;
@@ -3868,9 +3868,6 @@ final class ItemDefinition {
 			if(this.aClass130_798 == null) {
 				return var2;
 			} else {
-				if(107 < 90) {
-					method1111(-111);
-				}
 
 				Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_798.method1780((long)var3, 0);
 				return null != var4?var4.aClass94_2586:var2;
@@ -3991,9 +3988,7 @@ final class ItemDefinition {
 			this.membersItem = var2.membersItem;
 			this.anInt776 = var2.anInt776;
 			if(null != var2.inventoryOptions) {
-				for(int var4 = 0; var4 < 4; ++var4) {
-					this.inventoryOptions[var4] = var2.inventoryOptions[var4];
-				}
+				System.arraycopy(var2.inventoryOptions, 0, this.inventoryOptions, 0, 4);
 			}
 
 			this.inventoryOptions[4] = TextCore.HasDiscard;
@@ -4096,9 +4091,6 @@ final class ItemDefinition {
 			while(true) {
 				int opcode = buffer.getByte((byte)-72);
 				if(0 == opcode) {
-					if(1 != 1) {
-						this.anInt789 = -40;
-					}
 
 					return;
 				}

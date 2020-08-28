@@ -207,7 +207,7 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
 
          int var5;
          int var6;
-         for(var3 = 0; true; ++var3) {
+         for(; true; ++var3) {
             for(var4 = 1; true; ++var4) {
                for(var5 = 1; true; ++var5) {
                   var6 = var5 - -(var4 << 7);

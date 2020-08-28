@@ -94,7 +94,6 @@ final class Class71 {
                   this.anIntArray1066 = var12;
                }
 
-               var8 >>>= 1;
             }
 
             this.anIntArray1066[var6] = ~var3;

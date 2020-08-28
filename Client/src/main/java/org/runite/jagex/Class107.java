@@ -45,9 +45,6 @@ final class Class107 {
    static void method1648(CacheIndex var0) {
       try {
          Class101.aClass153_1420 = var0;
-         if(255 != 255) {
-            currentChunkY = -56;
-         }
 
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "og.B(" + (var0 != null?"{...}":"null") + ',' + 255 + ')');

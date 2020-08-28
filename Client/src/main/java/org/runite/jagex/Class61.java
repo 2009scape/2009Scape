@@ -207,7 +207,7 @@ final class Class61 {
 
    static RSString method1218(int var2) {
       try {
-         return 127 <= 122?(RSString)null:Class118.method1723((byte)-128, true, var2);
+         return Class118.method1723((byte)-128, true, var2);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ih.A(" + true + ',' + 127 + ',' + var2 + ')');
       }
