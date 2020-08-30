@@ -1,6 +1,5 @@
 package core.game.system.script;
 
-import com.ibm.jvm.dtfjview.SystemProperties;
 import core.ServerConstants;
 import plugin.ai.AIPBuilder;
 import plugin.ai.AIPlayer;
