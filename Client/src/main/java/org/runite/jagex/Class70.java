@@ -17,7 +17,6 @@ final class Class70 {
    int anInt1057;
    static CacheIndex aClass153_1058;
    int anInt1059;
-   static int anInt1060;
 
 
    public static void method1284(byte var0) {

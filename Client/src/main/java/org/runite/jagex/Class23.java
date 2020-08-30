@@ -2,11 +2,9 @@ package org.runite.jagex;
 
 final class Class23 {
 
-   static int anInt452;
    static int anInt453 = 0;
    static int anInt454;
    static int anInt455;
-   static int anInt456;
    static boolean[][] aBooleanArrayArray457;
 
 

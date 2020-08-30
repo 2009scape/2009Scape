@@ -2,7 +2,6 @@ package org.runite.jagex;
 
 final class Class3_Sub28_Sub2 extends Node {
 
-   static int anInt3542;
    Class140_Sub2 aClass140_Sub2_3545;
 
    static void method535(byte var0, int var1) {

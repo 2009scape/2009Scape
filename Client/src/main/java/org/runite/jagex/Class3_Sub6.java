@@ -6,7 +6,6 @@ final class Class3_Sub6 extends Class3 {
    static byte[][] aByteArrayArray2287;
    static int[] anIntArray2288 = new int[32];
    byte[] aByteArray2289;
-   static int anInt2290;
    static int anInt2291;
 
    public static void method118(int var0) {

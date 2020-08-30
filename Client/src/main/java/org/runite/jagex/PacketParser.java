@@ -6,7 +6,6 @@ import java.util.Objects;
 
 final class PacketParser {
 
-    static int anInt79;
     static int anInt80 = 0;
     static byte[][][] aByteArrayArrayArray81;
     static Class61 aClass61_82 = new Class61();
@@ -16,6 +15,7 @@ final class PacketParser {
     static int anInt86 = 0;
     static int anInt87 = 0;
     static RSInterface aClass11_88 = null;
+    static int inTutorialIsland = 0; // could be boolean
 
 
     static int method823(int var0, int var1, int var2, int var3) {
@@ -163,7 +163,7 @@ final class PacketParser {
                                             }
                                         }
 
-                                        if (!isIgnored && WorldListEntry.inTutorialIsland == 0) {
+                                        if (!isIgnored && inTutorialIsland == 0) {
                                             Class3_Sub30_Sub1.addChatMessage(playerName, 4, TextCore.HasWishToTrade, (byte) -83 + 82);
                                         }
                                     } else if (message.endsWith((byte) -47, Class30.cmdChalReq)) {
@@ -178,7 +178,7 @@ final class PacketParser {
                                             }
                                         }
 
-                                        if (!isIgnored && WorldListEntry.inTutorialIsland == 0) {
+                                        if (!isIgnored && inTutorialIsland == 0) {
                                             var41 = message.method1557(message.length((byte) -83 + -16) + -9, (byte) -83 ^ -83, 1 + message.indexOf(Class155.char_colon, 101));
                                             Class3_Sub30_Sub1.addChatMessage(playerName, 8, var41, (byte) -83 ^ 82);
                                         }
@@ -194,7 +194,7 @@ final class PacketParser {
                                             }
                                         }
 
-                                        if (!isIgnored && WorldListEntry.inTutorialIsland == 0) {
+                                        if (!isIgnored && inTutorialIsland == 0) {
                                             Class3_Sub30_Sub1.addChatMessage(playerName, 10, Class3_Sub28_Sub14.aClass94_3672, -1);
                                         }
                                     } else if (message.endsWith((byte) -128, TextCore.HasClan)) {
@@ -202,12 +202,12 @@ final class PacketParser {
                                         Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 11, playerName, -1);
                                     } else if (message.endsWith((byte) -29, TextCore.HasTrade)) {
                                         playerName = message.method1557(message.indexOf(TextCore.HasTrade, 102), 0, 0);
-                                        if (0 == WorldListEntry.inTutorialIsland) {
+                                        if (0 == inTutorialIsland) {
                                             Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 12, playerName, -1);
                                         }
                                     } else if (message.endsWith((byte) -80, TextCore.HasAssist)) {
                                         playerName = message.method1557(message.indexOf(TextCore.HasAssist, 121), 0, 0);
-                                        if (WorldListEntry.inTutorialIsland == 0) {
+                                        if (inTutorialIsland == 0) {
                                             Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 13, playerName, -1);
                                         }
                                     } else if (message.endsWith((byte) -42, TextCore.HasDuelStake)) {
@@ -222,7 +222,7 @@ final class PacketParser {
                                             }
                                         }
 
-                                        if (!isIgnored && WorldListEntry.inTutorialIsland == 0) {
+                                        if (!isIgnored && inTutorialIsland == 0) {
                                             Class3_Sub30_Sub1.addChatMessage(playerName, 14, Class3_Sub28_Sub14.aClass94_3672, -1);
                                         }
                                     } else if (message.endsWith((byte) -41, TextCore.HasDuelFriend)) {
@@ -237,7 +237,7 @@ final class PacketParser {
                                             }
                                         }
 
-                                        if (!isIgnored && 0 == WorldListEntry.inTutorialIsland) {
+                                        if (!isIgnored && 0 == inTutorialIsland) {
                                             Class3_Sub30_Sub1.addChatMessage(playerName, 15, Class3_Sub28_Sub14.aClass94_3672, -1);
                                         }
                                     } else if (message.endsWith((byte) -110, TextCore.HasClanRequest)) {
@@ -252,7 +252,7 @@ final class PacketParser {
                                             }
                                         }
 
-                                        if (!isIgnored && WorldListEntry.inTutorialIsland == 0) {
+                                        if (!isIgnored && inTutorialIsland == 0) {
                                             Class3_Sub30_Sub1.addChatMessage(playerName, 16, Class3_Sub28_Sub14.aClass94_3672, -1);
                                         }
                                     } else if (message.endsWith((byte) -41, TextCore.HasAllyReq)) {
@@ -267,7 +267,7 @@ final class PacketParser {
                                             }
                                         }
 
-                                        if (!isIgnored && WorldListEntry.inTutorialIsland == 0) {
+                                        if (!isIgnored && inTutorialIsland == 0) {
                                             var41 = message.method1557(message.length(-32) - 9, (byte) -83 ^ -83, 1 + message.indexOf(Class155.char_colon, 92));
                                             Class3_Sub30_Sub1.addChatMessage(playerName, 21, var41, -1);
                                         }
@@ -357,7 +357,7 @@ final class PacketParser {
                                                     break;
                                                 }
 
-                                                if (!var63 && 0 == WorldListEntry.inTutorialIsland) {
+                                                if (!var63 && 0 == inTutorialIsland) {
                                                     Class163_Sub2_Sub1.aLongArray4017[MouseListeningClass.anInt1921] = var55;
                                                     MouseListeningClass.anInt1921 = (1 + MouseListeningClass.anInt1921) % 100;
                                                     RSString var61 = Class3_Sub29.method733(var11).method555(GraphicDefinition.incomingBuffer);
@@ -991,7 +991,7 @@ final class PacketParser {
                                                                         break;
                                                                     }
 
-                                                                    if (!var49 && WorldListEntry.inTutorialIsland == 0) {
+                                                                    if (!var49 && inTutorialIsland == 0) {
                                                                         Class163_Sub2_Sub1.aLongArray4017[MouseListeningClass.anInt1921] = var51;
                                                                         MouseListeningClass.anInt1921 = (1 + MouseListeningClass.anInt1921) % 100;
                                                                         var64 = Class3_Sub29.method733(var33).method555(GraphicDefinition.incomingBuffer);
@@ -1322,7 +1322,7 @@ final class PacketParser {
                                                                             ++var12;
                                                                         }
 
-                                                                        if (!var42 && WorldListEntry.inTutorialIsland == 0) {
+                                                                        if (!var42 && inTutorialIsland == 0) {
                                                                             Class163_Sub2_Sub1.aLongArray4017[MouseListeningClass.anInt1921] = var35;
                                                                             MouseListeningClass.anInt1921 = (MouseListeningClass.anInt1921 - -1) % 100;
                                                                             RSString var52 = Class3_Sub28_Sub17.method686(Objects.requireNonNull(Class32.method992(GraphicDefinition.incomingBuffer).method1536(96)));
@@ -1374,7 +1374,7 @@ final class PacketParser {
                                                                             ++var14;
                                                                         }
 
-                                                                        if (!var13 && 0 == WorldListEntry.inTutorialIsland) {
+                                                                        if (!var13 && 0 == inTutorialIsland) {
                                                                             Class163_Sub2_Sub1.aLongArray4017[MouseListeningClass.anInt1921] = var44;
                                                                             MouseListeningClass.anInt1921 = (MouseListeningClass.anInt1921 + 1) % 100;
                                                                             var57 = Class3_Sub28_Sub17.method686(Objects.requireNonNull(Class32.method992(GraphicDefinition.incomingBuffer).method1536(116)));
@@ -1842,7 +1842,6 @@ final class PacketParser {
                             withInter = Class56.aClass11_886;
                         }
                         Class3_Sub13_Sub1.outgoingBuffer.putOpcode(79);
-                        ++Class23.anInt456;
                         Class3_Sub13_Sub1.outgoingBuffer.putIntB(-93, Class56.aClass11_886.anInt279);
                         Class3_Sub13_Sub1.outgoingBuffer.putLEShort(withInter.anInt191);
                         Class3_Sub13_Sub1.outgoingBuffer.putInt(-125, withInter.anInt279);

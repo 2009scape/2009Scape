@@ -4,7 +4,6 @@ final class Class120 {
 
    static long[] aLongArray1631 = new long[256];
    int anInt1632;
-   static int anInt1633;
    int anInt1634;
    int anInt1635;
    static int[] anIntArray1638;

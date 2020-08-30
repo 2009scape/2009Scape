@@ -42,7 +42,7 @@ final class Class45 {
 						}
 					}
 
-					if(!var11 && 0 == WorldListEntry.inTutorialIsland) {
+					if(!var11 && 0 == PacketParser.inTutorialIsland) {
 						Class161.aClass3_Sub30_2030.index = 0;
 						GraphicDefinition.incomingBuffer.method774(var6, Class161.aClass3_Sub30_2030.buffer);
 						Class161.aClass3_Sub30_2030.index = 0;

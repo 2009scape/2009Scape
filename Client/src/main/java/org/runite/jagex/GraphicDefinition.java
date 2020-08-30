@@ -17,7 +17,6 @@ final class GraphicDefinition {
 	private int anInt541;
 	int anInt542 = -1;
 	private int anInt543 = 0;
-	static int anInt544;
 	private short[] aShortArray545;
 	static int anInt546;
 	static int anInt548 = 0;

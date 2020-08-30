@@ -3,7 +3,6 @@ package org.runite.jagex;
 final class Class55 {
 
    int anInt879;
-   static int anInt880;
    int anInt881;
    static int[] anIntArray882 = new int[200];
    private int anInt883;

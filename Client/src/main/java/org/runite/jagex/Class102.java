@@ -10,7 +10,6 @@ final class Class102 implements Interface2 {
    private final CacheIndex aClass153_2127;
    private final boolean[] aBooleanArray2128;
    private final byte[] aByteArray2129;
-   static int anInt2130;
    static Class135[] aClass135Array2131 = new Class135[50];
    private boolean aBoolean2134;
    private final boolean[] aBooleanArray2135;

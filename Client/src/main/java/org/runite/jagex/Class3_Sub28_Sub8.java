@@ -6,8 +6,6 @@ final class Class3_Sub28_Sub8 extends Node {
    static Class113[] aClass113Array3610;
    static int anInt3611;
    byte[] aByteArray3612;
-   static int anInt3613;
-
 
    static int method571() {
       try {

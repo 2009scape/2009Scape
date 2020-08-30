@@ -7,7 +7,6 @@ final class Class54 {
    static int anInt872;
    RSString[] aClass94Array873;
    Class3_Sub28_Sub15 aClass3_Sub28_Sub15_874;
-   static int anInt876;
    int anInt877 = -1;
    static CacheIndex aClass153_878;
 

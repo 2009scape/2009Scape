@@ -6,7 +6,6 @@ final class Class75_Sub2 extends Class75 {
    static Class33 aClass33_2637;
    static Class3_Sub2[][][] aClass3_Sub2ArrayArrayArray2638;
    static int[] anIntArray2639;
-   static int anInt2640;
    static int[] anIntArray2642 = new int[]{1, 1, 1, 1, 4, 1, 1, 5, 6, 1, 5, 0, 7, 0, 4, 1, 7, 2, 1, 1, 6, 1, 1, 3, 6, 1, 7, 0, 0, 6, 7, 0, 1, 7, 6, 1, 1, 1, 5, 4, 3, 2, 1, 1, 0, 4, 1, 5};
    static int anInt2643;
    private int anInt2644;

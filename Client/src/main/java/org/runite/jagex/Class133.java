@@ -16,7 +16,6 @@ final class Class133 {
    static int anInt1753;
    static int anInt1754;
    static int[] anIntArray1755 = new int[128];
-   static int anInt1756;
    int anInt1757;
 
 

@@ -4,7 +4,6 @@ final class Class40 {
 
    static RSString aClass94_672 = RSString.createRSString("null");
    static RSString aClass94_673 = RSString.createRSString(")0");
-   static int anInt674;
    static int[] anIntArray675 = new int[]{16, 32, 64, 128};
    static RSString aClass94_676 = null;
    static int anInt677 = 0;
@@ -331,7 +330,6 @@ final class Class40 {
                if(GameShell.frame != null && null != Class3_Sub15.aClass89_2429 && 25 == Class143.loadingStage) {
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(20);
                   Class3_Sub13_Sub1.outgoingBuffer.putInt(-126, 1057001181);
-                  ++Class3_Sub13_Sub30.anInt3365;
                }
 
                if(!Class3_Sub29.isDynamicSceneGraph) {

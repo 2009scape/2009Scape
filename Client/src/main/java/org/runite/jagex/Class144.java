@@ -5,9 +5,7 @@ import org.runite.Properties;
 abstract class Class144 {
 
    static int anInt1881 = 0;
-   static int anInt1883;
    static RSString aClass94_1885 = RSString.createRSString("cookiehost");
-   static int anInt1886;
    static int anInt1887;
 
    abstract byte[] method2064();
@@ -64,15 +62,12 @@ abstract class Class144 {
 
                   if(Class164_Sub1.anInt3012 == 1) {
                      Class54.method1177(Class99.anInt1403, (long)var3, (byte)-125, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, ColorCore.TextColor, var5}, (byte)-125), var1, (short)26, TextCore.HasUse, var4);
-                     ++Class49.anInt816;
                   } else if(GameObject.aBoolean1837) {
                      Class3_Sub28_Sub9 var12 = -1 == Class69.anInt1038?null:Class61.method1210(Class69.anInt1038);
                      if((2 & Class164.anInt2051) != 0 && (var12 == null || var0.method1475(Class69.anInt1038, var12.anInt3614) != var12.anInt3614)) {
                         Class54.method1177(anInt1887, (long)var3, (byte)-93, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, ColorCore.TextColor, var5}, (byte)-65), var1, (short)45, Class3_Sub28_Sub9.aClass94_3621, var4);
-                        ++Class119.anInt1629;
                      }
                   } else {
-                     ++RSByteBuffer.anInt2592;
                      RSString[] var11 = var0.options;
                      if(Class123.aBoolean1656) {
                         var11 = Class3_Sub31.method822(var11);
@@ -82,7 +77,6 @@ abstract class Class144 {
                      if(var11 != null) {
                         for(var7 = 4; var7 >= 0; --var7) {
                            if(var11[var7] != null && (Class158.anInt2014 != 0 || !var11[var7].equals(-113, TextCore.HasAttack))) {
-                              ++ItemDefinition.anInt763;
                               byte var8 = 0;
                               if(var7 == 0) {
                                  var8 = 17;
@@ -121,7 +115,6 @@ abstract class Class144 {
                      if(0 == Class158.anInt2014 && var11 != null) {
                         for(var7 = 4; var7 >= 0; --var7) {
                            if(null != var11[var7] && var11[var7].equals(-112, TextCore.HasAttack)) {
-                              ++Class3_Sub28_Sub10_Sub1.anInt4054;
                               short var14 = 0;
                               if(var0.anInt1260 > Class102.player.COMBAT_LEVEL && !Properties.get().isInstantAttack()) {
                                  var14 = 2000;

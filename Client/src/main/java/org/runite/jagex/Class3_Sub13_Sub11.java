@@ -8,7 +8,6 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
    static RSString aClass94_3133 = RSString.createRSString(")2");
    private int anInt3134;
    private int anInt3135;
-   static int anInt3136;
    static Class47 aClass47_3137 = new Class47(64);
    static int[] anIntArray3139 = new int[14];
    static RSString aClass94_3140 = RSString.createRSString("overlay2");

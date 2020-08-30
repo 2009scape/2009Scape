@@ -9,7 +9,6 @@ final class Class140_Sub6 extends GameObject {
    private int anInt2898 = -1;
    int anInt2899;
    double aDouble2900;
-   static int anInt2901;
    private final int anInt2902;
    int anInt2903;
    private boolean aBoolean2904;

@@ -11,8 +11,6 @@ import java.util.Map;
 final class Class39 {
 
 	static int anInt670 = 0;
-	static int anInt671;
-
 
 	static void updateSceneGraph(boolean dynamic) {
 		try {

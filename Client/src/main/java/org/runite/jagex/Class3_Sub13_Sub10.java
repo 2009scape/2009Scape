@@ -8,7 +8,6 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
   
    static boolean[][] aBooleanArrayArray3118 = new boolean[][]{new boolean[0], {true, false, true}, {true, false, false, true}, {false, false, true, true}, {true, true, false}, {false, true, true}, {true, false, false, true}, {false, false, false, true, true}, {false, true, true}, {true, false, true, true, true}, {false, true, true, true, true}, {false, true, true, true, true, false}};
    static Frame aFrame3121;
-   static int anInt3122;
    static RSString COMMAND_NOCLIP = RSString.createRSString("::noclip");
    static Signlink aClass87_3125;
    private int anInt3126 = 2048;
@@ -86,7 +85,6 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
          if(0L != var0) {
             for(int var3 = 0; Class3_Sub28_Sub5.anInt3591 > var3; ++var3) {
                if(Class114.ignores[var3] == var0) {
-                  ++Class137.anInt1781;
                   --Class3_Sub28_Sub5.anInt3591;
 
                   for(int var4 = var3; var4 < Class3_Sub28_Sub5.anInt3591; ++var4) {

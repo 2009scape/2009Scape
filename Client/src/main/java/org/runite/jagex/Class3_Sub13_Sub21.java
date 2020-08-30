@@ -7,11 +7,9 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
 //Class3_Sub13_Sub21
    private int anInt3253 = 0;
    private int anInt3254 = 4096;
-   static int anInt3255;
    static int anInt3256;
    private int anInt3257 = 12288;
    private int anInt3258 = 0;
-   static int anInt3259;
    static int anInt3260 = -1;
    static boolean aBoolean3261 = false;
    private int anInt3262 = 2048;
@@ -68,7 +66,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                   Class132.anInt1734 = 0;
                   ++GraphicDefinition.anInt548;
                   if(Class140_Sub6.accRegistryPort == Class162.anInt2036) {
-                     Class140_Sub6.accRegistryPort = WorldListCountry.anInt506;
+                     Class140_Sub6.accRegistryPort = Client.currentPort;
                   } else {
                      Class140_Sub6.accRegistryPort = Class162.anInt2036;
                   }
@@ -155,7 +153,7 @@ final class Class3_Sub13_Sub21 extends Class3_Sub13 {
                if(GraphicDefinition.anInt548 < 1) {
                   ++GraphicDefinition.anInt548;
                   if(Class162.anInt2036 == Class140_Sub6.accRegistryPort) {
-                     Class140_Sub6.accRegistryPort = WorldListCountry.anInt506;
+                     Class140_Sub6.accRegistryPort = Client.currentPort;
                   } else {
                      Class140_Sub6.accRegistryPort = Class162.anInt2036;
                   }

@@ -4,7 +4,6 @@ final class Class3_Sub13_Sub39 extends Class3_Sub13 {
 
    private int[] anIntArray3457;
    static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array3458;
-   static int anInt3459;
    static int anInt3460 = 0;
    static byte[][] aByteArrayArray3461 = new byte[1000][];
    private int anInt3462 = 0;

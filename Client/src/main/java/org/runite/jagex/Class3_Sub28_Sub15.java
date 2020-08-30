@@ -5,7 +5,6 @@ final class Class3_Sub28_Sub15 extends Node {
    int anInt3678;
    static Class130 aClass130_3679 = new Class130(16);
    int anInt3680;
-   static int anInt3681;
    int anInt3682;
    int[] anIntArray3683;
    static int LoadingStageNumber = 10;

@@ -10,7 +10,6 @@ class Class164_Sub1 extends Class164 {
    private final int[] anIntArray3014;
    private byte[] aByteArray3015;
    private int anInt3016;
-   static int anInt3017;
 
 
    final void method2237(int var1, int var2) {

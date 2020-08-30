@@ -17,7 +17,6 @@ final class Class25 {
    int anInt490;
    static int anInt491 = 0;
    int anInt493;
-   static int anInt494;
    int anInt495;
    int anInt496;
    static int anInt497;

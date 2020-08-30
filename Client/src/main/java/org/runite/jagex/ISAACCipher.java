@@ -8,7 +8,6 @@ final class ISAACCipher {
    private int anInt966;
    private int anInt967;
    private int anInt968;
-   static int anInt969;
    private int[] anIntArray970;
    private int[] anIntArray971;
    private int anInt972;
@@ -205,8 +204,8 @@ final class ISAACCipher {
          int var4 = Class3_Sub28_Sub1.anInt3537;
          int var3 = Class3_Sub28_Sub3.anInt3552;
          if(Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 == null || null == Class108.aClass3_Sub28_Sub16_1457) {
-            if(Class140_Sub6.spritesCacheIndex.method2144(WorldListCountry.anInt502) && Class140_Sub6.spritesCacheIndex.method2144(Class99.anInt1400)) {
-               Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, WorldListCountry.anInt502);
+            if(Class140_Sub6.spritesCacheIndex.method2144(WorldListCountry.archiveID) && Class140_Sub6.spritesCacheIndex.method2144(Class99.anInt1400)) {
+               Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, WorldListCountry.archiveID);
                Class108.aClass3_Sub28_Sub16_1457 = Class3_Sub28_Sub7.method562(Class140_Sub6.spritesCacheIndex, Class99.anInt1400);
                if(HDToolKit.highDetail) {
                   if(Class3_Sub13_Sub7.aClass3_Sub28_Sub16_3099 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {

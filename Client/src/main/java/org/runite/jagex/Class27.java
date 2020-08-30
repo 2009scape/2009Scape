@@ -5,7 +5,6 @@ final class Class27 {
    static int[] anIntArray510 = new int[]{768, 1024, 1280, 512, 1536, 256, 0, 1792};
    static Class93 aClass93_511 = new Class93(30);
    static int[] anIntArray512 = new int[500];
-   static int anInt513;
    static int anInt515 = -1;
    static RSString aClass94_516 = RSString.createRSString("unzap");
    static int anInt517 = 0;

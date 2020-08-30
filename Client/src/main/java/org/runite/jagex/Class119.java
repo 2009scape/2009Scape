@@ -9,7 +9,6 @@ final class Class119 {
    static Class33 aClass33_1626;
    static WorldListCountry[] countries;
    static CacheIndex aClass153_1628;
-   static int anInt1629;
    static RSString aClass94_1630 = RSString.createRSString("Mem:");
 
 

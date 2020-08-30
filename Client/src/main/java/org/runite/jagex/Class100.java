@@ -3,7 +3,6 @@ import java.util.Random;
 
 final class Class100 {
 
-   static int anInt1405;
    int anInt1406;
    static int anInt1407;
    int anInt1408;
@@ -174,7 +173,6 @@ final class Class100 {
 
    static void method1605(RSString var1, int var2) {
       try {
-         ++Class19.anInt421;
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(188);
          Class3_Sub13_Sub1.outgoingBuffer.putByteA(var2, 255 + -13326);
          Class3_Sub13_Sub1.outgoingBuffer.putLong(var1.toLong(-126), -2037491440);

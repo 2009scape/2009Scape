@@ -6,7 +6,6 @@ final class WorldListEntry extends Class44 {
 
    RSString activity;
    int worldId;
-   static int inTutorialIsland = 0; // could be boolean
    static boolean aBoolean2623 = true;
    RSString address;
    static int anInt2626 = 20;

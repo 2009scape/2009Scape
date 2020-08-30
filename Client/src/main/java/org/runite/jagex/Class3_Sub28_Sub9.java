@@ -4,10 +4,8 @@ import java.util.Calendar;
 final class Class3_Sub28_Sub9 extends Node {
 
    int anInt3614;
-   static int anInt3615;
    static Calendar aCalendar3616 = Calendar.getInstance();
    private int anInt3617;
-   static int anInt3618;
    RSString aClass94_3619;
    static int anInt3620 = 0;
    static RSString aClass94_3621 = null;

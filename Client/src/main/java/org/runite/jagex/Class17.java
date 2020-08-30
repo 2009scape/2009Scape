@@ -5,7 +5,6 @@ final class Class17 {
    static Interface2 anInterface2_408;
    static Thread aThread409;
    static int anInt410;
-   static int anInt411;
    static Class64 aClass64_413;
 
 

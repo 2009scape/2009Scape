@@ -4,7 +4,6 @@ import java.util.Objects;
 
 final class CacheIndex {
 
-   static int anInt1944;
    private boolean aBoolean1945;
    private final boolean aBoolean1946;
    private final Class151 aClass151_1947;

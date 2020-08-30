@@ -7,7 +7,6 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
    static int anInt3362 = -1;
    static int anInt3363;
    static Class61 aClass61_3364 = new Class61();
-   static int anInt3365;
    static long aLong3366;
    static int[] anIntArray3367 = new int[64];
    
@@ -76,11 +75,9 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
                int var12;
                if(Class164_Sub1.anInt3012 == 1) {
                   Class54.method1177(Class99.anInt1403, (long)var0, (byte)-80, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, Class56.aClass94_892, var5}, (byte)-125), var4, (short)1, TextCore.HasUse, var2);
-                  ++Class129_Sub1.anInt2684;
                } else if(!GameObject.aBoolean1837) {
                   for(var12 = 7; var12 >= 0; --var12) {
                      if(null != Class91.aClass94Array1299[var12]) {
-                        ++Class55.anInt880;
                         short var14 = 0;
                         if(Class158.anInt2014 == 0 && Class91.aClass94Array1299[var12].equals(-123, TextCore.HasAttack)) {
                          //If other player level greater than my level, then right click to attack.
@@ -104,7 +101,6 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
                      }
                   }
                } else if((8 & Class164.anInt2051) != 0) {
-                  ++Class3_Sub13_Sub13.anInt3151;
                   Class54.method1177(Class144.anInt1887, (long)var0, (byte)-58, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, Class56.aClass94_892, var5}, (byte)-116), var4, (short)15, Class3_Sub28_Sub9.aClass94_3621, var2);
                }
 

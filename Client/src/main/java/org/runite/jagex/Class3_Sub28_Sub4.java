@@ -8,7 +8,6 @@ final class Class3_Sub28_Sub4 extends Node {
    private int[] anIntArray3566;
    int[] anIntArray3567;
    boolean aBoolean3568 = true;
-   static int anInt3569;
    private int[][] anIntArrayArray3570;
    private RSString[] aClass94Array3571;
    static Class93 aClass93_3572 = new Class93(64);

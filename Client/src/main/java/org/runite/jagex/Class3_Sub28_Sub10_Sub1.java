@@ -3,7 +3,6 @@ import java.awt.Frame;
 
 final class Class3_Sub28_Sub10_Sub1 extends Class3_Sub28_Sub10 {
 
-   static int anInt4054;
    Class41 aClass41_4056;
    static RSString aClass94_4057 = RSString.createRSString("Mem:");
    byte[] aByteArray4059;

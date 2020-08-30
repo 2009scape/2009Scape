@@ -10,7 +10,6 @@ final class Class91 {
    int[][] anIntArrayArray1304;
    static Class33 aClass33_1305;
    private final int anInt1306;
-   static int anInt1307;
    static byte aByte1308;
    private final int anInt1309;
    static long aLong1310 = 0L;

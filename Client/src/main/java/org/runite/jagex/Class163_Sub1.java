@@ -28,8 +28,6 @@ class Class163_Sub1 extends Class163 {
                   } catch (IOException var3) {
                      Class3_Sub28_Sub18.aBoolean3769 = true;
                   }
-
-                  ++Class3_Sub28_Sub4.anInt3569;
                }
 
                Class58.method1194();

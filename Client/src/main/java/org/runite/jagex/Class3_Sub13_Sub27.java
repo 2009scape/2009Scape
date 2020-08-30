@@ -268,7 +268,6 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
          if(var0 != 0L) {
             for(int var3 = 0; Class8.anInt104 > var3; ++var3) {
                if(var0 == Class50.aLongArray826[var3]) {
-                  ++Class85.anInt1170;
                   --Class8.anInt104;
 
                   for(int var4 = var3; var4 < Class8.anInt104; ++var4) {
@@ -586,17 +585,14 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
          if(0 == var2) {
             Class3_Sub13_Sub1.outgoingBuffer.putOpcode(215);
             Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-25, var3 - -var3 + 3);
-            ++Class23.anInt452;
          }
 
          if(var2 == 1) {
             Class3_Sub13_Sub1.outgoingBuffer.putOpcode(39);
             Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-111, 3 + var3 - (-var3 - 14));
-            ++WorldListCountry.anInt503;
          }
 
          if(var2 == 2) {
-            ++Class143.anInt1873;
             Class3_Sub13_Sub1.outgoingBuffer.putOpcode(77);
             Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-70, var3 + var3 - -3);
          }

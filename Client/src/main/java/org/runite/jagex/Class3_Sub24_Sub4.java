@@ -24,7 +24,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
    private final int[] anIntArray3514 = new int[16];
    private final int[] anIntArray3515 = new int[16];
    private final int[] anIntArray3516 = new int[16];
-   static int anInt3517;
    int[] anIntArray3518 = new int[16];
    int[] anIntArray3519 = new int[16];
    private int[] anIntArray3520 = new int[16];
@@ -151,7 +150,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       try {
 
          if(var3.anInt318 == 1) {
-            ++Class3_Sub17.anInt2459;
             Class54.method1177(-1, 0L, (byte)-78, Class3_Sub28_Sub14.aClass94_3672, 0, (short)8, var3.aClass94_289, var3.anInt279);
          }
 
@@ -159,29 +157,24 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
          if(var3.anInt318 == 2 && !GameObject.aBoolean1837) {
             var4 = Class53.method1174(var3, (byte)-31);
             if(null != var4) {
-               ++Class3_Sub13_Sub7.anInt3090;
                Class54.method1177(-1, 0L, (byte)-120, RenderAnimationDefinition.method903(new RSString[]{RSString.createRSString("<col=00ff00>"), var3.aClass94_243}, (byte)-94), -1, (short)32, var4, var3.anInt279);
             }
          }
 
          if(var3.anInt318 == 3) {
-            ++Class96.anInt1361;
             Class54.method1177(-1, 0L, (byte)-59, Class3_Sub28_Sub14.aClass94_3672, 0, (short)28, TextCore.HasClose, var3.anInt279);
          }
 
          if(var3.anInt318 == 4) {
-            ++Class15.anInt349;
             Class54.method1177(-1, 0L, (byte)-71, Class3_Sub28_Sub14.aClass94_3672, 0, (short)59, var3.aClass94_289, var3.anInt279);
          }
 
          if(var3.anInt318 == 5) {
             Class54.method1177(-1, 0L, (byte)-92, Class3_Sub28_Sub14.aClass94_3672, 0, (short)51, var3.aClass94_289, var3.anInt279);
-            ++Class118.anInt1623;
          }
 
          if(var3.anInt318 == 6 && Class3_Sub13_Sub7.aClass11_3087 == null) {
             Class54.method1177(-1, 0L, (byte)-100, Class3_Sub28_Sub14.aClass94_3672, -1, (short)41, var3.aClass94_289, var3.anInt279);
-            ++CS2Script.anInt2437;
          }
 
          int var5;
@@ -206,17 +199,14 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                         ItemDefinition var10 = Class38.getItemDefinition(var3.itemAmounts[var15] + -1, (byte)69);
                         if(1 == Class164_Sub1.anInt3012 && var9.method99()) {
                            if(var3.anInt279 != Class3_Sub28_Sub18.anInt3764 || var15 != Class110.anInt1473) {
-                              ++Class15.anInt342;
                               Class54.method1177(-1, (long)var10.itemId, (byte)-91, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, ColorCore.BankItemColor, var10.name}, (byte)-59), var15, (short)40, TextCore.HasUse, var3.anInt279);
                            }
                         } else if(GameObject.aBoolean1837 && var9.method99()) {
                            Class3_Sub28_Sub9 var18 = Class69.anInt1038 != -1 ?Class61.method1210(Class69.anInt1038):null;
                            if(0 != (16 & Class164.anInt2051) && (var18 == null || var18.anInt3614 != var10.method1115(var18.anInt3614, 103, Class69.anInt1038))) {
-                              ++Class3_Sub28_Sub8.anInt3609;
                               Class54.method1177(Class144.anInt1887, (long)var10.itemId, (byte)-89, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, ColorCore.BankItemColor, var10.name}, (byte)-122), var15, (short)3, Class3_Sub28_Sub9.aClass94_3621, var3.anInt279);
                            }
                         } else {
-                           ++Class3_Sub23.anInt2540;
                            RSString[] inventoryOptions = var10.inventoryOptions;
 //                           System.out.println("inventoryOptions[0] = " + inventoryOptions[4]);
                            RSString[] var11 = new RSString[var10.inventoryOptions.length];
@@ -233,7 +223,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                            if(var9.method99()) {
                               for(var12 = 4; var12 >= 3; --var12) {
                                  if(null != inventoryOptions[var12]) {
-                                    ++Class3_Sub28_Sub14.anInt3670;
                                     if (bool_0) {
                                        var12 = var10.getShiftClickActionIndex();
                                        inventoryOptions[var12] = inventoryOptions[4];
@@ -250,14 +239,12 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                            }
 
                            if(var9.method96()) {
-                              ++Class25.anInt494;
                               Class54.method1177(Class99.anInt1403, (long)var10.itemId, (byte)-96, RenderAnimationDefinition.method903(new RSString[]{ColorCore.ItemBackpackColor, var10.name}, (byte)-66), var15, (short)22, TextCore.HasUse, var3.anInt279);
                            }
 
                            if(var9.method99()) {
                               for(var12 = 2; 0 <= var12; --var12) {
                                  if(inventoryOptions[var12] != null) {
-                                    ++Class81.anInt1141;
                                     var13 = 0;
                                     if(var12 == 0) {
                                        var13 = 47;
@@ -284,7 +271,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                            if(inventoryOptions != null) {
                               for(var12 = 4; var12 >= 0; --var12) {
                                  if(null != inventoryOptions[var12]) {
-                                    ++Class3_Sub13_Sub35.anInt3420;
                                     var13 = 0;
                                     if(0 == var12) {
                                        var13 = 25;
@@ -325,7 +311,6 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
          if(var3.usingScripts) {
             if(GameObject.aBoolean1837) {
                if(Client.method44(var3).method97() && (32 & Class164.anInt2051) != 0) {
-                  ++Class29.anInt562;
                   Class54.method1177(Class144.anInt1887, 0L, (byte)-113, RenderAnimationDefinition.method903(new RSString[]{
                           Class40.aClass94_676, Class3_Sub28_Sub16.aClass94_3703, var3.aClass94_277
                   }, (byte)-90), var3.anInt191, (short)12, Class3_Sub28_Sub9.aClass94_3621, var3.anInt279);
@@ -335,26 +320,22 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                   RSString var16 = Class120.method1732(var3, (byte)-71, var15);
                   if(null != var16) {
                      Class54.method1177(Class3_Sub13_Sub2.method173((byte)126, var15, var3), (long)(var15 + 1), (byte)-85, var3.aClass94_277, var3.anInt191, (short)1003, var16, var3.anInt279);
-                     ++Class3_Sub13_Sub11.anInt3136;
                   }
                }
 
                var4 = Class53.method1174(var3, (byte)-101);
                if(var4 != null) {
-                  ++Class3_Sub13_Sub7.anInt3090;
                   Class54.method1177(-1, 0L, (byte)-116, var3.aClass94_277, var3.anInt191, (short)32, var4, var3.anInt279);
                }
 
                for(var5 = 4; var5 >= 0; --var5) {
                   RSString var17 = Class120.method1732(var3, (byte)-65, var5);
                   if(var17 != null) {
-                     ++Class3_Sub13_Sub11.anInt3136;
                      Class54.method1177(Class3_Sub13_Sub2.method173((byte)53, var5, var3), (long)(var5 - -1), (byte)-48, var3.aClass94_277, var3.anInt191, (short)9, var17, var3.anInt279);
                   }
                }
 
                if(Client.method44(var3).method95()) {
-                  ++CS2Script.anInt2437;
                   Class54.method1177(-1, 0L, (byte)-74, Class3_Sub28_Sub14.aClass94_3672, var3.anInt191, (short)41, TextCore.HasContinue, var3.anInt279);
                }
             }

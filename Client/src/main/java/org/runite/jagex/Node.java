@@ -6,7 +6,6 @@ class Node extends Class3 {
    static int anInt2567 = -1;
    long aLong2569;
    Node aClass3_Sub28_2570;
-   static int anInt2571;
    static int clanSize;
    static CacheIndex aClass153_2573;
    static int[] anIntArray2574 = new int[14];

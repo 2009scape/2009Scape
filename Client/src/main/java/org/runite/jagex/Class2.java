@@ -330,7 +330,6 @@ final class Class2 {
 
 	static void method78(int var0, int var2) {
 		try {
-			++CacheIndex.anInt1944;
 			Class3_Sub13_Sub1.outgoingBuffer.putOpcode(132);
 			Class3_Sub13_Sub1.outgoingBuffer.putIntA(var2);
 			Class3_Sub13_Sub1.outgoingBuffer.putLEShort(var0);

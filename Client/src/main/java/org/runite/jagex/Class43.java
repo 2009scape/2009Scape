@@ -23,7 +23,6 @@ final class Class43 {
    Class37 aClass37_712;
    int anInt713;
    private int anInt714;
-   static int anInt715;
    static int anInt716 = 0;
    float[] aFloatArray717 = new float[4];
 

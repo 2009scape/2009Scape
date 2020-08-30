@@ -4,7 +4,6 @@ import java.util.Objects;
 
 final class Class3_Sub13_Sub34 extends Class3_Sub13 {
 
-   static int anInt3402;
    private final int[] anIntArray3403 = new int[3];
    private int anInt3404 = 409;
    private int anInt3405 = 4096;

@@ -8,7 +8,6 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
    private int anInt3147 = 4;
    static int anInt3148 = 0;
    private int anInt3149 = 4;
-   static int anInt3151;
    static RSString aClass94_3152 = RSString.createRSString("::gc");
    static int anInt3153;
    static CacheIndex aClass153_3154;
@@ -248,7 +247,6 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                synchronized(var14) {
                   if(Canvas_Sub2.aBoolean29) {
                      if(Class3_Sub28_Sub11.anInt3644 != 0 || Class106.aClass67_1443.anInt1018 >= 40) {
-                        ++RSString.anInt2145;
                         Class3_Sub13_Sub1.outgoingBuffer.putOpcode(123);
                         var3 = 0;
                         Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-14, 0);
@@ -339,7 +337,6 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                }
 
                if(Class3_Sub28_Sub11.anInt3644 != 0) {
-                  ++Class57.anInt900;
                   long var15 = (-AbstractIndexedSprite.aLong1465 + Class75.aLong1102) / 50L;
                   var3 = Class38_Sub1.anInt2614;
                   if(var3 >= 0) {
@@ -394,28 +391,24 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                if(Class3_Sub28_Sub10_Sub2.aBoolean4068 && 0 >= Class3_Sub1.anInt2212) {
                   Class3_Sub1.anInt2212 = 20;
                   Class3_Sub28_Sub10_Sub2.aBoolean4068 = false;
-                  ++Class133.anInt1756;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(21);
                   Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class3_Sub9.anInt2309);
                   Class3_Sub13_Sub1.outgoingBuffer.putLEShort(GraphicDefinition.CAMERA_DIRECTION);
                }
 
                if(Class3_Sub13_Sub6.aBoolean3078 && !Class140_Sub4.aBoolean2774) {
-                  ++Class3_Sub13_Sub15.anInt3187;
                   Class140_Sub4.aBoolean2774 = true;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(22);
                   Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-41, 1);
                }
 
                if(!Class3_Sub13_Sub6.aBoolean3078 && Class140_Sub4.aBoolean2774) {
-                  ++Class3_Sub13_Sub15.anInt3187;
                   Class140_Sub4.aBoolean2774 = false;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(22);
                   Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-43, 0);
                }
 
                if(!Class140_Sub2.aBoolean2705) {
-                  ++Class3_Sub28_Sub13.anInt3659;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(98);
                   Class3_Sub13_Sub1.outgoingBuffer.putInt(-126, Class84.method1421());
                   Class140_Sub2.aBoolean2705 = true;
@@ -589,7 +582,6 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                         if(0 == Class3_Sub13_Sub5.anInt3069) {
                            if(Class72.aBoolean1074 && 5 <= Class40.anInt677) {
                               if(Class67.aClass11_1017 == Class99.aClass11_1402 && PacketParser.anInt86 != Class140_Sub2.anInt2701) {
-                                 ++Class3_Sub23.anInt2541;
                                  var17 = Class67.aClass11_1017;
                                  byte var18 = 0;
                                  if(1 == Canvas_Sub1.anInt15 && 206 == var17.anInt189) {
@@ -702,7 +694,6 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                        } else if(CS2Script.anInt2440 == 2) {
                                           if(Class27.anInt515 != -1) {
                                              Class3_Sub13_Sub1.outgoingBuffer.putOpcode(131);
-                                             ++Class75_Sub3.anInt2651;
                                              Class3_Sub13_Sub1.outgoingBuffer.putIntB(-123, Class54.anInt872);
                                              Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class131.anInt1716 + Class27.anInt515);
                                              Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(RSInterface.anInt278);
@@ -718,7 +709,6 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                           if(-1 != Class27.anInt515) {
                                              Class3_Sub13_Sub1.outgoingBuffer.putOpcode(179);
                                              Class3_Sub13_Sub1.outgoingBuffer.putShort(Class82.anInt1152 + Class66.anInt999);
-                                             ++Class102.anInt2130;
                                              Class3_Sub13_Sub1.outgoingBuffer.putShort(Class27.anInt515 + Class131.anInt1716);
                                              Class151_Sub1.anInt2958 = 0;
                                              Class36.anInt638 = 1;
@@ -787,7 +777,6 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                        if(var5 > 15000 && var6 > 15000) {
                                           Class159.anInt2023 = 250;
                                           Class23.method940(112, 14500);
-                                          ++Class93.anInt1330;
                                           Class3_Sub13_Sub1.outgoingBuffer.putOpcode(245);
                                        }
 
@@ -873,10 +862,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                        }
 
                                        if(Class3_Sub13_Sub23_Sub1.anInt4032 > 50) {
-                                          ++Class3_Sub28_Sub4.anInt3569;
                                           Class3_Sub13_Sub1.outgoingBuffer.putOpcode(93);
-
-
                                        }
 
                                        if(RenderAnimationDefinition.aBoolean402) {

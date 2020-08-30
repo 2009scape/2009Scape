@@ -7,10 +7,7 @@ import java.awt.event.KeyListener;
 final class KeyboardListener implements KeyListener, FocusListener {
 
    static boolean aBoolean1905 = true;
-   static int anInt1906;
    static int anInt1908 = 0;
-   static int anInt1909;
-   static int anInt1910;
    static Class93 aClass93_1911 = new Class93(260);
    static int anInt1912;
    static int anInt1914;

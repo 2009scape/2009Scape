@@ -6,7 +6,6 @@ import java.awt.Insets;
 final class Class3_Sub28_Sub10_Sub2 extends Class3_Sub28_Sub10 {
 
    byte aByte4064;
-   static int anInt4065;
    static RSString aClass94_4066 = RSString.createRSString("<br>");
    int anInt4067;
    static boolean aBoolean4068 = true;

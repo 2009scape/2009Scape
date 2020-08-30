@@ -63,7 +63,7 @@ final class Class104 implements Interface5 {
             if (Class44.anInt718 != 0) {
                Class162.anInt2036 = '\u9c40' + CS2Script.anInt2451;
                Class140_Sub6.accRegistryPort = Class162.anInt2036;
-               WorldListCountry.anInt506 = CS2Script.anInt2451 + '\uc350';
+               Client.currentPort = CS2Script.anInt2451 + '\uc350';
             }
 
             return true;
@@ -92,7 +92,6 @@ final class Class104 implements Interface5 {
                   Class54.method1177(Class144.anInt1887, 0L, (byte)-53, Class131.aClass94_1724, var11, (short)11, Class3_Sub28_Sub9.aClass94_3621, var12);
                }
             } else {
-               ++Node.anInt2571;
                if(Class158.anInt2014 == 1) {
                   Class54.method1177(-1, 0L, (byte)-62, Class3_Sub28_Sub14.aClass94_3672, var11, (short)36, TextCore.HasFaceHere, var12);
                }
@@ -124,15 +123,12 @@ final class Class104 implements Interface5 {
 
                    if(Class164_Sub1.anInt3012 == 1) {
                       Class54.method1177(Class99.anInt1403, var26, (byte)-58, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, ColorCore.PMColor, var16.name}, (byte)-75), var12, (short)14, TextCore.HasUse, var27);
-                      ++Class43.anInt715;
                    } else if(GameObject.aBoolean1837) {
                       Class3_Sub28_Sub9 var17 = -1 == Class69.anInt1038?null:Class61.method1210(Class69.anInt1038);
                       if(0 != (Class164.anInt2051 & 4) && (var17 == null || var17.anInt3614 != var16.method1691(var17.anInt3614, Class69.anInt1038, (byte) 98))) {
                          Class54.method1177(Class144.anInt1887, var26, (byte)-77, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, ColorCore.PMColor, var16.name}, (byte)-122), var12, (short)38, Class3_Sub28_Sub9.aClass94_3621, var27);
-                         ++Class163_Sub1_Sub1.anInt4011;
                       }
                    } else {
-                      ++Class14.anInt336;
                       RSString[] var29 = var16.options;
                       if(Class123.aBoolean1656) {
                          var29 = Class3_Sub31.method822(var29);
@@ -141,7 +137,6 @@ final class Class104 implements Interface5 {
                       if(var29 != null) {
                          for(var18 = 4; var18 >= 0; --var18) {
                             if(null != var29[var18]) {
-                               ++Class3_Sub10.anInt2337;
                                short var19 = 0;
                                if(var18 == 0) {
                                   var19 = 42;
@@ -250,16 +245,13 @@ final class Class104 implements Interface5 {
                          var18 = var32.aClass140_Sub7_3676.anInt2936;
                          ItemDefinition var40 = Class38.getItemDefinition(var18, (byte)71);
                          if(Class164_Sub1.anInt3012 == 1) {
-                            ++Class3_Sub6.anInt2290;
                             Class54.method1177(Class99.anInt1403, (long)var18, (byte)-75, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, ColorCore.BankItemColor, var40.name}, (byte)-104), var12, (short)33, TextCore.HasUse, var27);
                          } else if(GameObject.aBoolean1837) {
                             Class3_Sub28_Sub9 var39 = Class69.anInt1038 == -1?null:Class61.method1210(Class69.anInt1038);
                             if((Class164.anInt2051 & 1) != 0 && (null == var39 || var39.anInt3614 != var40.method1115(var39.anInt3614, 100, Class69.anInt1038))) {
-                               ++Class106.anInt1439;
                                Class54.method1177(Class144.anInt1887, (long)var18, (byte)-70, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, ColorCore.BankItemColor, var40.name}, (byte)-80), var12, (short)39, Class3_Sub28_Sub9.aClass94_3621, var27);
                             }
                          } else {
-                            ++Class140_Sub6.anInt2901;
                             RSString[] var34 = var40.groundOptions;
                             if(Class123.aBoolean1656) {
                                var34 = Class3_Sub31.method822(var34);
@@ -267,7 +259,6 @@ final class Class104 implements Interface5 {
 
                             for(var21 = 4; var21 >= 0; --var21) {
                                if(var34 != null && null != var34[var21]) {
-                                  ++Canvas_Sub2.anInt27;
                                   byte var35 = 0;
                                   if(var21 == 0) {
                                      var35 = 21;

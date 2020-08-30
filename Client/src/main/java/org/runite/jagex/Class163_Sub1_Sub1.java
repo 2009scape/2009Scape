@@ -12,8 +12,6 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
    static boolean[] aBooleanArray4008 = new boolean[100];
    static int[] anIntArray4009 = new int[5];
    static int[][] anIntArrayArray4010 = new int[104][104];
-   static int anInt4011;
-
 
    public static void method2213(byte var0) {
       try {

@@ -6,7 +6,6 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
 
    static RSString aClass94_3418 = RSString.createRSString("(U5");
    static int anInt3419 = 0;
-   static int anInt3420;
    static Class131 aClass131_3421;
 
 

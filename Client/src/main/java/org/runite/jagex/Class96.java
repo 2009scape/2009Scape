@@ -17,8 +17,6 @@ final class Class96 {
    static int anInt1358 = 0;
    int anInt1359;
    int anInt1360;
-   static int anInt1361;
-
 
    static void method1587(RSByteBuffer var1) {
       try {

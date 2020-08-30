@@ -19,7 +19,6 @@ abstract class Class140_Sub4 extends GameObject {
    int[] anIntArray2767 = new int[10];
    int[] anIntArray2768 = new int[4];
    boolean aBoolean2769 = false;
-   static int anInt2770;
    int anInt2771 = -1;
    int anInt2772 = -1;
    int anInt2773 = 0;

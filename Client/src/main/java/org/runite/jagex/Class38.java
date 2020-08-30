@@ -118,7 +118,6 @@ class Class38 {
    static void method1029(int var0) {
       try {
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(177);
-         ++Class54.anInt876;
          Class3_Sub13_Sub1.outgoingBuffer.putShort(Class113.interfacePacketCounter);
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "fk.D(" + var0 + ')');

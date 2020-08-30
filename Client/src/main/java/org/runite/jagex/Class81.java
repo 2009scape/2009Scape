@@ -6,7 +6,6 @@ import java.util.Objects;
 final class Class81 {
 
    static NodeList aClass13_1139 = new NodeList();
-   static int anInt1141;
    static int[][][] anIntArrayArrayArray1142;
 
 
@@ -87,7 +86,6 @@ final class Class81 {
                if(var4.method1528(Class102.player.displayName)) {
                   Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, TextCore.HasOnOwnIgnoreList, -1);
                } else {
-                  ++Class3_Sub13_Sub22.anInt3267;
                   Class114.ignores[Class3_Sub28_Sub5.anInt3591] = var1;
                   Class3_Sub13_Sub27.aClass94Array3341[Class3_Sub28_Sub5.anInt3591++] = Class41.method1052(var1);
                   Class110.anInt1472 = Class3_Sub13_Sub17.anInt3213;

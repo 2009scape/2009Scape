@@ -7,7 +7,6 @@ final class Class145 {
    int anInt1893;
    int anInt1894;
    static Class113[] aClass113Array1895;
-   static int anInt1896;
    int anInt1897;
    static int anInt1898;
    int anInt1900;

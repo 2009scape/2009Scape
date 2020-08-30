@@ -148,7 +148,6 @@ final class Class3_Sub22 extends Class3 {
          if((long) 0 != var0) {
             Class3_Sub13_Sub1.outgoingBuffer.putOpcode(104);
             Class3_Sub13_Sub1.outgoingBuffer.putLong(var0, -2037491440);
-            ++Class163_Sub3.anInt3001;
          }
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "mf.F(" + var0 + ',' + 0 + ')');

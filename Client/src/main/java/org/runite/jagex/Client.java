@@ -21,8 +21,9 @@ public final class Client extends GameShell {
 	static Class3_Sub11[][] aClass3_Sub11ArrayArray2199;
 	static int[] anIntArray2200;
 	static int ZOOM = 600;
+	static int currentPort;
 
-	
+
 	final void method38() {
 		try {
 			if(Class143.loadingStage != 1000) {
@@ -376,7 +377,7 @@ public final class Client extends GameShell {
 				Class3_Sub25.aShortArray2548 = Class164_Sub1.aShortArray3011;
 			}
 
-			WorldListCountry.anInt506 = Class53.anInt867;
+			currentPort = Class53.anInt867;
 			Class162.anInt2036 = Class3_Sub28_Sub19.anInt3773;
 			Class38_Sub1.accRegistryIp = Configurations.MS_IP;
 			Class123.anInt1658 = Class3_Sub28_Sub19.anInt3773;
@@ -559,8 +560,8 @@ public final class Client extends GameShell {
 			Class101.method1608((byte)110);
 			Class53.method1169(false);
 			WorldListEntry.method1077(0);
-			WorldListCountry.anIntArray509 = null;
-			WorldListCountry.aClass94_500 = null;
+			ItemDefinition.anIntArray509 = null;
+			Class15.timeZone = null;
 			Class88.method1457();
 			Class137.method1818(false);
 			Class54.aClass153_878 = null;
@@ -907,7 +908,7 @@ public final class Client extends GameShell {
 			if(Class58.aClass66_917.anInt1011 > Class163_Sub2_Sub1.anInt4026) {
 				Class3_Sub13_Sub5.anInt3068 = 5 * 50 * (Class58.aClass66_917.anInt1011 + -1);
 				if(Class162.anInt2036 == Class140_Sub6.accRegistryPort) {
-					Class140_Sub6.accRegistryPort = WorldListCountry.anInt506;
+					Class140_Sub6.accRegistryPort = currentPort;
 				} else {
 					Class140_Sub6.accRegistryPort = Class162.anInt2036;
 				}

@@ -2,7 +2,6 @@ package org.runite.jagex;
 
 final class Class106 {
 
-   static int anInt1439;
    static boolean aBoolean1441 = true;
    static int anInt1442 = 0;
    static Class67 aClass67_1443;
@@ -26,7 +25,6 @@ final class Class106 {
                }
 
                if(var2 < Class3_Sub28_Sub15.aClass3_Sub19Array3694.length && null != Class3_Sub28_Sub15.aClass3_Sub19Array3694[var2]) {
-                  ++Class39.anInt671;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(162);
                   Class3_Sub13_Sub1.outgoingBuffer.putLong(Class3_Sub28_Sub15.aClass3_Sub19Array3694[var2].aLong71, -2037491440);
                }

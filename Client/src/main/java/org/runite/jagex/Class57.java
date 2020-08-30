@@ -6,9 +6,7 @@ final class Class57 {
    int anInt896 = 0;
    static int[] anIntArray898 = new int[2500];
    int anInt899 = 2048;
-   static int anInt900;
    static int anInt902 = 100;
-   static int anInt903;
    static int[] anIntArray904 = new int[200];
    static int activeWorldListSize;
    int anInt907 = 0;

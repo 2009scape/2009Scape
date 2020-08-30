@@ -3,9 +3,7 @@ package org.runite.jagex;
 abstract class Class3_Sub28_Sub10 extends Node {
 
    static int anInt3625 = 3;
-   static int anInt3627;
    boolean aBoolean3628;
-   static int anInt3630;
    static int anInt3631;
    volatile boolean aBoolean3632 = true;
    boolean aBoolean3635;

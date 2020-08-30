@@ -443,7 +443,6 @@ final class Class3_Sub8 extends Class3 {
             Class3_Sub13_Sub1.outgoingBuffer.putOpcode(137);
             Class3_Sub13_Sub1.outgoingBuffer.putInt(-127, Class129.anInt1691);
             Class129.anInt1691 = -1;
-            ++Class3_Sub28_Sub9.anInt3618;
          }
 
       } catch (RuntimeException var10) {

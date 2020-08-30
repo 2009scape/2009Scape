@@ -2,7 +2,6 @@ package org.runite.jagex;
 
 final class Class3_Sub13_Sub22 extends Class3_Sub13 {
 
-   static int anInt3267;
    static RSString aClass94_3268 = RSString.createRSString(")1");
    static Player[] players = new Player[2048];
    static AbstractIndexedSprite[] aClass109Array3270;
@@ -12,7 +11,6 @@ final class Class3_Sub13_Sub22 extends Class3_Sub13 {
    static int anInt3274;
    static boolean aBoolean3275 = true;
    private int anInt3276;
-   static int anInt3277;
 
 
    protected Class3_Sub13_Sub22() {

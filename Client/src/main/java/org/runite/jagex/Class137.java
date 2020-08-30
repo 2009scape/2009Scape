@@ -2,7 +2,6 @@ package org.runite.jagex;
 
 final class Class137 {
 
-   static int anInt1781;
    static boolean aBoolean1784 = false;
 
 

@@ -7,7 +7,6 @@ final class Class136 {
    static Class93 aClass93_1772 = new Class93(64);
    
    static byte[][][] aByteArrayArrayArray1774;
-   static int anInt1776;
    GameObject aClass140_1777;
    static Class64 aClass64_1778;
    static short[] aShortArray1779 = new short[256];

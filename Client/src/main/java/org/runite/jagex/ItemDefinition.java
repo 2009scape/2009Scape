@@ -7,7 +7,9 @@ import java.util.Objects;
 
 final class ItemDefinition {
 
-	private short[] aShortArray751;
+	static int[] anIntArray509 = new int[5];
+    static short aShort505 = 1;
+    private short[] aShortArray751;
 	private int anInt752;
 	private int anInt753 = -1;
 	int anInt754;
@@ -15,11 +17,9 @@ final class ItemDefinition {
 	int anInt756 = -1;
 	int value = 1;
 	int anInt758;
-	static int anInt759;
 	private int wornModelPositionX = 0;
 	int anInt761;
 	int anInt762;
-	static int anInt763;
 	int stackingType;
 	private short[] aShortArray765;
 	int[] anIntArray766;
@@ -323,7 +323,7 @@ final class ItemDefinition {
 						int k5 = 0xffff & ai1[i1];
 						if (l43 < 0 || 5000 < l43)
 							throw new RuntimeException();
-						WorldListCountry.anIntArray509[k4] = l43;
+						anIntArray509[k4] = l43;
 						byte byte2 = -1;
 						if (k5 == 105)
 							byte2 = 0;
@@ -337,7 +337,7 @@ final class ItemDefinition {
 					if (j1 == 45) {
 						int l4 = ai1[i1];
 						int l5 = Class140_Sub7.anIntArray2929[--k];
-						if (0 > l5 || WorldListCountry.anIntArray509[l4] <= l5)
+						if (0 > l5 || anIntArray509[l4] <= l5)
 							throw new RuntimeException();
 						Class140_Sub7.anIntArray2929[k++] = Canvas_Sub1.anIntArrayArray20[l4][l5];
 						continue;
@@ -346,7 +346,7 @@ final class ItemDefinition {
 						int i5 = ai1[i1];
 						k -= 2;
 						int i6 = Class140_Sub7.anIntArray2929[k];
-						if (i6 < 0 || WorldListCountry.anIntArray509[i5] <= i6)
+						if (i6 < 0 || anIntArray509[i5] <= i6)
 							throw new RuntimeException();
 						Canvas_Sub1.anIntArrayArray20[i5][i6] = Class140_Sub7.anIntArray2929[1 + k];
 						continue;
@@ -755,7 +755,6 @@ final class ItemDefinition {
 														continue;
 													}
 													if (j1 == 3104) {
-														Class100.anInt1405++;
 														RSString class94_4 = Class3.aClass94Array75[--l];
 														int i46 = 0;
 														if (class94_4.method1543(82))
@@ -765,14 +764,12 @@ final class ItemDefinition {
 														continue;
 													}
 													if (j1 == 3105) {
-														Class3_Sub22.anInt2500++;
 														RSString class94_5 = Class3.aClass94Array75[--l];
 														Class3_Sub13_Sub1.outgoingBuffer.putOpcode(244);
 														Class3_Sub13_Sub1.outgoingBuffer.putLong(class94_5.toLong(-115), 0x868e5910);
 														continue;
 													}
 													if (j1 == 3106) {
-														Class7.anInt2165++;
 														RSString class94_6 = Class3.aClass94Array75[--l];
 														Class3_Sub13_Sub1.outgoingBuffer.putOpcode(65);
 														Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -17, 1 + class94_6.length(-84));
@@ -804,7 +801,6 @@ final class ItemDefinition {
 													}
 													if (j1 != 3110)
 														break;
-													Class3_Sub13_Sub16.anInt3199++;
 													int l7 = Class140_Sub7.anIntArray2929[--k];
 													Class3_Sub13_Sub1.outgoingBuffer.putOpcode(111);
 													Class3_Sub13_Sub1.outgoingBuffer.putShort(l7);
@@ -1497,7 +1493,6 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (j1 == 5001) {
-																		Class123.anInt1657++;
 																		k -= 3;
 																		Class3_Sub13_Sub8.anInt3101 = Class140_Sub7.anIntArray2929[k];
 																		Class24.anInt467 = Class140_Sub7.anIntArray2929[1 + k];
@@ -1512,7 +1507,6 @@ final class ItemDefinition {
 																		RSString class94_17 = Class3.aClass94Array75[--l];
 																		k -= 2;
 																		int j55 = Class140_Sub7.anIntArray2929[k];
-																		Class154.anInt1956++;
 																		int j69 = Class140_Sub7.anIntArray2929[1 + k];
 																		Class3_Sub13_Sub1.outgoingBuffer.putOpcode(99);
 																		Class3_Sub13_Sub1.outgoingBuffer.putLong(class94_17.toLong(-110), 0x868e5910);
@@ -1548,7 +1542,6 @@ final class ItemDefinition {
 																			Class73.ClientCommands(class94_18);
 																		else if (Class3_Sub13_Sub26.rights != 0 || (!Class3_Sub15.aBoolean2433 || Class121.aBoolean1641) && !Class3_Sub13_Sub14.aBoolean3166) {
 																			RSString class94_47 = class94_18.method1534();
-																			Class162.anInt2037++;
 																			byte byte3 = 0;
 																			if (class94_47.method1558(TextCore.TextColorYellow)) {
 																				byte3 = 0;
@@ -1674,7 +1667,6 @@ final class ItemDefinition {
 																		RSString class94_19 = Class3.aClass94Array75[l];
 																		if (Class3_Sub13_Sub26.rights != 0 || (!Class3_Sub15.aBoolean2433 || Class121.aBoolean1641) && !Class3_Sub13_Sub14.aBoolean3166) {
 																			Class3_Sub13_Sub1.outgoingBuffer.putOpcode(201);
-																			Class15.anInt348++;
 																			Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -121, 0);
 																			int k69 = Class3_Sub13_Sub1.outgoingBuffer.index;
 																			Class3_Sub13_Sub1.outgoingBuffer.putLong(class94_19.toLong(-128), 0x868e5910);
@@ -1796,7 +1788,6 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (5059 == j1) {
-																		Class3_Sub28_Sub8.anInt3613++;
 																		Class3_Sub13_Sub1.outgoingBuffer.putOpcode(167);
 																		Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -105, 0);
 																		int j27 = Class3_Sub13_Sub1.outgoingBuffer.index;
@@ -1807,7 +1798,6 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (5060 == j1) {
-																		KeyboardListener.anInt1906++;
 																		RSString class94_21 = Class3.aClass94Array75[--l];
 																		Class3_Sub13_Sub1.outgoingBuffer.putOpcode(178);
 																		Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -108, 0);
@@ -1820,7 +1810,6 @@ final class ItemDefinition {
 																	}
 																	if (j1 == 5061) {
 																		Class3_Sub13_Sub1.outgoingBuffer.putOpcode(167);
-																		Class3_Sub28_Sub8.anInt3613++;
 																		Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -62, 0);
 																		int k27 = Class3_Sub13_Sub1.outgoingBuffer.index;
 																		Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -88, 1);
@@ -2178,7 +2167,6 @@ final class ItemDefinition {
 																		RSString class94_23 = Class3.aClass94Array75[l];
 																		RSString class94_54 = Class3.aClass94Array75[l - -1];
 																		int k71 = Class140_Sub7.anIntArray2929[--k];
-																		AnimationDefinition.anInt1853++;
 																		Class3_Sub13_Sub1.outgoingBuffer.putOpcode(117);
 																		Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -91, Class3_Sub13_Sub33.method326((byte) 39, class94_23) - (-Class3_Sub13_Sub33.method326((byte) 102, class94_54) + -1));
 																		Class3_Sub13_Sub1.outgoingBuffer.putString(class94_23);
@@ -2297,14 +2285,14 @@ final class ItemDefinition {
 																		Class62.anInt963 = Class140_Sub7.anIntArray2929[k - -1];
 																		MouseListeningClass.anInt1926 = Class140_Sub7.anIntArray2929[k + 2];
 																		Class136.anInt1771 = Class140_Sub7.anIntArray2929[3 + k];
-																		WorldListCountry.anInt502 = Class140_Sub7.anIntArray2929[4 + k];
+																		WorldListCountry.archiveID = Class140_Sub7.anIntArray2929[4 + k];
 																		Class99.anInt1400 = Class140_Sub7.anIntArray2929[5 + k];
 																		Class46.anInt739 = Class140_Sub7.anIntArray2929[6 + k];
 																		Class79.anInt1126 = Class140_Sub7.anIntArray2929[7 + k];
 																		Class140_Sub7.anInt2937 = Class140_Sub7.anIntArray2929[8 + k];
 																		Class3_Sub13_Sub28.anInt3351 = Class140_Sub7.anIntArray2929[k + 9];
 																		Class154.anInt1957 = Class140_Sub7.anIntArray2929[10 + k];
-																		Class140_Sub6.spritesCacheIndex.method2144(WorldListCountry.anInt502);
+																		Class140_Sub6.spritesCacheIndex.method2144(WorldListCountry.archiveID);
 																		Class140_Sub6.spritesCacheIndex.method2144(Class99.anInt1400);
 																		Class140_Sub6.spritesCacheIndex.method2144(Class46.anInt739);
 																		Class140_Sub6.spritesCacheIndex.method2144(Class79.anInt1126);
@@ -2773,8 +2761,8 @@ final class ItemDefinition {
 																					continue;
 																				}
 																				if (j1 == 6501) {
-																					WorldListEntry class44_sub1 = Class140_Sub2.method1953();
-																					if (class44_sub1 == null) {
+																					WorldListEntry worldEntry = Class140_Sub2.method1953();
+																					if (worldEntry == null) {
 																						Class140_Sub7.anIntArray2929[k++] = -1;
 																						Class140_Sub7.anIntArray2929[k++] = 0;
 																						Class3.aClass94Array75[l++] = Class3_Sub9.aClass94_2331;
@@ -2782,13 +2770,13 @@ final class ItemDefinition {
 																						Class3.aClass94Array75[l++] = Class3_Sub9.aClass94_2331;
 																						Class140_Sub7.anIntArray2929[k++] = 0;
 																					} else {
-																						Class140_Sub7.anIntArray2929[k++] = class44_sub1.worldId;
-																						Class140_Sub7.anIntArray2929[k++] = class44_sub1.settings;
-																						Class3.aClass94Array75[l++] = class44_sub1.activity;
-																						WorldListCountry class26 = class44_sub1.method1078(60);
+																						Class140_Sub7.anIntArray2929[k++] = worldEntry.worldId;
+																						Class140_Sub7.anIntArray2929[k++] = worldEntry.settings;
+																						Class3.aClass94Array75[l++] = worldEntry.activity;
+																						WorldListCountry class26 = worldEntry.method1078(60);
 																						Class140_Sub7.anIntArray2929[k++] = class26.flagId;
 																						Class3.aClass94Array75[l++] = class26.name;
-																						Class140_Sub7.anIntArray2929[k++] = class44_sub1.anInt722;
+																						Class140_Sub7.anIntArray2929[k++] = worldEntry.anInt722;
 																					}
 																					continue;
 																				}
@@ -2911,13 +2899,13 @@ final class ItemDefinition {
 																		} else {
 																			PacketParser.aShort83 = 32767;
 																		}
-																		WorldListCountry.aShort505 = (short) Class140_Sub7.anIntArray2929[2 + k];
-																		if (WorldListCountry.aShort505 <= 0)
-																			WorldListCountry.aShort505 = 1;
+																		aShort505 = (short) Class140_Sub7.anIntArray2929[2 + k];
+																		if (aShort505 <= 0)
+																			aShort505 = 1;
 																		Class3_Sub13_Sub23_Sub1.aShort4038 = (short) Class140_Sub7.anIntArray2929[k - -3];
 																		if (Class3_Sub13_Sub23_Sub1.aShort4038 > 0) {
-																			if (WorldListCountry.aShort505 > Class3_Sub13_Sub23_Sub1.aShort4038)
-																				Class3_Sub13_Sub23_Sub1.aShort4038 = WorldListCountry.aShort505;
+																			if (aShort505 > Class3_Sub13_Sub23_Sub1.aShort4038)
+																				Class3_Sub13_Sub23_Sub1.aShort4038 = aShort505;
 																		} else {
 																			Class3_Sub13_Sub23_Sub1.aShort4038 = 32767;
 																		}

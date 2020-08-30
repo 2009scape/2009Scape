@@ -17,7 +17,6 @@ final class Class126 {
    boolean aBoolean1674;
    int anInt1675;
    static int anInt1676 = 0;
-   static int anInt1677;
 
 
    public static void method1751(byte var0) {

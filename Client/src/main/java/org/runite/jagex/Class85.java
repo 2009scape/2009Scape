@@ -6,9 +6,7 @@ final class Class85 {
    static boolean aBoolean1167 = false;
    static AnimationDefinition[] aClass142Array1168 = new AnimationDefinition[14];
    static float aFloat1169;
-   static int anInt1170;
    static CacheIndex aClass153_1171;
-   static int anInt1172;
    static int anInt1174 = 99;
 
 

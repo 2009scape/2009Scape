@@ -5,7 +5,6 @@ import java.util.Objects;
 final class Class163_Sub3 extends Class163 {
 
    static int[] anIntArray2999;
-   static int anInt3001;
    static RSString[] aClass94Array3003 = new RSString[100];
    static boolean aBoolean3004 = true;
    static byte[][] aByteArrayArray3005;
@@ -94,7 +93,6 @@ final class Class163_Sub3 extends Class163 {
                if(var3.method1528(Class102.player.displayName)) {
                   Class3_Sub30_Sub1.addChatMessage(Class3_Sub28_Sub14.aClass94_3672, 0, TextCore.HasOnOwnFriendsList, -1);
                } else {
-                  ++GraphicDefinition.anInt544;
                   Class70.aClass94Array1046[Class8.anInt104] = var3;
                   Class50.aLongArray826[Class8.anInt104] = var0;
                   Class55.anIntArray882[Class8.anInt104] = 0;

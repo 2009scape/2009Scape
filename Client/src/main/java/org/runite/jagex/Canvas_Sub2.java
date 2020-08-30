@@ -5,7 +5,6 @@ import java.awt.Graphics;
 
 final class Canvas_Sub2 extends Canvas {
 
-   static int anInt27;
    static boolean aBoolean29 = false;
    static int anInt30;
    static int anInt31 = 0;

@@ -5,7 +5,6 @@ import java.util.zip.CRC32;
 final class Class3_Sub13_Sub12 extends Class3_Sub13 {
 
    static CRC32 aCRC32_3143 = new CRC32();
-   static int anInt3144;
    static RSString aClass94_3145 = RSString.createRSString(")1 ");
 
 

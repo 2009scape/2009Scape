@@ -20,7 +20,6 @@ final class Class166 {
    int anInt2078;
    static int anInt2079 = 0;
    static RSString aClass94_2080 = RSString.createRSString("(U2");
-   static int anInt2081;
 
 
    public static void method2255(byte var0) {
@@ -71,23 +70,18 @@ final class Class166 {
                var4 = true;
                Class3_Sub28_Sub9.method582(Class102.player.anIntArray2755[0], 0, 1, false, 0, 2, var6.anIntArray2767[0], 1, 0, 2, var6.anIntArray2755[0], Class102.player.anIntArray2767[0]);
                if(1 == var0) {
-                  ++ItemDefinition.anInt759;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(68);
                   Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(Class56.localPlayerIndexes[var5]);
                } else if(4 == var0) {
-                  ++KeyboardListener.anInt1910;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(180);
                   Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(Class56.localPlayerIndexes[var5]);
                } else if (5 == var0) {
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(4);
                   Class3_Sub13_Sub1.outgoingBuffer.putLEShort(Class56.localPlayerIndexes[var5]);
-                  ++IOHandler.anInt1240;
                } else if (var0 == 6) {
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(133);
                   Class3_Sub13_Sub1.outgoingBuffer.putLEShort(Class56.localPlayerIndexes[var5]);
-                  ++Class3_Sub24_Sub4.anInt3517;
                } else if (var0 == 7) {
-                  ++Class20.anInt437;
                   Class3_Sub13_Sub1.outgoingBuffer.putOpcode(114);
                   Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(Class56.localPlayerIndexes[var5]);
                }

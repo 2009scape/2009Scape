@@ -3,7 +3,6 @@ package org.runite.jagex;
 final class Class19 {
 
    int anInt420;
-   static int anInt421;
    static RSString aClass94_422 = RSString.createRSString("loc");
    GameObject aClass140_423;
    int anInt424;

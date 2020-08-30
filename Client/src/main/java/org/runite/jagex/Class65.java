@@ -125,7 +125,7 @@ final class Class65 {
             int var9;
             int var10;
             short var12;
-            if(var8 >= WorldListCountry.aShort505) {
+            if(var8 >= ItemDefinition.aShort505) {
                if(var8 > Class3_Sub13_Sub23_Sub1.aShort4038) {
                   var12 = Class3_Sub13_Sub23_Sub1.aShort4038;
                   var7 = var12 * var0 * 334 / (var3 * 512);
@@ -144,7 +144,7 @@ final class Class65 {
                   }
                }
             } else {
-               var12 = WorldListCountry.aShort505;
+               var12 = ItemDefinition.aShort505;
                var7 = 334 * var0 * var12 / (512 * var3);
                if(PacketParser.aShort83 < var7) {
                   var7 = PacketParser.aShort83;

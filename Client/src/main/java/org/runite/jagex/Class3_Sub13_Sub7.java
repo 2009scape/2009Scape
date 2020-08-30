@@ -9,7 +9,6 @@ final class Class3_Sub13_Sub7 extends Class3_Sub13 {
    static RSInterface aClass11_3087 = null;
    static Random aRandom3088 = new Random();
    private int[] anIntArray3089;
-   static int anInt3090;
    private int[] anIntArray3091;
    private int anInt3093 = 2048;
    static boolean aBoolean3094 = false;

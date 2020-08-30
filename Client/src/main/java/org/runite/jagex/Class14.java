@@ -4,7 +4,6 @@ import java.util.Objects;
 
 final class Class14 {
 
-   static int anInt336;
    static boolean aBoolean337;
    static RSString aClass94_339 = RSString.createRSString("1");
    static int anInt340 = 127;

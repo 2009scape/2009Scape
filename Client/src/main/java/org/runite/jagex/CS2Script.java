@@ -2,7 +2,6 @@ package org.runite.jagex;
 
 final class CS2Script extends Class3 {
 
-   static int anInt2437;
    RSInterface aClass11_2438;
    RSString aClass94_2439;
    static int anInt2440 = 0;

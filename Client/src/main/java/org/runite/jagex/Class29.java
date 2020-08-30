@@ -3,12 +3,10 @@ package org.runite.jagex;
 final class Class29 {
 
    static boolean aBoolean554 = false;
-   static int anInt555;
    int anInt556 = 0;
    static CacheIndex aClass153_557;
    static int[][][] anIntArrayArrayArray558;
    static int anInt561 = 0;
-   static int anInt562;
 
 
    static void method968(int var0) {

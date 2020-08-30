@@ -17,7 +17,6 @@ final class Class3_Sub13_Sub15 extends Class3_Sub13 {
    static boolean aBoolean3184 = true;
    static int[] anIntArray3185 = new int[25];
    private int anInt3186;
-   static int anInt3187;
    private int anInt3188;
    private int anInt3189;
 

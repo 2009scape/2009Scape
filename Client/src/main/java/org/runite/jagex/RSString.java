@@ -11,7 +11,6 @@ import java.util.Objects;
 
 final class RSString implements Interface3 {
 
-   static int anInt2145;
    static boolean aBoolean2146 = false;
    static int incomingOpcode = 0;
    static int anInt2148 = 0;

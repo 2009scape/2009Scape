@@ -506,7 +506,6 @@ static boolean aBoolean1080 = false;
 
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(44);
          Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-38, command.length(-83) + -1);
-         ++Class120.anInt1633;
          Class3_Sub13_Sub1.outgoingBuffer.putString(command.method1556(2));
 
       } catch (RuntimeException var5) {

@@ -4,7 +4,6 @@ import java.awt.Image;
 final class Class129_Sub1 extends Class129 {
 
    private long aLong2683;
-   static int anInt2684;
    private int anInt2685;
    static Class47 aClass47_2686 = new Class47(128);
    private int anInt2688;

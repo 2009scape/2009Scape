@@ -4,7 +4,6 @@ import java.io.IOException;
 final class Class66 {
 
 	private final NodeList highPriorityRequests = new NodeList();
-	static int anInt994;
 	static RSString aClass94_995 = RSString.createRSString("(Y<)4col>");
 	static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array996;
 	static int maskUpdateCount = 0;

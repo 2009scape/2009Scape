@@ -6,7 +6,6 @@ final class Class3_Sub13_Sub20 extends Class3_Sub13 {
 
    static int anInt3244 = 0;
    private int anInt3245 = 4096;
-   static int anInt3248;
    private int anInt3250 = 4096;
    private int anInt3252 = 4096;
 

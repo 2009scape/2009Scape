@@ -26,7 +26,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	
 
    private boolean aBoolean1 = false;
-   static int anInt2;
    static int anInt3 = 0;
     static Frame frame;
 

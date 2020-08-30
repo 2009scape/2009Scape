@@ -4,14 +4,12 @@ final class Class3_Sub28_Sub14 extends Node {
 
    static boolean aBoolean3668 = false;
    static byte[][] aByteArrayArray3669;
-   static int anInt3670;
    static int anInt3671 = 0;
    static RSString aClass94_3672 = RSString.createRSString("");
    static RSString password = aClass94_3672;
    static boolean[] aBooleanArray3674 = new boolean[100];
    static RSString username = aClass94_3672;
    Class140_Sub7 aClass140_Sub7_3676;
-   static int anInt3677;
 
 
    static void method626() {

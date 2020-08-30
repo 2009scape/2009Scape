@@ -6,7 +6,6 @@ final class Class56 {
    static Class47 aClass47_885 = new Class47(128);
    static RSInterface aClass11_886 = null;
    static int[] localPlayerIndexes = new int[2048];
-   static int anInt889;
    static Class106[] aClass106Array890;
    
    static RSString aClass94_892 = RSString.createRSString(" )2> <col=ffffff>");

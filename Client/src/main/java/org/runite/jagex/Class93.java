@@ -9,7 +9,6 @@ final class Class93 {
    private int anInt1327;
    static byte[][][] aByteArrayArrayArray1328;
    private final NodeList aClass13_1329 = new NodeList();
-   static int anInt1330;
    private int anInt1331;
    private Class130 aClass130_1332;
 

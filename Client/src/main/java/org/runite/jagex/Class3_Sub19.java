@@ -8,7 +8,6 @@ final class Class3_Sub19 extends Class3 {
    static int anInt2475 = 0;
    RSString aClass94_2476;
    int anInt2478;
-   static int anInt2479;
 
 
    static Class75_Sub2 method384(RSByteBuffer var0) {

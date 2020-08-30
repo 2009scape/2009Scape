@@ -8,14 +8,11 @@ final class Class3_Sub23 extends Class3 {
    int anInt2531;
    int anInt2532;
    static int[] anIntArray2533;
-   static int anInt2534;
    static int anInt2535 = -2;
    static CacheIndex aClass153_2536;
    static int anInt2537 = 0;
    static boolean[] aBooleanArray2538 = new boolean[]{true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false};
    int anInt2539;
-   static int anInt2540;
-   static int anInt2541;
    static Class3_Sub11[][] aClass3_Sub11ArrayArray2542;
 
 

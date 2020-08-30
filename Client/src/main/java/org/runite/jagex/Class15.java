@@ -6,13 +6,11 @@ import java.util.Date;
 
 final class Class15 implements Runnable {
 
-   static int anInt342;
    static short[][] aShortArrayArray344;
-   volatile boolean aBoolean345 = false;
+    static RSString timeZone = RSString.createRSString(" GMT");
+    volatile boolean aBoolean345 = false;
    static boolean aBoolean346;
    static int[] localNPCIndexes = new int['\u8000'];
-   static int anInt348;
-   static int anInt349;
    Signlink aClass87_350;
    static Class64 aClass64_351;
    volatile Class155[] aClass155Array352 = new Class155[2];
@@ -317,7 +315,7 @@ final class Class15 implements Runnable {
          int var7 = Class3_Sub28_Sub5.aCalendar3581.get(Calendar.HOUR_OF_DAY);
          int var8 = Class3_Sub28_Sub5.aCalendar3581.get(Calendar.MINUTE);
          int var9 = Class3_Sub28_Sub5.aCalendar3581.get(Calendar.SECOND);
-         return RenderAnimationDefinition.method903(new RSString[]{TextCore.DaysOfTheWeek[var3 + -1], Class3_Sub13_Sub12.aClass94_3145, Class72.method1298((byte)9, var4 / 10), Class72.method1298((byte)9, var4 % 10), Class161.aClass94_2025, TextCore.MonthsOfTheYear[var5], Class161.aClass94_2025, Class72.method1298((byte)9, var6), Class24.aClass94_465, Class72.method1298((byte)9, var7 / 10), Class72.method1298((byte)9, var7 % 10), Class155.char_colon, Class72.method1298((byte)9, var8 / 10), Class72.method1298((byte)9, var8 % 10), Class155.char_colon, Class72.method1298((byte)9, var9 / 10), Class72.method1298((byte)9, var9 % 10), WorldListCountry.aClass94_500}, (byte)-96);
+         return RenderAnimationDefinition.method903(new RSString[]{TextCore.DaysOfTheWeek[var3 + -1], Class3_Sub13_Sub12.aClass94_3145, Class72.method1298((byte)9, var4 / 10), Class72.method1298((byte)9, var4 % 10), Class161.aClass94_2025, TextCore.MonthsOfTheYear[var5], Class161.aClass94_2025, Class72.method1298((byte)9, var6), Class24.aClass94_465, Class72.method1298((byte)9, var7 / 10), Class72.method1298((byte)9, var7 % 10), Class155.char_colon, Class72.method1298((byte)9, var8 / 10), Class72.method1298((byte)9, var8 % 10), Class155.char_colon, Class72.method1298((byte)9, var9 / 10), Class72.method1298((byte)9, var9 % 10), timeZone}, (byte)-96);
       } catch (RuntimeException var10) {
          throw Class44.clientError(var10, "cj.F(" + var0 + ',' + var2 + ')');
       }

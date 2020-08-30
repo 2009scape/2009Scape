@@ -30,7 +30,7 @@ class Class127 {
 
                   Class50.anInt820 = 0;
                   if(Class140_Sub6.accRegistryPort == Class162.anInt2036) {
-                     Class140_Sub6.accRegistryPort = WorldListCountry.anInt506;
+                     Class140_Sub6.accRegistryPort = Client.currentPort;
                   } else {
                      Class140_Sub6.accRegistryPort = Class162.anInt2036;
                   }
@@ -300,7 +300,7 @@ class Class127 {
                   Class3_Sub15.aClass89_2429.readBytes(0, Class130.incomingPacketLength, GraphicDefinition.incomingBuffer.buffer);
                   Class158.anInt2005 = 2;
                   Class3_Sub13_Sub25.loginStage = 0;
-                  AnimationDefinition.method2061();
+                  AnimationDefinition.resetAll();
                   Class3_Sub28_Sub7.anInt3606 = -1;
                   Class39.updateSceneGraph(dynamic);
                   RSString.incomingOpcode = -1;
@@ -324,7 +324,7 @@ class Class127 {
                   Class50.anInt820 = 0;
                   ++Class166.anInt2079;
                   if(Class140_Sub6.accRegistryPort == Class162.anInt2036) {
-                     Class140_Sub6.accRegistryPort = WorldListCountry.anInt506;
+                     Class140_Sub6.accRegistryPort = Client.currentPort;
                   } else {
                      Class140_Sub6.accRegistryPort = Class162.anInt2036;
                   }

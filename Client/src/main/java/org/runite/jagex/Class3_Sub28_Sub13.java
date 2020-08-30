@@ -4,7 +4,6 @@ final class Class3_Sub28_Sub13 extends Node {
 
    static int anInt3657;
    int anInt3658;
-   static int anInt3659;
    static int anInt3660 = 0;
    int anInt3662;
    Class130 aClass130_3663;

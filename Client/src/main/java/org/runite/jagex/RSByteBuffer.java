@@ -8,7 +8,6 @@ class RSByteBuffer extends Class3 {
 
 	byte[] buffer;
 	static int[] anIntArray2591;
-	static int anInt2592;
 	int index;
 	static RSString[] aClass94Array2596 = null;
 	static RSString aClass94_2598 = RSString.createRSString("<br>");

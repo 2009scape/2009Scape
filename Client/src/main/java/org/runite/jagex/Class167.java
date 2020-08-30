@@ -3,7 +3,6 @@ package org.runite.jagex;
 final class Class167 {
 
    static RSString aClass94_2083 = null;
-   static int anInt2085;
    static int anInt2087 = 0;
 
 

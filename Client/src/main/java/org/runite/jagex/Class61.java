@@ -2,8 +2,6 @@ package org.runite.jagex;
 
 final class Class61 {
 
-   static int anInt937;
-   static int anInt938;
    static Class93 aClass93_939 = new Class93(4);
    Class3 aClass3_940 = new Class3();
    private Class3 aClass3_941;

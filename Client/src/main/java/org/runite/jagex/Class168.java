@@ -2,7 +2,6 @@ package org.runite.jagex;
 
 final class Class168 {
 
-   static int anInt2088;
    int anInt2090 = 128;
    static RSInterface aClass11_2091 = null;
    boolean aBoolean2092 = false;

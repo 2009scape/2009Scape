@@ -6,7 +6,6 @@ final class Class3_Sub17 extends Class3 {
 	int[] anIntArray2455;
 	static int anInt2456;
 	static float aFloat2457;
-	static int anInt2459;
 	int[][] anIntArrayArray2460;
 	int anInt2462;
 	boolean[] aBooleanArray2463;

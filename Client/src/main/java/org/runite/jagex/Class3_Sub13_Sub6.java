@@ -12,7 +12,6 @@ final class Class3_Sub13_Sub6 extends Class3_Sub13 {
    static int anInt3081 = 0;
    static int[] anIntArray3082 = new int[100];
    static int[] anIntArray3083 = new int[50];
-   static int anInt3084;
 
 
    static void method195() {

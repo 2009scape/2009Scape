@@ -5,7 +5,6 @@ final class Class7 implements Interface4 {
    static CacheIndex aClass153_2160;
    static int anInt2161 = -1;
    static int anInt2162;
-   static int anInt2165;
    static int anInt2166 = 0;
    static short[] aShortArray2167 = new short[]{(short)30, (short)6, (short)31, (short)29, (short)10, (short)44, (short)37, (short)57};
    static RSString aClass94_2168 = RSString.createRSString("<br>");

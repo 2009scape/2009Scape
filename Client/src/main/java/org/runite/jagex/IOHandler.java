@@ -18,7 +18,6 @@ final class IOHandler implements Runnable {
     private Class64 aClass64_1237;
     static Class33 aClass33_1238;
     private final Signlink aClass87_1239;
-    static int anInt1240;
     private boolean aBoolean1241 = false;
     static Class61 aClass61_1242 = new Class61();
     private boolean aBoolean1243 = false;

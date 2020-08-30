@@ -4,7 +4,6 @@ final class Class75_Sub3 extends Class75 {
 
    private final int anInt2649;
    private final int anInt2650;
-   static int anInt2651;
    private final int anInt2652;
    private final int anInt2654;
    private int anInt2655;

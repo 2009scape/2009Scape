@@ -4,10 +4,8 @@ import java.math.BigInteger;
 final class Class3_Sub13_Sub37 extends Class3_Sub13 {
 
    private int[][] anIntArrayArray3438;
-   static int anInt3439;
    static Class3_Sub28_Sub17_Sub1 aClass3_Sub28_Sub17_Sub1_3440;
    static BigInteger aBigInteger3441 = new BigInteger("7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789");
-   static int anInt3442;
    private int[] anIntArray3443 = new int[257];
 
 
@@ -327,20 +325,20 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
 
    static void method347() {
       try {
-         WorldListEntry.inTutorialIsland = 0;
+         PacketParser.inTutorialIsland = 0;
 
          int var1 = Class131.anInt1716 + (Class102.player.anInt2819 >> 7);
          int var2 = (Class102.player.anInt2829 >> 7) - -Class82.anInt1152;
          if(var1 >= 3053 && var1 <= 3156 && var2 >= 3056 && var2 <= 3136) {
-            WorldListEntry.inTutorialIsland = 1;
+            PacketParser.inTutorialIsland = 1;
          }
 
          if(var1 >= 3072 && var1 <= 3118 && var2 >= 9492 && var2 <= 9535) {
-            WorldListEntry.inTutorialIsland = 1;
+            PacketParser.inTutorialIsland = 1;
          }
 
-         if(WorldListEntry.inTutorialIsland == 1 && var1 >= 3139 && 3062 >= var2) {
-            WorldListEntry.inTutorialIsland = 0;
+         if(PacketParser.inTutorialIsland == 1 && var1 >= 3139 && 3062 >= var2) {
+            PacketParser.inTutorialIsland = 0;
          }
 
       } catch (RuntimeException var3) {

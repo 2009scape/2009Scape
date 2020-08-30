@@ -108,7 +108,6 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 				anInt3103 = -41;
 			}
 
-			++GameShell.anInt2;
 			Class3_Sub13_Sub1.outgoingBuffer.putShort(Class140_Sub7.anInt2934);
 			Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-31, Class3_Sub28_Sub14.anInt3671);
 		} catch (RuntimeException var2) {

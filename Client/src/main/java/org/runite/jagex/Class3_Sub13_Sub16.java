@@ -12,13 +12,11 @@ final class Class3_Sub13_Sub16 extends Class3_Sub13 {
    static RSString aClass94_3196 = RSString.createRSString("Fps:");
    private int anInt3197 = 0;
    static int anInt3198 = 0;
-   static int anInt3199;
    private short[] aShortArray3200 = new short[512];
    static WorldListEntry[] aClass44_Sub1Array3201 = new WorldListEntry[0];
    static long aLong3202;
    private int anInt3203 = 5;
    private int anInt3204 = 5;
-   static int anInt3205;
 
 
    private void method242() {

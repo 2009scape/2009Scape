@@ -10,7 +10,6 @@ final class Class49 {
    private Inflater anInflater813;
    static boolean[][] aBooleanArrayArray814;
    static int anInt815 = 0;
-   static int anInt816;
    static int anInt817;
    static Class47 aClass47_818 = new Class47(64);
    static int anInt819 = 0;

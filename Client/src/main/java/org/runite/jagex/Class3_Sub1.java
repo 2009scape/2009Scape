@@ -4,7 +4,6 @@ final class Class3_Sub1 extends Class3 {
 
    int anInt2202;
    static CacheIndex interfaceScriptsIndex;
-   static int anInt2204;
    int anInt2205;
    static int anInt2208 = -1;
    static int[] anIntArray2209 = new int[]{2, 2, 4, 2, 1, 8, 4, 1, 4, 4, 2, 1, 1, 1, 4, 1};
