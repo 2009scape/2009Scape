@@ -1,6 +1,6 @@
 package org.runite.jagex;
 
-final class Class54 {
+final class ScriptContainer {
 
    static int anInt869;
    int[] anIntArray870;

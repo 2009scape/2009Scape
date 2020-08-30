@@ -38,7 +38,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
    static void method305(Signlink var0, RSByteBuffer var1, int var2) {
       try {
          Class3_Sub8 var4 = new Class3_Sub8();
-         var4.anInt2296 = var1.getByte((byte)-54);
+         var4.anInt2296 = var1.getByteB();
          var4.anInt2305 = var1.getInt();
          var4.aClass64Array2298 = new Class64[var4.anInt2296];
          var4.anIntArray2300 = new int[var4.anInt2296];
@@ -49,7 +49,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
 
          for(int var6 = 0; var4.anInt2296 > var6; ++var6) {
             try {
-               int var7 = var1.getByte((byte)-50);
+               int var7 = var1.getByteB();
                String var8;
                String var9;
                int var10;
@@ -68,7 +68,7 @@ final class Class3_Sub13_Sub29 extends Class3_Sub13 {
                   if(var7 == 3 || var7 == 4) {
                      var8 = new String(var1.getString().method1568());
                      var9 = new String(var1.getString().method1568());
-                     var10 = var1.getByte((byte)-113);
+                     var10 = var1.getByteB();
                      String[] var11 = new String[var10];
 
                      for(int var12 = 0; var10 > var12; ++var12) {

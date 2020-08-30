@@ -6,7 +6,6 @@ class Class3 {
    static int anInt72 = 0;
    static boolean[] aBooleanArray73 = new boolean[200];
    Class3 aClass3_74;
-   static RSString[] aClass94Array75 = new RSString[1000];
    Class3 aClass3_76;
    static Class61 aClass61_78 = new Class61();
 
@@ -21,7 +20,7 @@ class Class3 {
 
    public static void method83(byte var0) {
       try {
-         aClass94Array75 = null;
+         ItemDefinition.stringsHeap = null;
          if(var0 != 30) {
             method84((RSString)null, 89);
          }

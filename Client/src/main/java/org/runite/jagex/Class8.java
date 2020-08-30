@@ -179,7 +179,7 @@ final class Class8 {
 
    static Class75_Sub1 method843(int var0, RSByteBuffer var1) {
       try {
-         return var0 != -5232?(Class75_Sub1)null:new Class75_Sub1(var1.getShort((byte)46), var1.getShort((byte)109), var1.getShort((byte)68), var1.getShort((byte)127), var1.getTriByte((byte)91), var1.getByte((byte)-124));
+         return var0 != -5232?(Class75_Sub1)null:new Class75_Sub1(var1.getShort((byte)46), var1.getShort((byte)109), var1.getShort((byte)68), var1.getShort((byte)127), var1.getTriByte((byte)91), var1.getByteB());
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "al.D(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
       }

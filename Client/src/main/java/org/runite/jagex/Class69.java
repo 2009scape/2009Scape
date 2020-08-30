@@ -6,11 +6,20 @@ final class Class69 {
    static int anInt1038;
    static Class30 aClass30_1039;
    static boolean aBoolean1040 = false;
+   static int anInt3695;
    private final int[] anIntArray1041;
    static int anInt1042;
    static CacheIndex aClass153_1043;
 
-   final int method1280(int var1) {
+    static int bitwiseAnd(int var0, int var1) {
+       try {
+          return var0 & var1;
+       } catch (RuntimeException var3) {
+          throw Class44.clientError(var3, "qc.C(" + var0 + ',' + var1 + ')');
+       }
+    }
+
+    final int method1280(int var1) {
       try {
          int var3 = (this.anIntArray1041.length >> 1) + -1;
          int var4 = var3 & var1;

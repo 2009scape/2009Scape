@@ -26,14 +26,14 @@ final class Class96 {
                boolean var18 = false;
                int var5 = 0;
                int var6 = 0;
-               if(var1.getByte((byte) -29) == 1) {
-                  var5 = var1.getByte((byte)-73);
+               if(var1.getByteB() == 1) {
+                  var5 = var1.getByteB();
                   var18 = true;
-                  var6 = var1.getByte((byte)-61);
+                  var6 = var1.getByteB();
                }
 
-               int var7 = var1.getByte((byte)-101);
-               int var8 = var1.getByte((byte)-109);
+               int var7 = var1.getByteB();
+               int var8 = var1.getByteB();
                int var9 = -Class3_Sub13_Sub21.anInt3256 + 64 * var7;
                int var10 = -(var8 * 64) - (-Class2.anInt65 - -1) + Class108.anInt1460;
                int var11;
@@ -50,11 +50,11 @@ final class Class96 {
 
                      for(int var14 = 0; var14 < 64; ++var14) {
                         if(!var18 || var13 >= 8 * var5 && 8 * var5 - -8 > var13 && 8 * var6 <= var14 && var14 < var6 * 8 - -8) {
-                           int var15 = var1.getByte((byte)-118);
+                           int var15 = var1.getByteB();
                            if(0 != var15) {
                               int var2;
                               if(1 == (1 & var15)) {
-                                 var2 = var1.getByte((byte)-23);
+                                 var2 = var1.getByteB();
                                  if(Class36.aByteArrayArrayArray640[var11][var12] == null) {
                                     Class36.aByteArrayArrayArray640[var11][var12] = new byte[4096];
                                  }
@@ -108,7 +108,7 @@ final class Class96 {
                      continue label134;
                   }
 
-                  var12 = var1.getByte((byte)-28);
+                  var12 = var1.getByteB();
                   if(var12 != 0) {
                      if((var12 & 1) == 1) {
                         ++var1.index;

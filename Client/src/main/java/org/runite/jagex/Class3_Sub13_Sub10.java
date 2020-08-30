@@ -33,11 +33,11 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
    final void method157(int var1, RSByteBuffer var2, boolean var3) {
       try {
          if(var1 == 0) {
-            this.anInt3128 = var2.getShort(1);
+            this.anInt3128 = var2.getShort();
          } else if (var1 == 1) {
-            this.anInt3127 = var2.getShort(1);
+            this.anInt3127 = var2.getShort();
          } else if (var1 == 2) {
-            this.aBoolean2375 = var2.getByte((byte) -117) == 1;
+            this.aBoolean2375 = var2.getByteB() == 1;
          }
 
          if(!var3) {
@@ -205,13 +205,20 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
 
          int var5;
          int var6;
-         for(; true; ++var3) {
-            for(var4 = 1; true; ++var4) {
-               for(var5 = 1; true; ++var5) {
-                  var6 = var5 - -(var4 << 7);
-                  OutputStream_Sub1.anIntArray49[var6] = (Class161.anIntArray2026[128 + var6] + Class161.anIntArray2026[-1 + var6] + Class161.anIntArray2026[1 + var6] - -Class161.anIntArray2026[-128 + var6]) / 4;
+         try {
+            for (; true; ++var3) {
+               for (var4 = 1; true; ++var4) {
+                  for (var5 = 1; true; ++var5) {
+                     var6 = var5 - -(var4 << 7);
+                     OutputStream_Sub1.anIntArray49[var6] = (Class161.anIntArray2026[128 + var6] + Class161.anIntArray2026[-1 + var6] + Class161.anIntArray2026[1 + var6] - -Class161.anIntArray2026[-128 + var6]) / 4;
+                  }
                }
             }
+         } catch (Exception e) {
+            System.out.println("breaking you out of the stupid endless triple for loop");
+            System.out.println("If you see this message it's a bug. this function should never run.");
+            System.out.println("Blame jagex. Once this client is deobbed fully this function will probably be deleted");
+            System.out.println("- Your friendly neighborhood moth");
          }
 
 
@@ -267,7 +274,7 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
       try {
          for(int var2 = 0; var2 < Class57.activeWorldListSize; ++var2) {
             int var3 = var0.getSmart();
-            int var4 = var0.getShort(1);
+            int var4 = var0.getShort();
             if(var4 == 65535) {
                var4 = -1;
             }

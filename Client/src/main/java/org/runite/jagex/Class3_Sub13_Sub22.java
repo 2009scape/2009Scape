@@ -30,7 +30,7 @@ final class Class3_Sub13_Sub22 extends Class3_Sub13 {
          }
 
          if(var1 == 0) {
-            this.anInt3276 = (var2.getByte((byte)-47) << 12) / 255;
+            this.anInt3276 = (var2.getByteB() << 12) / 255;
          }
 
       } catch (RuntimeException var5) {

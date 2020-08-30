@@ -238,7 +238,7 @@ final class Class116 {
       this.aClass34_1589.method1010(var1);
       this.aClass34_1587 = new Class34();
       this.aClass34_1587.method1010(var1);
-      int var2 = var1.getByte((byte)-113);
+      int var2 = var1.getByteB();
       if(var2 != 0) {
          --var1.index;
          this.aClass34_1608 = new Class34();
@@ -247,7 +247,7 @@ final class Class116 {
          this.aClass34_1607.method1010(var1);
       }
 
-      var2 = var1.getByte((byte)-57);
+      var2 = var1.getByteB();
       if(var2 != 0) {
          --var1.index;
          this.aClass34_1595 = new Class34();
@@ -256,7 +256,7 @@ final class Class116 {
          this.aClass34_1584.method1010(var1);
       }
 
-      var2 = var1.getByte((byte)-117);
+      var2 = var1.getByteB();
       if(var2 != 0) {
          --var1.index;
          this.aClass34_1585 = new Class34();
@@ -278,8 +278,8 @@ final class Class116 {
 
       this.anInt1590 = var1.getSmart();
       this.anInt1604 = var1.getSmart();
-      this.anInt1586 = var1.getShort(1);
-      this.anInt1593 = var1.getShort(1);
+      this.anInt1586 = var1.getShort();
+      this.anInt1593 = var1.getShort();
       this.aClass103_1606 = new Class103();
       this.aClass34_1592 = new Class34();
       this.aClass103_1606.method1620(var1, this.aClass34_1592);

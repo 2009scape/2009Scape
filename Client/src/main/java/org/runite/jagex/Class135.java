@@ -88,7 +88,7 @@ final class Class135 {
 
    private Class135(RSByteBuffer var1) {
       for(int var2 = 0; var2 < 10; ++var2) {
-         int var3 = var1.getByte((byte)-48);
+         int var3 = var1.getByteB();
          if(var3 != 0) {
             --var1.index;
             this.aClass116Array1768[var2] = new Class116();
@@ -96,8 +96,8 @@ final class Class135 {
          }
       }
 
-      this.anInt1769 = var1.getShort(1);
-      this.anInt1767 = var1.getShort(1);
+      this.anInt1769 = var1.getShort();
+      this.anInt1767 = var1.getShort();
    }
 
    private Class135() {}

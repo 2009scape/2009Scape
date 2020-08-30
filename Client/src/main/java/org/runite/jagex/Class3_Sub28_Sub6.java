@@ -134,7 +134,7 @@ final class Class3_Sub28_Sub6 extends Node {
       try {
          Class2 var2 = (Class2)Class3_Sub13_Sub34.aClass93_3412.get((long)var0);
          if(var2 == null) {
-            byte[] var3 = Class54.aClass153_878.getFile(34, var0);
+            byte[] var3 = ScriptContainer.aClass153_878.getFile(34, var0);
 
             var2 = new Class2();
             if(var3 != null) {

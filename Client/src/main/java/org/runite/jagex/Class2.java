@@ -33,7 +33,7 @@ final class Class2 {
 	final void method74(byte var1, RSByteBuffer var2, int var3) {
 		try {
 			while(true) {
-				int var4 = var2.getByte((byte)-34);
+				int var4 = var2.getByteB();
 				if(var4 == 0) {
 					if(var1 > -108) {
 						this.method74((byte)85, (RSByteBuffer)null, 63);
@@ -341,7 +341,7 @@ final class Class2 {
 	private void method79(int var1, RSByteBuffer var2, int var3) {
 		try {
 			if(var1 == 1) {
-				this.anInt64 = var2.getShort(1);
+				this.anInt64 = var2.getShort();
 			} else if(var1 == 2) {
 				this.anInt61 = var2.getTriByte((byte)96);
 			} else if (var1 == 3) {

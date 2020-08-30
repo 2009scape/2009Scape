@@ -34,7 +34,7 @@ final class OutputStream_Sub1 extends OutputStream {
                var6.arguments = var5.anObjectArray314;
                var6.aClass11_2449 = var5;
                var6.aClass94_2439 = var0;
-               var6.anInt2445 = var2;
+               var6.interfaceButtons = var2; // Set to 1 for jukebox/friends/all/game chat. set to non 1 for all other chat settings
                Class43.method1065(var6);
             }
 

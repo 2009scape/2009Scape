@@ -45,11 +45,11 @@ final class Class124 {
 
    static Class3_Sub28_Sub3 method1747(RSByteBuffer var0) {
       try {
-         Class3_Sub28_Sub3 var2 = new Class3_Sub28_Sub3(var0.getString(), var0.getString(), var0.getShort(1), var0.getShort(1), var0.getInt(), var0.getByte((byte)-91) == 1, var0.getByte((byte)-112));
-         int var3 = var0.getByte((byte)-83);
+         Class3_Sub28_Sub3 var2 = new Class3_Sub28_Sub3(var0.getString(), var0.getString(), var0.getShort(), var0.getShort(), var0.getInt(), var0.getByteB() == 1, var0.getByteB());
+         int var3 = var0.getByteB();
 
          for(int var4 = 0; var3 > var4; ++var4) {
-            var2.aClass61_3560.method1215(new Class3_Sub21(var0.getShort(1), var0.getShort(1), var0.getShort(1), var0.getShort(1)));
+            var2.aClass61_3560.method1215(new Class3_Sub21(var0.getShort(), var0.getShort(), var0.getShort(), var0.getShort()));
          }
 
          var2.method538();

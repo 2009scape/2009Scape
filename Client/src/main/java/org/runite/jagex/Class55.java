@@ -270,7 +270,7 @@ final class Class55 {
          }
 
          while(true) {
-            int var4 = var1.getByte((byte)-89);
+            int var4 = var1.getByteB();
             if(var4 == 0) {
                return;
             }
@@ -286,10 +286,10 @@ final class Class55 {
       try {
 
           if(var3 == 1) {
-            this.anInt883 = var4.getShort(1);
+            this.anInt883 = var4.getShort();
          } else if (2 == var3) {
-            this.anInt881 = var4.getByte((byte) -80);
-            this.anInt879 = var4.getByte((byte) -109);
+            this.anInt881 = var4.getByteB();
+            this.anInt879 = var4.getByteB();
          }
 
       } catch (RuntimeException var6) {

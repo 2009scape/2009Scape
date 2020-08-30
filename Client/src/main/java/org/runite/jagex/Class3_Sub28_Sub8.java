@@ -15,34 +15,34 @@ final class Class3_Sub28_Sub8 extends Node {
       }
    }
 
-   static Class3_Sub28_Sub15 method572(int var0) {
+   static AssembledScript method572(int var0) {
       try {
-         Class3_Sub28_Sub15 var2 = (Class3_Sub28_Sub15)Class56.aClass47_885.method1092((long)var0, 1400);
+         AssembledScript var2 = (AssembledScript)Class56.aClass47_885.method1092((long)var0, 1400);
          if(var2 == null) {
             byte[] var3 = Class3_Sub1.interfaceScriptsIndex.getFile(var0, 0);
             if(var3 == null) {
                return null;
             } else {
-               var2 = new Class3_Sub28_Sub15();
+               var2 = new AssembledScript();
 
                RSByteBuffer var4 = new RSByteBuffer(var3);
                var4.index = -2 + var4.buffer.length;
-               int var5 = var4.getShort(1);
+               int var5 = var4.getShort();
                int var6 = -12 + var4.buffer.length + -2 - var5;
                var4.index = var6;
                int var7 = var4.getInt();
-               var2.anInt3680 = var4.getShort((byte) -91 ^ -92);
-               var2.anInt3687 = var4.getShort(1);
-               var2.anInt3678 = var4.getShort((byte) -91 ^ -92);
-               var2.anInt3682 = var4.getShort(1);
-               int var8 = var4.getByte((byte)-70);
+               var2.numberOfIntsToCopy = var4.getShort();
+               var2.numberOfRSStringsToCopy = var4.getShort();
+               var2.intHeapCounterIncrement = var4.getShort();
+               var2.stringHeapCounterOffset = var4.getShort();
+               int var8 = var4.getByteB();
                int var9;
                int var10;
                if(var8 > 0) {
                   var2.aClass130Array3685 = new Class130[var8];
 
                   for(var9 = 0; var9 < var8; ++var9) {
-                     var10 = var4.getShort(1);
+                     var10 = var4.getShort();
                      Class130 var11 = new Class130(Class95.method1585((byte)119, var10));
                      var2.aClass130Array3685[var9] = var11;
 
@@ -56,21 +56,20 @@ final class Class3_Sub28_Sub8 extends Node {
 
                var4.index = 0;
                var4.method750();
-               var2.anIntArray3683 = new int[var7];
-               var2.aClass94Array3688 = new RSString[var7];
+               var2.assemblyInstructions = new int[var7];
+               var2.storedStrings = new RSString[var7];
                var9 = 0;
 
-               for(var2.anIntArray3690 = new int[var7]; var4.index < var6; var2.anIntArray3683[var9++] = var10) {
-                  var10 = var4.getShort((byte) -91 ^ -92);
+               for(var2.assemblyRAM = new int[var7]; var4.index < var6; var2.assemblyInstructions[var9++] = var10) {
+                  var10 = var4.getShort();
                   if(var10 == 3) {
-                     var2.aClass94Array3688[var9] = var4.getString();
+                     var2.storedStrings[var9] = var4.getString();
                   } else if (var10 < 100 && 21 != var10 && var10 != 38 && 39 != var10) {
-                     var2.anIntArray3690[var9] = var4.getInt();
+                     var2.assemblyRAM[var9] = var4.getInt();
                   } else {
-                     var2.anIntArray3690[var9] = var4.getByte((byte) -67);
+                     var2.assemblyRAM[var9] = var4.getByteB();
                   }
                }
-
                Class56.aClass47_885.method1097(var2, (long)var0, (byte)-87);
                return var2;
             }

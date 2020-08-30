@@ -90,7 +90,7 @@ final class Class93 {
       }
    }
 
-   static int method1519(int var0, int var1) {
+   static int bitwiseXOR(int var0, int var1) {
       try {
          return var0 ^ var1;
       } catch (RuntimeException var3) {

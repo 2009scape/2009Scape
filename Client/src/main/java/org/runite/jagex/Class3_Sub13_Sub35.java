@@ -46,7 +46,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
       try {
          if(var3) {
             if(var1 == 0) {
-               this.aBoolean2375 = var2.getByte((byte) -80) == 1;
+               this.aBoolean2375 = var2.getByteB() == 1;
             }
 
          }

@@ -26,14 +26,14 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
             int var4 = 0;
             boolean var3 = false;
             int var5 = 0;
-            if(var1.getByte((byte)-23) == 1) {
+            if(var1.getByteB() == 1) {
                var3 = true;
-               var4 = var1.getByte((byte)-76);
-               var5 = var1.getByte((byte)-88);
+               var4 = var1.getByteB();
+               var5 = var1.getByteB();
             }
 
-            int var6 = var1.getByte((byte)-70);
-            int var7 = var1.getByte((byte)-89);
+            int var6 = var1.getByteB();
+            int var7 = var1.getByteB();
             int var8 = -Class3_Sub13_Sub21.anInt3256 + var6 * 64;
             int var9 = Class108.anInt1460 + -1 - -Class2.anInt65 - 64 * var7;
             byte var2;
@@ -215,18 +215,18 @@ final class Class3_Sub13_Sub34 extends Class3_Sub13 {
       try {
          if(var3) {
             if(var1 == 0) {
-               this.anInt3404 = var2.getShort(1);
+               this.anInt3404 = var2.getShort();
             } else if(1 == var1) {
-               this.anInt3405 = var2.getShort(1);
+               this.anInt3405 = var2.getShort();
             } else if (var1 == 2) {
-                this.anInt3406 = var2.getShort(1);
+                this.anInt3406 = var2.getShort();
             } else if (var1 == 3) {
-                this.anInt3410 = var2.getShort(1);
+                this.anInt3410 = var2.getShort();
             } else if (4 == var1) {
                 int var4 = var2.getTriByte((byte) 107);
-                this.anIntArray3403[2] = Class3_Sub28_Sub15.method633(var4, 255) >> 12;
-                this.anIntArray3403[1] = Class3_Sub28_Sub15.method633(var4 >> 4, 4080);
-                this.anIntArray3403[0] = Class3_Sub28_Sub15.method633(16711680, var4) << 4;
+                this.anIntArray3403[2] = Class69.bitwiseAnd(var4, 255) >> 12;
+                this.anIntArray3403[1] = Class69.bitwiseAnd(var4 >> 4, 4080);
+                this.anIntArray3403[0] = Class69.bitwiseAnd(16711680, var4) << 4;
             }
 
          }

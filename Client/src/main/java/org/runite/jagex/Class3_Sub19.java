@@ -2,7 +2,8 @@ package org.runite.jagex;
 
 final class Class3_Sub19 extends Class3 {
 
-   byte aByte2472;
+    static int[] anIntArray3693 = new int[1000];
+    byte aByte2472;
    RSString aClass94_2473;
    static CacheIndex aClass153_2474;
    static int anInt2475 = 0;
@@ -13,7 +14,7 @@ final class Class3_Sub19 extends Class3 {
    static Class75_Sub2 method384(RSByteBuffer var0) {
       try {
 
-         return new Class75_Sub2(var0.getShort((byte)38), var0.getShort((byte)51), var0.getShort((byte)66), var0.getShort((byte)68), var0.getTriByte((byte)86), var0.getTriByte((byte)86), var0.getByte((byte)-85));
+         return new Class75_Sub2(var0.getShort((byte)38), var0.getShort((byte)51), var0.getShort((byte)66), var0.getShort((byte)68), var0.getTriByte((byte)86), var0.getTriByte((byte)86), var0.getByteB());
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "kl.C(" + (var0 != null?"{...}":"null") + ',' + (byte) 80 + ')');
       }
@@ -103,7 +104,7 @@ final class Class3_Sub19 extends Class3 {
                            }
                         }
 
-                        Class3_Sub28_Sub15.anIntArray3693[MouseListeningClass.anInt1924] = var10.objectId;
+                        anIntArray3693[MouseListeningClass.anInt1924] = var10.objectId;
                         Class84.anIntArray1163[MouseListeningClass.anInt1924] = -0 + var12;
                         Class3_Sub28_Sub7_Sub1.anIntArray4050[MouseListeningClass.anInt1924] = var21 + -var3;
                         ++MouseListeningClass.anInt1924;

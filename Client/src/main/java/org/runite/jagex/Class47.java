@@ -333,20 +333,20 @@ final class Class47 {
                            var28 = Class102.player.anInt2819 + var26 >> 7;
                            var29 = -var47 + Class102.player.anInt2829 >> 7;
                            if (GameObject.aBoolean1837 && 0 != (Class164.anInt2051 & 64)) {
-                              RSInterface var53 = Class3_Sub28_Sub16.method638(Class54.anInt872, RSInterface.anInt278);
+                              RSInterface var53 = Class3_Sub28_Sub16.method638(ScriptContainer.anInt872, RSInterface.anInt278);
                               if (null == var53) {
                                  Class25.method958((byte) -91);
                               } else {
-                                 Class54.method1177(Class144.anInt1887, 1L, (byte) -49, Class131.aClass94_1724, var28, (short) 11, Class3_Sub28_Sub9.aClass94_3621, var29);
+                                 ScriptContainer.method1177(Class144.anInt1887, 1L, (byte) -49, Class131.aClass94_1724, var28, (short) 11, Class3_Sub28_Sub9.aClass94_3621, var29);
                               }
                               continue;
                            }
 
                            if (Class158.anInt2014 == 1) {
-                              Class54.method1177(-1, 1L, (byte) -41, Class3_Sub28_Sub14.aClass94_3672, var28, (short) 36, TextCore.HasFaceHere, var29);
+                              ScriptContainer.method1177(-1, 1L, (byte) -41, Class3_Sub28_Sub14.aClass94_3672, var28, (short) 36, TextCore.HasFaceHere, var29);
                            }
 
-                           Class54.method1177(-1, 1L, (byte) -125, Class3_Sub28_Sub14.aClass94_3672, var28, (short) 60, Class3_Sub13_Sub28.aClass94_3353, var29);
+                           ScriptContainer.method1177(-1, 1L, (byte) -125, Class3_Sub28_Sub14.aClass94_3672, var28, (short) 60, Class3_Sub13_Sub28.aClass94_3353, var29);
                            continue;
                         }
 
@@ -507,7 +507,7 @@ final class Class47 {
                         }
                      }
 
-                     if (Class130.aBooleanArray1712[var12] || Class3_Sub28_Sub15.anInt3689 > 1) {
+                     if (Class130.aBooleanArray1712[var12] || Client.anInt3689 > 1) {
                         if (var11.type == 0 && !var11.usingScripts && var11.anInt252 > var11.anInt193) {
                            Class3_Sub13_Sub12.method224(var11.anInt208, var11.anInt252, var11.anInt168 + var13, var14, var11.anInt193);
                         }

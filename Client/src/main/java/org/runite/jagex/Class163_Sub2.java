@@ -41,14 +41,14 @@ class Class163_Sub2 extends Class163 {
             int var4 = 0;
             boolean var3 = false;
             int var5 = 0;
-            if(var0.getByte((byte)-94) == 1) {
+            if(var0.getByteB() == 1) {
                var3 = true;
-               var4 = var0.getByte((byte)-40);
-               var5 = var0.getByte((byte)-102);
+               var4 = var0.getByteB();
+               var5 = var0.getByteB();
             }
 
-            int var6 = var0.getByte((byte)-104);
-            int var7 = var0.getByte((byte)-71);
+            int var6 = var0.getByteB();
+            int var7 = var0.getByteB();
             int var9 = -(var7 * 64) - (-Class2.anInt65 - Class108.anInt1460 + 1);
             int var8 = var6 * 64 + -Class3_Sub13_Sub21.anInt3256;
             byte var2;

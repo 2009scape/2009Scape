@@ -131,7 +131,7 @@ final class Class53 {
          for(var3 = 0; var3 < Class57.activeWorldListSize; ++var3) {
             int worldId = buffer.getSmart();
             WorldListEntry var5 = Class117.worldList[worldId] = new WorldListEntry();
-            var5.countryIndex = buffer.getByte((byte)-112);
+            var5.countryIndex = buffer.getByteB();
             var5.settings = buffer.getInt();
             var5.worldId = worldId - -Class3_Sub13_Sub4.worldListOffset;
             var5.activity = buffer.getGJString2(98);
@@ -148,7 +148,7 @@ final class Class53 {
 
    static RSString method1174(RSInterface var0, byte var1) {
       try {
-         return Client.method44(var0).method101(-69) != 0 ?(null != var0.aClass94_245 && var0.aClass94_245.trim(1).length(-45) != 0?var0.aClass94_245:(Class69.aBoolean1040? ClientErrorException.aClass94_2116:null)):null;
+         return Client.method44(var0).method101() != 0 ?(null != var0.aClass94_245 && var0.aClass94_245.trim(1).length(-45) != 0?var0.aClass94_245:(Class69.aBoolean1040? ClientErrorException.aClass94_2116:null)):null;
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "hi.F(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
       }

@@ -79,14 +79,14 @@ final class Class15 implements Runnable {
             int var7 = 0;
             var6 = 0;
             boolean var5 = false;
-            if(var1.getByte((byte) -99) == 1) {
-               var6 = var1.getByte((byte)-56);
-               var7 = var1.getByte((byte)-51);
+            if(var1.getByteB() == 1) {
+               var6 = var1.getByteB();
+               var7 = var1.getByteB();
                var5 = true;
             }
 
-            int var8 = var1.getByte((byte)-125);
-            int var9 = var1.getByte((byte)-30);
+            int var8 = var1.getByteB();
+            int var9 = var1.getByteB();
             int var10 = -Class3_Sub13_Sub21.anInt3256 + var8 * 64;
             int var11 = -1 + Class108.anInt1460 - var9 * 64 + Class2.anInt65;
             if(var10 >= 0 && 0 <= -63 + var11 && Class23.anInt455 > var10 - -63 && var11 < Class108.anInt1460) {
@@ -122,7 +122,7 @@ final class Class15 implements Runnable {
                if(var27 > var14) {
                   var15 = 255 & var4[var14][var34];
                   if(var15 > 0) {
-                     Class100 var16 = Class3_Sub28_Sub15.method629(var15 - 1);
+                     Class100 var16 = Class158_Sub1.method629(var15 - 1);
                      var28[var34] += var16.anInt1408;
                      var29[var34] += var16.anInt1406;
                      var30[var34] += var16.anInt1417;
@@ -135,7 +135,7 @@ final class Class15 implements Runnable {
                if(var15 >= 0) {
                   var35 = var4[var15][var34] & 255;
                   if(0 < var35) {
-                     Class100 var17 = Class3_Sub28_Sub15.method629(-1 + var35);
+                     Class100 var17 = Class158_Sub1.method629(-1 + var35);
                      var28[var34] -= var17.anInt1408;
                      var29[var34] -= var17.anInt1406;
                      var30[var34] -= var17.anInt1417;
@@ -177,7 +177,7 @@ final class Class15 implements Runnable {
                      int var23 = var36 != 0?Class3_Sub8.method129(var35 / var18, var15 / var18, var14 * 256 / var36):0;
                      if(var4[var12][var19] == 0) {
                         if(var22 != null) {
-                           var22[Class3_Sub28_Sub15.method633(4032, var19 << 6) - -Class3_Sub28_Sub15.method633(var12, 63)] = 0;
+                           var22[Class69.bitwiseAnd(4032, var19 << 6) - -Class69.bitwiseAnd(var12, 63)] = 0;
                         }
                      } else {
                         if(var22 == null) {
@@ -192,7 +192,7 @@ final class Class15 implements Runnable {
                         }
 
                         int var25 = var24 + (896 & var23) + (var23 + var2 & '\ufc00');
-                        var22[Class3_Sub28_Sub15.method633(4032, var19 << 6) + Class3_Sub28_Sub15.method633(63, var12)] = Class51.anIntArray834[Class47.method1100(96, var25)];
+                        var22[Class69.bitwiseAnd(4032, var19 << 6) + Class69.bitwiseAnd(63, var12)] = Class51.anIntArray834[Class47.method1100(96, var25)];
                      }
                   }
                }
@@ -270,7 +270,7 @@ final class Class15 implements Runnable {
             int[] var5 = new int[var3];
 
             for(int var6 = 0; var6 < var3; ++var6) {
-               var5[var6] = Class3_Sub13_Sub38.spritePalette[Class3_Sub28_Sub15.method633(255, var4[var6])];
+               var5[var6] = Class3_Sub13_Sub38.spritePalette[Class69.bitwiseAnd(255, var4[var6])];
             }
 
             if(HDToolKit.highDetail) {

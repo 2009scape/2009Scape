@@ -264,7 +264,7 @@ class Class164_Sub1 extends Class164 {
 
    void method2242(int var1, byte var2) {
       try {
-         this.aByteArray3015[this.anInt3016++] = (byte)(127 + (Class3_Sub28_Sub15.method633(var2, 255) >> 1));
+         this.aByteArray3015[this.anInt3016++] = (byte)(127 + (Class69.bitwiseAnd(var2, 255) >> 1));
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "vd.B(" + var1 + ',' + var2 + ')');
       }

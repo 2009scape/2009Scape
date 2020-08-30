@@ -119,7 +119,7 @@ final class Class117 {
          int[] var3 = new int[var1];
 
          for(int var4 = 0; var1 > var4; ++var4) {
-            var3[var4] = Class3_Sub13_Sub38.spritePalette[Class3_Sub28_Sub15.method633(var2[var4], 255)];
+            var3[var4] = Class3_Sub13_Sub38.spritePalette[Class69.bitwiseAnd(var2[var4], 255)];
          }
 
          Class3_Sub28_Sub16_Sub2 var6 = new Class3_Sub28_Sub16_Sub2(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[0], RSByteBuffer.anIntArray2591[0], Class140_Sub7.anIntArray2931[0], Class3_Sub13_Sub6.anIntArray3076[0], var3);

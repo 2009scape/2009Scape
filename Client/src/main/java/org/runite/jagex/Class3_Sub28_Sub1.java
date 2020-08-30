@@ -61,21 +61,21 @@ final class Class3_Sub28_Sub1 extends Node {
             int var4;
             int var5;
             if(var3 == 2) {
-               var4 = var1.getByte((byte)-38);
+               var4 = var1.getByteB();
                this.anIntArray3534 = new int[var4];
                this.anIntArray3535 = new int[var4];
 
                for(var5 = 0; var5 < var4; ++var5) {
-                  this.anIntArray3534[var5] = var1.getShort(1);
+                  this.anIntArray3534[var5] = var1.getShort();
                   this.anIntArray3535[var5] = Class3_Sub13_Sub33.method322(var1.getByte());
                }
             } else if (var3 == 3) {
-               var4 = var1.getByte((byte) -114);
+               var4 = var1.getByteB();
                this.anIntArray3540 = new int[var4];
                this.anIntArray3533 = new int[var4];
 
                for (var5 = 0; var5 < var4; ++var5) {
-                  this.anIntArray3540[var5] = var1.getShort(1);
+                  this.anIntArray3540[var5] = var1.getShort();
                   this.anIntArray3533[var5] = Class3_Sub13_Sub33.method322(var1.getByte());
                }
             }
@@ -118,7 +118,7 @@ final class Class3_Sub28_Sub1 extends Node {
       try {
 
          while(true) {
-            int var3 = var1.getByte((byte)-62);
+            int var3 = var1.getByteB();
             if(var3 == 0) {
                return;
             }

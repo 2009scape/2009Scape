@@ -483,7 +483,7 @@ final class Class102 implements Interface2 {
          }
 
          RSByteBuffer var6 = new RSByteBuffer(var2.getFile(0, 0));
-         int var7 = var6.getShort(1);
+         int var7 = var6.getShort();
          this.aByteArray2143 = new byte[var7];
          this.aByteArray2129 = new byte[var7];
          this.aByteArray2126 = new byte[var7];
@@ -497,30 +497,30 @@ final class Class102 implements Interface2 {
 
          int var8;
          for(var8 = 0; var8 < var7; ++var8) {
-            aBooleanArray2133[var8] = 1 == var6.getByte((byte)-69);
+            aBooleanArray2133[var8] = 1 == var6.getByteB();
          }
 
          for(var8 = 0; var8 < var7; ++var8) {
             if(aBooleanArray2133[var8]) {
-               this.aBooleanArray2124[var8] = var6.getByte((byte) -50) == 1;
+               this.aBooleanArray2124[var8] = var6.getByteB() == 1;
             }
          }
 
          for(var8 = 0; var7 > var8; ++var8) {
             if(aBooleanArray2133[var8]) {
-               this.aBooleanArray2128[var8] = 1 == var6.getByte((byte)-60);
+               this.aBooleanArray2128[var8] = 1 == var6.getByteB();
             }
          }
 
          for(var8 = 0; var7 > var8; ++var8) {
             if(aBooleanArray2133[var8]) {
-               this.aBooleanArray2122[var8] = var6.getByte((byte) -23) == 1;
+               this.aBooleanArray2122[var8] = var6.getByteB() == 1;
             }
          }
 
          for(var8 = 0; var8 < var7; ++var8) {
             if(aBooleanArray2133[var8]) {
-               this.aBooleanArray2135[var8] = var6.getByte((byte) -30) == 1;
+               this.aBooleanArray2135[var8] = var6.getByteB() == 1;
             }
          }
 
@@ -550,7 +550,7 @@ final class Class102 implements Interface2 {
 
          for(var8 = 0; var7 > var8; ++var8) {
             if(aBooleanArray2133[var8]) {
-               this.aShortArray2137[var8] = (short)var6.getShort(1);
+               this.aShortArray2137[var8] = (short)var6.getShort();
             }
          }
 

@@ -85,18 +85,18 @@ final class Class104 implements Interface5 {
             int var11 = (var5 - var3) * (-var7 + var8) / var1 - -var7;
             var12 = var9 + (var10 + -var9) * (-var0 + var4) / var2;
             if(GameObject.aBoolean1837 && (64 & Class164.anInt2051) != 0) {
-               RSInterface var13 = Class3_Sub28_Sub16.method638(Class54.anInt872, RSInterface.anInt278);
+               RSInterface var13 = Class3_Sub28_Sub16.method638(ScriptContainer.anInt872, RSInterface.anInt278);
                if(var13 == null) {
                   Class25.method958((byte)-87);
                } else {
-                  Class54.method1177(Class144.anInt1887, 0L, (byte)-53, Class131.aClass94_1724, var11, (short)11, Class3_Sub28_Sub9.aClass94_3621, var12);
+                  ScriptContainer.method1177(Class144.anInt1887, 0L, (byte)-53, Class131.aClass94_1724, var11, (short)11, Class3_Sub28_Sub9.aClass94_3621, var12);
                }
             } else {
                if(Class158.anInt2014 == 1) {
-                  Class54.method1177(-1, 0L, (byte)-62, Class3_Sub28_Sub14.aClass94_3672, var11, (short)36, TextCore.HasFaceHere, var12);
+                  ScriptContainer.method1177(-1, 0L, (byte)-62, Class3_Sub28_Sub14.aClass94_3672, var11, (short)36, TextCore.HasFaceHere, var12);
                }
 
-               Class54.method1177(-1, 0L, (byte)-75, Class3_Sub28_Sub14.aClass94_3672, var11, (short)60, Class3_Sub13_Sub28.aClass94_3353, var12);
+               ScriptContainer.method1177(-1, 0L, (byte)-75, Class3_Sub28_Sub14.aClass94_3672, var11, (short)60, Class3_Sub13_Sub28.aClass94_3353, var12);
             }
          }
 
@@ -122,11 +122,11 @@ final class Class104 implements Interface5 {
                    }
 
                    if(Class164_Sub1.anInt3012 == 1) {
-                      Class54.method1177(Class99.anInt1403, var26, (byte)-58, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, ColorCore.PMColor, var16.name}, (byte)-75), var12, (short)14, TextCore.HasUse, var27);
+                      ScriptContainer.method1177(Class99.anInt1403, var26, (byte)-58, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, ColorCore.PMColor, var16.name}, (byte)-75), var12, (short)14, TextCore.HasUse, var27);
                    } else if(GameObject.aBoolean1837) {
                       Class3_Sub28_Sub9 var17 = -1 == Class69.anInt1038?null:Class61.method1210(Class69.anInt1038);
                       if(0 != (Class164.anInt2051 & 4) && (var17 == null || var17.anInt3614 != var16.method1691(var17.anInt3614, Class69.anInt1038, (byte) 98))) {
-                         Class54.method1177(Class144.anInt1887, var26, (byte)-77, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, ColorCore.PMColor, var16.name}, (byte)-122), var12, (short)38, Class3_Sub28_Sub9.aClass94_3621, var27);
+                         ScriptContainer.method1177(Class144.anInt1887, var26, (byte)-77, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, ColorCore.PMColor, var16.name}, (byte)-122), var12, (short)38, Class3_Sub28_Sub9.aClass94_3621, var27);
                       }
                    } else {
                       RSString[] var29 = var16.options;
@@ -167,12 +167,12 @@ final class Class104 implements Interface5 {
                                   var19 = 1001;
                                }
 
-                               Class54.method1177(var20, var26, (byte)-91, RenderAnimationDefinition.method903(new RSString[]{ColorCore.ObjectNameColor, var16.name}, (byte)-95), var12, var19, var29[var18], var27);
+                               ScriptContainer.method1177(var20, var26, (byte)-91, RenderAnimationDefinition.method903(new RSString[]{ColorCore.ObjectNameColor, var16.name}, (byte)-95), var12, var19, var29[var18], var27);
                             }
                          }
                       }
 
-                      Class54.method1177(Class131.anInt1719, (long)var16.objectId, (byte)-26, RenderAnimationDefinition.method903(new RSString[]{ColorCore.ObjectNameColor, var16.name}, (byte)-65), var12, (short)1004, TextCore.HasExamine, var27);
+                      ScriptContainer.method1177(Class131.anInt1719, (long)var16.objectId, (byte)-26, RenderAnimationDefinition.method903(new RSString[]{ColorCore.ObjectNameColor, var16.name}, (byte)-65), var12, (short)1004, TextCore.HasExamine, var27);
                    }
                 }
 
@@ -245,11 +245,11 @@ final class Class104 implements Interface5 {
                          var18 = var32.aClass140_Sub7_3676.anInt2936;
                          ItemDefinition var40 = Class38.getItemDefinition(var18, (byte)71);
                          if(Class164_Sub1.anInt3012 == 1) {
-                            Class54.method1177(Class99.anInt1403, (long)var18, (byte)-75, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, ColorCore.BankItemColor, var40.name}, (byte)-104), var12, (short)33, TextCore.HasUse, var27);
+                            ScriptContainer.method1177(Class99.anInt1403, (long)var18, (byte)-75, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, ColorCore.BankItemColor, var40.name}, (byte)-104), var12, (short)33, TextCore.HasUse, var27);
                          } else if(GameObject.aBoolean1837) {
                             Class3_Sub28_Sub9 var39 = Class69.anInt1038 == -1?null:Class61.method1210(Class69.anInt1038);
                             if((Class164.anInt2051 & 1) != 0 && (null == var39 || var39.anInt3614 != var40.method1115(var39.anInt3614, 100, Class69.anInt1038))) {
-                               Class54.method1177(Class144.anInt1887, (long)var18, (byte)-70, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, ColorCore.BankItemColor, var40.name}, (byte)-80), var12, (short)39, Class3_Sub28_Sub9.aClass94_3621, var27);
+                               ScriptContainer.method1177(Class144.anInt1887, (long)var18, (byte)-70, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, ColorCore.BankItemColor, var40.name}, (byte)-80), var12, (short)39, Class3_Sub28_Sub9.aClass94_3621, var27);
                             }
                          } else {
                             RSString[] var34 = var40.groundOptions;
@@ -289,11 +289,11 @@ final class Class104 implements Interface5 {
                                      var35 = 24;
                                   }
 
-                                  Class54.method1177(var23, (long)var18, (byte)-43, RenderAnimationDefinition.method903(new RSString[]{ColorCore.GroundItemColor, var40.name}, (byte)-66), var12, var35, var34[var21], var27);
+                                  ScriptContainer.method1177(var23, (long)var18, (byte)-43, RenderAnimationDefinition.method903(new RSString[]{ColorCore.GroundItemColor, var40.name}, (byte)-66), var12, var35, var34[var21], var27);
                                }
                             }
 
-                            Class54.method1177(Class131.anInt1719, (long)var18, (byte)-43, RenderAnimationDefinition.method903(new RSString[]{ColorCore.GroundItemColor, var40.name}, (byte)-70), var12, (short)1002, TextCore.HasExamine, var27);
+                            ScriptContainer.method1177(Class131.anInt1719, (long)var18, (byte)-43, RenderAnimationDefinition.method903(new RSString[]{ColorCore.GroundItemColor, var40.name}, (byte)-70), var12, (short)1002, TextCore.HasExamine, var27);
                          }
                       }
                    }
@@ -376,7 +376,7 @@ final class Class104 implements Interface5 {
          var2.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
          var2.glRotatef((float)Class140_Sub7.anInt2938 * 360.0F / 2048.0F, 1.0F, 0.0F, 0.0F);
          var2.glRotatef(360.0F * (float)Class3_Sub13_Sub8.anInt3103 / 2048.0F, 0.0F, 1.0F, 0.0F);
-         var2.glTranslatef((float)(-Class9.anInt144), (float)(-Class3_Sub28_Sub15.anInt3695), (float)(-Class3_Sub29.anInt2587));
+         var2.glTranslatef((float)(-Class9.anInt144), (float)(-Class69.anInt3695), (float)(-Class3_Sub29.anInt2587));
          var2.glTexGenfv(8192, 9474, this.aFloatArray2174, 0);
          this.aFloatArray2174[3] = var3 * (float)HDToolKit.anInt1791;
          this.aFloatArray2174[0] = 0.0F;

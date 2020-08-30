@@ -71,7 +71,7 @@ final class Class78 {
    private int method1378(int var1, int var2) {
       int var4;
       if(var2 == 255) {
-         int var7 = this.aClass3_Sub30_1113.getByte((byte)-60);
+         int var7 = this.aClass3_Sub30_1113.getByteB();
          var4 = this.aClass3_Sub30_1113.method741((byte)123);
          if(var7 == 47) {
             this.aClass3_Sub30_1113.index += var4;
@@ -92,11 +92,11 @@ final class Class78 {
          byte var3 = aByteArray1117[var2 - 128];
          var4 = var2;
          if(var3 >= 1) {
-            var4 = var2 | this.aClass3_Sub30_1113.getByte((byte)-69) << 8;
+            var4 = var2 | this.aClass3_Sub30_1113.getByteB() << 8;
          }
 
          if(var3 >= 2) {
-            var4 |= this.aClass3_Sub30_1113.getByte((byte)-60) << 16;
+            var4 |= this.aClass3_Sub30_1113.getByteB() << 16;
          }
 
          return var4;
@@ -135,8 +135,8 @@ final class Class78 {
    final void method1380(byte[] var1) {
       this.aClass3_Sub30_1113.buffer = var1;
       this.aClass3_Sub30_1113.index = 10;
-      int var2 = this.aClass3_Sub30_1113.getShort(1);
-      this.anInt1116 = this.aClass3_Sub30_1113.getShort(1);
+      int var2 = this.aClass3_Sub30_1113.getShort();
+      this.anInt1116 = this.aClass3_Sub30_1113.getShort();
       this.anInt1121 = 500000;
       this.anIntArray1118 = new int[var2];
 

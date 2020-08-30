@@ -128,7 +128,7 @@ final class AnimationHeader {
 		      RSByteBuffer buffer = new RSByteBuffer(bs);
 		      RSByteBuffer parent = new RSByteBuffer(bs);
 		      buffer.index = 2;
-		      int size = buffer.getByte((byte)-86);
+		      int size = buffer.getByteB();
 		      int var6 = 0;
 		      int var7 = -1;
 		      int var8 = -1;
@@ -140,7 +140,7 @@ final class AnimationHeader {
 		         if(var10 == 0) {
 		            var7 = i;
 		         }
-		         int var11 = buffer.getByte((byte)-55);
+		         int var11 = buffer.getByteB();
 		         if(var11 > 0) {
 		            if(var10 == 0) {
 		               var8 = i;

@@ -257,12 +257,12 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
                   if(this.anInt3309 == 0) {
                      for(var20 = 0; var20 < var13; ++var20) {
                         var21 = var20 * var8 / var13;
-                        var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var20 + var3)] = var18[Class3_Sub28_Sub15.method633(-1 + var4 + var3 + -var20, RenderAnimationDefinition.anInt396)] = var21 * var19 >> 12;
+                        var18[Class69.bitwiseAnd(RenderAnimationDefinition.anInt396, var20 + var3)] = var18[Class69.bitwiseAnd(-1 + var4 + var3 + -var20, RenderAnimationDefinition.anInt396)] = var21 * var19 >> 12;
                      }
                   } else {
                      for(var20 = 0; var20 < var13; ++var20) {
                         var21 = var20 * var8 / var13;
-                        var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var3 - -var20)] = var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var4 + var3 + -var20 - 1)] = var21 >= var19 ?var19:var21;
+                        var18[Class69.bitwiseAnd(RenderAnimationDefinition.anInt396, var3 - -var20)] = var18[Class69.bitwiseAnd(RenderAnimationDefinition.anInt396, var4 + var3 + -var20 - 1)] = var21 >= var19 ?var19:var21;
                      }
                   }
 
@@ -277,7 +277,7 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
                   var19 = var6 + -var17 - 1;
                   if(var14 <= var19) {
                      for(var20 = 0; var13 > var20; ++var20) {
-                        var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var3 + var20)] = var18[Class3_Sub28_Sub15.method633(-1 + -var20 + var3 - -var4, RenderAnimationDefinition.anInt396)] = var8 * var20 / var13;
+                        var18[Class69.bitwiseAnd(RenderAnimationDefinition.anInt396, var3 + var20)] = var18[Class69.bitwiseAnd(-1 + -var20 + var3 - -var4, RenderAnimationDefinition.anInt396)] = var8 * var20 / var13;
                      }
 
                      if(Class113.anInt1559 < var15 - -var16) {
@@ -293,12 +293,12 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
                      if(this.anInt3309 == 0) {
                         for(var21 = 0; var13 > var21; ++var21) {
                            var22 = var8 * var21 / var13;
-                           var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, var3 - -var21)] = var18[Class3_Sub28_Sub15.method633(RenderAnimationDefinition.anInt396, -1 + var3 - (-var4 + var21))] = var22 * var20 >> 12;
+                           var18[Class69.bitwiseAnd(RenderAnimationDefinition.anInt396, var3 - -var21)] = var18[Class69.bitwiseAnd(RenderAnimationDefinition.anInt396, -1 + var3 - (-var4 + var21))] = var22 * var20 >> 12;
                         }
                      } else {
                         for(var21 = 0; var21 < var13; ++var21) {
                            var22 = var21 * var8 / var13;
-                           var18[Class3_Sub28_Sub15.method633(var3 - -var21, RenderAnimationDefinition.anInt396)] = var18[Class3_Sub28_Sub15.method633(-1 + -var21 + var4 + var3, RenderAnimationDefinition.anInt396)] = var22 >= var20 ?var20:var22;
+                           var18[Class69.bitwiseAnd(var3 - -var21, RenderAnimationDefinition.anInt396)] = var18[Class69.bitwiseAnd(-1 + -var21 + var4 + var3, RenderAnimationDefinition.anInt396)] = var22 >= var20 ?var20:var22;
                         }
                      }
 
@@ -338,23 +338,23 @@ final class Class3_Sub13_Sub25 extends Class3_Sub13 {
          }
 
          if(var1 == 0) {
-            this.anInt3312 = var2.getByte((byte)-104);
+            this.anInt3312 = var2.getByteB();
          } else if (var1 == 1) {
-             this.anInt3300 = var2.getShort(1);
+             this.anInt3300 = var2.getShort();
          } else if (2 == var1) {
-             this.anInt3308 = var2.getShort(1);
+             this.anInt3308 = var2.getShort();
          } else if (var1 == 3) {
-             this.anInt3310 = var2.getShort(1);
+             this.anInt3310 = var2.getShort();
          } else if (var1 == 4) {
-             this.anInt3301 = var2.getShort(1);
+             this.anInt3301 = var2.getShort();
          } else if (var1 == 5) {
-             this.anInt3303 = var2.getShort(1);
+             this.anInt3303 = var2.getShort();
          } else if (var1 == 6) {
-             this.anInt3309 = var2.getByte((byte) -114);
+             this.anInt3309 = var2.getByteB();
          } else if (var1 == 7) {
-             this.anInt3299 = var2.getShort(1);
+             this.anInt3299 = var2.getShort();
          } else if (var1 == 8) {
-             this.anInt3316 = var2.getShort(1);
+             this.anInt3316 = var2.getShort();
          }
 
       } catch (RuntimeException var5) {

@@ -49,7 +49,7 @@ final class AnimationDefinition {
 		try {
 			//	System.out.print("Animation " + animId + " - parsed [");
 			while(true) {
-				int var3 = var1.getByte((byte)-46);
+				int var3 = var1.getByteB();
 				if(var3 == 0) {
 					//System.out.println("].");
 					return;
@@ -332,70 +332,70 @@ final class AnimationDefinition {
 			int var4;
 			int var5;
 			if(var1 == 1) {
-				var4 = var3.getShort(1);
+				var4 = var3.getShort();
 				this.duration = new int[var4];
 
 				for(var5 = 0; var4 > var5; ++var5) {
-					this.duration[var5] = var3.getShort(1);
+					this.duration[var5] = var3.getShort();
 				}
 
 				this.frames = new int[var4];
 
 				for(var5 = 0; var4 > var5; ++var5) {
-					this.frames[var5] = var3.getShort(1);
+					this.frames[var5] = var3.getShort();
 				}
 
 				for(var5 = 0; var4 > var5; ++var5) {
-					this.frames[var5] += var3.getShort(1) << 16;
+					this.frames[var5] += var3.getShort() << 16;
 				}
 			} else if(var1 == 2) {
-				this.anInt1865 = var3.getShort(1);
+				this.anInt1865 = var3.getShort();
 			} else if(var1 == 3) {
 				this.aBooleanArray1855 = new boolean[256];
-				var4 = var3.getByte((byte)-126);
+				var4 = var3.getByteB();
 
 				for(var5 = 0; var5 < var4; ++var5) {
-					this.aBooleanArray1855[var3.getByte((byte)-81)] = true;
+					this.aBooleanArray1855[var3.getByteB()] = true;
 				}
 			} else if (var1 == 4) {
 				this.aBoolean1859 = true;
 			} else if (var1 == 5) {
-				this.anInt1857 = var3.getByte((byte) -72);
+				this.anInt1857 = var3.getByteB();
 			} else if (6 == var1) {
-				this.anInt1854 = var3.getShort(1);
+				this.anInt1854 = var3.getShort();
 			} else if (var1 == 7) {
-				this.anInt1849 = var3.getShort(1);
+				this.anInt1849 = var3.getShort();
 			} else if (8 == var1) {
-				this.anInt1861 = var3.getByte((byte) -127);
+				this.anInt1861 = var3.getByteB();
 			} else if (9 == var1) {
-				this.anInt1866 = var3.getByte((byte) -56);
+				this.anInt1866 = var3.getByteB();
 			} else if (10 == var1) {
-				this.anInt1850 = var3.getByte((byte) -43);
+				this.anInt1850 = var3.getByteB();
 			} else if (var1 == 11) {
-				this.anInt1845 = var3.getByte((byte) -119);
+				this.anInt1845 = var3.getByteB();
 			} else if (12 == var1) {
-				var4 = var3.getByte((byte) -117);
+				var4 = var3.getByteB();
 				this.anIntArray1870 = new int[var4];
 
 				for (var5 = 0; var5 < var4; ++var5) {
-					this.anIntArray1870[var5] = var3.getShort(1);
+					this.anIntArray1870[var5] = var3.getShort();
 				}
 
 				for (var5 = 0; var5 < var4; ++var5) {
-					this.anIntArray1870[var5] += var3.getShort(1) << 16;
+					this.anIntArray1870[var5] += var3.getShort() << 16;
 				}
 			} else if (13 == var1) {
-				var4 = var3.getShort(1);
+				var4 = var3.getShort();
 				this.anIntArrayArray1867 = new int[var4][];
 
 				for (var5 = 0; var5 < var4; ++var5) {
-					int var6 = var3.getByte((byte) -96);
+					int var6 = var3.getByteB();
 					if (var6 > 0) {
 						this.anIntArrayArray1867[var5] = new int[var6];
 						this.anIntArrayArray1867[var5][0] = var3.getTriByte((byte) 102);
 
 						for (int var7 = 1; var7 < var6; ++var7) {
-							this.anIntArrayArray1867[var5][var7] = var3.getShort(1);
+							this.anIntArrayArray1867[var5][var7] = var3.getShort();
 						}
 					}
 				}
@@ -532,7 +532,7 @@ final class AnimationDefinition {
 			}
 
 			Node.clanSize = 0;
-			Class3_Sub28_Sub15.aClass3_Sub19Array3694 = null;
+			PacketParser.aClass3_Sub19Array3694 = null;
 			RSInterface.aClass94_251 = null;
 
 			for(var1 = 0; 6 > var1; ++var1) {

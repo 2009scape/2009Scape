@@ -104,7 +104,7 @@ final class Class62 {
    private void method1226(byte[] var2) {
       try {
          RSByteBuffer buffer = new RSByteBuffer(Class3_Sub28_Sub13.method623((byte)-114, var2));
-         int var4 = buffer.getByte((byte)-34);
+         int var4 = buffer.getByteB();
          if(var4 == 5 || var4 == 6) {
             if(var4 >= 6) {
                this.revision = buffer.getInt();
@@ -112,15 +112,15 @@ final class Class62 {
                this.revision = 0;
             }
 
-            int info = buffer.getByte((byte)-127);
+            int info = buffer.getByteB();
             int var6 = 0;
-            this.validArchiveAmount = buffer.getShort(2 ^ 3);
+            this.validArchiveAmount = buffer.getShort();
             int var7 = -1;
             this.validArchiveIds = new int[this.validArchiveAmount];
 
             int var8;
             for(var8 = 0; this.validArchiveAmount > var8; ++var8) {
-               this.validArchiveIds[var8] = var6 += buffer.getShort(1);
+               this.validArchiveIds[var8] = var6 += buffer.getShort();
                if(this.validArchiveIds[var8] > var7) {
                   var7 = this.validArchiveIds[var8];
                }
@@ -156,7 +156,7 @@ final class Class62 {
 
             var8 = 0;
             while(this.validArchiveAmount > var8) {
-               this.archiveFileLengths[this.validArchiveIds[var8]] = buffer.getShort(1);
+               this.archiveFileLengths[this.validArchiveIds[var8]] = buffer.getShort();
                ++var8;
             }
 
@@ -172,7 +172,7 @@ final class Class62 {
                this.validFileIds[var9] = new int[var10];
 
                for(var12 = 0; var10 > var12; ++var12) {
-                  int var13 = this.validFileIds[var9][var12] = var6 += buffer.getShort(1);
+                  int var13 = this.validFileIds[var9][var12] = var6 += buffer.getShort();
                   if(var13 > var11) {
                      var11 = var13;
                   }

@@ -89,7 +89,7 @@ abstract class Class140_Sub4 extends GameObject {
    int anInt2838 = 0;
    static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array2839;
    int anInt2840;
-   static Class54[] aClass54Array2841 = new Class54[50];
+   static ScriptContainer[] aScriptContainerArray2841 = new ScriptContainer[50];
    int anInt2842 = -1;
 
 
@@ -541,7 +541,7 @@ abstract class Class140_Sub4 extends GameObject {
             aClass3_Sub28_Sub16Array2839 = (Class3_Sub28_Sub16[])null;
          }
 
-         aClass54Array2841 = null;
+         aScriptContainerArray2841 = null;
          aClass94_2765 = null;
          aClass93_2792 = null;
          aClass3_Sub28_Sub16Array2839 = null;

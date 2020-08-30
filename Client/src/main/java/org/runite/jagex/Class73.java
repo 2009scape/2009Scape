@@ -482,8 +482,8 @@ static boolean aBoolean1080 = false;
             }
 
             if(command.method1558(GameShell.aClass94_10)) {
-               Class3_Sub28_Sub15.anInt3689 = command.method1556(12).trim(1).method1552((byte)-120);
-               Class3_Sub30_Sub1.addChatMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class166.aClass94_2075, Class72.method1298((byte)9, Class3_Sub28_Sub15.anInt3689)}, (byte)-75), -1);
+               Client.anInt3689 = command.method1556(12).trim(1).method1552((byte)-120);
+               Class3_Sub30_Sub1.addChatMessage((RSString)null, 0, RenderAnimationDefinition.method903(new RSString[]{Class166.aClass94_2075, Class72.method1298((byte)9, Client.anInt3689)}, (byte)-75), -1);
             }
 
             if(command.equals(104, Class108.COMMAND_QA_OP_TEST)) {

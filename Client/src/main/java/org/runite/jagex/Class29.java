@@ -53,7 +53,7 @@ final class Class29 {
    final void method970(RSByteBuffer var2) {
       try {
          while(true) {
-            int var3 = var2.getByte((byte)-74);
+            int var3 = var2.getByteB();
             if(0 == var3) {
 
                 return;
@@ -191,7 +191,7 @@ final class Class29 {
       try {
 
           if(var3 == 5) {
-            this.anInt556 = var1.getShort(1);
+            this.anInt556 = var1.getShort();
          }
 
       } catch (RuntimeException var5) {

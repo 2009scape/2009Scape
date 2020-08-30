@@ -260,7 +260,7 @@ class Class155 {
    static Class10 method2156(RSByteBuffer var1) {
       try {
          Class10 var2 = new Class10();
-         var2.anInt149 = var1.getShort(1024 + -1023);
+         var2.anInt149 = var1.getShort();
 
          var2.aClass3_Sub28_Sub4_151 = Class3_Sub29.method733(var2.anInt149);
          return var2;

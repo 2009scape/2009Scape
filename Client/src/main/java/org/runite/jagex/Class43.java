@@ -76,7 +76,7 @@ final class Class43 {
          }
 
          for(int var4 = 0; var4 < var1; ++var4) {
-            var3[var4] = Class3_Sub13_Sub38.spritePalette[Class3_Sub28_Sub15.method633(var2[var4], 255)];
+            var3[var4] = Class3_Sub13_Sub38.spritePalette[Class69.bitwiseAnd(var2[var4], 255)];
          }
 
          Object var6;
@@ -119,9 +119,9 @@ final class Class43 {
 
          this.aFloat707 = (float)(this.anInt693 + (var4 * this.anInt702 >> 11)) / 2048.0F;
          float var8 = this.aFloat707 / 255.0F;
-         this.aFloatArray717[0] = (float)(Class3_Sub28_Sub15.method633(this.anInt713, 16771365) >> 16) * var8;
-         this.aFloatArray717[2] = var8 * (float)Class3_Sub28_Sub15.method633(255, this.anInt713);
-         this.aFloatArray717[1] = (float)(Class3_Sub28_Sub15.method633(this.anInt713, '\uffe7') >> 8) * var8;
+         this.aFloatArray717[0] = (float)(Class69.bitwiseAnd(this.anInt713, 16771365) >> 16) * var8;
+         this.aFloatArray717[2] = var8 * (float) Class69.bitwiseAnd(255, this.anInt713);
+         this.aFloatArray717[1] = (float)(Class69.bitwiseAnd(this.anInt713, '\uffe7') >> 8) * var8;
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "gi.A(" + var1 + ',' + var2 + ',' + -3696 + ')');
       }
@@ -219,7 +219,7 @@ final class Class43 {
 
    static void method1065(CS2Script var1) {
       try {
-         ItemDefinition.method1104((byte)-93, 200000, var1);
+         ItemDefinition.method1104(200000, var1);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "gi.H(" + 1073376993 + ',' + (var1 != null?"{...}":"null") + ')');
       }
@@ -243,24 +243,24 @@ final class Class43 {
             Class45.method1083((byte)-94);
          }
 
-         this.anInt704 = var1.getByte((byte)-99);
+         this.anInt704 = var1.getByteB();
          this.aBoolean690 = (this.anInt704 & 16) != 0;
          this.aBoolean711 = (this.anInt704 & 8) != 0;
          this.anInt704 &= 7;
-         this.anInt703 = var1.getShort(1);
-         this.anInt708 = var1.getShort(1);
-         this.anInt697 = var1.getShort(1);
-         this.anInt698 = var1.getByte((byte)-78);
+         this.anInt703 = var1.getShort();
+         this.anInt708 = var1.getShort();
+         this.anInt697 = var1.getShort();
+         this.anInt698 = var1.getByteB();
          this.method1061();
          this.aShortArray706 = new short[this.anInt698 * 2 + 1];
 
          int var2;
          for(var2 = 0; var2 < this.aShortArray706.length; ++var2) {
-            this.aShortArray706[var2] = (short)var1.getShort(1);
+            this.aShortArray706[var2] = (short)var1.getShort();
          }
 
-         this.anInt713 = Class51.anIntArray834[var1.getShort(1)];
-         var2 = var1.getByte((byte)-95);
+         this.anInt713 = Class51.anIntArray834[var1.getShort()];
+         var2 = var1.getByteB();
          this.anInt714 = 1792 & var2 << 3;
          this.anInt705 = var2 & 31;
          if(31 != this.anInt705) {

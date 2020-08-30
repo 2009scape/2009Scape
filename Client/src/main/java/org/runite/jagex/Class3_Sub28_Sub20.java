@@ -52,9 +52,9 @@ final class Class3_Sub28_Sub20 extends Node {
                   for(var11 = var17; var11 >= 0; --var11) {
                      --var14;
                      int var12 = this.anIntArray3793[var14];
-                     var7[var11] += Class3_Sub28_Sub15.method633(var12, 16726965) >> 16;
-                     var8[var11] += Class3_Sub28_Sub15.method633('\uff72', var12) >> 8;
-                     var9[var11] += Class3_Sub28_Sub15.method633(var12, 255);
+                     var7[var11] += Class69.bitwiseAnd(var12, 16726965) >> 16;
+                     var8[var11] += Class69.bitwiseAnd('\uff72', var12) >> 8;
+                     var9[var11] += Class69.bitwiseAnd(var12, 255);
                   }
 
                   if(var14 == 0) {
@@ -106,9 +106,9 @@ final class Class3_Sub28_Sub20 extends Node {
                      int var23 = this.anIntArray3793[var13];
                      --var14;
                      int var24 = this.anIntArray3793[var14];
-                     var7[var11] += (Class3_Sub28_Sub15.method633(var24, 16729186) >> 16) + -Class3_Sub28_Sub15.method633(var23 >> 16, 255);
-                     var8[var11] += (Class3_Sub28_Sub15.method633('\uff8b', var24) >> 8) + -Class3_Sub28_Sub15.method633(255, var23 >> 8);
-                     var9[var11] += -Class3_Sub28_Sub15.method633(var23, 255) + Class3_Sub28_Sub15.method633(255, var24);
+                     var7[var11] += (Class69.bitwiseAnd(var24, 16729186) >> 16) + -Class69.bitwiseAnd(var23 >> 16, 255);
+                     var8[var11] += (Class69.bitwiseAnd('\uff8b', var24) >> 8) + -Class69.bitwiseAnd(255, var23 >> 8);
+                     var9[var11] += -Class69.bitwiseAnd(var23, 255) + Class69.bitwiseAnd(255, var24);
                   }
 
                   if(0 == var13) {
@@ -435,15 +435,15 @@ final class Class3_Sub28_Sub20 extends Node {
    Class3_Sub28_Sub20(RSByteBuffer var1) {
       try {
          this.aClass82_3790 = new Class82(var1);
-         this.aBoolean3789 = var1.getByte((byte)-86) == 1;
-         this.aBoolean3800 = 1 == var1.getByte((byte)-80);
-         this.aBoolean3787 = var1.getByte((byte) -67) == 1;
-         this.aBoolean3781 = var1.getByte((byte) -114) == 1;
-         int var2 = 3 & var1.getByte((byte)-35);
+         this.aBoolean3789 = var1.getByteB() == 1;
+         this.aBoolean3800 = 1 == var1.getByteB();
+         this.aBoolean3787 = var1.getByteB() == 1;
+         this.aBoolean3781 = var1.getByteB() == 1;
+         int var2 = 3 & var1.getByteB();
          this.anInt3783 = var1.getByte();
          this.anInt3799 = var1.getByte();
-         int var3 = var1.getByte((byte)-86);
-         var1.getByte((byte)-87);
+         int var3 = var1.getByteB();
+         var1.getByteB();
          if(var2 == 1) {
             this.anInt3784 = 2;
          } else if(var2 == 2) {

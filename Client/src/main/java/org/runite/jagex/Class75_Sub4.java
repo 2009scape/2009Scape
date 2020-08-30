@@ -20,16 +20,16 @@ final class Class75_Sub4 extends Class75 {
          for(i = 0; Class66.maskUpdateCount > i; ++i) {
             int mask = Class21.maskUpdateIndexes[i];
             NPC npc = Class3_Sub13_Sub24.npcs[mask];
-            int var4 = GraphicDefinition.incomingBuffer.getByte((byte)-122);
+            int var4 = GraphicDefinition.incomingBuffer.getByteB();
             if((var4 & 8) != 0) {
-               var4 += GraphicDefinition.incomingBuffer.getByte((byte)-90) << 8;
+               var4 += GraphicDefinition.incomingBuffer.getByteB() << 8;
             }
 
             int var5;
             int var6;
             //Ordinal: 0 Hit
             if((64 & var4) != 0) {
-               var5 = GraphicDefinition.incomingBuffer.getByte((byte)-57);
+               var5 = GraphicDefinition.incomingBuffer.getByteB();
                var6 = GraphicDefinition.incomingBuffer.getByteC();
                npc.method1970(var6, Class44.anInt719, var5);
                npc.anInt2781 = 300 + Class44.anInt719;
@@ -45,8 +45,8 @@ final class Class75_Sub4 extends Class75 {
 
             //Ordinal: 2 Animation
             if((var4 & 16) != 0) {
-               var5 = GraphicDefinition.incomingBuffer.getShort(1);
-               var6 = GraphicDefinition.incomingBuffer.getByte((byte)-83);
+               var5 = GraphicDefinition.incomingBuffer.getShort();
+               var6 = GraphicDefinition.incomingBuffer.getByteB();
                if('\uffff' == var5) {
                   var5 = -1;
                }
@@ -133,7 +133,7 @@ final class Class75_Sub4 extends Class75 {
 
                   var12[var15] = var10;
                   var13[var15] = GraphicDefinition.incomingBuffer.getByteS();
-                  var14[var15] = GraphicDefinition.incomingBuffer.getShort(1);
+                  var14[var15] = GraphicDefinition.incomingBuffer.getShort();
                }
 
                Class3_Sub13_Sub22.method273(var14, npc, var13, var12);
@@ -142,7 +142,7 @@ final class Class75_Sub4 extends Class75 {
             //Ordinal: 8 Face location
             if((var4 & 512) != 0) {
                npc.anInt2786 = GraphicDefinition.incomingBuffer.getShortA(-103);
-               npc.anInt2762 = GraphicDefinition.incomingBuffer.getShort(1);
+               npc.anInt2762 = GraphicDefinition.incomingBuffer.getShort();
             }
          }
 

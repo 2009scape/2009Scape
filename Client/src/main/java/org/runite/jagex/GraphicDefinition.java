@@ -26,7 +26,7 @@ final class GraphicDefinition {
 		try {
 
             while(true) {
-				int var3 = var1.getByte((byte)-68);
+				int var3 = var1.getByteB();
 				if(var3 == 0) {
 					return;
 				}
@@ -52,41 +52,41 @@ final class GraphicDefinition {
 	private void method965(RSByteBuffer var1, int var2) {
 		try {
 			if(var2 == 1) {
-				this.anInt541 = var1.getShort(128 + -127);
+				this.anInt541 = var1.getShort();
 			} else if(2 == var2) {
-				this.anInt542 = var1.getShort(1);
+				this.anInt542 = var1.getShort();
 			} else if(var2 == 4) {
-				this.anInt530 = var1.getShort(1);
+				this.anInt530 = var1.getShort();
 			} else if (var2 == 5) {
-				this.anInt540 = var1.getShort(1);
+				this.anInt540 = var1.getShort();
 			} else if (6 == var2) {
-				this.anInt543 = var1.getShort(128 + -127);
+				this.anInt543 = var1.getShort();
 			} else if (var2 == 7) {
-				this.anInt538 = var1.getByte((byte) -47);
+				this.anInt538 = var1.getByteB();
 			} else if (var2 == 8) {
-				this.anInt537 = var1.getByte((byte) -55);
+				this.anInt537 = var1.getByteB();
 			} else if (var2 == 9) {
 				this.aBoolean536 = true;
 			} else {
 				int var4;
 				int var5;
 				if (40 == var2) {
-					var4 = var1.getByte((byte) -47);
+					var4 = var1.getByteB();
 					this.aShortArray533 = new short[var4];
 					this.aShortArray545 = new short[var4];
 
 					for (var5 = 0; var4 > var5; ++var5) {
-						this.aShortArray533[var5] = (short) var1.getShort(1);
-						this.aShortArray545[var5] = (short) var1.getShort(128 + -127);
+						this.aShortArray533[var5] = (short) var1.getShort();
+						this.aShortArray545[var5] = (short) var1.getShort();
 					}
 				} else if (41 == var2) {
-					var4 = var1.getByte((byte) -32);
+					var4 = var1.getByteB();
 					this.aShortArray534 = new short[var4];
 					this.aShortArray535 = new short[var4];
 
 					for (var5 = 0; var5 < var4; ++var5) {
-						this.aShortArray534[var5] = (short) var1.getShort(1);
-						this.aShortArray535[var5] = (short) var1.getShort(128 + -127);
+						this.aShortArray534[var5] = (short) var1.getShort();
+						this.aShortArray535[var5] = (short) var1.getShort();
 					}
 				}
 			}

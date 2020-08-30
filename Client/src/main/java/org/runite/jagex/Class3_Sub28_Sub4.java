@@ -34,7 +34,7 @@ final class Class3_Sub28_Sub4 extends Node {
    final void method546(RSByteBuffer var1) {
       try {
          while(true) {
-            int var3 = var1.getByte((byte)-43);
+            int var3 = var1.getByteB();
             if(0 == var3) {
 
                return;
@@ -146,24 +146,24 @@ final class Class3_Sub28_Sub4 extends Node {
             int var4;
             int var5;
             if(var2 == 2) {
-               var4 = var1.getByte((byte)-114);
+               var4 = var1.getByteB();
                this.anIntArray3567 = new int[var4];
 
                for(var5 = 0; var5 < var4; ++var5) {
-                  this.anIntArray3567[var5] = var1.getShort(1);
+                  this.anIntArray3567[var5] = var1.getShort();
                }
             } else if (var2 == 3) {
-               var4 = var1.getByte((byte) -34);
+               var4 = var1.getByteB();
                this.anIntArray3566 = new int[var4];
                this.anIntArrayArray3570 = new int[var4][];
 
                for (var5 = 0; var4 > var5; ++var5) {
-                  int var6 = var1.getShort(1);
+                  int var6 = var1.getShort();
                   this.anIntArray3566[var5] = var6;
                   this.anIntArrayArray3570[var5] = new int[Class155.anIntArray1976[var6]];
 
                   for (int var7 = 0; Class155.anIntArray1976[var6] > var7; ++var7) {
-                     this.anIntArrayArray3570[var5][var7] = var1.getShort(1);
+                     this.anIntArrayArray3570[var5][var7] = var1.getShort();
                   }
                }
             } else if (var2 == 4) {

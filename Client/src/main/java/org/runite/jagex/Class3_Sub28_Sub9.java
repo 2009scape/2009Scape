@@ -25,7 +25,7 @@ final class Class3_Sub28_Sub9 extends Node {
             int[] var5 = new int[var1];
 
             for(int var6 = 0; var6 < var1; ++var6) {
-               var5[var6] = Class3_Sub13_Sub29.bitwiseOr(Class3_Sub28_Sub15.method633(var4[var6] << 24, -16777216), Class3_Sub13_Sub38.spritePalette[Class3_Sub28_Sub15.method633(255, var2[var6])]);
+               var5[var6] = Class3_Sub13_Sub29.bitwiseOr(Class69.bitwiseAnd(var4[var6] << 24, -16777216), Class3_Sub13_Sub38.spritePalette[Class69.bitwiseAnd(255, var2[var6])]);
             }
 
             var3 = new Class3_Sub28_Sub16_Sub2_Sub1(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[0], RSByteBuffer.anIntArray2591[0], Class140_Sub7.anIntArray2931[0], Class3_Sub13_Sub6.anIntArray3076[0], var5);
@@ -33,7 +33,7 @@ final class Class3_Sub28_Sub9 extends Node {
             int[] var8 = new int[var1];
 
             for(int var9 = 0; var9 < var1; ++var9) {
-               var8[var9] = Class3_Sub13_Sub38.spritePalette[Class3_Sub28_Sub15.method633(var2[var9], 255)];
+               var8[var9] = Class3_Sub13_Sub38.spritePalette[Class69.bitwiseAnd(var2[var9], 255)];
             }
 
             var3 = new Class3_Sub28_Sub16_Sub2(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[0], RSByteBuffer.anIntArray2591[0], Class140_Sub7.anIntArray2931[0], Class3_Sub13_Sub6.anIntArray3076[0], var8);
@@ -49,7 +49,7 @@ final class Class3_Sub28_Sub9 extends Node {
    private void method579(int var1, RSByteBuffer var2) {
       try {
          if(var1 == 1) {
-            this.anInt3617 = var2.getByte((byte)-71);
+            this.anInt3617 = var2.getByteB();
          } else if (var1 == 2) {
             this.anInt3614 = var2.getInt();
          } else if (var1 == 5) {
@@ -100,7 +100,7 @@ final class Class3_Sub28_Sub9 extends Node {
    final void method583(RSByteBuffer var2) {
       try {
          while(true) {
-            int var3 = var2.getByte((byte)-96);
+            int var3 = var2.getByteB();
             if(var3 == 0) {
                return;
             }

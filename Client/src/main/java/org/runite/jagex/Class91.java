@@ -1003,7 +1003,7 @@ final class Class91 {
       try {
          var3 -= this.anInt1309;
          var1 -= this.anInt1306;
-         this.anIntArrayArray1304[var3][var1] = Class3_Sub28_Sub15.method633(this.anIntArrayArray1304[var3][var1], -262145);
+         this.anIntArrayArray1304[var3][var1] = Class69.bitwiseAnd(this.anIntArrayArray1304[var3][var1], -262145);
 
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "mj.I(" + var1 + ',' + (byte) -73 + ',' + var3 + ')');
@@ -1141,7 +1141,7 @@ final class Class91 {
    private void method1501(byte var1, int var2, int var3, int var4) {
       try {
          if(var1 >= 18) {
-            this.anIntArrayArray1304[var3][var2] = Class3_Sub28_Sub15.method633(this.anIntArrayArray1304[var3][var2], ~var4);
+            this.anIntArrayArray1304[var3][var2] = Class69.bitwiseAnd(this.anIntArrayArray1304[var3][var2], ~var4);
          }
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "mj.H(" + var1 + ',' + var2 + ',' + var3 + ',' + var4 + ')');

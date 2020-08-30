@@ -98,7 +98,7 @@ final class Class100 {
    final void method1601(int var1, RSByteBuffer var2) {
       try {
          while(true) {
-            int var4 = var2.getByte((byte)-43);
+            int var4 = var2.getByteB();
             if(var4 == 0) {
 
                return;
@@ -156,12 +156,12 @@ final class Class100 {
             int anInt1404 = var3.getTriByte((byte) 93);
             this.method1600(anInt1404);
          } else if (var2 == 2) {
-            this.anInt1412 = var3.getShort(1);
+            this.anInt1412 = var3.getShort();
             if (this.anInt1412 == 65535) {
                this.anInt1412 = -1;
             }
          } else if (3 == var2) {
-            this.anInt1414 = var3.getShort(1);
+            this.anInt1414 = var3.getShort();
          } else if (var2 == 4) {
             this.aBoolean1411 = false;
          }
@@ -174,7 +174,7 @@ final class Class100 {
    static void method1605(RSString var1, int var2) {
       try {
          Class3_Sub13_Sub1.outgoingBuffer.putOpcode(188);
-         Class3_Sub13_Sub1.outgoingBuffer.putByteA(var2, 255 + -13326);
+         Class3_Sub13_Sub1.outgoingBuffer.putByteA(var2);
          Class3_Sub13_Sub1.outgoingBuffer.putLong(var1.toLong(-126), -2037491440);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "ni.B(" + 255 + ',' + (var1 != null?"{...}":"null") + ',' + var2 + ')');

@@ -52,7 +52,7 @@ public final class Class3_Sub28_Sub12 extends Node {
    final void method610(RSByteBuffer var1) {
       try {
          while(true) {
-            int var3 = var1.getByte((byte)-97);
+            int var3 = var1.getByteB();
             if(0 == var3) {
                return;
             }
@@ -111,7 +111,7 @@ public final class Class3_Sub28_Sub12 extends Node {
       try {
 
           if(var2 == 2) {
-            this.anInt3647 = var1.getShort(1);
+            this.anInt3647 = var1.getShort();
          }
 
       } catch (RuntimeException var5) {

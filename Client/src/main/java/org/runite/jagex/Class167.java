@@ -137,7 +137,7 @@ final class Class167 {
             }
 
             while(true) {
-               var9 = var3.getByte((byte)-111);
+               var9 = var3.getByteB();
                if(var9 == 0) {
                   if(var2) {
                      Class44.anIntArrayArrayArray723[0][var5][var4] = Class58.anIntArrayArrayArray914[0][var5][var4];
@@ -150,7 +150,7 @@ final class Class167 {
                }
 
                if(var9 == 1) {
-                  int var10 = var3.getByte((byte)-110);
+                  int var10 = var3.getByteB();
                   if(var2) {
                      Class44.anIntArrayArrayArray723[0][var5][var4] = Class58.anIntArrayArrayArray914[0][var5][var4] - -(var10 * 8);
                   } else {
@@ -170,7 +170,7 @@ final class Class167 {
                if(49 >= var9) {
                   Class139.aByteArrayArrayArray1828[var8][var5][var4] = var3.getByte();
                   Class93.aByteArrayArrayArray1328[var8][var5][var4] = (byte)((-2 + var9) / 4);
-                  PacketParser.aByteArrayArrayArray81[var8][var5][var4] = (byte)Class3_Sub28_Sub15.method633(-2 + var9 + var7, 3);
+                  PacketParser.aByteArrayArrayArray81[var8][var5][var4] = (byte) Class69.bitwiseAnd(-2 + var9 + var7, 3);
                } else if(var9 > 81) {
                   Class3_Sub13_Sub36.aByteArrayArrayArray3430[var8][var5][var4] = (byte)(-81 + var9);
                } else if(!var2) {
@@ -179,18 +179,18 @@ final class Class167 {
             }
          } else {
             while(true) {
-               var9 = var3.getByte((byte)-103);
+               var9 = var3.getByteB();
                if(var9 == 0) {
                   break;
                }
 
                if(var9 == 1) {
-                  var3.getByte((byte)-48);
+                  var3.getByteB();
                   break;
                }
 
                if(var9 <= 49) {
-                  var3.getByte((byte)-68);
+                  var3.getByteB();
                }
             }
          }

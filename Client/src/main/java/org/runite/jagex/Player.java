@@ -52,7 +52,7 @@ final class Player extends Class140_Sub4 {
    final void parseAppearance(int var1, RSByteBuffer buffer) {
       try {
          buffer.index = 0;
-         int var3 = buffer.getByte((byte)-105);
+         int var3 = buffer.getByteB();
          int npcId = -1;
          int var4 = 1 & var3;
          boolean var6 = (var3 & 4) != 0;
@@ -71,15 +71,15 @@ final class Player extends Class140_Sub4 {
          int outfit;
          int var14;
          for(int var10 = 0; var10 < 12; ++var10) {
-            var11 = buffer.getByte((byte)-29);
+            var11 = buffer.getByteB();
             if(var11 == 0) {
                look[var10] = 0;
             } else {
-               var12 = buffer.getByte((byte)-109);
+               var12 = buffer.getByteB();
                outfit = (var11 << 8) + var12;
                if(var10 == 0 && outfit == 65535) {
-                  npcId = buffer.getShort(1);
-                  this.teamId = buffer.getByte((byte)-24);
+                  npcId = buffer.getShort();
+                  this.teamId = buffer.getByteB();
                   break;
                }
 
@@ -104,7 +104,7 @@ final class Player extends Class140_Sub4 {
          int[] colors = new int[5];
 
          for(var11 = 0; var11 < 5; ++var11) {
-            var12 = buffer.getByte((byte)-94);
+            var12 = buffer.getByteB();
             if(var12 < 0 || var12 >= Class15.aShortArrayArray344[var11].length) {
                var12 = 0;
             }
@@ -112,25 +112,25 @@ final class Player extends Class140_Sub4 {
             colors[var11] = var12;
          }
 
-         this.renderAnimationId = buffer.getShort(1);
+         this.renderAnimationId = buffer.getShort();
          long var20 = buffer.getLong(-99);
          this.displayName = Objects.requireNonNull(Class41.method1052(var20)).method1545();
-         this.COMBAT_LEVEL = buffer.getByte((byte)-41);
+         this.COMBAT_LEVEL = buffer.getByteB();
          if(var6) {
-            this.anInt3974 = buffer.getShort(1);
+            this.anInt3974 = buffer.getShort();
             this.combatLevel = this.COMBAT_LEVEL;
             this.anInt3970 = -1;
          } else {
             this.anInt3974 = 0;
-            this.combatLevel = buffer.getByte((byte)-119);
-            this.anInt3970 = buffer.getByte((byte)-116);
+            this.combatLevel = buffer.getByteB();
+            this.anInt3970 = buffer.getByteB();
             if(this.anInt3970 == 255) {
                this.anInt3970 = -1;
             }
          }
 
          outfit = this.anInt3969;
-         this.anInt3969 = buffer.getByte((byte)-87);
+         this.anInt3969 = buffer.getByteB();
          if(this.anInt3969 == 0) {
             Class162.method2203(this);
          } else {
@@ -138,10 +138,10 @@ final class Player extends Class140_Sub4 {
             int var16 = this.anInt3963;
             int var17 = this.anInt3973;
             var14 = this.anInt3952;
-            this.anInt3952 = buffer.getShort(1);
-            this.anInt3966 = buffer.getShort(1);
-            this.anInt3963 = buffer.getShort(1);
-            this.anInt3973 = buffer.getShort(1);
+            this.anInt3952 = buffer.getShort();
+            this.anInt3966 = buffer.getShort();
+            this.anInt3963 = buffer.getShort();
+            this.anInt3973 = buffer.getShort();
             if(this.anInt3969 != outfit || var14 != this.anInt3952 || var15 != this.anInt3966 || var16 != this.anInt3963 || var17 != this.anInt3973) {
                Node.method518(this);
             }

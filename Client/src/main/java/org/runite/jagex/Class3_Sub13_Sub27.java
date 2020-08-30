@@ -317,7 +317,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                }
 
                if(0 != var18) {
-                  Class100 var19 = Class3_Sub28_Sub15.method629(-1 + (255 & var18));
+                  Class100 var19 = Class158_Sub1.method629(-1 + (255 & var18));
                   var15[var16][var17] = (1 + var19.anInt1412 << 16) - -var19.anInt1414;
                }
             }
@@ -597,7 +597,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
             Class3_Sub13_Sub1.outgoingBuffer.putByte((byte)-70, var3 + var3 - -3);
          }
 
-         Class3_Sub13_Sub1.outgoingBuffer.putByteA(ObjectDefinition.aBooleanArray1490[82]?1:0, -13071);
+         Class3_Sub13_Sub1.outgoingBuffer.putByteA(ObjectDefinition.aBooleanArray1490[82]?1:0);
          Class3_Sub13_Sub1.outgoingBuffer.putShort(Class131.anInt1716 + var4);
          Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class82.anInt1152 + var5);
          Class45.anInt733 = Class45.anIntArray729[0];
@@ -605,7 +605,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
 
          for(int var6 = 1; var3 > var6; ++var6) {
             --var1;
-            Class3_Sub13_Sub1.outgoingBuffer.putByteA(-var4 + Class3_Sub13_Sub38.anIntArray3456[var1], -13071);
+            Class3_Sub13_Sub1.outgoingBuffer.putByteA(-var4 + Class3_Sub13_Sub38.anIntArray3456[var1]);
             Class3_Sub13_Sub1.outgoingBuffer.putByteS(Class45.anIntArray729[var1] + -var5);
          }
 
@@ -617,9 +617,9 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
    final void method157(int var1, RSByteBuffer var2, boolean var3) {
       try {
          if(var1 == 0) {
-            this.anInt3343 = var2.getByte((byte)-104);
+            this.anInt3343 = var2.getByteB();
          } else if(var1 == 1) {
-            this.aBoolean2375 = var2.getByte((byte) -98) == 1;
+            this.aBoolean2375 = var2.getByteB() == 1;
          }
 
          if(!var3) {

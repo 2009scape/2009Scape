@@ -234,7 +234,7 @@ final class Class3_Sub22 extends Class3 {
 
    static Class75_Sub4 method404(RSByteBuffer var1) {
       try {
-         return new Class75_Sub4(var1.getShort((byte)93), var1.getShort((byte)55), var1.getShort((byte)81), var1.getShort((byte)95), var1.getTriByte((byte)124), var1.getTriByte((byte)120), var1.getByte((byte)-103));
+         return new Class75_Sub4(var1.getShort((byte)93), var1.getShort((byte)55), var1.getShort((byte)81), var1.getShort((byte)95), var1.getTriByte((byte)124), var1.getTriByte((byte)120), var1.getByteB());
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "mf.C(" + (byte) -110 + ',' + (var1 != null?"{...}":"null") + ')');
       }

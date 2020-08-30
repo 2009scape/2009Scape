@@ -5,13 +5,13 @@ final class CS2Script extends Class3 {
    RSInterface aClass11_2438;
    RSString aClass94_2439;
    static int anInt2440 = 0;
-   int anInt2441;
+   int scrollbarScrollAmount;
    static Class93 aClass93_2442 = new Class93(50);
    int anInt2443;
-   int anInt2444;
-   int anInt2445;
+   int inputTextCode;
+   int interfaceButtons;
    boolean aBoolean2446;
-   int anInt2447;
+   int worldSelectCursorPositionX;
    Object[] arguments;
    RSInterface aClass11_2449;
    static Class93 aClass93_2450 = new Class93(64);

@@ -19,11 +19,11 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 			}
 
 			if(var1 == 0) {
-				this.aBoolean3100 = var2.getByte((byte) -117) == 1;
+				this.aBoolean3100 = var2.getByteB() == 1;
 			} else if(var1 == 1) {
-				this.aBoolean3104 = var2.getByte((byte)-93) == 1;
+				this.aBoolean3104 = var2.getByteB() == 1;
 			} else if(var1 == 2) {
-				this.aBoolean2375 = var2.getByte((byte) -45) == 1;
+				this.aBoolean2375 = var2.getByteB() == 1;
 			}
 
 		} catch (RuntimeException var5) {

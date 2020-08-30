@@ -265,7 +265,7 @@ final class Class49 {
                ObjectDefinition.anInt1521 = 2;
             }
 
-            if(Class3_Sub28_Sub15.anInt3689 == 3) {
+            if(Client.anInt3689 == 3) {
                for(int var2 = 0; Class3_Sub28_Sub3.anInt3557 > var2; ++var2) {
                   if(!Class130.aBooleanArray1712[var2]) {
                      if(Class163_Sub1_Sub1.aBooleanArray4008[var2]) {

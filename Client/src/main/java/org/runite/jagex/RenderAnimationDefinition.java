@@ -270,7 +270,7 @@ final class RenderAnimationDefinition {
       try {
 
          while(true) {
-            int opcode = var2.getByte((byte)-34);
+            int opcode = var2.getByteB();
             if(opcode == 0) {
                return;
             }
@@ -285,8 +285,8 @@ final class RenderAnimationDefinition {
    private void parseOpcode(int var1, RSByteBuffer var3) {
       try {
          if(var1 == 1) {
-            this.anInt368 = var3.getShort(1);
-            this.anInt382 = var3.getShort(1);
+            this.anInt368 = var3.getShort();
+            this.anInt382 = var3.getShort();
             if(this.anInt382 == 65535) {
                this.anInt382 = -1;
             }
@@ -295,69 +295,69 @@ final class RenderAnimationDefinition {
                this.anInt368 = -1;
             }
          } else if(var1 == 2) {
-            this.anInt398 = var3.getShort((byte) -106 ^ -105);
+            this.anInt398 = var3.getShort();
          } else if(var1 == 3) {
-            this.anInt372 = var3.getShort((byte) -106 ^ -105);
+            this.anInt372 = var3.getShort();
          } else if (4 == var1) {
-            this.anInt406 = var3.getShort(1);
+            this.anInt406 = var3.getShort();
          } else if (var1 == 5) {
-            this.anInt379 = var3.getShort(1);
+            this.anInt379 = var3.getShort();
          } else if (6 == var1) {
-            this.anInt393 = var3.getShort(1);
+            this.anInt393 = var3.getShort();
          } else if (7 == var1) {
-            this.anInt386 = var3.getShort(1);
+            this.anInt386 = var3.getShort();
          } else if (var1 == 8) {
-            this.anInt373 = var3.getShort(1);
+            this.anInt373 = var3.getShort();
          } else if (var1 == 9) {
-            this.anInt375 = var3.getShort(1);
+            this.anInt375 = var3.getShort();
          } else if (var1 == 26) {
-            this.anInt395 = (short) (4 * var3.getByte((byte) -35));
-            this.anInt381 = (short) (4 * var3.getByte((byte) -110));
+            this.anInt395 = (short) (4 * var3.getByteB());
+            this.anInt381 = (short) (4 * var3.getByteB());
          } else if (var1 == 27) {
             if (this.anIntArrayArray359 == null) {
                this.anIntArrayArray359 = new int[12][];
             }
 
-            int var4 = var3.getByte((byte) -94);
+            int var4 = var3.getByteB();
             this.anIntArrayArray359[var4] = new int[6];
 
             for (int var5 = 0; var5 < 6; ++var5) {
                this.anIntArrayArray359[var4][var5] = var3.getShort((byte) 85);
             }
          } else if (var1 == 29) {
-            this.anInt369 = var3.getByte((byte) -80);
+            this.anInt369 = var3.getByteB();
          } else if (var1 == 30) {
-            this.anInt357 = var3.getShort(1);
+            this.anInt357 = var3.getShort();
          } else if (var1 == 31) {
-            this.anInt387 = var3.getByte((byte) -106);
+            this.anInt387 = var3.getByteB();
          } else if (32 == var1) {
-            this.anInt370 = var3.getShort(1);
+            this.anInt370 = var3.getShort();
          } else if (33 == var1) {
             this.anInt400 = var3.getShort((byte) 41);
          } else if (34 == var1) {
-            this.anInt403 = var3.getByte((byte) -79);
+            this.anInt403 = var3.getByteB();
          } else if (var1 == 35) {
-            this.anInt399 = var3.getShort(1);
+            this.anInt399 = var3.getShort();
          } else if (var1 == 36) {
             this.anInt371 = var3.getShort((byte) 122);
          } else if (var1 == 37) {
-            this.anInt360 = var3.getByte((byte) -48);
+            this.anInt360 = var3.getByteB();
          } else if (var1 == 38) {
-            this.anInt367 = var3.getShort(1);
+            this.anInt367 = var3.getShort();
          } else if (39 == var1) {
-            this.anInt407 = var3.getShort(1);
+            this.anInt407 = var3.getShort();
          } else if (var1 == 40) {
-            this.anInt389 = var3.getShort(1);
+            this.anInt389 = var3.getShort();
          } else if (41 == var1) {
-            this.anInt390 = var3.getShort(1);
+            this.anInt390 = var3.getShort();
          } else if (var1 == 42) {
-            this.anInt364 = var3.getShort(1);
+            this.anInt364 = var3.getShort();
          } else if (var1 == 43) {
-            var3.getShort((byte) -106 ^ -105);
+            var3.getShort();
          } else if (var1 == 44) {
-            var3.getShort(1);
+            var3.getShort();
          } else if (var1 == 45) {
-            var3.getShort(1);
+            var3.getShort();
          }
 
       } catch (RuntimeException var6) {

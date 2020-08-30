@@ -163,7 +163,7 @@ final class Class140_Sub3 extends GameObject {
             Class140_Sub1_Sub1 var36 = (Class140_Sub1_Sub1)var16;
             if(var11 != Class121.method1736(WorldListCountry.localPlane, (byte) -49 ^ -50, var3 - -var35, var24 + var5) || var11 != Class121.method1736(WorldListCountry.localPlane, 1, var23 + var3, var5 - -var25)) {
                for(var28 = 0; var28 < var36.anInt3823; ++var28) {
-                  var36.anIntArray3845[var28] += -var11 + Class121.method1736(WorldListCountry.localPlane, Class93.method1519((byte) -49, -50), var36.anIntArray3822[var28] - -var3, var5 + var36.anIntArray3848[var28]);
+                  var36.anIntArray3845[var28] += -var11 + Class121.method1736(WorldListCountry.localPlane, Class93.bitwiseXOR((byte) -49, -50), var36.anIntArray3822[var28] - -var3, var5 + var36.anIntArray3848[var28]);
                }
 
                var36.aClass6_3835.aBoolean98 = false;

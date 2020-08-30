@@ -59,10 +59,10 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
    static boolean handleWorldListUpdate(byte[] buf) {
       try {
          RSByteBuffer buffer = new RSByteBuffer(buf);
-         int opcode = buffer.getByte((byte)-67);
+         int opcode = buffer.getByteB();
          //System.out.println(opcode);
          if(1 == opcode) {
-            boolean updated = buffer.getByte((byte) -70) == 1;
+            boolean updated = buffer.getByteB() == 1;
             if(updated) {
                Class53.parseWorldList(buffer);
             }
@@ -148,17 +148,17 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
             if(Class113.anInt1559 == this.anInt3280) {
                for(var8 = 0; var8 < Class113.anInt1559; ++var8) {
                   var9 = this.anIntArray3284[var7++];
-                  var6[var8] = Class3_Sub28_Sub15.method633(255, var9) << 4;
-                  var5[var8] = Class3_Sub28_Sub15.method633('\uff00', var9) >> 4;
-                  var4[var8] = Class3_Sub28_Sub15.method633(var9, 16711680) >> 12;
+                  var6[var8] = Class69.bitwiseAnd(255, var9) << 4;
+                  var5[var8] = Class69.bitwiseAnd('\uff00', var9) >> 4;
+                  var4[var8] = Class69.bitwiseAnd(var9, 16711680) >> 12;
                }
             } else {
                for(var8 = 0; Class113.anInt1559 > var8; ++var8) {
                   var9 = this.anInt3280 * var8 / Class113.anInt1559;
                   int var10 = this.anIntArray3284[var7 - -var9];
-                  var6[var8] = Class3_Sub28_Sub15.method633(var10 << 4, 4080);
-                  var5[var8] = Class3_Sub28_Sub15.method633(var10, '\uff00') >> 4;
-                  var4[var8] = Class3_Sub28_Sub15.method633(var10 >> 12, 4080);
+                  var6[var8] = Class69.bitwiseAnd(var10 << 4, 4080);
+                  var5[var8] = Class69.bitwiseAnd(var10, '\uff00') >> 4;
+                  var4[var8] = Class69.bitwiseAnd(var10 >> 12, 4080);
                }
             }
          }
@@ -172,7 +172,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
    final void method157(int var1, RSByteBuffer var2, boolean var3) {
       try {
          if(var1 == 0) {
-            this.anInt3278 = var2.getShort(1);
+            this.anInt3278 = var2.getShort();
          }
 
          if(!var3) {
@@ -187,10 +187,10 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
    static void method281(int var1, int var2) {
       try {
          Class57.anIntArray898[var2] = var1;
-         Class3_Sub7 var3 = (Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1780((long)var2, 0);
+         Class3_Sub7 var3 = (Class3_Sub7) Class86.aClass130_3679.method1780((long)var2, 0);
          if(null == var3) {
             var3 = new Class3_Sub7(4611686018427387905L);
-            Class3_Sub28_Sub15.aClass130_3679.method1779(var3, (long)var2);
+            Class86.aClass130_3679.method1779(var3, (long)var2);
          } else if (var3.aLong2295 != 4611686018427387905L) {
             var3.aLong2295 = Class5.method830((byte) -55) + 500L | 4611686018427387904L;
          }

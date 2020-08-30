@@ -179,7 +179,7 @@ final class Class3_Sub5 extends Class3 {
       try {
          long var2 = Class5.method830((byte)-55);
 
-         for(Class3_Sub7 var4 = !var0?(Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1778(-123):(Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1776(-1 + 56); var4 != null; var4 = (Class3_Sub7)Class3_Sub28_Sub15.aClass130_3679.method1778(-64)) {
+         for(Class3_Sub7 var4 = !var0?(Class3_Sub7) Class86.aClass130_3679.method1778(-123):(Class3_Sub7) Class86.aClass130_3679.method1776(-1 + 56); var4 != null; var4 = (Class3_Sub7) Class86.aClass130_3679.method1778(-64)) {
             if((4611686018427387903L & var4.aLong2295) < var2) {
                if((4611686018427387904L & var4.aLong2295) != 0) {
                   int var5 = (int)var4.aLong71;

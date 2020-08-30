@@ -107,7 +107,7 @@ final class Class3_Sub8 extends Class3 {
             for(var9 = 0; MouseListeningClass.anInt1924 > var9; ++var9) {
                var10 = -(Class102.player.anInt2819 / 32) + 2 + 4 * Class84.anIntArray1163[var9];
                var11 = -(Class102.player.anInt2829 / 32) + 2 + (Class3_Sub28_Sub7_Sub1.anIntArray4050[var9] * 4);
-               ObjectDefinition var20 = Class162.getObjectDefinition(Class3_Sub28_Sub15.anIntArray3693[var9]);
+               ObjectDefinition var20 = Class162.getObjectDefinition(Class3_Sub19.anIntArray3693[var9]);
                if(null != var20.ChildrenIds) {
                   var20 = var20.method1685(var1 + -59);
                   if(null == var20 || var20.MapIcon == -1) {
@@ -167,7 +167,7 @@ final class Class3_Sub8 extends Class3 {
                   boolean var31 = false;
 
                   for(var17 = 0; Node.clanSize > var17; ++var17) {
-                     if(var29 == Class3_Sub28_Sub15.aClass3_Sub19Array3694[var17].aLong71) {
+                     if(var29 == PacketParser.aClass3_Sub19Array3694[var17].aLong71) {
                         var31 = true;
                         break;
                      }

@@ -15,7 +15,7 @@ final class Class133 {
    int anInt1752;
    static int anInt1753;
    static int anInt1754;
-   static int[] anIntArray1755 = new int[128];
+   static int[] inputTextCodeArray = new int[128];
    int anInt1757;
 
 
@@ -23,7 +23,7 @@ final class Class133 {
       try {
          aClass94_1745 = null;
          anIntArray1743 = null;
-         anIntArray1755 = null;
+         inputTextCodeArray = null;
          aClass153_1751 = null;
          aClass11_1749 = null;
          if(var0 != 25) {
@@ -65,7 +65,7 @@ final class Class133 {
    Class133(RSByteBuffer var1) {
       try {
          this.aByte1742 = var1.getByte();
-         this.anInt1752 = var1.getShort(1);
+         this.anInt1752 = var1.getShort();
          this.anInt1757 = var1.getInt();
          this.anInt1747 = var1.getInt();
          this.anInt1746 = var1.getInt();

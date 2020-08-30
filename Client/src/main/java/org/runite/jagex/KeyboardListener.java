@@ -211,7 +211,7 @@ final class KeyboardListener implements KeyListener, FocusListener {
 
           if(Class15.aBoolean346) {
              for(int var3 = 0; var3 < Class3_Sub23.anInt2537; ++var3) {
-                int var4 = Class133.anIntArray1755[var3];
+                int var4 = Class133.inputTextCodeArray[var3];
                 if(98 == var4) {
                    Class3_Sub9.anInt2309 = -16 & Class3_Sub9.anInt2309 + 47;
                 } else if (var4 == 99) {

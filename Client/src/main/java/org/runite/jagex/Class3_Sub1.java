@@ -193,15 +193,11 @@ final class Class3_Sub1 extends Class3 {
       }
    }
 
-   final int method101(int var1) {
+   final int method101() {
       try {
-         if(var1 > -51) {
-            anInt2208 = -42;
-         }
-
-         return Class3_Sub28_Sub15.method630(this.anInt2205);
+         return (127 & this.anInt2205 >> 11);
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "bf.B(" + var1 + ')');
+         throw Class44.clientError(var3, "bf.B(" + ')');
       }
    }
 

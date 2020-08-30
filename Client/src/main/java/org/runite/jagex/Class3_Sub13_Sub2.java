@@ -14,11 +14,11 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
    final void method157(int var1, RSByteBuffer var2, boolean var3) {
       try {
          if(0 == var1) {
-            this.anInt3043 = var2.getShort(1);
+            this.anInt3043 = var2.getShort();
          } else if(1 == var1) {
-            this.anInt3046 = var2.getShort(1);
+            this.anInt3046 = var2.getShort();
          } else if (2 == var1) {
-             this.aBoolean2375 = var2.getByte((byte) -76) == 1;
+             this.aBoolean2375 = var2.getByteB() == 1;
          }
 
          //aClass94_3042 = (RSString)null;
@@ -225,7 +225,7 @@ final class Class3_Sub13_Sub2 extends Class3_Sub13 {
             }
          }
 
-         Class3_Sub28_Sub15.aClass130_3679 = new Class130(16);
+         Class86.aClass130_3679 = new Class130(16);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "aj.O(" + var0 + ')');
       }

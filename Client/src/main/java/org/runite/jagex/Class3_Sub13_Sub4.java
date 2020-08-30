@@ -241,9 +241,9 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
          }
 
          if(var1 == 0) {
-            this.aBoolean3065 = var2.getByte((byte)-101) == 1;
+            this.aBoolean3065 = var2.getByteB() == 1;
          } else if(var1 == 1) {
-            this.anInt3058 = var2.getByte((byte)-96);
+            this.anInt3058 = var2.getByteB();
          } else if(var1 == 2) {
             this.anInt3062 = var2.getShort((byte)30);
             if(0 > this.anInt3062) {
@@ -254,13 +254,13 @@ final class Class3_Sub13_Sub4 extends Class3_Sub13 {
                }
             }
          } else if(var1 == 3) {
-            this.anInt3060 = this.anInt3056 = var2.getByte((byte)-38);
+            this.anInt3060 = this.anInt3056 = var2.getByteB();
          } else if(var1 == 4) {
-            this.anInt3067 = var2.getByte((byte)-94);
+            this.anInt3067 = var2.getByteB();
          } else if(var1 == 5) {
-            this.anInt3060 = var2.getByte((byte)-124);
+            this.anInt3060 = var2.getByteB();
          } else if(var1 == 6) {
-            this.anInt3056 = var2.getByte((byte)-66);
+            this.anInt3056 = var2.getByteB();
          }
 
       } catch (RuntimeException var5) {

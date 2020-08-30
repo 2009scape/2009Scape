@@ -232,15 +232,15 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
       try {
          if(var3) {
             if(var1 == 0) {
-               int var4 = var2.getByte((byte)-68);
+               int var4 = var2.getByteB();
                if(var4 == 0) {
-                  this.anIntArrayArray3438 = new int[var2.getByte((byte)-126)][4];
+                  this.anIntArrayArray3438 = new int[var2.getByteB()][4];
 
                   for(int var5 = 0; var5 < this.anIntArrayArray3438.length; ++var5) {
-                     this.anIntArrayArray3438[var5][0] = var2.getShort(1);
-                     this.anIntArrayArray3438[var5][1] = var2.getByte((byte)-81) << 4;
-                     this.anIntArrayArray3438[var5][2] = var2.getByte((byte)-63) << 4;
-                     this.anIntArrayArray3438[var5][3] = var2.getByte((byte)-28) << 4;
+                     this.anIntArrayArray3438[var5][0] = var2.getShort();
+                     this.anIntArrayArray3438[var5][1] = var2.getByteB() << 4;
+                     this.anIntArrayArray3438[var5][2] = var2.getByteB() << 4;
+                     this.anIntArrayArray3438[var5][3] = var2.getByteB() << 4;
                   }
                } else {
                   this.method345(var4);
@@ -370,9 +370,9 @@ final class Class3_Sub13_Sub37 extends Class3_Sub13 {
                }
 
                var4 = this.anIntArray3443[var4];
-               var6[var9] = Class3_Sub28_Sub15.method633(var4, 16711680) >> 12;
-               var7[var9] = Class3_Sub28_Sub15.method633(4080, var4 >> 4);
-               var8[var9] = Class3_Sub28_Sub15.method633(255, var4) << 4;
+               var6[var9] = Class69.bitwiseAnd(var4, 16711680) >> 12;
+               var7[var9] = Class69.bitwiseAnd(4080, var4 >> 4);
+               var8[var9] = Class69.bitwiseAnd(255, var4) << 4;
             }
          }
 

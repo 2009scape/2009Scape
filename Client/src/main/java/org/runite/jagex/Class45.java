@@ -22,8 +22,8 @@ final class Class45 {
 			//Ordinal: 0 Chat
 			if(0 != (var0 & 128)) {
 				var4 = GraphicDefinition.incomingBuffer.getLEShort((byte) -79 + -47);
-				chatIcon = GraphicDefinition.incomingBuffer.getByte((byte)-54);
-				int var6 = GraphicDefinition.incomingBuffer.getByte((byte)-57);
+				chatIcon = GraphicDefinition.incomingBuffer.getByteB();
+				int var6 = GraphicDefinition.incomingBuffer.getByteB();
 				var7 = GraphicDefinition.incomingBuffer.index;
 				boolean var8 = ('\u8000' & var4) != 0;
 				if(null != var3.displayName && var3.class52 != null) {
@@ -84,12 +84,12 @@ final class Class45 {
 
 			//Ordinal: 2 Animation
 			if((var0 & 8) != 0) {
-				var4 = GraphicDefinition.incomingBuffer.getShort(1);
+				var4 = GraphicDefinition.incomingBuffer.getShort();
 				if(var4 == 65535) {
 					var4 = -1;
 				}
 
-				chatIcon = GraphicDefinition.incomingBuffer.getByte((byte)-112);
+				chatIcon = GraphicDefinition.incomingBuffer.getByteB();
 				Class3_Sub28_Sub14.method628(chatIcon, var4, var3);
 			}
 
@@ -114,9 +114,9 @@ final class Class45 {
 			//Ordinal: 5 Force movement
 			if((1024 & var0) != 0) {
 				var3.anInt2784 = GraphicDefinition.incomingBuffer.getByteC();
-				var3.anInt2835 = GraphicDefinition.incomingBuffer.getByte((byte)-24);
+				var3.anInt2835 = GraphicDefinition.incomingBuffer.getByteB();
 				var3.anInt2823 = GraphicDefinition.incomingBuffer.getByteA((byte)-106);
-				var3.anInt2798 = GraphicDefinition.incomingBuffer.getByte((byte)-37);
+				var3.anInt2798 = GraphicDefinition.incomingBuffer.getByteB();
 				var3.anInt2800 = GraphicDefinition.incomingBuffer.getLEShort(-90) + Class44.anInt719;
 				var3.anInt2790 = GraphicDefinition.incomingBuffer.getLEShort(-99) - -Class44.anInt719;
 				var3.anInt2840 = GraphicDefinition.incomingBuffer.getByteC();
@@ -161,7 +161,7 @@ final class Class45 {
 
 					var18[var22] = var23;
 					var17[var22] = GraphicDefinition.incomingBuffer.getByteA((byte)125);
-					var20[var22] = GraphicDefinition.incomingBuffer.getShort(Class93.method1519((byte) -79, -80));
+					var20[var22] = GraphicDefinition.incomingBuffer.getShort();
 				}
 
 				Class75_Sub1.method1342(var17, var18, var3, var20);
@@ -205,7 +205,7 @@ final class Class45 {
 
 			//Ordinal: 10 Face location
 			if((var0 & 64) != 0) {
-				var3.anInt2786 = GraphicDefinition.incomingBuffer.getShort(1);
+				var3.anInt2786 = GraphicDefinition.incomingBuffer.getShort();
 				var3.anInt2762 = GraphicDefinition.incomingBuffer.getLEShortA((byte)-107);
 			}
 
@@ -232,7 +232,7 @@ final class Class45 {
 		try {
 			RSByteBuffer var2 = new RSByteBuffer(var0);
 			var2.index = -2 + var0.length;
-			Class95.anInt1338 = var2.getShort(1);
+			Class95.anInt1338 = var2.getShort();
 			Class3_Sub13_Sub6.anIntArray3076 = new int[Class95.anInt1338];
 			Class140_Sub7.anIntArray2931 = new int[Class95.anInt1338];
 			Class164.anIntArray2048 = new int[Class95.anInt1338];
@@ -241,13 +241,13 @@ final class Class45 {
 			RSByteBuffer.anIntArray2591 = new int[Class95.anInt1338];
 			Class163_Sub1.aByteArrayArray2987 = new byte[Class95.anInt1338][];
 			var2.index = -(8 * Class95.anInt1338) + var0.length - 7;
-			Class3_Sub15.anInt2426 = var2.getShort(1);
-			Class133.anInt1748 = var2.getShort(1);
-			int var3 = (var2.getByte((byte)-43) & 255) - -1;
+			Class3_Sub15.anInt2426 = var2.getShort();
+			Class133.anInt1748 = var2.getShort();
+			int var3 = (var2.getByteB() & 255) - -1;
 
 			int var4;
 			for(var4 = 0; Class95.anInt1338 > var4; ++var4) {
-				Class164.anIntArray2048[var4] = var2.getShort(1);
+				Class164.anIntArray2048[var4] = var2.getShort();
 			}
 
 			if(var1 < 11) {
@@ -255,15 +255,15 @@ final class Class45 {
 			}
 
 			for(var4 = 0; Class95.anInt1338 > var4; ++var4) {
-				RSByteBuffer.anIntArray2591[var4] = var2.getShort(1);
+				RSByteBuffer.anIntArray2591[var4] = var2.getShort();
 			}
 
 			for(var4 = 0; Class95.anInt1338 > var4; ++var4) {
-				Class140_Sub7.anIntArray2931[var4] = var2.getShort(1);
+				Class140_Sub7.anIntArray2931[var4] = var2.getShort();
 			}
 
 			for(var4 = 0; Class95.anInt1338 > var4; ++var4) {
-				Class3_Sub13_Sub6.anIntArray3076[var4] = var2.getShort(1);
+				Class3_Sub13_Sub6.anIntArray3076[var4] = var2.getShort();
 			}
 
 			var2.index = -(8 * Class95.anInt1338) + var0.length + -7 + 3 + -(var3 * 3);
@@ -287,7 +287,7 @@ final class Class45 {
 				Class163_Sub1.aByteArrayArray2987[var4] = var8;
 				byte[] var9 = new byte[var7];
 				Class163_Sub3.aByteArrayArray3005[var4] = var9;
-				int var11 = var2.getByte((byte)-64);
+				int var11 = var2.getByteB();
 				int var12;
 				if((1 & var11) == 0) {
 					for(var12 = 0; var12 < var7; ++var12) {

@@ -164,8 +164,8 @@ final class Class81 {
                RSByteBuffer var7 = new RSByteBuffer(var2.getFile(var3, var4[var6]));
                var5.aClass94Array1721[var6] = var7.getString();
                var5.aByteArray1730[var6] = var7.getByte();
-               var5.aShortArray1727[var6] = (short)var7.getShort(1);
-               var5.aShortArray1718[var6] = (short)var7.getShort(1);
+               var5.aShortArray1727[var6] = (short)var7.getShort();
+               var5.aShortArray1718[var6] = (short)var7.getShort();
                var5.anIntArray1725[var6] = var7.getInt();
             }
 

@@ -177,11 +177,11 @@ final class Class3_Sub13_Sub24 extends Class3_Sub13 {
    final void method157(int var1, RSByteBuffer var2, boolean var3) {
       try {
          if(var1 == 0) {
-            this.anInt3294 = var2.getByte((byte)-50);
+            this.anInt3294 = var2.getByteB();
          } else if(var1 == 1) {
-            this.anInt3297 = var2.getByte((byte)-118);
+            this.anInt3297 = var2.getByteB();
          } else if (2 == var1) {
-            this.aBoolean2375 = var2.getByte((byte) -51) == 1;
+            this.aBoolean2375 = var2.getByteB() == 1;
          }
 
          if(!var3) {

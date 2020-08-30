@@ -259,16 +259,16 @@ class Class127 {
 
                   Class3_Sub15.aClass89_2429.readBytes(0, 14, GraphicDefinition.incomingBuffer.buffer);
                   GraphicDefinition.incomingBuffer.index = 0;
-                  Class3_Sub13_Sub26.rights = GraphicDefinition.incomingBuffer.getByte((byte)-34);
-                  Class3_Sub28_Sub19.anInt3775 = GraphicDefinition.incomingBuffer.getByte((byte)-86);
-                  Class3_Sub15.aBoolean2433 = GraphicDefinition.incomingBuffer.getByte((byte)-67) == 1;
-                  Class121.aBoolean1641 = 1 == GraphicDefinition.incomingBuffer.getByte((byte)-25);
-                  Class3_Sub28_Sub10_Sub1.aBoolean4063 = GraphicDefinition.incomingBuffer.getByte((byte) -39) == 1;
-                  Class3_Sub13_Sub14.aBoolean3166 = 1 == GraphicDefinition.incomingBuffer.getByte((byte)-28);
-                  Canvas_Sub2.aBoolean29 = GraphicDefinition.incomingBuffer.getByte((byte)-120) == 1;
-                  Class3_Sub1.localIndex = GraphicDefinition.incomingBuffer.getShort(var0 + 10);
-                  Class3_Sub13_Sub29.disableGEBoxes = GraphicDefinition.incomingBuffer.getByte((byte)-127) == 1;
-                  Class2.isMember = GraphicDefinition.incomingBuffer.getByte((byte) -112) == 1;
+                  Class3_Sub13_Sub26.rights = GraphicDefinition.incomingBuffer.getByteB();
+                  Class3_Sub28_Sub19.anInt3775 = GraphicDefinition.incomingBuffer.getByteB();
+                  Class3_Sub15.aBoolean2433 = GraphicDefinition.incomingBuffer.getByteB() == 1;
+                  Class121.aBoolean1641 = 1 == GraphicDefinition.incomingBuffer.getByteB();
+                  Class3_Sub28_Sub10_Sub1.aBoolean4063 = GraphicDefinition.incomingBuffer.getByteB() == 1;
+                  Class3_Sub13_Sub14.aBoolean3166 = 1 == GraphicDefinition.incomingBuffer.getByteB();
+                  Canvas_Sub2.aBoolean29 = GraphicDefinition.incomingBuffer.getByteB() == 1;
+                  Class3_Sub1.localIndex = GraphicDefinition.incomingBuffer.getShort();
+                  Class3_Sub13_Sub29.disableGEBoxes = GraphicDefinition.incomingBuffer.getByteB() == 1;
+                  Class2.isMember = GraphicDefinition.incomingBuffer.getByteB() == 1;
                   Class113.method1702(Class2.isMember);
                   Class8.method845(Class2.isMember);
                   if(!Class3_Sub28_Sub19.aBoolean3779) {
@@ -287,7 +287,7 @@ class Class127 {
 
                   RSString.incomingOpcode = GraphicDefinition.incomingBuffer.getOpcode();
                   dynamic = RSString.incomingOpcode == 214;
-                  Class130.incomingPacketLength = GraphicDefinition.incomingBuffer.getShort(1);
+                  Class130.incomingPacketLength = GraphicDefinition.incomingBuffer.getShort();
                   Class3_Sub13_Sub25.loginStage = 9;
                }
 

@@ -68,9 +68,9 @@ final class Canvas_Sub2 extends Canvas {
           while(var1 < Class66.maskUpdateCount) {
             int var2 = Class21.maskUpdateIndexes[var1];
             Player var3 = Class3_Sub13_Sub22.players[var2];
-            int var4 = GraphicDefinition.incomingBuffer.getByte((byte)-43);
+            int var4 = GraphicDefinition.incomingBuffer.getByteB();
             if((16 & var4) != 0) {
-               var4 += GraphicDefinition.incomingBuffer.getByte((byte)-43) << 8;
+               var4 += GraphicDefinition.incomingBuffer.getByteB() << 8;
             }
 
             Class45.parsePlayerMask(var4, var2, var3);
@@ -107,7 +107,7 @@ final class Canvas_Sub2 extends Canvas {
             for(int var12 = 0; var12 < 8; ++var12) {
                for(var13 = 0; 8 > var13; ++var13) {
                   if(0 < var1 - -var12 && var12 + var1 < 103 && var13 + var4 > 0 && var4 + var13 < 103) {
-                     var3[var2].anIntArrayArray1304[var12 + var1][var13 + var4] = Class3_Sub28_Sub15.method633(var3[var2].anIntArrayArray1304[var12 + var1][var13 + var4], -16777217);
+                     var3[var2].anIntArrayArray1304[var12 + var1][var13 + var4] = Class69.bitwiseAnd(var3[var2].anIntArrayArray1304[var12 + var1][var13 + var4], -16777217);
                   }
                }
             }
@@ -141,7 +141,7 @@ final class Canvas_Sub2 extends Canvas {
          int var22;
          int var29;
          while(var25.index < var25.buffer.length) {
-            var14 = var25.getByte((byte)-74);
+            var14 = var25.getByteB();
             if(var14 != 129) {
                --var25.index;
                break;
@@ -219,7 +219,7 @@ final class Canvas_Sub2 extends Canvas {
             Class86 var26 = null;
 
             while(var25.buffer.length > var25.index) {
-               var15 = var25.getByte((byte)-33);
+               var15 = var25.getByteB();
                if(var15 == 0) {
                   var26 = new Class86(var25);
                } else {
@@ -227,12 +227,12 @@ final class Canvas_Sub2 extends Canvas {
                      throw new IllegalStateException();
                   }
 
-                  var28 = var25.getByte((byte)-71);
+                  var28 = var25.getByteB();
                   if(var28 > 0) {
                      for(var17 = 0; var28 > var17; ++var17) {
                         Class43 var30 = new Class43(var25);
                         if(var30.anInt705 == 31) {
-                           Class57 var31 = Class81.method1401(var25.getShort(1));
+                           Class57 var31 = Class81.method1401(var25.getShort());
                            var30.method1060((byte)123, var31.anInt896, var31.anInt908, var31.anInt899, var31.anInt907);
                         }
 

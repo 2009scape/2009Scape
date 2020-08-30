@@ -55,9 +55,9 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
          }
 
          if(var1 == 0) {
-            this.anInt3149 = var2.getByte((byte)-69);
+            this.anInt3149 = var2.getByteB();
          } else if(1 == var1) {
-            this.anInt3147 = var2.getByte((byte)-80);
+            this.anInt3147 = var2.getByteB();
          }
 
       } catch (RuntimeException var5) {
@@ -378,7 +378,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
 
                if(Class15.aBoolean346) {
                   for(var1 = 0; Class3_Sub23.anInt2537 > var1; ++var1) {
-                     var2 = Class133.anIntArray1755[var1];
+                     var2 = Class133.inputTextCodeArray[var1];
                      if(98 == var2 || var2 == 99 || var2 == 96 || var2 == 97) {
                         Class3_Sub28_Sub10_Sub2.aBoolean4068 = true;
                         break;
@@ -432,7 +432,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
 
                      for(var1 = Class3_Sub5.method115(true); var1 != -1; var1 = Class3_Sub5.method115(false)) {
                         Class46.method1087(40, var1);
-                        Class44.anIntArray726[Class3_Sub28_Sub15.method633(Class36.anInt641++, 31)] = var1;
+                        Class44.anIntArray726[Class69.bitwiseAnd(Class36.anInt641++, 31)] = var1;
                      }
 
                      int nodeModelID;
@@ -441,10 +441,10 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                         var4 = var16.f();
                         if(1 == var3) {
                            NPCDefinition.anIntArray1277[var4] = var16.anInt3598;
-                           NPC.anIntArray3986[Class3_Sub28_Sub15.method633(31, PacketParser.anInt87++)] = var4;
+                           NPC.anIntArray3986[Class69.bitwiseAnd(31, PacketParser.anInt87++)] = var4;
                         } else if(var3 == 2) {
                            Class132.aClass94Array1739[var4] = var16.aClass94_3599;
-                           Class163_Sub2_Sub1.anIntArray4025[Class3_Sub28_Sub15.method633(31, Class3_Sub9.anInt2317++)] = var4;
+                           Class163_Sub2_Sub1.anIntArray4025[Class69.bitwiseAnd(31, Class3_Sub9.anInt2317++)] = var4;
                         } else {
                            RSInterface var20;
                            if(var3 == 3) {
@@ -643,7 +643,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                      RSInterface var21 = Class20.aClass11_439;
 
                      for(Class20.aClass11_439 = null; Class3_Sub28_Sub10_Sub1.method591(72) && 128 > Class3_Sub23.anInt2537; ++Class3_Sub23.anInt2537) {
-                        Class133.anIntArray1755[Class3_Sub23.anInt2537] = Class3_Sub28_Sub9.anInt3624;
+                        Class133.inputTextCodeArray[Class3_Sub23.anInt2537] = Class3_Sub28_Sub9.anInt3624;
                         Class120.anIntArray1638[Class3_Sub23.anInt2537] = Class3_Sub13_Sub27.anInt3342;
                      }
 
@@ -694,7 +694,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                        } else if(CS2Script.anInt2440 == 2) {
                                           if(Class27.anInt515 != -1) {
                                              Class3_Sub13_Sub1.outgoingBuffer.putOpcode(131);
-                                             Class3_Sub13_Sub1.outgoingBuffer.putIntB(-123, Class54.anInt872);
+                                             Class3_Sub13_Sub1.outgoingBuffer.putIntB(-123, ScriptContainer.anInt872);
                                              Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class131.anInt1716 + Class27.anInt515);
                                              Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(RSInterface.anInt278);
                                              Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class66.anInt999 + Class82.anInt1152);

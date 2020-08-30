@@ -107,7 +107,7 @@ final class Class75_Sub3 extends Class75 {
                   byte[] var5 = Class163_Sub3.aByteArrayArray3005[var2];
 
                   for(int var7 = 0; var3 > var7; ++var7) {
-                     var6[var7] = Class3_Sub13_Sub29.bitwiseOr(Class3_Sub13_Sub38.spritePalette[Class3_Sub28_Sub15.method633(var4[var7], 255)], Class3_Sub28_Sub15.method633(-16777216, var5[var7] << 24));
+                     var6[var7] = Class3_Sub13_Sub29.bitwiseOr(Class3_Sub13_Sub38.spritePalette[Class69.bitwiseAnd(var4[var7], 255)], Class69.bitwiseAnd(-16777216, var5[var7] << 24));
                   }
 
                   if(HDToolKit.highDetail) {
@@ -119,7 +119,7 @@ final class Class75_Sub3 extends Class75 {
                   int[] var9 = new int[var3];
 
                   for(int var10 = 0; var3 > var10; ++var10) {
-                     var9[var10] = Class3_Sub13_Sub38.spritePalette[Class3_Sub28_Sub15.method633(var4[var10], 255)];
+                     var9[var10] = Class3_Sub13_Sub38.spritePalette[Class69.bitwiseAnd(var4[var10], 255)];
                   }
 
                   if(HDToolKit.highDetail) {

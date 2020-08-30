@@ -117,7 +117,7 @@ final class Class3_Sub14 extends Class3 {
 
          int var6;
          do {
-            var6 = var2.getByte((byte)-48);
+            var6 = var2.getByteB();
             var5 += var6;
          } while(var6 >= 255);
 

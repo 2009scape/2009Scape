@@ -22,6 +22,28 @@ public final class Client extends GameShell {
 	static int[] anIntArray2200;
 	static int ZOOM = 600;
 	static int currentPort;
+	static int anInt3689 = 0;
+	static int LoadingStageNumber = 10;
+
+	static void method631(CacheIndex var1) {
+	   try {
+		  Class3_Sub28_Sub5.aClass153_3580 = var1;
+		  ScriptContainer.anInt869 = Class3_Sub28_Sub5.aClass153_3580.getFileAmount(4, (byte)112);
+	   } catch (RuntimeException var3) {
+		  throw Class44.clientError(var3, "qc.D(" + false + ',' + (var1 != null?"{...}":"null") + ')');
+	   }
+	}
+
+	public static void method632() {
+	   try {
+		  PacketParser.aClass3_Sub19Array3694 = null;
+		  Class86.aClass130_3679 = null;
+		  Class3_Sub19.anIntArray3693 = null;
+
+	   } catch (RuntimeException var2) {
+		  throw Class44.clientError(var2, "qc.E(" + ')');
+	   }
+	}
 
 
 	final void method38() {
@@ -86,7 +108,7 @@ public final class Client extends GameShell {
 					}
 				}
 				if(Class143.loadingStage == 0) {
-					Class3_Sub28_Sub1.updateLoadingBar((Color)null, var10, Class3_Sub17.aClass94_2464, Class3_Sub28_Sub15.LoadingStageNumber);
+					Class3_Sub28_Sub1.updateLoadingBar((Color)null, var10, Class3_Sub17.aClass94_2464, LoadingStageNumber);
 				} else if(5 == Class143.loadingStage) {
 					Class3_Sub23.method406((byte)117, false, Class168.aClass3_Sub28_Sub17_2096);
 				} else if(Class143.loadingStage == 10) {
@@ -123,7 +145,7 @@ public final class Client extends GameShell {
 					}
 				} else {
 					Graphics var11;
-					if((Class143.loadingStage == 30 || 10 == Class143.loadingStage) && Class3_Sub28_Sub15.anInt3689 == 0 && !var10) {
+					if((Class143.loadingStage == 30 || 10 == Class143.loadingStage) && anInt3689 == 0 && !var10) {
 						try {
 							var11 = Class3_Sub28_Sub12.aCanvas3648.getGraphics();
 
@@ -429,6 +451,7 @@ public final class Client extends GameShell {
 		}
 	}
 
+	// This seems to invalidate a bunch of stuff.
 	final void method33() {
 		try {
 			method43(true);
@@ -564,7 +587,7 @@ public final class Client extends GameShell {
 			Class15.timeZone = null;
 			Class88.method1457();
 			Class137.method1818(false);
-			Class54.aClass153_878 = null;
+			ScriptContainer.aClass153_878 = null;
 			Class10.method853(0);
 			CS2Script.method376(false);
 			GameObject.method1860(0);
@@ -594,7 +617,7 @@ public final class Client extends GameShell {
 			Class3_Sub25.method510(-128);
 			Class3_Sub9.method136(-3);
 			Class39.method1034(8642);
-			Class3_Sub28_Sub15.method632(-30497);
+			method632();
 			Class116.method1715();
 			Class161.method2202(-196);
 			Class81.method1402((byte)73);
@@ -755,7 +778,7 @@ public final class Client extends GameShell {
 	private void method47() {
 		try {
 			for(Class3_Sub23.anInt2537 = 0; Class3_Sub28_Sub10_Sub1.method591(83) && Class3_Sub23.anInt2537 < 128; ++Class3_Sub23.anInt2537) {
-				Class133.anIntArray1755[Class3_Sub23.anInt2537] = Class3_Sub28_Sub9.anInt3624;
+				Class133.inputTextCodeArray[Class3_Sub23.anInt2537] = Class3_Sub28_Sub9.anInt3624;
 				Class120.anIntArray1638[Class3_Sub23.anInt2537] = Class3_Sub13_Sub27.anInt3342;
 			}
 
@@ -1195,7 +1218,7 @@ public final class Client extends GameShell {
 								var30 = new CS2Script();
 								var30.aBoolean2446 = true;
 								var30.aClass11_2449 = inter;
-								var30.anInt2441 = Class29.anInt561;
+								var30.scrollbarScrollAmount = Class29.anInt561;
 								var30.arguments = inter.anObjectArray183;
 								Class110.aClass61_1471.method1215(var30);
 							}
@@ -1251,7 +1274,7 @@ public final class Client extends GameShell {
 										}
 
 										if(Class3_Sub19.anInt2475 == 2) {
-											Class54.method1175(Class3_Sub28_Sub10_Sub2.anInt4073 + (int)((double)(Class144.anInt1881 - Class126.anInt1676) * 2.0D / (double)NPC.aFloat3979));
+											ScriptContainer.method1175(Class3_Sub28_Sub10_Sub2.anInt4073 + (int)((double)(Class144.anInt1881 - Class126.anInt1676) * 2.0D / (double)NPC.aFloat3979));
 											Class3_Sub13_Sub39.method354(Class38.anInt660 + (int)((double)(Class95.anInt1336 - Class130.anInt1709) * 2.0D / (double)NPC.aFloat3979));
 										}
 										continue;
@@ -1282,8 +1305,8 @@ public final class Client extends GameShell {
 									var30 = new CS2Script();
 									var30.aBoolean2446 = true;
 									var30.aClass11_2449 = inter;
-									var30.anInt2447 = Class163_Sub1.anInt2993 - var10;
-									var30.anInt2441 = Class38_Sub1.anInt2614 - var11;
+									var30.worldSelectCursorPositionX = Class163_Sub1.anInt2993 - var10;
+									var30.scrollbarScrollAmount = Class38_Sub1.anInt2614 - var11;
 									var30.arguments = inter.anObjectArray165;
 									Class110.aClass61_1471.method1215(var30);
 								}
@@ -1293,8 +1316,8 @@ public final class Client extends GameShell {
 								var30 = new CS2Script();
 								var30.aBoolean2446 = true;
 								var30.aClass11_2449 = inter;
-								var30.anInt2447 = Class126.anInt1676 - var10;
-								var30.anInt2441 = Class130.anInt1709 - var11;
+								var30.worldSelectCursorPositionX = Class126.anInt1676 - var10;
+								var30.scrollbarScrollAmount = Class130.anInt1709 - var11;
 								var30.arguments = inter.anObjectArray170;
 								Class110.aClass61_1471.method1215(var30);
 							}
@@ -1305,8 +1328,8 @@ public final class Client extends GameShell {
 									var30 = new CS2Script();
 									var30.aBoolean2446 = true;
 									var30.aClass11_2449 = inter;
-									var30.anInt2447 = Class126.anInt1676 - var10;
-									var30.anInt2441 = Class130.anInt1709 - var11;
+									var30.worldSelectCursorPositionX = Class126.anInt1676 - var10;
+									var30.scrollbarScrollAmount = Class130.anInt1709 - var11;
 									var30.arguments = inter.anObjectArray239;
 									Class65.aClass61_983.method1215(var30);
 								}
@@ -1316,8 +1339,8 @@ public final class Client extends GameShell {
 								var30 = new CS2Script();
 								var30.aBoolean2446 = true;
 								var30.aClass11_2449 = inter;
-								var30.anInt2447 = Class126.anInt1676 - var10;
-								var30.anInt2441 = Class130.anInt1709 - var11;
+								var30.worldSelectCursorPositionX = Class126.anInt1676 - var10;
+								var30.scrollbarScrollAmount = Class130.anInt1709 - var11;
 								var30.arguments = inter.anObjectArray180;
 								Class110.aClass61_1471.method1215(var30);
 							}
@@ -1328,8 +1351,8 @@ public final class Client extends GameShell {
 									var30 = new CS2Script();
 									var30.aBoolean2446 = true;
 									var30.aClass11_2449 = inter;
-									var30.anInt2447 = Class126.anInt1676 - var10;
-									var30.anInt2441 = Class130.anInt1709 - var11;
+									var30.worldSelectCursorPositionX = Class126.anInt1676 - var10;
+									var30.scrollbarScrollAmount = Class130.anInt1709 - var11;
 									var30.arguments = inter.anObjectArray248;
 									Class110.aClass61_1471.method1215(var30);
 								}
@@ -1339,8 +1362,8 @@ public final class Client extends GameShell {
 								var30 = new CS2Script();
 								var30.aBoolean2446 = true;
 								var30.aClass11_2449 = inter;
-								var30.anInt2447 = Class126.anInt1676 - var10;
-								var30.anInt2441 = Class130.anInt1709 - var11;
+								var30.worldSelectCursorPositionX = Class126.anInt1676 - var10;
+								var30.scrollbarScrollAmount = Class130.anInt1709 - var11;
 								var30.arguments = inter.anObjectArray276;
 								Class110.aClass61_1471.method1215(var30);
 							}
@@ -1351,8 +1374,8 @@ public final class Client extends GameShell {
 									var30 = new CS2Script();
 									var30.aBoolean2446 = true;
 									var30.aClass11_2449 = inter;
-									var30.anInt2447 = Class126.anInt1676 - var10;
-									var30.anInt2441 = Class130.anInt1709 - var11;
+									var30.worldSelectCursorPositionX = Class126.anInt1676 - var10;
+									var30.scrollbarScrollAmount = Class130.anInt1709 - var11;
 									var30.arguments = inter.anObjectArray281;
 									Class65.aClass61_983.method1215(var30);
 								}
@@ -1536,7 +1559,7 @@ public final class Client extends GameShell {
 								for(var19 = 0; var19 < Class3_Sub23.anInt2537; ++var19) {
 									CS2Script var31 = new CS2Script();
 									var31.aClass11_2449 = inter;
-									var31.anInt2444 = Class133.anIntArray1755[var19];
+									var31.inputTextCode = Class133.inputTextCodeArray[var19];
 									var31.anInt2443 = Class120.anIntArray1638[var19];
 									var31.arguments = inter.anObjectArray220;
 									Class110.aClass61_1471.method1215(var31);
@@ -1627,12 +1650,12 @@ public final class Client extends GameShell {
 							Class91.aLong1310 = var4;
 						}
 
-						Class3_Sub28_Sub15.LoadingStageNumber = 5;
+						LoadingStageNumber = 5;
 						Class3_Sub17.aClass94_2464 = TextCore.AllocatingMemory;
 					} else {
 						Class3_Sub17.aClass94_2464 = TextCore.AllocatedMemory;
 						Class96.anInt1354 = 10;
-						Class3_Sub28_Sub15.LoadingStageNumber = 5;
+						LoadingStageNumber = 5;
 					}
 				} else {
 					int var2;
@@ -1643,7 +1666,7 @@ public final class Client extends GameShell {
 							Class86.aClass91Array1182[var2] = new Class91();
 						}
 
-						Class3_Sub28_Sub15.LoadingStageNumber = 10;
+						LoadingStageNumber = 10;
 						Class96.anInt1354 = 30;
 						Class3_Sub17.aClass94_2464 = TextCore.CreatedWorld;
 					} else if(Class96.anInt1354 == 30) {
@@ -1681,12 +1704,12 @@ public final class Client extends GameShell {
 							Class97.aClass153_1376 = Class8.getCacheIndex(true, true, true, 26);
 							Class132.aClass153_1735 = Class8.getCacheIndex(false, true, true, 27);
 							Class132.libIndex = Class8.getCacheIndex(false, true, true, 28);
-							Class3_Sub28_Sub15.LoadingStageNumber = 15;
+							LoadingStageNumber = 15;
 							Class3_Sub17.aClass94_2464 = TextCore.ConxUpdateServer;
 							Class96.anInt1354 = 40;
 						} else {
 							Class3_Sub17.aClass94_2464 = TextCore.LoadingConnecting;
-							Class3_Sub28_Sub15.LoadingStageNumber = 12;
+							LoadingStageNumber = 12;
 						}
 					} else if(Class96.anInt1354 == 40) {
 						var2 = 0;
@@ -1700,9 +1723,9 @@ public final class Client extends GameShell {
 								Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.CheckingForUpdates, Class72.method1298((byte)9, var2), Class24.aClass94_468}, (byte)-93);
 							}
 
-							Class3_Sub28_Sub15.LoadingStageNumber = 20;
+							LoadingStageNumber = 20;
 						} else {
-							Class3_Sub28_Sub15.LoadingStageNumber = 20;
+							LoadingStageNumber = 20;
 							Class3_Sub17.aClass94_2464 = TextCore.LoadedUpdateList;
 							Class39.method1039(Class140_Sub6.spritesCacheIndex);
 							Class97.method1593(111, Class140_Sub6.spritesCacheIndex);
@@ -1721,7 +1744,7 @@ public final class Client extends GameShell {
 						Class3_Sub21.aClass155_2491.method2154(-128, Class3_Sub26.aClass3_Sub24_Sub2_2563);
 						Class27.aClass157_524 = new Class157(22050, Class21.anInt443);
 						KeyboardListener.anInt1912 = Class75_Sub2.aClass153_2645.getArchiveForName(Class1.aClass94_53);
-						Class3_Sub28_Sub15.LoadingStageNumber = 30;
+						LoadingStageNumber = 30;
 						Class96.anInt1354 = 50;
 						Class3_Sub17.aClass94_2464 = TextCore.PreparedSoundEngine;
 					} else if (Class96.anInt1354 == 50) {
@@ -1729,11 +1752,11 @@ public final class Client extends GameShell {
 						var3 = 6;
 						if (var3 <= var2) {
 							Class3_Sub17.aClass94_2464 = TextCore.LoadedFonts;
-							Class3_Sub28_Sub15.LoadingStageNumber = 35;
+							LoadingStageNumber = 35;
 							Class96.anInt1354 = 60;
 						} else {
 							Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingFonts, Class72.method1298((byte) 9, 100 * var2 / var3), Class24.aClass94_468}, (byte) -59);
-							Class3_Sub28_Sub15.LoadingStageNumber = 35;
+							LoadingStageNumber = 35;
 						}
 					} else if (60 == Class96.anInt1354) {
 						var2 = Class3_Sub28_Sub11.method599(Class140_Sub6.spritesCacheIndex);
@@ -1744,10 +1767,10 @@ public final class Client extends GameShell {
 						} else {
 							Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingTitleScreen, Class72.method1298((byte) 9, 100 * var2 / var3), Class24.aClass94_468}, (byte) -125);
 						}
-						Class3_Sub28_Sub15.LoadingStageNumber = 40;
+						LoadingStageNumber = 40;
 					} else if (Class96.anInt1354 == 65) {
 						Class3_Sub28_Sub9.method581(CacheIndex.aClass153_1948, Class140_Sub6.spritesCacheIndex);
-						Class3_Sub28_Sub15.LoadingStageNumber = 45;
+						LoadingStageNumber = 45;
 						Class3_Sub17.aClass94_2464 = TextCore.OpenedTitleScreen;
 						Class117.method1719(5);
 						Class96.anInt1354 = 70;
@@ -1779,7 +1802,7 @@ public final class Client extends GameShell {
 						var2 += Class132.aClass153_1735.method2136((byte) -124);
 						if (var2 >= 1100) {
 							Class132.method1799((byte) 96, Class164.aClass153_2052);
-							Class3_Sub28_Sub15.method631(Class164.aClass153_2052);
+							method631(Class164.aClass153_2052);
 							Class3_Sub28_Sub8.method575(Class164.aClass153_2052, -1);
 							CS2Script.method375(Class159.aClass153_2019, Class164.aClass153_2052);
 							Class108.method1661(Class168.aClass153_2097, Class159.aClass153_2019);
@@ -1799,24 +1822,24 @@ public final class Client extends GameShell {
 							Class58.method1197(Class164.aClass153_2052);
 							Class144.method2065(Class164.aClass153_2052, Class140_Sub6.spritesCacheIndex);
 							Class107.method1645(Class164.aClass153_2052, Class140_Sub6.spritesCacheIndex);
-							Class3_Sub28_Sub15.LoadingStageNumber = 50;
+							LoadingStageNumber = 50;
 							Class3_Sub17.aClass94_2464 = TextCore.LoadedConfig;
 							Class29.method968(128);
 							Class96.anInt1354 = 80;
 						} else {
 							Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingConfig, Class72.method1298((byte) 9, var2 / 11), Class24.aClass94_468}, (byte) -80);
-							Class3_Sub28_Sub15.LoadingStageNumber = 50;
+							LoadingStageNumber = 50;
 						}
 					} else if (Class96.anInt1354 == 80) {
 						var2 = Class3_Sub4.method107(Class140_Sub6.spritesCacheIndex);
 						var3 = 15;
 						if (var2 < var3) {
 							Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingSprites, Class72.method1298((byte) 9, var2 * 100 / var3), Class24.aClass94_468}, (byte) -66);
-							Class3_Sub28_Sub15.LoadingStageNumber = 60;
+							LoadingStageNumber = 60;
 						} else {
 							Class14.method887(Class140_Sub6.spritesCacheIndex);
 							Class96.anInt1354 = 90;
-							Class3_Sub28_Sub15.LoadingStageNumber = 60;
+							LoadingStageNumber = 60;
 							Class3_Sub17.aClass94_2464 = TextCore.LoadedSprites;
 						}
 					} else if (Class96.anInt1354 != 90) {
@@ -1828,7 +1851,7 @@ public final class Client extends GameShell {
 							Class106.aClass67_1443 = new Class67();
 							Class38.aClass87_665.method1451(0, 10, Class106.aClass67_1443);
 							Class3_Sub17.aClass94_2464 = TextCore.LoadedInputHandler;
-							Class3_Sub28_Sub15.LoadingStageNumber = 75;
+							LoadingStageNumber = 75;
 							Class96.anInt1354 = 120;
 						} else if (Class96.anInt1354 != 120) {
 							if (Class96.anInt1354 == 130) {
@@ -1837,29 +1860,29 @@ public final class Client extends GameShell {
 										if (CacheIndex.aClass153_1948.method2113((byte) 89)) {
 											if (Class133.aClass153_1751.method2127(Class95.aClass94_1342)) {
 												Class75_Sub4.method1353(Class102.aClass3_Sub28_Sub16_Sub2Array2140, Class133.aClass153_1751);
-												Class3_Sub28_Sub15.LoadingStageNumber = 95;
+												LoadingStageNumber = 95;
 												Class3_Sub17.aClass94_2464 = TextCore.LoadedInterfaces;
 												Class96.anInt1354 = 135;
 											} else {
 												Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingInterfaces, Class72.method1298((byte) 9, 90 - -(Class133.aClass153_1751.method2116(Class95.aClass94_1342) / 10)), Class24.aClass94_468}, (byte) -72);
-												Class3_Sub28_Sub15.LoadingStageNumber = 85;
+												LoadingStageNumber = 85;
 											}
 										} else {
 											Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingInterfaces, Class72.method1298((byte) 9, 85 - -(CacheIndex.aClass153_1948.method2136((byte) -124) / 20)), Class24.aClass94_468}, (byte) -107);
-											Class3_Sub28_Sub15.LoadingStageNumber = 85;
+											LoadingStageNumber = 85;
 										}
 									} else {
 										Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingInterfaces, Class72.method1298((byte) 9, 75 - -(Class3_Sub1.interfaceScriptsIndex.method2136((byte) -128) / 10)), Class24.aClass94_468}, (byte) -120);
-										Class3_Sub28_Sub15.LoadingStageNumber = 85;
+										LoadingStageNumber = 85;
 									}
 								} else {
 									Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingInterfaces, Class72.method1298((byte) 9, Class140_Sub3.aClass153_2727.method2136((byte) -123) * 3 / 4), Class24.aClass94_468}, (byte) -81);
-									Class3_Sub28_Sub15.LoadingStageNumber = 85;
+									LoadingStageNumber = 85;
 								}
 							} else if (135 == Class96.anInt1354) {
 								var2 = Class121.method1735();
 								if (-1 == var2) {
-									Class3_Sub28_Sub15.LoadingStageNumber = 95;
+									LoadingStageNumber = 95;
 									Class3_Sub17.aClass94_2464 = TextCore.LoadingWLD;
 								} else if (var2 == 7 || var2 == 9) {
 									this.method31("worldlistfull");
@@ -1867,7 +1890,7 @@ public final class Client extends GameShell {
 								} else if (Class30.loadedWorldList) {
 									Class3_Sub17.aClass94_2464 = TextCore.LoadedWLD;
 									Class96.anInt1354 = 140;
-									Class3_Sub28_Sub15.LoadingStageNumber = 96;
+									LoadingStageNumber = 96;
 								} else {
 									this.method31("worldlistio_" + var2);
 									Class117.method1719(1000);
@@ -1880,7 +1903,7 @@ public final class Client extends GameShell {
 								CacheIndex.aClass153_1948.method2115(91, true);
 								Class3_Sub13_Sub25.aClass153_3304.method2115(-116, true);
 								Class140_Sub3.aClass153_2727.method2115(99, true);
-								Class3_Sub28_Sub15.LoadingStageNumber = 97;
+								LoadingStageNumber = 97;
 								Class3_Sub17.aClass94_2464 = TextCore.Starting3DLibrary;
 								Class96.anInt1354 = 150;
 								Class58.aBoolean913 = true;
@@ -1896,7 +1919,7 @@ public final class Client extends GameShell {
 								RSString.aBoolean2146 = true;
 								Class119.method1730(Class38.aClass87_665);
 								GameObject.graphicsSettings(false, Node.anInt2577, -1, -1);
-								Class3_Sub28_Sub15.LoadingStageNumber = 100;
+								LoadingStageNumber = 100;
 								Class96.anInt1354 = 160;
 								Class3_Sub17.aClass94_2464 = TextCore.Started3DLibrary;
 							} else if (Class96.anInt1354 == 160) {
@@ -1907,10 +1930,10 @@ public final class Client extends GameShell {
 							Class1.method69(var9, 104);
 							Class3_Sub17.aClass94_2464 = TextCore.LoadedWordPack;
 							Class96.anInt1354 = 130;
-							Class3_Sub28_Sub15.LoadingStageNumber = 80;
+							LoadingStageNumber = 80;
 						} else {
 							Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingWordPack, InputStream_Sub1.aClass94_37}, (byte) -98);
-							Class3_Sub28_Sub15.LoadingStageNumber = 80;
+							LoadingStageNumber = 80;
 						}
 					} else if (Class97.aClass153_1376.method2113((byte) 58)) {
 						Class102 var8 = new Class102(Class3_Sub13_Sub28.aClass153_3352, Class97.aClass153_1376, Class140_Sub6.spritesCacheIndex, !Class25.aBoolean488);
@@ -1933,10 +1956,10 @@ public final class Client extends GameShell {
 
 						Class3_Sub17.aClass94_2464 = TextCore.LoadedTextures;
 						Class96.anInt1354 = 100;
-						Class3_Sub28_Sub15.LoadingStageNumber = 70;
+						LoadingStageNumber = 70;
 					} else {
 						Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingTextures, Class72.method1298((byte) 9, Class97.aClass153_1376.method2136((byte) -125)), Class24.aClass94_468}, (byte) -95);
-						Class3_Sub28_Sub15.LoadingStageNumber = 70;
+						LoadingStageNumber = 70;
 					}
 				}
 			}

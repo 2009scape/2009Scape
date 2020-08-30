@@ -215,7 +215,7 @@ final class Class82 {
                   }
                }
 
-               if(((Class140_Sub4)var8).textSpoken != null && (var7 >= Class159.localPlayerCount || Class3_Sub13_Sub8.anInt3101 == 0 || 3 == Class3_Sub13_Sub8.anInt3101 || 1 == Class3_Sub13_Sub8.anInt3101 && Class54.method1176(((Player)var8).displayName))) {
+               if(((Class140_Sub4)var8).textSpoken != null && (var7 >= Class159.localPlayerCount || Class3_Sub13_Sub8.anInt3101 == 0 || 3 == Class3_Sub13_Sub8.anInt3101 || 1 == Class3_Sub13_Sub8.anInt3101 && ScriptContainer.method1176(((Player)var8).displayName))) {
                   Class107.method1647(var4 >> 1, var3, (Class140_Sub4)var8, var5, ((Class140_Sub4)var8).method1975(27855), var1 >> 1);
                   if(-1 < Class32.anInt590 && Class3_Sub13_Sub39.anInt3464 < Class3_Sub13_Sub26.anInt3332) {
                      Class3_Sub13_Sub26.anIntArray3329[Class3_Sub13_Sub39.anInt3464] = Class168.aClass3_Sub28_Sub17_2096.method682(((Class140_Sub4)var8).textSpoken) / 2;
@@ -643,7 +643,7 @@ final class Class82 {
 
    Class82(RSByteBuffer var1) {
       try {
-         int var2 = var1.getByte((byte)-93);
+         int var2 = var1.getByteB();
          this.aClass3_Sub13Array1147 = new Class3_Sub13[var2];
          int[][] var5 = new int[var2][];
          int var4 = 0;
@@ -667,7 +667,7 @@ final class Class82 {
             var5[var6] = new int[var8];
 
             for(var9 = 0; var9 < var8; ++var9) {
-               var5[var6][var9] = var1.getByte((byte)-85);
+               var5[var6][var9] = var1.getByteB();
             }
 
             this.aClass3_Sub13Array1147[var6] = var7;
@@ -699,8 +699,8 @@ final class Class82 {
             var5[var6] = null;
          }
 
-         this.aClass3_Sub13_1145 = this.aClass3_Sub13Array1147[var1.getByte((byte)-85)];
-          this.aClass3_Sub13_1148 = this.aClass3_Sub13Array1147[var1.getByte((byte)-87)];
+         this.aClass3_Sub13_1145 = this.aClass3_Sub13Array1147[var1.getByteB()];
+          this.aClass3_Sub13_1148 = this.aClass3_Sub13Array1147[var1.getByteB()];
       } catch (RuntimeException var11) {
          throw Class44.clientError(var11, "lc.<init>(" + (var1 != null?"{...}":"null") + ')');
       }

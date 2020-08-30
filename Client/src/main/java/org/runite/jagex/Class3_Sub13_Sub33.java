@@ -68,10 +68,10 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
    final void method157(int var1, RSByteBuffer var2, boolean var3) {
       try {
          if(var1 == 0) {
-            this.aClass75Array3392 = new Class75[var2.getByte((byte)-77)];
+            this.aClass75Array3392 = new Class75[var2.getByteB()];
 
             for(int var4 = 0; var4 < this.aClass75Array3392.length; ++var4) {
-               int var5 = var2.getByte((byte)-44);
+               int var5 = var2.getByteB();
                if(var5 == 0) {
                   this.aClass75Array3392[var4] = Class8.method843(-5232, var2);
                } else if(var5 == 1) {
@@ -83,7 +83,7 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
                }
             }
          } else if(1 == var1) {
-            this.aBoolean2375 = var2.getByte((byte)-48) == 1;
+            this.aBoolean2375 = var2.getByteB() == 1;
          }
 
          if(!var3) {
@@ -153,9 +153,9 @@ final class Class3_Sub13_Sub33 extends Class3_Sub13 {
 
                   for(int var14 = 0; Class113.anInt1559 > var14; ++var14) {
                      int var15 = var9[var14];
-                     var13[var14] = Class3_Sub28_Sub15.method633(255, var15) << 4;
-                     var12[var14] = Class3_Sub28_Sub15.method633(4080, var15 >> 4);
-                     var11[var14] = Class3_Sub28_Sub15.method633(var15 >> 12, 4080);
+                     var13[var14] = Class69.bitwiseAnd(255, var15) << 4;
+                     var12[var14] = Class69.bitwiseAnd(4080, var15 >> 4);
+                     var11[var14] = Class69.bitwiseAnd(var15 >> 12, 4080);
                   }
                }
             }

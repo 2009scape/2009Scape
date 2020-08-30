@@ -126,7 +126,7 @@ final class Class3_Sub15 extends Class3 {
                int var11 = data & 63;
                int var13 = data >> 12;
                int var12 = data >> 6 & 63;
-               int var14 = var6.getByte((byte)-48);
+               int var14 = var6.getByteB();
                int var15 = var14 >> 2;
                int var16 = var14 & 3;
                int var17 = var0 + var12;
@@ -220,7 +220,7 @@ final class Class3_Sub15 extends Class3 {
             int var13 = 1;
 
             for(var14 = 2; var14 < var9; ++var14) {
-               int var15 = var2.getByte((byte)-87);
+               int var15 = var2.getByteB();
                if(0 == var15) {
                   var13 = var12++;
                } else {
@@ -240,21 +240,21 @@ final class Class3_Sub15 extends Class3 {
          Class166 var41;
          for(var14 = 0; var14 < var38.length; ++var14) {
             var41 = var38[var14] = new Class166();
-            int var16 = var2.getByte((byte)-121);
+            int var16 = var2.getByteB();
             if(0 < var16) {
                var41.aByteArray2064 = new byte[2 * var16];
             }
 
-            var16 = var2.getByte((byte)-47);
+            var16 = var2.getByteB();
             if(var16 > 0) {
                var41.aByteArray2076 = new byte[var16 * 2 + 2];
                var41.aByteArray2076[1] = 64;
             }
          }
 
-         var14 = var2.getByte((byte)-81);
+         var14 = var2.getByteB();
          byte[] var40 = var14 > 0 ?new byte[var14 * 2]:null;
-         var14 = var2.getByte((byte)-84);
+         var14 = var2.getByteB();
          byte[] var39 = var14 > 0 ?new byte[var14 * 2]:null;
 
          int var17;
@@ -274,14 +274,14 @@ final class Class3_Sub15 extends Class3 {
 
          int var20;
          for(var20 = 0; var20 < 128; ++var20) {
-            var19 += var2.getByte((byte)-101);
+            var19 += var2.getByteB();
             this.aShortArray2434[var20] = (short)var19;
          }
 
          var19 = 0;
 
          for(var20 = 0; var20 < 128; ++var20) {
-            var19 += var2.getByte((byte)-115);
+            var19 += var2.getByteB();
             this.aShortArray2434[var20] = (short)(this.aShortArray2434[var20] + (var19 << 8));
          }
 
@@ -301,7 +301,7 @@ final class Class3_Sub15 extends Class3 {
                var22 = var2.method741((byte)122);
             }
 
-            this.aShortArray2434[var23] = (short)(this.aShortArray2434[var23] + Class3_Sub28_Sub15.method633('\u8000', -1 + var22 << 14));
+            this.aShortArray2434[var23] = (short)(this.aShortArray2434[var23] + Class69.bitwiseAnd('\u8000', -1 + var22 << 14));
             this.anIntArray2423[var23] = var22;
             --var20;
          }
@@ -382,7 +382,7 @@ final class Class3_Sub15 extends Class3 {
                }
 
                if(this.anIntArray2423[var27] > 0) {
-                  var26 = var2.getByte((byte)-61) + 1;
+                  var26 = var2.getByteB() + 1;
                }
             }
 
@@ -390,7 +390,7 @@ final class Class3_Sub15 extends Class3 {
             this.aByteArray2430[var27] = (byte)var26;
          }
 
-         this.anInt2424 = var2.getByte((byte)-26) + 1;
+         this.anInt2424 = var2.getByteB() + 1;
 
          int var29;
          Class166 var28;
@@ -427,7 +427,7 @@ final class Class3_Sub15 extends Class3 {
                var19 = 0;
 
                for(var29 = 2; var28.aByteArray2076.length > var29; var29 += 2) {
-                  var19 -= -1 + -var2.getByte((byte)-114);
+                  var19 -= -1 + -var2.getByteB();
                   var28.aByteArray2076[var29] = (byte)var19;
                }
             }
@@ -439,7 +439,7 @@ final class Class3_Sub15 extends Class3 {
                var19 = 0;
 
                for(var29 = 2; var28.aByteArray2064.length > var29; var29 += 2) {
-                  var19 = var19 - -1 - -var2.getByte((byte)-29);
+                  var19 = var19 - -1 - -var2.getByteB();
                   var28.aByteArray2064[var29] = (byte)var19;
                }
             }
@@ -452,11 +452,11 @@ final class Class3_Sub15 extends Class3 {
          int var44;
          byte var48;
          if(null != var40) {
-            var19 = var2.getByte((byte)-32);
+            var19 = var2.getByteB();
             var40[0] = (byte)var19;
 
             for(var27 = 2; var40.length > var27; var27 += 2) {
-               var19 = 1 + (var19 - -var2.getByte((byte)-29));
+               var19 = 1 + (var19 - -var2.getByteB());
                var40[var27] = (byte)var19;
             }
 
@@ -488,11 +488,11 @@ final class Class3_Sub15 extends Class3 {
          }
 
          if(null != var39) {
-            var19 = var2.getByte((byte)-118);
+            var19 = var2.getByteB();
             var39[0] = (byte)var19;
 
             for(var27 = 2; var27 < var39.length; var27 += 2) {
-               var19 = 1 + (var19 - -var2.getByte((byte)-75));
+               var19 = 1 + (var19 - -var2.getByteB());
                var39[var27] = (byte)var19;
             }
 
@@ -552,39 +552,39 @@ final class Class3_Sub15 extends Class3 {
          }
 
          for(var27 = 0; var12 > var27; ++var27) {
-            var38[var27].anInt2078 = var2.getByte((byte)-60);
+            var38[var27].anInt2078 = var2.getByteB();
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
             var28 = var38[var27];
             if(null != var28.aByteArray2064) {
-               var28.anInt2067 = var2.getByte((byte)-23);
+               var28.anInt2067 = var2.getByteB();
             }
 
             if(null != var28.aByteArray2076) {
-               var28.anInt2071 = var2.getByte((byte)-104);
+               var28.anInt2071 = var2.getByteB();
             }
 
             if(var28.anInt2078 > 0) {
-               var28.anInt2063 = var2.getByte((byte)-124);
+               var28.anInt2063 = var2.getByteB();
             }
          }
 
          for(var27 = 0; var12 > var27; ++var27) {
-            var38[var27].anInt2077 = var2.getByte((byte)-102);
+            var38[var27].anInt2077 = var2.getByteB();
          }
 
          for(var27 = 0; var12 > var27; ++var27) {
             var28 = var38[var27];
             if(var28.anInt2077 > 0) {
-               var28.anInt2066 = var2.getByte((byte)-80);
+               var28.anInt2066 = var2.getByteB();
             }
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
             var28 = var38[var27];
             if(var28.anInt2066 > 0) {
-               var28.anInt2069 = var2.getByte((byte)-84);
+               var28.anInt2069 = var2.getByteB();
             }
          }
 

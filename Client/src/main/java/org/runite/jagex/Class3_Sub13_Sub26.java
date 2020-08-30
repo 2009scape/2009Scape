@@ -75,7 +75,7 @@ final class Class3_Sub13_Sub26 extends Class3_Sub13 {
 			}
 
 			if(var1 == 0) {
-				this.anInt3322 = var2.getShort(1);
+				this.anInt3322 = var2.getShort();
 			}
 
 		} catch (RuntimeException var5) {

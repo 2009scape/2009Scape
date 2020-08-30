@@ -17,15 +17,15 @@ final class Class3_Sub28_Sub13 extends Node {
       try {
 
          if(var1 == 1) {
-            this.anInt3662 = var2.getByte((byte)-47);
+            this.anInt3662 = var2.getByteB();
          } else if (var1 == 2) {
-            this.anInt3658 = var2.getByte((byte) -52);
+            this.anInt3658 = var2.getByteB();
          } else if (3 == var1) {
             this.aClass94_3664 = var2.getString();
          } else if (var1 == 4) {
             this.anInt3667 = var2.getInt();
          } else if (5 == var1 || var1 == 6) {
-            int var4 = var2.getShort(1);
+            int var4 = var2.getShort();
             this.aClass130_3663 = new Class130(Class95.method1585((byte) 94, var4));
 
             for (int var5 = 0; var5 < var4; ++var5) {
@@ -154,7 +154,7 @@ final class Class3_Sub28_Sub13 extends Node {
          }
 
          RSByteBuffer var2 = new RSByteBuffer(var1);
-         int var3 = var2.getByte((byte)-67);
+         int var3 = var2.getByteB();
          int var4 = var2.getInt();
          if(0 <= var4 && (Class75.anInt1108 == 0 || var4 <= Class75.anInt1108)) {
             if(var3 == 0) {
@@ -199,7 +199,7 @@ final class Class3_Sub28_Sub13 extends Node {
    final void method625(RSByteBuffer var1) {
       try {
          while(true) {
-            int var3 = var1.getByte((byte)-83);
+            int var3 = var1.getByteB();
             if(var3 == 0) {
                return;
             }

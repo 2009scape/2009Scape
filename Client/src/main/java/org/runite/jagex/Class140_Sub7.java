@@ -3,7 +3,6 @@ package org.runite.jagex;
 final class Class140_Sub7 extends GameObject {
 
    static RSString aClass94_2928 = RSString.createRSString("null");
-   static int[] anIntArray2929 = new int[1000];
    int anInt2930;
    static int[] anIntArray2931;
    private int anInt2932 = -32768;
@@ -36,7 +35,7 @@ final class Class140_Sub7 extends GameObject {
 
    public static void method2030(byte var0) {
       try {
-         anIntArray2929 = null;
+         ItemDefinition.intsHeap = null;
          if(var0 < 82) {
             method2031((byte)-61, false, -20, 24, (Class3_Sub2[][][])((Class3_Sub2[][][])null), 124);
          }

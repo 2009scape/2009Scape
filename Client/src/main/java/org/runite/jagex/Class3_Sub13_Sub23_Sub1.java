@@ -28,9 +28,9 @@ final class Class3_Sub13_Sub23_Sub1 extends Class3_Sub13_Sub23 {
 
             for(int var8 = 0; Class113.anInt1559 > var8; ++var8) {
                int var9 = this.anIntArray3284[var7 + var8 % this.anInt3280];
-               var6[var8] = Class3_Sub28_Sub15.method633(255, var9) << 4;
-               var5[var8] = Class3_Sub28_Sub15.method633(var9 >> 4, 4080);
-               var4[var8] = Class3_Sub28_Sub15.method633(16711680, var9) >> 12;
+               var6[var8] = Class69.bitwiseAnd(255, var9) << 4;
+               var5[var8] = Class69.bitwiseAnd(var9 >> 4, 4080);
+               var4[var8] = Class69.bitwiseAnd(16711680, var9) >> 12;
             }
          }
 

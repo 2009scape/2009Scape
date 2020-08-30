@@ -11,9 +11,9 @@ final class Class107 {
       try {
          KeyboardListener.aClass153_1916 = var1;
          int var4 = (int)(21.0D * Math.random()) - 10;
-         Class54.aClass153_878 = var0;
+         ScriptContainer.aClass153_878 = var0;
          int var5 = (int)(21.0D * Math.random()) - 10;
-         Class54.aClass153_878.getFileAmount(34, (byte)103);
+         ScriptContainer.aClass153_878.getFileAmount(34, (byte)103);
          int var3 = (int)(Math.random() * 21.0D) + -10;
          int var6 = -20 + (int)(41.0D * Math.random());
          Class158.anInt2015 = var6 + var5;

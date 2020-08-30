@@ -41,10 +41,10 @@ final class Class114 {
          MouseListeningClass.aFloatArray1919[3] = 1.0F;
          float var4 = (float)(var3 >> 16 & 255) / 255.0F;
          float var5 = (float)(('\uff1e' & var3) >> 8) / 255.0F;
-         MouseListeningClass.aFloatArray1919[1] = var2 * (float)Class3_Sub28_Sub15.method633(var0 >> 8, 255) / 255.0F * var5 * var7;
-         MouseListeningClass.aFloatArray1919[var1] = var2 * var7 * var4 * ((float)(Class3_Sub28_Sub15.method633(16754958, var0) >> 16) / 255.0F);
+         MouseListeningClass.aFloatArray1919[1] = var2 * (float) Class69.bitwiseAnd(var0 >> 8, 255) / 255.0F * var5 * var7;
+         MouseListeningClass.aFloatArray1919[var1] = var2 * var7 * var4 * ((float)(Class69.bitwiseAnd(16754958, var0) >> 16) / 255.0F);
          float var6 = (float)(var3 & 255) / 255.0F;
-         MouseListeningClass.aFloatArray1919[2] = (float)Class3_Sub28_Sub15.method633(255, var0) / 255.0F * var6 * var7 * var2;
+         MouseListeningClass.aFloatArray1919[2] = (float) Class69.bitwiseAnd(255, var0) / 255.0F * var6 * var7 * var2;
          return MouseListeningClass.aFloatArray1919;
       } catch (RuntimeException var8) {
          throw Class44.clientError(var8, "pf.F(" + var0 + ',' + var1 + ')');

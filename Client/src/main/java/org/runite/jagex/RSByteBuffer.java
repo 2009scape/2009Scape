@@ -15,16 +15,14 @@ class RSByteBuffer extends Class3 {
 	static Class151_Sub1[] aClass151_Sub1Array2601 = new Class151_Sub1[29]; //TODO
 
 
-	final int getShort(int var1) {
+	final int getShort() {
 		try {
-			if(var1 != 1) {
-				this.putByteA(-57, 26);
-			}
+			// TODO: PROBABLY SAFE TO YEET. IT LOOKS LIKE BULLSHIT obfus code
 
 			this.index += 2;
 			return (this.buffer[-2 + this.index] << 8 & '\uff00') + (this.buffer[-1 + this.index] & 255);
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.EB(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.EB(" + ')');
 		}
 	}
 
@@ -559,7 +557,7 @@ class RSByteBuffer extends Class3 {
 					for(var10 = 0; var10 < 64; ++var10) {
 						for(var11 = 0; var11 < 64; ++var11) {
 							if(var5 - -var10 > 0 && var10 + var5 < 103 && var3 + var11 > 0 && var11 + var3 < 103) {
-								var0[var9].anIntArrayArray1304[var10 + var5][var3 - -var11] = Class3_Sub28_Sub15.method633(var0[var9].anIntArrayArray1304[var10 + var5][var3 - -var11], -16777217);
+								var0[var9].anIntArrayArray1304[var10 + var5][var3 - -var11] = Class69.bitwiseAnd(var0[var9].anIntArrayArray1304[var10 + var5][var3 - -var11], -16777217);
 							}
 						}
 					}
@@ -589,7 +587,7 @@ class RSByteBuffer extends Class3 {
 			boolean var21;
 			int var24;
 			for(var21 = false; var20.index < var20.buffer.length; var21 = true) {
-				var11 = var20.getByte((byte)-120);
+				var11 = var20.getByteB();
 				if(var11 != 129) {
 					--var20.index;
 					break;
@@ -704,7 +702,7 @@ class RSByteBuffer extends Class3 {
 				Class86 var22 = null;
 
 				while(var20.buffer.length > var20.index) {
-					var12 = var20.getByte((byte)-100);
+					var12 = var20.getByteB();
 					if(var12 == 0) {
 						var22 = new Class86(var20);
 					} else {
@@ -714,12 +712,12 @@ class RSByteBuffer extends Class3 {
 							return;//
 						}
 
-						var23 = var20.getByte((byte)-114);
+						var23 = var20.getByteB();
 						if(0 < var23) {
 							for(var14 = 0; var23 > var14; ++var14) {
 								Class43 var25 = new Class43(var20);
 								if(var25.anInt705 == 31) {
-									Class57 var26 = Class81.method1401(var20.getShort(1));
+									Class57 var26 = Class81.method1401(var20.getShort());
 									var25.method1060((byte)-67, var26.anInt896, var26.anInt908, var26.anInt899, var26.anInt907);
 								}
 
@@ -775,7 +773,7 @@ class RSByteBuffer extends Class3 {
 		try {
 
 			int var2 = this.buffer[this.index] & 255;
-			return 128 <= var2?-32768 + this.getShort(1):this.getByte((byte)-74);
+			return 128 <= var2?-32768 + this.getShort():this.getByteB();
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "wa.JA(" + true + ')');
 		}
@@ -920,15 +918,11 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final void putByteA(int var1, int var2) {
+	final void putByteA(int var1) {
 		try {
-			if(var2 != -13071) {
-				this.getSmart(120);
-			}
-
 			this.buffer[this.index++] = (byte)(128 + var1);
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "wa.KC(" + var1 + ',' + var2 + ')');
+			throw Class44.clientError(var4, "wa.KC(" + var1 + ')');
 		}
 	}
 
@@ -1020,7 +1014,7 @@ class RSByteBuffer extends Class3 {
 				TextCore.LoadedInterfaces = (RSString)null;
 			}
 
-			return var2 < 128 ?-64 + this.getByte((byte)-82):this.getShort(var1 + 21209) - '\uc000';
+			return var2 < 128 ?-64 + this.getByteB():this.getShort() - '\uc000';
 		} catch (RuntimeException var3) {
 			throw Class44.clientError(var3, "wa.WB(" + var1 + ')');
 		}
@@ -1167,15 +1161,11 @@ class RSByteBuffer extends Class3 {
 		}
 	}
 
-	final int getByte(byte var1) {
+	final int getByteB() {
 		try {
-			if(var1 > -22) {
-				this.getIntA(16);
-			}
-
 			return this.buffer[this.index++] & 255;
 		} catch (RuntimeException var3) {
-			throw Class44.clientError(var3, "wa.RC(" + var1 + ')');
+			throw Class44.clientError(var3, "wa.RC(" + ')');
 		}
 	}
 

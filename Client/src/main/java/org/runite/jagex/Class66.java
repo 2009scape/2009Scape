@@ -127,7 +127,7 @@ final class Class66 {
 							this.aClass89_1005.readBytes(this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.index, var7, this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.buffer);
 							if(this.aByte1009 != 0) {
 								for(var8 = 0; var8 < var7; ++var8) {
-									this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.buffer[this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.index - -var8] = (byte)Class93.method1519(this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.buffer[this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.index + var8], this.aByte1009);
+									this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.buffer[this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.index - -var8] = (byte)Class93.bitwiseXOR(this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.buffer[this.aClass3_Sub28_Sub10_Sub2_1012.aClass3_Sub30_4069.index + var8], this.aByte1009);
 								}
 							}
 
@@ -149,7 +149,7 @@ final class Class66 {
 							this.aClass89_1005.readBytes(this.aClass3_Sub30_1008.index, var6, this.aClass3_Sub30_1008.buffer);
 							if(0 != this.aByte1009) {
 								for(var7 = 0; var7 < var6; ++var7) {
-									this.aClass3_Sub30_1008.buffer[var7 + this.aClass3_Sub30_1008.index] = (byte)Class93.method1519(this.aClass3_Sub30_1008.buffer[var7 + this.aClass3_Sub30_1008.index], this.aByte1009);
+									this.aClass3_Sub30_1008.buffer[var7 + this.aClass3_Sub30_1008.index] = (byte)Class93.bitwiseXOR(this.aClass3_Sub30_1008.buffer[var7 + this.aClass3_Sub30_1008.index], this.aByte1009);
 								}
 							}
 
@@ -157,9 +157,9 @@ final class Class66 {
 							if(var5 <= this.aClass3_Sub30_1008.index) {
 								if(this.aClass3_Sub28_Sub10_Sub2_1012 == null) {
 									this.aClass3_Sub30_1008.index = 0;
-									var7 = this.aClass3_Sub30_1008.getByte((byte)-34);
-									var8 = this.aClass3_Sub30_1008.getShort(1);
-									int var9 = this.aClass3_Sub30_1008.getByte((byte)-26);
+									var7 = this.aClass3_Sub30_1008.getByteB();
+									var8 = this.aClass3_Sub30_1008.getShort();
+									int var9 = this.aClass3_Sub30_1008.getByteB();
 									int var10 = this.aClass3_Sub30_1008.getInt();
 									int var11 = 127 & var9;
 									boolean var12 = (var9 & 128) != 0;
