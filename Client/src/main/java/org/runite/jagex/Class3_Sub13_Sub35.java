@@ -86,7 +86,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
 
    static Class3_Sub28_Sub1 getQuickChatMessage(int fileId) {
       try {
-         Class3_Sub28_Sub1 var2 = (Class3_Sub28_Sub1)Class3_Sub13_Sub11.aClass47_3137.method1092((long)fileId, 1400);
+         Class3_Sub28_Sub1 var2 = (Class3_Sub28_Sub1)Class3_Sub13_Sub11.aClass47_3137.method1092((long)fileId);
          if(null == var2) {
             byte[] var3;
             if(fileId < '\u8000') {

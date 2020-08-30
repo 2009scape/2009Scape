@@ -183,7 +183,7 @@ final class Class3_Sub5 extends Class3 {
             if((4611686018427387903L & var4.aLong2295) < var2) {
                if((4611686018427387904L & var4.aLong2295) != 0) {
                   int var5 = (int)var4.aLong71;
-                  Class163_Sub1.anIntArray2985[var5] = Class57.anIntArray898[var5];
+                  ItemDefinition.ram[var5] = Class57.anIntArray898[var5];
                   var4.method86(-1024);
                   return var5;
                }

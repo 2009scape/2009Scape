@@ -15,15 +15,15 @@ final class Class3_Sub28_Sub8 extends Node {
       }
    }
 
-   static AssembledScript method572(int var0) {
+   static AssembledMethod method572(int var0) {
       try {
-         AssembledScript var2 = (AssembledScript)Class56.aClass47_885.method1092((long)var0, 1400);
+         AssembledMethod var2 = (AssembledMethod)Class56.aClass47_885.method1092((long)var0);
          if(var2 == null) {
             byte[] var3 = Class3_Sub1.interfaceScriptsIndex.getFile(var0, 0);
             if(var3 == null) {
                return null;
             } else {
-               var2 = new AssembledScript();
+               var2 = new AssembledMethod();
 
                RSByteBuffer var4 = new RSByteBuffer(var3);
                var4.index = -2 + var4.buffer.length;
@@ -33,8 +33,8 @@ final class Class3_Sub28_Sub8 extends Node {
                int var7 = var4.getInt();
                var2.numberOfIntsToCopy = var4.getShort();
                var2.numberOfRSStringsToCopy = var4.getShort();
-               var2.intHeapCounterIncrement = var4.getShort();
-               var2.stringHeapCounterOffset = var4.getShort();
+               var2.numberOfIntArguments = var4.getShort();
+               var2.numberOfStringArguments = var4.getShort();
                int var8 = var4.getByteB();
                int var9;
                int var10;
@@ -57,17 +57,17 @@ final class Class3_Sub28_Sub8 extends Node {
                var4.index = 0;
                var4.method750();
                var2.assemblyInstructions = new int[var7];
-               var2.storedStrings = new RSString[var7];
+               var2.stringInstructionOperands = new RSString[var7];
                var9 = 0;
 
-               for(var2.assemblyRAM = new int[var7]; var4.index < var6; var2.assemblyInstructions[var9++] = var10) {
+               for(var2.instructionOperands = new int[var7]; var4.index < var6; var2.assemblyInstructions[var9++] = var10) {
                   var10 = var4.getShort();
                   if(var10 == 3) {
-                     var2.storedStrings[var9] = var4.getString();
+                     var2.stringInstructionOperands[var9] = var4.getString();
                   } else if (var10 < 100 && 21 != var10 && var10 != 38 && 39 != var10) {
-                     var2.assemblyRAM[var9] = var4.getInt();
+                     var2.instructionOperands[var9] = var4.getInt();
                   } else {
-                     var2.assemblyRAM[var9] = var4.getByteB();
+                     var2.instructionOperands[var9] = var4.getByteB();
                   }
                }
                Class56.aClass47_885.method1097(var2, (long)var0, (byte)-87);

@@ -3,17 +3,17 @@ package org.runite.jagex;
 final class Class107 {
 
    static int currentChunkY;
-   static RSString[] aClass94Array1454;
    static RSInterface aClass11_1453;
+   static CacheIndex aClass153_878;
 
 
    static void method1645(CacheIndex var0, CacheIndex var1) {
       try {
          KeyboardListener.aClass153_1916 = var1;
          int var4 = (int)(21.0D * Math.random()) - 10;
-         ScriptContainer.aClass153_878 = var0;
+         aClass153_878 = var0;
          int var5 = (int)(21.0D * Math.random()) - 10;
-         ScriptContainer.aClass153_878.getFileAmount(34, (byte)103);
+         aClass153_878.getFileAmount(34, (byte)103);
          int var3 = (int)(Math.random() * 21.0D) + -10;
          int var6 = -20 + (int)(41.0D * Math.random());
          Class158.anInt2015 = var6 + var5;
@@ -26,7 +26,7 @@ final class Class107 {
 
    public static void method1646(boolean var0) {
       try {
-         aClass94Array1454 = null;
+         ItemDefinition.stringArguments = null;
          aClass11_1453 = null;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "og.E(" + var0 + ')');

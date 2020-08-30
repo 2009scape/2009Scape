@@ -20,7 +20,7 @@ class Class3 {
 
    public static void method83(byte var0) {
       try {
-         ItemDefinition.stringsHeap = null;
+         ItemDefinition.stringsStack = null;
          if(var0 != 30) {
             method84((RSString)null, 89);
          }

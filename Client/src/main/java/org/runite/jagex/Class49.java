@@ -84,7 +84,7 @@ final class Class49 {
 
    static byte[] method1123(int var0, int var1) {
       try {
-         Class3_Sub28_Sub8 var2 = (Class3_Sub28_Sub8)Class25.aClass47_480.method1092((long)var1, var0 + -16710535);
+         Class3_Sub28_Sub8 var2 = (Class3_Sub28_Sub8)Class25.aClass47_480.method1092((long)var1);
          if(null == var2) {
             Random var4 = new Random((long)var1);
             byte[] var3 = new byte[512];

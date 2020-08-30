@@ -5,7 +5,8 @@ import java.util.Objects;
 final class Class3_Sub30_Sub1 extends RSByteBuffer {
 
 	static RSString[] aClass94Array3802;
-	private ISAACCipher isaacCipher;
+    static int anInt872;
+    private ISAACCipher isaacCipher;
 	static int[] anIntArray3804 = new int[256];
 	static int[] anIntArray3805;
 	private int anInt3806;
@@ -139,7 +140,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 						Class151_Sub1.anInt2958 = 0;
 						Class3_Sub28_Sub10_Sub1.anInt4062 = Class38_Sub1.anInt2614;
 						Class3_Sub13_Sub1.outgoingBuffer.putOpcode(239);
-						Class3_Sub13_Sub1.outgoingBuffer.putLEInt(ScriptContainer.anInt872, (byte)-123);
+						Class3_Sub13_Sub1.outgoingBuffer.putLEInt(anInt872, (byte)-123);
 						Class3_Sub13_Sub1.outgoingBuffer.putShortA(RSInterface.anInt278);
 						Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(var5);
 					}
@@ -263,7 +264,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 
 				if(var4 == 3) {
 					Class3_Sub13_Sub1.outgoingBuffer.putOpcode(253);
-					Class3_Sub13_Sub1.outgoingBuffer.putLEInt(ScriptContainer.anInt872, (byte)-126);
+					Class3_Sub13_Sub1.outgoingBuffer.putLEInt(anInt872, (byte)-126);
 					Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(var2);
 					Class3_Sub13_Sub1.outgoingBuffer.putLEInt(var3, (byte)-124);
 					Class3_Sub13_Sub1.outgoingBuffer.putShortA(var5);
@@ -445,7 +446,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 							Class3_Sub28_Sub10_Sub1.anInt4062 = Class38_Sub1.anInt2614;
 							Class3_Sub13_Sub1.outgoingBuffer.putOpcode(195);
 							Class3_Sub13_Sub1.outgoingBuffer.putShortA(RSInterface.anInt278);
-							Class3_Sub13_Sub1.outgoingBuffer.putLEInt(ScriptContainer.anInt872, (byte)-124);
+							Class3_Sub13_Sub1.outgoingBuffer.putLEInt(anInt872, (byte)-124);
 							Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(var5);
 						}
 					}
@@ -500,8 +501,8 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 						var13 = Class7.getRSInterface((byte)117, var3);
 						if(Objects.requireNonNull(var13).childDataBuffers != null && var13.childDataBuffers[0][0] == 5) {
 							var12 = var13.childDataBuffers[0][1];
-							if(Class163_Sub1.anIntArray2985[var12] != var13.anIntArray307[0]) {
-								Class163_Sub1.anIntArray2985[var12] = var13.anIntArray307[0];
+							if(ItemDefinition.ram[var12] != var13.anIntArray307[0]) {
+								ItemDefinition.ram[var12] = var13.anIntArray307[0];
 								Class46.method1087(98, var12);
 							}
 						}
@@ -530,7 +531,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 						var13 = Class7.getRSInterface((byte)122, var3);
 						if(Objects.requireNonNull(var13).childDataBuffers != null && var13.childDataBuffers[0][0] == 5) {
 							var12 = var13.childDataBuffers[0][1];
-							Class163_Sub1.anIntArray2985[var12] = -Class163_Sub1.anIntArray2985[var12] + 1;
+							ItemDefinition.ram[var12] = -ItemDefinition.ram[var12] + 1;
 							Class46.method1087(68, var12);
 						}
 					}
@@ -569,7 +570,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 							Class3_Sub28_Sub10.method589(WorldListCountry.localPlane, var2, var3);
 						} else if (1 == var5) {
 							Class3_Sub13_Sub1.outgoingBuffer.putOpcode(131);
-							Class3_Sub13_Sub1.outgoingBuffer.putIntB(-57, ScriptContainer.anInt872);
+							Class3_Sub13_Sub1.outgoingBuffer.putIntB(-57, anInt872);
 							Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class131.anInt1716 + var2);
 							Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(RSInterface.anInt278);
 							Class3_Sub13_Sub1.outgoingBuffer.putShortA(var3 + Class82.anInt1152);
@@ -641,7 +642,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 						Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(var3 + Class82.anInt1152);
 						Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class131.anInt1716 + var2);
 						Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(RSInterface.anInt278);
-						Class3_Sub13_Sub1.outgoingBuffer.putIntA(ScriptContainer.anInt872);
+						Class3_Sub13_Sub1.outgoingBuffer.putIntA(anInt872);
 						Class3_Sub13_Sub1.outgoingBuffer.putShortA((int)(var6 >>> 32) & Integer.MAX_VALUE);
 					}
 
@@ -746,7 +747,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 							Class36.anInt638 = 2;
 							Class151_Sub1.anInt2958 = 0;
 							Class3_Sub13_Sub1.outgoingBuffer.putOpcode(73);
-							Class3_Sub13_Sub1.outgoingBuffer.putIntA(ScriptContainer.anInt872);
+							Class3_Sub13_Sub1.outgoingBuffer.putIntA(anInt872);
 							Class3_Sub13_Sub1.outgoingBuffer.putShort(Class82.anInt1152 + var3);
 							Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(var5);
 							Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(var2 + Class131.anInt1716);
@@ -757,7 +758,7 @@ final class Class3_Sub30_Sub1 extends RSByteBuffer {
 							Class3_Sub13_Sub1.outgoingBuffer.putOpcode(82);
 							Class3_Sub13_Sub1.outgoingBuffer.putShort(RSInterface.anInt278);
 							Class3_Sub13_Sub1.outgoingBuffer.putIntA(var3);
-							Class3_Sub13_Sub1.outgoingBuffer.putInt(-124, ScriptContainer.anInt872);
+							Class3_Sub13_Sub1.outgoingBuffer.putInt(-124, anInt872);
 							Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(var2);
 						}
 

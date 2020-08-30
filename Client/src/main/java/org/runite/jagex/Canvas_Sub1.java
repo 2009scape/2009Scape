@@ -7,7 +7,6 @@ final class Canvas_Sub1 extends Canvas implements FocusListener {
 
    static int anInt14 = 0;
    static int anInt15 = 0;
-   static int[][] anIntArrayArray20 = new int[5][5000];
    static Class93 aClass93_21 = new Class93(64);
    static int registryStage = 0;
    static int anInt25 = 1;
@@ -16,7 +15,7 @@ final class Canvas_Sub1 extends Canvas implements FocusListener {
    public static void method53(int var0) {
       try {
          aClass93_21 = null;
-         anIntArrayArray20 = (int[][])null;
+         ItemDefinition.pagedRam = (int[][])null;
          if(var0 != 0) {
          }
 

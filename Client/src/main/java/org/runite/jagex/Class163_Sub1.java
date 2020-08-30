@@ -5,7 +5,6 @@ import java.util.Objects;
 class Class163_Sub1 extends Class163 {
 
    static Class93 aClass93_2984 = new Class93(2);
-   static int[] anIntArray2985 = new int[2500];
    static long[] aLongArray2986 = new long[32];
    static byte[][] aByteArrayArray2987;
    static int anInt2989 = 0;
@@ -133,7 +132,7 @@ class Class163_Sub1 extends Class163 {
 
    public static void method2212(boolean var0) {
       try {
-         anIntArray2985 = null;
+         ItemDefinition.ram = null;
          aClass93_2984 = null;
          aClass61_2990 = null;
          aLongArray2986 = null;

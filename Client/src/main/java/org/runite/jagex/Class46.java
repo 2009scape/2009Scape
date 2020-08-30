@@ -39,7 +39,7 @@ final class Class46 {
 
          int var2 = Objects.requireNonNull(Class145.method2076(-37, var1)).anInt556;
          if(var2 != 0) {
-            int var3 = Class163_Sub1.anIntArray2985[var1];
+            int var3 = ItemDefinition.ram[var1];
             if(6 == var2) {
                Class41.anInt688 = var3;
             }

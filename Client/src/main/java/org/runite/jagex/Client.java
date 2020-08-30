@@ -24,11 +24,12 @@ public final class Client extends GameShell {
 	static int currentPort;
 	static int anInt3689 = 0;
 	static int LoadingStageNumber = 10;
+    static int anInt869;
 
-	static void method631(CacheIndex var1) {
+    static void method631(CacheIndex var1) {
 	   try {
 		  Class3_Sub28_Sub5.aClass153_3580 = var1;
-		  ScriptContainer.anInt869 = Class3_Sub28_Sub5.aClass153_3580.getFileAmount(4, (byte)112);
+		  anInt869 = Class3_Sub28_Sub5.aClass153_3580.getFileAmount(4, (byte)112);
 	   } catch (RuntimeException var3) {
 		  throw Class44.clientError(var3, "qc.D(" + false + ',' + (var1 != null?"{...}":"null") + ')');
 	   }
@@ -42,6 +43,28 @@ public final class Client extends GameShell {
 
 	   } catch (RuntimeException var2) {
 		  throw Class44.clientError(var2, "qc.E(" + ')');
+	   }
+	}
+
+	static void method1175(int var0) {
+	   try {
+		  Class3_Sub13_Sub30.anInt3362 = -1;
+		  Class82.anInt1150 = -1;
+
+		  Class3_Sub28_Sub1.anInt3536 = var0;
+		  Class3_Sub5.method117();
+	   } catch (RuntimeException var3) {
+		  throw Class44.clientError(var3, "hj.D(" + var0 + ',' + 112 + ')');
+	   }
+	}
+
+	static void method375(CacheIndex var1, CacheIndex var2) {
+	   try {
+		  Class10.aClass153_152 = var1;
+		  Class127.aClass153_1680 = var2;
+		  Class25.anInt497 = Class127.aClass153_1680.getFileAmount(3, (byte)95);
+	   } catch (RuntimeException var4) {
+		  throw Class44.clientError(var4, "jl.D(" + 3 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
 	   }
 	}
 
@@ -583,11 +606,11 @@ public final class Client extends GameShell {
 			Class101.method1608((byte)110);
 			Class53.method1169(false);
 			WorldListEntry.method1077(0);
-			ItemDefinition.anIntArray509 = null;
+			ItemDefinition.pagedRamPageSize = null;
 			Class15.timeZone = null;
 			Class88.method1457();
 			Class137.method1818(false);
-			ScriptContainer.aClass153_878 = null;
+			Class107.aClass153_878 = null;
 			Class10.method853(0);
 			CS2Script.method376(false);
 			GameObject.method1860(0);
@@ -1274,7 +1297,7 @@ public final class Client extends GameShell {
 										}
 
 										if(Class3_Sub19.anInt2475 == 2) {
-											ScriptContainer.method1175(Class3_Sub28_Sub10_Sub2.anInt4073 + (int)((double)(Class144.anInt1881 - Class126.anInt1676) * 2.0D / (double)NPC.aFloat3979));
+											method1175(Class3_Sub28_Sub10_Sub2.anInt4073 + (int)((double)(Class144.anInt1881 - Class126.anInt1676) * 2.0D / (double)NPC.aFloat3979));
 											Class3_Sub13_Sub39.method354(Class38.anInt660 + (int)((double)(Class95.anInt1336 - Class130.anInt1709) * 2.0D / (double)NPC.aFloat3979));
 										}
 										continue;
@@ -1804,7 +1827,7 @@ public final class Client extends GameShell {
 							Class132.method1799((byte) 96, Class164.aClass153_2052);
 							method631(Class164.aClass153_2052);
 							Class3_Sub28_Sub8.method575(Class164.aClass153_2052, -1);
-							CS2Script.method375(Class159.aClass153_2019, Class164.aClass153_2052);
+							method375(Class159.aClass153_2019, Class164.aClass153_2052);
 							Class108.method1661(Class168.aClass153_2097, Class159.aClass153_2019);
 							ItemDefinition.method1103(Class159.aClass153_2019, Class101.aClass153_1428);
 							GameObject.method1864(Class100.aClass153_1410, Class157.aClass3_Sub28_Sub17_Sub1_2000, Class159.aClass153_2019);

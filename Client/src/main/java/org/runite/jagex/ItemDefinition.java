@@ -7,11 +7,24 @@ import java.util.Objects;
 
 final class ItemDefinition {
 
-	static int[] anIntArray509 = new int[5];
     static short aShort505 = 1;
-	static RSString[] stringsHeap = new RSString[1000];
-	static int[] intsHeap = new int[1000];
-	static int anInt4002 = 0;
+	static RSString[] stringsStack = new RSString[1000];
+	static int[] intsStack = new int[1000];
+	static int scriptHeapCounter = 0;
+	// This holds all the int memory that can be accessed by the pseudo assembly by value.
+	static int[] ram = new int[2500];
+	// This holds even MORE memory which has five unique pages. It is slower (presumably) than regular ram
+	// and can be accessed through opcodes 44-46. You can fill it with a given value
+	// in a single instruction though
+	static int[][] pagedRam = new int[5][5000];
+	// This shows how much of the pagedRam is actually filled for any given page.
+	static int[] pagedRamPageSize = new int[5];
+
+	static RSString[] stringArguments;
+	static int[] intArguments;
+	// This is the TRUE stack. the one with a stack pointer and stack tracing.
+	// This holds all the methods you are currently calling in your script.
+	static AssembledMethodContainer[] methodStack = new AssembledMethodContainer[50];
 	private short[] aShortArray751;
 	private int anInt752;
 	private int anInt753 = -1;
@@ -70,6 +83,25 @@ final class ItemDefinition {
 	int anInt810;
 	private static RSString aClass94_811;
 
+	static boolean method1176(RSString var0) {
+	   try {
+		  if(var0 == null) {
+			 return false;
+		  } else {
+			 for(int var2 = 0; Class8.anInt104 > var2; ++var2) {
+				if(var0.equals(-121, Class70.aClass94Array1046[var2])) {
+				   return true;
+				}
+			 }
+
+
+			 return var0.equals((byte) -82 + -46, Class102.player.displayName);
+		  }
+	   } catch (RuntimeException var3) {
+		  throw Class44.clientError(var3, "hj.A(" + "{...}" + ',' + (byte) -82 + ')');
+	   }
+	}
+
 
 	final boolean method1102(boolean var1) {
 		try {
@@ -108,32 +140,57 @@ final class ItemDefinition {
 		}
 	}
 
-	static void method1104(int maxIterations, CS2Script script)
+	/*
+	 * This is probably the MOST important function in the entire
+	 * client. It basically runs a script, which is:
+	 * a bunch of args, and a special integer pointing to the script entry method (script.arguments[0])
+	 * This integer refers to one of the game's methods which it loads from various files. (TODO Figure out how this is handled)
+	 *
+	 * All scripts are compiled into a pseudo assembly language. This language consists of
+	 * a bunch of opcodes, int and string operands for each opcode, an int and string stack
+	 *
+	 * There is also ram (for saving variables) which persists as you go in and out of methods.
+	 *
+	 * Opcodes refer to instructions which are executed sequentially, except for when a branch opcode is encountered.
+	 * opcode bound ram can be assigned to anything but can only be read from the current opcode.
+	 *
+	 * Opcode bound ram will often refer to a location in non-opcode bound ram as a way to access arbitrary values.
+	 *
+	 *
+	 * This is my best understanding of this function. MOST of the above text is PROBABLY a lie.
+	 * Poke around with it yourself and see what you discover - Your friendly neighborhood moth
+	 *
+	 */
+	static void runAssembledScript(int maxIterations, CS2Script script)
 	{
 		try {
 			Object[] aobj = script.arguments;
 			int j = ((Integer) aobj[0]).intValue();
 			//System.out.println("CS opcode: " + j);
-			AssembledScript assembledScript = Class3_Sub28_Sub8.method572(j);
-			if (null == assembledScript)
+			AssembledMethod currentMethod = Class3_Sub28_Sub8.method572(j);
+			if (null == currentMethod)
 				return;
-			anInt4002 = 0;
-			int sHeapCounter = 0;
-			int iHeapCounter = 0;
+			scriptHeapCounter = 0;
+			int sStackCounter = 0;
+			int iStackCounter = 0;
 			int programCounter = -1;
-			int[] ram = assembledScript.assemblyRAM;
-			int[] instructions = assembledScript.assemblyInstructions;
+			int[] instructionOperands = currentMethod.instructionOperands;
+			int[] instructions = currentMethod.assemblyInstructions;
 			/*
-			 * Scan script arguments. Script args can either be
+			 * Scan method arguments. args can either be
 			 * custom strings, custom ints, or integer opcodes (0x80000001-0x80000009) which represent
 			 * various ints found elsewhere in the code for things like keyboard input.
 			 *
 			 * OPCODES 35 and 40 act on the string args
 			 * OPCODES 33 and 40 act on the int args
+			 *
+			 * These arguments are tied to the specific method you are calling, just like arguments
+			 * in a real programming language. In this case imagine this as arguments that you pass
+			 * to the main() function of java.
 			 */
 
-			Class126.anIntArray1662 = new int[assembledScript.numberOfIntsToCopy];
-			Class107.aClass94Array1454 = new RSString[assembledScript.numberOfRSStringsToCopy];
+			intArguments = new int[currentMethod.numberOfIntsToCopy];
+			stringArguments = new RSString[currentMethod.numberOfRSStringsToCopy];
 			int stringArgIter = 0;
 			int intArgIter = 0;
 			for (int i2 = 1; aobj.length > i2; i2++) {
@@ -158,7 +215,7 @@ final class ItemDefinition {
 						k2 = script.inputTextCode;
 					if (k2 == 0x80000009)
 						k2 = script.anInt2443;
-					Class126.anIntArray1662[intArgIter++] = k2;
+					intArguments[intArgIter++] = k2;
 					continue;
 				}
 				if (!(aobj[i2] instanceof RSString))
@@ -166,10 +223,9 @@ final class ItemDefinition {
 				RSString class94 = (RSString) aobj[i2];
 				if (class94.method1528(RSInterface.aClass94_209))
 					class94 = script.aClass94_2439;
-				Class107.aClass94Array1454[stringArgIter++] = class94;
+				stringArguments[stringArgIter++] = class94;
 				//	System.out.println("Item Definition line 168 " + class94.toString());
 			}
-
 
 			int j2 = 0;
 			label0:
@@ -178,221 +234,219 @@ final class ItemDefinition {
 				if (maxIterations < j2)
 					throw new RuntimeException("Script exceeded max iterations");
 				int opcode = instructions[++programCounter];
-				System.out.println("Instruction: " + programCounter + ". opcode is: " + opcode);
+				//System.out.println("Instruction: " + programCounter + ". opcode is: " + opcode);
 				if (opcode < 100) {
-					if (opcode == 0) {
-						intsHeap[iHeapCounter++] = ram[programCounter];
+					if (opcode == CS2AsmOpcodes.PUSH_INT.getOp()) {
+						intsStack[iStackCounter++] = instructionOperands[programCounter];
 						continue;
 					}
-					if (opcode == 1) {
-						int l2 = ram[programCounter];
-						intsHeap[iHeapCounter++] = Class163_Sub1.anIntArray2985[l2];
+					if (opcode == CS2AsmOpcodes.PUSH_INT_FROM_RAM.getOp()) {
+						int l2 = instructionOperands[programCounter];
+						intsStack[iStackCounter++] = ram[l2];
 						continue;
 					}
-					if (opcode == 2) {
-						int i3 = ram[programCounter];
-						Class86.method1428(i3, 63, intsHeap[--iHeapCounter]);
+					if (opcode == CS2AsmOpcodes.POP_INT_TO_RAM.getOp()) {
+						int i3 = instructionOperands[programCounter];
+						Class86.method1428(i3, intsStack[--iStackCounter]);
 						continue;
 					}
-					if (opcode == 3) {
-						stringsHeap[sHeapCounter++] = assembledScript.storedStrings[programCounter];
+					if (opcode == CS2AsmOpcodes.PUSH_STR.getOp()) {
+						stringsStack[sStackCounter++] = currentMethod.stringInstructionOperands[programCounter];
 						continue;
 					}
-					if (opcode == 6) {
-						programCounter += ram[programCounter];
+					if (opcode == CS2AsmOpcodes.JUMP.getOp()) {
+						programCounter += instructionOperands[programCounter];
 						continue;
 					}
-					if (7 == opcode) {
-						iHeapCounter -= 2;
-						if (intsHeap[iHeapCounter] != intsHeap[1 + iHeapCounter])
-							programCounter += ram[programCounter];
+					if (opcode == CS2AsmOpcodes.BRANCH_NOT_EQUAL.getOp()) {
+						iStackCounter -= 2;
+						if (intsStack[iStackCounter] != intsStack[1 + iStackCounter])
+							programCounter += instructionOperands[programCounter];
 						continue;
 					}
-					if (opcode == 8) {
-						iHeapCounter -= 2;
-						if (intsHeap[iHeapCounter] == intsHeap[iHeapCounter + 1])
-							programCounter += ram[programCounter];
+					if (opcode == CS2AsmOpcodes.BRANCH_EQUAL.getOp()) {
+						iStackCounter -= 2;
+						if (intsStack[iStackCounter] == intsStack[iStackCounter + 1])
+							programCounter += instructionOperands[programCounter];
 						continue;
 					}
-					if (9 == opcode) {
-						iHeapCounter -= 2;
-						if (intsHeap[1 + iHeapCounter] > intsHeap[iHeapCounter])
-							programCounter += ram[programCounter];
+					if (opcode == CS2AsmOpcodes.BRANCH_GREATER_THAN.getOp()) {
+						iStackCounter -= 2;
+						if (intsStack[iStackCounter + 1] > intsStack[iStackCounter])
+							programCounter += instructionOperands[programCounter];
 						continue;
 					}
-					if (opcode == 10) {
-						iHeapCounter -= 2;
-						if (intsHeap[iHeapCounter - -1] < intsHeap[iHeapCounter])
-							programCounter += ram[programCounter];
+					if (opcode == CS2AsmOpcodes.BRANCH_LESS_THAN.getOp()) {
+						iStackCounter -= 2;
+						if (intsStack[iStackCounter + 1] < intsStack[iStackCounter])
+							programCounter += instructionOperands[programCounter];
 						continue;
 					}
-					if (opcode == 21) {
-						if (anInt4002 == 0)
+					if (opcode == CS2AsmOpcodes.RETURN.getOp()) {
+						if (scriptHeapCounter == 0)
 							return;
-						ScriptContainer scriptContainer = Class140_Sub4.aScriptContainerArray2841[--anInt4002];
-						assembledScript = scriptContainer.aAssembledScript_874;
-						Class126.anIntArray1662 = scriptContainer.anIntArray870;
-						instructions = assembledScript.assemblyInstructions;
-						programCounter = scriptContainer.anInt877;
-						Class107.aClass94Array1454 = scriptContainer.aClass94Array873;
-						ram = assembledScript.assemblyRAM;
+						AssembledMethodContainer assembledMethodContainer = methodStack[--scriptHeapCounter];
+						currentMethod = assembledMethodContainer.assembledMethod;
+						instructions = currentMethod.assemblyInstructions;
+						programCounter = assembledMethodContainer.currentProgramCounter;
+						intArguments = assembledMethodContainer.intArguments;
+						stringArguments = assembledMethodContainer.stringArguments;
+						instructionOperands = currentMethod.instructionOperands;
 						continue;
 					}
 					if (opcode == 25) {
-						int j3 = ram[programCounter];
-						intsHeap[iHeapCounter++] = NPCDefinition.method1484(j3);
+						int j3 = instructionOperands[programCounter];
+						intsStack[iStackCounter++] = NPCDefinition.method1484(j3);
 						continue;
 					}
 					if (opcode == 27) {
-						int k3 = ram[programCounter];
-						Class3_Sub13_Sub29.method306(k3, intsHeap[--iHeapCounter]);
+						int k3 = instructionOperands[programCounter];
+						Class3_Sub13_Sub29.method306(k3, intsStack[--iStackCounter]);
 						continue;
 					}
-					if (31 == opcode) {
-						iHeapCounter -= 2;
-						if (intsHeap[iHeapCounter] <= intsHeap[1 + iHeapCounter])
-							programCounter += ram[programCounter];
+					if (opcode == CS2AsmOpcodes.BRANCH_GREATER_OR_EQUAL.getOp()) {
+						iStackCounter -= 2;
+						if (intsStack[1 + iStackCounter] >= intsStack[iStackCounter])
+							programCounter += instructionOperands[programCounter];
 						continue;
 					}
-					if (opcode == 32) {
-						iHeapCounter -= 2;
-						if (intsHeap[1 + iHeapCounter] <= intsHeap[iHeapCounter])
-							programCounter += ram[programCounter];
+					if (opcode == CS2AsmOpcodes.BRANCH_LESS_OR_EQUAL.getOp()) {
+						iStackCounter -= 2;
+						if (intsStack[1 + iStackCounter] <= intsStack[iStackCounter])
+							programCounter += instructionOperands[programCounter];
 						continue;
 					}
-					if (33 == opcode) {
-						intsHeap[iHeapCounter++] = Class126.anIntArray1662[ram[programCounter]];
+					if (opcode == CS2AsmOpcodes.PUSH_INT_FROM_ARGS.getOp()) {
+						intsStack[iStackCounter++] = intArguments[instructionOperands[programCounter]];
 						continue;
 					}
-					if (opcode == 34) {
-						Class126.anIntArray1662[ram[programCounter]] = intsHeap[--iHeapCounter];
+					if (opcode == CS2AsmOpcodes.POP_INT_TO_ARGS.getOp()) {
+						intArguments[instructionOperands[programCounter]] = intsStack[--iStackCounter];
 						continue;
 					}
-					if (opcode == 35) {
-						stringsHeap[sHeapCounter++] = Class107.aClass94Array1454[ram[programCounter]];
+					if (opcode == CS2AsmOpcodes.PUSH_STRING_FROM_ARGS.getOp()) {
+						stringsStack[sStackCounter++] = stringArguments[instructionOperands[programCounter]];
 						continue;
 					}
-					if (opcode == 36) {
-						Class107.aClass94Array1454[ram[programCounter]] = stringsHeap[--sHeapCounter];
+					if (opcode == CS2AsmOpcodes.POP_STRING_TO_ARGS.getOp()) {
+						stringArguments[instructionOperands[programCounter]] = stringsStack[--sStackCounter];
 						continue;
 					}
 					if (opcode == 37) {
-						int l3 = ram[programCounter];
-						sHeapCounter -= l3;
-						RSString class94_2 = Class67.method1261(sHeapCounter, l3, stringsHeap);
-						stringsHeap[sHeapCounter++] = class94_2;
+						int l3 = instructionOperands[programCounter];
+						sStackCounter -= l3;
+						RSString class94_2 = Class67.method1261(sStackCounter, l3, stringsStack);
+						stringsStack[sStackCounter++] = class94_2;
 						continue;
 					}
-					if (38 == opcode) {
-						iHeapCounter--;
+					if (opcode == CS2AsmOpcodes.POP_INT.getOp()) {
+						iStackCounter--;
 						continue;
 					}
-					if (opcode == 39) {
-						sHeapCounter--;
+					if (opcode == CS2AsmOpcodes.POP_STRING.getOp()) {
+						sStackCounter--;
 						continue;
 					}
-					if (opcode == 40) {
-						int i4 = ram[programCounter];
-						AssembledScript assembledScript_1 = Class3_Sub28_Sub8.method572(i4);
-						int[] ai2 = new int[assembledScript_1.numberOfIntsToCopy];
-						RSString[] aclass94 = new RSString[assembledScript_1.numberOfRSStringsToCopy];
-						if (assembledScript_1.intHeapCounterIncrement >= 0)
-							System.arraycopy(intsHeap, 0 + (iHeapCounter - assembledScript_1.intHeapCounterIncrement), ai2, 0, assembledScript_1.intHeapCounterIncrement);
+					if (opcode == CS2AsmOpcodes.CALL.getOp()) {
+						int op = instructionOperands[programCounter];
+						AssembledMethod assembledMethod_1 = Class3_Sub28_Sub8.method572(op);
+						int[] ai2 = new int[assembledMethod_1.numberOfIntsToCopy];
+						RSString[] aclass94 = new RSString[assembledMethod_1.numberOfRSStringsToCopy];
+						if (assembledMethod_1.numberOfIntArguments >= 0)
+							System.arraycopy(intsStack, (iStackCounter - assembledMethod_1.numberOfIntArguments), ai2, 0, assembledMethod_1.numberOfIntArguments);
 
-						for (int i76 = 0; assembledScript_1.stringHeapCounterOffset > i76; i76++)
-							aclass94[i76] = stringsHeap[i76 + -assembledScript_1.stringHeapCounterOffset + sHeapCounter];
+						for (int i76 = 0; assembledMethod_1.numberOfStringArguments > i76; i76++)
+							aclass94[i76] = stringsStack[i76 + -assembledMethod_1.numberOfStringArguments + sStackCounter];
 
-						iHeapCounter -= assembledScript_1.intHeapCounterIncrement;
-						sHeapCounter -= assembledScript_1.stringHeapCounterOffset;
-						ScriptContainer scriptContainer_1 = new ScriptContainer();
-						scriptContainer_1.aClass94Array873 = Class107.aClass94Array1454;
-						scriptContainer_1.anIntArray870 = Class126.anIntArray1662;
-						scriptContainer_1.anInt877 = programCounter;
-						scriptContainer_1.aAssembledScript_874 = assembledScript;
-						if (Class140_Sub4.aScriptContainerArray2841.length <= anInt4002)
+						iStackCounter -= assembledMethod_1.numberOfIntArguments;
+						sStackCounter -= assembledMethod_1.numberOfStringArguments;
+						AssembledMethodContainer assembledMethodContainer_1 = new AssembledMethodContainer();
+						assembledMethodContainer_1.stringArguments = stringArguments;
+						assembledMethodContainer_1.intArguments = intArguments;
+						assembledMethodContainer_1.currentProgramCounter = programCounter;
+						assembledMethodContainer_1.assembledMethod = currentMethod;
+						if (methodStack.length <= scriptHeapCounter)
 							throw new RuntimeException();
-						assembledScript = assembledScript_1;
+						currentMethod = assembledMethod_1;
 						programCounter = -1;
-						Class140_Sub4.aScriptContainerArray2841[anInt4002++] = scriptContainer_1;
-						Class126.anIntArray1662 = ai2;
-						ram = assembledScript.assemblyRAM;
-						instructions = assembledScript.assemblyInstructions;
-						Class107.aClass94Array1454 = aclass94;
+						methodStack[scriptHeapCounter++] = assembledMethodContainer_1;
+						intArguments = ai2;
+						instructionOperands = currentMethod.instructionOperands;
+						instructions = currentMethod.assemblyInstructions;
+						stringArguments = aclass94;
 						continue;
 					}
 					if (42 == opcode) {
-						intsHeap[iHeapCounter++] = NPCDefinition.anIntArray1277[ram[programCounter]];
+						intsStack[iStackCounter++] = NPCDefinition.anIntArray1277[instructionOperands[programCounter]];
 						continue;
 					}
 					if (opcode == 43) {
-						int j4 = ram[programCounter];
-						NPCDefinition.anIntArray1277[j4] = intsHeap[--iHeapCounter];
+						int j4 = instructionOperands[programCounter];
+						NPCDefinition.anIntArray1277[j4] = intsStack[--iStackCounter];
 						PacketParser.method825(j4);
 						continue;
 					}
-					if (44 == opcode) {
-						int k4 = ram[programCounter] >> 16;
-						int l43 = intsHeap[--iHeapCounter];
-						int k5 = 0xffff & ram[programCounter];
-						if (l43 < 0 || 5000 < l43)
+					if (opcode == CS2AsmOpcodes.ALLOCATE_PAGED_RAM.getOp()) {
+						int k4 = instructionOperands[programCounter] >> 16; // Get upper 16 bits of operand.
+						int bytesWritten = intsStack[--iStackCounter]; // pop stack
+						int k5 = 0xffff & instructionOperands[programCounter]; // Get lower 16 bits of operand to use as byte
+						if (bytesWritten < 0 || bytesWritten > 5000)
 							throw new RuntimeException();
-						anIntArray509[k4] = l43;
+						pagedRamPageSize[k4] = bytesWritten;
 						byte byte2 = -1;
 						if (k5 == 105)
 							byte2 = 0;
-						int j76 = 0;
-						while (j76 < l43) {
-							Canvas_Sub1.anIntArrayArray20[k4][j76] = byte2;
-							j76++;
+						for (int i = 0; i < bytesWritten; i++) {
+							pagedRam[k4][i] = byte2;
 						}
 						continue;
 					}
-					if (opcode == 45) {
-						int l4 = ram[programCounter];
-						int l5 = intsHeap[--iHeapCounter];
-						if (0 > l5 || anIntArray509[l4] <= l5)
+					if (opcode == CS2AsmOpcodes.REPLACE_STACK_PAGED_RAM.getOp()) {
+						int l4 = instructionOperands[programCounter];
+						int l5 = intsStack[--iStackCounter];
+						if (l5 < 0 || l5 >= pagedRamPageSize[l4])
 							throw new RuntimeException();
-						intsHeap[iHeapCounter++] = Canvas_Sub1.anIntArrayArray20[l4][l5];
+						intsStack[iStackCounter++] = pagedRam[l4][l5];
 						continue;
 					}
-					if (opcode == 46) {
-						int i5 = ram[programCounter];
-						iHeapCounter -= 2;
-						int i6 = intsHeap[iHeapCounter];
-						if (i6 < 0 || anIntArray509[i5] <= i6)
+					if (opcode == CS2AsmOpcodes.POP_TO_PAGED_RAM.getOp()) {
+						int i5 = instructionOperands[programCounter];
+						iStackCounter -= 2;
+						int i6 = intsStack[iStackCounter];
+						if (i6 < 0 || pagedRamPageSize[i5] <= i6)
 							throw new RuntimeException();
-						Canvas_Sub1.anIntArrayArray20[i5][i6] = intsHeap[1 + iHeapCounter];
+						pagedRam[i5][i6] = intsStack[1 + iStackCounter];
 						continue;
 					}
 					if (47 == opcode) {
-						RSString class94_1 = Class132.aClass94Array1739[ram[programCounter]];
+						RSString class94_1 = Class132.aClass94Array1739[instructionOperands[programCounter]];
 						if (null == class94_1)
 							class94_1 = Class140_Sub7.aClass94_2928;
-						stringsHeap[sHeapCounter++] = class94_1;
+						stringsStack[sStackCounter++] = class94_1;
 						continue;
 					}
 					if (opcode == 48) {
-						int j5 = ram[programCounter];
-						Class132.aClass94Array1739[j5] = stringsHeap[--sHeapCounter];
+						int j5 = instructionOperands[programCounter];
+						Class132.aClass94Array1739[j5] = stringsStack[--sStackCounter];
 						Class49.method1126(j5);
 						continue;
 					}
 					if (opcode == 51) {
-						Class130 class130 = assembledScript.aClass130Array3685[ram[programCounter]];
-						Class3_Sub18 class3_sub18 = (Class3_Sub18) class130.method1780(intsHeap[--iHeapCounter], 0);
+						Class130 class130 = currentMethod.aClass130Array3685[instructionOperands[programCounter]];
+						Class3_Sub18 class3_sub18 = (Class3_Sub18) class130.method1780(intsStack[--iStackCounter], 0);
 						if (null != class3_sub18)
 							programCounter += class3_sub18.anInt2467;
 						continue;
 					}
 				}
 				boolean flag;
-				flag = 1 == ram[programCounter];
+				flag = 1 == instructionOperands[programCounter];
 				if (opcode < 300) {
 					if (opcode == 100) {
-						iHeapCounter -= 3;
-						int j6 = intsHeap[iHeapCounter];
-						int i44 = intsHeap[1 + iHeapCounter];
-						int k66 = intsHeap[2 + iHeapCounter];
+						iStackCounter -= 3;
+						int j6 = intsStack[iStackCounter];
+						int i44 = intsStack[1 + iStackCounter];
+						int k66 = intsStack[2 + iStackCounter];
 						if (i44 == 0)
 							throw new RuntimeException();
 						RSInterface class11_21 = Class7.getRSInterface((byte) 121, j6);
@@ -433,20 +487,20 @@ final class ItemDefinition {
 						continue;
 					}
 					if (opcode == 102) {
-						RSInterface class11_1 = Class7.getRSInterface((byte) 109, intsHeap[--iHeapCounter]);
+						RSInterface class11_1 = Class7.getRSInterface((byte) 109, intsStack[--iStackCounter]);
 						class11_1.aClass11Array262 = null;
 						Class20.method909(-50, class11_1);
 						continue;
 					}
 					if (opcode == 200) {
-						iHeapCounter -= 2;
-						int k6 = intsHeap[iHeapCounter];
-						int j44 = intsHeap[iHeapCounter - -1];
+						iStackCounter -= 2;
+						int k6 = intsStack[iStackCounter];
+						int j44 = intsStack[iStackCounter - -1];
 						RSInterface class11_19 = Class3_Sub28_Sub16.method638(k6, j44);
 						if (null == class11_19 || j44 == -1) {
-							intsHeap[iHeapCounter++] = 0;
+							intsStack[iStackCounter++] = 0;
 						} else {
-							intsHeap[iHeapCounter++] = 1;
+							intsStack[iStackCounter++] = 1;
 							if (!flag)
 								Class133.aClass11_1749 = class11_19;
 							else
@@ -456,12 +510,12 @@ final class ItemDefinition {
 					}
 					if (opcode != 201)
 						break;
-					int l6 = intsHeap[--iHeapCounter];
+					int l6 = intsStack[--iStackCounter];
 					RSInterface class11_18 = Class7.getRSInterface((byte) 113, l6);
 					if (null == class11_18) {
-						intsHeap[iHeapCounter++] = 0;
+						intsStack[iStackCounter++] = 0;
 					} else {
-						intsHeap[iHeapCounter++] = 1;
+						intsStack[iStackCounter++] = 1;
 						if (flag)
 							Class164.aClass11_2055 = class11_18;
 						else
@@ -475,19 +529,19 @@ final class ItemDefinition {
 						if (opcode < 2000) {
 							class11_2 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 						} else {
-							class11_2 = Class7.getRSInterface((byte) 122, intsHeap[--iHeapCounter]);
+							class11_2 = Class7.getRSInterface((byte) 122, intsStack[--iStackCounter]);
 							opcode -= 1000;
 						}
 						if (opcode == 1000) {
-							iHeapCounter -= 4;
-							class11_2.x = intsHeap[iHeapCounter];
-							class11_2.y = intsHeap[iHeapCounter + 1];
-							int l66 = intsHeap[3 + iHeapCounter];
+							iStackCounter -= 4;
+							class11_2.x = intsStack[iStackCounter];
+							class11_2.y = intsStack[iStackCounter + 1];
+							int l66 = intsStack[3 + iStackCounter];
 							if (l66 < 0)
 								l66 = 0;
 							else if (l66 > 5)
 								l66 = 5;
-							int k44 = intsHeap[iHeapCounter + 2];
+							int k44 = intsStack[iStackCounter + 2];
 							if (k44 >= 0) {
 								if (k44 > 5)
 									k44 = 5;
@@ -503,13 +557,13 @@ final class ItemDefinition {
 							continue;
 						}
 						if (opcode == 1001) {
-							iHeapCounter -= 4;
-							class11_2.width = intsHeap[iHeapCounter];
-							class11_2.height = intsHeap[1 + iHeapCounter];
+							iStackCounter -= 4;
+							class11_2.width = intsStack[iStackCounter];
+							class11_2.height = intsStack[1 + iStackCounter];
 							class11_2.anInt184 = 0;
 							class11_2.anInt312 = 0;
-							int l44 = intsHeap[iHeapCounter + 2];
-							int i67 = intsHeap[3 + iHeapCounter];
+							int l44 = intsStack[iStackCounter + 2];
+							int i67 = intsStack[3 + iStackCounter];
 							if (i67 >= 0) {
 								if (i67 > 4)
 									i67 = 4;
@@ -529,7 +583,7 @@ final class ItemDefinition {
 							continue;
 						}
 						if (opcode == 1003) {
-							boolean flag3 = intsHeap[--iHeapCounter] == 1;
+							boolean flag3 = intsStack[--iStackCounter] == 1;
 							if (flag3 == (!class11_2.hidden)) {
 								class11_2.hidden = flag3;
 								Class20.method909(-103, class11_2);
@@ -539,9 +593,9 @@ final class ItemDefinition {
 							continue;
 						}
 						if (opcode == 1004) {
-							iHeapCounter -= 2;
-							class11_2.anInt216 = intsHeap[iHeapCounter];
-							class11_2.anInt160 = intsHeap[iHeapCounter - -1];
+							iStackCounter -= 2;
+							class11_2.anInt216 = intsStack[iStackCounter];
+							class11_2.anInt160 = intsStack[iStackCounter - -1];
 							Class20.method909(-99, class11_2);
 							Class3_Sub13_Sub12.method225(class11_2);
 							if (class11_2.type == 0)
@@ -550,7 +604,7 @@ final class ItemDefinition {
 						}
 						if (opcode != 1005)
 							break;
-						class11_2.aBoolean219 = intsHeap[--iHeapCounter] == 1;
+						class11_2.aBoolean219 = intsStack[--iStackCounter] == 1;
 						continue;
 					}
 					if ((opcode < 1100 || 1200 <= opcode) && (opcode < 2100 || 2200 <= opcode)) {
@@ -558,44 +612,44 @@ final class ItemDefinition {
 							if (opcode >= 1300 && opcode < 1400 || opcode >= 2300 && opcode < 2400) {
 								RSInterface class11_3;
 								if (2000 <= opcode) {
-									class11_3 = Class7.getRSInterface((byte) 119, intsHeap[--iHeapCounter]);
+									class11_3 = Class7.getRSInterface((byte) 119, intsStack[--iStackCounter]);
 									opcode -= 1000;
 								} else {
 									class11_3 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 								}
 								if (opcode == 1300) {
-									int i45 = intsHeap[--iHeapCounter] + -1;
+									int i45 = intsStack[--iStackCounter] + -1;
 									if (0 > i45 || i45 > 9)
-										sHeapCounter--;
+										sStackCounter--;
 									else
-										class11_3.method857(stringsHeap[--sHeapCounter], i45);
+										class11_3.method857(stringsStack[--sStackCounter], i45);
 									continue;
 								}
 								if (opcode == 1301) {
-									iHeapCounter -= 2;
-									int j67 = intsHeap[1 + iHeapCounter];
-									int j45 = intsHeap[iHeapCounter];
+									iStackCounter -= 2;
+									int j67 = intsStack[1 + iStackCounter];
+									int j45 = intsStack[iStackCounter];
 									class11_3.aClass11_302 = Class3_Sub28_Sub16.method638(j45, j67);
 									continue;
 								}
 								if (opcode == 1302) {
-									class11_3.aBoolean200 = intsHeap[--iHeapCounter] == 1;
+									class11_3.aBoolean200 = intsStack[--iStackCounter] == 1;
 									continue;
 								}
 								if (opcode == 1303) {
-									class11_3.anInt214 = intsHeap[--iHeapCounter];
+									class11_3.anInt214 = intsStack[--iStackCounter];
 									continue;
 								}
 								if (opcode == 1304) {
-									class11_3.anInt179 = intsHeap[--iHeapCounter];
+									class11_3.anInt179 = intsStack[--iStackCounter];
 									continue;
 								}
 								if (1305 == opcode) {
-									class11_3.aClass94_277 = stringsHeap[--sHeapCounter];
+									class11_3.aClass94_277 = stringsStack[--sStackCounter];
 									continue;
 								}
 								if (opcode == 1306) {
-									class11_3.aClass94_245 = stringsHeap[--sHeapCounter];
+									class11_3.aClass94_245 = stringsStack[--sStackCounter];
 									continue;
 								}
 								if (opcode == 1307) {
@@ -603,14 +657,14 @@ final class ItemDefinition {
 									continue;
 								}
 								if (opcode == 1308) {
-									class11_3.anInt238 = intsHeap[--iHeapCounter];
-									class11_3.anInt266 = intsHeap[--iHeapCounter];
+									class11_3.anInt238 = intsStack[--iStackCounter];
+									class11_3.anInt266 = intsStack[--iStackCounter];
 									continue;
 								}
 								if (1309 != opcode)
 									break;
-								int k45 = intsHeap[--iHeapCounter];
-								int k67 = intsHeap[--iHeapCounter];
+								int k45 = intsStack[--iStackCounter];
+								int k67 = intsStack[--iStackCounter];
 								if (k67 >= 1 && k67 <= 10)
 									class11_3.method854(k67 + -1, k45);
 								continue;
@@ -619,134 +673,134 @@ final class ItemDefinition {
 								if (1600 > opcode) {
 									RSInterface class11_4 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 									if (opcode == 1500) {
-										intsHeap[iHeapCounter++] = class11_4.anInt306;
+										intsStack[iStackCounter++] = class11_4.anInt306;
 										continue;
 									}
 									if (opcode == 1501) {
-										intsHeap[iHeapCounter++] = class11_4.anInt210;
+										intsStack[iStackCounter++] = class11_4.anInt210;
 										continue;
 									}
 									if (opcode == 1502) {
-										intsHeap[iHeapCounter++] = class11_4.anInt168;
+										intsStack[iStackCounter++] = class11_4.anInt168;
 										continue;
 									}
 									if (opcode == 1503) {
-										intsHeap[iHeapCounter++] = class11_4.anInt193;
+										intsStack[iStackCounter++] = class11_4.anInt193;
 										continue;
 									}
 									if (opcode == 1504) {
-										intsHeap[iHeapCounter++] = class11_4.hidden ? 1 : 0;
+										intsStack[iStackCounter++] = class11_4.hidden ? 1 : 0;
 										continue;
 									}
 									if (opcode != 1505)
 										break;
-									intsHeap[iHeapCounter++] = class11_4.parentId;
+									intsStack[iStackCounter++] = class11_4.parentId;
 									continue;
 								}
 								if (opcode < 1700) {
 									RSInterface class11_5 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 									if (opcode == 1600) {
-										intsHeap[iHeapCounter++] = class11_5.anInt247;
+										intsStack[iStackCounter++] = class11_5.anInt247;
 										continue;
 									}
 									if (opcode == 1601) {
-										intsHeap[iHeapCounter++] = class11_5.anInt208;
+										intsStack[iStackCounter++] = class11_5.anInt208;
 										continue;
 									}
 									if (opcode == 1602) {
-										stringsHeap[sHeapCounter++] = class11_5.aClass94_232;
+										stringsStack[sStackCounter++] = class11_5.aClass94_232;
 										continue;
 									}
 									if (opcode == 1603) {
-										intsHeap[iHeapCounter++] = class11_5.anInt240;
+										intsStack[iStackCounter++] = class11_5.anInt240;
 										continue;
 									}
 									if (opcode == 1604) {
-										intsHeap[iHeapCounter++] = class11_5.anInt252;
+										intsStack[iStackCounter++] = class11_5.anInt252;
 										continue;
 									}
 									if (opcode == 1605) {
-										intsHeap[iHeapCounter++] = class11_5.anInt164;
+										intsStack[iStackCounter++] = class11_5.anInt164;
 										continue;
 									}
 									if (opcode == 1606) {
-										intsHeap[iHeapCounter++] = class11_5.anInt182;
+										intsStack[iStackCounter++] = class11_5.anInt182;
 										continue;
 									}
 									if (1607 == opcode) {
-										intsHeap[iHeapCounter++] = class11_5.anInt280;
+										intsStack[iStackCounter++] = class11_5.anInt280;
 										continue;
 									}
 									if (opcode == 1608) {
-										intsHeap[iHeapCounter++] = class11_5.anInt308;
+										intsStack[iStackCounter++] = class11_5.anInt308;
 										continue;
 									}
 									if (opcode == 1609) {
-										intsHeap[iHeapCounter++] = class11_5.anInt223;
+										intsStack[iStackCounter++] = class11_5.anInt223;
 										continue;
 									}
 									if (1610 == opcode) {
-										intsHeap[iHeapCounter++] = class11_5.anInt258;
+										intsStack[iStackCounter++] = class11_5.anInt258;
 										continue;
 									}
 									if (opcode == 1611) {
-										intsHeap[iHeapCounter++] = class11_5.anInt264;
+										intsStack[iStackCounter++] = class11_5.anInt264;
 										continue;
 									}
 									if (opcode != 1612)
 										break;
-									intsHeap[iHeapCounter++] = class11_5.spriteArchiveId;
+									intsStack[iStackCounter++] = class11_5.spriteArchiveId;
 									continue;
 								}
 								if (opcode >= 1800) {
 									if (opcode < 1900) {
 										RSInterface class11_6 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 										if (1800 == opcode) {
-											intsHeap[iHeapCounter++] = Client.method44(class11_6).method101();
+											intsStack[iStackCounter++] = Client.method44(class11_6).method101();
 											continue;
 										}
 										if (1801 == opcode) {
-											int l45 = intsHeap[--iHeapCounter];
+											int l45 = intsStack[--iStackCounter];
 											l45--;
 											if (null == class11_6.aClass94Array171 || class11_6.aClass94Array171.length <= l45 || null == class11_6.aClass94Array171[l45])
-												stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+												stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 											else
-												stringsHeap[sHeapCounter++] = class11_6.aClass94Array171[l45];
+												stringsStack[sStackCounter++] = class11_6.aClass94Array171[l45];
 											continue;
 										}
 										if (opcode != 1802)
 											break;
 										if (null != class11_6.aClass94_277)
-											stringsHeap[sHeapCounter++] = class11_6.aClass94_277;
+											stringsStack[sStackCounter++] = class11_6.aClass94_277;
 										else
-											stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+											stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 										continue;
 									}
 									if (2600 > opcode) {
-										RSInterface class11_7 = Class7.getRSInterface((byte) 114, intsHeap[--iHeapCounter]);
+										RSInterface class11_7 = Class7.getRSInterface((byte) 114, intsStack[--iStackCounter]);
 										if (opcode == 2500) {
-											intsHeap[iHeapCounter++] = class11_7.anInt306;
+											intsStack[iStackCounter++] = class11_7.anInt306;
 											continue;
 										}
 										if (opcode == 2501) {
-											intsHeap[iHeapCounter++] = class11_7.anInt210;
+											intsStack[iStackCounter++] = class11_7.anInt210;
 											continue;
 										}
 										if (2502 == opcode) {
-											intsHeap[iHeapCounter++] = class11_7.anInt168;
+											intsStack[iStackCounter++] = class11_7.anInt168;
 											continue;
 										}
 										if (opcode == 2503) {
-											intsHeap[iHeapCounter++] = class11_7.anInt193;
+											intsStack[iStackCounter++] = class11_7.anInt193;
 											continue;
 										}
 										if (2504 == opcode) {
-											intsHeap[iHeapCounter++] = class11_7.hidden ? 1 : 0;
+											intsStack[iStackCounter++] = class11_7.hidden ? 1 : 0;
 											continue;
 										}
 										if (opcode != 2505)
 											break;
-										intsHeap[iHeapCounter++] = class11_7.parentId;
+										intsStack[iStackCounter++] = class11_7.parentId;
 										continue;
 									}
 									if (opcode >= 2700) {
@@ -754,13 +808,13 @@ final class ItemDefinition {
 											if (opcode >= 2900) {
 												if (opcode < 3200) {
 													if (opcode == 3100) {
-														RSString class94_3 = stringsHeap[--sHeapCounter];
+														RSString class94_3 = stringsStack[--sStackCounter];
 														Class3_Sub30_Sub1.addChatMessage(Class3_Sub9.aClass94_2331, 0, class94_3, -1);
 														continue;
 													}
 													if (opcode == 3101) {
-														iHeapCounter -= 2;
-														Class3_Sub28_Sub14.method628(intsHeap[iHeapCounter - -1], intsHeap[iHeapCounter], Class102.player);
+														iStackCounter -= 2;
+														Class3_Sub28_Sub14.method628(intsStack[iStackCounter - -1], intsStack[iStackCounter], Class102.player);
 														continue;
 													}
 													if (opcode == 3103) {
@@ -768,7 +822,7 @@ final class ItemDefinition {
 														continue;
 													}
 													if (opcode == 3104) {
-														RSString class94_4 = stringsHeap[--sHeapCounter];
+														RSString class94_4 = stringsStack[--sStackCounter];
 														int i46 = 0;
 														if (class94_4.method1543(82))
 															i46 = class94_4.method1552((byte) -104);
@@ -777,441 +831,441 @@ final class ItemDefinition {
 														continue;
 													}
 													if (opcode == 3105) {
-														RSString class94_5 = stringsHeap[--sHeapCounter];
+														RSString class94_5 = stringsStack[--sStackCounter];
 														Class3_Sub13_Sub1.outgoingBuffer.putOpcode(244);
 														Class3_Sub13_Sub1.outgoingBuffer.putLong(class94_5.toLong(-115), 0x868e5910);
 														continue;
 													}
 													if (opcode == 3106) {
-														RSString class94_6 = stringsHeap[--sHeapCounter];
+														RSString class94_6 = stringsStack[--sStackCounter];
 														Class3_Sub13_Sub1.outgoingBuffer.putOpcode(65);
 														Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -17, 1 + class94_6.length(-84));
 														Class3_Sub13_Sub1.outgoingBuffer.putString(class94_6);
 														continue;
 													}
 													if (opcode == 3107) {
-														int i7 = intsHeap[--iHeapCounter];
-														RSString class94_44 = stringsHeap[--sHeapCounter];
+														int i7 = intsStack[--iStackCounter];
+														RSString class94_44 = stringsStack[--sStackCounter];
 														Class166.method2258(i7, class94_44);
 														continue;
 													}
 													if (opcode == 3108) {
-														iHeapCounter -= 3;
-														int j46 = intsHeap[iHeapCounter - -1];
-														int j7 = intsHeap[iHeapCounter];
-														int l67 = intsHeap[2 + iHeapCounter];
+														iStackCounter -= 3;
+														int j46 = intsStack[iStackCounter - -1];
+														int j7 = intsStack[iStackCounter];
+														int l67 = intsStack[2 + iStackCounter];
 														RSInterface class11_22 = Class7.getRSInterface((byte) 114, l67);
 														Class3_Sub28_Sub6.a(j46, j7, 115, class11_22);
 														continue;
 													}
 													if (opcode == 3109) {
-														iHeapCounter -= 2;
-														int k7 = intsHeap[iHeapCounter];
+														iStackCounter -= 2;
+														int k7 = intsStack[iStackCounter];
 														RSInterface class11_20 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
-														int k46 = intsHeap[1 + iHeapCounter];
+														int k46 = intsStack[1 + iStackCounter];
 														Class3_Sub28_Sub6.a(k46, k7, 79, class11_20);
 														continue;
 													}
 													if (opcode != 3110)
 														break;
-													int l7 = intsHeap[--iHeapCounter];
+													int l7 = intsStack[--iStackCounter];
 													Class3_Sub13_Sub1.outgoingBuffer.putOpcode(111);
 													Class3_Sub13_Sub1.outgoingBuffer.putShort(l7);
 													continue;
 												}
 												if (opcode < 3300) {
 													if (opcode == 3200) {
-														iHeapCounter -= 3;
-														Class3_Sub13_Sub6.method199(intsHeap[iHeapCounter - -1], intsHeap[iHeapCounter], intsHeap[iHeapCounter + 2]);
+														iStackCounter -= 3;
+														Class3_Sub13_Sub6.method199(intsStack[iStackCounter - -1], intsStack[iStackCounter], intsStack[iStackCounter + 2]);
 														continue;
 													}
 													if (opcode == 3201) {
-														Class86.method1427(intsHeap[--iHeapCounter]);
+														Class86.method1427(intsStack[--iStackCounter]);
 														continue;
 													}
 													if (opcode != 3202)
 														break;
-													iHeapCounter -= 2;
-													Class167.method2266(intsHeap[1 + iHeapCounter], intsHeap[iHeapCounter]);
+													iStackCounter -= 2;
+													Class167.method2266(intsStack[1 + iStackCounter], intsStack[iStackCounter]);
 													continue;
 												}
 												if (opcode < 3400) {
 													if (opcode == 3300) {
-														intsHeap[iHeapCounter++] = Class44.anInt719;
+														intsStack[iStackCounter++] = Class44.anInt719;
 														continue;
 													}
 													if (opcode == 3301) {
-														iHeapCounter -= 2;
-														int i8 = intsHeap[iHeapCounter];
-														int l46 = intsHeap[1 + iHeapCounter];
-														intsHeap[iHeapCounter++] = RSInterface.method861(i8, 89, l46);
+														iStackCounter -= 2;
+														int i8 = intsStack[iStackCounter];
+														int l46 = intsStack[1 + iStackCounter];
+														intsStack[iStackCounter++] = RSInterface.method861(i8, 89, l46);
 														continue;
 													}
 													if (opcode == 3302) {
-														iHeapCounter -= 2;
-														int i47 = intsHeap[iHeapCounter + 1];
-														int j8 = intsHeap[iHeapCounter];
-														intsHeap[iHeapCounter++] = Class12.method872(j8, i47);
+														iStackCounter -= 2;
+														int i47 = intsStack[iStackCounter + 1];
+														int j8 = intsStack[iStackCounter];
+														intsStack[iStackCounter++] = Class12.method872(j8, i47);
 														continue;
 													}
 													if (3303 == opcode) {
-														iHeapCounter -= 2;
-														int j47 = intsHeap[iHeapCounter - -1];
-														int k8 = intsHeap[iHeapCounter];
-														intsHeap[iHeapCounter++] = Class167.method2268((byte) -107, k8, j47);
+														iStackCounter -= 2;
+														int j47 = intsStack[iStackCounter - -1];
+														int k8 = intsStack[iStackCounter];
+														intsStack[iStackCounter++] = Class167.method2268((byte) -107, k8, j47);
 														continue;
 													}
 													if (3304 == opcode) {
-														int l8 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class144.method2069(l8, -127).anInt3647;
+														int l8 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class144.method2069(l8, -127).anInt3647;
 														continue;
 													}
 													if (opcode == 3305) {
-														int i9 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class3_Sub13_Sub15.anIntArray3185[i9];
+														int i9 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class3_Sub13_Sub15.anIntArray3185[i9];
 														continue;
 													}
 													if (opcode == 3306) {
-														int j9 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class3_Sub20.anIntArray2480[j9];
+														int j9 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class3_Sub20.anIntArray2480[j9];
 														continue;
 													}
 													if (3307 == opcode) {
-														int k9 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class133.anIntArray1743[k9];
+														int k9 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class133.anIntArray1743[k9];
 														continue;
 													}
 													if (opcode == 3308) {
 														int l9 = WorldListCountry.localPlane;
 														int k47 = Class131.anInt1716 + (Class102.player.anInt2819 >> 7);
 														int i68 = (Class102.player.anInt2829 >> 7) - -Class82.anInt1152;
-														intsHeap[iHeapCounter++] = (l9 << 28) - (-(k47 << 14) - i68);
+														intsStack[iStackCounter++] = (l9 << 28) - (-(k47 << 14) - i68);
 														continue;
 													}
 													if (opcode == 3309) {
-														int i10 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class69.bitwiseAnd(16383, i10 >> 14);
+														int i10 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class69.bitwiseAnd(16383, i10 >> 14);
 														continue;
 													}
 													if (3310 == opcode) {
-														int j10 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = j10 >> 28;
+														int j10 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = j10 >> 28;
 														continue;
 													}
 													if (opcode == 3311) {
-														int k10 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class69.bitwiseAnd(k10, 16383);
+														int k10 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class69.bitwiseAnd(k10, 16383);
 														continue;
 													}
 													if (opcode == 3312) {
-														intsHeap[iHeapCounter++] = Class2.isMember ? 1 : 0;
+														intsStack[iStackCounter++] = Class2.isMember ? 1 : 0;
 														continue;
 													}
 													if (3313 == opcode) {
-														iHeapCounter -= 2;
-														int l10 = 32768 + intsHeap[iHeapCounter];
-														int l47 = intsHeap[iHeapCounter - -1];
-														intsHeap[iHeapCounter++] = RSInterface.method861(l10, 118, l47);
+														iStackCounter -= 2;
+														int l10 = 32768 + intsStack[iStackCounter];
+														int l47 = intsStack[iStackCounter - -1];
+														intsStack[iStackCounter++] = RSInterface.method861(l10, 118, l47);
 														continue;
 													}
 													if (3314 == opcode) {
-														iHeapCounter -= 2;
-														int i11 = intsHeap[iHeapCounter] - -32768;
-														int i48 = intsHeap[1 + iHeapCounter];
-														intsHeap[iHeapCounter++] = Class12.method872(i11, i48);
+														iStackCounter -= 2;
+														int i11 = intsStack[iStackCounter] - -32768;
+														int i48 = intsStack[1 + iStackCounter];
+														intsStack[iStackCounter++] = Class12.method872(i11, i48);
 														continue;
 													}
 													if (3315 == opcode) {
-														iHeapCounter -= 2;
-														int j11 = 32768 + intsHeap[iHeapCounter];
-														int j48 = intsHeap[1 + iHeapCounter];
-														intsHeap[iHeapCounter++] = Class167.method2268((byte) -52, j11, j48);
+														iStackCounter -= 2;
+														int j11 = 32768 + intsStack[iStackCounter];
+														int j48 = intsStack[1 + iStackCounter];
+														intsStack[iStackCounter++] = Class167.method2268((byte) -52, j11, j48);
 														continue;
 													}
 													if (opcode == 3316) {
 														if (Class3_Sub13_Sub26.rights < 2)
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														else
-															intsHeap[iHeapCounter++] = Class3_Sub13_Sub26.rights;
+															intsStack[iStackCounter++] = Class3_Sub13_Sub26.rights;
 														continue;
 													}
 													if (opcode == 3317) {
-														intsHeap[iHeapCounter++] = Class38_Sub1.anInt2617;
+														intsStack[iStackCounter++] = Class38_Sub1.anInt2617;
 														continue;
 													}
 													if (3318 == opcode) {
-														intsHeap[iHeapCounter++] = CS2Script.anInt2451;
+														intsStack[iStackCounter++] = CS2Script.anInt2451;
 														continue;
 													}
 													if (3321 == opcode) {
-														intsHeap[iHeapCounter++] = Class9.anInt136;
+														intsStack[iStackCounter++] = Class9.anInt136;
 														continue;
 													}
 													if (opcode == 3322) {
-														intsHeap[iHeapCounter++] = MouseListeningClass.anInt1925;
+														intsStack[iStackCounter++] = MouseListeningClass.anInt1925;
 														continue;
 													}
 													if (3323 == opcode) {
 														if (Class3_Sub28_Sub19.anInt3775 >= 5 && Class3_Sub28_Sub19.anInt3775 <= 9)
-															intsHeap[iHeapCounter++] = 1;
+															intsStack[iStackCounter++] = 1;
 														else
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														continue;
 													}
 													if (opcode == 3324) {
 														if (Class3_Sub28_Sub19.anInt3775 < 5 || Class3_Sub28_Sub19.anInt3775 > 9)
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														else
-															intsHeap[iHeapCounter++] = Class3_Sub28_Sub19.anInt3775;
+															intsStack[iStackCounter++] = Class3_Sub28_Sub19.anInt3775;
 														continue;
 													}
 													if (3325 == opcode) {
-														intsHeap[iHeapCounter++] = Class3_Sub13_Sub29.disableGEBoxes ? 1 : 0;
+														intsStack[iStackCounter++] = Class3_Sub13_Sub29.disableGEBoxes ? 1 : 0;
 														continue;
 													}
 													if (3326 == opcode) {
-														intsHeap[iHeapCounter++] = Class102.player.COMBAT_LEVEL;
+														intsStack[iStackCounter++] = Class102.player.COMBAT_LEVEL;
 														continue;
 													}
 													if (3327 == opcode) {
-														intsHeap[iHeapCounter++] = Class102.player.class52.aBoolean864 ? 1 : 0;
+														intsStack[iStackCounter++] = Class102.player.class52.aBoolean864 ? 1 : 0;
 														continue;
 													}
 													if (3328 == opcode) {
-														intsHeap[iHeapCounter++] = !Class3_Sub15.aBoolean2433 || Class121.aBoolean1641 ? 0 : 1;
+														intsStack[iStackCounter++] = !Class3_Sub15.aBoolean2433 || Class121.aBoolean1641 ? 0 : 1;
 														continue;
 													}
 													if (3329 == opcode) {
-														intsHeap[iHeapCounter++] = Class3_Sub13_Sub14.aBoolean3166 ? 1 : 0;
+														intsStack[iStackCounter++] = Class3_Sub13_Sub14.aBoolean3166 ? 1 : 0;
 														continue;
 													}
 													if (opcode == 3330) {
-														int k11 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = WorldListEntry.method1079(k11);
+														int k11 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = WorldListEntry.method1079(k11);
 														continue;
 													}
 													if (opcode == 3331) {
-														iHeapCounter -= 2;
-														int k48 = intsHeap[1 + iHeapCounter];
-														int l11 = intsHeap[iHeapCounter];
-														intsHeap[iHeapCounter++] = Class106.method1643(false, l11, k48);
+														iStackCounter -= 2;
+														int k48 = intsStack[1 + iStackCounter];
+														int l11 = intsStack[iStackCounter];
+														intsStack[iStackCounter++] = Class106.method1643(false, l11, k48);
 														continue;
 													}
 													if (3332 == opcode) {
-														iHeapCounter -= 2;
-														int i12 = intsHeap[iHeapCounter];
-														int l48 = intsHeap[iHeapCounter + 1];
-														intsHeap[iHeapCounter++] = Class106.method1643(true, i12, l48);
+														iStackCounter -= 2;
+														int i12 = intsStack[iStackCounter];
+														int l48 = intsStack[iStackCounter + 1];
+														intsStack[iStackCounter++] = Class106.method1643(true, i12, l48);
 														continue;
 													}
 													if (3333 == opcode) {
-														intsHeap[iHeapCounter++] = Class7.anInt2161;
+														intsStack[iStackCounter++] = Class7.anInt2161;
 														continue;
 													}
 													if (3335 == opcode) {
-														intsHeap[iHeapCounter++] = Class3_Sub20.language;
+														intsStack[iStackCounter++] = Class3_Sub20.language;
 														continue;
 													}
 													if (opcode == 3336) {
-														iHeapCounter -= 4;
-														int i49 = intsHeap[iHeapCounter - -1];
-														int j12 = intsHeap[iHeapCounter];
+														iStackCounter -= 4;
+														int i49 = intsStack[iStackCounter - -1];
+														int j12 = intsStack[iStackCounter];
 														j12 += i49 << 14;
-														int k76 = intsHeap[3 + iHeapCounter];
-														int j68 = intsHeap[2 + iHeapCounter];
+														int k76 = intsStack[3 + iStackCounter];
+														int j68 = intsStack[2 + iStackCounter];
 														j12 += j68 << 28;
 														j12 += k76;
-														intsHeap[iHeapCounter++] = j12;
+														intsStack[iStackCounter++] = j12;
 														continue;
 													}
 													if (opcode != 3337)
 														break;
-													intsHeap[iHeapCounter++] = Class3_Sub26.anInt2554;
+													intsStack[iStackCounter++] = Class3_Sub26.anInt2554;
 													continue;
 												}
 												if (opcode < 3500) {
 													if (opcode == 3400) {
-														iHeapCounter -= 2;
-														int k12 = intsHeap[iHeapCounter];
-														int j49 = intsHeap[1 + iHeapCounter];
+														iStackCounter -= 2;
+														int k12 = intsStack[iStackCounter];
+														int j49 = intsStack[1 + iStackCounter];
 														Class3_Sub28_Sub13 class3_sub28_sub13_1 = Class3_Sub13_Sub36.method342(k12);
-														stringsHeap[sHeapCounter++] = class3_sub28_sub13_1.method616(j49, (byte) 121);
+														stringsStack[sStackCounter++] = class3_sub28_sub13_1.method616(j49, (byte) 121);
 														continue;
 													}
 													if (3408 == opcode) {
-														iHeapCounter -= 4;
-														int l12 = intsHeap[iHeapCounter];
-														int k49 = intsHeap[1 + iHeapCounter];
-														int l76 = intsHeap[3 + iHeapCounter];
-														int k68 = intsHeap[iHeapCounter - -2];
+														iStackCounter -= 4;
+														int l12 = intsStack[iStackCounter];
+														int k49 = intsStack[1 + iStackCounter];
+														int l76 = intsStack[3 + iStackCounter];
+														int k68 = intsStack[iStackCounter - -2];
 														Class3_Sub28_Sub13 class3_sub28_sub13_4 = Class3_Sub13_Sub36.method342(k68);
 														if (class3_sub28_sub13_4.anInt3662 != l12 || k49 != class3_sub28_sub13_4.anInt3658)
 															throw new RuntimeException("C3408-1");
 														if (k49 != 115)
-															intsHeap[iHeapCounter++] = class3_sub28_sub13_4.method620(l76);
+															intsStack[iStackCounter++] = class3_sub28_sub13_4.method620(l76);
 														else
-															stringsHeap[sHeapCounter++] = class3_sub28_sub13_4.method616(l76, (byte) -25);
+															stringsStack[sStackCounter++] = class3_sub28_sub13_4.method616(l76, (byte) -25);
 														continue;
 													}
 													if (opcode == 3409) {
-														iHeapCounter -= 3;
-														int l49 = intsHeap[iHeapCounter - -1];
-														int l68 = intsHeap[iHeapCounter + 2];
-														int i13 = intsHeap[iHeapCounter];
+														iStackCounter -= 3;
+														int l49 = intsStack[iStackCounter - -1];
+														int l68 = intsStack[iStackCounter + 2];
+														int i13 = intsStack[iStackCounter];
 														if (l49 == -1)
 															throw new RuntimeException("C3409-2");
 														Class3_Sub28_Sub13 class3_sub28_sub13_3 = Class3_Sub13_Sub36.method342(l49);
 														if (i13 != class3_sub28_sub13_3.anInt3658)
 															throw new RuntimeException("C3409-1");
-														intsHeap[iHeapCounter++] = class3_sub28_sub13_3.method621(l68) ? 1 : 0;
+														intsStack[iStackCounter++] = class3_sub28_sub13_3.method621(l68) ? 1 : 0;
 														continue;
 													}
 													if (opcode == 3410) {
-														int j13 = intsHeap[--iHeapCounter];
-														RSString class94_45 = stringsHeap[--sHeapCounter];
+														int j13 = intsStack[--iStackCounter];
+														RSString class94_45 = stringsStack[--sStackCounter];
 														if (j13 == -1)
 															throw new RuntimeException("C3410-2");
 														Class3_Sub28_Sub13 class3_sub28_sub13_2 = Class3_Sub13_Sub36.method342(j13);
 														if (class3_sub28_sub13_2.anInt3658 != 115)
 															throw new RuntimeException("C3410-1");
-														intsHeap[iHeapCounter++] = class3_sub28_sub13_2.method617(class94_45) ? 1 : 0;
+														intsStack[iStackCounter++] = class3_sub28_sub13_2.method617(class94_45) ? 1 : 0;
 														continue;
 													}
 													if (opcode != 3411)
 														break;
-													int k13 = intsHeap[--iHeapCounter];
+													int k13 = intsStack[--iStackCounter];
 													Class3_Sub28_Sub13 class3_sub28_sub13 = Class3_Sub13_Sub36.method342(k13);
-													intsHeap[iHeapCounter++] = class3_sub28_sub13.aClass130_3663.method1781(79);
+													intsStack[iStackCounter++] = class3_sub28_sub13.aClass130_3663.method1781(79);
 													continue;
 												}
 												if (3700 > opcode) {
 													if (3600 == opcode) {
 														if (Class96.anInt1357 == 0)
-															intsHeap[iHeapCounter++] = -2;
+															intsStack[iStackCounter++] = -2;
 														else if (Class96.anInt1357 != 1)
-															intsHeap[iHeapCounter++] = Class8.anInt104;
+															intsStack[iStackCounter++] = Class8.anInt104;
 														else
-															intsHeap[iHeapCounter++] = -1;
+															intsStack[iStackCounter++] = -1;
 														continue;
 													}
 													if (3601 == opcode) {
-														int l13 = intsHeap[--iHeapCounter];
+														int l13 = intsStack[--iStackCounter];
 														if (Class96.anInt1357 != 2 || Class8.anInt104 <= l13)
-															stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+															stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 														else
-															stringsHeap[sHeapCounter++] = Class70.aClass94Array1046[l13];
+															stringsStack[sStackCounter++] = Class70.aClass94Array1046[l13];
 														continue;
 													}
 													if (opcode == 3602) {
-														int i14 = intsHeap[--iHeapCounter];
+														int i14 = intsStack[--iStackCounter];
 														if (Class96.anInt1357 != 2 || i14 >= Class8.anInt104)
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														else
-															intsHeap[iHeapCounter++] = Class55.anIntArray882[i14];
+															intsStack[iStackCounter++] = Class55.anIntArray882[i14];
 														continue;
 													}
 													if (opcode == 3603) {
-														int j14 = intsHeap[--iHeapCounter];
+														int j14 = intsStack[--iStackCounter];
 														if (2 == Class96.anInt1357 && Class8.anInt104 > j14)
-															intsHeap[iHeapCounter++] = Class57.anIntArray904[j14];
+															intsStack[iStackCounter++] = Class57.anIntArray904[j14];
 														else
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														continue;
 													}
 													if (3604 == opcode) {
-														int i50 = intsHeap[--iHeapCounter];
-														RSString class94_7 = stringsHeap[--sHeapCounter];
+														int i50 = intsStack[--iStackCounter];
+														RSString class94_7 = stringsStack[--sStackCounter];
 														Class100.method1605(class94_7, i50);
 														continue;
 													}
 													if (opcode == 3605) {
-														RSString class94_8 = stringsHeap[--sHeapCounter];
+														RSString class94_8 = stringsStack[--sStackCounter];
 														Class163_Sub3.method2229(class94_8.toLong(-120));
 														continue;
 													}
 													if (opcode == 3606) {
-														RSString class94_9 = stringsHeap[--sHeapCounter];
+														RSString class94_9 = stringsStack[--sStackCounter];
 														Class3_Sub13_Sub27.method297(class94_9.toLong(-114), 1);
 														continue;
 													}
 													if (opcode == 3607) {
-														RSString class94_10 = stringsHeap[--sHeapCounter];
+														RSString class94_10 = stringsStack[--sStackCounter];
 														Class81.method1399(class94_10.toLong(-116));
 														continue;
 													}
 													if (opcode == 3608) {
-														RSString class94_11 = stringsHeap[--sHeapCounter];
+														RSString class94_11 = stringsStack[--sStackCounter];
 														Class3_Sub13_Sub10.method212(class94_11.toLong(-115));
 														continue;
 													}
 													if (opcode == 3609) {
-														RSString class94_12 = stringsHeap[--sHeapCounter];
+														RSString class94_12 = stringsStack[--sStackCounter];
 														if (class94_12.method1558(Class3_Sub9.aClass94_2323) || class94_12.method1558(Class3_Sub13_Sub16.aClass94_3190))
 															class94_12 = class94_12.method1556(7);
-														intsHeap[iHeapCounter++] = ScriptContainer.method1176(class94_12) ? 1 : 0;
+														intsStack[iStackCounter++] = method1176(class94_12) ? 1 : 0;
 														continue;
 													}
 													if (opcode == 3610) {
-														int k14 = intsHeap[--iHeapCounter];
+														int k14 = intsStack[--iStackCounter];
 														if (Class96.anInt1357 == 2 && Class8.anInt104 > k14)
-															stringsHeap[sHeapCounter++] = Node.aClass94Array2566[k14];
+															stringsStack[sStackCounter++] = Node.aClass94Array2566[k14];
 														else
-															stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+															stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 														continue;
 													}
 													if (opcode == 3611) {
 														if (RSInterface.aClass94_251 != null)
-															stringsHeap[sHeapCounter++] = RSInterface.aClass94_251.method1545();
+															stringsStack[sStackCounter++] = RSInterface.aClass94_251.method1545();
 														else
-															stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+															stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 														continue;
 													}
 													if (opcode == 3612) {
 														if (null != RSInterface.aClass94_251)
-															intsHeap[iHeapCounter++] = Node.clanSize;
+															intsStack[iStackCounter++] = Node.clanSize;
 														else
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														continue;
 													}
 													if (opcode == 3613) {
-														int l14 = intsHeap[--iHeapCounter];
+														int l14 = intsStack[--iStackCounter];
 														if (RSInterface.aClass94_251 == null || l14 >= Node.clanSize)
-															stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+															stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 														else
-															stringsHeap[sHeapCounter++] = PacketParser.aClass3_Sub19Array3694[l14].aClass94_2476.method1545();
+															stringsStack[sStackCounter++] = PacketParser.aClass3_Sub19Array3694[l14].aClass94_2476.method1545();
 														continue;
 													}
 													if (opcode == 3614) {
-														int i15 = intsHeap[--iHeapCounter];
+														int i15 = intsStack[--iStackCounter];
 														if (RSInterface.aClass94_251 == null || i15 >= Node.clanSize)
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														else
-															intsHeap[iHeapCounter++] = PacketParser.aClass3_Sub19Array3694[i15].anInt2478;
+															intsStack[iStackCounter++] = PacketParser.aClass3_Sub19Array3694[i15].anInt2478;
 														continue;
 													}
 													if (3615 == opcode) {
-														int j15 = intsHeap[--iHeapCounter];
+														int j15 = intsStack[--iStackCounter];
 														if (null == RSInterface.aClass94_251 || j15 >= Node.clanSize)
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														else
-															intsHeap[iHeapCounter++] = PacketParser.aClass3_Sub19Array3694[j15].aByte2472;
+															intsStack[iStackCounter++] = PacketParser.aClass3_Sub19Array3694[j15].aByte2472;
 														continue;
 													}
 													if (3616 == opcode) {
-														intsHeap[iHeapCounter++] = Player.aByte3953;
+														intsStack[iStackCounter++] = Player.aByte3953;
 														continue;
 													}
 													if (opcode == 3617) {
-														RSString class94_13 = stringsHeap[--sHeapCounter];
+														RSString class94_13 = stringsStack[--sStackCounter];
 														Class106.method1642(class94_13);
 														continue;
 													}
 													if (opcode == 3618) {
-														intsHeap[iHeapCounter++] = Class91.aByte1308;
+														intsStack[iStackCounter++] = Class91.aByte1308;
 														continue;
 													}
 													if (opcode == 3619) {
-														RSString class94_14 = stringsHeap[--sHeapCounter];
+														RSString class94_14 = stringsStack[--sStackCounter];
 														Class3_Sub22.method400(class94_14.toLong(-107));
 														continue;
 													}
@@ -1221,266 +1275,266 @@ final class ItemDefinition {
 													}
 													if (opcode == 3621) {
 														if (Class96.anInt1357 == 0)
-															intsHeap[iHeapCounter++] = -1;
+															intsStack[iStackCounter++] = -1;
 														else
-															intsHeap[iHeapCounter++] = Class3_Sub28_Sub5.anInt3591;
+															intsStack[iStackCounter++] = Class3_Sub28_Sub5.anInt3591;
 														continue;
 													}
 													if (3622 == opcode) {
-														int k15 = intsHeap[--iHeapCounter];
+														int k15 = intsStack[--iStackCounter];
 														if (Class96.anInt1357 == 0 || Class3_Sub28_Sub5.anInt3591 <= k15)
-															stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+															stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 														else
-															stringsHeap[sHeapCounter++] = Class41.method1052(Class114.ignores[k15]).method1545();
+															stringsStack[sStackCounter++] = Class41.method1052(Class114.ignores[k15]).method1545();
 														continue;
 													}
 													if (3623 == opcode) {
-														RSString class94_15 = stringsHeap[--sHeapCounter];
+														RSString class94_15 = stringsStack[--sStackCounter];
 														if (class94_15.method1558(Class3_Sub9.aClass94_2323) || class94_15.method1558(Class3_Sub13_Sub16.aClass94_3190))
 															class94_15 = class94_15.method1556(7);
-														intsHeap[iHeapCounter++] = Class3_Sub24_Sub3.method467(class94_15) ? 1 : 0;
+														intsStack[iStackCounter++] = Class3_Sub24_Sub3.method467(class94_15) ? 1 : 0;
 														continue;
 													}
 													if (opcode == 3624) {
-														int l15 = intsHeap[--iHeapCounter];
+														int l15 = intsStack[--iStackCounter];
 														if (null != PacketParser.aClass3_Sub19Array3694 && l15 < Node.clanSize && PacketParser.aClass3_Sub19Array3694[l15].aClass94_2476.equals(-118, Class102.player.displayName))
-															intsHeap[iHeapCounter++] = 1;
+															intsStack[iStackCounter++] = 1;
 														else
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														continue;
 													}
 													if (opcode == 3625) {
 														if (Class161.aClass94_2035 == null)
-															stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+															stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 														else
-															stringsHeap[sHeapCounter++] = Class161.aClass94_2035.method1545();
+															stringsStack[sStackCounter++] = Class161.aClass94_2035.method1545();
 														continue;
 													}
 													if (3626 == opcode) {
-														int i16 = intsHeap[--iHeapCounter];
+														int i16 = intsStack[--iStackCounter];
 														if (RSInterface.aClass94_251 == null || i16 >= Node.clanSize)
-															stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+															stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 														else
-															stringsHeap[sHeapCounter++] = PacketParser.aClass3_Sub19Array3694[i16].aClass94_2473;
+															stringsStack[sStackCounter++] = PacketParser.aClass3_Sub19Array3694[i16].aClass94_2473;
 														continue;
 													}
 													if (opcode == 3627) {
-														int j16 = intsHeap[--iHeapCounter];
+														int j16 = intsStack[--iStackCounter];
 														if (Class96.anInt1357 != 2 || 0 > j16 || Class8.anInt104 <= j16)
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														else
-															intsHeap[iHeapCounter++] = Class3.aBooleanArray73[j16] ? 1 : 0;
+															intsStack[iStackCounter++] = Class3.aBooleanArray73[j16] ? 1 : 0;
 														continue;
 													}
 													if (opcode == 3628) {
-														RSString class94_16 = stringsHeap[--sHeapCounter];
+														RSString class94_16 = stringsStack[--sStackCounter];
 														if (class94_16.method1558(Class3_Sub9.aClass94_2323) || class94_16.method1558(Class3_Sub13_Sub16.aClass94_3190))
 															class94_16 = class94_16.method1556(7);
-														intsHeap[iHeapCounter++] = PacketParser.method826(class94_16, -1);
+														intsStack[iStackCounter++] = PacketParser.method826(class94_16, -1);
 														continue;
 													}
 													if (opcode != 3629)
 														break;
-													intsHeap[iHeapCounter++] = Class3_Sub31.countryId;
+													intsStack[iStackCounter++] = Class3_Sub31.countryId;
 													continue;
 												}
 												if (opcode < 4000) {
 													if (opcode == 3903) {
-														int k16 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class3_Sub13_Sub33.aClass133Array3393[k16].method1805();
+														int k16 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class3_Sub13_Sub33.aClass133Array3393[k16].method1805();
 														continue;
 													}
 													if (opcode == 3904) {
-														int l16 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class3_Sub13_Sub33.aClass133Array3393[l16].anInt1752;
+														int l16 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class3_Sub13_Sub33.aClass133Array3393[l16].anInt1752;
 														continue;
 													}
 													if (opcode == 3905) {
-														int i17 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class3_Sub13_Sub33.aClass133Array3393[i17].anInt1757;
+														int i17 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class3_Sub13_Sub33.aClass133Array3393[i17].anInt1757;
 														continue;
 													}
 													if (opcode == 3906) {
-														int j17 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class3_Sub13_Sub33.aClass133Array3393[j17].anInt1747;
+														int j17 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class3_Sub13_Sub33.aClass133Array3393[j17].anInt1747;
 														continue;
 													}
 													if (opcode == 3907) {
-														int k17 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class3_Sub13_Sub33.aClass133Array3393[k17].anInt1746;
+														int k17 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class3_Sub13_Sub33.aClass133Array3393[k17].anInt1746;
 														continue;
 													}
 													if (3908 == opcode) {
-														int l17 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class3_Sub13_Sub33.aClass133Array3393[l17].anInt1750;
+														int l17 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class3_Sub13_Sub33.aClass133Array3393[l17].anInt1750;
 														continue;
 													}
 													if (3910 == opcode) {
-														int i18 = intsHeap[--iHeapCounter];
+														int i18 = intsStack[--iStackCounter];
 														int j50 = Class3_Sub13_Sub33.aClass133Array3393[i18].method1804();
-														intsHeap[iHeapCounter++] = j50 == 0 ? 1 : 0;
+														intsStack[iStackCounter++] = j50 == 0 ? 1 : 0;
 														continue;
 													}
 													if (3911 == opcode) {
-														int j18 = intsHeap[--iHeapCounter];
+														int j18 = intsStack[--iStackCounter];
 														int k50 = Class3_Sub13_Sub33.aClass133Array3393[j18].method1804();
-														intsHeap[iHeapCounter++] = k50 != 2 ? 0 : 1;
+														intsStack[iStackCounter++] = k50 != 2 ? 0 : 1;
 														continue;
 													}
 													if (opcode == 3912) {
-														int k18 = intsHeap[--iHeapCounter];
+														int k18 = intsStack[--iStackCounter];
 														int l50 = Class3_Sub13_Sub33.aClass133Array3393[k18].method1804();
-														intsHeap[iHeapCounter++] = l50 == 5 ? 1 : 0;
+														intsStack[iStackCounter++] = l50 == 5 ? 1 : 0;
 														continue;
 													}
 													if (opcode != 3913)
 														break;
-													int l18 = intsHeap[--iHeapCounter];
+													int l18 = intsStack[--iStackCounter];
 													int i51 = Class3_Sub13_Sub33.aClass133Array3393[l18].method1804();
-													intsHeap[iHeapCounter++] = 1 == i51 ? 1 : 0;
+													intsStack[iStackCounter++] = 1 == i51 ? 1 : 0;
 													continue;
 												}
 												if (opcode < 4100) {
 													if (opcode == 4000) {
-														iHeapCounter -= 2;
-														int i19 = intsHeap[iHeapCounter];
-														int j51 = intsHeap[iHeapCounter - -1];
-														intsHeap[iHeapCounter++] = j51 + i19;
+														iStackCounter -= 2;
+														int i19 = intsStack[iStackCounter];
+														int j51 = intsStack[iStackCounter - -1];
+														intsStack[iStackCounter++] = j51 + i19;
 														continue;
 													}
 													if (opcode == 4001) {
-														iHeapCounter -= 2;
-														int j19 = intsHeap[iHeapCounter];
-														int k51 = intsHeap[1 + iHeapCounter];
-														intsHeap[iHeapCounter++] = -k51 + j19;
+														iStackCounter -= 2;
+														int j19 = intsStack[iStackCounter];
+														int k51 = intsStack[1 + iStackCounter];
+														intsStack[iStackCounter++] = -k51 + j19;
 														continue;
 													}
 													if (4002 == opcode) {
-														iHeapCounter -= 2;
-														int k19 = intsHeap[iHeapCounter];
-														int l51 = intsHeap[1 + iHeapCounter];
-														intsHeap[iHeapCounter++] = l51 * k19;
+														iStackCounter -= 2;
+														int k19 = intsStack[iStackCounter];
+														int l51 = intsStack[1 + iStackCounter];
+														intsStack[iStackCounter++] = l51 * k19;
 														continue;
 													}
 													if (4003 == opcode) {
-														iHeapCounter -= 2;
-														int l19 = intsHeap[iHeapCounter];
-														int i52 = intsHeap[iHeapCounter - -1];
-														intsHeap[iHeapCounter++] = l19 / i52;
+														iStackCounter -= 2;
+														int l19 = intsStack[iStackCounter];
+														int i52 = intsStack[iStackCounter - -1];
+														intsStack[iStackCounter++] = l19 / i52;
 														continue;
 													}
 													if (opcode == 4004) {
-														int i20 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = (int) ((double) i20 * Math.random());
+														int i20 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = (int) ((double) i20 * Math.random());
 														continue;
 													}
 													if (4005 == opcode) {
-														int j20 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = (int) (Math.random() * (double) (1 + j20));
+														int j20 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = (int) (Math.random() * (double) (1 + j20));
 														continue;
 													}
 													if (4006 == opcode) {
-														iHeapCounter -= 5;
-														int k20 = intsHeap[iHeapCounter];
-														int j52 = intsHeap[iHeapCounter - -1];
-														int i77 = intsHeap[iHeapCounter - -3];
-														int i69 = intsHeap[2 + iHeapCounter];
-														int j79 = intsHeap[iHeapCounter + 4];
-														intsHeap[iHeapCounter++] = ((-k20 + j52) * (j79 + -i69)) / (-i69 + i77) + k20;
+														iStackCounter -= 5;
+														int k20 = intsStack[iStackCounter];
+														int j52 = intsStack[iStackCounter - -1];
+														int i77 = intsStack[iStackCounter - -3];
+														int i69 = intsStack[2 + iStackCounter];
+														int j79 = intsStack[iStackCounter + 4];
+														intsStack[iStackCounter++] = ((-k20 + j52) * (j79 + -i69)) / (-i69 + i77) + k20;
 														continue;
 													}
 													if (opcode == 4007) {
-														iHeapCounter -= 2;
-														long l20 = intsHeap[iHeapCounter];
-														long l69 = intsHeap[iHeapCounter + 1];
-														intsHeap[iHeapCounter++] = (int) ((l20 * l69) / 100L + l20);
+														iStackCounter -= 2;
+														long l20 = intsStack[iStackCounter];
+														long l69 = intsStack[iStackCounter + 1];
+														intsStack[iStackCounter++] = (int) ((l20 * l69) / 100L + l20);
 														continue;
 													}
 													if (opcode == 4008) {
-														iHeapCounter -= 2;
-														int i21 = intsHeap[iHeapCounter];
-														int k52 = intsHeap[1 + iHeapCounter];
-														intsHeap[iHeapCounter++] = Class3_Sub13_Sub29.bitwiseOr(i21, 1 << k52);
+														iStackCounter -= 2;
+														int i21 = intsStack[iStackCounter];
+														int k52 = intsStack[1 + iStackCounter];
+														intsStack[iStackCounter++] = Class3_Sub13_Sub29.bitwiseOr(i21, 1 << k52);
 														continue;
 													}
 													if (4009 == opcode) {
-														iHeapCounter -= 2;
-														int j21 = intsHeap[iHeapCounter];
-														int l52 = intsHeap[1 + iHeapCounter];
-														intsHeap[iHeapCounter++] = Class69.bitwiseAnd(-1 - (1 << l52), j21);
+														iStackCounter -= 2;
+														int j21 = intsStack[iStackCounter];
+														int l52 = intsStack[1 + iStackCounter];
+														intsStack[iStackCounter++] = Class69.bitwiseAnd(-1 - (1 << l52), j21);
 														continue;
 													}
 													if (opcode == 4010) {
-														iHeapCounter -= 2;
-														int k21 = intsHeap[iHeapCounter];
-														int i53 = intsHeap[iHeapCounter - -1];
-														intsHeap[iHeapCounter++] = Class69.bitwiseAnd(k21, 1 << i53) != 0 ? 1 : 0;
+														iStackCounter -= 2;
+														int k21 = intsStack[iStackCounter];
+														int i53 = intsStack[iStackCounter - -1];
+														intsStack[iStackCounter++] = Class69.bitwiseAnd(k21, 1 << i53) != 0 ? 1 : 0;
 														continue;
 													}
 													if (opcode == 4011) {
-														iHeapCounter -= 2;
-														int j53 = intsHeap[iHeapCounter - -1];
-														int l21 = intsHeap[iHeapCounter];
-														intsHeap[iHeapCounter++] = l21 % j53;
+														iStackCounter -= 2;
+														int j53 = intsStack[iStackCounter - -1];
+														int l21 = intsStack[iStackCounter];
+														intsStack[iStackCounter++] = l21 % j53;
 														continue;
 													}
 													if (opcode == 4012) {
-														iHeapCounter -= 2;
-														int k53 = intsHeap[iHeapCounter + 1];
-														int i22 = intsHeap[iHeapCounter];
+														iStackCounter -= 2;
+														int k53 = intsStack[iStackCounter + 1];
+														int i22 = intsStack[iStackCounter];
 														if (0 != i22)
-															intsHeap[iHeapCounter++] = (int) Math.pow(i22, k53);
+															intsStack[iStackCounter++] = (int) Math.pow(i22, k53);
 														else
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														continue;
 													}
 													if (opcode == 4013) {
-														iHeapCounter -= 2;
-														int l53 = intsHeap[iHeapCounter - -1];
-														int j22 = intsHeap[iHeapCounter];
+														iStackCounter -= 2;
+														int l53 = intsStack[iStackCounter - -1];
+														int j22 = intsStack[iStackCounter];
 														if (j22 == 0) {
-															intsHeap[iHeapCounter++] = 0;
+															intsStack[iStackCounter++] = 0;
 														} else if (l53 == 0)
-															intsHeap[iHeapCounter++] = 0x7fffffff;
+															intsStack[iStackCounter++] = 0x7fffffff;
 														else
-															intsHeap[iHeapCounter++] = (int) Math.pow(j22, 1.0D / (double) l53);
+															intsStack[iStackCounter++] = (int) Math.pow(j22, 1.0D / (double) l53);
 														continue;
 													}
 													if (opcode == 4014) {
-														iHeapCounter -= 2;
-														int i54 = intsHeap[iHeapCounter + 1];
-														int k22 = intsHeap[iHeapCounter];
-														intsHeap[iHeapCounter++] = Class69.bitwiseAnd(i54, k22);
+														iStackCounter -= 2;
+														int i54 = intsStack[iStackCounter + 1];
+														int k22 = intsStack[iStackCounter];
+														intsStack[iStackCounter++] = Class69.bitwiseAnd(i54, k22);
 														continue;
 													}
 													if (opcode == 4015) {
-														iHeapCounter -= 2;
-														int l22 = intsHeap[iHeapCounter];
-														int j54 = intsHeap[iHeapCounter + 1];
-														intsHeap[iHeapCounter++] = Class3_Sub13_Sub29.bitwiseOr(l22, j54);
+														iStackCounter -= 2;
+														int l22 = intsStack[iStackCounter];
+														int j54 = intsStack[iStackCounter + 1];
+														intsStack[iStackCounter++] = Class3_Sub13_Sub29.bitwiseOr(l22, j54);
 														continue;
 													}
 													if (opcode == 4016) {
-														iHeapCounter -= 2;
-														int i23 = intsHeap[iHeapCounter];
-														int k54 = intsHeap[1 + iHeapCounter];
-														intsHeap[iHeapCounter++] = k54 <= i23 ? k54 : i23;
+														iStackCounter -= 2;
+														int i23 = intsStack[iStackCounter];
+														int k54 = intsStack[1 + iStackCounter];
+														intsStack[iStackCounter++] = k54 <= i23 ? k54 : i23;
 														continue;
 													}
 													if (opcode == 4017) {
-														iHeapCounter -= 2;
-														int l54 = intsHeap[1 + iHeapCounter];
-														int j23 = intsHeap[iHeapCounter];
-														intsHeap[iHeapCounter++] = j23 > l54 ? j23 : l54;
+														iStackCounter -= 2;
+														int l54 = intsStack[1 + iStackCounter];
+														int j23 = intsStack[iStackCounter];
+														intsStack[iStackCounter++] = j23 > l54 ? j23 : l54;
 														continue;
 													}
 													if (opcode != 4018)
 														break;
-													iHeapCounter -= 3;
-													long l23 = intsHeap[iHeapCounter];
-													long l70 = intsHeap[iHeapCounter + 1];
-													long l79 = intsHeap[2 + iHeapCounter];
-													intsHeap[iHeapCounter++] = (int) ((l23 * l79) / l70);
+													iStackCounter -= 3;
+													long l23 = intsStack[iStackCounter];
+													long l70 = intsStack[iStackCounter + 1];
+													long l79 = intsStack[2 + iStackCounter];
+													intsStack[iStackCounter++] = (int) ((l23 * l79) / l70);
 													continue;
 												}
 												if (4200 <= opcode) {
@@ -1488,28 +1542,28 @@ final class ItemDefinition {
 														if (opcode < 4400) {
 															if (4300 != opcode)
 																break;
-															iHeapCounter -= 2;
-															int k23 = intsHeap[iHeapCounter];
-															int i55 = intsHeap[1 + iHeapCounter];
+															iStackCounter -= 2;
+															int k23 = intsStack[iStackCounter];
+															int i55 = intsStack[1 + iStackCounter];
 															Class3_Sub28_Sub9 class3_sub28_sub9 = Class61.method1210(i55);
 															if (!class3_sub28_sub9.method585())
-																intsHeap[iHeapCounter++] = Node.method522(k23).method1475(i55, class3_sub28_sub9.anInt3614);
+																intsStack[iStackCounter++] = Node.method522(k23).method1475(i55, class3_sub28_sub9.anInt3614);
 															else
-																stringsHeap[sHeapCounter++] = Node.method522(k23).method1477(i55, class3_sub28_sub9.aClass94_3619);
+																stringsStack[sStackCounter++] = Node.method522(k23).method1477(i55, class3_sub28_sub9.aClass94_3619);
 															continue;
 														}
 														if (opcode >= 4500) {
 															if (opcode >= 4600) {
 																if (opcode < 5100) {
 																	if (opcode == 5000) {
-																		intsHeap[iHeapCounter++] = Class3_Sub13_Sub8.anInt3101;
+																		intsStack[iStackCounter++] = Class3_Sub13_Sub8.anInt3101;
 																		continue;
 																	}
 																	if (opcode == 5001) {
-																		iHeapCounter -= 3;
-																		Class3_Sub13_Sub8.anInt3101 = intsHeap[iHeapCounter];
-																		Class24.anInt467 = intsHeap[1 + iHeapCounter];
-																		Class45.anInt734 = intsHeap[2 + iHeapCounter];
+																		iStackCounter -= 3;
+																		Class3_Sub13_Sub8.anInt3101 = intsStack[iStackCounter];
+																		Class24.anInt467 = intsStack[1 + iStackCounter];
+																		Class45.anInt734 = intsStack[2 + iStackCounter];
 																		Class3_Sub13_Sub1.outgoingBuffer.putOpcode(157);
 																		Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -8, Class3_Sub13_Sub8.anInt3101);
 																		Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -126, Class24.anInt467);
@@ -1517,10 +1571,10 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (opcode == 5002) {
-																		RSString class94_17 = stringsHeap[--sHeapCounter];
-																		iHeapCounter -= 2;
-																		int j55 = intsHeap[iHeapCounter];
-																		int j69 = intsHeap[1 + iHeapCounter];
+																		RSString class94_17 = stringsStack[--sStackCounter];
+																		iStackCounter -= 2;
+																		int j55 = intsStack[iStackCounter];
+																		int j69 = intsStack[1 + iStackCounter];
 																		Class3_Sub13_Sub1.outgoingBuffer.putOpcode(99);
 																		Class3_Sub13_Sub1.outgoingBuffer.putLong(class94_17.toLong(-110), 0x868e5910);
 																		Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -33, j55 - 1);
@@ -1529,28 +1583,28 @@ final class ItemDefinition {
 																	}
 																	if (opcode == 5003) {
 																		RSString class94_46 = null;
-																		int i24 = intsHeap[--iHeapCounter];
+																		int i24 = intsStack[--iStackCounter];
 																		if (i24 < 100)
 																			class94_46 = Class3_Sub29.aClass94Array2580[i24];
 																		if (class94_46 == null)
 																			class94_46 = Class3_Sub9.aClass94_2331;
-																		stringsHeap[sHeapCounter++] = class94_46;
+																		stringsStack[sStackCounter++] = class94_46;
 																		continue;
 																	}
 																	if (opcode == 5004) {
-																		int j24 = intsHeap[--iHeapCounter];
+																		int j24 = intsStack[--iStackCounter];
 																		int k55 = -1;
 																		if (j24 < 100 && null != Class3_Sub29.aClass94Array2580[j24])
 																			k55 = Class3_Sub13_Sub6.anIntArray3082[j24];
-																		intsHeap[iHeapCounter++] = k55;
+																		intsStack[iStackCounter++] = k55;
 																		continue;
 																	}
 																	if (opcode == 5005) {
-																		intsHeap[iHeapCounter++] = Class24.anInt467;
+																		intsStack[iStackCounter++] = Class24.anInt467;
 																		continue;
 																	}
 																	if (opcode == 5008) {//Used for a lot of things involving :: || More prefixes can be added by using || and listing said added way, ie ;; can be used instead of ::
-																		RSString class94_18 = stringsHeap[--sHeapCounter];
+																		RSString class94_18 = stringsStack[--sStackCounter];
 																		if (class94_18.method1558(Class9.aClass94_132) || class94_18.method1558(RSString.createRSString(";;")))
 																			Class73.ClientCommands(class94_18);
 																		else if (Class3_Sub13_Sub26.rights != 0 || (!Class3_Sub15.aBoolean2433 || Class121.aBoolean1641) && !Class3_Sub13_Sub14.aBoolean3166) {
@@ -1675,9 +1729,9 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (opcode == 5009) {
-																		sHeapCounter -= 2;
-																		RSString class94_48 = stringsHeap[sHeapCounter + 1];
-																		RSString class94_19 = stringsHeap[sHeapCounter];
+																		sStackCounter -= 2;
+																		RSString class94_48 = stringsStack[sStackCounter + 1];
+																		RSString class94_19 = stringsStack[sStackCounter];
 																		if (Class3_Sub13_Sub26.rights != 0 || (!Class3_Sub15.aBoolean2433 || Class121.aBoolean1641) && !Class3_Sub13_Sub14.aBoolean3166) {
 																			Class3_Sub13_Sub1.outgoingBuffer.putOpcode(201);
 																			Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -121, 0);
@@ -1689,31 +1743,31 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (opcode == 5010) {
-																		int k24 = intsHeap[--iHeapCounter];
+																		int k24 = intsStack[--iStackCounter];
 																		RSString class94_49 = null;
 																		if (k24 < 100)
 																			class94_49 = Class3_Sub13_Sub19.aClass94Array3226[k24];
 																		if (null == class94_49)
 																			class94_49 = Class3_Sub9.aClass94_2331;
-																		stringsHeap[sHeapCounter++] = class94_49;
+																		stringsStack[sStackCounter++] = class94_49;
 																		continue;
 																	}
 																	if (opcode == 5011) {
-																		int l24 = intsHeap[--iHeapCounter];
+																		int l24 = intsStack[--iStackCounter];
 																		RSString class94_50 = null;
 																		if (l24 < 100)
 																			class94_50 = Class163_Sub3.aClass94Array3003[l24];
 																		if (class94_50 == null)
 																			class94_50 = Class3_Sub9.aClass94_2331;
-																		stringsHeap[sHeapCounter++] = class94_50;
+																		stringsStack[sStackCounter++] = class94_50;
 																		continue;
 																	}
 																	if (opcode == 5012) {
-																		int i25 = intsHeap[--iHeapCounter];
+																		int i25 = intsStack[--iStackCounter];
 																		int l55 = -1;
 																		if (i25 < 100)
 																			l55 = GameObject.anIntArray1835[i25];
-																		intsHeap[iHeapCounter++] = l55;
+																		intsStack[iStackCounter++] = l55;
 																		continue;
 																	}
 																	if (opcode == 5015) {
@@ -1722,80 +1776,80 @@ final class ItemDefinition {
 																			class94_20 = Class3_Sub28_Sub14.username;
 																		else
 																			class94_20 = Class102.player.getName();
-																		stringsHeap[sHeapCounter++] = class94_20;
+																		stringsStack[sStackCounter++] = class94_20;
 																		continue;
 																	}
 																	if (opcode == 5016) {
-																		intsHeap[iHeapCounter++] = Class45.anInt734;
+																		intsStack[iStackCounter++] = Class45.anInt734;
 																		continue;
 																	}
 																	if (opcode == 5017) {
-																		intsHeap[iHeapCounter++] = Class3_Sub13_Sub9.anInt3114;
+																		intsStack[iStackCounter++] = Class3_Sub13_Sub9.anInt3114;
 																		continue;
 																	}
 																	if (5050 == opcode) {
-																		int j25 = intsHeap[--iHeapCounter];
-																		stringsHeap[sHeapCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(j25).quickChatMenu;
+																		int j25 = intsStack[--iStackCounter];
+																		stringsStack[sStackCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(j25).quickChatMenu;
 																		continue;
 																	}
 																	if (opcode == 5051) {
-																		int k25 = intsHeap[--iHeapCounter];
+																		int k25 = intsStack[--iStackCounter];
 																		Class3_Sub28_Sub1 class3_sub28_sub1 = Class3_Sub13_Sub35.getQuickChatMessage(k25);
 																		if (class3_sub28_sub1.anIntArray3534 != null)
-																			intsHeap[iHeapCounter++] = class3_sub28_sub1.anIntArray3534.length;
+																			intsStack[iStackCounter++] = class3_sub28_sub1.anIntArray3534.length;
 																		else
-																			intsHeap[iHeapCounter++] = 0;
+																			intsStack[iStackCounter++] = 0;
 																		continue;
 																	}
 																	if (opcode == 5052) {
-																		iHeapCounter -= 2;
-																		int l25 = intsHeap[iHeapCounter];
-																		int i56 = intsHeap[iHeapCounter - -1];
+																		iStackCounter -= 2;
+																		int l25 = intsStack[iStackCounter];
+																		int i56 = intsStack[iStackCounter - -1];
 																		Class3_Sub28_Sub1 class3_sub28_sub1_2 = Class3_Sub13_Sub35.getQuickChatMessage(l25);
 																		int j77 = class3_sub28_sub1_2.anIntArray3534[i56];
-																		intsHeap[iHeapCounter++] = j77;
+																		intsStack[iStackCounter++] = j77;
 																		continue;
 																	}
 																	if (opcode == 5053) {
-																		int i26 = intsHeap[--iHeapCounter];
+																		int i26 = intsStack[--iStackCounter];
 																		Class3_Sub28_Sub1 class3_sub28_sub1_1 = Class3_Sub13_Sub35.getQuickChatMessage(i26);
 																		if (class3_sub28_sub1_1.anIntArray3540 != null)
-																			intsHeap[iHeapCounter++] = class3_sub28_sub1_1.anIntArray3540.length;
+																			intsStack[iStackCounter++] = class3_sub28_sub1_1.anIntArray3540.length;
 																		else
-																			intsHeap[iHeapCounter++] = 0;
+																			intsStack[iStackCounter++] = 0;
 																		continue;
 																	}
 																	if (opcode == 5054) {
-																		iHeapCounter -= 2;
-																		int j56 = intsHeap[1 + iHeapCounter];
-																		int j26 = intsHeap[iHeapCounter];
-																		intsHeap[iHeapCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(j26).anIntArray3540[j56];
+																		iStackCounter -= 2;
+																		int j56 = intsStack[1 + iStackCounter];
+																		int j26 = intsStack[iStackCounter];
+																		intsStack[iStackCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(j26).anIntArray3540[j56];
 																		continue;
 																	}
 																	if (opcode == 5055) {
-																		int k26 = intsHeap[--iHeapCounter];
-																		stringsHeap[sHeapCounter++] = Class3_Sub29.method733(k26).method554();
+																		int k26 = intsStack[--iStackCounter];
+																		stringsStack[sStackCounter++] = Class3_Sub29.method733(k26).method554();
 																		continue;
 																	}
 																	if (opcode == 5056) {
-																		int l26 = intsHeap[--iHeapCounter];
+																		int l26 = intsStack[--iStackCounter];
 																		Class3_Sub28_Sub4 class3_sub28_sub4 = Class3_Sub29.method733(l26);
 																		if (null != class3_sub28_sub4.anIntArray3567)
-																			intsHeap[iHeapCounter++] = class3_sub28_sub4.anIntArray3567.length;
+																			intsStack[iStackCounter++] = class3_sub28_sub4.anIntArray3567.length;
 																		else
-																			intsHeap[iHeapCounter++] = 0;
+																			intsStack[iStackCounter++] = 0;
 																		continue;
 																	}
 																	if (opcode == 5057) {
-																		iHeapCounter -= 2;
-																		int k56 = intsHeap[1 + iHeapCounter];
-																		int i27 = intsHeap[iHeapCounter];
-																		intsHeap[iHeapCounter++] = Class3_Sub29.method733(i27).anIntArray3567[k56];
+																		iStackCounter -= 2;
+																		int k56 = intsStack[1 + iStackCounter];
+																		int i27 = intsStack[iStackCounter];
+																		intsStack[iStackCounter++] = Class3_Sub29.method733(i27).anIntArray3567[k56];
 																		continue;
 																	}
 																	if (opcode == 5058) {
 																		Class70.aClass10_1056 = new Class10();
-																		Class70.aClass10_1056.anInt149 = intsHeap[--iHeapCounter];
+																		Class70.aClass10_1056.anInt149 = intsStack[--iStackCounter];
 																		Class70.aClass10_1056.aClass3_Sub28_Sub4_151 = Class3_Sub29.method733(Class70.aClass10_1056.anInt149);
 																		Class70.aClass10_1056.anIntArray153 = new int[Class70.aClass10_1056.aClass3_Sub28_Sub4_151.method552()];
 																		continue;
@@ -1811,7 +1865,7 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (5060 == opcode) {
-																		RSString class94_21 = stringsHeap[--sHeapCounter];
+																		RSString class94_21 = stringsStack[--sStackCounter];
 																		Class3_Sub13_Sub1.outgoingBuffer.putOpcode(178);
 																		Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -108, 0);
 																		int l56 = Class3_Sub13_Sub1.outgoingBuffer.index;
@@ -1832,89 +1886,89 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (opcode == 5062) {
-																		iHeapCounter -= 2;
-																		int i57 = intsHeap[1 + iHeapCounter];
-																		int l27 = intsHeap[iHeapCounter];
-																		intsHeap[iHeapCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(l27).anIntArray3535[i57];
+																		iStackCounter -= 2;
+																		int i57 = intsStack[1 + iStackCounter];
+																		int l27 = intsStack[iStackCounter];
+																		intsStack[iStackCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(l27).anIntArray3535[i57];
 																		continue;
 																	}
 																	if (opcode == 5063) {
-																		iHeapCounter -= 2;
-																		int j57 = intsHeap[iHeapCounter - -1];
-																		int i28 = intsHeap[iHeapCounter];
-																		intsHeap[iHeapCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(i28).anIntArray3533[j57];
+																		iStackCounter -= 2;
+																		int j57 = intsStack[iStackCounter - -1];
+																		int i28 = intsStack[iStackCounter];
+																		intsStack[iStackCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(i28).anIntArray3533[j57];
 																		continue;
 																	}
 																	if (5064 == opcode) {
-																		iHeapCounter -= 2;
-																		int k57 = intsHeap[1 + iHeapCounter];
-																		int j28 = intsHeap[iHeapCounter];
+																		iStackCounter -= 2;
+																		int k57 = intsStack[1 + iStackCounter];
+																		int j28 = intsStack[iStackCounter];
 																		if (k57 != -1)
-																			intsHeap[iHeapCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(j28).method529(k57);
+																			intsStack[iStackCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(j28).method529(k57);
 																		else
-																			intsHeap[iHeapCounter++] = -1;
+																			intsStack[iStackCounter++] = -1;
 																		continue;
 																	}
 																	if (opcode == 5065) {
-																		iHeapCounter -= 2;
-																		int k28 = intsHeap[iHeapCounter];
-																		int l57 = intsHeap[iHeapCounter + 1];
+																		iStackCounter -= 2;
+																		int k28 = intsStack[iStackCounter];
+																		int l57 = intsStack[iStackCounter + 1];
 																		if (l57 != -1)
-																			intsHeap[iHeapCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(k28).method526(l57);
+																			intsStack[iStackCounter++] = Class3_Sub13_Sub35.getQuickChatMessage(k28).method526(l57);
 																		else
-																			intsHeap[iHeapCounter++] = -1;
+																			intsStack[iStackCounter++] = -1;
 																		continue;
 																	}
 																	if (opcode == 5066) {
-																		int l28 = intsHeap[--iHeapCounter];
-																		intsHeap[iHeapCounter++] = Class3_Sub29.method733(l28).method552();
+																		int l28 = intsStack[--iStackCounter];
+																		intsStack[iStackCounter++] = Class3_Sub29.method733(l28).method552();
 																		continue;
 																	}
 																	if (opcode == 5067) {
-																		iHeapCounter -= 2;
-																		int i58 = intsHeap[iHeapCounter + 1];
-																		int i29 = intsHeap[iHeapCounter];
+																		iStackCounter -= 2;
+																		int i58 = intsStack[iStackCounter + 1];
+																		int i29 = intsStack[iStackCounter];
 																		int i70 = Class3_Sub29.method733(i29).method550(49, i58);
-																		intsHeap[iHeapCounter++] = i70;
+																		intsStack[iStackCounter++] = i70;
 																		continue;
 																	}
 																	if (5068 == opcode) {
-																		iHeapCounter -= 2;
-																		int j29 = intsHeap[iHeapCounter];
-																		int j58 = intsHeap[1 + iHeapCounter];
+																		iStackCounter -= 2;
+																		int j29 = intsStack[iStackCounter];
+																		int j58 = intsStack[1 + iStackCounter];
 																		Class70.aClass10_1056.anIntArray153[j29] = j58;
 																		continue;
 																	}
 																	if (opcode == 5069) {
-																		iHeapCounter -= 2;
-																		int k29 = intsHeap[iHeapCounter];
-																		int k58 = intsHeap[iHeapCounter + 1];
+																		iStackCounter -= 2;
+																		int k29 = intsStack[iStackCounter];
+																		int k58 = intsStack[iStackCounter + 1];
 																		Class70.aClass10_1056.anIntArray153[k29] = k58;
 																		continue;
 																	}
 																	if (opcode == 5070) {
-																		iHeapCounter -= 3;
-																		int l29 = intsHeap[iHeapCounter];
-																		int j70 = intsHeap[iHeapCounter - -2];
-																		int l58 = intsHeap[iHeapCounter + 1];
+																		iStackCounter -= 3;
+																		int l29 = intsStack[iStackCounter];
+																		int j70 = intsStack[iStackCounter - -2];
+																		int l58 = intsStack[iStackCounter + 1];
 																		Class3_Sub28_Sub4 class3_sub28_sub4_1 = Class3_Sub29.method733(l29);
 																		if (0 != class3_sub28_sub4_1.method550(73, l58))
 																			throw new RuntimeException("bad command");
-																		intsHeap[iHeapCounter++] = class3_sub28_sub4_1.method549(j70, l58);
+																		intsStack[iStackCounter++] = class3_sub28_sub4_1.method549(j70, l58);
 																		continue;
 																	}
 																	if (opcode == 5071) {
-																		RSString class94_22 = stringsHeap[--sHeapCounter];
-																		boolean flag4 = 1 == intsHeap[--iHeapCounter];
+																		RSString class94_22 = stringsStack[--sStackCounter];
+																		boolean flag4 = 1 == intsStack[--iStackCounter];
 																		Class3_Sub28_Sub3.method541(flag4, class94_22);
-																		intsHeap[iHeapCounter++] = Class62.anInt952;
+																		intsStack[iStackCounter++] = Class62.anInt952;
 																		continue;
 																	}
 																	if (5072 == opcode) {
 																		if (Class99.aShortArray1398 == null || Class62.anInt952 <= Class140_Sub4.anInt2756)
-																			intsHeap[iHeapCounter++] = -1;
+																			intsStack[iStackCounter++] = -1;
 																		else
-																			intsHeap[iHeapCounter++] = Class69.bitwiseAnd(Class99.aShortArray1398[Class140_Sub4.anInt2756++], 65535);
+																			intsStack[iStackCounter++] = Class69.bitwiseAnd(Class99.aShortArray1398[Class140_Sub4.anInt2756++], 65535);
 																		continue;
 																	}
 																	if (opcode != 5073)
@@ -1925,97 +1979,97 @@ final class ItemDefinition {
 																if (5200 > opcode) {
 																	if (5100 == opcode) {
 																		if (!ObjectDefinition.aBooleanArray1490[86])
-																			intsHeap[iHeapCounter++] = 0;
+																			intsStack[iStackCounter++] = 0;
 																		else
-																			intsHeap[iHeapCounter++] = 1;
+																			intsStack[iStackCounter++] = 1;
 																		continue;
 																	}
 																	if (5101 == opcode) {
 																		if (ObjectDefinition.aBooleanArray1490[82])
-																			intsHeap[iHeapCounter++] = 1;
+																			intsStack[iStackCounter++] = 1;
 																		else
-																			intsHeap[iHeapCounter++] = 0;
+																			intsStack[iStackCounter++] = 0;
 																		continue;
 																	}
 																	if (5102 != opcode)
 																		break;
 																	if (ObjectDefinition.aBooleanArray1490[81])
-																		intsHeap[iHeapCounter++] = 1;
+																		intsStack[iStackCounter++] = 1;
 																	else
-																		intsHeap[iHeapCounter++] = 0;
+																		intsStack[iStackCounter++] = 0;
 																	continue;
 																}
 																if (opcode < 5300) {
 																	if (opcode == 5200) {
-																		NPCDefinition.method1479(intsHeap[--iHeapCounter]);
+																		NPCDefinition.method1479(intsStack[--iStackCounter]);
 																		continue;
 																	}
 																	if (5201 == opcode) {
-																		intsHeap[iHeapCounter++] = Class3_Sub28_Sub8.method571();
+																		intsStack[iStackCounter++] = Class3_Sub28_Sub8.method571();
 																		continue;
 																	}
 																	if (opcode == 5202) {
-																		Class3_Sub24_Sub4.method503(intsHeap[--iHeapCounter]);
+																		Class3_Sub24_Sub4.method503(intsStack[--iStackCounter]);
 																		continue;
 																	}
 																	if (5203 == opcode) {
-																		Class3.method84(stringsHeap[--sHeapCounter], -801);
+																		Class3.method84(stringsStack[--sStackCounter], -801);
 																		continue;
 																	}
 																	if (5204 == opcode) {
-																		stringsHeap[sHeapCounter - 1] = GameShell.method27(stringsHeap[sHeapCounter - 1]);
+																		stringsStack[sStackCounter - 1] = GameShell.method27(stringsStack[sStackCounter - 1]);
 																		continue;
 																	}
 																	if (5205 == opcode) {
-																		Class3_Sub10.method138(stringsHeap[--sHeapCounter]);
+																		Class3_Sub10.method138(stringsStack[--sStackCounter]);
 																		continue;
 																	}
 																	if (opcode == 5206) {
-																		int i30 = intsHeap[--iHeapCounter];
+																		int i30 = intsStack[--iStackCounter];
 																		Class3_Sub28_Sub3 class3_sub28_sub3_4 = NodeList.method884(0x3fff & i30 >> 14, (byte) 111, 0x3fff & i30);
 																		if (class3_sub28_sub3_4 != null)
-																			stringsHeap[sHeapCounter++] = class3_sub28_sub3_4.aClass94_3561;
+																			stringsStack[sStackCounter++] = class3_sub28_sub3_4.aClass94_3561;
 																		else
-																			stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+																			stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 																		continue;
 																	}
 																	if (opcode == 5207) {
-																		Class3_Sub28_Sub3 class3_sub28_sub3 = Class3_Sub15.method371(stringsHeap[--sHeapCounter]);
+																		Class3_Sub28_Sub3 class3_sub28_sub3 = Class3_Sub15.method371(stringsStack[--sStackCounter]);
 																		if (null != class3_sub28_sub3 && class3_sub28_sub3.aClass94_3554 != null)
-																			stringsHeap[sHeapCounter++] = class3_sub28_sub3.aClass94_3554;
+																			stringsStack[sStackCounter++] = class3_sub28_sub3.aClass94_3554;
 																		else
-																			stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+																			stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 																		continue;
 																	}
 																	if (5208 == opcode) {
-																		intsHeap[iHeapCounter++] = Class49.anInt817;
-																		intsHeap[iHeapCounter++] = Class17.anInt410;
+																		intsStack[iStackCounter++] = Class49.anInt817;
+																		intsStack[iStackCounter++] = Class17.anInt410;
 																		continue;
 																	}
 																	if (5209 == opcode) {
-																		intsHeap[iHeapCounter++] = Class3_Sub13_Sub21.anInt3256 + Class3_Sub28_Sub1.anInt3536;
-																		intsHeap[iHeapCounter++] = Class2.anInt65 + -Class3_Sub4.anInt2251 + (-1 + Class108.anInt1460);
+																		intsStack[iStackCounter++] = Class3_Sub13_Sub21.anInt3256 + Class3_Sub28_Sub1.anInt3536;
+																		intsStack[iStackCounter++] = Class2.anInt65 + -Class3_Sub4.anInt2251 + (-1 + Class108.anInt1460);
 																		continue;
 																	}
 																	if (opcode == 5210) {
 																		Class3_Sub28_Sub3 class3_sub28_sub3_1 = Node.method520((byte) -82);
 																		if (class3_sub28_sub3_1 == null) {
-																			intsHeap[iHeapCounter++] = 0;
-																			intsHeap[iHeapCounter++] = 0;
+																			intsStack[iStackCounter++] = 0;
+																			intsStack[iStackCounter++] = 0;
 																		} else {
-																			intsHeap[iHeapCounter++] = class3_sub28_sub3_1.anInt3558 * 64;
-																			intsHeap[iHeapCounter++] = 64 * class3_sub28_sub3_1.anInt3556;
+																			intsStack[iStackCounter++] = class3_sub28_sub3_1.anInt3558 * 64;
+																			intsStack[iStackCounter++] = 64 * class3_sub28_sub3_1.anInt3556;
 																		}
 																		continue;
 																	}
 																	if (opcode == 5211) {
 																		Class3_Sub28_Sub3 class3_sub28_sub3_2 = Node.method520((byte) -121);
 																		if (class3_sub28_sub3_2 == null) {
-																			intsHeap[iHeapCounter++] = 0;
-																			intsHeap[iHeapCounter++] = 0;
+																			intsStack[iStackCounter++] = 0;
+																			intsStack[iStackCounter++] = 0;
 																		} else {
-																			intsHeap[iHeapCounter++] = class3_sub28_sub3_2.anInt3559 - class3_sub28_sub3_2.anInt3555;
-																			intsHeap[iHeapCounter++] = -class3_sub28_sub3_2.anInt3562 + class3_sub28_sub3_2.anInt3549;
+																			intsStack[iStackCounter++] = class3_sub28_sub3_2.anInt3559 - class3_sub28_sub3_2.anInt3555;
+																			intsStack[iStackCounter++] = -class3_sub28_sub3_2.anInt3562 + class3_sub28_sub3_2.anInt3549;
 																		}
 																		continue;
 																	}
@@ -2030,8 +2084,8 @@ final class ItemDefinition {
 																			k70 = Class119.aClass131_1624.method1791(j30, 8);
 																		}
 																		class94_51 = class94_51.method1560(Class140_Sub4.aClass94_2765, Class7.aClass94_2168);
-																		stringsHeap[sHeapCounter++] = class94_51;
-																		intsHeap[iHeapCounter++] = k70;
+																		stringsStack[sStackCounter++] = class94_51;
+																		intsStack[iStackCounter++] = k70;
 																		continue;
 																	}
 																	if (opcode == 5213) {
@@ -2045,18 +2099,18 @@ final class ItemDefinition {
 																			i71 = Class119.aClass131_1624.method1791(k30, 8);
 																		}
 																		class94_52 = class94_52.method1560(Class140_Sub4.aClass94_2765, Class7.aClass94_2168);
-																		stringsHeap[sHeapCounter++] = class94_52;
-																		intsHeap[iHeapCounter++] = i71;
+																		stringsStack[sStackCounter++] = class94_52;
+																		intsStack[iStackCounter++] = i71;
 																		continue;
 																	}
 																	if (opcode == 5214) {
-																		int l30 = intsHeap[--iHeapCounter];
+																		int l30 = intsStack[--iStackCounter];
 																		Class3_Sub28_Sub7.method565(0x3fff & l30 >> 14, 0x3fff & l30);
 																		continue;
 																	}
 																	if (opcode == 5215) {
-																		int i31 = intsHeap[--iHeapCounter];
-																		RSString class94_53 = stringsHeap[--sHeapCounter];
+																		int i31 = intsStack[--iStackCounter];
+																		RSString class94_53 = stringsStack[--sStackCounter];
 																		boolean flag10 = false;
 																		NodeList class13 = AbstractIndexedSprite.method1664(0x3fff & i31 >> 14, 0x3fff & i31);
 																		Class3_Sub28_Sub3 class3_sub28_sub3_5 = (Class3_Sub28_Sub3) class13.method876((byte) 116);
@@ -2070,48 +2124,48 @@ final class ItemDefinition {
 																			class3_sub28_sub3_5 = (Class3_Sub28_Sub3) class13.method878(125);
 																		} while (true);
 																		if (!flag10)
-																			intsHeap[iHeapCounter++] = 0;
+																			intsStack[iStackCounter++] = 0;
 																		else
-																			intsHeap[iHeapCounter++] = 1;
+																			intsStack[iStackCounter++] = 1;
 																		continue;
 																	}
 																	if (opcode == 5216) {
-																		int j31 = intsHeap[--iHeapCounter];
+																		int j31 = intsStack[--iStackCounter];
 																		Class3_Sub13_Sub36.method344(j31, 4);
 																		continue;
 																	}
 																	if (opcode == 5217) {
-																		int k31 = intsHeap[--iHeapCounter];
+																		int k31 = intsStack[--iStackCounter];
 																		if (!Class3_Sub10.method140(k31))
-																			intsHeap[iHeapCounter++] = 0;
+																			intsStack[iStackCounter++] = 0;
 																		else
-																			intsHeap[iHeapCounter++] = 1;
+																			intsStack[iStackCounter++] = 1;
 																		continue;
 																	}
 																	if (opcode == 5218) {
 																		Class3_Sub28_Sub3 class3_sub28_sub3_3 = Node.method520((byte) -124);
 																		if (null != class3_sub28_sub3_3)
-																			intsHeap[iHeapCounter++] = class3_sub28_sub3_3.anInt3563;
+																			intsStack[iStackCounter++] = class3_sub28_sub3_3.anInt3563;
 																		else
-																			intsHeap[iHeapCounter++] = -1;
+																			intsStack[iStackCounter++] = -1;
 																		continue;
 																	}
 																	if (opcode == 5219) {
-																		Class21.method915(stringsHeap[--sHeapCounter]);
+																		Class21.method915(stringsStack[--sStackCounter]);
 																		continue;
 																	}
 																	if (opcode != 5220)
 																		break;
-																	intsHeap[iHeapCounter++] = Class140_Sub3.anInt2737 != 100 ? 0 : 1;
+																	intsStack[iStackCounter++] = Class140_Sub3.anInt2737 != 100 ? 0 : 1;
 																	continue;
 																}
 																if (opcode < 5400) {
 																	if (opcode == 5300) {
-																		iHeapCounter -= 2;
-																		int i59 = intsHeap[1 + iHeapCounter];
-																		int l31 = intsHeap[iHeapCounter];
+																		iStackCounter -= 2;
+																		int i59 = intsStack[1 + iStackCounter];
+																		int l31 = intsStack[iStackCounter];
 																		GameObject.graphicsSettings(false, 3, l31, i59);
-																		intsHeap[iHeapCounter++] = null != Class3_Sub13_Sub10.aFrame3121 ? 1 : 0;
+																		intsStack[iStackCounter++] = null != Class3_Sub13_Sub10.aFrame3121 ? 1 : 0;
 																		continue;
 																	}
 																	if (opcode == 5301) {
@@ -2121,14 +2175,14 @@ final class ItemDefinition {
 																	}
 																	if (5302 == opcode) {
 																		Class106[] aclass106 = Class3.method88();
-																		intsHeap[iHeapCounter++] = aclass106.length;
+																		intsStack[iStackCounter++] = aclass106.length;
 																		continue;
 																	}
 																	if (5303 == opcode) {
-																		int i32 = intsHeap[--iHeapCounter];
+																		int i32 = intsStack[--iStackCounter];
 																		Class106[] aclass106_1 = Class3.method88();
-																		intsHeap[iHeapCounter++] = aclass106_1[i32].anInt1447;
-																		intsHeap[iHeapCounter++] = aclass106_1[i32].anInt1449;
+																		intsStack[iStackCounter++] = aclass106_1[i32].anInt1447;
+																		intsStack[iStackCounter++] = aclass106_1[i32].anInt1449;
 																		continue;
 																	}
 																	if (opcode == 5305) {
@@ -2147,27 +2201,27 @@ final class ItemDefinition {
 																			}
 																			i80++;
 																		} while (true);
-																		intsHeap[iHeapCounter++] = j71;
+																		intsStack[iStackCounter++] = j71;
 																		continue;
 																	}
 																	if (opcode == 5306) {
-																		intsHeap[iHeapCounter++] = Class83.method1411(0);
+																		intsStack[iStackCounter++] = Class83.method1411(0);
 																		continue;
 																	}
 																	if (opcode == 5307) {
-																		int k32 = intsHeap[--iHeapCounter];
+																		int k32 = intsStack[--iStackCounter];
 																		if (k32 < 0 || k32 > 2)
 																			k32 = 0;
 																		GameObject.graphicsSettings(false, k32, -1, -1);
 																		continue;
 																	}
 																	if (5308 == opcode) {
-																		intsHeap[iHeapCounter++] = Node.anInt2577;
+																		intsStack[iStackCounter++] = Node.anInt2577;
 																		continue;
 																	}
 																	if (5309 != opcode)
 																		break;
-																	int l32 = intsHeap[--iHeapCounter];
+																	int l32 = intsStack[--iStackCounter];
 																	if (l32 < 0 || l32 > 2)
 																		l32 = 0;
 																	Node.anInt2577 = l32;
@@ -2176,10 +2230,10 @@ final class ItemDefinition {
 																}
 																if (5500 > opcode) {
 																	if (opcode == 5400) {
-																		sHeapCounter -= 2;
-																		RSString class94_23 = stringsHeap[sHeapCounter];
-																		RSString class94_54 = stringsHeap[sHeapCounter - -1];
-																		int k71 = intsHeap[--iHeapCounter];
+																		sStackCounter -= 2;
+																		RSString class94_23 = stringsStack[sStackCounter];
+																		RSString class94_54 = stringsStack[sStackCounter - -1];
+																		int k71 = intsStack[--iStackCounter];
 																		Class3_Sub13_Sub1.outgoingBuffer.putOpcode(117);
 																		Class3_Sub13_Sub1.outgoingBuffer.putByte((byte) -91, Class3_Sub13_Sub33.method326((byte) 39, class94_23) - (-Class3_Sub13_Sub33.method326((byte) 102, class94_54) + -1));
 																		Class3_Sub13_Sub1.outgoingBuffer.putString(class94_23);
@@ -2188,8 +2242,8 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (opcode == 5401) {
-																		iHeapCounter -= 2;
-																		Class3_Sub13_Sub38.aShortArray3455[intsHeap[iHeapCounter]] = (short) Class56.method1186(intsHeap[iHeapCounter + 1]);
+																		iStackCounter -= 2;
+																		Class3_Sub13_Sub38.aShortArray3455[intsStack[iStackCounter]] = (short) Class56.method1186(intsStack[iStackCounter + 1]);
 																		GameShell.method28();
 																		RSByteBuffer.method746((byte) -29);
 																		Class167.method2265();
@@ -2198,22 +2252,22 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (opcode == 5405) {
-																		iHeapCounter -= 2;
-																		int i33 = intsHeap[iHeapCounter];
-																		int k59 = intsHeap[1 + iHeapCounter];
+																		iStackCounter -= 2;
+																		int i33 = intsStack[iStackCounter];
+																		int k59 = intsStack[1 + iStackCounter];
 																		if (i33 >= 0 && i33 < 2)
 																			Class58.anIntArrayArrayArray911[i33] = new int[k59 << 1][4];
 																		continue;
 																	}
 																	if (opcode == 5406) {
-																		iHeapCounter -= 7;
-																		int j33 = intsHeap[iHeapCounter];
-																		int l59 = intsHeap[1 + iHeapCounter] << 1;
-																		int k77 = intsHeap[iHeapCounter - -3];
-																		int l71 = intsHeap[2 + iHeapCounter];
-																		int j80 = intsHeap[4 + iHeapCounter];
-																		int j82 = intsHeap[6 + iHeapCounter];
-																		int l81 = intsHeap[5 + iHeapCounter];
+																		iStackCounter -= 7;
+																		int j33 = intsStack[iStackCounter];
+																		int l59 = intsStack[1 + iStackCounter] << 1;
+																		int k77 = intsStack[iStackCounter - -3];
+																		int l71 = intsStack[2 + iStackCounter];
+																		int j80 = intsStack[4 + iStackCounter];
+																		int j82 = intsStack[6 + iStackCounter];
+																		int l81 = intsStack[5 + iStackCounter];
 																		if (j33 >= 0 && j33 < 2 && null != Class58.anIntArrayArrayArray911[j33] && l59 >= 0 && Class58.anIntArrayArrayArray911[j33].length > l59) {
 																			Class58.anIntArrayArrayArray911[j33][l59] = (new int[]{
 																					(Class69.bitwiseAnd(0xfffc3b9, l71) >> 14) * 128, k77, 128 * Class69.bitwiseAnd(l71, 16383), j82
@@ -2225,8 +2279,8 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (opcode == 5407) {
-																		int k33 = Class58.anIntArrayArrayArray911[intsHeap[--iHeapCounter]].length >> 1;
-																		intsHeap[iHeapCounter++] = k33;
+																		int k33 = Class58.anIntArrayArrayArray911[intsStack[--iStackCounter]].length >> 1;
+																		intsStack[iStackCounter++] = k33;
 																		continue;
 																	}
 																	if (opcode == 5411) {
@@ -2248,18 +2302,18 @@ final class ItemDefinition {
 																				class94_24 = Class3_Sub13_Sub3.method178(abyte0, abyte0.length, 0);
 																			}
 																		}
-																		stringsHeap[sHeapCounter++] = class94_24;
+																		stringsStack[sStackCounter++] = class94_24;
 																		continue;
 																	}
 																	if (opcode == 5420) {
-																		intsHeap[iHeapCounter++] = Signlink.anInt1214 != 3 ? 0 : 1;
+																		intsStack[iStackCounter++] = Signlink.anInt1214 != 3 ? 0 : 1;
 																		continue;
 																	}
 																	if (opcode == 5421) {
 																		if (null != Class3_Sub13_Sub10.aFrame3121)
 																			GameObject.graphicsSettings(false, Node.anInt2577, -1, -1);
-																		boolean flag5 = 1 == intsHeap[--iHeapCounter];
-																		RSString class94_25 = stringsHeap[--sHeapCounter];
+																		boolean flag5 = 1 == intsStack[--iStackCounter];
+																		RSString class94_25 = stringsStack[--sStackCounter];
 																		RSString class94_64 = RenderAnimationDefinition.method903(new RSString[]{
 																				RSInterface.method856(), class94_25
 																		}, (byte) -71);
@@ -2273,10 +2327,10 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (5422 == opcode) {
-																		int i72 = intsHeap[--iHeapCounter];
-																		sHeapCounter -= 2;
-																		RSString class94_55 = stringsHeap[1 + sHeapCounter];
-																		RSString class94_26 = stringsHeap[sHeapCounter];
+																		int i72 = intsStack[--iStackCounter];
+																		sStackCounter -= 2;
+																		RSString class94_55 = stringsStack[1 + sStackCounter];
+																		RSString class94_26 = stringsStack[sStackCounter];
 																		if (class94_26.length(-127) > 0) {
 																			if (null == Class3_Sub30_Sub1.aClass94Array3802)
 																				Class3_Sub30_Sub1.aClass94Array3802 = new RSString[Class3_Sub13_Sub18.anIntArray3218[Class158.anInt2014]];
@@ -2293,18 +2347,18 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (5424 == opcode) {
-																		iHeapCounter -= 11;
-																		Class3_Sub28_Sub6.anInt3600 = intsHeap[iHeapCounter];
-																		Class62.anInt963 = intsHeap[iHeapCounter - -1];
-																		MouseListeningClass.anInt1926 = intsHeap[iHeapCounter + 2];
-																		Class136.anInt1771 = intsHeap[3 + iHeapCounter];
-																		WorldListCountry.archiveID = intsHeap[4 + iHeapCounter];
-																		Class99.anInt1400 = intsHeap[5 + iHeapCounter];
-																		Class46.anInt739 = intsHeap[6 + iHeapCounter];
-																		Class79.anInt1126 = intsHeap[7 + iHeapCounter];
-																		Class140_Sub7.anInt2937 = intsHeap[8 + iHeapCounter];
-																		Class3_Sub13_Sub28.anInt3351 = intsHeap[iHeapCounter + 9];
-																		Class154.anInt1957 = intsHeap[10 + iHeapCounter];
+																		iStackCounter -= 11;
+																		Class3_Sub28_Sub6.anInt3600 = intsStack[iStackCounter];
+																		Class62.anInt963 = intsStack[iStackCounter - -1];
+																		MouseListeningClass.anInt1926 = intsStack[iStackCounter + 2];
+																		Class136.anInt1771 = intsStack[3 + iStackCounter];
+																		WorldListCountry.archiveID = intsStack[4 + iStackCounter];
+																		Class99.anInt1400 = intsStack[5 + iStackCounter];
+																		Class46.anInt739 = intsStack[6 + iStackCounter];
+																		Class79.anInt1126 = intsStack[7 + iStackCounter];
+																		Class140_Sub7.anInt2937 = intsStack[8 + iStackCounter];
+																		Class3_Sub13_Sub28.anInt3351 = intsStack[iStackCounter + 9];
+																		Class154.anInt1957 = intsStack[10 + iStackCounter];
 																		Class140_Sub6.spritesCacheIndex.method2144(WorldListCountry.archiveID);
 																		Class140_Sub6.spritesCacheIndex.method2144(Class99.anInt1400);
 																		Class140_Sub6.spritesCacheIndex.method2144(Class46.anInt739);
@@ -2319,53 +2373,53 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (opcode == 5426) {
-																		Class161.anInt2027 = intsHeap[--iHeapCounter];
+																		Class161.anInt2027 = intsStack[--iStackCounter];
 																		continue;
 																	}
 																	if (opcode != 5427)
 																		break;
-																	iHeapCounter -= 2;
-																	Class99.anInt1403 = intsHeap[iHeapCounter];
-																	Class131.anInt1719 = intsHeap[iHeapCounter + 1];
+																	iStackCounter -= 2;
+																	Class99.anInt1403 = intsStack[iStackCounter];
+																	Class131.anInt1719 = intsStack[iStackCounter + 1];
 																	continue;
 																}
 																if (5600 > opcode) {
 																	if (5500 == opcode) {
-																		iHeapCounter -= 4;
-																		int l33 = intsHeap[iHeapCounter];
-																		int l77 = intsHeap[iHeapCounter - -3];
-																		int j72 = intsHeap[iHeapCounter - -2];
-																		int i60 = intsHeap[iHeapCounter + 1];
+																		iStackCounter -= 4;
+																		int l33 = intsStack[iStackCounter];
+																		int l77 = intsStack[iStackCounter - -3];
+																		int j72 = intsStack[iStackCounter - -2];
+																		int i60 = intsStack[iStackCounter + 1];
 																		Class3_Sub20.method390(false, j72, i60, l77, (byte) -128, -Class82.anInt1152 + (0x3fff & l33), ((0xffffe30 & l33) >> 14) - Class131.anInt1716);
 																		continue;
 																	}
 																	if (opcode == 5501) {
-																		iHeapCounter -= 4;
-																		int j60 = intsHeap[1 + iHeapCounter];
-																		int i34 = intsHeap[iHeapCounter];
-																		int i78 = intsHeap[iHeapCounter - -3];
-																		int k72 = intsHeap[iHeapCounter + 2];
+																		iStackCounter -= 4;
+																		int j60 = intsStack[1 + iStackCounter];
+																		int i34 = intsStack[iStackCounter];
+																		int i78 = intsStack[iStackCounter - -3];
+																		int k72 = intsStack[iStackCounter + 2];
 																		Class164_Sub1.method2238(j60, (0x3fff & i34) - Class82.anInt1152, k72, -Class131.anInt1716 + ((0xffff221 & i34) >> 14), i78);
 																		continue;
 																	}
 																	if (opcode == 5502) {
-																		iHeapCounter -= 6;
-																		int j34 = intsHeap[iHeapCounter];
+																		iStackCounter -= 6;
+																		int j34 = intsStack[iStackCounter];
 																		if (j34 >= 2)
 																			throw new RuntimeException();
 																		NPCDefinition.anInt1252 = j34;
-																		int k60 = intsHeap[iHeapCounter - -1];
+																		int k60 = intsStack[iStackCounter - -1];
 																		if (1 + k60 >= Class58.anIntArrayArrayArray911[NPCDefinition.anInt1252].length >> 1)
 																			throw new RuntimeException();
 																		Class73.anInt1081 = k60;
 																		Class163_Sub2_Sub1.anInt4020 = 0;
-																		Class134.anInt1759 = intsHeap[iHeapCounter + 2];
-																		Class3_Sub13.anInt2383 = intsHeap[iHeapCounter + 3];
-																		int l72 = intsHeap[iHeapCounter + 4];
+																		Class134.anInt1759 = intsStack[iStackCounter + 2];
+																		Class3_Sub13.anInt2383 = intsStack[iStackCounter + 3];
+																		int l72 = intsStack[iStackCounter + 4];
 																		if (2 <= l72)
 																			throw new RuntimeException();
 																		Class3_Sub7.anInt2293 = l72;
-																		int j78 = intsHeap[5 + iHeapCounter];
+																		int j78 = intsStack[5 + iStackCounter];
 																		if (Class58.anIntArrayArrayArray911[Class3_Sub7.anInt2293].length >> 1 <= 1 + j78)
 																			throw new RuntimeException();
 																		Class39.anInt670 = j78;
@@ -2377,9 +2431,9 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (5504 == opcode) {
-																		iHeapCounter -= 2;
-																		Class3_Sub9.anInt2309 = intsHeap[iHeapCounter];
-																		GraphicDefinition.CAMERA_DIRECTION = intsHeap[iHeapCounter + 1];
+																		iStackCounter -= 2;
+																		Class3_Sub9.anInt2309 = intsStack[iStackCounter];
+																		GraphicDefinition.CAMERA_DIRECTION = intsStack[iStackCounter + 1];
 																		if (Class133.anInt1753 == 2) {
 																			Class3_Sub13_Sub25.anInt3315 = GraphicDefinition.CAMERA_DIRECTION;
 																			Class139.anInt1823 = Class3_Sub9.anInt2309;
@@ -2388,18 +2442,18 @@ final class ItemDefinition {
 																		continue;
 																	}
 																	if (opcode == 5505) {
-																		intsHeap[iHeapCounter++] = Class3_Sub9.anInt2309;
+																		intsStack[iStackCounter++] = Class3_Sub9.anInt2309;
 																		continue;
 																	}
 																	if (5506 != opcode)
 																		break;
-																	intsHeap[iHeapCounter++] = GraphicDefinition.CAMERA_DIRECTION;
+																	intsStack[iStackCounter++] = GraphicDefinition.CAMERA_DIRECTION;
 																	continue;
 																}
 																if (opcode >= 5700) {
 																	if (6100 > opcode) {
 																		if (opcode == 6001) {
-																			int k34 = intsHeap[--iHeapCounter];
+																			int k34 = intsStack[--iStackCounter];
 																			if (k34 < 1)
 																				k34 = 1;
 																			if (k34 > 4)
@@ -2426,7 +2480,7 @@ final class ItemDefinition {
 																			continue;
 																		}
 																		if (opcode == 6002) {
-																			Class25.method957(1 == intsHeap[--iHeapCounter]);
+																			Class25.method957(1 == intsStack[--iStackCounter]);
 																			Class3_Sub10.method139(66);
 																			Class84.method1417(101);
 																			RSByteBuffer.method792();
@@ -2435,52 +2489,52 @@ final class ItemDefinition {
 																			continue;
 																		}
 																		if (opcode == 6003) {
-																			Class3_Sub28_Sub7.aBoolean3604 = intsHeap[--iHeapCounter] == 1;
+																			Class3_Sub28_Sub7.aBoolean3604 = intsStack[--iStackCounter] == 1;
 																			RSByteBuffer.method792();
 																			Class119.method1730(Class38.aClass87_665);
 																			Class140_Sub2.aBoolean2705 = false;
 																			continue;
 																		}
 																		if (opcode == 6005) {
-																			KeyboardListener.aBoolean1905 = intsHeap[--iHeapCounter] == 1;
+																			KeyboardListener.aBoolean1905 = intsStack[--iStackCounter] == 1;
 																			Class84.method1417(112);
 																			Class119.method1730(Class38.aClass87_665);
 																			Class140_Sub2.aBoolean2705 = false;
 																			continue;
 																		}
 																		if (opcode == 6006) {
-																			Class25.aBoolean488 = intsHeap[--iHeapCounter] == 1;
+																			Class25.aBoolean488 = intsStack[--iStackCounter] == 1;
 																			((Class102) Class51.anInterface2_838).method1616(!Class25.aBoolean488);
 																			Class119.method1730(Class38.aClass87_665);
 																			Class140_Sub2.aBoolean2705 = false;
 																			continue;
 																		}
 																		if (opcode == 6007) {
-																			RSInterface.aBoolean236 = intsHeap[--iHeapCounter] == 1;
+																			RSInterface.aBoolean236 = intsStack[--iStackCounter] == 1;
 																			Class119.method1730(Class38.aClass87_665);
 																			Class140_Sub2.aBoolean2705 = false;
 																			continue;
 																		}
 																		if (opcode == 6008) {
-																			WorldListEntry.aBoolean2623 = intsHeap[--iHeapCounter] == 1;
+																			WorldListEntry.aBoolean2623 = intsStack[--iStackCounter] == 1;
 																			Class119.method1730(Class38.aClass87_665);
 																			Class140_Sub2.aBoolean2705 = false;
 																			continue;
 																		}
 																		if (opcode == 6009) {
-																			Class3_Sub13_Sub22.aBoolean3275 = intsHeap[--iHeapCounter] == 1;
+																			Class3_Sub13_Sub22.aBoolean3275 = intsStack[--iStackCounter] == 1;
 																			Class119.method1730(Class38.aClass87_665);
 																			Class140_Sub2.aBoolean2705 = false;
 																			continue;
 																		}
 																		if (opcode == 6010) {
-																			Class140_Sub6.aBoolean2910 = 1 == intsHeap[--iHeapCounter];
+																			Class140_Sub6.aBoolean2910 = 1 == intsStack[--iStackCounter];
 																			Class119.method1730(Class38.aClass87_665);
 																			Class140_Sub2.aBoolean2705 = false;
 																			continue;
 																		}
 																		if (opcode == 6011) {
-																			int l34 = intsHeap[--iHeapCounter];
+																			int l34 = intsStack[--iStackCounter];
 																			if (l34 < 0 || l34 > 2)
 																				l34 = 0;
 																			Class80.anInt1137 = l34;
@@ -2491,7 +2545,7 @@ final class ItemDefinition {
 																		if (6012 == opcode) {
 																			if (HDToolKit.highDetail)
 																				Class3_Sub28_Sub4.method551(0, 0);
-																			Class106.aBoolean1441 = intsHeap[--iHeapCounter] == 1;
+																			Class106.aBoolean1441 = intsStack[--iStackCounter] == 1;
 																			if (HDToolKit.highDetail && Class106.aBoolean1441) {
 																				Class51.method1137(0.7F);
 																			} else {
@@ -2510,7 +2564,7 @@ final class ItemDefinition {
 																			continue;
 																		}
 																		if (opcode == 6014) {
-																			Class128.aBoolean1685 = intsHeap[--iHeapCounter] == 1;
+																			Class128.aBoolean1685 = intsStack[--iStackCounter] == 1;
 																			if (HDToolKit.highDetail)
 																				Class84.method1417(109);
 																			Class119.method1730(Class38.aClass87_665);
@@ -2518,7 +2572,7 @@ final class ItemDefinition {
 																			continue;
 																		}
 																		if (opcode == 6015) {
-																			Class38.aBoolean661 = intsHeap[--iHeapCounter] == 1;
+																			Class38.aBoolean661 = intsStack[--iStackCounter] == 1;
 																			if (HDToolKit.highDetail)
 																				Class3_Sub13_Sub14.method236();
 																			Class119.method1730(Class38.aClass87_665);
@@ -2526,7 +2580,7 @@ final class ItemDefinition {
 																			continue;
 																		}
 																		if (6016 == opcode) {
-																			int i35 = intsHeap[--iHeapCounter];
+																			int i35 = intsStack[--iStackCounter];
 																			if (HDToolKit.highDetail)
 																				Class3_Sub28_Sub5.aBoolean3593 = true;
 																			if (0 > i35 || i35 > 2)
@@ -2535,14 +2589,14 @@ final class ItemDefinition {
 																			continue;
 																		}
 																		if (opcode == 6017) {
-																			Class3_Sub13_Sub15.aBoolean3184 = intsHeap[--iHeapCounter] == 1;
+																			Class3_Sub13_Sub15.aBoolean3184 = intsStack[--iStackCounter] == 1;
 																			GameShell.method34();
 																			Class119.method1730(Class38.aClass87_665);
 																			Class140_Sub2.aBoolean2705 = false;
 																			continue;
 																		}
 																		if (opcode == 6018) {
-																			int j35 = intsHeap[--iHeapCounter];
+																			int j35 = intsStack[--iStackCounter];
 																			if (j35 < 0)
 																				j35 = 0;
 																			if (j35 > 127)
@@ -2553,7 +2607,7 @@ final class ItemDefinition {
 																			continue;
 																		}
 																		if (opcode == 6019) {
-																			int k35 = intsHeap[--iHeapCounter];
+																			int k35 = intsStack[--iStackCounter];
 																			if (k35 < 0)
 																				k35 = 0;
 																			if (k35 > 255)
@@ -2575,7 +2629,7 @@ final class ItemDefinition {
 																			continue;
 																		}
 																		if (opcode == 6020) {
-																			int l35 = intsHeap[--iHeapCounter];
+																			int l35 = intsStack[--iStackCounter];
 																			if (l35 < 0)
 																				l35 = 0;
 																			if (127 < l35)
@@ -2586,12 +2640,12 @@ final class ItemDefinition {
 																			continue;
 																		}
 																		if (opcode == 6021) {
-																			Class73.aBoolean1084 = intsHeap[--iHeapCounter] == 1;
+																			Class73.aBoolean1084 = intsStack[--iStackCounter] == 1;
 																			RSByteBuffer.method792();
 																			continue;
 																		}
 																		if (opcode == 6023) {
-																			int i36 = intsHeap[--iHeapCounter];
+																			int i36 = intsStack[--iStackCounter];
 																			if (0 > i36)
 																				i36 = 0;
 																			if (i36 > 2)
@@ -2604,11 +2658,11 @@ final class ItemDefinition {
 																			Class127_Sub1.method1758(i36);
 																			Class119.method1730(Class38.aClass87_665);
 																			Class140_Sub2.aBoolean2705 = false;
-																			intsHeap[iHeapCounter++] = flag6 ? 0 : 1;
+																			intsStack[iStackCounter++] = flag6 ? 0 : 1;
 																			continue;
 																		}
 																		if (opcode == 6024) {
-																			int j36 = intsHeap[--iHeapCounter];
+																			int j36 = intsStack[--iStackCounter];
 																			if (j36 < 0 || 2 < j36)
 																				j36 = 0;
 																			Class3_Sub28_Sub9.anInt3622 = j36;
@@ -2617,134 +2671,134 @@ final class ItemDefinition {
 																		}
 																		if (opcode != 6028)
 																			break;
-																		Class163_Sub3.aBoolean3004 = intsHeap[--iHeapCounter] != 0;
+																		Class163_Sub3.aBoolean3004 = intsStack[--iStackCounter] != 0;
 																		Class119.method1730(Class38.aClass87_665);
 																		continue;
 																	}
 																	if (opcode < 6200) {
 																		if (opcode == 6101) {
-																			intsHeap[iHeapCounter++] = Class3_Sub28_Sub10.anInt3625;
+																			intsStack[iStackCounter++] = Class3_Sub28_Sub10.anInt3625;
 																			continue;
 																		}
 																		if (opcode == 6102) {
-																			intsHeap[iHeapCounter++] = NPC.method1986(109) ? 1 : 0;
+																			intsStack[iStackCounter++] = NPC.method1986(109) ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode == 6103) {
-																			intsHeap[iHeapCounter++] = Class3_Sub28_Sub7.aBoolean3604 ? 1 : 0;
+																			intsStack[iStackCounter++] = Class3_Sub28_Sub7.aBoolean3604 ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode == 6105) {
-																			intsHeap[iHeapCounter++] = KeyboardListener.aBoolean1905 ? 1 : 0;
+																			intsStack[iStackCounter++] = KeyboardListener.aBoolean1905 ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode == 6106) {
-																			intsHeap[iHeapCounter++] = Class25.aBoolean488 ? 1 : 0;
+																			intsStack[iStackCounter++] = Class25.aBoolean488 ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode == 6107) {
-																			intsHeap[iHeapCounter++] = RSInterface.aBoolean236 ? 1 : 0;
+																			intsStack[iStackCounter++] = RSInterface.aBoolean236 ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode == 6108) {
-																			intsHeap[iHeapCounter++] = WorldListEntry.aBoolean2623 ? 1 : 0;
+																			intsStack[iStackCounter++] = WorldListEntry.aBoolean2623 ? 1 : 0;
 																			continue;
 																		}
 																		if (6109 == opcode) {
-																			intsHeap[iHeapCounter++] = Class3_Sub13_Sub22.aBoolean3275 ? 1 : 0;
+																			intsStack[iStackCounter++] = Class3_Sub13_Sub22.aBoolean3275 ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode == 6110) {
-																			intsHeap[iHeapCounter++] = Class140_Sub6.aBoolean2910 ? 1 : 0;
+																			intsStack[iStackCounter++] = Class140_Sub6.aBoolean2910 ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode == 6111) {
-																			intsHeap[iHeapCounter++] = Class80.anInt1137;
+																			intsStack[iStackCounter++] = Class80.anInt1137;
 																			continue;
 																		}
 																		if (6112 == opcode) {
-																			intsHeap[iHeapCounter++] = Class106.aBoolean1441 ? 1 : 0;
+																			intsStack[iStackCounter++] = Class106.aBoolean1441 ? 1 : 0;
 																			continue;
 																		}
 																		if (6114 == opcode) {
-																			intsHeap[iHeapCounter++] = Class128.aBoolean1685 ? 1 : 0;
+																			intsStack[iStackCounter++] = Class128.aBoolean1685 ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode == 6115) {
-																			intsHeap[iHeapCounter++] = Class38.aBoolean661 ? 1 : 0;
+																			intsStack[iStackCounter++] = Class38.aBoolean661 ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode == 6116) {
-																			intsHeap[iHeapCounter++] = Class3_Sub28_Sub14.anInt3671;
+																			intsStack[iStackCounter++] = Class3_Sub28_Sub14.anInt3671;
 																			continue;
 																		}
 																		if (6117 == opcode) {
-																			intsHeap[iHeapCounter++] = Class3_Sub13_Sub15.aBoolean3184 ? 1 : 0;
+																			intsStack[iStackCounter++] = Class3_Sub13_Sub15.aBoolean3184 ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode == 6118) {
-																			intsHeap[iHeapCounter++] = CS2Script.anInt2453;
+																			intsStack[iStackCounter++] = CS2Script.anInt2453;
 																			continue;
 																		}
 																		if (6119 == opcode) {
-																			intsHeap[iHeapCounter++] = Class9.anInt120;
+																			intsStack[iStackCounter++] = Class9.anInt120;
 																			continue;
 																		}
 																		if (opcode == 6120) {
-																			intsHeap[iHeapCounter++] = Class14.anInt340;
+																			intsStack[iStackCounter++] = Class14.anInt340;
 																			continue;
 																		}
 																		if (opcode == 6121) {
 																			if (HDToolKit.highDetail)
-																				intsHeap[iHeapCounter++] = HDToolKit.aBoolean1809 ? 1 : 0;
+																				intsStack[iStackCounter++] = HDToolKit.aBoolean1809 ? 1 : 0;
 																			else
-																				intsHeap[iHeapCounter++] = 0;
+																				intsStack[iStackCounter++] = 0;
 																			continue;
 																		}
 																		if (opcode == 6123) {
-																			intsHeap[iHeapCounter++] = Class127_Sub1.method1757();
+																			intsStack[iStackCounter++] = Class127_Sub1.method1757();
 																			continue;
 																		}
 																		if (opcode == 6124) {
-																			intsHeap[iHeapCounter++] = Class3_Sub28_Sub9.anInt3622;
+																			intsStack[iStackCounter++] = Class3_Sub28_Sub9.anInt3622;
 																			continue;
 																		}
 																		if (opcode != 6128)
 																			break;
-																		intsHeap[iHeapCounter++] = Class163_Sub3.aBoolean3004 ? 1 : 0;
+																		intsStack[iStackCounter++] = Class163_Sub3.aBoolean3004 ? 1 : 0;
 																		continue;
 																	}
 																	if (opcode >= 6300) {
 																		if (opcode < 6400) {
 																			if (opcode == 6300) {
-																				intsHeap[iHeapCounter++] = (int) (Class5.method830((byte) -55) / 60000L);
+																				intsStack[iStackCounter++] = (int) (Class5.method830((byte) -55) / 60000L);
 																				continue;
 																			}
 																			if (opcode == 6301) {
-																				intsHeap[iHeapCounter++] = -11745 + (int) (Class5.method830((byte) -55) / 0x5265c00L);
+																				intsStack[iStackCounter++] = -11745 + (int) (Class5.method830((byte) -55) / 0x5265c00L);
 																				continue;
 																			}
 																			if (opcode == 6302) {
-																				iHeapCounter -= 3;
-																				int i73 = intsHeap[iHeapCounter + 2];
-																				int l60 = intsHeap[iHeapCounter - -1];
-																				int k36 = intsHeap[iHeapCounter];
+																				iStackCounter -= 3;
+																				int i73 = intsStack[iStackCounter + 2];
+																				int l60 = intsStack[iStackCounter - -1];
+																				int k36 = intsStack[iStackCounter];
 																				Class3_Sub28_Sub9.aCalendar3616.clear();
 																				Class3_Sub28_Sub9.aCalendar3616.set(Calendar.HOUR_OF_DAY, 12);
 																				Class3_Sub28_Sub9.aCalendar3616.set(i73, l60, k36);
-																				intsHeap[iHeapCounter++] = -11745 + (int) (Class3_Sub28_Sub9.aCalendar3616.getTime().getTime() / 0x5265c00L);
+																				intsStack[iStackCounter++] = -11745 + (int) (Class3_Sub28_Sub9.aCalendar3616.getTime().getTime() / 0x5265c00L);
 																				continue;
 																			}
 																			if (6303 == opcode) {
 																				Class3_Sub28_Sub9.aCalendar3616.clear();
 																				Class3_Sub28_Sub9.aCalendar3616.setTime(new Date(Class5.method830((byte) -55)));
-																				intsHeap[iHeapCounter++] = Class3_Sub28_Sub9.aCalendar3616.get(Calendar.YEAR);
+																				intsStack[iStackCounter++] = Class3_Sub28_Sub9.aCalendar3616.get(Calendar.YEAR);
 																				continue;
 																			}
 																			if (opcode != 6304)
 																				break;
 																			boolean flag7 = true;
-																			int l36 = intsHeap[--iHeapCounter];
+																			int l36 = intsStack[--iStackCounter];
 																			if (l36 >= 0) {
 																				if (l36 >= 1582) {
 																					if (l36 % 4 == 0) {
@@ -2761,161 +2815,161 @@ final class ItemDefinition {
 																			} else {
 																				flag7 = (1 + l36) % 4 == 0;
 																			}
-																			intsHeap[iHeapCounter++] = flag7 ? 1 : 0;
+																			intsStack[iStackCounter++] = flag7 ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode >= 6500) {
 																			if (opcode < 6600) {
 																				if (opcode == 6500) {
 																					if (Class143.loadingStage != 10 || Class3_Sub13_Sub31.anInt3375 != 0 || 0 != Class3_Sub13_Sub25.loginStage || 0 != Canvas_Sub1.registryStage)
-																						intsHeap[iHeapCounter++] = 1;
+																						intsStack[iStackCounter++] = 1;
 																					else
-																						intsHeap[iHeapCounter++] = Class121.method1735() == -1 ? 0 : 1;
+																						intsStack[iStackCounter++] = Class121.method1735() == -1 ? 0 : 1;
 																					continue;
 																				}
 																				if (opcode == 6501) {
 																					WorldListEntry worldEntry = Class140_Sub2.method1953();
 																					if (worldEntry == null) {
-																						intsHeap[iHeapCounter++] = -1;
-																						intsHeap[iHeapCounter++] = 0;
-																						stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
-																						intsHeap[iHeapCounter++] = 0;
-																						stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
-																						intsHeap[iHeapCounter++] = 0;
+																						intsStack[iStackCounter++] = -1;
+																						intsStack[iStackCounter++] = 0;
+																						stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
+																						intsStack[iStackCounter++] = 0;
+																						stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
+																						intsStack[iStackCounter++] = 0;
 																					} else {
-																						intsHeap[iHeapCounter++] = worldEntry.worldId;
-																						intsHeap[iHeapCounter++] = worldEntry.settings;
-																						stringsHeap[sHeapCounter++] = worldEntry.activity;
+																						intsStack[iStackCounter++] = worldEntry.worldId;
+																						intsStack[iStackCounter++] = worldEntry.settings;
+																						stringsStack[sStackCounter++] = worldEntry.activity;
 																						WorldListCountry class26 = worldEntry.method1078(60);
-																						intsHeap[iHeapCounter++] = class26.flagId;
-																						stringsHeap[sHeapCounter++] = class26.name;
-																						intsHeap[iHeapCounter++] = worldEntry.anInt722;
+																						intsStack[iStackCounter++] = class26.flagId;
+																						stringsStack[sStackCounter++] = class26.name;
+																						intsStack[iStackCounter++] = worldEntry.anInt722;
 																					}
 																					continue;
 																				}
 																				if (opcode == 6502) {
 																					WorldListEntry class44_sub1_1 = method1107(5422);
 																					if (null == class44_sub1_1) {
-																						intsHeap[iHeapCounter++] = -1;
-																						intsHeap[iHeapCounter++] = 0;
-																						stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
-																						intsHeap[iHeapCounter++] = 0;
-																						stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
-																						intsHeap[iHeapCounter++] = 0;
+																						intsStack[iStackCounter++] = -1;
+																						intsStack[iStackCounter++] = 0;
+																						stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
+																						intsStack[iStackCounter++] = 0;
+																						stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
+																						intsStack[iStackCounter++] = 0;
 																					} else {
-																						intsHeap[iHeapCounter++] = class44_sub1_1.worldId;
-																						intsHeap[iHeapCounter++] = class44_sub1_1.settings;
-																						stringsHeap[sHeapCounter++] = class44_sub1_1.activity;
+																						intsStack[iStackCounter++] = class44_sub1_1.worldId;
+																						intsStack[iStackCounter++] = class44_sub1_1.settings;
+																						stringsStack[sStackCounter++] = class44_sub1_1.activity;
 																						WorldListCountry class26_1 = class44_sub1_1.method1078(70);
-																						intsHeap[iHeapCounter++] = class26_1.flagId;
-																						stringsHeap[sHeapCounter++] = class26_1.name;
-																						intsHeap[iHeapCounter++] = class44_sub1_1.anInt722;
+																						intsStack[iStackCounter++] = class26_1.flagId;
+																						stringsStack[sStackCounter++] = class26_1.name;
+																						intsStack[iStackCounter++] = class44_sub1_1.anInt722;
 																					}
 																					continue;
 																				}
 																				if (opcode == 6503) {
-																					int i37 = intsHeap[--iHeapCounter];
+																					int i37 = intsStack[--iStackCounter];
 																					if (Class143.loadingStage != 10 || Class3_Sub13_Sub31.anInt3375 != 0 || Class3_Sub13_Sub25.loginStage != 0 || Canvas_Sub1.registryStage != 0)
-																						intsHeap[iHeapCounter++] = 0;
+																						intsStack[iStackCounter++] = 0;
 																					else
-																						intsHeap[iHeapCounter++] = Class104.method1627(i37, (byte) -7) ? 1 : 0;
+																						intsStack[iStackCounter++] = Class104.method1627(i37, (byte) -7) ? 1 : 0;
 																					continue;
 																				}
 																				if (opcode == 6504) {
-																					RSString.anInt2148 = intsHeap[--iHeapCounter];
+																					RSString.anInt2148 = intsStack[--iStackCounter];
 																					Class119.method1730(Class38.aClass87_665);
 																					continue;
 																				}
 																				if (6505 == opcode) {
-																					intsHeap[iHeapCounter++] = RSString.anInt2148;
+																					intsStack[iStackCounter++] = RSString.anInt2148;
 																					continue;
 																				}
 																				if (opcode == 6506) {
-																					int j37 = intsHeap[--iHeapCounter];
+																					int j37 = intsStack[--iStackCounter];
 																					WorldListEntry class44_sub1_2 = Class3_Sub8.getWorld(120, j37);
 																					if (class44_sub1_2 == null) {
-																						intsHeap[iHeapCounter++] = -1;
-																						stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
-																						intsHeap[iHeapCounter++] = 0;
-																						stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
-																						intsHeap[iHeapCounter++] = 0;
+																						intsStack[iStackCounter++] = -1;
+																						stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
+																						intsStack[iStackCounter++] = 0;
+																						stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
+																						intsStack[iStackCounter++] = 0;
 																					} else {
-																						intsHeap[iHeapCounter++] = class44_sub1_2.settings;
-																						stringsHeap[sHeapCounter++] = class44_sub1_2.activity;
+																						intsStack[iStackCounter++] = class44_sub1_2.settings;
+																						stringsStack[sStackCounter++] = class44_sub1_2.activity;
 																						WorldListCountry class26_2 = class44_sub1_2.method1078(-87);
-																						intsHeap[iHeapCounter++] = class26_2.flagId;
-																						stringsHeap[sHeapCounter++] = class26_2.name;
-																						intsHeap[iHeapCounter++] = class44_sub1_2.anInt722;
+																						intsStack[iStackCounter++] = class26_2.flagId;
+																						stringsStack[sStackCounter++] = class26_2.name;
+																						intsStack[iStackCounter++] = class44_sub1_2.anInt722;
 																					}
 																					continue;
 																				}
 																				if (opcode != 6507)
 																					break;
-																				iHeapCounter -= 4;
-																				int j73 = intsHeap[iHeapCounter + 2];
-																				int k37 = intsHeap[iHeapCounter];
-																				boolean flag11 = intsHeap[iHeapCounter - -3] == 1;
-																				boolean flag8 = intsHeap[1 + iHeapCounter] == 1;
+																				iStackCounter -= 4;
+																				int j73 = intsStack[iStackCounter + 2];
+																				int k37 = intsStack[iStackCounter];
+																				boolean flag11 = intsStack[iStackCounter - -3] == 1;
+																				boolean flag8 = intsStack[1 + iStackCounter] == 1;
 																				Class134.method1808(j73, flag8, k37, flag11);
 																				continue;
 																			}
 																			if (opcode >= 6700)
 																				break;
 																			if (6600 == opcode) {
-																				Class15.aBoolean346 = intsHeap[--iHeapCounter] == 1;
+																				Class15.aBoolean346 = intsStack[--iStackCounter] == 1;
 																				Class119.method1730(Class38.aClass87_665);
 																				continue;
 																			}
 																			if (opcode != 6601)
 																				break;
-																			intsHeap[iHeapCounter++] = Class15.aBoolean346 ? 1 : 0;
+																			intsStack[iStackCounter++] = Class15.aBoolean346 ? 1 : 0;
 																			continue;
 																		}
 																		if (6405 == opcode) {
-																			intsHeap[iHeapCounter++] = Class47.method1088(false) ? 1 : 0;
+																			intsStack[iStackCounter++] = Class47.method1088(false) ? 1 : 0;
 																			continue;
 																		}
 																		if (opcode != 6406)
 																			break;
-																		intsHeap[iHeapCounter++] = Class159.method2194() ? 1 : 0;
+																		intsStack[iStackCounter++] = Class159.method2194() ? 1 : 0;
 																		continue;
 																	}
 																	if (opcode == 6200) {
-																		iHeapCounter -= 2;
-																		Class106.aShort1444 = (short) intsHeap[iHeapCounter];
+																		iStackCounter -= 2;
+																		Class106.aShort1444 = (short) intsStack[iStackCounter];
 																		if (0 >= Class106.aShort1444)
 																			Class106.aShort1444 = 256;
-																		Class3_Sub13_Sub3.aShort3052 = (short) intsHeap[1 + iHeapCounter];
+																		Class3_Sub13_Sub3.aShort3052 = (short) intsStack[1 + iStackCounter];
 																		if (Class3_Sub13_Sub3.aShort3052 <= 0)
 																			Class3_Sub13_Sub3.aShort3052 = 205;
 																		continue;
 																	}
 																	if (opcode == 6201) {
-																		iHeapCounter -= 2;
-																		OutputStream_Sub1.aShort46 = (short) intsHeap[iHeapCounter];
+																		iStackCounter -= 2;
+																		OutputStream_Sub1.aShort46 = (short) intsStack[iStackCounter];
 																		if (OutputStream_Sub1.aShort46 <= 0)
 																			OutputStream_Sub1.aShort46 = 256;
-																		ObjectDefinition.aShort1535 = (short) intsHeap[1 + iHeapCounter];
+																		ObjectDefinition.aShort1535 = (short) intsStack[1 + iStackCounter];
 																		if (ObjectDefinition.aShort1535 <= 0)
 																			ObjectDefinition.aShort1535 = 320;
 																		continue;
 																	}
 																	if (opcode == 6202) {
-																		iHeapCounter -= 4;
-																		Class3_Sub13_Sub19.aShort3241 = (short) intsHeap[iHeapCounter];
+																		iStackCounter -= 4;
+																		Class3_Sub13_Sub19.aShort3241 = (short) intsStack[iStackCounter];
 																		if (Class3_Sub13_Sub19.aShort3241 <= 0)
 																			Class3_Sub13_Sub19.aShort3241 = 1;
-																		PacketParser.aShort83 = (short) intsHeap[1 + iHeapCounter];
+																		PacketParser.aShort83 = (short) intsStack[1 + iStackCounter];
 																		if (PacketParser.aShort83 > 0) {
 																			if (Class3_Sub13_Sub19.aShort3241 > PacketParser.aShort83)
 																				PacketParser.aShort83 = Class3_Sub13_Sub19.aShort3241;
 																		} else {
 																			PacketParser.aShort83 = 32767;
 																		}
-																		aShort505 = (short) intsHeap[2 + iHeapCounter];
+																		aShort505 = (short) intsStack[2 + iStackCounter];
 																		if (aShort505 <= 0)
 																			aShort505 = 1;
-																		Class3_Sub13_Sub23_Sub1.aShort4038 = (short) intsHeap[iHeapCounter - -3];
+																		Class3_Sub13_Sub23_Sub1.aShort4038 = (short) intsStack[iStackCounter - -3];
 																		if (Class3_Sub13_Sub23_Sub1.aShort4038 > 0) {
 																			if (aShort505 > Class3_Sub13_Sub23_Sub1.aShort4038)
 																				Class3_Sub13_Sub23_Sub1.aShort4038 = aShort505;
@@ -2926,26 +2980,26 @@ final class ItemDefinition {
 																	}
 																	if (opcode == 6203) {
 																		Class65.method1239(Class168.aClass11_2091.anInt168, 81, 0, Class168.aClass11_2091.anInt193, 0, false);
-																		intsHeap[iHeapCounter++] = Class96.anInt1358;
-																		intsHeap[iHeapCounter++] = Canvas_Sub2.anInt31;
+																		intsStack[iStackCounter++] = Class96.anInt1358;
+																		intsStack[iStackCounter++] = Canvas_Sub2.anInt31;
 																		continue;
 																	}
 																	if (6204 == opcode) {
-																		intsHeap[iHeapCounter++] = OutputStream_Sub1.aShort46;
-																		intsHeap[iHeapCounter++] = ObjectDefinition.aShort1535;
+																		intsStack[iStackCounter++] = OutputStream_Sub1.aShort46;
+																		intsStack[iStackCounter++] = ObjectDefinition.aShort1535;
 																		continue;
 																	}
 																	if (opcode != 6205)
 																		break;
-																	intsHeap[iHeapCounter++] = Class106.aShort1444;
-																	intsHeap[iHeapCounter++] = Class3_Sub13_Sub3.aShort3052;
+																	intsStack[iStackCounter++] = Class106.aShort1444;
+																	intsStack[iStackCounter++] = Class3_Sub13_Sub3.aShort3052;
 																	continue;
 																}
 																if (opcode == 5600) {
-																	sHeapCounter -= 2;
-																	RSString class94_27 = stringsHeap[sHeapCounter];
-																	RSString class94_56 = stringsHeap[sHeapCounter + 1];
-																	int k73 = intsHeap[--iHeapCounter];
+																	sStackCounter -= 2;
+																	RSString class94_27 = stringsStack[sStackCounter];
+																	RSString class94_56 = stringsStack[sStackCounter + 1];
+																	int k73 = intsStack[--iStackCounter];
 																	if (Class143.loadingStage == 10 && Class3_Sub13_Sub31.anInt3375 == 0 && Class3_Sub13_Sub25.loginStage == 0 && Canvas_Sub1.registryStage == 0 && Class43.anInt692 == 0)
 																		Class131.method1793(class94_27, class94_56, k73);
 																	continue;
@@ -2960,23 +3014,23 @@ final class ItemDefinition {
 																	continue;
 																}
 																if (opcode == 5603) {
-																	iHeapCounter -= 4;
+																	iStackCounter -= 4;
 																	if (Class143.loadingStage == 10 && 0 == Class3_Sub13_Sub31.anInt3375 && Class3_Sub13_Sub25.loginStage == 0 && Canvas_Sub1.registryStage == 0 && Class43.anInt692 == 0)
-																		CS2Script.sendRegistryRequest(intsHeap[iHeapCounter - -2], intsHeap[iHeapCounter + 3], intsHeap[iHeapCounter], intsHeap[iHeapCounter + 1]);
+																		CS2Script.sendRegistryRequest(intsStack[iStackCounter - -2], intsStack[iStackCounter + 3], intsStack[iStackCounter], intsStack[iStackCounter + 1]);
 																	continue;
 																}
 																if (opcode == 5604) {
-																	sHeapCounter--;
+																	sStackCounter--;
 																	if (Class143.loadingStage == 10 && Class3_Sub13_Sub31.anInt3375 == 0 && Class3_Sub13_Sub25.loginStage == 0 && Canvas_Sub1.registryStage == 0 && Class43.anInt692 == 0) {
-																		Class40.method1041(stringsHeap[sHeapCounter].toLong(-108), stringsHeap[sHeapCounter]);
+																		Class40.method1041(stringsStack[sStackCounter].toLong(-108), stringsStack[sStackCounter]);
 																		continue;
 																	}
 																}
 																if (opcode == 5605) {
-																	iHeapCounter -= 4;
-																	sHeapCounter -= 2;
+																	iStackCounter -= 4;
+																	sStackCounter -= 2;
 																	if (Class143.loadingStage == 10 && 0 == Class3_Sub13_Sub31.anInt3375 && Class3_Sub13_Sub25.loginStage == 0 && Canvas_Sub1.registryStage == 0 && Class43.anInt692 == 0)
-																		Class3_Sub28_Sub6.a(intsHeap[iHeapCounter], intsHeap[iHeapCounter - -3], intsHeap[1 + iHeapCounter], stringsHeap[1 + sHeapCounter], stringsHeap[sHeapCounter].toLong(-125), intsHeap[2 + iHeapCounter], stringsHeap[sHeapCounter]);
+																		Class3_Sub28_Sub6.a(intsStack[iStackCounter], intsStack[iStackCounter - -3], intsStack[1 + iStackCounter], stringsStack[1 + sStackCounter], stringsStack[sStackCounter].toLong(-125), intsStack[2 + iStackCounter], stringsStack[sStackCounter]);
 																	continue;
 																}
 																if (opcode == 5606) {
@@ -2985,137 +3039,137 @@ final class ItemDefinition {
 																	continue;
 																}
 																if (opcode == 5607) {
-																	intsHeap[iHeapCounter++] = Class158.anInt2005;
+																	intsStack[iStackCounter++] = Class158.anInt2005;
 																	continue;
 																}
 																if (opcode == 5608) {
-																	intsHeap[iHeapCounter++] = Class3_Sub13_Sub34.anInt3413;
+																	intsStack[iStackCounter++] = Class3_Sub13_Sub34.anInt3413;
 																	continue;
 																}
 																if (5609 == opcode) {
-																	intsHeap[iHeapCounter++] = Class130.anInt1711;
+																	intsStack[iStackCounter++] = Class130.anInt1711;
 																	continue;
 																}
 																if (opcode == 5610) {
 																	for (int l37 = 0; l37 < 5; l37++)
-																		stringsHeap[sHeapCounter++] = Class3_Sub13_Sub33.aClass94Array3391.length <= l37 ? Class3_Sub9.aClass94_2331 : Class3_Sub13_Sub33.aClass94Array3391[l37].method1545();
+																		stringsStack[sStackCounter++] = Class3_Sub13_Sub33.aClass94Array3391.length <= l37 ? Class3_Sub9.aClass94_2331 : Class3_Sub13_Sub33.aClass94Array3391[l37].method1545();
 
 																	Class3_Sub13_Sub33.aClass94Array3391 = null;
 																	continue;
 																}
 																if (opcode != 5611)
 																	break;
-																intsHeap[iHeapCounter++] = Class3_Sub26.anInt2561;
+																intsStack[iStackCounter++] = Class3_Sub26.anInt2561;
 																continue;
 															}
 															if (4500 != opcode)
 																break;
-															iHeapCounter -= 2;
-															int i38 = intsHeap[iHeapCounter];
-															int i61 = intsHeap[iHeapCounter - -1];
+															iStackCounter -= 2;
+															int i38 = intsStack[iStackCounter];
+															int i61 = intsStack[iStackCounter - -1];
 															Class3_Sub28_Sub9 class3_sub28_sub9_1 = Class61.method1210(i61);
 															if (!class3_sub28_sub9_1.method585())
-																intsHeap[iHeapCounter++] = Class72.method1292((byte) 94, i38).method600(i61, class3_sub28_sub9_1.anInt3614);
+																intsStack[iStackCounter++] = Class72.method1292((byte) 94, i38).method600(i61, class3_sub28_sub9_1.anInt3614);
 															else
-																stringsHeap[sHeapCounter++] = Class72.method1292((byte) 31, i38).method604(class3_sub28_sub9_1.aClass94_3619, i61);
+																stringsStack[sStackCounter++] = Class72.method1292((byte) 31, i38).method604(class3_sub28_sub9_1.aClass94_3619, i61);
 															continue;
 														}
 														if (opcode != 4400)
 															break;
-														iHeapCounter -= 2;
-														int j61 = intsHeap[iHeapCounter - -1];
-														int j38 = intsHeap[iHeapCounter];
+														iStackCounter -= 2;
+														int j61 = intsStack[iStackCounter - -1];
+														int j38 = intsStack[iStackCounter];
 														Class3_Sub28_Sub9 class3_sub28_sub9_2 = Class61.method1210(j61);
 														if (!class3_sub28_sub9_2.method585())
-															intsHeap[iHeapCounter++] = Class162.getObjectDefinition(j38).method1691(class3_sub28_sub9_2.anInt3614, j61, (byte) 105);
+															intsStack[iStackCounter++] = Class162.getObjectDefinition(j38).method1691(class3_sub28_sub9_2.anInt3614, j61, (byte) 105);
 														else
-															stringsHeap[sHeapCounter++] = Class162.getObjectDefinition(j38).method1698(class3_sub28_sub9_2.aClass94_3619, j61);
+															stringsStack[sStackCounter++] = Class162.getObjectDefinition(j38).method1698(class3_sub28_sub9_2.aClass94_3619, j61);
 														continue;
 													}
 													if (opcode == 4200) {
-														int k38 = intsHeap[--iHeapCounter];
-														stringsHeap[sHeapCounter++] = Class38.getItemDefinition(k38, (byte) 72).name;
+														int k38 = intsStack[--iStackCounter];
+														stringsStack[sStackCounter++] = Class38.getItemDefinition(k38, (byte) 72).name;
 														continue;
 													}
 													if (opcode == 4201) {
-														iHeapCounter -= 2;
-														int l38 = intsHeap[iHeapCounter];
-														int k61 = intsHeap[iHeapCounter - -1];
+														iStackCounter -= 2;
+														int l38 = intsStack[iStackCounter];
+														int k61 = intsStack[iStackCounter - -1];
 														ItemDefinition class48_2 = Class38.getItemDefinition(l38, (byte) 77);
 														if (k61 < 1 || k61 > 5 || class48_2.groundOptions[-1 + k61] == null)
-															stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+															stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 														else
-															stringsHeap[sHeapCounter++] = class48_2.groundOptions[k61 - 1];
+															stringsStack[sStackCounter++] = class48_2.groundOptions[k61 - 1];
 														continue;
 													}
 													if (opcode == 4202) {
-														iHeapCounter -= 2;
-														int i39 = intsHeap[iHeapCounter];
-														int l61 = intsHeap[iHeapCounter + 1];
+														iStackCounter -= 2;
+														int i39 = intsStack[iStackCounter];
+														int l61 = intsStack[iStackCounter + 1];
 														ItemDefinition class48_3 = Class38.getItemDefinition(i39, (byte) 70);
 														if (l61 >= 1 && l61 <= 5 && null != class48_3.inventoryOptions[l61 + -1]) {
-															stringsHeap[sHeapCounter++] = class48_3.inventoryOptions[-1 + l61];
+															stringsStack[sStackCounter++] = class48_3.inventoryOptions[-1 + l61];
 														} else {
-															stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+															stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 														}
 														continue;
 													}
 													if (opcode == 4203) {
-														int j39 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class38.getItemDefinition(j39, (byte) 85).value;
+														int j39 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class38.getItemDefinition(j39, (byte) 85).value;
 														continue;
 													}
 													if (opcode == 4204) {
-														int k39 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class38.getItemDefinition(k39, (byte) 99).stackingType == 1 ? 1 : 0;
+														int k39 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class38.getItemDefinition(k39, (byte) 99).stackingType == 1 ? 1 : 0;
 														continue;
 													}
 													if (4205 == opcode) {
-														int l39 = intsHeap[--iHeapCounter];
+														int l39 = intsStack[--iStackCounter];
 														ItemDefinition class48 = Class38.getItemDefinition(l39, (byte) 96);
 														if (-1 == class48.anInt791 && class48.anInt789 >= 0)
-															intsHeap[iHeapCounter++] = class48.anInt789;
+															intsStack[iStackCounter++] = class48.anInt789;
 														else
-															intsHeap[iHeapCounter++] = l39;
+															intsStack[iStackCounter++] = l39;
 														continue;
 													}
 													if (opcode == 4206) {
-														int i40 = intsHeap[--iHeapCounter];
+														int i40 = intsStack[--iStackCounter];
 														ItemDefinition class48_1 = Class38.getItemDefinition(i40, (byte) 126);
 														if (0 <= class48_1.anInt791 && class48_1.anInt789 >= 0)
-															intsHeap[iHeapCounter++] = class48_1.anInt789;
+															intsStack[iStackCounter++] = class48_1.anInt789;
 														else
-															intsHeap[iHeapCounter++] = i40;
+															intsStack[iStackCounter++] = i40;
 														continue;
 													}
 													if (opcode == 4207) {
-														int j40 = intsHeap[--iHeapCounter];
-														intsHeap[iHeapCounter++] = Class38.getItemDefinition(j40, (byte) 121).membersItem ? 1 : 0;
+														int j40 = intsStack[--iStackCounter];
+														intsStack[iStackCounter++] = Class38.getItemDefinition(j40, (byte) 121).membersItem ? 1 : 0;
 														continue;
 													}
 													if (opcode == 4208) {
-														iHeapCounter -= 2;
-														int k40 = intsHeap[iHeapCounter];
-														int i62 = intsHeap[iHeapCounter - -1];
+														iStackCounter -= 2;
+														int k40 = intsStack[iStackCounter];
+														int i62 = intsStack[iStackCounter - -1];
 														Class3_Sub28_Sub9 class3_sub28_sub9_3 = Class61.method1210(i62);
 														if (class3_sub28_sub9_3.method585())
-															stringsHeap[sHeapCounter++] = Class38.getItemDefinition(k40, (byte) 126).method1105(class3_sub28_sub9_3.aClass94_3619, i62);
+															stringsStack[sStackCounter++] = Class38.getItemDefinition(k40, (byte) 126).method1105(class3_sub28_sub9_3.aClass94_3619, i62);
 														else
-															intsHeap[iHeapCounter++] = Class38.getItemDefinition(k40, (byte) 79).method1115(class3_sub28_sub9_3.anInt3614, -119, i62);
+															intsStack[iStackCounter++] = Class38.getItemDefinition(k40, (byte) 79).method1115(class3_sub28_sub9_3.anInt3614, -119, i62);
 														continue;
 													}
 													if (4210 == opcode) {
-														RSString class94_28 = stringsHeap[--sHeapCounter];
-														int j62 = intsHeap[--iHeapCounter];
+														RSString class94_28 = stringsStack[--sStackCounter];
+														int j62 = intsStack[--iStackCounter];
 														NPCDefinition.method1480(j62 == 1, class94_28);
-														intsHeap[iHeapCounter++] = Class62.anInt952;
+														intsStack[iStackCounter++] = Class62.anInt952;
 														continue;
 													}
 													if (opcode == 4211) {
 														if (null == Class99.aShortArray1398 || Class140_Sub4.anInt2756 >= Class62.anInt952)
-															intsHeap[iHeapCounter++] = -1;
+															intsStack[iStackCounter++] = -1;
 														else
-															intsHeap[iHeapCounter++] = Class69.bitwiseAnd(Class99.aShortArray1398[Class140_Sub4.anInt2756++], 65535);
+															intsStack[iStackCounter++] = Class69.bitwiseAnd(Class99.aShortArray1398[Class140_Sub4.anInt2756++], 65535);
 														continue;
 													}
 													if (4212 != opcode)
@@ -3124,144 +3178,144 @@ final class ItemDefinition {
 													continue;
 												}
 												if (4100 == opcode) {
-													RSString class94_29 = stringsHeap[--sHeapCounter];
-													int k62 = intsHeap[--iHeapCounter];
-													stringsHeap[sHeapCounter++] = RenderAnimationDefinition.method903(new RSString[]{
+													RSString class94_29 = stringsStack[--sStackCounter];
+													int k62 = intsStack[--iStackCounter];
+													stringsStack[sStackCounter++] = RenderAnimationDefinition.method903(new RSString[]{
 															class94_29, Class72.method1298((byte) 9, k62)
 													}, (byte) -94);
 													continue;
 												}
 												if (opcode == 4101) {
-													sHeapCounter -= 2;
-													RSString class94_57 = stringsHeap[sHeapCounter + 1];
-													RSString class94_30 = stringsHeap[sHeapCounter];
-													stringsHeap[sHeapCounter++] = RenderAnimationDefinition.method903(new RSString[]{
+													sStackCounter -= 2;
+													RSString class94_57 = stringsStack[sStackCounter + 1];
+													RSString class94_30 = stringsStack[sStackCounter];
+													stringsStack[sStackCounter++] = RenderAnimationDefinition.method903(new RSString[]{
 															class94_30, class94_57
 													}, (byte) -106);
 													continue;
 												}
 												if (4102 == opcode) {
-													RSString class94_31 = stringsHeap[--sHeapCounter];
-													int l62 = intsHeap[--iHeapCounter];
-													stringsHeap[sHeapCounter++] = RenderAnimationDefinition.method903(new RSString[]{
+													RSString class94_31 = stringsStack[--sStackCounter];
+													int l62 = intsStack[--iStackCounter];
+													stringsStack[sStackCounter++] = RenderAnimationDefinition.method903(new RSString[]{
 															class94_31, Class61.method1218(l62)
 													}, (byte) -119);
 													continue;
 												}
 												if (opcode == 4103) {
-													RSString class94_32 = stringsHeap[--sHeapCounter];
-													stringsHeap[sHeapCounter++] = class94_32.method1534();
+													RSString class94_32 = stringsStack[--sStackCounter];
+													stringsStack[sStackCounter++] = class94_32.method1534();
 													continue;
 												}
 												if (4104 == opcode) {
-													int l40 = intsHeap[--iHeapCounter];
+													int l40 = intsStack[--iStackCounter];
 													long l63 = 0xec44e2dc00L + (long) l40 * 0x5265c00L;
 													Class3_Sub28_Sub9.aCalendar3616.setTime(new Date(l63));
 													int k78 = Class3_Sub28_Sub9.aCalendar3616.get(Calendar.DATE);
 													int k80 = Class3_Sub28_Sub9.aCalendar3616.get(Calendar.MONTH);
 													int i82 = Class3_Sub28_Sub9.aCalendar3616.get(Calendar.YEAR);
-													stringsHeap[sHeapCounter++] = RenderAnimationDefinition.method903(new RSString[]{
+													stringsStack[sStackCounter++] = RenderAnimationDefinition.method903(new RSString[]{
 															Class72.method1298((byte) 9, k78), Class93.aClass94_1326, TextCore.MonthsOfTheYear[k80], Class93.aClass94_1326, Class72.method1298((byte) 9, i82)
 													}, (byte) -122);
 													continue;
 												}
 												if (4105 == opcode) {
-													sHeapCounter -= 2;
-													RSString class94_58 = stringsHeap[sHeapCounter + 1];
-													RSString class94_33 = stringsHeap[sHeapCounter];
+													sStackCounter -= 2;
+													RSString class94_58 = stringsStack[sStackCounter + 1];
+													RSString class94_33 = stringsStack[sStackCounter];
 													if (Class102.player.class52 == null || !Class102.player.class52.aBoolean864)
-														stringsHeap[sHeapCounter++] = class94_33;
+														stringsStack[sStackCounter++] = class94_33;
 													else
-														stringsHeap[sHeapCounter++] = class94_58;
+														stringsStack[sStackCounter++] = class94_58;
 													continue;
 												}
 												if (opcode == 4106) {
-													int i41 = intsHeap[--iHeapCounter];
-													stringsHeap[sHeapCounter++] = Class72.method1298((byte) 9, i41);
+													int i41 = intsStack[--iStackCounter];
+													stringsStack[sStackCounter++] = Class72.method1298((byte) 9, i41);
 													continue;
 												}
 												if (opcode == 4107) {
-													sHeapCounter -= 2;
-													intsHeap[iHeapCounter++] = stringsHeap[sHeapCounter].method1546((byte) -63, stringsHeap[sHeapCounter - -1]);
+													sStackCounter -= 2;
+													intsStack[iStackCounter++] = stringsStack[sStackCounter].method1546((byte) -63, stringsStack[sStackCounter - -1]);
 													continue;
 												}
 												if (4108 == opcode) {
-													RSString class94_34 = stringsHeap[--sHeapCounter];
-													iHeapCounter -= 2;
-													int l73 = intsHeap[iHeapCounter - -1];
-													int i63 = intsHeap[iHeapCounter];
-													intsHeap[iHeapCounter++] = Class86.method1430(-28922, l73).method684(class94_34, i63);
+													RSString class94_34 = stringsStack[--sStackCounter];
+													iStackCounter -= 2;
+													int l73 = intsStack[iStackCounter - -1];
+													int i63 = intsStack[iStackCounter];
+													intsStack[iStackCounter++] = Class86.method1430(-28922, l73).method684(class94_34, i63);
 													continue;
 												}
 												if (opcode == 4109) {
-													iHeapCounter -= 2;
-													RSString class94_35 = stringsHeap[--sHeapCounter];
-													int i74 = intsHeap[1 + iHeapCounter];
-													int j63 = intsHeap[iHeapCounter];
-													intsHeap[iHeapCounter++] = Class86.method1430(-28922, i74).method680(class94_35, j63);
+													iStackCounter -= 2;
+													RSString class94_35 = stringsStack[--sStackCounter];
+													int i74 = intsStack[1 + iStackCounter];
+													int j63 = intsStack[iStackCounter];
+													intsStack[iStackCounter++] = Class86.method1430(-28922, i74).method680(class94_35, j63);
 													continue;
 												}
 												if (opcode == 4110) {
-													sHeapCounter -= 2;
-													RSString class94_36 = stringsHeap[sHeapCounter];
-													RSString class94_59 = stringsHeap[sHeapCounter - -1];
-													if (1 == intsHeap[--iHeapCounter])
-														stringsHeap[sHeapCounter++] = class94_36;
+													sStackCounter -= 2;
+													RSString class94_36 = stringsStack[sStackCounter];
+													RSString class94_59 = stringsStack[sStackCounter - -1];
+													if (1 == intsStack[--iStackCounter])
+														stringsStack[sStackCounter++] = class94_36;
 													else
-														stringsHeap[sHeapCounter++] = class94_59;
+														stringsStack[sStackCounter++] = class94_59;
 													continue;
 												}
 												if (4111 == opcode) {
-													RSString class94_37 = stringsHeap[--sHeapCounter];
-													stringsHeap[sHeapCounter++] = Class3_Sub28_Sub17.method686(class94_37);
+													RSString class94_37 = stringsStack[--sStackCounter];
+													stringsStack[sStackCounter++] = Class3_Sub28_Sub17.method686(class94_37);
 													continue;
 												}
 												if (4112 == opcode) {
-													RSString class94_38 = stringsHeap[--sHeapCounter];
-													int k63 = intsHeap[--iHeapCounter];
+													RSString class94_38 = stringsStack[--sStackCounter];
+													int k63 = intsStack[--iStackCounter];
 													if (k63 == -1)
 														throw new RuntimeException("null char");
-													stringsHeap[sHeapCounter++] = class94_38.method1548(k63);
+													stringsStack[sStackCounter++] = class94_38.method1548(k63);
 													continue;
 												}
 												if (opcode == 4113) {
-													int j41 = intsHeap[--iHeapCounter];
-													intsHeap[iHeapCounter++] = Class164_Sub2.method2248(j41) ? 1 : 0;
+													int j41 = intsStack[--iStackCounter];
+													intsStack[iStackCounter++] = Class164_Sub2.method2248(j41) ? 1 : 0;
 													continue;
 												}
 												if (opcode == 4114) {
-													int k41 = intsHeap[--iHeapCounter];
-													intsHeap[iHeapCounter++] = Class44.method1066(k41) ? 1 : 0;
+													int k41 = intsStack[--iStackCounter];
+													intsStack[iStackCounter++] = Class44.method1066(k41) ? 1 : 0;
 													continue;
 												}
 												if (opcode == 4115) {
-													int l41 = intsHeap[--iHeapCounter];
-													intsHeap[iHeapCounter++] = Class3_Sub24_Sub4.method487(l41, (byte) -85) ? 1 : 0;
+													int l41 = intsStack[--iStackCounter];
+													intsStack[iStackCounter++] = Class3_Sub24_Sub4.method487(l41, (byte) -85) ? 1 : 0;
 													continue;
 												}
 												if (4116 == opcode) {
-													int i42 = intsHeap[--iHeapCounter];
-													intsHeap[iHeapCounter++] = Class3_Sub28_Sub3.method544(i42) ? 1 : 0;
+													int i42 = intsStack[--iStackCounter];
+													intsStack[iStackCounter++] = Class3_Sub28_Sub3.method544(i42) ? 1 : 0;
 													continue;
 												}
 												if (opcode == 4117) {
-													RSString class94_39 = stringsHeap[--sHeapCounter];
+													RSString class94_39 = stringsStack[--sStackCounter];
 													if (class94_39 != null)
-														intsHeap[iHeapCounter++] = class94_39.length(-96);
+														intsStack[iStackCounter++] = class94_39.length(-96);
 													else
-														intsHeap[iHeapCounter++] = 0;
+														intsStack[iStackCounter++] = 0;
 													continue;
 												}
 												if (opcode == 4118) {
-													iHeapCounter -= 2;
-													RSString class94_40 = stringsHeap[--sHeapCounter];
-													int i64 = intsHeap[iHeapCounter];
-													int j74 = intsHeap[1 + iHeapCounter];
-													stringsHeap[sHeapCounter++] = class94_40.method1557(j74, 0, i64);
+													iStackCounter -= 2;
+													RSString class94_40 = stringsStack[--sStackCounter];
+													int i64 = intsStack[iStackCounter];
+													int j74 = intsStack[1 + iStackCounter];
+													stringsStack[sStackCounter++] = class94_40.method1557(j74, 0, i64);
 													continue;
 												}
 												if (opcode == 4119) {
-													RSString class94_41 = stringsHeap[--sHeapCounter];
+													RSString class94_41 = stringsStack[--sStackCounter];
 													RSString class94_60 = Class47.method1090((byte) -87, class94_41.length(-44));
 													boolean flag9 = false;
 													for (int l78 = 0; class94_41.length(-113) > l78; l78++) {
@@ -3277,90 +3331,90 @@ final class ItemDefinition {
 													}
 
 													class94_60.method1576();
-													stringsHeap[sHeapCounter++] = class94_60;
+													stringsStack[sStackCounter++] = class94_60;
 													continue;
 												}
 												if (opcode == 4120) {
-													iHeapCounter -= 2;
-													RSString class94_42 = stringsHeap[--sHeapCounter];
-													int j64 = intsHeap[iHeapCounter];
-													int k74 = intsHeap[1 + iHeapCounter];
-													intsHeap[iHeapCounter++] = class94_42.method1555(j64, k74);
+													iStackCounter -= 2;
+													RSString class94_42 = stringsStack[--sStackCounter];
+													int j64 = intsStack[iStackCounter];
+													int k74 = intsStack[1 + iStackCounter];
+													intsStack[iStackCounter++] = class94_42.method1555(j64, k74);
 													continue;
 												}
 												if (opcode == 4121) {
-													sHeapCounter -= 2;
-													RSString class94_43 = stringsHeap[sHeapCounter];
-													RSString class94_61 = stringsHeap[1 + sHeapCounter];
-													int l74 = intsHeap[--iHeapCounter];
-													intsHeap[iHeapCounter++] = class94_43.method1566(class94_61, l74);
+													sStackCounter -= 2;
+													RSString class94_43 = stringsStack[sStackCounter];
+													RSString class94_61 = stringsStack[1 + sStackCounter];
+													int l74 = intsStack[--iStackCounter];
+													intsStack[iStackCounter++] = class94_43.method1566(class94_61, l74);
 													continue;
 												}
 												if (opcode == 4122) {
-													int j42 = intsHeap[--iHeapCounter];
-													intsHeap[iHeapCounter++] = Class3_Sub13_Sub34.method332(2, j42);
+													int j42 = intsStack[--iStackCounter];
+													intsStack[iStackCounter++] = Class3_Sub13_Sub34.method332(2, j42);
 													continue;
 												}
 												if (opcode == 4123) {
-													int k42 = intsHeap[--iHeapCounter];
-													intsHeap[iHeapCounter++] = ClientErrorException.method2287(k42, (byte) 59);
+													int k42 = intsStack[--iStackCounter];
+													intsStack[iStackCounter++] = ClientErrorException.method2287(k42, (byte) 59);
 													continue;
 												}
 												if (opcode != 4124)
 													break;
-												boolean flag1 = intsHeap[--iHeapCounter] != 0;
-												int k64 = intsHeap[--iHeapCounter];
-												stringsHeap[sHeapCounter++] = Class3_Sub23.method407(Class3_Sub20.language, flag1, 0, k64);
+												boolean flag1 = intsStack[--iStackCounter] != 0;
+												int k64 = intsStack[--iStackCounter];
+												stringsStack[sStackCounter++] = Class3_Sub23.method407(Class3_Sub20.language, flag1, 0, k64);
 												continue;
 											}
-											RSInterface class11_8 = Class7.getRSInterface((byte) 115, intsHeap[--iHeapCounter]);
+											RSInterface class11_8 = Class7.getRSInterface((byte) 115, intsStack[--iStackCounter]);
 											if (opcode == 2800) {
-												intsHeap[iHeapCounter++] = Client.method44(class11_8).method101();
+												intsStack[iStackCounter++] = Client.method44(class11_8).method101();
 												continue;
 											}
 											if (opcode == 2801) {
-												int l64 = intsHeap[--iHeapCounter];
+												int l64 = intsStack[--iStackCounter];
 												l64--;
 												if (class11_8.aClass94Array171 != null && class11_8.aClass94Array171.length > l64 && null != class11_8.aClass94Array171[l64])
-													stringsHeap[sHeapCounter++] = class11_8.aClass94Array171[l64];
+													stringsStack[sStackCounter++] = class11_8.aClass94Array171[l64];
 												else
-													stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+													stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 												continue;
 											}
 											if (opcode != 2802)
 												break;
 											if (class11_8.aClass94_277 != null)
-												stringsHeap[sHeapCounter++] = class11_8.aClass94_277;
+												stringsStack[sStackCounter++] = class11_8.aClass94_277;
 											else
-												stringsHeap[sHeapCounter++] = Class3_Sub9.aClass94_2331;
+												stringsStack[sStackCounter++] = Class3_Sub9.aClass94_2331;
 											continue;
 										}
 										if (opcode == 2700) {
-											RSInterface class11_9 = Class7.getRSInterface((byte) 126, intsHeap[--iHeapCounter]);
-											intsHeap[iHeapCounter++] = class11_9.anInt192;
+											RSInterface class11_9 = Class7.getRSInterface((byte) 126, intsStack[--iStackCounter]);
+											intsStack[iStackCounter++] = class11_9.anInt192;
 											continue;
 										}
 										if (opcode == 2701) {
-											RSInterface class11_10 = Class7.getRSInterface((byte) 117, intsHeap[--iHeapCounter]);
+											RSInterface class11_10 = Class7.getRSInterface((byte) 117, intsStack[--iStackCounter]);
 											if (-1 != class11_10.anInt192)
-												intsHeap[iHeapCounter++] = class11_10.anInt271;
+												intsStack[iStackCounter++] = class11_10.anInt271;
 											else
-												intsHeap[iHeapCounter++] = 0;
+												intsStack[iStackCounter++] = 0;
 											continue;
 										}
 										if (opcode == 2702) {
-											int l42 = intsHeap[--iHeapCounter];
+											int l42 = intsStack[--iStackCounter];
 											Class3_Sub31 class3_sub31 = (Class3_Sub31) Class3_Sub13_Sub17.aClass130_3208.method1780(l42, 0);
 											if (class3_sub31 == null)
-												intsHeap[iHeapCounter++] = 0;
+												intsStack[iStackCounter++] = 0;
 											else
-												intsHeap[iHeapCounter++] = 1;
+												intsStack[iStackCounter++] = 1;
 											continue;
 										}
 										if (opcode == 2703) {
-											RSInterface class11_11 = Class7.getRSInterface((byte) 125, intsHeap[--iHeapCounter]);
+											RSInterface class11_11 = Class7.getRSInterface((byte) 125, intsStack[--iStackCounter]);
 											if (null == class11_11.aClass11Array262) {
-												intsHeap[iHeapCounter++] = 0;
+												intsStack[iStackCounter++] = 0;
 											} else {
 												int i65 = class11_11.aClass11Array262.length;
 												int i75 = 0;
@@ -3373,118 +3427,118 @@ final class ItemDefinition {
 													}
 													i75++;
 												} while (true);
-												intsHeap[iHeapCounter++] = i65;
+												intsStack[iStackCounter++] = i65;
 											}
 											continue;
 										}
 										if (opcode != 2704 && 2705 != opcode)
 											break;
-										iHeapCounter -= 2;
-										int i43 = intsHeap[iHeapCounter];
-										int j65 = intsHeap[iHeapCounter + 1];
+										iStackCounter -= 2;
+										int i43 = intsStack[iStackCounter];
+										int j65 = intsStack[iStackCounter + 1];
 										Class3_Sub31 class3_sub31_1 = (Class3_Sub31) Class3_Sub13_Sub17.aClass130_3208.method1780(i43, 0);
 										if (class3_sub31_1 == null || class3_sub31_1.anInt2602 != j65)
-											intsHeap[iHeapCounter++] = 0;
+											intsStack[iStackCounter++] = 0;
 										else
-											intsHeap[iHeapCounter++] = 1;
+											intsStack[iStackCounter++] = 1;
 										continue;
 									}
-									RSInterface class11_12 = Class7.getRSInterface((byte) 124, intsHeap[--iHeapCounter]);
+									RSInterface class11_12 = Class7.getRSInterface((byte) 124, intsStack[--iStackCounter]);
 									if (2600 == opcode) {
-										intsHeap[iHeapCounter++] = class11_12.anInt247;
+										intsStack[iStackCounter++] = class11_12.anInt247;
 										continue;
 									}
 									if (opcode == 2601) {
-										intsHeap[iHeapCounter++] = class11_12.anInt208;
+										intsStack[iStackCounter++] = class11_12.anInt208;
 										continue;
 									}
 									if (opcode == 2602) {
-										stringsHeap[sHeapCounter++] = class11_12.aClass94_232;
+										stringsStack[sStackCounter++] = class11_12.aClass94_232;
 										continue;
 									}
 									if (opcode == 2603) {
-										intsHeap[iHeapCounter++] = class11_12.anInt240;
+										intsStack[iStackCounter++] = class11_12.anInt240;
 										continue;
 									}
 									if (opcode == 2604) {
-										intsHeap[iHeapCounter++] = class11_12.anInt252;
+										intsStack[iStackCounter++] = class11_12.anInt252;
 										continue;
 									}
 									if (opcode == 2605) {
-										intsHeap[iHeapCounter++] = class11_12.anInt164;
+										intsStack[iStackCounter++] = class11_12.anInt164;
 										continue;
 									}
 									if (opcode == 2606) {
-										intsHeap[iHeapCounter++] = class11_12.anInt182;
+										intsStack[iStackCounter++] = class11_12.anInt182;
 										continue;
 									}
 									if (opcode == 2607) {
-										intsHeap[iHeapCounter++] = class11_12.anInt280;
+										intsStack[iStackCounter++] = class11_12.anInt280;
 										continue;
 									}
 									if (2608 == opcode) {
-										intsHeap[iHeapCounter++] = class11_12.anInt308;
+										intsStack[iStackCounter++] = class11_12.anInt308;
 										continue;
 									}
 									if (opcode == 2609) {
-										intsHeap[iHeapCounter++] = class11_12.anInt223;
+										intsStack[iStackCounter++] = class11_12.anInt223;
 										continue;
 									}
 									if (opcode == 2610) {
-										intsHeap[iHeapCounter++] = class11_12.anInt258;
+										intsStack[iStackCounter++] = class11_12.anInt258;
 										continue;
 									}
 									if (opcode == 2611) {
-										intsHeap[iHeapCounter++] = class11_12.anInt264;
+										intsStack[iStackCounter++] = class11_12.anInt264;
 										continue;
 									}
 									if (2612 != opcode)
 										break;
-									intsHeap[iHeapCounter++] = class11_12.spriteArchiveId;
+									intsStack[iStackCounter++] = class11_12.spriteArchiveId;
 									continue;
 								}
 								RSInterface class11_13 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 								if (opcode == 1700) {
-									intsHeap[iHeapCounter++] = class11_13.anInt192;
+									intsStack[iStackCounter++] = class11_13.anInt192;
 									continue;
 								}
 								if (1701 == opcode) {
 									if (class11_13.anInt192 == -1)
-										intsHeap[iHeapCounter++] = 0;
+										intsStack[iStackCounter++] = 0;
 									else
-										intsHeap[iHeapCounter++] = class11_13.anInt271;
+										intsStack[iStackCounter++] = class11_13.anInt271;
 									continue;
 								}
 								if (opcode != 1702)
 									break;
-								intsHeap[iHeapCounter++] = class11_13.anInt191;
+								intsStack[iStackCounter++] = class11_13.anInt191;
 							} else {
 								RSInterface class11_14;
 								if (opcode < 2000) {
 									class11_14 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 								} else {
 									opcode -= 1000;
-									class11_14 = Class7.getRSInterface((byte) 115, intsHeap[--iHeapCounter]);
+									class11_14 = Class7.getRSInterface((byte) 115, intsStack[--iStackCounter]);
 								}
 								int[] ai3 = null;
-								RSString class94_62 = stringsHeap[--sHeapCounter];
+								RSString class94_62 = stringsStack[--sStackCounter];
 								if (class94_62.length(-127) > 0 && class94_62.charAt(class94_62.length(-92) + -1, (byte) -96) == 89) {
-									int i79 = intsHeap[--iHeapCounter];
+									int i79 = intsStack[--iStackCounter];
 									if (i79 > 0) {
 										ai3 = new int[i79];
 										while (i79-- > 0)
-											ai3[i79] = intsHeap[--iHeapCounter];
+											ai3[i79] = intsStack[--iStackCounter];
 									}
 									class94_62 = class94_62.method1557(class94_62.length(-79) - 1, 0, 0);
 								}
 								Object[] aobj1 = new Object[class94_62.length(-48) - -1];
 								for (int i81 = -1 + aobj1.length; 1 <= i81; i81--)
 									if (115 != class94_62.charAt(i81 + -1, (byte) -43))
-										aobj1[i81] = new Integer(intsHeap[--iHeapCounter]);
+										aobj1[i81] = new Integer(intsStack[--iStackCounter]);
 									else
-										aobj1[i81] = stringsHeap[--sHeapCounter];
+										aobj1[i81] = stringsStack[--sStackCounter];
 
-								int j81 = intsHeap[--iHeapCounter];
+								int j81 = intsStack[--iStackCounter];
 								if (j81 == -1)
 									aobj1 = null;
 								else
@@ -3561,14 +3615,14 @@ final class ItemDefinition {
 						if (opcode < 2000) {
 							class11_15 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 						} else {
-							class11_15 = Class7.getRSInterface((byte) 118, intsHeap[--iHeapCounter]);
+							class11_15 = Class7.getRSInterface((byte) 118, intsStack[--iStackCounter]);
 							opcode -= 1000;
 						}
 						Class20.method909(-21, class11_15);
 						if (opcode == 1200 || 1205 == opcode) {
-							iHeapCounter -= 2;
-							int j75 = intsHeap[1 + iHeapCounter];
-							int k65 = intsHeap[iHeapCounter];
+							iStackCounter -= 2;
+							int j75 = intsStack[1 + iStackCounter];
+							int k65 = intsStack[iStackCounter];
 							if (-1 == class11_15.anInt191) {
 								MouseListeningClass.method2092(class11_15.anInt279);
 								Class3_Sub13_Sub19.method265(class11_15.anInt279);
@@ -3598,7 +3652,7 @@ final class ItemDefinition {
 						}
 						if (opcode == 1201) {
 							class11_15.modelType = 2;
-							class11_15.itemId = intsHeap[--iHeapCounter];
+							class11_15.itemId = intsStack[--iStackCounter];
 							if (class11_15.anInt191 == -1)
 								Class162.method2206(class11_15.anInt279);
 							continue;
@@ -3612,7 +3666,7 @@ final class ItemDefinition {
 						}
 						if (1203 == opcode) {
 							class11_15.modelType = 6;
-							class11_15.itemId = intsHeap[--iHeapCounter];
+							class11_15.itemId = intsStack[--iStackCounter];
 							if (class11_15.anInt191 == -1)
 								Class162.method2206(class11_15.anInt279);
 							continue;
@@ -3620,7 +3674,7 @@ final class ItemDefinition {
 						if (opcode != 1204)
 							break;
 						class11_15.modelType = 5;
-						class11_15.itemId = intsHeap[--iHeapCounter];
+						class11_15.itemId = intsStack[--iStackCounter];
 						if (class11_15.anInt191 == -1)
 							Class162.method2206(class11_15.anInt279);
 						continue;
@@ -3630,16 +3684,16 @@ final class ItemDefinition {
 						class11_16 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 					} else {
 						opcode -= 1000;
-						class11_16 = Class7.getRSInterface((byte) 120, intsHeap[--iHeapCounter]);
+						class11_16 = Class7.getRSInterface((byte) 120, intsStack[--iStackCounter]);
 					}
 					if (opcode == 1100) {
-						iHeapCounter -= 2;
-						class11_16.anInt247 = intsHeap[iHeapCounter];
+						iStackCounter -= 2;
+						class11_16.anInt247 = intsStack[iStackCounter];
 						if (class11_16.anInt240 + -class11_16.anInt168 < class11_16.anInt247)
 							class11_16.anInt247 = class11_16.anInt240 + -class11_16.anInt168;
 						if (class11_16.anInt247 < 0)
 							class11_16.anInt247 = 0;
-						class11_16.anInt208 = intsHeap[iHeapCounter + 1];
+						class11_16.anInt208 = intsStack[iStackCounter + 1];
 						if (class11_16.anInt208 > class11_16.anInt252 + -class11_16.anInt193)
 							class11_16.anInt208 = class11_16.anInt252 + -class11_16.anInt193;
 						if (class11_16.anInt208 < 0)
@@ -3650,58 +3704,58 @@ final class ItemDefinition {
 						continue;
 					}
 					if (1101 == opcode) {
-						class11_16.anInt218 = intsHeap[--iHeapCounter];
+						class11_16.anInt218 = intsStack[--iStackCounter];
 						Class20.method909(-123, class11_16);
 						if (class11_16.anInt191 == -1)
 							Canvas_Sub2.method56(class11_16.anInt279);
 						continue;
 					}
 					if (opcode == 1102) {
-						class11_16.aBoolean226 = intsHeap[--iHeapCounter] == 1;
+						class11_16.aBoolean226 = intsStack[--iStackCounter] == 1;
 						Class20.method909(107, class11_16);
 						continue;
 					}
 					if (1103 == opcode) {
-						class11_16.anInt223 = intsHeap[--iHeapCounter];
+						class11_16.anInt223 = intsStack[--iStackCounter];
 						Class20.method909(-64, class11_16);
 						continue;
 					}
 					if (opcode == 1104) {
-						class11_16.anInt250 = intsHeap[--iHeapCounter];
+						class11_16.anInt250 = intsStack[--iStackCounter];
 						Class20.method909(-52, class11_16);
 						continue;
 					}
 					if (opcode == 1105) {
-						class11_16.spriteArchiveId = intsHeap[--iHeapCounter];
+						class11_16.spriteArchiveId = intsStack[--iStackCounter];
 						Class20.method909(-122, class11_16);
 						continue;
 					}
 					if (1106 == opcode) {
-						class11_16.anInt301 = intsHeap[--iHeapCounter];
+						class11_16.anInt301 = intsStack[--iStackCounter];
 						Class20.method909(-33, class11_16);
 						continue;
 					}
 					if (1107 == opcode) {
-						class11_16.aBoolean186 = intsHeap[--iHeapCounter] == 1;
+						class11_16.aBoolean186 = intsStack[--iStackCounter] == 1;
 						Class20.method909(114, class11_16);
 						continue;
 					}
 					if (opcode == 1108) {
 						class11_16.modelType = 1;
-						class11_16.itemId = intsHeap[--iHeapCounter];
+						class11_16.itemId = intsStack[--iStackCounter];
 						Class20.method909(2, class11_16);
 						if (class11_16.anInt191 == -1)
 							Class162.method2206(class11_16.anInt279);
 						continue;
 					}
 					if (opcode == 1109) {
-						iHeapCounter -= 6;
-						class11_16.anInt258 = intsHeap[iHeapCounter];
-						class11_16.anInt264 = intsHeap[iHeapCounter + 1];
-						class11_16.anInt182 = intsHeap[2 + iHeapCounter];
-						class11_16.anInt308 = intsHeap[iHeapCounter - -3];
-						class11_16.anInt280 = intsHeap[iHeapCounter - -4];
-						class11_16.anInt164 = intsHeap[5 + iHeapCounter];
+						iStackCounter -= 6;
+						class11_16.anInt258 = intsStack[iStackCounter];
+						class11_16.anInt264 = intsStack[iStackCounter + 1];
+						class11_16.anInt182 = intsStack[2 + iStackCounter];
+						class11_16.anInt308 = intsStack[iStackCounter - -3];
+						class11_16.anInt280 = intsStack[iStackCounter - -4];
+						class11_16.anInt164 = intsStack[5 + iStackCounter];
 						Class20.method909(-59, class11_16);
 						if (class11_16.anInt191 == -1) {
 							Class3_Sub13_Sub19.method265(class11_16.anInt279);
@@ -3710,7 +3764,7 @@ final class ItemDefinition {
 						continue;
 					}
 					if (opcode == 1110) {
-						int l65 = intsHeap[--iHeapCounter];
+						int l65 = intsStack[--iStackCounter];
 						if (class11_16.animationId != l65) {
 							class11_16.animationId = l65;
 							class11_16.anInt283 = 0;
@@ -3723,12 +3777,12 @@ final class ItemDefinition {
 						continue;
 					}
 					if (opcode == 1111) {
-						class11_16.aBoolean181 = 1 == intsHeap[--iHeapCounter];
+						class11_16.aBoolean181 = 1 == intsStack[--iStackCounter];
 						Class20.method909(118, class11_16);
 						continue;
 					}
 					if (1112 == opcode) {
-						RSString class94_63 = stringsHeap[--sHeapCounter];
+						RSString class94_63 = stringsStack[--sStackCounter];
 						if (!class94_63.method1528(class11_16.aClass94_232)) {
 							class11_16.aClass94_232 = class94_63;
 							Class20.method909(117, class11_16);
@@ -3738,76 +3792,76 @@ final class ItemDefinition {
 						continue;
 					}
 					if (opcode == 1113) {
-						class11_16.anInt270 = intsHeap[--iHeapCounter];
+						class11_16.anInt270 = intsStack[--iStackCounter];
 						Class20.method909(111, class11_16);
 						continue;
 					}
 					if (opcode == 1114) {
-						iHeapCounter -= 3;
-						class11_16.anInt194 = intsHeap[iHeapCounter];
-						class11_16.anInt225 = intsHeap[1 + iHeapCounter];
-						class11_16.anInt205 = intsHeap[2 + iHeapCounter];
+						iStackCounter -= 3;
+						class11_16.anInt194 = intsStack[iStackCounter];
+						class11_16.anInt225 = intsStack[1 + iStackCounter];
+						class11_16.anInt205 = intsStack[2 + iStackCounter];
 						Class20.method909(113, class11_16);
 						continue;
 					}
 					if (1115 == opcode) {
-						class11_16.aBoolean215 = 1 == intsHeap[--iHeapCounter];
+						class11_16.aBoolean215 = 1 == intsStack[--iStackCounter];
 						Class20.method909(-33, class11_16);
 						continue;
 					}
 					if (opcode == 1116) {
-						class11_16.anInt288 = intsHeap[--iHeapCounter];
+						class11_16.anInt288 = intsStack[--iStackCounter];
 						Class20.method909(-26, class11_16);
 						continue;
 					}
 					if (opcode == 1117) {
-						class11_16.anInt287 = intsHeap[--iHeapCounter];
+						class11_16.anInt287 = intsStack[--iStackCounter];
 						Class20.method909(117, class11_16);
 						continue;
 					}
 					if (opcode == 1118) {
-						class11_16.aBoolean178 = intsHeap[--iHeapCounter] == 1;
+						class11_16.aBoolean178 = intsStack[--iStackCounter] == 1;
 						Class20.method909(123, class11_16);
 						continue;
 					}
 					if (opcode == 1119) {
-						class11_16.aBoolean199 = intsHeap[--iHeapCounter] == 1;
+						class11_16.aBoolean199 = intsStack[--iStackCounter] == 1;
 						Class20.method909(-20, class11_16);
 						continue;
 					}
 					if (opcode == 1120) {
-						iHeapCounter -= 2;
-						class11_16.anInt240 = intsHeap[iHeapCounter];
-						class11_16.anInt252 = intsHeap[1 + iHeapCounter];
+						iStackCounter -= 2;
+						class11_16.anInt240 = intsStack[iStackCounter];
+						class11_16.anInt252 = intsStack[1 + iStackCounter];
 						Class20.method909(117, class11_16);
 						if (class11_16.type == 0)
 							Class151_Sub1.method2104(class11_16, false, -116);
 						continue;
 					}
 					if (opcode == 1121) {
-						iHeapCounter -= 2;
-						class11_16.aShort293 = (short) intsHeap[iHeapCounter];
-						class11_16.aShort169 = (short) intsHeap[iHeapCounter + 1];
+						iStackCounter -= 2;
+						class11_16.aShort293 = (short) intsStack[iStackCounter];
+						class11_16.aShort169 = (short) intsStack[iStackCounter + 1];
 						Class20.method909(126, class11_16);
 						continue;
 					}
 					if (1122 == opcode) {
-						class11_16.aBoolean157 = intsHeap[--iHeapCounter] == 1;
+						class11_16.aBoolean157 = intsStack[--iStackCounter] == 1;
 						Class20.method909(-66, class11_16);
 						continue;
 					}
 					if (opcode != 1123)
 						break;
-					class11_16.anInt164 = intsHeap[--iHeapCounter];
+					class11_16.anInt164 = intsStack[--iStackCounter];
 					Class20.method909(-126, class11_16);
 					if (class11_16.anInt191 == -1)
 						Class3_Sub13_Sub19.method265(class11_16.anInt279);
 					continue;
 				}
 				if (opcode == 403) {
-					iHeapCounter -= 2;
-					int i66 = intsHeap[iHeapCounter - -1];
-					int j43 = intsHeap[iHeapCounter];
+					iStackCounter -= 2;
+					int i66 = intsStack[iStackCounter + 1];
+					int j43 = intsStack[iStackCounter];
 					int k75 = 0;
 					while (Class3_Sub26.anIntArray2559.length > k75) {
 						if (j43 == Class3_Sub26.anIntArray2559[k75]) {
@@ -3828,16 +3882,16 @@ final class ItemDefinition {
 					} while (true);
 				}
 				if (404 == opcode) {
-					iHeapCounter -= 2;
-					int k43 = intsHeap[iHeapCounter];
-					int j66 = intsHeap[1 + iHeapCounter];
+					iStackCounter -= 2;
+					int k43 = intsStack[iStackCounter];
+					int j66 = intsStack[1 + iStackCounter];
 					Class102.player.class52.method1162(k43, j66);
 					continue;
 				}
 				if (opcode != 410)
 					break;
 				try {
-					boolean flag2 = 0 != intsHeap[--iHeapCounter];
+					boolean flag2 = 0 != intsStack[--iStackCounter];
 					Class102.player.class52.method1159(flag2);
 				} catch (Exception e) {
 					System.out.println(e);

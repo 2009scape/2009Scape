@@ -1,5 +1,4 @@
 package org.runite.jagex;
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 
 final class Class3_Sub29 extends Class3 {
@@ -142,7 +141,7 @@ final class Class3_Sub29 extends Class3 {
 
    static Class3_Sub28_Sub4 method733(int var1) {
       try {
-         Class3_Sub28_Sub4 var2 = (Class3_Sub28_Sub4)Class3_Sub28_Sub19.aClass47_3776.method1092((long)var1, 1400);
+         Class3_Sub28_Sub4 var2 = (Class3_Sub28_Sub4)Class3_Sub28_Sub19.aClass47_3776.method1092((long)var1);
          if(null == var2) {
             byte[] var3;
             if(var1 < 32768) {

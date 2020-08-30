@@ -50,7 +50,7 @@ final class Class36 {
    static void method1014(int var1, int var2) {
       try {
 
-         for(int var4 = 0; var4 < ScriptContainer.anInt869; ++var4) {
+         for(int var4 = 0; var4 < Client.anInt869; ++var4) {
             Class168 var5 = Class3_Sub13_Sub37.method350((byte)120, var4);
             if(null != var5) {
                int var6 = var5.anInt2095;

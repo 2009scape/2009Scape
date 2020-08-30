@@ -33,13 +33,9 @@ final class Class86 {
       }
    }
 
-   static void method1428(int var0, int var1, int var2) {
+   static void method1428(int var0, int var2) {
       try {
-         if(var1 < 21) {
-            method1430(34, -13);
-         }
-
-         Class163_Sub1.anIntArray2985[var0] = var2;
+         ItemDefinition.ram[var0] = var2;
          Class3_Sub7 var3 = (Class3_Sub7) aClass130_3679.method1780((long)var0, 0);
          if(var3 == null) {
             var3 = new Class3_Sub7(Class5.method830((byte)-55) - -500L);
@@ -49,7 +45,7 @@ final class Class86 {
          }
 
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "li.D(" + var0 + ',' + var1 + ',' + var2 + ')');
+         throw Class44.clientError(var4, "li.D(" + var0 + ',' + var2 + ')');
       }
    }
 

@@ -61,11 +61,11 @@ abstract class Class144 {
                   }
 
                   if(Class164_Sub1.anInt3012 == 1) {
-                     ScriptContainer.method1177(Class99.anInt1403, (long)var3, (byte)-125, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, ColorCore.TextColor, var5}, (byte)-125), var1, (short)26, TextCore.HasUse, var4);
+                     Class3_Sub24_Sub4.method1177(Class99.anInt1403, (long)var3, (byte)-125, RenderAnimationDefinition.method903(new RSString[]{RenderAnimationDefinition.aClass94_378, ColorCore.TextColor, var5}, (byte)-125), var1, (short)26, TextCore.HasUse, var4);
                   } else if(GameObject.aBoolean1837) {
                      Class3_Sub28_Sub9 var12 = -1 == Class69.anInt1038?null:Class61.method1210(Class69.anInt1038);
                      if((2 & Class164.anInt2051) != 0 && (var12 == null || var0.method1475(Class69.anInt1038, var12.anInt3614) != var12.anInt3614)) {
-                        ScriptContainer.method1177(anInt1887, (long)var3, (byte)-93, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, ColorCore.TextColor, var5}, (byte)-65), var1, (short)45, Class3_Sub28_Sub9.aClass94_3621, var4);
+                        Class3_Sub24_Sub4.method1177(anInt1887, (long)var3, (byte)-93, RenderAnimationDefinition.method903(new RSString[]{Class40.aClass94_676, ColorCore.TextColor, var5}, (byte)-65), var1, (short)45, Class3_Sub28_Sub9.aClass94_3621, var4);
                      }
                   } else {
                      RSString[] var11 = var0.options;
@@ -107,7 +107,7 @@ abstract class Class144 {
                                  var8 = 2;
                               }
 
-                              ScriptContainer.method1177(var9, (long)var3, (byte)-103, RenderAnimationDefinition.method903(new RSString[]{ColorCore.NPCRightClickColor, var5}, (byte)-99), var1, var8, var11[var7], var4);
+                              Class3_Sub24_Sub4.method1177(var9, (long)var3, (byte)-103, RenderAnimationDefinition.method903(new RSString[]{ColorCore.NPCRightClickColor, var5}, (byte)-99), var1, var8, var11[var7], var4);
                            }
                         }
                      }
@@ -146,12 +146,12 @@ abstract class Class144 {
                                  var13 += var14;
                               }
 
-                              ScriptContainer.method1177(var0.anInt1298, (long)var3, (byte)-128, RenderAnimationDefinition.method903(new RSString[]{ColorCore.NPCRightClickColor, var5}, (byte)-124), var1, var13, var11[var7], var4);
+                              Class3_Sub24_Sub4.method1177(var0.anInt1298, (long)var3, (byte)-128, RenderAnimationDefinition.method903(new RSString[]{ColorCore.NPCRightClickColor, var5}, (byte)-124), var1, var13, var11[var7], var4);
                            }
                         }
                      }
 
-                     ScriptContainer.method1177(Class131.anInt1719, (long)var3, (byte)-73, RenderAnimationDefinition.method903(new RSString[]{ColorCore.NPCRightClickColor, var5}, (byte)-69), var1, (short)1007, TextCore.HasExamine, var4);
+                     Class3_Sub24_Sub4.method1177(Class131.anInt1719, (long)var3, (byte)-73, RenderAnimationDefinition.method903(new RSString[]{ColorCore.NPCRightClickColor, var5}, (byte)-69), var1, (short)1007, TextCore.HasExamine, var4);
                   }
 
                }
@@ -167,7 +167,7 @@ abstract class Class144 {
          if(var1 >= -99) {
             return (Class3_Sub28_Sub12)null;
          } else {
-            Class3_Sub28_Sub12 var2 = (Class3_Sub28_Sub12)Class49.aClass47_818.method1092((long)var0, 1400);
+            Class3_Sub28_Sub12 var2 = (Class3_Sub28_Sub12)Class49.aClass47_818.method1092((long)var0);
             if(null == var2) {
                byte[] var3 = Class8.aClass153_105.getFile(5, var0);
                var2 = new Class3_Sub28_Sub12();

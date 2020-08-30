@@ -216,8 +216,9 @@ final class Class3_Sub13_Sub10 extends Class3_Sub13 {
             }
          } catch (Exception e) {
             System.out.println("breaking you out of the stupid endless triple for loop");
-            System.out.println("If you see this message it's a bug. this function should never run.");
-            System.out.println("Blame jagex. Once this client is deobbed fully this function will probably be deleted");
+            System.out.println("If you see this message it's a bug. this function should never run but it does sometimes for inexplicable reasons.");
+            System.out.println("Without this code here to break you out the game would crash.");
+            System.out.println("Once this client is deobbed fully this code will probably be deleted/unneeded");
             System.out.println("- Your friendly neighborhood moth");
          }
 

@@ -63,7 +63,7 @@ final class Class3_Sub28_Sub14 extends Node {
                }
 
                Class3_Sub5.method117();
-               Class84.anIntArray1161 = new int[1 + ScriptContainer.anInt869];
+               Class84.anIntArray1161 = new int[1 + Client.anInt869];
                int var4 = Class108.anInt1460 >> 6;
                int var3 = Class23.anInt455 >> 6;
                Class3_Sub10.aByteArrayArrayArray2339 = new byte[var3][var4][];

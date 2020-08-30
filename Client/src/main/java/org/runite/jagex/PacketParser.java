@@ -937,9 +937,9 @@ final class PacketParser {
                                                                     RSString.incomingOpcode = -1;
                                                                     return true;
                                                                 } else if (128 == RSString.incomingOpcode) {
-                                                                    for (nodeModelId = 0; nodeModelId < Class163_Sub1.anIntArray2985.length; ++nodeModelId) {
-                                                                        if (Class163_Sub1.anIntArray2985[nodeModelId] != Class57.anIntArray898[nodeModelId]) {
-                                                                            Class163_Sub1.anIntArray2985[nodeModelId] = Class57.anIntArray898[nodeModelId];
+                                                                    for (nodeModelId = 0; nodeModelId < ItemDefinition.ram.length; ++nodeModelId) {
+                                                                        if (ItemDefinition.ram[nodeModelId] != Class57.anIntArray898[nodeModelId]) {
+                                                                            ItemDefinition.ram[nodeModelId] = Class57.anIntArray898[nodeModelId];
                                                                             Class46.method1087(98, nodeModelId);
                                                                             Class44.anIntArray726[Class69.bitwiseAnd(Class36.anInt641++, 31)] = nodeModelId;
                                                                         }

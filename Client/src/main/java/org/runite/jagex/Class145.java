@@ -750,7 +750,7 @@ final class Class145 {
 
          RSInterface.anInt278 = var1;
          Class69.anInt1038 = var3;
-         ScriptContainer.anInt872 = var0;
+         Class3_Sub30_Sub1.anInt872 = var0;
          Class164.anInt2051 = var2;
          GameObject.aBoolean1837 = true;
          Class144.anInt1887 = var4;

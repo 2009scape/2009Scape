@@ -106,7 +106,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
                      CS2Script var5 = new CS2Script();
                      var5.arguments = var4.anObjectArray159;
                      var5.aClass11_2449 = var4;
-                     ItemDefinition.method1104(2000000, var5);
+                     ItemDefinition.runAssembledScript(2000000, var5);
                   }
                }
 

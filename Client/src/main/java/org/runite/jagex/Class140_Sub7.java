@@ -35,7 +35,7 @@ final class Class140_Sub7 extends GameObject {
 
    public static void method2030(byte var0) {
       try {
-         ItemDefinition.intsHeap = null;
+         ItemDefinition.intsStack = null;
          if(var0 < 82) {
             method2031((byte)-61, false, -20, 24, (Class3_Sub2[][][])((Class3_Sub2[][][])null), 124);
          }

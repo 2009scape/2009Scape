@@ -215,7 +215,7 @@ final class Class82 {
                   }
                }
 
-               if(((Class140_Sub4)var8).textSpoken != null && (var7 >= Class159.localPlayerCount || Class3_Sub13_Sub8.anInt3101 == 0 || 3 == Class3_Sub13_Sub8.anInt3101 || 1 == Class3_Sub13_Sub8.anInt3101 && ScriptContainer.method1176(((Player)var8).displayName))) {
+               if(((Class140_Sub4)var8).textSpoken != null && (var7 >= Class159.localPlayerCount || Class3_Sub13_Sub8.anInt3101 == 0 || 3 == Class3_Sub13_Sub8.anInt3101 || 1 == Class3_Sub13_Sub8.anInt3101 && ItemDefinition.method1176(((Player)var8).displayName))) {
                   Class107.method1647(var4 >> 1, var3, (Class140_Sub4)var8, var5, ((Class140_Sub4)var8).method1975(27855), var1 >> 1);
                   if(-1 < Class32.anInt590 && Class3_Sub13_Sub39.anInt3464 < Class3_Sub13_Sub26.anInt3332) {
                      Class3_Sub13_Sub26.anIntArray3329[Class3_Sub13_Sub39.anInt3464] = Class168.aClass3_Sub28_Sub17_2096.method682(((Class140_Sub4)var8).textSpoken) / 2;

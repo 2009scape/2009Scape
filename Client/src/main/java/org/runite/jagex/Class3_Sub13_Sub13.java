@@ -694,7 +694,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                        } else if(CS2Script.anInt2440 == 2) {
                                           if(Class27.anInt515 != -1) {
                                              Class3_Sub13_Sub1.outgoingBuffer.putOpcode(131);
-                                             Class3_Sub13_Sub1.outgoingBuffer.putIntB(-123, ScriptContainer.anInt872);
+                                             Class3_Sub13_Sub1.outgoingBuffer.putIntB(-123, Class3_Sub30_Sub1.anInt872);
                                              Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class131.anInt1716 + Class27.anInt515);
                                              Class3_Sub13_Sub1.outgoingBuffer.putLEShortA(RSInterface.anInt278);
                                              Class3_Sub13_Sub1.outgoingBuffer.putShortA(Class66.anInt999 + Class82.anInt1152);

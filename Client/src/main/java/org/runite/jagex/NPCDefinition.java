@@ -64,7 +64,7 @@ final class NPCDefinition {
          int var2 = -1;
          if(this.configId == -1) {
             if(this.configFileId != -1) {
-               var2 = Class163_Sub1.anIntArray2985[this.configFileId];
+               var2 = ItemDefinition.ram[this.configFileId];
             }
          } else {
             var2 = method1484(this.configId);
@@ -90,7 +90,7 @@ final class NPCDefinition {
             int var2 = -1;
             if(-1 == this.configId) {
                if(this.configFileId != -1) {
-                  var2 = Class163_Sub1.anIntArray2985[this.configFileId];
+                  var2 = ItemDefinition.ram[this.configFileId];
                }
             } else {
                var2 = method1484(this.configId);
@@ -859,7 +859,7 @@ final class NPCDefinition {
          int var5 = var2.anInt1125;
          int var4 = var2.anInt1123;
          int var6 = Class3_Sub6.anIntArray2288[var5 + -var4];
-         return Class163_Sub1.anIntArray2985[var3] >> var4 & var6;
+         return ItemDefinition.ram[var3] >> var4 & var6;
       } catch (RuntimeException var7) {
          throw Class44.clientError(var7, "me.B(" + 64835055 + ',' + var1 + ')');
       }

@@ -108,7 +108,7 @@ final class ObjectDefinition {
          if(this.ConfigFileId != -1) {
             var2 = NPCDefinition.method1484(this.ConfigFileId);
          } else if(this.ConfigId != -1) {
-            var2 = Class163_Sub1.anIntArray2985[this.ConfigId];
+            var2 = ItemDefinition.ram[this.ConfigId];
          }
 
          if(var2 >= 0 && this.ChildrenIds.length - 1 > var2 && this.ChildrenIds[var2] != -1) {

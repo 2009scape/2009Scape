@@ -219,7 +219,7 @@ final class Class43 {
 
    static void method1065(CS2Script var1) {
       try {
-         ItemDefinition.method1104(200000, var1);
+         ItemDefinition.runAssembledScript(200000, var1);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "gi.H(" + 1073376993 + ',' + (var1 != null?"{...}":"null") + ')');
       }

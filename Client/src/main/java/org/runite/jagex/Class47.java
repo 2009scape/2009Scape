@@ -136,12 +136,8 @@ final class Class47 {
       }
    }
 
-   final Node method1092(long var1, int var3) {
+   final Node method1092(long var1) {
       try {
-         if(var3 != 1400) {
-            this.anInt749 = -79;
-         }
-
          Node var4 = (Node)this.aClass130_745.method1780(var1, 0);
          if(null != var4) {
             this.aClass13_747.method879(var4, (byte)44);
@@ -149,7 +145,7 @@ final class Class47 {
 
          return var4;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "gn.N(" + var1 + ',' + var3 + ')');
+         throw Class44.clientError(var5, "gn.N(" + var1 + ')');
       }
    }
 
@@ -333,20 +329,20 @@ final class Class47 {
                            var28 = Class102.player.anInt2819 + var26 >> 7;
                            var29 = -var47 + Class102.player.anInt2829 >> 7;
                            if (GameObject.aBoolean1837 && 0 != (Class164.anInt2051 & 64)) {
-                              RSInterface var53 = Class3_Sub28_Sub16.method638(ScriptContainer.anInt872, RSInterface.anInt278);
+                              RSInterface var53 = Class3_Sub28_Sub16.method638(Class3_Sub30_Sub1.anInt872, RSInterface.anInt278);
                               if (null == var53) {
                                  Class25.method958((byte) -91);
                               } else {
-                                 ScriptContainer.method1177(Class144.anInt1887, 1L, (byte) -49, Class131.aClass94_1724, var28, (short) 11, Class3_Sub28_Sub9.aClass94_3621, var29);
+                                 Class3_Sub24_Sub4.method1177(Class144.anInt1887, 1L, (byte) -49, Class131.aClass94_1724, var28, (short) 11, Class3_Sub28_Sub9.aClass94_3621, var29);
                               }
                               continue;
                            }
 
                            if (Class158.anInt2014 == 1) {
-                              ScriptContainer.method1177(-1, 1L, (byte) -41, Class3_Sub28_Sub14.aClass94_3672, var28, (short) 36, TextCore.HasFaceHere, var29);
+                              Class3_Sub24_Sub4.method1177(-1, 1L, (byte) -41, Class3_Sub28_Sub14.aClass94_3672, var28, (short) 36, TextCore.HasFaceHere, var29);
                            }
 
-                           ScriptContainer.method1177(-1, 1L, (byte) -125, Class3_Sub28_Sub14.aClass94_3672, var28, (short) 60, Class3_Sub13_Sub28.aClass94_3353, var29);
+                           Class3_Sub24_Sub4.method1177(-1, 1L, (byte) -125, Class3_Sub28_Sub14.aClass94_3672, var28, (short) 60, Class3_Sub13_Sub28.aClass94_3353, var29);
                            continue;
                         }
 

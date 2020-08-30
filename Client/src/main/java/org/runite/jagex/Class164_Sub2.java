@@ -141,7 +141,7 @@ class Class164_Sub2 extends Class164 {
                   }
 
                   if(var8 == 5) {
-                     var9 = Class163_Sub1.anIntArray2985[var4[var6++]];
+                     var9 = ItemDefinition.ram[var4[var6++]];
                   }
 
                   if(6 == var8) {
@@ -149,7 +149,7 @@ class Class164_Sub2 extends Class164 {
                   }
 
                   if(var8 == 7) {
-                     var9 = 100 * Class163_Sub1.anIntArray2985[var4[var6++]] / '\ub71b';
+                     var9 = 100 * ItemDefinition.ram[var4[var6++]] / '\ub71b';
                   }
 
                   if(var8 == 8) {
@@ -188,7 +188,7 @@ class Class164_Sub2 extends Class164 {
                   }
 
                   if(var8 == 13) {
-                     var11 = Class163_Sub1.anIntArray2985[var4[var6++]];
+                     var11 = ItemDefinition.ram[var4[var6++]];
                      int var17 = var4[var6++];
                      var9 = (1 << var17 & var11) == 0 ?0:1;
                   }

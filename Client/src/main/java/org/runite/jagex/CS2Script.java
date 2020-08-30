@@ -20,16 +20,6 @@ final class CS2Script extends Class3 {
    static int anInt2453 = 127;
 
 
-   static void method375(CacheIndex var1, CacheIndex var2) {
-      try {
-         Class10.aClass153_152 = var1;
-         Class127.aClass153_1680 = var2;
-         Class25.anInt497 = Class127.aClass153_1680.getFileAmount(3, (byte)95);
-      } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "jl.D(" + 3 + ',' + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ')');
-      }
-   }
-
    public static void method376(boolean var0) {
       try {
          aClass93_2442 = null;

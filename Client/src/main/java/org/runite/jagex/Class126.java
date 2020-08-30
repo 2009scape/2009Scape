@@ -2,7 +2,6 @@ package org.runite.jagex;
 
 final class Class126 {
 
-   static int[] anIntArray1662;
    int anInt1663;
    int anInt1664;
    static int anInt1665;
@@ -23,7 +22,7 @@ final class Class126 {
       try {
          aClass13_1666 = null;
          aClient1671 = null;
-         anIntArray1662 = null;
+         ItemDefinition.intArguments = null;
          aClass3_Sub28_Sub17_1669 = null;
          if(var0 != -58) {
          }

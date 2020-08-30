@@ -35,7 +35,7 @@ abstract class Class44 {
 	}
 
 	static ClientErrorException clientError(Throwable var0, String var1) {
-		var0.printStackTrace();
+		//var0.printStackTrace(); Uncomment to be spammed when clan chat is used cuz clanchat breaks the text script.
 		ClientErrorException var2;
 		if(var0 instanceof ClientErrorException) {
 			var2 = (ClientErrorException)var0;
