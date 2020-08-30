@@ -2,18 +2,17 @@
 echo "Make sure you have built the server before running this command."
 if [ $# -eq 0 ]; then
     echo "Usage: $0 [--build] type"
-    echo "Example: $0 --build server Server/worldprops/server1.properties"
-    echo "Example: $0 server Server/worldprops/server1.properties"
     echo "Example: $0 ms"
+    echo "Example: $0 server Server/worldprops/default.json"
     echo "Example: $0 client"
+    echo "Example: $0 --build server Server/worldprops/default.json"
     exit
 fi
 readIndex=1
 propsFile="$1"
 doBuild=false
 function run_server {
-  cd Server || exit
-  bin/Server "../$1"
+  Server/bin/Server "$1"
 }
 run_ms(){
   exec "Management-Server/bin/Management-Server"
