@@ -1,5 +1,6 @@
 package plugin.objectparser;
 
+import core.ServerConstants;
 import core.game.node.object.GameObject;
 import core.game.world.GameWorld;
 import core.game.world.map.build.LandscapeParser;
@@ -19,12 +20,11 @@ import java.io.File;
 @InitializablePlugin
 @PluginManifest(name="ObjectParser")
 public class ObjectParser extends StartupPlugin {
-    private static final String path = "data" + File.separator + "ObjectParser.xml";
 
-    public void parseObjects(String path){
-        File f = new File(path);
+    public void parseObjects(){
+        File f = new File(ServerConstants.OBJECT_PARSER_PATH);
         if(!f.exists()){
-            System.out.println("[ObjectParser]: Can't find file " + path);
+            System.out.println("[ObjectParser]: Can't find file " + ServerConstants.OBJECT_PARSER_PATH);
             return;
         }
 
@@ -100,7 +100,7 @@ public class ObjectParser extends StartupPlugin {
 
     @Override
     public void run() {
-        parseObjects(path);
+        parseObjects();
     }
 
     @Override

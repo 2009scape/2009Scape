@@ -1,5 +1,6 @@
 package core.game.system.script;
 
+import core.ServerConstants;
 import plugin.ai.AIPBuilder;
 import plugin.ai.AIPlayer;
 import core.game.system.script.exc.InvalidGOTOException;
@@ -63,7 +64,7 @@ public final class ScriptCompiler {
 	public static void main(String... args) {
 		try {
 			GameWorld.prompt(false);
-			ScriptContext context = parseRaw(new File("./scripts/dialogue/test.asc"));
+			ScriptContext context = parseRaw(new File(ServerConstants.DIALOGUE_SCRIPTS_PATH + "test.asc"));
 			AIPlayer player = AIPBuilder.create(null);
 			context.execute(player);
 			ScriptManager.run(context, player);

@@ -1,5 +1,6 @@
 package core.game.node.entity.npc.drop;
 
+import core.ServerConstants;
 import core.game.node.item.Item;
 import core.game.node.item.WeightedChanceItem;
 import core.game.system.SystemLogger;
@@ -21,8 +22,6 @@ import java.util.List;
  * @author Ceikry
  */
 public final class RareDropTable {
-
-	public static final String RDT_LOCATION = "data" + File.separator + "RDT.xml";
 
 	/**
 	 * The item id of the item representing the rare drop table slot in a drop
@@ -56,11 +55,11 @@ public final class RareDropTable {
 	 * Initializes the rare drop table.
 	 */
 	public static void init(){
-		if(!new File(RDT_LOCATION).exists()){
-			SystemLogger.log("Can't locate RDT file at " + RDT_LOCATION);
+		if(!new File(ServerConstants.RDT_DATA_PATH).exists()){
+			SystemLogger.log("Can't locate RDT file at " + ServerConstants.RDT_DATA_PATH);
 			return;
 		}
-		parse(RDT_LOCATION);
+		parse(ServerConstants.RDT_DATA_PATH);
 	}
 
 	/**

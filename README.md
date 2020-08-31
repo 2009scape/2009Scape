@@ -4,6 +4,8 @@ Join our Discord server: https://discord.gg/43YPGND
 
 We also have a live game in the [Releases](https://github.com/2009scape/2009scape/releases) section that always runs the latest code.
 
+For information about what data we store, read over [this](https://github.com/2009scape/2009Scape/wiki/Information-We-Store).
+
 # Running your own instance
 Please follow this [self hosting guide](selfhosting.md)
 
@@ -52,7 +54,6 @@ Since this portion of the guide is operating-system specific, you will either ne
   - In IntelliJ, navigate to `Management-Server/src/main/java/ms/Management.java`, right click > Run [Image](https://i.imgur.com/KXxxeYK.png)
 - Run the server
   - In IntelliJ, navigate to `Server/src/main/java/Server/core/Server.kt`, right click > Run [Image](https://i.imgur.com/XOSN7LK.png)
-  - At the top right, click the Server config > edit > set the Working directory to the Server/ folder [Image](https://i.imgur.com/Kn6fyxz.png)
 - Run the client
   - In IntelliJ, navigate to `Client/src/main/java/org/runite/Client.java`, right click > Run [Image](https://i.imgur.com/ZZE7FU1.png)
   

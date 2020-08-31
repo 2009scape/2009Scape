@@ -2,6 +2,7 @@ package core.gui.tab;
 
 
 import core.Server;
+import core.ServerConstants;
 import core.game.node.item.GroundItemManager;
 import core.game.system.SystemManager;
 import core.game.system.SystemState;
@@ -574,7 +575,7 @@ public class StatisticsTab extends ConsoleTab {
                 totalCycleTime += performanceQueue[i];
             }
             if (lagSpikes > 350 || memoryUsageSpikes > 350) {
-                logQueues(new File("./data/logs/system/Performance-log.txt"));
+                logQueues(new File(ServerConstants.LOGS_PATH + "/system/Performance-log.txt"));
             }
             //System.out.println("Average cycle time: " + (600 + (totalCycleTime / (QUEUE_SIZE - 500))) + "ms.");
             //System.out.println("Average memory usage: " + (totalMemory / (QUEUE_SIZE - 500)) + "Mb.");

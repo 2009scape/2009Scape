@@ -27,6 +27,7 @@ class ServerConfigParser(path: String) {
             println("File specified for the config file does not exist!!")
         } else if(!pathTo.contains(".json")) {
             println("Config file MUST be a JSON file!!")
+            println("(Got $pathTo)")
         } else {
             reader = FileReader(pathTo)
             data = parser.parse(reader) as JSONObject

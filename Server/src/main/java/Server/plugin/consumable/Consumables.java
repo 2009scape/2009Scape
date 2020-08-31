@@ -54,8 +54,14 @@ public enum Consumables {
 	KARAMBWANJI(new Food(new int[] {3151}, new HealingEffect(3))),
 	STUFFED_SNAKE(new Food(new int[] {7579}, new HealingEffect(20), "You eat the stuffed snake-it's quite a meal! It tastes like chicken.")),
 
-	/** Bread */
+	/** Breads */
 	BREAD(new Food(new int[] {2309}, new HealingEffect(5))),
+	BAGUETTE(new Food(new int[] {6961}, new HealingEffect(6))),
+
+	/** Sandwiches */
+	TRIANGLE_SANDWICH(new Food(new int[] {6962}, new HealingEffect(6))),
+	SQUARE_SANDWICH(new Food(new int[] {6965}, new HealingEffect(6))),
+	SEAWEED_SANDWICH(new FakeConsumable(3168, new String[] {"You really, really do not want to eat that."})),
 
 	/** Kebabs */
 	UGTHANKI_KEBAB(new Food(new int[] {1883}, new UgthankiKebabEffect())),
@@ -94,7 +100,7 @@ public enum Consumables {
 	MINT_CAKE(new Food(new int[] {9475}, new EnergyEffect(50))),
 
 	/** Vegetables */
-	BAKED_POTATO(new Food(new int[] {}, new HealingEffect(2))),
+	BAKED_POTATO(new Food(new int[] {6701}, new HealingEffect(2))),
 	SPICY_SAUCE(new Food(new int[] {7072, 1923}, new HealingEffect(2))),
 	CHILLI_CON_CARNE(new Food(new int[] {7062, 1923}, new HealingEffect(5))),
 	SCRAMBLED_EGG(new Food(new int[] {7078, 1923}, new HealingEffect(5))),
@@ -115,6 +121,7 @@ public enum Consumables {
 	CABBAGE(new Food(new int[] {1965}, new HealingEffect(2), "You eat the cabbage. Yuck!")),
 	DRAYNOR_CABBAGE(new Food(new int[] {1967}, new DraynorCabbageEffect(), "You eat the cabbage.", "It seems to taste nicer than normal.")),
 	EVIL_TURNIP(new Food(new int[] {12134, 12136, 12138}, new HealingEffect(6))),
+	SPINACH_ROLL(new Food(new int[] {1969}, new HealingEffect(2))),
 
 	/** Dairies */
 	POT_OF_CREAM(new Food(new int[] {2130}, new HealingEffect(1))),
@@ -273,6 +280,7 @@ public enum Consumables {
 	PURPLE_SWEETS(new Food(new int[] {4561}, new HealingEffect(0))),
 	PURPLE_SWEETS_STACKABLE(new Food(new int[] {10476, 10476}, new MultiEffect(new EnergyEffect(10), new RandomHealthEffect(1, 3)), "The sugary goodness heals some energy.", "The sugary goodness is yummy.")),
 	FIELD_RATION(new Food(new int[] {7934}, new HealingEffect(10))),
+	ROLL(new Food(new int[] {6963}, new HealingEffect(6))),
 	TCHIKI_MONKEY_NUTS(new Food(new int[] {7573}, new HealingEffect(5), "You eat the Tchiki monkey nuts. They taste nutty.")),
 	TCHIKI_MONKEY_PASTE(new Food(new int[] {7575}, new HealingEffect(5), "You eat the Tchiki monkey nut paste. It sticks to the roof of your mouth.")),
 

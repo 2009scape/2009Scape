@@ -79,7 +79,7 @@ public final class Ammunition {
 		try {
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			doc = builder.parse(new File("./data/convert/ammunition_data.xml"));
+			doc = builder.parse(new File("This file never existed. I have no idea how this code works, but it probably doesn't get called anywhere."));
 		} catch (Throwable e) {
 			e.printStackTrace();
 			return false;
