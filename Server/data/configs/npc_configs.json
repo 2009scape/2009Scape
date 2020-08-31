@@ -319,7 +319,7 @@
   {
     "id": "18",
     "name": "Al-Kharid warrior",
-    "examine": "Parts of Al-Kharid\\'s elite fighting force.",
+    "examine": "Parts of Al-Kharid's elite fighting force.",
     "lifepoints": "19",
     "attack_level": "7",
     "strength_level": "15",
@@ -392,7 +392,7 @@
   {
     "id": "23",
     "name": "Knight of Ardougne",
-    "examine": "A member of Ardougne\\'s militia.",
+    "examine": "A member of Ardougne's militia.",
     "lifepoints": "54",
     "attack_level": "38",
     "strength_level": "38",
@@ -679,7 +679,7 @@
   {
     "id": "40",
     "name": "Shark",
-    "examine": "Let\\'s not go skinny dipping eh?",
+    "examine": "Let's not go skinny dipping eh?",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -695,7 +695,7 @@
   {
     "id": "41",
     "name": "Chicken",
-    "examine": "Who are you calling chicken?",
+    "examine": "Yep. Definitely a chicken.",
     "lifepoints": "3",
     "attack_level": "1",
     "strength_level": "1",
@@ -1032,7 +1032,7 @@
   {
     "id": "59",
     "name": "Giant spider",
-    "examine": "I think this spider has been magically modified.",
+    "examine": "I think this spider has been genetically modified.",
     "lifepoints": "2",
     "attack_level": "1",
     "strength_level": "1",
@@ -1234,7 +1234,7 @@
   {
     "id": "76",
     "name": "Zombie",
-    "examine": "It\\'s an NPC.",
+    "examine": "It's an NPC.",
     "lifepoints": "30",
     "attack_level": "1",
     "strength_level": "1",
@@ -1680,7 +1680,7 @@
   {
     "id": "99",
     "name": "Guard dog",
-    "examine": "He doesn\\'t seem pleased to see me.",
+    "examine": "He doesn't seem pleased to see me.",
     "lifepoints": "49",
     "attack_level": "30",
     "strength_level": "30",
@@ -1938,7 +1938,7 @@
   {
     "id": "111",
     "name": "Ice giant",
-    "examine": "He\\'s got icicles in his beard.",
+    "examine": "He's got icicles in his beard.",
     "lifepoints": "105",
     "attack_level": "37",
     "strength_level": "37",
@@ -2510,7 +2510,7 @@
   {
     "id": "144",
     "name": "King Scorpion",
-    "examine": "Wow! Scorpions shouldn\\'t grow that big.",
+    "examine": "Wow! Scorpions shouldn't grow that big.",
     "lifepoints": "40",
     "attack_level": "21",
     "strength_level": "21",
@@ -2636,7 +2636,7 @@
   {
     "id": "158",
     "name": "Shadow warrior",
-    "examine": "A fighter from the supernatural world. He\\'s a shadow of his former self.",
+    "examine": "A fighter from the supernatural world. He's a shadow of his former self.",
     "lifepoints": "67",
     "attack_level": "47",
     "strength_level": "47",
@@ -2798,7 +2798,7 @@
   {
     "id": "170",
     "name": "Man",
-    "examine": "One of RuneScape\\'s many citizens",
+    "examine": "One of RuneScape's many citizens",
     "lifepoints": "4",
     "attack_level": "3",
     "strength_level": "3",
@@ -2904,7 +2904,7 @@
   {
     "id": "176",
     "name": "Witch",
-    "examine": "The hat\\'s a dead give away.",
+    "examine": "The hat's a dead give away.",
     "lifepoints": "31",
     "attack_level": "1",
     "strength_level": "1",
@@ -3248,7 +3248,7 @@
   {
     "id": "198",
     "name": "Guildmaster",
-    "examine": "Master of the Champions\\' Guild.",
+    "examine": "Master of the Champions' Guild.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -3476,7 +3476,7 @@
   {
     "id": "219",
     "name": "Fisherman",
-    "examine": "It\\'s a fisherman.",
+    "examine": "It's a fisherman.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -3492,7 +3492,7 @@
   {
     "id": "220",
     "name": "The Fisher King",
-    "examine": "He doesn\\'t look very well...",
+    "examine": "He doesn't look very well...",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -3633,7 +3633,7 @@
   {
     "id": "237",
     "name": "Renegade Knight",
-    "examine": "He isn\\'t very friendly.",
+    "examine": "He isn't very friendly.",
     "lifepoints": "42",
     "attack_level": "15",
     "strength_level": "15",
@@ -3716,7 +3716,7 @@
   {
     "id": "253",
     "name": "Khazard Guard",
-    "examine": "He\\'s guarding the door.",
+    "examine": "He's guarding the door.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -3732,7 +3732,7 @@
   {
     "id": "254",
     "name": "Khazard Guard",
-    "examine": "He\\'s been guarding the tavern for a bit too long.",
+    "examine": "He's been guarding the tavern for a bit too long.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -3748,7 +3748,7 @@
   {
     "id": "255",
     "name": "Khazard Guard",
-    "examine": "His armour indicates he\\'s a Khazard Guard.",
+    "examine": "His armour indicates he's a Khazard Guard.",
     "lifepoints": "31",
     "attack_level": "22",
     "strength_level": "22",
@@ -3767,7 +3767,7 @@
   {
     "id": "256",
     "name": "Khazard Guard",
-    "examine": "His armour indicates he\\'s a Khazard Guard.",
+    "examine": "His armour indicates he's a Khazard Guard.",
     "lifepoints": "31",
     "attack_level": "22",
     "strength_level": "22",
@@ -3817,7 +3817,7 @@
   {
     "id": "270",
     "name": "Khazard Ogre",
-    "examine": "Khazard\\'s strongest ogre warrior.",
+    "examine": "Khazard's strongest ogre warrior.",
     "lifepoints": "65",
     "attack_level": "46",
     "strength_level": "46",
@@ -3904,7 +3904,7 @@
   {
     "id": "278",
     "name": "Cook",
-    "examine": "Lumbridge Castle\\'s head cook.",
+    "examine": "Lumbridge Castle's head cook.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -4021,7 +4021,7 @@
   {
     "id": "285",
     "name": "Veronica",
-    "examine": "She doesn\\'t look too happy.",
+    "examine": "She doesn't look too happy.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -4037,7 +4037,7 @@
   {
     "id": "288",
     "name": "Chicken",
-    "examine": "Who are you calling chicken?",
+    "examine": "Yep. Definitely a chicken.",
     "lifepoints": "3",
     "attack_level": "1",
     "strength_level": "1",
@@ -4088,7 +4088,7 @@
   {
     "id": "291",
     "name": "Farmer Brumty",
-    "examine": "A farmer who\\'s seen happier times.",
+    "examine": "A farmer who's seen happier times.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -4204,7 +4204,7 @@
   {
     "id": "338",
     "name": "Chancy",
-    "examine": "He\\'s ready for a bet.",
+    "examine": "He's ready for a bet.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -4220,7 +4220,7 @@
   {
     "id": "339",
     "name": "Chancy",
-    "examine": "He\\'s ready for a bet.",
+    "examine": "He's ready for a bet.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -4236,7 +4236,7 @@
   {
     "id": "340",
     "name": "Hops",
-    "examine": "He\\'s drunk.",
+    "examine": "He's drunk.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -4252,7 +4252,7 @@
   {
     "id": "341",
     "name": "Hops",
-    "examine": "He\\'s drunk.",
+    "examine": "He's drunk.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -4267,7 +4267,7 @@
   },
   {
     "id": "342",
-    "name": "Guidor\\'s wife",
+    "name": "Guidor's wife",
     "examine": "She looks rather concerned.",
     "lifepoints": "10",
     "attack_level": "1",
@@ -4366,7 +4366,7 @@
   {
     "id": "351",
     "name": "Man",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "2",
     "attack_level": "2",
     "strength_level": "2",
@@ -4385,7 +4385,7 @@
   {
     "id": "352",
     "name": "Woman",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "2",
     "attack_level": "2",
     "strength_level": "2",
@@ -4404,7 +4404,7 @@
   {
     "id": "353",
     "name": "Woman",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "2",
     "attack_level": "2",
     "strength_level": "2",
@@ -4423,7 +4423,7 @@
   {
     "id": "354",
     "name": "Woman",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "2",
     "attack_level": "2",
     "strength_level": "2",
@@ -4486,7 +4486,7 @@
   {
     "id": "360",
     "name": "Woman",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "2",
     "attack_level": "2",
     "strength_level": "2",
@@ -4505,7 +4505,7 @@
   {
     "id": "361",
     "name": "Woman",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "100",
     "attack_level": "2",
     "strength_level": "2",
@@ -4524,7 +4524,7 @@
   {
     "id": "362",
     "name": "Woman",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "2",
     "attack_level": "2",
     "strength_level": "2",
@@ -4543,7 +4543,7 @@
   {
     "id": "363",
     "name": "Woman",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "100",
     "attack_level": "2",
     "strength_level": "2",
@@ -4640,7 +4640,7 @@
   {
     "id": "373",
     "name": "Nurse Sarah",
-    "examine": "She\\'s quite a looker!",
+    "examine": "She's quite a looker!",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -4696,7 +4696,7 @@
   {
     "id": "380",
     "name": "Customs officer",
-    "examine": "Inspects people\\'s packages.",
+    "examine": "Inspects people's packages.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -4835,7 +4835,7 @@
   {
     "id": "397",
     "name": "Cow",
-    "examine": "Converts grass to beef.",
+    "examine": "Beefy.",
     "lifepoints": "8",
     "attack_level": "1",
     "strength_level": "1",
@@ -5155,7 +5155,7 @@
   {
     "id": "435",
     "name": "Fallen Man",
-    "examine": "I hope he\\'s not dead!",
+    "examine": "I hope he's not dead!",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -5170,7 +5170,7 @@
   },
   {
     "id": "437",
-    "name": "Cap\\'n Izzy No-Beard",
+    "name": "Cap'n Izzy No-Beard",
     "examine": "Entrance clerk for the Brimhaven Agility Arena.",
     "lifepoints": "10",
     "attack_level": "1",
@@ -5352,7 +5352,7 @@
   {
     "id": "447",
     "name": "Jail guard",
-    "examine": "This jail\\'s open for business again.",
+    "examine": "This jail's open for business again.",
     "lifepoints": "32",
     "attack_level": "1",
     "strength_level": "1",
@@ -5371,7 +5371,7 @@
   {
     "id": "448",
     "name": "Jail guard",
-    "examine": "This jail\\'s open for business again.",
+    "examine": "This jail's open for business again.",
     "lifepoints": "32",
     "attack_level": "1",
     "strength_level": "1",
@@ -5390,7 +5390,7 @@
   {
     "id": "449",
     "name": "Jail guard",
-    "examine": "This jail\\'s open for business again.",
+    "examine": "This jail's open for business again.",
     "lifepoints": "32",
     "attack_level": "1",
     "strength_level": "1",
@@ -5407,9 +5407,25 @@
     "safespot": null
   },
   {
+    "id": "452",
+    "name": "Seth Groats",
+    "examine": "A large well built farmer.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  },    
+  {
     "id": "453",
     "name": "Suit of armour",
-    "examine": "Aargh! It\\'s alive!",
+    "examine": "Aargh! It's alive!",
     "lifepoints": "7",
     "attack_level": "5",
     "strength_level": "5",
@@ -5442,6 +5458,7 @@
   {
     "id": "457",
     "name": "Restless ghost",
+    "examine": "Eek! A ghost!",	
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -5540,7 +5557,7 @@
   {
     "id": "469",
     "name": "King Bolren",
-    "examine": "It\\'s a gnome. He looks important.",
+    "examine": "It's a gnome. He looks important.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -5556,7 +5573,7 @@
   {
     "id": "470",
     "name": "Commander Montai",
-    "examine": "It\\'s a tree gnome.",
+    "examine": "It's a tree gnome.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -5572,7 +5589,7 @@
   {
     "id": "475",
     "name": "Khazard trooper",
-    "examine": "It\\'s one of General Khazard\\'s warriors.",
+    "examine": "It's one of General Khazard's warriors.",
     "lifepoints": "45",
     "attack_level": "32",
     "strength_level": "32",
@@ -5626,7 +5643,7 @@
   {
     "id": "478",
     "name": "Khazard commander",
-    "examine": "It\\'s one of General Khazard\\'s commanders.",
+    "examine": "It's one of General Khazard's commanders.",
     "lifepoints": "50",
     "attack_level": "35",
     "strength_level": "35",
@@ -5643,7 +5660,7 @@
   {
     "id": "479",
     "name": "Gnome troop",
-    "examine": "It\\'s a tree gnome trooper.",
+    "examine": "It's a tree gnome trooper.",
     "lifepoints": "45",
     "attack_level": "24",
     "strength_level": "24",
@@ -5660,7 +5677,7 @@
   {
     "id": "481",
     "name": "Tracker gnome 1",
-    "examine": "It\\'s a gnome who specialises in covert operations.",
+    "examine": "It's a gnome who specialises in covert operations.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -5676,7 +5693,7 @@
   {
     "id": "482",
     "name": "Tracker gnome 2",
-    "examine": "It\\'s a gnome who specialises in covert operations.",
+    "examine": "It's a gnome who specialises in covert operations.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -5692,7 +5709,7 @@
   {
     "id": "483",
     "name": "Tracker gnome 3",
-    "examine": "It\\'s a gnome who specialises in covert operations.",
+    "examine": "It's a gnome who specialises in covert operations.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -5708,7 +5725,7 @@
   {
     "id": "485",
     "name": "Local Gnome",
-    "examine": "It\\'s a young tree gnome.",
+    "examine": "It's a young tree gnome.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -5740,7 +5757,7 @@
   {
     "id": "489",
     "name": "Goblin guard",
-    "examine": "He doesn\\'t look like he\\'d trust his own mother.",
+    "examine": "He doesn't look like he'd trust his own mother.",
     "lifepoints": "28",
     "attack_level": "20",
     "strength_level": "20",
@@ -5935,7 +5952,7 @@
   {
     "id": "504",
     "name": "Undead one",
-    "examine": "The animated dead; one of Rashiliyia\\'s minions.",
+    "examine": "The animated dead; one of Rashiliyia's minions.",
     "lifepoints": "45",
     "attack_level": "32",
     "strength_level": "32",
@@ -5956,7 +5973,7 @@
   {
     "id": "505",
     "name": "Undead one",
-    "examine": "The animated dead; one of Rashiliyia\\'s minions.",
+    "examine": "The animated dead; one of Rashiliyia's minions.",
     "lifepoints": "47",
     "attack_level": "33",
     "strength_level": "33",
@@ -6022,7 +6039,7 @@
   {
     "id": "518",
     "name": "Captain Shanks",
-    "examine": "He\\'s the Captain of the \\'Lady of the Waves\\'.",
+    "examine": "He's the Captain of the 'Lady of the Waves'.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -6035,6 +6052,22 @@
     "range_animation": "0",
     "safespot": null
   },
+  {
+    "id": "519",
+    "name": "Bob",
+    "examine": "An expert on axes.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  }, 
   {
     "id": "520",
     "name": "Shopkeeper",
@@ -6327,7 +6360,7 @@
   {
     "id": "554",
     "name": "Fancy-dress shop owner",
-    "examine": "For the interesting clothing items you just can\\'t find elsewhere.",
+    "examine": "For the interesting clothing items you just can't find elsewhere.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -6649,7 +6682,7 @@
   {
     "id": "611",
     "name": "Witch",
-    "examine": "The Black Knights\\' resident witch.",
+    "examine": "The Black Knights' resident witch.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -6910,7 +6943,7 @@
   {
     "id": "648",
     "name": "King Roald",
-    "examine": "Varrock\\'s resident monarch.",
+    "examine": "Varrock's resident monarch.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -7410,6 +7443,22 @@
     "range_animation": "0",
     "safespot": null
   },
+   {
+    "id": "705",
+    "name": "Melee tutor",
+    "examine": "Harlan, ready to teach swordplay.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  }, 
   {
     "id": "706",
     "name": "Wizard Mizgog",
@@ -7482,7 +7531,7 @@
   {
     "id": "714",
     "name": "Edmond",
-    "examine": "It\\'s an NPC.",
+    "examine": "It's an NPC.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -7526,7 +7575,7 @@
   {
     "id": "726",
     "name": "Man",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -7539,7 +7588,7 @@
   {
     "id": "727",
     "name": "Man",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -7552,7 +7601,7 @@
   {
     "id": "728",
     "name": "Man",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -7570,7 +7619,7 @@
   {
     "id": "729",
     "name": "Man",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -7588,7 +7637,7 @@
   {
     "id": "730",
     "name": "Man",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -7955,7 +8004,7 @@
   {
     "id": "790",
     "name": "Letham",
-    "examine": "A gnome who\\'s supposed to be cleaning up a mess.",
+    "examine": "A gnome who's supposed to be cleaning up a mess.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -8139,7 +8188,7 @@
   {
     "id": "805",
     "name": "Master Crafter",
-    "examine": "He\\'s in charge of the Crafting Guild.",
+    "examine": "He's in charge of the Crafting Guild.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -8237,7 +8286,7 @@
   {
     "id": "825",
     "name": "Male slave",
-    "examine": "It looks like he\\'s been here a long time.",
+    "examine": "It looks like he's been here a long time.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -8290,7 +8339,7 @@
   {
     "id": "831",
     "name": "Captain Siad",
-    "examine": "He\\'s in control of the whole mining camp.",
+    "examine": "He's in control of the whole mining camp.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -8322,7 +8371,7 @@
   {
     "id": "834",
     "name": "Bedabin Nomad Guard",
-    "examine": "A Bedabin nomad guard - it looks like he\\'s protecting an area.",
+    "examine": "A Bedabin nomad guard - it looks like he's protecting an area.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -8841,7 +8890,7 @@
   },
   {
     "id": "897",
-    "name": "Witch\\'s experiment",
+    "name": "Witch's experiment",
     "examine": "Looks unnatural.",
     "lifepoints": "68",
     "attack_level": "12",
@@ -8858,7 +8907,7 @@
   },
   {
     "id": "898",
-    "name": "Witch\\'s experiment (second form)",
+    "name": "Witch's experiment (second form)",
     "examine": "Looks unnatural.",
     "lifepoints": "97",
     "attack_level": "17",
@@ -8875,7 +8924,7 @@
   },
   {
     "id": "899",
-    "name": "Witch\\'s experiment (third form)",
+    "name": "Witch's experiment (third form)",
     "examine": "Looks unnatural.",
     "lifepoints": "154",
     "attack_level": "27",
@@ -8892,7 +8941,7 @@
   },
   {
     "id": "900",
-    "name": "Witch\\'s experiment (fourth form)",
+    "name": "Witch's experiment (fourth form)",
     "examine": "Looks unnatural.",
     "lifepoints": "200",
     "attack_level": "35",
@@ -8910,7 +8959,7 @@
   {
     "id": "904",
     "name": "Chamber guardian",
-    "examine": "He hasn\\'t seen much sun lately.",
+    "examine": "He hasn't seen much sun lately.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -8938,7 +8987,7 @@
   {
     "id": "907",
     "name": "Kolodion",
-    "examine": "He\\'s a shape-shifter",
+    "examine": "He's a shape-shifter",
     "lifepoints": "3",
     "attack_level": "42",
     "strength_level": "1",
@@ -8955,7 +9004,7 @@
   {
     "id": "908",
     "name": "Kolodion",
-    "examine": "He\\'s a shape-shifter",
+    "examine": "He's a shape-shifter",
     "lifepoints": "93",
     "attack_level": "74",
     "strength_level": "1",
@@ -8972,7 +9021,7 @@
   {
     "id": "909",
     "name": "Kolodion",
-    "examine": "He\\'s a shape-shifter",
+    "examine": "He's a shape-shifter",
     "lifepoints": "93",
     "attack_level": "74",
     "strength_level": "1",
@@ -8989,7 +9038,7 @@
   {
     "id": "910",
     "name": "Kolodion",
-    "examine": "He\\'s a shape-shifter",
+    "examine": "He's a shape-shifter",
     "lifepoints": "93",
     "attack_level": "74",
     "strength_level": "1",
@@ -9006,7 +9055,7 @@
   {
     "id": "911",
     "name": "Kolodion",
-    "examine": "He\\'s a shape-shifter",
+    "examine": "He's a shape-shifter",
     "lifepoints": "112",
     "attack_level": "85",
     "strength_level": "1",
@@ -9103,7 +9152,7 @@
   {
     "id": "917",
     "name": "Jail guard",
-    "examine": "This jail\\'s open for business again.",
+    "examine": "This jail's open for business again.",
     "lifepoints": "32",
     "attack_level": "1",
     "strength_level": "1",
@@ -9122,7 +9171,7 @@
   {
     "id": "923",
     "name": "Hassan",
-    "examine": "The emir\\'s chief advisor and physician.",
+    "examine": "The emir's chief advisor and physician.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -9390,7 +9439,7 @@
   {
     "id": "951",
     "name": "Chicken",
-    "examine": "Who are you calling chicken?",
+    "examine": "Yep. Definitely a chicken.",
     "lifepoints": "3",
     "attack_level": "1",
     "strength_level": "1",
@@ -9446,7 +9495,7 @@
   {
     "id": "956",
     "name": "Drunken Dwarf",
-    "examine": "He\\'s had a fair bit to drink...",
+    "examine": "He's had a fair bit to drink...",
     "lifepoints": "10",
     "attack_level": "5",
     "strength_level": "5",
@@ -9485,7 +9534,7 @@
   {
     "id": "977",
     "name": "Blessed spider",
-    "examine": "It\\'s one of Iban\\'s pets.",
+    "examine": "It's one of Iban's pets.",
     "lifepoints": "42",
     "attack_level": "22",
     "strength_level": "22",
@@ -9504,7 +9553,7 @@
   {
     "id": "978",
     "name": "Blessed giant rat",
-    "examine": "It\\'s one of Iban\\'s pet vermin.",
+    "examine": "It's one of Iban's pet vermin.",
     "lifepoints": "17",
     "attack_level": "12",
     "strength_level": "12",
@@ -9717,7 +9766,7 @@
   },
   {
     "id": "993",
-    "name": "Witch\\'s cat",
+    "name": "Witch's cat",
     "examine": "Curiosity is yet to kill this one...",
     "lifepoints": "10",
     "attack_level": "1",
@@ -9934,7 +9983,7 @@
   {
     "id": "1017",
     "name": "Chicken",
-    "examine": "Who are you calling chicken?",
+    "examine": "Yep. Definitely a chicken.",
     "lifepoints": "3",
     "attack_level": "1",
     "strength_level": "1",
@@ -10049,7 +10098,7 @@
   {
     "id": "1023",
     "name": "Vampire",
-    "examine": "Could his name be \\'Lurch\\'?",
+    "examine": "Could his name be 'Lurch'?",
     "lifepoints": "50",
     "attack_level": "52",
     "strength_level": "1",
@@ -10941,7 +10990,7 @@
   {
     "id": "1118",
     "name": "Troll spectator",
-    "examine": "He\\'s watching the arena.",
+    "examine": "He's watching the arena.",
     "lifepoints": "67",
     "attack_level": "47",
     "strength_level": "47",
@@ -10958,7 +11007,7 @@
   {
     "id": "1119",
     "name": "Troll spectator",
-    "examine": "He\\'s watching the arena.",
+    "examine": "He's watching the arena.",
     "lifepoints": "67",
     "attack_level": "47",
     "strength_level": "47",
@@ -10975,7 +11024,7 @@
   {
     "id": "1120",
     "name": "Troll spectator",
-    "examine": "He\\'s watching the arena.",
+    "examine": "He's watching the arena.",
     "lifepoints": "67",
     "attack_level": "47",
     "strength_level": "47",
@@ -10992,7 +11041,7 @@
   {
     "id": "1121",
     "name": "Troll spectator",
-    "examine": "He\\'s watching the arena.",
+    "examine": "He's watching the arena.",
     "lifepoints": "67",
     "attack_level": "47",
     "strength_level": "47",
@@ -11009,7 +11058,7 @@
   {
     "id": "1122",
     "name": "Troll spectator",
-    "examine": "He\\'s watching the arena.",
+    "examine": "He's watching the arena.",
     "lifepoints": "67",
     "attack_level": "47",
     "strength_level": "47",
@@ -11026,7 +11075,7 @@
   {
     "id": "1123",
     "name": "Troll spectator",
-    "examine": "He\\'s watching the arena.",
+    "examine": "He's watching the arena.",
     "lifepoints": "67",
     "attack_level": "47",
     "strength_level": "47",
@@ -11043,7 +11092,7 @@
   {
     "id": "1124",
     "name": "Troll spectator",
-    "examine": "He\\'s watching the arena.",
+    "examine": "He's watching the arena.",
     "lifepoints": "67",
     "attack_level": "47",
     "strength_level": "47",
@@ -11078,7 +11127,7 @@
   {
     "id": "1126",
     "name": "Twig",
-    "examine": "He\\'s guarding the cells.",
+    "examine": "He's guarding the cells.",
     "lifepoints": "71",
     "attack_level": "50",
     "strength_level": "50",
@@ -11094,7 +11143,7 @@
   {
     "id": "1127",
     "name": "Berry",
-    "examine": "He\\'s guarding the cells.",
+    "examine": "He's guarding the cells.",
     "lifepoints": "71",
     "attack_level": "50",
     "strength_level": "50",
@@ -11111,7 +11160,7 @@
   {
     "id": "1128",
     "name": "Twig",
-    "examine": "He\\'s guarding the cells.",
+    "examine": "He's guarding the cells.",
     "lifepoints": "71",
     "attack_level": "50",
     "strength_level": "50",
@@ -11128,7 +11177,7 @@
   {
     "id": "1129",
     "name": "Berry",
-    "examine": "He\\'s guarding the cells.",
+    "examine": "He's guarding the cells.",
     "lifepoints": "71",
     "attack_level": "50",
     "strength_level": "50",
@@ -11145,7 +11194,7 @@
   {
     "id": "1130",
     "name": "Thrower troll",
-    "examine": "Small for a troll, but it\\'s mean, ugly and throws rocks.",
+    "examine": "Small for a troll, but it's mean, ugly and throws rocks.",
     "lifepoints": "95",
     "attack_level": "41",
     "strength_level": "41",
@@ -11170,7 +11219,7 @@
   {
     "id": "1131",
     "name": "Thrower troll",
-    "examine": "Small for a troll, but it\\'s mean, ugly and throws rocks.",
+    "examine": "Small for a troll, but it's mean, ugly and throws rocks.",
     "lifepoints": "95",
     "attack_level": "41",
     "strength_level": "41",
@@ -11196,7 +11245,7 @@
   {
     "id": "1132",
     "name": "Thrower troll",
-    "examine": "Small for a troll, but it\\'s mean, ugly and throws rocks.",
+    "examine": "Small for a troll, but it's mean, ugly and throws rocks.",
     "lifepoints": "95",
     "attack_level": "41",
     "strength_level": "41",
@@ -11222,7 +11271,7 @@
   {
     "id": "1133",
     "name": "Thrower troll",
-    "examine": "Small for a troll, but it\\'s mean, ugly and throws rocks.",
+    "examine": "Small for a troll, but it's mean, ugly and throws rocks.",
     "lifepoints": "95",
     "attack_level": "41",
     "strength_level": "41",
@@ -11248,7 +11297,7 @@
   {
     "id": "1134",
     "name": "Thrower troll",
-    "examine": "Small for a troll, but it\\'s mean, ugly and throws rocks.",
+    "examine": "Small for a troll, but it's mean, ugly and throws rocks.",
     "lifepoints": "95",
     "attack_level": "41",
     "strength_level": "41",
@@ -11341,7 +11390,7 @@
   {
     "id": "1139",
     "name": "Mushroom",
-    "examine": "He\\'s fast asleep.",
+    "examine": "He's fast asleep.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -11359,7 +11408,7 @@
   {
     "id": "1140",
     "name": "Mountain goat",
-    "examine": "This beast doesn\\'t need climbing boots.",
+    "examine": "This beast doesn't need climbing boots.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -11375,7 +11424,7 @@
   {
     "id": "1141",
     "name": "Mountain goat",
-    "examine": "This beast doesn\\'t need climbing boots.",
+    "examine": "This beast doesn't need climbing boots.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -11391,7 +11440,7 @@
   {
     "id": "1142",
     "name": "Guard",
-    "examine": "He\\'s guarding the storeroom.",
+    "examine": "He's guarding the storeroom.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -11409,7 +11458,7 @@
   {
     "id": "1143",
     "name": "Guard",
-    "examine": "He\\'s guarding the storeroom.",
+    "examine": "He's guarding the storeroom.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -11499,7 +11548,7 @@
   {
     "id": "1150",
     "name": "Guard",
-    "examine": "He\\'s guarding the goutweed.",
+    "examine": "He's guarding the goutweed.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -11533,7 +11582,7 @@
   {
     "id": "1152",
     "name": "Weird Old Man",
-    "examine": "What\\'s he mumbling about?",
+    "examine": "What's he mumbling about?",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -11549,7 +11598,7 @@
   {
     "id": "1153",
     "name": "Kalphite Worker",
-    "examine": "I don\\'t think insect repellent will work...",
+    "examine": "I don't think insect repellent will work...",
     "lifepoints": "40",
     "attack_level": "21",
     "strength_level": "20",
@@ -11570,7 +11619,7 @@
   {
     "id": "1154",
     "name": "Kalphite Soldier",
-    "examine": "I don\\'t think insect repellent will work...",
+    "examine": "I don't think insect repellent will work...",
     "lifepoints": "134",
     "attack_level": "47",
     "strength_level": "47",
@@ -11590,7 +11639,7 @@
   {
     "id": "1155",
     "name": "Kalphite Guardian",
-    "examine": "I don\\'t think insect repellent will work...",
+    "examine": "I don't think insect repellent will work...",
     "lifepoints": "170",
     "attack_level": "108",
     "strength_level": "106",
@@ -11613,7 +11662,7 @@
   {
     "id": "1156",
     "name": "Kalphite Worker",
-    "examine": "I don\\'t think insect repellent will work...",
+    "examine": "I don't think insect repellent will work...",
     "lifepoints": "40",
     "attack_level": "21",
     "strength_level": "20",
@@ -11634,7 +11683,7 @@
   {
     "id": "1157",
     "name": "Kalphite Guardian",
-    "examine": "I don\\'t think insect repellent will work...",
+    "examine": "I don't think insect repellent will work...",
     "lifepoints": "170",
     "attack_level": "108",
     "strength_level": "106",
@@ -11657,7 +11706,7 @@
   {
     "id": "1158",
     "name": "Kalphite Queen",
-    "examine": "I don\\'t think insect repellent will work...",
+    "examine": "I don't think insect repellent will work...",
     "lifepoints": "255",
     "attack_level": "70",
     "strength_level": "70",
@@ -11680,7 +11729,7 @@
   {
     "id": "1160",
     "name": "Kalphite Queen",
-    "examine": "I don\\'t think insect repellent will work...",
+    "examine": "I don't think insect repellent will work...",
     "lifepoints": "255",
     "attack_level": "70",
     "strength_level": "70",
@@ -11703,7 +11752,7 @@
   {
     "id": "1161",
     "name": "Kalphite Larva",
-    "examine": "I don\\'t think insect repellent will work...",
+    "examine": "I don't think insect repellent will work...",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -11764,7 +11813,7 @@
   {
     "id": "1184",
     "name": "Elf warrior",
-    "examine": "I don\\'t wanna be at the wrong end of that pike.",
+    "examine": "I don't wanna be at the wrong end of that pike.",
     "lifepoints": "85",
     "attack_level": "60",
     "strength_level": "60",
@@ -11847,7 +11896,7 @@
   {
     "id": "1195",
     "name": "Grizzly bear",
-    "examine": "It\\'s an NPC.",
+    "examine": "It's an NPC.",
     "lifepoints": "27",
     "attack_level": "1",
     "strength_level": "1",
@@ -11929,7 +11978,7 @@
   {
     "id": "1200",
     "name": "Tyras guard",
-    "examine": "One of King Tyras\\'s men.",
+    "examine": "One of King Tyras's men.",
     "lifepoints": "60",
     "attack_level": "42",
     "strength_level": "42",
@@ -12011,7 +12060,7 @@
   },
   {
     "id": "1211",
-    "name": "Will o\\' the wisp",
+    "name": "Will o' the wisp",
     "examine": "Mysterious swamp lights...",
     "lifepoints": "10",
     "attack_level": "1",
@@ -12082,7 +12131,7 @@
   {
     "id": "1219",
     "name": "Leech",
-    "examine": "Yuck! It\\'s all slimy!",
+    "examine": "Yuck! It's all slimy!",
     "lifepoints": "60",
     "attack_level": "42",
     "strength_level": "42",
@@ -12101,7 +12150,7 @@
   {
     "id": "1220",
     "name": "Vampire",
-    "examine": "Could his name be \\'Lurch\\'?",
+    "examine": "Could his name be 'Lurch'?",
     "lifepoints": "50",
     "attack_level": "52",
     "strength_level": "1",
@@ -12546,7 +12595,7 @@
   {
     "id": "1257",
     "name": "Afflicted",
-    "examine": "A local villager of Mort\\'ton.",
+    "examine": "A local villager of Mort'ton.",
     "lifepoints": "61",
     "attack_level": "43",
     "strength_level": "43",
@@ -12563,7 +12612,7 @@
   {
     "id": "1258",
     "name": "Afflicted",
-    "examine": "A local villager of Mort\\'ton.",
+    "examine": "A local villager of Mort'ton.",
     "lifepoints": "62",
     "attack_level": "44",
     "strength_level": "44",
@@ -12580,7 +12629,7 @@
   {
     "id": "1261",
     "name": "Afflicted",
-    "examine": "A local villager of Mort\\'ton.",
+    "examine": "A local villager of Mort'ton.",
     "lifepoints": "64",
     "attack_level": "45",
     "strength_level": "45",
@@ -12597,7 +12646,7 @@
   {
     "id": "1262",
     "name": "Afflicted",
-    "examine": "A local villager of Mort\\'ton.",
+    "examine": "A local villager of Mort'ton.",
     "lifepoints": "65",
     "attack_level": "46",
     "strength_level": "46",
@@ -12808,7 +12857,7 @@
   {
     "id": "1274",
     "name": "Ospak",
-    "examine": "Looks like he\\'s had a few drinks already.",
+    "examine": "Looks like he's had a few drinks already.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -12824,7 +12873,7 @@
   {
     "id": "1275",
     "name": "Styrmir",
-    "examine": "Doesn\\'t look like the musical type.",
+    "examine": "Doesn't look like the musical type.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -12872,7 +12921,7 @@
   {
     "id": "1278",
     "name": "Longhall Bouncer",
-    "examine": "He\\'s fat, he\\'s round, he bounces on the ground. That\\'s how he got the job.",
+    "examine": "He's fat, he's round, he bounces on the ground. That's how he got the job.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -12955,7 +13004,7 @@
   {
     "id": "1286",
     "name": "Manni the Reveller",
-    "examine": "Every innkeeper\\'s best friend!",
+    "examine": "Every innkeeper's best friend!",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -13087,7 +13136,7 @@
   {
     "id": "1294",
     "name": "Brundt the Chieftain",
-    "examine": "The Fremennik tribe\\'s chieftain.",
+    "examine": "The Fremennik tribe's chieftain.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -13181,7 +13230,7 @@
   {
     "id": "1302",
     "name": "Fisherman",
-    "examine": "There\\'s something fishy about this guy.",
+    "examine": "There's something fishy about this guy.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -13213,7 +13262,7 @@
   {
     "id": "1304",
     "name": "Sailor",
-    "examine": "He\\'s strong to the finish",
+    "examine": "He's strong to the finish",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -13229,7 +13278,7 @@
   {
     "id": "1305",
     "name": "Agnar",
-    "examine": "One of Rellekka\\'s many citizens.",
+    "examine": "One of Rellekka's many citizens.",
     "lifepoints": "50",
     "attack_level": "1",
     "strength_level": "1",
@@ -13244,7 +13293,7 @@
   {
     "id": "1306",
     "name": "Freidir",
-    "examine": "One of Rellekka\\'s many citizens.",
+    "examine": "One of Rellekka's many citizens.",
     "lifepoints": "50",
     "attack_level": "1",
     "strength_level": "1",
@@ -13259,7 +13308,7 @@
   {
     "id": "1307",
     "name": "Borrokar",
-    "examine": "One of Rellekka\\'s many citizens.",
+    "examine": "One of Rellekka's many citizens.",
     "lifepoints": "50",
     "attack_level": "1",
     "strength_level": "1",
@@ -13274,7 +13323,7 @@
   {
     "id": "1308",
     "name": "Lanzig",
-    "examine": "One of Rellekka\\'s many citizens.",
+    "examine": "One of Rellekka's many citizens.",
     "lifepoints": "51",
     "attack_level": "1",
     "strength_level": "1",
@@ -13289,7 +13338,7 @@
   {
     "id": "1309",
     "name": "Pontak",
-    "examine": "One of Rellekka\\'s many citizens.",
+    "examine": "One of Rellekka's many citizens.",
     "lifepoints": "51",
     "attack_level": "1",
     "strength_level": "1",
@@ -13304,7 +13353,7 @@
   {
     "id": "1313",
     "name": "Sassilik",
-    "examine": "One of Rellekka\\'s many citizens.",
+    "examine": "One of Rellekka's many citizens.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -13320,7 +13369,7 @@
   {
     "id": "1314",
     "name": "Inga",
-    "examine": "One of Rellekka\\'s many citizens.",
+    "examine": "One of Rellekka's many citizens.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -13865,7 +13914,7 @@
   {
     "id": "1374",
     "name": "Guard",
-    "examine": "He\\'s guarding the throne room.",
+    "examine": "He's guarding the throne room.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -13883,7 +13932,7 @@
   {
     "id": "1377",
     "name": "Farmer",
-    "examine": "He\\'s cutting the wheat.",
+    "examine": "He's cutting the wheat.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -13929,7 +13978,7 @@
   {
     "id": "1385",
     "name": "Sailor",
-    "examine": "He\\'s strong to the finish, because he eats cabbage.",
+    "examine": "He's strong to the finish, because he eats cabbage.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -14061,7 +14110,7 @@
   {
     "id": "1395",
     "name": "Lumberjack Leif",
-    "examine": "He\\'s a lumberjack",
+    "examine": "He's a lumberjack",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -14077,7 +14126,7 @@
   {
     "id": "1396",
     "name": "Miner Magnus",
-    "examine": "He\\'s just mining his own business.",
+    "examine": "He's just mining his own business.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -14093,7 +14142,7 @@
   {
     "id": "1397",
     "name": "Fisherman Frodi",
-    "examine": "There\\'s something fishy about him.",
+    "examine": "There's something fishy about him.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -14109,7 +14158,7 @@
   {
     "id": "1398",
     "name": "Gardener Gunnhild",
-    "examine": "She\\'s looking a bit weedy.",
+    "examine": "She's looking a bit weedy.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -14125,7 +14174,7 @@
   {
     "id": "1401",
     "name": "Chicken",
-    "examine": "Who are you calling chicken?",
+    "examine": "Yep. Definitely a chicken.",
     "lifepoints": "3",
     "attack_level": "1",
     "strength_level": "1",
@@ -14144,7 +14193,7 @@
   {
     "id": "1402",
     "name": "Chicken",
-    "examine": "Who are you calling chicken?",
+    "examine": "Yep. Definitely a chicken.",
     "lifepoints": "3",
     "attack_level": "1",
     "strength_level": "1",
@@ -14346,8 +14395,8 @@
   },
   {
     "id": "1453",
-    "name": "The Monkey\\'s Uncle",
-    "examine": "He looks like the Monkey\\'s Uncle.",
+    "name": "The Monkey's Uncle",
+    "examine": "He looks like the Monkey's Uncle.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -14363,8 +14412,8 @@
   },
   {
     "id": "1454",
-    "name": "The Monkey\\'s Aunt",
-    "examine": "She looks like the Monkey\\'s Aunt.",
+    "name": "The Monkey's Aunt",
+    "examine": "She looks like the Monkey's Aunt.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -14662,7 +14711,7 @@
   {
     "id": "1475",
     "name": "Bird",
-    "examine": "It\\'s a brightly coloured bird of the jungle.",
+    "examine": "It's a brightly coloured bird of the jungle.",
     "lifepoints": "7",
     "attack_level": "5",
     "strength_level": "5",
@@ -14680,7 +14729,7 @@
   {
     "id": "1476",
     "name": "Bird",
-    "examine": "It\\'s a brightly coloured bird of the jungle. It flies very quickly.",
+    "examine": "It's a brightly coloured bird of the jungle. It flies very quickly.",
     "lifepoints": "7",
     "attack_level": "5",
     "strength_level": "5",
@@ -14877,7 +14926,7 @@
   {
     "id": "1532",
     "name": "Barricade",
-    "examine": "Handy for hindering the enemy team\\'s movement.",
+    "examine": "Handy for hindering the enemy team's movement.",
     "lifepoints": "50",
     "attack_level": "1",
     "strength_level": "1",
@@ -14896,7 +14945,7 @@
   {
     "id": "1533",
     "name": "Barricade",
-    "examine": "Handy for hindering the enemy team\\'s movement.",
+    "examine": "Handy for hindering the enemy team's movement.",
     "lifepoints": "50",
     "attack_level": "1",
     "strength_level": "1",
@@ -14915,7 +14964,7 @@
   {
     "id": "1534",
     "name": "Barricade",
-    "examine": "Handy for hindering the enemy team\\'s movement.",
+    "examine": "Handy for hindering the enemy team's movement.",
     "lifepoints": "50",
     "attack_level": "1",
     "strength_level": "1",
@@ -14933,7 +14982,7 @@
   {
     "id": "1535",
     "name": "Barricade",
-    "examine": "Handy for hindering the enemy team\\'s movement.",
+    "examine": "Handy for hindering the enemy team's movement.",
     "lifepoints": "50",
     "attack_level": "1",
     "strength_level": "1",
@@ -15003,7 +15052,7 @@
   {
     "id": "1539",
     "name": "Skeletal miner",
-    "examine": "I don\\'t think the pickaxe is for hitting rocks.",
+    "examine": "I don't think the pickaxe is for hitting rocks.",
     "lifepoints": "50",
     "attack_level": "35",
     "strength_level": "35",
@@ -15133,7 +15182,7 @@
   {
     "id": "1558",
     "name": "Ice wolf",
-    "examine": "Not man\\'s best friend.",
+    "examine": "Not man's best friend.",
     "lifepoints": "72",
     "attack_level": "51",
     "strength_level": "51",
@@ -15273,7 +15322,7 @@
   {
     "id": "1567",
     "name": "Cyreg Paddlehorn",
-    "examine": "A tall and imposing man who\\'s more than familiar with boating.",
+    "examine": "A tall and imposing man who's more than familiar with boating.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -15593,7 +15642,7 @@
   {
     "id": "1594",
     "name": "Wild dog",
-    "examine": "Looks like it\\'s got Rabies!",
+    "examine": "Looks like it's got Rabies!",
     "lifepoints": "62",
     "attack_level": "25",
     "strength_level": "25",
@@ -16157,7 +16206,7 @@
   {
     "id": "1626",
     "name": "Turoth",
-    "examine": "It\\'s a Turoth.",
+    "examine": "It's a Turoth.",
     "lifepoints": "79",
     "attack_level": "80",
     "strength_level": "85",
@@ -16176,7 +16225,7 @@
   {
     "id": "1627",
     "name": "Turoth",
-    "examine": "It\\'s a Turoth.",
+    "examine": "It's a Turoth.",
     "lifepoints": "79",
     "attack_level": "80",
     "strength_level": "85",
@@ -16195,7 +16244,7 @@
   {
     "id": "1628",
     "name": "Turoth",
-    "examine": "It\\'s a Turoth.",
+    "examine": "It's a Turoth.",
     "lifepoints": "79",
     "attack_level": "80",
     "strength_level": "85",
@@ -16214,7 +16263,7 @@
   {
     "id": "1629",
     "name": "Turoth",
-    "examine": "It\\'s a Turoth.",
+    "examine": "It's a Turoth.",
     "lifepoints": "79",
     "attack_level": "80",
     "strength_level": "85",
@@ -16233,7 +16282,7 @@
   {
     "id": "1630",
     "name": "Turoth",
-    "examine": "It\\'s a Turoth.",
+    "examine": "It's a Turoth.",
     "lifepoints": "79",
     "attack_level": "80",
     "strength_level": "85",
@@ -16386,7 +16435,7 @@
   {
     "id": "1637",
     "name": "Jelly",
-    "examine": "It\\'s a Jelly.",
+    "examine": "It's a Jelly.",
     "lifepoints": "75",
     "attack_level": "40",
     "strength_level": "45",
@@ -16408,7 +16457,7 @@
   {
     "id": "1638",
     "name": "Jelly",
-    "examine": "Doesn\\'t look so tough...",
+    "examine": "Doesn't look so tough...",
     "lifepoints": "70",
     "attack_level": "1",
     "strength_level": "1",
@@ -16452,7 +16501,7 @@
   {
     "id": "1640",
     "name": "Jelly",
-    "examine": "There\\'s always room for jelly.",
+    "examine": "There's always room for jelly.",
     "lifepoints": "140",
     "attack_level": "1",
     "strength_level": "1",
@@ -16631,7 +16680,7 @@
   {
     "id": "1648",
     "name": "Crawling Hand",
-    "examine": "Now THAT\\'S handy.",
+    "examine": "Now THAT'S handy.",
     "lifepoints": "16",
     "attack_level": "5",
     "strength_level": "5",
@@ -16736,7 +16785,7 @@
   {
     "id": "1653",
     "name": "Crawling Hand",
-    "examine": "Now THAT\\'s handy.",
+    "examine": "Now THAT's handy.",
     "lifepoints": "18",
     "attack_level": "13",
     "strength_level": "13",
@@ -16757,7 +16806,7 @@
   {
     "id": "1654",
     "name": "Crawling Hand",
-    "examine": "I\\'m glad it\\'s just the hand I can see...",
+    "examine": "I'm glad it's just the hand I can see...",
     "lifepoints": "18",
     "attack_level": "13",
     "strength_level": "13",
@@ -16856,7 +16905,7 @@
   {
     "id": "1660",
     "name": "Skullball Boss",
-    "examine": "He\\'s in charge of the Skullball Course.",
+    "examine": "He's in charge of the Skullball Course.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -16872,7 +16921,7 @@
   {
     "id": "1661",
     "name": "Agility Boss",
-    "examine": "He\\'s in charge of the Agility Course.",
+    "examine": "He's in charge of the Agility Course.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -16920,7 +16969,7 @@
   {
     "id": "1665",
     "name": "Werewolf",
-    "examine": "Looks like he\\'s guarding a trapdoor...",
+    "examine": "Looks like he's guarding a trapdoor...",
     "lifepoints": "100",
     "attack_level": "1",
     "strength_level": "1",
@@ -17007,7 +17056,7 @@
   {
     "id": "1691",
     "name": "Undead cow",
-    "examine": "It\\'s an undead cow.",
+    "examine": "It's an undead cow.",
     "lifepoints": "4",
     "attack_level": "3",
     "strength_level": "3",
@@ -17136,7 +17185,7 @@
   {
     "id": "1699",
     "name": "Ghost shopkeeper",
-    "examine": "Beware the ghostly shopkeeper\\'s wares!",
+    "examine": "Beware the ghostly shopkeeper's wares!",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17153,7 +17202,7 @@
   {
     "id": "1700",
     "name": "Ghost innkeeper",
-    "examine": "Doesn\\'t look like the bar\\'s open anymore.",
+    "examine": "Doesn't look like the bar's open anymore.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17357,7 +17406,7 @@
   {
     "id": "1714",
     "name": "H.A.M. Member",
-    "examine": "A member of the \\'Humans Against Monsters\\' group.",
+    "examine": "A member of the 'Humans Against Monsters' group.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17374,7 +17423,7 @@
   {
     "id": "1715",
     "name": "H.A.M. Member",
-    "examine": "A member of the \\'Humans Against Monsters\\' group.",
+    "examine": "A member of the 'Humans Against Monsters' group.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17391,7 +17440,7 @@
   {
     "id": "1716",
     "name": "H.A.M. Member",
-    "examine": "A member of the \\'Humans Against Monsters\\' group.",
+    "examine": "A member of the 'Humans Against Monsters' group.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17408,7 +17457,7 @@
   {
     "id": "1717",
     "name": "H.A.M. Member",
-    "examine": "A member of the \\'Humans Against Monsters\\' group.",
+    "examine": "A member of the 'Humans Against Monsters' group.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17457,7 +17506,7 @@
   {
     "id": "1740",
     "name": "Yew",
-    "examine": "One of Sigmund\\'s elite guards.",
+    "examine": "One of Sigmund's elite guards.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17473,7 +17522,7 @@
   {
     "id": "1741",
     "name": "Evergreen",
-    "examine": "One of Sigmund\\'s elite guards.",
+    "examine": "One of Sigmund's elite guards.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17489,7 +17538,7 @@
   {
     "id": "1742",
     "name": "Evergreen",
-    "examine": "A member of Sigmund\\'s H.A.M. splinter group.",
+    "examine": "A member of Sigmund's H.A.M. splinter group.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17505,7 +17554,7 @@
   {
     "id": "1743",
     "name": "Evergreen",
-    "examine": "A member of Sigmund\\'s H.A.M. splinter group.",
+    "examine": "A member of Sigmund's H.A.M. splinter group.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17521,7 +17570,7 @@
   {
     "id": "1744",
     "name": "Tree",
-    "examine": "A member of Sigmund\\'s H.A.M. splinter group.",
+    "examine": "A member of Sigmund's H.A.M. splinter group.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17537,7 +17586,7 @@
   {
     "id": "1745",
     "name": "Dead tree",
-    "examine": "A member of Sigmund\\'s H.A.M. splinter group.",
+    "examine": "A member of Sigmund's H.A.M. splinter group.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17553,7 +17602,7 @@
   {
     "id": "1746",
     "name": "Achey Tree",
-    "examine": "A member of Sigmund\\'s H.A.M. splinter group.",
+    "examine": "A member of Sigmund's H.A.M. splinter group.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17569,7 +17618,7 @@
   {
     "id": "1747",
     "name": "Tree",
-    "examine": "A member of Sigmund\\'s H.A.M. splinter group.",
+    "examine": "A member of Sigmund's H.A.M. splinter group.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17585,7 +17634,7 @@
   {
     "id": "1748",
     "name": "Tree",
-    "examine": "A member of Sigmund\\'s H.A.M. splinter group.",
+    "examine": "A member of Sigmund's H.A.M. splinter group.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17634,7 +17683,7 @@
   {
     "id": "1754",
     "name": "Crow",
-    "examine": "A farmer\\'s enemy.",
+    "examine": "A farmer's enemy.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -17772,7 +17821,7 @@
   {
     "id": "1767",
     "name": "Cow",
-    "examine": "Converts grass to beef.",
+    "examine": "Where beef comes from.",
     "lifepoints": "8",
     "attack_level": "1",
     "strength_level": "1",
@@ -18397,7 +18446,7 @@
   {
     "id": "1828",
     "name": "Giant frog",
-    "examine": "It didn\\'t get that big eating flies!",
+    "examine": "It didn't get that big eating flies!",
     "lifepoints": "100",
     "attack_level": "45",
     "strength_level": "45",
@@ -18416,7 +18465,7 @@
   {
     "id": "1829",
     "name": "Big frog",
-    "examine": "It didn\\'t get that big eating flies.",
+    "examine": "It didn't get that big eating flies.",
     "lifepoints": "37",
     "attack_level": "1",
     "strength_level": "1",
@@ -18542,7 +18591,7 @@
   {
     "id": "1843",
     "name": "Dwarven Ferryman",
-    "examine": "It\\'s probably you who will be paying the ferryman.",
+    "examine": "It's probably you who will be paying the ferryman.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -18558,7 +18607,7 @@
   {
     "id": "1844",
     "name": "Dwarven Ferryman",
-    "examine": "It\\'s probably you who will be paying the ferryman.",
+    "examine": "It's probably you who will be paying the ferryman.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -18718,7 +18767,7 @@
   {
     "id": "1859",
     "name": "Arzinian Being of Bordanzan",
-    "examine": "It\\'s the Arzinian Being",
+    "examine": "It's the Arzinian Being",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -18734,7 +18783,7 @@
   {
     "id": "1861",
     "name": "Ranged Tutor",
-    "examine": "Nemarti",
+    "examine": "Nemarti looks ready to teach you about ranged combat.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -19335,7 +19384,7 @@
   {
     "id": "1951",
     "name": "Ice wolf",
-    "examine": "Not a man\\'s best friend.",
+    "examine": "Not a man's best friend.",
     "lifepoints": "72",
     "attack_level": "60",
     "strength_level": "60",
@@ -19355,7 +19404,7 @@
   {
     "id": "1952",
     "name": "Ice wolf",
-    "examine": "Not a man\\'s best friend.",
+    "examine": "Not a man's best friend.",
     "lifepoints": "72",
     "attack_level": "60",
     "strength_level": "60",
@@ -19375,7 +19424,7 @@
   {
     "id": "1953",
     "name": "Ice wolf",
-    "examine": "Not a man\\'s best friend.",
+    "examine": "Not a man's best friend.",
     "lifepoints": "72",
     "attack_level": "60",
     "strength_level": "60",
@@ -19395,7 +19444,7 @@
   {
     "id": "1954",
     "name": "Ice wolf",
-    "examine": "Not a man\\'s best friend.",
+    "examine": "Not a man's best friend.",
     "lifepoints": "72",
     "attack_level": "60",
     "strength_level": "60",
@@ -19415,7 +19464,7 @@
   {
     "id": "1955",
     "name": "Ice wolf",
-    "examine": "Not a man\\'s best friend.",
+    "examine": "Not a man's best friend.",
     "lifepoints": "72",
     "attack_level": "60",
     "strength_level": "60",
@@ -19435,7 +19484,7 @@
   {
     "id": "1956",
     "name": "Ice wolf",
-    "examine": "Not a man\\'s best friend.",
+    "examine": "Not a man's best friend.",
     "lifepoints": "72",
     "attack_level": "60",
     "strength_level": "60",
@@ -19526,7 +19575,7 @@
   {
     "id": "1964",
     "name": "Mummy",
-    "examine": "But who\\'s the daddy?",
+    "examine": "But who's the daddy?",
     "lifepoints": "78",
     "attack_level": "55",
     "strength_level": "55",
@@ -19577,7 +19626,7 @@
   {
     "id": "1969",
     "name": "Scarabs",
-    "examine": "I think they\\'re some kind of beetle...",
+    "examine": "I think they're some kind of beetle...",
     "lifepoints": "88",
     "attack_level": "62",
     "strength_level": "62",
@@ -19853,7 +19902,7 @@
   {
     "id": "1999",
     "name": "Plague cow",
-    "examine": "I don\\'t fancy eating any part of this.",
+    "examine": "I don't fancy eating any part of this.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -19871,7 +19920,7 @@
   {
     "id": "2001",
     "name": "Scarab swarm",
-    "examine": "I think they\\'re some kind of beetle.",
+    "examine": "I think they're some kind of beetle.",
     "lifepoints": "900",
     "attack_level": "9",
     "strength_level": "9",
@@ -20009,7 +20058,7 @@
   {
     "id": "2024",
     "name": "Strange Old Man",
-    "examine": "Wonder how long he\\'s been here...",
+    "examine": "Wonder how long he's been here...",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -20698,6 +20747,22 @@
     "combat_audio": "469,472,471",
     "safespot": null
   },
+   {
+    "id": "2082",
+    "name": "Sigmund",
+    "examine": "Advisor to the Duke of Lumbridge.",	
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  }, 
   {
     "id": "2091",
     "name": "Secretary",
@@ -21317,7 +21382,7 @@
   },
   {
     "id": "2140",
-    "name": "Dromund\\'s cat",
+    "name": "Dromund's cat",
     "examine": "Very protective of his master... and his property.",
     "lifepoints": "10",
     "attack_level": "1",
@@ -21558,7 +21623,7 @@
   {
     "id": "2180",
     "name": "Cart conductor",
-    "examine": "He makes sure the carts don\\'t run anyone over.",
+    "examine": "He makes sure the carts don't run anyone over.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -21574,7 +21639,7 @@
   {
     "id": "2181",
     "name": "Cart conductor",
-    "examine": "He makes sure the carts don\\'t run anyone over.",
+    "examine": "He makes sure the carts don't run anyone over.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -21590,7 +21655,7 @@
   {
     "id": "2182",
     "name": "Cart conductor",
-    "examine": "He makes sure the carts don\\'t run anyone over.",
+    "examine": "He makes sure the carts don't run anyone over.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -21606,7 +21671,7 @@
   {
     "id": "2183",
     "name": "Cart conductor",
-    "examine": "He makes sure the carts don\\'t run anyone over.",
+    "examine": "He makes sure the carts don't run anyone over.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -21622,7 +21687,7 @@
   {
     "id": "2184",
     "name": "Cart conductor",
-    "examine": "He makes sure the carts don\\'t run anyone over.",
+    "examine": "He makes sure the carts don't run anyone over.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -21638,7 +21703,7 @@
   {
     "id": "2185",
     "name": "Cart conductor",
-    "examine": "Remember: don\\'t drink and ride in mine carts.",
+    "examine": "Remember: don't drink and ride in mine carts.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -21767,6 +21832,22 @@
     "safespot": null
   },
   {
+    "id": "2237",
+    "name": "Gee",
+    "examine": "A local farmer. He may be able to provide some useful information.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  },  
+  {
     "id": "2240",
     "name": "Pig",
     "examine": "There to help me make my bids.",
@@ -21848,7 +21929,7 @@
   {
     "id": "2246",
     "name": "Khazard trooper",
-    "examine": "It\\'s one of General Khazard\\'s warriors.",
+    "examine": "It's one of General Khazard's warriors.",
     "lifepoints": "45",
     "attack_level": "32",
     "strength_level": "32",
@@ -22374,7 +22455,7 @@
   {
     "id": "2311",
     "name": "Sheepdog",
-    "examine": "Farmer\\\\/sheep liaison officer. Go on - give the dog a bone!",
+    "examine": "Farmer/sheep liaison officer. Go on - give the dog a bone!",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -22406,7 +22487,7 @@
   {
     "id": "2313",
     "name": "Chicken",
-    "examine": "Who are you calling chicken?",
+    "examine": "Yep. Definitely a chicken.",
     "lifepoints": "3",
     "attack_level": "1",
     "strength_level": "1",
@@ -22425,7 +22506,7 @@
   {
     "id": "2314",
     "name": "Chicken",
-    "examine": "Who are you calling chicken?",
+    "examine": "Yep. Definitely a chicken.",
     "lifepoints": "3",
     "attack_level": "1",
     "strength_level": "1",
@@ -22444,7 +22525,7 @@
   {
     "id": "2315",
     "name": "Chicken",
-    "examine": "Who are you calling chicken?",
+    "examine": "Yep. Definitely a chicken.",
     "lifepoints": "3",
     "attack_level": "1",
     "strength_level": "1",
@@ -22557,6 +22638,38 @@
     "safespot": null
   },
   {
+    "id": "2333",
+    "name": "Vasquen",
+    "examine": "Perhaps this farmer might look after your crops for you.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  },   
+  {
+    "id": "2342",
+    "name": "Fayeth",
+    "examine": "Perhaps this gardener might look after your crops for you.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  },  
+  {
     "id": "2354",
     "name": "Banker",
     "examine": "He can look after my money.",
@@ -22593,7 +22706,7 @@
   {
     "id": "2359",
     "name": "Elf warrior",
-    "examine": "I don\\'t wanna be at the wrong end of that pike.",
+    "examine": "I don't wanna be at the wrong end of that pike.",
     "lifepoints": "85",
     "attack_level": "60",
     "strength_level": "60",
@@ -22614,7 +22727,7 @@
   {
     "id": "2360",
     "name": "Elf warrior",
-    "examine": "I don\\'t wanna be at the wrong end of that pike.",
+    "examine": "I don't wanna be at the wrong end of that pike.",
     "lifepoints": "85",
     "attack_level": "60",
     "strength_level": "60",
@@ -22917,7 +23030,7 @@
   {
     "id": "2456",
     "name": "Dagannoth",
-    "examine": "It\\'s an NPC.",
+    "examine": "It's an NPC.",
     "lifepoints": "70",
     "attack_level": "90",
     "strength_level": "90",
@@ -23389,7 +23502,7 @@
   },
   {
     "id": "2539",
-    "name": "Cap\\'n Hand",
+    "name": "Cap'n Hand",
     "examine": "He used to swashbuckle his away across the seven seas.",
     "lifepoints": "10",
     "attack_level": "30",
@@ -23478,7 +23591,7 @@
   {
     "id": "2574",
     "name": "Bank guard",
-    "examine": "He\\'s guarding the bank.",
+    "examine": "He's guarding the bank.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -23785,7 +23898,7 @@
   {
     "id": "2604",
     "name": "TzHaar-Xil",
-    "examine": "Doesn\\'t look very social.",
+    "examine": "Doesn't look very social.",
     "lifepoints": "120",
     "attack_level": "70",
     "strength_level": "70",
@@ -23803,7 +23916,7 @@
   {
     "id": "2605",
     "name": "TzHaar-Xil",
-    "examine": "Doesn\\'t look very social.",
+    "examine": "Doesn't look very social.",
     "lifepoints": "120",
     "attack_level": "70",
     "strength_level": "70",
@@ -23821,7 +23934,7 @@
   {
     "id": "2606",
     "name": "TzHaar-Xil",
-    "examine": "Doesn\\'t look very social.",
+    "examine": "Doesn't look very social.",
     "lifepoints": "120",
     "attack_level": "70",
     "strength_level": "70",
@@ -23841,7 +23954,7 @@
   {
     "id": "2607",
     "name": "TzHaar-Xil",
-    "examine": "Doesn\\'t look very social.",
+    "examine": "Doesn't look very social.",
     "lifepoints": "120",
     "attack_level": "70",
     "strength_level": "70",
@@ -23859,7 +23972,7 @@
   {
     "id": "2608",
     "name": "TzHaar-Xil",
-    "examine": "Doesn\\'t look very social.",
+    "examine": "Doesn't look very social.",
     "lifepoints": "120",
     "attack_level": "70",
     "strength_level": "70",
@@ -23877,7 +23990,7 @@
   {
     "id": "2609",
     "name": "TzHaar-Xil",
-    "examine": "Doesn\\'t look very social.",
+    "examine": "Doesn't look very social.",
     "lifepoints": "120",
     "attack_level": "70",
     "strength_level": "70",
@@ -24357,7 +24470,7 @@
   {
     "id": "2689",
     "name": "Frog",
-    "examine": "Didn\\'t the mage say this procedure was totally safe?",
+    "examine": "Didn't the mage say this procedure was totally safe?",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -24477,7 +24590,7 @@
   {
     "id": "2697",
     "name": "Mugger",
-    "examine": "He doesn\\'t look so happy now he\\'s in jail.",
+    "examine": "He doesn't look so happy now he's in jail.",
     "lifepoints": "15",
     "attack_level": "11",
     "strength_level": "11",
@@ -24516,7 +24629,7 @@
   {
     "id": "2699",
     "name": "Guard",
-    "examine": "He\\'s guarding the prison.",
+    "examine": "He's guarding the prison.",
     "lifepoints": "18",
     "attack_level": "13",
     "strength_level": "13",
@@ -24621,7 +24734,7 @@
   {
     "id": "2704",
     "name": "Guard",
-    "examine": "He\\'s asleep.",
+    "examine": "He's asleep.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -24827,7 +24940,7 @@
   {
     "id": "2718",
     "name": "Betty",
-    "examine": "She\\'ll store my items for me.",
+    "examine": "She'll store my items for me.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -25037,7 +25150,7 @@
   {
     "id": "2739",
     "name": "Tok-Xil",
-    "examine": "I don\\'t like the look of those spines...",
+    "examine": "I don't like the look of those spines...",
     "lifepoints": "40",
     "attack_level": "80",
     "strength_level": "80",
@@ -25056,7 +25169,7 @@
   {
     "id": "2740",
     "name": "Tok-Xil",
-    "examine": "I don\\'t like the look of those spines...",
+    "examine": "I don't like the look of those spines...",
     "lifepoints": "40",
     "attack_level": "80",
     "strength_level": "80",
@@ -25113,7 +25226,7 @@
   {
     "id": "2743",
     "name": "Ket-Zek",
-    "examine": "That\\'s one hot dog!",
+    "examine": "That's one hot dog!",
     "lifepoints": "160",
     "attack_level": "150",
     "strength_level": "150",
@@ -25132,7 +25245,7 @@
   {
     "id": "2744",
     "name": "Ket-Zek",
-    "examine": "That\\'s one hot dog!",
+    "examine": "That's one hot dog!",
     "lifepoints": "160",
     "attack_level": "150",
     "strength_level": "150",
@@ -25378,7 +25491,7 @@
   {
     "id": "2802",
     "name": "Gnome Coach",
-    "examine": "They just call him \\'Coach\\'.",
+    "examine": "They just call him 'Coach'.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -25656,7 +25769,7 @@
   {
     "id": "2830",
     "name": "Captain Donnie",
-    "examine": "I wonder if it was all the \\'rum\\' that pickled him.",
+    "examine": "I wonder if it was all the 'rum' that pickled him.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -25672,7 +25785,7 @@
   {
     "id": "2831",
     "name": "Zombie protester",
-    "examine": "Sticking it to \\'The Man\\'.",
+    "examine": "Sticking it to 'The Man'.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -25689,7 +25802,7 @@
   {
     "id": "2832",
     "name": "Zombie protester",
-    "examine": "Sticking it to \\'The Man\\'.",
+    "examine": "Sticking it to 'The Man'.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -25706,7 +25819,7 @@
   {
     "id": "2833",
     "name": "Zombie protester",
-    "examine": "Sticking it to \\'The Man\\'.",
+    "examine": "Sticking it to 'The Man'.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -25723,7 +25836,7 @@
   {
     "id": "2834",
     "name": "Zombie protester",
-    "examine": "Sticking it to \\'The Man\\'.",
+    "examine": "Sticking it to 'The Man'.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -25740,7 +25853,7 @@
   {
     "id": "2835",
     "name": "Zombie protester",
-    "examine": "Sticking it to \\'The Man\\'.",
+    "examine": "Sticking it to 'The Man'.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -25757,7 +25870,7 @@
   {
     "id": "2836",
     "name": "Zombie protester",
-    "examine": "Sticking it to \\'The Man\\'.",
+    "examine": "Sticking it to 'The Man'.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -26403,7 +26516,7 @@
   {
     "id": "2889",
     "name": "Rock lobster",
-    "examine": "It wasn\\'t a rock... It was a rock lobster!",
+    "examine": "It wasn't a rock... It was a rock lobster!",
     "lifepoints": "150",
     "attack_level": "80",
     "strength_level": "135",
@@ -26604,7 +26717,7 @@
   },
   {
     "id": "2952",
-    "name": "Smokin\\' Joe",
+    "name": "Smokin' Joe",
     "examine": "What is he?",
     "lifepoints": "10",
     "attack_level": "1",
@@ -26896,7 +27009,7 @@
   },
   {
     "id": "2997",
-    "name": "Gertrude\\'s cat",
+    "name": "Gertrude's cat",
     "examine": "A friendly feline?",
     "lifepoints": "10",
     "attack_level": "1",
@@ -26913,7 +27026,7 @@
   {
     "id": "2998",
     "name": "Gambler",
-    "examine": "Very well to do. I wonder what he\\'s doing here.",
+    "examine": "Very well to do. I wonder what he's doing here.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -27733,7 +27846,7 @@
   },
   {
     "id": "3067",
-    "name": "Leon d\\'Cour",
+    "name": "Leon d'Cour",
     "lifepoints": "123",
     "attack_level": "1",
     "strength_level": "1",
@@ -27855,7 +27968,7 @@
   {
     "id": "3072",
     "name": "Ice giant",
-    "examine": "He\\'s got icicles in his beard.",
+    "examine": "He's got icicles in his beard.",
     "lifepoints": "105",
     "attack_level": "37",
     "strength_level": "37",
@@ -28207,7 +28320,7 @@
   {
     "id": "3123",
     "name": "Simon Templeton",
-    "examine": "Looks like he\\'s seen the inside of a few tombs.",
+    "examine": "Looks like he's seen the inside of a few tombs.",
     "lifepoints": "12",
     "attack_level": "1",
     "strength_level": "1",
@@ -28880,7 +28993,7 @@
   {
     "id": "3222",
     "name": "Drunken man",
-    "examine": "One of RuneScape\\'s many citizens",
+    "examine": "One of RuneScape's many citizens",
     "lifepoints": "5",
     "attack_level": "4",
     "strength_level": "4",
@@ -28898,7 +29011,7 @@
   {
     "id": "3223",
     "name": "Man",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "4",
     "attack_level": "3",
     "strength_level": "3",
@@ -28930,7 +29043,7 @@
   {
     "id": "3225",
     "name": "Man",
-    "examine": "One of RuneScape\\'s many citizens. He looks worried about something.",
+    "examine": "One of RuneScape's many citizens. He looks worried about something.",
     "lifepoints": "4",
     "attack_level": "3",
     "strength_level": "3",
@@ -29122,7 +29235,7 @@
   {
     "id": "3235",
     "name": "Apprentice workman",
-    "examine": "He\\'s learning a trade.",
+    "examine": "He's learning a trade.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -29926,7 +30039,7 @@
   {
     "id": "3282",
     "name": "Engineer",
-    "examine": "He\\'s building a cannon.",
+    "examine": "He's building a cannon.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -30012,7 +30125,7 @@
   {
     "id": "3293",
     "name": "null",
-    "examine": "She\\'ll store my items for me.",
+    "examine": "She'll store my items for me.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -30127,7 +30240,7 @@
   {
     "id": "3304",
     "name": "Fairy Godfather",
-    "examine": "I\\'m gonna make him an offer he can\\'t refuse.",
+    "examine": "I'm gonna make him an offer he can't refuse.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -30269,7 +30382,7 @@
   {
     "id": "3334",
     "name": "Cavemouth",
-    "examine": "It\\'s made of pure fire.",
+    "examine": "It's made of pure fire.",
     "lifepoints": "1000",
     "attack_level": "200",
     "strength_level": "1500",
@@ -30683,7 +30796,7 @@
   {
     "id": "3404",
     "name": "null",
-    "examine": "Rutmir\\'s assistant.",
+    "examine": "Rutmir's assistant.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -30890,7 +31003,7 @@
   {
     "id": "3416",
     "name": "Pirate Pete",
-    "examine": "He\\'ll store my items for me.",
+    "examine": "He'll store my items for me.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -30907,7 +31020,7 @@
   {
     "id": "3418",
     "name": "Pirate Pete",
-    "examine": "He\\'ll store my items for me.",
+    "examine": "He'll store my items for me.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -31823,7 +31936,7 @@
   {
     "id": "3585",
     "name": "Huge spider",
-    "examine": "No spider could grow that big! It\\'s unrealistic!",
+    "examine": "No spider could grow that big! It's unrealistic!",
     "lifepoints": "122",
     "attack_level": "1",
     "strength_level": "1",
@@ -31910,7 +32023,7 @@
   {
     "id": "3589",
     "name": "Kalphite Soldier",
-    "examine": "I don\\'t think insect repellent will work...",
+    "examine": "I don't think insect repellent will work...",
     "lifepoints": "114",
     "attack_level": "70",
     "strength_level": "70",
@@ -32089,7 +32202,7 @@
   {
     "id": "3618",
     "name": "Tentacle",
-    "examine": "I\\'m glad I can\\'t see the rest of it!",
+    "examine": "I'm glad I can't see the rest of it!",
     "lifepoints": "171",
     "attack_level": "80",
     "strength_level": "80",
@@ -32109,7 +32222,7 @@
   {
     "id": "3619",
     "name": "Head",
-    "examine": "I\\'m glad I can\\'t see the rest of it!",
+    "examine": "I'm glad I can't see the rest of it!",
     "lifepoints": "171",
     "attack_level": "85",
     "strength_level": "85",
@@ -32366,7 +32479,7 @@
   {
     "id": "3673",
     "name": "Ram",
-    "examine": "White and fluffy.",
+    "examine": "White and shaggy.",
     "lifepoints": "2",
     "attack_level": "2",
     "strength_level": "2",
@@ -32698,7 +32811,7 @@
   {
     "id": "3727",
     "name": "Splatter",
-    "examine": "Don\\'t burst its bubble!",
+    "examine": "Don't burst its bubble!",
     "lifepoints": "13",
     "attack_level": "20",
     "strength_level": "20",
@@ -32718,7 +32831,7 @@
   {
     "id": "3728",
     "name": "Splatter",
-    "examine": "Don\\'t burst its bubble!",
+    "examine": "Don't burst its bubble!",
     "lifepoints": "23",
     "attack_level": "25",
     "strength_level": "25",
@@ -32737,7 +32850,7 @@
   {
     "id": "3729",
     "name": "Splatter",
-    "examine": "Don\\'t burst its bubble!",
+    "examine": "Don't burst its bubble!",
     "lifepoints": "23",
     "attack_level": "30",
     "strength_level": "30",
@@ -32756,7 +32869,7 @@
   {
     "id": "3730",
     "name": "Splatter",
-    "examine": "Don\\'t burst its bubble!",
+    "examine": "Don't burst its bubble!",
     "lifepoints": "23",
     "attack_level": "35",
     "strength_level": "35",
@@ -32775,7 +32888,7 @@
   {
     "id": "3731",
     "name": "Splatter",
-    "examine": "Don\\'t burst its bubble!",
+    "examine": "Don't burst its bubble!",
     "lifepoints": "23",
     "attack_level": "40",
     "strength_level": "40",
@@ -33770,7 +33883,7 @@
   {
     "id": "3777",
     "name": "Doomsayer",
-    "examine": "Cheerful",
+    "examine": "Cheerful, helpful and optimistic, I'll bet.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -34104,7 +34217,7 @@
   {
     "id": "3806",
     "name": "Millie Miller",
-    "examine": "Miss Millicent Miller the Miller of Mill Lane Mill",
+    "examine": "Miss Millicent Miller the Miller of Mill Lane Mill.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -34112,6 +34225,17 @@
     "range_level": "1",
     "safespot": null
   },
+  {
+    "id": "3807",
+    "name": "Gillie Groats",
+    "examine": "Gillie the Milkmaid milks cows. She's udderly fantastic at it.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "safespot": null
+  },  
   {
     "id": "3808",
     "name": "Tortoise",
@@ -34441,7 +34565,7 @@
   {
     "id": "3915",
     "name": "Man",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "1",
     "attack_level": "1",
     "strength_level": "1",
@@ -34461,7 +34585,7 @@
   {
     "id": "3916",
     "name": "Carpenter Kjallak",
-    "examine": "His bark\\'s worse than his blight.",
+    "examine": "His bark's worse than his blight.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -34547,7 +34671,7 @@
   {
     "id": "3942",
     "name": "Guard",
-    "examine": "He\\'s guarding the entrance to the dungeons.",
+    "examine": "He's guarding the entrance to the dungeons.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -34649,7 +34773,7 @@
   {
     "id": "4245",
     "name": "Chief servant",
-    "examine": "Head of the servants\\' guild.",
+    "examine": "Head of the servants' guild.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -35587,7 +35711,7 @@
   {
     "id": "4345",
     "name": "Albino bat",
-    "examine": "It\\'s all white by me.",
+    "examine": "It's all white by me.",
     "lifepoints": "44",
     "attack_level": "31",
     "strength_level": "31",
@@ -35861,7 +35985,7 @@
   {
     "id": "4362",
     "name": "Honest Jimmy",
-    "examine": "I can\\'t wait to buy from a guy with Honest in his name...",
+    "examine": "I can't wait to buy from a guy with Honest in his name...",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -36261,7 +36385,7 @@
   {
     "id": "4397",
     "name": "Catablepon",
-    "examine": "Big Cow-like... But cows don\\'t have serpent tails!",
+    "examine": "Big Cow-like... But cows don't have serpent tails!",
     "lifepoints": "50",
     "attack_level": "38",
     "strength_level": "38",
@@ -36284,7 +36408,7 @@
   {
     "id": "4398",
     "name": "Catablepon",
-    "examine": "Big Cow-like... But cows don\\'t have serpent tails!",
+    "examine": "Big Cow-like... But cows don't have serpent tails!",
     "lifepoints": "70",
     "attack_level": "38",
     "strength_level": "38",
@@ -36307,7 +36431,7 @@
   {
     "id": "4399",
     "name": "Catablepon",
-    "examine": "Big Cow-like... But cows don\\'t have serpent tails!",
+    "examine": "Big Cow-like... But cows don't have serpent tails!",
     "lifepoints": "50",
     "attack_level": "40",
     "strength_level": "58",
@@ -36855,7 +36979,7 @@
   {
     "id": "4476",
     "name": "Guardian mummy",
-    "examine": "Who\\'s your mummy?",
+    "examine": "Who's your mummy?",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -37287,7 +37411,7 @@
   {
     "id": "4509",
     "name": "Me",
-    "examine": "It\\'s like looking in the mirror.",
+    "examine": "It's like looking in the mirror.",
     "lifepoints": "171",
     "attack_level": "60",
     "strength_level": "60",
@@ -37305,7 +37429,7 @@
   {
     "id": "4510",
     "name": "Me",
-    "examine": "It\\'s like looking in the mirror.",
+    "examine": "It's like looking in the mirror.",
     "lifepoints": "171",
     "attack_level": "60",
     "strength_level": "60",
@@ -37371,7 +37495,7 @@
   {
     "id": "4524",
     "name": "Enchanted Bucket",
-    "examine": "I\\'m not sure if it\\'s actually doing anything of use.",
+    "examine": "I'm not sure if it's actually doing anything of use.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -37574,7 +37698,7 @@
   },
   {
     "id": "4541",
-    "name": "\\'Beefy\\' Burns",
+    "name": "'Beefy' Burns",
     "examine": "A stickler for hygiene in the kitchen.",
     "lifepoints": "10",
     "attack_level": "1",
@@ -37590,7 +37714,7 @@
   },
   {
     "id": "4542",
-    "name": "\\'Eagle-eye\\' Shultz",
+    "name": "'Eagle-eye' Shultz",
     "examine": "A keen-eyed lookout with a telescope.",
     "lifepoints": "10",
     "attack_level": "1",
@@ -37606,7 +37730,7 @@
   },
   {
     "id": "4543",
-    "name": "First mate \\'Davey-boy\\",
+    "name": "First mate 'Davey-boy",
     "examine": "First mate to Captain Bentley.",
     "lifepoints": "10",
     "attack_level": "1",
@@ -37622,7 +37746,7 @@
   },
   {
     "id": "4545",
-    "name": "\\'Picarron\\' Pete",
+    "name": "'Picarron' Pete",
     "examine": "A pirate through and through.",
     "lifepoints": "10",
     "attack_level": "1",
@@ -37683,7 +37807,7 @@
   {
     "id": "4549",
     "name": "Tommy 2-times",
-    "examine": "Nobody really knows why he\\'s called Tommy 2-times...",
+    "examine": "Nobody really knows why he's called Tommy 2-times...",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -37699,7 +37823,7 @@
   {
     "id": "4550",
     "name": "Murky Pat",
-    "examine": "Don\\'t look him straight in the eyes. He\\'ll eat you alive!",
+    "examine": "Don't look him straight in the eyes. He'll eat you alive!",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -37730,7 +37854,7 @@
   },
   {
     "id": "4554",
-    "name": "\\'Beedy-eye\\' Jones",
+    "name": "'Beedy-eye' Jones",
     "examine": "Is he looking at me?",
     "lifepoints": "10",
     "attack_level": "1",
@@ -37762,7 +37886,7 @@
   },
   {
     "id": "4556",
-    "name": "\\'Lecherous\\' Lee",
+    "name": "'Lecherous' Lee",
     "examine": "A low-down",
     "lifepoints": "10",
     "attack_level": "1",
@@ -37778,7 +37902,7 @@
   },
   {
     "id": "4557",
-    "name": "\\'Sticky\\' Sanders",
+    "name": "'Sticky' Sanders",
     "examine": "Apparently his nickname comes from his fondness for jam.",
     "lifepoints": "10",
     "attack_level": "1",
@@ -37891,7 +38015,7 @@
   {
     "id": "4580",
     "name": "Ambassador Gimblewap",
-    "examine": "He\\'s very diplomatic.",
+    "examine": "He's very diplomatic.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -38107,7 +38231,7 @@
   {
     "id": "4607",
     "name": "Black Cat",
-    "examine": "A witch\\'s black cat.",
+    "examine": "A witch's black cat.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -38404,7 +38528,7 @@
   {
     "id": "4654",
     "name": "Trader Crewmember",
-    "examine": "She\\'ll never be able to climb rigging in that.",
+    "examine": "She'll never be able to climb rigging in that.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -39015,7 +39139,7 @@
   {
     "id": "4686",
     "name": "Ice giant",
-    "examine": "He\\'s got icicles in his beard.",
+    "examine": "He's got icicles in his beard.",
     "lifepoints": "105",
     "attack_level": "37",
     "strength_level": "37",
@@ -39514,7 +39638,7 @@
   {
     "id": "4707",
     "name": "Magic Tutor",
-    "examine": "Mikasi",
+    "examine": "Mikasi looks ready to teach you about magic.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -40089,7 +40213,7 @@
   {
     "id": "4766",
     "name": "Stray dog",
-    "examine": "Looks like it\\'s got fleas!",
+    "examine": "Looks like it's got fleas!",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -41125,7 +41249,7 @@
   {
     "id": "4870",
     "name": "Fisherman",
-    "examine": "Not Thok\\'s pretty lass.",
+    "examine": "Not Thok's pretty lass.",
     "lifepoints": "28",
     "attack_level": "1",
     "strength_level": "1",
@@ -41208,6 +41332,134 @@
     "combat_audio": "469,472,471",
     "safespot": null
   },
+  {
+    "id": "4899",
+    "name": "Cooking Tutor",
+    "examine": "Cordero looks ready to teach you how to cook.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  },   
+  {
+    "id": "4900",
+    "name": "Crafting Tutor",
+    "examine": "Cadmus, looking a little bit crafty.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  }, 
+  {
+    "id": "4901",
+    "name": "Fishing Tutor",
+    "examine": "Finlay, mending a crayfish cage.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  }, 
+  {
+    "id": "4902",
+    "name": "Mining Tutor",
+    "examine": "Monlum, surveying the rocks.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  },   
+  {
+    "id": "4903",
+    "name": "Prayer Tutor",
+    "examine": "Yauchomi, follower of Saradomin.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  },
+  {
+    "id": "4904",
+    "name": "Smelting Tutor",
+    "examine": "Feoras looks a bit fiery.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  },      
+  {
+    "id": "4906",
+    "name": "Woodcutting Tutor",
+    "examine": "Wilfred, a chip off the old block.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  },    
+  {
+    "id": "4907",
+    "name": "Bank Tutor",
+    "examine": "Barb, ready to teach you about banking.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "melee_animation": "0",
+    "defence_animation": "0",
+    "death_animation": "0",
+    "magic_animation": "0",
+    "range_animation": "0",
+    "safespot": null
+  },   
   {
     "id": "4909",
     "name": "Fritz the Glassblower",
@@ -41464,7 +41716,7 @@
   {
     "id": "4930",
     "name": "Goat",
-    "examine": "They\\'ll eat anything!",
+    "examine": "They'll eat anything!",
     "lifepoints": "7",
     "attack_level": "5",
     "strength_level": "5",
@@ -41482,7 +41734,7 @@
   {
     "id": "4931",
     "name": "Goat",
-    "examine": "They\\'ll eat anything!",
+    "examine": "They'll eat anything!",
     "lifepoints": "7",
     "attack_level": "5",
     "strength_level": "5",
@@ -41500,7 +41752,7 @@
   {
     "id": "4932",
     "name": "Billy Goat",
-    "examine": "They\\'ll eat anything!",
+    "examine": "They'll eat anything!",
     "lifepoints": "15",
     "attack_level": "11",
     "strength_level": "11",
@@ -41645,7 +41897,7 @@
   {
     "id": "4941",
     "name": "Blessed giant rat",
-    "examine": "It\\'s one of Iban\\'s pet vermin.",
+    "examine": "It's one of Iban's pet vermin.",
     "lifepoints": "17",
     "attack_level": "12",
     "strength_level": "12",
@@ -41761,7 +42013,7 @@
   {
     "id": "4965",
     "name": "Tool Leprechaun",
-    "examine": "It\\'s a leprechaun sunbathing on a mountain.",
+    "examine": "It's a leprechaun sunbathing on a mountain.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -41818,7 +42070,7 @@
   {
     "id": "4975",
     "name": "Male slave",
-    "examine": "It looks like he\\'s been here a long time.",
+    "examine": "It looks like he's been here a long time.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -41835,7 +42087,7 @@
   {
     "id": "4977",
     "name": "Female slave",
-    "examine": "She looks like she\\'s been down here a long time.",
+    "examine": "She looks like she's been down here a long time.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -42294,7 +42546,7 @@
   {
     "id": "5039",
     "name": "Sergeant Sambur",
-    "examine": "He\\'s keeping a close eye on that nearby door.",
+    "examine": "He's keeping a close eye on that nearby door.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -42342,7 +42594,7 @@
   {
     "id": "5042",
     "name": "Penance Runner",
-    "examine": "He\\'s making a run for it!",
+    "examine": "He's making a run for it!",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -42426,7 +42678,7 @@
   {
     "id": "5073",
     "name": "Crimson swift",
-    "examine": "This bird obviously doesn\\'t believe in subtlety.",
+    "examine": "This bird obviously doesn't believe in subtlety.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -42504,7 +42756,7 @@
   {
     "id": "5080",
     "name": "Carnivorous chinchompa",
-    "examine": "It looks fluffy and cute; it\\'s probably deadly.",
+    "examine": "It looks fluffy and cute; it's probably deadly.",
     "lifepoints": "10",
     "attack_level": "2",
     "strength_level": "2",
@@ -42553,7 +42805,7 @@
   {
     "id": "5083",
     "name": "Snowy knight",
-    "examine": "It\\'s a snowy knight butterfly.",
+    "examine": "It's a snowy knight butterfly.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -42569,7 +42821,7 @@
   {
     "id": "5084",
     "name": "Sapphire glacialis",
-    "examine": "A sapphire glacialis. It doesn\\'t look as pretentious as its name sounds.",
+    "examine": "A sapphire glacialis. It doesn't look as pretentious as its name sounds.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -42585,7 +42837,7 @@
   {
     "id": "5085",
     "name": "Ruby harvest",
-    "examine": "It\\'s a ruby harvest butterfly.",
+    "examine": "It's a ruby harvest butterfly.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -42617,7 +42869,7 @@
   {
     "id": "5087",
     "name": "Sabre-toothed kebbit",
-    "examine": "Now that\\'s a big overbite.",
+    "examine": "Now that's a big overbite.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -42649,7 +42901,7 @@
   {
     "id": "5089",
     "name": "Wild kebbit",
-    "examine": "That\\'s a mean looking set of claws.",
+    "examine": "That's a mean looking set of claws.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -42716,7 +42968,7 @@
   {
     "id": "5100",
     "name": "Dashing kebbit",
-    "examine": "Now you see it; now you don\\'t.",
+    "examine": "Now you see it; now you don't.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -42732,7 +42984,7 @@
   {
     "id": "5103",
     "name": "Sabre-toothed kyatt",
-    "examine": "It\\'s just like a big, white, furry, deadly can opener.",
+    "examine": "It's just like a big, white, furry, deadly can opener.",
     "lifepoints": "10",
     "attack_level": "25",
     "strength_level": "25",
@@ -42750,7 +43002,7 @@
   {
     "id": "5104",
     "name": "Spined larupia",
-    "examine": "If you tried to ride that, you\\'d just impale yourself!",
+    "examine": "If you tried to ride that, you'd just impale yourself!",
     "lifepoints": "10",
     "attack_level": "15",
     "strength_level": "15",
@@ -42767,7 +43019,7 @@
   {
     "id": "5105",
     "name": "Horned graahk",
-    "examine": "Get in a graahk\\'s way and you\\'re going to know about it... however briefly.",
+    "examine": "Get in a graahk's way and you're going to know about it... however briefly.",
     "lifepoints": "10",
     "attack_level": "25",
     "strength_level": "25",
@@ -42784,7 +43036,7 @@
   {
     "id": "5106",
     "name": "null",
-    "examine": "It\\'s just like a big, white, furry, deadly can opener.",
+    "examine": "It's just like a big, white, furry, deadly can opener.",
     "lifepoints": "10",
     "attack_level": "20",
     "strength_level": "20",
@@ -43007,7 +43259,7 @@
   {
     "id": "5144",
     "name": "Double agent",
-    "examine": "He\\'s playing both sides!",
+    "examine": "He's playing both sides!",
     "lifepoints": "85",
     "attack_level": "75",
     "strength_level": "75",
@@ -43043,7 +43295,7 @@
   },
   {
     "id": "5146",
-    "name": "Li\\'l lamb",
+    "name": "Li'l lamb",
     "examine": "How cute!",
     "lifepoints": "10",
     "attack_level": "1",
@@ -43076,7 +43328,7 @@
   {
     "id": "5162",
     "name": "Sheep",
-    "examine": "White and shaggy.",
+    "examine": "White and fluffy.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -43092,7 +43344,7 @@
   {
     "id": "5163",
     "name": "Sheep",
-    "examine": "White and shaggy.",
+    "examine": "White and fluffy.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -43141,6 +43393,7 @@
     "id": "5168",
     "name": "Ram",
     "lifepoints": "4",
+    "examine": "White and shaggy.",	
     "attack_level": "1",
     "strength_level": "1",
     "defence_level": "1",
@@ -43156,6 +43409,7 @@
     "id": "5169",
     "name": "Ram",
     "lifepoints": "4",
+    "examine": "White and shaggy.",	
     "attack_level": "1",
     "strength_level": "1",
     "defence_level": "1",
@@ -43189,7 +43443,7 @@
   {
     "id": "5171",
     "name": "Mountain goat",
-    "examine": "This beast doesn\\'t need climbing boots.",
+    "examine": "This beast doesn't need climbing boots.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -43323,7 +43577,7 @@
   {
     "id": "5188",
     "name": "Saff Waldon",
-    "examine": "It\\'s Nial",
+    "examine": "It's Nial",
     "lifepoints": "165",
     "attack_level": "58",
     "strength_level": "58",
@@ -43419,7 +43673,7 @@
   },
   {
     "id": "5204",
-    "name": "Alice\\'s husband",
+    "name": "Alice's husband",
     "examine": "She needs to work out before facing Thok.",
     "lifepoints": "22",
     "attack_level": "80",
@@ -43506,7 +43760,7 @@
   {
     "id": "5248",
     "name": "Queen spawn",
-    "examine": "What\\'s it looking at?",
+    "examine": "What's it looking at?",
     "lifepoints": "450",
     "attack_level": "60",
     "strength_level": "60",
@@ -44889,7 +45143,7 @@
   {
     "id": "5355",
     "name": "Undead one",
-    "examine": "The animated dead; one of Rashiliyia\\'s minions.",
+    "examine": "The animated dead; one of Rashiliyia's minions.",
     "lifepoints": "45",
     "attack_level": "32",
     "strength_level": "32",
@@ -44910,7 +45164,7 @@
   {
     "id": "5356",
     "name": "Undead one",
-    "examine": "The animated dead; one of Rashiliyia\\'s minions.",
+    "examine": "The animated dead; one of Rashiliyia's minions.",
     "lifepoints": "45",
     "attack_level": "32",
     "strength_level": "32",
@@ -44931,7 +45185,7 @@
   {
     "id": "5357",
     "name": "Undead one",
-    "examine": "The animated dead; one of Rashiliyia\\'s minions.",
+    "examine": "The animated dead; one of Rashiliyia's minions.",
     "lifepoints": "47",
     "attack_level": "33",
     "strength_level": "33",
@@ -44952,7 +45206,7 @@
   {
     "id": "5358",
     "name": "Undead one",
-    "examine": "The animated dead; one of Rashiliyia\\'s minions.",
+    "examine": "The animated dead; one of Rashiliyia's minions.",
     "lifepoints": "47",
     "attack_level": "33",
     "strength_level": "33",
@@ -45518,7 +45772,7 @@
   {
     "id": "5388",
     "name": "Skeleton",
-    "examine": "That skeleton\\'s grinning at me.",
+    "examine": "That skeleton's grinning at me.",
     "lifepoints": "71",
     "attack_level": "50",
     "strength_level": "50",
@@ -45562,7 +45816,7 @@
   {
     "id": "5390",
     "name": "Skeleton",
-    "examine": "How do you know if a skeleton\\'s male or female?",
+    "examine": "How do you know if a skeleton's male or female?",
     "lifepoints": "420",
     "attack_level": "36",
     "strength_level": "36",
@@ -45583,7 +45837,7 @@
   {
     "id": "5391",
     "name": "Skeleton",
-    "examine": "He obviously hasn\\'t realised he\\'s dead.",
+    "examine": "He obviously hasn't realised he's dead.",
     "lifepoints": "78",
     "attack_level": "55",
     "strength_level": "55",
@@ -46332,7 +46586,7 @@
   {
     "id": "5492",
     "name": "Guard",
-    "examine": "One of King Sorvott\\'s militia.",
+    "examine": "One of King Sorvott's militia.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -46368,7 +46622,7 @@
   {
     "id": "5514",
     "name": "Honour guard",
-    "examine": "The Burgher\\'s protectors.",
+    "examine": "The Burgher's protectors.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -46385,7 +46639,7 @@
   {
     "id": "5516",
     "name": "Honour guard",
-    "examine": "The Burgher\\'s protectors.",
+    "examine": "The Burgher's protectors.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -46630,7 +46884,7 @@
   {
     "id": "5571",
     "name": "Sin Seer",
-    "examine": "She\\'s honest about the things you aren\\'t.",
+    "examine": "She's honest about the things you aren't.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -46696,7 +46950,7 @@
   },
   {
     "id": "5589",
-    "name": "\\'Black-eye\\",
+    "name": "'Black-eye",
     "examine": "Famous for his fights.",
     "lifepoints": "10",
     "attack_level": "1",
@@ -46712,7 +46966,7 @@
   },
   {
     "id": "5590",
-    "name": "\\'No fingers\\",
+    "name": "'No fingers",
     "examine": "Count them pinkies!",
     "lifepoints": "10",
     "attack_level": "1",
@@ -46728,7 +46982,7 @@
   },
   {
     "id": "5591",
-    "name": "\\'Gummy\\",
+    "name": "'Gummy",
     "examine": "He wishes he had teeth.",
     "lifepoints": "10",
     "attack_level": "1",
@@ -46920,7 +47174,7 @@
   {
     "id": "5614",
     "name": "Puffin",
-    "examine": "I\\'d prefer it if it were a muffin...",
+    "examine": "I'd prefer it if it were a muffin...",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -46998,7 +47252,7 @@
   {
     "id": "5628",
     "name": "Sorebones",
-    "examine": "I hope his hands don\\'t shake.",
+    "examine": "I hope his hands don't shake.",
     "lifepoints": "50",
     "attack_level": "35",
     "strength_level": "35",
@@ -47738,7 +47992,7 @@
   {
     "id": "5666",
     "name": "Barrelchest",
-    "examine": "It\\'s trying to mash you flat! Less examine",
+    "examine": "It's trying to mash you flat! Less examine",
     "lifepoints": "285",
     "attack_level": "52",
     "strength_level": "52",
@@ -48241,7 +48495,7 @@
   },
   {
     "id": "5803",
-    "name": "Young \\'un",
+    "name": "Young 'un",
     "examine": "A goblin baby.",
     "lifepoints": "10",
     "attack_level": "1",
@@ -48450,7 +48704,7 @@
   {
     "id": "5823",
     "name": "Spit goblin",
-    "examine": "Don\\'t spit",
+    "examine": "Don't spit",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -48526,7 +48780,7 @@
   {
     "id": "5842",
     "name": "Outlaw",
-    "examine": "A mean looking outlaw. Don\\'t get too close!",
+    "examine": "A mean looking outlaw. Don't get too close!",
     "lifepoints": "32",
     "attack_level": "23",
     "strength_level": "23",
@@ -48544,7 +48798,7 @@
   {
     "id": "5843",
     "name": "Outlaw",
-    "examine": "A mean looking outlaw. Don\\'t get too close!",
+    "examine": "A mean looking outlaw. Don't get too close!",
     "lifepoints": "32",
     "attack_level": "23",
     "strength_level": "23",
@@ -48562,7 +48816,7 @@
   {
     "id": "5844",
     "name": "Outlaw",
-    "examine": "A mean looking outlaw. Don\\'t get too close!",
+    "examine": "A mean looking outlaw. Don't get too close!",
     "lifepoints": "32",
     "attack_level": "23",
     "strength_level": "23",
@@ -48580,7 +48834,7 @@
   {
     "id": "5845",
     "name": "Outlaw",
-    "examine": "A mean looking outlaw. Don\\'t get too close!",
+    "examine": "A mean looking outlaw. Don't get too close!",
     "lifepoints": "32",
     "attack_level": "23",
     "strength_level": "23",
@@ -48598,7 +48852,7 @@
   {
     "id": "5846",
     "name": "Outlaw",
-    "examine": "A mean looking outlaw. Don\\'t get too close!",
+    "examine": "A mean looking outlaw. Don't get too close!",
     "lifepoints": "32",
     "attack_level": "23",
     "strength_level": "23",
@@ -48616,7 +48870,7 @@
   {
     "id": "5847",
     "name": "Outlaw",
-    "examine": "A mean looking outlaw. Don\\'t get too close!",
+    "examine": "A mean looking outlaw. Don't get too close!",
     "lifepoints": "32",
     "attack_level": "23",
     "strength_level": "23",
@@ -48634,7 +48888,7 @@
   {
     "id": "5848",
     "name": "Outlaw",
-    "examine": "A mean looking outlaw. Don\\'t get too close!",
+    "examine": "A mean looking outlaw. Don't get too close!",
     "lifepoints": "32",
     "attack_level": "23",
     "strength_level": "23",
@@ -48652,7 +48906,7 @@
   {
     "id": "5849",
     "name": "Outlaw",
-    "examine": "A mean looking outlaw. Don\\'t get too close!",
+    "examine": "A mean looking outlaw. Don't get too close!",
     "lifepoints": "32",
     "attack_level": "23",
     "strength_level": "23",
@@ -48670,7 +48924,7 @@
   {
     "id": "5850",
     "name": "Outlaw",
-    "examine": "A mean looking outlaw. Don\\'t get too close!",
+    "examine": "A mean looking outlaw. Don't get too close!",
     "lifepoints": "32",
     "attack_level": "23",
     "strength_level": "23",
@@ -48688,7 +48942,7 @@
   {
     "id": "5851",
     "name": "Outlaw",
-    "examine": "A mean looking outlaw. Don\\'t get too close!",
+    "examine": "A mean looking outlaw. Don't get too close!",
     "lifepoints": "32",
     "attack_level": "23",
     "strength_level": "23",
@@ -49144,7 +49398,7 @@
   {
     "id": "5905",
     "name": "The Illusive",
-    "examine": "What if you don\\'t know how to win?",
+    "examine": "What if you don't know how to win?",
     "lifepoints": "90",
     "attack_level": "63",
     "strength_level": "63",
@@ -49164,7 +49418,7 @@
   {
     "id": "5906",
     "name": "A Doubt",
-    "examine": "You can\\'t escape your inadequacy!",
+    "examine": "You can't escape your inadequacy!",
     "lifepoints": "78",
     "attack_level": "55",
     "strength_level": "55",
@@ -49200,7 +49454,7 @@
   {
     "id": "5909",
     "name": "Barbarian",
-    "examine": "Don\\'t let her arm-wrestle you for money.",
+    "examine": "Don't let her arm-wrestle you for money.",
     "lifepoints": "28",
     "attack_level": "20",
     "strength_level": "20",
@@ -49235,7 +49489,7 @@
   {
     "id": "5911",
     "name": "Cook",
-    "examine": "He\\'s suspiciously talented with a meat-cleaver.",
+    "examine": "He's suspiciously talented with a meat-cleaver.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -49268,7 +49522,7 @@
   {
     "id": "5916",
     "name": "Cleaner",
-    "examine": "Does what too many people aren\\'t interested in doing.",
+    "examine": "Does what too many people aren't interested in doing.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -49302,7 +49556,7 @@
   {
     "id": "5919",
     "name": "Guard",
-    "examine": "He tries to keep order around here. His bizarre uniform isn\\'t helping.",
+    "examine": "He tries to keep order around here. His bizarre uniform isn't helping.",
     "lifepoints": "25",
     "attack_level": "18",
     "strength_level": "18",
@@ -49323,7 +49577,7 @@
   {
     "id": "5920",
     "name": "Guard",
-    "examine": "He tries to keep order around here. His bizarre uniform isn\\'t helping.",
+    "examine": "He tries to keep order around here. His bizarre uniform isn't helping.",
     "lifepoints": "25",
     "attack_level": "18",
     "strength_level": "18",
@@ -49344,7 +49598,7 @@
   {
     "id": "5921",
     "name": "Trainee Guard",
-    "examine": "He\\'s studying to be a guard.",
+    "examine": "He's studying to be a guard.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -49377,7 +49631,7 @@
   {
     "id": "5923",
     "name": "Man",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "4",
     "attack_level": "3",
     "strength_level": "3",
@@ -49398,7 +49652,7 @@
   {
     "id": "5924",
     "name": "Woman",
-    "examine": "One of RuneScape\\'s many citizens.",
+    "examine": "One of RuneScape's many citizens.",
     "lifepoints": "4",
     "attack_level": "3",
     "strength_level": "3",
@@ -49844,7 +50098,7 @@
   {
     "id": "5977",
     "name": "Camel display",
-    "examine": "He\\'s got the hump.",
+    "examine": "He's got the hump.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -50054,7 +50308,7 @@
   {
     "id": "6006",
     "name": "Werewolf",
-    "examine": "I wish the moon wasn\\'t out!",
+    "examine": "I wish the moon wasn't out!",
     "lifepoints": "87",
     "attack_level": "76",
     "strength_level": "76",
@@ -50077,7 +50331,7 @@
   {
     "id": "6007",
     "name": "Werewolf",
-    "examine": "I wish the moon wasn\\'t out!",
+    "examine": "I wish the moon wasn't out!",
     "lifepoints": "87",
     "attack_level": "76",
     "strength_level": "76",
@@ -50100,7 +50354,7 @@
   {
     "id": "6008",
     "name": "Werewolf",
-    "examine": "I wish the moon wasn\\'t out!",
+    "examine": "I wish the moon wasn't out!",
     "lifepoints": "87",
     "attack_level": "76",
     "strength_level": "76",
@@ -50123,7 +50377,7 @@
   {
     "id": "6009",
     "name": "Werewolf",
-    "examine": "I wish the moon wasn\\'t out!",
+    "examine": "I wish the moon wasn't out!",
     "lifepoints": "87",
     "attack_level": "76",
     "strength_level": "76",
@@ -50146,7 +50400,7 @@
   {
     "id": "6010",
     "name": "Werewolf",
-    "examine": "I wish the moon wasn\\'t out!",
+    "examine": "I wish the moon wasn't out!",
     "lifepoints": "87",
     "attack_level": "76",
     "strength_level": "76",
@@ -50167,7 +50421,7 @@
   {
     "id": "6011",
     "name": "Werewolf",
-    "examine": "I wish the moon wasn\\'t out!",
+    "examine": "I wish the moon wasn't out!",
     "lifepoints": "87",
     "attack_level": "76",
     "strength_level": "76",
@@ -50190,7 +50444,7 @@
   {
     "id": "6012",
     "name": "Werewolf",
-    "examine": "I wish the moon wasn\\'t out!",
+    "examine": "I wish the moon wasn't out!",
     "lifepoints": "87",
     "attack_level": "76",
     "strength_level": "76",
@@ -50213,7 +50467,7 @@
   {
     "id": "6013",
     "name": "Werewolf",
-    "examine": "I wish the moon wasn\\'t out!",
+    "examine": "I wish the moon wasn't out!",
     "lifepoints": "87",
     "attack_level": "76",
     "strength_level": "76",
@@ -50236,7 +50490,7 @@
   {
     "id": "6014",
     "name": "Werewolf",
-    "examine": "I wish the moon wasn\\'t out!",
+    "examine": "I wish the moon wasn't out!",
     "lifepoints": "87",
     "attack_level": "76",
     "strength_level": "76",
@@ -51359,7 +51613,7 @@
   {
     "id": "6105",
     "name": "Skeleton warlord",
-    "examine": "He\\'s heartless.",
+    "examine": "He's heartless.",
     "lifepoints": "92",
     "attack_level": "65",
     "strength_level": "65",
@@ -51380,7 +51634,7 @@
   {
     "id": "6106",
     "name": "Skeleton heavy",
-    "examine": "He\\'s less heavy now.",
+    "examine": "He's less heavy now.",
     "lifepoints": "91",
     "attack_level": "64",
     "strength_level": "64",
@@ -51620,7 +51874,7 @@
   {
     "id": "6124",
     "name": "Wagchin",
-    "examine": "A young goblin \\'beauty\\'.",
+    "examine": "A young goblin 'beauty'.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -52048,7 +52302,7 @@
   {
     "id": "6159",
     "name": "Workman",
-    "examine": "It is cold and solid. Thok will strap it to Marmaros\\'s leg.",
+    "examine": "It is cold and solid. Thok will strap it to Marmaros's leg.",
     "lifepoints": "114",
     "attack_level": "50",
     "strength_level": "50",
@@ -52133,7 +52387,7 @@
   {
     "id": "6188",
     "name": "Renegade knight",
-    "examine": "He isn\\'t very friendly.",
+    "examine": "He isn't very friendly.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -52189,7 +52443,7 @@
   {
     "id": "6198",
     "name": "Sinclair",
-    "examine": "The name isn\\'t just for show.",
+    "examine": "The name isn't just for show.",
     "lifepoints": "85",
     "attack_level": "55",
     "strength_level": "55",
@@ -52227,7 +52481,7 @@
   },
   {
     "id": "6203",
-    "name": "K\\'ril Tsutsaroth",
+    "name": "K'ril Tsutsaroth",
     "examine": "A servant of the god Zamorak. ",
     "lifepoints": "255",
     "attack_level": "78",
@@ -52291,7 +52545,7 @@
   },
   {
     "id": "6206",
-    "name": "Zakl\\'n Gritch",
+    "name": "Zakl'n Gritch",
     "examine": "Scourge of light.",
     "lifepoints": "150",
     "attack_level": "1",
@@ -52412,7 +52666,7 @@
   {
     "id": "6212",
     "name": "Werewolf",
-    "examine": "He doesn\\'t look pleased to see me.",
+    "examine": "He doesn't look pleased to see me.",
     "lifepoints": "100",
     "attack_level": "64",
     "strength_level": "64",
@@ -52434,7 +52688,7 @@
   {
     "id": "6213",
     "name": "Werewolf",
-    "examine": "He doesn\\'t look pleased to see me.",
+    "examine": "He doesn't look pleased to see me.",
     "lifepoints": "100",
     "attack_level": "64",
     "strength_level": "64",
@@ -52795,7 +53049,7 @@
   {
     "id": "6230",
     "name": "Spiritual ranger",
-    "examine": "Armadyl\\'s favourite servant.",
+    "examine": "Armadyl's favourite servant.",
     "lifepoints": "89",
     "attack_level": "1",
     "strength_level": "1",
@@ -53191,7 +53445,7 @@
   {
     "id": "6247",
     "name": "Commander Zilyana",
-    "examine": "Commander of Saradomin\\'s forces. ",
+    "examine": "Commander of Saradomin's forces. ",
     "lifepoints": "256",
     "attack_level": "80",
     "strength_level": "80",
@@ -53401,7 +53655,7 @@
   {
     "id": "6257",
     "name": "Spiritual mage",
-    "examine": "Saradomin\\'s holy mage.",
+    "examine": "Saradomin's holy mage.",
     "lifepoints": "85",
     "attack_level": "1",
     "strength_level": "1",
@@ -53835,7 +54089,7 @@
   {
     "id": "6278",
     "name": "Spiritual mage",
-    "examine": "One of Bandos\\' chosen.",
+    "examine": "One of Bandos' chosen.",
     "lifepoints": "106",
     "attack_level": "1",
     "strength_level": "1",
@@ -53965,7 +54219,7 @@
   {
     "id": "6285",
     "name": "Warped terrorbird",
-    "examine": "You don\\'t think you can harm this terrorbird.",
+    "examine": "You don't think you can harm this terrorbird.",
     "lifepoints": "168",
     "attack_level": "59",
     "strength_level": "59",
@@ -53988,7 +54242,7 @@
   {
     "id": "6286",
     "name": "Warped terrorbird",
-    "examine": "You don\\'t think you can harm this terrorbird.",
+    "examine": "You don't think you can harm this terrorbird.",
     "lifepoints": "168",
     "attack_level": "59",
     "strength_level": "59",
@@ -54011,7 +54265,7 @@
   {
     "id": "6287",
     "name": "Warped terrorbird",
-    "examine": "You don\\'t think you can harm this terrorbird.",
+    "examine": "You don't think you can harm this terrorbird.",
     "lifepoints": "168",
     "attack_level": "59",
     "strength_level": "59",
@@ -54034,7 +54288,7 @@
   {
     "id": "6288",
     "name": "Warped terrorbird",
-    "examine": "You don\\'t think you can harm this terrorbird.",
+    "examine": "You don't think you can harm this terrorbird.",
     "lifepoints": "168",
     "attack_level": "59",
     "strength_level": "59",
@@ -54057,7 +54311,7 @@
   {
     "id": "6289",
     "name": "Warped terrorbird",
-    "examine": "You don\\'t think you can harm this terrorbird.",
+    "examine": "You don't think you can harm this terrorbird.",
     "lifepoints": "168",
     "attack_level": "59",
     "strength_level": "59",
@@ -54097,7 +54351,7 @@
   {
     "id": "6291",
     "name": "Warped terrorbird",
-    "examine": "You don\\'t think you can harm this terrorbird.",
+    "examine": "You don't think you can harm this terrorbird.",
     "lifepoints": "168",
     "attack_level": "59",
     "strength_level": "59",
@@ -54120,7 +54374,7 @@
   {
     "id": "6292",
     "name": "Warped terrorbird",
-    "examine": "You don\\'t think you can harm this terrorbird.",
+    "examine": "You don't think you can harm this terrorbird.",
     "lifepoints": "168",
     "attack_level": "59",
     "strength_level": "59",
@@ -54160,7 +54414,7 @@
   {
     "id": "6294",
     "name": "Warped terrorbird",
-    "examine": "You don\\'t think you can harm this terrorbird.",
+    "examine": "You don't think you can harm this terrorbird.",
     "lifepoints": "308",
     "attack_level": "59",
     "strength_level": "59",
@@ -54183,7 +54437,7 @@
   {
     "id": "6295",
     "name": "Warped terrorbird",
-    "examine": "You don\\'t think you can harm this terrorbird.",
+    "examine": "You don't think you can harm this terrorbird.",
     "lifepoints": "308",
     "attack_level": "59",
     "strength_level": "59",
@@ -54206,7 +54460,7 @@
   {
     "id": "6296",
     "name": "Warped tortoise",
-    "examine": "You don\\'t think you can harm this creature.",
+    "examine": "You don't think you can harm this creature.",
     "lifepoints": "148",
     "attack_level": "39",
     "strength_level": "39",
@@ -55018,7 +55272,7 @@
   {
     "id": "6378",
     "name": "Tenacious toucan",
-    "examine": "I wouldn\\'t want to be footing that bill.",
+    "examine": "I wouldn't want to be footing that bill.",
     "lifepoints": "85",
     "attack_level": "60",
     "strength_level": "60",
@@ -56172,7 +56426,7 @@
   {
     "id": "6496",
     "name": "Goblin guard",
-    "examine": "He doesn\\'t look very welcoming.",
+    "examine": "He doesn't look very welcoming.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -56189,7 +56443,7 @@
   {
     "id": "6497",
     "name": "Goblin guard",
-    "examine": "He doesn\\'t look very welcoming.",
+    "examine": "He doesn't look very welcoming.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -56342,7 +56596,7 @@
   {
     "id": "6508",
     "name": "Registrar 3",
-    "examine": "The highest ranking of the Spider Queen\\'s servants.",
+    "examine": "The highest ranking of the Spider Queen's servants.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -56358,7 +56612,7 @@
   {
     "id": "6509",
     "name": "Registrar 4",
-    "examine": "The head of the Spider Queen\\'s army.",
+    "examine": "The head of the Spider Queen's army.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -56390,7 +56644,7 @@
   {
     "id": "6512",
     "name": "Spectator",
-    "examine": "Sir Amik\\'s loyal squire.",
+    "examine": "Sir Amik's loyal squire.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -56485,7 +56739,7 @@
   {
     "id": "6524",
     "name": "Bob Barter (herbs)",
-    "examine": "He\\'s probably seen better days.",
+    "examine": "He's probably seen better days.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -56533,7 +56787,7 @@
   {
     "id": "6527",
     "name": "Hofuthand (armour and weapons)",
-    "examine": "He\\'s travelled a long way.",
+    "examine": "He's travelled a long way.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -56734,7 +56988,7 @@
   {
     "id": "6610",
     "name": "Revenant ork",
-    "examine": "It\\'s an NPC.",
+    "examine": "It's an NPC.",
     "lifepoints": "105",
     "attack_level": "1",
     "strength_level": "1",
@@ -57962,7 +58216,7 @@
   {
     "id": "6706",
     "name": "Revenant goblin",
-    "examine": "He\\'s not from around here.",
+    "examine": "He's not from around here.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -58046,7 +58300,7 @@
   {
     "id": "6712",
     "name": "Revenant werewolf",
-    "examine": "It\\'s trying to mash your house! Less examine",
+    "examine": "It's trying to mash your house! Less examine",
     "lifepoints": "285",
     "attack_level": "60",
     "strength_level": "60",
@@ -58415,7 +58669,7 @@
   {
     "id": "6763",
     "name": "Dried zombie",
-    "examine": "I bet it\\'s parched.",
+    "examine": "I bet it's parched.",
     "lifepoints": "68",
     "attack_level": "48",
     "strength_level": "48",
@@ -58550,7 +58804,7 @@
   {
     "id": "6772",
     "name": "Scarab larva",
-    "examine": "It\\'s not quite small enough to stamp upon.",
+    "examine": "It's not quite small enough to stamp upon.",
     "lifepoints": "25",
     "attack_level": "18",
     "strength_level": "18",
@@ -58590,7 +58844,7 @@
   {
     "id": "6774",
     "name": "Scabaras lancer",
-    "examine": "It might be angry...it\\'s hard to tell.",
+    "examine": "It might be angry...it's hard to tell.",
     "lifepoints": "78",
     "attack_level": "55",
     "strength_level": "55",
@@ -58649,7 +58903,7 @@
   {
     "id": "6778",
     "name": "Locust ranger",
-    "examine": "He\\'ll have someone\\'s eye out with that.",
+    "examine": "He'll have someone's eye out with that.",
     "lifepoints": "78",
     "attack_level": "41",
     "strength_level": "41",
@@ -58862,7 +59116,7 @@
   {
     "id": "6796",
     "name": "Granite crab",
-    "examine": "Is it a stone? Is it a crab? No! It\\'s Granite Crab!",
+    "examine": "Is it a stone? Is it a crab? No! It's Granite Crab!",
     "lifepoints": "39",
     "attack_level": "18",
     "strength_level": "17",
@@ -58882,7 +59136,7 @@
   {
     "id": "6797",
     "name": "Granite crab",
-    "examine": "Is it a stone? Is it a crab? No! It\\'s Granite Crab!",
+    "examine": "Is it a stone? Is it a crab? No! It's Granite Crab!",
     "lifepoints": "39",
     "attack_level": "18",
     "strength_level": "17",
@@ -59238,7 +59492,7 @@
   {
     "id": "6819",
     "name": "Abyssal parasite",
-    "examine": "It\\'s an extra-planar little blood hoover.",
+    "examine": "It's an extra-planar little blood hoover.",
     "lifepoints": "77",
     "attack_level": "50",
     "strength_level": "50",
@@ -59396,7 +59650,7 @@
   {
     "id": "6827",
     "name": "Stranger plant",
-    "examine": "It\\'s mean and green.",
+    "examine": "It's mean and green.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -59411,7 +59665,7 @@
   {
     "id": "6828",
     "name": "Stranger plant",
-    "examine": "It\\'s mean and green!",
+    "examine": "It's mean and green!",
     "lifepoints": "91",
     "attack_level": "55",
     "strength_level": "55",
@@ -59431,7 +59685,7 @@
   {
     "id": "6829",
     "name": "Spirit wolf",
-    "examine": "Man\\'s significantly less-domesticated friend.",
+    "examine": "Man's significantly less-domesticated friend.",
     "lifepoints": "15",
     "attack_level": "16",
     "strength_level": "18",
@@ -59450,7 +59704,7 @@
   {
     "id": "6830",
     "name": "Spirit wolf",
-    "examine": "Man\\'s significantly less-domesticated friend.",
+    "examine": "Man's significantly less-domesticated friend.",
     "lifepoints": "15",
     "attack_level": "16",
     "strength_level": "18",
@@ -59504,7 +59758,7 @@
   {
     "id": "6834",
     "name": "Evil turnip",
-    "examine": "If you think he\\'s evil",
+    "examine": "If you think he's evil",
     "lifepoints": "60",
     "attack_level": "42",
     "strength_level": "42",
@@ -59683,7 +59937,7 @@
   {
     "id": "6844",
     "name": "Bloated leech",
-    "examine": "It\\'s like a little suction pump with eyes.",
+    "examine": "It's like a little suction pump with eyes.",
     "lifepoints": "70",
     "attack_level": "49",
     "strength_level": "49",
@@ -59768,7 +60022,7 @@
   {
     "id": "6849",
     "name": "Granite lobster",
-    "examine": "Puts the \\'crust\\' in \\'crustacean\\'.",
+    "examine": "Puts the 'crust' in 'crustacean'.",
     "lifepoints": "10",
     "attack_level": "60",
     "strength_level": "60",
@@ -59784,7 +60038,7 @@
   {
     "id": "6850",
     "name": "Granite lobster",
-    "examine": "Puts the \\'crust\\' in \\'crustacean\\'.",
+    "examine": "Puts the 'crust' in 'crustacean'.",
     "lifepoints": "105",
     "attack_level": "60",
     "strength_level": "60",
@@ -59827,7 +60081,7 @@
   {
     "id": "6853",
     "name": "Bronze minotaur",
-    "examine": "He\\'s just a big bully.",
+    "examine": "He's just a big bully.",
     "lifepoints": "15",
     "attack_level": "31",
     "strength_level": "1",
@@ -59845,7 +60099,7 @@
   {
     "id": "6854",
     "name": "Bronze minotaur",
-    "examine": "He\\'s just a big bully.",
+    "examine": "He's just a big bully.",
     "lifepoints": "51",
     "attack_level": "15",
     "strength_level": "15",
@@ -59880,7 +60134,7 @@
   {
     "id": "6856",
     "name": "Iron minotaur",
-    "examine": "He\\'s just a big bully.",
+    "examine": "He's just a big bully.",
     "lifepoints": "65",
     "attack_level": "25",
     "strength_level": "25",
@@ -59900,7 +60154,7 @@
   {
     "id": "6857",
     "name": "Steel minotaur",
-    "examine": "He\\'s just a big bully!",
+    "examine": "He's just a big bully!",
     "lifepoints": "44",
     "attack_level": "70",
     "strength_level": "30",
@@ -59917,7 +60171,7 @@
   {
     "id": "6858",
     "name": "Steel minotaur",
-    "examine": "He\\'s just a big bully.",
+    "examine": "He's just a big bully.",
     "lifepoints": "80",
     "attack_level": "35",
     "strength_level": "35",
@@ -59937,7 +60191,7 @@
   {
     "id": "6859",
     "name": "Mithril minotaur",
-    "examine": "He\\'s just a big bully",
+    "examine": "He's just a big bully",
     "lifepoints": "37",
     "attack_level": "40",
     "strength_level": "40",
@@ -59955,7 +60209,7 @@
   {
     "id": "6860",
     "name": "Mithril minotaur",
-    "examine": "He\\'s just a big bully.",
+    "examine": "He's just a big bully.",
     "lifepoints": "94",
     "attack_level": "45",
     "strength_level": "45",
@@ -59975,7 +60229,7 @@
   {
     "id": "6861",
     "name": "Adamant minotaur",
-    "examine": "He\\'s just a big bully.",
+    "examine": "He's just a big bully.",
     "lifepoints": "43",
     "attack_level": "55",
     "strength_level": "1",
@@ -59993,7 +60247,7 @@
   {
     "id": "6862",
     "name": "Adamant minotaur",
-    "examine": "He\\'s just a big bully.",
+    "examine": "He's just a big bully.",
     "lifepoints": "108",
     "attack_level": "55",
     "strength_level": "55",
@@ -60013,7 +60267,7 @@
   {
     "id": "6863",
     "name": "Rune minotaur",
-    "examine": "He\\'s just a big bully.",
+    "examine": "He's just a big bully.",
     "lifepoints": "57",
     "attack_level": "65",
     "strength_level": "65",
@@ -60030,7 +60284,7 @@
   {
     "id": "6864",
     "name": "Rune minotaur",
-    "examine": "He\\'s just a big bully.",
+    "examine": "He's just a big bully.",
     "lifepoints": "57",
     "attack_level": "65",
     "strength_level": "65",
@@ -60114,7 +60368,7 @@
   {
     "id": "6869",
     "name": "Wolpertinger",
-    "examine": "It\\'s just a harmless wee rabbit. ",
+    "examine": "It's just a harmless wee rabbit. ",
     "lifepoints": "619",
     "attack_level": "1",
     "strength_level": "1",
@@ -60135,7 +60389,7 @@
   {
     "id": "6870",
     "name": "Wolpertinger",
-    "examine": "It\\'s just a harmless wee rabbit. ",
+    "examine": "It's just a harmless wee rabbit. ",
     "lifepoints": "619",
     "attack_level": "1",
     "strength_level": "1",
@@ -60710,7 +60964,7 @@
   {
     "id": "6917",
     "name": "Baby gecko",
-    "examine": "It\\'s so adorably tiny!",
+    "examine": "It's so adorably tiny!",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -60764,7 +61018,7 @@
   {
     "id": "6944",
     "name": "Baby monkey",
-    "examine": "It\\'s a tiny",
+    "examine": "It's a tiny",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -61218,7 +61472,7 @@
   {
     "id": "7003",
     "name": "Fire giant",
-    "examine": "It\\'s an NPC.",
+    "examine": "It's an NPC.",
     "lifepoints": "111",
     "attack_level": "1",
     "strength_level": "1",
@@ -61743,7 +61997,7 @@
   {
     "id": "7120",
     "name": "Tyras guard",
-    "examine": "One of King Tyras\\'s men.",
+    "examine": "One of King Tyras's men.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -61859,7 +62113,7 @@
   {
     "id": "7133",
     "name": "Bork",
-    "examine": "That\\'s one big Ork... ",
+    "examine": "That's one big Ork... ",
     "lifepoints": "300",
     "attack_level": "100",
     "strength_level": "90",
@@ -61896,7 +62150,7 @@
   {
     "id": "7135",
     "name": "Ork legion",
-    "examine": "Aww, aren\\'t they the cutest li - Argh!",
+    "examine": "Aww, aren't they the cutest li - Argh!",
     "lifepoints": "100",
     "attack_level": "68",
     "strength_level": "68",
@@ -61915,7 +62169,7 @@
   },
   {
     "id": "7137",
-    "name": "Dagon\\'hai Elite",
+    "name": "Dagon'hai Elite",
     "examine": "A powerful wizard.",
     "lifepoints": "70",
     "attack_level": "1",
@@ -61932,8 +62186,8 @@
   },
   {
     "id": "7138",
-    "name": "Dagon\\'hai Monk",
-    "examine": "A monk of the Dagon\\'hai.",
+    "name": "Dagon'hai Monk",
+    "examine": "A monk of the Dagon'hai.",
     "lifepoints": "88",
     "attack_level": "84",
     "strength_level": "84",
@@ -61952,8 +62206,8 @@
   },
   {
     "id": "7139",
-    "name": "Dagon\\'hai Monk",
-    "examine": "A monk of the Dagon\\'hai.",
+    "name": "Dagon'hai Monk",
+    "examine": "A monk of the Dagon'hai.",
     "lifepoints": "88",
     "attack_level": "84",
     "strength_level": "84",
@@ -61972,8 +62226,8 @@
   },
   {
     "id": "7140",
-    "name": "Dagon\\'hai Monk",
-    "examine": "A monk of the Dagon\\'hai.",
+    "name": "Dagon'hai Monk",
+    "examine": "A monk of the Dagon'hai.",
     "lifepoints": "88",
     "attack_level": "84",
     "strength_level": "84",
@@ -62330,7 +62584,7 @@
   {
     "id": "7207",
     "name": "Spider",
-    "examine": "It\\'s searching for crumbs of chocolate.",
+    "examine": "It's searching for crumbs of chocolate.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -62560,7 +62814,7 @@
   {
     "id": "7228",
     "name": "Baby monkey",
-    "examine": "It\\'s a tiny",
+    "examine": "It's a tiny",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -62577,7 +62831,7 @@
   {
     "id": "7229",
     "name": "Baby monkey",
-    "examine": "It\\'s a tiny",
+    "examine": "It's a tiny",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -62594,7 +62848,7 @@
   {
     "id": "7230",
     "name": "Baby monkey",
-    "examine": "It\\'s a tiny",
+    "examine": "It's a tiny",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -62611,7 +62865,7 @@
   {
     "id": "7231",
     "name": "Baby monkey",
-    "examine": "It\\'s a tiny",
+    "examine": "It's a tiny",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -62628,7 +62882,7 @@
   {
     "id": "7232",
     "name": "Baby monkey",
-    "examine": "It\\'s a tiny",
+    "examine": "It's a tiny",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -62645,7 +62899,7 @@
   {
     "id": "7233",
     "name": "Baby monkey",
-    "examine": "It\\'s a tiny",
+    "examine": "It's a tiny",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -62711,7 +62965,7 @@
   {
     "id": "7285",
     "name": "Baby gecko",
-    "examine": "It\\'s so adorably tiny!",
+    "examine": "It's so adorably tiny!",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -62890,7 +63144,7 @@
   {
     "id": "7339",
     "name": "Geyser titan",
-    "examine": "It\\'ll kill your enemies, and makes a great cup of tea.",
+    "examine": "It'll kill your enemies, and makes a great cup of tea.",
     "lifepoints": "620",
     "attack_level": "70",
     "strength_level": "70",
@@ -62911,7 +63165,7 @@
   {
     "id": "7340",
     "name": "Geyser titan",
-    "examine": "It\\'ll kill your enemies, and makes a great cup of tea.",
+    "examine": "It'll kill your enemies, and makes a great cup of tea.",
     "lifepoints": "620",
     "attack_level": "70",
     "strength_level": "70",
@@ -63449,7 +63703,7 @@
   {
     "id": "7373",
     "name": "Ravenous locust",
-    "examine": "It\\'s like a little stomach on wings.",
+    "examine": "It's like a little stomach on wings.",
     "lifepoints": "100",
     "attack_level": "60",
     "strength_level": "60",
@@ -63777,7 +64031,7 @@
   {
     "id": "7462",
     "name": "Hotwater",
-    "examine": "It\\'s bubbling, gross.",
+    "examine": "It's bubbling, gross.",
     "lifepoints": "120",
     "attack_level": "99",
     "strength_level": "99",
@@ -63796,7 +64050,7 @@
   {
     "id": "7463",
     "name": "Hotwater",
-    "examine": "It\\'s bubbling, gross.",
+    "examine": "It's bubbling, gross.",
     "lifepoints": "120",
     "attack_level": "99",
     "strength_level": "99",
@@ -63876,7 +64130,7 @@
   {
     "id": "7481",
     "name": "Cool Mom227",
-    "examine": "You clearly can\\'t live on treasure alone.",
+    "examine": "You clearly can't live on treasure alone.",
     "lifepoints": "42",
     "attack_level": "30",
     "strength_level": "30",
@@ -63978,7 +64232,7 @@
   {
     "id": "7487",
     "name": "1337sp34kr",
-    "examine": "An anatomist\\'s dream.",
+    "examine": "An anatomist's dream.",
     "lifepoints": "42",
     "attack_level": "30",
     "strength_level": "30",
@@ -64046,7 +64300,7 @@
   {
     "id": "7494",
     "name": "Sue Spammers",
-    "examine": "He hasn\\'t found much of use",
+    "examine": "He hasn't found much of use",
     "lifepoints": "42",
     "attack_level": "30",
     "strength_level": "30",
@@ -64131,7 +64385,7 @@
   {
     "id": "7501",
     "name": "Abone",
-    "examine": "It\\'s looking unwell - probably something it ate.",
+    "examine": "It's looking unwell - probably something it ate.",
     "lifepoints": "42",
     "attack_level": "30",
     "strength_level": "30",
@@ -64361,7 +64615,7 @@
   {
     "id": "7518",
     "name": "Morrisnorris",
-    "examine": "He\\'s asleep.",
+    "examine": "He's asleep.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -64377,7 +64631,7 @@
   {
     "id": "7519",
     "name": "Matt Blitzer",
-    "examine": "He\\'s propping the bar up. Or is it the other way round?",
+    "examine": "He's propping the bar up. Or is it the other way round?",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -64424,7 +64678,7 @@
   {
     "id": "7532",
     "name": "3sacrowd",
-    "examine": "It\\'s an NPC.",
+    "examine": "It's an NPC.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -64854,7 +65108,7 @@
   {
     "id": "7593",
     "name": "Shifter",
-    "examine": "He\\'s a little rough around the edges.",
+    "examine": "He's a little rough around the edges.",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -65146,7 +65400,7 @@
   {
     "id": "7640",
     "name": "Skeletal hand",
-    "examine": "Ew it\\'s still alive.",
+    "examine": "Ew it's still alive.",
     "lifepoints": "90",
     "attack_level": "85",
     "strength_level": "85",
@@ -65168,7 +65422,7 @@
   {
     "id": "7641",
     "name": "Zombie hand",
-    "examine": "Ew it\\'s still alive.",
+    "examine": "Ew it's still alive.",
     "lifepoints": "90",
     "attack_level": "75",
     "strength_level": "75",
@@ -66038,6 +66292,17 @@
     "safespot": null
   },
   {
+    "id": "7969",
+    "name": "Explorer Jack",
+    "examine": "He looks like a professional explorer.",
+    "lifepoints": "10",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "safespot": null
+  },  
+  {
     "id": "8133",
     "name": "Corporeal Beast",
     "examine": "A vision of supernatural horror.",
@@ -66103,7 +66368,7 @@
   {
     "id": "8151",
     "name": "Armoured zombie",
-    "examine": "It hasn\\'t quite gotten around to dying.",
+    "examine": "It hasn't quite gotten around to dying.",
     "lifepoints": "62",
     "attack_level": "50",
     "strength_level": "50",
