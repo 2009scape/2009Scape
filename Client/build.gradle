@@ -15,6 +15,7 @@ repositories {
 
 dependencies {
     implementation name: 'clientlibs'
+    implementation name: 'discord-rpc'
 }
 
 

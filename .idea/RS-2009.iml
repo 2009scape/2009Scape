@@ -28,5 +28,6 @@
     <orderEntry type="library" name="javassist-3.20.0-GA" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1.30-bin" level="project" />
     <orderEntry type="library" name="io.github.classgraph:classgraph:4.8.62" level="project" />
+    <orderEntry type="library" name="discord-rpc" level="project" />
   </component>
 </module>

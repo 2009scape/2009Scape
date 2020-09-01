@@ -131,6 +131,8 @@ public final class Client extends GameShell {
 					}
 				}
 				if(Class143.loadingStage == 0) {
+					// Discord
+					Discord.InitalizeDiscord();
 					Class3_Sub28_Sub1.updateLoadingBar((Color)null, var10, Class3_Sub17.aClass94_2464, LoadingStageNumber);
 				} else if(5 == Class143.loadingStage) {
 					Class3_Sub23.method406((byte)117, false, Class168.aClass3_Sub28_Sub17_2096);
@@ -138,7 +140,7 @@ public final class Client extends GameShell {
 					Class3_Sub17.method381(true);
 				} else if (25 != Class143.loadingStage && Class143.loadingStage != 28) {
 					if (Class143.loadingStage == 30) {
-						Class49.method1127(40 + -40);
+						Class49.method1127(0);
 					} else if (40 == Class143.loadingStage) {
 						Class3_Sub13.method164((byte) -95, false, RenderAnimationDefinition.method903(new RSString[]{TextCore.ConxLost, RSByteBuffer.aClass94_2598, TextCore.AttemptingReestablish}, (byte) -67));
 					}

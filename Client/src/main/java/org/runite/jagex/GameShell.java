@@ -532,7 +532,6 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
                Objects.requireNonNull(this.getAppletContext()).showDocument(this.getDocumentBase(), "_self");
                return;
             }
-
             Class3_Sub29.anApplet_Sub1_2588 = this;
             Class106.anInt1442 = 0;
             Class3_Sub13_Sub23_Sub1.anInt4033 = 1530;
