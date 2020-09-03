@@ -536,17 +536,12 @@ public class Player extends Entity {
 		}
 		if (this.isArtificial() && killer instanceof Player){
 			setAttribute("dead", true);
-			k.sendMessage("You did not gain any loot as the player you killed was artificial.");
-			return;
 		}
 		if (this.isArtificial() && killer instanceof NPC) {
 			return;
 		}
 		getPacketDispatch().sendMessage("Oh dear, you are dead!");
-		
-		if (!isArtificial()) {
-			getStatisticsManager().getDEATHS().incrementAmount();
-		}
+		getStatisticsManager().getDEATHS().incrementAmount();
 
 		//If player was a Hardcore Ironman, announce that they died
 		if (this.getIronmanManager().getMode().equals(IronmanMode.HARDCORE)){ //if this was checkRestriction, ultimate irons would be moved to HARDCORE_DEAD as well
