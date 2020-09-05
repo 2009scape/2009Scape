@@ -46,7 +46,7 @@ public class BotGrandExchange {
 
     public static void sellOnGE(int id, int value, int amount) {
         GrandExchangeOffer o;
-        if (botOffers.containsKey(id)) {
+        if (botOffers.containsKey(id) && botOffers.get(id) != null && botOffers.get(id).getState() != OfferState.COMPLETED) {
             o = botOffers.get(id);
             o.setAmount(amount + o.getAmount());
             o.setOfferedValue(value);
