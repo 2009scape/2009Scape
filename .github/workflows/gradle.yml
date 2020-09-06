@@ -20,10 +20,18 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build server.jar
+    - name: Build Server
       run: |
           cd Server/
-          gradle wrapper
-          chmod +x gradlew
-          ./gradlew build
+          gradle build
+
+    - name: Build Management Server
+      run: |
+          cd Management-Server/
+          gradle build
+
+    - name: Build Client
+      run: |
+          cd Client/
+          gradle build
 
