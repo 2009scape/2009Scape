@@ -49,13 +49,13 @@ public final class FatherUhrneyDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			if (player.getQuestRepository().getQuest("The Restless Ghost").getStage(player) == 0) {
+			if (player.getQuestRepository().getQuest(RestlessGhost.NAME).getStage(player) == 0) {
 				interpreter.sendOptions("Select an Option", "Well, that's friendly.", "I've come to respossess your house.");
 				stage = 1;
-			} else if (player.getQuestRepository().getQuest("The Restless Ghost").getStage(player) == 10) {
+			} else if (player.getQuestRepository().getQuest(RestlessGhost.NAME).getStage(player) == 10) {
 				interpreter.sendOptions("Select an Option", "Well, that's friendly.", "I've come to respossess your house.", "Father Aereck sent me to talk to you.");
 				stage = 500;
-			} else if (player.getGameAttributes().getAttributes().containsKey("restless-ghost:urhney") || player.getQuestRepository().isComplete("The Restless Ghost")) {
+			} else if (player.getGameAttributes().getAttributes().containsKey("restless-ghost:urhney") || player.getQuestRepository().isComplete(RestlessGhost.NAME)) {
 				interpreter.sendOptions("Select an Option", "Well, that's friendly.", "I've come to respossess your house.", "I've lost the Amulet of Ghostspeak.");
 				stage = 514;
 			}
@@ -112,7 +112,7 @@ public final class FatherUhrneyDialogue extends DialoguePlugin {
 			}
 			interpreter.sendItemMessage(552, "Father Urhney hands you an amulet.");
 			player.getInventory().add(new Item(552, 1));
-			player.getQuestRepository().getQuest("The Restless Ghost").setStage(player, 20);
+			player.getQuestRepository().getQuest(RestlessGhost.NAME).setStage(player, 20);
 			player.getGameAttributes().setAttribute("/save:restless-ghost:urhney", true);
 			stage = 509;
 			break;

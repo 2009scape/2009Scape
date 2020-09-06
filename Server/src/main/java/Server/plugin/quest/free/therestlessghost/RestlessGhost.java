@@ -15,7 +15,12 @@ import core.plugin.PluginManager;
  */
 @InitializablePlugin
 public class RestlessGhost extends Quest {
-	
+
+	/**
+	 * The name of the quest.
+	 */
+	public static final String NAME = "The Restless Ghost";
+
 	/**
 	 * The ghost speak amulet.
 	 */
@@ -25,7 +30,7 @@ public class RestlessGhost extends Quest {
 	 * Constructs a new {@Code RestlessGhost} {@Code Object}
 	 */
 	public RestlessGhost() {
-		super("The Restless Ghost", 25, 24, 1, 107, 0, 4, 5);
+		super(NAME, 25, 24, 1, 107, 0, 4, 5);
 	}	
 
 	@Override
