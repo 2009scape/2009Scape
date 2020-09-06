@@ -1244,7 +1244,7 @@ final class RSString implements Interface3 {
             if(Class86.aClass130_1194 == null) {
                Class86.aClass130_1194 = new Class130(4096);
             } else {
-               for(var5 = (Class3_Sub29)Class86.aClass130_1194.method1780(var2, (byte) 32 ^ 32); null != var5; var5 = (Class3_Sub29)Class86.aClass130_1194.method1784()) {
+               for(var5 = (Class3_Sub29)Class86.aClass130_1194.method1780(var2); null != var5; var5 = (Class3_Sub29)Class86.aClass130_1194.method1784()) {
                   if(this.method1528(var5.aClass94_2586)) {
                      return var5.aClass94_2586;
                   }

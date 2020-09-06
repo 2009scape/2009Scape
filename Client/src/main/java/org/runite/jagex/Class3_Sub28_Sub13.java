@@ -51,7 +51,7 @@ final class Class3_Sub28_Sub13 extends Node {
          if(null == this.aClass130_3663) {
             return this.aClass94_3664;
          } else {
-            Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_3663.method1780((long)var1, 0);
+            Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_3663.method1780((long)var1);
             return null == var4?this.aClass94_3664:var4.aClass94_2586;
          }
       } catch (RuntimeException var5) {
@@ -67,7 +67,7 @@ final class Class3_Sub28_Sub13 extends Node {
                this.method618();
             }
 
-            for (Class3_Sub10 var3 = (Class3_Sub10) this.aClass130_3666.method1780(var1.method1538(23), 8729 + -8729); var3 != null; var3 = (Class3_Sub10) this.aClass130_3666.method1784()) {
+            for (Class3_Sub10 var3 = (Class3_Sub10) this.aClass130_3666.method1780(var1.method1538(23)); var3 != null; var3 = (Class3_Sub10) this.aClass130_3666.method1784()) {
                if (var3.aClass94_2341.method1528(var1)) {
                   return true;
                }
@@ -108,7 +108,7 @@ final class Class3_Sub28_Sub13 extends Node {
          if(this.aClass130_3663 == null) {
             return this.anInt3667;
          } else {
-            Class3_Sub18 var3 = (Class3_Sub18)this.aClass130_3663.method1780((long)var2, 0);
+            Class3_Sub18 var3 = (Class3_Sub18)this.aClass130_3663.method1780((long)var2);
             return var3 != null?var3.anInt2467:this.anInt3667;
          }
       } catch (RuntimeException var4) {
@@ -125,7 +125,7 @@ final class Class3_Sub28_Sub13 extends Node {
                this.method622();
             }
 
-            Class3_Sub18 var3 = (Class3_Sub18)this.aClass130_3666.method1780((long)var2, 0);
+            Class3_Sub18 var3 = (Class3_Sub18)this.aClass130_3666.method1780((long)var2);
             return var3 != null;
          }
       } catch (RuntimeException var4) {

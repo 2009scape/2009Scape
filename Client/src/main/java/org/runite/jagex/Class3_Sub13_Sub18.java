@@ -22,7 +22,7 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
          }
 
          Class164_Sub2.method2249(var3);
-         RSInterface var5 = Class7.getRSInterface((byte)109, var4);
+         RSInterface var5 = Class7.getRSInterface(var4);
          if(null != var5) {
             Class20.method909(107, var5);
          }

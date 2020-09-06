@@ -33,7 +33,7 @@ final class AnimationDefinition {
 	static Class3_Sub11 method2052(Class130 var0, Class168 var2) {
 		try {
 			long var3 = (long)((var2.anInt2095 - -1 << 16) + var2.anInt2090) + (((long)var2.anInt2100 << 56) - -((long)var2.anInt2094 << 32));
-			Class3_Sub11 var5 = (Class3_Sub11)var0.method1780(var3, 0);
+			Class3_Sub11 var5 = (Class3_Sub11)var0.method1780(var3);
 			if(null == var5) {
 				var5 = new Class3_Sub11(var2.anInt2095, (float)var2.anInt2090, true, false, var2.anInt2094);
 				var0.method1779(var5, var3);

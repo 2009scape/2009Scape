@@ -136,16 +136,16 @@ final class Class47 {
       }
    }
 
-   final Node method1092(long var1) {
+   final Node getNodeByID(long nodeID) {
       try {
-         Node var4 = (Node)this.aClass130_745.method1780(var1, 0);
+         Node var4 = (Node)this.aClass130_745.method1780(nodeID);
          if(null != var4) {
-            this.aClass13_747.method879(var4, (byte)44);
+            this.aClass13_747.method879(var4);
          }
 
          return var4;
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "gn.N(" + var1 + ')');
+         throw Class44.clientError(var5, "gn.N(" + nodeID + ')');
       }
    }
 
@@ -482,7 +482,7 @@ final class Class47 {
                            method1095(var16, -var11.anInt208 + var14, -var11.anInt247 + var13, var11.aClass11Array262, var18, var11.anInt279, var17, var19, (byte) 52, var12);
                         }
 
-                        Class3_Sub31 var36 = (Class3_Sub31) Class3_Sub13_Sub17.aClass130_3208.method1780((long) var11.anInt279, 0);
+                        Class3_Sub31 var36 = (Class3_Sub31) Class3_Sub13_Sub17.aClass130_3208.method1780((long) var11.anInt279);
                         if (var36 != null) {
                            if (var36.anInt2603 == 0 && !Class38_Sub1.aBoolean2615 && NPCDefinition.anInt1297 >= var16 && Class38_Sub1.anInt2612 >= var17 && NPCDefinition.anInt1297 < var18 && Class38_Sub1.anInt2612 < var19 && !Class69.aBoolean1040) {
                               Class140_Sub7.aClass94Array2935[0] = TextCore.HasCancel;
@@ -1103,7 +1103,7 @@ final class Class47 {
          }
 
          this.aClass130_745.method1779(var1, var2);
-         this.aClass13_747.method879(var1, (byte)-126);
+         this.aClass13_747.method879(var1);
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "gn.L(" + (var1 != null?"{...}":"null") + ',' + var2 + ',' + var4 + ')');
       }

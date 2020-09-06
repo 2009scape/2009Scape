@@ -77,7 +77,7 @@ final class NodeList {
       }
    }
 
-   final void method879(Node var1, byte var2) {
+   final void method879(Node var1) {
       try {
          if(var1.aClass3_Sub28_2570 != null) {
             var1.method524();
@@ -88,7 +88,7 @@ final class NodeList {
          var1.aClass3_Sub28_2570.aClass3_Sub28_2578 = var1;
          var1.aClass3_Sub28_2578.aClass3_Sub28_2570 = var1;
       } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ce.E(" + (var1 != null?"{...}":"null") + ',' + var2 + ')');
+         throw Class44.clientError(var4, "ce.E(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

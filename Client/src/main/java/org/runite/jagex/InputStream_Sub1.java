@@ -46,7 +46,7 @@ final class InputStream_Sub1 extends InputStream {
       try {
          var1.getByteB();
          int var2 = var1.getByteB();
-         Class3_Sub13 var3 = Class130.method1777(var2, true);
+         Class3_Sub13 var3 = Class130.method1777(var2);
          Objects.requireNonNull(var3).anInt2381 = var1.getByteB();
          int var4 = var1.getByteB();
          for(int var5 = 0; var5 < var4; ++var5) {

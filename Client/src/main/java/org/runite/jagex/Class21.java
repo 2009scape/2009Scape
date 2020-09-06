@@ -87,7 +87,7 @@ final class Class21 {
          var4.anInt2602 = interfaceId;
          Class3_Sub13_Sub17.aClass130_3208.method1779(var4, (long)interfaceHash);
          Class3_Sub13_Sub13.method232(interfaceId);
-         RSInterface var5 = Class7.getRSInterface((byte)122, interfaceHash);
+         RSInterface var5 = Class7.getRSInterface(interfaceHash);
          if(var5 == null) {
         	 System.out.println("Invalid interface opened - [window=" + (interfaceHash >> 16) + ", child=" + (interfaceHash & 0xFF) + ", id=" + interfaceId + "]");
          } else {

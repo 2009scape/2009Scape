@@ -10,7 +10,7 @@ final class Class162 {
 
    static void method2203(Player var0) {
       try {
-         Class3_Sub9 var2 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1780(var0.displayName.toLong(8 + -126), 0);
+         Class3_Sub9 var2 = (Class3_Sub9)Class3_Sub28_Sub7_Sub1.aClass130_4046.method1780(var0.displayName.toLong(8 + -126));
 
          if(null != var2) {
             if(var2.aClass3_Sub24_Sub1_2312 != null) {

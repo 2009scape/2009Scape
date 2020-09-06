@@ -90,7 +90,7 @@ class Class163_Sub1 extends Class163 {
                         if(var2 == 25 || var2 == 23 || 48 == var2 || var2 == 7 || 13 == var2 || var2 == 47 || var2 == 5 || var2 == 43 || var2 == 35 || var2 == 58 || var2 == 22 || var2 == 1006) {
                            var3 = Class117.anIntArray1613[-1 + Class3_Sub13_Sub34.anInt3415];
                            var4 = Class27.anIntArray512[Class3_Sub13_Sub34.anInt3415 + -1];
-                           RSInterface var5 = Class7.getRSInterface((byte)113, var4);
+                           RSInterface var5 = Class7.getRSInterface(var4);
                            Class3_Sub1 var6 = Client.method44(Objects.requireNonNull(var5));
                            if(var6.method100() || var6.method93()) {
                               Class40.anInt677 = 0;
@@ -99,7 +99,7 @@ class Class163_Sub1 extends Class163 {
                                  Class20.method909(-67, Class67.aClass11_1017);
                               }
 
-                              Class67.aClass11_1017 = Class7.getRSInterface((byte)119, var4);
+                              Class67.aClass11_1017 = Class7.getRSInterface(var4);
                               Class129_Sub1.anInt2693 = anInt2993;
                               InputStream_Sub1.anInt40 = Class38_Sub1.anInt2614;
                               PacketParser.anInt86 = var3;

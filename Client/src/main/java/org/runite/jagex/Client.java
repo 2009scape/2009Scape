@@ -218,7 +218,7 @@ public final class Client extends GameShell {
 			return null;
 		} else {
 			for(int var2 = 0; var2 < var1; ++var2) {
-				var0 = Class7.getRSInterface((byte)127, var0.parentId);
+				var0 = Class7.getRSInterface(var0.parentId);
 				if(var0 == null) {
 					return null;
 				}
@@ -268,7 +268,7 @@ public final class Client extends GameShell {
 			}
 
 			Class163_Sub1_Sub1.method2215(Class3_Sub28_Sub12.aCanvas3648);
-			Class130.method1783(4, Class3_Sub28_Sub12.aCanvas3648);
+			Class130.method1783(Class3_Sub28_Sub12.aCanvas3648);
 			if(null != Class38.aClass146_668) {
 				Class38.aClass146_668.method2082(Class3_Sub28_Sub12.aCanvas3648);
 			}
@@ -508,7 +508,7 @@ public final class Client extends GameShell {
 			Player.method1982((byte)121);
 			Class61.method1217(0);
 			Class3_Sub28_Sub16.method634((byte)108);
-			Class130.method1774(103);
+			Class130.method1774();
 			Class146.method2081(0);
 			Class3_Sub19.method387(103);
 			Class133.method1802(25);
@@ -762,7 +762,7 @@ public final class Client extends GameShell {
 	}
 
 	static Class3_Sub1 method44(RSInterface var0) {
-		Class3_Sub1 var1 = (Class3_Sub1)Class124.aClass130_1659.method1780(((long)var0.anInt279 << 32) + (long)var0.anInt191, 0);
+		Class3_Sub1 var1 = (Class3_Sub1)Class124.aClass130_1659.method1780(((long)var0.anInt279 << 32) + (long)var0.anInt191);
 		return var1 != null?var1:var0.aClass3_Sub1_257;
 	}
 
@@ -901,7 +901,7 @@ public final class Client extends GameShell {
 
 								var12 = var11.aClass11_2449;
 								if(0 <= var12.anInt191) {
-									var13 = Class7.getRSInterface((byte)118, var12.parentId);
+									var13 = Class7.getRSInterface(var12.parentId);
 									if(var13 == null || null == var13.aClass11Array262 || var12.anInt191 >= var13.aClass11Array262.length || var12 != var13.aClass11Array262[var12.anInt191]) {
 										continue;
 									}
@@ -913,7 +913,7 @@ public final class Client extends GameShell {
 
 						var12 = var11.aClass11_2449;
 						if(var12.anInt191 >= 0) {
-							var13 = Class7.getRSInterface((byte)112, var12.parentId);
+							var13 = Class7.getRSInterface(var12.parentId);
 							if(null == var13 || var13.aClass11Array262 == null || var13.aClass11Array262.length <= var12.anInt191 || var12 != var13.aClass11Array262[var12.anInt191]) {
 								continue;
 							}
@@ -925,7 +925,7 @@ public final class Client extends GameShell {
 
 				var12 = var11.aClass11_2449;
 				if(var12.anInt191 >= 0) {
-					var13 = Class7.getRSInterface((byte)126, var12.parentId);
+					var13 = Class7.getRSInterface(var12.parentId);
 					if(null == var13 || null == var13.aClass11Array262 || var12.anInt191 >= var13.aClass11Array262.length || var12 != var13.aClass11Array262[var12.anInt191]) {
 						continue;
 					}
@@ -1624,7 +1624,7 @@ public final class Client extends GameShell {
 							handleItemSwitch(inter.aClass11Array262, inter.anInt279, var12, var13, var14, var15, var10 - inter.anInt247, var11 - inter.anInt208);
 						}
 
-						Class3_Sub31 var28 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)inter.anInt279, 0);
+						Class3_Sub31 var28 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)inter.anInt279);
 						if(var28 != null) {
 							GraphicDefinition.method967(var10, var13, var11, var14, var28.anInt2602, var12, var15);
 						}

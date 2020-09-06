@@ -30,7 +30,7 @@ final class Class93 {
 
          Class3_Sub28_Sub7_Sub1 var7 = new Class3_Sub28_Sub7_Sub1(var2);
          this.aClass130_1332.method1779(var7, var3);
-         this.aClass13_1329.method879(var7, (byte)-19);
+         this.aClass13_1329.method879(var7);
          var7.aLong2569 = 0L;
       } catch (RuntimeException var6) {
          throw Class44.clientError(var6, "n.F(" + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
@@ -76,7 +76,7 @@ final class Class93 {
 
    final void method1518(long var1, byte var3) {
       try {
-         Class3_Sub28_Sub7 var4 = (Class3_Sub28_Sub7)this.aClass130_1332.method1780(var1, 0);
+         Class3_Sub28_Sub7 var4 = (Class3_Sub28_Sub7)this.aClass130_1332.method1780(var1);
          if(var3 == -124) {
             if(null != var4) {
                var4.method86(-1024);
@@ -219,7 +219,7 @@ final class Class93 {
 
    final Object get(long key) {
       try {
-         Class3_Sub28_Sub7 var4 = (Class3_Sub28_Sub7)this.aClass130_1332.method1780(key, (byte) 121 + -121);
+         Class3_Sub28_Sub7 var4 = (Class3_Sub28_Sub7)this.aClass130_1332.method1780(key);
          if(null == var4) {
             return null;
          } else {
@@ -233,12 +233,12 @@ final class Class93 {
                if(var4.method568()) {
                   Class3_Sub28_Sub7_Sub1 var6 = new Class3_Sub28_Sub7_Sub1(var5);
                   this.aClass130_1332.method1779(var6, var4.aLong71);
-                  this.aClass13_1329.method879(var6, (byte)84);
+                  this.aClass13_1329.method879(var6);
                   var6.aLong2569 = 0L;
                   var4.method86(-1024);
                   var4.method524();
                } else {
-                  this.aClass13_1329.method879(var4, (byte)-127);
+                  this.aClass13_1329.method879(var4);
                   var4.aLong2569 = 0L;
                }
 

@@ -591,7 +591,7 @@ final class RSInterface {
 
    static int method861(int var0, int var1, int var2) {
       try {
-         Class3_Sub25 var3 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0, 0);
+         Class3_Sub25 var3 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0);
          return null == var3?-1:(0 <= var2 && var2 < var3.anIntArray2547.length?(var1 < 39?-69:var3.anIntArray2547[var2]):-1);
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "be.J(" + var0 + ',' + var1 + ',' + var2 + ')');

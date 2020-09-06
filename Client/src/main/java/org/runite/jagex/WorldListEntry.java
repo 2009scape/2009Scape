@@ -44,7 +44,7 @@ final class WorldListEntry extends Class44 {
          if(0 > var0) {
             return 0;
          } else {
-            Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0, 0);
+            Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0);
             if(var2 == null) {
                return Objects.requireNonNull(Class144.method2069(var0, -126)).anInt3647;
             } else {

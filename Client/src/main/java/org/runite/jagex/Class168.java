@@ -705,13 +705,13 @@ final class Class168 {
 
             for(Class3_Sub31 var2 = (Class3_Sub31)var4.method1393(); null != var2; var2 = (Class3_Sub31)var4.method1392()) {
                if(var2.anInt2602 == var3) {
-                  return Class7.getRSInterface((byte)127, (int)var2.aLong71);
+                  return Class7.getRSInterface((int)var2.aLong71);
                }
             }
 
             return null;
          } else {
-            return Class7.getRSInterface((byte)118, var0.parentId);
+            return Class7.getRSInterface(var0.parentId);
          }
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "wl.J(" + (var0 != null?"{...}":"null") + ',' + var1 + ')');
@@ -878,7 +878,7 @@ final class Class168 {
 
    static void method2277(int var0, int var1, int var2, int var3, byte var4) {
       try {
-         Class3_Sub25 var5 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var3, 0);
+         Class3_Sub25 var5 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var3);
          if(var5 == null) {
             var5 = new Class3_Sub25();
             Class3_Sub2.aClass130_2220.method1779(var5, (long)var3);

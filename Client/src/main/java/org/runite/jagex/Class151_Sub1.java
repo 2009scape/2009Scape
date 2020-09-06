@@ -215,7 +215,7 @@ final class Class151_Sub1 extends Class151 {
             Class158.method2183(var0.anInt279, var1, var4, var5, var0.aClass11Array262);
          }
 
-         Class3_Sub31 var6 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)var0.anInt279, 0);
+         Class3_Sub31 var6 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)var0.anInt279);
          if(var6 != null) {
             Class75_Sub4.method1352(var5, var1, var6.anInt2602, var4);
          }
@@ -383,11 +383,7 @@ final class Class151_Sub1 extends Class151 {
 
    final int method2097(int var1, int var2) {
       try {
-         if(var2 != '\uffff') {
-            this.anInt2964 = 25;
-         }
-
-         Class3_Sub28_Sub10 var3 = (Class3_Sub28_Sub10)this.aClass130_2946.method1780((long)var1, var2 + -65535);
+         Class3_Sub28_Sub10 var3 = (Class3_Sub28_Sub10)this.aClass130_2946.method1780((long)var1);
          return null != var3?var3.method586():0;
       } catch (RuntimeException var4) {
          throw Class44.clientError(var4, "bg.L(" + var1 + ',' + var2 + ')');
@@ -409,7 +405,7 @@ final class Class151_Sub1 extends Class151 {
 
    private Class3_Sub28_Sub10 method2109(int var1, int archiveIndex, int var3) {
       try {
-         Object var4 = (Class3_Sub28_Sub10)this.aClass130_2946.method1780((long)archiveIndex, 0);
+         Object var4 = (Class3_Sub28_Sub10)this.aClass130_2946.method1780((long)archiveIndex);
          if(null != var4 && var1 == 0 && !((Class3_Sub28_Sub10)var4).aBoolean3628 && ((Class3_Sub28_Sub10)var4).aBoolean3632) {
             ((Class3_Sub28_Sub10)var4).method86(-1024);
             var4 = null;

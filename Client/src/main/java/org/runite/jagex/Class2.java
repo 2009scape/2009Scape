@@ -59,7 +59,7 @@ final class Class2 {
 							method75(var4.aClass11Array262, var2);
 						}
 
-						Class3_Sub31 var5 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)var4.anInt279, 0);
+						Class3_Sub31 var5 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)var4.anInt279);
 						if(null != var5) {
 							Class3_Sub8.method124(49, var2, var5.anInt2602);
 						}
@@ -75,7 +75,7 @@ final class Class2 {
 
 					if(var2 == 1 && var4.anObjectArray176 != null) {
 						if(var4.anInt191 >= 0) {
-							RSInterface var8 = Class7.getRSInterface((byte)121, var4.anInt279);
+							RSInterface var8 = Class7.getRSInterface(var4.anInt279);
 							if(null == var8 || null == var8.aClass11Array262 || var8.aClass11Array262.length <= var4.anInt191 || var8.aClass11Array262[var4.anInt191] != var4) {
 								continue;
 							}

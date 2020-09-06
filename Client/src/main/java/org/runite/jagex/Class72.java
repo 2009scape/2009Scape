@@ -18,7 +18,7 @@ final class Class72 {
 
    static Class3_Sub28_Sub11 method1292(byte var0, int var1) {
       try {
-         Class3_Sub28_Sub11 var2 = (Class3_Sub28_Sub11)Class3_Sub13_Sub34.aClass47_3407.method1092((long)var1);
+         Class3_Sub28_Sub11 var2 = (Class3_Sub28_Sub11)Class3_Sub13_Sub34.aClass47_3407.getNodeByID((long)var1);
          if(var2 == null) {
 
             byte[] var3 = Class12.aClass153_322.getFile(26, var1);

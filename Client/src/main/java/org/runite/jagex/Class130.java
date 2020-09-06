@@ -84,16 +84,13 @@ final class Class130 {
       }
    }
 
-   public static void method1774(int var0) {
+   public static void method1774() {
       try {
          aClass94_1698 = null;
          aBooleanArray1712 = null;
          aBooleanArray1703 = null;
-         if(var0 <= 96) {
-            method1783(-63, (Component)null);
-         }
       } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "sc.H(" + var0 + ')');
+         throw Class44.clientError(var2, "sc.H(" + ')');
       }
    }
 
@@ -116,7 +113,7 @@ final class Class130 {
       }
    }
 
-   static Class3_Sub13 method1777(int var0, boolean var1) {
+   static Class3_Sub13 method1777(int var0) {
       try {
          if(var0 == 0) {
             return new Class3_Sub13_Sub22();
@@ -199,14 +196,11 @@ final class Class130 {
          } else if (39 == var0) {
             return new Class3_Sub13_Sub23();
          } else {
-            if (!var1) {
-               method1772(8, 6, 81, (NPC) null);
-            }
 
             return null;
          }
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "sc.I(" + var0 + ',' + var1 + ')');
+         throw Class44.clientError(var3, "sc.I(" + var0 + ')');
       }
    }
 
@@ -269,12 +263,8 @@ final class Class130 {
       }
    }
 
-   final Class3 method1780(long var1, int var3) {
+   final Class3 method1780(long var1) {
       try {
-         if(var3 != 0) {
-            this.aClass3Array1697 = (Class3[])null;
-         }
-
          this.aLong1708 = var1;
          Class3 var4 = Objects.requireNonNull(this.aClass3Array1697)[(int)(var1 & (long)(-1 + this.anInt1700))];
 
@@ -289,7 +279,7 @@ final class Class130 {
          this.aClass3_1706 = null;
          return null;
       } catch (RuntimeException var6) {
-         throw Class44.clientError(var6, "sc.C(" + var1 + ',' + var3 + ')');
+         throw Class44.clientError(var6, "sc.C(" + var1 + ')');
       }
    }
 
@@ -328,18 +318,14 @@ final class Class130 {
       }
    }
 
-   static void method1783(int var0, Component var1) {
+   static void method1783(Component var1) {
       try {
-         if(var0 != 4) {
-            method1777(-104, false);
-         }
-
          var1.removeMouseListener(Class3_Sub28_Sub7_Sub1.aClass149_4047);
          var1.removeMouseMotionListener(Class3_Sub28_Sub7_Sub1.aClass149_4047);
          var1.removeFocusListener(Class3_Sub28_Sub7_Sub1.aClass149_4047);
          GraphicDefinition.anInt549 = 0;
       } catch (RuntimeException var3) {
-         throw Class44.clientError(var3, "sc.M(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
+         throw Class44.clientError(var3, "sc.M(" + (var1 != null?"{...}":"null") + ')');
       }
    }
 

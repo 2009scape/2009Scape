@@ -20,7 +20,7 @@ final class Class61 {
 
    static Class3_Sub28_Sub9 method1210(int var1) {
       try {
-         Class3_Sub28_Sub9 var2 = (Class3_Sub28_Sub9)Class163.aClass47_2041.method1092((long)var1);
+         Class3_Sub28_Sub9 var2 = (Class3_Sub28_Sub9)Class163.aClass47_2041.getNodeByID((long)var1);
 
          if(null == var2) {
             byte[] var3 = Class3_Sub13_Sub7.aClass153_3098.getFile(11, var1);

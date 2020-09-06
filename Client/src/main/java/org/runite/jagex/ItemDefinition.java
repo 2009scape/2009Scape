@@ -1,6 +1,7 @@
 package org.runite.jagex;
 import java.awt.Component;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Objects;
@@ -102,6 +103,73 @@ final class ItemDefinition {
 	   }
 	}
 
+	static AssembledMethod getMethodByID(int methodID) {
+	   try {
+	   	   // Load and return method from cache
+		   AssembledMethod var2 = (AssembledMethod)Class56.aClass47_885.getNodeByID((long)methodID);
+		   if (var2 != null) {
+			  return var2;
+		   }
+		   // Load method from file 0 which holds all the methods. Apparently.
+		   byte[] var3 = Class3_Sub1.interfaceScriptsIndex.getFile(methodID, 0);
+		   if(var3 == null) {
+			  return null;
+		   } else {
+			  var2 = new AssembledMethod();
+
+			  RSByteBuffer var4 = new RSByteBuffer(var3);
+			  var4.index = -2 + var4.buffer.length;
+			  int var5 = var4.getShort();
+			  int var6 = -12 + var4.buffer.length + -2 - var5;
+			  var4.index = var6;
+			  int var7 = var4.getInt();
+			  var2.numberOfIntsToCopy = var4.getShort();
+			  var2.numberOfRSStringsToCopy = var4.getShort();
+			  var2.numberOfIntArguments = var4.getShort();
+			  var2.numberOfStringArguments = var4.getShort();
+			  int var8 = var4.getByteB();
+			  int var9;
+			  int var10;
+			  if(var8 > 0) {
+				 var2.switchHashTable = new Class130[var8];
+
+				 for(var9 = 0; var9 < var8; ++var9) {
+					var10 = var4.getShort();
+					Class130 var11 = new Class130(Class95.method1585((byte)119, var10));
+					var2.switchHashTable[var9] = var11;
+
+					while(var10-- > 0) {
+					   int var12 = var4.getInt();
+					   int var13 = var4.getInt();
+					   var11.method1779(new Class3_Sub18(var13), (long)var12);
+					}
+				 }
+			  }
+
+			  var4.index = 0;
+			  var4.method750();
+			  var2.assemblyInstructions = new int[var7];
+			  var2.stringInstructionOperands = new RSString[var7];
+			  var9 = 0;
+
+			  for(var2.instructionOperands = new int[var7]; var4.index < var6; var2.assemblyInstructions[var9++] = var10) {
+				 var10 = var4.getShort();
+				 if(var10 == 3) {
+					var2.stringInstructionOperands[var9] = var4.getString();
+				 } else if (var10 < 100 && 21 != var10 && var10 != 38 && 39 != var10) {
+					var2.instructionOperands[var9] = var4.getInt();
+				 } else {
+					var2.instructionOperands[var9] = var4.getByteB();
+				 }
+			  }
+			  Class56.aClass47_885.method1097(var2, (long)methodID, (byte)-87);
+			  return var2;
+		   }
+	   } catch (RuntimeException var14) {
+		  throw Class44.clientError(var14, "hc.O(" + methodID + ',' + (byte) -91 + ')');
+	   }
+	}
+
 
 	final boolean method1102(boolean var1) {
 		try {
@@ -167,7 +235,7 @@ final class ItemDefinition {
 			Object[] aobj = script.arguments;
 			int j = ((Integer) aobj[0]).intValue();
 			//System.out.println("CS opcode: " + j);
-			AssembledMethod currentMethod = Class3_Sub28_Sub8.method572(j);
+			AssembledMethod currentMethod = getMethodByID(j);
 			if (null == currentMethod)
 				return;
 			scriptHeapCounter = 0;
@@ -349,7 +417,7 @@ final class ItemDefinition {
 					}
 					if (opcode == CS2AsmOpcodes.CALL.getOp()) {
 						int op = instructionOperands[programCounter];
-						AssembledMethod assembledMethod_1 = Class3_Sub28_Sub8.method572(op);
+						AssembledMethod assembledMethod_1 = getMethodByID(op);
 						int[] ai2 = new int[assembledMethod_1.numberOfIntsToCopy];
 						RSString[] aclass94 = new RSString[assembledMethod_1.numberOfRSStringsToCopy];
 						if (assembledMethod_1.numberOfIntArguments >= 0)
@@ -432,8 +500,8 @@ final class ItemDefinition {
 						continue;
 					}
 					if (opcode == 51) {
-						Class130 class130 = currentMethod.aClass130Array3685[instructionOperands[programCounter]];
-						Class3_Sub18 class3_sub18 = (Class3_Sub18) class130.method1780(intsStack[--iStackCounter], 0);
+						Class130 class130 = currentMethod.switchHashTable[instructionOperands[programCounter]];
+						Class3_Sub18 class3_sub18 = (Class3_Sub18) class130.method1780(intsStack[--iStackCounter]);
 						if (null != class3_sub18)
 							programCounter += class3_sub18.anInt2467;
 						continue;
@@ -449,7 +517,7 @@ final class ItemDefinition {
 						int k66 = intsStack[2 + iStackCounter];
 						if (i44 == 0)
 							throw new RuntimeException();
-						RSInterface class11_21 = Class7.getRSInterface((byte) 121, j6);
+						RSInterface class11_21 = Class7.getRSInterface(j6);
 						if (null == class11_21.aClass11Array262)
 							class11_21.aClass11Array262 = new RSInterface[k66 + 1];
 						if (k66 >= class11_21.aClass11Array262.length) {
@@ -481,13 +549,13 @@ final class ItemDefinition {
 								throw new RuntimeException("Tried to cc_delete static active-component!");
 							else
 								throw new RuntimeException("Tried to .cc_delete static .active-component!");
-						RSInterface class11_17 = Class7.getRSInterface((byte) 111, class11.anInt279);
+						RSInterface class11_17 = Class7.getRSInterface(class11.anInt279);
 						class11_17.aClass11Array262[class11.anInt191] = null;
 						Class20.method909(-8, class11_17);
 						continue;
 					}
 					if (opcode == 102) {
-						RSInterface class11_1 = Class7.getRSInterface((byte) 109, intsStack[--iStackCounter]);
+						RSInterface class11_1 = Class7.getRSInterface(intsStack[--iStackCounter]);
 						class11_1.aClass11Array262 = null;
 						Class20.method909(-50, class11_1);
 						continue;
@@ -511,7 +579,7 @@ final class ItemDefinition {
 					if (opcode != 201)
 						break;
 					int l6 = intsStack[--iStackCounter];
-					RSInterface class11_18 = Class7.getRSInterface((byte) 113, l6);
+					RSInterface class11_18 = Class7.getRSInterface(l6);
 					if (null == class11_18) {
 						intsStack[iStackCounter++] = 0;
 					} else {
@@ -529,7 +597,7 @@ final class ItemDefinition {
 						if (opcode < 2000) {
 							class11_2 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 						} else {
-							class11_2 = Class7.getRSInterface((byte) 122, intsStack[--iStackCounter]);
+							class11_2 = Class7.getRSInterface(intsStack[--iStackCounter]);
 							opcode -= 1000;
 						}
 						if (opcode == 1000) {
@@ -612,7 +680,7 @@ final class ItemDefinition {
 							if (opcode >= 1300 && opcode < 1400 || opcode >= 2300 && opcode < 2400) {
 								RSInterface class11_3;
 								if (2000 <= opcode) {
-									class11_3 = Class7.getRSInterface((byte) 119, intsStack[--iStackCounter]);
+									class11_3 = Class7.getRSInterface(intsStack[--iStackCounter]);
 									opcode -= 1000;
 								} else {
 									class11_3 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
@@ -777,7 +845,7 @@ final class ItemDefinition {
 										continue;
 									}
 									if (2600 > opcode) {
-										RSInterface class11_7 = Class7.getRSInterface((byte) 114, intsStack[--iStackCounter]);
+										RSInterface class11_7 = Class7.getRSInterface(intsStack[--iStackCounter]);
 										if (opcode == 2500) {
 											intsStack[iStackCounter++] = class11_7.anInt306;
 											continue;
@@ -854,7 +922,7 @@ final class ItemDefinition {
 														int j46 = intsStack[iStackCounter - -1];
 														int j7 = intsStack[iStackCounter];
 														int l67 = intsStack[2 + iStackCounter];
-														RSInterface class11_22 = Class7.getRSInterface((byte) 114, l67);
+														RSInterface class11_22 = Class7.getRSInterface(l67);
 														Class3_Sub28_Sub6.a(j46, j7, 115, class11_22);
 														continue;
 													}
@@ -3367,7 +3435,7 @@ final class ItemDefinition {
 												stringsStack[sStackCounter++] = Class3_Sub23.method407(Class3_Sub20.language, flag1, 0, k64);
 												continue;
 											}
-											RSInterface class11_8 = Class7.getRSInterface((byte) 115, intsStack[--iStackCounter]);
+											RSInterface class11_8 = Class7.getRSInterface(intsStack[--iStackCounter]);
 											if (opcode == 2800) {
 												intsStack[iStackCounter++] = Client.method44(class11_8).method101();
 												continue;
@@ -3390,12 +3458,12 @@ final class ItemDefinition {
 											continue;
 										}
 										if (opcode == 2700) {
-											RSInterface class11_9 = Class7.getRSInterface((byte) 126, intsStack[--iStackCounter]);
+											RSInterface class11_9 = Class7.getRSInterface(intsStack[--iStackCounter]);
 											intsStack[iStackCounter++] = class11_9.anInt192;
 											continue;
 										}
 										if (opcode == 2701) {
-											RSInterface class11_10 = Class7.getRSInterface((byte) 117, intsStack[--iStackCounter]);
+											RSInterface class11_10 = Class7.getRSInterface(intsStack[--iStackCounter]);
 											if (-1 != class11_10.anInt192)
 												intsStack[iStackCounter++] = class11_10.anInt271;
 											else
@@ -3404,7 +3472,7 @@ final class ItemDefinition {
 										}
 										if (opcode == 2702) {
 											int l42 = intsStack[--iStackCounter];
-											Class3_Sub31 class3_sub31 = (Class3_Sub31) Class3_Sub13_Sub17.aClass130_3208.method1780(l42, 0);
+											Class3_Sub31 class3_sub31 = (Class3_Sub31) Class3_Sub13_Sub17.aClass130_3208.method1780(l42);
 											if (class3_sub31 == null)
 												intsStack[iStackCounter++] = 0;
 											else
@@ -3412,7 +3480,7 @@ final class ItemDefinition {
 											continue;
 										}
 										if (opcode == 2703) {
-											RSInterface class11_11 = Class7.getRSInterface((byte) 125, intsStack[--iStackCounter]);
+											RSInterface class11_11 = Class7.getRSInterface(intsStack[--iStackCounter]);
 											if (null == class11_11.aClass11Array262) {
 												intsStack[iStackCounter++] = 0;
 											} else {
@@ -3436,14 +3504,14 @@ final class ItemDefinition {
 										iStackCounter -= 2;
 										int i43 = intsStack[iStackCounter];
 										int j65 = intsStack[iStackCounter + 1];
-										Class3_Sub31 class3_sub31_1 = (Class3_Sub31) Class3_Sub13_Sub17.aClass130_3208.method1780(i43, 0);
+										Class3_Sub31 class3_sub31_1 = (Class3_Sub31) Class3_Sub13_Sub17.aClass130_3208.method1780(i43);
 										if (class3_sub31_1 == null || class3_sub31_1.anInt2602 != j65)
 											intsStack[iStackCounter++] = 0;
 										else
 											intsStack[iStackCounter++] = 1;
 										continue;
 									}
-									RSInterface class11_12 = Class7.getRSInterface((byte) 124, intsStack[--iStackCounter]);
+									RSInterface class11_12 = Class7.getRSInterface(intsStack[--iStackCounter]);
 									if (2600 == opcode) {
 										intsStack[iStackCounter++] = class11_12.anInt247;
 										continue;
@@ -3518,7 +3586,7 @@ final class ItemDefinition {
 									class11_14 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 								} else {
 									opcode -= 1000;
-									class11_14 = Class7.getRSInterface((byte) 115, intsStack[--iStackCounter]);
+									class11_14 = Class7.getRSInterface(intsStack[--iStackCounter]);
 								}
 								int[] ai3 = null;
 								RSString class94_62 = stringsStack[--sStackCounter];
@@ -3615,7 +3683,7 @@ final class ItemDefinition {
 						if (opcode < 2000) {
 							class11_15 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 						} else {
-							class11_15 = Class7.getRSInterface((byte) 118, intsStack[--iStackCounter]);
+							class11_15 = Class7.getRSInterface(intsStack[--iStackCounter]);
 							opcode -= 1000;
 						}
 						Class20.method909(-21, class11_15);
@@ -3684,7 +3752,7 @@ final class ItemDefinition {
 						class11_16 = flag ? Class164.aClass11_2055 : Class133.aClass11_1749;
 					} else {
 						opcode -= 1000;
-						class11_16 = Class7.getRSInterface((byte) 120, intsStack[--iStackCounter]);
+						class11_16 = Class7.getRSInterface(intsStack[--iStackCounter]);
 					}
 					if (opcode == 1100) {
 						iStackCounter -= 2;
@@ -3910,7 +3978,7 @@ final class ItemDefinition {
 				return var2;
 			} else {
 
-				Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_798.method1780((long)var3, 0);
+				Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_798.method1780((long)var3);
 				return null != var4?var4.aClass94_2586:var2;
 			}
 		} catch (RuntimeException var5) {
@@ -4309,7 +4377,7 @@ final class ItemDefinition {
 			if(this.aClass130_798 == null) {
 				return var1;
 			} else {
-				Class3_Sub18 var5 = (Class3_Sub18)this.aClass130_798.method1780((long)var3, 0);
+				Class3_Sub18 var5 = (Class3_Sub18)this.aClass130_798.method1780((long)var3);
 				return null != var5?var5.anInt2467:var1;
 			}
 		} catch (RuntimeException var6) {

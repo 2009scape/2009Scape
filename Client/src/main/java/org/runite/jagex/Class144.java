@@ -167,7 +167,7 @@ abstract class Class144 {
          if(var1 >= -99) {
             return (Class3_Sub28_Sub12)null;
          } else {
-            Class3_Sub28_Sub12 var2 = (Class3_Sub28_Sub12)Class49.aClass47_818.method1092((long)var0);
+            Class3_Sub28_Sub12 var2 = (Class3_Sub28_Sub12)Class49.aClass47_818.getNodeByID((long)var0);
             if(null == var2) {
                byte[] var3 = Class8.aClass153_105.getFile(5, var0);
                var2 = new Class3_Sub28_Sub12();

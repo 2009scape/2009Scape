@@ -226,7 +226,7 @@ final class Class102 implements Interface2 {
    private Class3_Sub28_Sub20 method1613(int var1) {
       try {
 
-         Class3_Sub28_Sub20 var3 = (Class3_Sub28_Sub20)this.aClass47_2142.method1092((long)var1);
+         Class3_Sub28_Sub20 var3 = (Class3_Sub28_Sub20)this.aClass47_2142.getNodeByID((long)var1);
          if(null == var3) {
             byte[] var4 = this.aClass153_2127.getFile(var1, 0);
             if(null == var4) {
@@ -299,7 +299,7 @@ final class Class102 implements Interface2 {
 
    private Class3_Sub28_Sub18 method1615(int var2) {
       try {
-         Class3_Sub28_Sub18 var4 = (Class3_Sub28_Sub18)this.aClass47_2138.method1092((long)var2);
+         Class3_Sub28_Sub18 var4 = (Class3_Sub28_Sub18)this.aClass47_2138.getNodeByID((long)var2);
          if(null == var4) {
             var4 = new Class3_Sub28_Sub18(this.aShortArray2137[var2] & '\uffff');
             this.aClass47_2138.method1097(var4, (long)var2, (byte)69);

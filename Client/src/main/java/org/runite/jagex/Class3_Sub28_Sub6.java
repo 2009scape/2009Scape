@@ -13,7 +13,7 @@ final class Class3_Sub28_Sub6 extends Node {
    final void a() {
       try {
          this.aLong2569 = Class5.method830((byte)-55) - -500L | Long.MIN_VALUE & this.aLong2569;
-         Class81.aClass13_1139.method879(this, (byte)-127);
+         Class81.aClass13_1139.method879(this);
       } catch (RuntimeException var3) {
          throw Class44.clientError(var3, "da.U(" + true + ')');
       }
@@ -210,7 +210,7 @@ final class Class3_Sub28_Sub6 extends Node {
       try {
          this.aLong2569 |= Long.MIN_VALUE;
          if(this.b() == 0) {
-            Class126.aClass13_1666.method879(this, (byte)-128);
+            Class126.aClass13_1666.method879(this);
          }
 
       } catch (RuntimeException var3) {

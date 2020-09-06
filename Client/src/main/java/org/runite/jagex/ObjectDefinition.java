@@ -337,7 +337,7 @@ final class ObjectDefinition {
          } else if(this.aClass130_1501 == null) {
             return var1;
          } else {
-            Class3_Sub18 var4 = (Class3_Sub18)this.aClass130_1501.method1780((long)var2, 0);
+            Class3_Sub18 var4 = (Class3_Sub18)this.aClass130_1501.method1780((long)var2);
             return var4 != null?var4.anInt2467:var1;
          }
       } catch (RuntimeException var5) {
@@ -979,7 +979,7 @@ final class ObjectDefinition {
          if(null == this.aClass130_1501) {
             return var1;
          } else {
-            Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_1501.method1780((long)var3, 0);
+            Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_1501.method1780((long)var3);
             return var4 == null?var1:var4.aClass94_2586;
          }
       } catch (RuntimeException var5) {

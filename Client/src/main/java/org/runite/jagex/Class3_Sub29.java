@@ -141,7 +141,7 @@ final class Class3_Sub29 extends Class3 {
 
    static Class3_Sub28_Sub4 method733(int var1) {
       try {
-         Class3_Sub28_Sub4 var2 = (Class3_Sub28_Sub4)Class3_Sub28_Sub19.aClass47_3776.method1092((long)var1);
+         Class3_Sub28_Sub4 var2 = (Class3_Sub28_Sub4)Class3_Sub28_Sub19.aClass47_3776.getNodeByID((long)var1);
          if(null == var2) {
             byte[] var3;
             if(var1 < 32768) {

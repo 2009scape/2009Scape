@@ -81,7 +81,7 @@ final class Class66 {
 						this.aClass3_Sub30_1007.putTriByte((int)var21.aLong2569);
 						
 						this.aClass89_1005.sendBytes(this.aClass3_Sub30_1007.buffer, 4);
-						this.aClass13_1000.method879(var21, (byte)-125);
+						this.aClass13_1000.method879(var21);
 					}
 
 					for(var21 = (Class3_Sub28_Sub10_Sub2)this.lowPriorityRequests.method876((byte)51); var21 != null; var21 = (Class3_Sub28_Sub10_Sub2)this.lowPriorityRequests.method878(-53)) {
@@ -89,7 +89,7 @@ final class Class66 {
 						this.aClass3_Sub30_1007.putByte((byte)-22, 0); //Low priority JS5 request
 						this.aClass3_Sub30_1007.putTriByte((int)var21.aLong2569);
 						this.aClass89_1005.sendBytes(this.aClass3_Sub30_1007.buffer, 4);
-						this.aClass13_1003.method879(var21, (byte)-128);
+						this.aClass13_1003.method879(var21);
 					}
 
 					for(int var3 = 0; 100 > var3; ++var3) {
@@ -352,11 +352,11 @@ final class Class66 {
 							return;
 						}
 
-						this.lowPriorityRequests.method879(var4, (byte)95);
+						this.lowPriorityRequests.method879(var4);
 					}
 				}
 
-				this.highPriorityRequests.method879(var4, (byte)80);
+				this.highPriorityRequests.method879(var4);
 			}
 		} catch (RuntimeException var9) {
 			throw Class44.clientError(var9, "jb.M(" + var1 + ',' + (stream != null?"{...}":"null") + ',' + 0 + ')');
@@ -462,13 +462,13 @@ final class Class66 {
 					throw new RuntimeException();
 				}
 
-				this.highPriorityRequests.method879(var8, (byte)-125);
+				this.highPriorityRequests.method879(var8);
 			} else {
 				if(this.method1246() >= 20) {
 					throw new RuntimeException();
 				}
 
-				this.lowPriorityRequests.method879(var8, (byte)78);
+				this.lowPriorityRequests.method879(var8);
 			}
 
 			return var8;

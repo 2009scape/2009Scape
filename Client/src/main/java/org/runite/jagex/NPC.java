@@ -54,7 +54,7 @@ final class NPC extends Class140_Sub4 {
 		}
 	}
 
-	static byte[] method1985(int var0, Object var1, boolean var2) {
+	static byte[] method1985(Object var1, boolean var2) {
 		try {
 			if(var1 == null) {
 				return null;
@@ -62,10 +62,6 @@ final class NPC extends Class140_Sub4 {
 				byte[] var5 = (byte[])((byte[])var1);
 				return var2?Class12.method873(var5):var5;
 			} else {
-				if(var0 > -118) {
-					method1983(19);
-				}
-
 				if(var1 instanceof Class144) {
 					Class144 var3 = (Class144)var1;
 					return var3.method2064();
@@ -74,7 +70,7 @@ final class NPC extends Class140_Sub4 {
 				}
 			}
 		} catch (RuntimeException var4) {
-			throw Class44.clientError(var4, "km.Q(" + var0 + ',' + "{...}" + ',' + var2 + ')');
+			throw Class44.clientError(var4, "km.Q(" + "{...}" + ',' + var2 + ')');
 		}
 	}
 

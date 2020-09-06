@@ -38,7 +38,7 @@ final class Class106 {
    static int method1643(boolean var1, int var2, int var3) {
       try {
 
-          Class3_Sub25 var4 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var2, 10131 + -10131);
+          Class3_Sub25 var4 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var2);
          if(null == var4) {
             return 0;
          } else {
@@ -48,7 +48,7 @@ final class Class106 {
                if(var4.anIntArray2547[var6] >= 0 && Class3_Sub13_Sub23.itemDefinitionSize > var4.anIntArray2547[var6]) {
                   ItemDefinition var7 = Class38.getItemDefinition(var4.anIntArray2547[var6], (byte)79);
                   if(null != var7.aClass130_798) {
-                     Class3_Sub18 var8 = (Class3_Sub18)var7.aClass130_798.method1780((long)var3, 0);
+                     Class3_Sub18 var8 = (Class3_Sub18)var7.aClass130_798.method1780((long)var3);
                      if(null != var8) {
                         if(var1) {
                            var5 += var4.anIntArray2551[var6] * var8.anInt2467;

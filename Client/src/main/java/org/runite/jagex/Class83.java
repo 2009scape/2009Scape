@@ -316,7 +316,7 @@ final class Class83 {
          int var5 = var4 ^ (var3 >>> 12 | var3 << 4 & '\ufff3');
          var5 |= var3 << 16;
          long var6 = (long)var5;
-         Class3_Sub12_Sub1 var8 = (Class3_Sub12_Sub1)this.aClass130_1159.method1780(var6, 0);
+         Class3_Sub12_Sub1 var8 = (Class3_Sub12_Sub1)this.aClass130_1159.method1780(var6);
          if(var8 != null) {
             return var8;
          } else if(null != var1 && var1[0] <= 0) {
@@ -372,13 +372,13 @@ final class Class83 {
          int var5 = var3 ^ (var1 >>> 12 | '\ufff3' & var1 << 4);
          var5 |= var1 << 16;
          long var6 = (long)var5 ^ 4294967296L;
-         Class3_Sub12_Sub1 var8 = (Class3_Sub12_Sub1)this.aClass130_1159.method1780(var6, 0);
+         Class3_Sub12_Sub1 var8 = (Class3_Sub12_Sub1)this.aClass130_1159.method1780(var6);
          if(null != var8) {
             return var8;
          } else if(var2 != null && var2[0] <= 0) {
             return null;
          } else {
-            Class3_Sub14 var9 = (Class3_Sub14)this.aClass130_1155.method1780(var6, 0);
+            Class3_Sub14 var9 = (Class3_Sub14)this.aClass130_1155.method1780(var6);
             if(null == var9) {
                var9 = Class3_Sub14.method363(this.aClass153_1157, var1, var3);
                if(null == var9) {

@@ -158,7 +158,7 @@ final class Class3_Sub28_Sub1 extends Node {
 
    static void method532(int var0) {
       try {
-         Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0, 0);
+         Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var0);
          if(null != var2) {
             var2.method86(-1024);
          }

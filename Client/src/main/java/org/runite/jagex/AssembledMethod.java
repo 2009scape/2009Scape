@@ -10,6 +10,6 @@ final class AssembledMethod extends Node {
 
    int[] assemblyInstructions;
    int[] instructionOperands;
-   Class130[] aClass130Array3685;
+   Class130[] switchHashTable;
    RSString[] stringInstructionOperands;
 }

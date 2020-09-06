@@ -206,7 +206,7 @@ final class Class167 {
 
    static int method2268(byte var0, int var1, int var2) {
       try {
-         Class3_Sub25 var3 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var1, 0);
+         Class3_Sub25 var3 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var1);
          if(var3 == null) {
             return 0;
          } else if (var2 == -1) {

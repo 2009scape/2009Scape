@@ -79,7 +79,7 @@ final class Class67 implements Runnable {
                      method1260(23206, var4.anInt279, var4.aClass11Array262);
                   }
 
-                  Class3_Sub31 var5 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)var4.anInt279, 0);
+                  Class3_Sub31 var5 = (Class3_Sub31)Class3_Sub13_Sub17.aClass130_3208.method1780((long)var4.anInt279);
                   if(var5 != null) {
                      Class52.method1160(-111, var5.anInt2602);
                   }

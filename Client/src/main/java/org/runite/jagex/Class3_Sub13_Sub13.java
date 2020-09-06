@@ -448,13 +448,13 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                         } else {
                            RSInterface var20;
                            if(var3 == 3) {
-                              var20 = Class7.getRSInterface((byte)118, var4);
+                              var20 = Class7.getRSInterface(var4);
                               if(!var16.aClass94_3599.method1528(Objects.requireNonNull(var20).aClass94_232)) {
                                  var20.aClass94_232 = var16.aClass94_3599;
                                  Class20.method909(107, var20);
                               }
                            } else if (var3 == 4) {
-                              var20 = Class7.getRSInterface((byte) 109, var4);
+                              var20 = Class7.getRSInterface(var4);
                               var6 = var16.anInt3598;
                               var8 = var16.anInt3596;
                               nodeModelID = var16.anInt3597;
@@ -465,7 +465,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                  Class20.method909(120, var20);
                               }
                            } else if (var3 == 5) {
-                              var20 = Class7.getRSInterface((byte) 117, var4);
+                              var20 = Class7.getRSInterface(var4);
                               if (var16.anInt3598 != Objects.requireNonNull(var20).animationId || var16.anInt3598 == -1) {
                                  var20.anInt260 = 1;
                                  var20.anInt267 = 0;
@@ -478,21 +478,21 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                               var6 = (32195 & var5) >> 10;
                               var8 = var5 & 31;
                               nodeModelID = (var5 & 1000) >> 5;
-                              RSInterface var10 = Class7.getRSInterface((byte) 120, var4);
+                              RSInterface var10 = Class7.getRSInterface(var4);
                               var9 = (var8 << 3) + (nodeModelID << 11) + (var6 << 19);
                               if (Objects.requireNonNull(var10).anInt218 != var9) {
                                  var10.anInt218 = var9;
                                  Class20.method909(123, var10);
                               }
                            } else if (var3 == 7) {
-                              var20 = Class7.getRSInterface((byte) 124, var4);
+                              var20 = Class7.getRSInterface(var4);
                               boolean var24 = var16.anInt3598 == 1;
                               if (var20 != null && var24 == !var20.hidden) {
                                  var20.hidden = var24;
                                  Class20.method909(119, var20);
                               }
                            } else if (var3 == 8) {
-                              var20 = Class7.getRSInterface((byte) 122, var4);
+                              var20 = Class7.getRSInterface(var4);
                               if (var16.anInt3598 != Objects.requireNonNull(var20).anInt182 || var20.anInt308 != var16.anInt3597 || var20.anInt164 != var16.anInt3596) {
                                  var20.anInt182 = var16.anInt3598;
                                  var20.anInt164 = var16.anInt3596;
@@ -510,14 +510,14 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                  Class20.method909(112, var20);
                               }
                            } else if (var3 == 9) {
-                              var20 = Class7.getRSInterface((byte) 119, var4);
+                              var20 = Class7.getRSInterface(var4);
                               if (Objects.requireNonNull(var20).anInt192 != var16.anInt3598 || var20.anInt271 != var16.anInt3597) {
                                  var20.anInt192 = var16.anInt3598;
                                  var20.anInt271 = var16.anInt3597;
                                  Class20.method909(127, var20);
                               }
                            } else if (var3 == 10) {
-                              var20 = Class7.getRSInterface((byte) 121, var4);
+                              var20 = Class7.getRSInterface(var4);
                               if (var16.anInt3598 != Objects.requireNonNull(var20).anInt258 || var20.anInt264 != var16.anInt3597 || var20.anInt280 != var16.anInt3596) {
                                  var20.anInt264 = var16.anInt3597;
                                  var20.anInt280 = var16.anInt3596;
@@ -525,14 +525,14 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                  Class20.method909(-69, var20);
                               }
                            } else if (var3 == 11) {
-                              var20 = Class7.getRSInterface((byte) 124, var4);
+                              var20 = Class7.getRSInterface(var4);
                               Objects.requireNonNull(var20).anInt306 = var20.x = var16.anInt3598;
                               var20.aByte273 = 0;
                               var20.aByte162 = 0;
                               var20.anInt210 = var20.y = var16.anInt3597;
                               Class20.method909(110, var20);
                            } else if (var3 == 12) {
-                              var20 = Class7.getRSInterface((byte) 116, var4);
+                              var20 = Class7.getRSInterface(var4);
                               var6 = var16.anInt3598;
                               if (null != var20 && 0 == var20.type) {
                                  if (var6 > var20.anInt252 + -var20.anInt193) {
@@ -549,7 +549,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                  }
                               }
                            } else if (var3 == 13) {
-                              var20 = Class7.getRSInterface((byte) 124, var4);
+                              var20 = Class7.getRSInterface(var4);
                               Objects.requireNonNull(var20).anInt237 = var16.anInt3598;
                            }
                         }
@@ -885,7 +885,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
 
                                     var25 = var26.aClass11_2449;
                                     if(var25.anInt191 >= 0) {
-                                       var23 = Class7.getRSInterface((byte)118, var25.parentId);
+                                       var23 = Class7.getRSInterface(var25.parentId);
                                        if(null == var23 || var23.aClass11Array262 == null || var23.aClass11Array262.length <= var25.anInt191 || var25 != var23.aClass11Array262[var25.anInt191]) {
                                           continue;
                                        }
@@ -897,7 +897,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
 
                               var25 = var26.aClass11_2449;
                               if(var25.anInt191 >= 0) {
-                                 var23 = Class7.getRSInterface((byte)120, var25.parentId);
+                                 var23 = Class7.getRSInterface(var25.parentId);
                                  if(var23 == null || null == var23.aClass11Array262 || var23.aClass11Array262.length <= var25.anInt191 || var23.aClass11Array262[var25.anInt191] != var25) {
                                     continue;
                                  }
@@ -909,7 +909,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
 
                         var25 = var26.aClass11_2449;
                         if(var25.anInt191 >= 0) {
-                           var23 = Class7.getRSInterface((byte)127, var25.parentId);
+                           var23 = Class7.getRSInterface(var25.parentId);
                            if(var23 == null || var23.aClass11Array262 == null || var25.anInt191 >= var23.aClass11Array262.length || var23.aClass11Array262[var25.anInt191] != var25) {
                               continue;
                            }

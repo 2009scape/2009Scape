@@ -68,7 +68,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
          var7 = new int[]{22050};
          for(Class3_Sub6 var9 = (Class3_Sub6)var1.aClass130_2564.method1776(20); var9 != null; var9 = (Class3_Sub6)var1.aClass130_2564.method1778(-107)) {
             int var10 = (int)var9.aLong71;
-            Class3_Sub15 var11 = (Class3_Sub15)this.aClass130_3508.method1780((long)var10, 0);
+            Class3_Sub15 var11 = (Class3_Sub15)this.aClass130_3508.method1780((long)var10);
             if(null == var11) {
                var11 = Class66.method1245(var3, var10);
                if(null == var11) {
@@ -517,7 +517,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
             }
          }
 
-         Class3_Sub15 var11 = (Class3_Sub15)this.aClass130_3508.method1780((long)this.anIntArray3515[var2], 0);
+         Class3_Sub15 var11 = (Class3_Sub15)this.aClass130_3508.method1780((long)this.anIntArray3515[var2]);
          if(var11 != null) {
             Class3_Sub12_Sub1 var12 = var11.aClass3_Sub12_Sub1Array2431[var4];
             if(var12 != null) {

@@ -14,12 +14,9 @@ final class Class7 implements Interface4 {
       System.out.println("Error: " + Class3_Sub28_Sub6.a("%0a", "\n", var1));
    }
 
-   static RSInterface getRSInterface(byte var0, int interfaceHash) {
+   static RSInterface getRSInterface(int interfaceHash) {
       try {
          int windowId = interfaceHash >> 16;
-         if(var0 < 108) {
-            getRSInterface((byte)87, 19);
-         }
 
          int componentId = '\uffff' & interfaceHash;
          if (GameObject.aClass11ArrayArray1834.length <= windowId || windowId < 0) {
@@ -36,7 +33,7 @@ final class Class7 implements Interface4 {
          }
          return GameObject.aClass11ArrayArray1834[windowId][componentId];
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "af.F(" + var0 + ',' + interfaceHash + ')');
+         throw Class44.clientError(var5, "af.F(" + interfaceHash + ')');
       }
    }
 

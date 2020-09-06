@@ -34,7 +34,7 @@ final class Class3_Sub28_Sub11 extends Node {
             return var2;
          } else {
 
-            Class3_Sub18 var4 = (Class3_Sub18)this.aClass130_3636.method1780((long)var1, (byte) -29 ^ -29);
+            Class3_Sub18 var4 = (Class3_Sub18)this.aClass130_3636.method1780((long)var1);
             return null == var4?var2:var4.anInt2467;
          }
       } catch (RuntimeException var5) {
@@ -168,7 +168,7 @@ final class Class3_Sub28_Sub11 extends Node {
          if(this.aClass130_3636 == null) {
             return var1;
          } else {
-            Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_3636.method1780((long)var3, 0);
+            Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_3636.method1780((long)var3);
 
             return null != var4?var4.aClass94_2586:var1;
          }

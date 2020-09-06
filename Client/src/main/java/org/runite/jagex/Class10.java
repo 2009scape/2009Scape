@@ -35,7 +35,7 @@ final class Class10 {
 
    static void method852(byte var0, int var1) {
       try {
-         Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var1, 0);
+         Class3_Sub25 var2 = (Class3_Sub25)Class3_Sub2.aClass130_2220.method1780((long)var1);
          if(var2 != null) {
             if(var0 != 114) {
                aClass153_152 = (CacheIndex)null;

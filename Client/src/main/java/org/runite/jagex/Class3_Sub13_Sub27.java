@@ -355,7 +355,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                   long var31 = (long)var24 << 32 | (long)var20;
                   int var33 = var53.length / 2;
                   long var25 = (long)var20 | (long)var21 << 32;
-                  Class3_Sub11 var34 = (Class3_Sub11)var52.method1780(var25, 0);
+                  Class3_Sub11 var34 = (Class3_Sub11)var52.method1780(var25);
                   if(null == var34) {
                      var34 = new Class3_Sub11(-1 + (var21 >> 16), (float)('\uffff' & var21), false, null != var13, var20);
                      var52.method1779(var34, var25);
@@ -364,7 +364,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                   ++var34.anInt2344;
                   var34.anInt2342 += var33;
                   if(var25 != var27) {
-                     var34 = (Class3_Sub11)var52.method1780(var27, 0);
+                     var34 = (Class3_Sub11)var52.method1780(var27);
                      if(var34 == null) {
                         var34 = new Class3_Sub11((var22 >> 16) - 1, (float)('\uffff' & var22), false, null != var13, var20);
                         var52.method1779(var34, var27);
@@ -376,7 +376,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
 
                   long var29 = (long)var23 << 32 | (long)var20;
                   if(var25 != var29 && var27 != var29) {
-                     var34 = (Class3_Sub11)var52.method1780(var29, 0);
+                     var34 = (Class3_Sub11)var52.method1780(var29);
                      if(var34 == null) {
                         var34 = new Class3_Sub11((var23 >> 16) + -1, (float)('\uffff' & var23), false, null != var13, var20);
                         var52.method1779(var34, var29);
@@ -387,7 +387,7 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                   }
 
                   if(var25 != var31 && var31 != var27 && var31 != var29) {
-                     var34 = (Class3_Sub11)var52.method1780(var31, 0);
+                     var34 = (Class3_Sub11)var52.method1780(var31);
                      if(null == var34) {
                         var34 = new Class3_Sub11((var24 >> 16) - 1, (float)(var24 & '\uffff'), false, null != var13, var20);
                         var52.method1779(var34, var31);
@@ -519,21 +519,21 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
                   int var47 = -1 + (var62 >> 16);
                   int var46 = (var64 >> 16) - 1;
                   int var48 = (var63 >> 16) - 1;
-                  Class3_Sub11 var50 = (Class3_Sub11)var52.method1780(var67, 0);
+                  Class3_Sub11 var50 = (Class3_Sub11)var52.method1780(var67);
                   Class25.method955(var13, var64 <= var64, Class3_Sub13_Sub4.method190(var46, var38, (byte)-92, var42), var50, var58, var56, var20, var17, var64 <= var63, var8, var69 >= var64, 2, var4, var22, Class3_Sub13_Sub4.method190(var46, var41, (byte)-80, var45), Class3_Sub13_Sub4.method190(var46, var40, (byte)-103, var44), var62 >= var64, var12, var10, var61, Class3_Sub13_Sub4.method190(var46, var39, (byte)-118, var43), var60);
                   int var49 = (var69 >> 16) - 1;
                   if(var32 != var67) {
-                     var50 = (Class3_Sub11)var52.method1780(var32, 0);
+                     var50 = (Class3_Sub11)var52.method1780(var32);
                      Class25.method955(var13, var62 <= var64, Class3_Sub13_Sub4.method190(var47, var38, (byte)88, var42), var50, var58, var56, var20, var17, var63 >= var62, var8, var62 <= var69, 2, var4, var22, Class3_Sub13_Sub4.method190(var47, var41, (byte)-82, var45), Class3_Sub13_Sub4.method190(var47, var40, (byte)-113, var44), var62 <= var62, var12, var10, var61, Class3_Sub13_Sub4.method190(var47, var39, (byte)113, var43), var60);
                   }
 
                   if(var70 != var67 && var32 != var70) {
-                     var50 = (Class3_Sub11)var52.method1780(var70, 0);
+                     var50 = (Class3_Sub11)var52.method1780(var70);
                      Class25.method955(var13, var63 <= var64, Class3_Sub13_Sub4.method190(var48, var38, (byte)59, var42), var50, var58, var56, var20, var17, var63 <= var63, var8, var63 <= var69, 4096 ^ 4098, var4, var22, Class3_Sub13_Sub4.method190(var48, var41, (byte)54, var45), Class3_Sub13_Sub4.method190(var48, var40, (byte)-87, var44), var63 <= var62, var12, var10, var61, Class3_Sub13_Sub4.method190(var48, var39, (byte)-77, var43), var60);
                   }
 
                   if(var67 != var36 && var32 != var36 && var36 != var70) {
-                     var50 = (Class3_Sub11)var52.method1780(var36, 0);
+                     var50 = (Class3_Sub11)var52.method1780(var36);
                      Class25.method955(var13, var64 >= var69, Class3_Sub13_Sub4.method190(var49, var38, (byte)-118, var42), var50, var58, var56, var20, var17, var69 <= var63, var8, var69 <= var69, 4096 ^ 4098, var4, var22, Class3_Sub13_Sub4.method190(var49, var41, (byte)-96, var45), Class3_Sub13_Sub4.method190(var49, var40, (byte)115, var44), var69 <= var62, var12, var10, var61, Class3_Sub13_Sub4.method190(var49, var39, (byte)58, var43), var60);
                   }
                }

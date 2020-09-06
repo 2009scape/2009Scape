@@ -27,7 +27,7 @@ final class Class37 {
       long var8 = 0L;
       if((var2 & 127) == 0 || (var4 & 127) == 0) {
          var8 = (long)(var2 + (var4 << 16));
-         Class3_Sub18 var10 = (Class3_Sub18)this.aClass130_656.method1780(var8, 0);
+         Class3_Sub18 var10 = (Class3_Sub18)this.aClass130_656.method1780(var8);
          if(var10 != null) {
             return var10.anInt2467;
          }

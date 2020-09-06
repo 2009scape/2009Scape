@@ -1,14 +1,13 @@
 package org.runite.jagex;
 
 class Class3 {
-
    long aLong71;
-   static int anInt72 = 0;
-   static boolean[] aBooleanArray73 = new boolean[200];
    Class3 aClass3_74;
    Class3 aClass3_76;
-   static Class61 aClass61_78 = new Class61();
 
+   static Class61 aClass61_78 = new Class61();
+   static int anInt72 = 0;
+   static boolean[] aBooleanArray73 = new boolean[200];
 
    final boolean method82() {
       try {

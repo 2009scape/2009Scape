@@ -74,7 +74,7 @@ final class Class3_Sub11 extends Class3 {
       long var9 = 0L;
       if((var1 & 127) == 0 || (var3 & 127) == 0) {
          var9 = (long)(var1 + (var3 << 16)) + ((long)var7 << 32);
-         Class3_Sub18 var11 = (Class3_Sub18)this.aClass130_2353.method1780(var9, 0);
+         Class3_Sub18 var11 = (Class3_Sub18)this.aClass130_2353.method1780(var9);
          if(var11 != null) {
             if(var2 < this.anIntArray2358[var11.anInt2467]) {
                this.anIntArray2358[var11.anInt2467] = var2;

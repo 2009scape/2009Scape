@@ -36,7 +36,7 @@ final class Class86 {
    static void method1428(int var0, int var2) {
       try {
          ItemDefinition.ram[var0] = var2;
-         Class3_Sub7 var3 = (Class3_Sub7) aClass130_3679.method1780((long)var0, 0);
+         Class3_Sub7 var3 = (Class3_Sub7) aClass130_3679.method1780((long)var0);
          if(var3 == null) {
             var3 = new Class3_Sub7(Class5.method830((byte)-55) - -500L);
             aClass130_3679.method1779(var3, (long)var0);

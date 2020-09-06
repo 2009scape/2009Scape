@@ -24,7 +24,7 @@ static boolean aBoolean1080 = false;
       try {
          synchronized(this.aClass13_1086) {
 
-            this.aClass13_1086.method879(var1, (byte)-127);
+            this.aClass13_1086.method879(var1);
             ++this.anInt1087;
             this.aClass13_1086.notifyAll();
          }

@@ -45,7 +45,7 @@ abstract class AbstractIndexedSprite {
 
          for(Class3_Sub28_Sub3 var4 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1222(); var4 != null; var4 = (Class3_Sub28_Sub3)Class134.aClass61_1758.method1221()) {
             if(var4.aBoolean3553 && var4.method537(var1, var0)) {
-               var3.method879(var4, (byte)-127);
+               var3.method879(var4);
             }
          }
 

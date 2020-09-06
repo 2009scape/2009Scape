@@ -146,7 +146,7 @@ final class NPCDefinition {
          if(null == this.aClass130_1272) {
             return var3;
          } else {
-            Class3_Sub18 var4 = (Class3_Sub18)this.aClass130_1272.method1780((long)var1, 0);
+            Class3_Sub18 var4 = (Class3_Sub18)this.aClass130_1272.method1780((long)var1);
             return var4 != null?var4.anInt2467:var3;
          }
       } catch (RuntimeException var5) {
@@ -460,7 +460,7 @@ final class NPCDefinition {
          if(null == this.aClass130_1272) {
             return var2;
          } else {
-            Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_1272.method1780((long)var1, 0);
+            Class3_Sub29 var4 = (Class3_Sub29)this.aClass130_1272.method1780((long)var1);
             return (null == var4?var2:var4.aClass94_2586);
          }
       } catch (RuntimeException var5) {

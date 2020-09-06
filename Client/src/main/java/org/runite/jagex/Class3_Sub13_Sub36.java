@@ -296,7 +296,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
 
    static Class3_Sub28_Sub13 method342(int var0) {
       try {
-         Class3_Sub28_Sub13 var2 = (Class3_Sub28_Sub13)Class129_Sub1.aClass47_2686.method1092((long)var0);
+         Class3_Sub28_Sub13 var2 = (Class3_Sub28_Sub13)Class129_Sub1.aClass47_2686.getNodeByID((long)var0);
          if(var2 == null) {
             byte[] var3 = Class45.aClass153_731.getFile(Class53.method1170((byte)44, var0), Class3_Sub30_Sub1.method810(var0));
             var2 = new Class3_Sub28_Sub13();
