@@ -25,5 +25,5 @@ jobs:
           cd Server/
           gradle wrapper
           chmod +x gradlew
-          ./gradlew build --info
+          ./gradlew build
 
