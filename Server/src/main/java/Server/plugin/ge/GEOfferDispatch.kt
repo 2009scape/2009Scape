@@ -93,7 +93,7 @@ class GEOfferDispatch : Pulse(), CallBack {
                     val o = offer as JSONObject
                     val itemId = o["itemId"].toString().toInt()
                     val sale = o["sale"] as Boolean
-                    val no = GrandExchangeOffer(itemId,sale)
+                    val no = GrandExchangeOffer(itemId, sale)
                     no.offeredValue = o["offeredValue"].toString().toInt()
                     no.amount = o["amount"].toString().toInt()
                     no.timeStamp = o["timeStamp"].toString().toLong()
@@ -106,11 +106,11 @@ class GEOfferDispatch : Pulse(), CallBack {
                     var index = 0
                     for(data in withdrawData){
                         val item = data as JSONObject
-                        val it = Item(item["id"].toString().toInt(),item["amount"].toString().toInt())
+                        val it = Item(item["id"].toString().toInt(), item["amount"].toString().toInt())
                         no.withdraw[index] = it
                         index++
                     }
-                    OFFER_MAPPING.put(no.uid,no)
+                    OFFER_MAPPING.put(no.uid, no)
                 }
             }
         }
@@ -129,29 +129,29 @@ class GEOfferDispatch : Pulse(), CallBack {
                     continue
                 }
                 val o = JSONObject()
-                o.put("uid",entry.key.toString())
-                o.put("itemId",offer.itemId.toString())
-                o.put("sale",offer.isSell)
-                o.put("amount",offer.amount.toString())
-                o.put("completedAmount",offer.completedAmount.toString())
-                o.put("offeredValue",offer.offeredValue.toString())
-                o.put("timeStamp",offer.timeStamp.toString())
-                o.put("offerState",offer.state.ordinal.toString())
-                o.put("totalCoinExchange",offer.totalCoinExchange.toString())
-                o.put("playerUID",offer.playerUID.toString())
+                o.put("uid", entry.key.toString())
+                o.put("itemId", offer.itemId.toString())
+                o.put("sale", offer.isSell)
+                o.put("amount", offer.amount.toString())
+                o.put("completedAmount", offer.completedAmount.toString())
+                o.put("offeredValue", offer.offeredValue.toString())
+                o.put("timeStamp", offer.timeStamp.toString())
+                o.put("offerState", offer.state.ordinal.toString())
+                o.put("totalCoinExchange", offer.totalCoinExchange.toString())
+                o.put("playerUID", offer.playerUID.toString())
                 val withdrawItems = JSONArray()
                 for(item in offer.withdraw){
                     item ?: continue
                     val it = JSONObject()
-                    it.put("id",item.id.toString())
-                    it.put("amount",item.amount.toString())
+                    it.put("id", item.id.toString())
+                    it.put("amount", item.amount.toString())
                     withdrawItems.add(it)
                 }
-                o.put("withdrawItems",withdrawItems)
+                o.put("withdrawItems", withdrawItems)
                 offers.add(o)
             }
             root.put("offsetUID", offsetUID.toString())
-            root.put("offers",offers)
+            root.put("offers", offers)
 
             val manager = ScriptEngineManager()
             val scriptEngine = manager.getEngineByName("JavaScript")
@@ -291,6 +291,12 @@ class GEOfferDispatch : Pulse(), CallBack {
             offer.notify(UPDATE_NOTIFICATION)
             o.notify(UPDATE_NOTIFICATION)
             dumpDatabase = true
+            if (o.playerUID == BotGrandExchange.MAGIC_UID && o.state == OfferState.COMPLETED) {
+                remove(o.uid);
+            }
+            if (offer.playerUID == BotGrandExchange.MAGIC_UID && offer.state == OfferState.COMPLETED) {
+                remove(offer.uid);
+            }
         }
 
         /**

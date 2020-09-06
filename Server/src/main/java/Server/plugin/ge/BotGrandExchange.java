@@ -2,6 +2,7 @@ package plugin.ge;
 
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.info.PlayerDetails;
+import core.game.node.item.Item;
 import core.game.system.SystemLogger;
 
 import java.util.*;
@@ -14,13 +15,19 @@ import java.util.*;
 public class BotGrandExchange {
     private static HashMap<Integer, GrandExchangeOffer> botOffers = new HashMap<Integer, GrandExchangeOffer>();
 
-    private static final int MAGIC_UID = -1031243425;
+    public static final int MAGIC_UID = -1031243425;
 
     public static void loadOffersFromDB() {
         Collection<GrandExchangeOffer> offers = GEOfferDispatch.getOfferMapping().values();
         List<Long> offersToRemove = new ArrayList<Long>();
         for (GrandExchangeOffer o : offers){
-            if (o.getPlayerUID() == MAGIC_UID && o.isSell()) {
+            if (o.getPlayerUID() == MAGIC_UID && o.isSell() && o.isActive()) {
+                // Remove all clue scrolls
+                if (isClueScroll(o.getItemId())) {
+                    offersToRemove.add(o.getUid());
+                    continue;
+                }
+
                 if (botOffers.containsKey(o.getItemId())) {
                     GrandExchangeOffer bo = botOffers.get(o.getItemId());
                     bo.setAmount(bo.getAmount() + o.getAmountLeft());
@@ -31,6 +38,8 @@ public class BotGrandExchange {
                     bo.setOfferedValue(o.getOfferedValue());
                     botOffers.put(bo.getItemId(), bo);
                 }
+                offersToRemove.add(o.getUid());
+            } else if (o.getPlayerUID() == MAGIC_UID && o.isSell()) { // If the offer is a bot offer and not active remove it.
                 offersToRemove.add(o.getUid());
             }
         }
@@ -45,8 +54,11 @@ public class BotGrandExchange {
     }
 
     public static void sellOnGE(int id, int value, int amount) {
+        if (isClueScroll(id)) {
+            return;
+        }
         GrandExchangeOffer o;
-        if (botOffers.containsKey(id) && botOffers.get(id) != null && botOffers.get(id).getState() != OfferState.COMPLETED) {
+        if (botOffers.containsKey(id) && botOffers.get(id) != null && botOffers.get(id).isActive()) {
             o = botOffers.get(id);
             o.setAmount(amount + o.getAmount());
             o.setOfferedValue(value);
@@ -60,5 +72,10 @@ public class BotGrandExchange {
             SystemLogger.log("Adding new item " + id + " in amt " + o.getAmount());
         }
         botOffers.put(id, GEOfferDispatch.getOfferMapping().get(GEOfferDispatch.getLastItemUID()));
+    }
+
+    public static boolean isClueScroll(int id) {
+        Item i = new Item(id);
+        return i.getDefinition().getName().equalsIgnoreCase("Clue scroll");
     }
 }
