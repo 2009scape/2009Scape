@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="discord-rpc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/discord-rpc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
