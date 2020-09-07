@@ -6,7 +6,7 @@ import core.plugin.InitializablePlugin;
 import core.game.node.entity.player.link.quest.Quest;
 
 /**
- * Represents the vampie quest.
+ * Represents the vampire quest.
  * @author 'Vexia
  */
 @InitializablePlugin

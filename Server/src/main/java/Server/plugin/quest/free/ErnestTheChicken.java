@@ -22,7 +22,7 @@ public final class ErnestTheChicken extends Quest {
 	private static final Item OIL_CAN = new Item(277);
 
 	/**
-	 * Represents the pressure guage item.
+	 * Represents the pressure gauge item.
 	 */
 	private static final Item PRESSURE_GAUGE = new Item(271);
 
@@ -95,7 +95,7 @@ public final class ErnestTheChicken extends Quest {
 	}
 	
 	/**
-	 * Represents the abstact npc class to handle ernest the chicken.
+	 * Represents the abstract npc class to handle ernest the chicken.
 	 * @author 'Vexia
 	 * @version 1.0
 	 */
@@ -140,7 +140,7 @@ public final class ErnestTheChicken extends Quest {
 	}
 	
 	/**
-	 * Represents the abstact npc class to handle ernest the chicken.
+	 * Represents the abstract npc class to handle ernest the chicken.
 	 * @author 'Vexia
 	 * @version 1.0
 	 */
@@ -179,7 +179,7 @@ public final class ErnestTheChicken extends Quest {
 				clear();
 				return super.isHidden(player);
 			}
-			return target == null ? true : player != target;
+			return target == null || player != target;
 		}
 
 		@Override
