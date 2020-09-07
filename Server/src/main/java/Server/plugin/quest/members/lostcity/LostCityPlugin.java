@@ -110,7 +110,7 @@ public final class LostCityPlugin extends OptionHandler {
 			return;
 		}
 		if (SHAMUS == null) {
-			initalizeShamus();
+			initializeShamus();
 		}
 		if (SHAMUS.isInvisible()) {
 			showShamus();
@@ -124,7 +124,7 @@ public final class LostCityPlugin extends OptionHandler {
 	 */
 	private void showShamus() {
 		if (SHAMUS == null) {
-			initalizeShamus();
+			initializeShamus();
 		}
 		SHAMUS.setInvisible(false);
 		SHAMUS.getProperties().setTeleportLocation(SHAMUS.getProperties().getSpawnLocation());
@@ -143,7 +143,7 @@ public final class LostCityPlugin extends OptionHandler {
 	/**
 	 * Initializes the shamus npc.
 	 */
-	private void initalizeShamus() {
+	private void initializeShamus() {
 		if (SHAMUS == null) {
 			SHAMUS = NPC.create(654, Location.create(3138, 3211, 0));
 		}

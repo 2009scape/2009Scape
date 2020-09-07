@@ -344,7 +344,7 @@ public class DemonSlayer extends Quest {
 				break;
 			case 616:
 				if (player.getInventory().freeSlots() == 0) {
-					npc("Talk to me againw hen you have free inventory space.");
+					npc("Talk to me again when you have free inventory space.");
 					stage = 617;
 					return;
 				}

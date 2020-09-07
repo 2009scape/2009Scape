@@ -52,7 +52,7 @@ public final class CuratorHaigHalenDialogue extends DialoguePlugin {
 				stage = 1;
 				break;
 			case 1:
-				npc("The Shield of Arrav! Goodness, the Museum has been", "searching for that for years! The late Kibg Roald II", "offered a reward for it years ago!");
+				npc("The Shield of Arrav! Goodness, the Museum has been", "searching for that for years! The late King Roald II", "offered a reward for it years ago!");
 				stage = 2;
 				break;
 			case 2:
@@ -113,7 +113,7 @@ public final class CuratorHaigHalenDialogue extends DialoguePlugin {
 				stage = 14;
 				break;
 			case 14:
-				npc("Well, if you were to get me the other half of the shield,", "I could give you the other half of the reward certificate.", "It's rumoured to be in the possesion of the infamous", "Blackarm Gang, beyond that I can't help you.");
+				npc("Well, if you were to get me the other half of the shield,", "I could give you the other half of the reward certificate.", "It's rumoured to be in the possession of the infamous", "Blackarm Gang, beyond that I can't help you.");
 				stage = 15;
 				break;
 			case 15:

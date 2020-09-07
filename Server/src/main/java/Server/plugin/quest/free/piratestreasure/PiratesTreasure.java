@@ -22,7 +22,7 @@ public final class PiratesTreasure extends Quest {
 	public static final Component MESSAGE_COMPONENT = new Component(222);
 
 	/**
-	 * Represents the cakset rewards (pirates treasure).
+	 * Represents the casket rewards (pirates treasure).
 	 */
 	public static final Item[] CASKET_REWARDS = new Item[] { new Item(995, 450), new Item(1635), new Item(1605) };
 
@@ -71,7 +71,7 @@ public final class PiratesTreasure extends Quest {
 		case 10:
 			if (!player.getInventory().containsItem(KARAMJAN_RUM)) {
 				line(player, BLUE + "I have spoken to " + RED + " Redbeard Frank." + BLUE + " He has agreed to tell me", 4+ 7);
-				line(player, BLUE + "the location of some " + RED + " treasure " + BLUE + "for some " + RED + "Karamja Rum.", 5+ 7);
+				line(player, BLUE + "the location of some " + RED + " treasure " + BLUE + "for some " + RED + "Karamjan rum.", 5+ 7);
 				line(player, BLUE + "I have taken employment on the " + RED + "banana plantation " + BLUE + ", as the", 6+ 7);
 				line(player, RED + "Customs Officers " + BLUE + "might not notice the " + RED + "rum " + BLUE + "if it is covered", 7+ 7);
 				line(player, BLUE + "in " + RED + "bananas.", 8+ 7);
@@ -79,8 +79,8 @@ public final class PiratesTreasure extends Quest {
 				line(player, BLUE + "destined for " + RED + "Wydin's store" + BLUE + "...", 11+ 7);
 			} else {
 				line(player, BLUE + "I have spoken to " + RED + "Redbeard Frank " + BLUE + ". He has agreed to tell me", 5+ 7);
-				line(player, BLUE + "the location of some " + RED + "treasure " + BLUE + "for some " + RED + "Karamja Rum.", 6+ 7);
-				line(player, BLUE + "I have the " + RED + "Karamja Rum. " + BLUE + "I should take it to " + RED + "Redbeard Frank.", 8+ 7);
+				line(player, BLUE + "the location of some " + RED + "treasure " + BLUE + "for some " + RED + "Karamjan rum.", 6+ 7);
+				line(player, BLUE + "I have the " + RED + "Karamjan rum. " + BLUE + "I should take it to " + RED + "Redbeard Frank.", 8+ 7);
 			}
 			break;
 		case 20:
@@ -106,7 +106,7 @@ public final class PiratesTreasure extends Quest {
 				line(player, BLUE + "I have a " + RED + "key " + BLUE + "that can be used to unlock the chest that", 11+ 7);
 				line(player, BLUE + "holds the treasure.", 12+ 7);
 			} else {
-				line(player, BLUE + "I have lost the " + RED + "key " + BLUE + "that " + RED + "Readbeard Frank " + BLUE + "gave me. I should", 11+ 7);
+				line(player, BLUE + "I have lost the " + RED + "key " + BLUE + "that " + RED + "Redbeard Frank " + BLUE + "gave me. I should", 11+ 7);
 				line(player, BLUE + "see if he has another.", 12+ 7);
 			}
 			break;
@@ -125,7 +125,7 @@ public final class PiratesTreasure extends Quest {
 	public void finish(Player player) {
 		super.finish(player);
 		player.getPacketDispatch().sendString("2 Quest Points", 277, 8 + 2);
-		player.getPacketDispatch().sendString("One-Eyes Hector's Treasure", 277, 9 + 2);
+		player.getPacketDispatch().sendString("One-Eyed Hector's Treasure", 277, 9 + 2);
 		player.getPacketDispatch().sendString("Chest", 277, 10 + 2);
 		player.getPacketDispatch().sendString("You can also use the Pay-", 277, 11 + 2);
 		player.getPacketDispatch().sendString("fare option to go to and from", 277, 12 + 2);

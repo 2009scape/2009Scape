@@ -297,7 +297,7 @@ public class SirPyrsinDialogue extends DialoguePlugin {
 			case 44:
 				switch (buttonId) {
 				case 1:
-					player("Well the gypsy's crystall ball seems to think otherwise.");
+					player("Well the gypsy's crystal ball seems to think otherwise.");
 					stage = 45;
 					break;
 				case 2:
@@ -399,7 +399,7 @@ public class SirPyrsinDialogue extends DialoguePlugin {
 				stage = 121;
 				break;
 			case 121:
-				npc(id, "He is one of the wizards who lives in the tower on the", "little island just south coast. I believe his", "quartes are on the first floor of the tower.");
+				npc(id, "He is one of the wizards who lives in the tower on the", "little island just south coast. I believe his", "quarters are on the first floor of the tower.");
 				stage = 122;
 				break;
 			case 122:

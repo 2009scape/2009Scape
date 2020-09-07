@@ -43,9 +43,9 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 	public static final int DELRITH = 879;
 
 	/**
-	 * Represents the id of weakend delrith.
+	 * Represents the id of weakened delrith.
 	 */
-	public static final int WEAKEND_DELRITH = 880;
+	public static final int WEAKENED_DELRITH = 880;
 
 	/**
 	 * Represents the wizard animation.
@@ -58,7 +58,7 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 	public GameObject stoneTable;
 
 	/**
-	 * Represents the delirth npc.
+	 * Represents the delrith npc.
 	 */
 	public NPC delrith;
 
@@ -250,7 +250,7 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 		/**
 		 * The NPC ids of NPCs using this plugin.
 		 */
-		private final int[] IDS = { WEAKEND_DELRITH, DELRITH };
+		private final int[] IDS = { WEAKENED_DELRITH, DELRITH };
 
 		/**
 		 * Constructs a new {@code DarkWizardNPC} {@code Object}.
@@ -286,7 +286,7 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 				super.setRespawnTick(-1);
 				super.getWalkingQueue().reset();
 				super.getLocks().lockMovement(10);
-				transform(WEAKEND_DELRITH);
+				transform(WEAKENED_DELRITH);
 				getProperties().setTeleportLocation(null);
 				lock();
 			} else {

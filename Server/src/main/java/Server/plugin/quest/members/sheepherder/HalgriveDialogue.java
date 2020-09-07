@@ -95,7 +95,7 @@ public class HalgriveDialogue extends DialoguePlugin {
                 break;
             case 100:
                 player.getQuestRepository().getQuest("Sheep Herder").start(player);
-                npc("Y-you will??? That is excellent news! Head to the","enclosure we have set up on Farmer Brumty's land to","the north of the city; the four infected sheap should still","be somewhere in that vicinity. Before you will be allowed");
+                npc("Y-you will??? That is excellent news! Head to the","enclosure we have set up on Farmer Brumty's land to","the north of the city; the four infected sheep should still","be somewhere in that vicinity. Before you will be allowed");
                 stage++;
                 break;
             case 101:
@@ -107,11 +107,11 @@ public class HalgriveDialogue extends DialoguePlugin {
                 stage++;
                 break;
             case 103:
-                npc("Doctor Orbon wears it when conducting mercy","missions to the infected parts of the city. You should be","able to find him in the chapel just north of here. Please","also take this poisoned sheed feed; we believe poisoning");
+                npc("Doctor Orbon wears it when conducting mercy","missions to the infected parts of the city. You should be","able to find him in the chapel just north of here. Please","also take this poisoned sheep feed; we believe poisoning");
                 stage++;
                 break;
             case 104:
-                npc("the sheep will niminise the risk of airborne","contamination, and is of course also more humane to","the sheep.");
+                npc("the sheep will minimise the risk of airborne","contamination, and is of course also more humane to","the sheep.");
                 stage++;
                 break;
             case 105:
@@ -140,7 +140,7 @@ public class HalgriveDialogue extends DialoguePlugin {
                 }
                 break;
             case 201:
-                npc("Well, pleae do hurry!");
+                npc("Well, please do hurry!");
                 stage = 108;
                 break;
             case 205:

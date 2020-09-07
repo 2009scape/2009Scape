@@ -255,7 +255,7 @@ public class TraibornDialogue extends DialoguePlugin {
 
 	/**
 	 * Method used to handle the default button id.
-	 * @param buttonId the buttton id.
+	 * @param buttonId the button id.
 	 */
 	private final void handleDefault(int buttonId) {
 		switch (stage) {
@@ -266,7 +266,7 @@ public class TraibornDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What's a thingumywut?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What's a thingummywut?");
 				stage = 10;
 				break;
 			case 2:
@@ -284,7 +284,7 @@ public class TraibornDialogue extends DialoguePlugin {
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendOptions("Select an Option", "Err you just called me a thingymummywut.", "Tell me what they look like and I'll mask 'em.");
+			interpreter.sendOptions("Select an Option", "Err you just called me a thingummywut.", "Tell me what they look like and I'll mask 'em.");
 			stage = 13;
 			break;
 		case 13:

@@ -78,8 +78,8 @@ public class PrinceAliRescue extends Quest {
 			line(player, BLUE + "Talk to " + RED + "Leela " + BLUE + "near " + RED + "Draynor Village " + BLUE + "for advice.", 12+ 7);
 			line(player, BLUE + "Get a " + RED + "duplicate " + BLUE + "of the " + RED + "key " + BLUE + "that is " + RED + "imprisoning " + BLUE + "the " + RED + "prince.", 13+ 7);
 			line(player, hasItem(player, ROPE) ? "<str>I have some rope with me." : BLUE + "Get some " + RED + "rope " + BLUE + "to tie up the Princes' " + RED + "kidnapper.", 14+ 7);
-			line(player, hasItem(player, PASTE) ? "<str>I have some skin paste sutiable for disguise with me." : BLUE + "Get something to " + RED + "colour " + BLUE + "the " + RED + "Princes' skin " + BLUE + "as a " + RED + "disguise.", 15+ 7);
-			line(player, hasItem(player, SKIRT) ? "<str>I have a skirt suitbale for a disguise with me." : BLUE + "Get a " + RED + "skirt " + BLUE + "similar to his " + RED + "kidnapper " + BLUE + "as " + RED + "disguise.", 16+ 7);
+			line(player, hasItem(player, PASTE) ? "<str>I have some skin paste suitable for disguise with me." : BLUE + "Get something to " + RED + "colour " + BLUE + "the " + RED + "Princes' skin " + BLUE + "as a " + RED + "disguise.", 15+ 7);
+			line(player, hasItem(player, SKIRT) ? "<str>I have a skirt suitable for a disguise with me." : BLUE + "Get a " + RED + "skirt " + BLUE + "similar to his " + RED + "kidnapper " + BLUE + "as " + RED + "disguise.", 16+ 7);
 			line(player, hasItem(player, YELLOW_WIG) ? "<str>I have a wig suitable for disguise with me." : BLUE + "Get a " + RED + "Wig " + BLUE + "to " + RED + "help disguise " + BLUE + "the " + RED + "prince.", 17+ 7);
 			break;
 		case 30:
@@ -94,8 +94,8 @@ public class PrinceAliRescue extends Quest {
 			line(player, BLUE + "Talk to " + RED + "Leela " + BLUE + "near " + RED + "Draynor Village " + BLUE + "for advice.", 12+ 7);
 			line(player, BLUE + "I have duplicated a key, I need to get it from " + RED + "Leela.", 13+ 7);
 			line(player, hasItem(player, ROPE) ? "<str>I have some rope with me." : BLUE + "Get some " + RED + "rope " + BLUE + "to tie up the Princes' " + RED + "kidnapper.", 14+ 7);
-			line(player, hasItem(player, PASTE) ? "<str>I have some skin paste sutiable for disguise with me." : BLUE + "Get something to " + RED + "colour " + BLUE + "the " + RED + "Princes' skin " + BLUE + "as a " + RED + "disguise.", 15+ 7);
-			line(player, hasItem(player, SKIRT) ? "<str>I have a skirt suitbale for a disguise with me." : BLUE + "Get a " + RED + "skirt " + BLUE + "similar to his " + RED + "kidnapper " + BLUE + "as " + RED + "disguise.", 16+ 7);
+			line(player, hasItem(player, PASTE) ? "<str>I have some skin paste suitable for disguise with me." : BLUE + "Get something to " + RED + "colour " + BLUE + "the " + RED + "Princes' skin " + BLUE + "as a " + RED + "disguise.", 15+ 7);
+			line(player, hasItem(player, SKIRT) ? "<str>I have a skirt suitable for a disguise with me." : BLUE + "Get a " + RED + "skirt " + BLUE + "similar to his " + RED + "kidnapper " + BLUE + "as " + RED + "disguise.", 16+ 7);
 			line(player, hasItem(player, YELLOW_WIG) ? "<str>I have a wig suitable for disguise with me." : BLUE + "Get a " + RED + "Wig " + BLUE + "to " + RED + "help disguise" + BLUE + "the " + RED + "prince.", 17+ 7);
 			break;
 		case 40:
@@ -106,11 +106,11 @@ public class PrinceAliRescue extends Quest {
 				line(player, "<str>Prince Ali has been kidnapped but luckily the spy Leela has", 7+ 7);
 				line(player, "<str>found he is being held near Draynor village. I will need to", 8+ 7);
 				line(player, "<str>disguise the Prince and tie up his captor to free him from", 9+ 7);
-				line(player, "<str>their glutches.", 10+ 7);
+				line(player, "<str>their clutches.", 10+ 7);
 				line(player, "<str>I also had to prevent the Guard from seeing that I was up", 10+ 7);
 				line(player, "<str>to, by getting him drunk.", 11+ 7);
 				line(player, BLUE + "With the guard out of the way, all I have to do now is use", 11+ 7);
-				line(player, BLUE + "the " + RED + "Skin Potion" + BLUE + ", " + RED + "Pink SKirt" + BLUE + ", " + RED + "Rope" + BLUE + ", " + RED + "Blonde Wig " + BLUE + "and " + RED + "Cell Key " + BLUE + "to", 12+ 7);
+				line(player, BLUE + "the " + RED + "Skin Potion" + BLUE + ", " + RED + "Pink Skirt" + BLUE + ", " + RED + "Rope" + BLUE + ", " + RED + "Blonde Wig " + BLUE + "and " + RED + "Cell Key " + BLUE + "to", 12+ 7);
 				line(player, BLUE + "free " + RED + "Prince Ali " + BLUE + "from his cell somehow.", 13+ 7);
 			} else {
 				line(player, BLUE + "Do something to prevent " + RED + "Joe the Guard " + BLUE + "seeing the", 7+ 7);
@@ -126,8 +126,8 @@ public class PrinceAliRescue extends Quest {
 			line(player, "<str>Prince Ali has been kidnapped but luckily the spy Leela has", 7+ 7);
 			line(player, "<str>found he is being held near Draynor village. I will need to", 8+ 7);
 			line(player, "<str>disguise the Prince and tie up his captor to free him from", 9+ 7);
-			line(player, "<str>their glutches.", 10+ 7);
-			line(player, "<str>I also had to prevent the Guar from seeing that I was up", 10+ 7);
+			line(player, "<str>their clutches.", 10+ 7);
+			line(player, "<str>I also had to prevent the Guard from seeing that I was up", 10+ 7);
 			line(player, "<str>to, by getting him drunk.", 11+ 7);
 			line(player, "<str>With the guard disposed of, I used my rope to tie up Lady", 11+ 7);
 			line(player, "<str>Keli in a cupboard, so I could disguise the Prince.", 12+ 7);
@@ -142,8 +142,8 @@ public class PrinceAliRescue extends Quest {
 			line(player, "<str>Prince Ali has been kidnapped but luckily the spy Leela has", 7+ 7);
 			line(player, "<str>found he is being held near Draynor village. I will need to", 8+ 7);
 			line(player, "<str>disguise the Prince and tie up his captor to free him from", 9+ 7);
-			line(player, "<str>their glutches.", 10+ 7);
-			line(player, "<str>I also had to prevent the Guar from seeing that I was up", 10+ 7);
+			line(player, "<str>their clutches.", 10+ 7);
+			line(player, "<str>I also had to prevent the Guard from seeing that I was up", 10+ 7);
 			line(player, "<str>to, by getting him drunk.", 11+ 7);
 			line(player, "<str>With the guard disposed of, I used my rope to tie up Lady", 11+ 7);
 			line(player, "<str>Keli in a cupboard, so I could disguise the Prince.", 12+ 7);
@@ -159,8 +159,8 @@ public class PrinceAliRescue extends Quest {
 			line(player, "<str>Prince Ali has been kidnapped but luckily the spy Leela has", 7+ 7);
 			line(player, "<str>found he is being held near Draynor village. I will need to", 8+ 7);
 			line(player, "<str>disguise the Prince and tie up his captor to free him from", 9+ 7);
-			line(player, "<str>their glutches.", 10+ 7);
-			line(player, "<str>I also had to prevent the Guar from seeing that I was up", 10+ 7);
+			line(player, "<str>their clutches.", 10+ 7);
+			line(player, "<str>I also had to prevent the Guard from seeing that I was up", 10+ 7);
 			line(player, "<str>to, by getting him drunk.", 11+ 7);
 			line(player, "<str>With the guard disposed of, I used my rope to tie up Lady", 11+ 7);
 			line(player, "<str>Keli in a cupboard, so I could disguise the Prince.", 12+ 7);
@@ -176,7 +176,7 @@ public class PrinceAliRescue extends Quest {
 	}
 
 	/**
-	 * Ceck if the player has the item.
+	 * Check if the player has the item.
 	 * @param player the player.
 	 * @param item the item.
 	 * @return true or false.

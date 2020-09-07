@@ -15,7 +15,7 @@ import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
 
 /**
- * Represents the plugin used to handle prince ali rescure quest interaction nodes.
+ * Represents the plugin used to handle prince ali rescue quest interaction nodes.
  * @author Vexia
  * 
  */

@@ -26,7 +26,7 @@ public class OrbonDialogue extends DialoguePlugin {
             stage = 100;
             return true;
         } else {
-            player.sendMessage("He doesn't seem interested in taling with you right now.");
+            player.sendMessage("He doesn't seem interested in talking with you right now.");
         }
         return true;
     }

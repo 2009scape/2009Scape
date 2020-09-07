@@ -206,7 +206,7 @@ public class SirAmikVarzeDialogue extends DialoguePlugin {
 				stage = 6;
 				break;
 			case 6:
-				interpreter.sendOptions("Select an Option", "I laugh in the fance of danger!", "I go and cower in the corner at the first sign of danger!");
+				interpreter.sendOptions("Select an Option", "I laugh in the face of danger!", "I go and cower in the corner at the first sign of danger!");
 				stage = 7;
 				break;
 			case 7:
@@ -265,7 +265,7 @@ public class SirAmikVarzeDialogue extends DialoguePlugin {
 				stage = 17;
 				break;
 			case 17:
-				interpreter.sendDialogues(npc, null, "Subtley isn't exactly our strong point.");
+				interpreter.sendDialogues(npc, null, "Subtlety isn't exactly our strong point.");
 				stage = 18;
 				break;
 			case 18:
@@ -289,7 +289,7 @@ public class SirAmikVarzeDialogue extends DialoguePlugin {
 				stage = 23;
 				break;
 			case 23:
-				interpreter.sendDialogues(npc, null, "Well, the Black Knights have started making strange", "threats to us; demanding large amounts of money and", "land, and threating to invade Falador if we don't pay", "them.");
+				interpreter.sendDialogues(npc, null, "Well, the Black Knights have started making strange", "threats to us; demanding large amounts of money and", "land, and threatening to invade Falador if we don't pay", "them.");
 				stage = 24;
 				break;
 			case 24:

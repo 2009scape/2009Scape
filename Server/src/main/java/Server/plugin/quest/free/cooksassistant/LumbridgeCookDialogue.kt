@@ -86,7 +86,7 @@ class LumbridgeCookDialogue (player: Player? = null) : DialoguePlugin(player){
             34 -> player(FacialExpression.ASKING,"Well maybe you need to take a holiday...").also { stage++ }
             35 -> npc(FacialExpression.SAD,"That would be nice, but the Duke doesn't allow holidays","for core staff").also { stage++ }
             36 -> player(FacialExpression.SUSPICIOUS,"Hmm, why not run away to the sea and start a new","life as a Pirate?").also { stage++ }
-            37 -> npc(FacialExpression.SAD,"My wife gets sea sick, and I have an irational fear of","eyepatches. I don't see it working myself.").also { stage++ }
+            37 -> npc(FacialExpression.SAD,"My wife gets sea sick, and I have an irrational fear of","eyepatches. I don't see it working myself.").also { stage++ }
             38 -> player(FacialExpression.NEUTRAL,"I'm afraid I've run out of ideas.").also { stage++ }
             39 -> npc(FacialExpression.SAD,"I know I'm doomed.").also { stage = 21 }
 

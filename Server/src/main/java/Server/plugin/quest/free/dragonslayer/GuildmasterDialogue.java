@@ -169,7 +169,7 @@ public final class GuildmasterDialogue extends DialoguePlugin {
 				}
 				break;
 			case 1000:
-				npc("Melzar built a catle on the site of the Crandorian", "refugee camp, north of Rimmington. He's locked himself", "in there and no one's seen him for years.");
+				npc("Melzar built a castle on the site of the Crandorian", "refugee camp, north of Rimmington. He's locked himself", "in there and no one's seen him for years.");
 				stage = 1001;
 				break;
 			case 1001:

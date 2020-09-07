@@ -24,7 +24,7 @@ import core.game.world.update.flag.context.Graphics;
 import core.tools.RandomFunction;
 
 /**
- * Represents the elvar npc.
+ * Represents the elvarg npc.
  * @author 'Vexia
  * @version 1.0
  */
@@ -166,7 +166,7 @@ public final class ElvargNPC extends AbstractNPC {
 	}
 
 	/**
-	 * Handles the elvar combat swing handler.
+	 * Handles the elvarg combat swing handler.
 	 * @author Emperor
 	 */
 	static class ElvargCombatSwingHandler extends CombatSwingHandler {
