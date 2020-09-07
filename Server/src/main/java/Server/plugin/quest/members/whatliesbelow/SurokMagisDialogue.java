@@ -105,11 +105,11 @@ public class SurokMagisDialogue extends DialoguePlugin {
 		default:
 			switch (stage) {
 			case 0:
-				player("What do you want? ...Oh, wait. I know! You're", "porbably just like all the others, aren't you? After some", "fancy spell or potion from me, I bet!");
+				player("What do you want? ...Oh, wait. I know! You're", "probably just like all the others, aren't you? After some", "fancy spell or potion from me, I bet!");
 				stage = 1;
 				break;
 			case 1:
-				npc("No! atleast, I don't think so. What sort of spells", "do you have?");
+				npc("No! at least, I don't think so. What sort of spells", "do you have?");
 				stage = 2;
 				break;
 			case 2:
@@ -129,7 +129,7 @@ public class SurokMagisDialogue extends DialoguePlugin {
 				stage = 6;
 				break;
 			case 6:
-				npc("Yes, ofcourse!");
+				npc("Yes, of course!");
 				stage = 7;
 				break;
 			case 7:
@@ -210,7 +210,7 @@ public class SurokMagisDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 16:
-				npc("I will only need a couple of items. The first is very", "simple: an ordinary bowl to use as a castign vessel.");
+				npc("I will only need a couple of items. The first is very", "simple: an ordinary bowl to use as a casting vessel.");
 				stage++;
 				break;
 			case 17:
@@ -230,7 +230,7 @@ public class SurokMagisDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 21:
-				player("How on earth do you know about Runecrafting? I", "thought onyly a few people knew of it.");
+				player("How on earth do you know about Runecrafting? I", "thought only a few people knew of it.");
 				stage++;
 				break;
 			case 22:
@@ -518,7 +518,7 @@ public class SurokMagisDialogue extends DialoguePlugin {
 	}
 
 	/**
-	 * Sets the bacutscene.
+	 * Sets the cutscene.
 	 * @param cutscene the cutscene to set.
 	 */
 	public void setCutscene(WLBelowCutscene cutscene) {

@@ -90,9 +90,9 @@ public class WitchsExperimentNPC extends AbstractNPC {
 
     public enum ExperimentType {
         FIRST(897, ""),
-        SECOND(898, "The shapeshifters' body begins to deform!", "The shapeshifter turns into a spider!"),
-        THIRD(899, "The shapeshifters' body begins to twist!", "The shapeshifter turns into a bear!"),
-        FOURTH(900, "The shapeshifters' body pulses!", "The shapeshifter turns into a wolf!"),
+        SECOND(898, "The shapeshifter's body begins to deform!", "The shapeshifter turns into a spider!"),
+        THIRD(899, "The shapeshifter's body begins to twist!", "The shapeshifter turns into a bear!"),
+        FOURTH(900, "The shapeshifter's body pulses!", "The shapeshifter turns into a wolf!"),
         END(-1, ""),
 
         ;

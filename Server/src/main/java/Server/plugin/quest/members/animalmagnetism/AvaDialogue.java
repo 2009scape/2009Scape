@@ -188,7 +188,7 @@ public final class AvaDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 2:
-				npc("You need to fetch 2 undead chickens for me to use in", "my redecortation. It's not rocket science.");
+				npc("You need to fetch 2 undead chickens for me to use in", "my redecoration. It's not rocket science.");
 				stage++;
 				break;
 			case 3:
@@ -390,7 +390,7 @@ public final class AvaDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 6:
-				npc("As he's not known for his random tourisitc activities,", "you should try chatting with this Turael. He's the", "Slayer Master near Burthorpe.");
+				npc("As he's not known for his random touristic activities,", "you should try chatting with this Turael. He's the", "Slayer Master near Burthorpe.");
 				stage++;
 				break;
 			case 7:
@@ -624,7 +624,7 @@ public final class AvaDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 21:
-				npc("First, your new device won't work if you are wearing", "certain metalic chest armours.");
+				npc("First, your new device won't work if you are wearing", "certain metallic chest armours.");
 				stage++;
 				break;
 			case 22:
@@ -704,7 +704,7 @@ public final class AvaDialogue extends DialoguePlugin {
 	}
 
 	/**
-	 * Buyts a device.
+	 * Buys a device.
 	 * @param upgrade if upgraded.
 	 */
 	private void buy(boolean upgrade) {

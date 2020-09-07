@@ -162,7 +162,7 @@ public class CaptainLawgofDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 107:
-				npc("Besides, I have another commision for you. Just", "before the goblins over-ran us we lost contact with our", "watch tower to the South, that's why the goblins", "managed to catch us unawares. I'd like you to perform.");
+				npc("Besides, I have another commission for you. Just", "before the goblins over-ran us we lost contact with our", "watch tower to the South, that's why the goblins", "managed to catch us unawares. I'd like you to perform.");
 				stage++;
 				break;
 			case 108:
@@ -211,7 +211,7 @@ public class CaptainLawgofDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 4:
-				player("I have some terrible news for you Captain, the goblins", "over ran the tower, your guards fought well but were", "overwhelemd.");
+				player("I have some terrible news for you Captain, the goblins", "over ran the tower, your guards fought well but were", "overwhelmed.");
 				stage++;
 				break;
 			case 5:
@@ -227,7 +227,7 @@ public class CaptainLawgofDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 8:
-				npc("The goblins must have taken him. Please traveller, seek", "out the goblin's hideout and return the lad to us. They", "always attack from the South-weast, so they must be", "based down there.");
+				npc("The goblins must have taken him. Please traveller, seek", "out the goblin's hideout and return the lad to us. They", "always attack from the South-west, so they must be", "based down there.");
 				stage++;
 				break;
 			case 9:
@@ -272,7 +272,7 @@ public class CaptainLawgofDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 3:
-				npc("When the golins attacked us some of them managed to", "slip past my guards and sabotage our cannon. I don't", "have anybody who understands how it works, could you,", "have a look at it and see if you could get it working for");
+				npc("When the goblins attacked us some of them managed to", "slip past my guards and sabotage our cannon. I don't", "have anybody who understands how it works, could you,", "have a look at it and see if you could get it working for");
 				stage++;
 				break;
 			case 4:

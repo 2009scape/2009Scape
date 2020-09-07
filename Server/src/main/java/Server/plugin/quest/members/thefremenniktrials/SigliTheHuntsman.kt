@@ -47,7 +47,7 @@ class SigliTheHuntsman(player: Player? = Player(PlayerDetails("",""))) : Dialogu
                 13 -> npc("The Draugen is an evil ghost from Fremennik","mythology, that devours souls of those brave","warriors who meet their ends at sea.").also { stage++ }
                 14 -> npc("It stalks the coastlines, invisible to all. It brings us bad","fortunes, and curses our journeys across the seas. It is","also unkillable by normal means.").also { stage++ }
                 15 -> player("...Let me get this straight; You want me to hunt an","unkillable, invincible, and invisible enemy? How am I","supposed to do that?").also { stage++ }
-                16 -> npc("Well outerlander, should you accept my challenge I will","show you a special hunter's trick that will hellp you. Do","you accept the challenge?").also { stage++ }
+                16 -> npc("Well outerlander, should you accept my challenge I will","show you a special hunter's trick that will help you. Do","you accept the challenge?").also { stage++ }
                 17 -> options("Yes","No").also { stage++ }
                 18 -> when(buttonId){
                         1 -> player("Well, I need every vote I can get in the council of","elders, but this certainly sounds impossible to do...").also { stage++ }

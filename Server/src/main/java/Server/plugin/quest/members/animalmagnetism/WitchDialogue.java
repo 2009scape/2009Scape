@@ -82,7 +82,7 @@ public final class WitchDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 1:
-				npc("Don't worry, deary, I can tell you just what to do and", "you won't have to worry your preety head about the", "complicated bits.");
+				npc("Don't worry, deary, I can tell you just what to do and", "you won't have to worry your pretty head about the", "complicated bits.");
 				stage++;
 				break;
 			case 2:
@@ -114,7 +114,7 @@ public final class WitchDialogue extends DialoguePlugin {
 					npc("Oh, but sugarpie, I need 5 iron bars, you don't have", "enough. Come back to me quickly with all 5 of them.");
 					stage++;
 				} else {
-					player("Toys? Snookums? What ar eyou on about, you", "deranged old bar?");
+					player("Toys? Snookums? What are you on about, you", "deranged old bar?");
 					stage += 2;
 				}
 				break;

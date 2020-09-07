@@ -583,7 +583,7 @@ public final class MerlinCrystalPlugin extends OptionHandler {
 				player.getDialogueInterpreter().sendDialogue("You have already cleared the hive of its bees.", "You can now safely collect wax from the hive.");
 			}
 			if (useditem.getId() == REPELLENT.getId() && object.getId() == 68 && player.getAttribute("cleared_beehives") == null) {
-				player.getDialogueInterpreter().sendDialogue("You pour insect repellant on the beehive. You see the bees leaving the", "hive.");
+				player.getDialogueInterpreter().sendDialogue("You pour insect repellent on the beehive. You see the bees leaving the", "hive.");
 				player.getPacketDispatch().sendMessage("Suddenly the bees fly out of the hive and sting you.");
 				player.getImpactHandler().manualHit(player, 2, HitsplatType.NORMAL);
 				player.setAttribute("cleared_beehives", 1);

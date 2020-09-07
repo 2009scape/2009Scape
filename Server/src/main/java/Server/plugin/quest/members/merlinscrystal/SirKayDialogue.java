@@ -39,8 +39,8 @@ public final class SirKayDialogue extends DialoguePlugin {
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
 		boolean male = true;
-		String gend = male ? "sir" : "madam";
-		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Good day " + gend + "!");
+		String gender = male ? "sir" : "madam";
+		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Good day " + gender + "!");
 		stage = 0;
 		return true;
 	}

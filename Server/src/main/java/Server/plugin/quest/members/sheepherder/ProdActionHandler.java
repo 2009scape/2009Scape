@@ -54,9 +54,9 @@ public class ProdActionHandler extends PluginInteraction {
                     int diffX = n.getLocation().getX() - p.getLocation().getX();
                     int diffY = n.getLocation().getY() - p.getLocation().getY();
                     int steps = RandomFunction.random(3,5);
-                    Location dest = n.getLocation().transform((diffX) * steps, (diffY) * steps,0);
+                    Location destination = n.getLocation().transform((diffX) * steps, (diffY) * steps,0);
                     n.sendChat("BAAAAA!");
-                    n.moveTo(dest);
+                    n.moveTo(destination);
                     n.setAttribute("recently-prodded",true);
                     n.ticksTilReturn = GameWorld.getTicks() + 20;
                     return true;

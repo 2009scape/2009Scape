@@ -67,7 +67,7 @@ public class SirLucan extends DialoguePlugin {
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The Lady of the Lake is looking atfer it I believe... but", "I know not where she resides currently.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The Lady of the Lake is looking after it I believe... but", "I know not where she resides currently.");
 			stage = 5;
 			break;
 		case 5:

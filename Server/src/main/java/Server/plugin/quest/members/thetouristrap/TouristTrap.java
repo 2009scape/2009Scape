@@ -33,7 +33,7 @@ public final class TouristTrap extends Quest {
 	public static final Item METAL_KEY = new Item(1839);
 
 	/**
-	 * The desert geat item.
+	 * The desert gear items.
 	 */
 	public static final Item[] DESERT_CLOTHES = new Item[] { new Item(1833), new Item(1835), new Item(1837) };
 
@@ -68,7 +68,7 @@ public final class TouristTrap extends Quest {
 	public static final int CONFIG_ID = 907;
 
 	/**
-	 * The tehcnical plans item.
+	 * The technical plans item.
 	 */
 	public static final Item TECHNICAL_PLANS = new Item(1850);
 

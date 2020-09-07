@@ -90,7 +90,7 @@ public class ElunedDialogue extends DialoguePlugin {
 				if (!player.getInventory().contains(995, 750)) {
 					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Actually, I don't have enough coins.");
 				} else {
-					interpreter.sendDialogue("You purchase an eleven teleporation crystal for 750 gold.");
+					interpreter.sendDialogue("You purchase an elven teleportation crystal for 750 gold.");
 					if (player.getInventory().remove(new Item(995, 750))) {
 						player.getInventory().add(new Item(6099, 1));
 					}

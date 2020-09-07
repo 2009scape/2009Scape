@@ -200,7 +200,7 @@ public class NulodionDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 13:
-				npc("For the full setup, 750,000 coins. Or I can sell you", "the seperate parts... but it'll cost extra!");
+				npc("For the full setup, 750,000 coins. Or I can sell you", "the separate parts... but it'll cost extra!");
 				stage++;
 				break;
 			case 14:
@@ -208,7 +208,7 @@ public class NulodionDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 15:
-				options("Okay, I'll take a cannon please.", "Can I look at the seperate parts please?", "Sorry, that's too much for me.", "Have you any ammo or instructions to sell?");
+				options("Okay, I'll take a cannon please.", "Can I look at the separate parts please?", "Sorry, that's too much for me.", "Have you any ammo or instructions to sell?");
 				stage++;
 				break;
 			case 16:
@@ -218,7 +218,7 @@ public class NulodionDialogue extends DialoguePlugin {
 					stage = 110;
 					break;
 				case 2:
-					player("Can I look at the seperate parts please?");
+					player("Can I look at the separate parts please?");
 					stage = 120;
 					break;
 				case 3:

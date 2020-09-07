@@ -129,7 +129,7 @@ public class DwarfCannonPlugin extends OptionHandler {
 						return;
 					}
 					if (!player.getInventory().contains(14, 1)) {
-						player.getDialogueInterpreter().sendDialogues(player, null, "I'm not going to be able to fix this wihout a new", "railing. Lawgof should have some spare ones.");
+						player.getDialogueInterpreter().sendDialogues(player, null, "I'm not going to be able to fix this without a new", "railing. Lawgof should have some spare ones.");
 						return;
 					}
 					player.sendMessage("You attempt to replace the broken railing...");
@@ -333,7 +333,7 @@ public class DwarfCannonPlugin extends OptionHandler {
 			private final int configValue;
 
 			/**
-			 * The part the toolf ixes.
+			 * The part the tool fixes.
 			 */
 			private final Part part;
 

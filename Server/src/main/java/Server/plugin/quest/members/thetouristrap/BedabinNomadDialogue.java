@@ -193,9 +193,9 @@ public final class BedabinNomadDialogue extends DialoguePlugin {
 
 	@Override
 	public int[] getIds() {
-		return new int[] { /** bedamin nomad guard */
-		834, /** bedamin nomad */
-		833, /** bedamin nomad fighter */
+		return new int[] { /** bedabin nomad guard */
+		834, /** bedabin nomad */
+		833, /** bedabin nomad fighter */
 		1239 };
 	}
 

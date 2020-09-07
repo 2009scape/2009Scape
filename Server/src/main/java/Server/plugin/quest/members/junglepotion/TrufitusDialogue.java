@@ -281,7 +281,7 @@ public final class TrufitusDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 500:
-				npc("This is the most difficult to find as it is inhabits  the", "darkness of the underground. It is called Rogues", "Purse, and is only to be found in caverns");
+				npc("This is the most difficult to find as it is inhabits the", "darkness of the underground. It is called Rogues", "Purse, and is only to be found in caverns");
 				stage++;
 				break;
 			case 501:

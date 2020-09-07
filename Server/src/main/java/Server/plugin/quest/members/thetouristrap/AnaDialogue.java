@@ -150,7 +150,7 @@ public final class AnaDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 5:
-				npc("Not even the dead get a decent funeral. Bodies are", "just thrown down disued mine holes. It's very", "disrespectful...");
+				npc("Not even the dead get a decent funeral. Bodies are", "just thrown down disused mine holes. It's very", "disrespectful...");
 				stage++;
 				break;
 			case 6:
@@ -236,7 +236,7 @@ public final class AnaDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 6:
-				npc("I'm sure you've noticed the many square jawed guards", "around here. You look like you can handle yourself", "but I have my doughts that you can take them all on!");
+				npc("I'm sure you've noticed the many square jawed guards", "around here. You look like you can handle yourself", "but I have my doubts that you can take them all on!");
 				stage++;
 				break;
 			case 7:

@@ -5,7 +5,7 @@ import core.game.node.entity.npc.AbstractNPC;
 import core.game.world.map.Location;
 
 /**
- * Handles the kign roald npc.
+ * Handles the king roald npc.
  * @author Vexia
  */
 public class KingRoaldNPC extends AbstractNPC {

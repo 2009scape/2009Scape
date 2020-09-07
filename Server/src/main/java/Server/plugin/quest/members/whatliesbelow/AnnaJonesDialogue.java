@@ -233,7 +233,7 @@ public class AnnaJonesDialogue extends DialoguePlugin {
 				stage = 41;
 				break;
 			case 40:
-				npc("Well story and rumour has it that Dragon'hai built a", "tunnel under this statue of Saradomin that would allow", "them to visit the Chaos Altar without having to go", "through the Wilderness.");
+				npc("Well story and rumour has it that Dagon'hai built a", "tunnel under this statue of Saradomin that would allow", "them to visit the Chaos Altar without having to go", "through the Wilderness.");
 				stage++;
 				break;
 			case 41:

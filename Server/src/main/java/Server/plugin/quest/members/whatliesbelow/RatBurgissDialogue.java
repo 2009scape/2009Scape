@@ -25,7 +25,7 @@ public class RatBurgissDialogue extends DialoguePlugin {
 	private Quest quest;
 
 	/**
-	 * If w'ere chatting about our diary.
+	 * If we're chatting about our diary.
 	 */
 	private boolean isDiary;
 
@@ -409,7 +409,7 @@ public class RatBurgissDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 8:
-				npc("I'm just getting to that. A short while ago, we receieved", "word that Surok had discovered a powerful mind-control", "spell and intended to use it on King Roald himself!");
+				npc("I'm just getting to that. A short while ago, we received", "word that Surok had discovered a powerful mind-control", "spell and intended to use it on King Roald himself!");
 				stage++;
 				break;
 			case 9:

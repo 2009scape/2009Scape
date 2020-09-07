@@ -52,7 +52,7 @@ public final class MinecartDriverDialogue extends DialoguePlugin {
 			npc("Quickly, get in the back of the cart.");
 			break;
 		case 80:
-			interpreter.sendDialogue("The cart driver seems to be fastidiously cleaning his cart.", "It doesn�t look as if he wants to be disturbed.");
+			interpreter.sendDialogue("The cart driver seems to be fastidiously cleaning his cart.", "It doesn't look as if he wants to be disturbed.");
 			break;
 		default:
 			player("Hello!");

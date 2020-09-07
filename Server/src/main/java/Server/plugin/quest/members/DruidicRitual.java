@@ -21,7 +21,7 @@ public class DruidicRitual extends Quest {
 	 * @param player The player to construct the class for.
 	 */
 	public DruidicRitual() {
-		super("Drudic Ritual", 48, 47, 4, 80, 0, 3, 4);
+		super("Druidic Ritual", 48, 47, 4, 80, 0, 3, 4);
 	}
 
 	@Override
@@ -42,13 +42,13 @@ public class DruidicRitual extends Quest {
 		}
 		if (stage == 99) {
 			player.getPacketDispatch().sendString("<str>I told Kaqemeex I would help them prepare their ceremony.</str>", 275, 4+ 7);
-			player.getPacketDispatch().sendString("<str>The cremeony required various meats being placed in the.</str>", 275, 5+ 7);
+			player.getPacketDispatch().sendString("<str>The ceremony required various meats being placed in the.</str>", 275, 5+ 7);
 			player.getPacketDispatch().sendString("<str>Cauldron of Thunder. I did this and gave them to Sanfew.</str>", 275, 6+ 7);
 			player.getPacketDispatch().sendString("<col=08088A>I should speak to <col=8A0808>Kaqemeex <col=08088A>again and claim my <col=8A0808>reward", 275, 7+ 7);
 		}
 		if (stage == 100) {
 			player.getPacketDispatch().sendString("<str>I told Kaqemeex I would help them prepare their ceremony.</str>", 275, 4+ 7);
-			player.getPacketDispatch().sendString("<str>The cremeony required various meats being placed in the.</str>", 275, 5+ 7);
+			player.getPacketDispatch().sendString("<str>The ceremony required various meats being placed in the.</str>", 275, 5+ 7);
 			player.getPacketDispatch().sendString("<str>Cauldron of Thunder. I did this and gave them to Sanfew.</str>", 275, 6+ 7);
 			player.getPacketDispatch().sendString("<str>Kaqemeex then taught me the basics of the skill Herblore</str>", 275, 7+ 7);
 			player.getPacketDispatch().sendString("<col=FF0000>QUEST COMPLETE!", 275, 11+ 7);

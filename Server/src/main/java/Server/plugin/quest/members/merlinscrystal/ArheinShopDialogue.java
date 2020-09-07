@@ -7,7 +7,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 
 /**
- * Represents the dialogue plugin used for the argein npc.
+ * Represents the dialogue plugin used for the arhein npc.
  * @author 'Vexia
  * @version 1.0
  */
@@ -127,7 +127,7 @@ public final class ArheinShopDialogue extends DialoguePlugin {
 			stage = 1004;
 			break;
 		case 1004:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'm waiting on a big delivery of candles wich I need to", "deliver further along the coast.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'm waiting on a big delivery of candles which I need to", "deliver further along the coast.");
 			stage = 1005;
 			break;
 		case 1005:
