@@ -49,7 +49,7 @@ public class SurokMagisDialogue extends DialoguePlugin {
 			stage++;
 			break;
 		case 1:
-			npc("Escape from Varrock Palace Library? That curel", "imprisonment you left me in?");
+			npc("Escape from Varrock Palace Library? That cruel", "imprisonment you left me in?");
 			stage++;
 			break;
 		case 2:
@@ -57,7 +57,7 @@ public class SurokMagisDialogue extends DialoguePlugin {
 			stage++;
 			break;
 		case 3:
-			npc("Bah! A mere trifile for a powerful mage such as myself.", "There were plenty of other foolish people to help with", "my plans, you would do well to stay out of my way.");
+			npc("Bah! A mere trifle for a powerful mage such as myself.", "There were plenty of other foolish people to help with", "my plans, you would do well to stay out of my way.");
 			stage++;
 			break;
 		case 4:
