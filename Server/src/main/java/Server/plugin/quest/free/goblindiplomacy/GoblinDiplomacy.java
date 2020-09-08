@@ -22,7 +22,7 @@ public class GoblinDiplomacy extends Quest {
 	public static final String NAME = "Goblin Diplomacy";
 
 	/**
-	 * Repreresents the orange goblin mail.
+	 * Represents the orange goblin mail.
 	 */
 	private static final Item ORANGE_MAIL = new Item(286);
 
@@ -66,7 +66,7 @@ public class GoblinDiplomacy extends Quest {
 		case 10:
 			line(player, "<str>I spoke to Generals Wartface and Bentnoze in the Goblin", 4+ 7);
 			line(player, "<str>Village and found that the goblins were on the bring of civil", 5+ 7);
-			line(player, "<str>war over the colour of their armour. I o dffered to help the", 6+ 7);
+			line(player, "<str>war over the colour of their armour. I offered to help the", 6+ 7);
 			line(player, "<str>generals by finding another colour that they both like.", 7+ 7);
 			if (player.getInventory().containsItem(ORANGE_MAIL)) {
 				line(player, BLUE + "I have some " + RED + "Orange Goblin Armour. " + BLUE + "I should show it to the", 9+ 7);

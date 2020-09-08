@@ -312,7 +312,7 @@ public class WLBelowCutscene extends CutscenePlugin {
 	}
 
 	/**
-	 * Sets the basurok.
+	 * Sets the surok.
 	 * @param surok the surok to set.
 	 */
 	public void setSurok(NPC surok) {
@@ -344,7 +344,7 @@ public class WLBelowCutscene extends CutscenePlugin {
 	}
 
 	/**
-	 * Sets the bazaff.
+	 * Sets the zaff.
 	 * @param zaff the zaff to set.
 	 */
 	public void setZaff(NPC zaff) {

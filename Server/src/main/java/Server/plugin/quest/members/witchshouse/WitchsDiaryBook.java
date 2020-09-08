@@ -35,7 +35,7 @@ public class WitchsDiaryBook extends Book {
                     new BookLine("on a mixture of fungus,", 60),
                     new BookLine("tar and clay.", 61),
                     new BookLine("It seems to like this", 62),
-                    new BookLine("combination alot!", 63)),
+                    new BookLine("combination a lot!", 63)),
                 new Page(new BookLine("<col=ff0000>3rd of Pentember", 66),
                     new BookLine("Experiment still going", 67),
                     new BookLine("extremely well. Moved it", 68),

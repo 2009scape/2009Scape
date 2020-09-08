@@ -515,6 +515,9 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
                     player.getFamiliarManager().getFamiliar().updateSpecialPoints(-200);
                 }
                 return true;
+            case "sethp":
+                player.getSkills().setLifepoints(Integer.parseInt(args[1]));
+                break;
             case "slayerpoints":
                 player.getSlayer().setSlayerPoints(10000);
                 return true;

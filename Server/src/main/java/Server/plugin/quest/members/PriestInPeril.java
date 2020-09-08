@@ -35,7 +35,7 @@ public class PriestInPeril extends Quest {
 			player.getPacketDispatch().sendString("<str>I spoke to King Roald who asked me to investigate why his", 275, 4+ 7);
 			player.getPacketDispatch().sendString("<str>friend Priest Drezel has stopped communicating with him.", 275, 5+ 7);
 			player.getPacketDispatch().sendString("<col=8A0808>Drezel</col> <col=08088A>lives in a <col=8A0808>temple</col> <col=08088A>to the east of Varrock Palace. I", 275, 7+ 7);
-			player.getPacketDispatch().sendString("<col=08088A>should head there and <col=8A0808>investigate</col> <col=08088A>what's happend to him", 275, 8+ 7);
+			player.getPacketDispatch().sendString("<col=08088A>should head there and <col=8A0808>investigate</col> <col=08088A>what's happened to him", 275, 8+ 7);
 			break;
 		case 11:
 			player.getPacketDispatch().sendString("<str>I spoke to King Roald who asked me to investigate why his", 275, 4+ 7);
@@ -64,7 +64,7 @@ public class PriestInPeril extends Quest {
 			player.getPacketDispatch().sendString("<str>temple, and asked me to kill it, which I did easily.", 275, 9+ 7);
 			player.getPacketDispatch().sendString("<str>When I told Roald what I had done, he was furious. The", 275, 10+ 7);
 			player.getPacketDispatch().sendString("<str>person who told me to kill the dog wasn't Drezel at all!", 275, 11+ 7);
-			player.getPacketDispatch().sendString("<col=08088A>I must return to the <col=8A0808>temple <col=08088A>and find out what happend to", 275, 13+ 7);
+			player.getPacketDispatch().sendString("<col=08088A>I must return to the <col=8A0808>temple <col=08088A>and find out what happened to", 275, 13+ 7);
 			player.getPacketDispatch().sendString("<col=08088A>the real <col=8A0808>Drezel<col=08088A>, or the King will have me executed!", 275, 14+ 7);
 			break;
 		case 14:

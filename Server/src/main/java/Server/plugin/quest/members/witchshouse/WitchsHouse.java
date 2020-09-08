@@ -27,7 +27,7 @@ public class WitchsHouse extends Quest {
         switch (getStage(player)) {
             case 0:
                 line(player,  "<blue>I can start this quest by speaking to the <red>little boy", 4+ 7);
-                line(player,  "<blue>standing by the long garden just <red>north of taverly", 5+ 7);
+                line(player,  "<blue>standing by the long garden just <red>north of Taverley", 5+ 7);
                 line(player,  "<blue>I must be able to defeat a <red>level 53 enemy.", 6+ 7);
                 break;
             case 10:

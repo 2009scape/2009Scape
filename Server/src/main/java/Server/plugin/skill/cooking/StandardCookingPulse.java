@@ -65,9 +65,9 @@ public class StandardCookingPulse extends Pulse {
         CookableItems properties = CookableItems.forId(initial);
         this.level = 1;
         this.experience = 0;
-        if(properties != null){
-            //handle cook's assistant range
-            if(object.getId() == 36973 && !player.getQuestRepository().isComplete("Cook's Assistant")){
+        if (properties != null) {
+            // Handle Cook's Assistant range
+            if (object.getId() == 114 && !player.getQuestRepository().isComplete("Cook's Assistant")) {
                 player.getPacketDispatch().sendMessage("You need to have completed the Cook's Assistant quest in order to use that range.");
                 return false;
             }

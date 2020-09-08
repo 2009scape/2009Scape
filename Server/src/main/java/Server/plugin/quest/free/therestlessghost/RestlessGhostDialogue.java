@@ -43,17 +43,17 @@ public class RestlessGhostDialogue extends DialoguePlugin {
 				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Wooo wooo wooooo!");
 				stage = 1;
 			} else {
-				if (player.getQuestRepository().getQuest("The Restless Ghost").getStage(player) == 20) {
+				if (player.getQuestRepository().getQuest(RestlessGhost.NAME).getStage(player) == 20) {
 					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Not very good actually.");
 					stage = 500;
 					break;
 				}
-				if (player.getQuestRepository().getQuest("The Restless Ghost").getStage(player) == 30) {
+				if (player.getQuestRepository().getQuest(RestlessGhost.NAME).getStage(player) == 30) {
 					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "How are you doing finding my skull?");
 					stage = 520;
 					break;
 				}
-				if (player.getQuestRepository().getQuest("The Restless Ghost").getStage(player) == 40) {
+				if (player.getQuestRepository().getQuest(RestlessGhost.NAME).getStage(player) == 40) {
 					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "How are you doing finding my skull?");
 					stage = 550;
 					break;
@@ -111,7 +111,7 @@ public class RestlessGhostDialogue extends DialoguePlugin {
 			break;
 		case 511:
 			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok. I will try and get the skull back for you, then you", "can rest in peace.");
-			player.getQuestRepository().getQuest("The Restless Ghost").setStage(player, 30);
+			player.getQuestRepository().getQuest(RestlessGhost.NAME).setStage(player, 30);
 			stage = 512;
 			break;
 		case 512:
@@ -150,7 +150,7 @@ public class RestlessGhostDialogue extends DialoguePlugin {
 			stage = 551;
 			break;
 		case 551:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hurah! Now I can stop being a ghost! You just need", "to put it on my coffin there, and I will be free!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hurrah! Now I can stop being a ghost! You just need", "to put it on my coffin there, and I will be free!");
 			stage = 523;
 			break;
 		case 1:
@@ -168,7 +168,7 @@ public class RestlessGhostDialogue extends DialoguePlugin {
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Any hints wher I can find some treasure?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Any hints where I can find some treasure?");
 				stage = 30;
 				break;
 

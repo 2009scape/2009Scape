@@ -127,7 +127,7 @@ public final class DragonSlayer extends Quest {
 		switch (getStage(player)) {
 		case 0:
 			player.getPacketDispatch().sendString(BLUE + "I can start this quest by speaking to the " + RED + "Guildmaster " + BLUE + "in", 275, 4+ 7);
-			player.getPacketDispatch().sendString(BLUE + "the " + RED + "Champions' Guild" + BLUE + " ,south-west of Varrock.", 275, 5+ 7);
+			player.getPacketDispatch().sendString(BLUE + "the " + RED + "Champions' Guild" + BLUE + " , south-west of Varrock.", 275, 5+ 7);
 			player.getPacketDispatch().sendString(BLUE + "I will need to be able to defeat a " + RED + "level 83 dragon.", 275, 6+ 7);
 			if (player.getQuestRepository().getPoints() < 32) {
 				player.getPacketDispatch().sendString(BLUE + "To enter the Champions' Guild I need" + RED + " 32 Quest Points.", 275, 7+ 7);
@@ -198,7 +198,7 @@ public final class DragonSlayer extends Quest {
 				if (!player.getSavedData().getQuestData().getDragonSlayerAttribute("repaired")) {
 					line(player, "<str>I need to repair the hole in bottom of the ship.", 23+ 7);
 				} else {
-					line(player, "<str>I have repared my ship using wooden planks and steel", 23+ 7);
+					line(player, "<str>I have repaired my ship using wooden planks and steel", 23+ 7);
 					line(player, "<str>nails.", 24+ 7);
 				}
 			}
@@ -209,7 +209,7 @@ public final class DragonSlayer extends Quest {
 			line(player, "<str>Oziach, who makes the armour.", 6+ 7);
 			line(player, "<str>I spoke to Oziach in Edgeville. He told me to slay the", 7+ 7);
 			line(player, "<str>dragon of Crandor island.", 8+ 7);
-			line(player, "<str>The Champions' Guilg Guildmaster told me I had to find", 9+ 7);
+			line(player, "<str>The Champions' Guild Guildmaster told me I had to find", 9+ 7);
 			line(player, "<str>three pieces of a map to Crandor, a ship, a captain to take", 10+ 7);
 			line(player, "<str>me there and a shield to protect me from the dragon's", 11+ 7);
 			line(player, "<str>breath.", 12+ 7);
@@ -235,7 +235,7 @@ public final class DragonSlayer extends Quest {
 			line(player, "<str>Oziach, who makes the armour.", 6+ 7);
 			line(player, "<str>I spoke to Oziach in Edgeville. He told me to slay the", 7+ 7);
 			line(player, "<str>dragon of Crandor island.", 8+ 7);
-			line(player, "<str>The Champions' Guilg Guildmaster told me I had to find", 9+ 7);
+			line(player, "<str>The Champions' Guild Guildmaster told me I had to find", 9+ 7);
 			line(player, "<str>three pieces of a map to Crandor, a ship, a captain to take", 10+ 7);
 			line(player, "<str>me there and a shield to protect me from the dragon's", 11+ 7);
 			line(player, "<str>breath.", 12+ 7);
@@ -254,7 +254,7 @@ public final class DragonSlayer extends Quest {
 					line(player, BLUE + "I have slain the dragon! Now I just need to tell " + RED + "Oziach.", 21+ 7);
 				}
 			} else {
-				line(player, "<str>I have found a secret passage leading from Karamaja to", 21+ 7);
+				line(player, "<str>I have found a secret passage leading from Karamja to", 21+ 7);
 				line(player, "<str>Crandor, so I no longer need to worry about finding a", 22+ 7);
 				line(player, "<str>seaworthy ship and captain to take me there.", 23+ 7);
 				if (!player.getInventory().containsItem(ELVARG_HEAD)) {
@@ -270,7 +270,7 @@ public final class DragonSlayer extends Quest {
 			line(player, "<str>Oziach, who makes the armour.", 6+ 7);
 			line(player, "<str>I spoke to Oziach in Edgeville. He told me to slay the", 7+ 7);
 			line(player, "<str>dragon of Crandor island.", 8+ 7);
-			line(player, "<str>The Champions' Guilg Guildmaster told me I had to find", 9+ 7);
+			line(player, "<str>The Champions' Guild Guildmaster told me I had to find", 9+ 7);
 			line(player, "<str>three pieces of a map to Crandor, a ship, a captain to take", 10+ 7);
 			line(player, "<str>me there and a shield to protect me from the dragon's", 11+ 7);
 			line(player, "<str>breath.", 12+ 7);
@@ -282,14 +282,14 @@ public final class DragonSlayer extends Quest {
 			line(player, "<str>stole.", 18+ 7);
 			line(player, "<str>The Duke of Lumbridge gave me an anti-dragonbreath", 19+ 7);
 			line(player, "<str>shield.", 20+ 7);
-			line(player, "<str>I have found a secret passage leading from Karamaja to", 21+ 7);
+			line(player, "<str>I have found a secret passage leading from Karamja to", 21+ 7);
 			line(player, "<str>Crandor, so I no longer need to worry about finding a", 22+ 7);
 			line(player, "<str>seaworthy ship and captain to take me there.", 23+ 7);
 			line(player, "<str>I sailed to Crandor and killed the dragon. I am not a true", 24+ 7);
 			line(player, "<str>champion and have proved myself worthy to wear rune", 25+ 7);
 			line(player, "<str>platemail!", 26+ 7);
 			line(player, "<col=FF0000>QUEST COMPLETE!</col>", 27+ 7);
-			line(player, BLUE + "I gained " + RED + "2 Quest Points" + BLUE + ", " + RED + "18,650 Strength XP" + BLUE + "," + RED + " 18" + BLUE + ",650", 28+ 7);
+			line(player, BLUE + "I gained " + RED + "2 Quest Points" + BLUE + ", " + RED + "18,650 Strength XP" + BLUE + ", " + RED + "18,650", 28+ 7);
 			line(player, RED + "Defence XP " + BLUE + "and the right to wear " + RED + "rune platebodies.", 29+ 7);
 			break;
 		}

@@ -13,7 +13,7 @@ public class CaptainLawgofNPC extends AbstractNPC {
 	/**
 	 * The force chats.
 	 */
-	private static final String[] CHATS = new String[] { "Don't just stand there, do something!", "Stop dawdling solider! You're in the army now!", "Hurry up on that patrol route, trooper!", "Keep an eye open for hoblins!" };
+	private static final String[] CHATS = new String[] { "Don't just stand there, do something!", "Stop dawdling solider! You're in the army now!", "Hurry up on that patrol route, trooper!", "Keep an eye open for goblins!" };
 
 	/**
 	 * Constructs a new {@Code CaptainLawgofNPC} {@Code Object}

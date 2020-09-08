@@ -33,7 +33,7 @@ public final class BookOnBaxtorianPlugin extends Book {
 						new BookLine("which allowed her family", 73), new BookLine("to visit her tomb.", 74), new BookLine("    The stone was taken", 75), new BookLine("by a gnome family over a", 76))),
 		new PageSet(
 				new Page(
-						new BookLine("century ago. It is", 55), new BookLine("believed that the gnomes'", 56), new BookLine("descendent Golrie still has", 57), new BookLine("the stone hidden in the", 58),
+						new BookLine("century ago. It is", 55), new BookLine("believed that the gnomes'", 56), new BookLine("descendant Golrie still has", 57), new BookLine("the stone hidden in the", 58),
 						new BookLine("caves under the gnome", 59), new BookLine("tree village.", 60), new BookLine("", 61), new BookLine("The sonnet of Baxtorian", 62), new BookLine("", 63), 
 						new BookLine("The love between", 64), new BookLine("Baxtorian and Glarial was", 65)), new Page(new BookLine("said to have lasted over a", 66), new BookLine("century. They lived a", 67),
 								new BookLine("peaceful life learning and", 68), new BookLine("teaching the laws of", 69), new BookLine("nature. When Baxtorian's", 70), new BookLine("kingdom was invaded by", 71),

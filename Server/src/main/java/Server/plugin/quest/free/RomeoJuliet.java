@@ -78,7 +78,7 @@ public class RomeoJuliet extends Quest {
 			if (!player.getInventory().contains(753, 1)) {
 				line(player, BLUE + "I will have to find some " + RED + "Cadava berries" + BLUE + " somewhere!", 16+ 7);
 			} else {
-				line(player, BLUE + "I should take these " + RED + "cadava berries" + BLUE + " to the " + RED + "Apothechary.", 16+ 7);
+				line(player, BLUE + "I should take these " + RED + "cadava berries" + BLUE + " to the " + RED + "Apothecary.", 16+ 7);
 			}
 			break;
 		case 60:

@@ -117,7 +117,7 @@ public final class QuestRepository implements SavingModule {
     }
 
     /**
-     * Syncronizes the quest tab.
+     * Synchronizes the quest tab.
      *
      * @param player The player.
      */
@@ -236,6 +236,22 @@ public final class QuestRepository implements SavingModule {
         }
         return quest.getStage(player) >= 100;
     }
+
+    /**
+     * Checks if the quest has at least started.
+     *
+     * @param name The name of the quest.
+     * @return {@code True} if so.
+     */
+    public boolean hasStarted(String name) {
+        Quest quest = getQuest(name);
+        if (quest == null) {
+            System.err.println("Error can't check if quest is complete for " + name);
+            return false;
+        }
+        return quest.getStage(player) > 0;
+    }
+
 
     /**
      * Gets the stage of quest by name.

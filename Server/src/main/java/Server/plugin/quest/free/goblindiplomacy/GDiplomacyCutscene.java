@@ -320,7 +320,7 @@ public final class GDiplomacyCutscene extends CutscenePlugin {
 				stage = 36;
 				break;
 			case 36:
-				interpreter.sendDialogues(other, null, "It in crates somewhere. Can't remember whcih crates", "now.");
+				interpreter.sendDialogues(other, null, "It in crates somewhere. Can't remember which crates", "now.");
 				stage = 37;
 				break;
 			case 37:
@@ -444,7 +444,7 @@ public final class GDiplomacyCutscene extends CutscenePlugin {
 		/**
 		 * Sends the new grubfoot.
 		 * @param grubFoot the grubfoot.
-		 * @param the end stage.
+		 * @param endStage the end stage.
 		 */
 		public void sendGrubFoot(final GrubFoot grubFoot, final int endStage) {
 			Pathfinder.find(grubfoot, grubfoot.getLocation().transform(-4, 0, 0)).walk(grubfoot);

@@ -93,7 +93,7 @@ public final class AlShabimDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 20:
-				interpreter.sendItemMessage(TouristTrap.PROTOTYPE_DART, "You show Al Shabrim the prototype dart.");
+				interpreter.sendItemMessage(TouristTrap.PROTOTYPE_DART, "You show Al Shabim the prototype dart.");
 				;
 				stage++;
 				break;

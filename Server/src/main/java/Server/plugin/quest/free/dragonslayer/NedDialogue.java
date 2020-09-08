@@ -578,7 +578,7 @@ public final class NedDialogue extends DialoguePlugin {
 			stage = 900;
 			break;
 		case 930:
-			npc("You need to complete the taks so that they're all ticked", "off then you can claim your reward. Most of them are", "straightforward although you might find some required", "quests to be started, if not finished.");
+			npc("You need to complete the task so that they're all ticked", "off then you can claim your reward. Most of them are", "straightforward although you might find some required", "quests to be started, if not finished.");
 			stage++;
 			break;
 		case 931:

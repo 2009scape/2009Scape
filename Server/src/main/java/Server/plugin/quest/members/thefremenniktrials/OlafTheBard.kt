@@ -43,9 +43,9 @@ class OlafTheBard(player: Player? = Player(PlayerDetails("",""))) : DialoguePlug
                 15 -> player("Then what do I need to do?").also { stage++ }
                 16 -> npc("Next you will need to string your lyre. There is a troll","to the South-east who has some golden wool. I would","not recommend using anything else to string your lyre","with.").also { stage++ }
                 17 -> player("Anything else?").also { stage++ }
-                18 -> npc("Well, when you have crafted your lyre you will need","the blessing of the Fossegrimen to tune your lyre to","perfection befre you even consider a public","performance.").also { stage++ }
+                18 -> npc("Well, when you have crafted your lyre you will need","the blessing of the Fossegrimen to tune your lyre to","perfection before you even consider a public","performance.").also { stage++ }
                 19 -> player("Who or what is Fossegrimen?").also { stage++ }
-                20 -> npc("Fossegrimen is a lake spirit that lives just a little way","South-west of this ivllage. Make her an offering of fish,","and you will then be ready for your performance.").also { stage++ }
+                20 -> npc("Fossegrimen is a lake spirit that lives just a little way","South-west of this village. Make her an offering of fish,","and you will then be ready for your performance.").also { stage++ }
                 21 -> npc("Make sure you give her a suitable offering however. If","the offering is found to be unworthy, then you may","find yourself unable to play your lyre with any skill at","all!").also { stage++ }
                 22 -> player("So what would be a worthy offering?").also { stage++ }
                 23 -> npc("A raw shark, manta ray, or sea turtle should be","sufficient as an offering.").also { stage++ }

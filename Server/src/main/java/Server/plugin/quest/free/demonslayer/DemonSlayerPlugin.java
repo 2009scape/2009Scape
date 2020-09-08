@@ -40,7 +40,7 @@ public final class DemonSlayerPlugin extends OptionHandler {
 		ObjectDefinition.forId(DRAIN_ID).getConfigurations().put("option:search", this);
 		ObjectDefinition.forId(17429).getConfigurations().put("option:take", this);
 		NPCDefinition.forId(DemonSlayerCutscene.DELRITH).getConfigurations().put("option:attack", this);
-		NPCDefinition.forId(DemonSlayerCutscene.WEAKEND_DELRITH).getConfigurations().put("option:banish", this);
+		NPCDefinition.forId(DemonSlayerCutscene.WEAKENED_DELRITH).getConfigurations().put("option:banish", this);
 		return this;
 	}
 

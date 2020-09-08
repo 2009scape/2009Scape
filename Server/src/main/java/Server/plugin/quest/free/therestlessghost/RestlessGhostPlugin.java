@@ -104,7 +104,7 @@ public final class RestlessGhostPlugin extends OptionHandler {
 				searchAltar(player, object);
 				break;
 			case 15051:
-				if (!player.getQuestRepository().isComplete("The Restless Ghost") && !player.getBank().containsItem(SKULL) && !player.getInventory().containsItem(SKULL)) {
+				if (!player.getQuestRepository().isComplete(RestlessGhost.NAME) && !player.getBank().containsItem(SKULL) && !player.getInventory().containsItem(SKULL)) {
 					player.getInventory().add(SKULL);
 					player.getPacketDispatch().sendMessage("You find another skull.");
 				}
@@ -129,7 +129,7 @@ public final class RestlessGhostPlugin extends OptionHandler {
 		player.animate(open ? OPEN_ANIM : CLOSE_ANIM);
 		ObjectBuilder.replace(object, object.transform(open ? 15061 : 2145));
 		player.getPacketDispatch().sendMessage("You " + (open ? "open" : "close") + " the coffin.");
-		if (open && !player.getQuestRepository().isComplete("The Restless Ghost")) {
+		if (open && !player.getQuestRepository().isComplete(RestlessGhost.NAME)) {
 			sendGhost();
 		}
 	}
@@ -158,7 +158,7 @@ public final class RestlessGhostPlugin extends OptionHandler {
 	 */
 	private void searchAltar(final Player player, final GameObject object) {
 		final boolean hasSkull = object.getId() == 15051;
-		if (player.getQuestRepository().getQuest("The Restless Ghost").getStage(player) != 30) {
+		if (player.getQuestRepository().getQuest(RestlessGhost.NAME).getStage(player) != 30) {
 			player.getPacketDispatch().sendMessage("You search the altar and find nothing.");
 			return;
 		}
@@ -167,7 +167,7 @@ public final class RestlessGhostPlugin extends OptionHandler {
 				GroundItemManager.create(SKULL, player);
 			}
 			player.getConfigManager().set(728, 5, true);
-			player.getQuestRepository().getQuest("The Restless Ghost").setStage(player, 40);
+			player.getQuestRepository().getQuest(RestlessGhost.NAME).setStage(player, 40);
 			player.getPacketDispatch().sendMessage("The skeleton in the corner suddenly comes to life!");
 			sendSkeleton(player);
 		}
@@ -256,7 +256,7 @@ public final class RestlessGhostPlugin extends OptionHandler {
 			if (this.getRespawnTick() > GameWorld.getTicks()) {
 				return true;
 			}
-			return player.getQuestRepository().isComplete("The Restless Ghost") || (pl != null && player != pl);
+			return player.getQuestRepository().isComplete(RestlessGhost.NAME) || (pl != null && player != pl);
 		}
 
 		@Override

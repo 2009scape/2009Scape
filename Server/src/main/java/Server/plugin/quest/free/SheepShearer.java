@@ -91,7 +91,7 @@ public class SheepShearer extends Quest {
 	}
 
 	/**
-	 * Method used to add wool to the current amoutn given.
+	 * Method used to add wool to the current amount given.
 	 * @param player the player.
 	 * @return <code>True</code> if added.
 	 */

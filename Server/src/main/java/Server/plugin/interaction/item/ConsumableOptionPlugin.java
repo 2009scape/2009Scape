@@ -54,7 +54,7 @@ public final class ConsumableOptionPlugin extends OptionHandler {
 			return true;
 		}
 		if (consumable == null) {
-			consumable = food ? new Food(consumable.getIds(), new HealingEffect(1)) : new Drink(consumable.getIds(), new HealingEffect(1));
+			return false;
 		}
 		consumable.consume(((Item) node), player);
 		if (food) {

@@ -74,4 +74,8 @@ public class BotGrandExchange {
         botOffers.put(id, o);
     }
 
+    public static boolean isClueScroll(int id) {
+        Item i = new Item(id);
+        return i.getDefinition().getName().equalsIgnoreCase("Clue scroll");
+    }
 }

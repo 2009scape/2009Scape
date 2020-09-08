@@ -37,17 +37,17 @@ public class WitchsHousePlugin extends OptionHandler {
     public static final Item BALL = new Item(2407);
     private static final Item CHEESE = new Item(1985);
 
-    private WitchsExperimentNPC exeriment;
+    // private WitchsExperimentNPC experiment;
 
     @Override
     public boolean handle(Player player, Node node, String option) {
         final Quest quest = player.getQuestRepository().getQuest("Witch's House");
         final GroundItem ball = GroundItemManager.get(2407, new Location(2935, 3460, 0), null);
         final int id = node instanceof Item ? ((Item) node).getId() : node instanceof GameObject ? ((GameObject) node).getId() : node instanceof NPC ? ((NPC) node).getId() : node.getId();
-        boolean killedExperiment = player.getAttribute("witchs_house:experiment_killed",false);
-        boolean experimentAlive = !player.getAttribute("witchs_house:experiment_killed", false);
+        // boolean killedExperiment = player.getAttribute("witchs_house:experiment_killed",false);
+        // boolean experimentAlive = !player.getAttribute("witchs_house:experiment_killed", false);
         boolean readBook = player.getAttribute("readWitchsBook", false);
-        boolean magnetAttatched = player.getAttribute("attached_magnet", false);
+        boolean magnetAttached = player.getAttribute("attached_magnet", false);
         switch (id) {
             /*case 2407:
                 player.debug("Killed experiment " + killedExperiment);
@@ -137,7 +137,7 @@ public class WitchsHousePlugin extends OptionHandler {
                 }
                 break;
             case 2862:
-                if (magnetAttatched || player.getLocation().getY() < 3466) {
+                if (magnetAttached || player.getLocation().getY() < 3466) {
                     DoorActionHandler.handleAutowalkDoor(player, (GameObject) node);
                     player.removeAttribute("attached_magnet");
                 } else {
@@ -215,8 +215,8 @@ public class WitchsHousePlugin extends OptionHandler {
     }
 
     private void startFight(final Player player) {
-        player.setAttribute("exerimentAlive", true);
-        player.getSavedData().getQuestData().setWitchsExerimentKilled(false);
+        player.setAttribute("experimentAlive", true);
+        player.getSavedData().getQuestData().setWitchsExperimentKilled(false);
         //ExperimentSession.create(player).start();
     }
 

@@ -54,7 +54,7 @@ public class TheKnightsSword extends Quest {
 			line(player, "<str>has lost. It could only be made by an Imcando Dwarf.", 5+ 7);
 			line(player, BLUE + "Reldo couldn't give me much information about the", 6+ 7);
 			line(player, RED + "Imcando " + BLUE + "except a few live on the " + RED + "southern peninsula of", 7+ 7);
-			line(player, RED + "Asgarnia, " + BLUE + "they dislike stangers, and LOVE " + RED + "redberry pies.", 8+ 7);
+			line(player, RED + "Asgarnia, " + BLUE + "they dislike strangers, and LOVE " + RED + "redberry pies.", 8+ 7);
 			break;
 		case 30:
 			line(player, "<str>I told the Squire I would help him to replace the sword he", 4+ 7);
@@ -62,7 +62,7 @@ public class TheKnightsSword extends Quest {
 			line(player, "<str>I found an Imcando Dwarf named Thurgo thanks to", 6+ 7);
 			line(player, "<str>information provided by Reldo. He wasn't very talkative", 7+ 7);
 			line(player, "<str>until I gave him a Redberry pie, which he gobbled up.", 8+ 7);
-			line(player, BLUE + "He will help me now I have gained his trust thorugh " + RED + "pie", 9+ 7);
+			line(player, BLUE + "He will help me now I have gained his trust through " + RED + "pie", 9+ 7);
 			break;
 		case 40:
 			line(player, "<str>I told the Squire I would help him to replace the sword he", 4+ 7);
@@ -90,7 +90,7 @@ public class TheKnightsSword extends Quest {
 			break;
 		case 60:
 			line(player, "<str>I told the Squire I would help him to replace the sword he", 4+ 7);
-			line(player, "<str>has lost. It could onfly be made by an Imcando Dwarf.", 5+ 7);
+			line(player, "<str>has lost. It could only be made by an Imcando Dwarf.", 5+ 7);
 			line(player, "<str>I found an Imcando Dwarf named Thurgo thanks to", 6+ 7);
 			line(player, "<str>information provided by Reldo. He wasn't very talkative", 7+ 7);
 			line(player, "<str>until I gave him a Redberry pie, which he gobbled up.", 8+ 7);

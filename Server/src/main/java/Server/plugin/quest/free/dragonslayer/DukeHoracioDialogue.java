@@ -9,7 +9,7 @@ import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 
 /**
- * Represents the dialogue plugin used for the duke horc
+ * Represents the dialogue plugin used for the duke horacio
  * @author 'Vexia
  * @version 1.0
  */
@@ -75,7 +75,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 				stage = 406;
 				break;
 			case 406:
-				npc("Back in my father's day, Crandor was an important", "city-state. Politically, it was important as Falador or", "Varrock and its shipes traded with every port.");
+				npc("Back in my father's day, Crandor was an important", "city-state. Politically, it was important as Falador or", "Varrock and its ships traded with every port.");
 				stage = 407;
 				break;
 			case 407:
@@ -91,7 +91,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 				stage = 410;
 				break;
 			case 410:
-				npc("If you really think you're up to it then perhaphs you", "are the one who can kill this dragon.");
+				npc("If you really think you're up to it then perhaps you", "are the one who can kill this dragon.");
 				stage = 411;
 				break;
 			case 411:

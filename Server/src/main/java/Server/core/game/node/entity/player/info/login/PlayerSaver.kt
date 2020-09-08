@@ -561,8 +561,8 @@ class PlayerSaver (val player: Player){
             desertTreasureNode.add(item)
         }
         questData.put("desertTreasureNode",desertTreasureNode)
-        questData.put("witchsExperimentStage",player.savedData.questData.witchsExerimentStage.toString())
-        questData.put("witchsExperimentKilled",player.savedData.questData.isWitchsExerimentKilled)
+        questData.put("witchsExperimentStage",player.savedData.questData.witchsExperimentStage.toString())
+        questData.put("witchsExperimentKilled",player.savedData.questData.isWitchsExperimentKilled)
         root.put("questData",questData)
     }
 

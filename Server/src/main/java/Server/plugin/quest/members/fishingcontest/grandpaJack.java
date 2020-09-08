@@ -7,7 +7,7 @@ import core.game.node.entity.player.Player;
 import plugin.dialogue.DialoguePlugin;
 
 /**
- * Rerpesents the dialogue plugin used for the grandpaJack npc.
+ * Represents the dialogue plugin used for the grandpaJack npc.
  * @author Woah
  * @note finish with fishing contests.
  **/
@@ -42,7 +42,7 @@ public final class grandpaJack extends DialoguePlugin {
     @Override
     public boolean open(Object... args) {
         npc = (NPC) args[0];
-        npc("Hello young'on!", "Come to visit old Grandpa Jack? I can tell ye stories", " for sure. I sued to be the best fisherman these parts", "have seen!");
+        npc("Hello young'on!", "Come to visit old Grandpa Jack? I can tell ye stories", " for sure. I used to be the best fisherman these parts", "have seen!");
         return true;
     }
 
@@ -137,7 +137,7 @@ public final class grandpaJack extends DialoguePlugin {
                 stage++;
                 break;
             case 12:
-                npc("Then my net suddenly got really heavy!", " I pulled it up... To my amazement", "I'd caught this little chest thing!");
+                npc("Then my net suddenly got really heavy!", "I pulled it up... To my amazement", "I'd caught this little chest thing!");
                 stage++;
                 break;
             case 13:
@@ -179,7 +179,7 @@ public final class grandpaJack extends DialoguePlugin {
                 stage++;
                 break;
             case 27:
-                npc("Ahh well, I'm sure you'll find something to put him off.", "Afer all, there must be a kitchen around here with", "some garlic in it, perhaps in Seers Village or Ardougne.", "If he's pretending to be a vampire then he can pretend");
+                npc("Ahh well, I'm sure you'll find something to put him off.", "After all, there must be a kitchen around here with", "some garlic in it, perhaps in Seers Village or Ardougne.", "If he's pretending to be a vampire then he can pretend");
                 stage++;
                 break;
             case 28:

@@ -105,7 +105,7 @@ public class TheLadyOfTheLake extends DialoguePlugin {
 				// proven
 				// themselves
 				// yet
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Aye, I have that aretefact in my possession.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Aye, I have that artefact in my possession.");
 				stage = 300;
 			} else if (quest.getStage(player) >= 70) {
 				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I recall you have already proven yourself to be worthy of", "wielding it. I shall return it to you if you can prove", "yourself to still be worthy.");
@@ -117,7 +117,7 @@ public class TheLadyOfTheLake extends DialoguePlugin {
 			stage = 163;
 			break;
 		case 163:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Why, by proving youself to be above material goods.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Why, by proving yourself to be above material goods.");
 			stage = 164;
 			break;
 		case 164:
@@ -152,10 +152,10 @@ public class TheLadyOfTheLake extends DialoguePlugin {
 			} else if (player.getInventory().contains(995, 500)) {
 				player.getInventory().remove(new Item(995, 500));
 				player.getInventory().add(new Item(35, 1));
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Thank's for the cash!", "I'm saving up for a new dress.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Thanks for the cash!", "I'm saving up for a new dress.");
 				stage = 170;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I don't seem to have enough conins.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I don't seem to have enough coins.");
 				stage = 169;
 			}
 			break;

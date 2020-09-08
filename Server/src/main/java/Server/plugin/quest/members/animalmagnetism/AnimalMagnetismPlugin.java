@@ -296,7 +296,7 @@ public final class AnimalMagnetismPlugin extends OptionHandler {
 	}
 
 	/**
-	 * Handles the resarch note handler.
+	 * Handles the research note handler.
 	 * @author Vexia
 	 * @version 1.0
 	 */

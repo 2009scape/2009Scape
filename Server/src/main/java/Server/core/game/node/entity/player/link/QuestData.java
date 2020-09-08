@@ -50,14 +50,14 @@ public final class QuestData implements SavingModule {
 	private boolean gardenerAttack;
 
 	/**
-	 * Represents if they talked to drezzel.
+	 * Represents if they talked to drezel.
 	 */
 	private boolean talkedDrezel;
 
-	private int witchsExerimentStage;
+	private int witchsExperimentStage;
 
 
-	private boolean witchsExerimentKilled;
+	private boolean witchsExperimentKilled;
 
 
 	/**
@@ -78,8 +78,8 @@ public final class QuestData implements SavingModule {
 		SavedData.save(buffer, gardenerAttack, 6);
 		SavedData.save(buffer, talkedDrezel, 7);
 		saveDesertTreasureNode(buffer);
-		SavedData.save(buffer, witchsExerimentStage, 9);
-		SavedData.save(buffer, witchsExerimentKilled, 10);
+		SavedData.save(buffer, witchsExperimentStage, 9);
+		SavedData.save(buffer, witchsExperimentKilled, 10);
 		buffer.put((byte) 0);
 	}
 
@@ -108,8 +108,8 @@ public final class QuestData implements SavingModule {
 			JSONObject item = (JSONObject) dtn.get(i);
 			desertTreasure[i] = new Item(Integer.parseInt(item.get("id").toString()), Integer.parseInt(item.get("amount").toString()));
 		}
-		witchsExerimentKilled = (boolean) data.get("witchsExperimentKilled");
-		witchsExerimentStage = Integer.parseInt( data.get("witchsExperimentStage").toString());
+		witchsExperimentKilled = (boolean) data.get("witchsExperimentKilled");
+		witchsExperimentStage = Integer.parseInt( data.get("witchsExperimentStage").toString());
 	}
 
 	@Override
@@ -152,10 +152,10 @@ public final class QuestData implements SavingModule {
 				}
 				break;
 			case 9:
-				witchsExerimentStage = buffer.getInt();
+				witchsExperimentStage = buffer.getInt();
 				break;
 			case 10:
-				witchsExerimentKilled = SavedData.getBoolean(buffer.get());
+				witchsExperimentKilled = SavedData.getBoolean(buffer.get());
 				break;
 			}
 		}
@@ -336,19 +336,19 @@ public final class QuestData implements SavingModule {
 		desertTreasure[index] = item;
 	}
 
-	public int getWitchsExerimentStage() {
-		return witchsExerimentStage;
+	public int getWitchsExperimentStage() {
+		return witchsExperimentStage;
 	}
 
-	public void setWitchsExerimentStage(int witchsExerimentStage) {
-		this.witchsExerimentStage = witchsExerimentStage;
+	public void setWitchsExperimentStage(int witchsExperimentStage) {
+		this.witchsExperimentStage = witchsExperimentStage;
 	}
-	public boolean isWitchsExerimentKilled() {
-		return witchsExerimentKilled;
+	public boolean isWitchsExperimentKilled() {
+		return witchsExperimentKilled;
 	}
 
-	public void setWitchsExerimentKilled(boolean witchsExerimentKilled) {
-		this.witchsExerimentKilled = witchsExerimentKilled;
+	public void setWitchsExperimentKilled(boolean witchsExperimentKilled) {
+		this.witchsExperimentKilled = witchsExperimentKilled;
 	}
 
 	public boolean[] getDraynorLever() {
