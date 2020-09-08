@@ -71,7 +71,7 @@ public class BotGrandExchange {
             GEOfferDispatch.dispatch(new Player(PlayerDetails.getDetails("2009scape")), o);
             SystemLogger.log("Adding new item " + id + " in amt " + o.getAmount());
         }
-        botOffers.put(id, GEOfferDispatch.getOfferMapping().get(GEOfferDispatch.getLastItemUID()));
+        botOffers.put(id, o);
     }
 
     public static boolean isClueScroll(int id) {
