@@ -337,7 +337,7 @@ class GEOfferDispatch : Pulse(), CallBack {
          * Gets the next UID.
          * @return The UID.
          */
-        fun nextUID(): Long {
+        private fun nextUID(): Long {
             val id = offsetUID++
             return if (id == 0L) {
                 nextUID()
@@ -351,14 +351,6 @@ class GEOfferDispatch : Pulse(), CallBack {
         fun setOfferMap(offer: GrandExchangeOffer) {
             OFFER_MAPPING[offer.uid] = offer
         }
-
-        /**
-         * Gets the current UID without incrementing for use in BotGrandExchange
-         * @return The UID
-         */
-        @JvmStatic
-        val lastItemUID: Long
-            get() = this.offsetUID
 
         /**
          * Gets the offerMapping.
