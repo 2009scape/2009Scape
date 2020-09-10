@@ -69,6 +69,11 @@ class GEOfferDispatch : Pulse(), CallBack {
         private val OFFER_MAPPING: MutableMap<Long, GrandExchangeOffer> = HashMap()
 
         /**
+         * Offers to remove.
+         */
+        private var OFFERS_TO_REMOVE = mutableListOf<Long>();
+
+        /**
          * If the database should be dumped.
          */
         private var dumpDatabase = false
@@ -229,6 +234,7 @@ class GEOfferDispatch : Pulse(), CallBack {
             if (!offer.isActive) {
                 return
             }
+            OFFERS_TO_REMOVE = mutableListOf()
             for (o in OFFER_MAPPING.values) {
                 if (o.isSell != offer.isSell && o.itemId == offer.itemId && o.isActive) {
                     exchange(offer, o)
@@ -236,6 +242,9 @@ class GEOfferDispatch : Pulse(), CallBack {
                         break
                     }
                 }
+            }
+            for (i in OFFERS_TO_REMOVE) {
+                OFFER_MAPPING.remove(i)
             }
         }
 
@@ -292,10 +301,10 @@ class GEOfferDispatch : Pulse(), CallBack {
             o.notify(UPDATE_NOTIFICATION)
             dumpDatabase = true
             if (o.playerUID == BotGrandExchange.MAGIC_UID && o.state == OfferState.COMPLETED) {
-                remove(o.uid);
+                OFFERS_TO_REMOVE.add(o.uid)
             }
             if (offer.playerUID == BotGrandExchange.MAGIC_UID && offer.state == OfferState.COMPLETED) {
-                remove(offer.uid);
+                OFFERS_TO_REMOVE.add(offer.uid)
             }
         }
 
