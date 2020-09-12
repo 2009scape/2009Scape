@@ -3770,12 +3770,6 @@
         "maxAmount": "7"
       },
       {
-        "minAmount": "2",
-        "weight": "25",
-        "id": "3420",
-        "maxAmount": "2"
-      },
-      {
         "minAmount": "1",
         "weight": "25",
         "id": "590",
@@ -31283,12 +31277,6 @@
         "weight": "50",
         "id": "313",
         "maxAmount": "7"
-      },
-      {
-        "minAmount": "2",
-        "weight": "25",
-        "id": "3420",
-        "maxAmount": "2"
       },
       {
         "minAmount": "1",
