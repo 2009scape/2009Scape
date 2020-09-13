@@ -27,7 +27,7 @@ public final class WydinDoorPlugin extends OptionHandler {
 
 	@Override
 	public boolean handle(Player player, Node node, String option) {
-		if (!player.getEquipment().contains(1005, 1) && player.getLocation().getX() >= 3011 && player.getLocation().getX() <= 3018) {
+		if (!player.getEquipment().contains(1005, 1) && player.getLocation().getX() > 3011) {
 			player.getDialogueInterpreter().open(557, true, true);
 			return true;
 		} else {
