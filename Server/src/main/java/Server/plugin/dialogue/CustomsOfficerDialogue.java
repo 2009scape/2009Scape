@@ -86,11 +86,11 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You need to be searched before you can board?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You need to be searched before you can board.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendOptions("Select an Option", "Why?", "Search way, I have nothing to hide.", "You're not putting your hands on my things!");
+			interpreter.sendOptions("Select an Option", "Why?", "Search away, I have nothing to hide.", "You're not putting your hands on my things!");
 			stage = 12;
 			break;
 		case 12:
@@ -100,7 +100,7 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 				stage = 110;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Search waway, I have nothing to hide.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Search away, I have nothing to hide.");
 				stage = 120;
 				break;
 			case 3:
@@ -141,6 +141,7 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 			stage = 901;
 			break;
 		case 901:
+			// FIXME: Race condition? Not all rum items get removed.
 			for (int i = 0; i < player.getInventory().getAmount(RUM); i++) {
 				player.getInventory().remove(RUM);
 			}

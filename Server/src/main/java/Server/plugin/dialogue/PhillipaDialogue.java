@@ -46,11 +46,11 @@ public final class PhillipaDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hi, I'm Phillipa! Juliet's cousin? I like to keep an eye on", "her, make sure that dashing young Romeo doesn't just", "steal away from here under our plain old noses!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hi, I'm Phillipa! Juliet's cousin? I like to keep an eye on", "her, make sure that dashing young Romeo doesn't just", "steal her away from here under our plain old noses!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "He'd do it to you know... he's ever so dashing, and", "cavalier, in a wet blanket sort of way.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "He'd do it too you know... he's ever so dashing, and", "cavalier, in a wet blanket sort of way.");
 			stage = 2;
 			break;
 		case 2:
@@ -62,7 +62,7 @@ public final class PhillipaDialogue extends DialoguePlugin {
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "But he's probably chasing the ladies who frequent", "Varrockk market. He does like a bit of kiss chase so I've", "heard!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "But he's probably chasing the ladies who frequent", "Varrock market. He does like a bit of kiss chase so I've", "heard!");
 			stage = 5;
 			break;
 		case 5:

@@ -41,23 +41,21 @@ public final class WydinDialogue extends DialoguePlugin {
 			door = (boolean) args[1];
 		if (door) {
 			if (player.getSavedData().getGlobalData().isWydinEmployee()) {
-				interpreter.sendDialogues(557, FacialExpression.HALF_GUILTY, "Can you put your white apron on before going in there", "please.");
-				stage = 100;
+				interpreter.sendDialogues(557, FacialExpression.HALF_GUILTY, "Can you put your white apron on before going in there", "please?");
 			} else {
-				interpreter.sendDialogues(557, null, "Hey, you can't go in there. Only emplyees of the", "grocery store can go in.");
-				stage = 100;
+				interpreter.sendDialogues(557, null, "Hey, you can't go in there. Only employees of the", "grocery store can go in.");
 			}
+			stage = 100;
 			return true;
 		} else {
 			npc = (NPC) args[0];
 		}
 		if (player.getSavedData().getGlobalData().isWydinEmployee()) {
 			interpreter.sendDialogues(557, FacialExpression.HALF_GUILTY, "Is it nice and tidy round the back now?");
-			stage = 0;
 		} else {
 			interpreter.sendDialogues(557, FacialExpression.HALF_GUILTY, "Welcome to my food store! Would you like to buy", "anything?");
-			stage = 0;
 		}
+		stage = 0;
 		return true;
 	}
 
@@ -116,7 +114,7 @@ public final class WydinDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 40:
-				interpreter.sendDialogues(557, FacialExpression.HALF_GUILTY, "Yes, ofcourse.");
+				interpreter.sendDialogues(557, FacialExpression.HALF_GUILTY, "Yes, of course.");
 				stage = 41;
 				break;
 			case 41:

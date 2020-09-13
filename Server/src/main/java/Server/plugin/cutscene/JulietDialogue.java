@@ -102,10 +102,10 @@ public final class JulietDialogue extends DialoguePlugin {
 			break;
 		case 60:
 			if (!player.getInventory().contains(756, 1)) {
-				interpreter.sendDialogues(player, null, "Hi Juliet! I have an interesting propostion for", "you...suggested by Father Lawrence. It may be the", "only way you'll be able to escape from this house and", "be with Romeo.");
+				interpreter.sendDialogues(player, null, "Hi Juliet! I have an interesting proposition for", "you...suggested by Father Lawrence. It may be the", "only way you'll be able to escape from this house and", "be with Romeo.");
 				stage = 950;
 			} else {
-				interpreter.sendDialogues(player, null, "Hi Juliet! I have an interesting propostion for", "you...suggested by Father Lawrence. It may be the", "only way you'll be able to escape from this house and", "be with Romeo.");
+				interpreter.sendDialogues(player, null, "Hi Juliet! I have an interesting proposition for", "you...suggested by Father Lawrence. It may be the", "only way you'll be able to escape from this house and", "be with Romeo.");
 				stage = 950;
 			}
 			break;
@@ -124,7 +124,7 @@ public final class JulietDialogue extends DialoguePlugin {
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
 		final Quest quest = player.getQuestRepository().getQuest("Romeo & Juliet");
-		final NPC phil = cutscene != null ? cutscene.getPhillipia() : (NPC) Repository.findNPC(3325);
+		final NPC phil = cutscene != null ? cutscene.getPhillipa() : (NPC) Repository.findNPC(3325);
 		final NPC dad = cutscene != null ? cutscene.getNPCS().get(2) : (NPC) Repository.findNPC(3324);
 		switch (stage) {
 		case 2000:
@@ -402,7 +402,7 @@ public final class JulietDialogue extends DialoguePlugin {
 			stage = 657;
 			break;
 		case 657:
-			interpreter.sendDialogues(player, null, "Sorry, I still have to get a speical potion for you.");
+			interpreter.sendDialogues(player, null, "Sorry, I still have to get a special potion for you.");
 			stage = 658;
 			break;
 		case 658:
@@ -458,7 +458,7 @@ public final class JulietDialogue extends DialoguePlugin {
 			stage = 956;
 			break;
 		case 956:
-			interpreter.sendDialogues(player, null, "Then...Romeo can steal into the crypt and rescure you", "just as you wake up!");
+			interpreter.sendDialogues(player, null, "Then...Romeo can steal into the crypt and rescue you", "just as you wake up!");
 			stage = 957;
 			break;
 		case 957:
@@ -486,7 +486,7 @@ public final class JulietDialogue extends DialoguePlugin {
 			stage = 963;
 			break;
 		case 963:
-			interpreter.sendDialogues(npc, null, "Before I swig this potion down, let me stand on the", "balcony so that I might see the sun one last time before", "I am commited to the crypt.");
+			interpreter.sendDialogues(npc, null, "Before I swig this potion down, let me stand on the", "balcony so that I might see the sun one last time before", "I am committed to the crypt.");
 			stage = 964;
 			break;
 		case 964:
@@ -502,7 +502,7 @@ public final class JulietDialogue extends DialoguePlugin {
 			stage = 967;
 			break;
 		case 967:
-			interpreter.sendDialogues(npc, null, "Right...buttoms up!");
+			interpreter.sendDialogues(npc, null, "Right...bottoms up!");
 			stage = 968;
 			break;
 		case 968:

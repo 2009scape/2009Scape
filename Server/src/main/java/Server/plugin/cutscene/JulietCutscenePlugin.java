@@ -107,11 +107,11 @@ public final class JulietCutscenePlugin extends CutscenePlugin {
 	}
 
 	/**
-	 * Gets the phillipia npc.
+	 * Gets the Phillipa npc.
 	 * 
 	 * @return the npc.
 	 */
-	public NPC getPhillipia() {
+	public NPC getPhillipa() {
 		return npcs.get(1);
 	}
 

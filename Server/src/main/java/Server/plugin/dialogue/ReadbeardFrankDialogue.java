@@ -8,7 +8,7 @@ import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
 
 /**
- * Represents the dialogue to handle rebeard frank.
+ * Represents the dialogue to handle redbeard frank.
  * @author 'Vexia
  * @date 28/12/2013
  */
@@ -31,7 +31,7 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 	private Quest quest;
 
 	/**
-	 * Constructs a new {@code ReadbeardFrankDialogue} {@code Object}.
+	 * Constructs a new {@code RedbeardFrankDialogue} {@code Object}.
 	 */
 	public ReadbeardFrankDialogue() {
 		/**
@@ -152,7 +152,7 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Not suprising, tis no easy task to get it off Karamja.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Not surprising, tis no easy task to get it off Karamja.");
 				stage = 3;
 				break;
 			case 3:
@@ -185,7 +185,7 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 			case 13:
 				if (player.getInventory().remove(KARAMJAN_RUM) && player.getInventory().add(KEY)) {
 					quest.setStage(player, 20);
-					interpreter.sendItemMessage(KEY.getId(), "Frank happily takes the rum... ... and hands you a key");
+					interpreter.sendItemMessage(KEY.getId(), "Frank happily takes the rum... ... and hands you a key.");
 					stage = 14;
 				} else {
 					end();
@@ -229,11 +229,11 @@ public class ReadbeardFrankDialogue extends DialoguePlugin {
 				stage = 13;
 				break;
 			case 13:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'd like some rum made on Karamja Island. There's no", "rum like Karamaja Rum!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'd like some rum made on Karamja Island. There's no", "rum like Karamja Rum!");
 				stage = 14;
 				break;
 			case 14:
-				interpreter.sendOptions("Select an Option", "Ok, I will bring you some rum", "Not right now");
+				interpreter.sendOptions("Select an Option", "Ok, I will bring you some rum.", "Not right now.");
 				stage = 15;
 				break;
 			case 15:

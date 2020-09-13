@@ -83,7 +83,7 @@ public final class PiratesTreasure extends Quest {
 				writeJournal(player,
 					BLUE + "I have spoken to " + RED + "Redbeard Frank. " + BLUE + "He has agreed to tell me",
 					BLUE + "the location of some " + RED + "treasure " + BLUE + "for some " + RED + "Karamjan rum.",
-					BLUE + "I have taken employment on the " + RED + "banana plantation " + BLUE + ", as the",
+					BLUE + "I have taken employment on the " + RED + "banana plantation" + BLUE + ", as the",
 					RED + "Customs Officers " + BLUE + "might not notice the " + RED + "rum " + BLUE + "if it is covered",
 					BLUE + "in " + RED + "bananas.",
 					"",

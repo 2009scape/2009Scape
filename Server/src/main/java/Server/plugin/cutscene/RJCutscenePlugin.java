@@ -117,11 +117,11 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 	}
 
 	/**
-	 * Gets the phillipia npc.
+	 * Gets the Phillipa npc.
 	 * 
 	 * @return the npc.
 	 */
-	public NPC getPhillipia() {
+	public NPC getPhillipa() {
 		return npcs.get(1);
 	}
 
@@ -212,15 +212,15 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 				stage = 16;
 				break;
 			case 16:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh yes, Juliet Is very different...please tell her that she", "is the love of my long and that I life to be with her?");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh yes, Juliet is very different...please tell her that she", "is the love of my long and that I life to be with her?");
 				stage = 17;
 				break;
 			case 17:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What?", "Surely you mean that 'she is the love of your life and", "that you long to be with her?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What?", "Surely you mean that she is the love of your life and", "that you long to be with her?");
 				stage = 18;
 				break;
 			case 18:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh yeah...what you said...tell her that, it sounds much", "bettter!", "Oh you're so good at this!");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh yeah...what you said...tell her that, it sounds much", "better!", "Oh you're so good at this!");
 				stage = 19;
 				break;
 			case 19:
@@ -438,7 +438,7 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 				stage = 424;
 				break;
 			case 424:
-				interpreter.sendDialogues(npc, null, "Oh yes, Father Lawrence...he's our long time confidant,", "he might have a solution! yes, yes, you have to go and", "talk to Lather Fawrence for us and ask him if he's got", "any suggestions for our predicatment?");
+				interpreter.sendDialogues(npc, null, "Oh yes, Father Lawrence...he's our long time confidant,", "he might have a solution! yes, yes, you have to go and", "talk to Lather Fawrence for us and ask him if he's got", "any suggestions for our predicament?");
 				stage = 425;
 				break;
 			case 425:
@@ -489,7 +489,7 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 				end();
 				break;
 			case 560:
-				interpreter.sendDialogues(npc, null, "Sadly not my friend! And what's worse, her Father has", "threatend to kill me if he sees me. I mean, that seems", "a bit harsh!");
+				interpreter.sendDialogues(npc, null, "Sadly not my friend! And what's worse, her Father has", "threatened to kill me if he sees me. I mean, that seems", "a bit harsh!");
 				stage = 561;
 				break;
 			case 561:
@@ -592,7 +592,7 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 				stage = 327;
 				break;
 			case 327:
-				interpreter.sendDialogues(player, null, "Yes, he's given me details of a potion which should help", "resolve this siution. The Apothecary is helping me", "prepare it.");
+				interpreter.sendDialogues(player, null, "Yes, he's given me details of a potion which should help", "resolve this situation. The Apothecary is helping me", "prepare it.");
 				stage = 328;
 				break;
 			case 328:
