@@ -2,7 +2,6 @@ package plugin.quest.free.blackknightsfortress;
 
 import core.cache.def.impl.ItemDefinition;
 import core.cache.def.impl.ObjectDefinition;
-import core.game.content.global.action.ClimbActionHandler;
 import core.game.content.global.action.DoorActionHandler;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
@@ -11,7 +10,6 @@ import core.game.node.item.Item;
 import core.game.node.object.GameObject;
 import core.game.system.task.Pulse;
 import core.game.world.GameWorld;
-import core.game.world.map.Location;
 import core.game.world.repository.Repository;
 import core.game.world.update.flag.context.Animation;
 import core.game.world.update.flag.context.Graphics;
@@ -66,11 +64,9 @@ public final class BKFortressPlugin extends OptionHandler {
 
 	@Override
 	public boolean handle(final Player player, Node node, String option) {
-		final int id = node instanceof Item ? ((Item) node).getId() : ((GameObject) node).getId();
-		GameObject object = node instanceof GameObject ? ((GameObject) node) : null;
-		Location dest = null;
+		final int id = node.getId();
 		switch (id) {
-		case 2342:// listen at grill.
+		case 2342: // Listen at grill.
 			player.animate(LISTEN_ANIM);
 			GameWorld.getPulser().submit(new Pulse(2, player) {
 				@Override
@@ -80,48 +76,6 @@ public final class BKFortressPlugin extends OptionHandler {
 					return true;
 				}
 			});
-			break;
-		case 17160:
-			if (object.getLocation().equals(new Location(3022, 3518, 1))) {
-				dest = Location.create(3022, 3517, 0);
-			}
-			if (dest != null) {
-				ClimbActionHandler.climb(player, new Animation(828), dest);
-			} else {
-				ClimbActionHandler.climbLadder(player, (GameObject) node, option);
-			}
-			break;
-		case 17149:
-			if (object.getLocation().equals(new Location(3023, 3513, 2))) {
-				dest = Location.create(3023, 3514, 1);
-			} else if (object.getLocation().equals(new Location(3025, 3513, 2))) {
-				dest = Location.create(3025, 3514, 1);
-			} else if (object.getLocation().equals(new Location(3016, 3519, 2))) {
-				dest = Location.create(3016, 3518, 1);
-			} else if (object.getLocation().equals(new Location(3015, 3519, 1))) {
-				dest = Location.create(3015, 3518, 0);
-			} else if (object.getLocation().equals(new Location(3017, 3516, 2))) {
-				dest = Location.create(3017, 3515, 1);
-			}
-			if (dest != null) {
-				ClimbActionHandler.climb(player, new Animation(828), dest);
-			} else {
-				ClimbActionHandler.climbLadder(player, (GameObject) node, option);
-			}
-			break;
-		case 17148:
-			if (object.getLocation().equals(new Location(3021, 3510, 0))) {
-				dest = Location.create(3022, 3510, 1);
-			} else if (object.getLocation().equals(new Location(3015, 3519, 0))) {
-				dest = Location.create(3015, 3518, 1);
-			} else if (object.getLocation().equals(new Location(3016, 3519, 0))) {
-				dest = Location.create(3016, 3518, 2);
-			}
-			if (dest != null) {
-				ClimbActionHandler.climb(player, new Animation(828), dest);
-			} else {
-				ClimbActionHandler.climbLadder(player, (GameObject) node, option);
-			}
 			break;
 		case 2341:
 			player.getPacketDispatch().sendMessage("You push against the wall. You find a secret passage.");
@@ -135,7 +89,7 @@ public final class BKFortressPlugin extends OptionHandler {
 			player.getDialogueInterpreter().open(4605, Repository.findNPC(4605), true, true);
 			break;
 		case 2337:
-			if (player.getLocation().getY() > 3514) { // Player is inside the fortress
+			if (player.getLocation().getY() > 3514) { // Player is inside the fortress, and is trying to exit.
 				DoorActionHandler.handleAutowalkDoor(player, (GameObject) node);
 				return true;
 			}
