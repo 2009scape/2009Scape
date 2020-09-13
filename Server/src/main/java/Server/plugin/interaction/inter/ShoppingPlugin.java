@@ -4,6 +4,7 @@ import core.game.component.Component;
 import core.game.component.ComponentDefinition;
 import core.game.component.ComponentPlugin;
 import core.game.container.Container;
+import core.game.content.global.shop.Shop;
 import core.game.content.global.shop.ShopViewer;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.RunScript;
@@ -27,20 +28,51 @@ public final class ShoppingPlugin extends ComponentPlugin {
 		return this;
 	}
 
+	/**
+	 * Handles shop actions
+	 *
+	 * @param player The player.
+	 * @param component The component.
+	 * @param opcode The opcode.
+	 * @param button
+	 * @param slot The slot.
+	 * @param itemId The item id. Seems to always be -1
+	 * @return action handled
+	 */
 	@Override
 	public boolean handle(Player player, Component component, int opcode, int button, int slot, int itemId) {
 		final ShopViewer viewer = player.getExtension(ShopViewer.class);
+		// Player is using the ::find developer command
 		if (player.getAttributes().containsKey("spawning_items")) {
+			if (component.getId() == 621) return true; // Player clicked on an item in their inventory.
+			Shop shop = viewer.getShop();
+			Container container = shop.getContainer(viewer.getTabIndex());
+			int amount = 0;
 			switch (opcode) {
-				case 155:
-					switch (button) {
-						case 23:
-						case 24:
-						case 0:
-							viewer.getShop().give(player, slot, 1, viewer.getTabIndex());
-							break;
-					}
+				case 155: // Value
+				case 196: // Buy 1
+					amount = 1;
 					break;
+				case 124: // Buy 5;
+					amount = 5;
+					break;
+				case 199: // Buy 10;
+					amount = 10;
+					break;
+				case 9: // Examine
+					int id = container.getId(slot);
+					if (id == -1) {
+						return true;
+					}
+					player.getPacketDispatch().sendMessage(ExaminePacket.getItemExamine(id));
+					break;
+				case 234: // TODO: Get player input
+					break;
+			}
+			if (amount > 0) {
+				Item item = container.get(slot);
+				player.sendMessage(String.format("[%d] %s", item.getId(), item.getName()));
+				shop.give(player, slot, amount, viewer.getTabIndex());
 			}
 			return true;
 		}
