@@ -58,7 +58,7 @@ public final class ServerConstants {
 	
 	public static final String[] DATABASE_NAMES = {
 			"server",
-			"global",
+			"2009scape",
 	};
 	
 	/**
