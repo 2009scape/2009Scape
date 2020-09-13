@@ -1,6 +1,4 @@
-plugins {
-    id "application"
-}
+apply plugin: 'application'
 
 archivesBaseName = 'server'
 
@@ -17,4 +15,10 @@ dependencies {
 sourceSets {
     main.java.srcDirs = ['src/main/java/Server']
     main.kotlin.srcDirs = ['src/main/java/Server']
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'core.server'
+    }
 }
