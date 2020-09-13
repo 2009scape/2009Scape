@@ -12,26 +12,27 @@ import plugin.dialogue.FacialExpression
  */
 
 @InitializablePlugin
-class LumbridgeCookDialogue (player: Player? = null) : DialoguePlugin(player){
+class LumbridgeCookDialogue (player: Player? = null) : DialoguePlugin(player) {
 
-    //Item declaration
-    val EMPTY_BUCKET = 1925
-    val MILK = 1927
-    val EMPTY_POT = 1931
-    val FLOUR = 1933
-    val EGG = 1944
+    companion object {
+        // Item declaration
+        const val EMPTY_BUCKET = 1925
+        const val MILK = 1927
+        const val EMPTY_POT = 1931
+        const val FLOUR = 1933
+        const val EGG = 1944
+    }
 
     //Default settings for the Cook checking for ingredients in the player's inventory
     var gave = false
     var leftoverItems = ""
 
-
     override fun open(vararg args: Any?): Boolean {
-        if (player?.questRepository?.getQuest("Cook's Assistant")!!.getStage(player) <= 0) { //If the player has ot started cook's assistant
+        if (player?.questRepository?.getQuest(CooksAssistant.NAME)!!.getStage(player) <= 0) { //If the player has ot started cook's assistant
             npc(FacialExpression.SAD, "What am I to do?")
             stage = 0
             return true
-        } else if (player?.questRepository?.getQuest("Cook's Assistant")!!.getStage(player) in 10..99) { //During the Cook's Assistant Quest
+        } else if (player?.questRepository?.getQuest(CooksAssistant.NAME)!!.getStage(player) in 10..99) { //During the Cook's Assistant Quest
             if (player.getAttribute("cooks_assistant:all_submitted", false) || (player.getAttribute("cooks_assistant:milk_submitted", false) && player.getAttribute("cooks_assistant:flour_submitted", false) && player.getAttribute("cooks_assistant:egg_submitted", false))){ //If the player has handed all the ingredients to the chef but did not continue the dialogue
                 npc(FacialExpression.HAPPY, "You've brought me everything I need! I am saved!", "Thank you!")
                 stage = 200
@@ -98,7 +99,7 @@ class LumbridgeCookDialogue (player: Player? = null) : DialoguePlugin(player){
             44 -> npc(FacialExpression.ANGRY, "I AM a real cook! I haven't got time to be chatting", "about culinary fashion. I'm in desperate need of help!").also { stage = 21 }
 
             //Yes, I'll help you
-            50 -> npc(FacialExpression.HAPPY, "Oh thank you, thank you. I need milk, an egg and", "flour. I'd be very grateful if you can get them for me.").also{ player?.questRepository?.getQuest("Cook's Assistant")?.start(player!!); stage++ }
+            50 -> npc(FacialExpression.HAPPY, "Oh thank you, thank you. I need milk, an egg and", "flour. I'd be very grateful if you can get them for me.").also{ player?.questRepository?.getQuest(CooksAssistant.NAME)?.start(player!!); stage++ }
             51 -> player(FacialExpression.NEUTRAL, "So where do I find these ingredients then?").also { stage = 60 }
 
             //Where do I find these ingredients?
@@ -116,7 +117,7 @@ class LumbridgeCookDialogue (player: Player? = null) : DialoguePlugin(player){
             //How about milk?
             71 -> npc(FacialExpression.SUSPICIOUS,"Talk to Gillie Groats, she looks after the Dairy cows -","she'll tell you everything you need to know about","milking cows!").also { stage++ }
             72 ->
-                if (player.inventory.contains(EMPTY_BUCKET , 1)) {
+                if (player.inventory.contains(Companion.EMPTY_BUCKET, 1)) {
                         npc(FacialExpression.NEUTRAL,"You'll need an empty bucket for the milk itself. I do see", "you've got a bucket with you already luckily!").also { stage = 80 }
                 } else {
                     npc(FacialExpression.NEUTRAL,"You'll need an empty bucket for the milk itself. The", "general store just north of the castle will sell you one", "for a couple of coins.").also { stage = 80 }
@@ -222,7 +223,7 @@ class LumbridgeCookDialogue (player: Player? = null) : DialoguePlugin(player){
             203 -> npc(FacialExpression.NEUTRAL, "Maybe, but I won't be holding my breath.").also { stage++ }
 
             //Activate the Cook's Assistant Quest Complete Certificate
-            204 -> end().also { player?.questRepository?.getQuest("Cook's Assistant")?.finish(player!!) }
+            204 -> end().also { player?.questRepository?.getQuest(CooksAssistant.NAME)?.finish(player!!) }
 
             //Dialogue after Cook's Assistant Completion
             300 -> options("I am getting strong and mighty.", "I keep on dying.", "Can I use your range?").also { stage++ }

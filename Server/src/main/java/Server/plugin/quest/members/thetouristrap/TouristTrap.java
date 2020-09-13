@@ -2,6 +2,8 @@ package plugin.quest.members.thetouristrap;
 
 import core.game.component.Component;
 import core.game.container.impl.EquipmentContainer;
+import core.game.node.entity.player.link.quest.QuestReward;
+import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -109,15 +111,35 @@ public final class TouristTrap extends Quest {
 
 	/**
 	 * Constructs a new {@code TouristTrap} {@code Object}.
-	 * @param player The player to construct the class for.
 	 */
 	public TouristTrap() {
-		super(NAME, 123, 122, 2, 197, 0, 1, 30);
+		super(
+			NAME,
+			123,
+			122,
+			2,
+			197, 0, 1, 30
+		);
 	}
-	
+
 	@Override
 	public Quest newInstance(Object object) {
-		PluginManager.definePlugins(new TouristTrapPlugin(), new AnaDialogue(), new CaptainSiadDialogue(), new DesertGuardDialogue(), new IrenaDialogue(), new MaleSlaveDialogue(), new MercenaryCaptainDialogue(), new MercenaryDialogue(), new MinecartDriverDialogue(), new MineSlaveNPC(), new MiningCampZone(), new RowdySlaveNPC(), new AlShabimDialogue(), new BedabinNomadDialogue());
+		PluginManager.definePlugins(
+			new TouristTrapPlugin(),
+			new AnaDialogue(),
+			new CaptainSiadDialogue(),
+			new DesertGuardDialogue(),
+			new IrenaDialogue(),
+			new MaleSlaveDialogue(),
+			new MercenaryCaptainDialogue(),
+			new MercenaryDialogue(),
+			new MinecartDriverDialogue(),
+			new MineSlaveNPC(),
+			new MiningCampZone(),
+			new RowdySlaveNPC(),
+			new AlShabimDialogue(),
+			new BedabinNomadDialogue()
+		);
 		return this;
 	}
 
@@ -126,54 +148,109 @@ public final class TouristTrap extends Quest {
 		super.drawJournal(player, stage);
 		switch (getStage(player)) {
 		case 0:
-			line(player, "<blue>I can start this quest by speaking to <red>Irena <blue>after I have<br><br><blue>gone through the <red>Shantay Pass, South of Al-Kharid.<br><br><blue>To complete this quest I need:-<br><br>" + (player.getSkills().getStaticLevel(Skills.FLETCHING) > 9 ? "<str>" : "<blue>") + "Level 10 Fletching<br><br>" + (player.getSkills().getStaticLevel(Skills.SMITHING) > 19 ? "<str>" : "<blue>") + "Level 20 Smithing" + (hasRequirements(player) ? "<br><br><blue>I have all the <red>requirements<blue> to begin and complete this<br><br><red>quest." : ""), 11);
+			writeJournal(player,
+				"<blue>I can start this quest by speaking to <red>Irena <blue>after I have",
+				"<blue>gone through the <red>Shantay Pass, South of Al-Kharid.",
+				"<blue>To complete this quest I need:",
+				(player.getSkills().getStaticLevel(Skills.FLETCHING) > 9 ? "<str>" : "<blue>") + "Level 10 Fletching",
+				(player.getSkills().getStaticLevel(Skills.SMITHING) > 19 ? "<str>" : "<blue>") + "Level 20 Smithing",
+				(hasRequirements(player) ? "<blue>I have all the <red>requirements<blue> to begin and complete this" : ""),
+				(hasRequirements(player) ? "<red>quest." : "")
+			);
 			break;
 		case 10:
 		case 11:
 		case 30:
 		case 40:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I need to head into <red>the desert<blue> and search for <red>Ana", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I need to head into <red>the desert<blue> and search for <red>Ana");
 			break;
 		case 50:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I need to find the guard a <red>Tenti Pineapple<blue> for the guard.", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I need to find the guard a <red>Tenti Pineapple<blue> for the guard.");
 			break;
 		case 51:
 		case 52:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I have found a way to get <red>Tenti Pineapple<blue> I need to find<br><br><blue>the research plans that <red>Captain Siad<blue> has.", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I have found a way to get <red>Tenti Pineapple<blue> I need to find",
+				"<blue>the research plans that <red>Captain Siad<blue> has.");
 			break;
 		case 53:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I have found a way to get <red>Tenti Pineapple<blue><br><br><blue>I found the technical plans <red>Al Shabim<blue> was looking for.", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I have found a way to get <red>Tenti Pineapple<blue>",
+				"<blue>I found the technical plans <red>Al Shabim<blue> was looking for.");
 			break;
 		case 54:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I have found a way to get <red>Tenti Pineapple<blue><br><br><blue>I need to manufacture the <red>Prototype<blue> weapon for <red>Al Shabim<blue>.", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I have found a way to get <red>Tenti Pineapple<blue>",
+				"<blue>I need to manufacture the <red>Prototype<blue> weapon for <red>Al Shabim<blue>.");
 			break;
 		case 60:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I manufactured the <red>Prototype<blue> weapon and received<br><br><blue>a tasty <red>Tenti Pineapple<blue>.", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I manufactured the <red>Prototype<blue> weapon and received",
+				"<blue>a tasty <red>Tenti Pineapple<blue>.");
 			break;
 		case 61:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I finally found <red>Anna<blue>. I just need to find a way to smuggle<br><br><blue>her out of here.", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I finally found <red>Anna<blue>. I just need to find a way to smuggle",
+				"<blue>her out of here.");
 			break;
 		case 71:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I need to operate the <red>Winch<blue> to lift <red>Ana<blue> back up here.", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I need to operate the <red>Winch<blue> to lift <red>Ana<blue> back up here.");
 			break;
 		case 72:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I need to get <red>Ana<blue> from one of the barrels lifted.", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I need to get <red>Ana<blue> from one of the barrels lifted.");
 			break;
 		case 80:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I loaded <red>Ana<blue> into the <red>Cart<blue> I now need to get the <red>cart driver<blue> <br><br><blue>to transport it.", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I loaded <red>Ana<blue> into the <red>Cart<blue> I now need to get the <red>cart driver<blue> ",
+				"<blue>to transport it.");
 			break;
 		case 90:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I payed the <red>Mine cart driver<blue> and he agreed to smuggle me and <red>Anna<blue><br><br><blue>out of the <red>Mining camp<blue>.", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I payed the <red>Mine cart driver<blue> and he agreed to smuggle me and <red>Anna<blue>",
+				"<blue>out of the <red>Mining camp<blue>.");
 			break;
 		case 95:
 		case 98:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I smuggled both me and <red>Anna<blue> from the <red>Mining camp<blue>. I should<br><br><blue>go tell <red>Irena<blue> straight away.", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<blue>I smuggled both me and <red>Anna<blue> from the <red>Mining camp<blue>. I should",
+				"<blue>go tell <red>Irena<blue> straight away.");
 			break;
 		case 100:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><str>I returned <str>Ana<str> back to her mother and was rewarded<br><br><str>with a <str>key<str> and the knowledge in two skills.<br><br><br><br><col=FF0000>QUEST COMPLETE!", 11);
-			break;
-		default:
-			line(player, "<str>Irena was distraught that her daughter Ana had vanished<br><br><str>somewhere in the desert, and I agreed to help find her.<br><br><blue>I need to head into <red>the desert<blue> and search for <red>Ana", 11);
+			writeJournal(player,
+				"<str>Irena was distraught that her daughter Ana had vanished",
+				"<str>somewhere in the desert, and I agreed to help find her.",
+				"<str>I returned <str>Ana<str> back to her mother and was rewarded",
+				"<str>with a <str>key<str> and the knowledge in two skills.",
+				"",
+				"<col=FF0000>QUEST COMPLETE!");
 			break;
 		}
 	}
@@ -181,13 +258,6 @@ public final class TouristTrap extends Quest {
 	@Override
 	public void finish(Player player) {
 		super.finish(player);
-		player.getPacketDispatch().sendString("2 Quest Points", 277, 8+ 2);
-		player.getPacketDispatch().sendString("4650 XP in each of the two skills", 277, 9+ 2);
-		player.getPacketDispatch().sendString("Ability to make throwing darts", 277, 10+ 2);
-		player.getPacketDispatch().sendString("Access to desert mining camp", 277, 11+ 2);
-		player.getPacketDispatch().sendString("mithril and adamantite rocks.", 277, 12+ 2);
-		player.getPacketDispatch().sendItemZoomOnInterface(806, 230, 277, 3+ 2);
-		player.getQuestRepository().syncronizeTab(player);
 		player.getInventory().remove(new Item(1842, player.getInventory().getAmount(ANNA_BARREL)));
 		player.getBank().remove(new Item(1842, player.getBank().getAmount(ANNA_BARREL)));
 	}
@@ -252,7 +322,7 @@ public final class TouristTrap extends Quest {
 	/**
 	 * Adds a config value pertaining to this quest.
 	 * @param player the player.
-	 * @param the value.
+	 * @param value the value.
 	 */
 	public static void addConfig(final Player player, final int value) {
 		player.getConfigManager().set(CONFIG_ID, value, true);
@@ -289,7 +359,7 @@ public final class TouristTrap extends Quest {
 	/**
 	 * Checks if the player has armour.
 	 * @param player the player.
-	 * @return
+	 * @return true if the player is wearing anything other than the desert or slave clothes
 	 */
 	public static boolean hasArmour(final Player player) {
 		return player.getEquipment().itemCount() > 0 && !hasDesertClothes(player) && !hasSlaveClothes(player);
@@ -307,6 +377,22 @@ public final class TouristTrap extends Quest {
 	@Override
 	public boolean hasRequirements(Player player) {
 		return player.getSkills().getStaticLevel(Skills.FLETCHING) > 9 && player.getSkills().getStaticLevel(Skills.SMITHING) > 19;
+	}
+
+	@Override
+	public QuestRewardComponentItem getRewardComponentItem() {
+		return new QuestRewardComponentItem(806, 230);
+	}
+
+	@Override
+	public QuestReward[] getQuestRewards(Player player) {
+		return new QuestReward[]{
+			// XP is given in IrenaDialogue
+			new QuestReward("4650 XP in each of the two skills"),
+			new QuestReward("Ability to make throwing darts"),
+			new QuestReward("Access to desert mining camp"),
+			new QuestReward("mithril and adamantite rocks."),
+		};
 	}
 
 }

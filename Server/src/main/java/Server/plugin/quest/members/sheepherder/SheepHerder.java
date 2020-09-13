@@ -3,6 +3,10 @@ package plugin.quest.members.sheepherder;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
+import core.game.node.entity.player.link.quest.QuestReward;
+import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
+import core.game.node.item.GroundItem;
+import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 import core.game.world.map.Direction;
 import core.game.world.map.Location;
@@ -28,14 +32,22 @@ public class SheepHerder extends Quest {
     public static int FARMER_BRUMTY = 291;
 
     public static HashMap<Integer,Item> boneMap = new HashMap<>();
-    static{
+    static {
         boneMap.put(RED_SHEEP,RED_SHEEP_BONES);
         boneMap.put(GREEN_SHEEP,GREEN_SHEEP_BONES);
         boneMap.put(YELLOW_SHEEP,YELLOW_SHEEP_BONES);
         boneMap.put(BLUE_SHEEP,BLUE_SHEEP_BONES);
     }
 
-    public SheepHerder(){super("Sheep Herder",113,112,4,60,0,1,3);}
+    public SheepHerder() {
+        super(
+            "Sheep Herder",
+            113,
+            112,
+            4,
+            60, 0, 1, 3
+        );
+    }
 
     @Override
     public void drawJournal(Player player, int stage) {
@@ -43,30 +55,37 @@ public class SheepHerder extends Quest {
         int line = 11;
         boolean sheepDead = player.getAttribute("sheep_herder:all_dead",false);
         super.drawJournal(player, stage);
-        if(stage < 10){
-            line(player,"I can start this quest by speaking to !!Councillor Halgrive??",line++);
-            line(player, "near to the !!Zoo?? in !!East Ardougne.??",line++);
+        if (stage < 10) {
+            writeJournal(player,
+                "I can start this quest by speaking to <red>Councillor Halgrive",
+                "near to the <red>Zoo<blue> in <red>East Ardougne.");
         } else {
             switch(stage){
                 case 10:
-                    line(player, "!!Councillor Halgrive?? said I should speak to !!Doctor Orbon?? about", line++, hasGear);
-                    line(player, "Getting some protective gear.", line++, hasGear);
-                    line(player, "I need to !!locate the diseased sheep?? and corral them !!into the pin??", line++,sheepDead);
-                    line(player, "After which, I need to !!poison them?? and !!incinerate their bones.??", line++,sheepDead);
-                    if(sheepDead) {
-                        line(player,"I should inform !!Councillor Halgrive?? that I have taken care of the problem.",line++);
+                    line = writeJournal(player, line,
+                        (hasGear ? "<str>" : "") + "<red>Councillor Halgrive<blue> said I should speak to <red>Doctor Orbon<blue> about",
+                        (hasGear ? "<str>" : "") + "getting some protective gear.",
+                        (sheepDead ? "<str>" : "") + "I need to <red>locate the diseased sheep<blue> and corral them <red>into the pin",
+                        (sheepDead ? "<str>" : "") + "After which, I need to <red>poison them<blue> and <red>incinerate their bones."
+                    );
+                    if (sheepDead) {
+                        writeJournal(player, line,
+                            "I should inform <red>Councillor Halgrive<blue> that I have taken care of the problem.");
                     } else {
-                        line(player, "I still need:", line++);
-                        line(player, "A !!Red Sheep??", line++, player.getAttribute("sheep_herder:red_dead", false));
-                        line(player, "A !!Blue Sheep??", line++, player.getAttribute("sheep_herder:blue_dead", false));
-                        line(player, "A !!Green Sheep??", line++, player.getAttribute("sheep_herder:green_dead", false));
-                        line(player, "A !!Yellow Sheep??", line++, player.getAttribute("sheep_herder:yellow_dead", false));
+                        writeJournal(player, line,
+                            "I still need:",
+                            (player.getAttribute("sheep_herder:red_dead", false) ? "<str>" : "") + "A <red>Red Sheep",
+                            (player.getAttribute("sheep_herder:blue_dead", false) ? "<str>" : "") + "A <red>Blue Sheep",
+                            (player.getAttribute("sheep_herder:green_dead", false) ? "<str>" : "") + "A <red>Green Sheep",
+                            (player.getAttribute("sheep_herder:yellow_dead", false) ? "<str>" : "") + "A <red>Yellow Sheep"
+                        );
                     }
                     break;
                 case 100:
-                    line(player,"I helped Councillor Halgrive by putting down",line++,true);
-                    line(player,"plague-bearing sheep.",line++,true);
-                    line(player,"!!QUEST COMPLETE",line++);
+                    writeJournal(player,
+                        "<str>I helped Councillor Halgrive by putting down",
+                        "<str>plague-bearing sheep.",
+                        "<col=FF0000>QUEST COMPLETE");
                     break;
             }
         }
@@ -74,17 +93,24 @@ public class SheepHerder extends Quest {
 
     @Override
     public void finish(Player player) {
-        int ln = 10;
         super.finish(player);
-        player.getPacketDispatch().sendItemZoomOnInterface(995, 230, 277, 5);
-        drawReward(player,"4 Quest Points",ln++);
-        drawReward(player,"3100 coins",ln++);
         player.removeAttribute("sheep_herder:red_dead");
         player.removeAttribute("sheep_herder:blue_dead");
         player.removeAttribute("sheep_herder:green_dead");
         player.removeAttribute("sheep_herder:yellow_dead");
         player.removeAttribute("sheep_herder:all_dead");
-        player.getInventory().add(new Item(995,3100));
+    }
+
+    @Override
+    public QuestRewardComponentItem getRewardComponentItem() {
+        return new QuestRewardComponentItem(995, 230);
+    }
+
+    @Override
+    public QuestReward[] getQuestRewards(Player player) {
+        return new QuestReward[]{
+            new QuestReward(new Item(995, 3100)),
+        };
     }
 
     @Override

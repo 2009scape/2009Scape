@@ -2,6 +2,7 @@ package core.game.node.entity.player.link.quest;
 
 import core.game.component.Component;
 import core.game.node.entity.player.Player;
+import core.game.node.item.GroundItemManager;
 import core.plugin.Plugin;
 import core.plugin.PluginManifest;
 import core.plugin.PluginType;
@@ -36,11 +37,16 @@ public abstract class Quest implements Plugin<Object> {
 	 */
 	public static final int JOURNAL_COMPONENT = 275;
 
+	public static final int JOURNAL_TITLE_LINE = 2;
+	public static final int JOURNAL_TEXT_START = 4 + 7;
+
 	/**
 	 * The constant representing the quest reward component.
 	 */
 	public static final int REWARD_COMPONENT = 277;
-	
+
+	public static final int REWARD_TEXT_START = 10;
+
 	/**
 	 * The name of the quest.
 	 */
@@ -74,14 +80,14 @@ public abstract class Quest implements Plugin<Object> {
 	 * @param questPoints The rewarded quest points.
 	 * @param configs The configs.
 	 */
-	public Quest(String name, int index, int buttonId, int questPoints, int...configs) {
+	public Quest(String name, int index, int buttonId, int questPoints, int... configs) {
 		this.name = name;
 		this.index = index;
 		this.buttonId = buttonId;
 		this.questPoints = questPoints;
 		this.configs = configs;
 	}
-	
+
 	@Override
 	public Object fireEvent(String identifier, Object... args) {
 		return null;
@@ -89,7 +95,7 @@ public abstract class Quest implements Plugin<Object> {
 
 	@Override
 	public abstract Quest newInstance(Object object);
-	
+
 	/**
 	 * Starts this quest.
 	 * @param player The player.
@@ -98,9 +104,9 @@ public abstract class Quest implements Plugin<Object> {
 		player.getQuestRepository().setStage(this, 10);
 		player.getQuestRepository().syncronizeTab(player);
 	}
-	
+
 	/**
-	 * Draws the text on the quest journal.
+	 * Resets the quest journal.
 	 * @param player The player.
 	 * @param stage The stage to draw.
 	 */
@@ -108,8 +114,7 @@ public abstract class Quest implements Plugin<Object> {
 		for (int i = 0; i < 311; i++) {
 			player.getPacketDispatch().sendString("" , JOURNAL_COMPONENT, i);
 		}
-		player.getPacketDispatch().sendString("<col=8A0808>" + getName() + "</col>", JOURNAL_COMPONENT, 2);
-	
+		player.getPacketDispatch().sendString("<col=8A0808>" + getName() + "</col>", JOURNAL_COMPONENT, JOURNAL_TITLE_LINE);
 	}
 
 	/**
@@ -117,71 +122,97 @@ public abstract class Quest implements Plugin<Object> {
 	 * @param player The player.
 	 */
 	public void finish(Player player) {
+		// Reset component
 		for (int i = 0; i < 18; i++) {
 			if (i == 9 || i == 3 || i == 6) {
 				continue;
 			}
-			player.getPacketDispatch().sendString("", 277, i);
+			player.getPacketDispatch().sendString("", REWARD_COMPONENT, i);
 		}
+
 		player.getQuestRepository().setStage(this, 100);
 		player.getQuestRepository().incrementPoints(getQuestPoints());
 		player.getQuestRepository().syncronizeTab(player);
 		player.getConfigManager().set(101, player.getQuestRepository().getPoints());
-		player.getInterfaceManager().open(new Component(277));
-		player.getPacketDispatch().sendString("" + player.getQuestRepository().getPoints() + "", 277, 7);
-		player.getPacketDispatch().sendString("You have completed the " + getName() + " Quest!", 277, 4);
+		player.getInterfaceManager().open(new Component(REWARD_COMPONENT));
 		player.getPacketDispatch().sendMessage("Congratulations! Quest complete!");
 		player.getPacketDispatch().sendTempMusic(152);
-	}
 
-	/**
-	 * Draws a line on the journal component.
-	 * @param player The player.
-	 * @param message The message.
-	 * @param line The line.
-	 */
-	public void line(Player player, String message, int line) {
-		String send = BLUE + "" + message.replace("<n>", "<br><br>").replace("<blue>", BLUE).replace("<red>", RED);
-		if (send.contains("<br><br>") || send.contains("<n>")) {
-			String[] lines = send.split(send.contains("<br><br>") ? "<br><br>" : "<n>");
-			for (int i = 0; i < lines.length; i++) {
-				line(player, lines[i].replace("<br><br>", "").replace("<n>", ""), line, false);
-				line++;
+		// Item shown on reward component
+		QuestRewardComponentItem rewardComponentItem = getRewardComponentItem();
+		if (rewardComponentItem != null) {
+			player.getPacketDispatch().sendItemZoomOnInterface(rewardComponentItem.itemId, rewardComponentItem.itemAmount, rewardComponentItem.zoom, REWARD_COMPONENT, 5);
+		}
+
+		// "Congratulations!"
+
+		// Title
+		player.getPacketDispatch().sendString(
+			getRewardComponentTitle(),
+			REWARD_COMPONENT,
+			4
+		);
+
+		// "Quest Points: #"
+		player.getPacketDispatch().sendString(player.getQuestRepository().getPoints() + "", 277, 7);
+
+		// "You are awarded:"
+		int line = REWARD_TEXT_START;
+		if (getQuestPoints() > 0) {
+			player.getPacketDispatch().sendString(getQuestPoints() + " Quest Point" + (getQuestPoints() > 1 ? "s" : ""), REWARD_COMPONENT, line++);
+		}
+		for (QuestReward reward: getQuestRewards(player)) {
+			player.getPacketDispatch().sendString(reward.toString(), REWARD_COMPONENT, line++);
+			if (reward.type == QuestReward.QuestRewardType.ITEM) {
+				player.getInventory().add(reward.item, player);
+			} else {
+				player.getSkills().addExperience(reward.skill, reward.experience);
 			}
-		} else {
-			send = send.replace("!!",RED).replace("??",BLUE).replace("---",BLACK + "<str>").replace("/--", BLUE);
-			line(player, send, line, false);
 		}
 	}
 
 	/**
-	 * Draws a line on the quest journal component.
-	 * @param player The player.
-	 * @param message The message.
-	 * @param line The line number.
-	 * @param crossed True if the message should be crossed out.
+	 * Writes texts to the player's journal.
+	 *
+	 * @param player the player
+	 * @param lineNumber line number to start on
+	 * @param texts the lines of text
+	 * @return next journal line number to be used
 	 */
-	public void line(Player player, String message, int line, final boolean crossed) {
-		String send = message;
-		if(!crossed){
-			send = BLUE + "" + message.replace("<n>", "<br><br>").replace("<blue>", BLUE).replace("<red>", RED);
-			send = send.replace("!!",RED).replace("??",BLUE);
-		} else {
-			send = BLUE + "" + message.replace("??","").replace("!!","");
+	public int writeJournal(Player player, int lineNumber, String... texts) {
+		for (String text: texts) {
+			player.getPacketDispatch().sendString(processString(text), JOURNAL_COMPONENT, lineNumber++);
 		}
-		player.getPacketDispatch().sendString(crossed ? "<str>" + send + "</str>" : send, JOURNAL_COMPONENT, line);
+		return lineNumber;
 	}
 
 	/**
-	 * Draws text on the quest reward component.
-	 * @param player The player.
-	 * @param string The string to draw.
-	 * @param line The line number to draw on.
+	 * Writes texts to the player's journal.
+	 *
+	 * @param player the player
+	 * @param texts the lines of text
+	 * @return next journal line number to be used
 	 */
-	public void drawReward(Player player, final String string, final int line) {
-		player.getPacketDispatch().sendString(string, REWARD_COMPONENT, line);
+	public int writeJournal(Player player, String... texts) {
+		return writeJournal(player, JOURNAL_TEXT_START, texts);
 	}
-	
+
+	/**
+	 * Replaces tags in text for sending to the client. Not limited to quests.
+	 *
+	 * @param text text to run tag replacements on
+	 * @return processed text to send to the client
+	 */
+	public String processString(String text) {
+		// Default to blue text
+		text = BLUE + text
+			// Add replacements below
+			.replace("<blue>", BLUE)
+			.replace("<red>", RED)
+			.replace("<black>", BLACK);
+		return text;
+	}
+
 	/**
 	 * Sets the player instanced stage.
 	 * @param player The player.
@@ -280,9 +311,28 @@ public abstract class Quest implements Plugin<Object> {
 		return configs;
 	}
 
+	/**
+	 * Gets the title shown in the reward component
+	 */
+	public String getRewardComponentTitle() {
+		return "You have completed the " + getName() + " Quest!";
+	}
+
+	/**
+	 * Gets the item shown in the reward component
+	 * @return the item
+	 */
+	abstract public QuestRewardComponentItem getRewardComponentItem();
+
+	/**
+	 * Gets the quest's rewards
+	 *
+	 * @return QuestRewards
+	 */
+	abstract public QuestReward[] getQuestRewards(Player player);
+
 	@Override
 	public String toString() {
 		return "Quest [name=" + name + ", index=" + index + ", buttonId=" + buttonId + ", questPoints=" + questPoints + ", configs=" + Arrays.toString(configs) + "]";
 	}
-
 }

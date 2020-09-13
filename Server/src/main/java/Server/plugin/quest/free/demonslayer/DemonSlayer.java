@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import core.game.node.entity.player.link.quest.QuestReward;
+import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.dialogue.DialoguePlugin;
 import plugin.dialogue.FacialExpression;
 import core.game.node.entity.npc.NPC;
@@ -50,7 +52,13 @@ public class DemonSlayer extends Quest {
 	 * Constructs a new {@Code DemonSlayer} {@Code Object}
 	 */
 	public DemonSlayer() {
-		super("Demon Slayer", 16, 15, 3, 222, 0, 1, 3);
+		super(
+			"Demon Slayer",
+			16,
+			15,
+			3,
+			222, 0, 1, 3
+		);
 	}
 	
 	@Override
@@ -71,54 +79,72 @@ public class DemonSlayer extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line = 12;
 		switch (getStage(player)) {
 		case 0:
-			player.getPacketDispatch().sendString(BLUE + "I can start this quest by speaking to the " + RED + "Gypsy " + BLUE + "in the " + RED + "tent", 275, 4 + 8);
-			player.getPacketDispatch().sendString(BLUE + "in " + RED + "Varrock's main square", 275, 5+ 8);
-			player.getPacketDispatch().sendString(BLUE + "I must be able to defeat a level 27 " + RED + "apocalyptic demon" + BLUE + "!", 275, 7+ 8);
+			writeJournal(player, line,
+				"I can start this quest by speaking to the <red>Gypsy <blue>in the <red>tent",
+				"in <red>Varrock's main square",
+				"I must be able to defeat a level 27 <red>apocalyptic demon<blue>!");
 			break;
 		case 10:
-			line(player, "<str>I spoke to the Gypsy in Varrock Square who saw my future.", 4+ 8);
-			line(player, "<str>Unfortunately it involved killing a demon who nearly", 5+ 8);
-			line(player, "<str>destroyed Varrock over 150 years ago.", 6+ 7);
-			line(player, BLUE + "To defeat the " + RED + "demon " + BLUE + "I need the magical sword " + RED + "Silverlight.", 8+ 8);
-			line(player, BLUE + "I should ask " + RED + "Sir Prysin " + BLUE + "in " + RED + "Varrock Palace " + BLUE + "where it is.", 9+ 8);
+			writeJournal(player, line,
+				"<str>I spoke to the Gypsy in Varrock Square who saw my future.",
+				"<str>Unfortunately it involved killing a demon who nearly",
+				"<str>destroyed Varrock over 150 years ago.",
+				"",
+				"To defeat the <red>demon <blue>I need the magical sword <red>Silverlight.",
+				"I should ask <red>Sir Prysin <blue>in <red>Varrock Palace <blue>where it is.");
 			break;
 		case 20:
-			line(player, "<str>I spoke to the Gypsy in Varrock Square who saw my future.", 4+ 8);
-			line(player, "<str>Unfortunately it involved killing a demon who nearly", 5+ 8);
-			line(player, "<str>destroyed Varrock over 150 years ago.", 6+ 8);
-			line(player, BLUE + "To defeat the " + RED + "demon " + BLUE + "I need the magical sword " + RED + "Silverlight.", 8+ 8);
-			line(player, RED + "Sir Prysin " + BLUE + "needs " + RED + "3 keys " + BLUE + "before he can give me " + RED + "Silverlight.", 9+ 8);
+			int nextLine = writeJournal(player, line,
+				"<str>I spoke to the Gypsy in Varrock Square who saw my future.",
+				"<str>Unfortunately it involved killing a demon who nearly",
+				"<str>destroyed Varrock over 150 years ago.",
+				"",
+				"To defeat the <red>demon <blue>I need the magical sword <red>Silverlight.",
+				"<red>Sir Prysin <blue>needs <red>3 keys <blue>before he can give me <red>Silverlight."
+			);
 			if (player.getInventory().containsItem(FIRST_KEY) && player.getInventory().containsItem(SECOND_KEY) && player.getInventory().containsItem(THIRD_KEY)) {
-				line(player, BLUE + "Now I have " + RED + "all 3 keys " + BLUE + "I should go and speak to " + RED + "Sir Prysin", 9+ 8);
-				line(player, BLUE + "and collect the magical sword " + RED + "Silverlight " + BLUE + "from him.", 10+ 8);
+				writeJournal(player, nextLine,
+					"Now I have <red>all 3 keys <blue>I should go and speak to <red>Sir Prysin",
+					"and collect the magical sword <red>Silverlight " + BLUE + "from him."
+				);
 			} else {
-				line(player, player.hasItem(FIRST_KEY) ? "<str>I have the 1st Key with me." : BLUE + "The " + RED + "1st Key " + BLUE + "was dropped down the palace kitchen drains.", 11+ 8);
-				line(player, player.hasItem(SECOND_KEY) ? "<str>I have the 2nd Key with me." : BLUE + "The " + RED + "2nd Key " + BLUE + "is with Captain Rovin in Varrock Palace.", 12+ 8);
-				line(player, player.hasItem(THIRD_KEY) ? "<str>I Have the 3rd key with me." : BLUE + "The " + RED + "3rd Key " + BLUE + "is with the Wizard Traiborn at the Wizards' Tower.", 13+ 8);
+				nextLine = writeJournal(player, nextLine,
+					player.hasItem(FIRST_KEY) ? "<str>I have the 1st Key with me." : "<blue>The <red>1st Key <blue>was dropped down the palace kitchen drains.",
+					player.hasItem(SECOND_KEY) ? "<str>I have the 2nd Key with me." : "<blue>The <red>2nd Key <blue>is with Captain Rovin in Varrock Palace.",
+					player.hasItem(THIRD_KEY) ? "<str>I have the 3rd key with me." : "<blue>The <red>3rd Key <blue>is with the Wizard Traiborn at the Wizards' Tower."
+				);
 				if (player.getAttribute("demon-slayer:traiborn", false)) {
-					line(player, BLUE + "The " + RED + "3rd Key " + BLUE + "is with Wizard Traiborn at the Wizards' Tower.", 13);
-					line(player, RED + "Traiborn " + BLUE + "needs " + RED + "25  " + BLUE + "more " + RED + "bones.", 14);
+					writeJournal(player, nextLine,
+						"The <red>3rd Key <blue>is with Wizard Traiborn at the Wizards' Tower.",
+						"<red>Traiborn <blue>needs <red>25 <blue>more <red>bones."
+					);
 				}
 			}
 			break;
 		case 30:
-			line(player, "<str>I spoke to the Gypsy in Varrock Square who saw my future.", 4+ 8);
-			line(player, "<str>Unfortunately it involved killing a demon who nearly", 5+ 8);
-			line(player, "<str>destroyed Varrock over 150 years ago.", 6+ 8);
-			line(player, "<str>I reclaimed the magical sword Silverlight from Sir Prysin.", 8+ 8);
-			line(player, BLUE + "Now I should go to the stone circle south of the city and", 9+ 8);
-			line(player, BLUE + "destroy " + RED + "Delrith " + BLUE + "using " + RED + "Silverlight" + BLUE + "!", 10+ 8);
+			writeJournal(player, line,
+				"<str>I spoke to the Gypsy in Varrock Square who saw my future.",
+				"<str>Unfortunately it involved killing a demon who nearly",
+				"<str>destroyed Varrock over 150 years ago.",
+				"",
+				"<str>I reclaimed the magical sword Silverlight from Sir Prysin.",
+				"Now I should go to the stone circle south of the city and",
+				"destroy <red>Delrith <blue>using <red>Silverlight<blue>!");
 			break;
 		case 100:
-			line(player, "<str>I spoke to the Gypsy in Varrock Square who saw my future.", 4+ 8);
-			line(player, "<str>Unfortunately it involved killing a demon who nearly", 5+ 8);
-			line(player, "<str>destroyed Varrock over 150 years ago.", 6+ 7);
-			line(player, "<str>I reclaimed the magical sword Silverlight from Sir Prysin.", 8+ 8);
-			line(player, "<str>Using its power I managed to destroy the demon Delrith", 9+ 8);
-			line(player, "<str>like the great hero Wally did many years before.", 10+ 8);
-			line(player, "<col=FF0000>QUEST COMPLETE!", 12+ 7);
+			writeJournal(player, line,
+				"<str>I spoke to the Gypsy in Varrock Square who saw my future.",
+				"<str>Unfortunately it involved killing a demon who nearly",
+				"<str>destroyed Varrock over 150 years ago.",
+				"",
+				"<str>I reclaimed the magical sword Silverlight from Sir Prysin.",
+				"<str>Using its power I managed to destroy the demon Delrith",
+				"<str>like the great hero Wally did many years before.",
+				"",
+				"<col=FF0000>QUEST COMPLETE!");
 			break;
 		}
 	}
@@ -126,14 +152,22 @@ public class DemonSlayer extends Quest {
 	@Override
 	public void finish(Player player) {
 		super.finish(player);
-		player.getPacketDispatch().sendString("3 Quests Points", 277, 8+ 2);
-		player.getPacketDispatch().sendString("Silverlight", 277, 9+ 2);
-		player.getPacketDispatch().sendItemZoomOnInterface(SILVERLIGHT.getId(), 230, 277, 5);
 		player.removeAttribute("demon-slayer:traiborn");
 		player.removeAttribute("demon-slayer:incantation");
 		player.removeAttribute("demon-slayer:poured");
 		player.removeAttribute("demon-slayer:received");
-		player.getQuestRepository().syncronizeTab(player);
+	}
+
+	@Override
+	public QuestRewardComponentItem getRewardComponentItem() {
+		return new QuestRewardComponentItem(SILVERLIGHT.getId(), 230);
+	}
+
+	@Override
+	public QuestReward[] getQuestRewards(Player player) {
+		return new QuestReward[] {
+			new QuestReward("Silverlight"),
+		};
 	}
 
 	/**

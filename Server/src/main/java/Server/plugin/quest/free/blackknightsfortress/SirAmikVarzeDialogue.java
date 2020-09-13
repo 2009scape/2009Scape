@@ -4,8 +4,6 @@ import plugin.dialogue.DialoguePlugin;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
-import core.game.node.item.GroundItemManager;
-import core.game.node.item.Item;
 
 /**
  * Represents the sir amik varze dialogue.
@@ -44,7 +42,7 @@ public class SirAmikVarzeDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Black Knights' Fortress");
+		quest = player.getQuestRepository().getQuest(BlackKnightsFortress.NAME);
 		switch (quest.getStage(player)) {
 		case 30:
 			interpreter.sendDialogues(player, null, "I have ruined the Black Knights' invincibility potion.");
@@ -120,11 +118,7 @@ public class SirAmikVarzeDialogue extends DialoguePlugin {
 				stage = 4;
 				break;
 			case 4:
-				if (!player.getInventory().add(new Item(995, 2500))) {
-					GroundItemManager.create(new Item(995, 2500), player);
-				}
 				quest.finish(player);
-				player.getQuestRepository().syncronizeTab(player);
 				end();
 				break;
 			}

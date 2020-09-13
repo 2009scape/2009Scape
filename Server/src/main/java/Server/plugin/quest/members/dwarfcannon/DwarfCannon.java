@@ -2,6 +2,8 @@ package plugin.quest.members.dwarfcannon;
 
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
+import core.game.node.entity.player.link.quest.QuestReward;
+import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import core.plugin.PluginManager;
@@ -41,10 +43,14 @@ public class DwarfCannon extends Quest {
 
 	/**
 	 * Constructs a new {@Code DwarfCannon} {@Code Object}
-	 * @param player the player.
 	 */
 	public DwarfCannon() {
-		super(NAME, 49, 48, 1);
+		super(
+			NAME,
+			49,
+			48,
+			1
+		);
 	}
 	
 	@Override
@@ -61,36 +67,108 @@ public class DwarfCannon extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (stage) {
 		case 0:
-			line(player, "<blue>I can start this quest by speaking to <red>Lawgof the Dwarven<n><red>Captain of the Black Watch <blue>, he is defending an area<n><red>North-west of the Fishing Guild <blue>against <red>goblin <blue>attack.", 11);
+			writeJournal(player,
+				"<blue>I can start this quest by speaking to <red>Lawgof the Dwarven",
+				"<red>Captain of the Black Watch <blue>, he is defending an area",
+				"<red>North-west of the Fishing Guild <blue>against <red>goblin <blue>attack.");
 			break;
 		case 10:
-			line(player, "<str>I have spoken to Captain Lawgof, he recruited me into the<n><str>Black Guard and asked me to help the dwarves.<n><n>" + (player.getConfigManager().get(1) == 2016 ? "<str>I have repaired all the broken railings,<n><blue>I should report back to <red>Captain Lawgof." : "<blue>My first task is to <red>fix the broken railings<n><blue>in the dwarves defensive perimeter."), 11);
+			line = writeJournal(player,
+				"<str>I have spoken to Captain Lawgof, he recruited me into the",
+				"<str>Black Guard and asked me to help the dwarves.",
+				"");
+			if (player.getConfigManager().get(1) == 2016) {
+				writeJournal(player, line,
+					"<str>I have repaired all the broken railings,",
+					"<blue>I should report back to <red>Captain Lawgof."
+				);
+			} else {
+				writeJournal(player, line,
+					"<blue>My first task is to <red>fix the broken railings",
+					"<blue>in the dwarves defensive perimeter."
+				);
+			}
 			break;
 		case 20:
-			line(player, "<str>I have spoken to Captain Lawgof, he recruited me into the<n><str>Black Guard and asked me to help the dwarves.<n><n>" + (player.hasItem(DWARF_REMAINS) ? "<str>I went to the watchtower where I found the remains of<n><str>Gilob.<n><blue>I should take them back to <red>Captain Lawgof." : "<str>I have repaired all the broken railings,<n><blue>Captain Lawgof has asked me to check up on his guards at<n><red>the watchtower <blue>to the South of this camp."), 11);
+			line = writeJournal(player, "<str>I have spoken to Captain Lawgof, he recruited me into the",
+				"<str>Black Guard and asked me to help the dwarves.",
+				""
+			);
+			if (player.hasItem(DWARF_REMAINS)) {
+				writeJournal(player, line,
+					"<str>I went to the watchtower where I found the remains of",
+					"<str>Gilob.",
+					"<blue>I should take them back to <red>Captain Lawgof.");
+			} else {
+				writeJournal(player, line,
+					"<str>I have repaired all the broken railings,",
+					"<blue>Captain Lawgof has asked me to check up on his guards at",
+					"<red>the watchtower <blue>to the South of this camp.");
+			}
 			break;
 		case 30:
-			line(player, "<str>I have spoken to Captain Lawgof, he recruited me into the<n><str>Black Guard and asked me to help the dwarves.<n><n><str>I gave the remains to Captain Lawgof.<n><blue>he sent me to find the <red>Goblin base<blue>, South-east of the<n><blue>camp.", 11);
+			writeJournal(player,
+				"<str>I have spoken to Captain Lawgof, he recruited me into the",
+				"<str>Black Guard and asked me to help the dwarves.",
+				"",
+				"<str>I gave the remains to Captain Lawgof.",
+				"<blue>he sent me to find the <red>Goblin base<blue>, South-east of the",
+				"<blue>camp.");
 			break;
 		case 40:
-			line(player, "<str>I have spoken to Captain Lawgof, he recruited me into the<n><str>Black Guard and asked me to help the dwarves.<n><n><str>I have rescued Lollk and sent him back to the Captain.<n><blue>I need to <red>speak to Captain Lawgof <blue>again.", 11);
+			writeJournal(player,
+				"<str>I have spoken to Captain Lawgof, he recruited me into the",
+				"<str>Black Guard and asked me to help the dwarves.",
+				"",
+				"<str>I have rescued Lollk and sent him back to the Captain.",
+				"<blue>I need to <red>speak to Captain Lawgof <blue>again.");
 			break;
 		case 50:
-			line(player, "<str>I have spoken to Captain Lawgof, he recruited me into the<n><str>Black Guard and asked me to help the dwarves.<n><n><blue>Captain Lawgof has asked me to <red>fix the multicannon.", 11);
+			writeJournal(player,
+				"<str>I have spoken to Captain Lawgof, he recruited me into the",
+				"<str>Black Guard and asked me to help the dwarves.",
+				"",
+				"<blue>Captain Lawgof has asked me to <red>fix the multicannon.");
 			break;
 		case 60:
-			line(player, "<str>I have spoken to Captain Lawgof, he recruited me into the<n><str>Black Guard and asked me to help the dwarves.<n><n><str>I've fixed the broken multicannon,<n><blue>I need to <red>speak to Captain Lawgof <blue>again.", 11);
+			writeJournal(player,
+				"<str>I have spoken to Captain Lawgof, he recruited me into the",
+				"<str>Black Guard and asked me to help the dwarves.",
+				"",
+				"<str>I've fixed the broken multicannon,",
+				"<blue>I need to <red>speak to Captain Lawgof <blue>again.");
 			break;
 		case 70:
-			line(player, "<str>I have spoken to Captain Lawgof, he recruited me into the<n><str>Black Guard and asked me to help the dwarves.<n><n><blue>Captain Lawgof asked me to find <red>Nulodion the Engineer<blue>, he<n><blue>needs to know what <red>ammunition the multicannon <blue>fires.", 11);
+			writeJournal(player,
+				"<str>I have spoken to Captain Lawgof, he recruited me into the",
+				"<str>Black Guard and asked me to help the dwarves.",
+				"",
+				"<blue>Captain Lawgof asked me to find <red>Nulodion the Engineer<blue>, he",
+				"<blue>needs to know what <red>ammunition the multicannon <blue>fires.");
 			break;
 		case 80:
-			line(player, "<str>I have spoken to Captain Lawgof, he recruited me into the<n><str>Black Guard and asked me to help the dwarves.<n><n><str>I've spoken to Nulodion,<n><str>He gave me an ammo mould and notes<n><blue>I need to <red>speak to Captain Lawgof <blue>again.", 11);
+			writeJournal(player,
+				"<str>I have spoken to Captain Lawgof, he recruited me into the",
+				"<str>Black Guard and asked me to help the dwarves.",
+				"",
+				"<str>I've spoken to Nulodion,",
+				"<str>He gave me an ammo mould and notes",
+				"<blue>I need to <red>speak to Captain Lawgof <blue>again.");
 			break;
 		case 100:
-			line(player, "<str>I have spoken to Captain Lawgof, he recruited me into the<n><str>Black Guard and asked me to help the dwarves.<n><n><str>I've helped the dwarves keep out the Goblins, and found<n><str>the remains of their friend.<n><str>I fixed the cannon and got a mould for Captain Lawgof.<n><blue>I can now <red>buy a multicannon <blue>from <red>Nulodion <blue>as a reward.<n><n><col=FF0000>QUEST COMPLETE!", 11);
+			writeJournal(player,
+				"<str>I have spoken to Captain Lawgof, he recruited me into the",
+				"<str>Black Guard and asked me to help the dwarves.",
+				"",
+				"<str>I've helped the dwarves keep out the Goblins, and found",
+				"<str>the remains of their friend.",
+				"<str>I fixed the cannon and got a mould for Captain Lawgof.",
+				"<blue>I can now <red>buy a multicannon <blue>from <red>Nulodion <blue>as a reward.",
+				"",
+				"<col=FF0000>QUEST COMPLETE!");
 			break;
 		}
 	}
@@ -99,18 +177,6 @@ public class DwarfCannon extends Quest {
 	public void start(Player player) {
 		super.start(player);
 		player.getConfigManager().set(0, 1);
-	}
-
-	@Override
-	public void finish(Player player) {
-		super.finish(player);
-		player.getPacketDispatch().sendString("1 Quest Point", 277, 8 + 2);
-		player.getPacketDispatch().sendString("750 Crafting XP", 277, 9 + 2);
-		player.getPacketDispatch().sendString("Permission to purchase and", 277, 10 + 2);
-		player.getPacketDispatch().sendString("use the Dwarf Multicannon", 277, 11 + 2);
-		player.getPacketDispatch().sendItemZoomOnInterface(TOOL_KIT.getId(), 235, 277, 3 + 2);
-		player.getSkills().addExperience(Skills.CRAFTING, 750);
-		player.getQuestRepository().syncronizeTab(player);
 	}
 
 	@Override
@@ -123,5 +189,19 @@ public class DwarfCannon extends Quest {
 		}
 		return new int[] { 0, val };
 	}
-	
+
+	@Override
+	public QuestRewardComponentItem getRewardComponentItem() {
+		return new QuestRewardComponentItem(TOOLKIT.getId(), 235);
+	}
+
+	@Override
+	public QuestReward[] getQuestRewards(Player player) {
+		return new QuestReward[] {
+			new QuestReward(Skills.CRAFTING, 750),
+			new QuestReward("Permission to purchase and"),
+			new QuestReward("use the Dwarf Multicannon"),
+		};
+	}
+
 }

@@ -112,7 +112,8 @@ class ServerConstants {
 				arrayOf(Location.create(2605, 3093, 0), "yanille"),
 				arrayOf(Location.create(2663, 3305, 0), "ardougne", "ardy"),
 				arrayOf(Location.create(2450, 3422, 0), "gnome stronghold", "gnome"),
-				arrayOf(Location.create(2730, 3485, 0), "camelot", "cammy", "seers"),
+				arrayOf(Location.create(2758, 3502, 0), "camelot", "cammy"),
+				arrayOf(Location.create(2710, 3484, 0), "seers"),
 				arrayOf(Location.create(2805, 3435, 0), "catherby"),
 				arrayOf(Location.create(2659, 3657, 0), "rellekka"),
 				arrayOf(Location.create(2890, 3676, 0), "trollheim"),
@@ -134,8 +135,14 @@ class ServerConstants {
 				arrayOf(Location.create(3088, 3491, 0), "edge", "edgeville"),
 				arrayOf(Location.create(3169, 3034, 0), "bedabin"),
 				arrayOf(Location.create(3565, 3289, 0), "barrows"),
-				arrayOf(Location.create(3016, 3513, 0), "bkf", "black knights fortress"),
-				arrayOf(Location.create(3052, 3481, 0), "monastery")
+				arrayOf(Location.create(3016, 3515, 0), "bkf", "black knights fortress"),
+				arrayOf(Location.create(3052, 3481, 0), "monastery"),
+				arrayOf(Location.create(2956, 3505, 0), "goblin village"),
+				arrayOf(Location.create(2949, 3450, 0), "doric"),
+				arrayOf(Location.create(3292, 3498, 0), "lumber yard"),
+				arrayOf(Location.create(3210, 3490, 0), "varrock library"),
+				arrayOf(Location.create(3000, 3144, 0), "thurgo"),
+				arrayOf(Location.create(2969, 3343, 0), "wkc", "white knights' castle")
 		)
 
 		@JvmField

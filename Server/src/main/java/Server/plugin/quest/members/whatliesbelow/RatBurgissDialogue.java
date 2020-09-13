@@ -160,7 +160,9 @@ public class RatBurgissDialogue extends DialoguePlugin {
 			switch (buttonId) {
 			case 1:
 				player("Hello!");
-				stage = 5;
+				// This is the starting point for dialogues at all stages.
+				stage = 0;
+				// TODO: If quest has not started, check quest requirements. If pass, set stage to 5.
 				break;
 			case 2:
 				sendDiaryDialogue();
@@ -171,20 +173,26 @@ public class RatBurgissDialogue extends DialoguePlugin {
 		switch (quest.getStage(player)) {
 		case 0:
 			switch (stage) {
-			/*
-			 * case 0: interpreter.sendDialogues(npc, FacialExpression.NORMAL,
-			 * "Oh, hello. I'd love to chat right now, but I'm a bit busy.",
-			 * "Perhaps you could come back and chat another time?"); stage = 1;
-			 * break; case 1: interpreter.sendDialogues(player,
-			 * FacialExpression.NORMAL, "Of course. Sorry to bother you!");
-			 * stage = 2; break; case 2: interpreter.sendDialogues(npc,
-			 * FacialExpression.NORMAL,
-			 * "No problem! Say, have you been to see the wizard's",
-			 * "tower in the south yet? It's an amazing sight! you",
-			 * "should go and see it!"); stage = 3; break; case 3:
-			 * interpreter.sendDialogues(player, FacialExpression.NORMAL,
-			 * "Thanks! I will!"); stage = 4; break; case 4: end(); break;
-			 */
+			case 0:
+				npc("Oh, hello. I'd love to chat right now, but I'm a bit busy.",
+					 "Perhaps you could come back and chat another time?");
+				stage++;
+				break;
+			case 1:
+				player("Of course. Sorry to bother you!");
+				stage++;
+				break;
+			case 2:
+				npc("No problem! Say, have you been to see the wizard's", "tower in the south yet? It's an amazing sight! you", "should go and see it!");
+				stage++;
+				break;
+			case 3:
+				player("Thanks! I will!");
+				stage++;
+				break;
+			case 4:
+				end();
+				break;
 			case 5:
 				npc("Oh, hello. I'm Rat.");
 				stage++;

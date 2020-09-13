@@ -4,6 +4,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import core.game.world.update.flag.context.Animation;
+import plugin.quest.free.blackknightsfortress.BlackKnightsFortress;
 
 /**
  * Represents the dialogue of listening through a grill during the black knights' fortress quest.
@@ -113,7 +114,7 @@ public final class BKListenDialogue extends DialoguePlugin {
 			stage = 8;
 			break;
 		case 8:
-			player.getQuestRepository().getQuest("Black Knights' Fortress").setStage(player, 20);
+			player.getQuestRepository().getQuest(BlackKnightsFortress.NAME).setStage(player, 20);
 			end();
 			break;
 		case 10:
@@ -138,8 +139,8 @@ public final class BKListenDialogue extends DialoguePlugin {
 			break;
 		case 15:
 			if (player.getInventory().remove(CABBAGE)) {
-				player.getQuestRepository().getQuest("Black Knights' Fortress").setStage(player, 30);
-				interpreter.sendDialogues(player, null, "Looks like my work here is done. Seems like that's", "succesfully sabotaged their little secret weapon plan.");
+				player.getQuestRepository().getQuest(BlackKnightsFortress.NAME).setStage(player, 30);
+				interpreter.sendDialogues(player, null, "Looks like my work here is done. Seems like that's", "successfully sabotaged their little secret weapon plan.");
 				stage = 16;
 			}
 			break;

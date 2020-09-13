@@ -38,7 +38,7 @@ public final class SirKayDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		boolean male = true;
+		boolean male = player.getAppearance().isMale();
 		String gender = male ? "sir" : "madam";
 		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Good day " + gender + "!");
 		stage = 0;
@@ -51,7 +51,11 @@ public final class SirKayDialogue extends DialoguePlugin {
 		case 0:
 			if (player.getQuestRepository().getQuest("Merlin's Crystal").getStage(player) == 10) {
 				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you know how Merlin got trapped?");
-				stage = 1;
+				if (npc.getId() == 240) { // Sir Gawain
+					stage = 1;
+				} else { // Sir Kay
+					stage = 5;
+				}
 			} else if (player.getQuestRepository().getQuest("Merlin's Crystal").getStage(player) == 20) {
 				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Any idea how to get into Morgan Le Faye's stronghold?");
 				stage = 5;
@@ -79,8 +83,10 @@ public final class SirKayDialogue extends DialoguePlugin {
 			break;
 		case 5:
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No, you've got me stumped there...");
-			player.getQuestRepository().getQuest("Merlin's Crystal").setStage(player, 20);
-			player.getQuestRepository().syncronizeTab(player);
+			if (npc.getId() == 240) {
+				player.getQuestRepository().getQuest("Merlin's Crystal").setStage(player, 20);
+				player.getQuestRepository().syncronizeTab(player);
+			}
 			stage = 15;
 			break;
 		case 15:

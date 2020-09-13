@@ -666,6 +666,7 @@ public final class GDiplomacyCutscene extends CutscenePlugin {
 					stage++;
 					break;
 				case 103:
+					// TODO: Fix: The cutscene finishing will close the quest complete dialog
 					end();
 					cutscene.unpause();
 					if (player.getInventory().remove(GrubFoot.BROWN.getMail())) {

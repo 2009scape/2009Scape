@@ -1,5 +1,7 @@
 package plugin.quest.free.goblindiplomacy;
 
+import core.game.node.entity.player.link.quest.QuestReward;
+import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -45,7 +47,12 @@ public class GoblinDiplomacy extends Quest {
 	 * Constructs a new {@Code GoblinDiplomacy} {@Code Object}
 	 */
 	public GoblinDiplomacy() {
-		super("Goblin Diplomacy", 20, 19, 5);
+		super(
+			"Goblin Diplomacy",
+			20,
+			19,
+			5
+		);
 	}
 	
 	@Override
@@ -57,85 +64,99 @@ public class GoblinDiplomacy extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (stage) {
 		case 0:
-			player.getPacketDispatch().sendString(BLUE + "I can start this quest by speaking to " + RED + "Generals Wartface", 275, 4 + 7);
-			player.getPacketDispatch().sendString(RED + "and Bentnoze " + BLUE + "in the " + RED + " Goblin Village.", 275, 5+ 7);
-			player.getPacketDispatch().sendString(BLUE + "There are no requirements for this quest.", 275, 6+ 7);
+			writeJournal(player,
+				BLUE + "I can start this quest by speaking to " + RED + "Generals Wartface",
+				RED + "and Bentnoze " + BLUE + "in the " + RED + " Goblin Village.",
+				BLUE + "There are no requirements for this quest.");
 			break;
 		case 10:
-			line(player, "<str>I spoke to Generals Wartface and Bentnoze in the Goblin", 4+ 7);
-			line(player, "<str>Village and found that the goblins were on the bring of civil", 5+ 7);
-			line(player, "<str>war over the colour of their armour. I offered to help the", 6+ 7);
-			line(player, "<str>generals by finding another colour that they both like.", 7+ 7);
+			line = writeJournal(player,
+				"<str>I spoke to Generals Wartface and Bentnoze in the Goblin",
+				"<str>Village and found that the goblins were on the brink of civil",
+				"<str>war over the colour of their armour. I offered to help the",
+				"<str>generals by finding another colour that they both like."
+			);
 			if (player.getInventory().containsItem(ORANGE_MAIL)) {
-				line(player, BLUE + "I have some " + RED + "Orange Goblin Armour. " + BLUE + "I should show it to the", 9+ 7);
-				line(player, BLUE + "generals.", 10+ 7);
+				writeJournal(player, line,
+					BLUE + "I have some " + RED + "Orange Goblin Armour. " + BLUE + "I should show it to the",
+					BLUE + "generals."
+				);
 			} else {
-				line(player, BLUE + "I should bring the goblins some " + RED + "Orange Goblin Armour", 9+ 7);
-				line(player, BLUE + "Maybe the generals will know where to get some.", 10+ 7);
+				writeJournal(player, line,
+					BLUE + "I should bring the goblins some " + RED + "Orange Goblin Armour",
+					BLUE + "Maybe the generals will know where to get some."
+				);
 			}
 			break;
 		case 20:
-			line(player, "<str>I spoke to Generals Wartface and Bentnoze in the Goblin", 4+ 7);
-			line(player, "<str>Village and found that the goblins were on the bring of civil", 5+ 7);
-			line(player, "<str>war over the colour of their armour. I offered to help the", 6+ 7);
-			line(player, "<str>generals by finding another colour that they both like.", 7+ 7);
-			line(player, "<str>I brought the goblins some orange goblin armour, but they", 9+ 7);
-			line(player, "<str>didn't like it.", 10+ 7);
+			line = writeJournal(player,
+				"<str>I spoke to Generals Wartface and Bentnoze in the Goblin",
+				"<str>Village and found that the goblins were on the brink of civil",
+				"<str>war over the colour of their armour. I offered to help the",
+				"<str>generals by finding another colour that they both like.",
+				"",
+				"<str>I brought the goblins some orange goblin armour, but they",
+				"<str>didn't like it."
+			);
 			if (player.getInventory().containsItem(BLUE_MAIL)) {
-				line(player, BLUE + "I have some " + RED + "Blue Goblin Armour. " + BLUE + "I should show it to the", 12+ 7);
-				line(player, BLUE + "generals.", 13+ 7);
+				writeJournal(player, line,
+					BLUE + "I have some " + RED + "Blue Goblin Armour. " + BLUE + "I should show it to the",
+					BLUE + "generals."
+				);
 			} else {
-				line(player, BLUE + "I should bring the goblins s+ 7+ 7);e " + RED + "Blue Goblin Armour", 12+ 7);
-				line(player, BLUE + "Maybe the generals will know where to get some.", 13+ 7);
+				writeJournal(player, line,
+					BLUE + "I should bring the goblins some " + RED + "Blue Goblin Armour",
+					BLUE + "Maybe the generals will know where to get some."
+				);
 			}
 			break;
 		case 30:
-			line(player, "<str>I spoke to Generals Wartface and Bentnoze in the Goblin", 4+ 7);
-			line(player, "<str>Village and found that the goblins were on the bring of civil", 5+ 7);
-			line(player, "<str>war over the colour of their armour. I offered to help the", 6+ 7);
-			line(player, "<str>generals by finding another colour that they both like.", 7+ 7);
-			line(player, "<str>I brought the goblins some orange goblin armour, but they", 9+ 7);
-			line(player, "<str>didn't like it.", 10+ 7);
-			line(player, "<str>I brought the goblins some blue goblin armour, but they", 12+ 7);
-			line(player, "<str>didn't like it.", 13+ 7);
+			line = writeJournal(player,
+				"<str>I spoke to Generals Wartface and Bentnoze in the Goblin",
+				"<str>Village and found that the goblins were on the brink of civil",
+				"<str>war over the colour of their armour. I offered to help the",
+				"<str>generals by finding another colour that they both like.",
+				"",
+				"<str>I brought the goblins some orange goblin armour, but they",
+				"<str>didn't like it.",
+				"",
+				"<str>I brought the goblins some blue goblin armour, but they",
+				"<str>didn't like it."
+			);
 			if (player.getInventory().containsItem(GOBLIN_MAIL)) {
-				line(player, BLUE + "I have some " + RED + "Brown Goblin Armour. " + BLUE + "I should show it to the", 12+ 7);
-				line(player, BLUE + "generals.", 13+ 7);
+				writeJournal(player, line,
+					BLUE + "I have some " + RED + "Brown Goblin Armour. " + BLUE + "I should show it to the",
+					BLUE + "generals."
+				);
 			} else {
-				line(player, BLUE + "I should bring the goblins some " + RED + "Brown Goblin Armour", 12+ 7);
-				line(player, BLUE + "Maybe the generals will know where to get some.", 13+ 7);
+				writeJournal(player, line,
+					BLUE + "I should bring the goblins some " + RED + "Brown Goblin Armour",
+					BLUE + "Maybe the generals will know where to get some."
+				);
 			}
 			break;
 		case 100:
-			line(player, "<str>I spoke to Generals Wartface and Bentnoze in the Goblin", 4+ 7);
-			line(player, "<str>Village and found that the goblins were on the bring of civil", 5+ 7);
-			line(player, "<str>war over the colour of their armour. I offered to help the", 6+ 7);
-			line(player, "<str>generals by finding another colour that they both like.", 7+ 7);
-			line(player, "<str>I brought the goblins some orange goblin armour, but they", 9+ 7);
-			line(player, "<str>didn't like it.", 10+ 7);
-			line(player, "<str>I brought the goblins some blue goblin armour, but they", 12+ 7);
-			line(player, "<str>didn't like it.", 13+ 7);
-			line(player, "<str>Unfortunately the goblins were very stupid, and it turned", 15+ 7);
-			line(player, "<str>out that they liked the original colour the most. That's goblins", 16+ 7);
-			line(player, "<str>for you I guess.", 17+ 7);
-			line(player, "<col=FF0000>QUEST COMPLETE!</col>", 18+ 7);
+			writeJournal(player,
+				"<str>I spoke to Generals Wartface and Bentnoze in the Goblin",
+				"<str>Village and found that the goblins were on the brink of civil",
+				"<str>war over the colour of their armour. I offered to help the",
+				"<str>generals by finding another colour that they both like.",
+				"",
+				"<str>I brought the goblins some orange goblin armour, but they",
+				"<str>didn't like it.",
+				"",
+				"<str>I brought the goblins some blue goblin armour, but they",
+				"<str>didn't like it.",
+				"",
+				"<str>Unfortunately the goblins were very stupid, and it turned",
+				"<str>out that they liked the original colour the most. That's goblins",
+				"<str>for you I guess.",
+				"",
+				"<col=FF0000>QUEST COMPLETE!</col>");
 			break;
-		}
-	}
-
-	@Override
-	public void finish(Player player) {
-		super.finish(player);
-		player.getPacketDispatch().sendString("5 Quests Points", 277, 8 + 2);
-		player.getPacketDispatch().sendString("200 Crafting XP", 277, 9 + 2);
-		player.getPacketDispatch().sendString("A gold bar", 277, 10 + 2);
-		player.getPacketDispatch().sendString("You have completed the Goblin Diplomacy Quest!", 277, 2 + 2);
-		player.getPacketDispatch().sendItemZoomOnInterface(288, 230, 277, 3 + 2);
-		player.getSkills().addExperience(Skills.CRAFTING, 200);
-		if (!player.getInventory().add(GOLD_BAR)) {
-			GroundItemManager.create(GOLD_BAR, player);
 		}
 	}
 
@@ -154,6 +175,19 @@ public class GoblinDiplomacy extends Quest {
 			return new int[] { 62, 6 };
 		}
 		return new int[] { 62, 0 };
+	}
+
+	@Override
+	public QuestRewardComponentItem getRewardComponentItem() {
+		return new QuestRewardComponentItem(288, 230);
+	}
+
+	@Override
+	public QuestReward[] getQuestRewards(Player player) {
+		return new QuestReward[] {
+			new QuestReward(Skills.CRAFTING, 200),
+			new QuestReward(GOLD_BAR, "A gold bar"),
+		};
 	}
 
 }

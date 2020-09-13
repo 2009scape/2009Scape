@@ -1,5 +1,7 @@
 package plugin.quest.free;
 
+import core.game.node.entity.player.link.quest.QuestReward;
+import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -16,10 +18,15 @@ public class SheepShearer extends Quest {
 
 	/**
 	 * Constructs a new {@code SheepShearer} {@code Object}.
-	 * @param player The player to construct the class for.
 	 */
 	public SheepShearer() {
-		super("Sheep Shearer", 28, 27, 1, 179, 0, 20, 21);
+		super(
+			"Sheep Shearer",
+			28,
+			27,
+			1,
+			new int[]{179, 0, 20, 21}
+		);
 	}
 
 	/**
@@ -30,45 +37,59 @@ public class SheepShearer extends Quest {
 	@Override
 	public void finish(Player player) {
 		super.finish(player);
-		player.getPacketDispatch().sendString("1 Quest Point", 277, 8 + 2);
-		player.getPacketDispatch().sendString("150 Crafting XP", 277, 9 + 2); 
-		player.getPacketDispatch().sendString("60 coins", 277, 10 + 2);
-		player.getPacketDispatch().sendItemZoomOnInterface(1735, 240, 277, 3 + 2);
-		player.getSkills().addExperience(Skills.CRAFTING, 150);
 		player.getInterfaceManager().closeChatbox();
-		if (player.getInventory().freeSlots() == 0) {
-			GroundItemManager.create(new Item(995, 60), player.getLocation());
-		} else {
-			player.getInventory().add(new Item(995, 60));
-		}
-		player.getPacketDispatch().sendMessage("Congratulations! Quest complete!");
+	}
+
+	@Override
+	public QuestRewardComponentItem getRewardComponentItem() {
+		return new QuestRewardComponentItem(1735, 240);
+	}
+
+	@Override
+	public QuestReward[] getQuestRewards(Player player) {
+		return new QuestReward[]{
+			new QuestReward(Skills.CRAFTING, 150),
+			new QuestReward(new Item(995, 60)),
+		};
 	}
 
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
-		if (stage < 10) {
-			player.getPacketDispatch().sendString("<col=08088A>I can start this quest by speaking to <col=8A0808>Farmer Fred</col> <col=08088A>at his", 275, 4+ 7);
-			player.getPacketDispatch().sendString("<col=8A0808>farm</col> <col=08088A>just a little way <col=8A0808>North West of Lumbridge", 275, 5+ 7);
-			return;
-		}
-		if (stage == 10 || stage == 90) {
-			player.getPacketDispatch().sendString("<str>I can start this quest by speaking to Farmer Fred at his", 275, 4+ 7);
-			player.getPacketDispatch().sendString("<str>farm just a little way North West of Lumbridge</str>", 275, 5+ 7);
-			int wool = getWoolCollect(player);
-			if (wool == 0) {
-				player.getPacketDispatch().sendString("<col=08088A>I have enough <col=8A0808>balls of wool</col> <col=08088A>to give <col=8A0808>Fred</col> <col=08088A> and get my</col> <col=8A0808>reward", 275, 7+ 7);
-				player.getPacketDispatch().sendString("<col=8A0808>money!", 275, 8+ 7);
+		switch (stage) {
+			case 0:
+				writeJournal(player,
+					"<blue>I can start this quest by speaking to <red>Farmer Fred <blue>at his",
+					"<red>farm <blue>just a little way <red>North West of Lumbridge"
+				);
+				break;
+			case 10:
+			case 90:
+				int line = writeJournal(player,
+					"<str>I can start this quest by speaking to Farmer Fred at his",
+					"<str>farm just a little way North West of Lumbridge",
+					""
+				);
+				int woolLeftToCollect = getWoolCollect(player);
+				if (woolLeftToCollect == 0) {
+					writeJournal(player, line,
+						"<blue>I have enough <red>balls of wool <blue>to give <red>Fred <blue> and get my <red>reward",
+						"<red>money!"
+					);
+				} else {
+					writeJournal(player, line,
+						"<blue>I need to collect " + woolLeftToCollect + " <red>more balls of wool."
+					);
+				}
+				break;
+			case 100:
+				writeJournal(player,
+					"<str>I brought Farmer Fred 20 balls of wool, and he paid me for",
+					"<str>it!",
+					"",
+					"<col=FF0000>QUEST COMPLETE!</col>");
+					break;
 			}
-			if (wool != 0) {
-				player.getPacketDispatch().sendString("<col=08088A>I need to collect " + wool + " <col=8A0808>more balls of wool.", 275, 7+ 7);
-			}
-		}
-		if (stage == 100) {
-			player.getPacketDispatch().sendString("<str>I brought Farmer Fred 20 balls of wool, and he paid me for", 275, 4+ 7);
-			player.getPacketDispatch().sendString("<str>it!</str>", 275, 5+ 7);
-			player.getPacketDispatch().sendString("<col=FF0000>QUEST COMPLETE!</col>", 275, 7+ 7);
-		}
 	}
 
 	/**

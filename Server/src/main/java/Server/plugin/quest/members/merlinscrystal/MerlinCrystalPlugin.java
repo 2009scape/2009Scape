@@ -37,25 +37,9 @@ import core.plugin.PluginManager;
  * @author Splinter
  */
 public final class MerlinCrystalPlugin extends OptionHandler {
-
-	/**
-	 * The empty folder item.
-	 */
-	public final static Item REPELLENT = new Item(28);
-
-	/**
-	 * The empty folder item.
-	 */
+	public static final Item REPELLENT = new Item(28);
 	public static final Item BUCKET = new Item(1925);
-
-	/**
-	 * The empty folder item.
-	 */
 	public static final Item BUCKET_OF_WAX = new Item(30);
-
-	/**
-	 * The empty folder item.
-	 */
 	public static final Item BLACK_CANDLE = new Item(38);
 
 	@Override

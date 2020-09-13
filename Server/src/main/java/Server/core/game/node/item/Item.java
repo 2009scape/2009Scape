@@ -134,6 +134,14 @@ public class Item extends Node {
 	}
 
 	/**
+	 * Gets the id of the noted version of this item.
+	 * @return The item's noted id
+	 */
+	public int getNoteId() {
+		return definition.isUnnoted() ? definition.getNoteId() : getId();
+	}
+
+	/**
 	 * @return the id
 	 */
 	public int getId() {
