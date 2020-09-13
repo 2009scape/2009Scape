@@ -80,10 +80,11 @@ public enum Consumables {
 	SUMMER_PIE(new HalfableFood(new int[] {7218, 7220, 2313}, new MultiEffect(new HealingEffect(11), new SkillEffect(Skills.AGILITY, 5, 0), new EnergyEffect(10)))),
 
 	/** Stews */
-	STEW(new Food(new int[] {1923, 2003}, new HealingEffect(11))),
-	SPICY_STEW(new Food(new int[] {7479, 2003}, new HealingEffect(11))),
-	CURRY(new Food(new int[] {2011, 2003}, new HealingEffect(19))),
 	BANANA_STEW(new Food(new int[] {4016, 1923}, new HealingEffect(11))),
+	STEW(new Food(new int[] {2003, 1923}, new HealingEffect(11))),
+	// TODO: Spicy stew temporarily affects skills https://runescape.fandom.com/wiki/Spicy_stew?oldid=874825
+	SPICY_STEW(new Food(new int[] {7479, 1923}, new HealingEffect(11))),
+	CURRY(new Food(new int[] {2011, 1923}, new HealingEffect(19))),
 
 	/** Pizzas */
 	PLAIN_PIZZA(new HalfableFood(new int[] {2289, 2291}, new HealingEffect(7))),
