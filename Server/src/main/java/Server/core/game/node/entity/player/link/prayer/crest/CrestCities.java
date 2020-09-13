@@ -3,6 +3,9 @@ package core.game.node.entity.player.link.prayer.crest;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
+import plugin.quest.free.dragonslayer.DragonSlayer;
+import plugin.quest.free.shieldofarrav.ShieldofArrav;
+import plugin.quest.members.lostcity.LostCity;
 
 /**
  * Represents the crest cities
@@ -27,17 +30,17 @@ public enum CrestCities {
 	SKULL("Wrongdoers",1042),
 	VARROCK("Varrock",1042),
 	ZAMORAK("Zamorak",1042);
-	
+
 	/**
 	 * The name of the crest city.
 	 */
 	private String name;
-	
+
 	/**
 	 * The id of the city's shield.
 	 */
 	private int shieldId;
-	
+
 	/**
 	 * 
 	 * Constructs a new @{Code CrestCities} object.
@@ -60,13 +63,13 @@ public enum CrestCities {
 		}
 		switch (city) {
 		case ARRAV:
-			return player.getQuestRepository().isComplete("Shield of Arrav"); 
+			return player.getQuestRepository().isComplete(ShieldofArrav.NAME);
 		case DORGESHUUN:
 			return player.getQuestRepository().isComplete("The Lost Tribe");
 		case DRAGON:
-			return player.getQuestRepository().isComplete("Dragon Slayer");
+			return player.getQuestRepository().isComplete(DragonSlayer.NAME);
 		case FAIRY:
-			return player.getQuestRepository().isComplete("Lost city");
+			return player.getQuestRepository().isComplete(LostCity.NAME);
 		case GUTHIX:
 		case SARADOMIN:
 		case ZAMORAK:
@@ -84,7 +87,6 @@ public enum CrestCities {
 			return player.getInventory().getAmount(995) > 500000;
 		case HORSE:
 			return player.getInventory().containsItems(new Item(2520),new Item(2522),new Item(2524),new Item(2526));
-		
 		}
 		return false;
 	}
@@ -104,5 +106,4 @@ public enum CrestCities {
 	public void setShieldId(int shieldId) {
 		this.shieldId = shieldId;
 	}
-	
 }

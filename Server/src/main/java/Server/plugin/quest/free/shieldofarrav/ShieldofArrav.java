@@ -17,6 +17,11 @@ import core.plugin.PluginManager;
 public class ShieldofArrav extends Quest {
 
 	/**
+	 * The name of the quest.
+	 */
+	public static final String NAME = "Shield of Arrav";
+
+	/**
 	 * Represents the shield of arrav book item.
 	 */
 	public static final Item BOOK = new Item(757);
@@ -56,7 +61,7 @@ public class ShieldofArrav extends Quest {
 	 */
 	public ShieldofArrav() {
 		super(
-			"Shield of Arrav",
+			NAME,
 			29,
 			28,
 			1,

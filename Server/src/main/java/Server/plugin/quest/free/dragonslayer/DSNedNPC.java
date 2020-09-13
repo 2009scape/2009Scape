@@ -39,7 +39,7 @@ public final class DSNedNPC extends AbstractNPC {
 
 	@Override
 	public boolean isHidden(final Player player) {
-		return player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) != 30 && player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) != 40;
+		return player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) != 30 && player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) != 40;
 	}
 
 	@Override

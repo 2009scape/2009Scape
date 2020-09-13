@@ -16,7 +16,12 @@ import core.plugin.PluginManager;
  */
 @InitializablePlugin
 public class LostCity extends Quest {
-	
+
+	/**
+	 * The name of the quest.
+	 */
+	public static final String NAME = "Lost City";
+
 	/**
 	 * The requirement titles.
 	 */
@@ -37,7 +42,7 @@ public class LostCity extends Quest {
 	 */
 	public LostCity() {
 		super(
-			"Lost City",
+			NAME,
 			83,
 			82,
 			3,

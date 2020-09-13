@@ -43,7 +43,7 @@ public final class OziachDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Dragon Slayer");
+		quest = player.getQuestRepository().getQuest(DragonSlayer.NAME);
 		player.debug("" + quest.getStage(player));
 		switch (quest.getStage(player)) {
 		case 100:
@@ -164,7 +164,7 @@ public final class OziachDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 46:
-				npc("The shield won't be easy to weild though; ye'll need level", "75 Defence.");
+				npc("The shield won't be easy to wield though; ye'll need level", "75 Defence.");
 				stage++;
 				break;
 			case 47:
@@ -260,7 +260,7 @@ public final class OziachDialogue extends DialoguePlugin {
 				break;
 			case 6:
 				end();
-				if (player.getInventory().remove(DragonSlayer.ELVARG_HEAD) && !player.getQuestRepository().getQuest("Dragon Slayer").isCompleted(player)) {
+				if (player.getInventory().remove(DragonSlayer.ELVARG_HEAD) && !player.getQuestRepository().getQuest(DragonSlayer.NAME).isCompleted(player)) {
 					quest.finish(player);
 				}
 				break;

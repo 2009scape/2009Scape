@@ -44,7 +44,7 @@ public final class WormbrainNPC extends AbstractNPC {
 	public void finalizeDeath(final Entity killer) {
 		super.finalizeDeath(killer);
 		if (killer instanceof Player) {
-			if (((Player) killer).getQuestRepository().getQuest("Dragon Slayer").getStage(killer.asPlayer()) == 20 && !((Player) killer).getInventory().containsItem(DragonSlayer.WORMBRAIN_PIECE) && !((Player) killer).getBank().containsItem(DragonSlayer.WORMBRAIN_PIECE)) {
+			if (((Player) killer).getQuestRepository().getQuest(DragonSlayer.NAME).getStage(killer.asPlayer()) == 20 && !((Player) killer).getInventory().containsItem(DragonSlayer.WORMBRAIN_PIECE) && !((Player) killer).getBank().containsItem(DragonSlayer.WORMBRAIN_PIECE)) {
 				GroundItemManager.create(DragonSlayer.WORMBRAIN_PIECE, getLocation(), ((Player) killer));
 				((Player) killer).getPacketDispatch().sendMessage("Wormbrain drops a map piece on the floor.");
 			}
@@ -55,7 +55,7 @@ public final class WormbrainNPC extends AbstractNPC {
 	public boolean isAttackable(Entity entity, CombatStyle style) {
 		if (entity instanceof Player) {
 			final Player player = (Player) entity;
-			if (player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) != 20) {
+			if (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) != 20) {
 				player.getPacketDispatch().sendMessage("The goblin is already in prison. You have no reason to attack him.");
 				return false;
 			}

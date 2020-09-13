@@ -1,5 +1,6 @@
 package plugin.dialogue;
 
+import plugin.quest.members.lostcity.LostCity;
 import plugin.skill.Skills;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
@@ -50,7 +51,7 @@ public final class CaveMonk extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Lost City");
+		quest = player.getQuestRepository().getQuest(LostCity.NAME);
 		switch (quest.getStage(player)) {
 		case 0:
 		case 10:

@@ -4,6 +4,8 @@ import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.plugin.InitializablePlugin;
 import core.game.world.map.Location;
+import plugin.quest.members.PriestInPeril;
+import plugin.quest.members.lostcity.LostCity;
 
 /**
  * Represents the dialogue plugin used for Bill Teach
@@ -77,7 +79,7 @@ public final class BillTeachDialogue extends DialoguePlugin {
 		case 2000:
 			switch (buttonId) {
 			case 1:
-				if(!player.getQuestRepository().isComplete("Priest in Peril")) {
+				if(!player.getQuestRepository().isComplete(PriestInPeril.NAME)) {
 					npc("Aye, sorry there " + pirateGender() + ", but you'll be needing to ", "help King Roald with something first.");
 					stage = 7;
 				} else {
@@ -86,7 +88,7 @@ public final class BillTeachDialogue extends DialoguePlugin {
 				}
 				break;
 			case 2:
-				if(!player.getQuestRepository().isComplete("Lost City")) {
+				if(!player.getQuestRepository().isComplete(LostCity.NAME)) {
 					npc("Aye, sorry there " + pirateGender() + ", but you'll be needing to ", "discover Zanaris first.");
 					stage = 7;
 				} else {

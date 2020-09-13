@@ -7,6 +7,7 @@ import plugin.activity.ActivityPlugin;
 import plugin.activity.CutscenePlugin;
 import plugin.dialogue.DialoguePlugin;
 import core.game.content.global.action.ClimbActionHandler;
+import plugin.quest.members.WolfWhistle;
 import plugin.skill.Skills;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
@@ -79,7 +80,7 @@ public final class SummoningTrainingRoom extends OptionHandler {
 	public boolean handle(final Player player, Node node, String option) {
 		GameObject object = (GameObject) node;
 		Location loc = null;
-		Quest quest = player.getQuestRepository().getQuest("Wolf Whistle");
+		Quest quest = player.getQuestRepository().getQuest(WolfWhistle.NAME);
 		int questVal = quest.getStage(player) == 0 ? 0 : quest.getStage(player) > 0 && quest.getStage(player) < 100 ? 5 : 28893;
 		switch (option) {
 		case "close":
@@ -310,7 +311,7 @@ public final class SummoningTrainingRoom extends OptionHandler {
 			@Override
 			public boolean open(Object... args) {
 				cutscene = (CutscenePlugin) args[0];
-				quest = player.getQuestRepository().getQuest("Wolf Whistle");
+				quest = player.getQuestRepository().getQuest(WolfWhistle.NAME);
 				fluffy = NPC.create(6990, cutscene.getBase().transform(41, 52, 1));
 				fluffy.init();
 				fluffy.faceTemporary(player, 1);

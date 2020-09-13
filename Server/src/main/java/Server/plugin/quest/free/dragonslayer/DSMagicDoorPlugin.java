@@ -40,7 +40,7 @@ public final class DSMagicDoorPlugin extends UseWithHandler {
 	@Override
 	public boolean handle(NodeUsageEvent event) {
 		final Player player = event.getPlayer();
-		if (player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) < 20) {
+		if (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) < 20) {
 			return true;
 		}
 		if (player.getInventory().remove(event.getUsedItem())) {

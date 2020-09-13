@@ -100,7 +100,7 @@ public final class DragonSlayerCutscene extends CutscenePlugin {
 		player.animate(ANIMATION);
 		player.getDialogueInterpreter().close();
 		player.getDialogueInterpreter().sendDialogue("You are knocked unconscious and later awake on an ash-strewn", "beach.");
-		player.getQuestRepository().getQuest("Dragon Slayer").setStage(player, 40);
+		player.getQuestRepository().getQuest(DragonSlayer.NAME).setStage(player, 40);
 		player.getSavedData().getQuestData().setDragonSlayerAttribute("repaired", false);
 		player.getConfigManager().set(177, 8257540);
 		player.getConfigManager().set(176, 8);
@@ -289,7 +289,7 @@ public final class DragonSlayerCutscene extends CutscenePlugin {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			quest = player.getQuestRepository().getQuest("Dragon Slayer");
+			quest = player.getQuestRepository().getQuest(DragonSlayer.NAME);
 			if (args.length > 1) {
 				cutscene = ((DragonSlayerCutscene) args[1]);
 				npc("Ah it's good to feel that salt spray on my face once", "again!");
@@ -508,7 +508,7 @@ public final class DragonSlayerCutscene extends CutscenePlugin {
 						@Override
 						public boolean pulse() {
 							player.getInterfaceManager().open(new Component(317));
-							ActivityManager.start(player, "Dragon Slayer", false);
+							ActivityManager.start(player, DragonSlayer.NAME, false);
 							player.getInterfaceManager().closeOverlay();
 							player.getInterfaceManager().open(new Component(317));
 							return true;

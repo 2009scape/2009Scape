@@ -9,6 +9,7 @@ import core.game.content.global.Skillcape;
 import core.game.content.global.action.ClimbActionHandler;
 import core.game.content.global.action.DoorActionHandler;
 import core.game.content.global.travel.EssenceTeleport;
+import plugin.quest.free.RuneMysteries;
 import plugin.skill.Skills;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
@@ -79,7 +80,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 	public boolean handle(Player player, Node node, String option) {
 		switch (option) {
 		case "teleport":
-			if (!player.getQuestRepository().isComplete("Rune Mysteries")) {
+			if (!player.getQuestRepository().isComplete(RuneMysteries.NAME)) {
 				player.getPacketDispatch().sendMessage("You need to have completed the Rune Mysteries Quest to use this feature.");
 				return true;
 			}
@@ -1030,7 +1031,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 
 		@Override
 		public boolean handle(int interfaceId, int buttonId) {
-			final Quest quest = player.getQuestRepository().getQuest("Rune Mysteries");
+			final Quest quest = player.getQuestRepository().getQuest(RuneMysteries.NAME);
 			switch (stage) {
 			case 0:
 				if (quest.getStage(player) == 100) {
@@ -1529,7 +1530,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			final Quest quest = player.getQuestRepository().getQuest("Rune Mysteries");
+			final Quest quest = player.getQuestRepository().getQuest(RuneMysteries.NAME);
 			if (quest.getStage(player) == 40) {
 				interpreter.sendDialogues(npc, null, "My gratitude to you adventurer for bringing me these", "research notes. I notice that you brought the head", "wizard a special talisman that was the key to our finally", "unlocking the puzzle.");
 				stage = 900;
@@ -1546,7 +1547,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 
 		@Override
 		public boolean handle(int interfaceId, int buttonId) {
-			final Quest quest = player.getQuestRepository().getQuest("Rune Mysteries");
+			final Quest quest = player.getQuestRepository().getQuest(RuneMysteries.NAME);
 			switch (stage) {
 			case 0:
 				if (quest.getStage(player) == 30) {
@@ -1564,7 +1565,7 @@ public final class WizardTowerPlugin extends OptionHandler {
 					stage = 950;
 					return true;
 				}
-				if (!player.getQuestRepository().isComplete("Rune Mysteries")) {
+				if (!player.getQuestRepository().isComplete(RuneMysteries.NAME)) {
 					interpreter.sendOptions("Select an Option", "Yes please!", "Oh, it's a rune shop. No thank you, then.");
 					stage = 100;
 				} else {

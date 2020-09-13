@@ -3,6 +3,7 @@ package plugin.dialogue;
 import core.game.node.entity.npc.NPC;
 import core.plugin.InitializablePlugin;
 import core.game.node.entity.player.Player;
+import plugin.quest.free.dragonslayer.DragonSlayer;
 
 /**
  * Represents the dialogue plugin used for the npc Ahav.
@@ -115,7 +116,7 @@ public final class AhabDialogue extends DialoguePlugin {
 			stage = 28;
 			break;
 		case 28:
-			if (player.getQuestRepository().isComplete("Dragon Slayer")) {
+			if (player.getQuestRepository().isComplete(DragonSlayer.NAME)) {
 				player("Well, I do have a ship that I'm not using.", "It's the Lady Lumbridge.");
 				stage = 29;
 			} else {

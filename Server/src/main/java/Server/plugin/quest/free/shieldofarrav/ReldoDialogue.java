@@ -58,7 +58,7 @@ public class ReldoDialogue extends DialoguePlugin {
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
 		knightSword = player.getQuestRepository().getQuest("The Knight's Sword");
-		shieldArrav = player.getQuestRepository().getQuest("Shield of Arrav");
+		shieldArrav = player.getQuestRepository().getQuest(ShieldofArrav.NAME);
 		if (args.length == 2 && ((String) args[1]).equals("book")) {
 			player("Aha! 'The Shield of Arrav'! Exactly what I was looking", "for.");
 			stage = 3;

@@ -11,6 +11,7 @@ import core.game.world.repository.Repository;
 import core.game.world.update.flag.context.Animation;
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
+import plugin.quest.free.dragonslayer.DragonSlayer;
 
 /**
  * Represents the option handler for port sarim.
@@ -206,7 +207,7 @@ public class PortsObjectPlugin extends OptionHandler {
 				player.getPacketDispatch().sendMessage("You disembark the ship.");
 				break;
 			case 2593:
-				if (player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) == 100) {
+				if (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) == 100) {
 					player.getDialogueInterpreter().open(744, Repository.findNPC(744), true);// lady
 					// lumbridge.
 					return true;

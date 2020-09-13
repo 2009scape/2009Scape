@@ -24,6 +24,11 @@ import core.plugin.PluginManager;
 public class DemonSlayer extends Quest {
 
 	/**
+	 * The name of the quest.
+	 */
+	public static final String NAME = "Demon Slayer";
+
+	/**
 	 * Represents the silverlight item.
 	 */
 	public static final Item SILVERLIGHT = new Item(2402);
@@ -53,7 +58,7 @@ public class DemonSlayer extends Quest {
 	 */
 	public DemonSlayer() {
 		super(
-			"Demon Slayer",
+			NAME,
 			16,
 			15,
 			3,
@@ -239,7 +244,7 @@ public class DemonSlayer extends Quest {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			quest = player.getQuestRepository().getQuest("Demon Slayer");
+			quest = player.getQuestRepository().getQuest(DemonSlayer.NAME);
 			switch (quest.getStage(player)) {
 			default:
 				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What are you doing up here? Only the palace guards", "are allowed up here.");

@@ -5,6 +5,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
+import plugin.quest.members.PriestInPeril;
 
 /**
  * Represents the dialogue plugin used for the drezel monument.
@@ -44,7 +45,7 @@ public final class DrezelMonumentDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		final Quest quest = player.getQuestRepository().getQuest("Priest in Peril");
+		final Quest quest = player.getQuestRepository().getQuest(PriestInPeril.NAME);
 		if (quest.getStage(player) == 17) {
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ah, " + player.getUsername() + ". I see you finally made it down here.", "Things are worse than I feared. I'm not sure if I will", "be able to repair the damage.");
 			stage = 900;
@@ -73,7 +74,7 @@ public final class DrezelMonumentDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
-		final Quest quest = player.getQuestRepository().getQuest("Priest in Peril");
+		final Quest quest = player.getQuestRepository().getQuest(PriestInPeril.NAME);
 		switch (stage) {
 		case 400:
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ah, " + player.getUsername() + ". For all the assistance you have given", "both myself and Misthalin in your actions, I cannot let", "you pass without warning you.");
@@ -92,7 +93,7 @@ public final class DrezelMonumentDialogue extends DialoguePlugin {
 			stage = 404;
 			break;
 		case 404:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "and it is a holy relic that pevents the werewolf people from", "chaning form, I suggest if you battle with them", "that you keep it always equipped, for their");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "and it is a holy relic that prevents the werewolf people from", "changing form, I suggest if you battle with them", "that you keep it always equipped, for their");
 			stage = 405;
 			break;
 		case 405:
@@ -100,7 +101,7 @@ public final class DrezelMonumentDialogue extends DialoguePlugin {
 			stage = 406;
 			break;
 		case 406:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Okay, I will keep it equipped whenever I fight", "werwolves.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Okay, I will keep it equipped whenever I fight", "werewolves.");
 			stage = 407;
 			break;
 		case 407:
@@ -170,7 +171,7 @@ public final class DrezelMonumentDialogue extends DialoguePlugin {
 			stage = 901;
 			break;
 		case 901:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "From what I can tell, after you killed the guard dog", "who protected the entrance to the mouments, those", "Zamorakians forced the door into the main chamber");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "From what I can tell, after you killed the guard dog", "who protected the entrance to the monuments, those", "Zamorakians forced the door into the main chamber");
 			stage = 902;
 			break;
 		case 902:

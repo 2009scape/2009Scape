@@ -14,11 +14,16 @@ import core.game.node.entity.player.link.quest.Quest;
 public class RuneMysteries extends Quest {
 
 	/**
+	 * The name of the quest.
+	 */
+	public static final String NAME = "Rune Mysteries";
+
+	/**
 	 * Constructs a new {@code RuneMysteries} {@code Object}.
 	 */
 	public RuneMysteries() {
 		super(
-			"Rune Mysteries",
+			NAME,
 			27,
 			26,
 			1,

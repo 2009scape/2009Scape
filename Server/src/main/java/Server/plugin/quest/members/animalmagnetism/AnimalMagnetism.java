@@ -2,6 +2,7 @@ package plugin.quest.members.animalmagnetism;
 
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
+import plugin.quest.members.PriestInPeril;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -766,7 +767,7 @@ public final class AnimalMagnetism extends Quest {
 	public boolean hasRequirements(Player player) {
 		requirements[0] = player.getQuestRepository().isComplete("The Restless Ghost");
 		requirements[1] = player.getQuestRepository().isComplete("Ernest the Chicken");
-		requirements[2] = player.getQuestRepository().isComplete("Priest in Peril");
+		requirements[2] = player.getQuestRepository().isComplete(PriestInPeril.NAME);
 		requirements[3] = player.getSkills().getStaticLevel(Skills.RANGE) >= 30;
 		requirements[4] = player.getSkills().getStaticLevel(Skills.SLAYER) >= 18;
 		requirements[5] = player.getSkills().getStaticLevel(Skills.CRAFTING) >= 19;

@@ -7,6 +7,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
+import plugin.quest.members.PriestInPeril;
 
 /**
  * Represents the dialogue used to handle king roald NPC.
@@ -45,7 +46,7 @@ public class KingRoaldDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		switch (player.getQuestRepository().getQuest("Priest in Peril").getStage(player)) {
+		switch (player.getQuestRepository().getQuest(PriestInPeril.NAME).getStage(player)) {
 		case 0:
 			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Greetings, your majesty.");
 			stage = 0;
@@ -67,7 +68,7 @@ public class KingRoaldDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
-		if (player.getQuestRepository().getQuest("Shield of Arrav").getStage(player) == 70 && player.getInventory().containsItem(ShieldofArrav.PHOENIX_SHIELD) || player.getInventory().containsItem(ShieldofArrav.BLACKARM_SHIELD)) {
+		if (player.getQuestRepository().getQuest(ShieldofArrav.NAME).getStage(player) == 70 && player.getInventory().containsItem(ShieldofArrav.PHOENIX_SHIELD) || player.getInventory().containsItem(ShieldofArrav.BLACKARM_SHIELD)) {
 			switch (stage) {
 			case 0:
 				if (player.getInventory().containsItem(ShieldofArrav.PHOENIX_SHIELD) || player.getInventory().containsItem(ShieldofArrav.BLACKARM_SHIELD)) {
@@ -93,7 +94,7 @@ public class KingRoaldDialogue extends DialoguePlugin {
 			}
 			return true;
 		}
-		if (player.getQuestRepository().getQuest("Shield of Arrav").getStage(player) == 70 && player.getInventory().containsItem(ShieldofArrav.BLACKARM_CERTIFICATE) || player.getInventory().containsItem(ShieldofArrav.PHOENIX_CERTIFICATE)) {
+		if (player.getQuestRepository().getQuest(ShieldofArrav.NAME).getStage(player) == 70 && player.getInventory().containsItem(ShieldofArrav.BLACKARM_CERTIFICATE) || player.getInventory().containsItem(ShieldofArrav.PHOENIX_CERTIFICATE)) {
 			switch (stage) {
 			case 0:
 				player("Your majesty, I have come to claim the reward for the", "return of the Shield of Arrav.");
@@ -113,7 +114,7 @@ public class KingRoaldDialogue extends DialoguePlugin {
 			}
 			return true;
 		}
-		if (player.getQuestRepository().getQuest("Shield of Arrav").getStage(player) == 70 && player.getInventory().containsItem(CERTIFICATE)) {
+		if (player.getQuestRepository().getQuest(ShieldofArrav.NAME).getStage(player) == 70 && player.getInventory().containsItem(CERTIFICATE)) {
 			switch (stage) {
 			case 0:
 				player("Your majesty, I have come to claim the reward for the", "return of the Shield of Arrav.");
@@ -144,14 +145,14 @@ public class KingRoaldDialogue extends DialoguePlugin {
 					if (!player.getInventory().add(new Item(995, 600))) {
 						GroundItemManager.create(new Item(995, 600), player);
 					}
-					player.getQuestRepository().getQuest("Shield of Arrav").finish(player);
+					player.getQuestRepository().getQuest(ShieldofArrav.NAME).finish(player);
 					end();
 				}
 				break;
 			}
 			return true;
 		}
-		Quest quest = player.getQuestRepository().getQuest("Priest in Peril");
+		Quest quest = player.getQuestRepository().getQuest(PriestInPeril.NAME);
 		switch (stage) {
 		case 0:
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well hello there. What do you want?");

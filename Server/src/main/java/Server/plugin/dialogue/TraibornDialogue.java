@@ -66,7 +66,7 @@ public class TraibornDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Demon Slayer");
+		quest = player.getQuestRepository().getQuest(DemonSlayer.NAME);
 		switch (quest.getStage(player)) {
 		case 20:
 			if (player.getAttribute("demon-slayer:traiborn", false)) {

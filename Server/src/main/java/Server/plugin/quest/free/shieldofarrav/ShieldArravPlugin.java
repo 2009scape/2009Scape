@@ -59,7 +59,7 @@ public final class ShieldArravPlugin extends OptionHandler {
 
 	@Override
 	public boolean handle(Player player, Node node, String option) {
-		final Quest quest = player.getQuestRepository().getQuest("Shield of Arrav");
+		final Quest quest = player.getQuestRepository().getQuest(ShieldofArrav.NAME);
 		final int id = node instanceof GameObject ? ((GameObject) node).getId() : node instanceof Item ? ((Item) node).getId() : ((NPC) node).getId();
 		switch (id) {
 		case 769:

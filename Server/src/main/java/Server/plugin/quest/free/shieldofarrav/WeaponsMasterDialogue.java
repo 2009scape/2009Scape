@@ -42,7 +42,7 @@ public final class WeaponsMasterDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Shield of Arrav");
+		quest = player.getQuestRepository().getQuest(ShieldofArrav.NAME);
 		switch (quest.getStage(player)) {
 		default:
 			if (args.length > 1) {

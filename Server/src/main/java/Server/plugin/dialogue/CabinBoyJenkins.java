@@ -4,6 +4,7 @@ import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.plugin.InitializablePlugin;
 import core.game.node.entity.player.link.quest.Quest;
+import plugin.quest.free.dragonslayer.DragonSlayer;
 
 /**
  * Represents the cabin boy jenkins dialogue.
@@ -42,7 +43,7 @@ public class CabinBoyJenkins extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Dragon Slayer");
+		quest = player.getQuestRepository().getQuest(DragonSlayer.NAME);
 		switch (quest.getStage(player)) {
 		case 20:
 			npc("Ahoy ! Whay d'ye think of yer ship then?");

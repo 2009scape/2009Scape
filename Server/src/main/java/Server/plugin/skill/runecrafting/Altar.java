@@ -3,6 +3,7 @@ package plugin.skill.runecrafting;
 import core.cache.def.impl.ItemDefinition;
 import core.game.node.entity.player.Player;
 import core.game.node.object.GameObject;
+import plugin.quest.members.lostcity.LostCity;
 
 /**
  * Represents an altar an it's relative information(corresponding ruin, etc)
@@ -75,7 +76,7 @@ public enum Altar {
 				return;
 			}
 		}
-		if (this == COSMIC && !player.getQuestRepository().isComplete("Lost City")) {
+		if (this == COSMIC && !player.getQuestRepository().isComplete(LostCity.NAME)) {
 			player.getPacketDispatch().sendMessage("You need to have completed the Lost City quest in order to do that.");
 			return;
 		}

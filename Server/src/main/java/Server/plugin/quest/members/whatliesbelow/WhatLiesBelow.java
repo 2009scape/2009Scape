@@ -2,6 +2,7 @@ package plugin.quest.members.whatliesbelow;
 
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
+import plugin.quest.free.RuneMysteries;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -299,7 +300,7 @@ public class WhatLiesBelow extends Quest {
 		requirements[0] = player.getSkills().getStaticLevel(Skills.RUNECRAFTING) >= 35;
 		requirements[1] = false;
 		requirements[3] = player.getSkills().getStaticLevel(Skills.MINING) >= 42;
-		requirements[2] = player.getQuestRepository().isComplete("Rune Mysteries");
+		requirements[2] = player.getQuestRepository().isComplete(RuneMysteries.NAME);
 		return requirements[0] && requirements[2] && requirements[3];
 	}
 

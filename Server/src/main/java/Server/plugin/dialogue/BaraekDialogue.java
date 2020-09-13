@@ -6,6 +6,7 @@ import core.game.node.entity.player.link.quest.Quest;
 import core.game.node.item.GroundItemManager;
 import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
+import plugin.quest.free.shieldofarrav.ShieldofArrav;
 
 /**
  * Represents the dialogue plugin used for the baraek npc.
@@ -60,7 +61,7 @@ public final class BaraekDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Shield of Arrav");
+		quest = player.getQuestRepository().getQuest(ShieldofArrav.NAME);
 		switch (quest.getStage(player)) {
 		case 30:
 			if (!player.getInventory().containsItem(FUR)) {

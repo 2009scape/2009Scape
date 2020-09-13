@@ -43,7 +43,7 @@ public final class WarriorDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Lost City");
+		quest = player.getQuestRepository().getQuest(LostCity.NAME);
 		switch (quest.getStage(player)) {
 		case 10:
 			player("So let me get this straight: I need to search the trees", "around here for a leprechaun; and then when I find", "him, he will tell me where this 'Zanaris' is?");

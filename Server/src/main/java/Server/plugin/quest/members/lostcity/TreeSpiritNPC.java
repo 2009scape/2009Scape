@@ -64,7 +64,7 @@ public final class TreeSpiritNPC extends AbstractNPC {
 		super.finalizeDeath(killer);
 		if (killer instanceof Player) {
 			Player player = (Player) killer;
-			Quest quest = player.getQuestRepository().getQuest("Lost City");
+			Quest quest = player.getQuestRepository().getQuest(LostCity.NAME);
 			if (quest.getStage(player) == 20) {
 				quest.setStage(player, 21);
 				player.getDialogueInterpreter().sendPlainMessage(false, "With the Tree Spirit defeated you can now chop the tree.");

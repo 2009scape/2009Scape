@@ -10,6 +10,7 @@ import core.game.node.item.Item;
 import core.game.node.object.GameObject;
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
+import plugin.quest.members.PriestInPeril;
 
 /**
  * @author 'Vexia
@@ -133,11 +134,11 @@ public class PriestInPerilUsePlugin extends UseWithHandler {
 			break;
 			case 3463: {
 				if (player.getInventory().remove(new Item(2945))) {
-					Quest quest = player.getQuestRepository().getQuest("Priest in Peril");
+					Quest quest = player.getQuestRepository().getQuest(PriestInPeril.NAME);
 					quest.setStage(player, 15);
 					player.getPacketDispatch().sendMessage("You have unlocked the cell door.");
 					NPC npc = NPC.create(1047, player.getLocation());
-					npc.setName("Dezel");
+					npc.setName("Drezel");
 					player.getDialogueInterpreter().sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh! Thank you! You have found the key!");
 				}
 			}
@@ -145,7 +146,7 @@ public class PriestInPerilUsePlugin extends UseWithHandler {
 			case 30728: {
 				if (player.getInventory().remove(new Item(2954))) {
 					player.getInventory().add(new Item(1925));
-					Quest quest = player.getQuestRepository().getQuest("Priest in Peril");
+					Quest quest = player.getQuestRepository().getQuest(PriestInPeril.NAME);
 					quest.setStage(player, 16);
 					player.getPacketDispatch().sendMessage("You pour the blessed water over the coffin...");
 				}

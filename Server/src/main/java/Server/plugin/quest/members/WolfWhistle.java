@@ -16,6 +16,11 @@ import core.game.node.item.Item;
 public class WolfWhistle extends Quest {
 
 	/**
+	 * The name of the quest.
+	 */
+	public static final String NAME = "Wolf Whistle";
+
+	/**
 	 * The wolf bones item.
 	 */
 	public static final Item WOLF_BONES = new Item(2859, 2);
@@ -25,7 +30,7 @@ public class WolfWhistle extends Quest {
 	 */
 	public WolfWhistle() {
 		super(
-			"Wolf Whistle",
+			NAME,
 			146,
 			145,
 			1

@@ -46,7 +46,7 @@ public final class GuildmasterDialogue extends DialoguePlugin {
 		if (player.getQuestRepository().getPoints() < 32) {
 			return true;
 		}
-		quest = player.getQuestRepository().getQuest("Dragon Slayer");
+		quest = player.getQuestRepository().getQuest(DragonSlayer.NAME);
 		npc("Greetings!");
 		if (quest.getStage(player) == 10) {
 			stage = 0;

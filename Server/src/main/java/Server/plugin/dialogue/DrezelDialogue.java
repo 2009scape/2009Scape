@@ -6,6 +6,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
+import plugin.quest.members.PriestInPeril;
 
 /**
  * Represents the dialogue plugin used for the drezel npc.
@@ -47,7 +48,7 @@ public final class DrezelDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		npc.setName("Drezel");
 		NPCDefinition.forId(getIds()[0]).setName("Drezel");
-		Quest quest = player.getQuestRepository().getQuest("Priest in Peril");
+		Quest quest = player.getQuestRepository().getQuest(PriestInPeril.NAME);
 		if (quest.getStage(player) == 13) {
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello.");
 			stage = 0;
@@ -66,7 +67,7 @@ public final class DrezelDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
-		final Quest quest = player.getQuestRepository().getQuest("Priest in Peril");
+		final Quest quest = player.getQuestRepository().getQuest(PriestInPeril.NAME);
 		switch (stage) {
 		case 0:
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh! You do not appear to be on of those Zamorkians", "who imprisoned me here! Who are you and why are", "you here?");
@@ -371,7 +372,7 @@ public final class DrezelDialogue extends DialoguePlugin {
 			stage = 802;
 			break;
 		case 802:
-			Quest quests = player.getQuestRepository().getQuest("Priest in Peril");
+			Quest quests = player.getQuestRepository().getQuest(PriestInPeril.NAME);
 			quests.setStage(player, 17);
 			end();
 			break;

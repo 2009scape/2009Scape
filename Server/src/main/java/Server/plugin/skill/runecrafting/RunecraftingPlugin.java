@@ -22,6 +22,7 @@ import core.net.packet.out.MinimapState;
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
 import core.plugin.PluginManager;
+import plugin.quest.free.RuneMysteries;
 import plugin.skill.runecrafting.abyss.AbyssPlugin;
 
 /**
@@ -53,7 +54,7 @@ public class RunecraftingPlugin extends OptionHandler {
 
 	@Override
 	public boolean handle(final Player player, Node node, String option) {
-		if (!player.getQuestRepository().isComplete("Rune Mysteries") && player.getDetails().getRights() != Rights.ADMINISTRATOR) {
+		if (!player.getQuestRepository().isComplete(RuneMysteries.NAME) && player.getDetails().getRights() != Rights.ADMINISTRATOR) {
 			player.getPacketDispatch().sendMessage("You need to finish the Rune Mysteries Quest in order to do this.");
 			return true;
 		}

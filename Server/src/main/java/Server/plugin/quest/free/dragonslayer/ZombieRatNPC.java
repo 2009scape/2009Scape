@@ -52,11 +52,10 @@ public final class ZombieRatNPC extends AbstractNPC {
 		super.finalizeDeath(killer);
 		if (killer instanceof Player) {
 			final Player p = ((Player) killer);
-			Quest quest = p.getQuestRepository().getQuest("Dragon Slayer");
+			Quest quest = p.getQuestRepository().getQuest("Witch's Potion");
 			if (RandomFunction.random(0, 4) == 2) {
 				GroundItemManager.create(DragonSlayer.RED_KEY, getLocation(), ((Player) killer));
 			}
-			quest = p.getQuestRepository().getQuest("Witch's Potion");
 			if (quest.getStage(p) > 0 && quest.getStage(p) < 100) {
 				GroundItemManager.create(RAT_TAIL, getLocation(), p);
 			}

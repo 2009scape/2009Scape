@@ -48,7 +48,7 @@ public final class DSlayerDrainPlugin extends UseWithHandler {
 	@Override
 	public boolean handle(NodeUsageEvent event) {
 		final Player player = event.getPlayer();
-		final Quest quest = player.getQuestRepository().getQuest("Demon Slayer");
+		final Quest quest = player.getQuestRepository().getQuest(DemonSlayer.NAME);
 		if (player.getInventory().remove(BUCKET_OF_WATER)) {
 			player.getInventory().add(BUCKET);
 			player.animate(ANIMATION);

@@ -45,10 +45,10 @@ public final class CuratorHaigHalenDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
-		if (player.getQuestRepository().getQuest("Shield of Arrav").getStage(player) == 70 && player.getInventory().containsItem(ShieldofArrav.PHOENIX_SHIELD) || player.getInventory().containsItem(ShieldofArrav.BLACKARM_SHIELD)) {
+		if (player.getQuestRepository().getQuest(ShieldofArrav.NAME).getStage(player) == 70 && player.getInventory().containsItem(ShieldofArrav.PHOENIX_SHIELD) || player.getInventory().containsItem(ShieldofArrav.BLACKARM_SHIELD)) {
 			switch (stage) {
 			case 0:
-				player("I have half the shield of Arrav here. Can I get a", "reward?");
+				player("I have half the Shield of Arrav here. Can I get a", "reward?");
 				stage = 1;
 				break;
 			case 1:

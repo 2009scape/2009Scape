@@ -26,6 +26,11 @@ import core.plugin.PluginManager;
 public final class DragonSlayer extends Quest {
 
 	/**
+	 * The name of the quest.
+	 */
+	public static final String NAME = "Dragon Slayer";
+
+	/**
 	 * Represents the maze key given by the guildmaster.
 	 */
 	public static final Item MAZE_KEY = new Item(1542);
@@ -115,7 +120,7 @@ public final class DragonSlayer extends Quest {
 	 */
 	public DragonSlayer() {
 		super(
-			"Dragon Slayer",
+			NAME,
 			18,
 			17,
 			2,

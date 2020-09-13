@@ -56,7 +56,7 @@ public class SirPyrsinDialogue extends DialoguePlugin {
 		} else if (args[0] instanceof Integer) {
 			id = ((int) args[0]);
 		}
-		quest = player.getQuestRepository().getQuest("Demon Slayer");
+		quest = player.getQuestRepository().getQuest(DemonSlayer.NAME);
 		switch (quest.getStage(player)) {
 		case 30:
 			npc(id, "Have you sorted that demon out yet?");

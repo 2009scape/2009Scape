@@ -9,6 +9,7 @@ import core.game.system.task.Pulse;
 import core.game.world.GameWorld;
 import core.game.world.update.flag.context.Animation;
 import core.plugin.Plugin;
+import plugin.quest.free.RuneMysteries;
 
 /**
  * Handles the entering into a mysterious ruin.
@@ -41,7 +42,7 @@ public final class MysteriousRuinPlugin extends UseWithHandler {
 	@Override
 	public boolean handle(NodeUsageEvent event) {
 		final Player player = event.getPlayer();
-		if (!player.getQuestRepository().isComplete("Rune Mysteries") && player.getDetails().getRights() != Rights.ADMINISTRATOR) {
+		if (!player.getQuestRepository().isComplete(RuneMysteries.NAME) && player.getDetails().getRights() != Rights.ADMINISTRATOR) {
 			player.getPacketDispatch().sendMessage("You need to finish the Rune Mysteries Quest in order to do this.");
 			return true;
 		}

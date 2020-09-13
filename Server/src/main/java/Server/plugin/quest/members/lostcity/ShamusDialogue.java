@@ -39,7 +39,7 @@ public final class ShamusDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean open(Object... args) {
-		quest = player.getQuestRepository().getQuest("Lost City");
+		quest = player.getQuestRepository().getQuest(LostCity.NAME);
 		npc("Ay yer big elephant! Yer've caught me, to be sure!", "What would an elephant like yer be wanting wid ol'", "Shamus then?");
 		return true;
 	}

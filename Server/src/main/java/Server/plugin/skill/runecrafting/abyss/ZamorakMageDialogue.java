@@ -1,6 +1,7 @@
 package plugin.skill.runecrafting.abyss;
 
 import plugin.dialogue.DialoguePlugin;
+import plugin.quest.free.RuneMysteries;
 import plugin.skill.Skills;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
@@ -49,7 +50,7 @@ public final class ZamorakMageDialogue extends DialoguePlugin {
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
 		varrockMage = npc.getId() == 2261 || npc.getId() == 2260;
-		if (!player.getQuestRepository().isComplete("Rune Mysteries")) {
+		if (!player.getQuestRepository().isComplete(RuneMysteries.NAME)) {
 			end();
 			player.sendMessage("The mage doesn't seem interested in talking to you.");
 			return true;

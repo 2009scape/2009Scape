@@ -1,5 +1,6 @@
 package plugin.skill.agility.shortcuts;
 
+import plugin.quest.members.PriestInPeril;
 import plugin.skill.agility.AgilityHandler;
 import plugin.skill.agility.AgilityShortcut;
 import core.game.node.entity.player.Player;
@@ -61,7 +62,7 @@ public class BarSqueezeShortcut extends AgilityShortcut {
 
 	@Override
 	public boolean checkRequirements(Player player) {
-		if (!player.getQuestRepository().isComplete("Priest in Peril") && !(player.getLocation().getY() >= 3159 && player.getLocation().getY() <= 3161)) {
+		if (!player.getQuestRepository().isComplete(PriestInPeril.NAME) && !(player.getLocation().getY() >= 3159 && player.getLocation().getY() <= 3161)) {
 			player.getDialogueInterpreter().sendDialogue("You need to have completed Priest in Peril in order to do this.");
 			return false;
 		}

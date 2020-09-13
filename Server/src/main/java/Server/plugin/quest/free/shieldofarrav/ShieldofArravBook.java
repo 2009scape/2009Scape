@@ -43,8 +43,8 @@ public final class ShieldofArravBook extends Book {
 
 	@Override
 	public void finish() {
-		if (player.getQuestRepository().getQuest("Shield of Arrav").getStage(player) == 10) {
-			player.getQuestRepository().getQuest("Shield of Arrav").setStage(player, 20);
+		if (player.getQuestRepository().getQuest(ShieldofArrav.NAME).getStage(player) == 10) {
+			player.getQuestRepository().getQuest(ShieldofArrav.NAME).setStage(player, 20);
 		}
 	}
 

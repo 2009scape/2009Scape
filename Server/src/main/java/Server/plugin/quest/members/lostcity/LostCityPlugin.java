@@ -50,7 +50,7 @@ public final class LostCityPlugin extends OptionHandler {
 
 	@Override
 	public boolean handle(Player player, Node node, String option) {
-		final Quest quest = player.getQuestRepository().getQuest("Lost City");
+		final Quest quest = player.getQuestRepository().getQuest(LostCity.NAME);
 		switch (node.getId()) {
 		case 2409:
 			handleShamusTree(player, quest);
@@ -90,7 +90,7 @@ public final class LostCityPlugin extends OptionHandler {
 		case 1215:
 		case 1231:
 		case 5680:
-			if (!player.getQuestRepository().isComplete("Lost City")) {
+			if (!player.getQuestRepository().isComplete(LostCity.NAME)) {
 				player.getPacketDispatch().sendMessage("You need to have completed the Lost City quest in order to wield that weapon.");
 				return true;
 			}

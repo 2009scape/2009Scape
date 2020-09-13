@@ -7,6 +7,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
+import plugin.quest.free.RuneMysteries;
 
 /**
  * Represents the dialogue plugin used for the duke horacio
@@ -44,7 +45,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
-		if (player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) >= 20 && !player.getInventory().containsItem(DragonSlayer.SHIELD) && !player.getBank().containsItem(DragonSlayer.SHIELD) && !player.getEquipment().containsItem(DragonSlayer.SHIELD)) {
+		if (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) >= 20 && !player.getInventory().containsItem(DragonSlayer.SHIELD) && !player.getBank().containsItem(DragonSlayer.SHIELD) && !player.getEquipment().containsItem(DragonSlayer.SHIELD)) {
 			switch (stage) {
 			case 0:
 				player("I seek a shield that will protect me from dragonbreath.");
@@ -104,7 +105,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 			}
 			return true;
 		}
-		if (player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) == 20) {
+		if (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) == 20) {
 			switch (stage) {
 			case 412:
 				npc("Take care out there. If you kill it...");
@@ -119,10 +120,10 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 				return true;
 			}
 		}
-		final Quest quest = player.getQuestRepository().getQuest("Rune Mysteries");
+		final Quest quest = player.getQuestRepository().getQuest(RuneMysteries.NAME);
 		switch (stage) {
 		case 0:
-			if (player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) == 100 && !player.getInventory().containsItem(DragonSlayer.SHIELD)) {
+			if (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) == 100 && !player.getInventory().containsItem(DragonSlayer.SHIELD)) {
 				interpreter.sendOptions("Select an Option", "I seek a shield that will protect me from dragonbreath.", "Have you any quests for me?", "Where can I find money?");
 				stage = -5;
 				return true;

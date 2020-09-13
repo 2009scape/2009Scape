@@ -15,6 +15,7 @@ import core.game.world.update.flag.context.Animation;
 import core.plugin.Plugin;
 import core.plugin.InitializablePlugin;
 import core.tools.RandomFunction;
+import plugin.quest.free.dragonslayer.DragonSlayer;
 
 /**
  * Represents the port sarim plugin.
@@ -71,7 +72,7 @@ public final class PortSarimPlugin extends OptionHandler {
 			player.getDialogueInterpreter().open(238284);
 			break;
 		case "attack":
-			if (player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) != 20) {
+			if (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) != 20) {
 				player.getPacketDispatch().sendMessage("The goblin is already in prison. You have no reason to attack him.");
 			} else {
 				player.getPulseManager().clear("interaction:attack:" + node.hashCode());

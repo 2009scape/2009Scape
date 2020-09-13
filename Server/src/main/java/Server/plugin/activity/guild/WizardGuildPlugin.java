@@ -7,6 +7,7 @@ import core.game.content.global.Skillcape;
 import core.game.content.global.action.ClimbActionHandler;
 import core.game.content.global.action.DoorActionHandler;
 import core.game.content.global.travel.EssenceTeleport;
+import plugin.quest.free.RuneMysteries;
 import plugin.skill.Skills;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
@@ -73,7 +74,7 @@ public final class WizardGuildPlugin extends OptionHandler {
 			}
 			break;
 		case "teleport":
-			if (!player.getQuestRepository().isComplete("Rune Mysteries")) {
+			if (!player.getQuestRepository().isComplete(RuneMysteries.NAME)) {
 				player.getPacketDispatch().sendMessage("You need to have completed the Rune Mysteries Quest to use this feature.");
 				return true;
 			}
@@ -132,7 +133,7 @@ public final class WizardGuildPlugin extends OptionHandler {
 				stage = 2;
 				break;
 			case 2:
-				if (!player.getQuestRepository().isComplete("Rune Mysteries")) {
+				if (!player.getQuestRepository().isComplete(RuneMysteries.NAME)) {
 					player("Nothing thanks, I'm just looking around.");
 					stage = 4;
 					return true;

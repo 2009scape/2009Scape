@@ -123,13 +123,6 @@ public class WitchsDiaryBook extends Book {
     }
 
     @Override
-    public void finish() {
-//        if (player.getQuestRepository().getQuest("Shield of Arrav").getStage(player) == 10) {
-//            player.getQuestRepository().getQuest("Shield of Arrav").setStage(player, 20);
-//        }
-    }
-
-    @Override
     public void display(Page[] set) {
         player.lock();
         player.getInterfaceManager().open(getInterface());

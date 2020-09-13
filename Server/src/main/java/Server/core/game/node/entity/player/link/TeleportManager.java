@@ -1,6 +1,7 @@
 package core.game.node.entity.player.link;
 
 import core.ServerConstants;
+import plugin.quest.members.lostcity.LostCity;
 import plugin.quest.tutorials.tutorialisland.TutorialSession;
 import core.game.node.entity.Entity;
 import core.game.node.entity.impl.Animator.Priority;
@@ -448,7 +449,7 @@ public class TeleportManager {
 							case 4:
 								Quest quest = null;
 								if (entity instanceof Player) {
-									quest = ((Player) entity).getQuestRepository().getQuest("Lost City");
+									quest = ((Player) entity).getQuestRepository().getQuest(LostCity.NAME);
 								}
 								if (quest != null) {
 									if (quest.getStage(entity.asPlayer()) == 21) {

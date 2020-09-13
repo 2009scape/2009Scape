@@ -5,6 +5,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
+import plugin.quest.free.dragonslayer.DragonSlayer;
 
 /**
  * Represents the dialogue used for the klarense npc.
@@ -49,7 +50,7 @@ public final class KlarenseDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Dragon Slayer");
+		quest = player.getQuestRepository().getQuest(DragonSlayer.NAME);
 		if (args.length > 1) {
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hey, stay off my ship! That's private property!");
 			stage = 0;

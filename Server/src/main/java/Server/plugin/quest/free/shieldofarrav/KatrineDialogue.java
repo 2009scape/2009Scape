@@ -48,7 +48,7 @@ public final class KatrineDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Shield of Arrav");
+		quest = player.getQuestRepository().getQuest(ShieldofArrav.NAME);
 		switch (quest.getStage(player)) {
 		case 80:
 		case 90:

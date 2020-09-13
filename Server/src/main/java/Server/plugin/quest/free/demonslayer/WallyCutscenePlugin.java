@@ -54,7 +54,7 @@ public class WallyCutscenePlugin extends CutscenePlugin {
 
 	@Override
 	public void fade() {
-		player.getQuestRepository().getQuest("Demon Slayer").start(player);
+		player.getQuestRepository().getQuest(DemonSlayer.NAME).start(player);
 		player.getDialogueInterpreter().open(882, Repository.findNPC(882), this);
 	}
 

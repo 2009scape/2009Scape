@@ -7,6 +7,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
+import plugin.quest.members.WolfWhistle;
 
 /**
  * Handles summoning a familiar.
@@ -24,7 +25,7 @@ public final class SummonFamiliarPlugin extends OptionHandler {
 	@Override
 	public boolean handle(Player player, Node node, String option) {
 		Item item = (Item) node;
-		if (!player.getQuestRepository().isComplete("Wolf Whistle") && player.getAttribute("in-cutscene", null) == null) {
+		if (!player.getQuestRepository().isComplete(WolfWhistle.NAME) && player.getAttribute("in-cutscene", null) == null) {
 			player.getPacketDispatch().sendMessage("You have to complete Wolf Whistle before you can summon a familiar.");
 			return true;
 		}

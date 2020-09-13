@@ -5,6 +5,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
+import plugin.quest.free.shieldofarrav.ShieldofArrav;
 
 /**
  * Represents the charlie the tramp dialogue.
@@ -44,7 +45,7 @@ public class CharlieTheTrampDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Shield of Arrav");
+		quest = player.getQuestRepository().getQuest(ShieldofArrav.NAME);
 		switch (quest.getStage(player)) {
 		default:
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Spare some change guv?");

@@ -9,6 +9,7 @@ import core.game.world.map.path.Pathfinder
 import core.game.world.map.zone.ZoneBorders
 import core.tools.ItemNames
 import plugin.ai.skillingbot.SkillingBotAssembler
+import plugin.quest.free.RuneMysteries
 import plugin.skill.Skills
 
 class VarrockEssenceMiner : Script(){
@@ -17,8 +18,8 @@ class VarrockEssenceMiner : Script(){
     val auburyZone = ZoneBorders(3252, 3398, 3254, 3402)
     val bankZone = ZoneBorders(3251, 3420,3254, 3422)
     override fun tick() {
-        if(!bot.questRepository.isComplete("Rune Mysteries")) {
-            bot.questRepository.getQuest("Rune Mysteries").finish(bot)
+        if(!bot.questRepository.isComplete(RuneMysteries.NAME)) {
+            bot.questRepository.getQuest(RuneMysteries.NAME).finish(bot)
         }
 
         when(state){

@@ -17,11 +17,16 @@ import core.game.node.item.Item;
 public class PriestInPeril extends Quest {
 
 	/**
+	 * The name of the quest.
+	 */
+	public static final String NAME = "Priest in Peril";
+
+	/**
 	 * Constructs a new {@code PriestInPeril} {@code Object}.
 	 */
 	public PriestInPeril() {
 		super(
-			"Priest in Peril",
+			NAME,
 			99,
 			98,
 			1,

@@ -43,7 +43,7 @@ public class StravenDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		quest = player.getQuestRepository().getQuest("Shield of Arrav");
+		quest = player.getQuestRepository().getQuest(ShieldofArrav.NAME);
 		switch (quest.getStage(player)) {
 		case 100:
 		case 70:
@@ -191,15 +191,15 @@ public class StravenDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 110:
-				npc("Oh yeah, we've all stolen some stuff in our time. Those", "candelsticks down here, for example, were quite a", "challenge to get out of the palace.");
+				npc("Oh yeah, we've all stolen some stuff in our time. Those", "candlesticks down here, for example, were quite a", "challenge to get out of the palace.");
 				stage = 111;
 				break;
 			case 111:
-				player("And the shield of Arrav? I heard you got that!");
+				player("And the Shield of Arrav? I heard you got that!");
 				stage = 112;
 				break;
 			case 112:
-				npc("Woah... thats a blast from the past! We stole that years", "and years ago! We don't even have all the shield", "anymore.");
+				npc("Woah... that's a blast from the past! We stole that years", "and years ago! We don't even have all the shield", "anymore.");
 				stage = 113;
 				break;
 			case 113:
@@ -222,7 +222,7 @@ public class StravenDialogue extends DialoguePlugin {
 		case 40:
 			switch (stage) {
 			case 0:
-				npc("Hey! You can't go in there. Only authories personnel", "of the VTAM Corporation are allowed beyond this point.");
+				npc("Hey! You can't go in there. Only authorities personnel", "of the VTAM Corporation are allowed beyond this point.");
 				stage = 1;
 				break;
 			case 1:
@@ -321,7 +321,7 @@ public class StravenDialogue extends DialoguePlugin {
 				stage = 47;
 				break;
 			case 47:
-				npc("Although having said that, a rival gang of ours, er,", "theirs, called the Black Arm Gang is supposedly metting", "a contact from Port Sarim today in the Blue Moon", "Inn.");
+				npc("Although having said that, a rival gang of ours, er,", "theirs, called the Black Arm Gang is supposedly meeting", "a contact from Port Sarim today in the Blue Moon", "Inn.");
 				stage = 48;
 				break;
 			case 48:
@@ -363,7 +363,7 @@ public class StravenDialogue extends DialoguePlugin {
 		default:
 			switch (stage) {
 			case 0:
-				npc("Hey! You can't go in there. Only authories personnel", "of the VTAM Corporation are allowed beyond this point.");
+				npc("Hey! You can't go in there. Only authorities personnel", "of the VTAM Corporation are allowed beyond this point.");
 				stage = 1;
 				break;
 			case 1:
@@ -386,7 +386,7 @@ public class StravenDialogue extends DialoguePlugin {
 	public void handleDefault(int buttonId) {
 		switch (stage) {
 		case 0:
-			npc("Hey! You can't go in there. Only authories personnel", "of the VTAM Corporation are allowed beyond this point.");
+			npc("Hey! You can't go in there. Only authorities personnel", "of the VTAM Corporation are allowed beyond this point.");
 			stage = 1;
 			break;
 		case 1:

@@ -1,6 +1,7 @@
 package plugin.dialogue;
 
 import core.ServerConstants;
+import plugin.quest.free.RuneMysteries;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.world.map.Location;
@@ -177,7 +178,7 @@ public class EventLocatorDialoguePlugin extends DialoguePlugin {
                     case 6:
                         switch (buttonId) {
                             case 1:
-                                if (player.getQuestRepository().getQuest("Rune Mysteries").isCompleted(player)) {
+                                if (player.getQuestRepository().getQuest(RuneMysteries.NAME).isCompleted(player)) {
                                     player.teleport(values.getKey()[0]);//Home
                                     end();
                                 } else {
@@ -186,7 +187,7 @@ public class EventLocatorDialoguePlugin extends DialoguePlugin {
                                 }
                                 break;
                             case 2:
-                                if (player.getQuestRepository().getQuest("Rune Mysteries").isCompleted(player) && player.getSkills().getLevel(Skills.MAGIC) >= 66) {
+                                if (player.getQuestRepository().getQuest(RuneMysteries.NAME).isCompleted(player) && player.getSkills().getLevel(Skills.MAGIC) >= 66) {
                                     player.teleport(values.getKey()[1]);//Home
                                     end();
                                 } else {
