@@ -133,7 +133,7 @@ class CooksAssistant : Quest(
 
     override fun getQuestRewards(player: Player?): Array<QuestReward> {
         return arrayOf(
-            QuestReward(Skills.COOKING, 300),
+            QuestReward(Skills.COOKING, 300)
         )
     }
 
