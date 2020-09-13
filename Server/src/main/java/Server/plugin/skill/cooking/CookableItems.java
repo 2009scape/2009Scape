@@ -11,6 +11,8 @@ public enum CookableItems {
     RABBIT(3228,3226,7222,1,30,30),
     DARK_CRAB(14939, 14937, 14941, 90, 215, 100),
     CRAB(7521, 7518, 7520,21, 100, 100),
+    TURKEY(14540, 14539, 14541, 1, 30, 100),
+    TURKEY_DRUMSTICK(14543, 14542, 14544, 1, 30, 100),
 
     /** fish */
     SHRIMP(315, 317, 7954,1, 45, 35),
@@ -85,6 +87,17 @@ public enum CookableItems {
     public static HashMap<Integer, CookableItems>intentionalBurnMap = new HashMap<>();
     public int raw,cooked,level,burnLevel,burnt;
     double experience;
+
+    /**
+     * Cookable items
+     *
+     * @param cooked Item id when cooked
+     * @param raw Item id when raw
+     * @param burnt Item id when burnt
+     * @param level Level required to cook the item
+     * @param experience Experience given upon successfully cooking the item
+     * @param burnLevel Level required to never burn the item when cooking it
+     */
     CookableItems(int cooked, int raw, int burnt, int level, double experience, int burnLevel){
         this.raw = raw;
         this.cooked = cooked;

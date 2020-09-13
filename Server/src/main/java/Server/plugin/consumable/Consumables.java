@@ -53,6 +53,8 @@ public enum Consumables {
 	MANTA_RAY(new Food(new int[] {391}, new HealingEffect(22))),
 	KARAMBWANJI(new Food(new int[] {3151}, new HealingEffect(3))),
 	STUFFED_SNAKE(new Food(new int[] {7579}, new HealingEffect(20), "You eat the stuffed snake-it's quite a meal! It tastes like chicken.")),
+	COOKED_TURKEY(new Food(new int[]{14540}, new HealingEffect(3))),
+	COOKED_TURKEY_DRUMSTICK(new Food(new int[]{14543}, new HealingEffect(2))),
 
 	/** Breads */
 	BREAD(new Food(new int[] {2309}, new HealingEffect(5))),
