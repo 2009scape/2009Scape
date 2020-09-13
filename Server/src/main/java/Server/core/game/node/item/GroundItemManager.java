@@ -54,13 +54,13 @@ public final class GroundItemManager {
 
 	/**
 	 * Creates a ground item.
-	 * @param item The ground item to create.
+	 * @param items The ground items to create.
 	 * @param location The location to set the ground item on.
 	 * @param player The player creating the ground item.
 	 */
-	public static void create(Item[] item, Location location, Player player) {
-		for (int i = 0; i < item.length; i++) {
-			create(new GroundItem(item[i], location, player));
+	public static void create(Item[] items, Location location, Player player) {
+		for (int i = 0; i < items.length; i++) {
+			create(new GroundItem(items[i], location, player));
 		}
 	}
 

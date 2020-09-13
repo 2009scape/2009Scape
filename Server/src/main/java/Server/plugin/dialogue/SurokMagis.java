@@ -26,11 +26,11 @@ public class SurokMagis extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What do you want? ...Oh, wait. I know! You're", "porbably just like all the others, aren't you? After some", "fancy spell or potion from me, I bet!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What do you want? ...Oh, wait. I know! You're", "probably just like all the others, aren't you? After some", "fancy spell or potion from me, I bet!");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No! atleast, I don't think so. What sort of spells", "do you have?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No! at least, I don't think so. What sort of spells", "do you have?");
 			stage = 2;
 			break;
 		case 2:
@@ -50,7 +50,7 @@ public class SurokMagis extends DialoguePlugin {
 			stage = 6;
 			break;
 		case 6:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, ofcourse!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, of course!");
 			stage = 7;
 			break;
 		case 7:

@@ -204,7 +204,7 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 				stage = 14;
 				break;
 			case 14:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh and she has these lovley shoulders as well..");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh and she has these lovely shoulders as well..");
 				stage = 15;
 				break;
 			case 15:
@@ -234,11 +234,9 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 					stage = 100;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry Romeo, I've got better things to do right now but maybe latter?");
-					stage = 50;
-					break;
 				case 3:
-					end();
+					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry Romeo, I've got better things to do right now but", "maybe later?");
+					stage = 104;
 					break;
 				}
 				break;
@@ -287,7 +285,7 @@ public final class RJCutscenePlugin extends CutscenePlugin {
 				end();
 				break;
 			case 230:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Please, oh please! Tell me where you have seen my juliet.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Please, oh please! Tell me where you have seen my Juliet.");
 				stage = 231;
 				break;
 			case 231:

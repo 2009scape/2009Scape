@@ -25,9 +25,9 @@ public class DwarfCannon extends Quest {
 	public static final Item DWARF_REMAINS = new Item(0);
 
 	/**
-	 * The tool kit item.
+	 * The toolkit item.
 	 */
-	public static final Item TOOL_KIT = new Item(1);
+	public static final Item TOOLKIT = new Item(1);
 
 	/**
 	 * The nulodion notes.

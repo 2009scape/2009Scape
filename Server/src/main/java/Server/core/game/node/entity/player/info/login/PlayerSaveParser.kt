@@ -337,9 +337,9 @@ class PlayerSaveParser(val player: Player) {
         val skillData = saveFile!!["skills"] as JSONArray
         player.skills.parse(skillData)
         player.skills.experienceGained = saveFile!!["totalEXP"].toString().toDouble()
-        player.skills.experienceMutiplier = saveFile!!["exp_multiplier"].toString().toDouble()
+        player.skills.experienceMultiplier = saveFile!!["exp_multiplier"].toString().toDouble()
         if(GameWorld.settings?.default_xp_rate != 5.0){
-            player.skills.experienceMutiplier = GameWorld.settings?.default_xp_rate!!
+            player.skills.experienceMultiplier = GameWorld.settings?.default_xp_rate!!
         }
         if(saveFile!!.containsKey("milestone")){
             val milestone: JSONObject = saveFile!!["milestone"] as JSONObject

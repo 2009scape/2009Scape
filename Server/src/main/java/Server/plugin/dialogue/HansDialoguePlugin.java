@@ -84,7 +84,7 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 						stage = 41;
 						break;
 					case 2:
-						npc("Your current XP rate is: " + player.getSkills().experienceMutiplier);
+						npc("Your current XP rate is: " + player.getSkills().experienceMultiplier);
 						stage = 11;
 						break;
 					case 3:
@@ -115,7 +115,7 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 				break;
 
 			case 11:
-				if(player.getSkills().experienceMutiplier == 5.0) {
+				if(player.getSkills().experienceMultiplier == 5.0) {
 					player.newPlayer = player.getSkills().getTotalLevel() < 50;
 					options("Change xp rate", "Nevermind.");
 					stage++;
@@ -139,7 +139,7 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 				switch(buttonId){
 					case 1:
 						if(player.newPlayer) {
-							player.getSkills().experienceMutiplier = 1.0;
+							player.getSkills().experienceMultiplier = 1.0;
 							stage = 14;
 						} else {
 							stage = 15;
@@ -148,21 +148,21 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 						break;
 					case 2:
 						if(player.newPlayer){
-							player.getSkills().experienceMutiplier = 2.5;
+							player.getSkills().experienceMultiplier = 2.5;
 							stage = 14;
 						} else {
 							stage = 15;
 						}
 						break;
 					case 3:
-						player.getSkills().experienceMutiplier = 10.0;
+						player.getSkills().experienceMultiplier = 10.0;
 						stage = 14;
 						break;
 				}
 				npc("One moment, please...");
 				break;
 			case 14:
-				npc("Tada, your xp rate is now " + player.getSkills().experienceMutiplier);
+				npc("Tada, your xp rate is now " + player.getSkills().experienceMultiplier);
 				stage = 131;
 				break;
 			case 15:
@@ -376,7 +376,7 @@ public final class HansDialoguePlugin extends DialoguePlugin {
 				switch (buttonId) {
 					case 1:
 						interpreter.sendDialogues(npc, FacialExpression.FRIENDLY, "Tada! Your experience rate is now 10x.", "Happy Scaping!");
-						player.getSkills().experienceMutiplier = 10.0;
+						player.getSkills().experienceMultiplier = 10.0;
 						stage = 50;
 						break;
 					case 2:

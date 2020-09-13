@@ -150,7 +150,7 @@ public class WitchsHousePlugin extends OptionHandler {
                     DoorActionHandler.handleAutowalkDoor(player, (GameObject) node);
                 } else {
                     player.getImpactHandler().manualHit(player, RandomFunction.random(2, 3), ImpactHandler.HitsplatType.NORMAL);
-                    player.getDialogueInterpreter().sendDialogue("As your bare hands touch the gate you feel a shock.");
+                    player.getDialogueInterpreter().sendDialogue("As your bare hands touch the gate, you feel a shock.");
                 }
                 break;
             case 24721:

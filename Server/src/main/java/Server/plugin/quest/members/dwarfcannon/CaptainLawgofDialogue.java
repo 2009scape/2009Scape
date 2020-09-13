@@ -292,7 +292,7 @@ public class CaptainLawgofDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 8:
-				player.getInventory().add(DwarfCannon.TOOL_KIT, player);
+				player.getInventory().add(DwarfCannon.TOOLKIT, player);
 				player.getConfigManager().set(0, 7);
 				quest.setStage(player, 50);
 				end();
@@ -306,7 +306,7 @@ public class CaptainLawgofDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 1:
-				if (!player.hasItem(DwarfCannon.TOOL_KIT)) {
+				if (!player.hasItem(DwarfCannon.TOOLKIT)) {
 					player("I'm afraid I lost the toolkit...");
 					stage = 3;
 					break;
@@ -324,7 +324,7 @@ public class CaptainLawgofDialogue extends DialoguePlugin {
 			case 4:
 				end();
 				player.sendMessage("The Dwarf Captain gives you another toolkit.");
-				player.getInventory().add(DwarfCannon.TOOL_KIT, player);
+				player.getInventory().add(DwarfCannon.TOOLKIT, player);
 				break;
 			}
 			break;
@@ -391,7 +391,7 @@ public class CaptainLawgofDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 13:
-				player.getInventory().remove(DwarfCannon.TOOL_KIT);
+				player.getInventory().remove(DwarfCannon.TOOLKIT);
 				player.sendMessage("You giv the toolkit back to Captain Lawgof.");
 				player.getConfigManager().set(0, 9, true);
 				quest.setStage(player, 70);

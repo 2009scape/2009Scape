@@ -8,7 +8,8 @@ import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
 
 /**
- * Represents the dialogue plugin used for thurgo.
+ * Represents the dialogue plugin used for Thurgo.
+ * TODO: Rename file to ThurgoDialogue
  * @author 'Vexia
  * @version 1.0
  */
@@ -51,7 +52,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 	private Quest quest;
 
 	/**
-	 * Constructs a new {@code ThuroDialogu} {@code Object}.
+	 * Constructs a new {@code ThurgoDialogue} {@code Object}.
 	 */
 	public ThuroDialogue() {
 		/**
@@ -60,7 +61,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 	}
 
 	/**
-	 * Constructs a new {@code ThuroDialogue} {@code Object}.
+	 * Constructs a new {@code ThurgoDialogue} {@code Object}.
 	 * @param player the player.
 	 */
 	public ThuroDialogue(Player player) {
@@ -112,7 +113,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 				break;
 			case 11:
 				if (player.getSkills().getLevel(Skills.SMITHING) == 99) {
-					interpreter.sendDialogues(npc, FacialExpression.OLD_NORMAL, "Wow! An adventurer who is as skilled as me", "would you like to purchase a Skillcape of", "smithing for 99,000 coins?");
+					interpreter.sendDialogues(npc, FacialExpression.OLD_NORMAL, "Wow! An adventurer who is as skilled as me!", "Would you like to purchase a Skillcape of", "smithing for 99,000 coins?");
 					stage = 12;
 					return true;
 				}
@@ -154,7 +155,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 				}
 				player.getInventory().add(player.getSkills().getMasteredSkills() >= 1 ? ITEMS[1] : ITEMS[0]);
 				player.getInventory().add(ITEMS[2]);
-				interpreter.sendDialogues(npc, FacialExpression.OLD_NORMAL, "There you go! You're truley a master of Smithing.");
+				interpreter.sendDialogues(npc, FacialExpression.OLD_NORMAL, "There you go! You're truly a master of Smithing.");
 				stage = 16;
 				break;
 			case 16:
@@ -487,7 +488,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 				}
 				player.getInventory().add(player.getSkills().getMasteredSkills() >= 1 ? ITEMS[1] : ITEMS[0]);
 				player.getInventory().add(ITEMS[2]);
-				interpreter.sendDialogues(npc, FacialExpression.OLD_NORMAL, "There you go! You're truley a master of Smithing.");
+				interpreter.sendDialogues(npc, FacialExpression.OLD_NORMAL, "There you go! You're truly a master of Smithing.");
 				stage = 16;
 				break;
 			case 16:

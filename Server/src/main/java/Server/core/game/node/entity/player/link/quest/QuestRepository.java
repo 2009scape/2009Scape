@@ -173,7 +173,7 @@ public final class QuestRepository implements SavingModule {
     /**
      * Gets the available quest points.
      *
-     * @return The availble quest points.
+     * @return The available quest points.
      */
     public int getAvailablePoints() {
         int points = 0;

@@ -8,7 +8,10 @@ import core.game.node.item.Item;
  * @author Vexia
  */
 public enum GrubFoot {
-	NORMAL(4495, 1, new Item(288)), ORANGE(4497, 4, new Item(286)), BLUE(4498, 5, new Item(287)), BROWN(4496, 6, new Item(288));
+	NORMAL(4495, 1, new Item(288)),
+	ORANGE(4497, 4, new Item(286)),
+	BLUE(4498, 5, new Item(287)),
+	BROWN(4496, 6, new Item(288));
 
 	/**
 	 * The id.

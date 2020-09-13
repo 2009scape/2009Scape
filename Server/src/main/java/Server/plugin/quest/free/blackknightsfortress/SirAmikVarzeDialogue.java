@@ -108,7 +108,7 @@ public class SirAmikVarzeDialogue extends DialoguePlugin {
 				stage = 1;
 				break;
 			case 1:
-				interpreter.sendDialogues(player, null, "No I believe there was some talk of a cash reward...");
+				interpreter.sendDialogues(player, null, "Now I believe there was some talk of a cash reward...");
 				stage = 2;
 				break;
 			case 2:
@@ -132,7 +132,7 @@ public class SirAmikVarzeDialogue extends DialoguePlugin {
 		case 20:
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(player, null, "I have managed to find what the secret weapon is", "I am now in the process of destroying it.");
+				interpreter.sendDialogues(player, null, "I have managed to find what the secret weapon is.", "I am now in the process of destroying it.");
 				stage = 1;
 				break;
 			case 1:
@@ -172,8 +172,8 @@ public class SirAmikVarzeDialogue extends DialoguePlugin {
 			switch (stage) {
 			case 0:
 				if (player.getQuestRepository().getPoints() < 12) {
-					interpreter.sendDialogues(player, null, "I don't I'm just looking around.");
-					stage = 2;
+					interpreter.sendDialogues(player, null, "I don't, I'm just looking around.");
+					stage = 3;
 				} else {
 					interpreter.sendOptions("Select an Option", "I seek a quest!", "I don't, I'm just looking around.");
 					stage = 1;
@@ -186,8 +186,8 @@ public class SirAmikVarzeDialogue extends DialoguePlugin {
 					stage = 5;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, null, "I don't I'm just looking around.");
-					stage = 2;
+					interpreter.sendDialogues(player, null, "I don't, I'm just looking around.");
+					stage = 3;
 					break;
 				}
 				break;

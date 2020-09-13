@@ -226,7 +226,7 @@ public final class GertrudeDialogue extends DialoguePlugin {
 			stage = 324;
 			break;
 		case 324:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I don't know how to thank you. I have no real material", "possesions. I do have kittens! I can only really look", "after one.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I don't know how to thank you. I have no real material", "possessions. I do have kittens! I can only really look", "after one.");
 			stage = 325;
 			break;
 		case 325:

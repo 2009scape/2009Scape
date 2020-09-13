@@ -30,7 +30,7 @@ public final class Skills {
 	/**
 	 * Represents the constant modifier of experience.
 	 */
-	public double experienceMutiplier = 5.0;
+	public double experienceMultiplier = 5.0;
 
 	/**
 	 * The maximum experience multiplier.
@@ -40,12 +40,20 @@ public final class Skills {
 	/**
 	 * Represents an array of skill names.
 	 */
-	public static final String[] SKILL_NAME = { "Attack", "Defence", "Strength", "Hitpoints", "Ranged", "Prayer", "Magic", "Cooking", "Woodcutting", "Fletching", "Fishing", "Firemaking", "Crafting", "Smithing", "Mining", "Herblore", "Agility", "Thieving", "Slayer", "Farming", "Runecrafting", "Hunter", "Construction", "Summoning" };
+	public static final String[] SKILL_NAME = {
+		"Attack", "Defence", "Strength", "Hitpoints", "Ranged", "Prayer", "Magic", "Cooking", "Woodcutting",
+		"Fletching", "Fishing", "Firemaking", "Crafting", "Smithing", "Mining", "Herblore", "Agility", "Thieving",
+		"Slayer", "Farming", "Runecrafting", "Hunter", "Construction", "Summoning"
+	};
 
 	/**
 	 * Constants for the skill ids.
 	 */
-	public static final int ATTACK = 0, DEFENCE = 1, STRENGTH = 2, HITPOINTS = 3, RANGE = 4, PRAYER = 5, MAGIC = 6, COOKING = 7, WOODCUTTING = 8, FLETCHING = 9, FISHING = 10, FIREMAKING = 11, CRAFTING = 12, SMITHING = 13, MINING = 14, HERBLORE = 15, AGILITY = 16, THIEVING = 17, SLAYER = 18, FARMING = 19, RUNECRAFTING = 20, HUNTER = 21, CONSTRUCTION = 22, SUMMONING = 23;
+	public static final int
+		ATTACK = 0, DEFENCE = 1, STRENGTH = 2, HITPOINTS = 3, RANGE = 4, PRAYER = 5, MAGIC = 6, COOKING = 7,
+		WOODCUTTING = 8, FLETCHING = 9, FISHING = 10, FIREMAKING = 11, CRAFTING = 12, SMITHING = 13, MINING = 14,
+		HERBLORE = 15, AGILITY = 16, THIEVING = 17, SLAYER = 18, FARMING = 19, RUNECRAFTING = 20, HUNTER = 21,
+		CONSTRUCTION = 22, SUMMONING = 23;
 
 	/**
 	 * Number of skills in game
@@ -284,7 +292,7 @@ public final class Skills {
 	private double getExperienceMod(int slot, double experience, boolean playerMod, boolean multiplyer) {
 		//Keywords for people ctrl + Fing the project
 		//xprate xp rate xp multiplier skilling rate
-		return experienceMutiplier;
+		return experienceMultiplier;
 		/*if (!(entity instanceof Player)) {
 			return 1.0;
 		}
@@ -398,9 +406,9 @@ public final class Skills {
 	}
 
 	public void parseExpRate(ByteBuffer buffer) {
-		experienceMutiplier = buffer.getDouble();
-		if(GameWorld.getSettings().getDefault_xp_rate() != experienceMutiplier){
-			experienceMutiplier = GameWorld.getSettings().getDefault_xp_rate();
+		experienceMultiplier = buffer.getDouble();
+		if(GameWorld.getSettings().getDefault_xp_rate() != experienceMultiplier){
+			experienceMultiplier = GameWorld.getSettings().getDefault_xp_rate();
 		}
 	}
 
@@ -424,7 +432,7 @@ public final class Skills {
 	}
 
 	public void saveExpRate(ByteBuffer buffer) {
-		buffer.putDouble(experienceMutiplier);
+		buffer.putDouble(experienceMultiplier);
 	}
 
 	/**

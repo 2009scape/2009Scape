@@ -11,7 +11,7 @@ import core.game.world.map.Location;
 import core.tools.StringUtils;
 
 /**
- * Represents a node which is anything that is interactable in Keldagrim.
+ * Represents a node which is anything that is interactive.
  * @author Emperor
  */
 public abstract class Node {
@@ -129,7 +129,7 @@ public abstract class Node {
 	}
 
 	/**
-	 * Get a formated username.
+	 * Get a formatted username.
 	 * @return The username.
 	 */
 	public String getUsername() {

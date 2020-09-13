@@ -162,11 +162,10 @@ public class Container {
     }
 
     /**
-     * Adds an item to this container if full it goes to ground.
+     * Adds an item to this container. If full, it goes on the ground.
      *
      * @param item   the item.
      * @param player the player.
-     * @param ground
      * @return {@code True} if added.
      */
     public boolean add(final Item item, final Player player) {

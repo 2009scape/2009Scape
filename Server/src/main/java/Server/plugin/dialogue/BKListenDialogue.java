@@ -6,8 +6,7 @@ import core.plugin.InitializablePlugin;
 import core.game.world.update.flag.context.Animation;
 
 /**
- * Represents the dialogue of listening throug a grill during the black knights'
- * fortress quest.
+ * Represents the dialogue of listening through a grill during the black knights' fortress quest.
  * @author 'Vexia
  * @version 1.0
  */
@@ -27,30 +26,29 @@ public final class BKListenDialogue extends DialoguePlugin {
 	/**
 	 * Represents the captain npc.
 	 */
-	private final int captain = 610;
+	private final int CAPTAIN = 610;
 
 	/**
 	 * Represents the witch npc.
 	 */
-	private final int witch = 611;
+	private final int WITCH = 611;
 
 	/**
 	 * Represents the goblin greldo npc.
 	 */
-	private final int greldo = 612;
+	@SuppressWarnings("FieldCanBeLocal")
+	private final int GRELDO = 612;
 
 	/**
 	 * Represents the cat npc.
 	 */
+	@SuppressWarnings("FieldCanBeLocal")
 	private final int cat = 4607;
 
 	/**
 	 * Constructs a new {@code BKListenDialogue} {@code Object}.
 	 */
 	public BKListenDialogue() {
-		/**
-		 * empty.
-		 */
 	}
 
 	/**
@@ -69,12 +67,12 @@ public final class BKListenDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		if (args != null && args.length == 2) {
-			interpreter.sendDialogues(witch, null, "Where has Greldo got to with that magic cabbage!");
+			interpreter.sendDialogues(WITCH, null, "Where has Greldo got to with that magic cabbage!");
 			stage = 10;
 			player.animate(ANIMATION);
 			return true;
 		}
-		interpreter.sendDialogues(captain, null, "So... how's the secret weapon coming along?");
+		interpreter.sendDialogues(CAPTAIN, null, "So... how's the secret weapon coming along?");
 		stage = 0;
 		return true;
 	}
@@ -83,35 +81,35 @@ public final class BKListenDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(witch, null, "The invincibility potion is almost ready...");
+			interpreter.sendDialogues(WITCH, null, "The invincibility potion is almost ready...");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogues(witch, null, "It's taken me FIVE YEARS, but it's almost ready.");
+			interpreter.sendDialogues(WITCH, null, "It's taken me FIVE YEARS, but it's almost ready.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(witch, null, "Greldo the Goblin here is just going to fetch the last", "ingredient for me.");
+			interpreter.sendDialogues(WITCH, null, "Greldo the Goblin here is just going to fetch the last", "ingredient for me.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(witch, null, "It's a specially grown cabbage grown by my cousin", "Helda who lives in Draynor Manor.");
+			interpreter.sendDialogues(WITCH, null, "It's a specially grown cabbage grown by my cousin", "Helda who lives in Draynor Manor.");
 			stage = 4;
 			break;
 		case 4:
-			interpreter.sendDialogues(witch, null, "The soil there is slightly magical and it gives the", "cabbages slight magical properties....");
+			interpreter.sendDialogues(WITCH, null, "The soil there is slightly magical and it gives the", "cabbages slight magical properties....");
 			stage = 5;
 			break;
 		case 5:
-			interpreter.sendDialogues(witch, null, "...not to mention the trees!");
+			interpreter.sendDialogues(WITCH, null, "...not to mention the trees!");
 			stage = 6;
 			break;
 		case 6:
-			interpreter.sendDialogues(witch, null, "Now remember Greldo, only a Draynor Manor", "cabbage will do! Don't get lazy and bring any old", "cabbage, THAT would ENTIRELY wreck the potion!");
+			interpreter.sendDialogues(WITCH, null, "Now remember Greldo, only a Draynor Manor", "cabbage will do! Don't get lazy and bring any old", "cabbage, THAT would ENTIRELY wreck the potion!");
 			stage = 7;
 			break;
 		case 7:
-			interpreter.sendDialogues(greldo, null, "Yeth, Mithreth.");
+			interpreter.sendDialogues(GRELDO, null, "Yeth, Mithreth.");
 			stage = 8;
 			break;
 		case 8:
@@ -119,19 +117,19 @@ public final class BKListenDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(captain, null, "What's that noise?");
+			interpreter.sendDialogues(CAPTAIN, null, "What's that noise?");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(witch, null, "Hopefully Greldo with the cabbage... yes, look her it", "co....NOOOOOoooo!");
+			interpreter.sendDialogues(WITCH, null, "Hopefully Greldo with the cabbage... yes, look here it", "co....NOOOOOoooo!");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(witch, null, "My potion!");
+			interpreter.sendDialogues(WITCH, null, "My potion!");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(captain, null, "Oh boy, this doesn't look good!");
+			interpreter.sendDialogues(CAPTAIN, null, "Oh boy, this doesn't look good!");
 			stage = 14;
 			break;
 		case 14:

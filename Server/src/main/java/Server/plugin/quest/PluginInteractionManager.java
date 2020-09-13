@@ -81,6 +81,6 @@ public class PluginInteractionManager {
         NPC,
         OBJECT,
         USEWITH,
-        ITEM;
+        ITEM
     }
 }

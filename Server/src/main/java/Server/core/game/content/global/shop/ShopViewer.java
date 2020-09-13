@@ -91,7 +91,7 @@ public final class ShopViewer {
 
 	/**
 	 * Method used to show a stock.
-	 * @param the tab index.
+	 * @param tabIndex the tab index.
 	 */
 	public void showStock(int tabIndex) {
 		this.tabIndex = tabIndex;

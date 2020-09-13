@@ -51,7 +51,7 @@ public final class GoblinDiplomacyPlugin extends OptionHandler {
 		int id = node instanceof Item ? ((Item) node).getId() : ((GameObject) node).getId();
 		switch (option) {
 		case "wear":
-			player.getPacketDispatch().sendMessage("That armour is to small for a human.");
+			player.getPacketDispatch().sendMessage("That armour is too small for a human.");
 			break;
 		}
 		switch (id) {
@@ -134,7 +134,7 @@ public final class GoblinDiplomacyPlugin extends OptionHandler {
 		 */
 		public void handleDyeMix(final Player player, Dyes dye, NodeUsageEvent event) {
 			if (dye == null) {
-				player.getPacketDispatch().sendMessage("Those dyes dont mix together.");
+				player.getPacketDispatch().sendMessage("Those dyes don't mix together.");
 				return;
 			}
 			if (player.getInventory().remove(dye.getMaterials())) {

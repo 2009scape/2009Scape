@@ -106,7 +106,33 @@ public final class GDiplomacyCutscene extends CutscenePlugin {
 		/**
 		 * Represents an array of dialogues to send.
 		 */
-		private static final String[][] DIALOGUES = new String[][] { { "@base (@color) armour best.", "@other No it has to be @ocolor.", "@base Go away human, we busy." }, { "@base I tell all goblins in village to wear @color armour now!", "@other They not listen to you! I already tell them wear @ocolor /n armour!", "@base They listen to me not you! They know me bigger /n general!", "@other Me bigger general! They listen to me!", "@base Human! What colour armour they wearing out there?", "@player Half of them wearing red and half of them green.", "@base Shut up human! They wearing green armour really! /n Human lying because he scared of you!", "@other Human scared of me not you! THen you think me /n bigger general!", "@base What? Me mean...", "@base Shut up! Me bigger general!" }, { "@base All goblins should wear @color armour!", "@other Not @ocolor! @ocolor make you look fat.", "@base Everything make YOU look fat!", "@other Shut up!", "@base Fatty!", "@other SHUT UP!", "@base Even this human think you look fat! Don't you, human?", "@player Um...", "@player No, he doesn't look fat.", "@base Shut up human! @oname fat and human stupid!", "@other Shut up @bname" }, { "@other (@ocolor) armour best.", "@base No no @color every time.", "@other Go away human, we busy." }, };
+		private static final String[][] DIALOGUES = new String[][]{
+			{
+				"@base (@color) armour best.",
+				"@other No it has to be @ocolor.",
+				"@base Go away human, we busy."
+			}, {
+				"@base I tell all goblins in village to wear @color armour now!",
+				"@other They not listen to you! I already tell them wear @ocolor /n armour!",
+				"@base They listen to me not you! They know me bigger /n general!",
+				"@other Me bigger general! They listen to me!",
+				"@base Human! What colour armour they wearing out there?",
+				"@player Half of them wearing red and half of them green.",
+				"@base Shut up human! They wearing green armour really! /n Human lying because he scared of you!",
+				"@other Human scared of me not you! THen you think me /n bigger general!", "@base What? Me mean...",
+				"@base Shut up! Me bigger general!"
+			}, {
+				"@base All goblins should wear @color armour!",
+				"@other Not @color! (@color) make you look fat.", "@base Everything make YOU look fat!",
+				"@other Shut up!", "@base Fatty!", "@other SHUT UP!",
+				"@base Even this human think you look fat! Don't you, human?", "@player Um...",
+				"@player No, he doesn't look fat.", "@base Shut up human! @oname fat and human stupid!",
+				"@other Shut up @bname"
+			},
+			{
+				"@other (@ocolor) armour best.", "@base No no @color every time.", "@other Go away human, we busy."
+			},
+		};
 
 		/**
 		 * Represents the cutscene.
@@ -174,7 +200,7 @@ public final class GDiplomacyCutscene extends CutscenePlugin {
 			quest = player.getQuestRepository().getQuest(GoblinDiplomacy.NAME);
 			switch (quest.getStage(player)) {
 			case 100:
-				npc("Now you've solved out argument we gotta think of", "something else to do.");
+				npc("Now you've solved our argument we gotta think of", "something else to do.");
 				stage = 0;
 				break;
 			default:
@@ -231,29 +257,27 @@ public final class GDiplomacyCutscene extends CutscenePlugin {
 			if (index == DIALOGUES.length - 1) {
 				if (quest.getStage(player) == 0) {
 					interpreter.sendOptions("Select an Option", "Why are you arguing about the colour of your armour?", "Wouldn't you prefer peace?", "Do you want me to pick an armour colour for you?");
-					stage = 1;
 				} else {
 					if (!player.getInventory().containsItem(type.getMail())) {
-						options("Why are you arguing about the colour of your armour?", "Wouldn't you prefer peace?", "Where am I meant to get " + type.name().toLowerCase() + " amour?");
-						stage = 1;
+						options("Why are you arguing about the colour of your armour?", "Wouldn't you prefer peace?", "Where am I meant to get " + type.name().toLowerCase() + " armour?");
 					} else {
 						options("Why are you arguing about the colour of your armour?", "Wouldn't you prefer peace?", "I have some " + type.name().toLowerCase() + " armour here.");
-						stage = 1;
 					}
 				}
+				stage = 1;
 				return;
 			}
 			final Entity entity = getSpeaker(dialogue[index]);
 			final String[] lines = getLines(dialogue[index]);
-			String line = null;
+			String line;
 			for (int i = 0; i < lines.length; i++) {
-				line = (String) lines[i];
-				line = ((String) line).replace("(@color)", StringUtils.formatDisplayName(getColor((String) line)));
-				line = ((String) line).replace("(@ocolor)", StringUtils.formatDisplayName(getOtherColor((String) line)));
-				line = ((String) line).replace("@color", getColor((String) line));
-				line = ((String) line).replace("@ocolor", getOtherColor((String) line));
-				line = ((String) line).replace("@player", "").replace("@base", "").replace("@other", "").trim();
-				line = ((String) line).trim();
+				line = lines[i];
+				line = line.replace("(@color)", StringUtils.formatDisplayName(getColor(line)));
+				line = line.replace("(@ocolor)", StringUtils.formatDisplayName(getOtherColor(line)));
+				line = line.replace("@color", getColor(line));
+				line = line.replace("@ocolor", getOtherColor(line));
+				line = line.replace("@player", "").replace("@base", "").replace("@other", "").trim();
+				line = line.trim();
 				lines[i] = line;
 			}
 			interpreter.sendDialogues(entity, null, lines);
@@ -522,7 +546,7 @@ public final class GDiplomacyCutscene extends CutscenePlugin {
 				stage = 33;
 				break;
 			case 33:
-				npc("That would mean me wrong... but at least", "" + other.getName() + " not right!");
+				npc("That would mean me wrong... but at least", other.getName() + " not right!");
 				stage = 34;
 				break;
 			case 34:
@@ -660,7 +684,7 @@ public final class GDiplomacyCutscene extends CutscenePlugin {
 		 * @return the entity speaker.
 		 */
 		public Entity getSpeaker(final String line) {
-			return line.contains("@player") ? player : line.contains("@base") ? npc : other;
+			return line.startsWith("@player") ? player : line.startsWith("@base") ? npc : other;
 		}
 
 		/**

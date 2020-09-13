@@ -135,7 +135,7 @@ public class AchievementDiaryManager implements SavingModule {
 	}
 
 	/**
-	 * Gets the karamaja glove level.
+	 * Gets the karamja glove level.
 	 * @return the level of the glove.
 	 */
 	public int getKaramjaGlove() {
@@ -196,7 +196,7 @@ public class AchievementDiaryManager implements SavingModule {
 	}
 
 	/**
-	 * Checks if the player has karamaja gloves.
+	 * Checks if the player has karamja gloves.
 	 * @return the gloves.
 	 */
 	public boolean hasGlove() {

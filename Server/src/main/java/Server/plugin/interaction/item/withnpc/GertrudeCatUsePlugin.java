@@ -51,6 +51,7 @@ public final class GertrudeCatUsePlugin extends UseWithHandler {
 		final Player player = event.getPlayer();
 		final NPC npc = ((NPC) event.getUsedWith());
 		final Quest quest = player.getQuestRepository().getQuest("Gertrude's Cat");
+		// Bucket of milk
 		if (event.getUsedItem().getId() == 1927 && quest.getStage(player) == 20) {
 			if (player.getInventory().remove(event.getUsedItem())) {
 				player.getInventory().add(EMPTY_BUCKET);
@@ -58,14 +59,17 @@ public final class GertrudeCatUsePlugin extends UseWithHandler {
 				npc.sendChat("Mew!");
 				quest.setStage(player, 30);
 			}
+		// Doogle sardine
 		} else if (event.getUsedItem().getId() == 1552 && quest.getStage(player) == 30) {
 			if (player.getInventory().remove(event.getUsedItem())) {
 				player.animate(BEND_DOWN);
 				npc.sendChat("Mew!");
 				quest.setStage(player, 40);
 			}
+		// Raw sardine
 		} else if (event.getUsedItem().getId() == 327 && quest.getStage(player) == 50) {
 			player.getDialogueInterpreter().sendDialogue("The cat doesn't seem interested in that.");
+		// Three little kittens
 		} else if (event.getUsedItem().getId() == 13236) {
 			if (player.getInventory().remove(event.getUsedItem())) {
 				quest.setStage(player, 60);

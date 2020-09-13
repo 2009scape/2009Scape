@@ -13,10 +13,10 @@ public abstract class PluginInteraction implements Plugin<Object> {
     Item item;
     public boolean handle(Player player, Node node){
         return false;
-    };
+    }
     public boolean handle(Player player, NodeUsageEvent event){
         return false;
-    };
+    }
     public boolean handle(Player player, NPC npc, Option option){
         return false;
     }

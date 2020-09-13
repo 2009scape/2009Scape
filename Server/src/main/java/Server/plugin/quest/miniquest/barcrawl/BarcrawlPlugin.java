@@ -316,7 +316,7 @@ public final class BarcrawlPlugin extends OptionHandler {
 			if (!start) {
 				player.getPacketDispatch().sendMessage("The bartender signs your card.");
 			} else {
-				player.getPacketDispatch().sendMessage("You buy a " + (StringUtils.isPlusN(getName()) ? "an" : "a") + " " + getName() + ".");
+				player.getPacketDispatch().sendMessage("You buy " + (StringUtils.isPlusN(getName()) ? "an " : "a ") + getName() + ".");
 			}
 		}
 

@@ -145,7 +145,7 @@ public class SurokMagisDialogue extends DialoguePlugin {
 		}
 
 		/**
-		 * Sets the bascene.
+		 * Sets the scene.
 		 * @param scene the scene to set.
 		 */
 		public void setScene(SurokScene scene) {

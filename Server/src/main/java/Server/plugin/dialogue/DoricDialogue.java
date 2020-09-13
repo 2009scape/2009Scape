@@ -81,7 +81,7 @@ public final class DoricDialogue extends DialoguePlugin {
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "I want to use your whetsone.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I want to use your whetstone.");
 				stage = 20;
 				break;
 			case 3:

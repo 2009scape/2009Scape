@@ -167,7 +167,7 @@ public class ItemDefinition extends Definition<Item> {
 	private int[][] unknownArray3;
 
 	/**
-	 * If item is noted.
+	 * If the item is NOT noted.
 	 */
 	private boolean unnoted = true;
 

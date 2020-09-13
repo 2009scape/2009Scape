@@ -564,7 +564,7 @@ public enum Shops{
             new Item(ItemNames.KARAMJAN_RUM_431,3),
             new Item(ItemNames.JUG_OF_WINE,1)
     },false,ItemNames.COINS,false),new int[]{568}),
-    DORGESH(new Shop("Dorgersh-Kaan General Supplies",new Item[]{
+    DORGESH(new Shop("Dorgesh-Kaan General Supplies",new Item[]{
             new Item(ItemNames.UNLIT_TORCH_596,5),
             new Item(ItemNames.TINDERBOX,2),
             new Item(ItemNames.POT_1931,5),
@@ -599,7 +599,7 @@ public enum Shops{
             new Item(ItemNames.IRON_ARROWTIPS_40,30),
             new Item(ItemNames.STEEL_ARROWTIPS_41,20)
     },false,ItemNames.COINS,false), new int[]{5198,5199}),
-   BANDIT_BARGAINS(new Shop("Bandit Bargains",new Item[]{
+    BANDIT_BARGAINS(new Shop("Bandit Bargains",new Item[]{
             new Item(ItemNames.WATERSKIN4_1823,5),
             new Item(ItemNames.WATERSKIN0_1831,5),
             new Item(ItemNames.JUG_OF_WATER_1937,5),

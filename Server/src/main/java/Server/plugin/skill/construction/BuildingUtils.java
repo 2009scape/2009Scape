@@ -321,7 +321,7 @@ public final class BuildingUtils {
 	 */
 	public static void removeDecoration(Player player, GameObject object) {
 		if (object.getId() == Decoration.PORTAL.getObjectId() && player.getHouseManager().getPortalAmount() <= 1) {
-			player.getPacketDispatch().sendMessage("You need atleast one portal, how else would you leave your house?");
+			player.getPacketDispatch().sendMessage("You need at least one portal, how else would you leave your house?");
 			return;
 		}
 		Location l = object.getLocation();

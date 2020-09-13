@@ -33,7 +33,7 @@ public class ReldoDialogue extends DialoguePlugin {
 	private AchievementDiary diary;
 
 	/**
-	 * If w'ere chatting about our diary.
+	 * If we're chatting about our diary.
 	 */
 	private boolean isDiary;
 
@@ -148,7 +148,7 @@ public class ReldoDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 431:
-				npc("To claim the different Varrock Armour, speak to Vannaka", "Rat Burgis, and myself.");
+				npc("To claim the different Varrock Armour, speak to Vannaka", "Rat Burgiss, and myself.");
 				stage = 41;
 				break;
 			case 50:
@@ -190,7 +190,7 @@ public class ReldoDialogue extends DialoguePlugin {
 				stage = 2;
 				break;
 			case 2:
-				npc("If I were you I would talk to Baraeck, the fur trader in", "the market place. I've heard he has connections with the", "Phoenix Gang.");
+				npc("If I were you I would talk to Baraek, the fur trader in", "the market place. I've heard he has connections with the", "Phoenix Gang.");
 				stage = 3;
 				break;
 			case 3:
@@ -234,7 +234,7 @@ public class ReldoDialogue extends DialoguePlugin {
 		case 0:
 			switch (stage) {
 			case 0:
-				interpreter.sendOptions("Select an Option", "I'm in search  of a quest.", "Do you have anything to trade?", "What do you do?");
+				interpreter.sendOptions("Select an Option", "I'm in search of a quest.", "Do you have anything to trade?", "What do you do?");
 				stage = 1;
 				break;
 			case 1:
@@ -475,7 +475,7 @@ public class ReldoDialogue extends DialoguePlugin {
 			stage = 45;
 			break;
 		case 45:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I believe I remember a couple living in Asgarnia near", "the cliffs on the Asgarnian southern peninusla, but they", "DO tend to keep to themselves.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I believe I remember a couple living in Asgarnia near", "the cliffs on the Asgarnian southern peninsula, but they", "DO tend to keep to themselves.");
 			stage = 46;
 			break;
 		case 46:

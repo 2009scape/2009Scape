@@ -32,7 +32,7 @@ public class BKCabbagePlugin extends UseWithHandler {
 		final Quest quest = player.getQuestRepository().getQuest("Black Knights' Fortress");
 		if (quest.getStage(player) == 20) {
 			if (event.getUsedItem().getId() == 1967) {
-				player.getDialogueInterpreter().sendDialogue("This is the wrong sort of cabbage!");
+				player.getDialogueInterpreter().sendDialogue("That's the wrong kind of cabbage!", "I'm not supposed to be helping the witch you know.");
 				return true;
 			}
 			player.getDialogueInterpreter().open(992752973, true, true);

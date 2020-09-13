@@ -55,7 +55,16 @@ public class DemonSlayer extends Quest {
 	
 	@Override
 	public Quest newInstance(Object object) {
-		PluginManager.definePlugins(new DemonSlayerPlugin(), new DSlayerDrainPlugin(), new DemonSlayerCutscene(), new WallyCutscenePlugin(), new GypsyArisDialogue(), new SirPyrsinDialogue(), new TraibornDialogue(), new CaptainRovinDialogue());
+		PluginManager.definePlugins(
+			new DemonSlayerPlugin(),
+			new DSlayerDrainPlugin(),
+			new DemonSlayerCutscene(),
+			new WallyCutscenePlugin(),
+			new GypsyArisDialogue(),
+			new SirPyrsinDialogue(),
+			new TraibornDialogue(),
+			new CaptainRovinDialogue()
+		);
 		return this;
 	} 
 
