@@ -77,7 +77,7 @@ public final class DoricDialogue extends DialoguePlugin {
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "I wanted to use your anvils.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I wanted to use your anvils.");
 				stage = 10;
 				break;
 			case 2:
@@ -85,15 +85,15 @@ public final class DoricDialogue extends DialoguePlugin {
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "Mind your own business, shortstuff!");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Mind your own business, shortstuff!");
 				stage = 30;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "I was just checking out the landscape.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I was just checking out the landscape.");
 				stage = 40;
 				break;
 			case 5:
-				interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "What do you make here?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What do you make here?");
 				stage = 50;
 				break;
 
@@ -110,11 +110,11 @@ public final class DoricDialogue extends DialoguePlugin {
 		case 12:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "Yes I will get you the materials.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes I will get you the materials.");
 				stage = 15;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "No, hitting rocks is for the boring people, sorry.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, hitting rocks is for the boring people, sorry.");
 				stage = 13;
 				break;
 			}
@@ -136,7 +136,7 @@ public final class DoricDialogue extends DialoguePlugin {
 			if (!player.getInventory().add(PICKAXE)) {
 				GroundItemManager.create(PICKAXE, player.getLocation());
 			}
-			interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "Certainly, I'll be right back!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Certainly, I'll be right back!");
 			stage = 17;
 			break;
 		case 17:
@@ -158,7 +158,7 @@ public final class DoricDialogue extends DialoguePlugin {
 			stage = 41;
 			break;
 		case 41:
-			interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "Will do!");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Will do!");
 			stage = 42;
 			break;
 		case 42:
@@ -169,7 +169,7 @@ public final class DoricDialogue extends DialoguePlugin {
 			stage = 51;
 			break;
 		case 51:
-			interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "Do you have any to sell?");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you have any to sell?");
 			stage = 52;
 			break;
 		case 52:
@@ -177,7 +177,7 @@ public final class DoricDialogue extends DialoguePlugin {
 			stage = 53;
 			break;
 		case 53:
-			interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "Ah, fair enough.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ah, fair enough.");
 			stage = 54;
 			break;
 		case 54:
@@ -185,10 +185,10 @@ public final class DoricDialogue extends DialoguePlugin {
 			break;
 		case 100:
 			if (player.getInventory().contains(434, 6) && player.getInventory().contains(440, 2) && player.getInventory().contains(436, 4)) {
-				interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "I have everything you need.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I have everything you need.");
 				stage = 200;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "Sorry, I don't have them all yet.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, I don't have them all yet.");
 				stage = 101;
 			}
 			break;
@@ -203,11 +203,11 @@ public final class DoricDialogue extends DialoguePlugin {
 		case 103:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "Where can I find those?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Where can I find those?");
 				stage = 110;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "Certainly, I'll be right back.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Certainly, I'll be right back.");
 				stage = 113;
 				break;
 
@@ -238,7 +238,7 @@ public final class DoricDialogue extends DialoguePlugin {
 			}
 			break;
 		case 500:
-			interpreter.sendDialogues(player, FacialExpression.OLD_NORMAL, "Not too bad, Doric.");
+			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Not too bad, Doric.");
 			stage = 501;
 			break;
 		case 501:
