@@ -19,11 +19,16 @@ import core.game.node.entity.player.link.quest.Quest;
 public class DruidicRitual extends Quest {
 
 	/**
+	 * The name of the quest.
+	 */
+	public static final String NAME = "Druidic Ritual";
+
+	/**
 	 * Constructs a new {@code DruidicRitual} {@code Object}.
 	 */
 	public DruidicRitual() {
 		super(
-			"Druidic Ritual",
+			NAME,
 			48,
 			47,
 			4,

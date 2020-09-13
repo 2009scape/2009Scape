@@ -1,6 +1,7 @@
 package plugin.skill.herblore;
 
 import core.cache.def.impl.ItemDefinition;
+import plugin.quest.members.DruidicRitual;
 import plugin.skill.Skills;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
@@ -25,7 +26,7 @@ public final class HerbCleanPlugin extends OptionHandler {
 
 	@Override
 	public boolean handle(Player player, Node node, String option) {
-		if (!player.getQuestRepository().isComplete("Druidic Ritual")) {
+		if (!player.getQuestRepository().isComplete(DruidicRitual.NAME)) {
 			player.getPacketDispatch().sendMessage("You must complete the Druidic Ritual quest before you can use Herblore.");
 			return true;
 		}

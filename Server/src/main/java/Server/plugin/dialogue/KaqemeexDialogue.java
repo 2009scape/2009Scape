@@ -1,6 +1,7 @@
 package plugin.dialogue;
 
 import core.game.content.global.Skillcape;
+import plugin.quest.members.DruidicRitual;
 import plugin.skill.Skills;
 import core.game.node.entity.npc.NPC;
 import core.plugin.InitializablePlugin;
@@ -53,17 +54,17 @@ public final class KaqemeexDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			if (player.getQuestRepository().isComplete("Druidic Ritual")) {
+			if (player.getQuestRepository().isComplete(DruidicRitual.NAME)) {
 				interpreter.sendDialogues(npc, null, "Hello again. How is the Herblore going?");
 				stage = 600;
 				break;
 			}
-			if (player.getQuestRepository().getQuest("Druidic Ritual").getStage(player) == 10) {
+			if (player.getQuestRepository().getQuest(DruidicRitual.NAME).getStage(player) == 10) {
 				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello again.");
 				stage = 40;
 				break;
 			}
-			if (player.getQuestRepository().getQuest("Druidic Ritual").getStage(player) == 99) {
+			if (player.getQuestRepository().getQuest(DruidicRitual.NAME).getStage(player) == 99) {
 				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I have word from Sanfew that you have been very", "helpful in assisting him with his preparations for the", "purification ritual. As promised I will now teach you the", "ancient arts of Herblore.");
 				stage = 200;
 				break;
@@ -72,7 +73,7 @@ public final class KaqemeexDialogue extends DialoguePlugin {
 			stage = 1;
 			break;
 		case 1:
-			if (player.getQuestRepository().getQuest("Druidic Ritual").isStarted(player)) {
+			if (player.getQuestRepository().getQuest(DruidicRitual.NAME).isStarted(player)) {
 				if (Skillcape.isMaster(player, Skills.HERBLORE)) {
 					interpreter.sendOptions("Select an Option", "Can I buy a Skillcape of Herblore?", "Who are you?", "Did you build this?");
 					stage = 800;
@@ -103,7 +104,7 @@ public final class KaqemeexDialogue extends DialoguePlugin {
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "We are the druids of Guthix. We worship our god at", "our famous stone circles. You will find them located", "throghout these lands.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "We are the druids of Guthix. We worship our god at", "our famous stone circles. You will find them located", "throughout these lands.");
 			stage = 11;
 			break;
 		case 11:
@@ -118,11 +119,11 @@ public final class KaqemeexDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What, personally? No, ofcoure I didn't. However, our", "four fathers did. The first Druids of Guthix built many", "stone circles across these lands over eight hundred", "years ago.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What, personally? No, of course I didn't. However, our", "four fathers did. The first Druids of Guthix built many", "stone circles across these lands over eight hundred", "years ago.");
 			stage = 31;
 			break;
 		case 31:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Unfortunately we only know of two remaining and of", "those only one is usuable by us anymore.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Unfortunately we only know of two remaining and of", "those only one is usable by us anymore.");
 			stage = 32;
 			break;
 		case 32:
@@ -138,7 +139,7 @@ public final class KaqemeexDialogue extends DialoguePlugin {
 			stage = 22;
 			break;
 		case 22:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "When they cursed the rocks for their rituals they made", "them useless to us and our magics. We require a brave", "adevnturer to go on a quest for us to help purify the", "circle of Varrock.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "When they cursed the rocks for their rituals they made", "them useless to us and our magics. We require a brave", "adventurer to go on a quest for us to help purify the", "circle of Varrock.");
 			stage = 23;
 			break;
 		case 23:
@@ -162,7 +163,7 @@ public final class KaqemeexDialogue extends DialoguePlugin {
 			stage = 13;
 			break;
 		case 26:
-			player.getQuestRepository().getQuest("Druidic Ritual").start(player);
+			player.getQuestRepository().getQuest(DruidicRitual.NAME).start(player);
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Excellent. Go to the village south of this place and speak", "to my fellow Sanfew who is working on the purification", "ritual. He knows better than I what is required to", "complete it.");
 			stage = 27;
 			break;
@@ -182,7 +183,7 @@ public final class KaqemeexDialogue extends DialoguePlugin {
 			break;
 		case 200:
 			end();
-			player.getQuestRepository().getQuest("Druidic Ritual").finish(player);
+			player.getQuestRepository().getQuest(DruidicRitual.NAME).finish(player);
 			break;
 		case 500:
 			switch (buttonId) {
@@ -262,7 +263,7 @@ public final class KaqemeexDialogue extends DialoguePlugin {
 			stage = 1009;
 			break;
 		case 1009:
-			interpreter.sendDialogues(npc, null, "Drink this poition to increase your Attack level.");
+			interpreter.sendDialogues(npc, null, "Drink this potion to increase your Attack level.");
 			stage = 1010;
 			break;
 		case 1010:
@@ -270,7 +271,7 @@ public final class KaqemeexDialogue extends DialoguePlugin {
 			stage = 1011;
 			break;
 		case 1011:
-			interpreter.sendDialogues(npc, null, "Once again, check the instructions found on the", "Council's website for the levels needed to make a", "particulur potion.");
+			interpreter.sendDialogues(npc, null, "Once again, check the instructions found on the", "Council's website for the levels needed to make a", "particular potion.");
 			stage = 1012;
 			break;
 		case 1012:

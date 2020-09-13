@@ -1,5 +1,6 @@
 package plugin.skill.herblore;
 
+import plugin.quest.members.DruidicRitual;
 import plugin.skill.SkillPulse;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
@@ -52,7 +53,7 @@ public final class HerbTarPulse extends SkillPulse<Item> {
 
 	@Override
 	public boolean checkRequirements() {
-		if (!player.getQuestRepository().isComplete("Druidic Ritual")) {
+		if (!player.getQuestRepository().isComplete(DruidicRitual.NAME)) {
 			player.getPacketDispatch().sendMessage("You must complete the Druidic Ritual quest before you can use Herblore.");
 			return false;
 		}
