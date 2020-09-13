@@ -56,7 +56,7 @@ class GEOfferDispatch : Pulse(), CallBack {
         /**
          * The database path.
          */
-        private val DB_PATH = "data" + File.separator + "eco" + File.separator + "offer_dispatch.json"
+        private val DB_PATH = "Server" + File.separator + "data" + File.separator + "eco" + File.separator + "offer_dispatch.json"
 
         /**
          * The offset of the offer UIDs.
