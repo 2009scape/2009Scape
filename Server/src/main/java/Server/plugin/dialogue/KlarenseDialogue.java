@@ -30,7 +30,7 @@ public final class KlarenseDialogue extends DialoguePlugin {
 	 */
 	public KlarenseDialogue() {
 		/**
-		 * emptpy.
+		 * empty.
 		 */
 	}
 
@@ -91,7 +91,7 @@ public final class KlarenseDialogue extends DialoguePlugin {
 				stage = 1;
 				break;
 			case 1:
-				player("It has Lady Lumbridge pained out and 'Klarense's", "Cruiser' painted over it!");
+				player("It has Lady Lumbridge painted out and 'Klarense's", "Cruiser' painted over it!");
 				stage = 2;
 				break;
 			case 2:
@@ -141,7 +141,7 @@ public final class KlarenseDialogue extends DialoguePlugin {
 				stage = 9;
 				break;
 			case 9:
-				npc("How does, 2,000 gold sound? I'll even throw in my", "cabin boy, Jenkiins, for free! He'll swab the decks and", "splice the mainsails for you!");
+				npc("How does 2,000 gold sound? I'll even throw in my", "cabin boy, Jenkins, for free! He'll swab the decks and", "splice the mainsails for you!");
 				stage = 10;
 				break;
 			case 10:
@@ -206,11 +206,11 @@ public final class KlarenseDialogue extends DialoguePlugin {
 				stage = 21;
 				break;
 			case 21:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The Lady Lumbridge is an old crandorian fishing ship -", "the last one of her kind, as far as I know. That kind of", "ship was always mightily manoeuvrable, but not too", "tough.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The Lady Lumbridge is an old Crandorian fishing ship -", "the last one of her kind, as far as I know. That kind of", "ship was always mightily manoeuvrable, but not too", "tough.");
 				stage = 22;
 				break;
 			case 22:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "She happend to be somewhere else when Crandor was", "destroyed, and she's had serveral owners since then. Not", "all of them have looked after her too well,");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "She happened to be somewhere else when Crandor was", "destroyed, and she's had several owners since then. Not", "all of them have looked after her too well,");
 				stage = 23;
 				break;
 			case 23:

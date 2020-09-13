@@ -70,7 +70,7 @@ public final class DrezelDialogue extends DialoguePlugin {
 		final Quest quest = player.getQuestRepository().getQuest(PriestInPeril.NAME);
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh! You do not appear to be on of those Zamorkians", "who imprisoned me here! Who are you and why are", "you here?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh! You do not appear to be on of those Zamorakians", "who imprisoned me here! Who are you and why are", "you here?");
 			stage = 1;
 			break;
 		case 1:
@@ -110,7 +110,7 @@ public final class DrezelDialogue extends DialoguePlugin {
 			}
 			break;
 		case 8:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "d, Saradomin has granted you wisdom I see. Well, the", "story of the river Salve and of how it protects Mithsalin", "is the story of this temple,");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ah. Saradomin has granted you wisdom I see. Well, the", "story of the river Salve and of how it protects Misthalin", "is the story of this temple,");
 			stage = 9;
 			break;
 		case 9:
@@ -142,11 +142,11 @@ public final class DrezelDialogue extends DialoguePlugin {
 			stage = 16;
 			break;
 		case 16:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "For then days and nights they fought, never sleeping,", "never eating, fuelled by their desire to make the world a", "better place for humans to live.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "For ten days and nights they fought, never sleeping,", "never eating, fuelled by their desire to make the world a", "better place for humans to live.");
 			stage = 17;
 			break;
 		case 17:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "On the eleventh day they were to be joined by", "reinforcements from a neighbouring encampment, but", "then those reinforecements arrived all they found");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "On the eleventh day they were to be joined by", "reinforcements from a neighbouring encampment, but", "then those reinforcements arrived all they found");
 			stage = 18;
 			break;
 		case 18:
@@ -154,7 +154,7 @@ public final class DrezelDialogue extends DialoguePlugin {
 			stage = 19;
 			break;
 		case 19:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The men were saddend at the loss of such pure and", "mighty warriors, yet their sacrifice had not been in", "vain; for the water of the Salve");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The men were saddened at the loss of such pure and", "mighty warriors, yet their sacrifice had not been in", "vain; for the water of the Salve");
 			stage = 20;
 			break;
 		case 20:
@@ -220,7 +220,7 @@ public final class DrezelDialogue extends DialoguePlugin {
 		case 503:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, ofcourse. Any threat to Misthalin must be", "neutralised immediately. So what can I do to help?");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, of course. Any threat to Misthalin must be", "neutralised immediately. So what can I do to help?");
 				stage = 506;
 				break;
 			case 2:
@@ -353,7 +353,7 @@ public final class DrezelDialogue extends DialoguePlugin {
 			player.getPacketDispatch().sendMessage("The priest blesses the water for you.");
 			break;
 		case 730:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "well, the water of the salve should still have enough", "power to work against the vampie despite what those", "Zamorakians might have done to it...");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "well, the water of the salve should still have enough", "power to work against the vampire despite what those", "Zamorakians might have done to it...");
 			stage = 731;
 			break;
 		case 731:

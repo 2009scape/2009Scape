@@ -105,7 +105,7 @@ public class KingRoaldDialogue extends DialoguePlugin {
 				stage = 2;
 				break;
 			case 2:
-				npc("I'm  afraid that's only half the reward certificate. You'll", "have to get the other half and join them together if you", "want to cliam the reward.");
+				npc("I'm afraid that's only half the reward certificate. You'll", "have to get the other half and join them together if you", "want to claim the reward.");
 				stage = 3;
 				break;
 			case 3:
@@ -190,7 +190,7 @@ public class KingRoaldDialogue extends DialoguePlugin {
 			}
 			break;
 		case 200:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do you have anything of importace to say?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do you have anything of importance to say?");
 			stage = 201;
 			break;
 		case 201:
@@ -221,7 +221,7 @@ public class KingRoaldDialogue extends DialoguePlugin {
 			stage = 6;
 			break;
 		case 6:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Be a sport and go make sure that nothing untoward", "has happend to the silly old codger for me, would you?");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Be a sport and go make sure that nothing untoward", "has happened to the silly old codger for me, would you?");
 			stage = 7;
 			break;
 		case 7:

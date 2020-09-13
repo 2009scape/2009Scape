@@ -14,7 +14,7 @@ import core.game.node.item.Item;
 public final class KatrineDialogue extends DialoguePlugin {
 
 	/**
-	 * Represents the corssbow items.
+	 * Represents the crossbow items.
 	 */
 	private static final Item CROSSBOWS = new Item(767, 2);
 
@@ -330,7 +330,7 @@ public final class KatrineDialogue extends DialoguePlugin {
 				}
 				break;
 			case 182:
-				npc("If you're not up to a little bit of dager I don't think", "you've got anything to offer our gang.");
+				npc("If you're not up to a little bit of danger, I don't think", "you've got anything to offer our gang.");
 				stage = 183;
 				break;
 			case 183:
@@ -379,7 +379,7 @@ public final class KatrineDialogue extends DialoguePlugin {
 				stage = 132;
 				break;
 			case 132:
-				npc("Wow! We MUSE be obvious! I guess they'll be", "expecting bribes again soon in that case.");
+				npc("Wow! We MUST be obvious! I guess they'll be", "expecting bribes again soon in that case.");
 				stage = 133;
 				break;
 			case 133:

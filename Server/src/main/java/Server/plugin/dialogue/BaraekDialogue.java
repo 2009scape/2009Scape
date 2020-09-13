@@ -91,7 +91,7 @@ public final class BaraekDialogue extends DialoguePlugin {
 		case 40:
 			switch (stage) {
 			case 111:
-				npc("Gang. they're operating there under the name of", "VTAM Corporation. Be careful. The Phoenixes ain't", "the type to be messed about.");
+				npc("Gang. They're operating there under the name of", "VTAM Corporation. Be careful. The Phoenixes ain't", "the type to be messed about.");
 				stage = 112;
 				break;
 			case 112:
@@ -102,7 +102,7 @@ public final class BaraekDialogue extends DialoguePlugin {
 				end();
 				break;
 			case 120:
-				npc("Heh. If you wanna deal with the Phoenix Gand they're", "involved in much worse than a bit of briber.");
+				npc("Heh. If you wanna deal with the Phoenix Gang, they're", "involved in much worse than a bit of bribery.");
 				stage = 121;
 				break;
 			case 121:
@@ -176,7 +176,7 @@ public final class BaraekDialogue extends DialoguePlugin {
 				}
 				if (player.getInventory().remove(COINS)) {
 					quest.setStage(player, 40);
-					npc("Ok, to get to the gang hideout, enter Varrock through", "the south gate. Then, if you take the first turning east", "somewhere along there is an alleway to the south. The", "door at the end of there is an entrance to the Phoenix");
+					npc("Ok, to get to the gang hideout, enter Varrock through", "the south gate. Then, if you take the first turning east", "somewhere along there is an alleyway to the south. The", "door at the end of there is an entrance to the Phoenix");
 					stage = 111;
 				} else {
 					player("I don't have enough coins.");
@@ -277,7 +277,7 @@ public final class BaraekDialogue extends DialoguePlugin {
 			stage = 21;
 			break;
 		case 21:
-			options("Yeah, okay, here you go.", "20 gold coins? That's an outrade!");
+			options("Yeah, okay, here you go.", "20 gold coins? That's an outrage!");
 			stage = 22;
 			break;
 		case 22:
@@ -304,10 +304,10 @@ public final class BaraekDialogue extends DialoguePlugin {
 				if (!player.getInventory().add(FUR)) {
 					GroundItemManager.create(FUR, player);
 				}
-				interpreter.sendItemMessage(FUR.getId(), "Baraeck sells you a fur.");
+				interpreter.sendItemMessage(FUR.getId(), "Baraek sells you a fur.");
 				stage = 26;
 			} else {
-				player("Oops, I dont' seem to have enough coins.");
+				player("Oops, I don't seem to have enough coins.");
 				stage = 24;
 			}
 			break;
@@ -332,7 +332,7 @@ public final class BaraekDialogue extends DialoguePlugin {
 			stage = 82;
 			break;
 		case 82:
-			interpreter.sendItemMessage(FUR.getId(), "You hand Baraeck your fur to look at.");
+			interpreter.sendItemMessage(FUR.getId(), "You hand Baraek your fur to look at.");
 			stage = 83;
 			break;
 		case 83:

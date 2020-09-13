@@ -115,7 +115,7 @@ public class CharlieTheTrampDialogue extends DialoguePlugin {
 			stage = 21;
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hey, thanks alot!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hey, thanks a lot!");
 			stage = 41;
 			break;
 		case 41:
