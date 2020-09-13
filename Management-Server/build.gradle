@@ -1,28 +1,16 @@
-apply plugin: 'java'
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
 apply plugin: 'application'
+
+archivesBaseName = 'managementserver'
 
 mainClassName = 'ms.Management'
 
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
-
-
 dependencies {
-    implementation name: 'clientlibs'
-    implementation name: 'guava-18.0'
-    implementation name: 'javassist-3.20.0-GA'
-    implementation name: 'mysql-connector-java-5.1.30-bin'
-    implementation name: 'reflections-0.9.10'
+    implementation 'com.google.guava:guava:29.0-jre'
+    implementation 'mysql:mysql-connector-java:8.0.21'
 }
-
 
 jar {
-    archiveBaseName = 'managementserver'
-    archiveVersion =  '1.0.0'
+    manifest {
+        attributes 'Main-Class': 'ms.Management'
+    }
 }

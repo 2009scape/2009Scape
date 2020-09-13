@@ -1,0 +1,4 @@
+rootProject.name = '2009Scape'
+include 'Client'
+include 'Management-Server'
+include 'Server'

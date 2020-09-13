@@ -1,30 +1,17 @@
-apply plugin: 'java'
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
 apply plugin: 'application'
+
+archivesBaseName = 'client'
 
 mainClassName = 'org.runite.Client'
 
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
-
-
 dependencies {
-    implementation name: 'clientlibs'
-    implementation name: 'discord-rpc'
-}
+    implementation 'com.github.Vatuu:discord-rpc:1.6.2'
 
+    implementation files('libs/clientlibs.jar')
+}
 
 jar {
     manifest {
-        attributes(
-                'Main-Class': 'org.runite.Client'
-        )
+        attributes 'Main-Class': 'org.runite.Client'
     }
-    archiveBaseName = 'client'
-    archiveVersion =  '1.0.0'
 }

@@ -1,0 +1,32 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+    id 'com.github.johnrengelman.shadow' version '6.0.0'
+}
+
+allprojects {
+    apply plugin: 'idea'
+    apply plugin: 'java'
+    apply plugin: 'org.jetbrains.kotlin.jvm'
+    apply plugin: 'com.github.johnrengelman.shadow'
+
+    group = 'org.2009scape'
+    version = '1.0.0'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.10'
+    }
+
+    compileKotlin {
+        kotlinOptions {
+            jvmTarget = "1.8"
+        }
+    }
+}

@@ -1,47 +1,20 @@
 plugins {
-    id "java"
-    id "org.jetbrains.kotlin.jvm" version "1.3.72"
     id "application"
 }
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+archivesBaseName = 'server'
 
 mainClassName = 'core.Server'
 
-
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-    mavenCentral()
-}
-
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    implementation name: 'clientlibs'
-    implementation name: 'guava-18.0'
-    implementation name: 'javassist-3.20.0-GA'
-    implementation name: 'mysql-connector-java-5.1.30-bin'
-    implementation name: 'reflections-0.9.10'
-    implementation "com.googlecode.json-simple:json-simple:1.1.1"
-    implementation "io.github.classgraph:classgraph:4.8.62"
-    implementation "org.jetbrains.kotlin:kotlin-reflect"
-}
-
-
-jar {
-    archiveBaseName = 'server'
-    archiveVersion =  '1.0.0'
+    implementation 'com.google.guava:guava:29.0-jre'
+    implementation 'mysql:mysql-connector-java:8.0.21'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'io.github.classgraph:classgraph:4.8.62'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect'
 }
 
 sourceSets {
     main.java.srcDirs = ['src/main/java/Server']
     main.kotlin.srcDirs = ['src/main/java/Server']
-}
-
-compileKotlin {
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
 }
