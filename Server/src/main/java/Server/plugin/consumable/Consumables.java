@@ -83,6 +83,7 @@ public enum Consumables {
 	STEW(new Food(new int[] {1923, 2003}, new HealingEffect(11))),
 	SPICY_STEW(new Food(new int[] {7479, 2003}, new HealingEffect(11))),
 	CURRY(new Food(new int[] {2011, 2003}, new HealingEffect(19))),
+	BANANA_STEW(new Food(new int[] {4016, 1923}, new HealingEffect(11))),
 
 	/** Pizzas */
 	PLAIN_PIZZA(new HalfableFood(new int[] {2289, 2291}, new HealingEffect(7))),
@@ -100,6 +101,10 @@ public enum Consumables {
 	MINT_CAKE(new Food(new int[] {9475}, new EnergyEffect(50))),
 
 	/** Vegetables */
+	CHOPPED_TOMATO(new Food(new int[] {1869, 1923}, new HealingEffect(2))),
+	CHOPPED_ONION(new Food(new int[] {1871, 1923}, new HealingEffect(1))),
+	// TODO: Wiki doesn't say how much this heals. Using Onion + Tomato
+	ONION_AND_TOMATO(new Food(new int[]{1875, 1923}, new HealingEffect(3))),
 	POTATO(new Food(new int[] {1942}, new HealingEffect(1))),
 	BAKED_POTATO(new Food(new int[] {6701}, new HealingEffect(2))),
 	SPICY_SAUCE(new Food(new int[] {7072, 1923}, new HealingEffect(2))),
@@ -111,6 +116,8 @@ public enum Consumables {
 	POTATO_WITH_BUTTER(new Food(new int[] {6703}, new HealingEffect(7))),
 	CHILLI_POTATO(new Food(new int[] {7054}, new HealingEffect(14))),
 	FRIED_ONIONS(new Food(new int[] {7084, 1923}, new HealingEffect(5))),
+	// TODO: Wiki doesn't say how much this heals. Using value for Tuna
+	CHOPPED_TUNA(new Food(new int[] {7086, 1923}, new HealingEffect(10))),
 	FRIED_MUSHROOMS(new Food(new int[] {7082, 1923}, new HealingEffect(5))),
 	POTATO_WITH_CHEESE(new Food(new int[] {6705}, new HealingEffect(9))),
 	EGG_POTATO(new Food(new int[] {7056}, new HealingEffect(11))),
