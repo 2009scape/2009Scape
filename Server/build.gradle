@@ -19,6 +19,6 @@ sourceSets {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'core.server'
+        attributes 'Main-Class': 'core.Server'
     }
 }
