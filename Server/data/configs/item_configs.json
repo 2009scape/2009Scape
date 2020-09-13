@@ -213,6 +213,14 @@
       "durability": null
     },
     {
+      "id": "19",
+      "name": "Holy grail",
+      "examine": "A holy and powerful artifact.",
+      "weight": "4",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
       "id": "20",
       "name": "White cog",
       "examine": "A cog from some machinery.",
@@ -3338,6 +3346,14 @@
       "durability": null
     },
     {
+      "id": "323",
+      "name": "Burnt fish",
+      "examine": "Oops!",
+      "tradeable": "true",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
       "id": "324",
       "name": "Burnt fish",
       "tradeable": "true",
@@ -3547,6 +3563,14 @@
       "durability": null
     },
     {
+      "id": "343",
+      "name": "Burnt fish",
+      "examine": "Oops!",
+      "tradeable": "true",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
       "id": "344",
       "name": "Burnt fish",
       "tradeable": "true",
@@ -3689,6 +3713,14 @@
       "durability": null
     },
     {
+      "id": "357",
+      "name": "Burnt fish",
+      "examine": "Oops!",
+      "tradeable": "true",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
       "id": "358",
       "name": "Burnt fish",
       "tradeable": "true",
@@ -3785,8 +3817,24 @@
       "durability": null
     },
     {
+      "id": "367",
+      "name": "Burnt fish",
+      "examine": "Oops!",
+      "tradeable": "true",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
       "id": "368",
       "name": "Burnt fish",
+      "tradeable": "true",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
+      "id": "369",
+      "name": "Burnt fish",
+      "examine": "Oops!",
       "tradeable": "true",
       "archery_ticket_price": "0",
       "durability": null
@@ -3844,6 +3892,14 @@
       "durability": null
     },
     {
+      "id": "375",
+      "name": "Burnt swordfish",
+      "examine": "Oops!",
+      "tradeable": "true",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
       "id": "376",
       "name": "Burnt swordfish",
       "tradeable": "true",
@@ -3892,6 +3948,14 @@
       "tradeable": "true",
       "grand_exchange_price": "334",
       "ge_buy_limit": "10000",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
+      "id": "381",
+      "name": "Burnt lobster",
+      "examine": "Oops!",
+      "tradeable": "true",
       "archery_ticket_price": "0",
       "durability": null
     },
@@ -3947,6 +4011,14 @@
       "durability": null
     },
     {
+      "id": "387",
+      "name": "Burnt shark",
+      "examine": "Oops!",
+      "tradeable": "true",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
       "id": "388",
       "name": "Burnt shark",
       "tradeable": "true",
@@ -3994,6 +4066,14 @@
       "tradeable": "true",
       "grand_exchange_price": "2552",
       "ge_buy_limit": "10000",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
+      "id": "393",
+      "name": "Burnt manta ray",
+      "examine": "Oops!",
+      "tradeable": "true",
       "archery_ticket_price": "0",
       "durability": null
     },
@@ -5236,6 +5316,7 @@
     {
       "id": "526",
       "name": "Bones",
+      "examine": "Bones are for burying!",
       "tradeable": "true",
       "shop_price": "190",
       "grand_exchange_price": "190",
@@ -6188,7 +6269,7 @@
     {
       "id": "619",
       "name": "Paramaya ticket",
-      "examine": "Allows you to rest in the luxurious Paramayer&#91;sic&#93; Inn.",
+      "examine": "Allows you to rest in the luxurious Paramayer[sic] Inn.",
       "shop_price": "35",
       "archery_ticket_price": "0",
       "durability": null
@@ -6196,7 +6277,7 @@
     {
       "id": "620",
       "name": "Paramaya ticket",
-      "examine": "Allows you to rest in the luxurious Paramayer&#91;sic&#93; Inn.",
+      "examine": "Allows you to rest in the luxurious Paramayer[sic] Inn.",
       "shop_price": "35",
       "archery_ticket_price": "0",
       "durability": null
@@ -9860,7 +9941,7 @@
     {
       "id": "1007",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A bright red cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10004,7 +10085,7 @@
     {
       "id": "1019",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A warm black cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10030,7 +10111,7 @@
     {
       "id": "1021",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A thick blue cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10056,7 +10137,7 @@
     {
       "id": "1023",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A thick yellow cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10105,7 +10186,7 @@
     {
       "id": "1027",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A thick green cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10131,7 +10212,7 @@
     {
       "id": "1029",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A thick purple cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10157,7 +10238,7 @@
     {
       "id": "1031",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A thick orange cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -23436,6 +23517,14 @@
       "durability": null
     },
     {
+      "id": "2144",
+      "name": "Burnt chicken",
+      "examine": "Oh dear, it's totally burnt!",
+      "tradeable": "true",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
       "id": "2145",
       "name": "Burnt chicken",
       "tradeable": "true",
@@ -35812,7 +35901,7 @@
     {
       "id": "3481",
       "name": "Gilded platebody",
-      "examine": "Rune platebody with complete gold trim &amp; plating.",
+      "examine": "Rune platebody with complete gold trim & plating.",
       "tradeable": "true",
       "lendable": "true",
       "low_alchemy": "26000",
@@ -62873,7 +62962,7 @@
     {
       "id": "6542",
       "name": "Present",
-      "examine": "Thanks for all your help! Love, Bob &amp; Neite.",
+      "examine": "Thanks for all your help! Love, Bob & Neite.",
       "destroy": "true",
       "destroy_message": "You will not get a replacement for the present. Open it for your reward.",
       "archery_ticket_price": "0",
@@ -66922,7 +67011,7 @@
     {
       "id": "6959",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "Use pink dye on a cape and this is what you get!",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -72126,6 +72215,13 @@
       "examine": "Mmmm, reminds me of the seaside.",
       "low_alchemy": "40",
       "high_alchemy": "60",
+      "archery_ticket_price": "0",
+      "durability": null
+    },
+    {
+      "id": "7531",
+      "name": "Burnt fishcake",
+      "examine": "Darn thing's all burnt!",
       "archery_ticket_price": "0",
       "durability": null
     },
@@ -80890,7 +80986,7 @@
     {
       "id": "8924",
       "name": "Bandana and eyepatch",
-      "examine": "A (colour) bandana and a patch for the right eye.",
+      "examine": "A white bandana and a patch for the right eye.",
       "tradeable": "true",
       "low_alchemy": "40",
       "high_alchemy": "60",
@@ -80903,7 +80999,7 @@
     {
       "id": "8925",
       "name": "Bandana and eyepatch",
-      "examine": "A (colour) bandana and a patch for the right eye.",
+      "examine": "A red bandana and a patch for the right eye.",
       "tradeable": "true",
       "low_alchemy": "40",
       "high_alchemy": "60",
@@ -80916,7 +81012,7 @@
     {
       "id": "8926",
       "name": "Bandana and eyepatch",
-      "examine": "A (colour) bandana and a patch for the right eye.",
+      "examine": "A blue bandana and a patch for the right eye.",
       "tradeable": "true",
       "low_alchemy": "40",
       "high_alchemy": "60",
@@ -80929,7 +81025,7 @@
     {
       "id": "8927",
       "name": "Bandana and eyepatch",
-      "examine": "A (colour) bandana and a patch for the right eye.",
+      "examine": "A brown bandana and a patch for the right eye.",
       "tradeable": "true",
       "low_alchemy": "40",
       "high_alchemy": "60",
@@ -97358,7 +97454,7 @@
     {
       "id": "10782",
       "name": "Gilded platebody",
-      "examine": "Rune platebody with complete gold trim &amp; plating.",
+      "examine": "Rune platebody with complete gold trim & plating.",
       "tradeable": "true",
       "lendable": "true",
       "low_alchemy": "26000",
@@ -120174,7 +120270,7 @@
     {
       "id": "13339",
       "name": "Bandana and eyepatch",
-      "examine": "A (colour) bandana and a patch for the right eye.",
+      "examine": "A white bandana and a patch for the left eye.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120191,7 +120287,7 @@
     {
       "id": "13340",
       "name": "Bandana and eyepatches",
-      "examine": "A (colour) bandana and a patch for both eyes.",
+      "examine": "A white bandana and a patch for both eyes.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120208,7 +120304,7 @@
     {
       "id": "13341",
       "name": "Bandana and eyepatch",
-      "examine": "A (colour) bandana and a patch for the right eye.",
+      "examine": "A red bandana and a patch for the left eye.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120225,7 +120321,7 @@
     {
       "id": "13342",
       "name": "Bandana and eyepatches",
-      "examine": "A (colour) bandana and a patch for both eyes.",
+      "examine": "A red bandana and a patch for both eyes.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120242,7 +120338,7 @@
     {
       "id": "13343",
       "name": "Bandana and eyepatch",
-      "examine": "A (colour) bandana and a patch for the right eye.",
+      "examine": "A blue bandana and a patch for the left eye.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120259,7 +120355,7 @@
     {
       "id": "13344",
       "name": "Bandana and eyepatches",
-      "examine": "A (colour) bandana and a patch for both eyes.",
+      "examine": "A blue bandana and a patch for both eyes.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120276,7 +120372,7 @@
     {
       "id": "13345",
       "name": "Bandana and eyepatch",
-      "examine": "A (colour) bandana and a patch for the right eye.",
+      "examine": "A brown bandana and a patch for the left eye.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120293,7 +120389,7 @@
     {
       "id": "13346",
       "name": "Bandana and eyepatches",
-      "examine": "A (colour) bandana and a patch for both eyes.",
+      "examine": "A brown bandana and a patch for both eyes.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120310,7 +120406,7 @@
     {
       "id": "13347",
       "name": "Bandana and eyepatch",
-      "examine": "A (colour) bandana and a patch for the right eye.",
+      "examine": "A grey bandana and a patch for the left eye.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120327,7 +120423,7 @@
     {
       "id": "13348",
       "name": "Bandana and eyepatches",
-      "examine": "A (colour) bandana and a patch for both eyes.",
+      "examine": "A grey bandana and a patch for both eyes.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120344,7 +120440,7 @@
     {
       "id": "13349",
       "name": "Bandana and eyepatch",
-      "examine": "A (colour) bandana and a patch for the right eye.",
+      "examine": "A purple bandana and a patch for the left eye.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120361,7 +120457,7 @@
     {
       "id": "13350",
       "name": "Bandana and eyepatches",
-      "examine": "A (colour) bandana and a patch for both eyes.",
+      "examine": "A purple bandana and a patch for both eyes.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120378,7 +120474,7 @@
     {
       "id": "13351",
       "name": "Bandana and eyepatch",
-      "examine": "A (colour) bandana and a patch for the right eye.",
+      "examine": "An orange bandana and a patch for the left eye.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -120395,7 +120491,7 @@
     {
       "id": "13352",
       "name": "Bandana and eyepatches",
-      "examine": "A (colour) bandana and a patch for both eyes.",
+      "examine": "An orange bandana and a patch for both eyes.",
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
@@ -127619,7 +127715,7 @@
     {
       "id": "13835",
       "name": "Gilded platebody",
-      "examine": "Rune platebody with complete gold trim &amp; plating.",
+      "examine": "Rune platebody with complete gold trim & plating.",
       "lendable": "true",
       "low_alchemy": "26000",
       "high_alchemy": "39000",
