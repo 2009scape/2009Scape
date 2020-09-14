@@ -147,31 +147,27 @@ final class Class3_Sub28_Sub13 extends Node {
       }
    }
 
-   static byte[] method623(byte var0, byte[] var1) {
+   static byte[] decodeContainer(byte[] data) {
       try {
-         if(var0 > -112) {
-            method619((byte)43, -121, (CacheIndex)null);
-         }
-
-         RSByteBuffer var2 = new RSByteBuffer(var1);
-         int var3 = var2.getByteB();
-         int var4 = var2.getInt();
-         if(0 <= var4 && (Class75.anInt1108 == 0 || var4 <= Class75.anInt1108)) {
-            if(var3 == 0) {
-               byte[] var8 = new byte[var4];
-               var2.method764(var4, var8);
-               return var8;
+         RSByteBuffer buffer = new RSByteBuffer(data);
+         int compression = buffer.getByteB();
+         int size = buffer.getInt();
+         if(0 <= size && (Class75.anInt1108 == 0 || size <= Class75.anInt1108)) {
+            if(compression == 0) {
+               byte[] uncompressed = new byte[size];
+               buffer.method764(size, uncompressed);
+               return uncompressed;
             } else {
-               int var5 = var2.getInt();
+               int var5 = buffer.getInt();
                if(0 <= var5 && (Class75.anInt1108 == 0 || var5 <= Class75.anInt1108)) {
-                  byte[] var6 = new byte[var5];
-                  if(1 == var3) {
-                     Class105.method1640(var6, var5, var1);
+                  byte[] uncompressed = new byte[var5];
+                  if(compression == 1) {
+                     Class105.method1640(uncompressed, var5, data);
                   } else {
-                     Class3_Sub22.aClass49_2505.method1128(var6, var2);
+                     Class3_Sub22.aClass49_2505.method1128(uncompressed, buffer);
                   }
 
-                  return var6;
+                  return uncompressed;
                } else {
                   throw new RuntimeException("Error G-zip unpacking!");
                }
@@ -180,19 +176,8 @@ final class Class3_Sub28_Sub13 extends Node {
             throw new RuntimeException();
          }
       } catch (Throwable var7) {
-    	  return new byte[0];
-//         throw Class44.method1067(var7, "ml.R(" + var0 + ',' + (var1 != null?"{...}":"null") + ')');
-      }
-   }
-
-   public static void method624(int var0) {
-      try {
-         if(var0 != -1) {
-            method623((byte)-86, (byte[])null);
-         }
-
-      } catch (RuntimeException var2) {
-         throw Class44.clientError(var2, "ml.P(" + var0 + ')');
+//    	  return new byte[0];
+         throw Class44.clientError(var7, "ml.R("+(data != null?"{...}":"null") + ')');
       }
    }
 

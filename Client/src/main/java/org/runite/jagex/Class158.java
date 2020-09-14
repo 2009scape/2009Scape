@@ -59,7 +59,7 @@ abstract class Class158 {
             RSInterface var7 = var5[var6];
             if(null != var7 && var7.parentId == var0) {
                Class3_Sub28_Sub11.method603(var4, 13987, var2, var7, var1);
-               Class62.method1224(var7, var4, var2);
+               ReferenceTable.method1224(var7, var4, var2);
                if(var7.anInt247 > var7.anInt240 - var7.anInt168) {
                   var7.anInt247 = var7.anInt240 - var7.anInt168;
                }

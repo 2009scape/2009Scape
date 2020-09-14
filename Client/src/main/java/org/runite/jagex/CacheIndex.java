@@ -8,7 +8,7 @@ final class CacheIndex {
    private final boolean aBoolean1946;
    private final Class151 aClass151_1947;
    static CacheIndex aClass153_1948;
-   private Class62 aClass62_1949 = null;
+   private ReferenceTable aReferenceTable_1949 = null;
    static int anInt1950;
    static boolean aBoolean1951 = false;
    private Object[][] anObjectArrayArray1952;
@@ -16,17 +16,13 @@ final class CacheIndex {
    private Object[] files;
 
 
-   final boolean method2113(byte var1) {
+   final boolean method2113() {
       try {
          if(this.method2122()) {
-            if(var1 <= 15) {
-               this.method2113((byte)39);
-            }
-
             boolean var2 = true;
 
-            for(int var3 = 0; this.aClass62_1949.validArchiveIds.length > var3; ++var3) {
-               int var4 = this.aClass62_1949.validArchiveIds[var3];
+            for(int var3 = 0; this.aReferenceTable_1949.validArchiveIds.length > var3; ++var3) {
+               int var4 = this.aReferenceTable_1949.validArchiveIds[var3];
                if(null == this.files[var4]) {
                   this.method2134(var4);
                   if(null == this.files[var4]) {
@@ -40,7 +36,7 @@ final class CacheIndex {
             return false;
          }
       } catch (RuntimeException var5) {
-         throw Class44.clientError(var5, "ve.IA(" + var1 + ')');
+         throw Class44.clientError(var5, "ve.IA()");
       }
    }
 
@@ -61,12 +57,12 @@ final class CacheIndex {
       try {
          if(this.method2122()) {
             if(var2) {
-               this.aClass62_1949.archiveNameHash = null;
-               this.aClass62_1949.aClass69_949 = null;
+               this.aReferenceTable_1949.archiveNameHash = null;
+               this.aReferenceTable_1949.aClass69_949 = null;
             }
 
-            this.aClass62_1949.aClass69Array962 = null;
-            this.aClass62_1949.fileNameHashes = (int[][])null;
+            this.aReferenceTable_1949.aClass69Array962 = null;
+            this.aReferenceTable_1949.fileNameHashes = (int[][])null;
 
          }
       } catch (RuntimeException var5) {
@@ -78,7 +74,7 @@ final class CacheIndex {
       try {
          if(this.method2122()) {
             var2 = var2.method1534();
-            int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574());
+            int var3 = this.aReferenceTable_1949.aClass69_949.method1280(var2.method1574());
             return this.method2114(var3);
          } else {
             return 0;
@@ -88,24 +84,16 @@ final class CacheIndex {
       }
    }
 
-   final boolean method2117(int var1, int var2) {
-      try {
-         if(var1 >= -88) {
-            this.aBoolean1945 = true;
-         }
-
-         if(this.isValidArchive(var2)) {
-            if(null == this.files[var2]) {
-               this.method2134(var2);
-               return null != this.files[var2];
-            } else {
-               return true;
-            }
+   final boolean method2117(int var2) {
+      if(this.isValidArchive(var2)) {
+         if(null == this.files[var2]) {
+            this.method2134(var2);
+            return null != this.files[var2];
          } else {
-            return false;
+            return true;
          }
-      } catch (RuntimeException var4) {
-         throw Class44.clientError(var4, "ve.GA(" + var1 + ',' + var2 + ')');
+      } else {
+         return false;
       }
    }
 
@@ -116,7 +104,7 @@ final class CacheIndex {
          }
 
          if(this.method2122()) {
-            return this.aClass62_1949.anInt964;
+            return this.aReferenceTable_1949.crc;
          } else {
             throw new IllegalStateException("");
          }
@@ -141,7 +129,7 @@ final class CacheIndex {
       try {
          if(this.method2122()) {
             name = name.method1534();
-            int var3 = this.aClass62_1949.aClass69_949.method1280(name.method1574());
+            int var3 = this.aReferenceTable_1949.aClass69_949.method1280(name.method1574());
             return this.isValidArchive(var3)? var3 :-1;
          } else {
             return -1;
@@ -155,7 +143,7 @@ final class CacheIndex {
       try {
          if(this.method2122()) {
 
-            return this.aClass62_1949.archiveLengths.length;
+            return this.aReferenceTable_1949.archiveLengths.length;
          } else {
             return -1;
          }
@@ -166,14 +154,14 @@ final class CacheIndex {
 
    private boolean method2122() {
       try {
-         if(this.aClass62_1949 == null) {
-            this.aClass62_1949 = this.aClass151_1947.method2094();
-            if(null == this.aClass62_1949) {
+         if(this.aReferenceTable_1949 == null) {
+            this.aReferenceTable_1949 = this.aClass151_1947.method2094();
+            if(null == this.aReferenceTable_1949) {
                return false;
             }
 
-            this.anObjectArrayArray1952 = new Object[this.aClass62_1949.archiveAmount][];
-            this.files = new Object[this.aClass62_1949.archiveAmount];
+            this.anObjectArrayArray1952 = new Object[this.aReferenceTable_1949.archiveAmount][];
+            this.files = new Object[this.aReferenceTable_1949.archiveAmount];
          }
 
          return true;
@@ -187,10 +175,10 @@ final class CacheIndex {
          if(this.method2122()) {
             var3 = var3.method1534();
             var2 = var2.method1534();
-            int var4 = this.aClass62_1949.aClass69_949.method1280(var3.method1574());
+            int var4 = this.aReferenceTable_1949.aClass69_949.method1280(var3.method1574());
 
             if(this.isValidArchive(var4)) {
-               int var5 = this.aClass62_1949.aClass69Array962[var4].method1280(var2.method1574());
+               int var5 = this.aReferenceTable_1949.aClass69Array962[var4].method1280(var2.method1574());
                return this.getFile(var4, var5);
             } else {
                return null;
@@ -207,7 +195,7 @@ final class CacheIndex {
       try {
          if(this.method2122()) {
             var2 = var2.method1534();
-            int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574());
+            int var3 = this.aReferenceTable_1949.aClass69_949.method1280(var2.method1574());
             this.method2131(var3);
          }
       } catch (RuntimeException var5) {
@@ -220,9 +208,9 @@ final class CacheIndex {
          if(this.method2122()) {
             var3 = var3.method1534();
             var1 = var1.method1534();
-            int var4 = this.aClass62_1949.aClass69_949.method1280(var3.method1574());
+            int var4 = this.aReferenceTable_1949.aClass69_949.method1280(var3.method1574());
             if(this.isValidArchive(var4)) {
-               int var5 = this.aClass62_1949.aClass69Array962[var4].method1280(var1.method1574());
+               int var5 = this.aReferenceTable_1949.aClass69Array962[var4].method1280(var1.method1574());
 
                return this.method2129((byte)70, var5, var4);
             } else {
@@ -254,7 +242,7 @@ final class CacheIndex {
             byte[] var7 = NPC.method1985(this.anObjectArrayArray1952[archive][file], false);
             if(this.aBoolean1946) {
                this.anObjectArrayArray1952[archive][file] = null;
-               if(this.aClass62_1949.archiveLengths[archive] == 1) {
+               if(this.aReferenceTable_1949.archiveLengths[archive] == 1) {
                   this.anObjectArrayArray1952[archive] = null;
                }
             }
@@ -272,8 +260,8 @@ final class CacheIndex {
       try {
          if(this.method2122()) {
             var2 = var2.method1534();
-            int var3 = this.aClass62_1949.aClass69_949.method1280(var2.method1574());
-            return this.method2117(-104, var3);
+            int var3 = this.aReferenceTable_1949.aClass69_949.method1280(var2.method1574());
+            return this.method2117(var3);
          } else {
             return false;
          }
@@ -318,7 +306,7 @@ final class CacheIndex {
       try {
 
          if(this.method2122()) {
-            if(archiveId >= 0 && this.aClass62_1949.archiveLengths.length > archiveId && this.aClass62_1949.archiveLengths[archiveId] != 0) {
+            if(archiveId >= 0 && this.aReferenceTable_1949.archiveLengths.length > archiveId && this.aReferenceTable_1949.archiveLengths[archiveId] != 0) {
                return true;
             } else if(Class134.aBoolean1765) {
                throw new IllegalArgumentException(Integer.toString(archiveId));
@@ -349,10 +337,10 @@ final class CacheIndex {
          } else if(this.files[archive] == null) {
             return false;
          } else {
-            int[] var5 = this.aClass62_1949.validFileIds[archive];
-            int var4 = this.aClass62_1949.archiveFileLengths[archive];
+            int[] var5 = this.aReferenceTable_1949.validFileIds[archive];
+            int var4 = this.aReferenceTable_1949.archiveFileLengths[archive];
             if(this.anObjectArrayArray1952[archive] == null) {
-               this.anObjectArrayArray1952[archive] = new Object[this.aClass62_1949.archiveLengths[archive]];
+               this.anObjectArrayArray1952[archive] = new Object[this.aReferenceTable_1949.archiveLengths[archive]];
             }
 
             boolean var7 = true;
@@ -384,9 +372,9 @@ final class CacheIndex {
 
                byte[] var23;
                try {
-                  var23 = Class3_Sub28_Sub13.method623((byte) -125, var21);
+                  var23 = Class3_Sub28_Sub13.decodeContainer(var21);
                } catch (Throwable var19) {
-                  throw Class44.clientError(var19, "T3 - " + (xteaKeys != null) + "," + archive + "," + Objects.requireNonNull(var21).length + "," + Class38.method1026(var21, var21.length) + "," + Class38.method1026(var21, var21.length - 2) + "," + this.aClass62_1949.archiveCRCs[archive] + "," + this.aClass62_1949.anInt964);
+                  throw Class44.clientError(var19, "T3 - " + (xteaKeys != null) + "," + archive + "," + Objects.requireNonNull(var21).length + "," + Class38.crc32(var21, var21.length) + "," + Class38.crc32(var21, var21.length - 2) + "," + this.aReferenceTable_1949.archiveCRCs[archive] + "," + this.aReferenceTable_1949.crc);
                }
 
                if (this.aBoolean1945) {
@@ -499,7 +487,7 @@ final class CacheIndex {
             return false;
          } else if(this.method2122()) {
             var1 = var1.method1534();
-            int var3 = this.aClass62_1949.aClass69_949.method1280(var1.method1574());
+            int var3 = this.aReferenceTable_1949.aClass69_949.method1280(var1.method1574());
             return var3 >= 0;
          } else {
             return false;
@@ -521,7 +509,7 @@ final class CacheIndex {
 
             int var4;
             for(var4 = 0; var4 < this.files.length; ++var4) {
-               if(0 < this.aClass62_1949.archiveFileLengths[var4]) {
+               if(0 < this.aReferenceTable_1949.archiveFileLengths[var4]) {
                   var2 += 100;
                   var3 += this.method2114(var4);
                }
@@ -562,11 +550,11 @@ final class CacheIndex {
       try {
          if(!this.method2122()) {
             return null;
-         } else if(this.aClass62_1949.archiveLengths.length == 1) {
+         } else if(this.aReferenceTable_1949.archiveLengths.length == 1) {
             return this.getFile(0, var1);
          } else if(!this.isValidArchive(var1)) {
             return null;
-         } else if(this.aClass62_1949.archiveLengths[var1] == 1) {
+         } else if(this.aReferenceTable_1949.archiveLengths[var1] == 1) {
             return this.getFile(var1, 0);
          } else {
             throw new RuntimeException();
@@ -579,7 +567,7 @@ final class CacheIndex {
    private boolean method2139(int archive, int file) {
       try {
          if(this.method2122()) {
-            if(0 <= archive && file >= 0 && archive < this.aClass62_1949.archiveLengths.length && this.aClass62_1949.archiveLengths[archive] > file) {
+            if(0 <= archive && file >= 0 && archive < this.aReferenceTable_1949.archiveLengths.length && this.aReferenceTable_1949.archiveLengths[archive] > file) {
                return true;
             } else if(Class134.aBoolean1765) {
                throw new IllegalArgumentException(archive + "," + file);
@@ -621,9 +609,9 @@ final class CacheIndex {
       try {
 
          if(this.isValidArchive(archiveId)) {
-            int[] var3 = this.aClass62_1949.validFileIds[archiveId];
+            int[] var3 = this.aReferenceTable_1949.validFileIds[archiveId];
             if(null == var3) {
-               var3 = new int[this.aClass62_1949.archiveFileLengths[archiveId]];
+               var3 = new int[this.aReferenceTable_1949.archiveFileLengths[archiveId]];
 
                for(int var4 = 0; var3.length > var4; var3[var4] = var4++) {
                }
@@ -655,7 +643,7 @@ final class CacheIndex {
                this.method2122();
             }
 
-            return this.aClass62_1949.archiveLengths[archiveId];
+            return this.aReferenceTable_1949.archiveLengths[archiveId];
          } else {
             return 0;
          }
@@ -684,10 +672,10 @@ final class CacheIndex {
       try {
          if(!this.method2122()) {
             return false;
-         } else if(this.aClass62_1949.archiveLengths.length == 1) {
+         } else if(this.aReferenceTable_1949.archiveLengths.length == 1) {
             return this.method2129((byte)86, archiveId, 0);
          } else if(this.isValidArchive(archiveId)) {
-            if(1 == this.aClass62_1949.archiveLengths[archiveId]) {
+            if(1 == this.aReferenceTable_1949.archiveLengths[archiveId]) {
                return this.method2129((byte)109, 0, archiveId);
             } else {
                throw new RuntimeException();

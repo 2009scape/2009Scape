@@ -196,13 +196,13 @@ final class KeyboardListener implements KeyListener, FocusListener {
       try {
           int var1 = Class102.player.anInt2819 + Class3_Sub13_Sub18.anInt3216;
           int var2 = Class102.player.anInt2829 - -InputStream_Sub1.anInt42;
-          if(-var1 + Class3_Sub13_Sub13.anInt3155 < -500 || -var1 + Class3_Sub13_Sub13.anInt3155 > 500 || Class62.anInt942 + -var2 < -500 || -var2 + Class62.anInt942 > 500) {
+          if(-var1 + Class3_Sub13_Sub13.anInt3155 < -500 || -var1 + Class3_Sub13_Sub13.anInt3155 > 500 || ReferenceTable.anInt942 + -var2 < -500 || -var2 + ReferenceTable.anInt942 > 500) {
              Class3_Sub13_Sub13.anInt3155 = var1;
-             Class62.anInt942 = var2;
+             ReferenceTable.anInt942 = var2;
           }
 
-          if(var2 != Class62.anInt942) {
-             Class62.anInt942 += (-Class62.anInt942 + var2) / 16;
+          if(var2 != ReferenceTable.anInt942) {
+             ReferenceTable.anInt942 += (-ReferenceTable.anInt942 + var2) / 16;
           }
 
           if(var1 != Class3_Sub13_Sub13.anInt3155) {

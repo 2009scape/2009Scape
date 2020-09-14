@@ -291,17 +291,17 @@ final class Class49 {
       }
    }
 
-   final void method1128(byte[] var1, RSByteBuffer var2) {
+   final void method1128(byte[] out, RSByteBuffer buffer) {
       try {
 
-         if(31 == var2.buffer[var2.index] && var2.buffer[var2.index + 1] == -117) {
+         if(buffer.buffer[buffer.index] == 31 && buffer.buffer[buffer.index + 1] == -117) {
             if(this.anInflater813 == null) {
                this.anInflater813 = new Inflater(true);
             }
 
             try {
-               this.anInflater813.setInput(var2.buffer, var2.index + 10, -8 - (10 + var2.index) + var2.buffer.length);
-               this.anInflater813.inflate(var1);
+               this.anInflater813.setInput(buffer.buffer, buffer.index + 10, -8 - (10 + buffer.index) + buffer.buffer.length);
+               this.anInflater813.inflate(out);
             } catch (Exception var5) {
                this.anInflater813.reset();
                throw new RuntimeException("Invalid GZIP compressed data!");
@@ -313,7 +313,7 @@ final class Class49 {
          }
       } catch (RuntimeException var6) {
 //    	  var6.printStackTrace();
-         throw Class44.clientError(var6, "ha.D(" + (var1 != null?"{...}":"null") + ',' + (var2 != null?"{...}":"null") + ',' + false + ')');
+         throw Class44.clientError(var6, "ha.D(" + (out != null?"{...}":"null") + ',' + (buffer != null?"{...}":"null") + ',' + false + ')');
       }
    }
 

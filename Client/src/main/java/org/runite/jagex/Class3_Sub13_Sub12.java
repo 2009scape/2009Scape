@@ -4,7 +4,7 @@ import java.util.zip.CRC32;
 
 final class Class3_Sub13_Sub12 extends Class3_Sub13 {
 
-   static CRC32 aCRC32_3143 = new CRC32();
+   static CRC32 CRC32 = new CRC32();
    static RSString aClass94_3145 = RSString.createRSString(")1 ");
 
 
@@ -84,7 +84,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
          }
 
          Class3_Sub28_Sub11.method603(var4, 13987, var3, var1, false);
-         Class62.method1224(var1, var4, var3);
+         ReferenceTable.method1224(var1, var4, var3);
       } catch (RuntimeException var5) {
          throw Class44.clientError(var5, "fn.Q(" + 14 + ',' + (var1 != null?"{...}":"null") + ')');
       }
@@ -121,7 +121,7 @@ final class Class3_Sub13_Sub12 extends Class3_Sub13 {
    public static void method227(boolean var0) {
       try {
          aClass94_3145 = null;
-         aCRC32_3143 = null;
+         CRC32 = null;
       } catch (RuntimeException var2) {
          throw Class44.clientError(var2, "fn.O(" + var0 + ')');
       }

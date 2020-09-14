@@ -99,19 +99,15 @@ final class Class99 {
       }
    }
 
-   static int method1599(int var0, int var1, byte[] var2, byte var3) {
-      try {
-         int var4 = -1;
+   static int crc32(int offset, int end, byte[] data) {
+      int hash = -1;
 
-         for(int var6 = var0; var1 > var6; ++var6) {
-            var4 = var4 >>> 8 ^ Class36.anIntArray634[255 & (var4 ^ var2[var6])];
-         }
-
-         var4 = ~var4;
-         return var4;
-      } catch (RuntimeException var7) {
-         throw Class44.clientError(var7, "nf.A(" + var0 + ',' + var1 + ',' + (var2 != null?"{...}":"null") + ',' + var3 + ')');
+      for(int i = offset; end > i; ++i) {
+         hash = hash >>> 8 ^ Class36.anIntArray634[(hash ^ data[i]) & 0xff];
       }
+
+      hash = ~hash;
+      return hash;
    }
 
 }

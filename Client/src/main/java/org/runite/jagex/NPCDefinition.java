@@ -515,7 +515,7 @@ final class NPCDefinition {
             if((!var0 || var6.aBoolean807) && var6.anInt791 == -1 && -1 == var6.anInt762 && var6.anInt800 == 0 && var6.name.method1534().indexOf(var1, 116) != -1) {
                if(var4 >= 250) {
                   Class99.aShortArray1398 = null;
-                  Class62.anInt952 = -1;
+                  ReferenceTable.anInt952 = -1;
                   return;
                }
 
@@ -533,10 +533,10 @@ final class NPCDefinition {
 
          Class99.aShortArray1398 = var3;
          Class140_Sub4.anInt2756 = 0;
-         Class62.anInt952 = var4;
-         RSString[] var10 = new RSString[Class62.anInt952];
+         ReferenceTable.anInt952 = var4;
+         RSString[] var10 = new RSString[ReferenceTable.anInt952];
 
-         for(int var11 = 0; Class62.anInt952 > var11; ++var11) {
+         for(int var11 = 0; ReferenceTable.anInt952 > var11; ++var11) {
             var10[var11] = Class38.getItemDefinition(var3[var11], (byte)112).name;
          }
 

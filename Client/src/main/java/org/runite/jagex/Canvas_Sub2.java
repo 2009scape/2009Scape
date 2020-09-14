@@ -22,7 +22,7 @@ final class Canvas_Sub2 extends Canvas {
    static boolean loadInterface(int archive) {
       try {
          if(!Class130.aBooleanArray1703[archive]) {
-            if(Class3_Sub13_Sub29.aClass153_3361.method2117(-99, archive)) {
+            if(Class3_Sub13_Sub29.aClass153_3361.method2117(archive)) {
                int fileLength = Class3_Sub13_Sub29.aClass153_3361.getFileAmount(archive, (byte)94);
                if(0 == fileLength) {
                   Class130.aBooleanArray1703[archive] = true;

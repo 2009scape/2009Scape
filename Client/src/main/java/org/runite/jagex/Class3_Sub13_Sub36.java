@@ -50,7 +50,7 @@ final class Class3_Sub13_Sub36 extends Class3_Sub13 {
                var6 = 128 + Class166.anIntArray2073[4];
             }
 
-            Class140_Sub2.method1952(Class3_Sub13_Sub13.anInt3155, var1, Class121.method1736(WorldListCountry.localPlane, 1, Class102.player.anInt2819, Class102.player.anInt2829) + -50, Client.ZOOM - -(var6 * 3), var7, Class62.anInt942, var6);
+            Class140_Sub2.method1952(Class3_Sub13_Sub13.anInt3155, var1, Class121.method1736(WorldListCountry.localPlane, 1, Class102.player.anInt2819, Class102.player.anInt2829) + -50, Client.ZOOM - -(var6 * 3), var7, ReferenceTable.anInt942, var6);
          }
 
          var7 = Class7.anInt2162;

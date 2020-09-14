@@ -326,10 +326,10 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
    private void method37() {
       try {
          long var2 = Class5.method830((byte)-55);
-         long var4 = Class163_Sub1.aLongArray2986[Class62.anInt950];
+         long var4 = Class163_Sub1.aLongArray2986[ReferenceTable.anInt950];
 
-         Class163_Sub1.aLongArray2986[Class62.anInt950] = var2;
-         Class62.anInt950 = 31 & Class62.anInt950 + 1;
+         Class163_Sub1.aLongArray2986[ReferenceTable.anInt950] = var2;
+         ReferenceTable.anInt950 = 31 & ReferenceTable.anInt950 + 1;
          if(var4 != 0 && var2 > var4) {
             int var6 = (int)(var2 + -var4);
             AnimationDefinition.anInt1862 = (32000 + (var6 >> 1)) / var6;

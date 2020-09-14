@@ -1,7 +1,6 @@
 package org.runite.jagex;
 import java.awt.Component;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Objects;
@@ -2029,11 +2028,11 @@ final class ItemDefinition {
 																		RSString class94_22 = stringsStack[--sStackCounter];
 																		boolean flag4 = 1 == intsStack[--iStackCounter];
 																		Class3_Sub28_Sub3.method541(flag4, class94_22);
-																		intsStack[iStackCounter++] = Class62.anInt952;
+																		intsStack[iStackCounter++] = ReferenceTable.anInt952;
 																		continue;
 																	}
 																	if (5072 == opcode) {
-																		if (Class99.aShortArray1398 == null || Class62.anInt952 <= Class140_Sub4.anInt2756)
+																		if (Class99.aShortArray1398 == null || ReferenceTable.anInt952 <= Class140_Sub4.anInt2756)
 																			intsStack[iStackCounter++] = -1;
 																		else
 																			intsStack[iStackCounter++] = Class69.bitwiseAnd(Class99.aShortArray1398[Class140_Sub4.anInt2756++], 65535);
@@ -2417,7 +2416,7 @@ final class ItemDefinition {
 																	if (5424 == opcode) {
 																		iStackCounter -= 11;
 																		Class3_Sub28_Sub6.anInt3600 = intsStack[iStackCounter];
-																		Class62.anInt963 = intsStack[iStackCounter - -1];
+																		ReferenceTable.anInt963 = intsStack[iStackCounter - -1];
 																		MouseListeningClass.anInt1926 = intsStack[iStackCounter + 2];
 																		Class136.anInt1771 = intsStack[3 + iStackCounter];
 																		WorldListCountry.archiveID = intsStack[4 + iStackCounter];
@@ -3230,11 +3229,11 @@ final class ItemDefinition {
 														RSString class94_28 = stringsStack[--sStackCounter];
 														int j62 = intsStack[--iStackCounter];
 														NPCDefinition.method1480(j62 == 1, class94_28);
-														intsStack[iStackCounter++] = Class62.anInt952;
+														intsStack[iStackCounter++] = ReferenceTable.anInt952;
 														continue;
 													}
 													if (opcode == 4211) {
-														if (null == Class99.aShortArray1398 || Class140_Sub4.anInt2756 >= Class62.anInt952)
+														if (null == Class99.aShortArray1398 || Class140_Sub4.anInt2756 >= ReferenceTable.anInt952)
 															intsStack[iStackCounter++] = -1;
 														else
 															intsStack[iStackCounter++] = Class69.bitwiseAnd(Class99.aShortArray1398[Class140_Sub4.anInt2756++], 65535);

@@ -14,11 +14,12 @@ import core.game.system.SystemLogger;
 
 /**
  * A cache reader.
+ *
  * @author Emperor
  * @author Dragonkk
  */
 public final class Cache {
-	
+
 	/**
 	 * The cache file manager.
 	 */
@@ -42,6 +43,7 @@ public final class Cache {
 
 	/**
 	 * Initialize the cache reader.
+	 *
 	 * @param path The cache path.x
 	 * @throws Throwable When an exception occurs.
 	 */
@@ -56,7 +58,8 @@ public final class Cache {
 		for (int i = 0; i < length; i++) {
 			File f = new File(path + "/main_file_cache.idx" + i);
 			if (f.exists() && f.length() > 0) {
-				cacheFileManagers[i] = new CacheFileManager(new CacheFile(i, new RandomAccessFile(f, "r"), dataFile, 1000000, cacheFileBuffer), true);
+				CacheFile cacheFile = new CacheFile(i, new RandomAccessFile(f, "r"), dataFile, 1000000, cacheFileBuffer);
+				cacheFileManagers[i] = new CacheFileManager(cacheFile, true);
 				if (cacheFileManagers[i].getInformation() == null) {
 					System.out.println("Error loading cache index " + i + ": no information.");
 					cacheFileManagers[i] = null;
@@ -80,9 +83,10 @@ public final class Cache {
 
 	/**
 	 * Gets the archive buffer for the grab requests.
-	 * @param index The index id.
-	 * @param archive The archive id.
-	 * @param priority The priority.
+	 *
+	 * @param index           The index id.
+	 * @param archive         The archive id.
+	 * @param priority        The priority.
 	 * @param encryptionValue The current encryption value.
 	 * @return The byte buffer.
 	 */
@@ -99,6 +103,9 @@ public final class Cache {
 			settings |= 0x80;
 		}
 		int realLength = compression != 0 ? length + 4 : length;
+
+		// TODO There are two archives that lack two bytes at the end (The version, most likely). This causes the client CRC to be miscalculated. To combat this, we simply send two more bytes if the length seems to be off.
+		realLength += (index != 255 && compression != 0 && data.length - length == 9) ? 2 : 0;
 		ByteBuffer buffer = ByteBuffer.allocate((realLength + 5) + (realLength / 512) + 10);
 		buffer.put((byte) index);
 		buffer.putShort((short) archive);
@@ -108,7 +115,10 @@ public final class Cache {
 			if (buffer.position() % 512 == 0) {
 				buffer.put((byte) 255);
 			}
-			buffer.put(data[i]);
+			if (data.length > i)
+				buffer.put(data[i]);
+			else
+				buffer.put((byte) 0);
 		}
 		if (encryptionValue != 0) {
 			for (int i = 0; i < buffer.position(); i++) {
@@ -121,6 +131,7 @@ public final class Cache {
 
 	/**
 	 * Generate the reference data for the cache files.
+	 *
 	 * @return The reference data byte array.
 	 */
 	public static final byte[] generateReferenceData() {
@@ -139,6 +150,7 @@ public final class Cache {
 
 	/**
 	 * Get the cache file managers.
+	 *
 	 * @return The cache file managers.
 	 */
 	public static final CacheFileManager[] getIndexes() {
@@ -147,6 +159,7 @@ public final class Cache {
 
 	/**
 	 * Get the container cache file informer.
+	 *
 	 * @return The container cache file informer.
 	 */
 	public static final CacheFile getReferenceFile() {
@@ -155,6 +168,7 @@ public final class Cache {
 
 	/**
 	 * Method used to return the component size of the interface.
+	 *
 	 * @param interfaceId the interface.
 	 * @return the value.
 	 */
@@ -164,6 +178,7 @@ public final class Cache {
 
 	/**
 	 * Method used to return the max size of the interface definitions.
+	 *
 	 * @return the size.
 	 */
 	public static final int getInterfaceDefinitionsSize() {
@@ -172,6 +187,7 @@ public final class Cache {
 
 	/**
 	 * Method used to return the {@link NPCDefinition} size.
+	 *
 	 * @return the size.
 	 */
 	public static final int getNPCDefinitionsSize() {
@@ -181,6 +197,7 @@ public final class Cache {
 
 	/**
 	 * Method used to return the {@link GraphicDefinition} size.
+	 *
 	 * @return the size.
 	 */
 	public static final int getGraphicDefinitionsSize() {
@@ -190,6 +207,7 @@ public final class Cache {
 
 	/**
 	 * Method used to return the {@link AnimationDefinition} size.
+	 *
 	 * @return the size.
 	 */
 	public static final int getAnimationDefinitionsSize() {
@@ -199,6 +217,7 @@ public final class Cache {
 
 	/**
 	 * Method used to return the {@link ObjectDefinition} size.
+	 *
 	 * @return the size.
 	 */
 	public static final int getObjectDefinitionsSize() {
@@ -208,6 +227,7 @@ public final class Cache {
 
 	/**
 	 * Method used to return the item definition size.
+	 *
 	 * @return the size.
 	 */
 	public static final int getItemDefinitionsSize() {

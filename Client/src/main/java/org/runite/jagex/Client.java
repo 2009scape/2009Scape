@@ -571,7 +571,7 @@ public final class Client extends GameShell {
 			Class68.method1274();
 			Class43.method1059((byte)-2);
 			Class151.method2093(1);
-			Class62.method1223(0);
+			ReferenceTable.method1223(0);
 			Class3_Sub28_Sub10.method588((byte)120);
 			Class143.method2063(0);
 			Class74.method1333();
@@ -592,7 +592,6 @@ public final class Client extends GameShell {
 			Class79.method1388(true);
 			Class29.method973((byte)62);
 			Class3_Sub28_Sub12.method613(119);
-			Class3_Sub28_Sub13.method624(-1);
 			Class3_Sub28_Sub4.method547(-2951);
 			Class7.method833((byte)126);
 			Class3_Sub28_Sub1.method528(-1667);
@@ -1492,10 +1491,10 @@ public final class Client extends GameShell {
 								inter.anInt213 = Class36.anInt641;
 							}
 
-							if(inter.anObjectArray174 != null && Class62.anInt944 > inter.anInt255) {
-								if(inter.anIntArray175 != null && Class62.anInt944 - inter.anInt255 <= 32) {
+							if(inter.anObjectArray174 != null && ReferenceTable.anInt944 > inter.anInt255) {
+								if(inter.anIntArray175 != null && ReferenceTable.anInt944 - inter.anInt255 <= 32) {
 									label474:
-										for(var19 = inter.anInt255; var19 < Class62.anInt944; ++var19) {
+										for(var19 = inter.anInt255; var19 < ReferenceTable.anInt944; ++var19) {
 											var29 = Class3_Sub28_Sub4.anIntArray3565[var19 & 31];
 
 											for(var21 = 0; var21 < inter.anIntArray175.length; ++var21) {
@@ -1515,7 +1514,7 @@ public final class Client extends GameShell {
 									Class110.aClass61_1471.method1215(var30);
 								}
 
-								inter.anInt255 = Class62.anInt944;
+								inter.anInt255 = ReferenceTable.anInt944;
 							}
 
 							if(inter.anObjectArray158 != null && Class49.anInt815 > inter.anInt311) {
@@ -1800,30 +1799,30 @@ public final class Client extends GameShell {
 						Class117.method1719(5);
 						Class96.anInt1354 = 70;
 					} else if (Class96.anInt1354 == 70) {
-						Class164.aClass153_2052.method2113((byte) 34);
+						Class164.aClass153_2052.method2113();
 						byte var7 = 0;
 						var2 = var7 + Class164.aClass153_2052.method2136((byte) -124);
-						Class168.aClass153_2097.method2113((byte) 120);
+						Class168.aClass153_2097.method2113();
 						var2 += Class168.aClass153_2097.method2136((byte) -128);
-						Class132.libIndex.method2113((byte) 126);
+						Class132.libIndex.method2113();
 						var2 += Class132.libIndex.method2136((byte) -124);
-						NPC.aClass153_3993.method2113((byte) 70);
+						NPC.aClass153_3993.method2113();
 						var2 += NPC.aClass153_3993.method2136((byte) -123);
-						Class101.aClass153_1428.method2113((byte) 32);
+						Class101.aClass153_1428.method2113();
 						var2 += Class101.aClass153_1428.method2136((byte) -127);
-						Class100.aClass153_1410.method2113((byte) 48);
+						Class100.aClass153_1410.method2113();
 						var2 += Class100.aClass153_1410.method2136((byte) -128);
-						Class3_Sub13_Sub36.aClass153_3429.method2113((byte) 43);
+						Class3_Sub13_Sub36.aClass153_3429.method2113();
 						var2 += Class3_Sub13_Sub36.aClass153_3429.method2136((byte) -122);
-						Class70.aClass153_1058.method2113((byte) 23);
+						Class70.aClass153_1058.method2113();
 						var2 += Class70.aClass153_1058.method2136((byte) -122);
-						Class3_Sub22.aClass153_2528.method2113((byte) 94);
+						Class3_Sub22.aClass153_2528.method2113();
 						var2 += Class3_Sub22.aClass153_2528.method2136((byte) -128);
-						Class140_Sub7.aClass153_2939.method2113((byte) 91);
+						Class140_Sub7.aClass153_2939.method2113();
 						var2 += Class140_Sub7.aClass153_2939.method2136((byte) -126);
-						Class3_Sub4.aClass153_2258.method2113((byte) 102);
+						Class3_Sub4.aClass153_2258.method2113();
 						var2 += Class3_Sub4.aClass153_2258.method2136((byte) -128);
-						Class132.aClass153_1735.method2113((byte) 126);
+						Class132.aClass153_1735.method2113();
 						var2 += Class132.aClass153_1735.method2136((byte) -124);
 						if (var2 >= 1100) {
 							Class132.method1799((byte) 96, Class164.aClass153_2052);
@@ -1880,9 +1879,9 @@ public final class Client extends GameShell {
 							Class96.anInt1354 = 120;
 						} else if (Class96.anInt1354 != 120) {
 							if (Class96.anInt1354 == 130) {
-								if (Class140_Sub3.aClass153_2727.method2113((byte) 20)) {
-									if (Class3_Sub1.interfaceScriptsIndex.method2113((byte) 46)) {
-										if (CacheIndex.aClass153_1948.method2113((byte) 89)) {
+								if (Class140_Sub3.aClass153_2727.method2113()) {
+									if (Class3_Sub1.interfaceScriptsIndex.method2113()) {
+										if (CacheIndex.aClass153_1948.method2113()) {
 											if (Class133.aClass153_1751.method2127(Class95.aClass94_1342)) {
 												Class75_Sub4.method1353(Class102.aClass3_Sub28_Sub16_Sub2Array2140, Class133.aClass153_1751);
 												LoadingStageNumber = 95;
@@ -1960,7 +1959,7 @@ public final class Client extends GameShell {
 							Class3_Sub17.aClass94_2464 = RenderAnimationDefinition.method903(new RSString[]{TextCore.LoadingWordPack, InputStream_Sub1.aClass94_37}, (byte) -98);
 							LoadingStageNumber = 80;
 						}
-					} else if (Class97.aClass153_1376.method2113((byte) 58)) {
+					} else if (Class97.aClass153_1376.method2113()) {
 						Class102 var8 = new Class102(Class3_Sub13_Sub28.aClass153_3352, Class97.aClass153_1376, Class140_Sub6.spritesCacheIndex, !Class25.aBoolean488);
 						Class51.method1140(var8);
 						if (Class3_Sub28_Sub10.anInt3625 == 1) {
@@ -2011,7 +2010,7 @@ public final class Client extends GameShell {
 	            Class3_Sub29.method728();
 	            Class58.method1194();
 	            Class32.method996();
-	            Class62.method1225();
+	            ReferenceTable.method1225();
 	            if(HDToolKit.highDetail) {
 	               Class31.method990();
 	            }

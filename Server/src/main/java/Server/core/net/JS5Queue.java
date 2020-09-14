@@ -52,7 +52,7 @@ public final class JS5Queue {
 		try {
 			lock.tryLock(1000L, TimeUnit.MILLISECONDS);
 		} catch (Exception e){
-			System.out.println(e);
+			e.printStackTrace();
 			lock.unlock();
 			return;
 		}

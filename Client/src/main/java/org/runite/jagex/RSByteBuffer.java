@@ -968,7 +968,7 @@ class RSByteBuffer extends Class3 {
 
 	final void method793(int var2) {
 		try {
-			int var3 = Class99.method1599(var2, this.index, this.buffer, (byte)-49);
+			int var3 = Class99.crc32(var2, this.index, this.buffer);
 			this.putInt(-120, var3);
         } catch (RuntimeException var4) {
 			throw Class44.clientError(var4, "wa.QB(" + (byte) 86 + ',' + var2 + ')');
