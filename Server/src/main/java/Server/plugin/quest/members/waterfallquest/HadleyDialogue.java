@@ -51,7 +51,7 @@ public class HadleyDialogue extends DialoguePlugin {
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(302, FacialExpression.HALF_GUILTY, "Surely pretty is an understatement kind Sir. Beautiful,", "amazing or possibly life-changing would be more suitable", "wording. Have you seen the Baxtorian waterfall?", "Named after the elf king who was buried underneath.");
+			interpreter.sendDialogues(302, FacialExpression.HALF_GUILTY, "Surely pretty is an understatement kind " + (player.getAppearance().isMale() ? "Sir" : "Ma'am") + ".", "Beautiful, amazing or possibly life-changing would be more suitable", "wording. Have you seen the Baxtorian waterfall?", "Named after the elf king who was buried underneath.");
 			stage = 4;
 			break;
 		case 4:

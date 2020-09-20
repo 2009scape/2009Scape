@@ -323,7 +323,7 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 		private static final String[] WORDS = new String[] { "Carlem", "Aber", "Camerinthum", "Purchai", "Gabindo" };
 
 		/**
-		 * Represents the incantationc ounter.
+		 * Represents the incantation counter.
 		 */
 		private int counter = 0;
 

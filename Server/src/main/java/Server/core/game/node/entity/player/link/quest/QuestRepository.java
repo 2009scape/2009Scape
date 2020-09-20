@@ -33,7 +33,7 @@ public final class QuestRepository implements SavingModule {
     private final Player player;
 
     /**
-     * The current syncronized accumulated quest points.
+     * The current synchronized accumulated quest points.
      */
     private int points;
 
@@ -158,7 +158,7 @@ public final class QuestRepository implements SavingModule {
     public void dockPoints(int value) { points -= value; }
 
     /**
-     * Syncronizes the quest points.
+     * Synchronizes the quest points.
      */
     public void syncPoints() {
         int points = 0;

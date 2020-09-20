@@ -79,7 +79,7 @@ public class RuneMysteries extends Quest {
 					"<str>agreed to help him with his research into rune stones.",
 					"<str>I took the research package to Varrock and delivered it.",
 					BLUE + "I should speak to " + RED + "Aubury " + BLUE + "again when he has finished",
-					BLUE + "examining the " + RED + "research package " + BLUE + " I have delivered to him.");
+					BLUE + "examining the " + RED + "Research Package " + BLUE + " I have delivered to him.");
 				break;
 			case 50:
 				writeJournal(player,

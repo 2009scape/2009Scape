@@ -80,13 +80,13 @@ public final class GhostDiscipleDialogue extends DialoguePlugin {
 			stage++;
 			break;
 		case 1:
-			options("What is the Ectofunuts?", "Where do I get ectoplasm from?", "How do I grind bones?", "How do I receive Ectotokens?", "Thanks for your time.");
+			options("What is the Ectofuntus?", "Where do I get ectoplasm from?", "How do I grind bones?", "How do I receive Ectotokens?", "Thanks for your time.");
 			stage++;
 			break;
 		case 2:
 			switch (buttonId) {
 			case 1:
-				player("What is the Ectofunuts?");
+				player("What is the Ectofuntus?");
 				stage = 10;
 				break;
 			case 2:

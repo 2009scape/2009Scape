@@ -190,7 +190,7 @@ public final class SlayerMasterDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 431:
-				npc("To claim the different Varrock Armour, speak to Vannaka", "Rat Burgis, and myself.");
+				npc("To claim the different Varrock Armour, speak to Vannaka", "Rat Burgiss, and myself.");
 				stage = 41;
 				break;
 			case 50:
@@ -289,7 +289,7 @@ public final class SlayerMasterDialogue extends DialoguePlugin {
 			stage = 102;
 			break;
 		case 102:
-			interpreter.sendDialogues(master.getNpc(), getExpression(master), "I suppose I'll have to educate you, then. A Slayer is", "someone who is trained to fight specific creatures. They", "know those creatures' every weakenss and strength. As", "you can guess, it makes killing those creatures a lot");
+			interpreter.sendDialogues(master.getNpc(), getExpression(master), "I suppose I'll have to educate you, then. A Slayer is", "someone who is trained to fight specific creatures. They", "know those creatures' every weakness and strength. As", "you can guess, it makes killing those creatures a lot");
 			stage = 103;
 			break;
 		case 103:
@@ -397,7 +397,7 @@ public final class SlayerMasterDialogue extends DialoguePlugin {
 			stage++;
 			break;
 		case 8002:
-			npc("Sounds like you need a blessed axe. No one really", "makes them, though these days.");
+			npc("Sounds like you need a blessed axe. No one really", "makes them though, these days.");
 			stage++;
 			break;
 		case 8003:
@@ -418,7 +418,7 @@ public final class SlayerMasterDialogue extends DialoguePlugin {
 				stage = 8009;
 				break;
 			}
-			npc("I can make an axe for you now, if you wish.", "Remember, it will be no use for normal wooducutting", "after I have added the silver edge.");
+			npc("I can make an axe for you now, if you wish.", "Remember, it will be no use for normal woodcutting", "after I have added the silver edge.");
 			stage++;
 			break;
 		case 8007:

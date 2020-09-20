@@ -259,7 +259,7 @@ public final class AliceDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 7:
-				npc("Mysterious indeed, but in this case she actually looks", "preety normal.");
+				npc("Mysterious indeed, but in this case she actually looks", "pretty normal.");
 				stage++;
 				break;
 			case 8:
@@ -291,7 +291,7 @@ public final class AliceDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 3:
-				player("I Have obtained the amulet; I just haven't handed it", "over yet. So, it's looking good!");
+				player("I have obtained the amulet; I just haven't handed it", "over yet. So, it's looking good!");
 				stage++;
 				break;
 			case 4:

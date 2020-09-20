@@ -10,7 +10,7 @@ import core.game.world.map.Location;
 /**
  * Represents the worm brain npc.
  * @author 'Vexia
- * @versin 1.0
+ * @version 1.0
  */
 public final class WormbrainNPC extends AbstractNPC {
 

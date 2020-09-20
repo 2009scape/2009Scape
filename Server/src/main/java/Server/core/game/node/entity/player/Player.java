@@ -1040,7 +1040,7 @@ public class Player extends Entity {
 	}
 
 	/**
-	 * Checks if the player is artifical (AIPlayer).
+	 * Checks if the player is artificial (AIPlayer).
 	 * @return {@code True} if so.
 	 */
 	public boolean isArtificial() {
@@ -1187,7 +1187,7 @@ public class Player extends Entity {
 	}
 
 	/**
-	 * Gets the btreasureTrailManager.
+	 * Gets the treasureTrailManager.
 	 * @return the treasureTrailManager
 	 */
 	public TreasureTrailManager getTreasureTrailManager() {
@@ -1222,7 +1222,7 @@ public class Player extends Entity {
 	}
 
 	/**
-	 * Sets the balogoutPlugins.
+	 * Sets the logoutPlugins.
 	 * @param logoutPlugins the logoutPlugins to set.
 	 */
 	public void setLogoutPlugins(List<Plugin<Player>> logoutPlugins) {

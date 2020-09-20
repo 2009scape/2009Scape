@@ -292,18 +292,18 @@ public final class AvaDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 2:
-				npc("I can see now why Frenekstrain prefers to work with", "dead folk. It can't be more frustrating than working", "with you.");
+				npc("I can see now why Fenkenstrain prefers to work with", "dead folk. It can't be more frustrating than working", "with you.");
 				stage++;
 				break;
 			case 3:
 				end();
 				break;
 			case 4:
-				npc("Great stuff! with the Witch's influence within the", "magnet, the undead chicken can use this, I'm sure.");
+				npc("Great stuff! With the Witch's influence within the", "magnet, the undead chicken can use this, I'm sure.");
 				stage++;
 				break;
 			case 5:
-				npc("The plan is that the chicken will operate the magnet to", "attract bits of iron and steel, maybe even your own", "recently fired arrows. There are plenty of totally lost", "arrowheads lying about in the Fields of " + GameWorld.getSettings().getName() + ", I");
+				npc("The plan is that the chicken will operate the magnet to", "attract bits of iron and steel, maybe even your own", "recently fired arrows. There are plenty of totally lost", "arrowheads lying about in the fields of " + GameWorld.getSettings().getName() + ", I");
 				stage++;
 				break;
 			case 6:
@@ -311,7 +311,7 @@ public final class AvaDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 7:
-				npc("In addition, arrows which you fire should be able to be", "attracted back to your quiver by cunning avian.");
+				npc("In addition, arrows which you fire should be able to be", "attracted back to your quiver by the cunning avian.");
 				stage++;
 				break;
 			case 8:
@@ -331,7 +331,7 @@ public final class AvaDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 12:
-				npc("Now you know how those poor guards feel when you", "hide behind mushrooms and fences and attack them", "from afar! Anyway, I reckon you'll need to try a", "mithril or better axe on the trees. At least the trees axe");
+				npc("Now you know how those poor guards feel when you", "hide behind mushrooms and fences and attack them", "from afar! Anyway, I reckon you'll need to try a", "mithril or better axe on the trees. At least the trees are");
 				stage++;
 				break;
 			case 13:

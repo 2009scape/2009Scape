@@ -20,6 +20,7 @@ import core.tools.RandomFunction;
 
 /**
  * Represents the medlar the mad npc.
+ * TODO: Rename to "Melzar"
  * @author 'Vexia
  * @version 1.0
  */

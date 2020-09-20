@@ -35,7 +35,7 @@ public final class BonzoDialogue extends DialoguePlugin {
                 npc("Roll up, roll up! Enter the great Hemenster", "Fishing Contest! Only 5gp entrance fee!");
                 stage = 0;
             } else {
-                npc("Sorry, lad, but you need a fishing","rod to compete.");
+                npc("Sorry lad, but you need a fishing","rod to compete.");
                 stage = 100;
             }
         } else {
@@ -123,7 +123,7 @@ public final class BonzoDialogue extends DialoguePlugin {
                 stage++;
                 break;
             case 1003:
-                player.getDialogueInterpreter().sendDialogue("You are given the Hemenester fishing trophy!");
+                player.getDialogueInterpreter().sendDialogue("You are given the Hemenster fishing trophy!");
                 player.getInventory().add(FishingContest.FISHING_TROPHY);
                 player.getInventory().remove(FishingContest.RAW_GIANT_CARP);
                 player.getQuestRepository().setStage(QuestRepository.getQuests().get("Fishing Contest"),20);

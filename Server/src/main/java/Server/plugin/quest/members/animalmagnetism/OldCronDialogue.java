@@ -25,7 +25,7 @@ public final class OldCronDialogue extends DialoguePlugin {
 	private Quest quest;
 
 	/**
-	 * Constructs a new {@code OldCronDialogue} {@code Object}.
+	 * Constructs a new {@code OldCroneDialogue} {@code Object}.
 	 */
 	public OldCronDialogue() {
 		/**
@@ -34,7 +34,7 @@ public final class OldCronDialogue extends DialoguePlugin {
 	}
 
 	/**
-	 * Constructs a new {@code OldCronDialogue} {@code Object}.
+	 * Constructs a new {@code OldCroneDialogue} {@code Object}.
 	 * @param player the player.
 	 */
 	public OldCronDialogue(Player player) {

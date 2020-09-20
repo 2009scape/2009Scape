@@ -90,11 +90,11 @@ public final class WitchDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 3:
-				npc("I went to anger management classes, my lambkin; that's", "why I was treating you so kindly. It's either this way", "or talking or I'll go back to shoving children into ovens.");
+				npc("I went to anger management classes, my lambkin; that's", "why I was treating you so kindly. It's either this way", "of talking or I'll go back to shoving children into ovens.");
 				stage++;
 				break;
 			case 4:
-				npc("Just bring me 5 iron bars, though, and you've well on", "the way to never having to talk to me again.");
+				npc("Just bring me 5 iron bars, though, and you're well on", "the way to never having to talk to me again.");
 				stage++;
 				break;
 			case 5:
@@ -114,7 +114,7 @@ public final class WitchDialogue extends DialoguePlugin {
 					npc("Oh, but sugarpie, I need 5 iron bars, you don't have", "enough. Come back to me quickly with all 5 of them.");
 					stage++;
 				} else {
-					player("Toys? Snookums? What are you on about, you", "deranged old bar?");
+					player("Toys? Snookums? What are you on about, you", "deranged old bat?");
 					stage += 2;
 				}
 				break;

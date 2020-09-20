@@ -27,7 +27,7 @@ public class ProfessorOddensteinPlugin extends DialoguePlugin {
 	private static final Item OIL_CAN = new Item(277);
 
 	/**
-	 * Represents the pressure guage item.
+	 * Represents the pressure gauge item.
 	 */
 	private static final Item PRESSURE_GAUGE = new Item(271);
 
@@ -216,7 +216,7 @@ public class ProfessorOddensteinPlugin extends DialoguePlugin {
 				stage = 14;
 				break;
 			case 14:
-				interpreter.sendDialogues(npc, null, "My machine is broken, and the house germlins have", "run off with some vital bits.");
+				interpreter.sendDialogues(npc, null, "My machine is broken, and the house gremlins have", "run off with some vital bits.");
 				stage = 15;
 				break;
 			case 15:
@@ -228,7 +228,7 @@ public class ProfessorOddensteinPlugin extends DialoguePlugin {
 				stage = 17;
 				break;
 			case 17:
-				interpreter.sendDialogues(npc, null, "I'm missing the pressure guage and a rubber tube.", "They've also taken my oil can, which I'm going to need", "to get this thing started again.");
+				interpreter.sendDialogues(npc, null, "I'm missing the pressure gauge and a rubber tube.", "They've also taken my oil can, which I'm going to need", "to get this thing started again.");
 				stage = 18;
 				break;
 			case 18:

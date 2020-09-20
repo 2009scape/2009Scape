@@ -394,7 +394,7 @@ public final class AliceHusbandDialogue extends DialoguePlugin {
 				stage++;
 				break;
 			case 2:
-				player("They look preety pathetic, how hard can it be?");
+				player("They look pretty pathetic, how hard can it be?");
 				stage++;
 				break;
 			case 3:
