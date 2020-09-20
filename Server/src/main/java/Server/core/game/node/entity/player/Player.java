@@ -839,7 +839,7 @@ public class Player extends Entity {
 	}
 
 	/**
-	 * Checks if the containers have this item.
+	 * Checks if the player has this item with them or in their bank
 	 * @param item the item.
 	 * @return {@code True} if so.
 	 */

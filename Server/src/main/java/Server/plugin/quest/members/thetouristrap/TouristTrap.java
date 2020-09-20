@@ -2,6 +2,7 @@ package plugin.quest.members.thetouristrap;
 
 import core.game.component.Component;
 import core.game.container.impl.EquipmentContainer;
+import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
@@ -146,17 +147,21 @@ public final class TouristTrap extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (getStage(player)) {
 		case 0:
-			writeJournal(player,
+			line = writeJournal(player,
 				"<blue>I can start this quest by speaking to <red>Irena <blue>after I have",
 				"<blue>gone through the <red>Shantay Pass, South of Al-Kharid.",
-				"<blue>To complete this quest I need:",
-				(player.getSkills().getStaticLevel(Skills.FLETCHING) > 9 ? "<str>" : "<blue>") + "Level 10 Fletching",
-				(player.getSkills().getStaticLevel(Skills.SMITHING) > 19 ? "<str>" : "<blue>") + "Level 20 Smithing",
-				(hasRequirements(player) ? "<blue>I have all the <red>requirements<blue> to begin and complete this" : ""),
-				(hasRequirements(player) ? "<red>quest." : "")
+				"<blue>To complete this quest I need:"
 			);
+			line = writeJournal(player, line, getQuestRequirementsJournal(player));
+			if (hasRequirements(player)) {
+				writeJournal(player, line,
+					"<blue>I have all the <red>requirements<blue> to begin and complete this",
+					"<red>quest."
+				);
+			}
 			break;
 		case 10:
 		case 11:
@@ -375,8 +380,11 @@ public final class TouristTrap extends Quest {
 	}
 
 	@Override
-	public boolean hasRequirements(Player player) {
-		return player.getSkills().getStaticLevel(Skills.FLETCHING) > 9 && player.getSkills().getStaticLevel(Skills.SMITHING) > 19;
+	public QuestRequirement[] getQuestRequirements(Player player) {
+		return new QuestRequirement[]{
+			new QuestRequirement(Skills.FLETCHING, 10),
+			new QuestRequirement(Skills.SMITHING, 20),
+		};
 	}
 
 	@Override

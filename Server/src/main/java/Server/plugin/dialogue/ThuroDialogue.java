@@ -172,7 +172,7 @@ public final class ThuroDialogue extends DialoguePlugin {
 				stage = 1;
 				break;
 			case 1:
-				if (player.getInventory().contains(667, 1) || player.getEquipment().contains(667, 1) || player.getBank().contains(667, 1)) {
+				if (player.hasItem(BLURITE_SWORD)) {
 					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Thanks for all your help in getting it for me!");
 					stage = 9;
 				} else {

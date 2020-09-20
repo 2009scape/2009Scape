@@ -74,7 +74,8 @@ public final class JunglePotion extends Quest {
 					"",
 					"<str>I picked some fresh " + objective.getName() + " for Trufitus.",
 					"",
-					"<blue>I need to give the <red>" + objective.getName() + " <blue> to <red>Trufitus.");
+					"<blue>I need to give the <red>" + objective.getName() + " <blue> to <red>Trufitus."
+				);
 				return;
 			}
 			writeJournal(player,

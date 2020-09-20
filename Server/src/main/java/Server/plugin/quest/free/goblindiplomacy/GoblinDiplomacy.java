@@ -5,7 +5,6 @@ import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
-import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import core.plugin.PluginManager;
@@ -73,11 +72,11 @@ public class GoblinDiplomacy extends Quest {
 				BLUE + "There are no requirements for this quest.");
 			break;
 		case 10:
-			line = writeJournal(player,
-				"<str>I spoke to Generals Wartface and Bentnoze in the Goblin",
-				"<str>Village and found that the goblins were on the brink of civil",
-				"<str>war over the colour of their armour. I offered to help the",
-				"<str>generals by finding another colour that they both like."
+			line = writeJournal(player, true,
+				"I spoke to Generals Wartface and Bentnoze in the Goblin",
+				"Village and found that the goblins were on the brink of civil",
+				"war over the colour of their armour. I offered to help the",
+				"generals by finding another colour that they both like."
 			);
 			if (player.getInventory().containsItem(ORANGE_MAIL)) {
 				writeJournal(player, line,
@@ -92,14 +91,14 @@ public class GoblinDiplomacy extends Quest {
 			}
 			break;
 		case 20:
-			line = writeJournal(player,
-				"<str>I spoke to Generals Wartface and Bentnoze in the Goblin",
-				"<str>Village and found that the goblins were on the brink of civil",
-				"<str>war over the colour of their armour. I offered to help the",
-				"<str>generals by finding another colour that they both like.",
+			line = writeJournal(player, true,
+				"I spoke to Generals Wartface and Bentnoze in the Goblin",
+				"Village and found that the goblins were on the brink of civil",
+				"war over the colour of their armour. I offered to help the",
+				"generals by finding another colour that they both like.",
 				"",
-				"<str>I brought the goblins some orange goblin armour, but they",
-				"<str>didn't like it."
+				"I brought the goblins some orange goblin armour, but they",
+				"didn't like it."
 			);
 			if (player.getInventory().containsItem(BLUE_MAIL)) {
 				writeJournal(player, line,
@@ -114,17 +113,17 @@ public class GoblinDiplomacy extends Quest {
 			}
 			break;
 		case 30:
-			line = writeJournal(player,
-				"<str>I spoke to Generals Wartface and Bentnoze in the Goblin",
-				"<str>Village and found that the goblins were on the brink of civil",
-				"<str>war over the colour of their armour. I offered to help the",
-				"<str>generals by finding another colour that they both like.",
+			line = writeJournal(player, true,
+				"I spoke to Generals Wartface and Bentnoze in the Goblin",
+				"Village and found that the goblins were on the brink of civil",
+				"war over the colour of their armour. I offered to help the",
+				"generals by finding another colour that they both like.",
 				"",
-				"<str>I brought the goblins some orange goblin armour, but they",
-				"<str>didn't like it.",
+				"I brought the goblins some orange goblin armour, but they",
+				"didn't like it.",
 				"",
-				"<str>I brought the goblins some blue goblin armour, but they",
-				"<str>didn't like it."
+				"I brought the goblins some blue goblin armour, but they",
+				"didn't like it."
 			);
 			if (player.getInventory().containsItem(GOBLIN_MAIL)) {
 				writeJournal(player, line,

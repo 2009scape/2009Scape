@@ -25,6 +25,31 @@ public class RomeoJuliet extends Quest {
 		);
 	}
 
+	static String[][] JOURNAL_ENTRIES = new String[][]{
+		new String[]{
+			"I have agreed to find Juliet for Romeo and tell her how he",
+			"feels. For some reason he can't just do this himself."
+		},
+		new String[]{
+			"I found Juliet on the Western edge of Varrock, and told",
+			"her about Romeo. She gave me a message to take back."
+		},
+		new String[]{
+			"I delivered the message to Romeo, and he was sad to hear",
+			"that Juliet's father opposed their marriage. However, he",
+			"said that Father Lawrence might be able to overcome this."
+		},
+		new String[]{
+			"I found Father Lawrence and he suggested the use of a",
+			"potion to fool Juliet's father that she is dead so that",
+			"Romeo and Juliet can be together in peace."
+		},
+		new String[]{
+			"I went to the Apothecary regarding making this cadava",
+			"potion, and he told me to bring him some cadava berries."
+		}
+	};
+
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
@@ -36,58 +61,38 @@ public class RomeoJuliet extends Quest {
 				BLUE + "central square by the " + RED + "fountain.");
 			break;
 		case 10:
-			writeJournal(player,
-				"<str>I have agreed to find Juliet for Romeo and tell her how he",
-				"<str>feels. For some reason he can't just do this himself.",
+			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+			writeJournal(player, line,
 				BLUE + "All I need to do now is find " + RED + "Juliet.");
 			break;
 		case 20:
-			writeJournal(player,
-				"<str>I have agreed to find Juliet for Romeo and tell her how he",
-				"<str>feels. For some reason he can't just do this himself.",
-				"<str>I found Juliet on the Western edge of Varrock, and told",
-				"<str>her about Romeo. She gave me a message + take back",
+			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
+			writeJournal(player, line,
 				BLUE + "I should take the " + RED + "message " + BLUE + "from " + RED + "Juliet " + BLUE + "to " + RED + "Romeo.");
 			break;
 		case 30:
-			writeJournal(player,
-				"<str>I have agreed to find Juliet for Romeo and tell her how he",
-				"<str>feels. For some reason he can't just do this himself.",
-				"<str>I found Juliet on the Western edge of Varrock, and told",
-				"<str>her about Romeo. She gave me a message to take back",
-				"<str>I delivered the message to Romeo, and he was sad to hear",
-				"<str>that Juliet's father opposed their marriage. However, he",
-				"<str>said that Father Lawrence might be able to overcome this.",
+			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[2]);
+			writeJournal(player, line,
 				BLUE + "I should find " + RED + "Father Lawrence " + BLUE + "and see how we can help.");
 			break;
 		case 40:
-			writeJournal(player,
-				"<str>I have agreed to find Juliet for Romeo and tell her how he",
-				"<str>feels. For some reason he can't just do this himself.",
-				"<str>I found Juliet on the Western edge of Varrock, and told",
-				"<str>her about Romeo. She gave me a message to take back",
-				"<str>I delivered the message to Romeo, and he was sad to hear",
-				"<str>that Juliet's father opposed their marriage. However, he",
-				"<str>said that Father Lawrence might be able to overcome this.",
-				"<str>I found Father Lawrence and he suggested the use of a",
-				"<str>potion to fool Juliet's father that she is dead so that",
-				"<str>Romeo and Juliet can be together in peace.",
-				BLUE + "I need to find the " + RED + "Apothecary " + BLUE + "to make a " + RED + "cadava potion.");
+			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[2]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[3]);
+			writeJournal(player, line,
+				BLUE + "I need to find the " + RED + "Apothecary " + BLUE + "to make a " + RED + "cadava potion."
+			);
 			break;
 		case 50:
-			line = writeJournal(player,
-				"<str>I have agreed to find Juliet for Romeo and tell her how he",
-				"<str>feels. For some reason he can't just do this himself.",
-				"<str>I found Juliet on the Western edge of Varrock, and told",
-				"<str>her about Romeo. She gave me a message to take back",
-				"<str>I delivered the message to Romeo, and he was sad to hear",
-				"<str>that Juliet's father opposed their marriage. However, he",
-				"<str>said that Father Lawrence might be able to overcome this.",
-				"<str>I found Father Lawrence and he suggested the use of a",
-				"<str>potion to fool Juliet's father that she is dead so that",
-				"<str>Romeo and Juliet can be together in peace.",
-				"<str>I went to the Apothecary regarding making this cadava",
-				"<str>potion, and he told me to bring him some cadava berries");
+			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[2]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[3]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[4]);
 			if (!player.getInventory().contains(753, 1)) {
 				writeJournal(player, line,
 					BLUE + "I will have to find some " + RED + "Cadava berries" + BLUE + " somewhere!");
@@ -97,38 +102,28 @@ public class RomeoJuliet extends Quest {
 			}
 			break;
 		case 60:
-			writeJournal(player,
-				"<str>I have agreed to find Juliet for Romeo and tell her how he",
-				"<str>feels. For some reason he can't just do this himself.",
-				"<str>I found Juliet on the Western edge of Varrock, and told",
-				"<str>her about Romeo. She gave me a message to take back",
-				"<str>I delivered the message to Romeo, and he was sad to hear",
-				"<str>that Juliet's father opposed their marriage. However, he",
-				"<str>said that Father Lawrence might be able to overcome this.",
-				"<str>I found Father Lawrence and he suggested the use of a",
-				"<str>potion to fool Juliet's father that she is dead so that",
-				"<str>Romeo and Juliet can be together in peace.",
-				"<str>I went to the Apothecary regarding making this cadava",
-				"<str>potion, and he told me to bring him some cadava berries",
-				BLUE + "I should take this " + RED + "cadava potion " + BLUE + "to " + RED + "Juliet.");
+			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[2]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[3]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[4]);
+			writeJournal(player, line,
+				BLUE + "I should take this " + RED + "cadava potion " + BLUE + "to " + RED + "Juliet."
+			);
 			break;
 		case 70:
-			writeJournal(player,
-				"<str>I have agreed to find Juliet for Romeo and tell her how he",
-				"<str>feels. For some reason he can't just do this himself.",
-				"<str>I found Juliet on the Western edge of Varrock, and told",
-				"<str>her about Romeo. She gave me a message to take back",
-				"<str>I delivered the message to Romeo, and he was sad to hear",
-				"<str>that Juliet's father opposed their marriage. However, he",
-				"<str>said that Father Lawrence might be able to overcome this.",
-				"<str>I found Father Lawrence and he suggested the use of a",
-				"<str>potion to fool Juliet's father that she is dead so that",
-				"<str>Romeo and Juliet can be together in peace.",
-				"<str>I went to the Apothecary regarding making this cadava",
-				"<str>potion, and he told me to bring him some cadava berries",
-				"<str>After the Apothecary made me the potion, I delivered it to",
-				"<str>Juliet. She asked me to tell Romeo the plan.",
-				BLUE + "I have to find " + RED + "Romeo" + BLUE + " and tell him what's happened.");
+			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[2]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[3]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[4]);
+			line = writeJournal(player, line, true,
+				"After the Apothecary made me the potion, I delivered it to",
+				"Juliet. She asked me to tell Romeo the plan."
+			);
+			writeJournal(player, line,
+				BLUE + "I have to find " + RED + "Romeo" + BLUE + " and tell him what's happened."
+			);
 			break;
 		case 100:
 			writeJournal(player,

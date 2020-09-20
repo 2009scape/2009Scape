@@ -5,8 +5,6 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
-import core.game.node.item.GroundItem;
-import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 import core.game.world.map.Direction;
 import core.game.world.map.Location;
@@ -62,23 +60,22 @@ public class SheepHerder extends Quest {
         } else {
             switch(stage){
                 case 10:
-                    line = writeJournal(player, line,
-                        (hasGear ? "<str>" : "") + "<red>Councillor Halgrive<blue> said I should speak to <red>Doctor Orbon<blue> about",
-                        (hasGear ? "<str>" : "") + "getting some protective gear.",
-                        (sheepDead ? "<str>" : "") + "I need to <red>locate the diseased sheep<blue> and corral them <red>into the pin",
-                        (sheepDead ? "<str>" : "") + "After which, I need to <red>poison them<blue> and <red>incinerate their bones."
+                    line = writeJournal(player, line, hasGear,
+                        "<red>Councillor Halgrive<blue> said I should speak to <red>Doctor Orbon<blue> about",
+                        "getting some protective gear.");
+                    line = writeJournal(player, line, sheepDead,
+                        "I need to <red>locate the diseased sheep<blue> and corral them <red>into the pin",
+                        "After which, I need to <red>poison them<blue> and <red>incinerate their bones."
                     );
                     if (sheepDead) {
                         writeJournal(player, line,
                             "I should inform <red>Councillor Halgrive<blue> that I have taken care of the problem.");
                     } else {
-                        writeJournal(player, line,
-                            "I still need:",
-                            (player.getAttribute("sheep_herder:red_dead", false) ? "<str>" : "") + "A <red>Red Sheep",
-                            (player.getAttribute("sheep_herder:blue_dead", false) ? "<str>" : "") + "A <red>Blue Sheep",
-                            (player.getAttribute("sheep_herder:green_dead", false) ? "<str>" : "") + "A <red>Green Sheep",
-                            (player.getAttribute("sheep_herder:yellow_dead", false) ? "<str>" : "") + "A <red>Yellow Sheep"
-                        );
+                        line = writeJournal(player, line, "I still need:");
+                        line = writeJournal(player, line, player.getAttribute("sheep_herder:red_dead", false), "A <red>Red Sheep");
+                        line = writeJournal(player, line, player.getAttribute("sheep_herder:blue_dead", false), "A <red>Blue Sheep");
+                        line = writeJournal(player, line, player.getAttribute("sheep_herder:green_dead", false), "A <red>Green Sheep");
+                        writeJournal(player, line, player.getAttribute("sheep_herder:yellow_dead", false), "A <red>Yellow Sheep");
                     }
                     break;
                 case 100:

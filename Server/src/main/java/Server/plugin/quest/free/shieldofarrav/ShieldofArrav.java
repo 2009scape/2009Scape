@@ -175,12 +175,12 @@ public class ShieldofArrav extends Quest {
 			break;
 		case 70:
 			if (isPhoenix(player)) {
-				line = writeJournal(player,
-					"<str>I read about a valuable shield stolen long ago by a gang of",
-					"<str>thieves with an outstanding reward upon it. Baraek told me",
-					"<str>the location of the Phoenix Gang hideout.",
-					"<str>I killed Jonny the Beard and was welcomed into the Phoenix",
-					"<str>Gang. Straven gave me a key to the weapons room.",
+				line = writeJournal(player, true,
+					"I read about a valuable shield stolen long ago by a gang of",
+					"thieves with an outstanding reward upon it. Baraek told me",
+					"the location of the Phoenix Gang hideout.",
+					"I killed Jonny the Beard and was welcomed into the Phoenix",
+					"Gang. Straven gave me a key to the weapons room.",
 					""
 				);
 				if (!player.getInventory().containsItem(PHOENIX_SHIELD) && !player.getBank().containsItem(PHOENIX_SHIELD)) {
@@ -208,14 +208,15 @@ public class ShieldofArrav extends Quest {
 					"<str>Katrine welcomes me as a Black Arm Gang member.",
 					"",
 					BLUE + "With " + RED + "my friend's help" + BLUE + ", I can get both pieces of the shield",
-					BLUE + "and return it to " + RED + "King Roald " + BLUE + "for my " + RED + "reward.");
+					BLUE + "and return it to " + RED + "King Roald " + BLUE + "for my " + RED + "reward."
+				);
 			}
 			break;
 		case 100:
-			line = writeJournal(player,
-				"<str>I read about a valuable shield stolen long ago by a gang of",
-				"<str>thieves with an outstanding reward upon it. Baraek told me",
-				"<str>the location of the Phoenix Gang hideout."
+			line = writeJournal(player, true,
+				"I read about a valuable shield stolen long ago by a gang of",
+				"thieves with an outstanding reward upon it. Baraek told me",
+				"the location of the Phoenix Gang hideout."
 			);
 			if (!isPhoenix(player)) {
 				writeJournal(player, line,

@@ -2,9 +2,9 @@ package plugin.quest.free.blackknightsfortress;
 
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
+import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
-import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import core.plugin.PluginManager;
@@ -51,14 +51,13 @@ public final class BlackKnightsFortress extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (stage) {
 		case 0:
-			writeJournal(player,
+			line = writeJournal(player,
 				"<blue>I can start this quest by speaking to the <red>Sir Amik Varze<blue>at the",
-				"<red>White Knights' Castle <blue>in <red>Falador.",
-				(player.getQuestRepository().getPoints() < 12 ? "I must" : "<str>I") + " have a total of at least 12 Quest Points",
-				"I would have an advantage if I could fight <red>Level 33 Knights",
-				"and if I had a smithing level of <red>26.");
+				"<red>White Knights' Castle <blue>in <red>Falador.");
+			writeJournal(player, line, getQuestRequirementsJournal(player));
 			break;
 		case 10:
 			writeJournal(player,
@@ -86,14 +85,15 @@ public final class BlackKnightsFortress extends Quest {
 				"<blue>my <red>reward <blue>from <red>Sir Amik Varze <blue>in <red>Falador Castle.");
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>Sir Amik Varze asked me to investigate the Black Knights'",
-				"<str>Fortress. I sneaked inside disguised as a Guard.",
-				"<str>I eavesdropped on a Witch and the Black Knight Captain",
-				"<str>and discovered that their invincibility potion could be",
-				"<str>destroyed with a normal cabbage.",
-				"<str>I found a cabbage, and used it to a destroy the potion, then",
-				"<str>claimed my reward for a job well done.",
+			line = writeJournal(player, true,
+				"Sir Amik Varze asked me to investigate the Black Knights'",
+				"Fortress. I sneaked inside disguised as a Guard.",
+				"I eavesdropped on a Witch and the Black Knight Captain",
+				"and discovered that their invincibility potion could be",
+				"destroyed with a normal cabbage.",
+				"I found a cabbage, and used it to a destroy the potion, then",
+				"claimed my reward for a job well done.");
+			writeJournal(player, ++line,
 				"",
 				"<col=FF0000>QUEST COMPLETE!</col>",
 				"<blue>Reward:",
@@ -101,6 +101,15 @@ public final class BlackKnightsFortress extends Quest {
 				"<blue>2500 coins");
 			break;
 		}
+	}
+
+	@Override
+	public QuestRequirement[] getQuestRequirements(Player player) {
+		return new QuestRequirement[]{
+			new QuestRequirement(12, "<str>I", "I must", " have a total of at least 12 Quest Points"),
+			new QuestRequirement("I would have an advantage if I could fight <red>Level 33 Knights"),
+			new QuestRequirement("and if I had a smithing level of <red>26."),
+		};
 	}
 
 	@Override

@@ -5,7 +5,6 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
-import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 import core.game.world.map.Location;
 import core.plugin.InitializablePlugin;
@@ -17,6 +16,11 @@ import core.plugin.PluginManager;
  */
 @InitializablePlugin
 public final class ErnestTheChicken extends Quest {
+
+	/**
+	 * The name of this quest.
+	 */
+	public static String NAME = "Ernest the Chicken";
 
 	/**
 	 * Represents the oil can item.
@@ -43,7 +47,7 @@ public final class ErnestTheChicken extends Quest {
 	 */
 	public ErnestTheChicken() {
 		super(
-			"Ernest the Chicken",
+			NAME,
 			19,
 			18,
 			4,
@@ -158,7 +162,7 @@ public final class ErnestTheChicken extends Quest {
 
 		@Override
 		public boolean isHidden(final Player player) {
-			return player.getQuestRepository().getQuest("Ernest the Chicken").getStage(player) == 100 || player.getAttribute("ernest-hide", false);
+			return player.getQuestRepository().getQuest(NAME).getStage(player) == 100 || player.getAttribute("ernest-hide", false);
 		}
 
 		@Override
@@ -204,7 +208,7 @@ public final class ErnestTheChicken extends Quest {
 		@Override
 		public boolean isHidden(final Player player) {
 			Player target = getAttribute("target", null);
-			if (target != null && target.getQuestRepository().getQuest("Ernest the Chicken").getStage(player) == 100) {
+			if (target != null && target.getQuestRepository().getQuest(NAME).getStage(player) == 100) {
 				clear();
 				return super.isHidden(player);
 			}

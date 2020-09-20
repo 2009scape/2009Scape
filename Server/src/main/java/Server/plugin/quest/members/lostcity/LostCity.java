@@ -1,5 +1,6 @@
 package plugin.quest.members.lostcity;
 
+import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
@@ -23,19 +24,9 @@ public class LostCity extends Quest {
 	public static final String NAME = "Lost City";
 
 	/**
-	 * The requirement titles.
-	 */
-	private static final String[] TITLES = new String[] { "Level 31 Crafting", "Level 36 Woodcutting" };
-
-	/**
 	 * The dramen staff item.
 	 */
 	private static final Item DRAMEN_STAFF = new Item(772);
-
-	/**
-	 * The quest requirements.
-	 */
-	private boolean[] questRequirements = new boolean[2];
 
 	/**
 	 * Constructs a new {@code LostCity} {@code Object}.
@@ -58,9 +49,12 @@ public class LostCity extends Quest {
 			int line = writeJournal(player,
 				BLUE + "I can start this quest by speaking to the Adventurers in",
 				BLUE + "the Swamp just south of Lumbridge.",
-				""
+				"",
+				BLUE + "To complete this quest I will need:");
+			line = writeJournal(player, line, getQuestRequirementsJournal(player));
+			writeJournal(player, line,
+				BLUE + "and be able to defeat a " + RED + "Level 101 Spirit without weapons"
 			);
-			drawQuestRequirements(player, line);
 			break;
 		case 10:
 			writeJournal(player,
@@ -79,7 +73,7 @@ public class LostCity extends Quest {
 				"<blue>I can find a <red>Dramen Tree <blue>in a cave on <red>Entrana <blue>somewhere");
 			break;
 		case 21:
-			if (player.getBank().containsItem(DRAMEN_STAFF) || player.getInventory().containsItem(DRAMEN_STAFF) || player.getEquipment().containsItem(DRAMEN_STAFF)) {
+			if (player.hasItem(DRAMEN_STAFF)) {
 				writeJournal(player,
 					"<str>According to one of the adventurers in Lumbridge Swamp",
 					"<str>the entrance to Zanaris is somewhere around there.",
@@ -130,22 +124,12 @@ public class LostCity extends Quest {
 		};
 	}
 
-	/**
-	 * Draws the quest requirements onto the journal component.
-	 * @param player The player to draw the requirements for.
-	 */
-	private final void drawQuestRequirements(final Player player, int line) {
-		questRequirements[0] = player.getSkills().getStaticLevelByExperience(Skills.CRAFTING) > 30;
-		questRequirements[1] = player.getSkills().getStaticLevelByExperience(Skills.WOODCUTTING) > 35;
-		String[] requirements = new String[questRequirements.length];
-		for (int i = 0; i < questRequirements.length; i++) {
-			boolean bool = !questRequirements[i];
-			String str = TITLES[i];
-			requirements[i] = (!bool ? "<str>" : "") + (bool ? RED + str : str);
-		}
-		line = writeJournal(player, line, BLUE + "To complete this quest I will need:");
-		line = writeJournal(player, line, requirements);
-		writeJournal(player, line, BLUE + "and be able to defeat a " + RED + "Level 101 Spirit without weapons");
+	@Override
+	public QuestRequirement[] getQuestRequirements(Player player) {
+		return new QuestRequirement[]{
+			new QuestRequirement(Skills.CRAFTING, 31),
+			new QuestRequirement(Skills.WOODCUTTING, 36),
+		};
 	}
 
 	@Override

@@ -1,7 +1,9 @@
 package plugin.quest.members.rovingelves;
 
+import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
+import plugin.quest.members.waterfallquest.WaterFall;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -61,12 +63,12 @@ public class RovingElves extends Quest {
 		int line;
 		switch (stage) {
 		case 0:
-			writeJournal(player,
+			line = writeJournal(player,
 				"<blue>I can start this quest by talking to <red>Islwyn<blue> found in <red>Isafdar.",
 				"",
-				"<blue>Minimum requirements:",
-				"<red>I must have completed the Waterfall quest",
-				"<red>I must be able to kill a level 84 moss giant unarmed");
+				"<blue>Minimum requirements:"
+			);
+			writeJournal(player, line, getQuestRequirementsJournal(player));
 			break;
 		case 10:
 			writeJournal(player,
@@ -94,7 +96,8 @@ public class RovingElves extends Quest {
 					"<str>will re-enchant it for me.",
 					"",
 					"<blue>I have the <red>consecration seed. <blue>I should return to <red>Eluned",
-					"<blue>and have her enchant it for me.");
+					"<blue>and have her enchant it for me."
+				);
 			} else {
 				line = writeJournal(player,
 					"<str>It appears that when I recovered Glarial's ashes from",
@@ -104,10 +107,11 @@ public class RovingElves extends Quest {
 					"<str>she will tell me how elven consecration is done.",
 					"",
 					"<blue>Eluned told me that I must acquire the<red> old consecration",
-					"<red> seed <blue>from the <red>guardian spirit<blue> in <red>Glarial's old tomb.",
+					"<red>seed <blue>from the <red>guardian spirit<blue> in <red>Glarial's old tomb.",
 					"",
 					"<blue>Once I have the old seed I will need to return to Eluned, who",
-					"<blue>will re-enchant it for me.");
+					"<blue>will re-enchant it for me."
+				);
 			}
 			if (player.getInventory().contains(CONSECRATION_SEED_CHARGED.getId(), 1)) {
 				writeJournal(player, line,
@@ -125,8 +129,9 @@ public class RovingElves extends Quest {
 					"",
 					"<blue>I have the <red>charged consecration seed<blue>.",
 					"<blue>I need to head to the treasure room under the <red>waterfall <blue>and",
-					"<blue> plant the <red>consecration seed<blue> near the <red>chalice<blue> in order to",
-					"<blue> free Glarial's spirit.");
+					"<blue>plant the <red>consecration seed<blue> near the <red>chalice<blue> in order to",
+					"<blue>free Glarial's spirit."
+				);
 			}
 			break;
 		case 20:
@@ -145,39 +150,49 @@ public class RovingElves extends Quest {
 				"",
 				"<str>I have the <red>charged consecration seed<blue>.",
 				"<str>I need to head to the treasure room under the <red>waterfall <blue>and",
-				"<str> plant the <red>consecration seed<blue> near the <red>chalice<blue> in order to",
-				"<str> free Glarial's spirit.",
+				"<str>plant the <red>consecration seed<blue> near the <red>chalice<blue> in order to",
+				"<str>free Glarial's spirit.",
 				"",
 				"<blue>I have freed <red>Glarial's spirit <blue>by planting the consecration seed near",
 				"<blue>the chalice under the waterfall. The seed I planted",
-				"<blue> vanished. I should go speak to <red>Eluned<blue> again.");
+				"<blue>vanished. I should go speak to <red>Eluned<blue> again.");
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>It appears that when I recovered Glarial's ashes from",
-				"<str>her tomb near the waterfall, I disturbed her peace.",
-				"<str>I talked to <red>Islwyn,<blue> an elf that I found in the woods.",
-				"<str>When I offered to help he said I should talk with Eluned,",
-				"<str>she will tell me how elven consecration is done.",
+			line = writeJournal(player, true,
+				"It appears that when I recovered Glarial's ashes from",
+				"her tomb near the waterfall, I disturbed her peace.",
+				"I talked to <red>Islwyn<blue>, an elf that I found in the woods.",
+				"When I offered to help he said I should talk with Eluned,",
+				"she will tell me how elven consecration is done.",
 				"",
-				"<str>Eluned told me that I must acquire the<red> old consecration",
-				"<str><red> seed <blue>from the <red>guardian spirit<blue> in <red>Glarial's old tomb.",
+				"Eluned told me that I must acquire the<red> old consecration",
+				"<red> seed <blue>from the <red>guardian spirit<blue> in <red>Glarial's old tomb.",
 				"",
-				"<str>Once I have the old seed I will need to return to Eluned, who",
-				"<str>will re-enchant it for me.",
+				"Once I have the old seed I will need to return to Eluned, who",
+				"will re-enchant it for me.",
 				"",
-				"<str>I have the <red>charged consecration seed<blue>.",
-				"<str>I need to head to the treasure room under the <red>waterfall <blue>and",
-				"<str> plant the <red>consecration seed<blue> near the <red>chalice<blue> in order to",
-				"<str> free Glarial's spirit.",
+				"I have the <red>charged consecration seed<blue>.",
+				"I need to head to the treasure room under the <red>waterfall <blue>and",
+				"plant the <red>consecration seed<blue> near the <red>chalice<blue> in order to",
+				"free Glarial's spirit.",
 				"",
-				"<str>I have freed <red>Glarial's spirit <blue>by planting the consecration seed near",
-				"<str>the chalice under the waterfall. The seed I planted",
-				"<str> vanished. I should go speak to <red>Eluned<blue> again.",
-				"",
+				"I have freed <red>Glarial's spirit <blue>by planting the consecration seed near",
+				"the chalice under the waterfall. The seed I planted",
+				"vanished. I should go speak to <red>Eluned<blue> again.",
+				""
+			);
+			writeJournal(player, line,
 				"<col=FF0000>QUEST COMPLETE!</col>");
 			break;
 		}
+	}
+
+	@Override
+	public QuestRequirement[] getQuestRequirements(Player player) {
+		return new QuestRequirement[]{
+			new QuestRequirement(player.getQuestRepository().getQuest(WaterFall.NAME), "<red>I must have completed the Waterfall quest"),
+			new QuestRequirement("<red>I must be able to kill a level 84 moss giant unarmed"),
+		};
 	}
 
 	@Override

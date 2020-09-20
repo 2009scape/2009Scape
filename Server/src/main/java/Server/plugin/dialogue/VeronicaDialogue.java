@@ -4,6 +4,7 @@ import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.plugin.InitializablePlugin;
 import core.game.node.entity.player.link.quest.Quest;
+import plugin.quest.free.ErnestTheChicken;
 
 /**
  * Represents the dialogue used to handle the interaction between veronica.
@@ -37,7 +38,7 @@ public class VeronicaDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
-		final Quest quest = player.getQuestRepository().getQuest("Ernest the Chicken");
+		final Quest quest = player.getQuestRepository().getQuest(ErnestTheChicken.NAME);
 		switch (quest.getStage(player)) {
 		case 0:
 			switch (stage) {
@@ -167,22 +168,19 @@ public class VeronicaDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		final Quest quest = player.getQuestRepository().getQuest("Ernest the Chicken");
+		final Quest quest = player.getQuestRepository().getQuest(ErnestTheChicken.NAME);
 		switch (quest.getStage(player)) {
 		case 0:
 			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Can you please help me? I'm in a terrible spot of", "trouble.");
 			stage = 0;
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, null, "Have you foudn my sweetheart yet?");
-			stage = 0;
-			break;
 		case 20:
-			interpreter.sendDialogues(npc, null, "Have you foudn my sweetheart yet?");
+			interpreter.sendDialogues(npc, null, "Have you found my sweetheart yet?");
 			stage = 0;
 			break;
 		case 100:
-			interpreter.sendDialogues(npc, null, "Thank you for resucing Ernest.");
+			interpreter.sendDialogues(npc, null, "Thank you for rescuing Ernest.");
 			stage = 0;
 			break;
 		}

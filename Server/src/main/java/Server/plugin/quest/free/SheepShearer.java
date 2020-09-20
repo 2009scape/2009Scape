@@ -5,7 +5,6 @@ import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
-import core.game.node.item.GroundItemManager;
 import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
 
@@ -25,8 +24,7 @@ public class SheepShearer extends Quest {
 			28,
 			27,
 			1,
-			new int[]{179, 0, 20, 21}
-		);
+			179, 0, 20, 21);
 	}
 
 	/**

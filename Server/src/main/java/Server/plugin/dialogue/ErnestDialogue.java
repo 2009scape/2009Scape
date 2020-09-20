@@ -3,6 +3,7 @@ package plugin.dialogue;
 import core.game.node.entity.npc.NPC;
 import core.plugin.InitializablePlugin;
 import core.game.node.entity.player.Player;
+import plugin.quest.free.ErnestTheChicken;
 
 /**
  * Represents the dialogue which handles the interaction with ernest.
@@ -71,12 +72,12 @@ public final class ErnestDialogue extends DialoguePlugin {
 	 * Method used to finish the quest.
 	 */
 	public void finish() {
-		if (player.getQuestRepository().isComplete("Ernest the Chicken")) {
+		if (player.getQuestRepository().isComplete(ErnestTheChicken.NAME)) {
 			npc.clear();
 			return;
 		}
 		npc.clear();
-		player.getQuestRepository().getQuest("Ernest the Chicken").finish(player);
+		player.getQuestRepository().getQuest(ErnestTheChicken.NAME).finish(player);
 	}
 
 	@Override

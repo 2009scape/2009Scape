@@ -5,7 +5,6 @@ import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
-import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 import core.game.node.object.GameObject;
 import core.game.node.object.ObjectBuilder;
@@ -55,7 +54,7 @@ public class ImpCatcher extends Quest {
 			21,
 			20,
 			1,
-			new int[] {160, 0, 1, 2}
+			160, 0, 1, 2
 		);
 	}
 	
@@ -74,8 +73,8 @@ public class ImpCatcher extends Quest {
 				"",
 				BLUE + "There are no requirements for this quest.");
 		} else if (getStage(player) == 10) {
-			int line = writeJournal(player,
-				"<str>I have spoken to Wizard Mizgog.",
+			int line = writeJournal(player, true,
+				"I have spoken to Wizard Mizgog.",
 				""
 			);
 			if (player.getInventory().containItems(BLACK_BEAD.getId(), RED_BEAD.getId(), YELLOW_BEAD.getId(), WHITE_BEAD.getId())) {
@@ -85,10 +84,10 @@ public class ImpCatcher extends Quest {
 			} else {
 				writeJournal(player, line,
 					BLUE + "I need to collect some items by killing " + RED + " Imps.",
-					((player.getInventory().containsItem(BLACK_BEAD)) ? "<str>" : "<red>") + "1 Black Bead",
-					((player.getInventory().containsItem(RED_BEAD)) ? "<str>" : "<red>") + "1 Red Bead",
-					((player.getInventory().containsItem(WHITE_BEAD)) ? "<str>" : "<red>") + "1 White Bead",
-					((player.getInventory().containsItem(YELLOW_BEAD)) ? "<str>" : "<red>") + "1 Yellow Bead"
+					(player.getInventory().containsItem(BLACK_BEAD) ? "<str>" : "<red>") + "1 Black Bead",
+					(player.getInventory().containsItem(RED_BEAD) ? "<str>" : "<red>") + "1 Red Bead",
+					(player.getInventory().containsItem(WHITE_BEAD) ? "<str>" : "<red>") + "1 White Bead",
+					(player.getInventory().containsItem(YELLOW_BEAD) ? "<str>" : "<red>") + "1 Yellow Bead"
 				);
 			}
 		} else {

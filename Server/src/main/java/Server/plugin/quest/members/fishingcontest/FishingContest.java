@@ -2,6 +2,7 @@ package plugin.quest.members.fishingcontest;
 
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
+import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import core.game.node.item.Item;
@@ -35,18 +36,18 @@ public class FishingContest extends Quest {
         int line;
         super.drawJournal(player, stage);
         if (stage < 10) {
-            writeJournal(player,
-                "I can start this quest by trying to take the !!shortcut??",
-                "near !!White Wolf Mountain??",
-                (player.getSkills().getLevel(Skills.FISHING) >= 10 ? "<str>" : "") + "I need level <red>10 Fishing<blue> to start this quest."
-            );
-        } else {
             line = writeJournal(player,
-                (stage >= 20 ? "<str>" : "") + "The <red>mountain Dwarves' home <blue>would be an ideal way to get across ",
-                (stage >= 20 ? "<str>" : "") + "White Wolf Mountain safely. However, the Dwarves aren't too",
-                (stage >= 20 ? "<str>" : "") + "fond of strangers. They will let you through if you can <red>bring ",
-                (stage >= 20 ? "<str>" : "") + "<red>them a trophy. <blue>The trophy is the prize for the annual Hemenster",
-                (stage >= 20 ? "<str>" : "") + "<red>fishing competition.<blue>",
+                "I can start this quest by trying to take the <red>shortcut",
+                "near <red>White Wolf Mountain"
+            );
+            writeJournal(player, line, getQuestRequirementsJournal(player));
+        } else {
+            line = writeJournal(player, stage >= 20,
+                "The <red>mountain Dwarves' home <blue>would be an ideal way to get across ",
+                "White Wolf Mountain safely. However, the Dwarves aren't too",
+                "fond of strangers. They will let you through if you can <red>bring ",
+                "<red>them a trophy. <blue>The trophy is the prize for the annual Hemenster",
+                "<red>fishing competition.<blue>",
                 ""
             );
             if (stage == 20) {
@@ -67,6 +68,13 @@ public class FishingContest extends Quest {
         player.removeAttribute("fishing_contest:garlic");
         player.removeAttribute("fishing_contest:won");
         player.removeAttribute("fishing_contest:pass-shown");
+    }
+
+    @Override
+    public QuestRequirement[] getQuestRequirements(Player player) {
+        return new QuestRequirement[]{
+            new QuestRequirement(Skills.FISHING, 10, "I need level <red>10 Fishing<blue> to start this quest.")
+        };
     }
 
     @Override

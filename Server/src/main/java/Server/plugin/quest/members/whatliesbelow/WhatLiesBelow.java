@@ -1,5 +1,6 @@
 package plugin.quest.members.whatliesbelow;
 
+import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.quest.free.RuneMysteries;
@@ -9,8 +10,6 @@ import core.game.node.entity.player.link.quest.Quest;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import core.plugin.PluginManager;
-
-import java.util.ArrayList;
 
 /**
  * The what lies below quest.
@@ -80,20 +79,15 @@ public class WhatLiesBelow extends Quest {
 	 */
 	public static final Item BEACON_RING = new Item(11014);
 
-	/**
-	 * The requirement messages.
-	 */
-	private static final String[] REQS = new String[] {
-		"<blue>Have level 35 <red>Runecrafting.",
-		"<blue>Be able to defeat a <red>level 47 enemy.",
-		"<blue>I need to have completed the <red>Rune Mysteries <blue>quest.",
-		"<blue>Have a <red>Mining <blue>level of 42 to use the <red>Chaos Tunnel."
-	};
-
-	/**
-	 * The requirements.
-	 */
-	private final boolean[] requirements = new boolean[4];
+	@Override
+	public QuestRequirement[] getQuestRequirements(Player player) {
+		return new QuestRequirement[]{
+			new QuestRequirement(Skills.RUNECRAFTING, 35, "<blue>Have level 35 <red>Runecrafting."),
+			new QuestRequirement("<blue>Be able to defeat a <red>level 47 enemy."),
+			new QuestRequirement(player.getQuestRepository().getQuest(RuneMysteries.NAME), "<blue>I need to have completed the <red>Rune Mysteries <blue>quest."),
+			new QuestRequirement(Skills.MINING, 42, "<blue>Have a <red>Mining <blue>level of 42 to use the <red>Chaos Tunnel."),
+		};
+	}
 
 	/**
 	 * Constructs a new {@Code WhatLiesBelow} {@Code Object}
@@ -122,7 +116,7 @@ public class WhatLiesBelow extends Quest {
 				"<blue>I can start this quest by speaking to <red>Rat Burgiss <blue>on the",
 				"<blue>road south of <red>Varrock.",
 				"<blue>Before I begin I will need to:");
-			writeJournal(player, line, getReqMessage(player));
+			writeJournal(player, line, getQuestRequirementsJournal(player));
 			break;
 		case 10:
 			writeJournal(player,
@@ -274,34 +268,6 @@ public class WhatLiesBelow extends Quest {
 	public void start(Player player) {
 		super.start(player);
 		player.getInventory().add(EMPTY_FOLDER, player);
-	}
-
-	/**
-	 * Gets the requirements message.
-	 * @return the message.
-	 */
-	public String[] getReqMessage(Player player) {
-		hasRequirements(player);
-		ArrayList<String> lines = new ArrayList<>();
-		for (int i = 0; i < requirements.length; i++) {
-			String l = REQS[i];
-			if (requirements[i]) {
-				l = l.replace("<blue>", "").replace("<red>", "").trim();
-			}
-			lines.add((requirements[i] ? "<str>" : "") + l);
-		}
-		return lines.stream().toArray(String[]::new);
-		// After Java 8
-		// return lines.toArray(new String[0]);
-	}
-
-	@Override
-	public boolean hasRequirements(Player player) {
-		requirements[0] = player.getSkills().getStaticLevel(Skills.RUNECRAFTING) >= 35;
-		requirements[1] = false;
-		requirements[3] = player.getSkills().getStaticLevel(Skills.MINING) >= 42;
-		requirements[2] = player.getQuestRepository().isComplete(RuneMysteries.NAME);
-		return requirements[0] && requirements[2] && requirements[3];
 	}
 
 	@Override

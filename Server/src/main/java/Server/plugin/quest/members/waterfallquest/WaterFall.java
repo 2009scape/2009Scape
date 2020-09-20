@@ -2,7 +2,6 @@ package plugin.quest.members.waterfallquest;
 
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
-import core.game.node.item.GroundItemManager;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -27,7 +26,7 @@ public class WaterFall extends Quest {
 	 */
 	public WaterFall() {
 		super(
-			"Waterfall",
+			NAME,
 			65,
 			64,
 			1,
@@ -211,7 +210,7 @@ public class WaterFall extends Quest {
 			new QuestReward(Skills.ATTACK, 13750),
 			new QuestReward(new Item(1601, 2)), // Diamond
 			new QuestReward(new Item(2357, 2)), // Gold bar
-			new QuestReward(new Item(299, 40)), // Mithril seed
+			new QuestReward(new Item(299, 40), "Mithril seeds"), // Mithril seed
 		};
 	}
 

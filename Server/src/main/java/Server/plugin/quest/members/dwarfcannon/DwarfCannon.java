@@ -76,9 +76,9 @@ public class DwarfCannon extends Quest {
 				"<red>North-west of the Fishing Guild <blue>against <red>goblin <blue>attack.");
 			break;
 		case 10:
-			line = writeJournal(player,
-				"<str>I have spoken to Captain Lawgof, he recruited me into the",
-				"<str>Black Guard and asked me to help the dwarves.",
+			line = writeJournal(player, true,
+				"I have spoken to Captain Lawgof, he recruited me into the",
+				"Black Guard and asked me to help the dwarves.",
 				"");
 			if (player.getConfigManager().get(1) == 2016) {
 				writeJournal(player, line,
@@ -93,8 +93,9 @@ public class DwarfCannon extends Quest {
 			}
 			break;
 		case 20:
-			line = writeJournal(player, "<str>I have spoken to Captain Lawgof, he recruited me into the",
-				"<str>Black Guard and asked me to help the dwarves.",
+			line = writeJournal(player, true,
+				"I have spoken to Captain Lawgof, he recruited me into the",
+				"Black Guard and asked me to help the dwarves.",
 				""
 			);
 			if (player.hasItem(DWARF_REMAINS)) {

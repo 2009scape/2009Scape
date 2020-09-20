@@ -1,7 +1,10 @@
 package plugin.quest.members.animalmagnetism;
 
+import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
 import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
+import plugin.quest.free.ErnestTheChicken;
+import plugin.quest.free.therestlessghost.RestlessGhost;
 import plugin.quest.members.PriestInPeril;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
@@ -98,24 +101,6 @@ public final class AnimalMagnetism extends Quest {
 	private Item avas_device;
 
 	/**
-	 * The requirements messages.
-	 */
-	private static final String[] REQS = new String[] {
-		"I must have completed Restless Ghost.",
-		"I must have completed Ernest the Chicken",
-		"I must have completed Priest in Peril.",
-		"Level 30 Ranged",
-		"Level 18 Slayer",
-		"Level 19 Crafting",
-		"Level 35 Woodcutting"
-	};
-
-	/**
-	 * The requirements.
-	 */
-	private boolean[] requirements = new boolean[7];
-
-	/**
 	 * Constructs a new {@code AnimalMagnetism} {@code Object}.
 	 */
 	public AnimalMagnetism() {
@@ -142,13 +127,115 @@ public final class AnimalMagnetism extends Quest {
 		return this;
 	}
 
+	static String[][] JOURNAL_ENTRIES = new String[][]{
+		new String[]{
+			"I need to find someone who will supply <red>undead chickens <blue>to",
+			"me. Perhaps the <red>farm near Port Phasmatys <blue>sells them..."
+		},
+		new String[]{
+			"The<red> ghost farmer<blue> wants me to talk to his <red>wife<blue> for him. I",
+			"need to do this before he will sell chickens."
+		},
+		new String[]{
+			"I should talk to the <red>crone <blue>west of the undead farm and ask",
+			"about <red>ghostspeak amulet<blue>s. Perhaps she can enable the",
+			"<red>ghost farmer<blue> to talk to his <red>wife<blue> directly."
+		},
+		new String[]{
+			"I need to talk the <red>crone<blue> while I have a <red>ghostspeak",
+			"<red>amulet <blue>so that she can create a new amulet specifically",
+			"for the <red>ghost farmer."
+		},
+		new String[]{
+			"I should give the <red>ghost farmer <blue>a <red>crone-made amulet <blue>so",
+			"that he can talk directly to his <red>wife."
+		},
+		new String[]{
+			"The <red>farmer <blue>seems friendlier now; I need to talk to him",
+			"about the <red>undead chickens."
+		},
+		new String[]{
+			"The farmer has agreed to sell chickens; now he needs to",
+			"catch one for me.",
+		},
+		new String[]{
+			"The <red>ghost farmer<blue> caught some chickens; now I need to buy",
+			"2 from him and deliver them to Ava."
+		},
+		new String[]{
+			"I need to talk to the <red>Witch <blue>in <red>Draynor Manor <blue>about",
+			"<red>magically attuned magnets<blue>. Apparently, the <red>undead",
+			"<red>chicken <blue>will be using magnets in my reward."
+		},
+		new String[]{
+			"I need to deliver 5 <red>iron bars <blue>to the <red>Witch <blue>in <red>Draynor Manor.",
+			"She will select one most suitable for both magnetising and",
+			"mystical use."
+		},
+		new String[]{
+			"I need to make a <red>magnet <blue>by hammering the <red>selected iron",
+			"bar while facing north in <red>Rimmington mines<blue>. I then need",
+			"to pass this magnet to <red>Ava."
+		},
+		new String[]{
+			"I need to find some way of chopping the <red>undead trees",
+			"near <red>Draynor Manor <blue>so that <red>Ava <blue>can use this wood as a",
+			"source of unending arrow shafts."
+		},
+		new String[]{
+			"Ava suspects that <red>Turael<blue>, the Slayer Master in Burthorpe,",
+			"might be able to help."
+		},
+		new String[]{
+			"I need to collect a <red>holy symbol of Saradomin<blue> and a <red>mithril",
+			"<red>axe<blue>. <red>Turael<blue>, the Burthorpe Slayer, can use these to",
+			"construct a new axe for my undead tree cutting."
+		},
+		new String[]{
+			"I need to chop some undead wood with the silver-edged",
+			"mithril axe. Then Ava will want the wood for constructing",
+			"my reward.",
+		},
+		new String[]{
+			"I should ask <red>Ava <blue>for the <red>garbled research notes <blue>that she",
+			"cannot translate. When translated, these notes will tell",
+			"her how to combine the <red>undead wood<blue>, <red>undead chicken <blue>and",
+			"<red>magnet <blue>into some bizarre device."
+		},
+		new String[]{
+			"The <red>research notes <blue>must be translated. I should try to",
+			"decipher them even though they look like total gibberish",
+			"to me."
+		},
+		new String[]{
+			"The notes look less confusing now. <red>Ava <blue>will want to see",
+			"these <red>translated research notes<blue>."
+		},
+		new String[]{
+			"Almost finished! I must combine the <red>pattern <blue>which Ava",
+			"gave to me with some <red>polished buttons <blue>and a bit of <red>hard",
+		},
+		new String[]{
+			"<red>leather.",
+		},
+		new String[]{
+			"Ava wants the completed container. She can then combine",
+			"it with the undead chicken, undead wood and magnet."
+		}
+	};
+
+	@Override
+	public String[][] getJournalEntries() {
+		return JOURNAL_ENTRIES;
+	}
+
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
 		int line = JOURNAL_TEXT_START;
-		
-		if (stage >= 10 && stage < 100) {
-			line = writeJournal(player, line,
+
+		if (stage >= 10) {
+			line = writeJournal(player, line, stage == 100,
 				"<red>Ava <blue>has asked me for <red>undead chickens<blue>. One will go toward",
 				"<blue>making her bed more comfortable, the other will be used in",
 				"<blue>some unexplained reward for me."
@@ -163,578 +250,130 @@ public final class AnimalMagnetism extends Quest {
 				"",
 				"<blue>Minimum requirements:"
 			);
-			drawRequirements(player, line);
+			writeJournal(player, line, getQuestRequirementsJournal(player));
 			break;
 		case 10:
-			writeJournal(player, line,
-				"<blue>I need to find someone who will supply <red>undead chickens <blue>to",
-				"<blue>me. Perhaps the <red>farm near Port Phasmatys <blue>sells them...");
+			writeJournal(player, line, JOURNAL_ENTRIES[0]);
 			break;
 		case 11:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<blue>The<red> ghost farmer<blue> wants me to talk to his <red>wife<blue> for him. I",
-				"<blue>need to do this before he will sell chickens.");
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
+			writeJournal(player, line, JOURNAL_ENTRIES[1]);
 			break;
 		case 12:
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, JOURNAL_ENTRIES[1]);
 			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<blue>The<red> ghost farmer<blue> wants me to talk to his <red>wife<blue> for him. I",
-				"<blue>need to do this before he will sell chickens.",
 				"<blue>The <red>ghost farmer<blue>'s <red>wife <blue>needs to know bank information",
 				"<blue>that only the farmer can supply.");
 			break;
 		case 13:
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
 			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
 				"<blue>The <red>ghost farmer<blue> won't tell me the information his <red>wife <blue>is",
 				"<blue>after. Perhaps I should talk to her again.");
 			break;
 		case 14:
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
 			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
 				"<blue>The <red>ghost farmer<blue>'s <red>wife <blue>still needs to know bank",
 				"<blue>information that only the farmer can supply.");
 			break;
 		case 15:
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
 			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
 				"<blue>I still need to find a way to allow the <red>undead farmer<blue> and his",
 				"<red>wife <blue>to communicate with each other.");
 			break;
 		case 16:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<blue>I should talk to the <red>crone <blue>west of the undead farm and ask",
-				"<blue>about <red>ghostspeak amulet<blue>s. Perhaps she can enable the",
-				"<red>ghost farmer<blue> to talk to his <red>wife<blue> directly.");
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
+			writeJournal(player, line, JOURNAL_ENTRIES[2]);
 			break;
 		case 17:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<blue>I need to talk the <red>crone<blue> while I have a <red>ghostspeak",
-				"<red>amulet <blue>so that she can create a new amulet specifically",
-				"<blue>for the <red>ghost farmer.");
+			line = writeJournalEntries(player, line, true, 2);
+			writeJournal(player, line, JOURNAL_ENTRIES[3]);
 			break;
 		case 18:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<blue>I should give the <red>ghost farmer <blue>a <red>crone-made amulet <blue>so",
-				"<blue>that he can talk directly to his <red>wife.");
+			line = writeJournalEntries(player, line, true, 3);
+			writeJournal(player, line, JOURNAL_ENTRIES[4]);
 			break;
 		case 19:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<str>I should give the ghost farmer a crone-made amulet so",
-				"<str>that he can talk directly to his wife.",
-				"<blue>The <red>farmer <blue>seems friendlier now; I need to talk to him",
-				"<blue>about the <red>undead chickens.");
+			line = writeJournalEntries(player, line, true, 4);
+			writeJournal(player, line, JOURNAL_ENTRIES[5]);
 			break;
 		case 20:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<str>I should give the ghost farmer a crone-made amulet so",
-				"<str>that he can talk directly to his wife.",
-				"<str>The farmer seems friendlier now; I need to talk to him",
-				"<str>about the undead chickens.",
-				"<str>The farmer has agreed to sell chickens; now he needs to",
-				"<str>catch one for me.",
-				"<blue>The <red>ghost farmer<blue> caught some chickens; now I need to buy",
-				"<blue>2 from him and deliver them to Ava.");
+			line = writeJournalEntries(player, line, true, 6);
+			writeJournal(player, line, JOURNAL_ENTRIES[7]);
 			break;
 		case 25:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<str>I should give the ghost farmer a crone-made amulet so",
-				"<str>that he can talk directly to his wife.",
-				"<str>The farmer seems friendlier now; I need to talk to him",
-				"<str>about the undead chickens.",
-				"<str>The farmer has agreed to sell chickens; now he needs to",
-				"<str>catch one for me.",
-				"<str>The ghost farmer caught some chickens; now I need to buy",
-				"<str>2 from him and deliver them to Ava.",
-				"<blue>I need to talk to the <red>Witch <blue>in <red>Draynor Manor <blue>about",
-				"<red>magically attuned magnets<blue>. Apparently, the <red>undead",
-				"<red>chicken <blue>will be using magnets in my reward.");
+			line = writeJournalEntries(player, line, true, 7);
+			writeJournal(player, line, JOURNAL_ENTRIES[8]);
 			break;
 		case 26:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<str>I should give the ghost farmer a crone-made amulet so",
-				"<str>that he can talk directly to his wife.",
-				"<str>The farmer seems friendlier now; I need to talk to him",
-				"<str>about the undead chickens.",
-				"<str>The farmer has agreed to sell chickens; now he needs to",
-				"<str>catch one for me.",
-				"<str>The ghost farmer caught some chickens; now I need to buy",
-				"<str>2 from him and deliver them to Ava.",
-				"<str>I need to talk to the Witch in Draynor Manor about",
-				"<str>magically attuned magnets. Apparently, the undead",
-				"<str>chicken will be using magnets in my reward",
-				"<blue>I need to deliver 5 <red>iron bars <blue>to the <red>Witch <blue>in <red>Draynor Manor.",
-				"<blue>She will select one most suitable for both magnetising and",
-				"mystical use.");
+			line = writeJournalEntries(player, line, true, 8);
+			writeJournal(player, line, JOURNAL_ENTRIES[9]);
 			break;
 		case 27:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<str>I should give the ghost farmer a crone-made amulet so",
-				"<str>that he can talk directly to his wife.",
-				"<str>The farmer seems friendlier now; I need to talk to him",
-				"<str>about the undead chickens.",
-				"<str>The farmer has agreed to sell chickens; now he needs to",
-				"<str>catch one for me.",
-				"<str>The ghost farmer caught some chickens; now I need to buy",
-				"<str>2 from him and deliver them to Ava.",
-				"<str>I need to talk to the Witch in Draynor Manor about",
-				"<str>magically attuned magnets. Apparently, the undead",
-				"<str>chicken will be using magnets in my reward",
-				"<str>I need to deliver 5 iron bars to the Witch in Draynor Manor.",
-				"<str>She will select one most suitable for both magnetising and",
-				"<str>mystical use.",
-				"<blue>I need to make a <red>magnet <blue>by hammering the <red>selected iron",
-				"<blue>bar while facing north in <red>Rimmington mines. <blue>I then need",
-				"<blue>to pass this magnet to <red>Ava.");
+			line = writeJournalEntries(player, line, true, 9);
+			writeJournal(player, line, JOURNAL_ENTRIES[10]);
 			break;
 		case 28:
+			line = writeJournalEntries(player, line, true, 10);
 			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<str>I should give the ghost farmer a crone-made amulet so",
-				"<str>that he can talk directly to his wife.",
-				"<str>The farmer seems friendlier now; I need to talk to him",
-				"<str>about the undead chickens.",
-				"<str>The farmer has agreed to sell chickens; now he needs to",
-				"<str>catch one for me.",
-				"<str>The ghost farmer caught some chickens; now I need to buy",
-				"<str>2 from him and deliver them to Ava.",
-				"<str>I need to talk to the Witch in Draynor Manor about",
-				"<str>magically attuned magnets. Apparently, the undead",
-				"<str>chicken will be using magnets in my reward",
-				"<str>I need to deliver 5 iron bars to the Witch in Draynor Manor.",
-				"<str>She will select one most suitable for both magnetising and",
-				"<str>mystical use.",
-				"<str>I need to make a magnet by hammering the selected iron",
-				"<str>bar while facing north in Rimmington mines. I then need",
-				"<str>to pass this magnet to Ava.",
 				"<blue>I need to chop some wood from the <red>undead trees <blue>near",
-				"<red>Draynor Manor. Ava <blue>can use this wood as a source of",
+				"<red>Draynor Manor<blue>. <red>Ava <blue>can use this wood as a source of",
 				"<blue>unending arrow shafts in my reward. She suggested that I",
 				"<blue>use a Woodcutting axe made of nothing less powerful than",
 				"<blue>mithril.");
 			break;
 		case 29:
+			line = writeJournalEntries(player, line, true, 10);
+			line = writeJournal(player, line, JOURNAL_ENTRIES[11]);
 			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<str>I should give the ghost farmer a crone-made amulet so",
-				"<str>that he can talk directly to his wife.",
-				"<str>The farmer seems friendlier now; I need to talk to him",
-				"<str>about the undead chickens.",
-				"<str>The farmer has agreed to sell chickens; now he needs to",
-				"<str>catch one for me.",
-				"<str>The ghost farmer caught some chickens; now I need to buy",
-				"<str>2 from him and deliver them to Ava.",
-				"<str>I need to talk to the Witch in Draynor Manor about",
-				"<str>magically attuned magnets. Apparently, the undead",
-				"<str>chicken will be using magnets in my reward",
-				"<str>I need to deliver 5 iron bars to the Witch in Draynor Manor.",
-				"<str>She will select one most suitable for both magnetising and",
-				"<str>mystical use.",
-				"<str>I need to make a magnet by hammering the selected iron",
-				"<str>bar while facing north in Rimmington mines. I then need",
-				"<str>to pass this magnet to Ava.",
-				"<blue>I need to find some way of chopping the <red>undead trees",
-				"<blue>near <red>Draynor Manor <blue>so that <red>Ava <blue>can use this wood as a",
-				"<blue>source of unending arrow shafts.",
 				"<blue>Perhaps <red>Ava<blue> could give me some advice...");
 			break;
 		case 30:
+			line = writeJournalEntries(player, line, true, 11);
+			writeJournal(player, line, JOURNAL_ENTRIES[12]);
+			break;
 		case 31:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<str>I should give the ghost farmer a crone-made amulet so",
-				"<str>that he can talk directly to his wife.",
-				"<str>The farmer seems friendlier now; I need to talk to him",
-				"<str>about the undead chickens.",
-				"<str>The farmer has agreed to sell chickens; now he needs to",
-				"<str>catch one for me.",
-				"<str>The ghost farmer caught some chickens; now I need to buy",
-				"<str>2 from him and deliver them to Ava.",
-				"<str>I need to talk to the Witch in Draynor Manor about",
-				"<str>magically attuned magnets. Apparently, the undead",
-				"<str>chicken will be using magnets in my reward",
-				"<str>I need to deliver 5 iron bars to the Witch in Draynor Manor.",
-				"<str>She will select one most suitable for both magnetising and",
-				"<str>mystical use.",
-				"<str>I need to make a magnet by hammering the selected iron",
-				"<str>bar while facing north in Rimmington mines. I then need",
-				"<str>to pass this magnet to Ava.",
-				"<str>I need to find some way of chopping the undead trees",
-				"<str>near Draynor Manor so that Ava can use this wood as a",
-				"<str>source of unending arrow shafts.",
-				"<str>Ava suspects that Turael, the Slayer Master in Burthorpe,",
-				"<str>might be able to help.",
-				"<blue>I need to collect a <red>holy symbol of Saradomin<blue> and a <red>mithril",
-				"<red>axe. Turael<blue>, the Burthorpe Slayer, can use these to",
-				"<blue> construct a new axe for my undead tree cutting.");
+			line = writeJournalEntries(player, line, true, 11);
+			line = writeJournal(player, line, JOURNAL_ENTRIES[12]);
+			writeJournal(player, line, JOURNAL_ENTRIES[13]);
 			break;
 		case 32:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<str>I should give the ghost farmer a crone-made amulet so",
-				"<str>that he can talk directly to his wife.",
-				"<str>The farmer seems friendlier now; I need to talk to him",
-				"<str>about the undead chickens.",
-				"<str>The farmer has agreed to sell chickens; now he needs to",
-				"<str>catch one for me.",
-				"<str>The ghost farmer caught some chickens; now I need to buy",
-				"<str>2 from him and deliver them to Ava.",
-				"<str>I need to talk to the Witch in Draynor Manor about",
-				"<str>magically attuned magnets. Apparently, the undead",
-				"<str>chicken will be using magnets in my reward",
-				"<str>I need to deliver 5 iron bars to the Witch in Draynor Manor.",
-				"<str>She will select one most suitable for both magnetising and",
-				"<str>mystical use.",
-				"<str>I need to make a magnet by hammering the selected iron",
-				"<str>bar while facing north in Rimmington mines. I then need",
-				"<str>to pass this magnet to Ava.",
-				"<str>I need to find some way of chopping the undead trees",
-				"<str>near Draynor Manor so that Ava can use this wood as a",
-				"<str>source of unending arrow shafts.",
-				"<str>Ava suspects that Turael, the Slayer Master in Burthorpe,",
-				"<str>might be able to help.",
-				"<str>I need to collect a holy symbol of Saradomin and a mithril",
-				"<str>axe. Turael, the Burthorpe Slayer, can use these to",
-				"<str> construct a new axe for my undead tree cutting.",
-				"<str>I need to chop some undead wood with the silver-edged",
-				"<str>mithril axe. Then Ava will want the wood for constructing",
-				"<str>my reward.",
-				"<blue>I should ask <red>Ava <blue>for the <red>garbled research notes <blue>that she",
-				"<blue>cannot translate. When translated, these notes will tell",
-				"<blue>her how to combine the <red>undead wood, undead chicken <blue>and",
-				"<red>magnet <blue>into some bizarre device.");
+			line = writeJournalEntries(player, line, true, 14);
+			writeJournal(player, line, JOURNAL_ENTRIES[15]);
 			break;
 		case 33:
+			line = writeJournalEntries(player, line, true, 15);
 			if (!player.hasItem(TRANSLATED_NOTES)) {
-				writeJournal(player, line,
-					"<str>I need to find someone who will supply undead chickens to",
-					"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-					"<str>The ghost farmer wants me to talk to his wife for him. I",
-					"<str>need to do this before he will sell chickens.",
-					"<str>I should talk to the crone west of the undead farm and ask",
-					"<str>about ghostspeak amulets. Perhaps she can enable the",
-					"<str>ghost farmer to talk to his wife directly.",
-					"<str>I need to talk the crone while I have a ghostspeak",
-					"<str>amulet so that she can create a new amulet specifically",
-					"<str>for the ghost farmer.",
-					"<str>I should give the ghost farmer a crone-made amulet so",
-					"<str>that he can talk directly to his wife.",
-					"<str>The farmer seems friendlier now; I need to talk to him",
-					"<str>about the undead chickens.",
-					"<str>The farmer has agreed to sell chickens; now he needs to",
-					"<str>catch one for me.",
-					"<str>The ghost farmer caught some chickens; now I need to buy",
-					"<str>2 from him and deliver them to Ava.",
-					"<str>I need to talk to the Witch in Draynor Manor about",
-					"<str>magically attuned magnets. Apparently, the undead",
-					"<str>chicken will be using magnets in my reward",
-					"<str>I need to deliver 5 iron bars to the Witch in Draynor Manor.",
-					"<str>She will select one most suitable for both magnetising and",
-					"<str>mystical use.",
-					"<str>I need to make a magnet by hammering the selected iron",
-					"<str>bar while facing north in Rimmington mines. I then need",
-					"<str>to pass this magnet to Ava.",
-					"<str>I need to find some way of chopping the undead trees",
-					"<str>near Draynor Manor so that Ava can use this wood as a",
-					"<str>source of unending arrow shafts.",
-					"<str>Ava suspects that Turael, the Slayer Master in Burthorpe,",
-					"<str>might be able to help.",
-					"<str>I need to collect a holy symbol of Saradomin and a mithril",
-					"<str>axe. Turael, the Burthorpe Slayer, can use these to",
-					"<str> construct a new axe for my undead tree cutting.",
-					"<str>I need to chop some undead wood with the silver-edged",
-					"<str>mithril axe. Then Ava will want the wood for constructing",
-					"<str>my reward.",
-					"<str>I should ask Ava for the garbled research notes that she",
-					"<str>cannot translate. When translated, these notes will tell",
-					"<str>her how to combine the undead wood, undead chicken and",
-					"<str>magnet into some bizarre device.",
-					"<blue>The <red>research notes <blue>must be translated. I should try to",
-					"<blue>decipher them even though they look like total gibberish.",
-					"<blue>to me.");
+				writeJournal(player, line, JOURNAL_ENTRIES[16]);
 			} else {
-				writeJournal(player, line,
-					"<str>I need to find someone who will supply undead chickens to",
-					"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-					"<str>The ghost farmer wants me to talk to his wife for him. I",
-					"<str>need to do this before he will sell chickens.",
-					"<str>I should talk to the crone west of the undead farm and ask",
-					"<str>about ghostspeak amulets. Perhaps she can enable the",
-					"<str>ghost farmer to talk to his wife directly.",
-					"<str>I need to talk the crone while I have a ghostspeak",
-					"<str>amulet so that she can create a new amulet specifically",
-					"<str>for the ghost farmer.",
-					"<str>I should give the ghost farmer a crone-made amulet so",
-					"<str>that he can talk directly to his wife.",
-					"<str>The farmer seems friendlier now; I need to talk to him",
-					"<str>about the undead chickens.",
-					"<str>The farmer has agreed to sell chickens; now he needs to",
-					"<str>catch one for me.",
-					"<str>The ghost farmer caught some chickens; now I need to buy",
-					"<str>2 from him and deliver them to Ava.",
-					"<str>I need to talk to the Witch in Draynor Manor about",
-					"<str>magically attuned magnets. Apparently, the undead",
-					"<str>chicken will be using magnets in my reward",
-					"<str>I need to deliver 5 iron bars to the Witch in Draynor Manor.",
-					"<str>She will select one most suitable for both magnetising and",
-					"<str>mystical use.",
-					"<str>I need to make a magnet by hammering the selected iron",
-					"<str>bar while facing north in Rimmington mines. I then need",
-					"<str>to pass this magnet to Ava.",
-					"<str>I need to find some way of chopping the undead trees",
-					"<str>near Draynor Manor so that Ava can use this wood as a",
-					"<str>source of unending arrow shafts.",
-					"<str>Ava suspects that Turael, the Slayer Master in Burthorpe,",
-					"<str>might be able to help.",
-					"<str>I need to collect a holy symbol of Saradomin and a mithril",
-					"<str>axe. Turael, the Burthorpe Slayer, can use these to",
-					"<str> construct a new axe for my undead tree cutting.",
-					"<str>I need to chop some undead wood with the silver-edged",
-					"<str>mithril axe. Then Ava will want the wood for constructing",
-					"<str>my reward.",
-					"<str>I should ask Ava for the garbled research notes that she",
-					"<str>cannot translate. When translated, these notes will tell",
-					"<str>her how to combine the undead wood, undead chicken and",
-					"<str>magnet into some bizarre device.",
-					"<str>The research notes must be translated. I should try to",
-					"<str>decipher them even though they look like total gibberish.",
-					"<str>to me.",
-					"<blue>The notes look less confusing now. <red>Ava <blue>will want to see",
-					"<blue>these <red>translated research notes.");
+				line = writeJournal(player, line, true, JOURNAL_ENTRIES[16]);
+				writeJournal(player, line, JOURNAL_ENTRIES[17]);
 			}
 			break;
 		case 34:
-			writeJournal(player, line,
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<str>I should give the ghost farmer a crone-made amulet so",
-				"<str>that he can talk directly to his wife.",
-				"<str>The farmer seems friendlier now; I need to talk to him",
-				"<str>about the undead chickens.",
-				"<str>The farmer has agreed to sell chickens; now he needs to",
-				"<str>catch one for me.",
-				"<str>The ghost farmer caught some chickens; now I need to buy",
-				"<str>2 from him and deliver them to Ava.",
-				"<str>I need to talk to the Witch in Draynor Manor about",
-				"<str>magically attuned magnets. Apparently, the undead",
-				"<str>chicken will be using magnets in my reward",
-				"<str>I need to deliver 5 iron bars to the Witch in Draynor Manor.",
-				"<str>She will select one most suitable for both magnetising and",
-				"<str>mystical use.",
-				"<str>I need to make a magnet by hammering the selected iron",
-				"<str>bar while facing north in Rimmington mines. I then need",
-				"<str>to pass this magnet to Ava.",
-				"<str>I need to find some way of chopping the undead trees",
-				"<str>near Draynor Manor so that Ava can use this wood as a",
-				"<str>source of unending arrow shafts.",
-				"<str>Ava suspects that Turael, the Slayer Master in Burthorpe,",
-				"<str>might be able to help.",
-				"<str>I need to collect a holy symbol of Saradomin and a mithril",
-				"<str>axe. Turael, the Burthorpe Slayer, can use these to",
-				"<str> construct a new axe for my undead tree cutting.",
-				"<str>I need to chop some undead wood with the silver-edged",
-				"<str>mithril axe. Then Ava will want the wood for constructing",
-				"<str>my reward.",
-				"<str>I should ask Ava for the garbled research notes that she",
-				"<str>cannot translate. When translated, these notes will tell",
-				"<str>her how to combine the undead wood, undead chicken and",
-				"<str>magnet into some bizarre device.",
-				"<str>The research notes must be translated. I should try to",
-				"<str>decipher them even though they look like total gibberish.",
-				"<str>to me.",
-				"<str>The notes look less confusing now. Ava will want to see",
-				"<str>these translated research notes.",
-				"<blue>Almost finished! I must combine the <red>pattern <blue>which Ava",
-				"<blue>gave to me with some <red>polished buttons <blue>and a bit of <red>hard",
-				"<red>leather. Ava <blue>tells me that the <red>H.A.M hideout <blue>is a good",
-				"place to obtain <red>buttons.");
+			line = writeJournalEntries(player, line, true, 17);
+			if (!player.hasItem(CONTAINER)) {
+				line = writeJournal(player, line, JOURNAL_ENTRIES[18]);
+				writeJournal(player, line,
+					"<red>leather<blue>.<red> Ava <blue>tells me that the <red>H.A.M hideout <blue>is a good",
+					"place to obtain <red>buttons."
+				);
+			} else {
+				line = writeJournal(player, line, true, JOURNAL_ENTRIES[18]);
+				line = writeJournal(player, line, true, JOURNAL_ENTRIES[19]);
+				writeJournal(player, line, JOURNAL_ENTRIES[20]);
+			}
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>Ava has asked me for undead chickens. One will go",
-				"<str>towards making her bed more comfortable, the other will",
-				"<str>be used in some unexplained reward for me.",
-				"",
-				"<str>I need to find someone who will supply undead chickens to",
-				"<str>me. Perhaps the farm near Port Phasmatys sells them...",
-				"<str>The ghost farmer wants me to talk to his wife for him. I",
-				"<str>need to do this before he will sell the chickens.",
-				"<str>I should talk to the crone west of the undead farm and ask",
-				"<str>about ghostspeak amulets. Perhaps she can enable the",
-				"<str>ghost farmer to talk to his wife directly.",
-				"<str>I need to talk to the crone while I have a ghostspeak",
-				"<str>amulet so that she can create a new amulet specifically",
-				"<str>for the ghost farmer.",
-				"<str>I should give the ghost farmer a crone-made amulet so",
-				"<str>that he can talk directly to his wife.",
-				"<str>The farmer seems friendlier now; I need to talk to him",
-				"<str>about the undead chickens.",
-				"<str>The farmer has agreed to sell chickens; now he needs to",
-				"<str>catch one for me.",
-				"<str>The ghost farmer caught some chickens;now I need to buy",
-				"<str>2 and deliver them to Ava.",
-				"<str>I need to talk to the Witch in Draynor Manor about",
-				"<str>magically attuned magnets. Apparently, the undead",
-				"<str>chicken will be using magnets in my reward.",
-				"<str>I need to deliver 5 iron bars to the Witch in Draynor Manor.",
-				"<str>She will select one most suitable for both magnetising and",
-				"<str>mystical use.",
-				"<str>I need to make a magnet by hammering the selected iron",
-				"<str>bar while facing north in Rimmington mines. I then need",
-				"<str>to pass this magnet to Ava.",
-				"<str>I need to find some way of chopping the undead trees",
-				"<str>near Draynor manor so that Ava can use this wood as a",
-				"<str>source of unending arrow shafts.",
-				"<str>Ava suspects that Turael, the Slayer Master in Burthorpe,",
-				"<str>might be able to help.",
-				"<str>I need to collect a holy symbol of Saradomin and a mithril",
-				"<str>axe. Turael, the Burthorpe Slayer, can use these to",
-				"<str>construct a new axe for my undead tree cutting.",
-				"<str>I need to chop some undead wood with the silver edged",
-				"<str>mithril axe. Then Ava will want the wood for constructing",
-				"<str>my reward.",
-				"<str>I should ask Ava for the garbled research notes that she",
-				"<str>cannot translate. When translated, these notes will tell",
-				"<str>her how to combine the undead wood, undead chicken and",
-				"<str>magnet into some bizarre device.",
-				"<str>The research notes must be translated. I should try to",
-				"<str>decipher them even though they look like total gibberish",
-				"<str>to me.",
-				"<str>The notes look less confusing now. Ava will want to see",
-				"<str>these translated research notes.",
-				"<str>Almost finished!I must combine the pattern which Ava",
-				"<str>gave to me with some polished buttons and a bit of hard",
-				"<str>leather.",
-				"<str>Ava wants the completed container. She can then combine",
-				"<str>it with the undead chicken, undead wood and magnet.",
-				"",
+			line = writeJournalEntries(player, line, true, 20);
+			writeJournal(player, ++line,
 				"<col=FF0000>QUEST COMPLETE!",
 				"<red>Ava's reward for me is an arrow attracting and creating",
 				"<red>backpack.",
@@ -753,31 +392,17 @@ public final class AnimalMagnetism extends Quest {
 		}
 	}
 
-	/**
-	 * Draws the requirements.
-	 */
-	private void drawRequirements(Player player, int line) {
-		hasRequirements(player);
-		for (int i = 0; i < requirements.length; i++) {
-			writeJournal(player, line++, (requirements[i] ? "<str>" : "<red>") + REQS[i]);
-		}
-	}
-
 	@Override
-	public boolean hasRequirements(Player player) {
-		requirements[0] = player.getQuestRepository().isComplete("The Restless Ghost");
-		requirements[1] = player.getQuestRepository().isComplete("Ernest the Chicken");
-		requirements[2] = player.getQuestRepository().isComplete(PriestInPeril.NAME);
-		requirements[3] = player.getSkills().getStaticLevel(Skills.RANGE) >= 30;
-		requirements[4] = player.getSkills().getStaticLevel(Skills.SLAYER) >= 18;
-		requirements[5] = player.getSkills().getStaticLevel(Skills.CRAFTING) >= 19;
-		requirements[6] = player.getSkills().getStaticLevel(Skills.WOODCUTTING) >= 35;
-		for (boolean bool : requirements) {
-			if (!bool) {
-				return false;
-			}
-		}
-		return true;
+	public QuestRequirement[] getQuestRequirements(Player player) {
+		return new QuestRequirement[]{
+			new QuestRequirement(player.getQuestRepository().getQuest(RestlessGhost.NAME), "<red>I must have completed " + RestlessGhost.NAME + "."),
+			new QuestRequirement(player.getQuestRepository().getQuest(ErnestTheChicken.NAME), "<red>I must have completed " + ErnestTheChicken.NAME + "."),
+			new QuestRequirement(player.getQuestRepository().getQuest(PriestInPeril.NAME), "<red>I must have completed " + PriestInPeril.NAME + "."),
+			new QuestRequirement(Skills.RANGE, 30),
+			new QuestRequirement(Skills.SLAYER, 18),
+			new QuestRequirement(Skills.CRAFTING, 19),
+			new QuestRequirement(Skills.WOODCUTTING, 35),
+		};
 	}
 
 	@Override
@@ -810,5 +435,4 @@ public final class AnimalMagnetism extends Quest {
 		int val = stage < 100 && stage > 0 ? 10 : stage >= 100 ? 240 : 0;
 		return new int[] { 939, val };
 	}
-
 }

@@ -26,7 +26,7 @@ public class DoricsQuest extends Quest {
 			17,
 			16,
 			1,
-			new int[] {31, 0, 1, 100}
+			31, 0, 1, 100
 		);
 	}
 	
@@ -47,13 +47,14 @@ public class DoricsQuest extends Quest {
 				"There aren't any requirements but <red>Level 15 Mining <blue>will help.");
 			break;
 		case 1:
-			writeJournal(player,
+			int line = writeJournal(player,
 				"<str>I have spoken to <red>Doric",
 				"",
-				"I need to collect some items and bring them to <red>Doric:",
-				(player.getInventory().contains(434, 6) ? "<str>" : "") + "<red>6 Clay",
-				(player.getInventory().contains(436, 4) ? "<str>" : "") + "<red>4 Copper Ore",
-				(player.getInventory().contains(440, 2) ? "<str>" : "") + "<red>2 Iron Ore");
+				"I need to collect some items and bring them to <red>Doric:"
+			);
+			line = writeJournal(player, line, player.getInventory().contains(434, 6), "<red>6 Clay");
+			line = writeJournal(player, line, player.getInventory().contains(436, 4), "<red>4 Copper Ore");
+			writeJournal(player, line, player.getInventory().contains(440, 2), "<red>2 Iron Ore");
 			break;
 		case 100:
 			writeJournal(player,

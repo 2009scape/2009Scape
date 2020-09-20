@@ -68,32 +68,35 @@ public class TheKnightsSword extends Quest {
 				RED + "Asgarnia, " + BLUE + "they dislike strangers, and LOVE " + RED + "redberry pies.");
 			break;
 		case 30:
-			writeJournal(player,
-				"<str>I told the Squire I would help him to replace the sword he",
-				"<str>has lost. It could only be made by an Imcando Dwarf.",
-				"<str>I found an Imcando Dwarf named Thurgo thanks to",
-				"<str>information provided by Reldo. He wasn't very talkative",
-				"<str>until I gave him a Redberry pie, which he gobbled up.",
+			line = writeJournal(player, true,
+				"I told the Squire I would help him to replace the sword he",
+				"has lost. It could only be made by an Imcando Dwarf.",
+				"I found an Imcando Dwarf named Thurgo thanks to",
+				"information provided by Reldo. He wasn't very talkative",
+				"until I gave him a Redberry pie, which he gobbled up.");
+			writeJournal(player, line,
 				BLUE + "He will help me now I have gained his trust through " + RED + "pie.");
 			break;
 		case 40:
-			writeJournal(player,
-				"<str>I told the Squire I would help him to replace the sword he",
-				"<str>has lost. It could only be made by an Imcando Dwarf.",
-				"<str>I found an Imcando Dwarf named Thurgo thanks to",
-				"<str>information provided by Reldo. He wasn't very talkative",
-				"<str>until I gave him a Redberry pie, which he gobbled up.",
+			line = writeJournal(player, true,
+				"I told the Squire I would help him to replace the sword he",
+				"has lost. It could only be made by an Imcando Dwarf.",
+				"I found an Imcando Dwarf named Thurgo thanks to",
+				"information provided by Reldo. He wasn't very talkative",
+				"until I gave him a Redberry pie, which he gobbled up."
+			);
+			writeJournal(player, line,
 				RED + "Thurgo " + BLUE + "needs a " + RED + "picture of the sword " + BLUE + "before he can help.",
 				BLUE + "I should probably ask the " + RED + "Squire " + BLUE + "about obtaining one.");
 			break;
 		case 50:
-			line = writeJournal(player,
-				"<str>I told the Squire I would help him to replace the sword he",
-				"<str>has lost. It could only be made by an Imcando Dwarf.",
-				"<str>I found an Imcando Dwarf named Thurgo thanks to",
-				"<str>information provided by Reldo. He wasn't very talkative",
-				"<str>until I gave him a Redberry pie, which he gobbled up.",
-				"<str>Thurgo needed a picture of the sword to replace."
+			line = writeJournal(player, true,
+				"I told the Squire I would help him to replace the sword he",
+				"has lost. It could only be made by an Imcando Dwarf.",
+				"I found an Imcando Dwarf named Thurgo thanks to",
+				"information provided by Reldo. He wasn't very talkative",
+				"until I gave him a Redberry pie, which he gobbled up.",
+				"Thurgo needed a picture of the sword to replace."
 			);
 			if (!player.getInventory().containsItem(PORTRAIT)) {
 				writeJournal(player, line,
@@ -108,15 +111,19 @@ public class TheKnightsSword extends Quest {
 			}
 			break;
 		case 60:
-			line = writeJournal(player,
-				"<str>I told the Squire I would help him to replace the sword he",
-				"<str>has lost. It could only be made by an Imcando Dwarf.",
-				"<str>I found an Imcando Dwarf named Thurgo thanks to",
-				"<str>information provided by Reldo. He wasn't very talkative",
-				"<str>until I gave him a Redberry pie, which he gobbled up.",
-				"<str>Thurgo needed a picture of the sword before he could",
-				"<str>start work on a replacement. I took him a portrait of it.");
-			if (player.getInventory().contains(667, 1) || player.getEquipment().contains(667, 1) || player.getBank().contains(667, 1)) {
+			line = writeJournal(player, true,
+				"I told the Squire I would help him to replace the sword he",
+				"has lost. It could only be made by an Imcando Dwarf.",
+				"I found an Imcando Dwarf named Thurgo thanks to",
+				"information provided by Reldo. He wasn't very talkative",
+				"until I gave him a Redberry pie, which he gobbled up.",
+				"Thurgo needed a picture of the sword before he could",
+				"start work on a replacement. I took him a portrait of it.");
+			if (
+				player.getInventory().contains(667, 1) ||
+				player.getEquipment().contains(667, 1) ||
+				player.getBank().contains(667, 1)
+			) {
 				writeJournal(player, line,
 					"<str>Thurgo has now smithed me a replica of Sir Vyvin's sword.",
 					"",
@@ -124,21 +131,22 @@ public class TheKnightsSword extends Quest {
 				);
 			} else {
 				writeJournal(player, line,
-					BLUE + "according to " + RED + "Thurgo " + BLUE + "to make a " + RED + "replica sword " + BLUE + "he will need",
+					BLUE + "According to " + RED + "Thurgo" + BLUE + ", to make a " + RED + "replica sword " + BLUE + "he will need",
 					RED + "two Iron Bars " + BLUE + "and some " + RED + "Blurite Ore. Blurite Ore " + BLUE + "can only be",
 					BLUE + "found " + RED + "deep in the caves below Thurgo's house."
 				);
 			}
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>Thurgo needed a picture of the sword before he could",
-				"<str>start work on a replacement. I took him a portrait of it.",
-				"<str>After bringing Thurgo two iron bars and some blurite ore",
-				"<str>he made me a fine replica of Sir Vyvin's Sword, which I",
-				"<str>returned to the Squire for a reward.",
-				"",
-				"<col=FF0000>QUEST COMPLETE!</col>");
+			line = writeJournal(player, true,
+				"Thurgo needed a picture of the sword before he could",
+				"start work on a replacement. I took him a portrait of it.",
+				"After bringing Thurgo two iron bars and some blurite ore",
+				"he made me a fine replica of Sir Vyvin's Sword, which I",
+				"returned to the Squire for a reward.",
+				""
+			);
+			writeJournal(player, line, "<col=FF0000>QUEST COMPLETE!</col>");
 			break;
 		}
 	}

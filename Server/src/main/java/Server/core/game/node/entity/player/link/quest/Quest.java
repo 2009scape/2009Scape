@@ -2,7 +2,6 @@ package core.game.node.entity.player.link.quest;
 
 import core.game.component.Component;
 import core.game.node.entity.player.Player;
-import core.game.node.item.GroundItemManager;
 import core.plugin.Plugin;
 import core.plugin.PluginManifest;
 import core.plugin.PluginType;
@@ -51,7 +50,7 @@ public abstract class Quest implements Plugin<Object> {
 	 * The name of the quest.
 	 */
 	private final String name;
-	
+
 	/**
 	 * The index id of the quest.
 	 */
@@ -163,10 +162,10 @@ public abstract class Quest implements Plugin<Object> {
 		}
 		for (QuestReward reward: getQuestRewards(player)) {
 			player.getPacketDispatch().sendString(reward.toString(), REWARD_COMPONENT, line++);
-			if (reward.type == QuestReward.QuestRewardType.ITEM) {
-				player.getInventory().add(reward.item, player);
+			if (reward.getType() == QuestReward.QuestRewardType.ITEM) {
+				player.getInventory().add(reward.getItem(), player);
 			} else {
-				player.getSkills().addExperience(reward.skill, reward.experience);
+				player.getSkills().addExperience(reward.getSkill(), reward.getExperience());
 			}
 		}
 	}
@@ -198,14 +197,77 @@ public abstract class Quest implements Plugin<Object> {
 	}
 
 	/**
+	 * Writes texts to the player's journal.
+	 *
+	 * @param player the player
+	 * @param lineNumber line number to start on
+	 * @param str whether to strikethrough the lines
+	 * @param texts the lines of text
+	 * @return next journal line number to be used
+	 */
+	public int writeJournal(Player player, int lineNumber, boolean str, String... texts) {
+		for (String text: texts) {
+			player.getPacketDispatch().sendString(processString(text, str), JOURNAL_COMPONENT, lineNumber++);
+		}
+		return lineNumber;
+	}
+
+	/**
+	 * Gets the quest's journal entries
+	 */
+	public String[][] getJournalEntries() {
+		return new String[][]{};
+	}
+
+	/**
+	 * Writes journal entries from the quest's {@link #getJournalEntries} to the player's journal.
+	 *
+	 * @param player the player
+	 * @param lineNumber line number to start on
+	 * @param str whether to strikethrough the lines
+	 * @param toEntryIndex Writes entries up to and including {@code toEntryIndex}
+	 * @return next journal line number to be used
+	 */
+	public int writeJournalEntries(Player player, int lineNumber, boolean str, int toEntryIndex) {
+		String[][] je = getJournalEntries();
+		for (int i = 0; i <= toEntryIndex; i++) {
+			lineNumber = writeJournal(player, lineNumber, str, je[i]);
+		}
+		return lineNumber;
+	}
+
+	/**
+	 * Writes texts to the player's journal.
+	 *
+	 * @param player the player
+	 * @param strikethrough whether to strikethrough the lines
+	 * @param texts the lines of text
+	 * @return next journal line number to be used
+	 */
+	public int writeJournal(Player player, boolean strikethrough, String... texts) {
+		return writeJournal(player, JOURNAL_TEXT_START, strikethrough, texts);
+	}
+
+	/**
 	 * Replaces tags in text for sending to the client. Not limited to quests.
 	 *
 	 * @param text text to run tag replacements on
 	 * @return processed text to send to the client
 	 */
-	public String processString(String text) {
+	public static String processString(String text) {
+		return processString(text, false);
+	}
+
+	/**
+	 * Strikes through and replaces tags in text for sending to the client. Not limited to quests.
+	 *
+	 * @param text text to run tag replacements on
+	 * @param str whether the text should be struck out
+	 * @return processed text to send to the client
+	 */
+	public static String processString(String text, boolean str) {
 		// Default to blue text
-		text = BLUE + text
+		text = (str ? "<str>" : "") + (text.startsWith("<") ? "" : BLUE) + text
 			// Add replacements below
 			.replace("<blue>", BLUE)
 			.replace("<red>", RED)
@@ -252,7 +314,7 @@ public abstract class Quest implements Plugin<Object> {
 	public boolean isCompleted(Player player) {
 		return getStage(player) >= 100;
 	}
-	
+
 	/**
 	 * Gets the player instanced stage of this quest.
 	 * @param player The player.
@@ -263,11 +325,17 @@ public abstract class Quest implements Plugin<Object> {
 	}
 
 	/**
-	 * Checks the requirements for the quest.
-	 * @param player The player
+	 * Whether the player can start the quest
+	 *
+	 * @param player The player.
 	 * @return {@code True} if so.
 	 */
 	public boolean hasRequirements(Player player) {
+		for (QuestRequirement requirement: getQuestRequirements(player)) {
+			if (!requirement.check(player)) {
+				return false;
+			}
+		}
 		return true;
 	}
 
@@ -323,6 +391,23 @@ public abstract class Quest implements Plugin<Object> {
 	 * @return the item
 	 */
 	abstract public QuestRewardComponentItem getRewardComponentItem();
+
+	/**
+	 * Gets the quest's requirements
+	 * @return QuestRequirements
+	 */
+	public QuestRequirement[] getQuestRequirements(Player player) {
+		return new QuestRequirement[0];
+	}
+
+	public String[] getQuestRequirementsJournal(Player player) {
+		QuestRequirement[] questRequirements = getQuestRequirements(player);
+		String[] text = new String[questRequirements.length];
+		for (int i = 0; i < questRequirements.length; i++) {
+			text[i] = questRequirements[i].toJournalString(player);
+		}
+		return text;
+	}
 
 	/**
 	 * Gets the quest's rewards

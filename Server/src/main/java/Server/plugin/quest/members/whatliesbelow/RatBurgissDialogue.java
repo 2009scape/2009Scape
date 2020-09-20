@@ -162,7 +162,11 @@ public class RatBurgissDialogue extends DialoguePlugin {
 				player("Hello!");
 				// This is the starting point for dialogues at all stages.
 				stage = 0;
-				// TODO: If quest has not started, check quest requirements. If pass, set stage to 5.
+
+				// Allow the player to start the quest if the requirements are met.
+				if (!quest.isStarted(player) && quest.hasRequirements(player)) {
+					stage = 5;
+				}
 				break;
 			case 2:
 				sendDiaryDialogue();
