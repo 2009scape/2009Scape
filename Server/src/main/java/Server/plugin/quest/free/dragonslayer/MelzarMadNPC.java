@@ -19,12 +19,11 @@ import core.game.world.map.RegionManager;
 import core.tools.RandomFunction;
 
 /**
- * Represents the medlar the mad npc.
- * TODO: Rename to "Melzar"
+ * Represents the Melzar the mad npc.
  * @author 'Vexia
  * @version 1.0
  */
-public final class MeldarMadNPC extends AbstractNPC {
+public final class MelzarMadNPC extends AbstractNPC {
 
 	/**
 	 * The NPC ids of NPCs using this plugin.
@@ -44,27 +43,27 @@ public final class MeldarMadNPC extends AbstractNPC {
 	/**
 	 * Represents the swing handler.
 	 */
-	private final MeldarSwingHandler combatHandler = new MeldarSwingHandler();
+	private final MelzarSwingHandler combatHandler = new MelzarSwingHandler();
 
 	/**
-	 * Constructs a new {@code MeldarMadNPC} {@code Object}.
+	 * Constructs a new {@code MelzarMadNPC} {@code Object}.
 	 */
-	public MeldarMadNPC() {
+	public MelzarMadNPC() {
 		super(0, null);
 	}
 
 	/**
-	 * Constructs a new {@code MeldarMadNPC} {@code Object}.
+	 * Constructs a new {@code MelzarMadNPC} {@code Object}.
 	 * @param id The NPC id.
 	 * @param location The location.
 	 */
-	private MeldarMadNPC(int id, Location location) {
+	private MelzarMadNPC(int id, Location location) {
 		super(id, location);
 	}
 
 	@Override
 	public AbstractNPC construct(int id, Location location, Object... objects) {
-		return new MeldarMadNPC(id, location);
+		return new MelzarMadNPC(id, location);
 	}
 
 	@Override
@@ -101,10 +100,10 @@ public final class MeldarMadNPC extends AbstractNPC {
 	}
 
 	/**
-	 * Represents the combat swing handler for meldar the mad npc.
+	 * Represents the combat swing handler for Melzar the mad npc.
 	 * @author 'Vexia
 	 */
-	public class MeldarSwingHandler extends CombatSwingHandler {
+	public class MelzarSwingHandler extends CombatSwingHandler {
 
 		/**
 		 * Represents the style to use.
@@ -114,12 +113,12 @@ public final class MeldarMadNPC extends AbstractNPC {
 		/**
 		 * Represents the spell ids.
 		 */
-		private final int SPELL_IDS[] = new int[] { 8, 2, 7, 11 };
+		private final int[] SPELL_IDS = new int[] { 8, 2, 7, 11 };
 
 		/**
-		 * Constructs a new {@code MeldarMapNPC} {@code Object}.
+		 * Constructs a new {@code MelzarMadNPC} {@code Object}.
 		 */
-		public MeldarSwingHandler() {
+		public MelzarSwingHandler() {
 			super(CombatStyle.MAGIC);
 		}
 

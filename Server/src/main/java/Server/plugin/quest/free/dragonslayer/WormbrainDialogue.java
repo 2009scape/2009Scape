@@ -29,9 +29,6 @@ public final class WormbrainDialogue extends DialoguePlugin {
 	 * Constructs a new {@code WormbrainDialogue} {@code Object}.
 	 */
 	public WormbrainDialogue() {
-		/**
-		 * empty.
-		 */
 	}
 
 	/**
@@ -51,12 +48,8 @@ public final class WormbrainDialogue extends DialoguePlugin {
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
 		quest = player.getQuestRepository().getQuest(DragonSlayer.NAME);
-		switch (quest.getStage(player)) {
-		default:
-			npc("Whut you want?");
-			stage = -1;
-			break;
-		}
+		npc("Whut you want?");
+		stage = -1;
 		return true;
 	}
 

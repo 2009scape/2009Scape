@@ -7,6 +7,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
+import plugin.quest.free.WitchsPotion;
 
 /**
  * Represents the witchs potion plugin.
@@ -25,7 +26,7 @@ public final class WitchsPotionPlugin extends OptionHandler {
 
 	@Override
 	public boolean handle(Player player, Node node, String option) {
-		final Quest quest = player.getQuestRepository().getQuest("Witch's Potion");
+		final Quest quest = player.getQuestRepository().getQuest(WitchsPotion.NAME);
 		switch (quest.getStage(player)) {
 		case 20:
 		case 100:

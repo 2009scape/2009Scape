@@ -1,5 +1,6 @@
 package plugin.npc.other;
 
+import plugin.quest.free.WitchsPotion;
 import plugin.quest.tutorials.tutorialisland.TutorialSession;
 import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import plugin.skill.Skills;
@@ -72,10 +73,8 @@ public class RatTutorialNPC extends AbstractNPC {
 		if (TutorialSession.getExtension(p).getStage() == 54) {
 			TutorialStage.load(p, 55, false);
 		}
-		if (killer instanceof Player) {
-			if (p.getQuestRepository().getQuest("Witch's Potion").isStarted(p)) {
-				GroundItemManager.create(new Item(300), getLocation(), p);
-			}
+		if (p.getQuestRepository().getQuest(WitchsPotion.NAME).isStarted(p)) {
+			GroundItemManager.create(new Item(300), getLocation(), p);
 		}
 	}
 

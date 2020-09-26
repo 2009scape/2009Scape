@@ -542,10 +542,7 @@ public final class DragonSlayerCutscene extends CutscenePlugin {
 					for (Location fire : fires) {
 						player.getPacketDispatch().sendPositionedGraphic(453, 0, 1, fire);
 					}
-					if (finished) {
-						return true;
-					}
-					return false;
+					return finished;
 				}
 
 			});

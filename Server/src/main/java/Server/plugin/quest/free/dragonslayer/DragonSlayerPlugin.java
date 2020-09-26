@@ -195,7 +195,11 @@ public final class DragonSlayerPlugin extends OptionHandler {
 			ClimbActionHandler.climb(player, new Animation(828), new Location(2834, 3258, 0));
 			break;
 		case 2606:
-			if (player.getLocation().getY() < 9600 && !player.getSavedData().getQuestData().getDragonSlayerAttribute("memorized") && player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) != 100) {
+			if (
+				player.getLocation().getY() < 9600 &&
+				!player.getSavedData().getQuestData().getDragonSlayerAttribute("memorized") &&
+				player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) != 100
+			) {
 				player.getPacketDispatch().sendMessage("The door is securely locked.");
 			} else {
 				if (!player.getSavedData().getQuestData().getDragonSlayerAttribute("memorized")) {

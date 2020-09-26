@@ -165,10 +165,9 @@ public final class QuestData implements SavingModule {
 	 * Saves the desert treasure node.
 	 * @param buffer The buffer.
 	 */
-	private final void saveDesertTreasureNode(ByteBuffer buffer) {
+	private void saveDesertTreasureNode(ByteBuffer buffer) {
 		buffer.put((byte) 8);
-		for (int i = 0; i < desertTreasure.length; i++) {
-			Item item = desertTreasure[i];
+		for (Item item : desertTreasure) {
 			buffer.putShort((short) item.getId());
 			buffer.put((byte) item.getAmount());
 		}
@@ -195,8 +194,38 @@ public final class QuestData implements SavingModule {
 	 * @param name the name.
 	 * @return the value of the item being inserted.
 	 */
+	@SuppressWarnings("DuplicateBranchesInSwitch")
 	public boolean getDragonSlayerItem(String name) {
-		return name == "lobster" ? dragonSlayer[0] : name == "wizard" ? dragonSlayer[3] : name == "silk" ? dragonSlayer[2] : name == "bowl" ? dragonSlayer[1] : dragonSlayer[0];
+		switch (name) {
+			case "lobster":
+				return dragonSlayer[0];
+			case "wizard":
+				return dragonSlayer[3];
+			case "silk":
+				return dragonSlayer[2];
+			case "bowl":
+				return dragonSlayer[1];
+			default:
+				return dragonSlayer[0];
+		}
+	}
+
+	@SuppressWarnings("DuplicateBranchesInSwitch")
+	public int getDragonSlayerAttributeIndex(String name) {
+		switch (name) {
+			case "ship":
+				return 4;
+			case "memorized":
+				return 5;
+			case "repaired":
+				return 6;
+			case "ned":
+				return 7;
+			case "poured":
+				return 8;
+			default:
+				return 8;
+		}
 	}
 
 	/**
@@ -205,7 +234,7 @@ public final class QuestData implements SavingModule {
 	 * @return the value of the attribute.
 	 */
 	public boolean getDragonSlayerAttribute(String name) {
-		return name == "ship" ? dragonSlayer[4] : name == "memorized" ? dragonSlayer[5] : name == "repaired" ? dragonSlayer[6] : name == "ned" ? dragonSlayer[7] : name == "poured" ? dragonSlayer[8] : dragonSlayer[8];
+		return dragonSlayer[getDragonSlayerAttributeIndex(name)];
 	}
 
 	/**
@@ -214,7 +243,23 @@ public final class QuestData implements SavingModule {
 	 * @param value the value.
 	 */
 	public void setDragonSlayerAttribute(String name, boolean value) {
-		dragonSlayer[(name == "ship" ? 4 : name == "memorized" ? 5 : name == "repaired" ? 6 : name == "ned" ? 7 : name == "poured" ? 8 : 8)] = value;
+		dragonSlayer[getDragonSlayerAttributeIndex(name)] = value;
+	}
+
+	@SuppressWarnings("DuplicateBranchesInSwitch")
+	public int getCooksAssistantAttributeIndex(String name) {
+		switch (name) {
+			case "milk":
+				return 0;
+			case "egg":
+				return 1;
+			case "flour":
+				return 2;
+			case "gave":
+				return 3;
+			default:
+				return 3;
+		}
 	}
 
 	/**
@@ -223,7 +268,7 @@ public final class QuestData implements SavingModule {
 	 * @return the value.
 	 */
 	public boolean getCookAssist(String name) {
-		return name == "milk" ? cooksAssistant[0] : name == "egg" ? cooksAssistant[1] : name == "flour" ? cooksAssistant[2] : name == "gave" ? cooksAssistant[3] : cooksAssistant[3];
+		return cooksAssistant[getCooksAssistantAttributeIndex(name)];
 	}
 
 	/**
@@ -232,7 +277,7 @@ public final class QuestData implements SavingModule {
 	 * @param value the value.
 	 */
 	public void setCooksAssistant(String name, boolean value) {
-		cooksAssistant[(name == "milk" ? 0 : name == "egg" ? 1 : name == "flour" ? 2 : name == "gave" ? 3 : 3)] = value;
+		cooksAssistant[getCooksAssistantAttributeIndex(name)] = value;
 	}
 
 	/**
@@ -302,7 +347,7 @@ public final class QuestData implements SavingModule {
 	/**
 	 * Populates the desert treasure node.
 	 */
-	private final void populateDesertTreasureNode() {
+	private void populateDesertTreasureNode() {
 		desertTreasure[0] = new Item(1513, 12);
 		desertTreasure[1] = new Item(592, 10);
 		desertTreasure[2] = new Item(1775, 6);

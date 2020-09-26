@@ -7,6 +7,7 @@ import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import core.game.world.map.Location;
+import plugin.quest.free.WitchsPotion;
 
 /**
  * Represents a rat npc.
@@ -51,7 +52,7 @@ public class RatNPC extends AbstractNPC {
 		super.finalizeDeath(killer);
 		if (killer instanceof Player) {
 			final Player p = ((Player) killer);
-			if (p.getQuestRepository().getQuest("Witch's Potion").isStarted(p)) {
+			if (p.getQuestRepository().getQuest(WitchsPotion.NAME).isStarted(p)) {
 				GroundItemManager.create(RAT_TAIL, getLocation(), p);
 			}
 			if (!getName().equals("Giant rat")) {

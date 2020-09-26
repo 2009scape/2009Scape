@@ -145,6 +145,7 @@ class ServerConstants {
 				arrayOf(Location.create(2969, 3343, 0), "wkc", "white knights' castle"),
 				arrayOf(Location.create(3660, 3500, 0), "phasmatys"),
 				arrayOf(Location.create(3109, 3359, 0), "draynor manor"),
+				arrayOf(Location.create(2834, 3259, 0), "crandor"),
 		)
 
 		@JvmField

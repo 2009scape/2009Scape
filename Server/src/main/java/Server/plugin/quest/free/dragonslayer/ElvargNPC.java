@@ -46,14 +46,14 @@ public final class ElvargNPC extends AbstractNPC {
 	private final CombatSwingHandler combatHandler = new ElvargCombatSwingHandler();
 
 	/**
-	 * Constructs a new {@code MeldarMadNPC} {@code Object}.
+	 * Constructs a new {@code ElvargNPC} {@code Object}.
 	 */
 	public ElvargNPC() {
 		super(0, null);
 	}
 
 	/**
-	 * Constructs a new {@code MeldarMadNPC} {@code Object}.
+	 * Constructs a new {@code ElvargNPC} {@code Object}.
 	 * @param id The NPC id.
 	 * @param location The location.
 	 */
@@ -148,7 +148,7 @@ public final class ElvargNPC extends AbstractNPC {
 			return super.isAttackable(entity, style);
 		}
 		final Player player = (Player) entity;
-		if (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) == 40 && (player.getInventory().containsItem(DragonSlayer.ELVARG_HEAD) || player.getInventory().containsItem(DragonSlayer.ELVARG_HEAD))) {
+		if (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) == 40 && player.getInventory().containsItem(DragonSlayer.ELVARG_HEAD)) {
 			player.getPacketDispatch().sendMessage("You have already slain the dragon. Now you just need to return to Oziach for");
 			player.getPacketDispatch().sendMessage("your reward!");
 			return true;

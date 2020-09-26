@@ -4,7 +4,6 @@ import plugin.dialogue.DialoguePlugin;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
-import core.game.node.item.GroundItemManager;
 
 /**
  * Represents the guild master dialogue at the champions guild related to dragon slayer.
@@ -87,9 +86,7 @@ public final class GuildmasterDialogue extends DialoguePlugin {
 				break;
 			case 20:
 				if (!player.getInventory().containsItem(DragonSlayer.MAZE_KEY) && !player.getBank().containsItem(DragonSlayer.MAZE_KEY)) {
-					if (!player.getInventory().add(DragonSlayer.MAZE_KEY)) {
-						GroundItemManager.create(DragonSlayer.MAZE_KEY, player);
-					}
+					player.getInventory().add(DragonSlayer.MAZE_KEY, player);
 					interpreter.sendItemMessage(DragonSlayer.MAZE_KEY.getId(), "The Guildmaster hands you a key.");
 					stage = 21;
 					break;
@@ -185,9 +182,7 @@ public final class GuildmasterDialogue extends DialoguePlugin {
 				stage = 1003;
 				break;
 			case 1003:
-				if (!player.getInventory().add(DragonSlayer.MAZE_KEY)) {
-					GroundItemManager.create(DragonSlayer.MAZE_KEY, player);
-				}
+				player.getInventory().add(DragonSlayer.MAZE_KEY, player);
 				interpreter.sendItemMessage(DragonSlayer.MAZE_KEY.getId(), "The Guildmaster hands you a key.");
 				stage = 1004;
 				break;
@@ -332,11 +327,11 @@ public final class GuildmasterDialogue extends DialoguePlugin {
 				stage = 14;
 				break;
 			case 14:
-				npc("Some refuegees managed to escape in fishing boats.", "They landed on the coast, north of Rimmington, and", "set up camp but the dragon followed them and burned", "the camp to the ground.");
+				npc("Some refugees managed to escape in fishing boats.", "They landed on the coast, north of Rimmington, and", "set up camp but the dragon followed them and burned", "the camp to the ground.");
 				stage = 15;
 				break;
 			case 15:
-				npc("Out of all the people of Crandor there were only three", "surviors: a trio of wizards who used the magic to escape.", "Their names were Thalzar, Lozar and Melzar.");
+				npc("Out of all the people of Crandor there were only three", "survivors: a trio of wizards who used the magic to escape.", "Their names were Thalzar, Lozar and Melzar.");
 				stage = 16;
 				break;
 			case 16:

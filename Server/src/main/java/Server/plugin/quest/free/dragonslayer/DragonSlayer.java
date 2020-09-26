@@ -138,7 +138,7 @@ public final class DragonSlayer extends Quest {
 			new MazeGhostNPC(),
 			new MazeSkeletonNPC(),
 			new MazeZombieNPC(),
-			new MeldarMadNPC(),
+			new MelzarMadNPC(),
 			new WormbrainNPC(),
 			new ZombieRatNPC(),
 			new DSChestDialogue(),
@@ -305,7 +305,7 @@ public final class DragonSlayer extends Quest {
 				"The Duke of Lumbridge gave me an anti-dragonbreath",
 				"shield."
 			);
-			if (player.getAttribute("demon-slayer:memorized", false)) {
+			if (player.getAttribute("dragon-slayer:memorized", false)) {
 				line = writeJournal(player, line, true,
 					"I have found a secret passage leading from Karamja to",
 					"Crandor, so I no longer need to worry about finding a",
@@ -376,7 +376,12 @@ public final class DragonSlayer extends Quest {
 	 * @return <code>True</code> if so.
 	 */
 	public static boolean handleMagicDoor(final Player player, boolean interaction) {
-		if (!player.getSavedData().getQuestData().getDragonSlayerItem("lobster") || !player.getSavedData().getQuestData().getDragonSlayerItem("bowl") || !player.getSavedData().getQuestData().getDragonSlayerItem("silk") || !player.getSavedData().getQuestData().getDragonSlayerItem("wizard")) {
+		if (
+			!player.getSavedData().getQuestData().getDragonSlayerItem("lobster") ||
+			!player.getSavedData().getQuestData().getDragonSlayerItem("bowl") ||
+			!player.getSavedData().getQuestData().getDragonSlayerItem("silk") ||
+			!player.getSavedData().getQuestData().getDragonSlayerItem("wizard")
+		) {
 			if (interaction) {
 				player.getPacketDispatch().sendMessage("You can't see any way to open the door.");
 			}

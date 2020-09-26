@@ -8,6 +8,7 @@ import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 import core.game.world.map.Location;
 import core.tools.RandomFunction;
+import plugin.quest.free.WitchsPotion;
 
 /**
  * Represents a zombie rat npc related to dragon slayer and witch's potion.
@@ -52,7 +53,7 @@ public final class ZombieRatNPC extends AbstractNPC {
 		super.finalizeDeath(killer);
 		if (killer instanceof Player) {
 			final Player p = ((Player) killer);
-			Quest quest = p.getQuestRepository().getQuest("Witch's Potion");
+			Quest quest = p.getQuestRepository().getQuest(WitchsPotion.NAME);
 			if (RandomFunction.random(0, 4) == 2) {
 				GroundItemManager.create(DragonSlayer.RED_KEY, getLocation(), ((Player) killer));
 			}

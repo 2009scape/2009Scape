@@ -4,6 +4,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
+import plugin.quest.free.WitchsPotion;
 
 /**
  * Represents the dialogue plugin used for the hetty npc.
@@ -37,7 +38,7 @@ public final class HettyDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean open(Object... args) {
-		Quest quest = player.getQuestRepository().getQuest("Witch's Potion");
+		Quest quest = player.getQuestRepository().getQuest(WitchsPotion.NAME);
 		if (quest.isCompleted(player)) {
 			interpreter.sendDialogues(307, FacialExpression.HALF_GUILTY, "How's your magic coming along?");
 			stage = 0;
@@ -66,7 +67,7 @@ public final class HettyDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
-		Quest quest = player.getQuestRepository().getQuest("Witch's Potion");
+		Quest quest = player.getQuestRepository().getQuest(WitchsPotion.NAME);
 		switch (stage) {
 		case 0:
 			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'm practicing and slowly getting better.");
@@ -104,7 +105,7 @@ public final class HettyDialogue extends DialoguePlugin {
 			stage = 15;
 			break;
 		case 15:
-			interpreter.sendOptions("Select an Option", "Yes help me become one with my darker side.", "No I have my prinicples and honour.");
+			interpreter.sendOptions("Select an Option", "Yes help me become one with my darker side.", "No I have my principles and honour.");
 			stage = 16;
 			break;
 		case 16:

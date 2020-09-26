@@ -22,9 +22,6 @@ public final class OziachDialogue extends DialoguePlugin {
 	 * Constructs a new {@code OziachDialogue} {@code Object}.
 	 */
 	public OziachDialogue() {
-		/**
-		 * empty.
-		 */
 	}
 
 	/**

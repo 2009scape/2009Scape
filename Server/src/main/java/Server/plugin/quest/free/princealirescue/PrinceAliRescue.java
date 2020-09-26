@@ -223,13 +223,13 @@ public class PrinceAliRescue extends Quest {
 
 	@Override
 	public Item getRewardComponentItem() {
-		return new Item(995);
+		return new Item(995, 20);
 	}
 
 	@Override
 	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
-			new QuestReward(new Item(995, 700)),
+			new QuestReward(COINS),
 		};
 	}
 }

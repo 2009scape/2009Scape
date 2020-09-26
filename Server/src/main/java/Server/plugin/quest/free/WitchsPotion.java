@@ -15,11 +15,16 @@ import core.game.node.entity.player.link.quest.Quest;
 public class WitchsPotion extends Quest {
 
 	/**
+	 * The name of the quest.
+	 */
+	public static final String NAME = "Witch's Potion";
+
+	/**
 	 * Constructs a new {@code WitchsPotion} {@code Object}.
 	 */
 	public WitchsPotion() {
 		super(
-			"Witch's Potion",
+			NAME,
 			31,
 			30,
 			1,

@@ -161,7 +161,14 @@ public final class NedDialogue extends DialoguePlugin {
 				return true;
 			}
 		}
-		if ((q == null || q.equals("dSlayer")) && (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) == 20 || (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) == 30) && player.getSavedData().getQuestData().getDragonSlayerAttribute("repaired"))) {
+		if (
+			(q == null || q.equals("dSlayer")) &&
+			(
+				player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) == 20 ||
+				player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) == 30 &&
+				player.getSavedData().getQuestData().getDragonSlayerAttribute("repaired")
+			)
+		) {
 			switch (stage) {
 			case 499:
 				player("You're a sailor? Could you take me to Crandor?");
@@ -399,11 +406,11 @@ public final class NedDialogue extends DialoguePlugin {
 			}
 			break;
 		case 44:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do I look like a member of a sewing circle?", "Be off wi' you. I have fought monsters.", "that would turn your hair blue.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do I look like a member of a sewing circle?", "Be off wi' you. I have fought monsters", "that would turn your hair blue.");
 			stage = 45;
 			break;
 		case 45:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I dont't need to be laughted at just 'cos I am getting", "a bit old.");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I don't need to be laughed at just 'cos I am getting", "a bit old.");
 			stage = 46;
 			break;
 		case 46:

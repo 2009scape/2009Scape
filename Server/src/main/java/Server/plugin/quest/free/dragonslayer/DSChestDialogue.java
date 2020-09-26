@@ -44,11 +44,11 @@ public final class DSChestDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendDialogue("Here I rest the map to my beloved home. To whoever finds it, I beg", "of you, let it be. I was honour-bound not to destroy the map piece,", "but I have used all my magical skill to keep it from being recovered.");
+			interpreter.sendDialogue("Here I rest the map to my beloved home. To whoever finds it, I beg", "of you, let it be. I was honour-bound not to destroy the map piece,", "but I have used all of my magical skill to keep it from being recovered.");
 			stage = 1;
 			break;
 		case 1:
-			interpreter.sendDialogue("This map leads to the lair of the beast that destroyed my home,", "devoured my family, and burned to a cinder all that I love. But", "revenge would not benefit me now, and to disturb this beast is to risk", "brining its wrath down upon another land.");
+			interpreter.sendDialogue("This map leads to the lair of the beast that destroyed my home,", "devoured my family, and burned to a cinder all that I love. But", "revenge would not benefit me now, and to disturb this beast is to risk", "bringing its wrath down upon another land.");
 			stage = 2;
 			break;
 		case 2:
