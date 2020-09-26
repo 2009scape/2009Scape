@@ -154,7 +154,7 @@ public final class MerlinCrystal extends Quest {
     }
 
     @Override
-    public QuestReward[] getQuestRewards(Player player) {
+    public QuestReward[] getQuestRewards() {
         return new QuestReward[]{
             new QuestReward("Excalibur"),
         };

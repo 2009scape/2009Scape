@@ -207,7 +207,7 @@ public class RovingElves extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward("Used elf equipment"),
 			new QuestReward(Skills.STRENGTH, 10000),

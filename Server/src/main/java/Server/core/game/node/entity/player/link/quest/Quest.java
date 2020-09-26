@@ -161,7 +161,7 @@ public abstract class Quest implements Plugin<Object> {
 		if (getQuestPoints() > 0) {
 			player.getPacketDispatch().sendString(getQuestPoints() + " Quest Point" + (getQuestPoints() > 1 ? "s" : ""), REWARD_COMPONENT, line++);
 		}
-		for (QuestReward reward: getQuestRewards(player)) {
+		for (QuestReward reward: getQuestRewards()) {
 			player.getPacketDispatch().sendString(reward.toString(), REWARD_COMPONENT, line++);
 			if (reward.getType() == QuestReward.QuestRewardType.ITEM) {
 				player.getInventory().add(reward.getItem(), player);
@@ -415,7 +415,7 @@ public abstract class Quest implements Plugin<Object> {
 	 *
 	 * @return QuestRewards
 	 */
-	abstract public QuestReward[] getQuestRewards(Player player);
+	abstract public QuestReward[] getQuestRewards();
 
 	@Override
 	public String toString() {

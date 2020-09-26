@@ -187,8 +187,8 @@ public class DwarfCannon extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
-		return new QuestReward[] {
+	public QuestReward[] getQuestRewards() {
+		return new QuestReward[]{
 			new QuestReward(Skills.CRAFTING, 750),
 			new QuestReward("Permission to purchase and"),
 			new QuestReward("use the Dwarf Multicannon"),

@@ -275,8 +275,8 @@ public class WhatLiesBelow extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
-		return new QuestReward[] {
+	public QuestReward[] getQuestRewards() {
+		return new QuestReward[]{
 			new QuestReward(Skills.RUNECRAFTING, 8000),
 			new QuestReward(Skills.DEFENCE, 2000),
 			new QuestReward("Beacon Ring"),

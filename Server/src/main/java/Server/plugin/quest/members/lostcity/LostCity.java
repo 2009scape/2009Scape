@@ -123,7 +123,7 @@ public class LostCity extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward("Access to Zanaris"),
 		};

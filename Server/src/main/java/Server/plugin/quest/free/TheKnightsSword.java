@@ -154,7 +154,7 @@ public class TheKnightsSword extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward(Skills.SMITHING, 12725),
 		};

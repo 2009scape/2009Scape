@@ -121,7 +121,7 @@ public class ImpCatcher extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward(Skills.MAGIC, 875),
 			new QuestReward(AMULET, false),

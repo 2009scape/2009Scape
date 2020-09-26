@@ -129,8 +129,8 @@ public class RuneMysteries extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
-		return new QuestReward[] {
+	public QuestReward[] getQuestRewards() {
+		return new QuestReward[]{
 			new QuestReward("Runecrafting skill"),
 			new QuestReward("Air talisman"),
 		};

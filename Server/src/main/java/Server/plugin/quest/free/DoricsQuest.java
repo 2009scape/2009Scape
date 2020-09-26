@@ -90,8 +90,8 @@ public class DoricsQuest extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
-		return new QuestReward[] {
+	public QuestReward[] getQuestRewards() {
+		return new QuestReward[]{
 			new QuestReward(Skills.MINING, 1300),
 			new QuestReward(new Item(995, 180)),
 			new QuestReward("Use of Doric's Anvils"),

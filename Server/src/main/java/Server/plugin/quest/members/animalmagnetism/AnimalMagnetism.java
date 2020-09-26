@@ -410,7 +410,7 @@ public final class AnimalMagnetism extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward(Skills.CRAFTING, 1000, "1000 XP in each of Crafting"),
 			new QuestReward(Skills.FLETCHING, 1000, "Fletching and Slayer"),

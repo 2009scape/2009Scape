@@ -138,7 +138,7 @@ class CooksAssistant : Quest(
         return Item(1891)
     }
 
-    override fun getQuestRewards(player: Player?): Array<QuestReward> {
+    override fun getQuestRewards(): Array<QuestReward> {
         return arrayOf(
             QuestReward(Skills.COOKING, 300)
         )

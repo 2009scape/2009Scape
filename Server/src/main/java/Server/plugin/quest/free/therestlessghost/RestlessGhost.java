@@ -133,7 +133,7 @@ public class RestlessGhost extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward(Skills.PRAYER, 1125),
 		};

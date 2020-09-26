@@ -378,7 +378,7 @@ public final class TouristTrap extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			// XP is given in IrenaDialogue
 			new QuestReward("4650 XP in each of the two skills"),

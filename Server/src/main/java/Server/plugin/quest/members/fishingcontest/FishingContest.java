@@ -81,7 +81,7 @@ public class FishingContest extends Quest {
     }
 
     @Override
-    public QuestReward[] getQuestRewards(Player player) {
+    public QuestReward[] getQuestRewards() {
         return new QuestReward[]{
             new QuestReward(Skills.FISHING, 2437),
             new QuestReward("Access to the White Wolf Mountain shortcut."),

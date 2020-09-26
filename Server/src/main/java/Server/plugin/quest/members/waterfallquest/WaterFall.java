@@ -143,7 +143,7 @@ public class WaterFall extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward(Skills.STRENGTH, 13750),
 			new QuestReward(Skills.ATTACK, 13750),

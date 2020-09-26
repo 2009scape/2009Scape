@@ -123,8 +123,8 @@ public final class ErnestTheChicken extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
-		return new QuestReward[] {
+	public QuestReward[] getQuestRewards() {
+		return new QuestReward[]{
 			// Ernest's 300 coins
 			new QuestReward(COINS),
 		};

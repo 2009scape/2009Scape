@@ -361,8 +361,8 @@ public final class DragonSlayer extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
-		return new QuestReward[] {
+	public QuestReward[] getQuestRewards() {
+		return new QuestReward[]{
 			new QuestReward("Ability to wear Rune platebody"),
 			new QuestReward(Skills.STRENGTH, 18650),
 			new QuestReward(Skills.DEFENCE, 18650),

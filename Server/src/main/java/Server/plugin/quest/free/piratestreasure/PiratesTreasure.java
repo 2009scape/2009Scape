@@ -163,8 +163,8 @@ public final class PiratesTreasure extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
-		return new QuestReward[] {
+	public QuestReward[] getQuestRewards() {
+		return new QuestReward[]{
 			new QuestReward(CASKET, "One-Eyed Hector's Treasure"),
 			new QuestReward("Chest"),
 			new QuestReward("You can also use the Pay-"),

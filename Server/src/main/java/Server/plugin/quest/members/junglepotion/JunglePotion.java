@@ -120,7 +120,7 @@ public final class JunglePotion extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward(Skills.HERBLORE, 775),
 		};

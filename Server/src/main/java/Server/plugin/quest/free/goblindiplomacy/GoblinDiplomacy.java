@@ -181,8 +181,8 @@ public class GoblinDiplomacy extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
-		return new QuestReward[] {
+	public QuestReward[] getQuestRewards() {
+		return new QuestReward[]{
 			new QuestReward(Skills.CRAFTING, 200),
 			new QuestReward(GOLD_BAR, "A gold bar"),
 		};

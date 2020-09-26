@@ -219,7 +219,7 @@ public class PriestInPeril extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward(Skills.PRAYER, 1406),
 			new QuestReward(new Item(2952), "Wolfbane dagger"),

@@ -161,7 +161,7 @@ public class WolfWhistle extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward(Skills.SUMMONING, 276),
 			new QuestReward("Access to the Summoning"),

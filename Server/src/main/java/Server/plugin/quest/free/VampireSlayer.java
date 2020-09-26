@@ -102,8 +102,8 @@ public class VampireSlayer extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
-		return new QuestReward[] {
+	public QuestReward[] getQuestRewards() {
+		return new QuestReward[]{
 			new QuestReward(Skills.ATTACK, 4825),
 		};
 	}

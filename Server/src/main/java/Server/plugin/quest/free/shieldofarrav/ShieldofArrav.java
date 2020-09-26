@@ -266,8 +266,8 @@ public class ShieldofArrav extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
-		return new QuestReward[] {
+	public QuestReward[] getQuestRewards() {
+		return new QuestReward[]{
 			new QuestReward(new Item(995, 600)),
 		};
 	}

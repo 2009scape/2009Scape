@@ -147,7 +147,7 @@ public class RomeoJuliet extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[0];
 	}
 

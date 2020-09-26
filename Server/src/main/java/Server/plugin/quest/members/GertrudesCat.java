@@ -102,12 +102,12 @@ public class GertrudesCat extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
-		return new QuestReward[] {
+	public QuestReward[] getQuestRewards() {
+		return new QuestReward[]{
 			new QuestReward("A kitten!"),
 			new QuestReward(Skills.COOKING, 1525),
-			new QuestReward( new Item(1897), "A chocolate cake"),
-			new QuestReward( new Item(2003), "A bowl of stew"),
+			new QuestReward(new Item(1897), "A chocolate cake"),
+			new QuestReward(new Item(2003), "A bowl of stew"),
 			new QuestReward("Raise cats."),
 		};
 	}

@@ -43,7 +43,7 @@ public class SheepShearer extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward(Skills.CRAFTING, 150),
 			new QuestReward(new Item(995, 60)),

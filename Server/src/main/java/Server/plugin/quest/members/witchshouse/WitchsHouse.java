@@ -72,7 +72,7 @@ public class WitchsHouse extends Quest {
     }
 
     @Override
-    public QuestReward[] getQuestRewards(Player player) {
+    public QuestReward[] getQuestRewards() {
         return new QuestReward[]{
             new QuestReward(Skills.HITPOINTS, 6325),
         };

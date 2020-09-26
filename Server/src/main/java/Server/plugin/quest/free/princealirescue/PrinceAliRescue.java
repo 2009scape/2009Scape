@@ -227,7 +227,7 @@ public class PrinceAliRescue extends Quest {
 	}
 
 	@Override
-	public QuestReward[] getQuestRewards(Player player) {
+	public QuestReward[] getQuestRewards() {
 		return new QuestReward[]{
 			new QuestReward(new Item(995, 700)),
 		};
