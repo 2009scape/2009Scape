@@ -272,6 +272,7 @@ public enum Consumables {
 	/** Wine */
 	JUG_OF_WINE(new Drink(new int[] {1993, 1935}, new MultiEffect(new HealingEffect(11), new SkillEffect(Skills.ATTACK, -2, 0)))),
 	HALF_FULL_WINE_JUG(new Drink(new int[] {1989, 1935}, new HealingEffect(7))),
+	JUG_OF_BAD_WINE(new Drink(new int[] {1991, 1935}, new StackedSkillEffect(Skills.ATTACK, -3))),
 
 	/** Tea */
 	CUP_OF_TEA(new Drink(new int[] {712, 1980}, new MultiEffect(new HealingEffect(3), new SkillEffect(Skills.ATTACK, 3, 0)), "Aaah, nothing like a nice cuppa tea!")),
