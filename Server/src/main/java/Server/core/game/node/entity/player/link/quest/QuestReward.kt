@@ -135,7 +135,7 @@ class QuestReward {
         return rewardText
             ?: when (type) {
                 QuestRewardType.ITEM -> if (showAmount) {
-                    formatNumber(item!!.amount) + " " + item!!.name + StringUtils.plusS(item!!.name)
+                    formatNumber(item!!.amount) + " " + StringUtils.plusS(item!!.name)
                 } else {
                     item!!.name
                 }
