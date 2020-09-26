@@ -85,7 +85,7 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 
 	@Override
 	public boolean start(final Player player, final boolean login, Object... args) {
-		final NPC npcs[] = new NPC[] { NPC.create(4658, base.transform(29, 43, 0)), NPC.create(4659, base.transform(29, 40, 0)), NPC.create(4662, base.transform(26, 40, 0)), NPC.create(4660, base.transform(26, 43, 0)) };
+		final NPC[] npcs = new NPC[] { NPC.create(4658, base.transform(29, 43, 0)), NPC.create(4659, base.transform(29, 40, 0)), NPC.create(4662, base.transform(26, 40, 0)), NPC.create(4660, base.transform(26, 43, 0)) };
 		for (NPC n : npcs) {
 			n.init();
 			n.faceLocation(base.transform(27, 42, 0));
@@ -341,9 +341,6 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 		 * Constructs a new {@code DelrithDialoguePlugin} {@code Object}.
 		 */
 		public DelrithDialoguePlugin() {
-			/**
-			 * empty.
-			 */
 		}
 
 		/**
@@ -425,7 +422,6 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 						end();
 						return true;
 					}
-
 				});
 				break;
 			}
@@ -459,9 +455,6 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 		 * Constructs a new {@code DenathDialogue} {@code Object}.
 		 */
 		public DenathDialogue() {
-			/**
-			 * empty.
-			 */
 		}
 
 		/**
@@ -509,8 +502,7 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 					@SuppressWarnings("deprecation")
 					@Override
 					public boolean pulse() {
-						switch (counter++) {
-						case 5:
+						if (counter++ == 5) {
 							cutscene.delrith = NPC.create(DemonSlayerCutscene.DELRITH, cutscene.getBase().transform(27, 40, 0));
 							cutscene.delrith.init();
 							cutscene.delrith.animate(ANIMATION);

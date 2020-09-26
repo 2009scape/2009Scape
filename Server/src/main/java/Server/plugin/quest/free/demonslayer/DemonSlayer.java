@@ -1,6 +1,6 @@
 package plugin.quest.free.demonslayer;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -199,14 +199,12 @@ public class DemonSlayer extends Quest {
 	 * Gets the generated incantation.
 	 * @return the incantation.
 	 */
-	private final static String generateIncantation() {
-		List<String> incantations = new ArrayList<>();
-		for (String s : INCANTATIONS) {
-			incantations.add(s);
-		}
+	private static String generateIncantation() {
+		List<String> incantations = Arrays.asList(INCANTATIONS);
 		Collections.shuffle(incantations);
 		return incantations.get(0) + "... " + incantations.get(1) + "... " + incantations.get(2) + "... " + incantations.get(3) + "... " + incantations.get(4);
 	}
+
 	/**
 	 * Represents the dialogue plugin used for the captain rovin npc.
 	 * @author 'Vexia
@@ -223,9 +221,6 @@ public class DemonSlayer extends Quest {
 		 * Constructs a new {@code CaptainRovin} {@code Object}.
 		 */
 		public CaptainRovinDialogue() {
-			/**
-			 * empty.
-			 */
 		}
 
 		/**
@@ -245,22 +240,14 @@ public class DemonSlayer extends Quest {
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
 			quest = player.getQuestRepository().getQuest(DemonSlayer.NAME);
-			switch (quest.getStage(player)) {
-			default:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What are you doing up here? Only the palace guards", "are allowed up here.");
-				stage = 0;
-				break;
-			}
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What are you doing up here? Only the palace guards", "are allowed up here.");
+			stage = 0;
 			return true;
 		}
 
 		@Override
 		public boolean handle(int interfaceId, int buttonId) {
-			switch (quest.getStage(player)) {
-			default:
-				defaultDialogue(buttonId);
-				break;
-			}
+			defaultDialogue(buttonId);
 			return true;
 		}
 
@@ -268,7 +255,7 @@ public class DemonSlayer extends Quest {
 		 * Method used to handle the default dialogue.
 		 * @param buttonId the button id.
 		 */
-		private final void defaultDialogue(int buttonId) {
+		private void defaultDialogue(int buttonId) {
 			switch (stage) {
 			case 0:
 				interpreter.sendOptions("Select an Option", "I am one of the palace guards.", "What about the King?", "Yes I know, but this is important.");

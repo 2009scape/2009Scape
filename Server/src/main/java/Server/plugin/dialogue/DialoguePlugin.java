@@ -106,7 +106,7 @@ public abstract class DialoguePlugin implements Plugin<Player> {
 
 	/**
 	 * Closes <b>(but does not end)</b> the dialogue.
-	 * @return {@code True} if the dialogue succesfully closed.
+	 * @return {@code True} if the dialogue successfully closed.
 	 */
 	public boolean close() {
 		player.getInterfaceManager().closeChatbox();
@@ -159,7 +159,7 @@ public abstract class DialoguePlugin implements Plugin<Player> {
 	/**
 	 * Opens the dialogue.
 	 * @param args The arguments.
-	 * @return {@code True} if the dialogue plugin succesfully opened.
+	 * @return {@code True} if the dialogue plugin successfully opened.
 	 */
 	public abstract boolean open(Object... args);
 

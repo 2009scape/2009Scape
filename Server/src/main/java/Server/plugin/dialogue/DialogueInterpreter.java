@@ -232,7 +232,7 @@ public final class DialogueInterpreter {
     }
 
     /**
-     * Send plane messages based on the amount of specified messages.
+     * Send plain messages based on the amount of specified messages.
      * @param messages The messages.
      * @return The chatbox component.
      */
@@ -245,15 +245,12 @@ public final class DialogueInterpreter {
             player.getPacketDispatch().sendString(messages[i], interfaceId, i + 1);
         }
         player.getInterfaceManager().openChatbox(interfaceId);
-        if (player.getAttribute("tut-island", false)) {
-           
-        }
         player.getPacketDispatch().sendInterfaceConfig(player.getInterfaceManager().getChatbox().getId(), 1, false);
         return player.getInterfaceManager().getChatbox();
     }
 
     /**
-     * Sends a plane message and hides the continue button.
+     * Sends a plain message and hides the continue button.
      * @param hideContinue if we should hide it or not.
      * @param messages the messages.
      * @return the component.
@@ -296,7 +293,7 @@ public final class DialogueInterpreter {
     }
 
     /**
-     * Send plane messages with a blue title.
+     * Send plain messages with a blue title.
      * @param title The title.
      * @param messages The messages.
      * @return The chatbox component.
@@ -313,7 +310,7 @@ public final class DialogueInterpreter {
     }
 
     /**
-     * Send plane messages with scroll and a blue title.
+     * Send plain messages with scroll and a blue title.
      * @param title The title.
      * @param messages The messages.
      * @return The chatbox component.
@@ -422,7 +419,7 @@ public final class DialogueInterpreter {
 
     /**
      * Send dialogues based on the amount of specified messages.
-     * @param npcId The npc id.
+     * @param entity The entity.
      * @param expression The entity's facial expression.
      * @param messages The messages.
      * @param hide the continue.
@@ -436,7 +433,7 @@ public final class DialogueInterpreter {
 
     /**
      * Send dialogues based on the amount of specified messages.
-     * @param npcId The npc id.
+     * @param entity The entity.
      * @param expression The entity's facial expression.
      * @param messages The messages.
      * @param hide the continue.
@@ -450,7 +447,7 @@ public final class DialogueInterpreter {
 
     /**
      * Send dialogues based on the amount of specified messages.
-     * @param entity The entity.
+     * @param npcId The npc id.
      * @param expression The entity's facial expression.
      * @param messages The messages.
      * @return The chatbox component.

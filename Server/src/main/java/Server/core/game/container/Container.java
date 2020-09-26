@@ -200,7 +200,6 @@ public class Container {
      *
      * @param item          The item to add.
      * @param fireListener  If we should update.
-     * @param preferredSlot The slot to add the item in, when possible.
      * @return {@code True} if the item got added.
      */
     public boolean add(Item item, boolean fireListener) {
@@ -221,9 +220,9 @@ public class Container {
         if (maximum == 0) {
             return false;
         }
-//		if (preferredSlot > -1 && items[preferredSlot] != null) {
-//			preferredSlot = -1;
-//		}
+//        if (preferredSlot > -1 && items[preferredSlot] != null) {
+//            preferredSlot = -1;
+//        }
         if (item.getAmount() > maximum) {
             item.setAmount(maximum);
         }
@@ -444,8 +443,8 @@ public class Container {
     }
     
     public void refresh(ContainerListener listener) {
-    	listener.refresh(this);
-    	event = new ContainerEvent(capacity);
+        listener.refresh(this);
+        event = new ContainerEvent(capacity);
     }
 
     /**
@@ -661,8 +660,8 @@ public class Container {
     /**
      * Checks if the containers contains ONE item.
      *
-     * @param itemId
-     * @return
+     * @param itemId the item's id
+     * @return {@code True} if so.
      */
     public boolean containsOneItem(int itemId) {
         for (Item item : items) {
@@ -676,7 +675,7 @@ public class Container {
     /**
      * Checks if the container contains all items.
      *
-     * @param the itemIds to check
+     * @param itemIds the itemIds to check
      * @return {@code True} if so.
      */
     public boolean containsAll(int... itemIds) {
@@ -827,8 +826,8 @@ public class Container {
      */
     public int itemCount() {
         int size = 0;
-        for (int i = 0; i < items.length; i++) {
-            if (items[i] != null) {
+        for (Item item : items) {
+            if (item != null) {
                 size++;
             }
         }
@@ -842,8 +841,8 @@ public class Container {
      * @return {@code True} if so.
      */
     public boolean containItems(int... itemIds) {
-        for (int i = 0; i < itemIds.length; i++) {
-            if (!contains(itemIds[i], 1)) {
+        for (int itemId : itemIds) {
+            if (!contains(itemId, 1)) {
                 return false;
             }
         }
@@ -883,7 +882,7 @@ public class Container {
      * Shifts the elements in the <b>Container</b> to the appropriate position.
      */
     public void shift() {
-        final Item itemss[] = items;
+        final Item[] itemss = items;
         clear(false);
         for (Item item : itemss) {
             if (item == null) {

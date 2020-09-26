@@ -5,7 +5,6 @@ import plugin.dialogue.FacialExpression;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
-import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 import plugin.quest.free.RuneMysteries;
 
@@ -45,7 +44,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
-		if (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) >= 20 && !player.getInventory().containsItem(DragonSlayer.SHIELD) && !player.getBank().containsItem(DragonSlayer.SHIELD) && !player.getEquipment().containsItem(DragonSlayer.SHIELD)) {
+		if (player.getQuestRepository().getQuest(DragonSlayer.NAME).getStage(player) >= 20 && !player.hasItem(DragonSlayer.SHIELD)) {
 			switch (stage) {
 			case 0:
 				player("I seek a shield that will protect me from dragonbreath.");
@@ -76,7 +75,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 				stage = 406;
 				break;
 			case 406:
-				npc("Back in my father's day, Crandor was an important", "city-state. Politically, it was important as Falador or", "Varrock and its ships traded with every port.");
+				npc("Back in my father's day, Crandor was an important", "city-state. Politically, it was as important as Falador or", "Varrock and its ships traded with every port.");
 				stage = 407;
 				break;
 			case 407:
@@ -96,9 +95,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 				stage = 411;
 				break;
 			case 411:
-				if (!player.getInventory().add(DragonSlayer.SHIELD)) {
-					GroundItemManager.create(DragonSlayer.SHIELD, player);
-				}
+				player.getInventory().add(DragonSlayer.SHIELD, player);
 				interpreter.sendItemMessage(DragonSlayer.SHIELD, "The Duke hands you a heavy orange shield.");
 				stage = 412;
 				break;
@@ -223,9 +220,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 		case 102:
 			quest.start(player);
 			player.getQuestRepository().syncronizeTab(player);
-			if (!player.getInventory().add(TALISMAN)) {
-				GroundItemManager.create(TALISMAN, player.getLocation(), player);
-			}
+			player.getInventory().add(TALISMAN, player);
 			end();
 			break;
 		case 26:
@@ -277,9 +272,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 			stage = 804;
 			break;
 		case 804:
-			if (!player.getInventory().add(DragonSlayer.SHIELD)) {
-				GroundItemManager.create(DragonSlayer.SHIELD, player);
-			}
+			player.getInventory().add(DragonSlayer.SHIELD, player);
 			interpreter.sendItemMessage(DragonSlayer.SHIELD, "The Duke hands you the shield.");
 			stage = 805;
 			break;

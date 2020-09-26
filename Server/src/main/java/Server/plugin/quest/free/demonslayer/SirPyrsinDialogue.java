@@ -27,16 +27,13 @@ public class SirPyrsinDialogue extends DialoguePlugin {
 	private int id;
 
 	/**
-	 * Constructs a new {@code SirPyrsinDialogue} {@code Object}.
+	 * Constructs a new {@code SirPrysinDialogue} {@code Object}.
 	 */
 	public SirPyrsinDialogue() {
-		/**
-		 * empty.
-		 */
 	}
 
 	/**
-	 * Constructs a new {@code SirPyrsinDialogue} {@code Object}.
+	 * Constructs a new {@code SirPrysinDialogue} {@code Object}.
 	 * @param player the player.
 	 */
 	public SirPyrsinDialogue(Player player) {
@@ -85,7 +82,7 @@ public class SirPyrsinDialogue extends DialoguePlugin {
 		case 30:
 			switch (stage) {
 			case 0:
-				if (!player.getInventory().containsItem(DemonSlayer.SILVERLIGHT) && !player.getBank().containsItem(DemonSlayer.SILVERLIGHT) && !player.getEquipment().containsItem(DemonSlayer.SILVERLIGHT)) {
+				if (!player.hasItem(DemonSlayer.SILVERLIGHT)) {
 					player("Not yet. And I, um, lost Silverlight.");
 					stage = 1;
 				} else {
@@ -399,7 +396,7 @@ public class SirPyrsinDialogue extends DialoguePlugin {
 				stage = 121;
 				break;
 			case 121:
-				npc(id, "He is one of the wizards who lives in the tower on the", "little island just south coast. I believe his", "quarters are on the first floor of the tower.");
+				npc(id, "He is one of the wizards who lives in the tower on the", "little island just off the south coast. I believe his", "quarters are on the first floor of the tower.");
 				stage = 122;
 				break;
 			case 122:
@@ -443,7 +440,7 @@ public class SirPyrsinDialogue extends DialoguePlugin {
 				}
 				break;
 			case 50:
-				npc(id, "Oh , is that the same gypsy? I would have thought she", "would have died by now. She was pretty old when I", "was a lad.");
+				npc(id, "Oh, is that the same gypsy? I would have thought she", "would have died by now. She was pretty old when I", "was a lad.");
 				stage = 51;
 				break;
 			case 51:
@@ -451,7 +448,7 @@ public class SirPyrsinDialogue extends DialoguePlugin {
 				stage = 52;
 				break;
 			case 52:
-				player("I need to find the Silverlight.");
+				player("I need to find Silverlight.");
 				stage = 40;
 				break;
 			default:
@@ -470,7 +467,7 @@ public class SirPyrsinDialogue extends DialoguePlugin {
 	 * Method used to handle default chat.
 	 * @param buttonId the button id.
 	 */
-	private final void handleDefault(int buttonId) {
+	private void handleDefault(int buttonId) {
 		switch (stage) {
 		case 0:
 			options("I am a mighty adventurer. Who are you?", "I'm not sure, I was hoping you could tell me.");

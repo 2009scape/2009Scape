@@ -172,7 +172,7 @@ public class WolfWhistle extends Quest {
 	public void finish(Player player) {
 		super.finish(player);
 		player.removeAttribute("searched-body");
-		player.getInterfaceManager().openInfoBars(); // WHATS THIS DO
+		player.getInterfaceManager().openInfoBars();
 	}
 
 	@Override
@@ -188,7 +188,7 @@ public class WolfWhistle extends Quest {
 			}
 			return new int[] { 1178, val };
 		}
-		return new int[] { 1178, stage > 0 ? 5 + (open ? 4096 : 0) : stage >= 100 ? !closed ? 28893 : 32989 : 0 };
+		return new int[] { 1178, stage > 0 ? 5 + (open ? 4096 : 0) : 0 };
 	}
 
 	@Override
@@ -202,7 +202,7 @@ public class WolfWhistle extends Quest {
 			new QuestReward(Skills.SUMMONING, 276),
 			new QuestReward("Access to the Summoning"),
 			new QuestReward("skill."),
-			new QuestReward(new Item(12158, 275)),
+			new QuestReward(new Item(12158, 275)), // Gold charms
 		};
 	}
 

@@ -340,7 +340,7 @@ public final class GypsyArisDialogue extends DialoguePlugin {
 				stage = 201;
 				break;
 			case 110:
-				npc("If you face Delrith while he is still weak from being", "summoned, and use the correct weapon, you will not", "find the task to arduous.");
+				npc("If you face Delrith while he is still weak from being", "summoned, and use the correct weapon, you will not", "find the task too arduous.");
 				stage = 111;
 				break;
 			case 111:
@@ -380,12 +380,8 @@ public final class GypsyArisDialogue extends DialoguePlugin {
 				}
 				break;
 			case 10:
-				if (!player.getInventory().containsItem(COINS)) {
-					end();
-					return true;
-				}
 				if (player.getInventory().remove(COINS)) {
-					npc("Come closer, and listen carefully to what the future", "holds for you, as I peer int the swirling mists of the", "crystal ball.");
+					npc("Come closer, and listen carefully to what the future", "holds for you, as I peer into the swirling mists of the", "crystal ball.");
 					npc.animate(ANIMATION);
 					stage = 12;
 				} else {
@@ -469,7 +465,7 @@ public final class GypsyArisDialogue extends DialoguePlugin {
 				}
 				break;
 			case 110:
-				npc("If you face Delrith while he is still weak from being", "summoned, and use the correct weapon, you will not", "find the task to arduous.");
+				npc("If you face Delrith while he is still weak from being", "summoned, and use the correct weapon, you will not", "find the task too arduous.");
 				stage = 111;
 				break;
 			case 111:

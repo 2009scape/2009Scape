@@ -15,14 +15,14 @@ import plugin.skill.Skills;
  */
 @InitializablePlugin
 public class DwarfCannon extends Quest {
-	
+
 	/**
 	 * The name of this quest.
 	 */
 	public static final String NAME = "Dwarf Cannon";
 
 	/**
-	 * The dwarf remain item.
+	 * The dwarf remains item.
 	 */
 	public static final Item DWARF_REMAINS = new Item(0);
 
@@ -185,8 +185,8 @@ public class DwarfCannon extends Quest {
 		int val = 0;
 		if (stage >= 100) {
 			val = 11;
-		} else if (stage > 0 && stage < 100) {
-			val =  player.getConfigManager().get(0);
+		} else if (stage > 0) {
+			val = player.getConfigManager().get(0);
 		}
 		return new int[] { 0, val };
 	}

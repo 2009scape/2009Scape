@@ -123,7 +123,7 @@ public final class ErnestTheChicken extends Quest {
 	public QuestReward[] getQuestRewards(Player player) {
 		return new QuestReward[] {
 			// Ernest's 300 coins
-			new QuestReward(new Item(995, 300)),
+			new QuestReward(COINS),
 		};
 	}
 
