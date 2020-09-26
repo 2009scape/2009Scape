@@ -2,7 +2,6 @@ package plugin.quest.members.whatliesbelow;
 
 import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.quest.free.RuneMysteries;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
@@ -271,8 +270,8 @@ public class WhatLiesBelow extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(BEACON_RING.getId(), 235);
+	public Item getRewardComponentItem() {
+		return BEACON_RING;
 	}
 
 	@Override

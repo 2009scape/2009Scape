@@ -1,7 +1,6 @@
 package plugin.quest.members;
 
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -145,7 +144,6 @@ public class WolfWhistle extends Quest {
 	public int[] getConfig(Player player, int stage) {
 		int val = player.getConfigManager().get(1178);
 		boolean open = val >= 4096;
-		boolean closed = val == 2048;
 		if (stage == 100) {
 			if (val == 5 || val == 0) {
 				return new int[] { 1178, 32989 };
@@ -158,8 +156,8 @@ public class WolfWhistle extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(12047, 230);
+	public Item getRewardComponentItem() {
+		return new Item(12047);
 	}
 
 	@Override

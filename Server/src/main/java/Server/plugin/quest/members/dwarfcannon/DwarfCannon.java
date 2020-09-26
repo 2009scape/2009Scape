@@ -3,7 +3,6 @@ package plugin.quest.members.dwarfcannon;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import core.plugin.PluginManager;
@@ -183,8 +182,8 @@ public class DwarfCannon extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(TOOLKIT.getId(), 235);
+	public Item getRewardComponentItem() {
+		return TOOLKIT;
 	}
 
 	@Override

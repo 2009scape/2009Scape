@@ -1,7 +1,6 @@
 package plugin.quest.members.waterfallquest;
 
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -139,8 +138,8 @@ public class WaterFall extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(1601, 230);
+	public Item getRewardComponentItem() {
+		return new Item(1601);
 	}
 
 	@Override

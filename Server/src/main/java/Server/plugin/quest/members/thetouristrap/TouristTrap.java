@@ -4,7 +4,6 @@ import core.game.component.Component;
 import core.game.container.impl.EquipmentContainer;
 import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -374,8 +373,8 @@ public final class TouristTrap extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(806, 230);
+	public Item getRewardComponentItem() {
+		return new Item(806);
 	}
 
 	@Override

@@ -4,7 +4,6 @@ import core.game.node.entity.npc.AbstractNPC;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import core.game.node.item.Item;
 import core.game.world.map.Location;
 import core.plugin.InitializablePlugin;
@@ -119,8 +118,8 @@ public final class ErnestTheChicken extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(314, 230);
+	public Item getRewardComponentItem() {
+		return new Item(314);
 	}
 
 	@Override

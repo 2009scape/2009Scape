@@ -2,7 +2,6 @@ package plugin.quest.free.dragonslayer;
 
 import core.game.component.Component;
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import plugin.skill.agility.AgilityHandler;
 import core.game.node.entity.player.Player;
@@ -357,8 +356,8 @@ public final class DragonSlayer extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(ELVARG_HEAD.getId(), 230);
+	public Item getRewardComponentItem() {
+		return ELVARG_HEAD;
 	}
 
 	@Override

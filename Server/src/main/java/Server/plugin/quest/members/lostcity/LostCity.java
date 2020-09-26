@@ -2,7 +2,6 @@ package plugin.quest.members.lostcity;
 
 import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -119,8 +118,8 @@ public class LostCity extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(772, 235);
+	public Item getRewardComponentItem() {
+		return new Item(772);
 	}
 
 	@Override

@@ -13,8 +13,8 @@ public class DisplayModelContext implements Context {
 	 * Represents the model types.
 	 * @author Emperor
 	 */
-	public static enum ModelType {
-		PLAYER, NPC, ITEM, MODEL;
+	public enum ModelType {
+		PLAYER, NPC, ITEM, MODEL
 	}
 
 	/**
@@ -35,12 +35,7 @@ public class DisplayModelContext implements Context {
 	/**
 	 * The amount (for item display).
 	 */
-	private int amount;
-
-	/**
-	 * The zoom.
-	 */
-	private int zoom;
+	private final int amount;
 
 	/**
 	 * The interface id.
@@ -94,25 +89,6 @@ public class DisplayModelContext implements Context {
 		this.childId = childId;
 	}
 
-	/**
-	 * Construct a new {@code DisplayModelContext} {@code Object} used by the
-	 * other constructors or for displaying an item.
-	 * @param player The player reference.
-	 * @param type The model type.
-	 * @param nodeId The node id to display.
-	 * @param zoom The amount.
-	 * @param interfaceId The interface id.
-	 * @param childId The child id.
-	 */
-	public DisplayModelContext(Player player, ModelType type, int nodeId, int zoom, int interfaceId, int childId, Object... object) {
-		this.player = player;
-		this.type = type;
-		this.nodeId = nodeId;
-		this.setZoom(zoom);
-		this.interfaceId = interfaceId;
-		this.childId = childId;
-	}
-
 	@Override
 	public Player getPlayer() {
 		return player;
@@ -157,19 +133,4 @@ public class DisplayModelContext implements Context {
 	public int getChildId() {
 		return childId;
 	}
-
-	/**
-	 * @return the zoom.
-	 */
-	public int getZoom() {
-		return zoom;
-	}
-
-	/**
-	 * @param zoom the zoom to set.
-	 */
-	public void setZoom(int zoom) {
-		this.zoom = zoom;
-	}
-
 }

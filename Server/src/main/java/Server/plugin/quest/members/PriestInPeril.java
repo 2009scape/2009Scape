@@ -1,7 +1,6 @@
 package plugin.quest.members;
 
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -215,8 +214,8 @@ public class PriestInPeril extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(2952, 240);
+	public Item getRewardComponentItem() {
+		return new Item(2952);
 	}
 
 	@Override

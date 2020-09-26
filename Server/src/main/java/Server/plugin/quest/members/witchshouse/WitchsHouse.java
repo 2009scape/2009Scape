@@ -1,7 +1,7 @@
 package plugin.quest.members.witchshouse;
 
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
+import core.game.node.item.Item;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -67,8 +67,8 @@ public class WitchsHouse extends Quest {
     }
 
     @Override
-    public QuestRewardComponentItem getRewardComponentItem() {
-        return new QuestRewardComponentItem(2407, 240);
+    public Item getRewardComponentItem() {
+        return new Item(2407);
     }
 
     @Override

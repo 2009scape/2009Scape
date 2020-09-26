@@ -2,7 +2,6 @@ package plugin.quest.members.animalmagnetism;
 
 import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.quest.free.ErnestTheChicken;
 import plugin.quest.free.therestlessghost.RestlessGhost;
 import plugin.quest.members.PriestInPeril;
@@ -406,8 +405,8 @@ public final class AnimalMagnetism extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(avas_device.getId(), 235);
+	public Item getRewardComponentItem() {
+		return avas_device;
 	}
 
 	@Override

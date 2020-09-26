@@ -1,7 +1,6 @@
 package plugin.quest.free.goblindiplomacy;
 
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
@@ -177,8 +176,8 @@ public class GoblinDiplomacy extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(288, 230);
+	public Item getRewardComponentItem() {
+		return new Item(288);
 	}
 
 	@Override

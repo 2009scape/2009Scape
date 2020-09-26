@@ -130,7 +130,7 @@ public final class PacketDispatch {
 	public void sendTempMusic(int musicId) {
 		PacketRepository.send(MusicPacket.class, new MusicContext(player, musicId, true));
 	}
-	
+
 	/**
 	 * Sends a client script config to the player.
 	 * @param id The id to set.
@@ -217,12 +217,12 @@ public final class PacketDispatch {
 	/**
 	 * Send the item on interface packet.
 	 * @param itemId The item id.
-	 * @param zoom the zoom.
+	 * @param amount The number of items
 	 * @param interfaceId The interface id.
 	 * @param childId The child id.
 	 */
-	public void sendItemZoomOnInterface(int itemId, int zoom, int interfaceId, int childId) {
-		PacketRepository.send(DisplayModel.class, new DisplayModelContext(player, ModelType.ITEM, itemId, zoom, interfaceId, childId, zoom));
+	public void sendItemZoomOnInterface(int itemId, int amount, int interfaceId, int childId) {
+		PacketRepository.send(DisplayModel.class, new DisplayModelContext(player, ModelType.ITEM, itemId, amount, interfaceId, childId));
 	}
 
 	public void sendInterSetItemsOptionsScript(int interfaceId, int componentId, int key, int width, int height, String... options) {
@@ -254,19 +254,6 @@ public final class PacketDispatch {
 			}
 		}
 		sendRunScript(scriptId, parameterTypes, params);
-	}
-
-
-	/**
-	 * Send the item on interface packet.
-	 * @param itemId The item id.
-	 * @param amount The amount.
-	 * @param zoom the zoom.
-	 * @param interfaceId The interface id.
-	 * @param childId The child id.
-	 */
-	public void sendItemZoomOnInterface(int itemId, int amount, int zoom, int interfaceId, int childId) {
-		PacketRepository.send(DisplayModel.class, new DisplayModelContext(player, ModelType.ITEM, itemId, amount, interfaceId, childId, zoom));
 	}
 
 	/**

@@ -2,6 +2,7 @@ package core.game.node.entity.player.link.quest;
 
 import core.game.component.Component;
 import core.game.node.entity.player.Player;
+import core.game.node.item.Item;
 import core.plugin.Plugin;
 import core.plugin.PluginManifest;
 import core.plugin.PluginType;
@@ -138,9 +139,9 @@ public abstract class Quest implements Plugin<Object> {
 		player.getPacketDispatch().sendTempMusic(152);
 
 		// Item shown on reward component
-		QuestRewardComponentItem rewardComponentItem = getRewardComponentItem();
+		Item rewardComponentItem = getRewardComponentItem();
 		if (rewardComponentItem != null) {
-			player.getPacketDispatch().sendItemZoomOnInterface(rewardComponentItem.itemId, rewardComponentItem.itemAmount, rewardComponentItem.zoom, REWARD_COMPONENT, 5);
+			player.getPacketDispatch().sendItemZoomOnInterface(rewardComponentItem.getId(), rewardComponentItem.getAmount(), REWARD_COMPONENT, 5);
 		}
 
 		// "Congratulations!"
@@ -390,7 +391,7 @@ public abstract class Quest implements Plugin<Object> {
 	 * Gets the item shown in the reward component
 	 * @return the item
 	 */
-	abstract public QuestRewardComponentItem getRewardComponentItem();
+	abstract public Item getRewardComponentItem();
 
 	/**
 	 * Gets the quest's requirements

@@ -1,7 +1,7 @@
 package plugin.quest.members.junglepotion;
 
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
+import core.game.node.item.Item;
 import plugin.skill.Skills;
 import plugin.skill.herblore.Herbs;
 import core.game.node.entity.player.Player;
@@ -115,8 +115,8 @@ public final class JunglePotion extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(Herbs.VOLENCIA_MOSS.getProduct().getId(), 235);
+	public Item getRewardComponentItem() {
+		return Herbs.VOLENCIA_MOSS.getProduct();
 	}
 
 	@Override

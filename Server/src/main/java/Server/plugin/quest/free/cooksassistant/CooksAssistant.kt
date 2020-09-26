@@ -3,7 +3,7 @@ package plugin.quest.free.cooksassistant
 import core.game.node.entity.player.Player
 import core.game.node.entity.player.link.quest.Quest
 import core.game.node.entity.player.link.quest.QuestReward
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem
+import core.game.node.item.Item
 import core.plugin.InitializablePlugin
 import plugin.skill.Skills
 
@@ -134,8 +134,8 @@ class CooksAssistant : Quest(
         player.removeAttribute("cooks_assistant:submitted_some_items")
     }
 
-    override fun getRewardComponentItem(): QuestRewardComponentItem {
-        return QuestRewardComponentItem(1891, 240)
+    override fun getRewardComponentItem(): Item {
+        return Item(1891)
     }
 
     override fun getQuestRewards(player: Player?): Array<QuestReward> {

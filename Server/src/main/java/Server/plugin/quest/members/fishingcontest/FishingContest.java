@@ -4,7 +4,6 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.quest.Quest;
 import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import plugin.skill.Skills;
@@ -77,8 +76,8 @@ public class FishingContest extends Quest {
     }
 
     @Override
-    public QuestRewardComponentItem getRewardComponentItem() {
-        return new QuestRewardComponentItem(FISHING_TROPHY.getId(), 230);
+    public Item getRewardComponentItem() {
+        return FISHING_TROPHY;
     }
 
     @Override

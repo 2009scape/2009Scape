@@ -27,9 +27,8 @@ public final class DisplayModel implements OutgoingPacket<DisplayModelContext> {
 			buffer.putLEShort(context.getPlayer().getInterfaceManager().getPacketCount(1));
 			break;
 		case ITEM:
-			int value = context.getAmount() > 0 ? context.getAmount() : context.getZoom();
 			buffer = new IoBuffer(50);
-			buffer.putInt(value);
+			buffer.putInt(context.getAmount());
 			buffer.putIntB((context.getInterfaceId() << 16) | context.getChildId());
 			buffer.putLEShortA(context.getNodeId());
 			buffer.putLEShort(context.getPlayer().getInterfaceManager().getPacketCount(1));

@@ -3,7 +3,7 @@ package plugin.quest.members;
 import core.game.component.CloseEvent;
 import core.game.component.Component;
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
+import core.game.node.item.Item;
 import plugin.skill.Skills;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
@@ -97,8 +97,8 @@ public class DruidicRitual extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(249, 240);
+	public Item getRewardComponentItem() {
+		return new Item(249);
 	}
 
 	@Override

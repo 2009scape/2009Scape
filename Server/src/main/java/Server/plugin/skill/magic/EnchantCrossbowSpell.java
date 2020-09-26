@@ -35,10 +35,9 @@ public final class EnchantCrossbowSpell extends MagicSpell {
 		final Player player = ((Player) entity);
 		player.getInterfaceManager().open(new Component(432));
 		int[][] data = new int[][] { { 17, 879 }, { 21, 9335 }, { 25, 880 }, { 28, 9336 }, { 31, 9337 }, { 34, 9338 }, { 37, 9339 }, { 40, 9340 }, { 43, 9341 }, { 46, 9342 } };
-		for (int i = 0; i < data.length; i++) {
-			player.getPacketDispatch().sendItemZoomOnInterface(data[i][1], 10, 270, 432, data[i][0]);
+		for (int[] datum : data) {
+			player.getPacketDispatch().sendItemZoomOnInterface(datum[1], 10, 432, datum[0]);
 		}
 		return true;
 	}
-
 }

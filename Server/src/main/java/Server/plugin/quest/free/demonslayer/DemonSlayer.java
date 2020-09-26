@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.List;
 
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.dialogue.DialoguePlugin;
 import plugin.dialogue.FacialExpression;
 import core.game.node.entity.npc.NPC;
@@ -166,8 +165,8 @@ public class DemonSlayer extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(SILVERLIGHT.getId(), 230);
+	public Item getRewardComponentItem() {
+		return SILVERLIGHT;
 	}
 
 	@Override

@@ -2,7 +2,6 @@ package plugin.quest.members.rovingelves;
 
 import core.game.node.entity.player.link.quest.QuestRequirement;
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.quest.members.waterfallquest.WaterFall;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
@@ -203,8 +202,8 @@ public class RovingElves extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(CRYSTAL_BOW_FULL.getId(), 235);
+	public Item getRewardComponentItem() {
+		return CRYSTAL_BOW_FULL;
 	}
 
 	@Override

@@ -1,7 +1,6 @@
 package plugin.quest.free.therestlessghost;
 
 import core.game.node.entity.player.link.quest.QuestReward;
-import core.game.node.entity.player.link.quest.QuestRewardComponentItem;
 import plugin.quest.members.animalmagnetism.OldCronDialogue;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
@@ -129,8 +128,8 @@ public class RestlessGhost extends Quest {
 	}
 
 	@Override
-	public QuestRewardComponentItem getRewardComponentItem() {
-		return new QuestRewardComponentItem(964, 240);
+	public Item getRewardComponentItem() {
+		return new Item(964);
 	}
 
 	@Override
