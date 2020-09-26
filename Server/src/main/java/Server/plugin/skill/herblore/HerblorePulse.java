@@ -62,7 +62,7 @@ public final class HerblorePulse extends SkillPulse<Item> {
 
 	@Override
 	public boolean checkRequirements() {
-		if (!player.getQuestRepository().isComplete("Drudic Ritual")) {
+		if (!player.getQuestRepository().isComplete("Druidic Ritual")) {
 			player.getPacketDispatch().sendMessage("You must complete the Druidic Ritual quest before you can use Herblore.");
 			return false;
 		}
