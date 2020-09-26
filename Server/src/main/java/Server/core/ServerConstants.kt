@@ -100,7 +100,7 @@ class ServerConstants {
 				arrayOf(Location.create(3019, 3244, 0), "port sarim", "sarim"),
 				arrayOf(Location.create(2956, 3209, 0), "rimmington"),
 				arrayOf(Location.create(2965, 3380, 0), "fally", "falador"),
-				arrayOf(Location.create(2895, 3436, 0), "taverley"),
+				arrayOf(Location.create(2895, 3436, 0), "taverly"),
 				arrayOf(Location.create(3080, 3423, 0), "barbarian village", "barb"),
 				arrayOf(Location.create(3213, 3428, 0), "varrock"),
 				arrayOf(Location.create(3164, 3485, 0), "grand exchange", "ge"),
