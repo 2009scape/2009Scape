@@ -57,26 +57,26 @@ public class RomeoJuliet extends Quest {
 		switch (getStage(player)) {
 		case 0:
 			writeJournal(player,
-				BLUE + "I can start this quest by speaking to " + RED + "Romeo " + BLUE + "in " + RED + "Varrock",
-				BLUE + "central square by the " + RED + "fountain.");
+				"I can start this quest by speaking to <red>Romeo <blue>in <red>Varrock",
+				"central square by the <red>fountain.");
 			break;
 		case 10:
 			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
 			writeJournal(player, line,
-				BLUE + "All I need to do now is find " + RED + "Juliet.");
+				"All I need to do now is find <red>Juliet.");
 			break;
 		case 20:
 			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
 			writeJournal(player, line,
-				BLUE + "I should take the " + RED + "message " + BLUE + "from " + RED + "Juliet " + BLUE + "to " + RED + "Romeo.");
+				"I should take the <red>message <blue>from <red>Juliet <blue>to <red>Romeo.");
 			break;
 		case 30:
 			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[2]);
 			writeJournal(player, line,
-				BLUE + "I should find " + RED + "Father Lawrence " + BLUE + "and see how we can help.");
+				"I should find <red>Father Lawrence <blue>and see how we can help.");
 			break;
 		case 40:
 			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
@@ -84,7 +84,7 @@ public class RomeoJuliet extends Quest {
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[2]);
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[3]);
 			writeJournal(player, line,
-				BLUE + "I need to find the " + RED + "Apothecary " + BLUE + "to make a " + RED + "cadava potion."
+				"I need to find the <red>Apothecary <blue>to make a <red>cadava potion."
 			);
 			break;
 		case 50:
@@ -95,10 +95,10 @@ public class RomeoJuliet extends Quest {
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[4]);
 			if (!player.getInventory().contains(753, 1)) {
 				writeJournal(player, line,
-					BLUE + "I will have to find some " + RED + "Cadava berries" + BLUE + " somewhere!");
+					"I will have to find some <red>Cadava berries <blue>somewhere!");
 			} else {
 				writeJournal(player, line,
-					BLUE + "I should take these " + RED + "cadava berries" + BLUE + " to the " + RED + "Apothecary.");
+					"I should take these <red>cadava berries <blue>to the <red>Apothecary.");
 			}
 			break;
 		case 60:
@@ -108,7 +108,7 @@ public class RomeoJuliet extends Quest {
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[3]);
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[4]);
 			writeJournal(player, line,
-				BLUE + "I should take this " + RED + "cadava potion " + BLUE + "to " + RED + "Juliet."
+				"I should take this <red>cadava potion <blue>to <red>Juliet."
 			);
 			break;
 		case 70:
@@ -122,20 +122,20 @@ public class RomeoJuliet extends Quest {
 				"Juliet. She asked me to tell Romeo the plan."
 			);
 			writeJournal(player, line,
-				BLUE + "I have to find " + RED + "Romeo" + BLUE + " and tell him what's happened."
+				"I have to find <red>Romeo <blue>and tell him what's happened."
 			);
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>Romeo and Juliet can be together in peace.",
-				"<str>I went to the Apothecary regarding making this cadava",
-				"<str>potion, and he told me to bring him some cadava berries.",
-				"<str>After the Apothecary made me the potion, I delivered it to",
-				"<str>Juliet. She asked me to tell Romeo the plan.",
-				"<str>I told Romeo what was going to happen, but I'm not exactly",
-				"<str>sure he understood what was happening. Ah well, I was",
-				"<str>rewarded for all of my help regardless.",
-				"",
+			line = writeJournal(player, true,
+				"Romeo and Juliet can be together in peace.",
+				"I went to the Apothecary regarding making this cadava",
+				"potion, and he told me to bring him some cadava berries.",
+				"After the Apothecary made me the potion, I delivered it to",
+				"Juliet. She asked me to tell Romeo the plan.",
+				"I told Romeo what was going to happen, but I'm not exactly",
+				"sure he understood what was happening. Ah well, I was",
+				"rewarded for all of my help regardless.");
+			writeJournal(player, ++line,
 				"<col=FF0000>QUEST COMPLETE!");
 			break;
 		}

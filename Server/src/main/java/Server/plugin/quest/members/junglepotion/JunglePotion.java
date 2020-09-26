@@ -54,12 +54,13 @@ public final class JunglePotion extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (stage) {
 		case 0:
 			writeJournal(player,
-				"<blue>I can start this quest by speaking to <red>Trufitus Shakaya",
-				"<blue>who lives in the main hut in <red>Tai Bwo Wannai",
-				"<blue>village on the island of <red>Karamja.");
+				"I can start this quest by speaking to <red>Trufitus Shakaya",
+				"who lives in the main hut in <red>Tai Bwo Wannai",
+				"village on the island of <red>Karamja.");
 			break;
 		case 10:
 		case 20:
@@ -68,43 +69,46 @@ public final class JunglePotion extends Quest {
 		case 50:
 			JungleObjective objective = JungleObjective.forStage(stage);
 			if (player.getInventory().containsItem(objective.getHerb().getProduct())) {
-				writeJournal(player,
-					"<str>I spoke to Trufitus, he needs to commune with the",
-					"<str>gods, he's asked me to help him by collecting herbs.",
+				line = writeJournal(player, true,
+					"I spoke to Trufitus, he needs to commune with the",
+					"gods, he's asked me to help him by collecting herbs.",
 					"",
-					"<str>I picked some fresh " + objective.getName() + " for Trufitus.",
-					"",
-					"<blue>I need to give the <red>" + objective.getName() + " <blue> to <red>Trufitus."
+					"I picked some fresh " + objective.getName() + " for Trufitus.",
+					"");
+				writeJournal(player, line,
+					"I need to give the <red>" + objective.getName() + " <blue>to <red>Trufitus."
 				);
 				return;
 			}
-			writeJournal(player,
-				"<str>I spoke to Trufitus, he needs to commune with the",
-				"<str>gods, he's asked me to help him by collecting herbs.",
-				"",
-				"<blue>I need to pick some fresh <red>" + objective.getName() + " <blue>for <red>Trufitus.");
+			line = writeJournal(player, true,
+				"I spoke to Trufitus, he needs to commune with the",
+				"gods, he's asked me to help him by collecting herbs.",
+				"");
+			writeJournal(player, line,
+				"I need to pick some fresh <red>" + objective.getName() + " <blue>for <red>Trufitus.");
 			break;
 		case 60:
-			writeJournal(player,
-				"<str>I spoke to Trufitus, he needs to commune with the",
-				"<str>gods, he's asked me to help him by collecting herbs.",
+			line = writeJournal(player, true,
+				"I spoke to Trufitus, he needs to commune with the",
+				"gods, he's asked me to help him by collecting herbs.",
 				"",
-				"<str>I have given Trufitus Snake weed, Ardrigal,",
-				"<str>Sito foil, Volencia moss and Rogue's purse.",
+				"I have given Trufitus Snake weed, Ardrigal,",
+				"Sito foil, Volencia moss and Rogue's purse.",
 				"",
-				"<str>Trufitus needs to commune with the gods.",
-				"<blue>I should speak to <red>Trufitus.");
+				"Trufitus needs to commune with the gods.");
+			writeJournal(player, line,
+				"I should speak to <red>Trufitus.");
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>Trufitus Shakaya of the Tai Bwo Wannai village needed",
-				"<str>some jungle herbs in order to make a potion which would",
-				"<str>help him commune with the gods. I collected five lots",
-				"<str>of jungle herbs for him and he was able to",
-				"<str>commune with the gods.",
+			line = writeJournal(player, true,
+				"Trufitus Shakaya of the Tai Bwo Wannai village needed",
+				"some jungle herbs in order to make a potion which would",
+				"help him commune with the gods. I collected five lots",
+				"of jungle herbs for him and he was able to",
+				"commune with the gods.",
 				"",
-				"<str>As a reward he showed me some herblore techniques.",
-				"",
+				"As a reward he showed me some herblore techniques.");
+			writeJournal(player, ++line,
 				"<col=FF0000>QUEST COMPLETE!</col>");
 			break;
 		}

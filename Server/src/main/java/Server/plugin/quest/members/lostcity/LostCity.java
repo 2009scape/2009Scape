@@ -44,70 +44,76 @@ public class LostCity extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (stage) {
 		case 0:
-			int line = writeJournal(player,
-				BLUE + "I can start this quest by speaking to the Adventurers in",
-				BLUE + "the Swamp just south of Lumbridge.",
+			line = writeJournal(player,
+				"I can start this quest by speaking to the Adventurers in",
+				"the Swamp just south of Lumbridge.",
 				"",
-				BLUE + "To complete this quest I will need:");
+				"To complete this quest I will need:");
 			line = writeJournal(player, line, getQuestRequirementsJournal(player));
 			writeJournal(player, line,
-				BLUE + "and be able to defeat a " + RED + "Level 101 Spirit without weapons"
+				"and be able to defeat a <red>Level 101 Spirit without weapons"
 			);
 			break;
 		case 10:
-			writeJournal(player,
-				"<str>According to one of the adventurers in Lumbridge Swamp",
-				"<str>the entrance to Zanaris is somewhere around there.",
-				"<blue>Apparently there is a <red>leprechaun<blue> hiding in a <red>tree<blue> nearby",
-				"<blue>who can tell me how to enter the <red>Lost City of Zanaris");
+			line = writeJournal(player, true,
+				"According to one of the adventurers in Lumbridge Swamp",
+				"the entrance to Zanaris is somewhere around there.");
+			writeJournal(player, line,
+				"Apparently there is a <red>leprechaun <blue>hiding in a <red>tree <blue>nearby",
+				"who can tell me how to enter the <red>Lost City of Zanaris");
 			break;
 		case 20:
-			writeJournal(player,
-				"<str>According to one of the adventurers in Lumbridge Swamp",
-				"<str>the entrance to Zanaris is somewhere around there.",
-				"<str>I found the Leprechaun hiding in a nearby tree.",
-				"<blue>He told me that the entrance to <red>Zanaris<blue> is in the <red>shed<blue> in",
-				"<red>Lumbridge swamp<blue> but only if I am carrying a <red>Dramen Staff",
-				"<blue>I can find a <red>Dramen Tree <blue>in a cave on <red>Entrana <blue>somewhere");
+			line = writeJournal(player, true,
+				"According to one of the adventurers in Lumbridge Swamp",
+				"the entrance to Zanaris is somewhere around there.",
+				"I found the Leprechaun hiding in a nearby tree.");
+			writeJournal(player, line,
+				"He told me that the entrance to <red>Zanaris <blue>is in the <red>shed <blue>in",
+				"<red>Lumbridge swamp <blue>but only if I am carrying a <red>Dramen Staff",
+				"I can find a <red>Dramen Tree <blue>in a cave on <red>Entrana <blue>somewhere");
 			break;
 		case 21:
 			if (player.hasItem(DRAMEN_STAFF)) {
-				writeJournal(player,
-					"<str>According to one of the adventurers in Lumbridge Swamp",
-					"<str>the entrance to Zanaris is somewhere around there.",
-					"<str>I found the Leprechaun hiding in a nearby tree.",
-					"<str>He told me that the entrance to Zanaris is in the shed in",
-					"<str>Lumbridge swamp but only if I am carrying a Dramen Staff.",
-					"<str>The Dramen Tree was guarded by a powerful Tree Spirit.",
-					"<str>I cut a branch from the tree and crafted a Dramen Staff.",
-					"<blue>I should enter <red>Zanaris <blue>by going to the <red>shed <blue>in <red>Lumbridge",
-					"<red>Swamp <blue>while keeping the <red>Dramen staff<blue> with me");
+				line = writeJournal(player, true,
+					"According to one of the adventurers in Lumbridge Swamp",
+					"the entrance to Zanaris is somewhere around there.",
+					"I found the Leprechaun hiding in a nearby tree.",
+					"He told me that the entrance to Zanaris is in the shed in",
+					"Lumbridge swamp but only if I am carrying a Dramen Staff.",
+					"The Dramen Tree was guarded by a powerful Tree Spirit.",
+					"I cut a branch from the tree and crafted a Dramen Staff.");
+				writeJournal(player, line,
+					"I should enter <red>Zanaris <blue>by going to the <red>shed <blue>in <red>Lumbridge",
+					"<red>Swamp <blue>while keeping the <red>Dramen staff <blue>with me");
 			} else {
-				writeJournal(player,
-					"<str>According to one of the adventurers in Lumbridge Swamp",
-					"<str>the entrance to Zanaris is somewhere around there.",
-					"<str>I found the Leprechaun hiding in a nearby tree.",
-					"<str>He told me that the entrance to Zanaris is in the shed in",
-					"<str>Lumbridge swamp but only if I am carrying a Dramen Staff.",
-					"<str>The Dramen Tree was guarded by a powerful Tree Spirit.",
-					"<blue>With the <red>Spirit <blue>defeated I can cut a <red>branch <blue>from the tree");
+				line = writeJournal(player, true,
+					"According to one of the adventurers in Lumbridge Swamp",
+					"the entrance to Zanaris is somewhere around there.",
+					"I found the Leprechaun hiding in a nearby tree.",
+					"He told me that the entrance to Zanaris is in the shed in",
+					"Lumbridge swamp but only if I am carrying a Dramen Staff.",
+					"The Dramen Tree was guarded by a powerful Tree Spirit.");
+				writeJournal(player, line,
+					"With the <red>Spirit <blue>defeated I can cut a <red>branch <blue>from the tree");
 			}
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>According to one of the adventurers in Lumbridge Swamp",
-				"<str>the entrance to Zanaris is somewhere around there.",
-				"<str>I found the Leprechaun hiding in a nearby tree.",
-				"<str>He told me that the entrance to Zanaris is in the shed in",
-				"<str>Lumbridge swamp but only if I am carrying a Dramen Staff.",
-				"<str>The Dramen Tree was guarded by a powerful Tree Spirit.",
-				"<str>I cut a branch from the tree and crafted a Dramen Staff.",
-				"<str>With the mystical Dramen Staff in my possession I was",
-				"<str>able to enter Zanaris through the shed in Lumbridge",
-				"<str>swamp.",
-				"<br><col=FF0000>QUEST COMPLETE!");
+			line = writeJournal(player, true,
+				"According to one of the adventurers in Lumbridge Swamp",
+				"the entrance to Zanaris is somewhere around there.",
+				"I found the Leprechaun hiding in a nearby tree.",
+				"He told me that the entrance to Zanaris is in the shed in",
+				"Lumbridge swamp but only if I am carrying a Dramen Staff.",
+				"The Dramen Tree was guarded by a powerful Tree Spirit.",
+				"I cut a branch from the tree and crafted a Dramen Staff.",
+				"With the mystical Dramen Staff in my possession I was",
+				"able to enter Zanaris through the shed in Lumbridge",
+				"swamp.");
+			writeJournal(player, ++line,
+				"<col=FF0000>QUEST COMPLETE!");
 			break;
 		}
 	}

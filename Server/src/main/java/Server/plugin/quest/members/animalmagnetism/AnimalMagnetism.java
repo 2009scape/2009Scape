@@ -133,16 +133,16 @@ public final class AnimalMagnetism extends Quest {
 			"me. Perhaps the <red>farm near Port Phasmatys <blue>sells them..."
 		},
 		new String[]{
-			"The<red> ghost farmer<blue> wants me to talk to his <red>wife<blue> for him. I",
+			"The <red>ghost farmer <blue>wants me to talk to his <red>wife <blue>for him. I",
 			"need to do this before he will sell chickens."
 		},
 		new String[]{
 			"I should talk to the <red>crone <blue>west of the undead farm and ask",
 			"about <red>ghostspeak amulet<blue>s. Perhaps she can enable the",
-			"<red>ghost farmer<blue> to talk to his <red>wife<blue> directly."
+			"<red>ghost farmer <blue>to talk to his <red>wife <blue>directly."
 		},
 		new String[]{
-			"I need to talk the <red>crone<blue> while I have a <red>ghostspeak",
+			"I need to talk the <red>crone <blue>while I have a <red>ghostspeak",
 			"<red>amulet <blue>so that she can create a new amulet specifically",
 			"for the <red>ghost farmer."
 		},
@@ -159,7 +159,7 @@ public final class AnimalMagnetism extends Quest {
 			"catch one for me.",
 		},
 		new String[]{
-			"The <red>ghost farmer<blue> caught some chickens; now I need to buy",
+			"The <red>ghost farmer <blue>caught some chickens; now I need to buy",
 			"2 from him and deliver them to Ava."
 		},
 		new String[]{
@@ -187,7 +187,7 @@ public final class AnimalMagnetism extends Quest {
 			"might be able to help."
 		},
 		new String[]{
-			"I need to collect a <red>holy symbol of Saradomin<blue> and a <red>mithril",
+			"I need to collect a <red>holy symbol of Saradomin <blue>and a <red>mithril",
 			"<red>axe<blue>. <red>Turael<blue>, the Burthorpe Slayer, can use these to",
 			"construct a new axe for my undead tree cutting."
 		},
@@ -237,18 +237,18 @@ public final class AnimalMagnetism extends Quest {
 		if (stage >= 10) {
 			line = writeJournal(player, line, stage == 100,
 				"<red>Ava <blue>has asked me for <red>undead chickens<blue>. One will go toward",
-				"<blue>making her bed more comfortable, the other will be used in",
-				"<blue>some unexplained reward for me."
+				"making her bed more comfortable, the other will be used in",
+				"some unexplained reward for me."
 			);
 		}
 
 		switch (stage) {
 		case 0:
 			line = writeJournal(player,
-				"<blue>I can start this quest by talking to",
+				"I can start this quest by talking to",
 				"<red>Ava <blue>who lives in <red>Draynor Manor.",
 				"",
-				"<blue>Minimum requirements:"
+				"Minimum requirements:"
 			);
 			writeJournal(player, line, getQuestRequirementsJournal(player));
 			break;
@@ -263,28 +263,28 @@ public final class AnimalMagnetism extends Quest {
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
 			line = writeJournal(player, line, JOURNAL_ENTRIES[1]);
 			writeJournal(player, line,
-				"<blue>The <red>ghost farmer<blue>'s <red>wife <blue>needs to know bank information",
-				"<blue>that only the farmer can supply.");
+				"The <red>ghost farmer<blue>'s <red>wife <blue>needs to know bank information",
+				"that only the farmer can supply.");
 			break;
 		case 13:
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
 			writeJournal(player, line,
-				"<blue>The <red>ghost farmer<blue> won't tell me the information his <red>wife <blue>is",
-				"<blue>after. Perhaps I should talk to her again.");
+				"The <red>ghost farmer <blue>won't tell me the information his <red>wife <blue>is",
+				"after. Perhaps I should talk to her again.");
 			break;
 		case 14:
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
 			writeJournal(player, line,
-				"<blue>The <red>ghost farmer<blue>'s <red>wife <blue>still needs to know bank",
-				"<blue>information that only the farmer can supply.");
+				"The <red>ghost farmer<blue>'s <red>wife <blue>still needs to know bank",
+				"information that only the farmer can supply.");
 			break;
 		case 15:
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
 			writeJournal(player, line,
-				"<blue>I still need to find a way to allow the <red>undead farmer<blue> and his",
+				"I still need to find a way to allow the <red>undead farmer <blue>and his",
 				"<red>wife <blue>to communicate with each other.");
 			break;
 		case 16:
@@ -323,17 +323,17 @@ public final class AnimalMagnetism extends Quest {
 		case 28:
 			line = writeJournalEntries(player, line, true, 10);
 			writeJournal(player, line,
-				"<blue>I need to chop some wood from the <red>undead trees <blue>near",
+				"I need to chop some wood from the <red>undead trees <blue>near",
 				"<red>Draynor Manor<blue>. <red>Ava <blue>can use this wood as a source of",
-				"<blue>unending arrow shafts in my reward. She suggested that I",
-				"<blue>use a Woodcutting axe made of nothing less powerful than",
-				"<blue>mithril.");
+				"unending arrow shafts in my reward. She suggested that I",
+				"use a Woodcutting axe made of nothing less powerful than",
+				"mithril.");
 			break;
 		case 29:
 			line = writeJournalEntries(player, line, true, 10);
 			line = writeJournal(player, line, JOURNAL_ENTRIES[11]);
 			writeJournal(player, line,
-				"<blue>Perhaps <red>Ava<blue> could give me some advice...");
+				"Perhaps <red>Ava <blue>could give me some advice...");
 			break;
 		case 30:
 			line = writeJournalEntries(player, line, true, 11);
@@ -362,7 +362,7 @@ public final class AnimalMagnetism extends Quest {
 			if (!player.hasItem(CONTAINER)) {
 				line = writeJournal(player, line, JOURNAL_ENTRIES[18]);
 				writeJournal(player, line,
-					"<red>leather<blue>.<red> Ava <blue>tells me that the <red>H.A.M hideout <blue>is a good",
+					"<red>leather<blue>. <red>Ava <blue>tells me that the <red>H.A.M hideout <blue>is a good",
 					"place to obtain <red>buttons."
 				);
 			} else {
@@ -377,17 +377,17 @@ public final class AnimalMagnetism extends Quest {
 				"<col=FF0000>QUEST COMPLETE!",
 				"<red>Ava's reward for me is an arrow attracting and creating",
 				"<red>backpack.",
-				"<blue>The method is this: the <red>undead chicken<blue> can attract lost,",
-				"<blue>stray arrowheads with a magnet, add wood from the",
-				"<blue>undead twigs and then finish the arrows using its own",
-				"<blue>feathers. This will give me an unending source of arrows.",
-				"<blue>The cunning bird will also attract some of the arrows which I",
-				"<blue>have fired, preventing these arrows from falling upon the",
-				"<blue>ground.",
-				"<blue>If I lost my device, I can talk to <red>Ava<blue> for a new one,",
-				"<blue>although it will cost me around 1000 gold.",
-				"<blue>Once I achieve a Ranger level of 50 or more, I can upgrade",
-				"<blue>the attractor if I give <red>Ava <blue>75 steel arrows.");
+				"The method is this: the <red>undead chicken <blue>can attract lost,",
+				"stray arrowheads with a magnet, add wood from the",
+				"undead twigs and then finish the arrows using its own",
+				"feathers. This will give me an unending source of arrows.",
+				"The cunning bird will also attract some of the arrows which I",
+				"have fired, preventing these arrows from falling upon the",
+				"ground.",
+				"If I lose my device, I can talk to <red>Ava <blue>for a new one,",
+				"although it will cost me around 1000 gold.",
+				"Once I achieve a Ranger level of 50 or more, I can upgrade",
+				"the attractor if I give <red>Ava <blue>75 steel arrows.");
 			break;
 		}
 	}

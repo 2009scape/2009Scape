@@ -66,24 +66,25 @@ public class ImpCatcher extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		if (getStage(player) == 0) {
 			writeJournal(player,
-				BLUE + "I can start this quest by speaking to " + RED + "Wizard Mizgog " + BLUE + "who is",
-				BLUE + "in the " + RED + "Wizard's Tower",
+				"I can start this quest by speaking to <red>Wizard Mizgog <blue>who is",
+				"in the <red>Wizard's Tower",
 				"",
-				BLUE + "There are no requirements for this quest.");
+				"There are no requirements for this quest.");
 		} else if (getStage(player) == 10) {
-			int line = writeJournal(player, true,
+			line = writeJournal(player, true,
 				"I have spoken to Wizard Mizgog.",
 				""
 			);
 			if (player.getInventory().containItems(BLACK_BEAD.getId(), RED_BEAD.getId(), YELLOW_BEAD.getId(), WHITE_BEAD.getId())) {
 				writeJournal(player, line,
-					BLUE + "I have collected all the missing beads and need to return",
-					BLUE + "them to " + RED + "Wizard Mizgog.");
+					"I have collected all the missing beads and need to return",
+					"them to <red>Wizard Mizgog.");
 			} else {
 				writeJournal(player, line,
-					BLUE + "I need to collect some items by killing " + RED + " Imps.",
+					"I need to collect some items by killing <red>Imps.",
 					(player.getInventory().containsItem(BLACK_BEAD) ? "<str>" : "<red>") + "1 Black Bead",
 					(player.getInventory().containsItem(RED_BEAD) ? "<str>" : "<red>") + "1 Red Bead",
 					(player.getInventory().containsItem(WHITE_BEAD) ? "<str>" : "<red>") + "1 White Bead",
@@ -91,13 +92,14 @@ public class ImpCatcher extends Quest {
 				);
 			}
 		} else {
-			writeJournal(player,
-				"<str>I have spoken to Wizard Mizgog.",
+			line = writeJournal(player, true,
+				"I have spoken to Wizard Mizgog.",
 				"",
-				"<str>I have collected all the beads.",
+				"I have collected all the beads.",
 				"",
-				"<str>Wizard Mizgog thanked me for finding his beads and gave",
-				"<str>me an Amulet of Accuracy.",
+				"Wizard Mizgog thanked me for finding his beads and gave",
+				"me an Amulet of Accuracy.");
+			writeJournal(player, ++line,
 				"<col=FF0000>QUEST COMPLETE!");
 		}
 	}

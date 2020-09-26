@@ -30,29 +30,28 @@ public class FishingContest extends Quest {
     public static final Item GARLIC = new Item(1550);
     public static final Item SPADE = new Item(952);
 
-
     @Override
     public void drawJournal(Player player, int stage) {
-        int line;
         super.drawJournal(player, stage);
+        int line;
         if (stage < 10) {
             line = writeJournal(player,
                 "I can start this quest by trying to take the <red>shortcut",
-                "near <red>White Wolf Mountain"
+                "near <red>White Wolf Mountain<blue>."
             );
             writeJournal(player, line, getQuestRequirementsJournal(player));
         } else {
             line = writeJournal(player, stage >= 20,
-                "The <red>mountain Dwarves' home <blue>would be an ideal way to get across ",
+                "The <red>mountain Dwarves' home <blue>would be an ideal way to get across",
                 "White Wolf Mountain safely. However, the Dwarves aren't too",
-                "fond of strangers. They will let you through if you can <red>bring ",
+                "fond of strangers. They will let you through if you can <red>bring",
                 "<red>them a trophy. <blue>The trophy is the prize for the annual Hemenster",
-                "<red>fishing competition.<blue>",
+                "<red>fishing competition<blue>.",
                 ""
             );
             if (stage == 20) {
                 writeJournal(player, line,
-                    "I should return to <red>Austri<blue> or <red>Vestri<blue>."
+                    "I should return to <red>Austri <blue>or <red>Vestri<blue>."
                 );
             } else if (stage == 100) {
                 writeJournal(player, line,
@@ -73,7 +72,7 @@ public class FishingContest extends Quest {
     @Override
     public QuestRequirement[] getQuestRequirements(Player player) {
         return new QuestRequirement[]{
-            new QuestRequirement(Skills.FISHING, 10, "I need level <red>10 Fishing<blue> to start this quest.")
+            new QuestRequirement(Skills.FISHING, 10, "I need level <red>10 Fishing <blue>to start this quest.")
         };
     }
 

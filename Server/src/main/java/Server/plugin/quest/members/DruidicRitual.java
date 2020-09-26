@@ -39,39 +39,43 @@ public class DruidicRitual extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch(stage) {
 			case 0:
 				writeJournal(player,
-					"<blue>I can start this quest by speaking to the <red>Kaqemeex <blue>who is at",
-					"<blue>the <red>Druids Circle <blue>just <red>North <blue>of <red>Taverley.");
+					"I can start this quest by speaking to the <red>Kaqemeex <blue>who is at",
+					"the <red>Druids Circle <blue>just <red>North <blue>of <red>Taverley.");
 				break;
 			case 10:
-				writeJournal(player,
-					"<str>I told Kaqemeex I would help them prepare their ceremony.",
-					"<blue>I should speak to <red>Sanfew <blue>in the village to the <red>South.");
+				line = writeJournal(player, true,
+					"I told Kaqemeex I would help them prepare their ceremony.");
+				writeJournal(player, line,
+					"I should speak to <red>Sanfew <blue>in the village to the <red>South.");
 				break;
 			case 20:
-				writeJournal(player,
-					"<str>I told Kaqemeex I would help them prepare their ceremony.",
-					"",
+				line = writeJournal(player, true,
+					"I told Kaqemeex I would help them prepare their ceremony.",
+					"");
+				writeJournal(player, line,
 					"<red>Sanfew <blue>told me for the ritual they would need me to place",
 					"<red>raw bear meat, raw chicken, raw rat meat, <blue>and <red>raw beef <blue>in",
-					"<blue>the <red>Cauldron of Thunder in the <blue>dungeon South of <red>Taverley.");
+					"the <red>Cauldron of Thunder in the <blue>dungeon South of <red>Taverley.");
 				break;
 			case 99:
-				writeJournal(player,
-					"<str>I told Kaqemeex I would help them prepare their ceremony.",
-					"<str>The ceremony required various meats being placed in the",
-					"<str>Cauldron of Thunder. I did this and gave them to Sanfew.",
-					"<blue>I should speak to <red>Kaqemeex <blue>again and claim my <red>reward.");
+				line = writeJournal(player, true,
+					"I told Kaqemeex I would help them prepare their ceremony.",
+					"The ceremony required various meats being placed in the",
+					"Cauldron of Thunder. I did this and gave them to Sanfew.");
+				writeJournal(player, line,
+					"I should speak to <red>Kaqemeex <blue>again and claim my <red>reward.");
 				break;
 			case 100:
-				writeJournal(player,
-					"<str>I told Kaqemeex I would help them prepare their ceremony.",
-					"<str>The ceremony required various meats being placed in the",
-					"<str>Cauldron of Thunder. I did this and gave them to Sanfew.",
-					"<str>Kaqemeex then taught me the basics of the skill Herblore.",
-					"",
+				line = writeJournal(player, true,
+					"I told Kaqemeex I would help them prepare their ceremony.",
+					"The ceremony required various meats being placed in the",
+					"Cauldron of Thunder. I did this and gave them to Sanfew.",
+					"Kaqemeex then taught me the basics of the skill Herblore.");
+				writeJournal(player, ++line,
 					"<col=FF0000>QUEST COMPLETE!");
 				break;
 		}

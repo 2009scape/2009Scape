@@ -34,6 +34,56 @@ public class WaterFall extends Quest {
 		);
 	}
 
+	static String[][] JOURNAL_ENTRIES = new String[][]{
+		new String[]{
+			"I spoke to <red>Almera <blue>in a house close to the Baxtorian",
+			"waterfall. Her son was missing so I offered to help find",
+			"him. The boy, <red>Hudon's <blue>looking for treasure in the waterfall.",
+			""
+		},
+		new String[]{
+			"I found Hudon a short raft ride down the river. He is",
+			"convinced there is treasure here somewhere. Maybe I",
+			"need to do a little research.",
+			""
+		},
+		new String[]{
+			"I found a book in the tourist office about Baxtorian. The",
+			"book tells of a sad love story about 2 elf lovers. It ends",
+			"with Baxtorian withdrawing to his home under the waterfall",
+			"after his wife dies. It is told that only Glarial could enter",
+			"their home.",
+			""
+		},
+		new String[]{
+			"The book also mentions <red>Glarial's tomb <blue>and a pebble, it",
+			"appears that the pebble is used to enter the tomb."
+		},
+		new String[]{
+			"From what I understand <red>Glarial's pebble <blue>was hidden in a ",
+			"cave under the <red>Tree Gnome Village <blue>by <red>Golrie's <blue>ancestors.",
+			""
+		},
+		new String[]{
+			"Inside the tomb I found Glarial's amulet and ashes.",
+			""
+		},
+		new String[]{
+			"I finally got access to the derelict home of Baxtorian. The",
+			"door must have been keyed to Glarial's amulet.",
+			""
+		},
+		new String[]{
+			"I have found a room containing the <red>Chalice of Eternity. <blue>The",
+			"chalice is suspended in midair just out of reach."
+		},
+		new String[]{
+			"",
+			"Using Glarial's ashes as a counterweight, I was able to",
+			"remove the treasure that had been left in the chalice."
+		}
+	};
+
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
@@ -41,158 +91,48 @@ public class WaterFall extends Quest {
 		switch (stage) {
 		case 0:
 			writeJournal(player, line,
-				"<blue>I can start this quest by speaking to <red>Almera<blue> in her house",
-				"<blue> next to the <red>Baxtorian Falls.",
+				"I can start this quest by speaking to <red>Almera <blue>in her house",
+				"next to the <red>Baxtorian Falls.",
 				"",
-				"<blue>I need to be able to fight <red>Level 84 Giants.");
+				"I need to be able to fight <red>Level 84 Giants.");
 			break;
 		case 10:
-			writeJournal(player, line,
-				"<blue>I spoke to <red>Almera<blue> in a house close to the Baxtorian",
-				"<blue>waterfall. Her son was missing so I offered to help find",
-				"<blue>him. The boy, <red>Hudon's<blue> looking for treasure in the waterfall.");
+			writeJournal(player, line, JOURNAL_ENTRIES[0]);
 			break;
 		case 20:
-			writeJournal(player, line,
-				"<str>I spoke to Almera in a house close to the Baxtorian",
-				"<str>waterfall. Her son was missing so I offered to help find",
-				"<str>him. The boy, Hudon's looking for treasure in the waterfall.",
-				"",
-				"<blue>I found Hudon a short raft ride down the river. He is",
-				"<blue>convinced there is treasure here somewhere. Maybe I",
-				"<blue>need to do a little research.");
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
+			writeJournal(player, line, JOURNAL_ENTRIES[1]);
 			break;
 		case 30:
-			if (player.getInventory().containsItem(new Item(294, 1))) {
-				writeJournal(player, line,
-					"<str>I spoke to Almera in a house close to the Baxtorian",
-					"<str>waterfall. Her son was missing so I offered to help find",
-					"<str>him. The boy, Hudon's looking for treasure in the waterfall.",
-					"",
-					"<str>I found Hudon a short raft ride down the river. He is",
-					"<str>convinced there is treasure here somewhere. Maybe I",
-					"<str>need to do a little research.",
-					"",
-					"<str>I found a book in the tourist office about Baxtorian. The",
-					"<str>book tells of a sad love story about 2 elf lovers. It ends",
-					"<str>with Baxtorian withdrawing to his home under the waterfall",
-					"<str>after his wife dies. It is told that only Glarial could enter",
-					"<str>their home.",
-					"",
-					"<blue>The book also mentions <red>Glarial's tomb<blue> and a pebble, it",
-					"<blue>appears that the pebble is used to enter the tomb.",
-					"<str>From what I understand Glarial's pebble was hidden in a ",
-					"<str> cave under the Tree Gnome Village by Golrie's ancestors."
-				);
-			} else {
-				writeJournal(player, line,
-					"<str>I spoke to Almera in a house close to the Baxtorian",
-					"<str>waterfall. Her son was missing so I offered to help find",
-					"<str>him. The boy, Hudon's looking for treasure in the waterfall.",
-					"",
-					"<str>I found Hudon a short raft ride down the river. He is",
-					"<str>convinced there is treasure here somewhere. Maybe I",
-					"<str>need to do a little research.",
-					"",
-					"<str>I found a book in the tourist office about Baxtorian. The",
-					"<str>book tells of a sad love story about 2 elf lovers. It ends",
-					"<str>with Baxtorian withdrawing to his home under the waterfall",
-					"<str>after his wife dies. It is told that only Glarial could enter",
-					"<str>their home.",
-					"",
-					"<blue>The book also mentions <red>Glarial's tomb<blue> and a pebble, it",
-					"<blue>appears that the pebble is used to enter the tomb.",
-					"<blue>From what I understand <red>Glarial's pebble<blue> was hidden in a ",
-					"<blue> cave under the <red>Tree Gnome Village<blue> by<red> Golrie's<blue> ancestors."
-				);
+			boolean hasPebble = player.getInventory().containsItem(new Item(294, 1));
+			boolean hasAmulet = player.getInventory().containsItem(new Item(295, 1)) || player.getEquipment().containsOneItem(295);
+			boolean isInside = player.getLocation().getY() >= 9902;
+
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[2]);
+			line = writeJournal(player, line, isInside || hasAmulet, JOURNAL_ENTRIES[3]);
+			line = writeJournal(player, line, isInside || hasAmulet || hasPebble, JOURNAL_ENTRIES[4]);
+
+			if (isInside || hasAmulet) {
+				line = writeJournal(player, line, true, JOURNAL_ENTRIES[5]);
 			}
-			if (player.getInventory().containsItem(new Item(295, 1)) || player.getEquipment().containsOneItem(295)) {
-				writeJournal(player, line,
-					"<str>I spoke to Almera in a house close to the Baxtorian",
-					"<str>waterfall. Her son was missing so I offered to help find",
-					"<str>him. The boy, Hudon's looking for treasure in the waterfall.",
-					"",
-					"<str>I found Hudon a short raft ride down the river. He is",
-					"<str>convinced there is treasure here somewhere. Maybe I",
-					"<str>need to do a little research.",
-					"",
-					"<str>I found a book in the tourist office about Baxtorian. The",
-					"<str>book tells of a sad love story about 2 elf lovers. It ends",
-					"<str>with Baxtorian withdrawing to his home under the waterfall",
-					"<str>after his wife dies. It is told that only Glarial could enter",
-					"<str>their home.",
-					"",
-					"<str>The book also mentions Glarial's tomb and a pebble, it",
-					"<str>appears that the pebble is used to enter the tomb.",
-					"<str>From what I understand Glarial's pebble was hidden in a ",
-					"<str> cave under the Tree Gnome Village by Golrie's ancestors.",
-					"",
-					"<blue>Inside the tomb I found Glarial's amulet and ashes."
-				);
-			}
-			if (player.getLocation().getY() >= 9902) {
-				writeJournal(player, line,
-					"<str>I spoke to Almera in a house close to the Baxtorian",
-					"<str>waterfall. Her son was missing so I offered to help find",
-					"<str>him. The boy, Hudon's looking for treasure in the waterfall.",
-					"",
-					"<str>I found Hudon a short raft ride down the river. He is",
-					"<str>convinced there is treasure here somewhere. Maybe I",
-					"<str>need to do a little research.",
-					"",
-					"<str>I found a book in the tourist office about Baxtorian. The",
-					"<str>book tells of a sad love story about 2 elf lovers. It ends",
-					"<str>with Baxtorian withdrawing to his home under the waterfall",
-					"<str>after his wife dies. It is told that only Glarial could enter",
-					"<str>their home.",
-					"",
-					"<str>The book also mentions Glarial's tomb and a pebble, it",
-					"<str>appears that the pebble is used to enter the tomb.",
-					"<str>From what I understand Glarial's pebble was hidden in a ",
-					"<str> cave under the Tree Gnome Village by Golrie's ancestors.",
-					"",
-					"<str>Inside the tomb I found Glarial's amulet and ashes.",
-					"",
-					"<str>I finally got access to the derelict home of Baxtorian. The",
-					"<str>door must have been keyed to Glarial's amulet.",
-					"",
-					"<blue>I have found a room containing the <red>Chalice of Eternity.<blue> The",
-					"<blue>chalice is suspended in midair just out of reach."
-				);
+			if (isInside) {
+				line = writeJournal(player, line, true, JOURNAL_ENTRIES[6]);
+				writeJournal(player, line, JOURNAL_ENTRIES[7]);
 			}
 			break;
 		case 100:
-			writeJournal(player, line,
-				"<str>I spoke to Almera in a house close to the Baxtorian",
-				"<str>waterfall. Her son was missing so I offered to help find",
-				"<str>him. The boy, Hudon's looking for treasure in the waterfall.",
-				"",
-				"<str>I found Hudon a short raft ride down the river. He is",
-				"<str>convinced there is treasure here somewhere. Maybe I",
-				"<str>need to do a little research.",
-				"",
-				"<str>I found a book in the tourist office about Baxtorian. The",
-				"<str>book tells of a sad love story about 2 elf lovers. It ends",
-				"<str>with Baxtorian withdrawing to his home under the waterfall",
-				"<str>after his wife dies. It is told that only Glarial could enter",
-				"<str>their home.",
-				"",
-				"<str>The book also mentions Glarial's tomb and a pebble, it",
-				"<str>appears that the pebble is used to enter the tomb.",
-				"<str>From what I understand Glarial's pebble was hidden in a ",
-				"<str> cave under the Tree Gnome Village by Golrie's ancestors.",
-				"",
-				"<str>Inside the tomb I found Glarial's amulet and ashes.",
-				"",
-				"<str>I finally got access to the derelict home of Baxtorian. The",
-				"<str>door must have been keyed to Glarial's amulet.",
-				"",
-				"<str>I have found a room containing the Chalice of Eternity. The",
-				"<str>chalice is suspended in midair just out of reach. ",
-				"",
-				"<str>Using Glarial's ashes as a counterweight, I was able to",
-				"<str>remove the treasure that had been left in the chalice.",
-				"",
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[2]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[3]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[4]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[5]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[6]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[7]);
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[8]);
+			writeJournal(player, ++line,
 				"<col=FF0000>QUEST COMPLETE!</col>");
 			break;
 		}

@@ -64,42 +64,46 @@ public final class ErnestTheChicken extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (getStage(player)) {
 			case 0:
 				writeJournal(player,
-					BLUE + "I can start this quest by speaking to " + RED + "Veronica " + BLUE + "who is",
-					BLUE + "outside " + RED + "Draynor Manor",
+					"I can start this quest by speaking to <red>Veronica <blue>who is",
+					"outside <red>Draynor Manor",
 					"",
-					BLUE + "There aren't any requirements for this quest.");
+					"There aren't any requirements for this quest.");
 				break;
 			case 10:
-				writeJournal(player,
-					"<str>I have spoken to Veronica",
-					"",
-					BLUE + "I need to find " + RED + "Ernest",
-					BLUE + "He went into " + RED + "Draynor Manor " + BLUE + "and hasn't returned");
+				line = writeJournal(player, true,
+					"I have spoken to Veronica",
+					"");
+				writeJournal(player, line,
+					"I need to find <red>Ernest",
+					"He went into <red>Draynor Manor <blue>and hasn't returned");
 				break;
 			case 20:
-				writeJournal(player,
-					"<str>I have spoken to Veronica",
+				line = writeJournal(player, true,
+					"I have spoken to Veronica",
 					"",
-					"<str>I've spoken to Dr Oddenstein, and discovered Ernest is a",
-					"<str>chicken.",
-					"",
-					BLUE + "I need to bring " + RED + "Dr Oddenstein " + BLUE + "parts for his machine:",
-					(player.getInventory().containsItem(OIL_CAN) ? "<str>" : RED) + "1 Oil Can",
-					(player.getInventory().containsItem(PRESSURE_GAUGE) ? "<str>" : RED) + "1 Pressure Gauge",
-					(player.getInventory().containsItem(RUBBER_TUBE) ? "<str>" : RED) + "1 Rubber Tube"
+					"I've spoken to Dr Oddenstein, and discovered Ernest is a",
+					"chicken.",
+					"");
+				writeJournal(player, line,
+					"I need to bring <red>Dr Oddenstein <blue>parts for his machine:",
+					(player.getInventory().containsItem(OIL_CAN) ? "<str>" : "<red>") + "1 Oil Can",
+					(player.getInventory().containsItem(PRESSURE_GAUGE) ? "<str>" : "<red>") + "1 Pressure Gauge",
+					(player.getInventory().containsItem(RUBBER_TUBE) ? "<str>" : "<red>") + "1 Rubber Tube"
 				);
 				break;
 			case 100:
-				writeJournal(player,
-					"<str>I have spoken to Veronica",
+				line = writeJournal(player, true,
+					"I have spoken to Veronica",
 					"",
-					"<str>I have collected all the parts for the machine",
+					"I have collected all the parts for the machine",
 					"",
-					"<str>Dr Oddenstein thanked me for helping fix his machine",
-					"<str>We turned Ernest back to normal and he rewarded me",
+					"Dr Oddenstein thanked me for helping fix his machine",
+					"We turned Ernest back to normal and he rewarded me");
+				writeJournal(player, line,
 					"<col=FF0000>QUEST COMPLETE!</col>");
 				break;
 		}

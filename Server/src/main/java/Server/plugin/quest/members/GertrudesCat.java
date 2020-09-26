@@ -37,6 +37,7 @@ public class GertrudesCat extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (stage) {
 		case 0:
 			writeJournal(player,
@@ -44,48 +45,53 @@ public class GertrudesCat extends Quest {
 				"She can be found to the <red>west of Varrock.");
 			break;
 		case 10:
-			writeJournal(player,
-				"<str>I accepted the challenge of finding Gertrude's lost cat.",
+			line = writeJournal(player, true,
+				"I accepted the challenge of finding Gertrude's lost cat.");
+			writeJournal(player, line,
 				"I need <red>to speak to Shilop and Wilough <blue>at the <red>marketplace.");
 			break;
 		case 20:
-			writeJournal(player,
-				"<str>I accepted the challenge of finding Gertrude's lost cat.",
-				"<str>I spoke to Shilop, Gertrude's Son.",
+			line = writeJournal(player, true,
+				"I accepted the challenge of finding Gertrude's lost cat.",
+				"I spoke to Shilop, Gertrude's son.");
+			writeJournal(player, line,
 				"I need to <red>go to their play area <blue>and <red>find the lost cat and",
 				"<red>return it to Gertrude.");
 			break;
 		case 30:
-			writeJournal(player,
-				"<str>I accepted the challenge of finding Gertrude's lost cat.",
-				"<str>I spoke to Shilop, Gertrude's Son.",
-				"<str>I found the lost cat but it won't come back.",
+			line = writeJournal(player, true,
+				"I accepted the challenge of finding Gertrude's lost cat.",
+				"I spoke to Shilop, Gertrude's son.",
+				"I found the lost cat but it won't come back.");
+			writeJournal(player, line,
 				"<red>I still need to <red>get her to follow me home.");
 			break;
 		case 40:
 		case 50:
-			writeJournal(player,
-				"<str>I accepted the challenge of finding Gertrude's lost cat.",
-				"<str>I spoke to Shilop, Gertrude's Son.",
-				"<str>I found the lost cat but it won't come back.",
-				"<str>I gave the cat milk and sardines.",
+			line = writeJournal(player, true,
+				"I accepted the challenge of finding Gertrude's lost cat.",
+				"I spoke to Shilop, Gertrude's son.",
+				"I found the lost cat but it won't come back.",
+				"I gave the cat milk and sardines.");
+			writeJournal(player, line,
 				"",
 				"I still need to <red>get her to follow me home.");
 			break;
 		case 60:
-			writeJournal(player,
-				"<str>I accepted the challenge of finding Gertrude's lost cat.",
-				"<str>I spoke to Shilop, Gertrude's Son.",
-				"<str>I found the lost cat but it won't come back.",
-				"<str>I gave the cat milk and sardines.",
+			line = writeJournal(player, true,
+				"I accepted the challenge of finding Gertrude's lost cat.",
+				"I spoke to Shilop, Gertrude's son.",
+				"I found the lost cat but it won't come back.",
+				"I gave the cat milk and sardines.");
+			writeJournal(player, line,
 				"She ran off home.");
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>I helped Gertrude to find her lost cat,",
-				"<str>I fed it and returned her missing kitten,",
-				"<str>Gertrude gave me my very own pet for a reward.",
-				"",
+			line = writeJournal(player, true,
+				"I helped Gertrude to find her lost cat,",
+				"I fed it and returned her missing kitten,",
+				"Gertrude gave me my very own pet for a reward.");
+			writeJournal(player, ++line,
 				"<col=FF0000>QUEST COMPLETE!");
 			break;
 		}

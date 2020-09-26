@@ -35,54 +35,60 @@ class CooksAssistant : Quest(
 
         if (questStage < 10) { // If the quest has not been started
             writeJournal(player, line,
-                "I can start this quest by speaking to the <red>Cook<blue> in the",
-                "<red>Kitchen<blue> on the ground floor of <red>Lumbridge Castle."
+                "I can start this quest by speaking to the <red>Cook <blue>in the",
+                "<red>Kitchen <blue>on the ground floor of <red>Lumbridge Castle."
             )
         } else if (questStage in 10..99) { // Player has started Cook's Assistant
             // Situation
             line = writeJournal(player, line,
-                "It's the <red>Duke of Lumbridge's<blue> birthday and I have to help",
-                "his <red>Cook<blue> make him a <red>birthday cake.<blue> To do this I need to",
+                "It's the <red>Duke of Lumbridge's <blue>birthday and I have to help",
+                "his <red>Cook <blue>make him a <red>birthday cake. <blue>To do this I need to",
                 "bring him the following ingredients:"
             )
 
-            // Milk
-            line = if (player.getAttribute("cooks_assistant:milk_submitted", false) || player.getAttribute("cooks_assistant:all_submitted", false)) { //If the player has handed in the bucket of milk
+            // If the player has handed in the bucket of milk
+            line = if (player.getAttribute("cooks_assistant:milk_submitted", false) || player.getAttribute("cooks_assistant:all_submitted", false)) {
+                writeJournal(player, line, true,
+                    "<black>I have given the cook a bucket of milk.")
+            // If the player has a bucket of milk in their inventory
+            } else if (player.inventory.contains(MILK, 1)) {
                 writeJournal(player, line,
-                    "<str><black>I have given the cook a bucket of milk.")
-            } else if (player.inventory.contains(MILK, 1)) { // If the player has a bucket of milk in their inventory
+                    "I have found a <red>bucket of milk <blue>to give to the cook.")
+            // If the player satisfies none of the above
+            } else {
                 writeJournal(player, line,
-                    "I have found a <red>bucket of milk<blue> to give to the cook.")
-            } else { //If the player satisfies none of the above
-                writeJournal(player, line,
-                    "I need to find a <red>bucket of milk.<blue> There's a cattle field east",
+                    "I need to find a <red>bucket of milk. <blue>There's a cattle field east",
                     "of Lumbridge, I should make sure I take an empty bucket",
                     "with me.")
             }
 
-            // Flour
-            line = if (player.getAttribute("cooks_assistant:flour_submitted", false) || player.getAttribute("cooks_assistant:all_submitted", false)) { //If the player has handed in the pot of flour
+            // If the player has handed in the pot of flour
+            line = if (player.getAttribute("cooks_assistant:flour_submitted", false) || player.getAttribute("cooks_assistant:all_submitted", false)) {
+                writeJournal(player, line, true,
+                    "<black>I have given the cook a pot of flour.")
+            // If the player has a pot of flour in their inventory
+            } else if (player.inventory.contains(FLOUR, 1)){
                 writeJournal(player, line,
-                    "<str><black>I have given the cook a pot of flour.")
-            } else if (player.inventory.contains(FLOUR, 1)){ // If the player has a pot of flour in their inventory
+                    "I have found a <red>pot of flour <blue>to give to the cook.")
+            // If the player satisfies none of the above
+            } else {
                 writeJournal(player, line,
-                    "I have found a <red>pot of flour<blue> to give to the cook.")
-            } else { //If the player satisfies none of the above
-                writeJournal(player, line,
-                    "I need to find a <red>pot of flour.<blue> There's a mill found north-",
+                    "I need to find a <red>pot of flour. <blue>There's a mill found north-",
                     "west of Lumbridge, I should take an empty pot with me.")
             }
 
-            // Egg
-            line = if (player.getAttribute("cooks_assistant:egg_submitted", false) || player.getAttribute("cooks_assistant:all_submitted", false)) { //If the player has handed in the egg
+            // If the player has handed in the egg
+            line = if (player.getAttribute("cooks_assistant:egg_submitted", false) || player.getAttribute("cooks_assistant:all_submitted", false)) {
+                writeJournal(player, line, true,
+                    "<black>I have given the cook an egg.")
+            // If the player has an egg in their inventory
+            } else if (player.inventory.contains(EGG, 1)){
                 writeJournal(player, line,
-                    "<str><black>I have given the cook an egg.")
-            } else if (player.inventory.contains(EGG, 1)){ // If the player has an egg in their inventory
+                    "I have found an <red>egg <blue>to give to the cook.")
+            // If the player satisfies none of the above
+            } else {
                 writeJournal(player, line,
-                    "I have found an <red>egg<blue> to give to the cook.")
-            } else { //If the player satisfies none of the above
-                writeJournal(player, line,
-                    "I need to find an <red>egg.<blue> The cook normally gets his eggs from",
+                    "I need to find an <red>egg. <blue>The cook normally gets his eggs from",
                     "the Groats' farm, found just to the west of the cattle",
                     "field.")
             }
@@ -97,21 +103,22 @@ class CooksAssistant : Quest(
                 )
             ) {
                 writeJournal(player, line,
-                    "I should return to the <red>Cook.<blue>")
+                    "I should return to the <red>Cook<blue>."
+                )
             }
-
         } else if (questStage >= 100) {
-            writeJournal(player, line,
-                "<str><black>It was the Duke of Lumbridge's birthday, but his cook had",
-                "<str><black>forgotten to buy the ingredients he needed to make him a",
-                "<str><black>cake. I brought the cook an egg, some flour and some milk",
-                "<str><black>and then cook made a delicious looking cake with them.",
+            writeJournal(player, line, true,
+                "<black>It was the Duke of Lumbridge's birthday, but his cook had",
+                "<black>forgotten to buy the ingredients he needed to make him a",
+                "<black>cake. I brought the cook an egg, some flour and some milk",
+                "<black>and then cook made a delicious looking cake with them.",
                 "",
-                "<str><black>As a reward he now lets me use his high quality range",
-                "<str><black>which lets me burn things less whenever I wish to cook",
-                "<str><black>there.",
+                "<black>As a reward he now lets me use his high quality range",
+                "<black>which lets me burn things less whenever I wish to cook",
+                "<black>there.",
                 "",
-                "<col=FF0000>QUEST COMPLETE!</col>")
+                "<col=FF0000>QUEST COMPLETE!</col>"
+            )
         }
     }
 

@@ -15,11 +15,12 @@ import core.game.node.item.Item;
  */
 @InitializablePlugin
 public class TheKnightsSword extends Quest {
-	
 	/**
 	 * Represents the portrait item.
 	 */
 	private static final Item PORTRAIT = new Item(666);
+
+	private static final Item BLURITE_SWORD = new Item(667);
 
 	/**
 	 * Constructs a new {@code TheKnightsSword} {@code Object}.
@@ -46,26 +47,28 @@ public class TheKnightsSword extends Quest {
 		switch (stage) {
 		case 0:
 			writeJournal(player,
-				BLUE + "I can start this quest by speaking to the " + RED + "Squire " + BLUE + "in the",
-				BLUE + "courtyard of the " + RED + "White Knights' Castle " + BLUE + "in " + RED + "southern Falador",
-				BLUE + "To complete this quest I need:",
-				RED + "Level 10 Mining",
-				BLUE + "and to be unafraid of " + RED + "Level 57 Ice Warriors.");
+				"I can start this quest by speaking to the <red>Squire <blue>in the",
+				"courtyard of the <red>White Knights' Castle <blue>in <red>southern Falador",
+				"To complete this quest I need:",
+				"<red>Level 10 Mining",
+				"and to be unafraid of <red>Level 57 Ice Warriors.");
 			break;
 		case 10:
-			writeJournal(player,
-				"<str>I told the Squire I would help him to replace the sword he",
-				"<str>has lost. It could only be made by an Imcando Dwarf.",
-				BLUE + "The Squire suggests I speak to " + RED + "Reldo " + BLUE + "in the " + RED + " Varrock Palace",
-				RED + "Library " + BLUE + "for information about the " + RED + "Imcando Dwarves.");
+			line = writeJournal(player, true,
+				"I told the Squire I would help him to replace the sword he",
+				"has lost. It could only be made by an Imcando Dwarf.");
+			writeJournal(player, line,
+				"The Squire suggests I speak to <red>Reldo <blue>in the <red>Varrock Palace",
+				"<red>Library <blue>for information about the <red>Imcando Dwarves.");
 			break;
 		case 20:
-			writeJournal(player,
-				"<str>I told the Squire I would help him to replace the sword he",
-				"<str>has lost. It could only be made by an Imcando Dwarf.",
-				BLUE + "Reldo couldn't give me much information about the",
-				RED + "Imcando " + BLUE + "except a few live on the " + RED + "southern peninsula of",
-				RED + "Asgarnia, " + BLUE + "they dislike strangers, and LOVE " + RED + "redberry pies.");
+			line = writeJournal(player, true,
+				"I told the Squire I would help him to replace the sword he",
+				"has lost. It could only be made by an Imcando Dwarf.");
+			writeJournal(player, line,
+				"Reldo couldn't give me much information about the",
+				"<red>Imcando <blue>except a few live on the <red>southern peninsula of",
+				"<red>Asgarnia, <blue>they dislike strangers, and LOVE <red>redberry pies.");
 			break;
 		case 30:
 			line = writeJournal(player, true,
@@ -75,7 +78,7 @@ public class TheKnightsSword extends Quest {
 				"information provided by Reldo. He wasn't very talkative",
 				"until I gave him a Redberry pie, which he gobbled up.");
 			writeJournal(player, line,
-				BLUE + "He will help me now I have gained his trust through " + RED + "pie.");
+				"He will help me now I have gained his trust through <red>pie.");
 			break;
 		case 40:
 			line = writeJournal(player, true,
@@ -86,8 +89,8 @@ public class TheKnightsSword extends Quest {
 				"until I gave him a Redberry pie, which he gobbled up."
 			);
 			writeJournal(player, line,
-				RED + "Thurgo " + BLUE + "needs a " + RED + "picture of the sword " + BLUE + "before he can help.",
-				BLUE + "I should probably ask the " + RED + "Squire " + BLUE + "about obtaining one.");
+				"<red>Thurgo <blue>needs a <red>picture of the sword <blue>before he can help.",
+				"I should probably ask the <red>Squire <blue>about obtaining one.");
 			break;
 		case 50:
 			line = writeJournal(player, true,
@@ -100,13 +103,13 @@ public class TheKnightsSword extends Quest {
 			);
 			if (!player.getInventory().containsItem(PORTRAIT)) {
 				writeJournal(player, line,
-					BLUE + "The Squire told me about a " + RED + "portrait ",
-					BLUE + "which has a " + RED + "picture of the sword " + BLUE + "in " + RED + "Sir Vyvin's room"
+					"The Squire told me about a <red>portrait ",
+					"which has a <red>picture of the sword <blue>in <red>Sir Vyvin's room."
 				);
 			} else {
 				writeJournal(player, line,
-					BLUE + "I now have a picture of the " + RED + "Knight's Sword " + BLUE + "- I should take it",
-					BLUE + "to " + RED + "Thurgo " + BLUE + "so that he can duplicate it."
+					"I now have a picture of the <red>Knight's Sword <blue>- I should take it",
+					"to <red>Thurgo <blue>so that he can duplicate it."
 				);
 			}
 			break;
@@ -119,21 +122,17 @@ public class TheKnightsSword extends Quest {
 				"until I gave him a Redberry pie, which he gobbled up.",
 				"Thurgo needed a picture of the sword before he could",
 				"start work on a replacement. I took him a portrait of it.");
-			if (
-				player.getInventory().contains(667, 1) ||
-				player.getEquipment().contains(667, 1) ||
-				player.getBank().contains(667, 1)
-			) {
-				writeJournal(player, line,
-					"<str>Thurgo has now smithed me a replica of Sir Vyvin's sword.",
-					"",
-					BLUE + "I should return it to the " + RED + "Squire " + BLUE + "for my " + RED + "reward."
+			if (player.hasItem(BLURITE_SWORD)) {
+				line = writeJournal(player, line, true,
+					"Thurgo has now smithed me a replica of Sir Vyvin's sword.");
+				writeJournal(player, ++line,
+					"I should return it to the <red>Squire <blue>for my <red>reward."
 				);
 			} else {
 				writeJournal(player, line,
-					BLUE + "According to " + RED + "Thurgo" + BLUE + ", to make a " + RED + "replica sword " + BLUE + "he will need",
-					RED + "two Iron Bars " + BLUE + "and some " + RED + "Blurite Ore. Blurite Ore " + BLUE + "can only be",
-					BLUE + "found " + RED + "deep in the caves below Thurgo's house."
+					"According to <red>Thurgo<blue>, to make a <red>replica sword <blue>he will need",
+					"<red>two Iron Bars <blue>and some <red>Blurite Ore. Blurite Ore <blue>can only be",
+					"found <red>deep in the caves below Thurgo's house."
 				);
 			}
 			break;
@@ -143,10 +142,9 @@ public class TheKnightsSword extends Quest {
 				"start work on a replacement. I took him a portrait of it.",
 				"After bringing Thurgo two iron bars and some blurite ore",
 				"he made me a fine replica of Sir Vyvin's Sword, which I",
-				"returned to the Squire for a reward.",
-				""
-			);
-			writeJournal(player, line, "<col=FF0000>QUEST COMPLETE!</col>");
+				"returned to the Squire for a reward.");
+			writeJournal(player, ++line,
+				"<col=FF0000>QUEST COMPLETE!</col>");
 			break;
 		}
 	}

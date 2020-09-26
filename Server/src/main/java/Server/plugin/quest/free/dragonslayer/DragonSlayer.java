@@ -159,100 +159,101 @@ public final class DragonSlayer extends Quest {
 		int line = JOURNAL_TEXT_START;
 		switch (getStage(player)) {
 		case 0:
-			writeJournal(player,
-				"<blue>I can start this quest by speaking to the <red>Guildmaster <blue>in",
-				"<blue>the <red>Champions' Guild<blue>, south-west of Varrock.",
-				"<blue>I will need to be able to defeat a <red>level 83 dragon.",
-				(player.getQuestRepository().getPoints() < 32) ?
-					"<blue>To enter the Champions' Guild I need<red> 32 Quest Points." :
-					"<str>To enter the Champions' Guild I need 32 Quest Points."
-			);
+			line = writeJournal(player,
+				"I can start this quest by speaking to the <red>Guildmaster <blue>in",
+				"the <red>Champions' Guild<blue>, south-west of Varrock.",
+				"I will need to be able to defeat a <red>level 83 dragon.");
+			writeJournal(player, line, player.getQuestRepository().getPoints() < 32,
+				"To enter the Champions' Guild I need <red>32 Quest Points.");
 			break;
 		case 10:
-			writeJournal(player,
-				"<str>The Guildmaster of the Champions' Guild said I could earn",
-				"<str>the right to wear rune armour if I went on a quest for",
-				"<str>Oziach, who makes the armour.",
-				"<blue>I should speak to <red>Oziach<blue>, who lives by the cliffs to the",
-				"<blue>west of <red>Edgeville.");
+			line = writeJournal(player, true,
+				"The Guildmaster of the Champions' Guild said I could earn",
+				"the right to wear rune armour if I went on a quest for",
+				"Oziach, who makes the armour.");
+			writeJournal(player, line,
+				"I should speak to <red>Oziach<blue>, who lives by the cliffs to the",
+				"west of <red>Edgeville.");
 			break;
 		case 15:
-			writeJournal(player,
-				"<str>The Guildmaster of the Champions' Guild said I could earn",
-				"<str>the right to wear rune armour if I went on a quest for",
-				"<str>Oziach, who makes the armour.",
-				"<str>I spoke to Oziach in Edgeville. He told me to slay the",
-				"<str>dragon of Crandor island.",
-				"<blue>I should return to the <red>Champions' Guild Guildmaster <blue>for",
-				"<blue>more detailed instructions.");
+			line = writeJournal(player, true,
+				"The Guildmaster of the Champions' Guild said I could earn",
+				"the right to wear rune armour if I went on a quest for",
+				"Oziach, who makes the armour.",
+				"I spoke to Oziach in Edgeville. He told me to slay the",
+				"dragon of Crandor island.");
+			writeJournal(player, line,
+				"I should return to the <red>Champions' Guild Guildmaster <blue>for",
+				"more detailed instructions.");
 			break;
 		case 20:
-			line = writeJournal(player, line,
-				"<str>The Guildmaster of the Champions' Guild said I could earn",
-				"<str>the right to wear rune armour if I went on a quest for",
-				"<str>Oziach, who makes the armour.",
-				"<str>I spoke to Oziach in Edgeville. He told me to slay the",
-				"<str>dragon of Crandor island.",
-				"<str>The Champions' Guild Guildmaster gave me more detailed",
-				"<str>instructions.",
-				"<blue>To defeat the dragon I will need to find a <red>map <blue>to Crandor, a",
+			line = writeJournal(player, true,
+				"The Guildmaster of the Champions' Guild said I could earn",
+				"the right to wear rune armour if I went on a quest for",
+				"Oziach, who makes the armour.",
+				"I spoke to Oziach in Edgeville. He told me to slay the",
+				"dragon of Crandor island.",
+				"The Champions' Guild Guildmaster gave me more detailed",
+				"instructions.");
+			writeJournal(player, line,
+				"To defeat the dragon I will need to find a <red>map <blue>to Crandor, a",
 				"<red>ship<blue>, a <red>captain <blue>to take me there and some kind of",
 				"<red>protection <blue>against the dragon's breath."
 			);
 			if (player.getInventory().containsItem(MAZE_PIECE) || player.getBank().containsItem(MAZE_PIECE)) {
-				line = writeJournal(player, line,
-					"<str>I found the piece of the map that was hidden in Melzar's",
-					"<str>Maze.");
+				line = writeJournal(player, line, true,
+					"I found the piece of the map that was hidden in Melzar's",
+					"Maze.");
 			} else {
 				line = writeJournal(player, line,
-					"<blue>One-third of the map is in <red>Melzar's Maze<blue>, near",
+					"One-third of the map is in <red>Melzar's Maze<blue>, near",
 					"<red>Rimmington");
 			}
 
 			if (player.getInventory().containsItem(MAGIC_PIECE) || player.getBank().containsItem(MAGIC_PIECE)) {
-				line = writeJournal(player, line,
-					"<str>I found the piece of the map that was hidden beneath Ice",
-					"<str>Mountain.");
+				line = writeJournal(player, line, true,
+					"I found the piece of the map that was hidden beneath Ice",
+					"Mountain.");
 			} else {
 				line = writeJournal(player, line,
-					"<blue>One-third of the map is hidden, and only the <red>Oracle <blue>on <red>Ice",
-					"<red>Mountain<blue> will know where it is.");
+					"One-third of the map is hidden, and only the <red>Oracle <blue>on <red>Ice",
+					"<red>Mountain <blue>will know where it is.");
 			}
 
 			if (player.getInventory().containsItem(WORMBRAIN_PIECE) || player.getBank().containsItem(WORMBRAIN_PIECE)) {
-				line = writeJournal(player, line,
-					"<str>I found the piece of the map that the goblin, Wormbrain,",
-					"<str>stole.");
+				line = writeJournal(player, line, true,
+					"I found the piece of the map that the goblin, Wormbrain,",
+					"stole.");
 			} else {
 				line = writeJournal(player, line,
-					"<blue>One-third of the map was stolen by a <red>goblin <blue>from the",
+					"One-third of the map was stolen by a <red>goblin <blue>from the",
 					"<red>Goblin Village.");
 			}
 
 			if (player.getInventory().containsItem(SHIELD) || player.getBank().containsItem(SHIELD)) {
-				line = writeJournal(player, line,
-					"<str>The Duke of Lumbridge gave me an anti-dragonbreath",
-					"<str>shield.");
+				line = writeJournal(player, line, true,
+					"The Duke of Lumbridge gave me an anti-dragonbreath",
+					"shield.");
 			} else {
 				line = writeJournal(player, line,
-					"<blue>I should ask the <red>Duke of Lumbridge <blue>for an <red>anti-",
+					"I should ask the <red>Duke of Lumbridge <blue>for an <red>anti-",
 					"<red>dragonbreath shield.");
 			}
 
 			if (player.getSavedData().getQuestData().getDragonSlayerAttribute("ship")) {
-				line = writeJournal(player, line,
-					"<str>I bought a ship in Port Sarim called the Lady Lumbridge.");
+				line = writeJournal(player, line, true,
+					"I bought a ship in Port Sarim called the Lady Lumbridge.");
 				if (!player.getSavedData().getQuestData().getDragonSlayerAttribute("repaired")) {
-					writeJournal(player, line,
-						"<str>I need to repair the hole in bottom of the ship.");
+					writeJournal(player, line, true,
+						"I need to repair the hole in bottom of the ship.");
 				} else {
-					writeJournal(player, line,
-						"<str>I have repaired my ship using wooden planks and steel",
-						"<str>nails.");
+					writeJournal(player, line, true,
+						"I have repaired my ship using wooden planks and steel",
+						"nails.");
 				}
 			} else {
 				writeJournal(player, line,
-					"<blue>I should see if there is a <red>ship <blue>for sale in <red>Port Sarim."
+					"I should see if there is a <red>ship <blue>for sale in <red>Port Sarim."
 				);
 			}
 
@@ -282,7 +283,7 @@ public final class DragonSlayer extends Quest {
 				"Captain Ned from Draynor Village has agreed to sail the",
 				"ship to Crandor for me.");
 			writeJournal(player, line,
-				"<blue>Now I should go to my ship in <red>Port Sarim <blue>and set sail for",
+				"Now I should go to my ship in <red>Port Sarim <blue>and set sail for",
 				"<red>Crandor<blue>!");
 			break;
 		case 40:
@@ -314,11 +315,11 @@ public final class DragonSlayer extends Quest {
 			}
 			if (player.getInventory().containsItem(ELVARG_HEAD) || player.getBank().containsItem(ELVARG_HEAD)) {
 				writeJournal(player, line,
-					"<blue>I have slain the dragon! Now I just need to tell <red>Oziach."
+					"I have slain the dragon! Now I just need to tell <red>Oziach."
 				);
 			} else {
 				writeJournal(player, line,
-					"<blue>Now all I need to do is kill the <red>dragon<blue>!"
+					"Now all I need to do is kill the <red>dragon<blue>!"
 				);
 			}
 			break;
@@ -346,11 +347,10 @@ public final class DragonSlayer extends Quest {
 				"seaworthy ship and captain to take me there.",
 				"I sailed to Crandor and killed the dragon. I am a true",
 				"champion and have proved myself worthy to wear rune",
-				"platemail!",
-				"");
-			writeJournal(player, line,
+				"platemail!");
+			writeJournal(player, ++line,
 				"<col=FF0000>QUEST COMPLETE!</col>",
-				"<blue>I gained <red>2 Quest Points<blue>, <red>18,650 Strength XP<blue>, <red>18,650",
+				"I gained <red>2 Quest Points<blue>, <red>18,650 Strength XP<blue>, <red>18,650",
 				"<red>Defence XP <blue>and the right to wear <red>rune platebodies.");
 			break;
 		}
@@ -408,5 +408,4 @@ public final class DragonSlayer extends Quest {
 		});
 		return true;
 	}
-	
 }

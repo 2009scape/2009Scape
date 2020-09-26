@@ -64,110 +64,101 @@ public class DwarfCannon extends Quest {
 		return this;
 	}
 
+	static String[][] JOURNAL_ENTRIES = new String[][]{
+		new String[] {
+			"I have spoken to Captain Lawgof, he recruited me into the",
+			"Black Guard and asked me to help the dwarves.",
+			""
+		}
+	};
+
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
-		int line;
+		int line = JOURNAL_TEXT_START;
+
+		if (stage > 0) {
+			line = writeJournal(player, line, true, JOURNAL_ENTRIES[0]);
+		}
+
 		switch (stage) {
 		case 0:
 			writeJournal(player,
-				"<blue>I can start this quest by speaking to <red>Lawgof the Dwarven",
-				"<red>Captain of the Black Watch <blue>, he is defending an area",
+				"I can start this quest by speaking to <red>Lawgof the Dwarven",
+				"<red>Captain of the Black Watch <blue> ,he is defending an area", // sic
 				"<red>North-west of the Fishing Guild <blue>against <red>goblin <blue>attack.");
 			break;
 		case 10:
-			line = writeJournal(player, true,
-				"I have spoken to Captain Lawgof, he recruited me into the",
-				"Black Guard and asked me to help the dwarves.",
-				"");
 			if (player.getConfigManager().get(1) == 2016) {
+				line = writeJournal(player, line, true,
+					"I have repaired all the broken railings.");
 				writeJournal(player, line,
-					"<str>I have repaired all the broken railings,",
-					"<blue>I should report back to <red>Captain Lawgof."
+					"I should report back to <red>Captain Lawgof."
 				);
 			} else {
 				writeJournal(player, line,
-					"<blue>My first task is to <red>fix the broken railings",
-					"<blue>in the dwarves defensive perimeter."
+					"My first task is to <red>fix the broken railings",
+					"in the dwarves defensive perimeter."
 				);
 			}
 			break;
 		case 20:
-			line = writeJournal(player, true,
-				"I have spoken to Captain Lawgof, he recruited me into the",
-				"Black Guard and asked me to help the dwarves.",
-				""
-			);
 			if (player.hasItem(DWARF_REMAINS)) {
+				line = writeJournal(player, line, true,
+					"I went to the watchtower where I found the remains of",
+					"Gilob.");
 				writeJournal(player, line,
-					"<str>I went to the watchtower where I found the remains of",
-					"<str>Gilob.",
-					"<blue>I should take them back to <red>Captain Lawgof.");
+					"I should take them back to <red>Captain Lawgof.");
 			} else {
+				line = writeJournal(player, line, true,
+					"I have repaired all the broken railings.");
 				writeJournal(player, line,
-					"<str>I have repaired all the broken railings,",
-					"<blue>Captain Lawgof has asked me to check up on his guards at",
+					"Captain Lawgof has asked me to check up on his guards at",
 					"<red>the watchtower <blue>to the South of this camp.");
 			}
 			break;
 		case 30:
-			writeJournal(player,
-				"<str>I have spoken to Captain Lawgof, he recruited me into the",
-				"<str>Black Guard and asked me to help the dwarves.",
-				"",
-				"<str>I gave the remains to Captain Lawgof.",
-				"<blue>he sent me to find the <red>Goblin base<blue>, South-east of the",
-				"<blue>camp.");
+			line = writeJournal(player, line, true,
+				"I gave the remains to Captain Lawgof.");
+			writeJournal(player, line,
+				"He sent me to find the <red>Goblin base<blue>, South-east of the",
+				"camp.");
 			break;
 		case 40:
-			writeJournal(player,
-				"<str>I have spoken to Captain Lawgof, he recruited me into the",
-				"<str>Black Guard and asked me to help the dwarves.",
-				"",
-				"<str>I have rescued Lollk and sent him back to the Captain.",
-				"<blue>I need to <red>speak to Captain Lawgof <blue>again.");
+			line = writeJournal(player, line, true,
+				"I have rescued Lollk and sent him back to the Captain.");
+			writeJournal(player, line,
+				"I need to <red>speak to Captain Lawgof <blue>again.");
 			break;
 		case 50:
-			writeJournal(player,
-				"<str>I have spoken to Captain Lawgof, he recruited me into the",
-				"<str>Black Guard and asked me to help the dwarves.",
-				"",
-				"<blue>Captain Lawgof has asked me to <red>fix the multicannon.");
+			writeJournal(player, line,
+				"Captain Lawgof has asked me to <red>fix the multicannon.");
 			break;
 		case 60:
-			writeJournal(player,
-				"<str>I have spoken to Captain Lawgof, he recruited me into the",
-				"<str>Black Guard and asked me to help the dwarves.",
-				"",
-				"<str>I've fixed the broken multicannon,",
-				"<blue>I need to <red>speak to Captain Lawgof <blue>again.");
+			line = writeJournal(player, line, true,
+				"I've fixed the broken multicannon.");
+			writeJournal(player, line,
+				"I need to <red>speak to Captain Lawgof <blue>again.");
 			break;
 		case 70:
-			writeJournal(player,
-				"<str>I have spoken to Captain Lawgof, he recruited me into the",
-				"<str>Black Guard and asked me to help the dwarves.",
-				"",
-				"<blue>Captain Lawgof asked me to find <red>Nulodion the Engineer<blue>, he",
-				"<blue>needs to know what <red>ammunition the multicannon <blue>fires.");
+			writeJournal(player, line,
+				"Captain Lawgof asked me to find <red>Nulodion the Engineer<blue>, he",
+				"needs to know what <red>ammunition the multicannon <blue>fires.");
 			break;
 		case 80:
-			writeJournal(player,
-				"<str>I have spoken to Captain Lawgof, he recruited me into the",
-				"<str>Black Guard and asked me to help the dwarves.",
-				"",
-				"<str>I've spoken to Nulodion,",
-				"<str>He gave me an ammo mould and notes",
-				"<blue>I need to <red>speak to Captain Lawgof <blue>again.");
+			line = writeJournal(player, line, true,
+				"I've spoken to Nulodion,",
+				"He gave me an ammo mould and notes");
+			writeJournal(player, line,
+				"I need to <red>speak to Captain Lawgof <blue>again.");
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>I have spoken to Captain Lawgof, he recruited me into the",
-				"<str>Black Guard and asked me to help the dwarves.",
-				"",
-				"<str>I've helped the dwarves keep out the Goblins, and found",
-				"<str>the remains of their friend.",
-				"<str>I fixed the cannon and got a mould for Captain Lawgof.",
-				"<blue>I can now <red>buy a multicannon <blue>from <red>Nulodion <blue>as a reward.",
+			line = writeJournal(player, line, true,
+				"I've helped the dwarves keep out the Goblins, and found",
+				"the remains of their friend.",
+				"I fixed the cannon and got a mould for Captain Lawgof.");
+			writeJournal(player, line,
+				"I can now <red>buy a multicannon <blue>from <red>Nulodion <blue>as a reward.",
 				"",
 				"<col=FF0000>QUEST COMPLETE!");
 			break;

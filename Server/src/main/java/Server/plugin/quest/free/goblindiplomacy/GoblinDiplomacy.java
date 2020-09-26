@@ -67,9 +67,9 @@ public class GoblinDiplomacy extends Quest {
 		switch (stage) {
 		case 0:
 			writeJournal(player,
-				BLUE + "I can start this quest by speaking to " + RED + "Generals Wartface",
-				RED + "and Bentnoze " + BLUE + "in the " + RED + " Goblin Village.",
-				BLUE + "There are no requirements for this quest.");
+				"I can start this quest by speaking to <red>Generals Wartface",
+				"<red>and Bentnoze <blue>in the <red>Goblin Village.",
+				"There are no requirements for this quest.");
 			break;
 		case 10:
 			line = writeJournal(player, true,
@@ -80,13 +80,13 @@ public class GoblinDiplomacy extends Quest {
 			);
 			if (player.getInventory().containsItem(ORANGE_MAIL)) {
 				writeJournal(player, line,
-					BLUE + "I have some " + RED + "Orange Goblin Armour. " + BLUE + "I should show it to the",
-					BLUE + "generals."
+					"I have some <red>Orange Goblin Armour. <blue>I should show it to the",
+					"generals."
 				);
 			} else {
 				writeJournal(player, line,
-					BLUE + "I should bring the goblins some " + RED + "Orange Goblin Armour",
-					BLUE + "Maybe the generals will know where to get some."
+					"I should bring the goblins some <red>Orange Goblin Armour",
+					"Maybe the generals will know where to get some."
 				);
 			}
 			break;
@@ -102,13 +102,13 @@ public class GoblinDiplomacy extends Quest {
 			);
 			if (player.getInventory().containsItem(BLUE_MAIL)) {
 				writeJournal(player, line,
-					BLUE + "I have some " + RED + "Blue Goblin Armour. " + BLUE + "I should show it to the",
-					BLUE + "generals."
+					"I have some <red>Blue Goblin Armour. <blue>I should show it to the",
+					"generals."
 				);
 			} else {
 				writeJournal(player, line,
-					BLUE + "I should bring the goblins some " + RED + "Blue Goblin Armour",
-					BLUE + "Maybe the generals will know where to get some."
+					"I should bring the goblins some <red>Blue Goblin Armour",
+					"Maybe the generals will know where to get some."
 				);
 			}
 			break;
@@ -127,33 +127,33 @@ public class GoblinDiplomacy extends Quest {
 			);
 			if (player.getInventory().containsItem(GOBLIN_MAIL)) {
 				writeJournal(player, line,
-					BLUE + "I have some " + RED + "Brown Goblin Armour. " + BLUE + "I should show it to the",
-					BLUE + "generals."
+					"I have some <red>Brown Goblin Armour. <blue>I should show it to the",
+					"generals."
 				);
 			} else {
 				writeJournal(player, line,
-					BLUE + "I should bring the goblins some " + RED + "Brown Goblin Armour",
-					BLUE + "Maybe the generals will know where to get some."
+					"I should bring the goblins some <red>Brown Goblin Armour",
+					"Maybe the generals will know where to get some."
 				);
 			}
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>I spoke to Generals Wartface and Bentnoze in the Goblin",
-				"<str>Village and found that the goblins were on the brink of civil",
-				"<str>war over the colour of their armour. I offered to help the",
-				"<str>generals by finding another colour that they both like.",
+			line = writeJournal(player, true,
+				"I spoke to Generals Wartface and Bentnoze in the Goblin",
+				"Village and found that the goblins were on the brink of civil",
+				"war over the colour of their armour. I offered to help the",
+				"generals by finding another colour that they both like.",
 				"",
-				"<str>I brought the goblins some orange goblin armour, but they",
-				"<str>didn't like it.",
+				"I brought the goblins some orange goblin armour, but they",
+				"didn't like it.",
 				"",
-				"<str>I brought the goblins some blue goblin armour, but they",
-				"<str>didn't like it.",
+				"I brought the goblins some blue goblin armour, but they",
+				"didn't like it.",
 				"",
-				"<str>Unfortunately the goblins were very stupid, and it turned",
-				"<str>out that they liked the original colour the most. That's goblins",
-				"<str>for you I guess.",
-				"",
+				"Unfortunately the goblins were very stupid, and it turned",
+				"out that they liked the original colour the most. That's goblins",
+				"for you I guess.");
+			writeJournal(player, ++line,
 				"<col=FF0000>QUEST COMPLETE!</col>");
 			break;
 		}

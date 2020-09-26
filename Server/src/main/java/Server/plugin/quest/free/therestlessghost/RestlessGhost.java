@@ -47,68 +47,74 @@ public class RestlessGhost extends Quest {
 		return this;
 	}
 
+	static String[][] JOURNAL_ENTRIES = new String[][]{
+		new String[]{
+			"Father Aereck asked me to help him deal with the Ghost in",
+			"the graveyard next to the church.",
+		}
+	};
+
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (stage) {
 			case 0:
 				writeJournal(player,
-					"<blue>I can start this quest by speaking to <red>Father Aereck <blue>in the",
-					"<red>church <blue>next to <red>Lumbridge Castle.<red>",
-					"<blue>I must be unafraid of a <red>Level 13 Skeleton.");
+					"I can start this quest by speaking to <red>Father Aereck <blue>in the",
+					"<red>church <blue>next to <red>Lumbridge Castle<blue>.",
+					"I must be unafraid of a <red>Level 13 Skeleton.");
 				break;
 			case 10:
-				writeJournal(player,
-					"<str>Father Aereck asked me to help him deal with the Ghost in",
-					"<str>the graveyard next to the church.",
-					"<blue>I should find <red>Father Urhney <blue>who is an expert on <red>ghosts.",
-					"<blue>He lives in a <red>shack <blue>in <red>Lumbridge Swamp.");
+				line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+				writeJournal(player, line,
+					"I should find <red>Father Urhney <blue>who is an expert on <red>ghosts.",
+					"He lives in a <red>shack <blue>in <red>Lumbridge Swamp.");
 				break;
 			case 20:
-				writeJournal(player,
-					"<str>Father Aereck asked me to help him deal with the Ghost in",
-					"<str>the graveyard next to the church.",
-					"<str>I should find Father Urhney who is an expert on ghosts.",
-					"<str>He lives in a shack in Lumbridge Swamp.",
-					"<blue>I should talk to the <red>Ghost <blue>to find out why it is haunting the",
+				line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+				line = writeJournal(player, line, true,
+					"I should find Father Urhney who is an expert on ghosts.",
+					"He lives in a shack in Lumbridge Swamp.");
+				writeJournal(player, line,
+					"I should talk to the <red>Ghost <blue>to find out why it is haunting the",
 					"<red>graveyard crypt.");
 				break;
 			case 30:
-				writeJournal(player,
-					"<str>Father Aereck asked me to help him deal with the Ghost in",
-					"<str>the graveyard next to the church.",
-					"<str>I found Father Urhney in the swamp south of Lumbridge. He",
-					"<str>gave me an Amulet of Ghostspeak to talk to the ghost.",
-					"<str>I spoke to the Ghost and he told me he could not rest in",
-					"<str>peace because an evil wizard had stolen his skull.",
-					"<blue>I should go and search the <red>Wizard's Tower South West of",
+				line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+				line = writeJournal(player, line, true,
+					"I found Father Urhney in the swamp south of Lumbridge. He",
+					"gave me an Amulet of Ghostspeak to talk to the ghost.",
+					"I spoke to the Ghost and he told me he could not rest in",
+					"peace because an evil wizard had stolen his skull.");
+				writeJournal(player, line,
+					"I should go and search the <red>Wizard's Tower <blue>South West of",
 					"<red>Lumbridge <blue>for the <red>Ghost's Skull.");
 				break;
 			case 40:
-				writeJournal(player,
-					"<str>Father Aereck asked me to help him deal with the Ghost in",
-					"<str>the graveyard next to the church.",
-					"<str>I found Father Urhney in the swamp south of Lumbridge. He",
-					"<str>gave me an Amulet of Ghostspeak to talk to the ghost.",
-					"<str>I spoke to the Ghost and he told me he could not rest in",
-					"<str>peace because an evil wizard had stolen his skull.",
-					"<str>I found the Ghost's Skull in the basement of the Wizards'",
-					"<str>Tower. It was guarded by a skeleton, but I took it anyways.",
-					"<blue>I should take the <red>Skull <blue>back to the <red>Ghost <blue>so it can rest.");
+				line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+				line = writeJournal(player, line, true,
+					"I found Father Urhney in the swamp south of Lumbridge. He",
+					"gave me an Amulet of Ghostspeak to talk to the ghost.",
+					"I spoke to the Ghost and he told me he could not rest in",
+					"peace because an evil wizard had stolen his skull.",
+					"I found the Ghost's Skull in the basement of the Wizards'",
+					"Tower. It was guarded by a skeleton, but I took it anyways.");
+				writeJournal(player, line,
+					"I should take the <red>Skull <blue>back to the <red>Ghost <blue>so it can rest.");
 				break;
 			case 100:
-				writeJournal(player,
-					"<str>Father Aereck asked me to help him deal with the Ghost in",
-					"<str>the graveyard next to the church.",
-					"<str>I found Father Urhney in the swamp south of Lumbridge. He",
-					"<str>gave me an Amulet of Ghostspeak to talk to the ghost.",
-					"<str>I spoke to the Ghost and he told me he could not rest in", 
-					"<str>peace because an evil wizard had stolen his skull.",
-					"<str>I found the Ghost's Skull in the basement of the Wizards'",
-					"<str>Tower. It was guarded by a skeleton, but I took it anyways.", 
-					"<str>I placed the Skull in the Ghost's coffin, and allowed it to",
-					"<str>rest in peace once more, with gratitude for my help.",
-					"",
+				line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+				line = writeJournal(player, line, true,
+					"I found Father Urhney in the swamp south of Lumbridge. He",
+					"gave me an Amulet of Ghostspeak to talk to the ghost.",
+					"I spoke to the Ghost and he told me he could not rest in",
+					"peace because an evil wizard had stolen his skull.",
+					"I found the Ghost's Skull in the basement of the Wizards'",
+					"Tower. It was guarded by a skeleton, but I took it anyways.",
+					"I placed the Skull in the Ghost's coffin, and allowed it to",
+					"rest in peace once more, with gratitude for my help.");
+				writeJournal(player, ++line,
 					"<col=FF0000>QUEST COMPLETE!");
 				break;
 		}

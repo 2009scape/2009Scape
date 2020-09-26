@@ -93,62 +93,64 @@ public class DemonSlayer extends Quest {
 				"I must be able to defeat a level 27 <red>apocalyptic demon<blue>!");
 			break;
 		case 10:
+			line = writeJournal(player, line, true,
+				"I spoke to the Gypsy in Varrock Square who saw my future.",
+				"Unfortunately it involved killing a demon who nearly",
+				"destroyed Varrock over 150 years ago.",
+				"");
 			writeJournal(player, line,
-				"<str>I spoke to the Gypsy in Varrock Square who saw my future.",
-				"<str>Unfortunately it involved killing a demon who nearly",
-				"<str>destroyed Varrock over 150 years ago.",
-				"",
 				"To defeat the <red>demon <blue>I need the magical sword <red>Silverlight.",
 				"I should ask <red>Sir Prysin <blue>in <red>Varrock Palace <blue>where it is.");
 			break;
 		case 20:
-			int nextLine = writeJournal(player, line,
-				"<str>I spoke to the Gypsy in Varrock Square who saw my future.",
-				"<str>Unfortunately it involved killing a demon who nearly",
-				"<str>destroyed Varrock over 150 years ago.",
-				"",
+			line = writeJournal(player, line, true,
+				"I spoke to the Gypsy in Varrock Square who saw my future.",
+				"Unfortunately it involved killing a demon who nearly",
+				"destroyed Varrock over 150 years ago.",
+				"");
+			writeJournal(player, line,
 				"To defeat the <red>demon <blue>I need the magical sword <red>Silverlight.",
 				"<red>Sir Prysin <blue>needs <red>3 keys <blue>before he can give me <red>Silverlight."
 			);
 			if (player.getInventory().containsItem(FIRST_KEY) && player.getInventory().containsItem(SECOND_KEY) && player.getInventory().containsItem(THIRD_KEY)) {
-				writeJournal(player, nextLine,
+				writeJournal(player, line,
 					"Now I have <red>all 3 keys <blue>I should go and speak to <red>Sir Prysin",
-					"and collect the magical sword <red>Silverlight " + BLUE + "from him."
+					"and collect the magical sword <red>Silverlight <blue>from him."
 				);
 			} else {
-				nextLine = writeJournal(player, nextLine,
-					player.hasItem(FIRST_KEY) ? "<str>I have the 1st Key with me." : "<blue>The <red>1st Key <blue>was dropped down the palace kitchen drains.",
-					player.hasItem(SECOND_KEY) ? "<str>I have the 2nd Key with me." : "<blue>The <red>2nd Key <blue>is with Captain Rovin in Varrock Palace.",
-					player.hasItem(THIRD_KEY) ? "<str>I have the 3rd key with me." : "<blue>The <red>3rd Key <blue>is with the Wizard Traiborn at the Wizards' Tower."
+				line = writeJournal(player, line,
+					player.hasItem(FIRST_KEY) ? "<str>I have the 1st Key with me." : "The <red>1st Key <blue>was dropped down the palace kitchen drains.",
+					player.hasItem(SECOND_KEY) ? "<str>I have the 2nd Key with me." : "The <red>2nd Key <blue>is with Captain Rovin in Varrock Palace.",
+					player.hasItem(THIRD_KEY) ? "<str>I have the 3rd key with me." : "The <red>3rd Key <blue>is with the Wizard Traiborn at the Wizards' Tower."
 				);
 				if (player.getAttribute("demon-slayer:traiborn", false)) {
-					writeJournal(player, nextLine,
-						"The <red>3rd Key <blue>is with Wizard Traiborn at the Wizards' Tower.",
+					writeJournal(player, line,
 						"<red>Traiborn <blue>needs <red>25 <blue>more <red>bones."
 					);
 				}
 			}
 			break;
 		case 30:
-			writeJournal(player, line,
-				"<str>I spoke to the Gypsy in Varrock Square who saw my future.",
-				"<str>Unfortunately it involved killing a demon who nearly",
-				"<str>destroyed Varrock over 150 years ago.",
+			line = writeJournal(player, line, true,
+				"I spoke to the Gypsy in Varrock Square who saw my future.",
+				"Unfortunately it involved killing a demon who nearly",
+				"destroyed Varrock over 150 years ago.",
 				"",
-				"<str>I reclaimed the magical sword Silverlight from Sir Prysin.",
+				"I reclaimed the magical sword Silverlight from Sir Prysin.");
+			writeJournal(player, line,
 				"Now I should go to the stone circle south of the city and",
 				"destroy <red>Delrith <blue>using <red>Silverlight<blue>!");
 			break;
 		case 100:
-			writeJournal(player, line,
-				"<str>I spoke to the Gypsy in Varrock Square who saw my future.",
-				"<str>Unfortunately it involved killing a demon who nearly",
-				"<str>destroyed Varrock over 150 years ago.",
+			line = writeJournal(player, line, true,
+				"I spoke to the Gypsy in Varrock Square who saw my future.",
+				"Unfortunately it involved killing a demon who nearly",
+				"destroyed Varrock over 150 years ago.",
 				"",
-				"<str>I reclaimed the magical sword Silverlight from Sir Prysin.",
-				"<str>Using its power I managed to destroy the demon Delrith",
-				"<str>like the great hero Wally did many years before.",
-				"",
+				"I reclaimed the magical sword Silverlight from Sir Prysin.",
+				"Using its power I managed to destroy the demon Delrith",
+				"like the great hero Wally did many years before.");
+			writeJournal(player, ++line,
 				"<col=FF0000>QUEST COMPLETE!");
 			break;
 		}
@@ -288,24 +290,15 @@ public class DemonSlayer extends Quest {
 					return;
 				}
 				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Erm... I forgot.");
-				stage = 32;
-				break;
-			case 32:
-				end();
-				break;
-			case 21:
-				end();
+				stage = 1000;
 				break;
 			case 20:
 				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, yes I suppose we'd let him up, He doesn't", "generally want to come up here, but if he did want to,", "he could.");
-				stage = 21;
+				stage = 1000;
 				break;
 			case 10:
 				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No, you're not! I know all the palace guards.");
-				stage = 11;
-				break;
-			case 11:
-				end();
+				stage = 1000;
 				break;
 			case 600:
 				if (player.getInventory().containsItem(DemonSlayer.SECOND_KEY) || player.getBank().containsItem(DemonSlayer.SECOND_KEY)) {
@@ -326,7 +319,6 @@ public class DemonSlayer extends Quest {
 				break;
 			case 603:
 				player("It's not them who are going to fight the demon, it's me.");
-				;
 				stage = 604;
 				break;
 			case 604:
@@ -380,19 +372,13 @@ public class DemonSlayer extends Quest {
 			case 616:
 				if (player.getInventory().freeSlots() == 0) {
 					npc("Talk to me again when you have free inventory space.");
-					stage = 617;
+					stage = 1000;
 					return;
 				}
 				if (player.getInventory().add(DemonSlayer.SECOND_KEY)) {
 					interpreter.sendItemMessage(DemonSlayer.SECOND_KEY.getId(), "Captain Rovin hands you a key.");
-					stage = 618;
+					stage = 1000;
 				}
-				break;
-			case 617:
-				end();
-				break;
-			case 618:
-				end();
 				break;
 			case 620:
 				player("Well I'm going to use the powerful sword Silverlight", "which I believe you have one of the keys for?");
@@ -400,9 +386,9 @@ public class DemonSlayer extends Quest {
 				break;
 			case 621:
 				npc("I already gave you my key. Check your pockets.");
-				stage = 622;
+				stage = 1000;
 				break;
-			case 622:
+			case 1000:
 				end();
 				break;
 			}

@@ -50,26 +50,26 @@ public class SheepHerder extends Quest {
     @Override
     public void drawJournal(Player player, int stage) {
         boolean hasGear = (player.getInventory().containsItem(PLAGUE_BOTTOM) && player.getInventory().containsItem(PLAGUE_TOP) || (player.getEquipment().containsItem(PLAGUE_BOTTOM) && player.getEquipment().containsItem(PLAGUE_TOP))) || stage >= 20;
-        int line = 11;
+        int line;
         boolean sheepDead = player.getAttribute("sheep_herder:all_dead",false);
         super.drawJournal(player, stage);
         if (stage < 10) {
             writeJournal(player,
                 "I can start this quest by speaking to <red>Councillor Halgrive",
-                "near to the <red>Zoo<blue> in <red>East Ardougne.");
+                "near to the <red>Zoo <blue>in <red>East Ardougne.");
         } else {
             switch(stage){
                 case 10:
-                    line = writeJournal(player, line, hasGear,
-                        "<red>Councillor Halgrive<blue> said I should speak to <red>Doctor Orbon<blue> about",
+                    line = writeJournal(player, hasGear,
+                        "<red>Councillor Halgrive <blue>said I should speak to <red>Doctor Orbon <blue>about",
                         "getting some protective gear.");
                     line = writeJournal(player, line, sheepDead,
-                        "I need to <red>locate the diseased sheep<blue> and corral them <red>into the pin",
-                        "After which, I need to <red>poison them<blue> and <red>incinerate their bones."
+                        "I need to <red>locate the diseased sheep <blue>and corral them <red>into the pin",
+                        "After which, I need to <red>poison them <blue>and <red>incinerate their bones."
                     );
                     if (sheepDead) {
                         writeJournal(player, line,
-                            "I should inform <red>Councillor Halgrive<blue> that I have taken care of the problem.");
+                            "I should inform <red>Councillor Halgrive <blue>that I have taken care of the problem.");
                     } else {
                         line = writeJournal(player, line, "I still need:");
                         line = writeJournal(player, line, player.getAttribute("sheep_herder:red_dead", false), "A <red>Red Sheep");
@@ -79,9 +79,10 @@ public class SheepHerder extends Quest {
                     }
                     break;
                 case 100:
-                    writeJournal(player,
-                        "<str>I helped Councillor Halgrive by putting down",
-                        "<str>plague-bearing sheep.",
+                    line = writeJournal(player, true,
+                        "I helped Councillor Halgrive by putting down",
+                        "plague-bearing sheep.");
+                    writeJournal(player, ++line,
                         "<col=FF0000>QUEST COMPLETE");
                     break;
             }

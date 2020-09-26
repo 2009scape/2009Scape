@@ -32,27 +32,29 @@ public class WitchsHouse extends Quest {
     @Override
     public void drawJournal(Player player, int stage) {
         super.drawJournal(player, stage);
+        int line;
         switch (getStage(player)) {
             case 0:
                 writeJournal(player,
-                    "<blue>I can start this quest by speaking to the <red>little boy",
-                    "<blue>standing by the long garden just <red>north of Taverley",
-                    "<blue>I must be able to defeat a <red>level 53 enemy.");
+                    "I can start this quest by speaking to the <red>little boy",
+                    "standing by the long garden just <red>north of Taverley",
+                    "I must be able to defeat a <red>level 53 enemy.");
                 break;
             case 10:
-                writeJournal(player,
-                    "<str>A small boy has kicked his ball over the fence into the",
-                    "<str>nearby garden, and I have agreed to retrieve it for him.",
-                    "<blue>I should find a way into the <red>garden<blue> where the <red>ball<blue> is.");
+                line = writeJournal(player, true,
+                    "A small boy has kicked his ball over the fence into the",
+                    "nearby garden, and I have agreed to retrieve it for him.");
+                writeJournal(player, line,
+                    "I should find a way into the <red>garden <blue>where the <red>ball <blue>is.");
                 break;
             case 100:
-                writeJournal(player,
-                    "<str>A small boy has kicked his ball over the fence into the",
-                    "<str>nearby garden, and I have agreed to retrieve it for him.",
-                    "<str>After puzzling through the strangely elaborate security",
-                    "<str>system, and defeating a very strange monster, I returned",
-                    "<str>the child's ball to him, and he thanked me for my help.",
-                    "",
+                line = writeJournal(player, true,
+                    "A small boy has kicked his ball over the fence into the",
+                    "nearby garden, and I have agreed to retrieve it for him.",
+                    "After puzzling through the strangely elaborate security",
+                    "system, and defeating a very strange monster, I returned",
+                    "the child's ball to him, and he thanked me for my help.");
+                writeJournal(player, ++line,
                     "<col=FF0000>QUEST COMPLETE!");
                 break;
         }

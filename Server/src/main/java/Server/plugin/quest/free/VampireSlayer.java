@@ -30,63 +30,67 @@ public class VampireSlayer extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (getStage(player)) {
 			case 0:
 				writeJournal(player,
-					BLUE + "I can start this quest by speaking to " + RED + "Morgan who is in",
-					RED + "Draynor Village.",
+					"I can start this quest by speaking to <red>Morgan who is in",
+					"<red>Draynor Village.",
 					"",
-					BLUE + "Requirements:",
-					BLUE + "Must be able to kill a level 34 " + RED + "Vampire.");
+					"Requirements:",
+					"Must be able to kill a level 34 <red>Vampire.");
 				break;
 			case 10:
-				writeJournal(player,
-					"<str>I spoke to Morgan in Draynor Village. He told me that the",
-					"<str>locals are being attacked by a terrifying Vampire!",
-					"",
-					BLUE + "I need to speak to " + RED + "Dr Harlow " + BLUE + "who can normally be found in",
-					BLUE + "the " + RED + " Blue Moon Inn" + BLUE + " in " + RED + "Varrock.");
+				line = writeJournal(player, true,
+					"I spoke to Morgan in Draynor Village. He told me that the",
+					"locals are being attacked by a terrifying Vampire!",
+					"");
+				writeJournal(player, line,
+					"I need to speak to <red>Dr Harlow <blue>who can normally be found in",
+					"the <red>Blue Moon Inn <blue>in <red>Varrock.");
 				break;
 			case 20:
-				writeJournal(player,
-					"<str>I spoke to Morgan in Draynor Village. He told me that the",
-					"<str>locals are being attacked by a terrifying Vampire!",
+				line = writeJournal(player, true,
+					"I spoke to Morgan in Draynor Village. He told me that the",
+					"locals are being attacked by a terrifying Vampire!",
 					"",
-					"<str>I have spoken to Dr Harlow. He seemed terribly drunk, and",
-					"<str>he kept asking me to buy him drinks.",
-					"",
-					BLUE + "I should see what advice " + RED + "Dr Harlow" + BLUE + " can give me about killing",
-					RED + "Vampires.",
-					BLUE + "When I'm ready, I should go to " + RED + "Draynor Manor" + BLUE + ", north of",
-					BLUE + "Draynor to kill the " + RED + "Vampire" + BLUE + " that's living in the basement."
+					"I have spoken to Dr Harlow. He seemed terribly drunk, and",
+					"he kept asking me to buy him drinks.",
+					"");
+				writeJournal(player, line,
+					"I should see what advice <red>Dr Harlow <blue>can give me about killing",
+					"<red>Vampires.",
+					"When I'm ready, I should go to <red>Draynor Manor<blue>, north of",
+					"Draynor to kill the <red>Vampire <blue>that's living in the basement."
 				);
 				break;
 			case 30:
-				writeJournal(player,
-					"<str>I spoke to Morgan in Draynor Village. He told me that the",
-					"<str>locals are being attacked by a terrifying Vampire!",
+				line = writeJournal(player, true,
+					"I spoke to Morgan in Draynor Village. He told me that the",
+					"locals are being attacked by a terrifying Vampire!",
 					"",
-					"<str>I have spoken to Dr Harlow. He seemed terribly drunk, and",
-					"<str>he kept asking me to buy him drinks.",
+					"I have spoken to Dr Harlow. He seemed terribly drunk, and",
+					"he kept asking me to buy him drinks.",
 					"",
-					"<str>Dr Harlow gave me a stake to finish off the Vampire then",
-					"<str>I'm fighting it. I've got a hammer to drive the stake deep",
-					"<str>into the Vampire's chest, and I have some garlic which",
-					"<str>should weaken the Vampire.",
-					BLUE + "When I'm ready, I should go to " + RED + "Draynor Manor" + BLUE + ", north of",
-					BLUE + "Draynor to kill the " + RED + "Vampire" + BLUE + " that's living in the basement.");
+					"Dr Harlow gave me a stake to finish off the Vampire then",
+					"I'm fighting it. I've got a hammer to drive the stake deep",
+					"into the Vampire's chest, and I have some garlic which",
+					"should weaken the Vampire.");
+				writeJournal(player, line,
+					"When I'm ready, I should go to <red>Draynor Manor<blue>, north of",
+					"Draynor to kill the <red>Vampire <blue>that's living in the basement.");
 				break;
 			case 100:
-				writeJournal(player,
-					"<str>I spoke to Morgan in Draynor Village. He told me that the",
-					"<str>locals are being attacked by a terrifying Vampire!",
+				line = writeJournal(player, true,
+					"I spoke to Morgan in Draynor Village. He told me that the",
+					"locals are being attacked by a terrifying Vampire!",
 					"",
-					"<str>I have spoken to Dr Harlow. He seemed terribly drunk, and",
-					"<str>he kept asking me to buy him drinks.",
+					"I have spoken to Dr Harlow. He seemed terribly drunk, and",
+					"he kept asking me to buy him drinks.",
 					"",
-					"<str>I have killed the Vampire, Count Draynor. Draynor Village is",
-					"<str>now safe!",
-					"",
+					"I have killed the Vampire, Count Draynor. Draynor Village is",
+					"now safe!");
+				writeJournal(player, ++line,
 					"<col=FF0000>QUEST COMPLETE!");
 				break;
 		}

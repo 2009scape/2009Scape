@@ -54,39 +54,40 @@ public class SheepShearer extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (stage) {
 			case 0:
 				writeJournal(player,
-					"<blue>I can start this quest by speaking to <red>Farmer Fred <blue>at his",
+					"I can start this quest by speaking to <red>Farmer Fred <blue>at his",
 					"<red>farm <blue>just a little way <red>North West of Lumbridge"
 				);
 				break;
 			case 10:
 			case 90:
-				int line = writeJournal(player,
-					"<str>I can start this quest by speaking to Farmer Fred at his",
-					"<str>farm just a little way North West of Lumbridge",
+				line = writeJournal(player, true,
+					"I can start this quest by speaking to Farmer Fred at his",
+					"farm just a little way North West of Lumbridge",
 					""
 				);
 				int woolLeftToCollect = getWoolCollect(player);
 				if (woolLeftToCollect == 0) {
 					writeJournal(player, line,
-						"<blue>I have enough <red>balls of wool <blue>to give <red>Fred <blue> and get my <red>reward",
+						"I have enough <red>balls of wool <blue>to give <red>Fred <blue>and get my <red>reward",
 						"<red>money!"
 					);
 				} else {
 					writeJournal(player, line,
-						"<blue>I need to collect " + woolLeftToCollect + " <red>more balls of wool."
+						"I need to collect " + woolLeftToCollect + " <red>more balls of wool."
 					);
 				}
 				break;
 			case 100:
-				writeJournal(player,
-					"<str>I brought Farmer Fred 20 balls of wool, and he paid me for",
-					"<str>it!",
-					"",
+				line = writeJournal(player, true,
+					"I brought Farmer Fred 20 balls of wool, and he paid me for",
+					"it!");
+				writeJournal(player, ++line,
 					"<col=FF0000>QUEST COMPLETE!</col>");
-					break;
+				break;
 			}
 	}
 

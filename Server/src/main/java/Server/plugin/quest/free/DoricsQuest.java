@@ -38,6 +38,7 @@ public class DoricsQuest extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (stage) {
 		case 0:
 			writeJournal(player,
@@ -47,23 +48,23 @@ public class DoricsQuest extends Quest {
 				"There aren't any requirements but <red>Level 15 Mining <blue>will help.");
 			break;
 		case 1:
-			int line = writeJournal(player,
-				"<str>I have spoken to <red>Doric",
-				"",
-				"I need to collect some items and bring them to <red>Doric:"
-			);
+			line = writeJournal(player, true,
+				"I have spoken to <red>Doric");
+			line = writeJournal(player, ++line,
+				"I need to collect some items and bring them to <red>Doric:");
 			line = writeJournal(player, line, player.getInventory().contains(434, 6), "<red>6 Clay");
 			line = writeJournal(player, line, player.getInventory().contains(436, 4), "<red>4 Copper Ore");
 			writeJournal(player, line, player.getInventory().contains(440, 2), "<red>2 Iron Ore");
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>I have spoken to <red>Doric<blue>.",
+			line = writeJournal(player, true,
+				"I have spoken to <red>Doric<blue>.",
 				"",
-				"<str>I have collected some Clay, Copper Ore, and Iron Ore",
+				"I have collected some Clay, Copper Ore, and Iron Ore",
 				"",
-				"<str>Doric rewarded me for all my hard work",
-				"<str>I can now use Doric's Anvils whenever I want",
+				"Doric rewarded me for all my hard work",
+				"I can now use Doric's Anvils whenever I want");
+			writeJournal(player, line,
 				"<col=FF0000>QUEST COMPLETE!");
 			break;
 		}

@@ -18,23 +18,23 @@ class FremennikTrials : Quest("Fremennik Trials",64,63,3,347,0,1,10){
 
     override fun drawJournal(player: Player?, stage: Int) {
         super.drawJournal(player, stage)
-        var line = 11
+        var line = JOURNAL_TEXT_START
         val started = player?.questRepository?.getStage("Fremennik Trials")!! > 0
 
         if(!started){
             line = writeJournal(player, line, "Requirements to complete quest:", "")
             line = writeJournal(player, line, *getQuestRequirementsJournal(player))
             writeJournal(player, line,
-                "I must also be able to defeat a <red>level 69 enemy<blue> and must",
+                "I must also be able to defeat a <red>level 69 enemy <blue>and must",
                 "not be afraid of <red>combat without any weapons or armour.",
                 "",
-                "I can start this quest by speaking to <red>Chieftain Brundt<blue> on",
-                "the <red>Fremennik Longhall,<blue> which is in the town of <red>Rellekka<blue> to",
+                "I can start this quest by speaking to <red>Chieftain Brundt <blue>on",
+                "the <red>Fremennik Longhall, <blue>which is in the town of <red>Rellekka <blue>to",
                 "the north of <red>Sinclair Mansion<blue>.")
         } else {
             line = writeJournal(player, line,
                 "In order to join the Fremenniks, I need to",
-                "<red>earn the approval<blue> of <red>7 members<blue> of the elder council.",
+                "<red>earn the approval <blue>of <red>7 members <blue>of the elder council.",
                 "I've written down the members who I can try to help:"
             )
             line = writeJournal(player, line, player.getAttribute("fremtrials:manni-vote",false), "Manni the Reveller")

@@ -144,21 +144,33 @@ public final class TouristTrap extends Quest {
 		return this;
 	}
 
+	static String[][] JOURNAL_ENTRIES = new String[][]{
+		new String[]{
+			"Irena was distraught that her daughter Ana had vanished",
+			"somewhere in the desert, and I agreed to help find her.",
+		}
+	};
+
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
-		int line;
+		int line = JOURNAL_TEXT_START;
+
+		if (stage > 0) {
+			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
+		}
+
 		switch (getStage(player)) {
 		case 0:
 			line = writeJournal(player,
-				"<blue>I can start this quest by speaking to <red>Irena <blue>after I have",
-				"<blue>gone through the <red>Shantay Pass, South of Al-Kharid.",
-				"<blue>To complete this quest I need:"
+				"I can start this quest by speaking to <red>Irena <blue>after I have",
+				"gone through the <red>Shantay Pass, South of Al-Kharid.",
+				"To complete this quest I need:"
 			);
 			line = writeJournal(player, line, getQuestRequirementsJournal(player));
 			if (hasRequirements(player)) {
 				writeJournal(player, line,
-					"<blue>I have all the <red>requirements<blue> to begin and complete this",
+					"I have all the <red>requirements <blue>to begin and complete this",
 					"<red>quest."
 				);
 			}
@@ -167,94 +179,68 @@ public final class TouristTrap extends Quest {
 		case 11:
 		case 30:
 		case 40:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I need to head into <red>the desert<blue> and search for <red>Ana");
+			writeJournal(player, line,
+				"I need to head into <red>the desert <blue>and search for <red>Ana");
 			break;
 		case 50:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I need to find the guard a <red>Tenti Pineapple<blue> for the guard.");
+			writeJournal(player, line,
+				"I need to find the guard a <red>Tenti Pineapple <blue>for the guard.");
 			break;
 		case 51:
 		case 52:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I have found a way to get <red>Tenti Pineapple<blue> I need to find",
-				"<blue>the research plans that <red>Captain Siad<blue> has.");
+			writeJournal(player, line,
+				"I have found a way to get <red>Tenti Pineapple <blue>I need to find",
+				"the research plans that <red>Captain Siad <blue>has.");
 			break;
 		case 53:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I have found a way to get <red>Tenti Pineapple<blue>",
-				"<blue>I found the technical plans <red>Al Shabim<blue> was looking for.");
+			writeJournal(player, line,
+				"I have found a way to get <red>Tenti Pineapple<blue>",
+				"I found the technical plans <red>Al Shabim <blue>was looking for.");
 			break;
 		case 54:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I have found a way to get <red>Tenti Pineapple<blue>",
-				"<blue>I need to manufacture the <red>Prototype<blue> weapon for <red>Al Shabim<blue>.");
+			writeJournal(player, line,
+				"I have found a way to get <red>Tenti Pineapple",
+				"I need to manufacture the <red>Prototype <blue>weapon for <red>Al Shabim<blue>.");
 			break;
 		case 60:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I manufactured the <red>Prototype<blue> weapon and received",
-				"<blue>a tasty <red>Tenti Pineapple<blue>.");
+			writeJournal(player, line,
+				"I manufactured the <red>Prototype <blue>weapon and received",
+				"a tasty <red>Tenti Pineapple<blue>.");
 			break;
 		case 61:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I finally found <red>Anna<blue>. I just need to find a way to smuggle",
-				"<blue>her out of here.");
+			writeJournal(player, line,
+				"I finally found <red>Anna<blue>. I just need to find a way to smuggle",
+				"her out of here.");
 			break;
 		case 71:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I need to operate the <red>Winch<blue> to lift <red>Ana<blue> back up here.");
+			writeJournal(player, line,
+				"I need to operate the <red>Winch <blue>to lift <red>Ana <blue>back up here.");
 			break;
 		case 72:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I need to get <red>Ana<blue> from one of the barrels lifted.");
+			writeJournal(player, line,
+				"I need to get <red>Ana <blue>from one of the barrels lifted.");
 			break;
 		case 80:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I loaded <red>Ana<blue> into the <red>Cart<blue> I now need to get the <red>cart driver<blue> ",
-				"<blue>to transport it.");
+			writeJournal(player, line,
+				"I loaded <red>Ana <blue>into the <red>Cart<blue>. I now need to get the <red>cart driver",
+				"to transport it.");
 			break;
 		case 90:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I payed the <red>Mine cart driver<blue> and he agreed to smuggle me and <red>Anna<blue>",
-				"<blue>out of the <red>Mining camp<blue>.");
+			writeJournal(player, line,
+				"I payed the <red>Mine cart driver <blue>and he agreed to smuggle me and <red>Ana",
+				"out of the <red>Mining camp<blue>.");
 			break;
 		case 95:
 		case 98:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<blue>I smuggled both me and <red>Anna<blue> from the <red>Mining camp<blue>. I should",
-				"<blue>go tell <red>Irena<blue> straight away.");
+			writeJournal(player, line,
+				"I smuggled both me and <red>Ana <blue>from the <red>Mining camp<blue>. I should",
+				"go tell <red>Irena <blue>straight away.");
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>Irena was distraught that her daughter Ana had vanished",
-				"<str>somewhere in the desert, and I agreed to help find her.",
-				"<str>I returned <str>Ana<str> back to her mother and was rewarded",
-				"<str>with a <str>key<str> and the knowledge in two skills.",
-				"",
+			line = writeJournal(player, line, true,
+				"I returned Ana back to her mother and was rewarded",
+				"with a key and the knowledge in two skills.");
+			writeJournal(player, ++line,
 				"<col=FF0000>QUEST COMPLETE!");
 			break;
 		}

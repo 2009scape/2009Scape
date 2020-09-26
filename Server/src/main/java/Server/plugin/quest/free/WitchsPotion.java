@@ -30,19 +30,21 @@ public class WitchsPotion extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		switch (getStage(player)) {
 		case 0:
 			writeJournal(player,
-				BLUE + "I can start this quest by speaking to " + RED + "Hetty " + BLUE + "in her house in",
-				RED + "Rimmington" + BLUE + ", West of " + RED + "Port Sarim");
+				"I can start this quest by speaking to <red>Hetty <blue>in her house in",
+				"<red>Rimmington<blue>, West of <red>Port Sarim");
 			break;
 		case 20:
-			writeJournal(player,
-				"<str>I spoke to Hetty in her house at Rimmington. hetty told me",
-				"<str>she could increase my magic power if I can bring her",
-				"<str>certain ingredients for a potion.",
-				"",
-				BLUE + "Hetty needs me to bring her the following:",
+			line = writeJournal(player, true,
+				"I spoke to Hetty in her house at Rimmington. hetty told me",
+				"she could increase my magic power if I can bring her",
+				"certain ingredients for a potion.",
+				"");
+			writeJournal(player, line,
+				"Hetty needs me to bring her the following:",
 				player.getInventory().contains(1957, 1) ? "<str>I have an onion with me" : "<red>An onion",
 				player.getInventory().contains(300, 1) ? "<str>I have a rat's tail with me" : "<red>A rat's tail",
 				player.getInventory().contains(2146, 1) ? "<str>I have a piece of burnt meat with me" : "<red>A piece of burnt meat",
@@ -50,19 +52,20 @@ public class WitchsPotion extends Quest {
 			);
 			break;
 		case 40:
-			writeJournal(player,
-				"<str>I brought her an onion, a rat's tail, a piece of burnt meat",
-				"<str>and eye of newt which she used to make a potion.",
-				"",
-				BLUE + "I should drink from the " + RED + "cauldron" + BLUE + " and improve my magic!");
+			line = writeJournal(player, true,
+				"I brought her an onion, a rat's tail, a piece of burnt meat",
+				"and eye of newt which she used to make a potion.",
+				"");
+			writeJournal(player, line,
+				"I should drink from the <red>cauldron <blue>and improve my magic!");
 			break;
 		case 100:
-			writeJournal(player,
-				"<str>I brought her an onion, a rat's tail, a piece of burnt meat",
-				"<str>and an eye of newt which she used to make a potion.",
+			line = writeJournal(player, true,
+				"I brought her an onion, a rat's tail, a piece of burnt meat",
+				"and an eye of newt which she used to make a potion.",
 				"",
-				"<str>I drank from the cauldron and my magic power increased!",
-				"",
+				"I drank from the cauldron and my magic power increased!");
+			writeJournal(player, ++line,
 				"<col=FF0000>QUEST COMPLETE!");
 			break;
 		}

@@ -66,13 +66,13 @@ public class PrinceAliRescue extends Quest {
 			"Palace. He told me I should speak to Osman the spymaster."
 		},
 		new String[]{
-			BLUE + "I should go and speak to " + RED + "Osman " + BLUE + "for details on the quest."
+			"I should go and speak to <red>Osman <blue>for details on the quest."
 		},
 		new String[]{
-			RED + "Prince Ali " + BLUE + "has been " + RED + "kidnapped " + BLUE + "but luckily the spy " + RED + "Leela " + BLUE + "has",
-			BLUE + "found he is being held near " + RED + "Draynor Village. " + BLUE + "I will need to",
-			RED + "disguise " + BLUE + "the " + RED + "Prince " + BLUE + "and " + RED + "tie " + BLUE + "up his " + RED + "captor " + BLUE + "to " + RED + "free " + BLUE + "him from",
-			BLUE + "their " + RED + "clutches."
+			"<red>Prince Ali <blue>has been <red>kidnapped <blue>but luckily the spy <red>Leela <blue>has",
+			"found he is being held near <red>Draynor Village. <blue>I will need to",
+			"<red>disguise <blue>the <red>Prince <blue>and <red>tie <blue>up his <red>captor <blue>to <red>free <blue>him from",
+			"their <red>clutches."
 		},
 		new String[]{
 			"I also had to prevent the Guard from seeing what I was up",
@@ -96,8 +96,8 @@ public class PrinceAliRescue extends Quest {
 		switch (stage) {
 		case 0:
 			writeJournal(player,
-				BLUE + "I can start this quest by speaking to " + RED + "Hassan " + BLUE + "at the palace",
-				BLUE + "in" + RED + " Al-Kharid.");
+				"I can start this quest by speaking to <red>Hassan <blue>at the palace",
+				"in <red>Al-Kharid.");
 			break;
 		case 10:
 			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
@@ -108,21 +108,21 @@ public class PrinceAliRescue extends Quest {
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
 			line = writeJournal(player, line, JOURNAL_ENTRIES[2]);
 			writeJournal(player, line,
-				BLUE + "To do this I should:-",
-				BLUE + "Talk to " + RED + "Leela " + BLUE + "near " + RED + "Draynor Village " + BLUE + "for advice.",
-				BLUE + "Get a " + RED + "duplicate " + BLUE + "of the " + RED + "key " + BLUE + "that is " + RED + "imprisoning " + BLUE + "the " + RED + "prince.",
+				"To do this I should:",
+				"Talk to <red>Leela <blue>near <red>Draynor Village <blue>for advice.",
+				"Get a <red>duplicate <blue>of the <red>key <blue>that is <red>imprisoning <blue>the <red>prince.",
 				hasItem(player, ROPE) ?
 					"<str>I have some rope with me." :
-					BLUE + "Get some " + RED + "rope " + BLUE + "to tie up the Prince's " + RED + "kidnapper.",
+					"Get some <red>rope <blue>to tie up the Prince's <red>kidnapper.",
 				hasItem(player, PASTE) ?
 					"<str>I have some skin paste suitable for disguise with me." :
-					BLUE + "Get something to " + RED + "colour " + BLUE + "the " + RED + "Prince's skin " + BLUE + "as a " + RED + "disguise.",
+					"Get something to <red>colour <blue>the <red>Prince's skin <blue>as a <red>disguise.",
 				hasItem(player, SKIRT) ?
 					"<str>I have a skirt suitable for a disguise with me." :
-					BLUE + "Get a " + RED + "skirt " + BLUE + "similar to his " + RED + "kidnapper " + BLUE + "as " + RED + "disguise.",
+					"Get a <red>skirt <blue>similar to his <red>kidnapper <blue>as <red>disguise.",
 				hasItem(player, YELLOW_WIG) ?
 					"<str>I have a wig suitable for disguise with me." :
-					BLUE + "Get a " + RED + "Wig " + BLUE + "to " + RED + "help disguise " + BLUE + "the " + RED + "prince."
+					"Get a <red>Wig <blue>to <red>help disguise <blue>the <red>prince."
 				);
 			break;
 		case 30:
@@ -130,21 +130,21 @@ public class PrinceAliRescue extends Quest {
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[1]);
 			line = writeJournal(player, line, JOURNAL_ENTRIES[2]);
 			writeJournal(player, line,
-				BLUE + "To do this I should:-",
-				BLUE + "Talk to " + RED + "Leela " + BLUE + "near " + RED + "Draynor Village " + BLUE + "for advice.",
-				BLUE + "I have duplicated a key, I need to get it from " + RED + "Leela.",
+				"To do this I should:",
+				"Talk to <red>Leela <blue>near <red>Draynor Village <blue>for advice.",
+				"I have duplicated a key, I need to get it from <red>Leela.",
 				hasItem(player, ROPE) ?
 					"<str>I have some rope with me." :
-					BLUE + "Get some " + RED + "rope " + BLUE + "to tie up the Prince's " + RED + "kidnapper.",
+					"Get some <red>rope <blue>to tie up the Prince's <red>kidnapper.",
 				hasItem(player, PASTE) ?
 					"<str>I have some skin paste suitable for disguise with me." :
-					BLUE + "Get something to " + RED + "colour " + BLUE + "the " + RED + "Prince's skin " + BLUE + "as a " + RED + "disguise.",
+					"Get something to <red>colour <blue>the <red>Prince's skin <blue>as a <red>disguise.",
 				hasItem(player, SKIRT) ?
 					"<str>I have a skirt suitable for a disguise with me." :
-					BLUE + "Get a " + RED + "skirt " + BLUE + "similar to his " + RED + "kidnapper " + BLUE + "as " + RED + "disguise.",
+					"Get a <red>skirt <blue>similar to his <red>kidnapper <blue>as <red>disguise.",
 				hasItem(player, YELLOW_WIG) ?
 					"<str>I have a wig suitable for disguise with me." :
-					BLUE + "Get a " + RED + "Wig " + BLUE + "to " + RED + "help disguise " + BLUE + "the " + RED + "prince."
+					"Get a <red>Wig <blue>to <red>help disguise <blue>the <red>prince."
 			);
 			break;
 		case 40:
@@ -154,16 +154,16 @@ public class PrinceAliRescue extends Quest {
 				line = writeJournal(player, line, true, JOURNAL_ENTRIES[2]);
 				line = writeJournal(player, line, true, JOURNAL_ENTRIES[3]);
 				writeJournal(player, line,
-					BLUE + "With the guard out of the way, all I have to do now is use",
-					BLUE + "the " + RED + "Skin Potion" + BLUE + ", " + RED + "Pink Skirt" + BLUE + ", " + RED + "Rope" + BLUE + ", " + RED + "Blonde Wig " + BLUE + "and " + RED + "Cell Key " + BLUE + "to",
-					BLUE + "free " + RED + "Prince Ali " + BLUE + "from his cell somehow."
+					"With the guard out of the way, all I have to do now is use",
+					"the <red>Skin Potion<blue>, <red>Pink Skirt<blue>, <red>Rope<blue>, <red>Blonde Wig <blue>and <red>Cell Key <blue>to",
+					"free <red>Prince Ali <blue>from his cell somehow."
 				);
 			} else {
 				writeJournal(player, line,
-					BLUE + "Do something to prevent " + RED + "Joe the Guard " + BLUE + "seeing the",
-					BLUE + "escape.",
-					BLUE + "Use the " + RED + "Skin potion" + BLUE + ", " + RED + "Pink Skirt" + BLUE + "," + RED + "Rope" + BLUE + "," + RED + "Blonde Wig " + BLUE + "and " + RED + "Cell",
-					RED + "Key" + BLUE + " to free " + RED + "Prince Ali " + BLUE + "from his cell somehow."
+					"Do something to prevent <red>Joe the Guard <blue>seeing the",
+					"escape.",
+					"Use the <red>Skin potion<blue>, <red>Pink Skirt<blue>, <red>Rope<blue>, <red>Blonde Wig <blue>and <red>Cell",
+					"<red>Key <blue>to free <red>Prince Ali <blue>from his cell somehow."
 				);
 			}
 			break;
@@ -174,9 +174,9 @@ public class PrinceAliRescue extends Quest {
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[3]);
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[4]);
 			writeJournal(player, line,
-				BLUE + "I need to " + RED + "Unlock the cell door " + BLUE + "and then give the Prince the",
-				RED + "Pink Skirt" + BLUE + ", the " + RED + "Skin paste " + BLUE + "and the " + RED + "Blonde Swig " + BLUE + "so that the",
-				BLUE + "can safely " + RED + "escape " + BLUE + "disguised as " + RED + "Lady Keli.");
+				"I need to <red>Unlock the cell door <blue>and then give the Prince the",
+				"<red>Pink Skirt<blue>, the <red>Skin paste <blue>and the <red>Blonde Swig <blue>so that the",
+				"can safely <red>escape <blue>disguised as <red>Lady Keli.");
 			break;
 		case 60:
 			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);
@@ -186,7 +186,7 @@ public class PrinceAliRescue extends Quest {
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[4]);
 			line = writeJournal(player, line, true, JOURNAL_ENTRIES[5]);
 			writeJournal(player, line,
-				BLUE + "I should return to " + RED + "Hassan " + BLUE + "to claim my reward.");
+				"I should return to <red>Hassan <blue>to claim my reward.");
 			break;
 		case 100:
 			line = writeJournal(player, true, JOURNAL_ENTRIES[0]);

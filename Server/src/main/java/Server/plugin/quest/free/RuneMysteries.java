@@ -34,84 +34,90 @@ public class RuneMysteries extends Quest {
 	@Override
 	public void drawJournal(Player player, int stage) {
 		super.drawJournal(player, stage);
+		int line;
 		int questStage = getStage(player);
 		switch (questStage) {
 			case 0:
 				writeJournal(player,
-					BLUE + "I can start this quest by speaking to " + RED + "Duke Horacio " + BLUE + "of",
-					RED + "Lumbridge, " + BLUE + "upstairs in " + RED + "Lumbridge Castle.");
+					"I can start this quest by speaking to <red>Duke Horacio <blue>of",
+					"<red>Lumbridge, <blue>upstairs in <red>Lumbridge Castle.");
 				break;
 			case 10:
-				writeJournal(player,
-					"<str>I spoke to Duke Horacio and he showed me a strange",
-					"<str>talisman that had been found by one of his subjects.",
-					"<str>I agreed to take it to the Wizards' Tower, South West of",
-					"<str>Lumbridge for further examination by the wizards.",
-					BLUE + "I need to find the " + RED + "Head Wizard " + BLUE + "and give him the " + RED + "Talisman");
+				line = writeJournal(player, true,
+					"I spoke to Duke Horacio and he showed me a strange",
+					"talisman that had been found by one of his subjects.",
+					"I agreed to take it to the Wizards' Tower, South West of",
+					"Lumbridge for further examination by the wizards.");
+				writeJournal(player, line,
+					"I need to find the <red>Head Wizard <blue>and give him the <red>Talisman.");
 				break;
 			case 20:
-				writeJournal(player,
-					"<str>I spoke to Duke Horacio and he showed me a strange",
-					"<str>talisman that had been found by one of his subjects.",
-					"<str>I agreed to take it to the Wizards' Tower, South West of",
-					"<str>Lumbridge for further examination by the wizards.",
-					"<str>I gave the Talisman to the Wizard but I didn't want to help",
-					"<str>him in his research right now.",
-					BLUE + "I should talk to " + RED + "Sedridor " + BLUE + "again to continue this quest.");
+				line = writeJournal(player, true,
+					"I spoke to Duke Horacio and he showed me a strange",
+					"talisman that had been found by one of his subjects.",
+					"I agreed to take it to the Wizards' Tower, South West of",
+					"Lumbridge for further examination by the wizards.",
+					"I gave the Talisman to the Wizard but I didn't want to help",
+					"him in his research right now.");
+				writeJournal(player, line,
+					"I should talk to <red>Sedridor <blue>again to continue this quest.");
 				break;
 			case 30:
-				writeJournal(player,
-					"<str>I spoke to Duke Horacio and he showed me a strange",
-					"<str>talisman that had been found by one of his subjects.",
-					"<str>I agreed to take it to the Wizards' Tower, South West of",
-					"<str>Lumbridge for further examination by the wizards.",
-					"<str>I gave the Talisman to the Head of the Tower and",
-					"<str>agreed to help him with his research into rune stones.",
-					BLUE + "I should take this " + RED + "Research Package " + BLUE + "to " + RED + "Aubury " + BLUE + "in " + RED + "Varrock");
+				line = writeJournal(player, true,
+					"I spoke to Duke Horacio and he showed me a strange",
+					"talisman that had been found by one of his subjects.",
+					"I agreed to take it to the Wizards' Tower, South West of",
+					"Lumbridge for further examination by the wizards.",
+					"I gave the Talisman to the Head of the Tower and",
+					"agreed to help him with his research into rune stones.");
+				writeJournal(player, line,
+					"I should take this <red>Research Package <blue>to <red>Aubury <blue>in <red>Varrock.");
 				break;
 			case 40:
-				writeJournal(player,
-					"<str>I spoke to Duke Horacio and he showed me a strange",
-					"<str>talisman that had been found by one of his subjects.",
-					"<str>I agreed to take it to the Wizards' Tower, South West of",
-					"<str>Lumbridge for further examination by the wizards.",
-					"<str>I gave the Talisman to the Head of the Tower and",
-					"<str>agreed to help him with his research into rune stones.",
-					"<str>I took the research package to Varrock and delivered it.",
-					BLUE + "I should speak to " + RED + "Aubury " + BLUE + "again when he has finished",
-					BLUE + "examining the " + RED + "Research Package " + BLUE + " I have delivered to him.");
+				line = writeJournal(player, true,
+					"I spoke to Duke Horacio and he showed me a strange",
+					"talisman that had been found by one of his subjects.",
+					"I agreed to take it to the Wizards' Tower, South West of",
+					"Lumbridge for further examination by the wizards.",
+					"I gave the Talisman to the Head of the Tower and",
+					"agreed to help him with his research into rune stones.",
+					"I took the research package to Varrock and delivered it.");
+				writeJournal(player, line,
+					"I should speak to <red>Aubury <blue>again when he has finished",
+					"examining the <red>Research Package <blue>I have delivered to him.");
 				break;
 			case 50:
-				writeJournal(player,
-					"<str>I spoke to Duke Horacio and he showed me a strange",
-					"<str>talisman that had been found by one of his subjects.",
-					"<str>I agreed to take it to the Wizards' Tower, South West of",
-					"<str>Lumbridge for further examination by the wizards.",
-					"<str>I gave the Talisman to the Head of the Tower and",
-					"<str>agreed to help him with his research into rune stones.",
-					"<str>I took the research package to Varrock and delivered it.",
-					"<str>Aubury was interested in the research package and gave",
-					"<str>me his own research notes to deliver to Sedridor.",
-					BLUE + "I should take the " + RED + "notes " + BLUE + "to " + RED + "Sedridor " + BLUE + "and see what he says");
+				line = writeJournal(player, true,
+					"I spoke to Duke Horacio and he showed me a strange",
+					"talisman that had been found by one of his subjects.",
+					"I agreed to take it to the Wizards' Tower, South West of",
+					"Lumbridge for further examination by the wizards.",
+					"I gave the Talisman to the Head of the Tower and",
+					"agreed to help him with his research into rune stones.",
+					"I took the research package to Varrock and delivered it.",
+					"Aubury was interested in the research package and gave",
+					"me his own research notes to deliver to Sedridor.");
+				writeJournal(player, line,
+					"I should take the <red>notes <blue>to <red>Sedridor <blue>and see what he says.");
 				break;
 			case 100:
-				writeJournal(player,
-					"<str>I spoke to Duke Horacio and he showed me a strange",
-					"<str>talisman that had been found by one of his subjects.",
-					"<str>I agreed to take it to the Wizards' Tower, South West of",
-					"<str>Lumbridge for further examination by the wizards.",
-					"<str>I gave the Talisman to the Head of the Tower and",
-					"<str>agreed to help him with his research into rune stones.",
-					"<str>I took the research package to Varrock and delivered it.",
-					"<str>Aubury was interested in the research package and gave",
-					"<str>me his own research notes to deliver to Sedridor.",
-					"<str>I brought Sedridor the research notes that Aubury had",
-					"<str>compiled so that he could compare their research. They",
-					"<str>They discovered that it was now possible to create new rune",
-					"<str>stones, a skill that had been thought lost forever.",
-					"<str>In return for all of my help they taught me how to do this,",
-					"<str>and will teleport me to mine blank runes anytime.",
-					"",
+				line = writeJournal(player, true,
+					"I spoke to Duke Horacio and he showed me a strange",
+					"talisman that had been found by one of his subjects.",
+					"I agreed to take it to the Wizards' Tower, South West of",
+					"Lumbridge for further examination by the wizards.",
+					"I gave the Talisman to the Head of the Tower and",
+					"agreed to help him with his research into rune stones.",
+					"I took the research package to Varrock and delivered it.",
+					"Aubury was interested in the research package and gave",
+					"me his own research notes to deliver to Sedridor.",
+					"I brought Sedridor the research notes that Aubury had",
+					"compiled so that he could compare their research. They",
+					"They discovered that it was now possible to create new rune",
+					"stones, a skill that had been thought lost forever.",
+					"In return for all of my help they taught me how to do this,",
+					"and will teleport me to mine blank runes anytime.");
+				writeJournal(player, ++line,
 					"<col=FF0000>QUEST COMPLETE!");
 				break;
 		}

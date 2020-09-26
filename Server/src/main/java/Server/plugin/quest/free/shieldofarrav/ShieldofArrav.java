@@ -94,83 +94,90 @@ public class ShieldofArrav extends Quest {
 		switch (stage) {
 		case 0:
 			writeJournal(player,
-				BLUE + "I can start this quest by speaking to " + RED + "Reldo " + BLUE + "in " + RED + "Varrock's",
-				RED + "Palace Library" + BLUE + ", or by speaking to " + RED + "Charlie the Tramp" + BLUE + " near",
-				BLUE + "the " + RED + "Blue Moon Inn " + BLUE + "in " + RED + "Varrock.",
-				BLUE + "I will need a friend to help me and some combat experience",
-				BLUE + "may be an advantage.");
+				"I can start this quest by speaking to <red>Reldo <blue>in <red>Varrock's",
+				"<red>Palace Library<blue>, or by speaking to <red>Charlie the Tramp <blue>near",
+				"the <red>Blue Moon Inn <blue>in <red>Varrock.",
+				"I will need a friend to help me and some combat experience",
+				"may be an advantage.");
 			break;
 		case 10:
 			writeJournal(player,
-				RED + "Reldo " + BLUE + "says there is a " + RED + "quest " + BLUE + "hidden in one of the books in",
-				BLUE + "his " + RED + "library" + BLUE + " somewhere. I should look for it and see.");
+				"<red>Reldo <blue>says there is a <red>quest <blue>hidden in one of the books in",
+				"his <red>library <blue>somewhere. I should look for it and see.");
 			break;
 		case 20:
-			writeJournal(player,
-				"<str>I read about a valuable shield stolen long ago by a gang of",
-				"<str>thieves with an outstanding reward upon it.",
-				BLUE + "I should ask " + RED + "Reldo " + BLUE + "if he knows anything more about this.");
+			line = writeJournal(player, true,
+				"I read about a valuable shield stolen long ago by a gang of",
+				"thieves with an outstanding reward upon it.");
+			writeJournal(player, line,
+				"I should ask <red>Reldo <blue>if he knows anything more about this.");
 			break;
 		case 30:
-			writeJournal(player,
-				"<str>I read about a valuable shield stolen long ago by a gang of",
-				"<str>thieves with an outstanding reward upon it.",
-				BLUE + "Reldo told me that the fur trader in " + RED + "Varrock" + BLUE + ", named",
-				RED + "Baraek" + BLUE + ", knows about the " + RED + "Phoenix Gang." + BLUE + " I should speak to",
-				BLUE + "him next.");
+			line = writeJournal(player, true,
+				"I read about a valuable shield stolen long ago by a gang of",
+				"thieves with an outstanding reward upon it.");
+			writeJournal(player, line,
+				"Reldo told me that the fur trader in <red>Varrock<blue>, named",
+				"<red>Baraek<blue>, knows about the <red>Phoenix Gang<blue>. I should speak to",
+				"him next.");
 			break;
 		case 40:
-			writeJournal(player,
-				"<str>I read about a valuable shield stolen long ago by a gang of",
-				"<str>thieves with an outstanding reward upon it.",
-				BLUE + "Baraek told me that the " + RED + "'Phoenix Gang' " + BLUE + "have a hideout in",
-				BLUE + "the " + RED + "south-eastern part of Varrock" + BLUE + ", disguising themselves",
-				BLUE + "as the " + RED + "VTAM Corporation" + BLUE + ". I should find them and join.");
+			line = writeJournal(player, true,
+				"I read about a valuable shield stolen long ago by a gang of",
+				"thieves with an outstanding reward upon it.");
+			writeJournal(player, line,
+				"Baraek told me that the <red>'Phoenix Gang' <blue>have a hideout in",
+				"the <red>south-eastern part of Varrock<blue>, disguising themselves",
+				"as the <red>VTAM Corporation<blue>. I should find them and join.");
 			break;
 		case 50:
-			writeJournal(player,
-				"<str>I read about a valuable shield stolen long ago by a gang of",
-				"<str>thieves with an outstanding reward upon it.",
-				BLUE + "Baraek told me that the " + RED + "'Phoenix Gang' " + BLUE + "have a hideout in",
-				BLUE + "the " + RED + "south-eastern part of Varrock" + BLUE + ", disguising themselves",
-				BLUE + "as the " + RED + "VTAM Corporation" + BLUE + ". I should find them and join.",
-				"<str>I also spoke to Charlie the tramp in Varrock.",
-				BLUE + "According to him there is a criminal organisation known as",
-				BLUE + "the " + RED + "'Black Arm Gang' " + BLUE + "down an alley near to him. I should",
-				BLUE + "speak to their " + RED + "leader, Katrine" + BLUE + ", about joining.");
+			line = writeJournal(player, true,
+				"I read about a valuable shield stolen long ago by a gang of",
+				"thieves with an outstanding reward upon it.");
+			line = writeJournal(player, line,
+				"Baraek told me that the <red>'Phoenix Gang' <blue>have a hideout in",
+				"the <red>south-eastern part of Varrock<blue>, disguising themselves",
+				"as the <red>VTAM Corporation<blue>. I should find them and join.");
+			line = writeJournal(player, line, true,
+				"I also spoke to Charlie the tramp in Varrock.");
+			writeJournal(player, line,
+				"According to him there is a criminal organisation known as",
+				"the <red>'Black Arm Gang' <blue>down an alley near to him. I should",
+				"speak to their <red>leader, Katrine<blue>, about joining.");
 			break;
 		case 60:
-			line = writeJournal(player,
-				"<str>I read about a valuable shield stolen long ago by a gang of",
-				"<str>thieves with an outstanding reward upon it. Baraek told me",
-				"<str>the location of the Phoenix Gang hideout.",
-				"<str>I also spoke to Charlie the tramp in Varrock.",
-				"<str>According to him there is a criminal organisation known as",
-				"<str>the " + RED + "'Black Arm Gang' " + BLUE + "down the alley near to him.");
+			line = writeJournal(player, true,
+				"I read about a valuable shield stolen long ago by a gang of",
+				"thieves with an outstanding reward upon it. Baraek told me",
+				"the location of the Phoenix Gang hideout.",
+				"I also spoke to Charlie the tramp in Varrock.",
+				"According to him there is a criminal organisation known as",
+				"the <red>'Black Arm Gang' <blue>down the alley near to him.");
 			if (isPhoenixMission(player) && isBlackArmMission(player)) {
-				writeJournal(player, line - 3,
-					"<str>To start this quest, I spoke to Charlie the tramp in Varrock.",
-					"<str>He gave me the location of the Black Arm gang HQ.",
-					"<str>According to him there is a criminal organisation known as",
-					"<str>the " + RED + "'Black Arm Gang'" + BLUE + "down the alley near to him.",
-					BLUE + "If I want to join the " + RED + "Phoenix Gang " + BLUE + "I need to kill" + RED + " Jonny the",
-					RED + "Beard " + BLUE + "in the " + RED + "Blue Moon Inn " + BLUE + "and retrieve his " + RED + "report.",
-					RED + "Katrine " + BLUE + "said if I wanted to join the " + RED + "Black Arm Gang," + BLUE + " I'd",
-					BLUE + "have to steal " + RED + "two Phoenix crossbows " + BLUE + "from the rival gang.",
-					BLUE + "Maybe " + RED + "Charlie the tramp " + BLUE + "can give me some ideas about",
-					BLUE + "how to do this.");
+				line = writeJournal(player, line - 3, true,
+					"To start this quest, I spoke to Charlie the tramp in Varrock.",
+					"He gave me the location of the Black Arm gang HQ.",
+					"According to him there is a criminal organisation known as",
+					"the <red>'Black Arm Gang'<blue>down the alley near to him.");
+				writeJournal(player, line,
+					"If I want to join the <red>Phoenix Gang <blue>I need to kill <red>Jonny the",
+					"<red>Beard <blue>in the <red>Blue Moon Inn <blue>and retrieve his <red>report.",
+					"<red>Katrine <blue>said if I wanted to join the <red>Black Arm Gang, <blue>I'd",
+					"have to steal <red>two Phoenix crossbows <blue>from the rival gang.",
+					"Maybe <red>Charlie the tramp <blue>can give me some ideas about",
+					"how to do this.");
 			} else if (isPhoenixMission(player)) {
 				writeJournal(player, line,
-					BLUE + "If I want to join the " + RED + "Phoenix Gang " + BLUE + "I need to kill " + RED + "Jonny the",
-					RED + "Beard " + BLUE + "in the " + RED + "Blue Moon Inn " + BLUE + "and retrieve his " + RED + "report.",
-					BLUE + "Alternatively, if I want to join the " + RED + "Blackarm gang " + BLUE + "I should",
-					BLUE + "speak to their " + RED + "leader, Katrine, " + BLUE + "about joining.");
+					"If I want to join the <red>Phoenix Gang <blue>I need to kill <red>Jonny the",
+					"<red>Beard <blue>in the <red>Blue Moon Inn <blue>and retrieve his <red>report.",
+					"Alternatively, if I want to join the <red>Blackarm gang <blue>I should",
+					"speak to their <red>leader, Katrine, <blue>about joining.");
 			} else if (isBlackArmMission(player)) {
 				writeJournal(player, line,
-					RED + "Katrine " + BLUE + "said if I wanted to join the " + RED + "Black Arm Gang" + BLUE + ", I'd",
-					BLUE + "have to steal " + RED + "two Phoenix crossbows " + BLUE + "from the rival gang.",
-					BLUE + "Maybe " + RED + "Charlie the tramp " + BLUE + "can give me some ideas about",
-					BLUE + "how to do this.");
+					"<red>Katrine <blue>said if I wanted to join the <red>Black Arm Gang<blue>, I'd",
+					"have to steal <red>two Phoenix crossbows <blue>from the rival gang.",
+					"Maybe <red>Charlie the tramp <blue>can give me some ideas about",
+					"how to do this.");
 			}
 			break;
 		case 70:
@@ -185,30 +192,32 @@ public class ShieldofArrav extends Quest {
 				);
 				if (!player.getInventory().containsItem(PHOENIX_SHIELD) && !player.getBank().containsItem(PHOENIX_SHIELD)) {
 					line = writeJournal(player, line,
-						BLUE + "I need to search the " + RED + "Phoenix Gang's hideout " + BLUE + "to find half",
-						BLUE + "of the " + RED + "Shield of Arrav.");
+						"I need to search the <red>Phoenix Gang's hideout <blue>to find half",
+						"of the <red>Shield of Arrav."
+					);
 				} else {
 					writeJournal(player, line,
-						BLUE + "I found half of the " + RED + "Shield of Arrav " + BLUE + "in the " + RED + "Phoenix Gang's",
-						RED + "hideout."
+						"I found half of the <red>Shield of Arrav <blue>in the <red>Phoenix Gang's",
+						"<red>hideout."
 					);
 				}
 				writeJournal(player, line,
-					BLUE + "The second half of the " + RED + "shield" + BLUE + " belongs to a rival gang",
-					BLUE + "known as the " + RED + "Black Arm Gang. " + BLUE + "I will need " + RED + "a friend's help " + BLUE + "to",
-					BLUE + "retrieve it before claiming the " + RED + "reward " + BLUE + "for it.");
+					"The second half of the <red>shield <blue>belongs to a rival gang",
+					"known as the <red>Black Arm Gang. <blue>I will need <red>a friend's help <blue>to",
+					"retrieve it before claiming the <red>reward <blue>for it.");
 			} else {
-				writeJournal(player,
-					"<str>I read about a valuable shield stolen long ago by a gang of",
-					"<str>thieves with an outstanding reward upon it. Baraek told me",
-					"<str>the location of the Phoenix Gang hideout.",
+				line = writeJournal(player, true,
+					"I read about a valuable shield stolen long ago by a gang of",
+					"thieves with an outstanding reward upon it. Baraek told me",
+					"the location of the Phoenix Gang hideout.",
 					"",
-					"<str>With the help of a friend, I managed to obtain two Phoenix",
-					"<str>Crossbows from the Phoenix Gang's weapons store, and",
-					"<str>Katrine welcomes me as a Black Arm Gang member.",
-					"",
-					BLUE + "With " + RED + "my friend's help" + BLUE + ", I can get both pieces of the shield",
-					BLUE + "and return it to " + RED + "King Roald " + BLUE + "for my " + RED + "reward."
+					"With the help of a friend, I managed to obtain two Phoenix",
+					"Crossbows from the Phoenix Gang's weapons store, and",
+					"Katrine welcomes me as a Black Arm Gang member.",
+					"");
+				writeJournal(player, line,
+					"With <red>my friend's help<blue>, I can get both pieces of the shield",
+					"and return it to <red>King Roald <blue>for my <red>reward."
 				);
 			}
 			break;
@@ -219,34 +228,28 @@ public class ShieldofArrav extends Quest {
 				"the location of the Phoenix Gang hideout."
 			);
 			if (!isPhoenix(player)) {
-				writeJournal(player, line,
+				line = writeJournal(player, line, true,
 					"",
-					"<str>With the help of a friend, I managed to obtain two Phoenix",
-					"<str>Crossbows from the Phoenix Gang's weapons store, and",
-					"<str>Katrine welcomes me as a Black Arm Gang member.",
-					"",
-					"<str>With the help of my friend in the rival gang, I was able to",
-					"<str>retrieve both parts of the fabled Shield of Arrav and",
-					"<str>return it to the Museum of Varrock. In recognition of my",
-					"<str>efforts, King Roald paid me the reward set by his",
-					"<str>ancestor.",
-					"",
-					"<col=FF00000>QUEST COMPLETE!",
-					RED + "I received a reward of 600 coins and got 1 quest point.");
+					"With the help of a friend, I managed to obtain two Phoenix",
+					"Crossbows from the Phoenix Gang's weapons store, and",
+					"Katrine welcomes me as a Black Arm Gang member."
+				);
 			} else {
-				writeJournal(player, line,
-					"<str>I killed Jonny the Beard and was welcomed into the Phoenix",
-					"<str>Gang. Straven gave me a key to the weapons room.",
-					"",
-					"<str>With the help of my friend in the rival gang, I was able to",
-					"<str>retrieve both parts of the fabled Shield of Arrav and",
-					"<str>return it to the Museum of Varrock. In recognition of my",
-					"<str>efforts, King Roald paid me the reward set by his",
-					"<str>ancestor.",
-					"",
-					"<col=FF00000>QUEST COMPLETE!",
-					RED + "I received a reward of 600 coins and got 1 quest point.");
+				line = writeJournal(player, line, true,
+					"I killed Jonny the Beard and was welcomed into the Phoenix",
+					"Gang. Straven gave me a key to the weapons room."
+				);
 			}
+			line = writeJournal(player, line, true,
+				"",
+				"With the help of my friend in the rival gang, I was able to",
+				"retrieve both parts of the fabled Shield of Arrav and",
+				"return it to the Museum of Varrock. In recognition of my",
+				"efforts, King Roald paid me the reward set by his",
+				"ancestor.");
+			writeJournal(player, ++line,
+				"<col=FF00000>QUEST COMPLETE!",
+				"<red>I received a reward of 600 coins and got 1 quest point.");
 			break;
 		}
 	}
