@@ -49,6 +49,7 @@ public class WallyCutscenePlugin extends CutscenePlugin {
 	
 	@Override
 	public void end() {
+		super.end();
 		player.unlock();
 	}
 
