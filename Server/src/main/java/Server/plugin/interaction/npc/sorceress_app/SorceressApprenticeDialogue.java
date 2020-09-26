@@ -240,7 +240,7 @@ public class SorceressApprenticeDialogue extends DialoguePlugin {
 		npc.graphics(new Graphics(108));
 		player.lock();
 		Projectile.create(npc, player, 109).send();
-		npc.sendChat("Senventior Disthinte Molesko!");
+		npc.sendChat("Senventior disthine molenko!");
 		GameWorld.Pulser.submit(new Pulse(1) {
 			int counter = 0;
 

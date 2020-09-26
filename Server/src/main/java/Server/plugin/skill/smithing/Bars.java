@@ -51,7 +51,13 @@ public enum Bars {
 	/**
 	 * Bronze Nails
 	 */
-	BRONZE_NAILS(BarType.BRONZE, SmithingType.TYPE_NAIL, 4819, 4), BRONZE_WIRE(BarType.BRONZE, SmithingType.TYPE_WIRE, 1794, 4),
+	BRONZE_NAILS(BarType.BRONZE, SmithingType.TYPE_NAIL, 4819, 4),
+
+	/**
+	 * Bronze Wire
+	 */
+	BRONZE_WIRE(BarType.BRONZE, SmithingType.TYPE_WIRE, 1794, 4),
+
 	/**
 	 * Bronze Arrow Tips
 	 */

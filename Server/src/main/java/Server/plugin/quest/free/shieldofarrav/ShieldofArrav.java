@@ -86,21 +86,21 @@ public class ShieldofArrav extends Quest {
 			line(player, "<str>I read about a valuable shield stolen long ago by a gang of", 4+ 7);
 			line(player, "<str>thieves with an outstanding reward upon it.", 5+ 7);
 			line(player, BLUE + "Reldo told me that the fur trader in " + RED + "Varrock" + BLUE + ", named", 6+ 7);
-			line(player, RED + "Baraeck" + BLUE + ", knows about the " + RED + "Phoenix Gang." + BLUE + " I should speak to", 7+ 7);
+			line(player, RED + "Baraek" + BLUE + ", knows about the " + RED + "Phoenix Gang." + BLUE + " I should speak to", 7+ 7);
 			line(player, BLUE + "him next.", 8+ 7);
 			break;
 		case 40:
 			line(player, "<str>I read about a valuable shield stolen long ago by a gang of", 4+ 7);
 			line(player, "<str>thieves with an outstanding reward upon it.", 5+ 7);
-			line(player, BLUE + "Baraeck told me that the " + RED + "'Phoenix Gang' " + BLUE + "have a hideout in", 6+ 7);
+			line(player, BLUE + "Baraek told me that the " + RED + "'Phoenix Gang' " + BLUE + "have a hideout in", 6+ 7);
 			line(player, BLUE + "the " + RED + "south-eastern part of Varrock" + BLUE + ", disgusing themselves", 7+ 7);
 			line(player, BLUE + "as the " + RED + "VTAM Corporation" + BLUE + ". I should find them and join.", 8+ 7);
 			break;
 		case 50:
 			line(player, "<str>I read about a valuable shield stolen long ago by a gang of", 4+ 7);
 			line(player, "<str>thieves with an outstanding reward upon it.", 5+ 7);
-			line(player, BLUE + "Baraeck told me that the " + RED + "'Phoenix Gang' " + BLUE + "have a hideout in", 6+ 7);
-			line(player, BLUE + "the " + RED + "south-eastern part of Varrock" + BLUE + ", disgusing themselves", 7+ 7);
+			line(player, BLUE + "Baraek told me that the " + RED + "'Phoenix Gang' " + BLUE + "have a hideout in", 6+ 7);
+			line(player, BLUE + "the " + RED + "south-eastern part of Varrock" + BLUE + ", disguising themselves", 7+ 7);
 			line(player, BLUE + "as the " + RED + "VTAM Corporation" + BLUE + ". I should find them and join.", 8+ 7);
 			line(player, "<str>I also spoke to Charlie the tramp in Varrock.", 9+ 7);
 			line(player, BLUE + "According to him there is a criminal organisation known as", 10+ 7);
@@ -109,28 +109,28 @@ public class ShieldofArrav extends Quest {
 			break;
 		case 60:
 			line(player, "<str>I read about a valuable shield stolen long ago by a gang of", 4+ 7);
-			line(player, "<str>thieves with an outstanding reward upon it. Baraeck told me", 5+ 7);
+			line(player, "<str>thieves with an outstanding reward upon it. Baraek told me", 5+ 7);
 			line(player, "<str>the location of the Phoenix Gang hideout.", 6+ 7);
 			line(player, "<str>I also spoke to Charlie the tramp in Varrock.", 7+ 7);
 			line(player, "<str>According to him there is a criminal organisation known as", 8+ 7);
 			line(player, "<str>the " + RED + "'Black Arm Gang'" + BLUE + "down the alley near to him.", 9+ 7);
 			if (isPhoenixMission(player) && isBlackArmMission(player)) {
 				line(player, "<str>I read about a valuable shield stolen long ago by a gang of", 4+ 7);
-				line(player, "<str>thieves with an outstanding reward upon it. Baraeck told me", 5+ 7);
+				line(player, "<str>thieves with an outstanding reward upon it. Baraek told me", 5+ 7);
 				line(player, "<str>the location of the Phoenix Gang hideout.", 6+ 7);
 				line(player, "<str>To start this quest, I spoke to Charlie the tramp in Varrock.", 7+ 7);
 				line(player, "<str>He gave me the location of the Black Arm gang HQ.", 8+ 7);
 				line(player, "<str>According to him there is a criminal organisation known as", 9+ 7);
 				line(player, "<str>the " + RED + "'Black Arm Gang'" + BLUE + "down the alley near to him.", 10+ 7);
 				line(player, BLUE + "If I want to join the " + RED + "Phoenix Gang " + BLUE + "I need to kill" + RED + " Jonny The", 11+ 7);
-				line(player, RED + "Beard " + BLUE + "in the " + RED + "Blue Moon Inn " + BLUE + "and retreive his " + RED + "report.", 12+ 7);
+				line(player, RED + "Beard " + BLUE + "in the " + RED + "Blue Moon Inn " + BLUE + "and retrieve his " + RED + "report.", 12+ 7);
 				line(player, RED + "Katrine " + BLUE + "said if I wanted to join the " + RED + "Black Arm Gang," + BLUE + " I'd", 13+ 7);
 				line(player, BLUE + "have to steal " + RED + "two Phoenix crossbows " + BLUE + "from the rival gang.", 14+ 7);
 				line(player, BLUE + "Maybe " + RED + "Charlie the tramp " + BLUE + "can give me some ideas about", 15+ 7);
 				line(player, BLUE + "how to do this.", 16+ 7);
 			} else if (isPhoenixMission(player)) {
 				line(player, BLUE + "If I want to join the " + RED + "Phoenix Gang " + BLUE + "I need to kill" + RED + " Jonny The", 10+ 7);
-				line(player, RED + "Beard " + BLUE + "in the " + RED + "Blue Moon Inn " + BLUE + "and retreive his " + RED + "report.", 11+ 7);
+				line(player, RED + "Beard " + BLUE + "in the " + RED + "Blue Moon Inn " + BLUE + "and retrieve his " + RED + "report.", 11+ 7);
 				line(player, BLUE + "Alternatively, if I want to join the " + RED + "Blackarm gang " + BLUE + "I should", 12+ 7);
 				line(player, BLUE + "speak to their " + RED + "leader, Katrine, " + BLUE + "about joining.", 13+ 7);
 			} else if (isBlackArmMission(player)) {
@@ -143,7 +143,7 @@ public class ShieldofArrav extends Quest {
 		case 70:
 			if (isPhoenix(player)) {
 				line(player, "<str>I read about a valuable shield stolen long ago by a gang of", 4+ 7);
-				line(player, "<str>thieves with an outstanding reward upon it. Baraeck told me", 5+ 7);
+				line(player, "<str>thieves with an outstanding reward upon it. Baraek told me", 5+ 7);
 				line(player, "<str>the location of the Phoenix Gang hideout.", 6+ 7);
 				line(player, "<str>I killed Jonny the Beard and was welcomed into the Phoenix", 7+ 7);
 				line(player, "<str>Gang. Straven gave me a key to the weapons room.", 8+ 7);
@@ -156,10 +156,10 @@ public class ShieldofArrav extends Quest {
 				}
 				line(player, BLUE + "The second half of the " + RED + "shield" + BLUE + " belongs to a rival gang", 12+ 7);
 				line(player, BLUE + "known as the " + RED + "Black Arm Gang. " + BLUE + "I will need " + RED + "a friend's help " + BLUE + "to", 13+ 7);
-				line(player, BLUE + "retreive it before claiming the " + RED + "reward " + BLUE + "for it.", 14+ 7);
+				line(player, BLUE + "retrieve it before claiming the " + RED + "reward " + BLUE + "for it.", 14+ 7);
 			} else {
 				line(player, "<str>I read about a valuable shield stolen long ago by a gang of", 4+ 7);
-				line(player, "<str>thieves with an outstanding reward upon it. Baraeck told me", 5+ 7);
+				line(player, "<str>thieves with an outstanding reward upon it. Baraek told me", 5+ 7);
 				line(player, "<str>the location of the Phoenix Gang hideout.", 6+ 7);
 				line(player, "<str>With the help of a friend, I managed to obtain two Phoenix", 8+ 7);
 				line(player, "<str>Crossbows from the Phoenix Gang's weapons store, and", 9+ 7);
@@ -170,14 +170,14 @@ public class ShieldofArrav extends Quest {
 			break;
 		case 100:
 			line(player, "<str>I read about a valuable shield stolen long ago by a gang of", 4+ 7);
-			line(player, "<str>thieves with an outstanding reward upon it. Baraeck told me", 5+ 7);
+			line(player, "<str>thieves with an outstanding reward upon it. Baraek told me", 5+ 7);
 			line(player, "<str>the location of the Phoenix Gang hideout.", 6+ 7);
 			if (!isPhoenix(player)) {
 				line(player, "<str>With the help of a friend, I managed to obtain two Phoenix", 8+ 7);
 				line(player, "<str>Crossbows from the Phoenix Gang's weapons store, and", 9+ 7);
 				line(player, "<str>Katrine welcomes me as a Black Arm Gang member.", 10+ 7);
 				line(player, "<str>With the help of my friend in the rival gang, I was able to", 12+ 7);
-				line(player, "<str>retreive both parts of the fabled Shield of Arrav and", 13+ 7);
+				line(player, "<str>retrieve both parts of the fabled Shield of Arrav and", 13+ 7);
 				line(player, "<str>return it to the Museum of Varrock. In Recognition of my", 14+ 7);
 				line(player, "<str>efforts, King Roald paid me the reward set by his", 15+ 7);
 				line(player, "<str>ancestor.", 16+ 7);
@@ -187,7 +187,7 @@ public class ShieldofArrav extends Quest {
 				line(player, "<str>I killed Jonny the Beard and was welcomed into the Phoenix", 7+ 7);
 				line(player, "<str>Gang. Straven gave me a key to the weapons room.", 8+ 7);
 				line(player, "<str>With the help of my friend in the rival gang, I was able to", 10+ 7);
-				line(player, "<str>retreive both parts of the fabled Shield of Arrav and", 11+ 7);
+				line(player, "<str>retrieve both parts of the fabled Shield of Arrav and", 11+ 7);
 				line(player, "<str>return it to the Museum of Varrock. In Recognition of my", 12+ 7);
 				line(player, "<str>efforts, King Roald paid me the reward set by his", 13+ 7);
 				line(player, "<str>ancestor.", 14+ 7);
