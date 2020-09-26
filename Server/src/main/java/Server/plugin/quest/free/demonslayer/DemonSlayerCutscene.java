@@ -372,26 +372,22 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 				stage = 1;
 				break;
 			case 1:
-				switch (buttonId) {
-				default:
-					String text = ((String) WORDS[buttonId - 1]) + (counter != 4 ? "..." : "!");
-					if (text.contains("!")) {
-						incantation.append(text.replace("!", ""));
+				String text = WORDS[buttonId - 1] + (counter != 4 ? "..." : "!");
+				if (text.contains("!")) {
+					incantation.append(text.replace("!", ""));
+				} else {
+					incantation.append(text).append(" ");
+				}
+				player.sendChat(text);
+				player(text);
+				if (counter == 4) {
+					if (incantation.toString().equals(DemonSlayer.getIncantation(player).trim())) {
+						stage = 4;
 					} else {
-						incantation.append(text + " ");
+						stage = 2;
 					}
-					player.sendChat(text);
-					player(text);
-					if (counter == 4) {
-						if (incantation.toString().equals(DemonSlayer.getIncantation(player).trim())) {
-							stage = 4;
-						} else {
-							stage = 2;
-						}
-					} else {
-						stage = 0;
-					}
-					break;
+				} else {
+					stage = 0;
 				}
 				counter++;
 				break;
@@ -408,19 +404,29 @@ public final class DemonSlayerCutscene extends CutscenePlugin {
 			case 4:
 				interpreter.sendPlainMessage(true, "Delrith is sucked into the vortex...");
 				cutscene.delrith.animate(new Animation(4624));
+				player.getInterfaceManager().hideTabs(cutscene.getRemovedTabs());
 				player.lock();
 				GameWorld.getPulser().submit(new Pulse(10) {
+					int count = 0;
 					@Override
 					public boolean pulse() {
-						cutscene.delrith.clear();
-						interpreter.sendDialogue("...back into the dark dimension from which he came.");
-						player.unlock();
-						cutscene.end();
-						cutscene.delrith.clear();
-						player.getConfigManager().set(222, 5653570, true);
-						player.getQuestRepository().getQuest(DemonSlayer.NAME).finish(player);
-						end();
-						return true;
+						switch (count++) {
+							case 0:
+								cutscene.delrith.clear();
+								interpreter.sendDialogue("...back into the dark dimension from which he came.");
+								break;
+							case 1:
+								interpreter.close();
+								cutscene.stop(true);
+								break;
+							case 2:
+								player.unlock();
+								player.getInterfaceManager().restoreTabs();
+								player.getConfigManager().set(222, 5653570, true);
+								player.getQuestRepository().getQuest(DemonSlayer.NAME).finish(player);
+								return true;
+						}
+						return false;
 					}
 				});
 				break;
