@@ -123,14 +123,21 @@ public final class GDiplomacyCutscene extends CutscenePlugin {
 				"@base Shut up! Me bigger general!"
 			}, {
 				"@base All goblins should wear @color armour!",
-				"@other Not @color! (@color) make you look fat.", "@base Everything make YOU look fat!",
-				"@other Shut up!", "@base Fatty!", "@other SHUT UP!",
-				"@base Even this human think you look fat! Don't you, human?", "@player Um...",
-				"@player No, he doesn't look fat.", "@base Shut up human! @oname fat and human stupid!",
+				"@other Not @color! (@color) make you look fat.",
+				"@base Everything make YOU look fat!",
+				"@other Shut up!",
+				"@base Fatty!",
+				"@other SHUT UP!",
+				"@base Even this human think you look fat! Don't you, human?",
+				"@player Um...",
+				"@player No, he doesn't look fat.",
+				"@base Shut up human! @oname fat and human stupid!",
 				"@other Shut up @bname"
 			},
 			{
-				"@other (@ocolor) armour best.", "@base No no @color every time.", "@other Go away human, we busy."
+				"@other (@ocolor) armour best.",
+				"@base No no @color every time.",
+				"@other Go away human, we busy."
 			},
 		};
 
