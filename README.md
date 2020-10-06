@@ -2,7 +2,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/woahscam/2009Scape">
+  <a href="https://github.com/2009scape/2009Scape">
     <img src="https://i.imgur.com/RsfVfkB.png" alt="Logo" width="300" height="67">
   </a>
   <h3 align="center">An open source MMORPG emulation server</h3>
