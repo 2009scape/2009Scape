@@ -24,7 +24,7 @@ class ServerConfigParser(path: String) {
 
     init {
         if(!confFile.exists()){
-            println("File specified for the config file does not exist!!")
+            println("Could not find ${confFile.canonicalFile} - Double check your working directory!")
         } else if(!pathTo.contains(".json")) {
             println("Config file MUST be a JSON file!!")
             println("(Got $pathTo)")
