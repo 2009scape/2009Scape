@@ -65,7 +65,7 @@ public final class MysteryBoxPlugin extends OptionHandler {
 		if (player.getInventory().remove(box, box.getSlot(), true)) {
 			String message;
 			player.lock(1);
-			if(name.equals("notithing")){
+			if(name.equals("nothing")){
 				message = "Inside the box you find nothing :(";
 			} else {
 				if(item.getAmount() > 1 && item.getId() != 995){
