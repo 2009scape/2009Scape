@@ -15,4 +15,5 @@ jar {
     manifest {
         attributes 'Main-Class': 'org.runite.Client'
     }
+    from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
 }

@@ -13,3 +13,5 @@ Management-Server/.gradle
 Management-Server/build/
 Management-Server/org/
 Server/data/eco/grand_exchange_db.emp
+Single-Player/*
+Single-Player/
