@@ -1353,7 +1353,7 @@
   {
     "id": "73",
     "name": "Zombie",
-    "examine": "Dead man walking."	
+    "examine": "Dead man walking.",
     "lifepoints": "22",
     "attack_level": "8",
     "strength_level": "9",
