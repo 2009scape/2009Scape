@@ -58,6 +58,13 @@ class FunCommandSet : CommandSet(Command.Privilege.ADMIN) {
 
 
         /**
+         * Open bank
+         */
+        define("bank"){ player, _ ->
+            player.getBank().open()
+        }
+
+        /**
          * Toggle invisibility
          */
         define("invis"){ player, _ ->
