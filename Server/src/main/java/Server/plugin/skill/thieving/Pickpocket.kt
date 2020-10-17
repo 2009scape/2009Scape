@@ -313,7 +313,7 @@ enum class Pickpocket(val npc: IntArray, val level: Int, val experience: Double,
             bonusMultiplier += 1
         }
 
-        // Multiply the lot amounts by the bonus multiplier
+        // Multiply the loot amounts by the bonus multiplier
         loot.stream().forEach { item: Item -> item.amount = item.amount * bonusMultiplier }
         return loot
     }
