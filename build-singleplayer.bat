@@ -6,25 +6,35 @@ echo Building Client...
 cd Client
 call gradle jar
 cd ..
-copy /Y "Client\build\libs\client-1.0.0.jar" "Single-Player/client.jar"
+copy /Y "Client\build\libs\client-1.0.0.jar" "Single-Player\client.jar"
+echo.
 
 echo Building Management-Server...
 cd Management-Server
 call gradle jar
 cd ..
-copy /Y "Management-Server\build\libs\managementserver-1.0.0.jar" "Single-Player/ms.jar"
+copy /Y "Management-Server\build\libs\managementserver-1.0.0.jar" "Single-Player\ms.jar"
+echo.
 
 echo Building Server...
 cd Server
 call gradle jar
 cd ..
-copy /Y "Server\build\libs\server-1.0.0.jar" "Single-Player/server.jar"
+copy /Y "Server\build\libs\server-1.0.0.jar" "Single-Player\server.jar"
+echo.
 
 echo Copying server data...
 del Single-Player/data
-xcopy /E /I /Y "Server/data" "Single-Player/data"
+xcopy /E /I /Y "Server\data" "Single-Player\data"
+xcopy /E /I /Y "Server\db_exports\*.sql" "Single-Player\data"
 del Single-Player/worldprops
-xcopy /E /I /Y "Server/worldprops" "Single-Player/worldprops"
-copy /Y "Client\config.json" "Single-Player\config.json"
+xcopy /E /I /Y "Server\worldprops" "Single-Player\worldprops"
+: Set Debug/Dev mode to false on single player server config
+powershell -Command "(gc Single-Player\worldprops\default.json) -replace '\"debug\": true', '\"debug\": false' -replace '\"dev\": true', '\"dev\": false' | Out-File Single-Player\worldprops\default.json"
+
+: Replace Live server addresses with localhost
+powershell -Command "(gc Client\config.json) -replace 'play.2009scape.org', 'localhost' | Out-File Single-Player\config.json"
+echo.
 
 echo Done!
+pause
