@@ -30,10 +30,10 @@ xcopy /E /I /Y "Server\db_exports\*.sql" "Single-Player\data"
 del Single-Player/worldprops
 xcopy /E /I /Y "Server\worldprops" "Single-Player\worldprops"
 : Set Debug/Dev mode to false on single player server config
-powershell -Command "(gc Single-Player\worldprops\default.json) -replace '\"debug\": true', '\"debug\": false' -replace '\"dev\": true', '\"dev\": false' | Out-File Single-Player\worldprops\default.json"
+powershell -Command "(gc Single-Player\worldprops\default.json) -replace '\"debug\": true', '\"debug\": false' -replace '\"dev\": true', '\"dev\": false' | Out-File -Encoding Default Single-Player\worldprops\default.json"
 
 : Replace Live server addresses with localhost
-powershell -Command "(gc Client\config.json) -replace 'play.2009scape.org', 'localhost' | Out-File Single-Player\config.json"
+powershell -Command "(gc Client\config.json) -replace 'play.2009scape.org', 'localhost' | Out-File -Encoding Default Single-Player\config.json"
 echo.
 
 echo Done!
