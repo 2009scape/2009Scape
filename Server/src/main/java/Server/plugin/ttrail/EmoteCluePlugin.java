@@ -96,10 +96,15 @@ public final class EmoteCluePlugin extends EmoteClueScroll {
 		register(new EmoteCluePlugin("al-kharid-headbang", 2702, ClueLevel.EASY, emote, new int[][] { { 1833 }, { 1059 }, { 1061 } }, "Headbang in the mine north of Al<br>Kharid.<br>Equip a desert shirt, leather gloves and<br>leather boots.", new ZoneBorders(3297, 3286, 3301, 3316)));
 		//Removed Vexia code that bricked emotes for certain clues.
 		//Fixed JFJ and Laugh Clues
-		emote = Emotes.JUMP_FOR_JOY;
+		//When Vexia emote is removed below.
+		//emote = Emotes.JUMP_FOR_JOY;
 		register(new EmoteCluePlugin("beehive-jump", 2703, ClueLevel.EASY, Emotes.JUMP_FOR_JOY, new int[][] { { 1833 }, { 648 }, { 1353 } }, "Jump for joy at the beehives.<br>Equip a desert shirt, green<br>gnome robe bottoms and a<br>steel axe.", new ZoneBorders(2762, 3439, 2764, 3441)));
-		register(new EmoteCluePlugin("yanille-jump", 2704, ClueLevel.MEDIUM, emote, Emotes.JIG, new int[][] { { 1757 }, { 1145 }, { 6324 } }, "Jump for joy in Yanille<br>bank. Dance a jig before you<br>talk to me.<br>Equip a brown apron,<br>adamantite medium helmet<br>and snakeskin chaps.", new ZoneBorders(2609, 3088, 2614, 3097)));
-		register(new EmoteCluePlugin("tzhaar-jump", 2705, ClueLevel.MEDIUM, emote, Emotes.SHRUG, new int[][] { { 1295 }, { 2499 }, { 4095 } }, "Jump for joy in the TzHaar<br>sword shop. Shrug before you<br>talk to me.<br>Equip a Steel longsword,<br>Blue D'hide body and blue<br>mystic gloves.", new ZoneBorders(2477, 5144, 2480, 5147)));
+		// And emote, is replaced with what it is shortcutting Emotes.JUMP_FOR_JOY
+		// the clues work perfect. It seems to only be a problem with multiple emote clues.
+		// If you look around EmoteCluePlugin you will see there are multiple emote, shortcuts
+		// I do not know what should be done as there are so many.
+		register(new EmoteCluePlugin("yanille-jump", 2704, ClueLevel.MEDIUM, Emotes.JUMP_FOR_JOY, Emotes.JIG, new int[][] { { 1757 }, { 1145 }, { 6324 } }, "Jump for joy in Yanille<br>bank. Dance a jig before you<br>talk to me.<br>Equip a brown apron,<br>adamantite medium helmet<br>and snakeskin chaps.", new ZoneBorders(2609, 3088, 2614, 3097)));
+		register(new EmoteCluePlugin("tzhaar-jump", 2705, ClueLevel.MEDIUM, Emotes.JUMP_FOR_JOY, Emotes.SHRUG, new int[][] { { 1295 }, { 2499 }, { 4095 } }, "Jump for joy in the TzHaar<br>sword shop. Shrug before you<br>talk to me.<br>Equip a Steel longsword,<br>Blue D'hide body and blue<br>mystic gloves.", new ZoneBorders(2477, 5144, 2480, 5147)));
 		//Removed Vexia code that bricked emotes for certain clues.
 		register(new EmoteCluePlugin("jokul-tent-laugh", 2706, ClueLevel.HARD, Emotes.LAUGH, new int[][] { { 1163 }, { 2493 }, { 1393 } }, "Laugh in the Jokul's tent in the<br>Mountain Camp.<br>Beware of double agents! Equip a<br>rune full helmet, blue dragonhide<br>chaps and a fire battlestaff.", new ZoneBorders(2811, 3678, 2813, 3682)));
 		emote = Emotes.PANIC;

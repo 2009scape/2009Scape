@@ -2139,118 +2139,119 @@
   },
   {
     "ids": "50,2642",
+    "description": "King Black Dragon",
     "main": [
       {
         "minAmount": "1",
-        "weight": "50",
+        "weight": "125",
         "id": "1303",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "50",
+        "weight": "100",
         "id": "1123",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "50",
+        "weight": "100",
         "id": "1199",
         "maxAmount": "1"
       },
       {
         "minAmount": "300",
-        "weight": "50",
+        "weight": "100",
         "id": "554",
         "maxAmount": "300"
       },
       {
         "minAmount": "300",
-        "weight": "50",
+        "weight": "125",
         "id": "556",
         "maxAmount": "300"
       },
       {
         "minAmount": "30",
-        "weight": "25",
+        "weight": "50",
         "id": "565",
         "maxAmount": "30"
       },
       {
         "minAmount": "50",
-        "weight": "25",
+        "weight": "50",
         "id": "560",
         "maxAmount": "50"
       },
       {
         "minAmount": "30",
-        "weight": "25",
+        "weight": "50",
         "id": "563",
         "maxAmount": "50"
       },
       {
         "minAmount": "690",
-        "weight": "25",
+        "weight": "75",
         "id": "884",
         "maxAmount": "690"
       },
       {
         "minAmount": "10",
-        "weight": "25",
+        "weight": "50",
         "id": "9144",
         "maxAmount": "25"
       },
       {
         "minAmount": "5",
-        "weight": "25",
+        "weight": "50",
         "id": "11232",
         "maxAmount": "14"
       },
       {
         "minAmount": "1",
-        "weight": "25",
+        "weight": "50",
         "id": "11237",
         "maxAmount": "14"
       },
       {
         "minAmount": "1",
-        "weight": "50",
+        "weight": "100",
         "id": "1737",
         "maxAmount": "1"
       },
       {
         "minAmount": "150",
-        "weight": "25",
+        "weight": "75",
         "id": "1516",
         "maxAmount": "150"
       },
       {
         "minAmount": "4",
-        "weight": "25",
+        "weight": "50",
         "id": "385",
         "maxAmount": "4"
       },
       {
         "minAmount": "100",
-        "weight": "25",
+        "weight": "75",
         "id": "445",
         "maxAmount": "100"
       },
       {
         "minAmount": "3",
-        "weight": "25",
+        "weight": "50",
         "id": "9431",
         "maxAmount": "3"
       },
       {
         "minAmount": "3",
-        "weight": "25",
+        "weight": "50",
         "id": "2361",
         "maxAmount": "3"
       },
       {
         "minAmount": "1",
-        "weight": "5",
+        "weight": "20",
         "id": "2677",
         "maxAmount": "1"
       },
@@ -2258,12 +2259,6 @@
         "minAmount": "1",
         "weight": "1",
         "id": "11286",
-        "maxAmount": "1"
-      },
-      {
-        "minAmount": "1",
-        "weight": "1",
-        "id": "14669",
         "maxAmount": "1"
       }
     ],
