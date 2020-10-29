@@ -49571,6 +49571,7 @@
   },
   {
     "ids": "6203",
+    "description": "Zammy God War Boss",
     "main": [
       {
         "minAmount": "1",
@@ -49580,13 +49581,13 @@
       },
       {
         "minAmount": "1",
-        "weight": "100",
+        "weight": "44",
         "id": "11716",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "100",
+        "weight": "43",
         "id": "11736",
         "maxAmount": "1"
       },
@@ -49658,25 +49659,25 @@
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "7",
         "id": "11710",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "7",
         "id": "11712",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "7",
         "id": "11714",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "50",
+        "weight": "11",
         "id": "11708",
         "maxAmount": "1"
       },
@@ -50441,6 +50442,7 @@
   },
   {
     "ids": "6222",
+    "description": "Armadyl God War Boss",
     "main": [
       {
         "minAmount": "1",
@@ -50474,14 +50476,20 @@
       },
       {
         "minAmount": "1",
-        "weight": "70",
+        "weight": "13",
         "id": "11718",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "70",
+        "weight": "13",
         "id": "11720",
+        "maxAmount": "1"
+      },
+      {
+        "minAmount": "1",
+        "weight": "13",
+        "id": "11722",
         "maxAmount": "1"
       },
       {
@@ -50534,19 +50542,19 @@
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "6",
         "id": "11710",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "6",
         "id": "11712",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "6",
         "id": "11714",
         "maxAmount": "1"
       },
@@ -50558,7 +50566,7 @@
       },
       {
         "minAmount": "1",
-        "weight": "50",
+        "weight": "10",
         "id": "11702",
         "maxAmount": "1"
       },
@@ -50566,12 +50574,6 @@
         "minAmount": "1",
         "weight": "50",
         "id": "31",
-        "maxAmount": "1"
-      },
-      {
-        "minAmount": "1",
-        "weight": "70",
-        "id": "11722",
         "maxAmount": "1"
       }
     ],
@@ -51056,10 +51058,11 @@
   },
   {
     "ids": "6247",
+    "description": "Saradomin God War Boss",
     "main": [
       {
         "minAmount": "1",
-        "weight": "100",
+        "weight": "40",
         "id": "11730",
         "maxAmount": "1"
       },
@@ -51139,6 +51142,12 @@
         "minAmount": "361",
         "weight": "500",
         "id": "995",
+        "maxAmount": "10300"
+      },
+      {
+        "minAmount": "10301",
+        "weight": "500",
+        "id": "995",
         "maxAmount": "20300"
       },
       {
@@ -51149,19 +51158,19 @@
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "7",
         "id": "11710",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "7",
         "id": "11712",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "7",
         "id": "11714",
         "maxAmount": "1"
       },
@@ -51173,7 +51182,7 @@
       },
       {
         "minAmount": "1",
-        "weight": "50",
+        "weight": "11",
         "id": "11706",
         "maxAmount": "1"
       },
@@ -51512,6 +51521,7 @@
   },
   {
     "ids": "6260",
+    "description": "Bandos God War Boss",
     "main": [
       {
         "minAmount": "1",
@@ -51539,19 +51549,19 @@
       },
       {
         "minAmount": "1",
-        "weight": "50",
+        "weight": "12",
         "id": "11724",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "50",
+        "weight": "12",
         "id": "11726",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "50",
+        "weight": "13",
         "id": "11728",
         "maxAmount": "1"
       },
@@ -51617,25 +51627,25 @@
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "5",
         "id": "11710",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "5",
         "id": "11712",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "30",
+        "weight": "5",
         "id": "11714",
         "maxAmount": "1"
       },
       {
         "minAmount": "1",
-        "weight": "50",
+        "weight": "9",
         "id": "11704",
         "maxAmount": "1"
       },
