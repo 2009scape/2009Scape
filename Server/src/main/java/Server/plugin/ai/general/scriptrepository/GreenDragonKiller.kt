@@ -26,6 +26,7 @@ import plugin.ai.pvmbots.CombatBotAssembler
 import plugin.ge.OfferState
 import plugin.skill.Skills
 import plugin.zone.WildernessAreaZone
+import kotlin.random.Random
 
 /**
  * A bot script for killing green dragons in the wilderness.. Capable of banking, selling on ge, buying on ge, eating and more.
@@ -38,6 +39,12 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
     var handler: CombatSwingHandler? = null
     var lootDelay = 0
     var offerMade = false
+
+    var food = if (Random.nextBoolean()){
+        ItemNames.LOBSTER
+    } else{
+        ItemNames.SWORDFISH
+    }
 
     var myBorders: ZoneBorders? = null
     val type = when(style){
@@ -55,9 +62,9 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
             running = false
             return
         }
-        if(bot.inventory.getAmount(ItemNames.LOBSTER) < 3 && state == State.KILLING)
+        if(bot.inventory.getAmount(food) < 3 && state == State.KILLING)
             state = State.TO_BANK
-        scriptAPI.eat(ItemNames.LOBSTER)
+        scriptAPI.eat(food)
         when(state){
 
 
@@ -95,8 +102,8 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
                 val items = AIRepository.groundItems.get(bot)
                 if(items.isNullOrEmpty()) {state = State.KILLING; return}
                 if(bot.inventory.isFull) {
-                    if(bot.inventory.containsItem(Item(ItemNames.LOBSTER))){
-                        scriptAPI.forceEat(ItemNames.LOBSTER)
+                    if(bot.inventory.containsItem(Item(food))){
+                        scriptAPI.forceEat(food)
                     } else {
                         state = State.TO_BANK
                     }
@@ -133,28 +140,28 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
                     override fun pulse(): Boolean {
                         for(item in bot.inventory.toArray()){
                             item ?: continue
-                            if(item.name.toLowerCase().contains("lobster")) continue
+                            if(item.name.toLowerCase().contains("lobster") || item.name.toLowerCase().contains("swordfish")) continue
                             if(item.id == 995) continue
                             bot.bank.add(item)
                             SystemLogger.log("Banked ${item.name}")
                         }
                         bot.inventory.clear()
-                        state = if(bot.bank.getAmount(ItemNames.LOBSTER) < 10)
+                        state = if(bot.bank.getAmount(food) < 10)
                             State.TO_GE.also { println("Going to GE to sell.") }
                          else
                             State.TO_DRAGONS.also { println("Going to dragons") }
                         for(item in inventory)
                             bot.inventory.add(item)
-                        scriptAPI.withdraw(ItemNames.LOBSTER,10)
+                        scriptAPI.withdraw(food,10)
                         bot.fullRestore()
                         return true
                     }
                 })
             }
 
-            State.BUYING_LOBSTERS -> {
+            State.BUYING_FOOD -> {
                 if(!offerMade) {
-                    scriptAPI.buyFromGE(ItemNames.LOBSTER, 100)
+                    scriptAPI.buyFromGE(food, 100)
                     offerMade = true
                 } else {
                     val offer = AIRepository.getOffer(bot)
@@ -166,7 +173,7 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
                             offer.state = OfferState.REMOVED
                             bot.bank.add(Item(offer.itemId, offer.completedAmount))
                             bot.bank.refresh()
-                            scriptAPI.withdraw(ItemNames.LOBSTER,10)
+                            scriptAPI.withdraw(food,10)
                         }
                     }
                 }
@@ -221,7 +228,7 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
 
             State.SELL_GE -> {
                 scriptAPI.sellAllOnGe()
-                state = State.BUYING_LOBSTERS
+                state = State.BUYING_FOOD
             }
 
             State.REFRESHING -> {
@@ -262,7 +269,7 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
         TO_GE,
         SELL_GE,
         REFRESHING,
-        BUYING_LOBSTERS
+        BUYING_FOOD
 
     }
 

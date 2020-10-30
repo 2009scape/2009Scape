@@ -360,6 +360,7 @@ class ScriptAPI(private val bot: Player) {
                 SystemLogger.log("Offered $itemAmt")
                 bot.bank.remove(Item(id,itemAmt))
                 bot.bank.refresh()
+                SystemLogger.log("Banked fish: " + bot.bank.getAmount(ItemNames.RAW_SWORDFISH))
                 SystemLogger.log("Banked fish: " + bot.bank.getAmount(ItemNames.RAW_LOBSTER))
                 return true
             }
@@ -563,6 +564,8 @@ class ScriptAPI(private val bot: Player) {
             ItemNames.LOBSTER ->               268
             ItemNames.LOOP_HALF_OF_KEY ->      5250
             ItemNames.TOOTH_HALF_OF_KEY ->     4263
+            ItemNames.SWORDFISH ->             400
+            ItemNames.SHARK ->                 800
             else -> null
         }
     }
