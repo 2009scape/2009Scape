@@ -1,0 +1,312 @@
+<html>
+<head>
+    <title>💀 Drop Table Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/darkly/bulmaswatch.min.css">
+</head>
+
+<body>
+<div id="app">
+    <div class="block container">
+        <div class="box">
+            <h1 class="title">Import Files</h1>
+
+            <div class="field is-grouped">
+                <div class="file control has-name">
+                    <label class="file-label">
+                        <input id="files" class="file-input" type="file" name="files" accept=".json" multiple @change="readFiles">
+                        <span class="file-cta">
+                      <span class="file-label">
+                        Select all the JSON config files
+                      </span>
+                    </span>
+                        <span class="file-name">
+                      {{ files ? `${files.length} files selected` : 'No files selected' }}
+                    </span>
+                    </label>
+                </div>
+
+                <div class="control">
+                    <button class="button is-info" @click="readFiles">Reload JSON</button>
+                </div>
+            </div>
+
+            <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag">drop_tables.json</span>
+                        <span v-if="drop_tables" class="tag is-success">YES</span>
+                        <span v-else class="tag is-danger">NO</span>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag">item_configs.json	</span>
+                        <span v-if="item_configs" class="tag is-success">YES</span>
+                        <span v-else class="tag is-danger">NO</span>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag">npc_configs.json</span>
+                        <span v-if="npc_configs" class="tag is-success">YES</span>
+                        <span v-else class="tag is-danger">NO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div v-if="jsonLoaded" id="functionality">
+        <div class="block container">
+            <div class="columns">
+                <div class="column">
+                    <div class="box">
+                        <h1 class="title">Functions</h1>
+
+                        <div class="field has-addons">
+                            <div class="control select">
+                                <select v-model="selectedNPC">
+                                    <option v-for="npc in npc_configs" :value="npc.id">{{ npc.id }} - {{ npc.name }}</option>
+                                </select>
+                            </div>
+                            <div class="control">
+                                <button class="button is-info" @click="viewDropTable">
+                                    View Drop Table
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped is-grouped-multiline">
+                            <div class="control">
+                                <button class="button is-primary" @click="findMissingDropTables">Find Missing Drop Tables</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-primary" @click="findDupes">Find Dupes</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-primary" @click="findUnknownItems">Find Unknown Items</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <h1 class="title">NPCs</h1>
+                        <textarea class="textarea" :value="npcList"></textarea>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <h1 class="title">Items</h1>
+                        <textarea class="textarea" :value="itemList"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div v-if="results" class="block container">
+            <div class="box">
+                <h1 class="title">Results &nbsp;&nbsp;
+                    <a class="subtitle is-6" @click="inspectModal = results">View JSON</a>
+                </h1>
+                <pre v-if="resultsType == 'plain'">{{ results }}</pre>
+                <div v-else-if="resultsType == 'droptable'">
+                    <p><strong>Table Description:</strong> {{ results.description }}</p>
+                    <br>
+                    <template v-for="section in ['main', 'charms', 'default']">
+                        <h1 class="subtitle">{{ section.toUpperCase() }}</h1>
+                        Total Weight: {{ results.weights[section] }}
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <td>Item ID</td>
+                                    <td>Name</td>
+                                    <td>Min Amount</td>
+                                    <td>Max Amount</td>
+                                    <td>Weight</td>
+                                    <td>Odds</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="row in results[section]">
+                                    <td>{{ row.id }}</td>
+                                    <td>
+                                        <span v-if="row.id == 31">Rare Drop Table</span>
+                                        <a v-else-if="item_configs.find(x => x.id == row.id)" @click="inspectModal = item_configs.find(x => x.id == row.id)">{{ item_configs.find(x => x.id == row.id).name }}</a>
+                                        <span v-else>UNKNOWN ITEM</span>
+                                    </td>
+                                    <td>{{ row.minAmount }}</td>
+                                    <td>{{ row.maxAmount }}</td>
+                                    <td>{{ row.weight }}</td>
+                                    <td>{{ Number(row.weight/results.weights[section]*100).toPrecision(3) }}%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </template>
+                    <p><strong>NPCs using this droptable:</strong>
+                        <div class="content is-small">
+                            <ul>
+                                <li v-for="id in results.ids.split(',')">
+                                    <a @click="inspectModal = npc_configs.find(x => x.id == id)">
+                                        {{ id }} - {{ npc_configs.find(x => x.id == id).name }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" :class="{'is-active': inspectModal}">
+            <div class="modal-background" @click="inspectModal = undefined"></div>
+            <div class="modal-content">
+                <pre>{{ JSON.stringify(inspectModal, null, 4) }}</pre>
+            </div>
+            <button class="modal-close is-large" aria-label="close" @click="inspectModal = undefined"></button>
+        </div>
+    </div>
+</div>
+
+<script>
+    new Vue({
+            el: '#app',
+            data: {
+                files: undefined,
+                drop_tables: undefined,
+                item_configs: undefined,
+                npc_configs: undefined,
+                selectedNPC: '',
+                results: '',
+                resultsType: 'plain',
+                inspectModal: ''
+            },
+            computed: {
+                jsonLoaded() {
+                    return this.drop_tables && this.item_configs && this.npc_configs
+                },
+                itemList() {
+                    result = ''
+                    for (item of this.item_configs) {
+                        result += `${item.id} - ${item.name}\n`
+                    }
+                    return result
+                },
+                npcList() {
+                    result = ''
+                    for (npc of this.npc_configs) {
+                        result += `${npc.id} - ${npc.name}\n`
+                    }
+                    return result
+                }
+            },
+            methods: {
+                readFiles() {
+                    this.drop_tables = undefined
+                    this.item_configs = undefined
+                    this.npc_configs = undefined
+                    this.results = ''
+                    this.resultsType = ''
+                    this.files = document.getElementById('files').files
+                    for (file of this.files) {
+                        if (file.name == 'drop_tables.json') {
+                            this.injestFile(file, 'drop_tables', 'status_drop')
+                        }
+                        if (file.name == 'item_configs.json') {
+                            this.injestFile(file, 'item_configs', 'status_item')
+                        }
+                        if (file.name == 'npc_configs.json') {
+                            this.injestFile(file, 'npc_configs', 'status_npc')
+                        }
+                    }
+                },
+                injestFile(file, variable, status) {
+                    var fr = new FileReader()
+                    fr.onload = () => {
+                      this[variable] = JSON.parse(fr.result)
+                    }
+                    fr.readAsText(file)
+                    document.getElementById('app').style = ''
+                },
+                viewDropTable() {
+                    try {
+                        result = ''
+                        table = this.drop_tables.find(x =>  x.ids.split(',').includes(this.selectedNPC))
+                        table.weights = {}
+                        for (section of ['main', 'charm', 'default']) {
+                            weight = 0
+                            for (item of table[section]) {
+                                weight += Number(item.weight)
+                            }
+                            table.weights[section] = weight
+                        }
+                        this.results = table
+                        this.resultsType = 'droptable'
+                    } catch (e) {
+                        this.results = result + '\n' + e
+                    }
+                },
+                findDupes() {
+                    found_ids = []
+                    result = ''
+                    for (table of this.drop_tables) {
+                        ids = table.ids.split(',')
+                        for (id of ids) {
+                            if (id in found_ids) result += (`DUPE ID: ${id}\n`)
+                            else found_ids.push(id)
+                        }
+                    }
+                    this.results = result
+                    this.resultsType = 'plain'
+                },
+                findMissingDropTables() {
+                    // Check for empty drop tables.
+                    result = ''
+                    ignore_npcs = ['Splatter', 'Shifter', 'Ravager', 'Spinner', 'Torcher', 'Defiler', 'Brawler', 'Void Knight', 'Portal']
+                    for (npc of this.npc_configs) {
+                      if ((npc.attack_level >= 5 || npc.range_level >= 5 || npc.magic_level >= 5)
+                            && npc.lifepoints >= 20
+                            && (npc.id < 895 || npc.id > 900)   // Witch's Experiment
+                            && (npc.id < 2025 || npc.id > 2030) // Barrows
+                            && (npc.id < 2631 || npc.id > 2745) // Fight Caves
+                            && (npc.id < 3727 || npc.id > 3772) // Pest Control
+                            && (npc.id < 3840 || npc.id > 4284) // Animated Armors & Swan Song
+                            && (npc.id < 5561 || npc.id > 5906) // Dream Mentor
+                            && (npc.id < 6872 || npc.id > 6888) // Summoning NPC's
+                            && (npc.id < 6972 || npc.id > 6987) // Druids in Taverly
+                            && (npc.id < 6795 || npc.id > 7823) // Summoning NPC's
+                            && !ignore_npcs.includes(npc.name)
+                            && !this.drop_tables.some(x => x.ids.split(',').includes(npc.id)))
+                        {
+                            result += `Missing droptable for NPC #${npc.id} ${npc.name}\n`
+                        }
+                    }
+                    this.results = result
+                    this.resultsType = 'plain'
+                },
+                findUnknownItems() {
+                    result = ''
+                    for (table of this.drop_tables) {
+                        for (section of ['main', 'charm', 'default']) {
+                            for (item of table[section]) {
+                                if (item.id == 31) continue
+                                found = this.item_configs.find(x => x.id == item.id)
+                                if (!found) result += (`UNKNOWN ITEM ID: ${item.id}\n`)
+                            }
+                        }
+                    }
+                    this.results = result
+                    this.resultsType = 'plain'
+                }
+            }
+        })
+</script>
+
+</body>
+
+</html> 
