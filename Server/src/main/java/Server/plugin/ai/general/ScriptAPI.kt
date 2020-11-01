@@ -7,7 +7,6 @@ import core.game.node.`object`.GameObject
 import core.game.node.entity.Entity
 import core.game.node.entity.npc.NPC
 import core.game.node.entity.player.Player
-import core.game.node.entity.player.info.PlayerDetails
 import core.game.node.item.GroundItem
 import core.game.node.item.GroundItemManager
 import core.game.node.item.Item
@@ -16,16 +15,13 @@ import core.game.system.task.Pulse
 import core.game.world.GameWorld
 import core.game.world.map.Location
 import core.game.world.map.RegionManager
-import core.game.world.map.path.Path
 import core.game.world.map.path.Pathfinder
 import core.game.world.update.flag.context.Animation
 import core.game.world.update.flag.context.Graphics
 import core.tools.ItemNames
 import core.tools.RandomFunction
-import plugin.ai.AIPlayer
 import plugin.ai.AIRepository
-import plugin.ai.general.scriptrepository.LobsterCatcher
-import plugin.ai.general.scriptrepository.SeersMagicTrees
+import plugin.ai.pvp.PVPAIPActions
 import plugin.consumable.Consumable
 import plugin.consumable.Consumables
 import plugin.consumable.Food
@@ -33,12 +29,10 @@ import plugin.consumable.effects.HealingEffect
 import plugin.ge.BotGrandExchange
 import plugin.ge.GEOfferDispatch
 import plugin.ge.GrandExchangeOffer
-import plugin.ge.OfferState
 import plugin.skill.Skills
-import java.util.ArrayList
+import java.util.*
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.Executors
-import kotlin.math.abs
 import kotlin.math.pow
 import kotlin.math.sqrt
 
@@ -170,7 +164,7 @@ class ScriptAPI(private val bot: Player) {
     fun takeNearestGroundItem(id: Int){
         val item = getNearestGroundItem(id)
         if(item != null)
-            item.interaction?.handle(bot,item.interaction[2])
+            item.interaction?.handle(bot, item.interaction[2])
     }
 
     /**
@@ -212,7 +206,7 @@ class ScriptAPI(private val bot: Player) {
         }
         for (i in 0 until length) {
             val npc = localNPCs[i] as NPC
-            run { if (checkValidTargets(npc,name)) targets.add(npc) }
+            run { if (checkValidTargets(npc, name)) targets.add(npc) }
         }
         return if (targets.size == 0) null else targets
     }
@@ -224,7 +218,7 @@ class ScriptAPI(private val bot: Player) {
      * @return true if the target is valid, false if not.
      * @author Ceikry
      */
-    private fun checkValidTargets(target: NPC,name: String?): Boolean {
+    private fun checkValidTargets(target: NPC, name: String?): Boolean {
         if (!target.isActive) {
             return false
         }
@@ -282,11 +276,11 @@ class ScriptAPI(private val bot: Player) {
     private fun walkToIterator(loc: Location){
         var diffX = loc.x - bot.location.x
         var diffY = loc.y - bot.location.y
-        while(!bot.location.transform(diffX,diffY,0).withinDistance(bot.location)) {
+        while(!bot.location.transform(diffX, diffY, 0).withinDistance(bot.location)) {
             diffX /= 2
             diffY /= 2
         }
-        GameWorld.Pulser.submit(object : MovementPulse(bot,bot.location.transform(diffX,diffY,0), Pathfinder.SMART){
+        GameWorld.Pulser.submit(object : MovementPulse(bot, bot.location.transform(diffX, diffY, 0), Pathfinder.SMART) {
             override fun pulse(): Boolean {
                 return true
             }
@@ -301,14 +295,14 @@ class ScriptAPI(private val bot: Player) {
      * @return true if successfully attacking an NPC within that radius, false if not.
      * @author Ceikry
      */
-    fun attackNpcInRadius(bot: Player,name: String, radius: Int): Boolean {
+    fun attackNpcInRadius(bot: Player, name: String, radius: Int): Boolean {
         if (bot.inCombat()) return true
-        var creatures: List<Entity>? = findTargets(bot, radius,name) ?: return false
+        var creatures: List<Entity>? = findTargets(bot, radius, name) ?: return false
         bot.attack(creatures!![RandomFunction.getRandom(creatures.size - 1)])
         return if (creatures.isNotEmpty()) {
             true
         } else {
-            creatures = findTargets(bot, radius,name)
+            creatures = findTargets(bot, radius, name)
             if (!creatures!!.isEmpty()) {
                 bot.attack(creatures.random())
                 return true
@@ -352,13 +346,13 @@ class ScriptAPI(private val bot: Player) {
      * @author Ceikry
      */
     fun sellOnGE(id: Int){
-        class toCounterPulse : MovementPulse(bot,Location.create(3165, 3487, 0) ){
+        class toCounterPulse : MovementPulse(bot, Location.create(3165, 3487, 0)){
             override fun pulse(): Boolean {
                 val itemAmt = bot.bank.getAmount(id)
                 val offeredValue = checkPriceOverrides(id) ?: ItemDefinition.forId(id).value
                 BotGrandExchange.sellOnGE(id, offeredValue, itemAmt)
                 SystemLogger.log("Offered $itemAmt")
-                bot.bank.remove(Item(id,itemAmt))
+                bot.bank.remove(Item(id, itemAmt))
                 bot.bank.refresh()
                 SystemLogger.log("Banked fish: " + bot.bank.getAmount(ItemNames.RAW_SWORDFISH))
                 SystemLogger.log("Banked fish: " + bot.bank.getAmount(ItemNames.RAW_LOBSTER))
@@ -373,7 +367,7 @@ class ScriptAPI(private val bot: Player) {
      * @author Ceikry
      */
     fun sellAllOnGe(){
-        class toCounterPulseAll : MovementPulse(bot,Location.create(3165, 3487, 0) ){
+        class toCounterPulseAll : MovementPulse(bot, Location.create(3165, 3487, 0)){
             override fun pulse(): Boolean {
                 for(item in bot.bank.toArray()) {
                     item ?: continue
@@ -398,13 +392,13 @@ class ScriptAPI(private val bot: Player) {
      * @author Ceikry
      */
     fun sellOnGE(id: Int, value: Int){
-        class toCounterPulseWithPrice : MovementPulse(bot,Location.create(3165, 3487, 0) ){
+        class toCounterPulseWithPrice : MovementPulse(bot, Location.create(3165, 3487, 0)){
             override fun pulse(): Boolean {
                 val itemAmt = bot.bank.getAmount(id)
                 val offeredValue = checkPriceOverrides(id) ?: value
                 SystemLogger.log("Offered $itemAmt")
                 BotGrandExchange.sellOnGE(id, offeredValue, itemAmt)
-                bot.bank.remove(Item(id,itemAmt))
+                bot.bank.remove(Item(id, itemAmt))
                 bot.bank.refresh()
                 SystemLogger.log("Banked fish: " + bot.bank.getAmount(ItemNames.RAW_LOBSTER))
                 return true
@@ -442,8 +436,8 @@ class ScriptAPI(private val bot: Player) {
         class BankingPulse() : Pulse(20){
             override fun pulse(): Boolean {
                 val logs = bot.inventory.getAmount(item)
-                bot.inventory.remove(Item(item,logs))
-                bot.bank.add(Item(item,logs))
+                bot.inventory.remove(Item(item, logs))
+                bot.bank.add(Item(item, logs))
                 return true
             }
         }
@@ -457,13 +451,13 @@ class ScriptAPI(private val bot: Player) {
      */
     fun eat(foodId: Int) {
         val foodItem = Item(foodId)
-        if (bot.skills.getStaticLevel(Skills.HITPOINTS) * RandomFunction.random(0.5,0.75) >= bot.skills.lifepoints && bot.inventory.containsItem(foodItem)) {
+        if (bot.skills.getStaticLevel(Skills.HITPOINTS) * RandomFunction.random(0.5, 0.75) >= bot.skills.lifepoints && bot.inventory.containsItem(foodItem)) {
             bot.lock(3)
             //this.animate(new Animation(829));
             val food = bot.inventory.getItem(foodItem)
             var consumable: Consumable? = Consumables.getConsumableById(foodId)
             if (consumable == null) {
-                consumable = Food(intArrayOf(food.id),HealingEffect(1))
+                consumable = Food(intArrayOf(food.id), HealingEffect(1))
             }
             consumable.consume(food, bot)
             bot.properties.combatPulse.delayNextAttack(3)
@@ -483,7 +477,7 @@ class ScriptAPI(private val bot: Player) {
             val food = bot.inventory.getItem(foodItem)
             var consumable: Consumable? = Consumables.getConsumableById(foodId)
             if (consumable == null) {
-                consumable = Food(intArrayOf(foodId),HealingEffect(1))
+                consumable = Food(intArrayOf(foodId), HealingEffect(1))
             }
             consumable.consume(food, bot)
             bot.properties.combatPulse.delayNextAttack(3)
@@ -513,7 +507,7 @@ class ScriptAPI(private val bot: Player) {
             })
             latch.await()
             if(bought){
-                bot.bank.add(Item(offer.itemId,offer.completedAmount))
+                bot.bank.add(Item(offer.itemId, offer.completedAmount))
                 bot.bank.refresh()
             }
         }
@@ -527,10 +521,10 @@ class ScriptAPI(private val bot: Player) {
      */
     fun withdraw(itemID: Int, amount: Int){
         var item: Item? = null
-        if(bot.bank.containsItem(Item(itemID,amount))){
-            item = Item(itemID,amount)
+        if(bot.bank.containsItem(Item(itemID, amount))){
+            item = Item(itemID, amount)
         } else {
-            item = Item(itemID,bot.bank.getAmount(itemID))
+            item = Item(itemID, bot.bank.getAmount(itemID))
         }
         if(item.amount == 0) return
         if(!bot.inventory.hasSpaceFor(item)){
@@ -547,25 +541,28 @@ class ScriptAPI(private val bot: Player) {
      */
     fun checkPriceOverrides(id: Int): Int?{
         return when(id){
-            ItemNames.DRAGON_BONES ->          1250
+            ItemNames.DRAGON_BONES -> 1250
             ItemNames.GREEN_DRAGONHIDE_1753 -> 550
-            ItemNames.BOW_STRING_1777 ->       250
-            ItemNames.MAGIC_LOGS_1513 ->       450
-            ItemNames.GRIMY_RANARR ->          1214
-            ItemNames.GRIMY_AVANTOE ->         453
-            ItemNames.GRIMY_CADANTINE ->       232
-            ItemNames.GRIMY_DWARF_WEED ->      86
-            ItemNames.GRIMY_GUAM ->            50
-            ItemNames.GRIMY_HARRALANDER ->     115
-            ItemNames.GRIMY_IRIT ->            860
-            ItemNames.GRIMY_KWUARM ->          334
-            ItemNames.GRIMY_LANTADYME ->       115
-            ItemNames.GRIMY_MARRENTILL ->      250
-            ItemNames.LOBSTER ->               268
-            ItemNames.LOOP_HALF_OF_KEY ->      5250
-            ItemNames.TOOTH_HALF_OF_KEY ->     4263
-            ItemNames.SWORDFISH ->             400
-            ItemNames.SHARK ->                 800
+            ItemNames.BOW_STRING_1777 -> 250
+            ItemNames.MAGIC_LOGS_1513 -> 450
+            ItemNames.GRIMY_RANARR -> 1214
+            ItemNames.GRIMY_AVANTOE -> 453
+            ItemNames.GRIMY_CADANTINE -> 232
+            ItemNames.GRIMY_DWARF_WEED -> 86
+            ItemNames.GRIMY_GUAM -> 50
+            ItemNames.GRIMY_HARRALANDER -> 115
+            ItemNames.GRIMY_IRIT -> 860
+            ItemNames.GRIMY_KWUARM -> 334
+            ItemNames.GRIMY_LANTADYME -> 115
+            ItemNames.GRIMY_MARRENTILL -> 250
+            ItemNames.LOBSTER -> 268
+            ItemNames.RAW_LOBSTER -> 265
+            ItemNames.LOOP_HALF_OF_KEY -> 5250
+            ItemNames.TOOTH_HALF_OF_KEY -> 4263
+            ItemNames.SWORDFISH -> 400
+            ItemNames.RAW_SWORDFISH -> 390
+            ItemNames.SHARK -> 720
+            ItemNames.RAW_SHARK -> 710
             else -> null
         }
     }
