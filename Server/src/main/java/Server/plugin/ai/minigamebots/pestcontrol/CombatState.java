@@ -67,12 +67,12 @@ public class CombatState {
 
         bot.eat(379);
         bot.getSkills().setLevel(Skills.PRAYER, 99);
-        bot.getSkills().setLevel(Skills.RANGE, 80);
+        bot.getSkills().setLevel(Skills.RANGE, 99);
         bot.getSkills().setLifepoints(80);
-        bot.getSkills().setLevel(Skills.MAGIC, 80);
-        bot.getSkills().setLevel(Skills.ATTACK, 90);
-        bot.getSkills().setLevel(Skills.STRENGTH, 90);
-        bot.getSkills().setLevel(Skills.DEFENCE, 80);
+        bot.getSkills().setLevel(Skills.MAGIC, 90);
+        bot.getSkills().setLevel(Skills.ATTACK, 95);
+        bot.getSkills().setLevel(Skills.STRENGTH, 95);
+        bot.getSkills().setLevel(Skills.DEFENCE, 90);
         bot.getSkills().setStaticLevel(Skills.PRAYER, 99);
         bot.getSkills().updateCombatLevel();
         if (!(bot.getPrayer().getActive().contains(PrayerType.PROTECT_FROM_MELEE)))
