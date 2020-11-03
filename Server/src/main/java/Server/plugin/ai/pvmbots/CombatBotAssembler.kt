@@ -24,7 +24,8 @@ class CombatBotAssembler {
     enum class Tier{
         LOW,
         MED,
-        HIGH
+        HIGH,
+        PURE
     }
 
     /**
@@ -147,19 +148,20 @@ class CombatBotAssembler {
     /**
      * Generates the stats for a bot with the given tier.
      * @param bot the bot to gear
-     * @param tier the Tier of stats and gear. LOW, MED, HIGH.
+     * @param tier the Tier of stats and gear. LOW, MED, HIGH, PURE.
      * @param skills the skills that we should generate.
      * @author Ceikry and Eli
      */
     fun generateStats(bot: AIPlayer, tier: Tier, vararg skills: Int) {
         var totalXPAdd = 0.0
         var skillAmt = 0.0
-        val variance = 0.50
+        val variance = 0.5
         var max = 0
         val initial = when (tier) {
             Tier.LOW -> RandomFunction.random(33).also { max = 33 }
             Tier.MED -> RandomFunction.random(33, 66).also { max = 66 }
             Tier.HIGH -> RandomFunction.random(66, 99).also { max = 99 }
+            Tier.PURE -> RandomFunction.random(90, 99).also {max = 99 }
         }
         for (skill in skills.indices) {
             val perc = RandomFunction.random(-variance,variance)
@@ -173,6 +175,15 @@ class CombatBotAssembler {
             totalXPAdd += bot.skills.getExperience(skills[skill])
             skillAmt++
         }
+        when (tier){
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.DEFENCE,10)
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.STRENGTH,99)
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.ATTACK,90)
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.PRAYER,43)
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.RANGE,1)
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.MAGIC,1)
+            }
+
         bot.skills.addExperience(Skills.HITPOINTS, (totalXPAdd / skillAmt) * 0.2)
         SystemLogger.log("hp: ${(totalXPAdd / skillAmt) * 0.2}")
         val new_hp = bot.skills.levelFromXP((totalXPAdd / skillAmt) * 0.2)

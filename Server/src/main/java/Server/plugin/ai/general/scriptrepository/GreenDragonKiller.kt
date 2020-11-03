@@ -42,8 +42,10 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
 
     var food = if (Random.nextBoolean()){
         ItemNames.LOBSTER
-    } else{
+    } else if(Random.nextBoolean()){
         ItemNames.SWORDFISH
+    } else {
+        ItemNames.SHARK
     }
 
     var myBorders: ZoneBorders? = null
@@ -136,7 +138,7 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
             }
 
             State.BANKING -> {
-                bot.pulseManager.run(object: Pulse(10){
+                bot.pulseManager.run(object: Pulse(25){
                     override fun pulse(): Boolean {
                         for(item in bot.inventory.toArray()){
                             item ?: continue
@@ -160,23 +162,25 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
             }
 
             State.BUYING_FOOD -> {
-                if(!offerMade) {
-                    scriptAPI.buyFromGE(food, 100)
-                    offerMade = true
-                } else {
-                    val offer = AIRepository.getOffer(bot)
-                    if(offer == null){
-                        offerMade = false
-                    } else {
-                        if (offer.completedAmount == offer.amount) {
-                            state = State.TO_DRAGONS
-                            offer.state = OfferState.REMOVED
-                            bot.bank.add(Item(offer.itemId, offer.completedAmount))
-                            bot.bank.refresh()
-                            scriptAPI.withdraw(food,10)
+                    if(!offerMade)
+                    {
+                        scriptAPI.buyFromGE(food, 100)
+                        offerMade = true
+                    } else
+                    {
+                        val offer = AIRepository.getOffer(bot)
+                        if (offer == null) {
+                            offerMade = false
+                        } else {
+                            if (offer.completedAmount == offer.amount) {
+                                state = State.TO_DRAGONS
+                                offer.state = OfferState.REMOVED
+                                bot.bank.add(Item(offer.itemId, offer.completedAmount))
+                                bot.bank.refresh()
+                                scriptAPI.withdraw(food, 10)
+                            }
                         }
                     }
-                }
             }
 
             State.TO_DRAGONS -> {

@@ -15,6 +15,7 @@ object ImmerseWorld {
     @JvmStatic
     fun init() {
         Executors.newSingleThreadExecutor().execute {
+            immerseFishingGuild()
             immerseSeersAndCatherby()
             immerseLumbridgeDraynor()
             immerseVarrock()
@@ -22,6 +23,12 @@ object ImmerseWorld {
             immerseFalador()
            // immerseSlayer()
         }
+    }
+
+    fun immerseFishingGuild(){
+        GeneralBotCreator(Location.create(2598, 3407, 0), SharkCatcher())
+        GeneralBotCreator(Location.create(2598, 3407, 0), SharkCatcher())
+        GeneralBotCreator(Location.create(2598, 3407, 0), SharkCatcher())
     }
 
     fun immerseSeersAndCatherby(){
@@ -60,6 +67,9 @@ object ImmerseWorld {
 
     fun immerseWilderness(){
         GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.HIGH,Location.create(2979, 3603, 0)))
+        GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.HIGH,Location.create(2979, 3603, 0)))
+        GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.HIGH,Location.create(2979, 3603, 0)))
+        GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.MED,Location.create(2979, 3603, 0)))
         GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.MED,Location.create(2979, 3603, 0)))
         GeneralBotCreator(GreenDragonKiller(CombatStyle.RANGE), assembler.assembleRangedBot(CombatBotAssembler.Tier.HIGH,Location.create(2979, 3603, 0)))
     }
