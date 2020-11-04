@@ -2,20 +2,18 @@ package plugin.ai.minigamebots.pestcontrol;
 
 import core.game.node.Node;
 import core.game.node.entity.Entity;
-import plugin.ai.pvmbots.CombatBot;
-import plugin.ai.pvmbots.CombatBotAssembler;
-import plugin.ai.pvmbots.PvMBots;
 import core.game.node.entity.player.link.prayer.PrayerType;
 import core.game.world.map.Location;
 import core.net.packet.in.InteractionPacket;
 import core.tools.RandomFunction;
-
+import plugin.ai.pvmbots.CombatBotAssembler;
+import plugin.ai.pvmbots.PvMBots;
 import java.util.List;
 import java.util.Random;
 
 import static plugin.activity.pestcontrol.PestControlHelper.*;
 
-public class PestControlTestBot extends PvMBots {
+public class PestControlTestBot2 extends PvMBots {
 
 	public int tick = 0;
 	public int combatMoveTimer = 0;
@@ -24,9 +22,9 @@ public class PestControlTestBot extends PvMBots {
 
 	public int randomType;
 	public boolean openedGate;
-private BoatInfo myBoat = BoatInfo.NOVICE;
+private BoatInfo myBoat = BoatInfo.INTERMEDIATE;
 
-	private CombatState combathandler = new CombatState(this);
+	private CombatState2 combathandler = new CombatState2(this);
 
 	enum State {
 		OUTSIDE_GANGPLANK,
@@ -38,19 +36,19 @@ private BoatInfo myBoat = BoatInfo.NOVICE;
 	//Novice Lander co-ords (2657, 2639, 0)
 	//Intermediate lander co-ords (2644, 2644, 0)
 	//Veteran lander co-ords (2638, 2653 0)
-	public PestControlTestBot(Location l) {
+	public PestControlTestBot2(Location l) {
 		super("pestcontrolcopies.txt", legitimizeLocation(l));
 		int num = RandomFunction.random(3);
 		if(num == 1){
-			new CombatBotAssembler().gearPCnMeleeBot(this);
+			new CombatBotAssembler().gearPCiMeleeBot(this);
 		} else {
-			new CombatBotAssembler().gearPCnRangedBot(this,new Random().nextInt() % 2 == 0);
+			new CombatBotAssembler().gearPCiRangedBot(this,new Random().nextInt() % 2 == 0);
 		}
 		randomType = new Random().nextInt(100);
 	}
 
 	private static Location legitimizeLocation(Location l) {
-		return landerContainsLoc(l) ? new Location(2657, 2639, 0) : l;
+		return landerContainsLoc(l) ? new Location(2644, 2644, 0) : l;
 	}
 
 	@Override
@@ -101,7 +99,7 @@ private BoatInfo myBoat = BoatInfo.NOVICE;
 
 	private void attackNPCs() {
 		this.getWalkingQueue().setRunning(true);
-		List<Entity> creatures = FindTargets(this, 30);
+		List<Entity> creatures = FindTargets(this, 20);
 		if (creatures == null || creatures.isEmpty())
 		{
 			if (randomType > 10)
@@ -133,7 +131,7 @@ private BoatInfo myBoat = BoatInfo.NOVICE;
 	private void idleInBoat() {
 		justStartedGame = true;
 		openedGate = false;
-		if (randomType < 35) //He's the type of guy to walk around the boat
+		if (randomType < 20)
 		{
 			if (new Random().nextInt(insideBoatWalks) <= 1)
 			{
@@ -167,7 +165,7 @@ private BoatInfo myBoat = BoatInfo.NOVICE;
 		}
 		if (randomType > 20 && new Random().nextInt(6) == 0) //Idle outside ladder
 		{
-			if (new Random().nextInt(16) == 0)
+			if (new Random().nextInt(10) == 0)
 			{
 				this.walkToPosSmart(myBoat.outsideBoatBorder.getRandomLoc());
 				movetimer += RandomFunction.normalPlusWeightRandDist(400, 200);
@@ -184,7 +182,7 @@ private BoatInfo myBoat = BoatInfo.NOVICE;
 		Node test = getClosestNodeWithEntry(50, myBoat.ladderId);
 		if (test == null)
 		{
-			this.teleport(PestControlIslandLocation);
+			this.teleport(PestControlIslandLocation2);
 		} else {
 			InteractionPacket.handleObjectInteraction(this, test);
 		}

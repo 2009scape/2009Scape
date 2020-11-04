@@ -1,27 +1,27 @@
 package plugin.ai.minigamebots.pestcontrol;
 
-import plugin.skill.Skills;
 import core.game.node.Node;
 import core.game.node.entity.player.link.prayer.PrayerType;
 import core.game.world.map.Direction;
+import plugin.skill.Skills;
 
 import java.util.Random;
 
 import static plugin.activity.pestcontrol.PestControlHelper.*;
 
-public class CombatState {
-    private PestControlTestBot bot;
+public class CombatState2 {
+    private PestControlTestBot2 bot;
     private Random Random = new Random(); //Ya idc if that's bad java, it's killing me right now lmfao
 
-    public CombatState(PestControlTestBot pestControlTestBot) {
-        this.bot = pestControlTestBot;
+    public CombatState2(PestControlTestBot2 pestControlTestBot2) {
+        this.bot = pestControlTestBot2;
     }
-
+    //public CombatState2(PestControlTestBot2 pestControlTestBot2) =
 
     public void goToPortals() {
         bot.setCustomState("I'm at portals.");
         Node gate = bot.getClosestNodeWithEntry(75, GATE_ENTRIES);
-        Node portal = bot.getClosestNodeWithEntry(75, PORTAL_ENTRIES);
+        Node portal = bot.getClosestNodeWithEntry(80, PORTAL_ENTRIES);
         if (bot.justStartedGame && new Random().nextInt(2) == 0)
         {
             return;
@@ -30,7 +30,7 @@ public class CombatState {
         {
             bot.setCustomState("Walking randomly");
             bot.justStartedGame = false;
-            bot.randomWalkAroundPoint(getMyPestControlSession(bot).getSquire().getLocation(), 15);
+            bot.randomWalkAroundPoint(getMyPestControlSession(bot).getSquire().getLocation(), 10);
             bot.movetimer = new Random().nextInt(7) + 6;
             return;
         }
@@ -39,7 +39,7 @@ public class CombatState {
             bot.setCustomState("Interacting gate ID " + gate.getId());
             bot.interact(gate);
             bot.openedGate = true;
-            if (Random.nextInt(4) == 1 && bot.randomType < 40)
+            if (Random.nextInt(4) == 1 && bot.randomType < 30)
             {
                 bot.movetimer = Random.nextInt(2) + 1;
             }
@@ -60,7 +60,7 @@ public class CombatState {
         if (bot.tick == 0)
         {
             if (!bot.inCombat())
-                bot.AttackNpcsInRadius(20);
+                bot.AttackNpcsInRadius(30);
             bot.tick = 10;
         }
         else

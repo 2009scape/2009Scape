@@ -96,22 +96,37 @@ public final class PCObjectHandler extends OptionHandler {
 				player.getPacketDispatch().sendMessage("You can't take a follower on the lander.");
 				return true;
 			}
-			switch (object.getId()) {
-			case 14315: // Novice
-                if (!GameWorld.getPCBotsSpawned() && !player.isArtificial()) { //First person to join gets bots to play with
+			switch (object.getId()){
+				case 14315: // Novice
+					int pestBotsAmount = 0;
+					if (!GameWorld.getPCBotsSpawned() && !player.isArtificial()) { //First person to join gets bots to play with
                 	GameWorld.setPCBotsSpawned(true);
-					for (int pestBotsAmount = 0; pestBotsAmount < 23; pestBotsAmount++) {
+					for (pestBotsAmount = 0; pestBotsAmount < 45; pestBotsAmount++) {
 						PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
+						PvMBotsBuilder.createPestControlTestBot2(new Location(2644, 2644));
 					}
 				}
                 if (!playersJoined.contains(player.getUsername()) && !player.isArtificial()) { //You also get +1 bot for every friend
 					playersJoined.add(player.getUsername());
-					PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
+					PvMBotsBuilder.createPestControlTestBot2(new Location(2644, 2644));
 				}
 
 				startActivity(player, "pest control novice", Location.create(2661, 2639, 0));
 				return true;
 			case 25631: // Intermediate
+				int pestBots2Amount = 0;
+				if (!GameWorld.getPCBotsSpawned() && !player.isArtificial()) { //First person to join gets bots to play with
+					GameWorld.setPCBotsSpawned(true);
+					for (pestBots2Amount = 0; pestBots2Amount < 45 ; pestBots2Amount++ ) {
+						PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
+						PvMBotsBuilder.createPestControlTestBot2(new Location(2644, 2644));
+					}
+				}
+				if (!playersJoined.contains(player.getUsername()) && !player.isArtificial()) { //You also get +1 bot for every friend
+					playersJoined.add(player.getUsername());
+					PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
+				}
+
 				startActivity(player, "pest control intermediate", Location.create(2640, 2644, 0));
 				return true;
 			case 25632: // Veteran
