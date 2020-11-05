@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 /**
  * Handles pest control objects.
- * @author Emperor
+ * @author Sir Kermit & Emperor
  */
 public final class PCObjectHandler extends OptionHandler {
 
@@ -90,6 +90,8 @@ public final class PCObjectHandler extends OptionHandler {
 
 	@Override
 	public boolean handle(Player player, Node node, String option) {
+		int pestBotsAmount = 0;
+		int pestBots2Amount = 0;
 		GameObject object = (GameObject) node;
 		if (option.equals("cross")) {
 			if (player.getFamiliarManager().hasFamiliar() && player.getRights() != Rights.ADMINISTRATOR) {
@@ -98,40 +100,36 @@ public final class PCObjectHandler extends OptionHandler {
 			}
 			switch (object.getId()){
 				case 14315: // Novice
-					int pestBotsAmount = 0;
 					if (!GameWorld.getPCBotsSpawned() && !player.isArtificial()) { //First person to join gets bots to play with
-                	GameWorld.setPCBotsSpawned(true);
-					for (pestBotsAmount = 0; pestBotsAmount < 45; pestBotsAmount++) {
-						PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
-						PvMBotsBuilder.createPestControlTestBot2(new Location(2644, 2644));
+						GameWorld.setPCBotsSpawned(true);
+						for (pestBotsAmount = 0; pestBotsAmount <= 25; pestBotsAmount++) {
+							PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
+							PvMBotsBuilder.createPestControlTestBot2(new Location(2644, 2644));
+						}
 					}
-				}
-                if (!playersJoined.contains(player.getUsername()) && !player.isArtificial()) { //You also get +1 bot for every friend
-					playersJoined.add(player.getUsername());
-					PvMBotsBuilder.createPestControlTestBot2(new Location(2644, 2644));
-				}
-
-				startActivity(player, "pest control novice", Location.create(2661, 2639, 0));
-				return true;
-			case 25631: // Intermediate
-				int pestBots2Amount = 0;
-				if (!GameWorld.getPCBotsSpawned() && !player.isArtificial()) { //First person to join gets bots to play with
-					GameWorld.setPCBotsSpawned(true);
-					for (pestBots2Amount = 0; pestBots2Amount < 45 ; pestBots2Amount++ ) {
-						PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
-						PvMBotsBuilder.createPestControlTestBot2(new Location(2644, 2644));
+					if (!playersJoined.contains(player.getUsername()) && !player.isArtificial()) { //You also get +1 bot for every friend
+						playersJoined.add(player.getUsername());
 					}
-				}
-				if (!playersJoined.contains(player.getUsername()) && !player.isArtificial()) { //You also get +1 bot for every friend
-					playersJoined.add(player.getUsername());
-					PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
-				}
 
-				startActivity(player, "pest control intermediate", Location.create(2640, 2644, 0));
-				return true;
-			case 25632: // Veteran
-				startActivity(player, "pest control veteran", Location.create(2634, 2653, 0));
-				return true;
+					startActivity(player, "pest control novice", Location.create(2661, 2639, 0));
+					return true;
+				case 25631: // Intermediate
+					if (!GameWorld.getPCBotsSpawned() && !player.isArtificial()) { //First person to join gets bots to play with
+						GameWorld.setPCBotsSpawned(true);
+						for (pestBots2Amount = 0; pestBots2Amount <= 25; pestBots2Amount++ ) {
+							PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
+							PvMBotsBuilder.createPestControlTestBot2(new Location(2644, 2644));
+						}
+					}
+					if (!playersJoined.contains(player.getUsername()) && !player.isArtificial()) { //You also get +1 bot for every friend
+						playersJoined.add(player.getUsername());
+					}
+
+					startActivity(player, "pest control intermediate", Location.create(2640, 2644, 0));
+					return true;
+				case 25632: // Veteran
+					startActivity(player, "pest control veteran", Location.create(2634, 2653, 0));
+					return true;
 			}
 		}
 		PestControlSession session = player.getExtension(PestControlSession.class);
@@ -257,14 +255,14 @@ public final class PCObjectHandler extends OptionHandler {
 			id -= 4;
 		}
 		switch (id) {
-		case 14233:
-			return (object.getRotation() + 1) % 4;
-		case 14234:
-			return object.getRotation() % 4;
-		case 14235:
-			return (object.getRotation() + 3) % 4;
-		case 14236:
-			return (object.getRotation() + 2) % 4;
+			case 14233:
+				return (object.getRotation() + 1) % 4;
+			case 14234:
+				return object.getRotation() % 4;
+			case 14235:
+				return (object.getRotation() + 3) % 4;
+			case 14236:
+				return (object.getRotation() + 2) % 4;
 		}
 		System.err.println("Object id: " + id);
 		return 0;

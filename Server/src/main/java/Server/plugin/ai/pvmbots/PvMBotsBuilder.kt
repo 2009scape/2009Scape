@@ -26,16 +26,6 @@ class PvMBotsBuilder {
 
     companion object {
         var botsSpawned = 0
-        @JvmStatic
-		fun createPestControlTestBot(l: Location?): PestControlTestBot {
-            botsSpawned++
-            return PestControlTestBot(l)
-        }
-        @JvmStatic
-        fun createPestControlTestBot2(l: Location?): PestControlTestBot2 {
-            botsSpawned++
-            return PestControlTestBot2(l)
-        }
 
         fun create(l: Location?): PvMBots {
             botsSpawned++
@@ -508,6 +498,17 @@ class PvMBotsBuilder {
 		spawnDragonKiller(new Location(2704, 9450));
 		spawnDragonKiller(new Location(2704, 9450));*/println("[" + GameWorld.settings?.name + "]: PvMBotsBuilder: Spawned " + botsSpawned + " bots.")
             }
+        }
+
+        @JvmStatic
+        fun createPestControlTestBot2(l: Location?): PestControlTestBot2 {
+            botsSpawned++
+            return PestControlTestBot2(l!!)
+        }
+        @JvmStatic
+        fun createPestControlTestBot(l: Location?): PestControlTestBot {
+            botsSpawned++
+            return PestControlTestBot(l!!)
         }
 
     }

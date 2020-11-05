@@ -1,193 +1,158 @@
-package plugin.ai.minigamebots.pestcontrol;
+package plugin.ai.minigamebots.pestcontrol
 
-import core.game.node.Node;
-import core.game.node.entity.Entity;
-import plugin.ai.pvmbots.CombatBot;
-import plugin.ai.pvmbots.CombatBotAssembler;
-import plugin.ai.pvmbots.PvMBots;
-import core.game.node.entity.player.link.prayer.PrayerType;
-import core.game.world.map.Location;
-import core.net.packet.in.InteractionPacket;
-import core.tools.RandomFunction;
+import core.game.node.entity.player.link.prayer.PrayerType
+import core.game.world.map.Location
+import core.net.packet.`in`.InteractionPacket
+import core.tools.RandomFunction
+import plugin.activity.pestcontrol.PestControlHelper
+import plugin.activity.pestcontrol.PestControlHelper.BoatInfo
+import plugin.ai.pvmbots.CombatBotAssembler
+import plugin.ai.pvmbots.PvMBots
+import java.util.*
+//"pestcontrolcopies.txt",
+class PestControlTestBot(l: Location?) : PvMBots(legitimizeLocation(l!!)) {
+    var tick = 0
+    var combatMoveTimer = 0
+    var justStartedGame = true
+    var movetimer = 0
+    var randomType: Int
+    var openedGate = false
+    private val myBoat = BoatInfo.NOVICE
+    private val combathandler = CombatState(this)
 
-import java.util.List;
-import java.util.Random;
+    internal enum class State {
+        OUTSIDE_GANGPLANK,
+        WAITING_IN_BOAT,
+        PLAY_GAME,
+        GET_TO_PC
+    }
 
-import static plugin.activity.pestcontrol.PestControlHelper.*;
+    //Novice Lander co-ords (2657, 2639, 0)
+    //Intermediate lander co-ords (2644, 2644, 0)
+    //Veteran lander co-ords (2638, 2653 0)
+    init {
+        val num = RandomFunction.random(3)
+        if (num == 1) {
+            CombatBotAssembler().gearPCnMeleeBot(this)
+        } else {
+            CombatBotAssembler().gearPCnRangedBot(this, Random().nextInt() % 2 == 0)
+        }
+        randomType = Random().nextInt(100)
+    }
 
-public class PestControlTestBot extends PvMBots {
+    override fun tick() {
+        super.tick()
+        movetimer--
+        if (movetimer <= 0) {
+            movetimer = 0
+            val state = state
+            customState = state.toString() + movetimer
+            when (state) {
+                State.GET_TO_PC -> toPC
+                State.OUTSIDE_GANGPLANK -> enterBoat()
+                State.WAITING_IN_BOAT -> idleInBoat()
+                State.PLAY_GAME -> attackNPCs()
+            }
+        }
+    }
 
-	public int tick = 0;
-	public int combatMoveTimer = 0;
-	public boolean justStartedGame = true;
-	public int movetimer = 0;
+    private val state: State
+        private get() {
+            if (PestControlHelper.landerContainsLoc(getLocation())) {
+                return State.WAITING_IN_BOAT
+            }
+            if (PestControlHelper.isInPestControlInstance(this)) {
+                return State.PLAY_GAME
+            }
+            return if (PestControlHelper.outsideGangplankContainsLoc(getLocation())) {
+                State.OUTSIDE_GANGPLANK
+            } else State.GET_TO_PC
+        }
 
-	public int randomType;
-	public boolean openedGate;
-private BoatInfo myBoat = BoatInfo.NOVICE;
+    private fun attackNPCs() {
+        walkingQueue.isRunning = true
+        val creatures = FindTargets(this, 30)
+        if (creatures == null || creatures.isEmpty()) {
+            if (randomType > 10) {
+                customState = "Going to portals"
+                combathandler.goToPortals()
+            } else {
+                try {
+                    randomWalkAroundPoint(PestControlHelper.getMyPestControlSession(this).squire.location, 3)
+                } catch (e: NullPointerException) {
+                    //Do nothing, game just finished
+                }
+                movetimer = Random().nextInt(15) + 6
+            }
+        } else {
+            if (randomType < 15 && Random().nextInt(5) == 0) {
+                randomWalkAroundPoint(PestControlHelper.getMyPestControlSession(this).squire.location, 3)
+                movetimer = Random().nextInt(15) + 6
+            } else {
+                customState = "Fighting NPCs"
+                combathandler.fightNPCs()
+            }
+        }
+    }
 
-	private CombatState combathandler = new CombatState(this);
+    private var insideBoatWalks = 3
+    private fun idleInBoat() {
+        justStartedGame = true
+        openedGate = false
+        if (randomType < 35) //He's the type of guy to walk around the boat
+        {
+            if (Random().nextInt(insideBoatWalks) <= 1) {
+                (insideBoatWalks * 1.5).toInt()
+                if (Random().nextInt(4) == 1) {
+                    walkingQueue.isRunning = !walkingQueue.isRunning
+                }
+                if (Random().nextInt(7) == 1) {
+                    this.walkToPosSmart(Location(2660, 2638))
+                } else {
+                    this.walkToPosSmart(myBoat.boatBorder.randomLoc)
+                }
+            }
+            if (Random().nextInt(3) == 1) {
+                insideBoatWalks += 2
+            }
+        }
+    }
 
-	enum State {
-		OUTSIDE_GANGPLANK,
-		WAITING_IN_BOAT,
-		PLAY_GAME,
-		GET_TO_PC
-	}
+    private fun enterBoat() {
+        if (prayer.active.contains(PrayerType.PROTECT_FROM_MELEE)) {
+            prayer.toggle(PrayerType.PROTECT_FROM_MELEE)
+        }
+        if (Random().nextInt(3) <= 1) //Don't join instantly
+        {
+            return
+        }
+        if (randomType > 20 && Random().nextInt(6) == 0) //Idle outside ladder
+        {
+            if (Random().nextInt(16) == 0) {
+                this.walkToPosSmart(myBoat.outsideBoatBorder.randomLoc)
+                movetimer += RandomFunction.normalPlusWeightRandDist(400, 200)
+            }
+            movetimer = RandomFunction.normalPlusWeightRandDist(100, 50)
+            return
+        }
+        val test = getClosestNodeWithEntry(50, myBoat.ladderId)
+        InteractionPacket.handleObjectInteraction(this, 0, test.location, test.id)
+        insideBoatWalks = 3
+    }
 
-	//Novice Lander co-ords (2657, 2639, 0)
-	//Intermediate lander co-ords (2644, 2644, 0)
-	//Veteran lander co-ords (2638, 2653 0)
-	public PestControlTestBot(Location l) {
-		super("pestcontrolcopies.txt", legitimizeLocation(l));
-		int num = RandomFunction.random(3);
-		if(num == 1){
-			new CombatBotAssembler().gearPCnMeleeBot(this);
-		} else {
-			new CombatBotAssembler().gearPCnRangedBot(this,new Random().nextInt() % 2 == 0);
-		}
-		randomType = new Random().nextInt(100);
-	}
+    private val toPC: Unit
+        private get() {
+            val test = getClosestNodeWithEntry(50, myBoat.ladderId)
+            if (test == null) {
+                this.teleport(PestControlHelper.PestControlIslandLocation)
+            } else {
+                InteractionPacket.handleObjectInteraction(this, test)
+            }
+        }
 
-	private static Location legitimizeLocation(Location l) {
-		return landerContainsLoc(l) ? new Location(2657, 2639, 0) : l;
-	}
-
-	@Override
-	public void tick()
-	{
-		super.tick();
-		movetimer --;
-
-		if (movetimer <= 0)
-		{
-			movetimer = 0;
-			State state = getState();
-			this.setCustomState(String.valueOf(state) + movetimer);
-
-			switch (state)
-			{
-				case GET_TO_PC:
-					getToPC();
-					break;
-				case OUTSIDE_GANGPLANK:
-					enterBoat();
-					break;
-				case WAITING_IN_BOAT:
-					idleInBoat();
-					break;
-				case PLAY_GAME:
-					attackNPCs();
-					break;
-			}
-		}
-	}
-
-	private State getState() {
-		if (landerContainsLoc(this.getLocation()))
-		{
-			return State.WAITING_IN_BOAT;
-		}
-		if (isInPestControlInstance(this))
-		{
-			return State.PLAY_GAME;
-		}
-		if (outsideGangplankContainsLoc(this.getLocation()))
-		{
-			return State.OUTSIDE_GANGPLANK;
-		}
-		return State.GET_TO_PC;
-	}
-
-	private void attackNPCs() {
-		this.getWalkingQueue().setRunning(true);
-		List<Entity> creatures = FindTargets(this, 30);
-		if (creatures == null || creatures.isEmpty())
-		{
-			if (randomType > 10)
-			{
-				this.setCustomState("Going to portals");
-				combathandler.goToPortals();
-			} else {
-				try {
-					randomWalkAroundPoint(getMyPestControlSession(this).getSquire().getLocation(), 3);
-				} catch (NullPointerException e) {
-					//Do nothing, game just finished
-				}
-				movetimer = new Random().nextInt(15) + 6;
-			}
-		} else {
-			if (randomType < 15 && new Random().nextInt(5) == 0)
-			{
-				randomWalkAroundPoint(getMyPestControlSession(this).getSquire().getLocation(), 3);
-				movetimer = new Random().nextInt(15) + 6;
-			} else {
-				this.setCustomState("Fighting NPCs");
-				combathandler.fightNPCs();
-			}
-		}
-
-	}
-
-	private int insideBoatWalks = 3;
-	private void idleInBoat() {
-		justStartedGame = true;
-		openedGate = false;
-		if (randomType < 35) //He's the type of guy to walk around the boat
-		{
-			if (new Random().nextInt(insideBoatWalks) <= 1)
-			{
-				insideBoatWalks *= 1.5;
-				if (new Random().nextInt(4) == 1)
-				{
-					this.getWalkingQueue().setRunning(!this.getWalkingQueue().isRunning());
-				}
-				if (new Random().nextInt(7) == 1)
-				{
-					this.walkToPosSmart(new Location(2660, 2638));
-				} else {
-					this.walkToPosSmart(myBoat.boatBorder.getRandomLoc());
-				}
-			}
-			if (new Random().nextInt(3) == 1)
-			{
-				insideBoatWalks += 2;
-			}
-		}
-	}
-
-	private void enterBoat() {
-		if (getPrayer().getActive().contains(PrayerType.PROTECT_FROM_MELEE)) {
-			getPrayer().toggle(PrayerType.PROTECT_FROM_MELEE);
-		}
-
-		if (new Random().nextInt(3) <= 1) //Don't join instantly
-		{
-			return;
-		}
-		if (randomType > 20 && new Random().nextInt(6) == 0) //Idle outside ladder
-		{
-			if (new Random().nextInt(16) == 0)
-			{
-				this.walkToPosSmart(myBoat.outsideBoatBorder.getRandomLoc());
-				movetimer += RandomFunction.normalPlusWeightRandDist(400, 200);
-			}
-			movetimer = RandomFunction.normalPlusWeightRandDist(100, 50);
-			return;
-		}
-		Node test = getClosestNodeWithEntry(50, myBoat.ladderId);
-		InteractionPacket.handleObjectInteraction(this, 0, test.getLocation(), test.getId());
-		insideBoatWalks = 3;
-	}
-
-	private void getToPC() {
-		Node test = getClosestNodeWithEntry(50, myBoat.ladderId);
-		if (test == null)
-		{
-			this.teleport(PestControlIslandLocation);
-		} else {
-			InteractionPacket.handleObjectInteraction(this, test);
-		}
-	}
-
+    companion object {
+        private fun legitimizeLocation(l: Location): Location {
+            return if (PestControlHelper.landerContainsLoc(l)) Location(2657, 2643, 0) else l
+        }
+    }
 }

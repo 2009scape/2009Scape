@@ -141,14 +141,31 @@ class CombatBotAssembler {
     /**
      * Gears a Novice Pest control bot.
      * @author Sir Kermit
+     * @author Ceikry
      */
     fun gearPCnRangedBot(bot: AIPlayer, crossbow: Boolean? = false, vararg skills: Int) {
+        var totalXPAdd = 0.0
+        var skillAmt = 0.0
+        val variance = 0.5
         var max = 0
-        val level = RandomFunction.random(30, 60).also {max = 70 }
+        val initial = RandomFunction.random(40, 70).also {max = 71 }
         for (skill in skills.indices) {
+            val perc = RandomFunction.random(-variance,variance)
+            var level = initial +  (perc * 33).toInt()
+            if(level < 1)
+                level = 1
+            if(level > max)
+                level = max
             bot.skills.setLevel(skills[skill], level)
             bot.skills.setStaticLevel(skills[skill], level)
+            totalXPAdd += bot.skills.getExperience(skills[skill])
+            skillAmt++
         }
+        val perc = RandomFunction.random(-variance,variance)
+        var level = initial +  (perc * 33).toInt()
+        bot.skills.updateCombatLevel()
+        bot.fullRestore()
+
         bot.skills.setStaticLevel(Skills.RANGE, 50)
         bot.skills.setStaticLevel(Skills.DEFENCE, 50)
         bot.skills.setStaticLevel(Skills.ATTACK, 20)
@@ -177,12 +194,28 @@ class CombatBotAssembler {
     }
 
     fun gearPCnMeleeBot(bot: AIPlayer, vararg skills: Int){
+        var totalXPAdd = 0.0
+        var skillAmt = 0.0
+        val variance = 0.5
         var max = 0
-        val level = RandomFunction.random(40, 70).also {max = 71 }
+        val initial = RandomFunction.random(40, 70).also {max = 71 }
         for (skill in skills.indices) {
+            val perc = RandomFunction.random(-variance,variance)
+            var level = initial +  (perc * 33).toInt()
+            if(level < 1)
+                level = 1
+            if(level > max)
+                level = max
             bot.skills.setLevel(skills[skill], level)
             bot.skills.setStaticLevel(skills[skill], level)
+            totalXPAdd += bot.skills.getExperience(skills[skill])
+            skillAmt++
         }
+        val perc = RandomFunction.random(-variance,variance)
+        var level = initial +  (perc * 33).toInt()
+        bot.skills.updateCombatLevel()
+        bot.fullRestore()
+
         bot.skills.setStaticLevel(Skills.STRENGTH, level)
         bot.skills.setStaticLevel(Skills.DEFENCE, level)
         bot.skills.setStaticLevel(Skills.ATTACK, level)
@@ -219,14 +252,31 @@ class CombatBotAssembler {
     /**
      * Gears a Intermediate Pest control bot.
      * @author Sir Kermit
+     * @author Ceikry
      */
     fun gearPCiRangedBot(bot: AIPlayer, crossbow: Boolean? = false, vararg skills: Int) {
+        var totalXPAdd = 0.0
+        var skillAmt = 0.0
+        val variance = 0.5
         var max = 0
-        val level = RandomFunction.random(50, 80).also {max = 95 }
+        val initial = RandomFunction.random(50, 80).also {max = 95 }
         for (skill in skills.indices) {
+            val perc = RandomFunction.random(-variance,variance)
+            var level = initial +  (perc * 33).toInt()
+            if(level < 1)
+                level = 1
+            if(level > max)
+                level = max
             bot.skills.setLevel(skills[skill], level)
             bot.skills.setStaticLevel(skills[skill], level)
+            totalXPAdd += bot.skills.getExperience(skills[skill])
+            skillAmt++
         }
+        val perc = RandomFunction.random(-variance,variance)
+        var level = initial +  (perc * 33).toInt()
+        bot.skills.updateCombatLevel()
+        bot.fullRestore()
+
         bot.skills.setStaticLevel(Skills.RANGE, 90)
         bot.skills.setStaticLevel(Skills.DEFENCE, 80)
         bot.skills.setStaticLevel(Skills.ATTACK, 70)
@@ -255,12 +305,28 @@ class CombatBotAssembler {
     }
 
     fun gearPCiMeleeBot(bot: AIPlayer, vararg skills: Int){
+        var totalXPAdd = 0.0
+        var skillAmt = 0.0
+        val variance = 0.5
         var max = 0
-        val level = RandomFunction.random(50, 80).also {max = 95 }
+        val initial = RandomFunction.random(50, 80).also {max = 95 }
         for (skill in skills.indices) {
+            val perc = RandomFunction.random(-variance,variance)
+            var level = initial +  (perc * 33).toInt()
+            if(level < 1)
+                level = 1
+            if(level > max)
+                level = max
             bot.skills.setLevel(skills[skill], level)
             bot.skills.setStaticLevel(skills[skill], level)
+            totalXPAdd += bot.skills.getExperience(skills[skill])
+            skillAmt++
         }
+        val perc = RandomFunction.random(-variance,variance)
+        var level = initial +  (perc * 33).toInt()
+        bot.skills.updateCombatLevel()
+        bot.fullRestore()
+
         bot.skills.setStaticLevel(Skills.STRENGTH, level)
         bot.skills.setStaticLevel(Skills.DEFENCE, level)
         bot.skills.setStaticLevel(Skills.ATTACK, level)
@@ -417,9 +483,9 @@ class CombatBotAssembler {
     val MELEE_SHIELD = arrayOf(1171,1173,1175,1177,1179,1181,1183,1185,1187,1189,1191,1193,1195,1197,1199,1201,6524)
     val MELEE_WEP = arrayOf(1277,1279,1281,1283,1285,1287,1289,1291,1293,1295,1297,1299,1301,1303,1305,1321,1323,1325,1327,1329,1331,1333,4587,4151,1363,1365,1367,1369,1371,1373,1375,1377,4755)
     val NECK = arrayOf(1704,6585)
-    val CAPE = arrayOf(1019,1021,1023)
-    val GLOVES = arrayOf(1059)
-    val BOOTS = arrayOf(1061,4131)
+    val CAPE = arrayOf(1019,1021,1023,6568,4315,4317,4319,4321,4323,4325,4327,4329,4331,4333,4335,4337,4339,4341,4343,4345,4347,4349,4351)
+    val GLOVES = arrayOf(1059,7456,7457,7458,7459,7460,7461,7462)
+    val BOOTS = arrayOf(1061,4131,11732,11728,4131)
     val RING_BERS = arrayOf(6737)
     val RING_ARCH = arrayOf(6733)
 
