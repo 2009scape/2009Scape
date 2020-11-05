@@ -9,7 +9,6 @@ import plugin.ai.AIPlayer
 import plugin.skill.Skills
 import java.util.*
 import kotlin.collections.ArrayList
-import kotlin.collections.HashMap
 
 /**
  * Assembles combat-style bots, intended to replace PVMBotBuilder.
@@ -24,7 +23,8 @@ class CombatBotAssembler {
     enum class Tier{
         LOW,
         MED,
-        HIGH
+        HIGH,
+        PURE
     }
 
     /**
@@ -88,6 +88,10 @@ class CombatBotAssembler {
         equipHighest(bot, MELEE_TOP, 40)
         equipHighest(bot, MELEE_LEG, 40)
         equipHighest(bot, MELEE_WEP, 60)
+        equipHighest(bot, CAPE)
+        equipHighest(bot, NGLOVES)
+        equipHighest(bot, NBOOTS)
+        bot.equipment.refresh()
         return bot
     }
 
@@ -105,7 +109,11 @@ class CombatBotAssembler {
         equipHighest(bot,RANGE_TOPS,50)
         equipHighest(bot,RANGE_LEGS,50)
         equipHighest(bot,CROSSBOWS,50)
+        equipHighest(bot, CAPE)
+        equipHighest(bot, NGLOVES)
+        equipHighest(bot, NBOOTS)
         bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,100000),13,false,false)
+        bot.equipment.refresh()
         return bot
     }
 
@@ -119,6 +127,9 @@ class CombatBotAssembler {
         equipHighest(bot, RANGE_HELMS)
         equipHighest(bot, RANGE_TOPS)
         equipHighest(bot, RANGE_LEGS)
+        equipHighest(bot, CAPE)
+        equipHighest(bot, NGLOVES)
+        equipHighest(bot, NBOOTS)
         if(crossbow == true) { equipHighest(bot,CROSSBOWS); equipHighest(bot,MELEE_SHIELD); bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,Integer.MAX_VALUE),13,false,false) }
         else {equipHighest(bot, BOWS); bot.equipment.add(Item(ItemNames.BRONZE_ARROW,Integer.MAX_VALUE),13,false,false) }
         bot.equipment.refresh()
@@ -134,32 +145,194 @@ class CombatBotAssembler {
         equipHighest(bot, MELEE_LEG)
         equipHighest(bot, MELEE_SHIELD)
         equipHighest(bot, MELEE_TOP)
+        equipHighest(bot, CAPE)
+        equipHighest(bot, NGLOVES)
+        equipHighest(bot, NBOOTS)
         equipHighest(bot, MELEE_WEP)
         bot.equipment.refresh()
     }
 
-    fun gearRichMeleeBot(bot: AIPlayer){
-        equipHighest(bot, MELEE_HELMS)
+    /**
+     * Gears a Novice Pest control bot.
+     * @author Sir Kermit & Ceikry
+     */
+    fun gearPCnRangedBot(bot: AIPlayer, crossbow: Boolean? = false, vararg skills: Int) {
+        var max = 0
+        val level = RandomFunction.random(30, 70).also {max = 75 }
+        bot.fullRestore()
+
+        bot.skills.setStaticLevel(Skills.RANGE, 50)
+        bot.skills.setStaticLevel(Skills.DEFENCE, 50)
+        bot.skills.setStaticLevel(Skills.ATTACK, level)
+        bot.skills.setStaticLevel(Skills.STRENGTH, level)
+        bot.skills.setStaticLevel(Skills.HITPOINTS, level)
+        bot.skills.setLevel(Skills.RANGE, 50)
+        bot.skills.setLevel(Skills.DEFENCE, 50)
+        bot.skills.setLevel(Skills.ATTACK, level)
+        bot.skills.setLevel(Skills.STRENGTH, level)
+        bot.skills.setLevel(Skills.HITPOINTS, level)
+        bot.skills.updateCombatLevel()
+        equipHighest(bot, RANGE_HELMS)
+        equipHighest(bot, RANGE_TOPS)
+        equipHighest(bot, RANGE_BACK)
+        equipHighest(bot, RANGE_LEGS)
         bot.equipment.refresh()
+        equipHighest(bot, NECK)
+        equipHighest(bot, GLOVES)
+        equipHighest(bot, BOOTS)
+        equipHighest(bot, RING_ARCH)
+        bot.equipment.refresh()
+        if(crossbow == true) { equipHighest(bot,CROSSBOWS); equipHighest(bot,MELEE_SHIELD); bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,Integer.MAX_VALUE),13,false,false) }
+        else {equipHighest(bot, BOWS); bot.equipment.add(Item(ItemNames.BRONZE_ARROW,Integer.MAX_VALUE),13,false,false) }
+        bot.skills.setStaticLevel(Skills.RANGE, 98)
+        bot.skills.setLevel(Skills.RANGE, 98)
+        bot.equipment.refresh()
+    }
+
+    fun gearPCnMeleeBot(bot: AIPlayer, vararg skills: Int){
+        var max = 0
+        val initial = RandomFunction.random(30, 70).also {max = 75 }
+        var level = initial
+        bot.fullRestore()
+
+        bot.skills.setStaticLevel(Skills.STRENGTH, level)
+        bot.skills.setStaticLevel(Skills.DEFENCE, level)
+        bot.skills.setStaticLevel(Skills.ATTACK, level)
+        bot.skills.setStaticLevel(Skills.HITPOINTS, level)
+        bot.skills.setStaticLevel(Skills.PRAYER, 70)
+        bot.skills.setStaticLevel(Skills.RANGE, 10)
+        bot.skills.setStaticLevel(Skills.MAGIC, 10)
+        bot.skills.setLevel(Skills.STRENGTH, level)
+        bot.skills.setLevel(Skills.DEFENCE, level)
+        bot.skills.setLevel(Skills.ATTACK, level)
+        bot.skills.setLevel(Skills.HITPOINTS, level)
+        bot.skills.setLevel(Skills.PRAYER, 70)
+        bot.skills.setLevel(Skills.RANGE, 10)
+        bot.skills.setLevel(Skills.MAGIC, 10)
+        bot.skills.updateCombatLevel()
+        equipHighest(bot, PCMELEE_HELMS)
+        equipHighest(bot, PCMELEE_LEG)
+        equipHighest(bot, PCMELEE_SHIELD)
+        equipHighest(bot, PCMELEE_TOP)
+        equipHighest(bot, PCMELEE_WEP)
+        bot.equipment.refresh()
+        equipHighest(bot, CAPE)
+        equipHighest(bot, NECK)
+        equipHighest(bot, GLOVES)
+        equipHighest(bot, BOOTS)
+        equipHighest(bot, RING_BERS)
+        bot.equipment.refresh()
+        bot.skills.setStaticLevel(Skills.DEFENCE, 70)
+        bot.skills.setStaticLevel(Skills.ATTACK, 80)
+        bot.skills.setStaticLevel(Skills.STRENGTH, 90)
+        bot.skills.setStaticLevel(Skills.HITPOINTS, 80)
+        bot.skills.setLevel(Skills.DEFENCE, 70)
+        bot.skills.setLevel(Skills.ATTACK, 80)
+        bot.skills.setLevel(Skills.STRENGTH, 90)
+        bot.skills.setLevel(Skills.HITPOINTS, 80)
+        bot.fullRestore()
+    }
+    /**
+     * Gears a Intermediate Pest control bot.
+     * @author Sir Kermit & Ceikry
+     */
+    fun gearPCiRangedBot(bot: AIPlayer, crossbow: Boolean? = false, vararg skills: Int) {
+        var max = 0
+        val level = RandomFunction.random(50, 99).also {max=99 }
+        bot.fullRestore()
+
+        bot.skills.setStaticLevel(Skills.RANGE, 90)
+        bot.skills.setStaticLevel(Skills.DEFENCE, 80)
+        bot.skills.setStaticLevel(Skills.ATTACK, level)
+        bot.skills.setStaticLevel(Skills.STRENGTH, level)
+        bot.skills.setStaticLevel(Skills.HITPOINTS, 70)
+        bot.skills.setLevel(Skills.RANGE, 90)
+        bot.skills.setLevel(Skills.DEFENCE, 80)
+        bot.skills.setLevel(Skills.ATTACK, level)
+        bot.skills.setLevel(Skills.STRENGTH, level)
+        bot.skills.setLevel(Skills.HITPOINTS, 70)
+        bot.skills.updateCombatLevel()
+        equipHighest(bot, RANGE_HELMS)
+        equipHighest(bot, RANGE_TOPS)
+        equipHighest(bot, RANGE_BACK)
+        equipHighest(bot, RANGE_LEGS)
+        bot.equipment.refresh()
+        equipHighest(bot, GLOVES)
+        equipHighest(bot, NECK)
+        equipHighest(bot, BOOTS)
+        equipHighest(bot, RING_ARCH)
+        bot.equipment.refresh()
+        if(crossbow == true) { equipHighest(bot,CROSSBOWS); equipHighest(bot,MELEE_SHIELD); bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,Integer.MAX_VALUE),13,false,false) }
+        else {equipHighest(bot, BOWS); bot.equipment.add(Item(ItemNames.BRONZE_ARROW,Integer.MAX_VALUE),13,false,false) }
+        bot.skills.setStaticLevel(Skills.RANGE, 98)
+        bot.skills.setLevel(Skills.RANGE, 98)
+        bot.equipment.refresh()
+    }
+
+    fun gearPCiMeleeBot(bot: AIPlayer, vararg skills: Int){
+        var max = 0
+        val initial = RandomFunction.random(50, 99).also {max=99 }
+        var level = initial
+        bot.fullRestore()
+
+        bot.skills.setStaticLevel(Skills.STRENGTH, level)
+        bot.skills.setStaticLevel(Skills.DEFENCE, level)
+        bot.skills.setStaticLevel(Skills.ATTACK, level)
+        bot.skills.setStaticLevel(Skills.HITPOINTS, level)
+        bot.skills.setStaticLevel(Skills.PRAYER, 90)
+        bot.skills.setStaticLevel(Skills.RANGE, level)
+        bot.skills.setStaticLevel(Skills.MAGIC, level)
+        bot.skills.setStaticLevel(Skills.SUMMONING, 80)
+        bot.skills.setLevel(Skills.STRENGTH, level)
+        bot.skills.setLevel(Skills.DEFENCE, level)
+        bot.skills.setLevel(Skills.ATTACK, level)
+        bot.skills.setLevel(Skills.HITPOINTS, level)
+        bot.skills.setLevel(Skills.PRAYER, 90)
+        bot.skills.setLevel(Skills.RANGE, level)
+        bot.skills.setLevel(Skills.MAGIC, level)
+        bot.skills.setLevel(Skills.SUMMONING, 80)
+        bot.skills.updateCombatLevel()
+        equipHighest(bot, PCMELEE_HELMS)
+        equipHighest(bot, PCMELEE_LEG)
+        equipHighest(bot, PCMELEE_SHIELD)
+        equipHighest(bot, PCMELEE_TOP)
+        equipHighest(bot, PCMELEE_WEP)
+        bot.equipment.refresh()
+        equipHighest(bot, CAPE)
+        equipHighest(bot, NECK)
+        equipHighest(bot, GLOVES)
+        equipHighest(bot, BOOTS)
+        equipHighest(bot, RING_BERS)
+        bot.equipment.refresh()
+        bot.skills.setStaticLevel(Skills.DEFENCE, 99)
+        bot.skills.setStaticLevel(Skills.ATTACK, 99)
+        bot.skills.setStaticLevel(Skills.STRENGTH, 99)
+        bot.skills.setStaticLevel(Skills.HITPOINTS, 99)
+        bot.skills.setLevel(Skills.DEFENCE, 99)
+        bot.skills.setLevel(Skills.ATTACK, 99)
+        bot.skills.setLevel(Skills.STRENGTH, 99)
+        bot.skills.setLevel(Skills.HITPOINTS, 99)
+        bot.fullRestore()
     }
 
 
     /**
      * Generates the stats for a bot with the given tier.
      * @param bot the bot to gear
-     * @param tier the Tier of stats and gear. LOW, MED, HIGH.
+     * @param tier the Tier of stats and gear. LOW, MED, HIGH, PURE.
      * @param skills the skills that we should generate.
      * @author Ceikry and Eli
      */
-    fun generateStats(bot: AIPlayer, tier: Tier, vararg skills: Int) {
+    fun generateStats(bot: AIPlayer, tier: CombatBotAssembler.Tier, vararg skills: Int) {
         var totalXPAdd = 0.0
         var skillAmt = 0.0
-        val variance = 0.50
+        val variance = 0.5
         var max = 0
         val initial = when (tier) {
             Tier.LOW -> RandomFunction.random(33).also { max = 33 }
             Tier.MED -> RandomFunction.random(33, 66).also { max = 66 }
             Tier.HIGH -> RandomFunction.random(66, 99).also { max = 99 }
+            Tier.PURE -> RandomFunction.random(90, 99).also {max = 99 }
         }
         for (skill in skills.indices) {
             val perc = RandomFunction.random(-variance,variance)
@@ -173,6 +346,15 @@ class CombatBotAssembler {
             totalXPAdd += bot.skills.getExperience(skills[skill])
             skillAmt++
         }
+        when (tier){
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.DEFENCE,10)
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.STRENGTH,99)
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.ATTACK,90)
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.PRAYER,43)
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.RANGE,1)
+                Tier.PURE -> bot.skills.setStaticLevel(Skills.MAGIC,1)
+            }
+
         bot.skills.addExperience(Skills.HITPOINTS, (totalXPAdd / skillAmt) * 0.2)
         SystemLogger.log("hp: ${(totalXPAdd / skillAmt) * 0.2}")
         val new_hp = bot.skills.levelFromXP((totalXPAdd / skillAmt) * 0.2)
@@ -240,17 +422,34 @@ class CombatBotAssembler {
     }
 
 
-    val RANGE_HELMS = arrayOf(1167, 4732, 12936)
-    val RANGE_TOPS = arrayOf(1129, 1131)
-    val RANGE_LEGS = arrayOf(1095, 1097, 1099)
-    val BOWS = arrayOf(841, 843, 847, 853)
+    val RANGE_HELMS = arrayOf(1167,4732,3749)
+    val RANGE_TOPS = arrayOf(1129,1131,1135,2503)
+    val RANGE_LEGS = arrayOf(1095,1097,1099,2497)
+    val RANGE_BACK = arrayOf(1019,10498,10499)
+    val BOWS = arrayOf(841,843,847,853)
     val CROSSBOWS  = arrayOf(9185,9174,9177,9176,9179,9181,9183)
 
-    val MELEE_HELMS = arrayOf(1137,1139, 1141, 6621, 1143,1145,1147,1149,1151,1153, 6623, 1159,1163,1165,3748, 3751, 10828, 11335, 3753, 4716,4724, 4745, 4753)
-    val MELEE_TOP = arrayOf(1101,1103,1105,1107,1109,1111,1113,2513,1115,1117,1119,1121,1123,1125,1127,4720,4728)
-    val MELEE_LEG = arrayOf(1081,1083,1085,1087,1089,1091,1093,4759,1067,1069,1071,1073,1075,1077,1079,4722,4751)
+    val MELEE_HELMS = arrayOf(1137,1139, 1141, 6621, 1143,1145,1147,1149,1151,1153, 6623, 1159,1163,1165,3748, 3751, 3753, 4716,4724, 4745, 4753)
+    val MELEE_TOP = arrayOf(1101,1103,1105,1107,1109,1111,1113,2513,1115,1117,1119,1121,1123,1125,1127,4720,4728,4749,4749)
+    val MELEE_LEG = arrayOf(1081,1083,1085,1087,1089,1091,1093,4759,1067,1069,1071,1073,1075,1077,1079,4722,4751,4722,4751)
     val MELEE_SHIELD = arrayOf(1171,1173,1175,1177,1179,1181,1183,1185,1187,1189,1191,1193,1195,1197,1199,1201)
     val MELEE_WEP = arrayOf(1277,1279,1281,1283,1285,1287,1289,1291,1293,1295,1297,1299,1301,1303,1305,1321,1323,1325,1327,1329,1331,1333,4587,4151,1363,1365,1367,1369,1371,1373,1375,1377)
+    val NGLOVES = arrayOf(1059)
+    val NBOOTS = arrayOf(1061)
 
-    val RICH_MELEE_HELMS = arrayOf(2587, 2595, 2605, 2613, 2619, 2627, 2657, 2665, 2673, 3486, 10350)
+
+    val PCMELEE_HELMS = arrayOf(1137,1139, 1141, 6621, 1143,1145,1147,1149,1151,1153, 6623, 1159,1163,1165,3748, 3751, 10828, 11335, 3753, 4716,4724, 4745, 4753, 3751)
+    val PCMELEE_TOP = arrayOf(1101,1103,1105,1107,1109,1111,1113,2513,1115,1117,1119,1121,1123,1125,1127,4720,4728,4749,4749,11724)
+    val PCMELEE_LEG = arrayOf(1081,1083,1085,1087,1089,1091,1093,4759,1067,1069,1071,1073,1075,1077,1079,4722,4751,4722,4751,11726)
+    val PCMELEE_SHIELD = arrayOf(1171,1173,1175,1177,1179,1181,1183,1185,1187,1189,1191,1193,1195,1197,1199,1201,6524)
+    val PCMELEE_WEP = arrayOf(1277,1279,1281,1283,1285,1287,1289,1291,1293,1295,1297,1299,1301,1303,1305,1321,1323,1325,1327,1329,1331,1333,4587,4151,1363,1365,1367,1369,1371,1373,1375,1377,4755)
+
+    val NECK = arrayOf(1704,6585)
+    val CAPE = arrayOf(1019,1021,1023,6568,4315,4317,4319,4321,4323,4325,4327,4329,4331,4333,4335,4337,4339,4341,4343,4345,4347,4349,4351)
+    val GLOVES = arrayOf(1059,7456,7457,7458,7459,7460,7461,7462)
+    val BOOTS = arrayOf(1061,4131,11732,11728,4131)
+    val RING_BERS = arrayOf(6737)
+    val RING_ARCH = arrayOf(6733)
+
+    val RICH_MELEE_HELMS = arrayOf(2587,2595,2605,2613,2619,2627,2657,2665,2673,3486,1149,10828,4716,4724,4753)
 }

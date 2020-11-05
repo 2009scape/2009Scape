@@ -3,6 +3,9 @@ package plugin.activity.pestcontrol;
 import java.util.ArrayList;
 import java.util.List;
 
+import plugin.ai.AIPlayer;
+import plugin.ai.pvmbots.CombatBotAssembler;
+import plugin.ai.AIPlayer.*;
 import core.ServerConstants;
 import core.game.component.Component;
 import plugin.activity.ActivityManager;

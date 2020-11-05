@@ -400,7 +400,6 @@ class ScriptAPI(private val bot: Player) {
                 BotGrandExchange.sellOnGE(id, offeredValue, itemAmt)
                 bot.bank.remove(Item(id, itemAmt))
                 bot.bank.refresh()
-                SystemLogger.log("Banked fish: " + bot.bank.getAmount(ItemNames.RAW_LOBSTER))
                 return true
             }
         }
