@@ -191,7 +191,7 @@ class CombatBotAssembler {
 
     fun gearPCnMeleeBot(bot: AIPlayer, vararg skills: Int){
         var max = 0
-        val initial = RandomFunction.random(30, 70).also {max = 75 }
+        val initial = RandomFunction.random(30, 75).also {max = 75 }
         var level = initial
         bot.fullRestore()
 
@@ -238,15 +238,15 @@ class CombatBotAssembler {
      */
     fun gearPCiRangedBot(bot: AIPlayer, crossbow: Boolean? = false, vararg skills: Int) {
         var max = 0
-        val level = RandomFunction.random(50, 99).also {max=99 }
+        val level = RandomFunction.random(50, 80).also {max=99 }
         bot.fullRestore()
 
-        bot.skills.setStaticLevel(Skills.RANGE, 90)
+        bot.skills.setStaticLevel(Skills.RANGE, level)
         bot.skills.setStaticLevel(Skills.DEFENCE, 80)
         bot.skills.setStaticLevel(Skills.ATTACK, level)
         bot.skills.setStaticLevel(Skills.STRENGTH, level)
         bot.skills.setStaticLevel(Skills.HITPOINTS, 70)
-        bot.skills.setLevel(Skills.RANGE, 90)
+        bot.skills.setLevel(Skills.RANGE, level)
         bot.skills.setLevel(Skills.DEFENCE, 80)
         bot.skills.setLevel(Skills.ATTACK, level)
         bot.skills.setLevel(Skills.STRENGTH, level)
@@ -271,7 +271,7 @@ class CombatBotAssembler {
 
     fun gearPCiMeleeBot(bot: AIPlayer, vararg skills: Int){
         var max = 0
-        val initial = RandomFunction.random(50, 99).also {max=99 }
+        val initial = RandomFunction.random(55, 95).also {max=95 }
         var level = initial
         bot.fullRestore()
 
@@ -279,7 +279,7 @@ class CombatBotAssembler {
         bot.skills.setStaticLevel(Skills.DEFENCE, level)
         bot.skills.setStaticLevel(Skills.ATTACK, level)
         bot.skills.setStaticLevel(Skills.HITPOINTS, level)
-        bot.skills.setStaticLevel(Skills.PRAYER, 90)
+        bot.skills.setStaticLevel(Skills.PRAYER, 80)
         bot.skills.setStaticLevel(Skills.RANGE, level)
         bot.skills.setStaticLevel(Skills.MAGIC, level)
         bot.skills.setStaticLevel(Skills.SUMMONING, 80)
@@ -287,7 +287,7 @@ class CombatBotAssembler {
         bot.skills.setLevel(Skills.DEFENCE, level)
         bot.skills.setLevel(Skills.ATTACK, level)
         bot.skills.setLevel(Skills.HITPOINTS, level)
-        bot.skills.setLevel(Skills.PRAYER, 90)
+        bot.skills.setLevel(Skills.PRAYER, 80)
         bot.skills.setLevel(Skills.RANGE, level)
         bot.skills.setLevel(Skills.MAGIC, level)
         bot.skills.setLevel(Skills.SUMMONING, 80)
@@ -422,9 +422,9 @@ class CombatBotAssembler {
     }
 
 
-    val RANGE_HELMS = arrayOf(1167,4732,3749)
-    val RANGE_TOPS = arrayOf(1129,1131,1135,2503)
-    val RANGE_LEGS = arrayOf(1095,1097,1099,2497)
+    val RANGE_HELMS = arrayOf(1167,4732,3749,11718)
+    val RANGE_TOPS = arrayOf(1129,1131,1135,2503,11720)
+    val RANGE_LEGS = arrayOf(1095,1097,1099,2497,11722)
     val RANGE_BACK = arrayOf(1019,10498,10499)
     val BOWS = arrayOf(841,843,847,853)
     val CROSSBOWS  = arrayOf(9185,9174,9177,9176,9179,9181,9183)
@@ -439,10 +439,10 @@ class CombatBotAssembler {
 
 
     val PCMELEE_HELMS = arrayOf(1137,1139, 1141, 6621, 1143,1145,1147,1149,1151,1153, 6623, 1159,1163,1165,3748, 3751, 10828, 11335, 3753, 4716,4724, 4745, 4753, 3751)
-    val PCMELEE_TOP = arrayOf(1101,1103,1105,1107,1109,1111,1113,2513,1115,1117,1119,1121,1123,1125,1127,4720,4728,4749,4749,11724)
-    val PCMELEE_LEG = arrayOf(1081,1083,1085,1087,1089,1091,1093,4759,1067,1069,1071,1073,1075,1077,1079,4722,4751,4722,4751,11726)
-    val PCMELEE_SHIELD = arrayOf(1171,1173,1175,1177,1179,1181,1183,1185,1187,1189,1191,1193,1195,1197,1199,1201,6524)
-    val PCMELEE_WEP = arrayOf(1277,1279,1281,1283,1285,1287,1289,1291,1293,1295,1297,1299,1301,1303,1305,1321,1323,1325,1327,1329,1331,1333,4587,4151,1363,1365,1367,1369,1371,1373,1375,1377,4755)
+    val PCMELEE_TOP = arrayOf(1101,1103,1105,1107,1109,1111,1113,2513,1115,1117,1119,1121,1123,1125,1127,4720,4728,4749,4749,11724,14479,2513)
+    val PCMELEE_LEG = arrayOf(1081,1083,1085,1087,1089,1091,1093,4759,1067,1069,1071,1073,1075,1077,1079,4722,4751,4722,4751,11726,4087)
+    val PCMELEE_SHIELD = arrayOf(1171,1173,1175,1177,1179,1181,1183,1185,1187,1189,1191,1193,1195,1197,1199,1201,6524,13742,13740,13738,13736,13734)
+    val PCMELEE_WEP = arrayOf(1277,1279,1281,1283,1285,1287,1289,1291,1293,1295,1297,1299,1301,1303,1305,1321,1323,1325,1327,1329,1331,1333,4587,4151,1363,1365,1367,1369,1371,1373,1375,1377,1434,5698)
 
     val NECK = arrayOf(1704,6585)
     val CAPE = arrayOf(1019,1021,1023,6568,4315,4317,4319,4321,4323,4325,4327,4329,4331,4333,4335,4337,4339,4341,4343,4345,4347,4349,4351)

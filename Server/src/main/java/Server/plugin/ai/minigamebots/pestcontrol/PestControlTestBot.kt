@@ -10,7 +10,7 @@ import plugin.ai.pvmbots.CombatBotAssembler
 import plugin.ai.pvmbots.PvMBots
 import java.util.*
 //"pestcontrolcopies.txt",
-class PestControlTestBot(l: Location?) : PvMBots(legitimizeLocation(l!!)) {
+class PestControlTestBot(l: Location) : PvMBots(legitimizeLocation(l)) {
     var tick = 0
     var combatMoveTimer = 0
     var justStartedGame = true
@@ -73,7 +73,7 @@ class PestControlTestBot(l: Location?) : PvMBots(legitimizeLocation(l!!)) {
         walkingQueue.isRunning = true
         val creatures = FindTargets(this, 30)
         if (creatures == null || creatures.isEmpty()) {
-            if (randomType > 20) {
+            if (randomType > 50) {
                 customState = "Going to portals"
                 combathandler.goToPortals()
             } else {
@@ -85,7 +85,7 @@ class PestControlTestBot(l: Location?) : PvMBots(legitimizeLocation(l!!)) {
                 movetimer = Random().nextInt(15) + 6
             }
         } else {
-            if (randomType < 15 && Random().nextInt(5) == 0) {
+            if (randomType < 20 && Random().nextInt(5) == 0) {
                 randomWalkAroundPoint(PestControlHelper.getMyPestControlSession(this).squire.location, 3)
                 movetimer = Random().nextInt(15) + 6
             } else {

@@ -101735,7 +101735,7 @@
       "high_alchemy": "1200000",
       "grand_exchange_price": "5653008",
       "equipment_slot": "5",
-      "bonuses": "0,0,0,-10,-5,20,25,22,10,22,17,7,0,0,0",
+      "bonuses": "0,0,0,-10,-5,70,75,72,10,72,17,7,0,0,0",
       "requirements": "{1,75}",
       "weight": "7.2",
       "rare_item": "true",
