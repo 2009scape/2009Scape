@@ -158,6 +158,8 @@ public final class DesertZone extends MapZone implements Plugin<Object> {
 		ZoneBorders borders = new ZoneBorders(3063, 2725, 3544, 3115);
 		borders.addException(new ZoneBorders(3152, 2961, 3191, 2999));// Bandit
 		// camp
+		borders.addException(new ZoneBorders(3398, 2914, 3450, 2941));//Nardah
+		borders.addException(new ZoneBorders(3410, 2883, 3450, 2941));//Nardah2
 		borders.addException(new ZoneBorders(3147, 3019, 3185, 3059));// Bedabin
 		borders.addException(new ZoneBorders(3217, 2881, 3248, 2914));// pyramid
 		borders.addException(new ZoneBorders(3264, 2752, 3323, 2810));// Sophanem
