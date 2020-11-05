@@ -122,11 +122,11 @@ class PestControlTestBot(l: Location) : PvMBots(legitimizeLocation(l)) {
         if (prayer.active.contains(PrayerType.PROTECT_FROM_MELEE)) {
             prayer.toggle(PrayerType.PROTECT_FROM_MELEE)
         }
-        if (Random().nextInt(3) <= 1) //Don't join instantly
+        if (Random().nextInt(5) <= 1) //Don't join instantly
         {
             return
         }
-        if (randomType > 20 && Random().nextInt(6) == 0) //Idle outside ladder
+        if (randomType > 75 && Random().nextInt(6) == 0) //Idle outside ladder
         {
             if (Random().nextInt(20) == 0) {
                 this.walkToPosSmart(myBoat.outsideBoatBorder.randomLoc)
