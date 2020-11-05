@@ -88,6 +88,10 @@ class CombatBotAssembler {
         equipHighest(bot, MELEE_TOP, 40)
         equipHighest(bot, MELEE_LEG, 40)
         equipHighest(bot, MELEE_WEP, 60)
+        equipHighest(bot, CAPE)
+        equipHighest(bot, NGLOVES)
+        equipHighest(bot, NBOOTS)
+        bot.equipment.refresh()
         return bot
     }
 
@@ -105,7 +109,11 @@ class CombatBotAssembler {
         equipHighest(bot,RANGE_TOPS,50)
         equipHighest(bot,RANGE_LEGS,50)
         equipHighest(bot,CROSSBOWS,50)
+        equipHighest(bot, CAPE)
+        equipHighest(bot, NGLOVES)
+        equipHighest(bot, NBOOTS)
         bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,100000),13,false,false)
+        bot.equipment.refresh()
         return bot
     }
 
@@ -119,6 +127,9 @@ class CombatBotAssembler {
         equipHighest(bot, RANGE_HELMS)
         equipHighest(bot, RANGE_TOPS)
         equipHighest(bot, RANGE_LEGS)
+        equipHighest(bot, CAPE)
+        equipHighest(bot, NGLOVES)
+        equipHighest(bot, NBOOTS)
         if(crossbow == true) { equipHighest(bot,CROSSBOWS); equipHighest(bot,MELEE_SHIELD); bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,Integer.MAX_VALUE),13,false,false) }
         else {equipHighest(bot, BOWS); bot.equipment.add(Item(ItemNames.BRONZE_ARROW,Integer.MAX_VALUE),13,false,false) }
         bot.equipment.refresh()
@@ -134,6 +145,9 @@ class CombatBotAssembler {
         equipHighest(bot, MELEE_LEG)
         equipHighest(bot, MELEE_SHIELD)
         equipHighest(bot, MELEE_TOP)
+        equipHighest(bot, CAPE)
+        equipHighest(bot, NGLOVES)
+        equipHighest(bot, NBOOTS)
         equipHighest(bot, MELEE_WEP)
         bot.equipment.refresh()
     }
@@ -231,11 +245,11 @@ class CombatBotAssembler {
         bot.skills.setLevel(Skills.RANGE, level)
         bot.skills.setLevel(Skills.MAGIC, level)
         bot.skills.updateCombatLevel()
-        equipHighest(bot, MELEE_HELMS)
-        equipHighest(bot, MELEE_LEG)
-        equipHighest(bot, MELEE_SHIELD)
-        equipHighest(bot, MELEE_TOP)
-        equipHighest(bot, MELEE_WEP)
+        equipHighest(bot, PCMELEE_HELMS)
+        equipHighest(bot, PCMELEE_LEG)
+        equipHighest(bot, PCMELEE_SHIELD)
+        equipHighest(bot, PCMELEE_TOP)
+        equipHighest(bot, PCMELEE_WEP)
         bot.equipment.refresh()
         equipHighest(bot, CAPE)
         equipHighest(bot, NECK)
@@ -344,11 +358,11 @@ class CombatBotAssembler {
         bot.skills.setLevel(Skills.MAGIC, 90)
         bot.skills.setLevel(Skills.SUMMONING, 80)
         bot.skills.updateCombatLevel()
-        equipHighest(bot, MELEE_HELMS)
-        equipHighest(bot, MELEE_LEG)
-        equipHighest(bot, MELEE_SHIELD)
-        equipHighest(bot, MELEE_TOP)
-        equipHighest(bot, MELEE_WEP)
+        equipHighest(bot, PCMELEE_HELMS)
+        equipHighest(bot, PCMELEE_LEG)
+        equipHighest(bot, PCMELEE_SHIELD)
+        equipHighest(bot, PCMELEE_TOP)
+        equipHighest(bot, PCMELEE_WEP)
         bot.equipment.refresh()
         equipHighest(bot, CAPE)
         equipHighest(bot, NECK)
@@ -477,11 +491,21 @@ class CombatBotAssembler {
     val BOWS = arrayOf(841,843,847,853)
     val CROSSBOWS  = arrayOf(9185,9174,9177,9176,9179,9181,9183)
 
-    val MELEE_HELMS = arrayOf(1137,1139, 1141, 6621, 1143,1145,1147,1149,1151,1153, 6623, 1159,1163,1165,3748, 3751, 10828, 11335, 3753, 4716,4724, 4745, 4753, 3751)
-    val MELEE_TOP = arrayOf(1101,1103,1105,1107,1109,1111,1113,2513,1115,1117,1119,1121,1123,1125,1127,4720,4728,4749,4749,11724)
-    val MELEE_LEG = arrayOf(1081,1083,1085,1087,1089,1091,1093,4759,1067,1069,1071,1073,1075,1077,1079,4722,4751,4722,4751,11726)
-    val MELEE_SHIELD = arrayOf(1171,1173,1175,1177,1179,1181,1183,1185,1187,1189,1191,1193,1195,1197,1199,1201,6524)
-    val MELEE_WEP = arrayOf(1277,1279,1281,1283,1285,1287,1289,1291,1293,1295,1297,1299,1301,1303,1305,1321,1323,1325,1327,1329,1331,1333,4587,4151,1363,1365,1367,1369,1371,1373,1375,1377,4755)
+    val MELEE_HELMS = arrayOf(1137,1139, 1141, 6621, 1143,1145,1147,1149,1151,1153, 6623, 1159,1163,1165,3748, 3751, 3753, 4716,4724, 4745, 4753)
+    val MELEE_TOP = arrayOf(1101,1103,1105,1107,1109,1111,1113,2513,1115,1117,1119,1121,1123,1125,1127,4720,4728,4749,4749)
+    val MELEE_LEG = arrayOf(1081,1083,1085,1087,1089,1091,1093,4759,1067,1069,1071,1073,1075,1077,1079,4722,4751,4722,4751)
+    val MELEE_SHIELD = arrayOf(1171,1173,1175,1177,1179,1181,1183,1185,1187,1189,1191,1193,1195,1197,1199,1201)
+    val MELEE_WEP = arrayOf(1277,1279,1281,1283,1285,1287,1289,1291,1293,1295,1297,1299,1301,1303,1305,1321,1323,1325,1327,1329,1331,1333,4587,4151,1363,1365,1367,1369,1371,1373,1375,1377)
+    val NGLOVES = arrayOf(1059)
+    val NBOOTS = arrayOf(1061)
+
+
+    val PCMELEE_HELMS = arrayOf(1137,1139, 1141, 6621, 1143,1145,1147,1149,1151,1153, 6623, 1159,1163,1165,3748, 3751, 10828, 11335, 3753, 4716,4724, 4745, 4753, 3751)
+    val PCMELEE_TOP = arrayOf(1101,1103,1105,1107,1109,1111,1113,2513,1115,1117,1119,1121,1123,1125,1127,4720,4728,4749,4749,11724)
+    val PCMELEE_LEG = arrayOf(1081,1083,1085,1087,1089,1091,1093,4759,1067,1069,1071,1073,1075,1077,1079,4722,4751,4722,4751,11726)
+    val PCMELEE_SHIELD = arrayOf(1171,1173,1175,1177,1179,1181,1183,1185,1187,1189,1191,1193,1195,1197,1199,1201,6524)
+    val PCMELEE_WEP = arrayOf(1277,1279,1281,1283,1285,1287,1289,1291,1293,1295,1297,1299,1301,1303,1305,1321,1323,1325,1327,1329,1331,1333,4587,4151,1363,1365,1367,1369,1371,1373,1375,1377,4755)
+
     val NECK = arrayOf(1704,6585)
     val CAPE = arrayOf(1019,1021,1023,6568,4315,4317,4319,4321,4323,4325,4327,4329,4331,4333,4335,4337,4339,4341,4343,4345,4347,4349,4351)
     val GLOVES = arrayOf(1059,7456,7457,7458,7459,7460,7461,7462)
