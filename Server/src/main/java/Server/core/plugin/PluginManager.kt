@@ -10,7 +10,6 @@ import plugin.activity.ActivityManager
 import plugin.activity.ActivityPlugin
 import plugin.command.Command
 import plugin.dialogue.DialoguePlugin
-import java.lang.Exception
 import java.util.*
 import java.util.function.Consumer
 import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType
@@ -40,8 +39,8 @@ object PluginManager {
     /**
      * Initializes the plugin manager.
      */
-	@JvmStatic
-	fun init() {
+    @JvmStatic
+    fun init() {
         try {
             load()
             loadedPlugins!!.clear()
@@ -89,8 +88,8 @@ object PluginManager {
      * Defines the plugin.
      * @param plugin The plugin.
      */
-	@JvmStatic
-	fun definePlugin(plugin: Plugin<*>) {
+    @JvmStatic
+    fun definePlugin(plugin: Plugin<*>) {
         try {
             var manifest = plugin.javaClass.getAnnotation(PluginManifest::class.java)
             if (manifest == null) {
