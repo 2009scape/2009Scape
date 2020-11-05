@@ -33,9 +33,9 @@ class PestControlTestBot(l: Location?) : PvMBots(legitimizeLocation(l!!)) {
     init {
         val num = RandomFunction.random(3)
         if (num == 1) {
-            CombatBotAssembler().gearPCnMeleeBot(this)
+            CombatBotAssembler().gearPCnMeleeBot(this)!!
         } else {
-            CombatBotAssembler().gearPCnRangedBot(this, Random().nextInt() % 2 == 0)
+            CombatBotAssembler().gearPCnRangedBot(this, Random().nextInt() % 2 == 0)!!
         }
         randomType = Random().nextInt(100)
     }
@@ -73,7 +73,7 @@ class PestControlTestBot(l: Location?) : PvMBots(legitimizeLocation(l!!)) {
         walkingQueue.isRunning = true
         val creatures = FindTargets(this, 30)
         if (creatures == null || creatures.isEmpty()) {
-            if (randomType > 10) {
+            if (randomType > 20) {
                 customState = "Going to portals"
                 combathandler.goToPortals()
             } else {
@@ -99,7 +99,7 @@ class PestControlTestBot(l: Location?) : PvMBots(legitimizeLocation(l!!)) {
     private fun idleInBoat() {
         justStartedGame = true
         openedGate = false
-        if (randomType < 35) //He's the type of guy to walk around the boat
+        if (randomType < 30) //He's the type of guy to walk around the boat
         {
             if (Random().nextInt(insideBoatWalks) <= 1) {
                 (insideBoatWalks * 1.5).toInt()
@@ -128,7 +128,7 @@ class PestControlTestBot(l: Location?) : PvMBots(legitimizeLocation(l!!)) {
         }
         if (randomType > 20 && Random().nextInt(6) == 0) //Idle outside ladder
         {
-            if (Random().nextInt(16) == 0) {
+            if (Random().nextInt(20) == 0) {
                 this.walkToPosSmart(myBoat.outsideBoatBorder.randomLoc)
                 movetimer += RandomFunction.normalPlusWeightRandDist(400, 200)
             }
@@ -152,7 +152,7 @@ class PestControlTestBot(l: Location?) : PvMBots(legitimizeLocation(l!!)) {
 
     companion object {
         private fun legitimizeLocation(l: Location): Location {
-            return if (PestControlHelper.landerContainsLoc(l)) Location(2657, 2643, 0) else l
+            return if (PestControlHelper.landerContainsLoc(l)) Location(2660, 2648, 0) else l
         }
     }
 }

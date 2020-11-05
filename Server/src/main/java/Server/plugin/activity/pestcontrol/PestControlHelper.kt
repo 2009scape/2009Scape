@@ -15,9 +15,9 @@ object PestControlHelper {
     }
 
     enum class BoatInfo(var boatBorder: ZoneBorders, var outsideBoatBorder: ZoneBorders, var ladderId: Int) {
-        NOVICE(ZoneBorders(2660, 2638, 2664, 2644), ZoneBorders(2657, 2637, 2657, 2643), 14315),
-        INTERMEDIATE(ZoneBorders(2638, 2642, 2641, 2647), ZoneBorders(2644, 2642, 2644, 2646), 25631),
-        VERTERAN(ZoneBorders(2632, 2649, 2635, 2654), ZoneBorders(2639, 2652, 2638, 2655), 25632);
+        NOVICE(ZoneBorders(2660, 2638, 2663, 2643), ZoneBorders(2657, 2638, 2657, 2643), 14315),
+        INTERMEDIATE(ZoneBorders(2638, 2642, 2641, 2647), ZoneBorders(2644, 2642, 2644, 2647), 25631),
+        VERTERAN(ZoneBorders(2632, 2649, 2635, 2654), ZoneBorders(2638, 2652, 2638, 2655), 25632);
     }
 
     fun landerContainsLoc(l: Location?): Boolean {

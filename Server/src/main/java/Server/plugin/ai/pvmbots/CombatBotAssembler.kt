@@ -154,42 +154,23 @@ class CombatBotAssembler {
 
     /**
      * Gears a Novice Pest control bot.
-     * @author Sir Kermit
-     * @author Ceikry
+     * @author Sir Kermit & Ceikry
      */
     fun gearPCnRangedBot(bot: AIPlayer, crossbow: Boolean? = false, vararg skills: Int) {
-        var totalXPAdd = 0.0
-        var skillAmt = 0.0
-        val variance = 0.5
         var max = 0
-        val initial = RandomFunction.random(40, 70).also {max = 71 }
-        for (skill in skills.indices) {
-            val perc = RandomFunction.random(-variance,variance)
-            var level = initial +  (perc * 33).toInt()
-            if(level < 1)
-                level = 1
-            if(level > max)
-                level = max
-            bot.skills.setLevel(skills[skill], level)
-            bot.skills.setStaticLevel(skills[skill], level)
-            totalXPAdd += bot.skills.getExperience(skills[skill])
-            skillAmt++
-        }
-        val perc = RandomFunction.random(-variance,variance)
-        var level = initial +  (perc * 33).toInt()
-        bot.skills.updateCombatLevel()
+        val level = RandomFunction.random(30, 70).also {max = 75 }
         bot.fullRestore()
 
         bot.skills.setStaticLevel(Skills.RANGE, 50)
         bot.skills.setStaticLevel(Skills.DEFENCE, 50)
-        bot.skills.setStaticLevel(Skills.ATTACK, 20)
-        bot.skills.setStaticLevel(Skills.STRENGTH, 20)
-        bot.skills.setStaticLevel(Skills.HITPOINTS, 60)
+        bot.skills.setStaticLevel(Skills.ATTACK, level)
+        bot.skills.setStaticLevel(Skills.STRENGTH, level)
+        bot.skills.setStaticLevel(Skills.HITPOINTS, level)
         bot.skills.setLevel(Skills.RANGE, 50)
         bot.skills.setLevel(Skills.DEFENCE, 50)
-        bot.skills.setLevel(Skills.ATTACK, 20)
-        bot.skills.setLevel(Skills.STRENGTH, 20)
-        bot.skills.setLevel(Skills.HITPOINTS, 60)
+        bot.skills.setLevel(Skills.ATTACK, level)
+        bot.skills.setLevel(Skills.STRENGTH, level)
+        bot.skills.setLevel(Skills.HITPOINTS, level)
         bot.skills.updateCombatLevel()
         equipHighest(bot, RANGE_HELMS)
         equipHighest(bot, RANGE_TOPS)
@@ -204,46 +185,30 @@ class CombatBotAssembler {
         if(crossbow == true) { equipHighest(bot,CROSSBOWS); equipHighest(bot,MELEE_SHIELD); bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,Integer.MAX_VALUE),13,false,false) }
         else {equipHighest(bot, BOWS); bot.equipment.add(Item(ItemNames.BRONZE_ARROW,Integer.MAX_VALUE),13,false,false) }
         bot.skills.setStaticLevel(Skills.RANGE, 98)
+        bot.skills.setLevel(Skills.RANGE, 98)
         bot.equipment.refresh()
     }
 
     fun gearPCnMeleeBot(bot: AIPlayer, vararg skills: Int){
-        var totalXPAdd = 0.0
-        var skillAmt = 0.0
-        val variance = 0.5
         var max = 0
-        val initial = RandomFunction.random(40, 70).also {max = 71 }
-        for (skill in skills.indices) {
-            val perc = RandomFunction.random(-variance,variance)
-            var level = initial +  (perc * 33).toInt()
-            if(level < 1)
-                level = 1
-            if(level > max)
-                level = max
-            bot.skills.setLevel(skills[skill], level)
-            bot.skills.setStaticLevel(skills[skill], level)
-            totalXPAdd += bot.skills.getExperience(skills[skill])
-            skillAmt++
-        }
-        val perc = RandomFunction.random(-variance,variance)
-        var level = initial +  (perc * 33).toInt()
-        bot.skills.updateCombatLevel()
+        val initial = RandomFunction.random(30, 70).also {max = 75 }
+        var level = initial
         bot.fullRestore()
 
         bot.skills.setStaticLevel(Skills.STRENGTH, level)
         bot.skills.setStaticLevel(Skills.DEFENCE, level)
         bot.skills.setStaticLevel(Skills.ATTACK, level)
         bot.skills.setStaticLevel(Skills.HITPOINTS, level)
-        bot.skills.setStaticLevel(Skills.PRAYER, 98)
-        bot.skills.setStaticLevel(Skills.RANGE, level)
-        bot.skills.setStaticLevel(Skills.MAGIC, level)
+        bot.skills.setStaticLevel(Skills.PRAYER, 70)
+        bot.skills.setStaticLevel(Skills.RANGE, 10)
+        bot.skills.setStaticLevel(Skills.MAGIC, 10)
         bot.skills.setLevel(Skills.STRENGTH, level)
         bot.skills.setLevel(Skills.DEFENCE, level)
         bot.skills.setLevel(Skills.ATTACK, level)
         bot.skills.setLevel(Skills.HITPOINTS, level)
-        bot.skills.setLevel(Skills.PRAYER, 98)
-        bot.skills.setLevel(Skills.RANGE, level)
-        bot.skills.setLevel(Skills.MAGIC, level)
+        bot.skills.setLevel(Skills.PRAYER, 70)
+        bot.skills.setLevel(Skills.RANGE, 10)
+        bot.skills.setLevel(Skills.MAGIC, 10)
         bot.skills.updateCombatLevel()
         equipHighest(bot, PCMELEE_HELMS)
         equipHighest(bot, PCMELEE_LEG)
@@ -261,45 +226,30 @@ class CombatBotAssembler {
         bot.skills.setStaticLevel(Skills.ATTACK, 80)
         bot.skills.setStaticLevel(Skills.STRENGTH, 90)
         bot.skills.setStaticLevel(Skills.HITPOINTS, 80)
+        bot.skills.setLevel(Skills.DEFENCE, 70)
+        bot.skills.setLevel(Skills.ATTACK, 80)
+        bot.skills.setLevel(Skills.STRENGTH, 90)
+        bot.skills.setLevel(Skills.HITPOINTS, 80)
         bot.fullRestore()
     }
     /**
      * Gears a Intermediate Pest control bot.
-     * @author Sir Kermit
-     * @author Ceikry
+     * @author Sir Kermit & Ceikry
      */
     fun gearPCiRangedBot(bot: AIPlayer, crossbow: Boolean? = false, vararg skills: Int) {
-        var totalXPAdd = 0.0
-        var skillAmt = 0.0
-        val variance = 0.5
         var max = 0
-        val initial = RandomFunction.random(50, 80).also {max = 95 }
-        for (skill in skills.indices) {
-            val perc = RandomFunction.random(-variance,variance)
-            var level = initial +  (perc * 33).toInt()
-            if(level < 1)
-                level = 1
-            if(level > max)
-                level = max
-            bot.skills.setLevel(skills[skill], level)
-            bot.skills.setStaticLevel(skills[skill], level)
-            totalXPAdd += bot.skills.getExperience(skills[skill])
-            skillAmt++
-        }
-        val perc = RandomFunction.random(-variance,variance)
-        var level = initial +  (perc * 33).toInt()
-        bot.skills.updateCombatLevel()
+        val level = RandomFunction.random(50, 99).also {max=99 }
         bot.fullRestore()
 
         bot.skills.setStaticLevel(Skills.RANGE, 90)
         bot.skills.setStaticLevel(Skills.DEFENCE, 80)
-        bot.skills.setStaticLevel(Skills.ATTACK, 70)
-        bot.skills.setStaticLevel(Skills.STRENGTH, 70)
+        bot.skills.setStaticLevel(Skills.ATTACK, level)
+        bot.skills.setStaticLevel(Skills.STRENGTH, level)
         bot.skills.setStaticLevel(Skills.HITPOINTS, 70)
         bot.skills.setLevel(Skills.RANGE, 90)
         bot.skills.setLevel(Skills.DEFENCE, 80)
-        bot.skills.setLevel(Skills.ATTACK, 70)
-        bot.skills.setLevel(Skills.STRENGTH, 70)
+        bot.skills.setLevel(Skills.ATTACK, level)
+        bot.skills.setLevel(Skills.STRENGTH, level)
         bot.skills.setLevel(Skills.HITPOINTS, 70)
         bot.skills.updateCombatLevel()
         equipHighest(bot, RANGE_HELMS)
@@ -315,30 +265,14 @@ class CombatBotAssembler {
         if(crossbow == true) { equipHighest(bot,CROSSBOWS); equipHighest(bot,MELEE_SHIELD); bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,Integer.MAX_VALUE),13,false,false) }
         else {equipHighest(bot, BOWS); bot.equipment.add(Item(ItemNames.BRONZE_ARROW,Integer.MAX_VALUE),13,false,false) }
         bot.skills.setStaticLevel(Skills.RANGE, 98)
+        bot.skills.setLevel(Skills.RANGE, 98)
         bot.equipment.refresh()
     }
 
     fun gearPCiMeleeBot(bot: AIPlayer, vararg skills: Int){
-        var totalXPAdd = 0.0
-        var skillAmt = 0.0
-        val variance = 0.5
         var max = 0
-        val initial = RandomFunction.random(50, 80).also {max = 95 }
-        for (skill in skills.indices) {
-            val perc = RandomFunction.random(-variance,variance)
-            var level = initial +  (perc * 33).toInt()
-            if(level < 1)
-                level = 1
-            if(level > max)
-                level = max
-            bot.skills.setLevel(skills[skill], level)
-            bot.skills.setStaticLevel(skills[skill], level)
-            totalXPAdd += bot.skills.getExperience(skills[skill])
-            skillAmt++
-        }
-        val perc = RandomFunction.random(-variance,variance)
-        var level = initial +  (perc * 33).toInt()
-        bot.skills.updateCombatLevel()
+        val initial = RandomFunction.random(50, 99).also {max=99 }
+        var level = initial
         bot.fullRestore()
 
         bot.skills.setStaticLevel(Skills.STRENGTH, level)
@@ -346,16 +280,16 @@ class CombatBotAssembler {
         bot.skills.setStaticLevel(Skills.ATTACK, level)
         bot.skills.setStaticLevel(Skills.HITPOINTS, level)
         bot.skills.setStaticLevel(Skills.PRAYER, 90)
-        bot.skills.setStaticLevel(Skills.RANGE, 90)
-        bot.skills.setStaticLevel(Skills.MAGIC, 90)
+        bot.skills.setStaticLevel(Skills.RANGE, level)
+        bot.skills.setStaticLevel(Skills.MAGIC, level)
         bot.skills.setStaticLevel(Skills.SUMMONING, 80)
         bot.skills.setLevel(Skills.STRENGTH, level)
         bot.skills.setLevel(Skills.DEFENCE, level)
         bot.skills.setLevel(Skills.ATTACK, level)
         bot.skills.setLevel(Skills.HITPOINTS, level)
-        bot.skills.setLevel(Skills.PRAYER, 98)
-        bot.skills.setLevel(Skills.RANGE, 90)
-        bot.skills.setLevel(Skills.MAGIC, 90)
+        bot.skills.setLevel(Skills.PRAYER, 90)
+        bot.skills.setLevel(Skills.RANGE, level)
+        bot.skills.setLevel(Skills.MAGIC, level)
         bot.skills.setLevel(Skills.SUMMONING, 80)
         bot.skills.updateCombatLevel()
         equipHighest(bot, PCMELEE_HELMS)
@@ -374,6 +308,10 @@ class CombatBotAssembler {
         bot.skills.setStaticLevel(Skills.ATTACK, 99)
         bot.skills.setStaticLevel(Skills.STRENGTH, 99)
         bot.skills.setStaticLevel(Skills.HITPOINTS, 99)
+        bot.skills.setLevel(Skills.DEFENCE, 99)
+        bot.skills.setLevel(Skills.ATTACK, 99)
+        bot.skills.setLevel(Skills.STRENGTH, 99)
+        bot.skills.setLevel(Skills.HITPOINTS, 99)
         bot.fullRestore()
     }
 

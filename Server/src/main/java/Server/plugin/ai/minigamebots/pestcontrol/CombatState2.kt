@@ -31,7 +31,7 @@ class CombatState2(private val bot: PestControlTestBot2) {
             bot.interact(gate)
             bot.openedGate = true
             if (Random.nextInt(4) == 1 && bot.randomType < 30) {
-                bot.movetimer = Random.nextInt(2) + 1
+                bot.movetimer = Random.nextInt(3) + 1
             }
             return
         }

@@ -102,7 +102,7 @@ public final class PCObjectHandler extends OptionHandler {
 				case 14315: // Novice
 					if (!GameWorld.getPCBotsSpawned() && !player.isArtificial()) { //First person to join gets bots to play with
 						GameWorld.setPCBotsSpawned(true);
-						for (pestBotsAmount = 0; pestBotsAmount <= 25; pestBotsAmount++) {
+						for (pestBotsAmount = 0; pestBotsAmount <= 40; pestBotsAmount++) {
 							PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
 							PvMBotsBuilder.createPestControlTestBot2(new Location(2644, 2644));
 						}
@@ -114,17 +114,17 @@ public final class PCObjectHandler extends OptionHandler {
 					startActivity(player, "pest control novice", Location.create(2661, 2639, 0));
 					return true;
 				case 25631: // Intermediate
-					if (!GameWorld.getPCBotsSpawned() && !player.isArtificial()) { //First person to join gets bots to play with
+					/*if (!GameWorld.getPCBotsSpawned() && !player.isArtificial()) { //First person to join gets bots to play with
 						GameWorld.setPCBotsSpawned(true);
-						for (pestBots2Amount = 0; pestBots2Amount <= 25; pestBots2Amount++ ) {
-							PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
-							PvMBotsBuilder.createPestControlTestBot2(new Location(2644, 2644));
+						for (pestBots2Amount = 0; pestBots2Amount <= 40; pestBots2Amount++ ) {
+							//PvMBotsBuilder.createPestControlTestBot(new Location(2657, 2640));
+							//PvMBotsBuilder.createPestControlTestBot2(new Location(2644, 2644));
 						}
 					}
 					if (!playersJoined.contains(player.getUsername()) && !player.isArtificial()) { //You also get +1 bot for every friend
 						playersJoined.add(player.getUsername());
 					}
-
+					*/
 					startActivity(player, "pest control intermediate", Location.create(2640, 2644, 0));
 					return true;
 				case 25632: // Veteran

@@ -10,8 +10,10 @@ import plugin.ai.pvmbots.CombatBotAssembler
 import plugin.ai.pvmbots.PvMBots
 import java.util.*
 //"pestcontrolcopies.txt",
+
 class PestControlTestBot2(l: Location) : PvMBots( legitimizeLocation(l!!)) {
-    var tick = 0
+
+        var tick = 0
     var combatMoveTimer = 0
     var justStartedGame = true
     var movetimer = 0
@@ -70,9 +72,9 @@ class PestControlTestBot2(l: Location) : PvMBots( legitimizeLocation(l!!)) {
 
     private fun attackNPCs() {
         walkingQueue.isRunning = true
-        val creatures = FindTargets(this, 20)
+        val creatures = FindTargets(this, 30)
         if (creatures == null || creatures.isEmpty()) {
-            if (randomType > 10) {
+            if (randomType > 20) {
                 customState = "Going to portals"
                 combathandler.goToPortals()
             } else {
@@ -98,14 +100,14 @@ class PestControlTestBot2(l: Location) : PvMBots( legitimizeLocation(l!!)) {
     private fun idleInBoat() {
         justStartedGame = true
         openedGate = false
-        if (randomType < 35) {
+        if (randomType < 30) {
             if (Random().nextInt(insideBoatWalks) <= 1) {
                 (insideBoatWalks * 1.5).toInt()
                 if (Random().nextInt(4) == 1) {
                     walkingQueue.isRunning = !walkingQueue.isRunning
                 }
                 if (Random().nextInt(7) == 1) {
-                    this.walkToPosSmart(Location(2660, 2638))
+                    this.walkToPosSmart(Location(2639, 2642))
                 } else {
                     this.walkToPosSmart(myBoat.boatBorder.randomLoc)
                 }
@@ -126,7 +128,7 @@ class PestControlTestBot2(l: Location) : PvMBots( legitimizeLocation(l!!)) {
         }
         if (randomType > 20 && Random().nextInt(6) == 0) //Idle outside ladder
         {
-            if (Random().nextInt(10) == 0) {
+            if (Random().nextInt(20) == 0) {
                 this.walkToPosSmart(myBoat.outsideBoatBorder.randomLoc)
                 movetimer += RandomFunction.normalPlusWeightRandDist(400, 200)
             }
@@ -150,7 +152,7 @@ class PestControlTestBot2(l: Location) : PvMBots( legitimizeLocation(l!!)) {
 
     companion object {
         private fun legitimizeLocation(l: Location): Location {
-            return if (PestControlHelper.landerContainsLoc(l)) Location(2644, 2644, 0) else l
+            return if (PestControlHelper.landerContainsLoc(l)) Location(2648, 2648, 0) else l
         }
     }
 
