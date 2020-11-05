@@ -73,7 +73,7 @@ class PestControlTestBot2(l: Location) : PvMBots(legitimizeLocation(l)) {
         walkingQueue.isRunning = true
         val creatures = FindTargets(this, 30)
         if (creatures == null || creatures.isEmpty()) {
-            if (randomType > 50) {
+            if (randomType > 40) {
                 customState = "Going to portals"
                 combathandler.goToPortals()
             } else {
