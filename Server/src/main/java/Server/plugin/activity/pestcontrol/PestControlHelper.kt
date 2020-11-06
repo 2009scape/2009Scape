@@ -8,8 +8,8 @@ import java.util.*
 object PestControlHelper {
     var GATE_ENTRIES = Arrays.asList(14233, 14235)
     var PORTAL_ENTRIES = Arrays.asList(*PCPortalNPC.portalIds)
-    val PestControlIslandLocation = Location.create(2659, 2649, 0)
-    val PestControlIslandLocation2 = Location.create(2648, 2648, 0)
+    val PestControlIslandLocation = Location.create(2659, 2676, 0)
+    val PestControlIslandLocation2 = Location.create(2649, 2650, 0)
     fun isInPestControlInstance(p: Player): Boolean {
         return p.getAttribute<Any?>("pc_zeal") != null
     }

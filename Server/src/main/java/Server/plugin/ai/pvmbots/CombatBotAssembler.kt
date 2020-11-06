@@ -184,8 +184,8 @@ class CombatBotAssembler {
         bot.equipment.refresh()
         if(crossbow == true) { equipHighest(bot,CROSSBOWS); equipHighest(bot,MELEE_SHIELD); bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,Integer.MAX_VALUE),13,false,false) }
         else {equipHighest(bot, BOWS); bot.equipment.add(Item(ItemNames.BRONZE_ARROW,Integer.MAX_VALUE),13,false,false) }
-        bot.skills.setStaticLevel(Skills.RANGE, 98)
-        bot.skills.setLevel(Skills.RANGE, 98)
+        bot.skills.setStaticLevel(Skills.RANGE, 99)
+        bot.skills.setLevel(Skills.RANGE, 99)
         bot.equipment.refresh()
     }
 
@@ -223,12 +223,12 @@ class CombatBotAssembler {
         equipHighest(bot, RING_BERS)
         bot.equipment.refresh()
         bot.skills.setStaticLevel(Skills.DEFENCE, 70)
-        bot.skills.setStaticLevel(Skills.ATTACK, 80)
-        bot.skills.setStaticLevel(Skills.STRENGTH, 90)
+        bot.skills.setStaticLevel(Skills.ATTACK, 90)
+        bot.skills.setStaticLevel(Skills.STRENGTH, 99)
         bot.skills.setStaticLevel(Skills.HITPOINTS, 80)
         bot.skills.setLevel(Skills.DEFENCE, 70)
-        bot.skills.setLevel(Skills.ATTACK, 80)
-        bot.skills.setLevel(Skills.STRENGTH, 90)
+        bot.skills.setLevel(Skills.ATTACK, 90)
+        bot.skills.setLevel(Skills.STRENGTH, 99)
         bot.skills.setLevel(Skills.HITPOINTS, 80)
         bot.fullRestore()
     }
@@ -264,8 +264,8 @@ class CombatBotAssembler {
         bot.equipment.refresh()
         if(crossbow == true) { equipHighest(bot,CROSSBOWS); equipHighest(bot,MELEE_SHIELD); bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,Integer.MAX_VALUE),13,false,false) }
         else {equipHighest(bot, BOWS); bot.equipment.add(Item(ItemNames.BRONZE_ARROW,Integer.MAX_VALUE),13,false,false) }
-        bot.skills.setStaticLevel(Skills.RANGE, 98)
-        bot.skills.setLevel(Skills.RANGE, 98)
+        bot.skills.setStaticLevel(Skills.RANGE, 99)
+        bot.skills.setLevel(Skills.RANGE, 99)
         bot.equipment.refresh()
     }
 

@@ -22,7 +22,7 @@ class CombatState2(private val bot: PestControlTestBot2) {
             bot.customState = "Walking randomly"
             bot.justStartedGame = false
             bot.randomWalkAroundPoint(PestControlHelper.getMyPestControlSession(bot).squire.location, 10)
-            bot.movetimer = Random().nextInt(7) + 6
+            bot.movetimer = bot.random10 + 7
             return
         }
 
@@ -30,8 +30,8 @@ class CombatState2(private val bot: PestControlTestBot2) {
             bot.customState = "Interacting gate ID " + gate.id
             bot.interact(gate)
             bot.openedGate = true
-            if (Random.nextInt(4) == 1 && bot.randomType < 30) {
-                bot.movetimer = Random.nextInt(3) + 1
+            if (Random.nextInt(4) == 1 && bot.randomType < 50) {
+                bot.movetimer = bot.random5 + 1
             }
             return
         }
@@ -39,7 +39,7 @@ class CombatState2(private val bot: PestControlTestBot2) {
         if (portal != null) {
             bot.customState = "Walking to portals"
             bot.randomWalkAroundPoint(portal.location, 30)
-            bot.movetimer = Random().nextInt(5) + 5
+            bot.movetimer = bot.random10 + 5
         }
         bot.customState = "Absolutely nothing. Everything is dead"
     }
