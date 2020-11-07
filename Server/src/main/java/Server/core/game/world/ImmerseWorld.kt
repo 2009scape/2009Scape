@@ -20,8 +20,15 @@ object ImmerseWorld {
             immerseVarrock()
             immerseWilderness()
             immerseFalador()
+            immerseFishingGuild()
            // immerseSlayer()
         }
+    }
+
+    fun immerseFishingGuild(){
+        GeneralBotCreator(Location.create(2595, 3414, 0), SharkCatcher())
+        GeneralBotCreator(Location.create(2595, 3414, 0), SharkCatcher())
+        GeneralBotCreator(Location.create(2595, 3414, 0), SharkCatcher())
     }
 
     fun immerseSeersAndCatherby(){
@@ -60,6 +67,8 @@ object ImmerseWorld {
 
     fun immerseWilderness(){
         GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.HIGH,Location.create(2979, 3603, 0)))
+        GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.HIGH,Location.create(2979, 3603, 0)))
+        GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.MED,Location.create(2979, 3603, 0)))
         GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.MED,Location.create(2979, 3603, 0)))
         GeneralBotCreator(GreenDragonKiller(CombatStyle.RANGE), assembler.assembleRangedBot(CombatBotAssembler.Tier.HIGH,Location.create(2979, 3603, 0)))
     }
