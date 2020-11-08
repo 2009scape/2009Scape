@@ -25,6 +25,7 @@ object ImmerseWorld {
         }
     }
 
+
     fun immerseFishingGuild(){
         GeneralBotCreator(Location.create(2595, 3414, 0), SharkCatcher())
         GeneralBotCreator(Location.create(2595, 3414, 0), SharkCatcher())
