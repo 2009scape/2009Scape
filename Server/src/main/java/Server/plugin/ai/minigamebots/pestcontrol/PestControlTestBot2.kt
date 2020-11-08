@@ -2,7 +2,6 @@ package plugin.ai.minigamebots.pestcontrol
 
 import core.game.node.entity.player.link.prayer.PrayerType
 import core.game.world.map.Location
-import core.net.packet.`in`.InteractionPacket
 import core.tools.RandomFunction
 import plugin.activity.pestcontrol.PestControlHelper
 import plugin.activity.pestcontrol.PestControlHelper.BoatInfo
@@ -26,6 +25,7 @@ class PestControlTestBot2(l: Location) : PvMBots(legitimizeLocation(l)) {
     val num = Random().nextInt(4)
     private val myBoat = BoatInfo.INTERMEDIATE
     private val combathandler = CombatState2(this)
+    val testFINAL = getClosestNodeWithEntry(50, myBoat.ladderId)
 
      enum class State {
         OUTSIDE_GANGPLANK,
@@ -47,10 +47,11 @@ class PestControlTestBot2(l: Location) : PvMBots(legitimizeLocation(l)) {
 
     override fun tick() {
         super.tick()
+        tick++
+        //if(tick % 5 == 0) println("Getting ticked: ${this.username}")
         movetimer--
         if (movetimer <= 0) {
             movetimer = 0
-            val state = state
             customState = state.toString() + movetimer
             when (state) {
                 State.GET_TO_PC -> toPC
@@ -62,31 +63,43 @@ class PestControlTestBot2(l: Location) : PvMBots(legitimizeLocation(l)) {
     }
 
     private val state: State
-        private get() {
-            if (PestControlHelper.landerContainsLoc(getLocation())) {
+        get() {
+            if (PestControlHelper.landerContainsLoc2(this.getLocation())) {
                 return State.WAITING_IN_BOAT
             }
             if (PestControlHelper.isInPestControlInstance(this)) {
                 return State.PLAY_GAME
             }
-            return if (PestControlHelper.outsideGangplankContainsLoc2(getLocation())) {
-                State.OUTSIDE_GANGPLANK
-            } else State.GET_TO_PC
+            if (PestControlHelper.outsideGangplankContainsLoc2(this.getLocation())) {
+                return State.OUTSIDE_GANGPLANK
+            } else
+                return State.GET_TO_PC
         }
+
+    private fun idlecheck() {
+        val test = getClosestNodeWithEntry(50, myBoat.ladderId)
+        if (PestControlHelper.outsideGangplankContainsLoc2(getLocation())) {
+            test.interaction.handle(this,test.interaction[0])
+            State.OUTSIDE_GANGPLANK.also { println("Was stuck ${this.username}.") }
+        }
+    }
 
     private fun attackNPCs() {
         walkingQueue.isRunning = true
-        val creatures = FindTargets(this, 30)
+        val creatures = FindTargets(this, 50)
+         if (PestControlHelper.outsideGangplankContainsLoc2(getLocation())){
+             val test = getClosestNodeWithEntry(25, myBoat.ladderId)
+             testFINAL.interaction.handle(this,testFINAL.interaction[0])
+             enterBoat().also { println("We think we is in pest control ${this.username}.") }
+         }
         if (creatures == null || creatures.isEmpty()) {
             if (randomType > 50) {
-                customState = "Going to portals"
+                this.customState = "Going to portals"
                 combathandler.goToPortals()
             } else {
                 try {
                     randomWalkAroundPoint(PestControlHelper.getMyPestControlSession(this).squire.location, 3)
                 } catch (e: NullPointerException) {
-                    State.GET_TO_PC
-                    //Do nothing, game just finished
                 }
                 movetimer = random20 + 6
             }
@@ -95,31 +108,36 @@ class PestControlTestBot2(l: Location) : PvMBots(legitimizeLocation(l)) {
                 randomWalkAroundPoint(PestControlHelper.getMyPestControlSession(this).squire.location, 3)
                 movetimer = random20 + 6
             } else {
-                customState = "Fighting NPCs"
+                this.customState = "Fighting NPCs"
                 combathandler.fightNPCs()
             }
         }
     }
 
     private var insideBoatWalks = 3
-    private fun idleInBoat() {
+     fun idleInBoat() {
         justStartedGame = true
         openedGate = false
+         val test = getClosestNodeWithEntry(15, myBoat.ladderId)
+         if (PestControlHelper.outsideGangplankContainsLoc2(getLocation())){
+             enterBoat().also { println("We think we is in boat ${this.username}.") }
+             test.interaction.handle(this,test.interaction[0])
+         }
         if (prayer.active.contains(PrayerType.PROTECT_FROM_MELEE)) {
             prayer.toggle(PrayerType.PROTECT_FROM_MELEE) }
         if (randomType < 40) {
             if (Random().nextInt(insideBoatWalks) <= 1) {
                 (insideBoatWalks * 1.5).toInt()
-                if (Random().nextInt(4) === 1) {
-                    walkingQueue.isRunning = !walkingQueue.isRunning
+                if (Random().nextInt(4) == 1) {
+                    this.walkingQueue.isRunning = !this.walkingQueue.isRunning
                 }
-                if (Random().nextInt(7) === 1) {
+                if (Random().nextInt(7) == 1) {
                     this.walkToPosSmart(Location(2660, 2638))
                 } else {
                     this.walkToPosSmart(myBoat.boatBorder.randomLoc)
                 }
             }
-            if (Random().nextInt(3) === 1) {
+            if (Random().nextInt(3) == 1) {
                 insideBoatWalks += 2
             }
         }
@@ -129,42 +147,39 @@ class PestControlTestBot2(l: Location) : PvMBots(legitimizeLocation(l)) {
         if (prayer.active.contains(PrayerType.PROTECT_FROM_MELEE)) {
             prayer.toggle(PrayerType.PROTECT_FROM_MELEE)
         }
-        if (Random().nextInt(3) <= 1)
-        {
-            return
+        if (Random().nextInt(3) <= 1) {
         }
-        if (Random().nextInt(5) == 1)
-        {
+        if (Random().nextInt(5) == 1) {
             movetimer = Random().nextInt(2)
             this.walkToPosSmart(myBoat.outsideBoatBorder.getWeightedRandomLoc(2))
         }
-        if (Random().nextInt(100) > 20 && Random().nextInt(6) == 0)
-        {
-            if (Random().nextInt(16) == 0)
-            {
+        if (Random().nextInt(100) > 20 && Random().nextInt(6) == 0) {
+            if (Random().nextInt(16) == 0) {
                 this.walkToPosSmart(myBoat.outsideBoatBorder.randomLoc)
                 movetimer += RandomFunction.normalPlusWeightRandDist(400, 200)
             }
-            movetimer = RandomFunction.normalPlusWeightRandDist(100, 50)
-            return
+            movetimer = RandomFunction.normalPlusWeightRandDist(400, 200)
+            idlecheck()
         }
-        val test = getClosestNodeWithEntry(15, myBoat.ladderId)
-        InteractionPacket.handleObjectInteraction(this, 0, test.location, test.id)
+        idlecheck()
+         val test = getClosestNodeWithEntry(15, myBoat.ladderId)
+        test.interaction.handle(this,test.interaction[0])
         insideBoatWalks = 3
     }
 
     private val toPC: Unit
-        private get() {
-            val test = getClosestNodeWithEntry(25, myBoat.ladderId)
+         get() {
+            val test = getClosestNodeWithEntry(50, myBoat.ladderId)
             if (test == null) {
                 this.teleport(PestControlHelper.PestControlIslandLocation2)
             } else {
-                InteractionPacket.handleObjectInteraction(this, test)
+                test.interaction.handle(this,test.interaction[0])
             }
         }
 
+
     companion object {
-        private fun legitimizeLocation(l: Location): Location {
+         fun legitimizeLocation(l: Location): Location {
             return if (PestControlHelper.landerContainsLoc(l)) Location(2648, 2648, 0) else l
         }
     }
