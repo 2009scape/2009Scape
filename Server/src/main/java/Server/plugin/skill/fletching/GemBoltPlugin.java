@@ -1,5 +1,6 @@
 package plugin.skill.fletching;
 
+import core.tools.ItemNames;
 import plugin.dialogue.SkillDialogueHandler;
 import plugin.dialogue.SkillDialogueHandler.SkillDialogue;
 import plugin.skill.fletching.items.gem.GemBoltCutPulse;
@@ -27,12 +28,32 @@ public final class GemBoltPlugin extends UseWithHandler {
 	 * Constructs a new {@code GemBoltPlugin} {@code Object}.
 	 */
 	public GemBoltPlugin() {
-		super(45, 46, 9187, 9188, 9189, 9190, 9191, 9192, 9193, 9194, 411, 1609, 1611, 1613, 1607, 1605, 1603, 1601, 1615, 6573);
+		super(ItemNames.OPAL_BOLT_TIPS,
+				ItemNames.PEARL_BOLT_TIPS_46,
+				ItemNames.JADE_BOLT_TIPS,
+				ItemNames.TOPAZ_BOLT_TIPS_9188,
+				ItemNames.SAPPHIRE_BOLT_TIPS_9189,
+				ItemNames.EMERALD_BOLT_TIPS_9190,
+				ItemNames.RUBY_BOLT_TIPS_9191,
+				ItemNames.DIAMOND_BOLT_TIPS_9192,
+				ItemNames.DRAGONSTONE_BOLT_TIPS_9193,
+				ItemNames.ONYX_BOLT_TIPS_9194,
+				ItemNames.OYSTER_PEARL,
+				ItemNames.OYSTER_PEARLS,
+				ItemNames.OPAL_1609,
+				ItemNames.JADE_1611,
+				ItemNames.RED_TOPAZ_1613,
+				ItemNames.SAPPHIRE,
+				ItemNames.EMERALD,
+				ItemNames.RUBY,
+				ItemNames.DIAMOND_1601,
+				ItemNames.DRAGONSTONE_1615,
+				ItemNames.ONYX_6573);
 	}
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
-		addHandler(1755, ITEM_TYPE, this);
+		addHandler(ItemNames.CHISEL_1755, ITEM_TYPE, this);
 		for(Fletching.GemBolts gem : Fletching.GemBolts.values()){
 			addHandler(gem.base, ITEM_TYPE,this);
 		}
@@ -59,9 +80,8 @@ public final class GemBoltPlugin extends UseWithHandler {
 			};
 			handler.open();
 			PacketRepository.send(RepositionChild.class, new ChildPositionContext(player, 309, 2, 210, 10));
-			return true;
 		} else {
-			final Fletching.GemBolts gem = Fletching.gemMap.get(event.getUsedItem().getId() == 1755 ? event.getBaseItem().getId() : event.getUsedItem().getId());
+			final Fletching.GemBolts gem = Fletching.gemMap.get(event.getUsedItem().getId() == ItemNames.CHISEL_1755 ? event.getBaseItem().getId() : event.getUsedItem().getId());
 			if(gem == null){
 				return false;
 			}
@@ -77,7 +97,7 @@ public final class GemBoltPlugin extends UseWithHandler {
 				}
 
 			}.open();
-			return true;
 		}
+		return true;
 	}
 }
