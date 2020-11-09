@@ -44,7 +44,7 @@ object PestControlHelper {
     }
 
     fun getMyPestControlSession(p: Player): PestControlSession {
-        return p.getExtension(PestControlSession::class.java)!!
+        return p.getExtension(PestControlSession::class.java)
     }
 
 }
