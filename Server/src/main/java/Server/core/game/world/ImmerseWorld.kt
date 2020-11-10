@@ -20,8 +20,15 @@ object ImmerseWorld {
             immerseVarrock()
             immerseWilderness()
             immerseFalador()
+            immerseFishingGuild()
            // immerseSlayer()
         }
+    }
+    fun immerseFishingGuild(){
+        GeneralBotCreator(Location.create(2604, 3421, 0), SharkCatcher())
+        GeneralBotCreator(Location.create(2604, 3421, 0), SharkCatcher())
+        GeneralBotCreator(Location.create(2604, 3421, 0), SharkCatcher())
+
     }
 
     fun immerseSeersAndCatherby(){
