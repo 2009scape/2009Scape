@@ -1,5 +1,6 @@
 package core.game.content.global;
 
+import core.game.content.ItemNames;
 import core.game.node.entity.npc.drop.NPCDropTables;
 import core.game.node.entity.player.Player;
 import core.game.node.item.ChanceItem;
@@ -13,7 +14,47 @@ import core.tools.StringUtils;
  * @author Vexia
  */
 public enum BirdNest {
-	SEED(new ChanceItem(5073, 1, 65), new ChanceItem(5312, 1, NPCDropTables.DROP_RATES[0]), new ChanceItem(5283, 1, NPCDropTables.DROP_RATES[0]), new ChanceItem(5284, 1, NPCDropTables.DROP_RATES[0]), new ChanceItem(5285, 1, NPCDropTables.DROP_RATES[1]), new ChanceItem(5313, 1, NPCDropTables.DROP_RATES[1]), new ChanceItem(5286, 1, NPCDropTables.DROP_RATES[1]), new ChanceItem(5314, 1, NPCDropTables.DROP_RATES[2]), new ChanceItem(5287, 1, NPCDropTables.DROP_RATES[2]), new ChanceItem(5288, 1, NPCDropTables.DROP_RATES[2]), new ChanceItem(5289, 1, NPCDropTables.DROP_RATES[2]), new ChanceItem(5290, 1, NPCDropTables.DROP_RATES[2]), new ChanceItem(5315, 1, NPCDropTables.DROP_RATES[2]), new ChanceItem(5316, 1, NPCDropTables.DROP_RATES[3]), new ChanceItem(5317, 1, NPCDropTables.DROP_RATES[3])), RING(new ChanceItem(5074, 1, 30), new ChanceItem(1635, 1, NPCDropTables.DROP_RATES[0]), new ChanceItem(1637, 1, NPCDropTables.DROP_RATES[0]), new ChanceItem(1639, 1, NPCDropTables.DROP_RATES[1]), new ChanceItem(1641, 1, NPCDropTables.DROP_RATES[2]), new ChanceItem(1643, 1, NPCDropTables.DROP_RATES[3])), RED(new ChanceItem(5070, 1, 5), new ChanceItem(5076)), GREEN(new ChanceItem(5071, 1, 5), new ChanceItem(5078)), BLUE(new ChanceItem(5072, 1, 5), new ChanceItem(5077)), RAVEN(new ChanceItem(11966, 1, 5), new ChanceItem(11964)), WYSON(new ChanceItem(7413, 1, 1), new ChanceItem(5324, 1, NPCDropTables.DROP_RATES[0]), new ChanceItem(5320, 1, NPCDropTables.DROP_RATES[0]), new ChanceItem(5322, 1, NPCDropTables.DROP_RATES[0]), new ChanceItem(5319, 1, NPCDropTables.DROP_RATES[0]), new ChanceItem(5318, 1, NPCDropTables.DROP_RATES[0]), new ChanceItem(12148, 1, NPCDropTables.DROP_RATES[1]), new ChanceItem(5100, 1, NPCDropTables.DROP_RATES[1]), new ChanceItem(5323, 1, NPCDropTables.DROP_RATES[1]), new ChanceItem(5296, 1, NPCDropTables.DROP_RATES[0]), new ChanceItem(5321, 1, NPCDropTables.DROP_RATES[1]), new ChanceItem(5295, 1, NPCDropTables.DROP_RATES[2]), new ChanceItem(5314, 1, NPCDropTables.DROP_RATES[2]), new ChanceItem(5315, 1, NPCDropTables.DROP_RATES[3]), new ChanceItem(5316, 1, NPCDropTables.DROP_RATES[3]));
+	SEED(new ChanceItem(5073, 1, 65),
+			new ChanceItem(ItemNames.ACORN, 1, NPCDropTables.DROP_RATES[0]),
+			new ChanceItem(ItemNames.APPLE_TREE_SEED, 1, NPCDropTables.DROP_RATES[0]),
+			new ChanceItem(ItemNames.BANANA_TREE_SEED, 1, NPCDropTables.DROP_RATES[0]),
+			new ChanceItem(ItemNames.ORANGE_TREE_SEED, 1, NPCDropTables.DROP_RATES[1]),
+			new ChanceItem(ItemNames.WILLOW_SEED, 1, NPCDropTables.DROP_RATES[1]),
+			new ChanceItem(ItemNames.CURRY_TREE_SEED, 1, NPCDropTables.DROP_RATES[1]),
+			new ChanceItem(ItemNames.MAPLE_SEED, 1, NPCDropTables.DROP_RATES[2]),
+			new ChanceItem(ItemNames.PINEAPPLE_SEED, 1, NPCDropTables.DROP_RATES[2]),
+			new ChanceItem(ItemNames.PAPAYA_TREE_SEED, 1, NPCDropTables.DROP_RATES[2]),
+			new ChanceItem(ItemNames.PALM_TREE_SEED, 1, NPCDropTables.DROP_RATES[2]),
+			new ChanceItem(ItemNames.CALQUAT_TREE_SEED, 1, NPCDropTables.DROP_RATES[2]),
+			new ChanceItem(ItemNames.YEW_SEED, 1, NPCDropTables.DROP_RATES[2]),
+			new ChanceItem(ItemNames.MAGIC_SEED, 1, NPCDropTables.DROP_RATES[3]),
+			new ChanceItem(ItemNames.SPIRIT_SEED, 1, NPCDropTables.DROP_RATES[3])),
+	RING(new ChanceItem(5074, 1, 30),
+			new ChanceItem(ItemNames.GOLD_RING, 1, NPCDropTables.DROP_RATES[0]),
+			new ChanceItem(ItemNames.SAPPHIRE_RING_1637, 1, NPCDropTables.DROP_RATES[0]),
+			new ChanceItem(ItemNames.EMERALD_RING_1639, 1, NPCDropTables.DROP_RATES[1]),
+			new ChanceItem(ItemNames.RUBY_RING_1641, 1, NPCDropTables.DROP_RATES[2]),
+			new ChanceItem(ItemNames.DIAMOND_RING_1643, 1, NPCDropTables.DROP_RATES[3])),
+	RED(new ChanceItem(5070, 1, 5), new ChanceItem(5076)),
+	GREEN(new ChanceItem(5071, 1, 5), new ChanceItem(5078)),
+	BLUE(new ChanceItem(5072, 1, 5), new ChanceItem(5077)),
+	RAVEN(new ChanceItem(11966, 1, 5), new ChanceItem(11964)),
+
+	WYSON(new ChanceItem(7413, 1, 1),
+			new ChanceItem(ItemNames.CABBAGE_SEED, 1, NPCDropTables.DROP_RATES[0]),
+			new ChanceItem(ItemNames.SWEETCORN_SEED, 1, NPCDropTables.DROP_RATES[0]),
+			new ChanceItem(ItemNames.TOMATO_SEED, 1, NPCDropTables.DROP_RATES[0]),
+			new ChanceItem(ItemNames.ONION_SEED, 1, NPCDropTables.DROP_RATES[0]),
+			new ChanceItem(ItemNames.POTATO_SEED, 1, NPCDropTables.DROP_RATES[0]),
+			new ChanceItem(ItemNames.CLUE_SCROLL_ELITE_12148, 1, NPCDropTables.DROP_RATES[1]),
+			new ChanceItem(ItemNames.LIMPWURT_SEED, 1, NPCDropTables.DROP_RATES[1]),
+			new ChanceItem(ItemNames.STRAWBERRY_SEED, 1, NPCDropTables.DROP_RATES[1]),
+			new ChanceItem(ItemNames.TOADFLAX_SEED, 1, NPCDropTables.DROP_RATES[0]),
+			new ChanceItem(ItemNames.WATERMELON_SEED, 1, NPCDropTables.DROP_RATES[1]),
+			new ChanceItem(ItemNames.RANARR_SEED, 1, NPCDropTables.DROP_RATES[2]),
+			new ChanceItem(ItemNames.MAPLE_SEED, 1, NPCDropTables.DROP_RATES[2]),
+			new ChanceItem(ItemNames.YEW_SEED, 1, NPCDropTables.DROP_RATES[3]),
+			new ChanceItem(ItemNames.MAGIC_SEED, 1, NPCDropTables.DROP_RATES[3]));
 
 	/**
 	 * The random nest items.

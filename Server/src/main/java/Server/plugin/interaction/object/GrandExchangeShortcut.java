@@ -1,6 +1,7 @@
 package plugin.interaction.object;
 
 import core.cache.def.impl.ObjectDefinition;
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.skill.Skills;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
@@ -66,6 +67,8 @@ public final class GrandExchangeShortcut extends OptionHandler {
 						break;
 					case 3:
 						ForceMovement.run(player, Location.create(3143, 3514, 0), Location.create(3144, 3514, 0), CLIMB_UP);
+						// Use the shortcut under the wall, north-west of the Grand<br><br>Exchange
+						player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 1, 8);
 						return true;
 					}
 					return false;
@@ -85,6 +88,8 @@ public final class GrandExchangeShortcut extends OptionHandler {
 						break;
 					case 3:
 						ForceMovement.run(player, Location.create(3139, 3516, 0), Location.create(3138, 3516, 0), CLIMB_UP);
+						// Use the shortcut under the wall, north-west of the Grand<br><br>Exchange
+						player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 1, 8);
 						return true;
 					}
 					return false;

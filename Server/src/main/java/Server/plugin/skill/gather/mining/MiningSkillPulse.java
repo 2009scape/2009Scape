@@ -2,6 +2,7 @@ package plugin.skill.gather.mining;
 
 import core.cache.def.impl.ItemDefinition;
 import core.game.container.impl.EquipmentContainer;
+import core.game.content.ItemNames;
 import plugin.dialogue.FacialExpression;
 import core.game.content.global.SkillcapePerks;
 import core.game.content.global.SkillingPets;
@@ -201,9 +202,39 @@ public class MiningSkillPulse extends Pulse {
         int amount = 1;
 
         //checks for varrock armor from varrock diary and rolls chance at extra ore
-        if(!isMiningEssence && player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).getLevel() != -1 && player.getAchievementDiaryManager().checkMiningReward(reward) && RandomFunction.random(100) <= 10){
-            amount += 1;
-            player.sendMessage("Through the power of the varrock armour you receive an extra ore.");
+        if(!isMiningEssence && player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).getLevel() != -1) {
+            switch (reward) {
+                case ItemNames.CLAY_434:
+                case ItemNames.COPPER_ORE:
+                case ItemNames.TIN_ORE:
+                case ItemNames.LIMESTONE_3211:
+                case ItemNames.BLURITE_ORE_668:
+                case ItemNames.IRON_ORE:
+                case ItemNames.ELEMENTAL_ORE_2892:
+                case ItemNames.SILVER_ORE_442:
+                case ItemNames.COAL:
+                    if (player.getAchievementDiaryManager().getArmour() >= 0 && RandomFunction.random(100) <= 10) {
+                        amount += 1;
+                        player.sendMessage("The Varrock armour allows you to mine an additional ore.");
+                    }
+                    break;
+                case ItemNames.GOLD_ORE:
+                case ItemNames.GRANITE_500G_6979:
+                case ItemNames.GRANITE_2KG_6981:
+                case ItemNames.GRANITE_5KG_6983:
+                case ItemNames.MITHRIL_ORE:
+                    if (player.getAchievementDiaryManager().getArmour() >= 1 && RandomFunction.random(100) <= 10) {
+                        amount += 1;
+                        player.sendMessage("The Varrock armour allows you to mine an additional ore.");
+                    }
+                    break;
+                case ItemNames.ADAMANTITE_ORE:
+                    if (player.getAchievementDiaryManager().getArmour() >= 2 && RandomFunction.random(100) <= 10) {
+                        amount += 1;
+                        player.sendMessage("The Varrock armour allows you to mine an additional ore.");
+                    }
+                    break;
+            }
         }
 
         // If the player has a skill cape, 10% chance of finding an extra item
@@ -263,21 +294,49 @@ public class MiningSkillPulse extends Pulse {
      * Checks if the has completed any achievements from their diary
      */
     private void applyAchievementTask(int reward) {
-        if (reward == 440 && player.getLocation().withinDistance(new Location(3285, 3363, 0)) && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 2)) {
-            player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 2, true);
+        // Mine some Iron in the south east mining patch near Varrock
+        if (reward == ItemNames.IRON_ORE && player.getLocation().withinDistance(Location.create(3285, 3363, 0))) {
+            player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 2);
         }
-        if (reward == 440 && player.getViewport().getRegion().getId() == 13107 && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(0, 8)) {
-            player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).updateTask(player, 0, 8, true);
+
+        // Mine some limestone near Paterdomus, the temple to the east<br><br>of Varrock
+        if (reward == ItemNames.LIMESTONE_3211 && player.getLocation().withinDistance(Location.create(3372, 3500, 0))) {
+            player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 15);
         }
-        if (reward == 444 && !player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 2)) {
-            if (player.getLocation().getRegionId() == 10801 || player.getLocation().getRegionId() == 10802) {
-                player.getAchievementDiaryManager().updateTask(player, DiaryType.KARAMJA, 0, 2, true);
-            }
+
+        // Mine some gold from the rocks on the north-west<br><br>peninsula of Karamja
+        if (reward == ItemNames.GOLD_ORE && player.getLocation().withinDistance(Location.create(2733,3225,0))) {
+            player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 0, 2);
         }
-        if (reward == 1629) {
-            if (!player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(1, 11)) {
-                player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 1, 11, true);
-            }
+
+        // Mine a red topaz from a gem rock
+        if (reward == ItemNames.UNCUT_RED_TOPAZ_1629 && (player.getViewport().getRegion().getId() == 11310 || player.getViewport().getRegion().getId() == 11410)) {
+            player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 18);
+        }
+
+        // Mine some clay in the Mining patch north of the Champions'<br><br>Guild
+        if (reward == ItemNames.CLAY_434 && player.getViewport().getRegion().getId() == 12596) {
+            player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 0, 5);
+        }
+
+        // Mine some copper in the Mining spot to the south-east of<br><br>Lumbridge Swamp
+        if (reward == ItemNames.COPPER_ORE && player.getViewport().getRegion().getId() == 12849) {
+            player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 0, 12);
+        }
+
+        // Mine some iron ore from the Al Kharid Mining spot
+        if (reward == ItemNames.IRON_ORE && player.getViewport().getRegion().getId() == 13107) {
+            player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 1, 0);
+        }
+
+        // Mine some silver from the mining spot north of Al Kharid
+        if (reward == ItemNames.SILVER_ORE_442 && player.getViewport().getRegion().getId() == 13107) {
+            player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 2, 10);
+        }
+
+        // Mine some coal in the Mining spot south-west of Lumbridge<br><br>Swamp
+        if (reward == ItemNames.COAL && player.getViewport().getRegion().getId() == 12593) {
+            player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 2, 11);
         }
     }
 

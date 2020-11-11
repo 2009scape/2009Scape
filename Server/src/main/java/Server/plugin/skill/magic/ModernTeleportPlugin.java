@@ -41,7 +41,7 @@ public final class ModernTeleportPlugin extends MagicSpell {
 	 * Constructs a new {@code ModernTeleportPlugin.java} {@code Object}.
 	 * @param level the level.
 	 * @param experience the experience.
-	 * @param animation the animation.
+	 * @param location the location.
 	 * @param items the items.
 	 */
 	public ModernTeleportPlugin(final int level, final double experience, final Location location, final Item... items) {
@@ -59,14 +59,17 @@ public final class ModernTeleportPlugin extends MagicSpell {
 				entity.getTeleporter().getCurrentTeleport().stop();
 				return false;
 			}
-			if (entity.isPlayer() && location.getX() == 3213 && !entity.asPlayer().getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(1, 4)) {
-				entity.asPlayer().getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(entity.asPlayer(), 1, 4, true);
+			// Use the teleport to Varrock spell
+			if (entity.isPlayer() && location.equals(Location.create(3213, 3424, 0))) {
+				entity.asPlayer().getAchievementDiaryManager().finishTask(entity.asPlayer(),DiaryType.VARROCK,1, 13);
 			}
-			if (entity.isPlayer() && location.getX() == 3221 && location.getY() == 3219) {
-				Player player = entity.asPlayer();
-				if (!player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(1, 2)) {
-					player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 1, 2, true);
-				}
+			//
+			if (entity.isPlayer() && location.getX() == 2758 && location.getY() == 3478) {
+				entity.asPlayer().getAchievementDiaryManager().finishTask(entity.asPlayer(), DiaryType.SEERS_VILLAGE, 1, 5);
+			}
+			// Use the teleport Lumbridge spell
+			if (entity.isPlayer() && location.equals(Location.create(3221, 3219, 0))) {
+				entity.asPlayer().getAchievementDiaryManager().finishTask(entity.asPlayer(), DiaryType.LUMBRIDGE, 2, 2);
 			}
 			entity.setAttribute("teleport:items", super.runes);
 			entity.setAttribute("magic-delay", GameWorld.getTicks() + 5);

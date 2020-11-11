@@ -40,7 +40,7 @@ public final class BeggarDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.SCARED, "Please kind sir... my family and I are starving...");
+		interpreter.sendDialogues(npc, FacialExpression.SCARED, "Please kind " + (player.isMale() ? "sir" : "lady") + "... my family and I are starving...");
 		player.lock();
 		stage = 1;
 		return true;
@@ -66,11 +66,11 @@ public final class BeggarDialogue extends DialoguePlugin {
 		case 3:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, certainly.");
+				player("Yes, certainly.");
 				stage = 4;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, I don't have any bread on me at the moment.");
+				player("No, I don't have any bread with me.");
 				stage = 15;
 				break;
 			}
@@ -81,12 +81,12 @@ public final class BeggarDialogue extends DialoguePlugin {
 				player.getInventory().remove(new Item(2309, 1));
 				stage = 5;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Actually I don't have any bread on me.");
-				stage = 15;
+				player("... except I don't have any bread on me at the moment...");
+				stage = 9;
 			}
 			break;
 		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Thank you very much!");
+			npc("Thank you very much!");
 			stage = 6;
 			break;
 		case 6:
@@ -99,8 +99,12 @@ public final class BeggarDialogue extends DialoguePlugin {
 			stage = 8;
 			break;
 		case 8:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Here is Excalibur, guard it well.");
+			npc("Here is Excalibur, guard it well.");
 			stage = 16;
+			break;
+		case 9:
+			npc("Well, if you get some, you know where to come.");
+			stage = 15;
 			break;
 		case 15:
 			player.unlock();

@@ -7,7 +7,14 @@ import core.game.node.item.Item;
  * @author Vexia
  */
 public enum Dyes {
-	RED(new Item(1763)), YELLOW(new Item(1765)), BLUE(new Item(1767)), ORANGE(new Item(1769)), GREEN(new Item(1771)), PURPLE(new Item(1773)), PINK(new Item(6955));
+	BLACK(new Item(4622)),
+	RED(new Item(1763)),
+	YELLOW(new Item(1765)),
+	BLUE(new Item(1767)),
+	ORANGE(new Item(1769)),
+	GREEN(new Item(1771)),
+	PURPLE(new Item(1773)),
+	PINK(new Item(6955));
 
 	/**
 	 * The dye item.
@@ -18,7 +25,7 @@ public enum Dyes {
 	 * Constructs a new {@code Dyes} {@code Object}.
 	 * @param item the item.
 	 */
-	private Dyes(Item item) {
+	Dyes(Item item) {
 		this.item = item;
 	}
 
@@ -43,4 +50,5 @@ public enum Dyes {
 	public Item getItem() {
 		return item;
 	}
+
 }

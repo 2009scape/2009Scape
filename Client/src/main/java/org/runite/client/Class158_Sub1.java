@@ -43,6 +43,42 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
        }
     }
 
+    static void method1629(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19) {
+       int var21;
+       Class126 var20;
+       if(var3 == 0) {
+          var20 = new Class126(var10, var11, var12, var13, -1, var18, false);
+
+          for(var21 = var0; var21 >= 0; --var21) {
+             if(Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var21][var1][var2] == null) {
+                Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var21][var1][var2] = new Class3_Sub2(var21, var1, var2);
+             }
+          }
+
+          Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2].aClass126_2240 = var20;
+       } else if(var3 == 1) {
+          var20 = new Class126(var14, var15, var16, var17, var5, var19, var6 == var7 && var6 == var8 && var6 == var9);
+
+          for(var21 = var0; var21 >= 0; --var21) {
+             if(Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var21][var1][var2] == null) {
+                Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var21][var1][var2] = new Class3_Sub2(var21, var1, var2);
+             }
+          }
+
+          Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2].aClass126_2240 = var20;
+       } else {
+          Class35 var22 = new Class35(var3, var4, var5, var1, var2, var6, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19);
+
+          for(var21 = var0; var21 >= 0; --var21) {
+             if(Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var21][var1][var2] == null) {
+                Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var21][var1][var2] = new Class3_Sub2(var21, var1, var2);
+             }
+          }
+
+          Class75_Sub2.aClass3_Sub2ArrayArrayArray2638[var0][var1][var2].aClass35_2226 = var22;
+       }
+    }
+
 
     public final synchronized void addConsumer(ImageConsumer var1) {
       try {
@@ -358,7 +394,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
                         var21 = var35[1 + var10][var11];
                         var22 = var35[var10 - -1][var11 - -1];
                         if(var13 == 0) {
-                           Class104.method1629(var8, var10, var11, 0, 0, -1, var14, var15, var16, var44, Unsorted.method1100(var20, var18), Unsorted.method1100(var21, var18), Unsorted.method1100(var22, var18), Unsorted.method1100(var23, var18), 0, 0, 0, 0, var19, 0);
+                           method1629(var8, var10, var11, 0, 0, -1, var14, var15, var16, var44, Unsorted.method1100(var20, var18), Unsorted.method1100(var21, var18), Unsorted.method1100(var22, var18), Unsorted.method1100(var23, var18), 0, 0, 0, 0, var19, 0);
                            if(HDToolKit.highDetail && var8 > 0 && var18 != -1 && method629(-1 + var37).aBoolean1411) {
                               Class141.method2037(0, 0, true, false, var10, var11, var14 - Class44.anIntArrayArrayArray723[0][var10][var11], -Class44.anIntArrayArrayArray723[0][1 + var10][var11] + var15, var16 - Class44.anIntArrayArrayArray723[0][1 + var10][1 + var11], var44 - Class44.anIntArrayArrayArray723[0][var10][1 + var11]);
                            }
@@ -453,7 +489,7 @@ final class Class158_Sub1 extends Class158 implements ImageProducer, ImageObserv
                               var29 = Class51.anIntArray834[LinkableRSString.method729((byte)-101, var32, 96)];
                            }
 
-                           Class104.method1629(var8, var10, var11, var24, var25, var27, var14, var15, var16, var44, Unsorted.method1100(var20, var18), Unsorted.method1100(var21, var18), Unsorted.method1100(var22, var18), Unsorted.method1100(var23, var18), LinkableRSString.method729((byte)-72, var28, var20), LinkableRSString.method729((byte)-107, var28, var21), LinkableRSString.method729((byte)-82, var28, var22), LinkableRSString.method729((byte)-93, var28, var23), var19, var29);
+                           method1629(var8, var10, var11, var24, var25, var27, var14, var15, var16, var44, Unsorted.method1100(var20, var18), Unsorted.method1100(var21, var18), Unsorted.method1100(var22, var18), Unsorted.method1100(var23, var18), LinkableRSString.method729((byte)-72, var28, var20), LinkableRSString.method729((byte)-107, var28, var21), LinkableRSString.method729((byte)-82, var28, var22), LinkableRSString.method729((byte)-93, var28, var23), var19, var29);
                            if(HDToolKit.highDetail && var8 > 0) {
                               Class141.method2037(var24, var25, var28 == -2 || !var26.aBoolean2093, -1 == var18 || !method629(-1 + var37).aBoolean1411, var10, var11, -Class44.anIntArrayArrayArray723[0][var10][var11] + var14, var15 - Class44.anIntArrayArrayArray723[0][1 + var10][var11], -Class44.anIntArrayArrayArray723[0][1 + var10][var11 + 1] + var16, -Class44.anIntArrayArrayArray723[0][var10][1 + var11] + var44);
                            }

@@ -45,6 +45,7 @@ public class QuestTabInterface extends ComponentPlugin {
 						break;
 					default:
 //						if (GameWorld.isEconomyWorld()) {
+							//System.out.println("Quest button: " + button);
 							Quest quest = p.getQuestRepository().forButtonId(button);
 							if (quest != null) {
 								p.getInterfaceManager().open(new Component(275));

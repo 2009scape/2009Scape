@@ -121,9 +121,7 @@ public final class StrongHoldSecurityPlugin extends MapZone implements Plugin<Ob
 				openComponent(player, Location.create(2358, 5215, 0));
 				return true;
 			case 16149:// fourth ladder going down.
-				if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 4)) {
-					player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 4, true);
-				}
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 4);
 				openComponent(player, Location.create(2042, 5245, 0));
 				return true;
 			case 16135:// claim gift of piece.

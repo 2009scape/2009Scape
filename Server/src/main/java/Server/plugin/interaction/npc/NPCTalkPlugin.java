@@ -39,6 +39,7 @@ public final class NPCTalkPlugin extends OptionHandler {
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
 		NPCDefinition.setOptionHandler("talk-to", this);
+		NPCDefinition.setOptionHandler("talk", this);
 		return this;
 	}
 }

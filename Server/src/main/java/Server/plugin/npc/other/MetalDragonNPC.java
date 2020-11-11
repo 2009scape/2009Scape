@@ -55,11 +55,9 @@ public final class MetalDragonNPC extends AbstractNPC {
 
 	@Override
 	public void finalizeDeath(Entity killer) {
-		if (killer.isPlayer()) {
+		if (killer.isPlayer() && (killer.getViewport().getRegion().getId() == 10899 || killer.getViewport().getRegion().getId() == 10900)) {
 			Player player = killer.asPlayer();
-			if (!player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(2, 4)) {
-				player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 2, 4, true);
-			}
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 2, 9);
 		}
 		super.finalizeDeath(killer);
 	}

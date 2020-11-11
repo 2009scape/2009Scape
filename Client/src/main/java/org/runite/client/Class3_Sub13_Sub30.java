@@ -14,7 +14,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
    static void method312(int var0, int var1, int var2, Player playerUsername, int var4) {
       try {
          if(Class102.player != playerUsername) {
-            if(Class3_Sub13_Sub34.anInt3415 < 400) {
+            if(Unsorted.menuOptionCount < 400) {
                RSString var5;
                if(playerUsername.anInt3974 == 0) {
                   boolean var6 = true;
@@ -79,7 +79,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
                   aLong3366 = -79L;
                }
 
-               for(var12 = 0; var12 < Class3_Sub13_Sub34.anInt3415; ++var12) {
+               for(var12 = 0; var12 < Unsorted.menuOptionCount; ++var12) {
                   if(Class3_Sub13_Sub7.aShortArray3095[var12] == 60) {
                      Class163_Sub2_Sub1.aClass94Array4016[var12] = RSString.stringCombiner(new RSString[]{ColorCore.ContextColor , var5});
                      break;
@@ -104,7 +104,7 @@ final class Class3_Sub13_Sub30 extends Class3_Sub13 {
          Class163_Sub2_Sub1.method2220();
          Class3_Sub10.method139(69);
          Class3_Sub26.method512();
-         Class104.method1626((byte)-128);
+         WaterfallShader.method1626((byte)-128);
          Class3_Sub13_Sub3.method182();
          Class145.method2077();
          Class25.method959();

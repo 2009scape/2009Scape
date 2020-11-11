@@ -98,7 +98,7 @@ public final class LinkableRSString extends Linkable {
     static void method730(int var0, int var1, int var3, int var4, int var5) {
         try {
             if (Class101.anInt1425 <= var0 && var4 <= Class3_Sub28_Sub18.anInt3765 && Class159.anInt2020 <= var5 && Class57.anInt902 >= var3) {
-                Class104.method1632(95, var3, var4, var5, var0, var1);
+                WaterfallShader.method1632(95, var3, var4, var5, var0, var1);
             } else {
                 Unsorted.method1525(var1, var4, var5, var0, var3);
             }

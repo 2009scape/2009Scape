@@ -97,6 +97,9 @@ public final class AgilityTicketInterface extends ComponentPlugin {
 				return false;
 			}
 			if (player.getInventory().remove(new Item(ARENA_TICKET, tickets))) {
+				if (player.getAchievementDiaryManager().getKaramjaGlove() >= 1) {
+					experience *= 1.1;
+				}
 				player.getSkills().addExperience(Skills.AGILITY, experience);
 				player.getPacketDispatch().sendMessage("You have been granted some Agility experience!");
 			}

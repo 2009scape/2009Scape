@@ -9,10 +9,10 @@ final class WorldListEntry extends Class44 {
 
     public static int anInt2937;
     static WorldListCountry[] countries;
-    static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_3099;
+    static AbstractSprite aAbstractSprite_3099;
     static int anInt3351;
-    static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_1339;
-    static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_1457;
+    static AbstractSprite aAbstractSprite_1339;
+    static AbstractSprite aAbstractSprite_1457;
     static int anInt1400;
     static int anInt739;
     static int anInt1126;
@@ -75,21 +75,21 @@ final class WorldListEntry extends Class44 {
             int var2 = Class3_Sub13_Sub33.anInt3395;
             int var4 = Class3_Sub28_Sub1.anInt3537;
             int var3 = Class3_Sub28_Sub3.anInt3552;
-            if (aClass3_Sub28_Sub16_3099 == null || null == aClass3_Sub28_Sub16_1457) {
+            if (aAbstractSprite_3099 == null || null == aAbstractSprite_1457) {
                 if (CacheIndex.spritesIndex.retrieveSpriteFile(archiveID) && CacheIndex.spritesIndex.retrieveSpriteFile(anInt1400)) {
-                    aClass3_Sub28_Sub16_3099 = Unsorted.method562(CacheIndex.spritesIndex, archiveID);
-                    aClass3_Sub28_Sub16_1457 = Unsorted.method562(CacheIndex.spritesIndex, anInt1400);
+                    aAbstractSprite_3099 = Unsorted.method562(CacheIndex.spritesIndex, archiveID);
+                    aAbstractSprite_1457 = Unsorted.method562(CacheIndex.spritesIndex, anInt1400);
                     if (HDToolKit.highDetail) {
-                        if (aClass3_Sub28_Sub16_3099 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
-                            aClass3_Sub28_Sub16_3099 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2) aClass3_Sub28_Sub16_3099);
+                        if (aAbstractSprite_3099 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
+                            aAbstractSprite_3099 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2) aAbstractSprite_3099);
                         } else {
-                            aClass3_Sub28_Sub16_3099 = new Class3_Sub28_Sub16_Sub1((Class3_Sub28_Sub16_Sub2) aClass3_Sub28_Sub16_3099);
+                            aAbstractSprite_3099 = new HDSprite((Class3_Sub28_Sub16_Sub2) aAbstractSprite_3099);
                         }
 
-                        if (aClass3_Sub28_Sub16_1457 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
-                            aClass3_Sub28_Sub16_1457 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2) aClass3_Sub28_Sub16_1457);
+                        if (aAbstractSprite_1457 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
+                            aAbstractSprite_1457 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2) aAbstractSprite_1457);
                         } else {
-                            aClass3_Sub28_Sub16_1457 = new Class3_Sub28_Sub16_Sub1((Class3_Sub28_Sub16_Sub2) aClass3_Sub28_Sub16_1457);
+                            aAbstractSprite_1457 = new HDSprite((Class3_Sub28_Sub16_Sub2) aAbstractSprite_1457);
                         }
                     }
                 } else {
@@ -99,15 +99,15 @@ final class WorldListEntry extends Class44 {
 
             int var5;
             int var6;
-            if (aClass3_Sub28_Sub16_3099 != null && aClass3_Sub28_Sub16_1457 != null) {
-                var5 = var3 / aClass3_Sub28_Sub16_3099.anInt3707;
+            if (aAbstractSprite_3099 != null && aAbstractSprite_1457 != null) {
+                var5 = var3 / aAbstractSprite_3099.anInt3707;
 
                 for (var6 = 0; var6 < var5; ++var6) {
-                    aClass3_Sub28_Sub16_3099.method643(var6 * aClass3_Sub28_Sub16_3099.anInt3707 + var1, var2);
+                    aAbstractSprite_3099.method643(var6 * aAbstractSprite_3099.anInt3707 + var1, var2);
                 }
 
-                aClass3_Sub28_Sub16_1457.method643(var1, var2);
-                aClass3_Sub28_Sub16_1457.method641(-aClass3_Sub28_Sub16_1457.anInt3707 + (var1 - -var3), var2);
+                aAbstractSprite_1457.method643(var1, var2);
+                aAbstractSprite_1457.method641(-aAbstractSprite_1457.anInt3707 + (var1 - -var3), var2);
             }
 
             Class168.aClass3_Sub28_Sub17_2096.method681(RSString.parse(GameConfig.RCM_TITLE), var1 - -3, 14 + var2, anInt3351, -1);
@@ -117,59 +117,59 @@ final class WorldListEntry extends Class44 {
             var5 = Class126.anInt1676;
             int var7;
             int var8;
-            for (var7 = 0; Class3_Sub13_Sub34.anInt3415 > var7; ++var7) {
-                var8 = (-var7 + Class3_Sub13_Sub34.anInt3415 - 1) * 15 + var2 + 35;
+            for (var7 = 0; Unsorted.menuOptionCount > var7; ++var7) {
+                var8 = (-var7 + Unsorted.menuOptionCount - 1) * 15 + var2 + 35;
                 if (var1 < var5 && var5 < var1 - -var3 && -13 + var8 < var6 && var8 + 3 > var6) {
                     Toolkit.getActiveToolkit().fillRect(var1, var8 - 13, var3, 16, MouseListeningClass.anInt1926, -Class136.anInt1771 + 256);
                 }
             }
 
-            if ((aClass3_Sub28_Sub16_1339 == null || Class50.aClass3_Sub28_Sub16_824 == null || null == Class3_Sub26.aClass3_Sub28_Sub16_2560) && CacheIndex.spritesIndex.retrieveSpriteFile(anInt739) && CacheIndex.spritesIndex.retrieveSpriteFile(anInt1126) && CacheIndex.spritesIndex.retrieveSpriteFile(anInt2937)) {
-                aClass3_Sub28_Sub16_1339 = Unsorted.method562(CacheIndex.spritesIndex, anInt739);
-                Class50.aClass3_Sub28_Sub16_824 = Unsorted.method562(CacheIndex.spritesIndex, anInt1126);
-                Class3_Sub26.aClass3_Sub28_Sub16_2560 = Unsorted.method562(CacheIndex.spritesIndex, anInt2937);
+            if ((aAbstractSprite_1339 == null || Class50.aAbstractSprite_824 == null || null == Class3_Sub26.aAbstractSprite_2560) && CacheIndex.spritesIndex.retrieveSpriteFile(anInt739) && CacheIndex.spritesIndex.retrieveSpriteFile(anInt1126) && CacheIndex.spritesIndex.retrieveSpriteFile(anInt2937)) {
+                aAbstractSprite_1339 = Unsorted.method562(CacheIndex.spritesIndex, anInt739);
+                Class50.aAbstractSprite_824 = Unsorted.method562(CacheIndex.spritesIndex, anInt1126);
+                Class3_Sub26.aAbstractSprite_2560 = Unsorted.method562(CacheIndex.spritesIndex, anInt2937);
                 if (HDToolKit.highDetail) {
-                    if (aClass3_Sub28_Sub16_1339 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
-                        aClass3_Sub28_Sub16_1339 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2) aClass3_Sub28_Sub16_1339);
+                    if (aAbstractSprite_1339 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
+                        aAbstractSprite_1339 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2) aAbstractSprite_1339);
                     } else {
-                        aClass3_Sub28_Sub16_1339 = new Class3_Sub28_Sub16_Sub1((Class3_Sub28_Sub16_Sub2) aClass3_Sub28_Sub16_1339);
+                        aAbstractSprite_1339 = new HDSprite((Class3_Sub28_Sub16_Sub2) aAbstractSprite_1339);
                     }
 
-                    if (Class50.aClass3_Sub28_Sub16_824 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
-                        Class50.aClass3_Sub28_Sub16_824 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2) Class50.aClass3_Sub28_Sub16_824);
+                    if (Class50.aAbstractSprite_824 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
+                        Class50.aAbstractSprite_824 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2) Class50.aAbstractSprite_824);
                     } else {
-                        Class50.aClass3_Sub28_Sub16_824 = new Class3_Sub28_Sub16_Sub1((Class3_Sub28_Sub16_Sub2) Class50.aClass3_Sub28_Sub16_824);
+                        Class50.aAbstractSprite_824 = new HDSprite((Class3_Sub28_Sub16_Sub2) Class50.aAbstractSprite_824);
                     }
 
-                    if (Class3_Sub26.aClass3_Sub28_Sub16_2560 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
-                        Class3_Sub26.aClass3_Sub28_Sub16_2560 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2) Class3_Sub26.aClass3_Sub28_Sub16_2560);
+                    if (Class3_Sub26.aAbstractSprite_2560 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
+                        Class3_Sub26.aAbstractSprite_2560 = new Class3_Sub28_Sub16_Sub1_Sub1((Class3_Sub28_Sub16_Sub2) Class3_Sub26.aAbstractSprite_2560);
                     } else {
-                        Class3_Sub26.aClass3_Sub28_Sub16_2560 = new Class3_Sub28_Sub16_Sub1((Class3_Sub28_Sub16_Sub2) Class3_Sub26.aClass3_Sub28_Sub16_2560);
+                        Class3_Sub26.aAbstractSprite_2560 = new HDSprite((Class3_Sub28_Sub16_Sub2) Class3_Sub26.aAbstractSprite_2560);
                     }
                 }
             }
 
             int var9;
-            if (aClass3_Sub28_Sub16_1339 != null && null != Class50.aClass3_Sub28_Sub16_824 && null != Class3_Sub26.aClass3_Sub28_Sub16_2560) {
-                var7 = var3 / aClass3_Sub28_Sub16_1339.anInt3707;
+            if (aAbstractSprite_1339 != null && null != Class50.aAbstractSprite_824 && null != Class3_Sub26.aAbstractSprite_2560) {
+                var7 = var3 / aAbstractSprite_1339.anInt3707;
 
                 for (var8 = 0; var7 > var8; ++var8) {
-                    aClass3_Sub28_Sub16_1339.method643(var1 + aClass3_Sub28_Sub16_1339.anInt3707 * var8, var4 + var2 + -aClass3_Sub28_Sub16_1339.anInt3696);
+                    aAbstractSprite_1339.method643(var1 + aAbstractSprite_1339.anInt3707 * var8, var4 + var2 + -aAbstractSprite_1339.anInt3696);
                 }
 
-                var8 = (-20 + var4) / Class50.aClass3_Sub28_Sub16_824.anInt3696;
+                var8 = (-20 + var4) / Class50.aAbstractSprite_824.anInt3696;
 
                 for (var9 = 0; var9 < var8; ++var9) {
-                    Class50.aClass3_Sub28_Sub16_824.method643(var1, var2 + 20 + var9 * Class50.aClass3_Sub28_Sub16_824.anInt3696);
-                    Class50.aClass3_Sub28_Sub16_824.method641(var1 - (-var3 - -Class50.aClass3_Sub28_Sub16_824.anInt3707), var2 + 20 + var9 * Class50.aClass3_Sub28_Sub16_824.anInt3696);
+                    Class50.aAbstractSprite_824.method643(var1, var2 + 20 + var9 * Class50.aAbstractSprite_824.anInt3696);
+                    Class50.aAbstractSprite_824.method641(var1 - (-var3 - -Class50.aAbstractSprite_824.anInt3707), var2 + 20 + var9 * Class50.aAbstractSprite_824.anInt3696);
                 }
 
-                Class3_Sub26.aClass3_Sub28_Sub16_2560.method643(var1, var4 + (var2 - Class3_Sub26.aClass3_Sub28_Sub16_2560.anInt3696));
-                Class3_Sub26.aClass3_Sub28_Sub16_2560.method641(var1 + var3 - Class3_Sub26.aClass3_Sub28_Sub16_2560.anInt3707, var2 - -var4 + -Class3_Sub26.aClass3_Sub28_Sub16_2560.anInt3696);
+                Class3_Sub26.aAbstractSprite_2560.method643(var1, var4 + (var2 - Class3_Sub26.aAbstractSprite_2560.anInt3696));
+                Class3_Sub26.aAbstractSprite_2560.method641(var1 + var3 - Class3_Sub26.aAbstractSprite_2560.anInt3707, var2 - -var4 + -Class3_Sub26.aAbstractSprite_2560.anInt3696);
             }
 
-            for (var7 = 0; var7 < Class3_Sub13_Sub34.anInt3415; ++var7) {
-                var8 = 15 * (Class3_Sub13_Sub34.anInt3415 - 1 + -var7) + var2 + 35;
+            for (var7 = 0; var7 < Unsorted.menuOptionCount; ++var7) {
+                var8 = 15 * (Unsorted.menuOptionCount - 1 + -var7) + var2 + 35;
                 var9 = anInt3351;
                 if (var1 < var5 && var3 + var1 > var5 && var6 > var8 - 13 && var8 - -3 > var6) {
                     var9 = Class154.anInt1957;

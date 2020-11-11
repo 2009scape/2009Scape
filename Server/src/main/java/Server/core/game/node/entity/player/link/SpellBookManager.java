@@ -70,7 +70,7 @@ public final class SpellBookManager implements SavingModule {
 	 * @author 'Vexia
 	 * @author Emperor
 	 */
-	public static enum SpellBook {
+	public enum SpellBook {
 
 		/**
 		 * The modern magic spell book.
@@ -90,7 +90,7 @@ public final class SpellBookManager implements SavingModule {
 		/**
 		 * The interface id of this spell book.
 		 */
-		private int interfaceId;
+		private final int interfaceId;
 
 		/**
 		 * The spells mapping.
@@ -101,7 +101,7 @@ public final class SpellBookManager implements SavingModule {
 		 * Creates the spell book.
 		 * @param interfaceId The spellbook interface id.
 		 */
-		private SpellBook(int interfaceId) {
+		SpellBook(int interfaceId) {
 			this.interfaceId = interfaceId;
 		}
 

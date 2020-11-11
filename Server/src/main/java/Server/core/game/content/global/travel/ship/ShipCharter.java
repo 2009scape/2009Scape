@@ -2,6 +2,7 @@ package core.game.content.global.travel.ship;
 
 import core.game.component.Component;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
 import core.game.system.task.Pulse;
 import core.game.world.GameWorld;
@@ -44,7 +45,7 @@ public final class ShipCharter {
 	 * Method used to open the ship chartering interface.
 	 * @param player the player.
 	 */
-	public final static void open(final Player player) {
+	public static void open(final Player player) {
 		final Destination current = Destination.getFromBase(player.getLocation());
 		if (current != null) {
 			int[] hiddenComponents = getHiddenComponents(player, current);
@@ -60,7 +61,7 @@ public final class ShipCharter {
 	 * @param player the player.
 	 * @param button the button.
 	 */
-	public final static void handle(final Player player, final int button) {
+	public static void handle(final Player player, final int button) {
 		final Destination destination = Destination.forButton(button);
 		if (destination == null) {
 			return;
@@ -76,12 +77,10 @@ public final class ShipCharter {
 	 * @param destination the destination.
 	 * @return the cost.
 	 */
-	public final static int getCost(final Player player, Destination destination) {
+	public static int getCost(final Player player, Destination destination) {
 		int cost = destination.getCost(player, destination);
-		if (player.getEquipment().containsItem(RING_OF_CHAROS)) {// TODO: cabin
-			// fever
-			// quest.
-			cost -= Math.round((cost / 2));
+		if (player.getEquipment().containsItem(RING_OF_CHAROS)) {// TODO: cabin fever quest
+			cost -= Math.round((cost / 2.));
 		}
 		return cost;
 	}
@@ -91,7 +90,7 @@ public final class ShipCharter {
 	 * @param player the player.
 	 * @return the hidden childs.
 	 */
-	public final static int[] getHiddenComponents(final Player player, Destination base) {
+	public static int[] getHiddenComponents(final Player player, Destination base) {
 		final Destination[] restrictions = new Destination[] { /**
 																* 
 																* Destination.MOS_LE_HARMLESS,
@@ -113,7 +112,7 @@ public final class ShipCharter {
 			childs.add(Destination.KARAMJA.getXChild());
 			childs.add(Destination.KARAMJA.getNameChild());
 		}
-		int arrayChilds[] = new int[childs.size()];
+		int[] arrayChilds = new int[childs.size()];
 		for (int i = 0; i < arrayChilds.length; i++) {
 			arrayChilds[i] = childs.get(i);
 		}
@@ -131,18 +130,27 @@ public final class ShipCharter {
 	/**
 	 * Represents the destination to travel to.
 	 * @author 'Vexia
-	 * @date 28/11/2013
 	 */
 	public enum Destination {
-		CATHERBY(Location.create(2792, 3417, 1), 25, new int[] { 480, -1, 480, 625, 1600, 3250, 1000, 1600, 3200, 3400 }, Location.create(2797, 3414, 0), 3, 14), PORT_PHASMATYS(Location.create(3705, 3503, 1), 24, new int[] { 3650, 3250, 1850, -1, -1, -1, 2050, 1850, 3200, 1100 }, Location.create(3702, 3502, 0), 2, 13), CRANDOR(new Location(2792, 3417, 1), 32, new int[] { -1, 480, 480, 925, 400, 3650, 1600, 400, 3200, 3800 }, null, 10, 21), BRIMHAVEN(Location.create(2763, 3238, 1), 28, new int[] { -1, 480, 480, 925, 400, 3650, 1600, 400, 3200, 3800 }, Location.create(2760, 3238, 0), 6, 17), PORT_SARIM(Location.create(3038, 3189, 1), 30, new int[] { 1600, 1000, -1, 325, 1280, 650, 1280, 400, 3200, 1400 }, Location.create(3039, 3193, 0), 8, 19), PORT_TYRAS(Location.create(2142, 3122, 0), 23, new int[] { 3200, 3200, 3200, 1600, 3200, 3200, 3200, 3200, -1, 3200 }, Location.create(2143, 3122, 0), 1, 12), KARAMJA(Location.create(2957, 3158, 1), 27, new int[] { 200, 480, -1, 225, 400, 1850, -1, 200, 3200, 2000 }, Location.create(2954, 3156, 0), 5, 16), PORT_KHAZARD(Location.create(2674, 3141, 1), 29, new int[] { 1600, 1000, -1, 325, 180, 650, 1280, 400, 3200, 1400 }, Location.create(2674, 3144, 0), 7, 18), SHIPYARD(Location.create(3001, 3032, 0), 26, new int[] { 400, 1600, 200, 225, 720, 1850, 400, -1, 3200, 900 }, Location.create(3001, 3032, 0), 4, 15), OO_GLOG(Location.create(2623, 2857, 0), 33, new int[] { 300, 3400, 2000, 550, 5000, 2800, 1400, 900, 3200, -1 }, Location.create(2622, 2857, 0), 11, 22), MOS_LE_HARMLESS(Location.create(3671, 2931, 0), 31, new int[] { 725, 625, 1025, -1, 1025, -1, 325, 275, 1600, 500 }, Location.create(3671, 2933, 0), 9, 20);
+		CATHERBY(Location.create(2792, 3417, 1), 25, new int[] { 480, -1, 480, 625, 1600, 3250, 1000, 1600, 3200, 3400 }, Location.create(2797, 3414, 0), 3, 14),
+		PORT_PHASMATYS(Location.create(3705, 3503, 1), 24, new int[] { 3650, 3250, 1850, -1, -1, -1, 2050, 1850, 3200, 1100 }, Location.create(3702, 3502, 0), 2, 13),
+		CRANDOR(new Location(2792, 3417, 1), 32, new int[] { -1, 480, 480, 925, 400, 3650, 1600, 400, 3200, 3800 }, null, 10, 21),
+		BRIMHAVEN(Location.create(2763, 3238, 1), 28, new int[] { -1, 480, 480, 925, 400, 3650, 1600, 400, 3200, 3800 }, Location.create(2760, 3238, 0), 6, 17),
+		PORT_SARIM(Location.create(3038, 3189, 1), 30, new int[] { 1600, 1000, -1, 325, 1280, 650, 1280, 400, 3200, 1400 }, Location.create(3039, 3193, 0), 8, 19),
+		PORT_TYRAS(Location.create(2142, 3122, 0), 23, new int[] { 3200, 3200, 3200, 1600, 3200, 3200, 3200, 3200, -1, 3200 }, Location.create(2143, 3122, 0), 1, 12),
+		KARAMJA(Location.create(2957, 3158, 1), 27, new int[] { 200, 480, -1, 225, 400, 1850, -1, 200, 3200, 2000 }, Location.create(2954, 3156, 0), 5, 16),
+		PORT_KHAZARD(Location.create(2674, 3141, 1), 29, new int[] { 1600, 1000, -1, 325, 180, 650, 1280, 400, 3200, 1400 }, Location.create(2674, 3144, 0), 7, 18),
+		SHIPYARD(Location.create(3001, 3032, 0), 26, new int[] { 400, 1600, 200, 225, 720, 1850, 400, -1, 3200, 900 }, Location.create(3001, 3032, 0), 4, 15),
+		OO_GLOG(Location.create(2623, 2857, 0), 33, new int[] { 300, 3400, 2000, 550, 5000, 2800, 1400, 900, 3200, -1 }, Location.create(2622, 2857, 0), 11, 22),
+		MOS_LE_HARMLESS(Location.create(3671, 2931, 0), 31, new int[] { 725, 625, 1025, -1, 1025, -1, 325, 275, 1600, 500 }, Location.create(3671, 2933, 0), 9, 20);
 
 		/**
 		 * Constructs a new {@code ShipCharter} {@code Object}.
 		 * @param location the location.
 		 * @param button the button.
-		 * @param money the money.
+		 * @param costs the money.
 		 * @param base the base.
-		 * @param childs the childs.
+		 * @param components the children.
 		 */
 		Destination(Location location, int button, int[] costs, final Location base, int... components) {
 			this.location = location;
@@ -163,9 +171,9 @@ public final class ShipCharter {
 		private final int button;
 
 		/**
-		 * Represents the costs from destinationt o destination.
+		 * Represents the costs from destination to destination.
 		 */
-		private final int costs[];
+		private final int[] costs;
 
 		/**
 		 * Represents the base location(how we find where we're at)
@@ -175,7 +183,7 @@ public final class ShipCharter {
 		/**
 		 * Represents the childs on the screen.
 		 */
-		private final int childs[];
+		private final int[] childs;
 
 		/**
 		 * Gets the location.
@@ -291,6 +299,7 @@ public final class ShipCharter {
 		 */
 		public void sail(final Player player) {
 			player.lock(7);
+			Location start = player.getLocation();
 			GameWorld.getPulser().submit(new Pulse(1) {
 				int count = 0;
 
@@ -313,6 +322,10 @@ public final class ShipCharter {
 						player.getInterfaceManager().restoreTabs();
 						PacketRepository.send(MinimapState.class, new MinimapStateContext(player, 0));
 						player.getPacketDispatch().sendMessage("You pay the fare and sail to " + StringUtils.formatDisplayName(name()) + ".");
+						// Charter a ship from the shipyard in the far east of Karamja
+						if (start.withinDistance(Location.create(3001,3032,0))) {
+							player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 17);
+						}
 						return true;
 					}
 					return false;

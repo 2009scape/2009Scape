@@ -2,13 +2,17 @@ package core.game.content.global.action;
 
 import core.game.container.impl.EquipmentContainer;
 import core.game.content.EquipSoundsKt;
+import core.game.content.ItemNames;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
 import core.game.node.entity.lock.Lock;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.audio.Audio;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
 import core.game.world.GameWorld;
+import core.game.world.map.Location;
+import core.game.world.map.zone.ZoneBorders;
 import core.plugin.Plugin;
 
 /**
@@ -68,6 +72,14 @@ public class EquipHandler extends OptionHandler {
 				player.debug("Registering gloves... ID: " + item.getId());
 				player.getBrawlingGlovesManager().registerGlove(item.getId());
 			}
+
+			if (item.getId() == ItemNames.BLACK_CHAINBODY
+					&& player.getAttribute("diary:falador:black-chain-bought", false)
+					&& new ZoneBorders(2969, 3310, 2975, 3314, 0).insideBorder(player)) {
+				player.getAchievementDiaryManager().finishTask(player,DiaryType.FALADOR, 0, 2);
+			}
+
+
 			player.getDialogueInterpreter().close();
 			player.getAudioManager().send(EquipSoundsKt.gibAudio(item.getId()), 1);
 		}

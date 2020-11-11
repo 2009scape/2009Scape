@@ -78,7 +78,7 @@ public class TrapSetting {
 	 * @param items the items.
 	 * @param level the level.
 	 * @param option the option.
-	 * @param animation the animation.
+	 * @param setupAnimation the animation.
 	 * @param objectTrap if an object trap.
 	 */
 	public TrapSetting(int[] nodeIds, Item[] items, int[] objectIds, final int[] baitIds, final String option, int level, final int failId, final Animation setupAnimation, final Animation dismantleAnimation, boolean objectTrap) {
@@ -110,7 +110,7 @@ public class TrapSetting {
 	 * Constructs a new {@code TrapSetting} {@code Object}.
 	 * @param nodeId the node id.
 	 * @param option the option.
-	 * @param objectids the ids.
+	 * @param objectIds the ids.
 	 * @param level the level.
 	 */
 	public TrapSetting(int nodeId, int[] objectIds, final int[] baitIds, String option, final int failId, final Animation setupAnimation, final Animation dismantleAnimation, int level) {
@@ -202,7 +202,7 @@ public class TrapSetting {
 
 	/**
 	 * Removes the object from a wrapper.
-	 * @param object the object.
+	 * @param wrapper the object.
 	 */
 	public boolean removeObject(TrapWrapper wrapper) {
 		return removeObject(wrapper.getObject());
@@ -377,7 +377,7 @@ public class TrapSetting {
 
 	/**
 	 * Gets the node for the object.
-	 * @param object the object.
+	 * @param objectId the object.
 	 * @return the node id.
 	 */
 	public int getNodeForObjectId(int objectId) {
@@ -426,7 +426,7 @@ public class TrapSetting {
 
 	/**
 	 * Gets the object index.
-	 * @param object the object.
+	 * @param objectId the object.
 	 * @return the index.
 	 */
 	public int getObjectIndex(int objectId) {
@@ -441,7 +441,7 @@ public class TrapSetting {
 	/**
 	 * Gets the transform id.
 	 * @param node the node.
-	 * @param object the object.
+	 * @param wrapper the object.
 	 * @return the id.
 	 */
 	public int getTransformId(TrapWrapper wrapper, TrapNode node) {

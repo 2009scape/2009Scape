@@ -17,6 +17,8 @@ final class Class3_Sub28_Sub1 extends Node {
    static int anInt3537;
    RSString quickChatMenu;
    static int anInt3539;
+   static int dropAction;
+   static int counter;
    int[] anIntArray3540;
 
 
@@ -123,29 +125,36 @@ final class Class3_Sub28_Sub1 extends Node {
    }
 
    static RSString method531() {
-      try {
          RSString var1;
-         if(Class164_Sub1.anInt3012 == 1 && Class3_Sub13_Sub34.anInt3415 < 2) {
+         if(Class164_Sub1.anInt3012 == 1 && Unsorted.menuOptionCount < 2) {
             var1 = RSString.stringCombiner(new RSString[]{TextCore.HasUse, TextCore.Spacer, RenderAnimationDefinition.aClass94_378, TextCore.aClass94_1724});
-         } else if(GameObject.aBoolean1837 && 2 > Class3_Sub13_Sub34.anInt3415) {
+         } else if(GameObject.aBoolean1837 && 2 > Unsorted.menuOptionCount) {
             var1 = RSString.stringCombiner(new RSString[]{Class3_Sub28_Sub9.aClass94_3621, TextCore.Spacer, TextCore.aClass94_676, TextCore.aClass94_1724});
-         } else if(ClientCommands.shiftClickEnabled && ObjectDefinition.aBooleanArray1490[81] && Class3_Sub13_Sub34.anInt3415 > 2) {
-            var1 = Unsorted.method802(Class3_Sub13_Sub34.anInt3415 + -2);
+
+         } else if(ClientCommands.shiftClickEnabled && ObjectDefinition.aBooleanArray1490[81] && Unsorted.menuOptionCount > 2 && !ObjectDefinition.aBooleanArray1490[82]) {
+            for (counter = 2; counter < Unsorted.menuOptionCount; counter++) {
+               RSString option = (Unsorted.method802(Unsorted.menuOptionCount - counter));
+               if (option.toString().contains("Drop") || option.toString().contains("Release")) {
+                  ClientCommands.canDrop = true;
+                  dropAction = counter;
+                  break;
+               } else {
+                  ClientCommands.canDrop = false;
+               }
+            }
+            if (ClientCommands.canDrop) {
+               var1 = Unsorted.method802(Unsorted.menuOptionCount - dropAction);
+            } else {
+               var1 = Unsorted.method802(Unsorted.menuOptionCount - 1);
+            }
          } else {
-            var1 = Unsorted.method802(Class3_Sub13_Sub34.anInt3415 - 1);
+            var1 = Unsorted.method802(Unsorted.menuOptionCount - 1);
          }
 
-         if(Class3_Sub13_Sub34.anInt3415 > 2) {
-            var1 = RSString.stringCombiner(new RSString[] {
-                    var1, Class1.aClass94_58, RSString.stringAnimator(Class3_Sub13_Sub34.anInt3415 - 2), TextCore.HasMoreOptions
-            });
-//            System.out.println(var1.toString());
+         if(Unsorted.menuOptionCount > 2) {
+            var1 = RSString.stringCombiner(new RSString[] {var1, Class1.aClass94_58, RSString.stringAnimator(Unsorted.menuOptionCount - 2), TextCore.HasMoreOptions});
          }
-
          return var1;
-      } catch (RuntimeException var3) {
-         throw ClientErrorException.clientError(var3, "bc.F(" + (byte) 94 + ')');
-      }
    }
 
    static void method532(int var0) {

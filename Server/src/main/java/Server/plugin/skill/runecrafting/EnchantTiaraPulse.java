@@ -1,5 +1,10 @@
 package plugin.skill.runecrafting;
 
+import core.game.content.ItemNames;
+import core.game.node.entity.impl.Animator;
+import core.game.node.entity.player.link.diary.DiaryType;
+import core.game.world.update.flag.context.Animation;
+import core.game.world.update.flag.context.Graphics;
 import plugin.skill.SkillPulse;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
@@ -21,6 +26,9 @@ public class EnchantTiaraPulse extends SkillPulse<Item> {
 	 * Represents the item tiara.
 	 */
 	private final Item TIARA = new Item(5525);
+
+	private static final Animation ANIMATION = new Animation(791, Animator.Priority.HIGH);
+	private static final Graphics GRAPHICS = new Graphics(186, 100);
 
 	/**
 	 * Represents the amount.
@@ -61,6 +69,8 @@ public class EnchantTiaraPulse extends SkillPulse<Item> {
 
 	@Override
 	public void animate() {
+		player.animate(ANIMATION);
+		player.graphics(GRAPHICS);
 	}
 
 	@Override
@@ -72,6 +82,14 @@ public class EnchantTiaraPulse extends SkillPulse<Item> {
 		if (player.getInventory().remove(TIARA) && player.getInventory().remove(tiara.getTalisman().getTalisman())) {
 			player.getInventory().add(tiara.getTiara());
 			player.getSkills().addExperience(Skills.RUNECRAFTING, tiara.getExperience(), true);
+
+			if (tiara == Tiara.AIR) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.FALADOR, 0, 11);
+			}
+			// Craft an earth tiara on the Earth Altar
+			if (tiara == Tiara.EARTH) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 1, 11);
+			}
 		}
 		amount--;
 		return amount == 0;

@@ -211,7 +211,6 @@ public class TextCore {
     static RSString COMMAND_SET_PARTICLES = RSString.parse("::setparticles");
     static RSString COMMAND_RECT_DEBUG = RSString.parse("::rect_debug");
     static RSString COMMAND_RENDER_INFO = RSString.parse("::renderinfo");
-    static RSString COMMAND_RENDER_INFO_OFF = RSString.of("::renderinfooff");
 
     /**
      * Used as text for client commands

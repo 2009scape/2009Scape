@@ -3,6 +3,7 @@ package plugin.npc.other;
 import core.game.node.entity.Entity;
 import core.game.node.entity.npc.AbstractNPC;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
@@ -43,6 +44,12 @@ public final class HighwayManNPC extends AbstractNPC {
 		if (getId() == 180) {
 			GroundItemManager.create(new Item(526), getLocation(), (Player) killer);
 			GroundItemManager.create(CAPE, getLocation(), (Player) killer);
+		}
+		if (killer instanceof Player) {
+			final Player player = killer.asPlayer();
+			if (!player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).isComplete(0, 10)) {
+				player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).updateTask(player, 0, 10, true);
+			}
 		}
 	}
 

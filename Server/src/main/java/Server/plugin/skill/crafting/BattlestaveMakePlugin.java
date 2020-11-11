@@ -1,5 +1,6 @@
 package plugin.skill.crafting;
 
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.skill.Skills;
 import core.game.interaction.NodeUsageEvent;
 import core.game.interaction.UseWithHandler;
@@ -55,6 +56,10 @@ public final class BattlestaveMakePlugin extends UseWithHandler {
 		player.getInventory().remove(new Item(staff.getObelisk(), 1));
 		player.getInventory().add(new Item(staff.getProduct(), 1));
 		player.getSkills().addExperience(Skills.CRAFTING, staff.getExp(), true);
+		// Craft an air battlestaff
+		if (staff == BattleStaves.AIR) {
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 2, 6);
+		}
 		return true;
 	}
 

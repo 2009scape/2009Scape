@@ -60,8 +60,8 @@ class PipeShortcut : AgilityShortcut {
      * Use this for unlocking achievement diaries + any other unlocks
      */
     override fun run(player: Player, obj: GameObject, option: String, failed: Boolean) {
-        if (obj.id == 29370 && !player.achievementDiaryManager.getDiary(DiaryType.VARROCK).isComplete(2, 5))
-            player.achievementDiaryManager.getDiary(DiaryType.VARROCK).updateTask(player, 2, 5, true)
+        if (obj.id == 29370)
+            player.achievementDiaryManager.finishTask(player, DiaryType.VARROCK, 2, 1)
 
         /**
          * Pulse that starts the object interaction when clicked on one of these shortcuts

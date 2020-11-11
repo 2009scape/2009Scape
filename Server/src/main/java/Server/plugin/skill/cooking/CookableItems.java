@@ -1,5 +1,6 @@
 package plugin.skill.cooking;
 
+import core.game.content.ItemNames;
 import core.game.node.item.Item;
 
 import java.util.HashMap;
@@ -49,9 +50,10 @@ public enum CookableItems {
     CAKE(1891, 1889, 1903, 40, 180, 95),
 
     //Beef(s) (Rat, Bear, Cow, Yak)
-    BEEF_1(2142,2132,2146,1,30,30),
-    BEEF_2(2142,2134,2146,1,30,30),
-    BEEF_3(2142,2136,2146,1,30,30),
+    BEEF(2142,2132,2146,1,30,30),
+    RAT_MEAT(2142,2134,2146,1,30,30),
+    BEAR_MEAT(2142,2136,2146,1,30,30),
+    YAK_MEAT(2142,10816,2146,1,30,30),
 
     //Skewered foods
     SKEWER_1(9988, 9986, 9990,21, 82, 82),
@@ -79,7 +81,11 @@ public enum CookableItems {
     BOWL_2(4239, 4237, 4239,20, 52, 1),
     BOWL_3(7078, 7076, 7090,13, 50, 60),
     BOWL_4(7084, 1871, 7092,43, 60, 70),
-    BOWL_5(7082, 7080, 7094,57, 120, 80);
+    BOWL_5(7082, 7080, 7094,57, 120, 80),
+
+    //Miscellaneous
+    RAW_OOMLIE(ItemNames.RAW_OOMLIE_2337, 0, ItemNames.BURNT_OOMLIE_2426, 50, 0, 999), // always burns
+    OOMLIE_WRAP(ItemNames.COOKED_OOMLIE_WRAP_2343, ItemNames.WRAPPED_OOMLIE_2341, ItemNames.BURNT_OOMLIE_WRAP_2345, 50, 110, 999);
 
     public static HashMap<Integer,CookableItems>cookingMap = new HashMap<>();
     public static HashMap<Integer, CookableItems>intentionalBurnMap = new HashMap<>();

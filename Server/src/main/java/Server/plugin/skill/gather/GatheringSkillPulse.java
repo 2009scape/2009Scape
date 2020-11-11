@@ -2,6 +2,7 @@ package plugin.skill.gather;
 
 import core.cache.def.impl.ItemDefinition;
 import core.game.container.impl.EquipmentContainer;
+import core.game.content.ItemNames;
 import plugin.dialogue.FacialExpression;
 import core.game.content.global.BirdNest;
 import core.game.content.global.SkillcapePerks;
@@ -247,33 +248,6 @@ public final class GatheringSkillPulse extends SkillPulse<GameObject> {
 	 * Checks if the has completed any achievements from their diary
 	 */
 	private void applyAchievementTask(int reward) {
-		if (reward == 6333 && !player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(1, 4)) {
-			player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 1, 4, true);
-		} else if (reward == 6332 && !player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(1, 5)) {
-			player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 1, 5, true);
-		}
-		if (reward == 440 && player.getLocation().withinDistance(new Location(3285, 3363, 0)) && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 2)) {
-			player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 2, true);
-		}
-		if (node.getId() == 24168 && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 6)) {
-			player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 6, true);
-		}
-		if (reward == 440 && player.getViewport().getRegion().getId() == 13107 && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(0, 8)) {
-			player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).updateTask(player, 0, 8, true);
-		}
-		if (reward == 1519 && player.getViewport().getRegion().getId() == 12338 && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(1, 5)) {
-			player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).updateTask(player, 1, 5, true);
-		}
-		if (reward == 444 && !player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 2)) {
-			if (player.getLocation().getRegionId() == 10801 || player.getLocation().getRegionId() == 10802) {
-				player.getAchievementDiaryManager().updateTask(player, DiaryType.KARAMJA, 0, 2, true);
-			}
-		}
-		if (reward == 1629) {
-			if (!player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(1, 11)) {
-				player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 1, 11, true);
-			}
-		}
 	}
 
 	/**
@@ -344,20 +318,7 @@ public final class GatheringSkillPulse extends SkillPulse<GameObject> {
 	 */
 	private int calculateRewardAmount(int reward) {
 		int amount = 1;
-		
-		if (isMining && !isMiningEssence) {
-			// Not sure what this bonus is for
-			if (isMining && !isMiningEssence && player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).getLevel() != -1 && player.getAchievementDiaryManager().checkMiningReward(reward) && RandomFunction.random(100) <= 10) {
-				amount += 1;
-				player.sendMessage("Through the power of the varrock armour you receive an extra ore.");
-			}
-			// If the player has a skill cape, 10% chance of finding an extra item
-			else if (isMining && !isMiningEssence && SkillcapePerks.hasSkillcapePerk(player, SkillcapePerks.MINING) && RandomFunction.getRandom(100) <= 10) {
-				amount += 1;
-				player.sendNotificationMessage("Your " + player.getEquipment().get(EquipmentContainer.SLOT_CAPE).getName() + " allows you to obtain two ores from this rock!");
-			}
-		}
-		
+
 		// 3239: Hollow tree (bark) 10% chance of obtaining
 		if (reward == 3239 && RandomFunction.random(100) >= 10) {
 			amount = 0;

@@ -7,6 +7,7 @@ import core.game.world.map.path.Pathfinder;
 import core.tools.RandomFunction;
 
 import java.nio.ByteBuffer;
+import java.util.Arrays;
 
 /**
  * Represents a location on the world map.
@@ -78,6 +79,10 @@ public final class Location extends Node {
 	 */
 	public static Location create(int x, int y, int z) {
 		return new Location(x, y, z);
+	}
+
+	public static Location create(int x, int y) {
+		return new Location(x, y, 0);
 	}
 
 	/**
@@ -193,9 +198,7 @@ public final class Location extends Node {
 
 	/**
 	 * Gets the location incremented by the given coordinates.
-	 * @param diffX The x-difference.
-	 * @param diffY The y-difference.
-	 * @param z The height difference.
+	 * @param l incremental location
 	 * @return The location.
 	 */
 	public Location transform(Location l) {
@@ -250,7 +253,7 @@ public final class Location extends Node {
 	/**
 	 * Returns the distance between the first and the second specified distance.
 	 * @param first The first location.
-	 * @param other The other location.
+	 * @param second The other location.
 	 * @return The amount of distance between first and other.
 	 */
 	public static double getDistance(Location first, Location second) {

@@ -25,7 +25,7 @@ final class Class3_Sub23 extends Linkable {
          if(HDToolKit.highDetail || var1) {
             var3 = Class140_Sub7.anInt2934;
             int var4 = var3 * 956 / 503;
-            Class40.aClass3_Sub28_Sub16_680.method639((Class23.anInt454 + -var4) / 2, 0, var4, var3);
+            Class40.aAbstractSprite_680.method639((Class23.anInt454 + -var4) / 2, 0, var4, var3);
             AnimationDefinition.aClass109_1856.method1667(-(AnimationDefinition.aClass109_1856.width / 2) + Class23.anInt454 / 2, 18);
          }
 

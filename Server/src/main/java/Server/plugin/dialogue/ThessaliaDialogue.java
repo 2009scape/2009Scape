@@ -41,9 +41,7 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 		//The trade argument is handled elsewhere
 		if (args.length == 3) { //Right-Click 'Change-Clothes' Option
 			if (player.getInventory().contains(995, 1000) && player.getEquipment().isEmpty()) {
-				if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 0)) {
-					player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 0, true);
-				}
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 0);
 				if (player.isMale()) {
 					end();
 					player.getInterfaceManager().open(new Component(591));
@@ -57,7 +55,7 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 				stage = 49;
 			}
 			else{ //Has some armour equipped
-				interpreter.sendDialogues(548, FacialExpression.WORRIED, "You can't try them on while wearing armour. Take","it off and speak to me again.");
+				interpreter.sendDialogues(npc, FacialExpression.WORRIED, "You can't try them on while wearing armour. Take","it off and speak to me again.");
 				stage = 52;
 			}
 			return true;
@@ -65,7 +63,7 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 
 		//Default Talk
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(548, FacialExpression.ASKING, "Would you like to buy any fine clothes?");
+		interpreter.sendDialogues(npc, FacialExpression.ASKING, "Would you like to buy any fine clothes?");
 		stage = 0;
 		return true;
 	}
@@ -91,7 +89,7 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 				break;
 
 			case 10:
-				interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "I have a number of fine pieces of clothing on sale or,", "if you prefer, I can offer you an exclusive", "total clothing makeover?");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I have a number of fine pieces of clothing on sale or,", "if you prefer, I can offer you an exclusive", "total clothing makeover?");
 				stage++;
 				break;
 			case 11:
@@ -114,19 +112,19 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 
 			//More about the makeover
 			case 20:
-				interpreter.sendDialogues(548, FacialExpression.HAPPY, "Certainly!");
+				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "Certainly!");
 				stage++;
 				break;
 			case 21:
-				interpreter.sendDialogues(548, FacialExpression.HAPPY, "Here at Thessalia's fine clothing boutique, we offer a", "unique service where we will totally revamp your outfit", "to your choosing, for... wait for it...");
+				interpreter.sendDialogues(npc, FacialExpression.HAPPY, "Here at Thessalia's fine clothing boutique, we offer a", "unique service where we will totally revamp your outfit", "to your choosing, for... wait for it...");
 				stage++;
 				break;
 			case 22:
-				interpreter.sendDialogues(548, FacialExpression.FRIENDLY, "A fee of only 500 gold coins! Tired of always wearing", "the same old outfit, day in, day out? This is the service", "for you!");
+				interpreter.sendDialogues(npc, FacialExpression.FRIENDLY, "A fee of only 500 gold coins! Tired of always wearing", "the same old outfit, day in, day out? This is the service", "for you!");
 				stage++;
 				break;
 			case 23:
-				interpreter.sendDialogues(548, FacialExpression.ASKING, "So what do you say? Interested? We can change either", "your top, or your legwear for only 500 gold a item!");
+				interpreter.sendDialogues(npc, FacialExpression.ASKING, "So what do you say? Interested? We can change either", "your top, or your legwear for only 500 gold a item!");
 				stage++;
 				break;
 
@@ -151,19 +149,17 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 			//Changing outfit code
 			case 30:
 				if(player.getEquipment().isEmpty()){
-					interpreter.sendDialogues(548, FacialExpression.HAPPY, "Just select what style and colour you would like from", "this catalogue, and then give me the 1000 gold when", "you've picked.");
+					interpreter.sendDialogues(npc, FacialExpression.HAPPY, "Just select what style and colour you would like from", "this catalogue, and then give me the 1000 gold when", "you've picked.");
 					stage++;
 					break;
 				} else { //Has some armour equipped
-					interpreter.sendDialogues(548, FacialExpression.WORRIED, "You can't try them on while wearing armour. Take", "it off and speak to me again.");
+					interpreter.sendDialogues(npc, FacialExpression.WORRIED, "You can't try them on while wearing armour. Take", "it off and speak to me again.");
 					stage = 52;
 					break;
 				}
 			case 31://Player has money and is not wearing armour/weapons
 				if (player.getInventory().contains(995, 1000) && player.getEquipment().isEmpty()) {
-					if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 0)) {
-						player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 0, true);
-					}
+					player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 0);
 					if (player.isMale()) {
 						end();
 						player.getInterfaceManager().open(new Component(591));
@@ -181,7 +177,7 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 
 			//Closing Remarks
 			case 49: //Not enough money
-				interpreter.sendDialogues(548, FacialExpression.FRIENDLY, "That's ok! Just come back when you do have it!");
+				interpreter.sendDialogues(npc, FacialExpression.FRIENDLY, "That's ok! Just come back when you do have it!");
 				stage = 52;
 				break;
 
@@ -191,7 +187,7 @@ public final class ThessaliaDialogue extends DialoguePlugin {
 				break;
 
 			case 51://No Thanks
-				interpreter.sendDialogues(548, FacialExpression.HALF_GUILTY, "Well, please return if you change your mind.");
+				npc("Well, please return if you change your mind.");
 				stage++;
 				break;
 			case 52:

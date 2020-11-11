@@ -207,7 +207,9 @@ public final class GoblinDiplomacyPlugin extends OptionHandler {
 		 * @author 'Vexia
 		 */
 		public static enum Dyes {
-			ORANGE(new Item(1769), new Item(1763), new Item(1765)), GREEN(new Item(1771), new Item(1765), new Item(1767)), PURPLE(new Item(1773), new Item(1767), new Item(1763));
+			ORANGE(new Item(1769), new Item(1763), new Item(1765)),
+			GREEN(new Item(1771), new Item(1765), new Item(1767)),
+			PURPLE(new Item(1773), new Item(1767), new Item(1763));
 
 			/**
 			 * Constructs a new {@code MixDyePlugin} {@code Object}.

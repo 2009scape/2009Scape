@@ -95,7 +95,19 @@ public final class LeatherCrafting {
 	 * @author 'Vexia
 	 */
 	public enum DragonHide {
-		GREEN_D_HIDE_VAMBS(1745, 1, 1065, 57, 62), GREEN_D_HIDE_CHAPS(1745, 2, 1099, 60, 124), GREEN_D_HIDE_BODY(1745, 3, 1135, 63, 186), BLUE_D_HIDE_VAMBS(2505, 1, 2487, 66, 70), BLUE_D_HIDE_CHAPS(2505, 2, 2493, 68, 140), BLUE_D_HIDE_BODY(2505, 3, 2499, 71, 210), RED_D_HIDE_VAMBS(2507, 1, 2489, 73, 78), RED_D_HIDE_CHAPS(2507, 2, 2495, 75, 156), RED_D_HIDE_BODY(2507, 3, 2501, 77, 234), BLACK_D_HIDE_VAMBS(2509, 1, 2491, 79, 86), BLACK_D_HIDE_CHAPS(2509, 2, 2497, 82, 172), BLACK_D_HIDE_BODY(2509, 3, 2503, 84, 258);
+		GREEN_D_HIDE_VAMBS(1745, 1, 1065, 57, 62),
+		GREEN_D_HIDE_CHAPS(1745, 2, 1099, 60, 124),
+		GREEN_D_HIDE_BODY(1745, 3, 1135, 63, 186),
+		BLUE_D_HIDE_VAMBS(2505, 1, 2487, 66, 70),
+		BLUE_D_HIDE_CHAPS(2505, 2, 2493, 68, 140),
+		BLUE_D_HIDE_BODY(2505, 3, 2499, 71, 210),
+		RED_D_HIDE_VAMBS(2507, 1, 2489, 73, 78),
+		RED_D_HIDE_CHAPS(2507, 2, 2495, 75, 156),
+		RED_D_HIDE_BODY(2507, 3, 2501, 77, 234),
+		BLACK_D_HIDE_VAMBS(2509, 1, 2491, 79, 86),
+		BLACK_D_HIDE_CHAPS(2509, 2, 2497, 82, 172),
+		BLACK_D_HIDE_BODY(2509, 3, 2503, 84, 258);
+
 		/**
 		 * Constructs a new {@code LeatherCrafting.java} {@code Object}.
 		 * @param leather the leather required.
@@ -192,7 +204,13 @@ public final class LeatherCrafting {
 	 * @author 'Vexia
 	 */
 	public enum SoftLeather {
-		ARMOUR(28, 14, 25, new Item(1129)), GLOVES(29, 1, 13.8, new Item(1059)), BOOTS(30, 7, 16.3, new Item(1061)), VAMBRACES(31, 11, 22, new Item(1063)), CHAPS(32, 18, 27, new Item(1095)), COIF(33, 38, 37, new Item(1169)), COWL(34, 9, 18.5, new Item(1167));
+		ARMOUR(28, 14, 25, new Item(1129)),
+		GLOVES(29, 1, 13.8, new Item(1059)),
+		BOOTS(30, 7, 16.3, new Item(1061)),
+		VAMBRACES(31, 11, 22, new Item(1063)),
+		CHAPS(32, 18, 27, new Item(1095)),
+		COIF(33, 38, 37, new Item(1169)),
+		COWL(34, 9, 18.5, new Item(1167));
 
 		/**
 		 * Constructs a new {@code Soft} {@code Object}.

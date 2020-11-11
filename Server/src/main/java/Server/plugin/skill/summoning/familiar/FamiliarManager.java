@@ -238,7 +238,7 @@ public final class FamiliarManager implements SavingModule {
 		final int npcId = pouch.getNpcId();
 		Familiar fam = FAMILIARS.get(npcId);
 		if (fam == null) {
-			player.getPacketDispatch().sendMessage("Invalid familiar " + npcId);
+			player.getPacketDispatch().sendMessage("Invalid familiar " + npcId + " - report on 2009scape github");
 			return;
 		}
 		fam = fam.construct(player, npcId);

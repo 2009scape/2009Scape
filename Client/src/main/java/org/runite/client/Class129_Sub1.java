@@ -1,13 +1,11 @@
 package org.runite.client;
 
-import java.awt.Image;
-
 final class Class129_Sub1 extends Class129 {
 
     private long aLong2683;
     private int anInt2685;
     private int anInt2688;
-    static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array2690;
+    static AbstractSprite[] aAbstractSpriteArray2690;
     private int anInt2691;
     private int anInt2692;
     static int anInt2693 = 0;

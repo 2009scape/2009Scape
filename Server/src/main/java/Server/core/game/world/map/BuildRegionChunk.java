@@ -13,7 +13,7 @@ import core.net.packet.out.ConstructGroundItem;
 import core.net.packet.out.ConstructObject;
 
 /**
- * A region chunk, used for easely modifying objects.
+ * A region chunk, used for easily modifying objects.
  * @author Emperor
  *
  */

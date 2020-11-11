@@ -208,7 +208,7 @@ final class Class140_Sub6 extends GameObject {
       }
    }
 
-   static Class3_Sub28_Sub16[] getSprites(int archiveId, CacheIndex var3) {
+   static AbstractSprite[] getSprites(int archiveId, CacheIndex var3) {
       try {
     	 // System.out.println(archiveId);
          return !Class75_Sub4.method1351(var3, 0, archiveId, -30901)?null: Class75_Sub3.method1347(-26802);

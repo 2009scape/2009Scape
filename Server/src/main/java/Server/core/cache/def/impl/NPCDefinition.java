@@ -486,32 +486,6 @@ public final class NPCDefinition extends Definition<NPC> {
 		default:
 			//System.err.println("Unhandled NPC definition opcode: " + opcode);
 		}
-		if (id == 3074) {
-			setName("Monk");
-			options[0] = "Talk-to";
-		}
-		if (id == 2020) {
-			setName("Vanstrom Klause");
-		}
-		if (id == 381) {
-			setName("Captain Barnaby");
-			options[0] = "Talk-to";
-			options[2] = "Pay-fare";
-		}
-		if (id == 3820) {
-			setName("Wise Old Man");
-			options[0] = "Talk-to";
-		}
-		if (id == 4495) {
-			setName("Grubfoot");
-			options[0] = "Talk-to";
-		}
-		if (id == 7707) {
-			setName("Drezel");
-		}
-		if (id == 1) {
-
-		}
 	}
 
 	/**

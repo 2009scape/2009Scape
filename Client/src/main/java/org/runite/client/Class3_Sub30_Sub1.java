@@ -299,7 +299,7 @@ public final class Class3_Sub30_Sub1 extends DataBuffer {
 
 				if(41 == var4 && Class3_Sub13_Sub7.aClass11_3087 == null) {
 					Unsorted.method78(var2, var3);
-					Class3_Sub13_Sub7.aClass11_3087 = Class3_Sub28_Sub16.method638(var3, var2);
+					Class3_Sub13_Sub7.aClass11_3087 = AbstractSprite.method638(var3, var2);
 					Class20.method909(Class3_Sub13_Sub7.aClass11_3087);
 				}
 
@@ -404,7 +404,7 @@ public final class Class3_Sub30_Sub1 extends DataBuffer {
 				}
 
 				if(32 == var4) {
-					var13 = Class3_Sub28_Sub16.method638(var3, var2);
+					var13 = AbstractSprite.method638(var3, var2);
 					if(null != var13) {
 						Class25.method958((byte)-126);
 						Class3_Sub1 var16 = Client.method44(var13);

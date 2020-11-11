@@ -45,7 +45,7 @@ public enum ZoneType {
 	 * Constructs a new {@code ZoneType} {@code Object}.
 	 * @param id The zone id.
 	 */
-	private ZoneType(int id) {
+	ZoneType(int id) {
 		this.id = id;
 	}
 

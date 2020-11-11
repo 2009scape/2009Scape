@@ -4,6 +4,8 @@ import core.cache.def.impl.ItemDefinition;
 import core.game.component.Component;
 import core.game.component.ComponentDefinition;
 import core.game.component.ComponentPlugin;
+import core.game.node.entity.player.link.diary.DiaryType;
+import core.game.world.map.Location;
 import plugin.skill.Skills;
 import plugin.skill.crafting.SilverProduct;
 import core.game.node.entity.player.Player;
@@ -14,6 +16,7 @@ import core.game.world.GameWorld;
 import core.game.world.update.flag.context.Animation;
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
+import plugin.skill.smithing.smelting.Bar;
 
 /**
  * Represents the silver crafting making interface.
@@ -98,6 +101,11 @@ public final class SilverInterface extends ComponentPlugin {
 					if (player.getInventory().remove(SILVER_BAR)) {
 						player.getInventory().add(new Item(def.getProduct(), def == SilverProduct.SILVER_BOLTS ? 10 : 1));
 						player.getSkills().addExperience(Skills.CRAFTING, def.getExp(), true);
+					}
+
+					// Craft a holy symbol in the Lumbridge furnace
+					if (def == SilverProduct.UNBLESSED && player.getLocation().withinDistance(Location.create(3226, 3254, 0))) {
+						player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 2, 8);
 					}
 				} else {
 					return true;

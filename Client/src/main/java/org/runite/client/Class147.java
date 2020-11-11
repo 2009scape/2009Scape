@@ -1,6 +1,6 @@
 package org.runite.client;
 
-final class Class147 implements Interface5 {
+final class Class147 implements ShaderInterface {
 
    public final void method22() {
       if(Class106.aBoolean1441) {

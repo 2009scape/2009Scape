@@ -21,7 +21,7 @@ final class Class3_Sub13_Sub17 extends Class3_Sub13 {
          if(Class140_Sub2.aBoolean2713) {
             AnimationDefinition.aClass109_1856 = null;
             Class140_Sub2.aBoolean2713 = false;
-            Class40.aClass3_Sub28_Sub16_680 = null;
+            Class40.aAbstractSprite_680 = null;
          }
       } catch (RuntimeException var2) {
          throw ClientErrorException.clientError(var2, "je.F(" + var0 + ')');

@@ -105,14 +105,14 @@ public final class LumbridgeDungeon extends MapZone implements Plugin<Object> {
 		 * @param location the location.
 		 */
 		public WallBeastNPC(int id, Location location) {
-			super(id, location);
+			super(id, location,false);
 		}
 
 		/**
 		 * Constructs a new {@code WallBeastNPC} {@code Object}.
 		 */
 		public WallBeastNPC() {
-			super(7823, null);
+			super(7823, null,false);
 		}
 
 		@Override

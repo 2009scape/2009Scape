@@ -3,12 +3,15 @@ package plugin.command.sets
 import core.cache.def.impl.ItemDefinition
 import core.game.component.Component
 import core.game.node.entity.player.info.Rights
+import core.game.node.entity.player.link.RunScript
 import core.game.system.SystemLogger
+import core.game.system.communication.CommunicationInfo
 import core.game.world.GameWorld
 import core.game.world.map.RegionManager
 import core.game.world.map.build.DynamicRegion
 import core.game.world.repository.Repository
 import core.plugin.InitializablePlugin
+import core.tools.StringUtils
 import plugin.command.Command
 import plugin.command.CommandMapping
 import plugin.command.CommandSet
@@ -153,5 +156,31 @@ class MiscCommandSet : CommandSet(Command.Privilege.ADMIN){
                 player.packetDispatch.sendString(line,275,lineid++)
             player.interfaceManager.open(Component(275))
         }
+
+        /**
+         * Reply to PMs (also enables tab-to-reply)
+         */
+        define("reply",Command.Privilege.STANDARD){player,_ ->
+            if(player.interfaceManager.isOpened){
+                player.sendMessage("<col=e74c3c>Please finish what you're doing first.")
+                return@define
+            }
+            if (player.attributes.containsKey("replyTo")) {
+                player.setAttribute("keepDialogueAlive", true)
+                val replyTo = player.getAttribute("replyTo", "").replace("_".toRegex(), " ")
+                player.setAttribute("runscript", object : RunScript() {
+                    override fun handle(): Boolean {
+                        CommunicationInfo.sendMessage(player, replyTo.toLowerCase(), getValue() as String)
+                        player.removeAttribute("keepDialogueAlive")
+                        return true
+                    }
+                })
+                player.dialogueInterpreter.sendMessageInput(StringUtils.formatDisplayName(replyTo))
+            } else {
+                player.packetDispatch.sendMessage("<col=3498db>You have not recieved any recent messages to which you can reply.")
+            }
+        }
+
+
     }
 }

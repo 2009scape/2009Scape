@@ -72,32 +72,46 @@ class FairyRingPlugin : OptionHandler() {
                     if (player.getAttribute("fairy-delay", 0) > GameWorld.ticks) {
                         return true
                     }
-                    when(button){
+                    when (button) {
                         //counter-clockwise
-                        24 -> {updateFirst(player,true)}
-                        26 -> {updateSecond(player,true)}
-                        28 -> {updateThird(player,true)}
+                        24 -> {
+                            updateFirst(player, true)
+                        }
+                        26 -> {
+                            updateSecond(player, true)
+                        }
+                        28 -> {
+                            updateThird(player, true)
+                        }
                         //clockwise
-                        23 -> {updateFirst(player,false)}
-                        25 -> {updateSecond(player,false)}
-                        27 -> {updateThird(player,false)}
+                        23 -> {
+                            updateFirst(player, false)
+                        }
+                        25 -> {
+                            updateSecond(player, false)
+                        }
+                        27 -> {
+                            updateThird(player, false)
+                        }
 
                         //teleport
-                        21 -> teleport(player,getFirst(player),getSecond(player),getThird(player)).also { return true }
+                        21 -> teleport(player, getFirst(player), getSecond(player), getThird(player)).also { return true }
                     }
                     SystemLogger.log("Letters Selected: ${SELECTOR_LETTERS[0][getFirst(player)]}${SELECTOR_LETTERS[1][getSecond(player)]}${SELECTOR_LETTERS[2][getThird(player)]}")
                     player.setAttribute("fairy-delay", GameWorld.ticks + 4)
                 }
                 735 -> when (button) {
-                    12 -> { TODO("Add handling for list re-sorting.") }
+                    12 -> {
+                        TODO("Add handling for list re-sorting.")
+                    }
                 }
             }
             return true
         }
         fun updateFirst(player: Player, decrement: Boolean){
-            if(player.getAttribute("firstLocked",false)){ //For some reason the client script for the interface resets all other wheels when you move the first
-                player.configManager.set(817,0)
-                player.configManager.set(818,0)
+            if(player.getAttribute("firstLocked", false)){ //For some reason the client script for the interface resets all other wheels when you move the first
+                player.configManager.set(817, 0)
+                player.configManager.set(818, 0)
                 player.removeAttribute("firstLocked")
             }
             val current = player.configManager.get(816)
@@ -108,11 +122,11 @@ class FairyRingPlugin : OptionHandler() {
                 new = if (current == 3) 0 else current + 1
                 if(new == 2) new = 3 //have to do this because the client script always skips index 2 when rotating clock-wise (anti macro feature?)
             }
-            player.configManager.set(816,new)
+            player.configManager.set(816, new)
         }
 
         fun updateSecond(player: Player, decrement: Boolean){
-            player.setAttribute("firstLocked",true)
+            player.setAttribute("firstLocked", true)
             val current = player.configManager.get(817)
             var new = 0
             if(decrement){
@@ -121,11 +135,11 @@ class FairyRingPlugin : OptionHandler() {
                 new = if (current == 3) 0 else current + 1
                 if(new == 2) new = 3
             }
-            player.configManager.set(817,new)
+            player.configManager.set(817, new)
         }
 
         fun updateThird(player: Player, decrement: Boolean){
-            player.setAttribute("firstLocked",true)
+            player.setAttribute("firstLocked", true)
             val current = player.configManager.get(818)
             var new = 0
             if(decrement){
@@ -134,7 +148,7 @@ class FairyRingPlugin : OptionHandler() {
                 new = if (current == 3) 0 else current + 1
                 if(new == 2) new = 3
             }
-            player.configManager.set(818,new)
+            player.configManager.set(818, new)
         }
 
         fun getFirst(player: Player): Int {return player.configManager.get(816)}
@@ -259,7 +273,7 @@ class FairyRingPlugin : OptionHandler() {
          * Teleports the player.
          * @param player the player.
          */
-        private fun teleport(player: Player,first: Int, second: Int, third: Int) {
+        private fun teleport(player: Player, first: Int, second: Int, third: Int) {
             val string = "${SELECTOR_LETTERS[0][first]}${SELECTOR_LETTERS[1][second]}${SELECTOR_LETTERS[2][third]}"
             System.out.println(string)
             var fairyRing: FairyRing? = null
@@ -292,11 +306,6 @@ class FairyRingPlugin : OptionHandler() {
                 player.sendMessage("" + fairyRing)
                 if (!player.savedData.globalData.hasTravelLog(fairyRing.ordinal)) {
                     player.savedData.globalData.setTravelLog(fairyRing.ordinal)
-                }
-            }
-            if (fairyRing != null && fairyRing == FairyRing.DIS) {
-                if (!player.achievementDiaryManager.getDiary(DiaryType.LUMBRIDGE).isComplete(1, 1)) {
-                    player.achievementDiaryManager.updateTask(player, DiaryType.LUMBRIDGE, 1, 1, true)
                 }
             }
             sendTeleport(player, tile)

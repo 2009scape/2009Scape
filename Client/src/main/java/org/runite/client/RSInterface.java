@@ -539,7 +539,7 @@ public final class RSInterface {
         this.aClass3_Sub1_257 = new Class3_Sub1(var5, -1);
     }
 
-    final Class3_Sub28_Sub16 method859(int var2) {
+    final AbstractSprite method859(int var2) {
         try {
             GameShell.aBoolean6 = false;
             if (var2 >= 0 && var2 < this.anIntArray197.length) {
@@ -547,7 +547,7 @@ public final class RSInterface {
                 if (var3 == -1) {
                     return null;
                 } else {
-                    Class3_Sub28_Sub16 var4 = (Class3_Sub28_Sub16) Class114.aReferenceCache_1569.get((long) var3);
+                    AbstractSprite var4 = (AbstractSprite) Class114.aReferenceCache_1569.get((long) var3);
                     if (var4 == null) {
                         var4 = Unsorted.method602(var3, Class12.aClass153_323);
                         if (null == var4) {
@@ -727,7 +727,7 @@ public final class RSInterface {
         }
     }
 
-    final Class3_Sub28_Sub16 method866(boolean var2) {
+    final AbstractSprite method866(boolean var2) {
         try {
             GameShell.aBoolean6 = false;
             int archiveId;
@@ -740,7 +740,7 @@ public final class RSInterface {
                 return null;
             } else {
                 long var4 = ((this.aBoolean178 ? 1L : 0L) << 38) + ((!this.aBoolean157 ? 0L : 1L) << 35) + (long) archiveId + ((long) this.anInt288 << 36) + ((this.aBoolean199 ? 1L : 0L) << 39) + ((long) this.anInt287 << 40);
-                Class3_Sub28_Sub16 var6 = (Class3_Sub28_Sub16) Class114.aReferenceCache_1569.get(var4);
+                AbstractSprite var6 = (AbstractSprite) Class114.aReferenceCache_1569.get(var4);
                 if (var6 == null) {
                     Class3_Sub28_Sub16_Sub2 var7;
                     if (this.aBoolean157) {
@@ -782,14 +782,14 @@ public final class RSInterface {
                             if (var7 instanceof Class3_Sub28_Sub16_Sub2_Sub1) {
                                 var9 = new Class3_Sub28_Sub16_Sub1_Sub1(var7);
                             } else {
-                                var9 = new Class3_Sub28_Sub16_Sub1(var7);
+                                var9 = new HDSprite(var7);
                             }
                         } else {
                             var9 = var7;
                         }
 
                         Class114.aReferenceCache_1569.put(var9, var4);
-                        return (Class3_Sub28_Sub16) var9;
+                        return (AbstractSprite) var9;
                     }
                 } else {
                     return var6;

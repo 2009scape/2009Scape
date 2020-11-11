@@ -1,5 +1,6 @@
 package plugin.cutscene;
 
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.activity.ActivityPlugin;
 import plugin.activity.CutscenePlugin;
 import core.game.node.entity.player.Player;
@@ -62,6 +63,7 @@ public final class OrganCutScene extends CutscenePlugin {
 			@Override
 			public boolean pulse() {
 				unpause();
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 0, 16);
 				return true;
 			}
 		});

@@ -11,7 +11,7 @@ final class Class36 {
    private int[] anIntArray633;
    private final byte[] aByteArray635;
    private final int[] anIntArray636;
-   static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_637;
+   static AbstractSprite aAbstractSprite_637;
    static int anInt638;
    static int anInt639;
    static byte[][][] aByteArrayArrayArray640;

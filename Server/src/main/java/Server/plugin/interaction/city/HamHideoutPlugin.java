@@ -73,9 +73,6 @@ public final class HamHideoutPlugin extends OptionHandler {
 			case "climb-down":
 				switch (id) {
 				case 5491:
-					if (!player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(0, 9)) {
-						player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).updateTask(player, 0, 9, true);
-					}
 					player.getProperties().setTeleportLocation(Location.create(3149, 9652, 0));
 					break;
 				}

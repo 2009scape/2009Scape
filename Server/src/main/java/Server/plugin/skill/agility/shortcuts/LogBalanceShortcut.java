@@ -1,5 +1,6 @@
 package plugin.skill.agility.shortcuts;
 
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.skill.agility.AgilityHandler;
 import plugin.skill.agility.AgilityShortcut;
 import core.game.node.Node;
@@ -50,6 +51,7 @@ public class LogBalanceShortcut extends AgilityShortcut {
 	@Override
 	public Plugin<Object> newInstance(Object arg) {
 		configure(new LogBalanceShortcut(new int[] { 2296 }, 20, 5, new Location(2598, 3477, 0), Location.create(2603, 3477, 0), "walk-across"));
+		// Sinclair mansion to Rellekka.  9324 is on the south side of the stream going north.
 		configure(new LogBalanceShortcut(new int[] { 9322, 9324 }, 48, 1, Location.create(2722, 3592, 0), Location.create(2722, 3596, 0), "walk-across"));
 		configure(new LogBalanceShortcut(new int[] { 35997, 35999 }, 33, 1, Location.create(2602, 3336, 0), Location.create(2598, 3336, 0), "walk-across"));
 		configure(new LogBalanceShortcut(new int[] { 2332 }, 1, 1, Location.create(2910, 3049, 0), Location.create(2906, 3049, 0), "cross"));
@@ -63,6 +65,12 @@ public class LogBalanceShortcut extends AgilityShortcut {
 			destination = end;
 		}
 		AgilityHandler.walk(player, -1, player.getLocation(), destination, Animation.create(155), getExperience(), null);
+
+		// Seers Achievement Diary
+		if (destination.equals(new Location(2722,3596,0))
+				&& !player.getAchievementDiaryManager().getDiary(DiaryType.SEERS_VILLAGE).isComplete(1,0)) {
+			player.getAchievementDiaryManager().getDiary(DiaryType.SEERS_VILLAGE).updateTask(player,1,0,true);
+		}
 	}
 
 	@Override

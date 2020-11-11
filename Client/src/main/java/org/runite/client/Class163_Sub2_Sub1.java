@@ -45,7 +45,7 @@ final class Class163_Sub2_Sub1 extends Class163_Sub2 {
             if(null != var9 && var9.anInt1360 == 2) {
                Unsorted.method1724(var0 >> 1, var5, (-Class82.anInt1152 + var9.anInt1347 << 7) - -var9.anInt1350, var9.anInt1353 * 2, var2 >> 1, var9.anInt1346 + (var9.anInt1356 + -Class131.anInt1716 << 7), (byte)-114, var4);
                if(-1 < Class32.anInt590 && Class44.anInt719 % 20 < 10) {
-                  Class166.aClass3_Sub28_Sub16Array2072[var9.anInt1351].method643(-12 + var1 + Class32.anInt590, -28 + var6 - -Class82.anInt2208);
+                  Class166.aAbstractSpriteArray2072[var9.anInt1351].method643(-12 + var1 + Class32.anInt590, -28 + var6 - -Class82.anInt2208);
                }
             }
          }

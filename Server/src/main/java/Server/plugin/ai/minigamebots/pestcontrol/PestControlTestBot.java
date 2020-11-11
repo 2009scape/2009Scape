@@ -98,7 +98,7 @@ public class PestControlTestBot extends PvMBots {
 
 	private void attackNPCs() {
 		this.getWalkingQueue().setRunning(true);
-		List<Entity> creatures = FindTargets(this, 15);
+		List<Entity> creatures = FindTargets(this, 20);
 		if (creatures == null || creatures.isEmpty())
 		{
 			if (randomType > 15)
@@ -167,7 +167,7 @@ public class PestControlTestBot extends PvMBots {
 			movetimer = new Random().nextInt(2);
 			this.walkToPosSmart(myBoat.outsideBoatBorder.getWeightedRandomLoc(2));
 		}
-		if (randomType > 20 && new Random().nextInt(6) == 0) //Idle outside ladder
+		if (randomType > 10 && new Random().nextInt(6) == 0) //Idle outside ladder
 		{
 			if (new Random().nextInt(16) == 0)
 			{

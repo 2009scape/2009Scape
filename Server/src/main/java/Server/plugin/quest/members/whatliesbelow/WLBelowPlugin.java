@@ -2,6 +2,7 @@ package plugin.quest.members.whatliesbelow;
 
 import core.cache.def.impl.ObjectDefinition;
 import core.game.component.Component;
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.activity.ActivityManager;
 import plugin.skill.gather.SkillingTool;
 import plugin.skill.runecrafting.Altar;
@@ -72,6 +73,7 @@ public class WLBelowPlugin extends OptionHandler {
 			case 23058:
 				player.animate(Animation.create(6103));
 				player.teleport(new Location(3179, 5191, 0), 2);
+
 				break;
 			}
 			break;
@@ -79,6 +81,8 @@ public class WLBelowPlugin extends OptionHandler {
 			switch (node.getId()) {
 			case 23095:
 				player.teleport(new Location(2270, 4836, 1));
+				// Take the Dagon'Hai shortcut to the chaos portal
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 1, 2);
 				break;
 			}
 			break;

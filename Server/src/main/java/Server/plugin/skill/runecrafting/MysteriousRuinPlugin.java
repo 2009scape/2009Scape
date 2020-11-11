@@ -4,6 +4,7 @@ import core.game.interaction.NodeUsageEvent;
 import core.game.interaction.UseWithHandler;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.info.Rights;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.object.GameObject;
 import core.game.system.task.Pulse;
 import core.game.world.GameWorld;
@@ -72,6 +73,10 @@ public final class MysteriousRuinPlugin extends UseWithHandler {
 			@Override
 			public boolean pulse() {
 				player.getProperties().setTeleportLocation(ruin.getEnd());
+				// Enter the Earth Altar using an earth tiara or talisman
+				if (ruin == MysteriousRuin.EARTH) {
+					player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 13);
+				}
 				return true;
 			}
 		});

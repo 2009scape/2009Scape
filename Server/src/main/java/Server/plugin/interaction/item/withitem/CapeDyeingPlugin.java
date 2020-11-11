@@ -1,16 +1,24 @@
 package plugin.interaction.item.withitem;
 
+import core.game.content.ItemNames;
 import core.game.content.global.Dyes;
+import core.game.content.global.action.SpecialLadders;
 import core.game.interaction.NodeUsageEvent;
 import core.game.interaction.UseWithHandler;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
+import core.game.world.map.Location;
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.stream.Stream;
+
 /**
  * Handles the dyeing of a cape.
- * @author Vexia
+ * @author afaroutdude
  */
 @InitializablePlugin
 public final class CapeDyeingPlugin extends UseWithHandler {
@@ -19,7 +27,7 @@ public final class CapeDyeingPlugin extends UseWithHandler {
 	 * Constructs a new {@code CapeDyeingPlugin} {@code Object}.
 	 */
 	public CapeDyeingPlugin() {
-		super(1019);
+		super(Cape.getIds());
 	}
 
 	@Override
@@ -33,13 +41,21 @@ public final class CapeDyeingPlugin extends UseWithHandler {
 	@Override
 	public boolean handle(NodeUsageEvent event) {
 		final Player player = event.getPlayer();
-		final Item item = event.getUsedItem();
-		final Cape cape = Cape.forDye(item);
-		if (cape == null) {
+		final boolean testCape = Cape.isCape(event.getBaseItem());
+		final Item cape = Cape.isCape(event.getBaseItem()) ? event.getBaseItem() : event.getUsedItem();
+		final Item dye = Cape.isCape(event.getBaseItem()) ? event.getUsedItem() : event.getBaseItem();
+		final Item dyedCape = MAP_DYE_TO_CAPE.get(dye);
+		if (dyedCape == null) {
 			return false;
 		}
-		if (player.getInventory().remove(cape.getDye().getItem(), (Item) event.getUsedWith())) {
-			player.getInventory().replace(cape.getCape(), item.getSlot());
+		if (!cape.equals(dyedCape) && player.getInventory().containsItems(dye, cape) && player.getInventory().remove(dye, cape)) {
+			player.getInventory().add(dyedCape);
+			if (dye.equals(Dyes.BLACK.getItem())) {
+				player.getInventory().add(new Item(ItemNames.VIAL));
+			}
+			if (dye.equals(Dyes.PINK.getItem()) && !player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).isComplete(2,5)) {
+				player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).updateTask(player,2,5,true);
+			}
 		}
 		return true;
 	}
@@ -49,7 +65,14 @@ public final class CapeDyeingPlugin extends UseWithHandler {
 	 * @author Vexia
 	 */
 	public enum Cape {
-		RED(Dyes.RED, new Item(1007)), BLUE(Dyes.BLUE, new Item(1021)), YELLOW(Dyes.YELLOW, new Item(1023)), GREEN(Dyes.GREEN, new Item(1027)), PURPLE(Dyes.PURPLE, new Item(1029)), ORANGE(Dyes.ORANGE, new Item(1031)), PINK(Dyes.PINK, new Item(6959));
+		BLACK(Dyes.BLACK, new Item(1019)),
+		RED(Dyes.RED, new Item(1007)),
+		BLUE(Dyes.BLUE, new Item(1021)),
+		YELLOW(Dyes.YELLOW, new Item(1023)),
+		GREEN(Dyes.GREEN, new Item(1027)),
+		PURPLE(Dyes.PURPLE, new Item(1029)),
+		ORANGE(Dyes.ORANGE, new Item(1031)),
+		PINK(Dyes.PINK, new Item(6959));
 
 		/**
 		 * The dye for the cape.
@@ -66,22 +89,9 @@ public final class CapeDyeingPlugin extends UseWithHandler {
 		 * @param dye the dye.
 		 * @param cape the cape.
 		 */
-		private Cape(Dyes dye, Item cape) {
+		Cape(Dyes dye, Item cape) {
 			this.dye = dye;
 			this.cape = cape;
-		}
-
-		/**
-		 * Gets the cape.
-		 * @param dye the dye.
-		 */
-		public static Cape forDye(final Item dye) {
-			for (Cape c : values()) {
-				if (c.getDye().getItem().getId() == dye.getId()) {
-					return c;
-				}
-			}
-			return null;
 		}
 
 		/**
@@ -100,5 +110,34 @@ public final class CapeDyeingPlugin extends UseWithHandler {
 			return cape;
 		}
 
+		/**
+		 * @return an int array of all cape IDs
+		 */
+		static public int[] getIds() {
+			return Stream.of(Cape.values())
+					.map(Cape::getCape)
+					.map(Item::getId)
+					.mapToInt(Integer::intValue).toArray();
+		}
+
+		/**
+		 * @param potentiallyCape
+		 * @return true if passed item is a cape that we can handle
+		 */
+		static public boolean isCape(Item potentiallyCape){
+			for (Cape c : Cape.values()) {
+				if (c.getCape().getId() == potentiallyCape.getId()) {
+					return true;
+				}
+			}
+			return false;
+		}
+	}
+
+	public static HashMap<Item, Item> MAP_DYE_TO_CAPE = new HashMap<>();
+	static {
+		for (Cape c : Cape.values()) {
+			MAP_DYE_TO_CAPE.putIfAbsent(c.getDye().getItem(), c.getCape());
+		}
 	}
 }

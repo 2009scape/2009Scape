@@ -13,7 +13,6 @@ final class Class88 {
    private static ByteBuffer aByteBuffer1226;
    static boolean Texture3DEnabled;
    static int anInt1228 = -1;
-   static int anInt1229 = -1;
 
 
    static void method1454() {
@@ -56,11 +55,11 @@ final class Class88 {
          Class31.anInt580 -= aByteBuffer1226.limit() * 2;
       }
 
-      if(anInt1229 != -1) {
+      if(WaterfallShader.waterfallTextureId != -1) {
          var0 = HDToolKit.gl;
-         var1 = new int[]{anInt1229};
+         var1 = new int[]{WaterfallShader.waterfallTextureId};
          var0.glDeleteTextures(1, var1, 0);
-         anInt1229 = -1;
+         WaterfallShader.waterfallTextureId = -1;
          Class31.anInt580 -= aByteBuffer1225.limit() * 2;
       }
 
@@ -74,7 +73,7 @@ final class Class88 {
    }
 
    static void method1456() {
-      Texture3DEnabled = HDToolKit.supportTexture3D;
+      Texture3DEnabled = HDToolKit.allows3DTextureMapping;
       method1454();
       method1458();
       method1459();
@@ -118,7 +117,7 @@ final class Class88 {
          var0.glTexImage3D('\u806f', 0, 6410, 64, 64, 64, 0, 6410, 5121, aByteBuffer1225);
          var0.glTexParameteri('\u806f', 10241, 9729);
          var0.glTexParameteri('\u806f', 10240, 9729);
-         anInt1229 = var1[0];
+         WaterfallShader.waterfallTextureId = var1[0];
       } else {
          anIntArray1223 = new int[64];
          var0.glGenTextures(64, anIntArray1223, 0);

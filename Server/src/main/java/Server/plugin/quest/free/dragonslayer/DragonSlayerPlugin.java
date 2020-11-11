@@ -27,15 +27,16 @@ import core.plugin.Plugin;
 
 /**
  * Represents the plugin used to handle node interactions related to dragon slayer.
+ *
  * @author Vexia
  * 
  */
 public final class DragonSlayerPlugin extends OptionHandler {
 
-	/**
-	 * Represents the hammer animation.
-	 */
-	private static final Animation HAMMER_ANIM = new Animation(3676);
+    /**
+     * Represents the hammer animation.
+     */
+    private static final Animation HAMMER_ANIM = new Animation(3676);
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
@@ -193,22 +194,21 @@ public final class DragonSlayerPlugin extends OptionHandler {
 			break;
 		case 25213:
 			ClimbActionHandler.climb(player, new Animation(828), new Location(2834, 3258, 0));
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 2);
 			break;
 		case 2606:
-			if (player.getLocation().getY() < 9600 && !player.getSavedData().getQuestData().getDragonSlayerAttribute("memorized") && player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) != 100) {
-				player.getPacketDispatch().sendMessage("The door is securely locked.");
-			} else {
-				if (!player.getSavedData().getQuestData().getDragonSlayerAttribute("memorized")) {
-					player.getPacketDispatch().sendMessage("You found a secret door.");
-					player.getPacketDispatch().sendMessage("You remember where the secret door is for future reference.");
-				}
-				if (!player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(1, 1)) {
-					player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 1, 1, true);
-				}
-				player.getSavedData().getQuestData().setDragonSlayerAttribute("memorized", true);
-				DoorActionHandler.handleAutowalkDoor(player, (GameObject) node);
-			}
-			break;
+                if (player.getLocation().getY() < 9600 && !player.getSavedData().getQuestData().getDragonSlayerAttribute("memorized") && player.getQuestRepository().getQuest("Dragon Slayer").getStage(player) != 100) {
+                    player.getPacketDispatch().sendMessage("The door is securely locked.");
+                } else {
+                    if (!player.getSavedData().getQuestData().getDragonSlayerAttribute("memorized")) {
+                        player.getPacketDispatch().sendMessage("You found a secret door.");
+                        player.getPacketDispatch().sendMessage("You remember where the secret door is for future reference.");
+                    }
+                    player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 1);
+                    player.getSavedData().getQuestData().setDragonSlayerAttribute("memorized", true);
+                    DoorActionHandler.handleAutowalkDoor(player, (GameObject) node);
+                }
+                break;
 		case 25154:
 			ClimbActionHandler.climb(player, new Animation(828), new Location(2833, 9658, 0));
 			break;

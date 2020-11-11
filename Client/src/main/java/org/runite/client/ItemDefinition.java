@@ -830,13 +830,7 @@ final class ItemDefinition {
 			var0 += var3;
 			int var4 = var0 / 4;
 			anIntArray781[var1] = var4;
-			System.out.println("Xp gained? : " + var4);
 		}
 		aClass94_811 = RSString.parse("green:");
-	}
-
-	public int getShiftClickActionIndex() {
-		return (inventoryOptions != null)
-				? ("Drop".equalsIgnoreCase(inventoryOptions[4].toString()) ? 4 : -1) : -1;
 	}
 }

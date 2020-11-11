@@ -1,5 +1,6 @@
 package plugin.skill.farming.wrapper;
 
+import core.game.system.SystemLogger;
 import plugin.skill.farming.FarmingNode;
 import plugin.skill.farming.wrapper.handler.DeathHandler;
 import plugin.skill.farming.wrapper.handler.DiseaseHandler;

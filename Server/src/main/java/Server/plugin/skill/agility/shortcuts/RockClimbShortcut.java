@@ -41,9 +41,6 @@ public class RockClimbShortcut extends AgilityShortcut {
 			if (player.getLocation().getX() <= 2791) {
 				ForceMovement.run(player, object.getLocation(), object.getLocation().transform(3, 0, 0), SCALE, SCALE, Direction.WEST, 13).setEndAnimation(Animation.RESET);
 			} else {
-				if (!player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 5)) {
-					player.getAchievementDiaryManager().updateTask(player, DiaryType.KARAMJA, 0, 5, true);
-				}
 				ForceMovement.run(player, object.getLocation(), object.getLocation().transform(-3, 0, 0), ANIMATION, ANIMATION, Direction.WEST, 13).setEndAnimation(Animation.RESET);
 			}
 			break;

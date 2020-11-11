@@ -219,12 +219,6 @@ public final class HouseManager implements SavingModule {
 				return true;
 			}
 		});
-		/*if (player.getHouseManager() == this && location.equals(HouseLocation.WHITERIDGE)) {
-			//player.getAchievementDiaryManager().updateTask(player, DiaryType.WHITERIDGE, 2, 1, true);
-		}*/
-		if (location.equals(HouseLocation.YANILLE)) {
-			//player.getAchievementDiaryManager().updateTask(player, DiaryType.ARDOUGNE, 1, 5, true);
-		}
 	}
 
 	/**

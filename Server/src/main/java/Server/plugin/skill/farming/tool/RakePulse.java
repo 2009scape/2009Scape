@@ -1,7 +1,10 @@
 package plugin.skill.farming.tool;
 
+import core.game.container.impl.EquipmentContainer;
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.skill.Skills;
 import plugin.skill.farming.FarmingConstant;
+import plugin.skill.farming.patch.PatchProtection;
 import plugin.skill.farming.wrapper.PatchWrapper;
 import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
@@ -31,7 +34,6 @@ public final class RakePulse extends ToolAction {
 	 * Constructs a new {@code RakePulse} {@code Object}.
 	 * @param player the player.
 	 * @param wrapper the wrapper.
-	 * @param delay the delay.
 	 */
 	public RakePulse(final Player player, final PatchWrapper wrapper) {
 		super(player, wrapper, null);
@@ -54,7 +56,14 @@ public final class RakePulse extends ToolAction {
 		if (((RandomFunction.getRandom(3) * player.getSkills().getLevel(Skills.FARMING)) / 3) > ((player.getSkills().getLevel(Skills.FARMING) > 5 ? player.getSkills().getLevel(Skills.FARMING) - 5 : 0) / 2)) {
 			if (player.getInventory().add(FarmingConstant.WEEDS)) {
 				wrapper.addConfigValue(wrapper.getState() + 1);
-				player.getSkills().addExperience(Skills.FARMING, 4, true);
+				double xp = 4;
+				// Check for falador shield bonus
+				int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
+				if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
+						&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+					xp = xp * 1.1;
+				}
+				player.getSkills().addExperience(Skills.FARMING, xp, true);
 				wrapper.getCycle().getGrowthHandler().setGrowthUpdate();
 			}
 		}

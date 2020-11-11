@@ -166,7 +166,6 @@ public class Container {
      *
      * @param item   the item.
      * @param player the player.
-     * @param ground
      * @return {@code True} if added.
      */
     public boolean add(final Item item, final Player player) {
@@ -201,7 +200,6 @@ public class Container {
      *
      * @param item          The item to add.
      * @param fireListener  If we should update.
-     * @param preferredSlot The slot to add the item in, when possible.
      * @return {@code True} if the item got added.
      */
     public boolean add(Item item, boolean fireListener) {
@@ -675,9 +673,31 @@ public class Container {
     }
 
     /**
+     * Checks if the containers contains AT LEAST ONE item from a list of items.
+     * @param itemIds
+     * @return true if at least one item from list of IDs is in the container
+     */
+    public boolean containsOneItem(int[] itemIds) {
+        for (int id : itemIds) {
+            if (getAmount(id) >= 1)
+                return true;
+        }
+        return false;
+    }
+
+    public boolean containsOneItem(Item... items) {
+        for (Item item : items) {
+            if (containsItem(item)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
      * Checks if the container contains all items.
      *
-     * @param the itemIds to check
+     * @param itemIds to check
      * @return {@code True} if so.
      */
     public boolean containsAll(int... itemIds) {
@@ -724,6 +744,12 @@ public class Container {
      */
     public boolean hasSpaceFor(Item item) {
         return item.getAmount() <= getMaximumAdd(item);
+    }
+
+    public boolean hasSpaceFor(Item... items) {
+        Container c = new Container(28, ContainerType.DEFAULT);
+        c.add(items);
+        return this.hasSpaceFor(c);
     }
 
     /**

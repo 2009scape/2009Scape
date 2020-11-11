@@ -66,12 +66,12 @@ public class Class163_Sub1 extends Class163 {
                         int var13 = Class38_Sub1.anInt2614;
                         int var7 = -1;
 
-                        for(int var8 = 0; var8 < Class3_Sub13_Sub34.anInt3415; ++var8) {
+                        for(int var8 = 0; var8 < Unsorted.menuOptionCount; ++var8) {
                            int var9;
                            if(Unsorted.aBoolean1951) {
-                              var9 = 15 * (Class3_Sub13_Sub34.anInt3415 + -1 + -var8) + 35 + var3;
+                              var9 = 15 * (Unsorted.menuOptionCount + -1 + -var8) + 35 + var3;
                            } else {
-                              var9 = 15 * (-var8 + (Class3_Sub13_Sub34.anInt3415 - 1)) + var3 + 31;
+                              var9 = 15 * (-var8 + (Unsorted.menuOptionCount - 1)) + var3 + 31;
                            }
 
                            if(var11 < var12 && var12 < var11 - -var4 && var9 + -13 < var13 && var13 < 3 + var9) {
@@ -87,11 +87,11 @@ public class Class163_Sub1 extends Class163 {
                         Class75.method1340(AbstractIndexedSprite.anInt1462, Class3_Sub28_Sub3.anInt3552, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537);
                      }
                   } else {
-                     if(var1 == 1 && 0 < Class3_Sub13_Sub34.anInt3415) {
-                        short var2 = Class3_Sub13_Sub7.aShortArray3095[-1 + Class3_Sub13_Sub34.anInt3415];
+                     if(var1 == 1 && 0 < Unsorted.menuOptionCount) {
+                        short var2 = Class3_Sub13_Sub7.aShortArray3095[-1 + Unsorted.menuOptionCount];
                         if(var2 == 25 || var2 == 23 || 48 == var2 || var2 == 7 || 13 == var2 || var2 == 47 || var2 == 5 || var2 == 43 || var2 == 35 || var2 == 58 || var2 == 22 || var2 == 1006) {
-                           var3 = Class117.anIntArray1613[-1 + Class3_Sub13_Sub34.anInt3415];
-                           var4 = Class27.anIntArray512[Class3_Sub13_Sub34.anInt3415 + -1];
+                           var3 = Class117.anIntArray1613[-1 + Unsorted.menuOptionCount];
+                           var4 = Class27.anIntArray512[Unsorted.menuOptionCount + -1];
                            RSInterface var5 = Class7.getRSInterface(var4);
                            Class3_Sub1 var6 = Client.method44(Objects.requireNonNull(var5));
                            if(var6.method100() || var6.method93()) {
@@ -111,15 +111,15 @@ public class Class163_Sub1 extends Class163 {
                         }
                      }
 
-                     if(var1 == 1 && (Unsorted.anInt998 == 1 && 2 < Class3_Sub13_Sub34.anInt3415 || Class3_Sub13_Sub39.method353(Class3_Sub13_Sub34.anInt3415 + -1, 0))) {
+                     if(var1 == 1 && (Unsorted.anInt998 == 1 && 2 < Unsorted.menuOptionCount || Class3_Sub13_Sub39.method353(Unsorted.menuOptionCount + -1, 0))) {
                         var1 = 2;
                      }
 
-                     if(var1 == 2 && Class3_Sub13_Sub34.anInt3415 > 0 || Unsorted.anInt3660 == 1) {
+                     if(var1 == 2 && Unsorted.menuOptionCount > 0 || Unsorted.anInt3660 == 1) {
                         Class132.method1801();
                      }
 
-                     if(1 == var1 && Class3_Sub13_Sub34.anInt3415 > 0 || Unsorted.anInt3660 == 2) {
+                     if(1 == var1 && Unsorted.menuOptionCount > 0 || Unsorted.anInt3660 == 2) {
                         Class3_Sub13_Sub8.method203(100);
                      }
                   }

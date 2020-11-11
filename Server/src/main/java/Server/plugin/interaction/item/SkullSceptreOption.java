@@ -24,9 +24,7 @@ public class SkullSceptreOption extends OptionHandler {
 		switch (option) {
 		case "invoke":
 			if (player.getTeleporter().send(Location.create(3081, 3421, 0), TeleportManager.TeleportType.NORMAL, 1)) {
-				if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(2, 1)) {
-					player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 2, 1, true);
-				}
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 2, 12);
 				item.setCharge(item.getCharge() - 200);
 				if (item.getCharge() < 1) {
 					player.getInventory().remove(item);

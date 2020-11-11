@@ -1,5 +1,6 @@
 package plugin.skill.farming.tool;
 
+import core.game.content.ItemNames;
 import core.game.node.item.Item;
 
 /**
@@ -12,7 +13,7 @@ public enum PatchTool {
 	WATERING_CAN(new Item[] { new Item(5340), new Item(5339), new Item(5338), new Item(5337), new Item(5336), new Item(5335), new Item(5334), new Item(5333), new Item(5331) }, new WateringPulse()), 
 	PATCH_CURE(new Item[] { new Item(6036) }, new PlantCurePulse()), 
 	PLANT_POT(new Item[] { new Item(5350) }, new PlantPotPulse()), 
-	SECATEUR(new Item[] { new Item(5329) }, new SecateurPulse());
+	SECATEUR(new Item[] { new Item(5329), new Item(ItemNames.MAGIC_SECATEURS_7409) }, new SecateurPulse());
 
 	/**
 	 * Represents the tools.

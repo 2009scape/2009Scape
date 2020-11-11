@@ -199,7 +199,7 @@ final class Class8 {
          if(var0 == !Class139.aBoolean1827) {
             Class139.aBoolean1827 = var0;
 
-            Class104.method1626((byte)-126);
+            WaterfallShader.method1626((byte)-126);
          }
       } catch (RuntimeException var3) {
          throw ClientErrorException.clientError(var3, "al.H(" + var0 + ',' + 255 + ')');

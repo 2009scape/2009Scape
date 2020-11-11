@@ -6,7 +6,6 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.world.map.Location;
 import core.plugin.InitializablePlugin;
-import core.game.world.map.zone.ZoneBorders;
 
 /**
  * Represents a Jogre NPC.
@@ -14,11 +13,6 @@ import core.game.world.map.zone.ZoneBorders;
  */
 @InitializablePlugin
 public class JogreNPC extends AbstractNPC {
-
-	/**
-	 * Represents the potzole zone borders.
-	 */
-	private static final ZoneBorders POTHOLE_ZONE = new ZoneBorders(2818, 9463, 2902, 9537);
 
 	/**
 	 * If the jogre is in the pothole zone.
@@ -37,7 +31,7 @@ public class JogreNPC extends AbstractNPC {
 	@Override
 	public void init() {
 		super.init();
-		inPothole = POTHOLE_ZONE.insideBorder(this);
+		inPothole = this.getViewport().getRegion().getId() == 11412;
 	}
 
 	/**
@@ -56,9 +50,7 @@ public class JogreNPC extends AbstractNPC {
 	public void finalizeDeath(Entity killer) {
 		if (inPothole && killer.isPlayer()) {
 			Player player = killer.asPlayer();
-			if (!player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 9)) {
-				player.getAchievementDiaryManager().updateTask(player, DiaryType.KARAMJA, 0, 9, true);
-			}
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 0, 9);
 		}
 		super.finalizeDeath(killer);
 	}

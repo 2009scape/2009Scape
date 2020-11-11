@@ -93,7 +93,7 @@ final class Class3_Sub28_Sub4 extends Node {
 
          if(var2 == Class23.anInt453) {
             if(0 != var2 && var1 != Class3_Sub13_Sub21.anInt3263) {
-               Unsorted.anInterface5Array70[var2].method23(var1);
+               Unsorted.anShaderInterfaceArray70[var2].method23(var1);
                Class3_Sub13_Sub21.anInt3263 = var1;
             }
          } else {
@@ -102,11 +102,11 @@ final class Class3_Sub28_Sub4 extends Node {
             }
 
             if(Class23.anInt453 != 0) {
-               Unsorted.anInterface5Array70[Class23.anInt453].method21();
+               Unsorted.anShaderInterfaceArray70[Class23.anInt453].method21();
             }
 
             if(var2 != 0) {
-               Interface5 var3 = Unsorted.anInterface5Array70[var2];
+               ShaderInterface var3 = Unsorted.anShaderInterfaceArray70[var2];
                var3.method22();
                var3.method23(var1);
             }

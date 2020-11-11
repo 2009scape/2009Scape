@@ -2,7 +2,7 @@ package org.runite.client;
 
 final class Class57 {
 
-   static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_895;
+   static AbstractSprite aAbstractSprite_895;
    int anInt896 = 0;
    static int[] anIntArray898 = new int[2500];
    int anInt899 = 2048;

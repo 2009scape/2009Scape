@@ -32,7 +32,7 @@ final class Class3_Sub20 extends Linkable {
    static void method389() {
 	      try {
 	         Class32.method995();
-	         Class49.aClass3_Sub28_Sub16_812 = null;
+	         Class49.aAbstractSprite_812 = null;
 	         Class58.anInt909 = -1;
 	         Class3_Sub13_Sub30.method313((byte)55);
 	         aClass47_3801.clear();
@@ -60,11 +60,11 @@ final class Class3_Sub20 extends Linkable {
 
 	         Class3_Sub28_Sub9.method581(CacheIndex.fontsIndex, CacheIndex.spritesIndex);
 	         Sprites.method887(CacheIndex.spritesIndex);
-	         Class3_Sub26.aClass3_Sub28_Sub16_2560 = null;
-	         WorldListEntry.aClass3_Sub28_Sub16_3099 = null;
-	         Class50.aClass3_Sub28_Sub16_824 = null;
-	         WorldListEntry.aClass3_Sub28_Sub16_1339 = null;
-	         WorldListEntry.aClass3_Sub28_Sub16_1457 = null;
+	         Class3_Sub26.aAbstractSprite_2560 = null;
+	         WorldListEntry.aAbstractSprite_3099 = null;
+	         Class50.aAbstractSprite_824 = null;
+	         WorldListEntry.aAbstractSprite_1339 = null;
+	         WorldListEntry.aAbstractSprite_1457 = null;
 	         if(Class143.loadingStage == 5) {
 	            Class108.method1656(CacheIndex.spritesIndex, (byte)-60);
 	         }

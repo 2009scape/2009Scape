@@ -78,7 +78,12 @@ public class WhatLiesBelow extends Quest {
 	/**
 	 * The requirement messages.
 	 */
-	private static final String[] REQS = new String[] { "<blue>Have level 35 <red>Runecrafting.", "<blue>Be able to defeat a <red>level 47 enemy.", "<blue>I need to have completed the <red>Rune Mysteries <blue>quest.", "<blue>Have a <red>Mining <blue>level of 42 to use the <red>Chaos Tunnel." };
+	private static final String[] REQS = new String[] {
+			"<blue>Have level 35 <red>Runecrafting.",
+			"<blue>Be able to defeat a <red>level 47 enemy.",
+			"<blue>I need to have completed the <red>Rune Mysteries <blue>quest.",
+			"<blue>Have a <red>Mining <blue>level of 42 to use the <red>Chaos Tunnel."
+	};
 
 	/**
 	 * The requirements.

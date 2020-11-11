@@ -3,6 +3,7 @@ package plugin.dialogue;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.diary.AchievementDiary;
 import core.game.node.entity.player.link.diary.DiaryType;
+import core.game.node.entity.player.link.emote.Emotes;
 import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
 
@@ -18,6 +19,7 @@ public class ExplorerJackDialogue extends DialoguePlugin {
 	 * The achievement diary.
 	 */
 	private AchievementDiary diary;
+	private final int level = 0;
 
 	/**
 	 * Constructs the new {@code ExplorerJackDialogue}
@@ -55,12 +57,12 @@ public class ExplorerJackDialogue extends DialoguePlugin {
 		}
 		switch (stage) {
 		case -1:
-			if (diary.isComplete(0) && !diary.hasReward(0)) {
+			if (diary.isComplete(level, true) && !diary.isLevelRewarded(level)) {
 				player("I've done all the beginner tasks in my Lumbridge", "Achievement Diary.");
 				stage = 50;
 				break;
 			}
-			if (diary.hasReward(0) && diary.isComplete(0) && !player.hasItem(diary.getType().getRewards(0)[0])) {
+			if (diary.isLevelRewarded(level) && diary.isComplete(level, true) && !player.hasItem(diary.getType().getRewards(level)[0])) {
 				player("I've seemed to have lost my explorer's ring...");
 				stage = 60;
 				break;
@@ -101,7 +103,7 @@ public class ExplorerJackDialogue extends DialoguePlugin {
 			stage++;
 			break;
 		case 4:
-			npc("Spendid! I love a person with a sense of humour. I bet", "you're from Ardougne eh? Ha!");
+			npc("Splendid! I love a person with a sense of humour. I bet", "you're from Ardougne eh? Ha!");
 			stage = -1;
 			break;
 		case 10:
@@ -144,10 +146,11 @@ public class ExplorerJackDialogue extends DialoguePlugin {
 			stage++;
 			break;
 		case 52:
-			diary.setRewarded(0);
-			for (Item i : diary.getType().getRewards(0)) {
+			diary.setLevelRewarded(level);
+			for (Item i : diary.getType().getRewards(level)) {
 				player.getInventory().add(i, player);
 			}
+			player.getEmoteManager().unlock(Emotes.EXPLORE);
 			npc("This ring is a representation of the adventures you", "went on to complete your tasks.");
 			stage ++;
 			break;
@@ -156,7 +159,7 @@ public class ExplorerJackDialogue extends DialoguePlugin {
 			stage = -1;
 			break;
 		case 60:
-			player.getInventory().add(diary.getType().getRewards(0)[0], player);
+			player.getInventory().add(diary.getType().getRewards(level)[0], player);
 			npc("You better be more careful this time.");
 			stage = -1;
 			break;

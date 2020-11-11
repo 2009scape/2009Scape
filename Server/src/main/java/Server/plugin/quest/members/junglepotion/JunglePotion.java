@@ -30,7 +30,6 @@ public final class JunglePotion extends Quest {
 
 	/**
 	 * Constructs a new {@code JunglePotion} {@code Object}.
-	 * @param player the player.
 	 */
 	public JunglePotion() {
 		super(NAME, 81, 80, 1, 175, 0, 1, 12);
@@ -80,6 +79,8 @@ public final class JunglePotion extends Quest {
 		player.getPacketDispatch().sendItemZoomOnInterface(Herbs.VOLENCIA_MOSS.getProduct().getId(), 235, 277, 3 + 2);
 		player.getSkills().addExperience(Skills.HERBLORE, 775);
 		player.getQuestRepository().syncronizeTab(player);
+		player.getConfigManager().set(534, Integer.MAX_VALUE, true); // when they have trading sticks their portion of the config is LSB only
+		// todo in liveserver need to set this config value for all players who have already finished jungle potion
 	}
 	
 	/**

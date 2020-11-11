@@ -6,6 +6,7 @@ import core.game.interaction.OptionHandler;
 import core.game.interaction.UseWithHandler;
 import core.game.node.Node;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
 import core.game.world.update.flag.context.Animation;
 import core.plugin.InitializablePlugin;
@@ -99,6 +100,9 @@ public final class FlourMakingPlugin extends OptionHandler {
 			player.getInventory().add(FLOUR);
 			extension.decrement(1);
 			player.getPacketDispatch().sendMessage(!extension.isEmpty() ? "You fill a pot with flour from the bin." : "You fill a pot with the last of the flour in the bin.");
+
+			// Grind some flour in the windmill north of Lumbridge
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 0, 20);
 
 			if (extension.getCharges() < 1) {
 				player.getConfigManager().set(CONFIG, 0);

@@ -44,9 +44,7 @@ public class StrayDogBonesPlugin extends UseWithHandler {
 		if (player.getInventory().remove(item)) {
 			player.sendMessage("You feed your dog bones.");
 			npc.sendChat("Woof");
-			if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 8)) {
-				player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 8, true);
-			}
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 8);
 		}
 		return true;
 	}

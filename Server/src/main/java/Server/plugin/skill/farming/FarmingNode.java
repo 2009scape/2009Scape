@@ -1,6 +1,7 @@
 package plugin.skill.farming;
 
 import core.game.content.global.SkillcapePerks;
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.skill.Skills;
 import plugin.skill.farming.patch.Allotments;
 import plugin.skill.farming.patch.Flowers;
@@ -201,7 +202,7 @@ public class FarmingNode {
 	public int getHarvestAmount(final PatchCycle cycle) {
 		int min = cycle.getWrapper().getPatch().getMinimumYield();
 		int max = cycle.getWrapper().getPatch().getMaximumYield();
-		double difference = (max - min) / 2;
+		double difference = (max - min) / 2.;
 		difference *= 1 + (cycle.getPlayer().getSkills().getLevel(Skills.FARMING) * 0.01);
 		int mod = 0;
 		if (SkillcapePerks.hasSkillcapePerk(cycle.getPlayer(), SkillcapePerks.FARMING)) {

@@ -62,13 +62,13 @@ final class Class132 {
          int var1 = Class168.aClass3_Sub28_Sub17_2096.method682(RSString.parse(GameConfig.RCM_TITLE));
          int var2;
          int var3;
-         for(var2 = 0; Class3_Sub13_Sub34.anInt3415 > var2; ++var2) {
+         for(var2 = 0; Unsorted.menuOptionCount > var2; ++var2) {
             var3 = Class168.aClass3_Sub28_Sub17_2096.method682(Unsorted.method802(var2));
             if(var3 > var1) {
                var1 = var3;
             }
          }
-         var2 = 15 * Class3_Sub13_Sub34.anInt3415 + 21;
+         var2 = 15 * Unsorted.menuOptionCount + 21;
          int var4 = Class38_Sub1.anInt2612;
          var1 += 8;
          var3 = NPCDefinition.anInt1297 + -(var1 / 2);
@@ -90,7 +90,7 @@ final class Class132 {
 
          if(Unsorted.anInt3660 == 1) {
             if(Class3_Sub13_Sub39.anInt3460 == NPCDefinition.anInt1297 && Class38_Sub1.anInt2612 == Class168.anInt2099) {
-               Class3_Sub28_Sub1.anInt3537 = Class3_Sub13_Sub34.anInt3415 * 15 - -(!Unsorted.aBoolean1951?22:26);
+               Class3_Sub28_Sub1.anInt3537 = Unsorted.menuOptionCount * 15 - -(!Unsorted.aBoolean1951?22:26);
                Unsorted.anInt3660 = 0;
                Class3_Sub13_Sub33.anInt3395 = var4;
                AbstractIndexedSprite.anInt1462 = var3;
@@ -102,7 +102,7 @@ final class Class132 {
             Unsorted.anInt3660 = 0;
             Class3_Sub28_Sub3.anInt3552 = var1;
             Class3_Sub13_Sub33.anInt3395 = var4;
-            Class3_Sub28_Sub1.anInt3537 = (Unsorted.aBoolean1951?26:22) + Class3_Sub13_Sub34.anInt3415 * 15;
+            Class3_Sub28_Sub1.anInt3537 = (Unsorted.aBoolean1951?26:22) + Unsorted.menuOptionCount * 15;
             Class38_Sub1.aBoolean2615 = true;
          } else {
             Class168.anInt2099 = Class38_Sub1.anInt2614;

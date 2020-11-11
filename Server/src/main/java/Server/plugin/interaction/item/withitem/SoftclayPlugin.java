@@ -1,5 +1,6 @@
 package plugin.interaction.item.withitem;
 
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.dialogue.SkillDialogueHandler;
 import plugin.dialogue.SkillDialogueHandler.SkillDialogue;
 import core.game.interaction.NodeUsageEvent;
@@ -109,6 +110,10 @@ public final class SoftclayPlugin extends UseWithHandler {
 			player.getInventory().add(SOFT_CLAY);
 			player.getInventory().add(bucket ? BUCKET : JUG);
 			player.getPacketDispatch().sendMessage("You mix the clay and water. You now have some soft, workable clay.");
+			// Make some soft clay in the Barbarian Village
+			if (player.getViewport().getRegion().getId() == 12341) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 0, 6);
+			}
 			return true;
 		}
 		return false;

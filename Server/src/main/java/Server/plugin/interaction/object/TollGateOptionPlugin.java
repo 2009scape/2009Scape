@@ -19,7 +19,7 @@ public class TollGateOptionPlugin extends OptionHandler {
 		if (option.equals("pay-toll(10gp)")) {
 			if (player.getQuestRepository().getQuest("Prince Ali Rescue").getStage(player) > 50) {
 				player.getPacketDispatch().sendMessage("The guards let you through for free.");
-				DoorActionHandler.handleDoor(player, (GameObject) node);
+				DoorActionHandler.handleAutowalkDoor(player, (GameObject) node);
 			} else {
 				if (player.getInventory().contains(995, 10)) {
 					player.getInventory().remove(new Item(995, 10));

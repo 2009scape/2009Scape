@@ -68,13 +68,13 @@ public final class MithGrappleDialogue extends DialoguePlugin {
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
 		player.getInterfaceManager().closeChatbox();
-		int ammount = 0;
+		int amount = 0;
 		switch (buttonId) {
 		case 6:
-			ammount = 1;
+			amount = 1;
 			break;
 		case 5:
-			ammount = 5;
+			amount = 5;
 			break;
 		case 4:
 			player.setAttribute("runscript", new RunScript() {
@@ -88,10 +88,10 @@ public final class MithGrappleDialogue extends DialoguePlugin {
 			player.getDialogueInterpreter().sendInput(false, "Enter the amount");
 			return true;
 		case 3:
-			ammount = player.getInventory().getAmount(second);
+			amount = player.getInventory().getAmount(second);
 			break;
 		}
-		player.getPulseManager().run(new GrapplePulse(player, first, ammount));
+		player.getPulseManager().run(new GrapplePulse(player, first, amount));
 		return true;
 	}
 

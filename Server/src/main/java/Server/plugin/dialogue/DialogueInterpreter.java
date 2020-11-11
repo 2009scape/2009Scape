@@ -232,7 +232,7 @@ public final class DialogueInterpreter {
     }
 
     /**
-     * Send plane messages based on the amount of specified messages.
+     * Send plain messages based on the amount of specified messages.
      * @param messages The messages.
      * @return The chatbox component.
      */

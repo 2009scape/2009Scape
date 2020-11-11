@@ -1,5 +1,6 @@
 package plugin.npc.other;
 
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.dialogue.DialoguePlugin;
 import plugin.skill.Skills;
 import plugin.skill.magic.MagicSpell;
@@ -62,6 +63,10 @@ public final class ElementalWizardNPC extends AbstractNPC {
 			state.setMaximumHit(0);
 			sendChat("Gratias tibi ago");
 			getSkills().heal(getSkills().getStaticLevel(Skills.HITPOINTS));
+			Entity attacker = state.getAttacker();
+			if (attacker instanceof Player && !attacker.asPlayer().getAchievementDiaryManager().getDiary(DiaryType.FALADOR).isComplete(0, 8)) {
+				attacker.asPlayer().getAchievementDiaryManager().getDiary(DiaryType.FALADOR).updateTask(attacker.asPlayer(), 0, 8, true);
+			}
 		}
 		if (getAttribute("switch", false)) {
 			setBaseSpell();

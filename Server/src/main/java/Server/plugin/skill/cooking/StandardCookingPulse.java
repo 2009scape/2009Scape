@@ -1,7 +1,9 @@
 package plugin.skill.cooking;
 
+import core.game.container.impl.EquipmentContainer;
 import core.game.content.ItemNames;
 import core.game.content.global.SkillcapePerks;
+import core.game.world.map.Location;
 import plugin.quest.tutorials.tutorialisland.TutorialSession;
 import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import plugin.skill.Skills;
@@ -28,13 +30,13 @@ public class StandardCookingPulse extends Pulse {
     //Cooking sound
     public static final Audio SOUND = new Audio(2577, 1, 1);
 
-    private int initial,product,amount,level;
+    private int initial, product, amount, level;
     private GameObject object;
     private Player player;
     private double experience;
     private boolean burned = false;
 
-    public StandardCookingPulse(Player player, GameObject object, int initial, int product, int amount){
+    public StandardCookingPulse(Player player, GameObject object, int initial, int product, int amount) {
         this.player = player;
         this.object = object;
         this.initial = initial;
@@ -44,24 +46,26 @@ public class StandardCookingPulse extends Pulse {
 
     @Override
     public void start() {
-        if(checkRequirements()) {
+        if (checkRequirements()) {
             super.start();
-            cook(player,object, CookableItems.cookingMap.get(initial) != null && isBurned(player, object, initial),initial,product);
+            cook(player, object, CookableItems.cookingMap.get(initial) != null && isBurned(player, object, initial), initial, product);
             amount--;
         }
     }
 
     @Override
     public boolean pulse() {
-        if(!checkRequirements()){
+        if (!checkRequirements()) {
             return true;
         }
         return reward();
     }
 
-    public void animate() {player.animate(getAnimation(object));}
+    public void animate() {
+        player.animate(getAnimation(object));
+    }
 
-    public boolean checkRequirements(){
+    public boolean checkRequirements() {
         CookableItems properties = CookableItems.forId(initial);
         this.level = 1;
         this.experience = 0;
@@ -80,7 +84,7 @@ public class StandardCookingPulse extends Pulse {
 
             this.level = properties.level;
             this.experience = properties.experience;
-            this.burned = isBurned(player,object,initial);
+            this.burned = isBurned(player, object, initial);
         }
         if (amount < 1) {
             return false;
@@ -88,19 +92,19 @@ public class StandardCookingPulse extends Pulse {
         return true;
     }
 
-    public boolean reward(){
+    public boolean reward() {
         if (getDelay() == 1) {
             setDelay(object.getName().toLowerCase().equals("range") ? 5 : 4);
             return false;
         }
         //handle tutorial stuff
-        if(!TutorialSession.getExtension(player).finished()){
+        if (!TutorialSession.getExtension(player).finished()) {
             updateTutorial(player);
-            amount --;
+            amount--;
             return true;
         }
 
-        if (cook(player,object,burned,initial,product)) {
+        if (cook(player, object, burned, initial, product)) {
             amount--;
         } else {
             return true;
@@ -110,8 +114,8 @@ public class StandardCookingPulse extends Pulse {
 
     public boolean isBurned(final Player player, final GameObject object, int food) {
         boolean hasGauntlets = player.getEquipment().containsItem(new Item(ItemNames.COOKING_GAUNTLETS_775));
-        double burn_stop = (double)CookableItems.getBurnLevel(food);
-        if(hasGauntlets && (food == ItemNames.RAW_SWORDFISH || food == ItemNames.RAW_LOBSTER || food == ItemNames.RAW_SHARK)){
+        double burn_stop = (double) CookableItems.getBurnLevel(food);
+        if (hasGauntlets && (food == ItemNames.RAW_SWORDFISH || food == ItemNames.RAW_LOBSTER || food == ItemNames.RAW_SHARK)) {
             burn_stop -= 6;
         }
         if (SkillcapePerks.hasSkillcapePerk(player, SkillcapePerks.COOKING)) {
@@ -142,7 +146,7 @@ public class StandardCookingPulse extends Pulse {
             player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 0, 7, true);
         }
         //handle special cooking results (spits, cake, etc) that don't justify separate plugin
-        switch(initial){
+        switch (initial) {
             case 9986:
             case 2876:
             case 7566:
@@ -165,7 +169,36 @@ public class StandardCookingPulse extends Pulse {
         if (player.getInventory().remove(initialItem)) {
             if (!burned) {
                 player.getInventory().add(productItem);
-                player.getSkills().addExperience(Skills.COOKING, experience,true);
+                player.getSkills().addExperience(Skills.COOKING, experience, true);
+
+                // Achievement Diary Handling
+                if (productItem.getId() == ItemNames.BASS
+                        && player.getViewport().getRegion().getId() == 11317
+                        && player.getAttribute("diary:seers:bass-caught", false)) {
+                    player.getAchievementDiaryManager().finishTask(player, DiaryType.SEERS_VILLAGE, 1, 11);
+                }
+
+                if (productItem.getId() == ItemNames.SHARK
+                        && player.getViewport().getRegion().getId() == 11317
+                        && player.getEquipment().get(EquipmentContainer.SLOT_HANDS).getId() == ItemNames.COOKING_GAUNTLETS_775
+                        && !player.getAchievementDiaryManager().hasCompletedTask(DiaryType.SEERS_VILLAGE, 2, 8)) {
+                    player.setAttribute("/save:diary:seers:cooked-shark", 1 + player.getAttribute("diary:seers:cooked-shark", 0));
+                    if (player.getAttribute("diary:seers:cooked-shark", 0) >= 5) {
+                        player.getAchievementDiaryManager().finishTask(player, DiaryType.SEERS_VILLAGE, 2, 8);
+                    }
+                }
+
+                // Cook some rat meat on a campfire in Lumbridge Swamp
+                System.out.println(object.getName());
+                if (initialItem.getId() == ItemNames.RAW_RAT_MEAT && object.getName().toLowerCase().contains("fire") && player.getViewport().getRegion().getId() == 12593) {
+                    player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 1, 10);
+                }
+
+                // Cook a lobster on the range in Lumbridge Castle kitchen
+                if (productItem.getId() == ItemNames.LOBSTER && object.getId() == 114 && player.getLocation().withinDistance(Location.create(3211, 3215, 0))) {
+                    player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 2, 4);
+                }
+
             } else {
                 player.getInventory().add(CookableItems.getBurnt(initial));
             }
@@ -176,27 +209,30 @@ public class StandardCookingPulse extends Pulse {
         return false;
     }
 
-    public String getMessage(Item food, Item product, boolean burned){
-        if(CookableItems.intentionalBurn(food.getId())){
+    public String getMessage(Item food, Item product, boolean burned) {
+        if (food.getId() == ItemNames.RAW_OOMLIE_2337) {
+            return "The meat is far too delicate to cook like this. Perhaps you should wrap something around it to protect it from the heat.";
+        }
+        if (CookableItems.intentionalBurn(food.getId())) {
             return "You deliberately burn the perfectly good piece of meat.";
         }
-        switch(product.getId()) {
+        switch (product.getId()) {
             case 9436:
                 return "You dry the meat into sinew.";
             case 1781:
                 return "You burn the seaweed into soda ash.";
         }
-        if(!burned) {
+        if (!burned) {
             return "You manage to cook some " + food.getName().replace("Raw ", "");
         } else {
-            return "You accidentally burn some " + food.getName().replace("Raw ","");
+            return "You accidentally burn some " + food.getName().replace("Raw ", "");
         }
     }
 
-    public boolean updateTutorial(Player player){
+    public boolean updateTutorial(Player player) {
         if (TutorialSession.getExtension(player).getStage() == 14) {
             TutorialStage.load(player, 15, false);
-            return cook(player, object,true, initial, product);
+            return cook(player, object, true, initial, product);
         } else if (TutorialSession.getExtension(player).getStage() == 15) {
             TutorialStage.load(player, 16, false);
             return cook(player, object, false, initial, product);
@@ -208,7 +244,7 @@ public class StandardCookingPulse extends Pulse {
         return cook(player, object, burned, initial, product);
     }
 
-    private final Animation getAnimation(final GameObject object) {
+    private Animation getAnimation(final GameObject object) {
         return !object.getName().toLowerCase().equals("fire") ? RANGE_ANIMATION : FIRE_ANIMATION;
     }
 }

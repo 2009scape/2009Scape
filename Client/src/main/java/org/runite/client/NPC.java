@@ -9,7 +9,7 @@ final class NPC extends Class140_Sub4 {
     static NPC[] npcs = new NPC['\u8000'];
     static Class3_Sub27 aClass3_Sub27_1154;
     NPCDefinition definition;
-	static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array3977;
+	static AbstractSprite[] aAbstractSpriteArray3977;
 	static float aFloat3979;
 	static int[] anIntArray3986 = new int[32];
 	static int anInt3995;

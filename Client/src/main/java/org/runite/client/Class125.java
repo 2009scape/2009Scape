@@ -7,7 +7,7 @@ import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
 
-final class Class125 implements Interface5 {
+final class Class125 implements ShaderInterface {
 
    private int anInt2182 = -1;
    private FloatBuffer aFloatBuffer2183;
@@ -141,7 +141,7 @@ final class Class125 implements Interface5 {
    }
 
    public Class125() {
-       if(HDToolKit.supportVertexProgram && HDToolKit.anInt1789 >= 2) {
+       if(HDToolKit.supportVertexProgram && HDToolKit.maxTextureUnits >= 2) {
           int[] var1 = new int[1];
           GL4bc var2 = HDToolKit.gl;
           var2.glGenProgramsARB(1, var1, 0);

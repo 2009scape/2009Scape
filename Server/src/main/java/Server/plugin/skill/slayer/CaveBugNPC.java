@@ -20,7 +20,7 @@ public class CaveBugNPC extends AbstractNPC {
 	/** 
 	 * The cave border.
 	 */
-	private static final ZoneBorders CAVE_BORDER = new ZoneBorders(3139, 9534, 3260, 9587);
+//	private static final ZoneBorders CAVE_BORDER = new ZoneBorders(3139, 9534, 3260, 9587);
 
 	/**
 	 * Constructs the {@code CaveBugNPC}
@@ -43,10 +43,10 @@ public class CaveBugNPC extends AbstractNPC {
 		super.finalizeDeath(killer);
 		if (killer instanceof Player) {
 			Player p = killer.asPlayer();
-			AchievementDiary diary = p.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE);
+/*			AchievementDiary diary = p.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE);
 			if (!diary.isComplete(0, 0) && CAVE_BORDER.insideBorder(p)) {
 				diary.updateTask(p, 0, 0, true);
-			}
+			}*/
 		}
 	}
 

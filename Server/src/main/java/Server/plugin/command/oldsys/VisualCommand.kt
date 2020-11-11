@@ -111,7 +111,7 @@ class VisualCommand : CommandPlugin() {
             }
             "pos_graphic", "position_gfx", "pos_gfx", "lgfx" -> {
                 if (args!!.size < 2) {
-                    player!!.debug("syntax error: id x y (optional) height delay")
+                    player!!.debug("syntax error: id x y (optional) z height delay")
                     return true
                 }
                 location = Location.create(args[2]!!.toInt(), args[3]!!.toInt(), if (args.size > 4) args[4]!!.toInt() else 0)

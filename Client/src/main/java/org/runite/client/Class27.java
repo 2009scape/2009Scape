@@ -16,7 +16,7 @@ final class Class27 {
 
    static int method961() {
       try {
-         return Class23.anInt453 == 0 ?0: Unsorted.anInterface5Array70[Class23.anInt453].method24();
+         return Class23.anInt453 == 0 ?0: Unsorted.anShaderInterfaceArray70[Class23.anInt453].method24();
       } catch (RuntimeException var2) {
          throw ClientErrorException.clientError(var2, "ef.B(" + 1536 + ')');
       }

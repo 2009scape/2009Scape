@@ -135,10 +135,6 @@ public final class BKFortressPlugin extends OptionHandler {
 			player.getDialogueInterpreter().open(4605, Repository.findNPC(4605), true, true);
 			break;
 		case 2337:
-			if (player.getLocation().getY() > 3514) { // Player is inside the fortress
-				DoorActionHandler.handleAutowalkDoor(player, (GameObject) node);
-				return true;
-			}
 			if (!player.getEquipment().containsOneItem(1139) || !player.getEquipment().containsOneItem(1101)) {
 				player.getDialogueInterpreter().open(4605, Repository.findNPC(4604), true);
 			} else {

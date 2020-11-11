@@ -8,7 +8,7 @@ final class Class40 {
     static int[] anIntArray675 = new int[]{16, 32, 64, 128};
     static int anInt677 = 0;
     static CacheIndex aClass153_679;
-   static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_680;
+   static AbstractSprite aAbstractSprite_680;
     static byte[][] aByteArrayArray3669;
     static byte[][] aByteArrayArray3057;
     static int anInt3293 = 0;

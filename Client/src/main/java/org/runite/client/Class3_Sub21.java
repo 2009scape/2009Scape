@@ -23,7 +23,7 @@ final class Class3_Sub21 extends Linkable {
 
    static void method394(int var0, int var1) {
       try {
-         Class165.anInt3285 = var0;
+         WaterShader.anInt3285 = var0;
          Unsorted.method383(-32584, 3);
          Unsorted.method383(-32584, 4);
          if(var1 <= 83) {

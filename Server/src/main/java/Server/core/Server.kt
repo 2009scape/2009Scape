@@ -11,6 +11,7 @@ import core.net.amsc.WorldCommunicator
 import core.tools.TimeStamp
 import plugin.ge.BotGrandExchange
 import plugin.ge.GEAutoStock
+import java.io.File
 import java.net.BindException
 
 /**
@@ -36,13 +37,14 @@ object Server {
      * @param args The arguments cast on runtime.
      * @throws Throwable When an exception occurs.
      */
+    @Throws(Throwable::class)
     @JvmStatic
     fun main(args: Array<String>) {
         if (args.isNotEmpty()) {
             ServerConfigParser(args[0])
         } else {
             println("Using config file worldprops/default.json")
-            ServerConfigParser("worldprops/default.json")
+            ServerConfigParser("worldprops" + File.separator + "default.json")
         }
         if (GameWorld.settings?.isGui == true) {
             try {

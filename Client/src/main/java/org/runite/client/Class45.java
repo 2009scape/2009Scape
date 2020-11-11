@@ -8,7 +8,7 @@ final class Class45 {
 	static float aFloat730;
 	static int anInt733 = 0;
 	static int anInt734 = 0;
-	static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_736;
+	static AbstractSprite aAbstractSprite_736;
     static DataBuffer aClass3_Sub30_2030 = new DataBuffer(new byte[5000]);
 
 

@@ -100,11 +100,9 @@ First follow the [Github-Setup](#github-setup). After you have forked over your 
 <details>
 <summary> </summary>
 
-1. Install <a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">JDK version 1.8</a>
-    * Scroll down until you see Windows x86 and Windows x64
-    * If you are running a 64bit verison of Windows (standard), select Windows x64
-    * Accept the terms and conditions, after reading them of course, and login to oracle
-    * Download and install like any normal application
+1. Install <a href="https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot">OpenJDK version 1.8</a>
+    * Choose latest release
+    * Download and install like anything else
     
 2. Install <a href="https://www.jetbrains.com/idea/">Intellij IDEA</a>
     * Click "Download" on the main page

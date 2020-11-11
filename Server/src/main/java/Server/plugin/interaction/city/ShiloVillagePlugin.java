@@ -131,11 +131,10 @@ public final class ShiloVillagePlugin extends OptionHandler {
 				}
 				break;
 			case 6:
-				if (!player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(1, 3)) {
-					player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 1, 3, true);
-				}
 				end();
 				player.getProperties().setTeleportLocation(shilo ? Location.create(2834, 2951, 0) : Location.create(2780, 3212, 0));
+				// Use Vigroy and Hajedy's cart service
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 3);
 				break;
 			}
 			return true;

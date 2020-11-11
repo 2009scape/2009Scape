@@ -1007,7 +1007,7 @@ public final class PacketParser {
                                                         var6 = GraphicDefinition.incomingBuffer.readUnsignedByte();
                                                         var30 = GraphicDefinition.incomingBuffer.readUnsignedShort();
                                                         Class146.updateInterfacePacketCounter(nodeModelId);
-                                                        Class104.aBooleanArray2169[var19] = true;
+                                                        WaterfallShader.aBooleanArray2169[var19] = true;
                                                         Class3_Sub13_Sub32.anIntArray3383[var19] = modelId;
                                                         Class166.anIntArray2073[var19] = counter;
                                                         Class3_Sub13_Sub29.anIntArray3359[var19] = var6;
@@ -1155,7 +1155,7 @@ public final class PacketParser {
                                                         var19 = nodeModelId >> 6;
                                                         var48.anInt1360 = nodeModelId & 63;
                                                         var48.anInt1351 = GraphicDefinition.incomingBuffer.readUnsignedByte();
-                                                        if (var48.anInt1351 >= 0 && Class166.aClass3_Sub28_Sub16Array2072.length > var48.anInt1351) {
+                                                        if (var48.anInt1351 >= 0 && Class166.aAbstractSpriteArray2072.length > var48.anInt1351) {
                                                             if (var48.anInt1360 == 1 || 10 == var48.anInt1360) {
                                                                 var48.anInt1359 = GraphicDefinition.incomingBuffer.readUnsignedShort();
                                                                 GraphicDefinition.incomingBuffer.index += 3;
@@ -1790,9 +1790,9 @@ public final class PacketParser {
                         } else if (Client.method42(Class56.aClass11_886) != null) {
                             System.out.println("Shouldn't be sending packet, enabled to fix banking tabs though.");
                         }
-                    } else if ((Unsorted.anInt998 == 1 || Class3_Sub13_Sub39.method353(-1 + Class3_Sub13_Sub34.anInt3415, ~-1)) && Class3_Sub13_Sub34.anInt3415 > 2) {
+                    } else if ((Unsorted.anInt998 == 1 || Class3_Sub13_Sub39.method353(-1 + Unsorted.menuOptionCount, ~-1)) && Unsorted.menuOptionCount > 2) {
                         Class132.method1801();
-                    } else if (Class3_Sub13_Sub34.anInt3415 > 0) {
+                    } else if (Unsorted.menuOptionCount > 0) {
                         Class3_Sub13_Sub8.method203(96);
                     }
 

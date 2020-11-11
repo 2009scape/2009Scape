@@ -1,5 +1,6 @@
 package plugin.skill.firemaking;
 
+import core.game.world.map.zone.ZoneBorders;
 import plugin.quest.tutorials.tutorialisland.TutorialSession;
 import plugin.quest.tutorials.tutorialisland.TutorialStage;
 import plugin.skill.SkillPulse;
@@ -53,7 +54,7 @@ public final class FireMakingPulse extends SkillPulse<Item> {
 	 * Constructs a new {@code FireMaking}.
 	 * @param player the player.
 	 * @param node the node.
-	 * @param ground the ground item if not null.
+	 * @param groundItem the ground item if not null.
 	 */
 	public FireMakingPulse(Player player, Item node, GroundItem groundItem) {
 		super(player, node);
@@ -89,9 +90,6 @@ public final class FireMakingPulse extends SkillPulse<Item> {
 			player.removeAttribute("remove-log");
 			if (player.getInventory().remove(node)) {
 				GroundItemManager.create(groundItem);
-				if (groundItem.getId() == 1521 && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(0, 4)) {
-					player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 0, 4, true);
-				}
 			}
 		}
 		return true;
@@ -130,9 +128,6 @@ public final class FireMakingPulse extends SkillPulse<Item> {
 		if (!groundItem.isActive()) {
 			return;
 		}
-		if (fire == Log.YEW && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(2, 2) && player.getLocation().withinDistance(new Location(3256, 3487, 3))) {
-			player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 2, 2, true);
-		}
 		// GameObject originalOnSpot =
 		// RegionManager.getObject(player.getLocation());
 		final GameObject object = new GameObject(fire.getFireId(), player.getLocation());
@@ -144,6 +139,21 @@ public final class FireMakingPulse extends SkillPulse<Item> {
 			TutorialStage.load(player, 10, false);
 		}
 		player.getSkills().addExperience(Skills.FIREMAKING,fire.getXp());
+
+
+		if (fire == Log.MAGIC && player.getLocation().getRegionId() == 10806) {
+			player.getAchievementDiaryManager().finishTask(player,DiaryType.SEERS_VILLAGE,2, 5);
+		}
+		// Light a campfire from normal logs in Lumbridge Swamp
+		if (fire == Log.NORMAL && player.getViewport().getRegion().getId() == 12593) {
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 1, 9);
+		}
+		// Light a willow log fire in Lumbridge Castle courtyard
+		if (fire == Log.WILLOW
+				&& new ZoneBorders(3216, 3207, 3225, 3233, 0).insideBorder(player)) {
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 2, 3);
+		}
+
 		setLastFire();
 	}
 

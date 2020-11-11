@@ -11,7 +11,6 @@ import core.game.node.entity.player.link.quest.Quest;
 @InitializablePlugin
 public class RuneMysteries extends Quest {
 
-
 	/**
 	 * Constructs a new {@code RuneMysteries} {@code Object}.
 	 * @param player The player to construct the class for.

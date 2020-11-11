@@ -66,6 +66,8 @@ public final class MerlinCrystalPlugin extends OptionHandler {
 		ObjectDefinition.forId(40026).getHandlers().put("option:climb-up", this);
 		ObjectDefinition.forId(72).getHandlers().put("option:open", this);
 		ObjectDefinition.forId(71).getHandlers().put("option:open", this);
+		ObjectDefinition.forId(71).getHandlers().put("option:knock-at", this);
+		ObjectDefinition.forId(72).getHandlers().put("option:knock-at", this);
 		ItemDefinition.forId(530).getHandlers().put("option:drop", this);
 		ObjectDefinition.forId(62).getHandlers().put("option:smash", this);
 		return this;
@@ -111,8 +113,18 @@ public final class MerlinCrystalPlugin extends OptionHandler {
 			return true;
 		case 71:
 		case 72:
-			if (quest.getStage(player) <= 40) {
-				player.getDialogueInterpreter().sendDialogue("The door is barred tightly shut.");
+			if (quest.getStage(player) == 10) {
+				player.getDialogueInterpreter().sendDialogue("The door is securely locked.");
+			}
+			else if (quest.getStage(player) < 50) {
+				switch(option) {
+					case "open":
+						player.getDialogueInterpreter().sendDialogue("The door is securely locked. You will have to find", "another way in.");
+						break;
+					case "knock-at":
+						player.getDialogueInterpreter().open("renegade-knight");
+						break;
+				}
 			} else {
 				DoorActionHandler.handleAutowalkDoor(player, node.asObject());
 			}
@@ -579,22 +591,24 @@ public final class MerlinCrystalPlugin extends OptionHandler {
 			Player player = event.getPlayer();
 			Item useditem = event.getUsedItem();
 			final GameObject object = (GameObject) event.getUsedWith();
-			if (player.getAttribute("cleared_beehives") != null && useditem.getId() == REPELLENT.getId() && object.getId() == 68) {
+
+			if (player.getAttribute("cleared-beehives", false) && useditem.getId() == REPELLENT.getId() && object.getId() == 68) {
 				player.getDialogueInterpreter().sendDialogue("You have already cleared the hive of its bees.", "You can now safely collect wax from the hive.");
 			}
-			if (useditem.getId() == REPELLENT.getId() && object.getId() == 68 && player.getAttribute("cleared_beehives") == null) {
+
+			if (useditem.getId() == REPELLENT.getId() && object.getId() == 68 && player.getAttribute("cleared-beehives", false)) {
 				player.getDialogueInterpreter().sendDialogue("You pour insect repellent on the beehive. You see the bees leaving the", "hive.");
-				player.getPacketDispatch().sendMessage("Suddenly the bees fly out of the hive and sting you.");
-				player.getImpactHandler().manualHit(player, 2, HitsplatType.NORMAL);
-				player.setAttribute("cleared_beehives", 1);
+				player.setAttribute("cleared-beehives", true);
 			}
-			if (useditem.getId() == BUCKET.getId() && player.getAttribute("cleared_beehives") != null) {
+
+			if (useditem.getId() == BUCKET.getId() && player.getAttribute("cleared-beehives", false)) {
 				player.getDialogueInterpreter().sendDialogue("You get some wax from the beehive.");
 				player.getInventory().remove(new Item(BUCKET.getId(), 1));
 				player.getInventory().add(new Item(BUCKET_OF_WAX.getId(), 1));
-			} else if (useditem.getId() == BUCKET.getId() && player.getAttribute("cleared_beehives") == null) {
+			} else if (useditem.getId() == BUCKET.getId() && !player.getAttribute("cleared-beehives", false)) {
 				player.getDialogueInterpreter().sendDialogue("It would be dangerous to stick the bucket into the hive while", "the bees are still in it. Perhaps you can clear them out", "somehow.");
 			}
+
 			return true;
 		}
 	}

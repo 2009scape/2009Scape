@@ -1,6 +1,9 @@
 package plugin.npc.other;
 
+import core.game.node.entity.Entity;
 import core.game.node.entity.npc.AbstractNPC;
+import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.world.map.Location;
 import core.plugin.InitializablePlugin;
 import core.tools.RandomFunction;
@@ -36,7 +39,7 @@ public final class CowNPC extends AbstractNPC {
 
 	@Override
 	public void tick() {
-		if (RandomFunction.random(45) == 5) {
+		if (RandomFunction.random(45) == 5 && this.getId() != 1766) { // calves don't moo
 			sendChat(FORCE_CHAT);
 		}
 		super.tick();
@@ -48,8 +51,20 @@ public final class CowNPC extends AbstractNPC {
 	}
 
 	@Override
+	public void finalizeDeath(final Entity killer) {
+		super.finalizeDeath(killer);
+		if (killer != null) {
+			Player player = killer.asPlayer();
+			// Obtain a cow-hide from a cow in the field north-east of<br><br>Lumbridge
+			if (player.getViewport().getRegion().getId() == 12850 || player.getViewport().getRegion().getId() == 12851) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 1, 1);
+			}
+		}
+	}
+
+	@Override
 	public int[] getIds() {
-		return new int[] { 81, 397, 955, 1767, 3309 };
+		return new int[] { 81, 397, 955, 1766, 1767, 3309 };
 	}
 
 }

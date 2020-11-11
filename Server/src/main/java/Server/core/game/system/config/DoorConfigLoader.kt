@@ -83,7 +83,7 @@ class DoorConfigLoader {
          * @param autoWalk The autoWalk to set.
          */
         /**
-         * If the player should automaticly walk through it.
+         * If the player should automatically walk through it.
          */
         var isAutoWalk = false
 

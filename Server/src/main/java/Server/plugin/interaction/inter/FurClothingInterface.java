@@ -3,6 +3,7 @@ package plugin.interaction.inter;
 import core.game.component.Component;
 import core.game.component.ComponentDefinition;
 import core.game.component.ComponentPlugin;
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.dialogue.DialoguePlugin;
 import plugin.dialogue.FacialExpression;
 import core.game.node.entity.npc.NPC;
@@ -76,7 +77,16 @@ public final class FurClothingInterface extends ComponentPlugin {
 	 */
 
 	public enum FurClothing {
-		POLAR(new Item[][] { { new Item(10117, 2), new Item(10065), new Item(995, 20) }, { new Item(10117, 2), new Item(10067), new Item(995, 20) } }, 0, 1), COMMON(new Item[][] { { new Item(10121, 2), new Item(10053), new Item(995, 20) }, { new Item(10121, 2), new Item(10055), new Item(995, 20) } }, 2, 3), FELDIP(new Item[][] { { new Item(10119, 2), new Item(10057), new Item(995, 20) }, { new Item(10119, 2), new Item(10059), new Item(995, 20) } }, 4, 5), DESERT(new Item[][] { { new Item(10123, 2), new Item(10061), new Item(995, 20) }, { new Item(10123, 2), new Item(10063), new Item(995, 20) } }, 6, 7), LARUPIA(new Item[][] { { new Item(10095), new Item(10045), new Item(995, 500) }, { new Item(10095), new Item(10043), new Item(995, 100) }, { new Item(10095), new Item(10041), new Item(995, 100) } }, 10, 11, 12), GRAAHK(new Item[][] { { new Item(10099), new Item(10051), new Item(995, 750) }, { new Item(10099), new Item(10049), new Item(995, 150) }, { new Item(10099), new Item(10047), new Item(995, 150) } }, 13, 14, 15), KYATT(new Item[][] { { new Item(10103), new Item(10039), new Item(995, 1000) }, { new Item(10103), new Item(10037), new Item(995, 250) }, { new Item(10103), new Item(10035), new Item(995, 250) } }, 16, 17, 18), DARK_KEBBIT(new Item[][] { { new Item(10115, 2), new Item(10075), new Item(995, 600) } }, 8), SPOTTED_KEBBIT(new Item[][] { { new Item(10125, 2), new Item(10069), new Item(995, 400) } }, 9), DASHING_KEBBIT(new Item[][] { { new Item(10127, 2), new Item(10071), new Item(995, 800) } }, 19);
+		POLAR(new Item[][] { { new Item(10117, 2), new Item(10065), new Item(995, 20) }, { new Item(10117, 2), new Item(10067), new Item(995, 20) } }, 0, 1),
+		COMMON(new Item[][] { { new Item(10121, 2), new Item(10053), new Item(995, 20) }, { new Item(10121, 2), new Item(10055), new Item(995, 20) } }, 2, 3),
+		FELDIP(new Item[][] { { new Item(10119, 2), new Item(10057), new Item(995, 20) }, { new Item(10119, 2), new Item(10059), new Item(995, 20) } }, 4, 5),
+		DESERT(new Item[][] { { new Item(10123, 2), new Item(10061), new Item(995, 20) }, { new Item(10123, 2), new Item(10063), new Item(995, 20) } }, 6, 7),
+		LARUPIA(new Item[][] { { new Item(10095), new Item(10045), new Item(995, 500) }, { new Item(10095), new Item(10043), new Item(995, 100) }, { new Item(10095), new Item(10041), new Item(995, 100) } }, 10, 11, 12),
+		GRAAHK(new Item[][] { { new Item(10099), new Item(10051), new Item(995, 750) }, { new Item(10099), new Item(10049), new Item(995, 150) }, { new Item(10099), new Item(10047), new Item(995, 150) } }, 13, 14, 15),
+		KYATT(new Item[][] { { new Item(10103), new Item(10039), new Item(995, 1000) }, { new Item(10103), new Item(10037), new Item(995, 250) }, { new Item(10103), new Item(10035), new Item(995, 250) } }, 16, 17, 18),
+		DARK_KEBBIT(new Item[][] { { new Item(10115, 2), new Item(10075), new Item(995, 600) } }, 8),
+		SPOTTED_KEBBIT(new Item[][] { { new Item(10125, 2), new Item(10069), new Item(995, 400) } }, 9),
+		DASHING_KEBBIT(new Item[][] { { new Item(10127, 2), new Item(10071), new Item(995, 800) } }, 19);
 
 		/**
 		 * Represents the items of the clothing in paralled to childs.
@@ -103,15 +113,16 @@ public final class FurClothingInterface extends ComponentPlugin {
 		 * @param player the player.
 		 * @param index the index.
 		 * @param amount the amount.
+		 * @return true if successful buy, false if not
 		 */
-		public void buy(final Player player, final int index, int amount) {
+		public boolean buy(final Player player, final int index, int amount) {
 			if (!player.getInventory().containsItem(getCoins(index))) {
 				player.getPacketDispatch().sendMessage("You don't have enough coins.");
-				return;
+				return false;
 			}
 			if (!isAnyFur(index) ? !player.getInventory().containsItem(getFur(index)) : (!player.getInventory().containsItem(getFur(index, true))) && !player.getInventory().containsItem(getFur(index))) {
 				player.getPacketDispatch().sendMessage("You don't have the material required to make this item.");
-				return;
+				return false;
 			}
 			final Item fur = !isAnyFur(index) ? getFur(index) : !player.getInventory().containsItem(getFur(index)) ? getFur(index, true) : getFur(index);
 			int inventoryAmount = player.getInventory().getAmount(fur);
@@ -121,11 +132,13 @@ public final class FurClothingInterface extends ComponentPlugin {
 			final Item coins = new Item(995, getCoins(index).getAmount() * amount);
 			if (!player.getInventory().containsItem(coins)) {
 				player.getPacketDispatch().sendMessage("You don't have enough coins.");
-				return;
+				return false;
 			}
 			if (player.getInventory().remove(coins, new Item(fur.getId(), fur.getAmount() * amount))) {
 				player.getInventory().add(new Item(getProduct(index).getId(), amount != 1 ? amount / fur.getAmount() : amount));
+				return true;
 			}
+			return false;
 		}
 
 		/**
@@ -256,7 +269,7 @@ public final class FurClothingInterface extends ComponentPlugin {
 		@Override
 		public boolean open(Object... args) {
 			npc = (NPC) args[0];
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Now you look like someone who goes to a lot of fancy", "dress parties.");
+			npc("Now you look like someone who goes to a lot of fancy", "dress parties.");
 			stage = 0;
 			return true;
 		}
@@ -265,38 +278,38 @@ public final class FurClothingInterface extends ComponentPlugin {
 		public boolean handle(int interfaceId, int buttonId) {
 			switch (stage) {
 			case 0:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Errr....what are you saying exactly?");
-				stage = 1;
+				player("Errr... what are you saying exactly?");
+				stage++;
 				break;
 			case 1:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'm just saying that perhaps you would like to persure my", "selection of garments.");
-				stage = 2;
+				npc("I'm just saying that perhaps you would like to peruse", "my selection of garments.");
+				stage++;
 				break;
 			case 2:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Or, if that doesn't interest you, then maybe you have", "something else to offer? I'm always on the lookout for", "interesting or unusual new materials.");
-				stage = 3;
+				npc("Or, if that doesn't interest you, then maybe you have", "something else to offer? I'm always on the lookout for", "interesting or unusual new materials.");
+				stage++;
 				break;
 			case 3:
-				interpreter.sendOptions("Select an Option", "Okay, let's see what you've got, then.", "I think I might just leave the persuing for now, thanks.", "Can you make clothing sutiable for hunting?", "What sort of unusual materials did you have in mind?");
-				stage = 4;
+				options("Okay, let's see what you've got then.", "I think I might just leave the perusing for now thanks.", "Can you make clothing suitable for hunting?", "What sort of unusual materials did you have in mind?");
+				stage++;
 				break;
 			case 4:
 
 				switch (buttonId) {
 				case 1:
-					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Okay, let's see what you've got, then.");
+					player("Okay, let's see what you've got then.");
 					stage = 10;
 					break;
 				case 2:
-					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I think I might just leave the persuing for now, thanks.");
+					player("I think I might just leave the perusing for now thanks.");
 					stage = 100;
 					break;
 				case 3:
-					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you make clothing suitable for hunting?");
+					player("Can you make clothing suitable for hunting?");
 					stage = 30;
 					break;
 				case 4:
-					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What sort of unusual materials did you have in mind?");
+					player("What sort of unusual materials did you have in mind?");
 					stage = 41;
 					break;
 				}
@@ -306,7 +319,7 @@ public final class FurClothingInterface extends ComponentPlugin {
 				end();
 				break;
 			case 30:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Certainly. Take a look at my range of made-to-order", "items. If you can supply the furs, I'll gladly make any of", "these for you.");
+				npc("Certainly. Take a look at my range of made-to-order", "items. If you can supply the furs, I'll gladly make any of", "these for you.");
 				stage = 31;
 				break;
 			case 31:
@@ -317,15 +330,15 @@ public final class FurClothingInterface extends ComponentPlugin {
 				//FurClothingInterface.open(player);
 				//break;
 			case 41:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, some more colourful feathers might be useful. For", "some surreal reason, all I normally seem to get offered", "are large quantities of rather beaten-up looking chicken", "feathers.");
+				npc("Well, some more colourful feathers might be useful. For", "some surreal reason, all I normally seem to get offered", "are large quantities of rather beaten-up looking chicken", "feathers.");
 				stage = 42;
 				break;
 			case 42:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "People must have some very strange pastimes around", "these parts, that's all I can say.");
+				npc("People must have some very strange pastimes around", "these parts, that's all I can say.");
 				stage = 43;
 				break;
 			case 43:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok, let's see what you've got then.");
+				player("Ok, let's see what you've got then.");
 				stage = 44;
 				break;
 			case 44:
@@ -480,18 +493,17 @@ public final class FurClothingInterface extends ComponentPlugin {
 				case 464:{
 					switch(buttonId){
 						case 1:{
-							FurClothing clothing = FurClothing.DARK_KEBBIT;
-							clothing.buy(player, 0, 1);
+							FurClothing.DARK_KEBBIT.buy(player, 0, 1);
 							break;
 						}
 						case 2:{
-							FurClothing clothing = FurClothing.SPOTTED_KEBBIT;
-							clothing.buy(player,0,1);
+							FurClothing.SPOTTED_KEBBIT.buy(player,0,1);
 							break;
 						}
 						case 3:{
-							FurClothing clothing = FurClothing.DASHING_KEBBIT;
-							clothing.buy(player,0,1);
+							if (FurClothing.DASHING_KEBBIT.buy(player,0,1)) {
+								player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 2, 2);
+							}
 							break;
 						}
 					}

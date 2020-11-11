@@ -195,8 +195,8 @@ public final class CanoeExtension {
 			@Override
 			public boolean pulse() {
 				if (RandomFunction.random(canoe == Canoe.WAKA ? 8 : 6) == 1) {
-					if (currentStation == CanoeStation.EDGEVILLE && canoe == Canoe.WAKA && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(2, 0)) {
-						player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 2, 0, true);
+					if (currentStation == CanoeStation.EDGEVILLE && canoe == Canoe.WAKA) {
+						player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 2, 10);
 					}
 					player.getConfigManager().set(674, currentStation == CanoeStation.BARBARIAN_VILLAGE ? currentStation.getCraftConfig(canoe, false) : (CONFIGS[2] << (currentStation.ordinal() * 8)) + currentStation.getCraftConfig(canoe, false));
 					player.getConfigManager().set(675, (currentStation.ordinal() + 1) << 17);
@@ -270,9 +270,7 @@ public final class CanoeExtension {
           player.getProperties().setTeleportLocation(destinationStation.getDestination());
 					break;
 				case 17:
-					if (getCurrentStation() == CanoeStation.LUMBRIDGE && destinationStation == CanoeStation.EDGEVILLE && canoe == Canoe.WAKA && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(2, 2)) {
-						player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 2, 2, true);
-					}
+
 					player.getInterfaceManager().close();
 					player.getInterfaceManager().restoreTabs();
 					PacketRepository.send(MinimapState.class, new MinimapStateContext(player, 0));

@@ -48,26 +48,25 @@ public class AchievementDiary implements SavingModule {
 	/**
 	 * The task types started.
 	 */
-	private final boolean[] started = new boolean[3];
+	private final boolean[] levelStarted = new boolean[3];
 
 	/**
 	 * If the rewards have been given.
 	 */
-	private final boolean[] rewarded = new boolean[3];
+	private final boolean[] levelRewarded = new boolean[3];
 
 	/**
 	 * The completed achievements.
 	 */
-	private final boolean[][] completed;
+	private final boolean[][] taskCompleted;
 
 	/**
 	 * Constructs a new {@code AchievementDiary} {@code Object}
 	 * @param type the diary type.
-	 * @param name the name.
 	 */
 	public AchievementDiary(DiaryType type) {
 		this.type = type;
-		this.completed = new boolean[type.getAchievements().length][50];
+		this.taskCompleted = new boolean[type.getAchievements().length][25];
 	}
 
 	/**
@@ -77,26 +76,34 @@ public class AchievementDiary implements SavingModule {
 	public void open(Player player) {
 		clear(player);
 		sendString(player, "<red>Achievement Diary - " + type.getName(), 2);
-		sendString(player, (isComplete() ? GREEN : hasStarted() ? YELLOW : "<red>") + type.getName() + " Area Tasks", 11);
+		int child = 12;
+
+		sendString(player, (isComplete() ? GREEN : isStarted() ? YELLOW : "<red>") + type.getName() + " Area Tasks", child++);
+		//child++;
+
+		if (!type.getInfo().isEmpty() && !this.isStarted()) {
+			sendString(player, type.getInfo(), child++);
+			child += type.getInfo().split("<br><br>").length;
+		}
+		child++;
+
 		boolean complete;
-		String line = "";
-		int child = 13;
+		String line;
 		for (int level = 0; level < type.getAchievements().length; level++) {
-			sendString(player, getStatus(level) + getLevel(level) + "", child);
+			sendString(player, getStatus(level) + getLevel(level) + "", child++);
 			child++;
 			for (int i = 0; i < type.getAchievements(level).length; i++) {
 				complete = isComplete(level, i);
-				line = (complete ? "<str>" : "") + (complete ? "<str>" + type.getAchievements(level)[i] : type.getAchievements(level)[i]);
+				line = type.getAchievements(level)[i];
 				if (line.contains("<br><br>")) {
 					String[] lines = line.split("<br><br>");
 					for (String l : lines) {
-						sendString(player, l, child);
-						child++;
+						sendString(player, complete ? "<str><str>" + l : l, child++);
 					}
 				} else {
-					sendString(player, line, child);
-					child++;
+					sendString(player, complete ? "<str><str>" + line : line, child++);
 				}
+				sendString(player, "*", child++);
 			}
 			child++;
 		}
@@ -123,18 +130,18 @@ public class AchievementDiary implements SavingModule {
 	public void save(ByteBuffer buffer) {
 		buffer.put((byte) 1);
 		for (int i = 0; i < 3; i++) {
-			buffer.put((byte) (started[i] ? 1 : 0));
+			buffer.put((byte) (levelStarted[i] ? 1 : 0));
 		}
-		buffer.put((byte) 2).put((byte) completed.length);
-		for (int i = 0; i < completed.length; i++) {
+		buffer.put((byte) 2).put((byte) taskCompleted.length);
+		for (int i = 0; i < taskCompleted.length; i++) {
 			buffer.put((byte) type.getAchievements(i).length);
 			for (int x = 0; x < type.getAchievements(i).length; x++) {
-				buffer.put((byte) (completed[i][x] ? 1 : 0));
+				buffer.put((byte) (taskCompleted[i][x] ? 1 : 0));
 			}
 		}
-		buffer.put((byte) 3).put((byte) rewarded.length);
-		for (int i = 0; i < rewarded.length; i++) {
-			buffer.put((byte) (rewarded[i] ? 1 : 0));
+		buffer.put((byte) 3).put((byte) levelRewarded.length);
+		for (int i = 0; i < levelRewarded.length; i++) {
+			buffer.put((byte) (levelRewarded[i] ? 1 : 0));
 		}
 		buffer.put((byte) 0);
 	}
@@ -142,18 +149,18 @@ public class AchievementDiary implements SavingModule {
 	public void parse(JSONObject data){
 		JSONArray startedArray = (JSONArray) data.get("startedLevels");
 		for(int i = 0; i < startedArray.size(); i++){
-			started[i] = (boolean) startedArray.get(i);
+			levelStarted[i] = (boolean) startedArray.get(i);
 		}
 		JSONArray completedArray = (JSONArray) data.get("completedLevels");
 		for(int i = 0; i < completedArray.size(); i++){
 			JSONArray level = (JSONArray) completedArray.get(i);
 			for(int j = 0; j < level.size(); j++){
-				completed[i][j] = (boolean) level.get(j);
+				taskCompleted[i][j] = (boolean) level.get(j);
 			}
 		}
 		JSONArray rewardedArray = (JSONArray) data.get("rewardedLevels");
 		for(int i = 0; i < rewardedArray.size(); i++){
-			rewarded[i] = (boolean) rewardedArray.get(i);
+			levelRewarded[i] = (boolean) rewardedArray.get(i);
 		}
 	}
 
@@ -164,7 +171,7 @@ public class AchievementDiary implements SavingModule {
 			switch (opcode) {
 			case 1:
 				for (int i = 0; i < 3; i++) {
-					started[i] = buffer.get() == 1;
+					levelStarted[i] = buffer.get() == 1;
 				}
 				break;
 			case 2:
@@ -172,14 +179,14 @@ public class AchievementDiary implements SavingModule {
 				for (int i = 0; i < size; i++) {
 					int size_ = buffer.get() & 0xFF;
 					for (int x = 0; x < size_; x++) {
-						completed[i][x] = buffer.get() == 1;
+						taskCompleted[i][x] = buffer.get() == 1;
 					}
 				}
 				break;
 			case 3:
 				size = buffer.get() & 0xFF;
 				for (int i = 0; i < size; i++) {
-					rewarded[i] = buffer.get() == 1;
+					levelRewarded[i] = buffer.get() == 1;
 				}
 				break;
 			}
@@ -191,10 +198,10 @@ public class AchievementDiary implements SavingModule {
 	 * @param player the player.
 	 */
 	public void drawStatus(Player player) {
-		if (hasStarted()) {
+		if (isStarted()) {
 			player.getPacketDispatch().sendString((isComplete() ? GREEN : YELLOW) + type.getName(), 259, type.getChild());
 			for (int i = 0; i < 3; i++) {
-				player.getPacketDispatch().sendString((isComplete(i) ? GREEN : hasStarted(i) ? YELLOW : "<col=FF0000>") + getLevel(i), 259, type.getChild() + (i + 1));
+				player.getPacketDispatch().sendString((isComplete(i) ? GREEN : isStarted(i) ? YELLOW : "<col=FF0000>") + getLevel(i), 259, type.getChild() + (i + 1));
 			}
 		}
 	}
@@ -207,17 +214,42 @@ public class AchievementDiary implements SavingModule {
 	 * @param complete if it's completed.
 	 */
 	public void updateTask(Player player, int level, int index, boolean complete) {
-		if (!started[level]) {
-			started[level] = true;
+		if (!levelStarted[level]) {
+			levelStarted[level] = true;
 		}
 		if (!complete) {
-			player.sendMessage("<col=0040ff>Well done! A " + type.getName() + " task has been updated.");
+			player.sendMessage("Well done! A " + type.getName() + " task has been updated.");
 		} else {
-			completed[level][index] = true;
-			player.sendMessages("<col=dc143c>Well done! You have completed " + (level == 0 ? "an easy" : level == 1 ? "a medium" : "a hard") + " task in the " + type.getName() + " area. Your", "<col=dc143c>Achievement Diary has been updated.");
+			taskCompleted[level][index] = true;
+			int tempLevel = this.type == DiaryType.LUMBRIDGE ? level - 1 : level;
+			player.sendMessages("Well done! You have completed "
+					+ (tempLevel == -1 ? "a beginner" : tempLevel == 0 ? "an easy" : tempLevel == 1 ? "a medium" : "a hard")
+					+ " task in the " + type.getName() + " area. Your", "Achievement Diary has been updated.");
 		}
 		if (isComplete(level)) {
-			player.sendMessages("<col=dc143c>You have completed all of the " + getLevel(level).toLowerCase() + " tasks in the " + type.getName() + " area.", "<col=dc143c>Speak to " + NPCDefinition.forId(type.getNpc(level)).getName() + " to claim your reward.");
+			player.sendMessages("Congratulations! You have completed all of the " + getLevel(level).toLowerCase()
+					+ " tasks in the " + type.getName() + " area.", "Speak to "
+					+ NPCDefinition.forId(type.getNpc(level)).getName() + " to claim your reward.");
+		}
+		drawStatus(player);
+	}
+
+	public void finishTask(Player player, int level, int index) {
+		if (!this.isComplete(level, index)) {
+			this.updateTask(player, level, index, true);
+		}
+	}
+
+	/**
+	 * Resets a task to un-start
+	 */
+	public void resetTask(Player player, int level, int index) {
+		taskCompleted[level][index] = false;
+		if (!isStarted(level)) {
+			this.levelStarted[level] = false;
+		}
+		if (!isComplete(level)) {
+			this.levelRewarded[level] = false;
 		}
 		drawStatus(player);
 	}
@@ -236,8 +268,8 @@ public class AchievementDiary implements SavingModule {
 	 * Sets the diary for the level as started.
 	 * @param level the level.
 	 */
-	public void setStarted(int level) {
-		this.started[level] = true;
+	public void setLevelStarted(int level) {
+		this.levelStarted[level] = true;
 	}
 
 	/**
@@ -246,7 +278,39 @@ public class AchievementDiary implements SavingModule {
 	 * @param index the index.
 	 */
 	public void setCompleted(int level, int index) {
-		this.completed[level][index] = true;
+		this.taskCompleted[level][index] = true;
+	}
+
+	/**
+	 * Checks if the achievement level is started.
+	 * @param level the level.
+	 * @return {@code True} if so.
+	 */
+	public boolean isStarted(int level) {
+		return this.levelStarted[level];
+	}
+
+	/**
+	 * Checks if the diary is started.
+	 * @return {@code True} if so.
+	 */
+	public boolean isStarted() {
+		for (int j = 0; j < type.getLevelNames().length; j++) {
+			if (isStarted(j)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	/**
+	 * Checks if an achievement task is completed.
+	 * @param level the level.
+	 * @param index the index.
+	 * @return {@code True} if an achievement is completed.
+	 */
+	public boolean isComplete(int level, int index) {
+		return taskCompleted[level][index];
 	}
 
 	/**
@@ -256,21 +320,19 @@ public class AchievementDiary implements SavingModule {
 	 */
 	public boolean isComplete(int level) {
 		for (int i = 0; i < type.getAchievements(level).length; i++) {
-			if (!completed[level][i]) {
+			if (!taskCompleted[level][i]) {
 				return false;
 			}
 		}
 		return true;
 	}
 
-	/**
-	 * Checks if an achievement is complete.
-	 * @param level the level.
-	 * @param index the index.
-	 * @return {@code True} if an achievement is completed.
-	 */
-	public boolean isComplete(int level, int index) {
-		return completed[level][index];
+	public boolean isComplete(int level, boolean cumulative) {
+		if (isComplete(level)) {
+			return !cumulative || level <= 0 || isComplete(level - 1, true);
+		} else {
+			return false;
+		}
 	}
 
 	/**
@@ -278,9 +340,9 @@ public class AchievementDiary implements SavingModule {
 	 * @return {@code True} if completed.
 	 */
 	public boolean isComplete() {
-		for (int i = 0; i < completed.length; i++) {
+		for (int i = 0; i < taskCompleted.length; i++) {
 			for (int x = 0; x < type.getAchievements(i).length; x++) {
-				if (!completed[i][x]) {
+				if (!taskCompleted[i][x]) {
 					return false;
 				}
 			}
@@ -297,12 +359,20 @@ public class AchievementDiary implements SavingModule {
 	}
 
 	/**
+	 * Gets the level of reward.
+	 * @return the level.
+	 */
+	public int getReward() {
+		return isLevelRewarded(2) ? 2 : isLevelRewarded(1) ? 1 : isLevelRewarded(0) ? 0 : -1;
+	}
+
+	/**
 	 * Gets the level string.
 	 * @param level the level.
 	 * @return the string format.
 	 */
 	public String getLevel(int level) {
-		return level == 0 ? "Easy" : level == 1 ? "Medium" : "Hard";
+		return type.getLevelNames()[level];
 	}
 
 	/**
@@ -311,37 +381,15 @@ public class AchievementDiary implements SavingModule {
 	 * @return the string color status.
 	 */
 	public String getStatus(int level) {
-		return !hasStarted(level) ? RED : isComplete(level) ? GREEN : YELLOW;
-	}
-
-	/**
-	 * Checks if a diary is started.
-	 * @return {@code True} if so.
-	 */
-	public boolean hasStarted() {
-		for (int i = 0; i < 3; i++) {
-			if (started[i]) {
-				return true;
-			}
-		}
-		return false;
-	}
-
-	/**
-	 * Checks if the achievement level has been started.
-	 * @param level the level.
-	 * @return {@code True} if so.
-	 */
-	public boolean hasStarted(int level) {
-		return started[level];
+		return !isStarted(level) ? RED : isComplete(level) ? GREEN : YELLOW;
 	}
 
 	/**
 	 * Sets the level as rewarded.
 	 * @param level the level.
 	 */
-	public void setRewarded(int level) {
-		this.rewarded[level] = true;
+	public void setLevelRewarded(int level) {
+		this.levelRewarded[level] = true;
 	}
 
 	/**
@@ -349,16 +397,16 @@ public class AchievementDiary implements SavingModule {
 	 * @param level the level.
 	 * @return {@code True} if so.
 	 */
-	public boolean hasReward(int level) {
-		return rewarded[level];
+	public boolean isLevelRewarded(int level) {
+		return levelRewarded[level];
 	}
 
 	/**
 	 * Gets the completed.
 	 * @return the completed
 	 */
-	public boolean[][] getCompleted() {
-		return completed;
+	public boolean[][] getTaskCompleted() {
+		return taskCompleted;
 	}
 
 	/**
@@ -373,16 +421,16 @@ public class AchievementDiary implements SavingModule {
 	 * Gets the started.
 	 * @return the started
 	 */
-	public boolean[] getStarted() {
-		return started;
+	public boolean[] getLevelStarted() {
+		return levelStarted;
 	}
 
 	/**
 	 * Gets the rewarded.
 	 * @return the rewarded
 	 */
-	public boolean[] getRewarded() {
-		return rewarded;
+	public boolean[] getLevelRewarded() {
+		return levelRewarded;
 	}
 
 }

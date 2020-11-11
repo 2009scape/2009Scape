@@ -8,6 +8,7 @@ import core.game.world.update.flag.context.Animation
 import core.plugin.InitializablePlugin
 import plugin.command.Command
 import plugin.command.CommandSet
+import plugin.quest.tutorials.tutorialisland.CharacterDesign
 import java.util.*
 
 @InitializablePlugin
@@ -40,7 +41,7 @@ class FunCommandSet : CommandSet(Command.Privilege.ADMIN) {
         /**
          * Transform a player's appearance into that of an NPC.
          */
-        define("pnpc"){ player, args ->
+        define("pnpc",Command.Privilege.MODERATOR){ player, args ->
             if(args.size < 2){
                 reject(player, "Usage: ::pnpc <npcid>")
                 return@define
@@ -111,6 +112,13 @@ class FunCommandSet : CommandSet(Command.Privilege.ADMIN) {
             }
         }
 
+
+        /**
+         * Opens up the makeover interface
+         */
+        define("makeover",Command.Privilege.MODERATOR){ player, _ ->
+            CharacterDesign.open(player)
+        }
 
     }
 }

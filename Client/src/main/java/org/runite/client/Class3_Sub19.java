@@ -30,10 +30,10 @@ final class Class3_Sub19 extends Linkable {
          int var7;
          int var8;
          if(null == Class27.aClass3_Sub28_Sub16_Sub2_518) {
-            if(HDToolKit.highDetail || null == Class49.aClass3_Sub28_Sub16_812) {
+            if(HDToolKit.highDetail || null == Class49.aAbstractSprite_812) {
                Class27.aClass3_Sub28_Sub16_Sub2_518 = new Class3_Sub28_Sub16_Sub2(512, 512);
             } else {
-               Class27.aClass3_Sub28_Sub16_Sub2_518 = (Class3_Sub28_Sub16_Sub2)Class49.aClass3_Sub28_Sub16_812;
+               Class27.aClass3_Sub28_Sub16_Sub2_518 = (Class3_Sub28_Sub16_Sub2)Class49.aAbstractSprite_812;
             }
 
             int[] var4 = Class27.aClass3_Sub28_Sub16_Sub2_518.anIntArray4081;
@@ -154,9 +154,9 @@ final class Class3_Sub19 extends Linkable {
                }
             }
 
-            Class49.aClass3_Sub28_Sub16_812 = new Class3_Sub28_Sub16_Sub1(Class27.aClass3_Sub28_Sub16_Sub2_518);
+            Class49.aAbstractSprite_812 = new HDSprite(Class27.aClass3_Sub28_Sub16_Sub2_518);
          } else {
-            Class49.aClass3_Sub28_Sub16_812 = Class27.aClass3_Sub28_Sub16_Sub2_518;
+            Class49.aAbstractSprite_812 = Class27.aClass3_Sub28_Sub16_Sub2_518;
          }
 
          if(HDToolKit.highDetail) {

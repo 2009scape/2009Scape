@@ -15,7 +15,6 @@ public final class Class3_Sub13_Sub34 extends Class3_Sub13 {
     static ReferenceCache aReferenceCache_3412 = new ReferenceCache(64);
     static int anInt3413 = 0;
     static int anInt3414;
-    static int anInt3415 = 0;
     static boolean aBoolean3416 = false;
     static int anInt3417;
 
@@ -239,7 +238,7 @@ public final class Class3_Sub13_Sub34 extends Class3_Sub13 {
     static void method330(int var0, int var1, int var2, int var3, int var4, int var5) {
         try {
             if (var1 > -83) {
-                anInt3415 = 115;
+                Unsorted.menuOptionCount = 115;
             }
 
             int var6 = -var3 + var5;

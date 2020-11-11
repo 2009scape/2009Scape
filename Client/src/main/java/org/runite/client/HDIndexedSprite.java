@@ -1,5 +1,6 @@
 package org.runite.client;
 
+import com.jogamp.opengl.GL;
 import com.jogamp.opengl.GL4bc;
 
 import java.nio.ByteBuffer;
@@ -117,7 +118,7 @@ final class HDIndexedSprite extends AbstractIndexedSprite {
       }
 
       var3.glNewList(this.anInt2676, 4864);
-      var3.glBegin(6);
+      var3.glBegin(GL.GL_TRIANGLE_FAN);
       var3.glTexCoord2f(var1, 0.0F);
       var3.glVertex2f((float)this.width, 0.0F);
       var3.glTexCoord2f(0.0F, 0.0F);

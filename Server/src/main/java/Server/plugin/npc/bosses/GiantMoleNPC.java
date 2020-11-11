@@ -17,6 +17,7 @@ import core.game.node.entity.impl.Projectile;
 import core.game.node.entity.impl.Animator.Priority;
 import core.game.node.entity.npc.AbstractNPC;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
 import core.game.system.task.Pulse;
 import core.game.world.GameWorld;
@@ -243,11 +244,16 @@ public final class GiantMoleNPC extends AbstractNPC {
 				if (button == 17) {
 					player.getProperties().setTeleportLocation(Location.create(1752, 5237, 0));
 					player.getPacketDispatch().sendMessage("You seem to have dropped down into a network of mole tunnels.");
+
+					if (!player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).isComplete(0, 5)) {
+						player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).updateTask(player,0,5,true);
+					}
 				}
 				player.getInterfaceManager().close();
 				return false;
 			}
 		});
+
 		DigAction action = new DigAction() {
 			@Override
 			public void run(Player player) {
@@ -290,7 +296,10 @@ public final class GiantMoleNPC extends AbstractNPC {
 	@Override
 	public void finalizeDeath(Entity killer) {
 		super.finalizeDeath(killer);
-		BossKillCounter.addtoKillcount((Player) killer, this.getId());
+		if (killer instanceof Player) {
+			Player player = killer.asPlayer();
+			BossKillCounter.addtoKillcount(player, this.getId());
+		}
 	}
 
 	@Override

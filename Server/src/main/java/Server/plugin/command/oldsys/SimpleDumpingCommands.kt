@@ -51,6 +51,7 @@ class SimpleDumpingCommands : CommandPlugin() {
 
     private fun makeDumpDoc(type: String){
         val f = File(System.getProperty("user.dir") + File.separator + "${type}list.html")
+        println(f.absolutePath)
         val writer = f.bufferedWriter()
         writer.writeLn("<head>")
         writer.writeLn("<link rel=\"stylesheet\" type=\"text/css\" href=\"tableformat.css\">")

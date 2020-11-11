@@ -24,7 +24,7 @@ final class Class75_Sub2 extends Class75 {
       }
    }
 
-   static Class3_Sub28_Sub16 method1344(CacheIndex var0, int var1) {
+   static AbstractSprite method1344(CacheIndex var0, int var1) {
       try {
          return !Class140_Sub7.method2029((byte)-121, var0, var1)?null:Class43.method1062(99);
       } catch (RuntimeException var4) {

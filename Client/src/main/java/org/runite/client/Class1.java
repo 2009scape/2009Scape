@@ -606,14 +606,14 @@ final class Class1 {
             }
 
             if (WorldMap.anInt2737 >= 100) {
-                if (null == Class36.aClass3_Sub28_Sub16_637 || var2 != Class36.aClass3_Sub28_Sub16_637.anInt3707 || Class36.aClass3_Sub28_Sub16_637.anInt3696 != var1) {
+                if (null == Class36.aAbstractSprite_637 || var2 != Class36.aAbstractSprite_637.anInt3707 || Class36.aAbstractSprite_637.anInt3696 != var1) {
                     Class3_Sub28_Sub16_Sub2 var5 = new Class3_Sub28_Sub16_Sub2(var2, var1);
                     Class74.setBuffer(var5.anIntArray4081, var2, var1);
                     Unsorted.method523(var2, 0, Class23.anInt455, 0, 0, Class108.anInt1460, var1, 0);
                     if (HDToolKit.highDetail) {
-                        Class36.aClass3_Sub28_Sub16_637 = new Class3_Sub28_Sub16_Sub1(var5);
+                        Class36.aAbstractSprite_637 = new HDSprite(var5);
                     } else {
-                        Class36.aClass3_Sub28_Sub16_637 = var5;
+                        Class36.aAbstractSprite_637 = var5;
                     }
 
                     if (HDToolKit.highDetail) {
@@ -623,7 +623,7 @@ final class Class1 {
                     }
                 }
 
-                Class36.aClass3_Sub28_Sub16_637.method635(var0, var4);
+                Class36.aAbstractSprite_637.method635(var0, var4);
 
                 int var6 = var1 * Class60.anInt934 / Class108.anInt1460 + var4;
                 int var8 = Class17.anInt410 * var1 / Class108.anInt1460;
@@ -634,7 +634,7 @@ final class Class1 {
                     var9 = 16777215;
                 }
                 Toolkit.getActiveToolkit().drawRect(var15, var6, var7, var8, var9, 255);
-                if (Class3_Sub28_Sub16.anInt3704 > 0) {
+                if (AbstractSprite.anInt3704 > 0) {
                     int var10;
                     if (Class3_Sub28_Sub8.anInt3611 > 10) {
                         var10 = (-Class3_Sub28_Sub8.anInt3611 + 20) * 25;

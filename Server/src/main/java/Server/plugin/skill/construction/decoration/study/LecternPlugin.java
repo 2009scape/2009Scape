@@ -5,6 +5,7 @@ import core.cache.def.impl.ObjectDefinition;
 import core.game.component.Component;
 import core.game.component.ComponentDefinition;
 import core.game.component.ComponentPlugin;
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.skill.Skills;
 import plugin.skill.construction.Decoration;
 import core.game.interaction.OptionHandler;
@@ -34,7 +35,7 @@ public class LecternPlugin extends OptionHandler {
 	/**
 	 * TeleTabButton
 	 */
-	private static enum TeleTabButton {
+	private enum TeleTabButton {
 		
 		ARDOUGNE(2, 51, 66, new Item(TeleTabsOptionPlugin.TeleTabs.ADDOUGNE_TELEPORT.getItem()), new Decoration[] { Decoration.TEAK_EAGLE_LECTERN, Decoration.MAHOGANY_EAGLE_LECTERN }, SOFT_CLAY, new Item(563, 2), new Item(555, 2)),
 		BONES_TO_BANANNAS(3, 15, 32, new Item(8014), new Decoration[] { Decoration.DEMON_LECTERN, Decoration.TEAK_DEMON_LECTERN, Decoration.MAHOGANY_DEMON_LECTERN }, SOFT_CLAY, new Item(561, 1), new Item(557, 2), new Item(555, 2)),
@@ -83,7 +84,7 @@ public class LecternPlugin extends OptionHandler {
 		 * TeleTabButton
 		 * @param id
 		 */
-		private TeleTabButton(int id, int level, int xp, Item tabItem, Decoration[] requiredDecorations, Item... requiredItems) {
+		TeleTabButton(int id, int level, int xp, Item tabItem, Decoration[] requiredDecorations, Item... requiredItems) {
 			this.buttonId = id;
 			this.level = level;
 			this.xp = xp;
@@ -185,6 +186,7 @@ public class LecternPlugin extends OptionHandler {
 				player.getPulseManager().run(new Pulse(1) {
 					@Override
 					public boolean pulse() {
+						// Todo fix timing and animations
 						if (!ttb.canMake(player)) {
 							return true;
 						}
@@ -196,6 +198,12 @@ public class LecternPlugin extends OptionHandler {
 						if (player.getInventory().remove(ttb.requiredItems)) {
 							player.getInventory().add(ttb.tabItem);
 							player.getSkills().addExperience(Skills.MAGIC, ttb.xp / 2, true);
+
+							if (ttb == TeleTabButton.VARROCK
+									&& (player.getAttribute("ttb:objectid", 0) == Decoration.MAHOGANY_EAGLE_LECTERN.getObjectId()
+									|| player.getAttribute("ttb:objectid", 0) == Decoration.MAHOGANY_DEMON_LECTERN.getObjectId())) {
+								player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 2, 8);
+							}
 						}
 						//player.animate(new Animation(-1));
 						return false;

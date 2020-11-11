@@ -10,10 +10,6 @@ public class EnergyEffect extends ConsumableEffect {
     }
     @Override
     public void activate(Player p) {
-        if(amt == -1){
-            p.getSettings().updateRunEnergy(-Math.floor(p.getSettings().getRunEnergy() * 0.2));
-        } else {
-            p.getSettings().updateRunEnergy(-amt);
-        }
+        p.getSettings().updateRunEnergy(-amt);
     }
 }

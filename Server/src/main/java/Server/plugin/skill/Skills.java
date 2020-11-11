@@ -4,6 +4,7 @@ import core.game.content.global.SkillcapePerks;
 import core.game.world.GameWorld;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import plugin.CorePluginTypes.XPGainPlugins;
 import plugin.ame.ExperienceMonitor;
 import plugin.quest.tutorials.tutorialisland.TutorialSession;
 import core.game.node.entity.Entity;
@@ -249,6 +250,7 @@ public final class Skills {
 			}
 		}
 		experienceGained += experienceAdd;
+		XPGainPlugins.run(player,slot,experienceAdd);
 		int newLevel = getStaticLevelByExperience(slot);
 		if (newLevel > staticLevels[slot]) {
 			int amount = newLevel - staticLevels[slot];

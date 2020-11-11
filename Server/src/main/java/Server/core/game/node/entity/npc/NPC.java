@@ -300,6 +300,9 @@ public class NPC extends Entity {
 		getProperties().setBonuses(definition.getConfiguration(NPCConfigParser.BONUSES, new int[15]));
 		getProperties().setAttackSpeed(definition.getConfiguration(NPCConfigParser.ATTACK_SPEED, 5));
 		forceTalk = definition.getConfiguration("force_talk", null);
+		if (definition.getConfiguration("movement_radius") != null) {
+			this.setWalkRadius(definition.getConfiguration("movement_radius"));
+		}
 	}
 
 	/**

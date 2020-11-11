@@ -1,5 +1,6 @@
 package core.game.content.global.action
 
+import core.game.content.ItemNames
 import core.game.content.global.GodType
 import core.game.node.entity.player.Player
 import core.game.node.entity.player.link.audio.Audio
@@ -57,11 +58,21 @@ object PickupHandler {
             if (!RegionManager.isTeleportPermitted(item.location)) {
                 player.animate(Animation.create(535))
             }
-            if (item is GroundSpawn && item.getId() == 401 && player.zoneMonitor.isInZone("karamja") && !player.achievementDiaryManager.hasCompletedTask(DiaryType.KARAMJA, 0, 7)) {
+
+            if (item is GroundSpawn && item.getId() == ItemNames.SEAWEED
+                    && player.zoneMonitor.isInZone("karamja")
+                    && !player.achievementDiaryManager.hasCompletedTask(DiaryType.KARAMJA, 0, 7)) {
                 var seaweed = player.getAttribute("seaweed", 0)
                 seaweed++
                 player.setAttribute("seaweed", seaweed)
-                player.achievementDiaryManager.updateTask(player, DiaryType.KARAMJA, 0, 7, seaweed == 5)
+                player.achievementDiaryManager.updateTask(player, DiaryType.KARAMJA, 0, 7, seaweed >= 5)
+            }
+            // Collect five palm leaves
+            if (item.getId() == ItemNames.PALM_LEAF_2339 && player.zoneMonitor.isInZone("karamja") && !player.achievementDiaryManager.hasCompletedTask(DiaryType.KARAMJA, 2, 7)) {
+                var palms = player.getAttribute("palms", 0)
+                palms++
+                player.setAttribute("palms", palms)
+                player.achievementDiaryManager.updateTask(player, DiaryType.KARAMJA, 2, 7, palms >= 5)
             }
             GroundItemManager.destroy(item)
             if (item.dropper?.isArtificial == true) {

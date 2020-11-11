@@ -3,7 +3,9 @@ package plugin.interaction.city;
 import core.cache.def.impl.ItemDefinition;
 import core.cache.def.impl.NPCDefinition;
 import core.cache.def.impl.ObjectDefinition;
+import core.game.content.global.action.ClimbActionHandler;
 import core.game.content.global.action.DoorActionHandler;
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.skill.Skills;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
@@ -70,7 +72,7 @@ public final class FaladorNodePlugin extends OptionHandler {
 
 	@Override
 	public boolean handle(final Player player, Node node, String option) {
-		final int id = node instanceof GameObject ? ((GameObject) node).getId() : node instanceof NPC ? ((NPC) node).getId() : ((Item) node).getId();
+		final int id = node.getId();
 		switch (id) {
 		case 11708:// estate door.
 			DoorActionHandler.handleDoor(player, (GameObject) node);

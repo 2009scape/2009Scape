@@ -49,11 +49,11 @@ public final class BNetPulse extends SkillPulse<NPC> {
 		if(!player.getZoneMonitor().isInZone("puro puro")){
 			return false;
 		} else {
-			if(!player.getAchievementDiaryManager().hasCompletedTask(DiaryType.LUMBRIDGE,1,8)){
+/*			if(!player.getAchievementDiaryManager().hasCompletedTask(DiaryType.LUMBRIDGE,1,8)){
 				player.getAchievementDiaryManager().updateTask(player,DiaryType.LUMBRIDGE,1,8,true);
-			}
+			}*/
+			return true;
 		}
-		return true;
 	}
 
 	/**

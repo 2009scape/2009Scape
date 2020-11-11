@@ -1,5 +1,7 @@
 package plugin.consumable;
 
+import core.game.content.ItemNames;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.entity.state.EntityState;
 import core.game.world.update.flag.context.Animation;
 import plugin.consumable.effects.*;
@@ -284,6 +286,7 @@ public enum Consumables {
 	ROLL(new Food(new int[] {6963}, new HealingEffect(6))),
 	TCHIKI_MONKEY_NUTS(new Food(new int[] {7573}, new HealingEffect(5), "You eat the Tchiki monkey nuts. They taste nutty.")),
 	TCHIKI_MONKEY_PASTE(new Food(new int[] {7575}, new HealingEffect(5), "You eat the Tchiki monkey nut paste. It sticks to the roof of your mouth.")),
+	OOMLIE_WRAP(new Food(new int[] {ItemNames.COOKED_OOMLIE_WRAP_2343}, new MultiEffect(new HealingEffect(14), new AchievementEffect(DiaryType.KARAMJA, 2, 2)))),
 
 	/** Special Events */
 	PUMPKIN(new Food(new int[] {1959}, new HealingEffect(14))),

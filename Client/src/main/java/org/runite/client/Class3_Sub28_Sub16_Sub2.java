@@ -2,7 +2,7 @@ package org.runite.client;
 
 import org.rs09.client.rendering.Toolkit;
 
-public class Class3_Sub28_Sub16_Sub2 extends Class3_Sub28_Sub16 {
+public class Class3_Sub28_Sub16_Sub2 extends AbstractSprite {
 
    int[] anIntArray4081;
 

@@ -3,12 +3,14 @@ package plugin.interaction.object;
 import core.cache.def.impl.ObjectDefinition;
 import core.game.container.Container;
 import core.game.container.impl.EquipmentContainer;
+import core.game.content.ItemNames;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
 import core.game.node.entity.combat.equipment.WeaponInterface;
 import core.game.node.entity.combat.equipment.WeaponInterface.AttackStyle;
 import core.game.node.entity.combat.equipment.WeaponInterface.WeaponInterfaces;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
 import core.game.node.object.GameObject;
 import core.game.node.object.ObjectBuilder;
@@ -75,6 +77,15 @@ public final class SlashWebPlugin extends OptionHandler {
 		if (success) {
 			player.getPacketDispatch().sendMessage("You slash the web apart.");
 			ObjectBuilder.replace(object, object.getId() == 27266 || object.getId() == 29354 ? object.transform(734) : object.transform(object.getId() + 1), 100);
+
+			// Venture through the cobwebbed corridor in Varrock Sewers
+			if (object.getId() == 29354) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 17);
+			}
+			// Escape from the spider lair in Varrock Sewers with some red<br><br>spiders eggs
+			if (object.getId() == 29354 && player.getInventory().containsOneItem(ItemNames.RED_SPIDERS_EGGS) && player.getLocation().getY() <= 9897) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 1, 4);
+			}
 		} else {
 			player.getPacketDispatch().sendMessage("You fail to cut through it.");
 		}

@@ -1,6 +1,7 @@
 package plugin.dialogue;
 
 import core.game.node.entity.npc.NPC;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.plugin.InitializablePlugin;
 import core.game.node.entity.player.Player;
 
@@ -108,6 +109,7 @@ public final class DoomsayerDialogue extends DialoguePlugin {
 				stage = 30;
 				break;
 			}
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 0, 3);
 			break;
 		case 30:
 			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, " I will.");

@@ -58,6 +58,6 @@ public final class HoodedMonkDialogue extends DialoguePlugin {
 
 	@Override
 	public int[] getIds() {
-		return new int[] { 3075 };
+		return new int[] { 3074 };
 	}
 }

@@ -11,13 +11,13 @@ final class Class92 {
    private static int screenColorRgb = -1;
    static int lightX;
    static int lightY;
-   static int defaultRegionAmbientRGB = 13156520;
+   static int defaultRegionAmbientRGB = 13156520;//13156520
    private static float light0Diffuse = -1.0F;
    private static float light1Diffuse = -1.0F;
    static float[] fogColor = new float[4];
    private static float lightModelAmbient;
    private static float[] light1Position = new float[4];
-   static int defaultScreenColorRgb = 16777215;
+   static int defaultScreenColorRgb = 16777215;//16777215
    private static int fogOffset = -1;
    private static int fogColorRGB = -1;
 

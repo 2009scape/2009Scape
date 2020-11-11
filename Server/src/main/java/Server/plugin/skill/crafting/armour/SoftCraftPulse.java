@@ -82,13 +82,10 @@ public final class SoftCraftPulse extends SkillPulse<Item> {
 			return false;
 		}
 		if (player.getInventory().remove(new Item(LeatherCrafting.LEATHER))) {
-			if (soft == SoftLeather.COIF && (player.getViewport().getRegion().getId() == 12851 || player.getViewport().getRegion().getId() == 12850) && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(1, 4)) {
-				player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 1, 4, true);
-			}
 			if (soft == SoftLeather.GLOVES || soft == SoftLeather.BOOTS || soft == SoftLeather.VAMBRACES) {
 				player.getPacketDispatch().sendMessage("You make a pair of " + soft.getProduct().getName().toLowerCase() + ".");
 			} else {
-				player.getPacketDispatch().sendMessage("You make " + (StringUtils.isPlusN(soft.getProduct().getName()) ? "an" : "a") + " " + soft.getProduct().getName().toLowerCase() + ".");
+				player.getPacketDispatch().sendMessage("You make " + (StringUtils.isPlusN(soft.getProduct().getName()) ? "an " : "a ") + soft.getProduct().getName().toLowerCase() + ".");
 			}
 			Item item = soft.getProduct();
 		    player.getInventory().add(item);
@@ -96,6 +93,10 @@ public final class SoftCraftPulse extends SkillPulse<Item> {
 			LeatherCrafting.decayThread(player);
 			if (LeatherCrafting.isLastThread(player)) {
 				LeatherCrafting.removeThread(player);
+			}
+
+			if (soft == SoftLeather.GLOVES) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 1, 3);
 			}
 		}
 		amount--;

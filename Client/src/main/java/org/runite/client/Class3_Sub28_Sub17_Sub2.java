@@ -1,6 +1,8 @@
 package org.runite.client;
 
+import com.jogamp.opengl.GL;
 import com.jogamp.opengl.GL4bc;
+import org.rs09.client.rendering.opengl.enums.GLBeginMode;
 
 
 import java.nio.ByteBuffer;
@@ -34,7 +36,7 @@ public final class Class3_Sub28_Sub17_Sub2 extends Class3_Sub28_Sub17 {
 
    final void method678(int var1, int var2, int var3, int var4, int var5, int var6) {
       GL4bc var8;
-      if(Class22.aClass3_Sub28_Sub16_Sub1_447 == null) {
+      if(Class22.aHDSprite_447 == null) {
          HDToolKit.method1824();
          var8 = HDToolKit.gl;
          HDToolKit.bindTexture2D(this.anInt4084);
@@ -51,7 +53,7 @@ public final class Class3_Sub28_Sub17_Sub2 extends Class3_Sub28_Sub17 {
          float var11 = var9 + (float)this.anIntArray3709[var1] / (float)this.anInt4087;
          float var12 = var10 + (float)this.anIntArray3721[var1] / (float)this.anInt4087;
          HDToolKit.bindTexture2D(this.anInt4084);
-         Class3_Sub28_Sub16_Sub1 var13 = Class22.aClass3_Sub28_Sub16_Sub1_447;
+         HDSprite var13 = Class22.aHDSprite_447;
          var8.glActiveTexture('\u84c1');
          var8.glEnable(3553);
          var8.glBindTexture(3553, var13.anInt4077);
@@ -61,7 +63,7 @@ public final class Class3_Sub28_Sub17_Sub2 extends Class3_Sub28_Sub17 {
          float var15 = (float)(var3 - Class22.anInt448) / (float)var13.anInt4079;
          float var16 = (float)(var2 + var4 - Class22.anInt449) / (float)var13.anInt4075;
          float var17 = (float)(var3 + var5 - Class22.anInt448) / (float)var13.anInt4079;
-         var8.glBegin(6);
+         var8.glBegin(GL.GL_TRIANGLE_FAN);
          var8.glMultiTexCoord2f('\u84c1', var16, var15);
          var8.glTexCoord2f(var11, var10);
          var8.glVertex2f((float)this.anIntArray3709[var1], 0.0F);
@@ -106,7 +108,7 @@ public final class Class3_Sub28_Sub17_Sub2 extends Class3_Sub28_Sub17 {
             float var6 = var4 + (float)this.anIntArray3721[var2] / (float)this.anInt4087;
             this.anIntArray4085[var2] = var1.glGenLists(1);
             var1.glNewList(this.anIntArray4085[var2], 4864);
-            var1.glBegin(6);
+            var1.glBegin(GL.GL_TRIANGLE_FAN);
             var1.glTexCoord2f(var5, var4);
             var1.glVertex2f((float)this.anIntArray3709[var2], 0.0F);
             var1.glTexCoord2f(var3, var4);

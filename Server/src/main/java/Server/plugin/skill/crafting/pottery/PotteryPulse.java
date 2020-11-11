@@ -1,5 +1,6 @@
 package plugin.skill.crafting.pottery;
 
+import core.game.world.map.Location;
 import plugin.skill.SkillPulse;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
@@ -77,8 +78,8 @@ public final class PotteryPulse extends SkillPulse<Item> {
 			return false;
 		}
 		if (player.getInventory().remove(SOFT_CLAY)) {
-			if (pottery == PotteryItem.BOWL && player.getLocation().getX() == 3086) {
-				player.setAttribute("spun-bowl", true);
+			if (pottery == PotteryItem.BOWL && player.getLocation().withinDistance(Location.create(3086,3410,0))) {
+				player.setAttribute("/save:diary:varrock:spun-bowl", true);
 			}
 			final Item item = pottery.getUnfinished();
 		    player.getInventory().add(item);

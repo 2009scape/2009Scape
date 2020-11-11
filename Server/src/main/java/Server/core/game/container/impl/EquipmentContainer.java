@@ -3,10 +3,13 @@ package core.game.container.impl;
 import core.game.container.Container;
 import core.game.container.ContainerEvent;
 import core.game.container.ContainerListener;
+import core.game.content.ItemNames;
 import core.game.node.entity.combat.equipment.WeaponInterface;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
 import core.game.system.config.ItemConfigParser;
+import core.game.world.map.Location;
 import core.game.world.update.flag.player.AppearanceFlag;
 import core.net.packet.PacketRepository;
 import core.net.packet.context.ContainerContext;
@@ -71,7 +74,7 @@ public final class EquipmentContainer extends Container {
 	public boolean add(Item item, int inventorySlot, boolean fire, boolean fromInventory) {
 		int slot = item.getDefinition().getConfiguration(ItemConfigParser.EQUIP_SLOT, -1);
 		if (slot == -1 && item.getDefinition().getConfiguration(ItemConfigParser.WEAPON_INTERFACE, -1) != -1) {
-			slot = 3;
+			slot = SLOT_WEAPON;
 		}
 //		slot = 3;
 		if (slot < 0) {

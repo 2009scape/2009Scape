@@ -1,8 +1,10 @@
 package plugin.interaction.item.withobject;
 
+import core.game.content.ItemNames;
 import core.game.interaction.NodeUsageEvent;
 import core.game.interaction.UseWithHandler;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
 import core.game.node.object.GameObject;
 import core.game.system.task.Pulse;
@@ -56,7 +58,23 @@ public final class WaterSourcePlugin extends UseWithHandler {
 	 * @version 1.0
 	 */
 	public enum WaterRecipient {
-		BUCKET(new Item(1925), new Item(1929)), VIAL(new Item(229), new Item(227)), JUG(new Item(1935), new Item(1937)), BOWL(new Item(1923), new Item(1921)), CLAY(new Item(434), new Item(1761), "You mix the clay and water. You now have some soft, workable clay."), WATERIN_CAN(new Item(5331), new Item(5340), "You fill the watering can."), WATERIN_CAN7(new Item(5339), new Item(5340), "You fill the watering can."), WATERIN_CAN6(new Item(5338), new Item(5340), "You fill the watering can."), WATERIN_CAN5(new Item(5337), new Item(5340), "You fill the watering can."), WATERIN_CAN4(new Item(5336), new Item(5340), "You fill the watering can."), WATERIN_CAN3(new Item(5335), new Item(5340), "You fill the watering can."), WATERIN_CAN2(new Item(5334), new Item(5340), "You fill the watering can."), WATERIN_CAN1(new Item(5333), new Item(5340), "You fill the watering can.");
+		BUCKET(new Item(1925), new Item(1929)),
+		VIAL(new Item(229), new Item(227)),
+		JUG(new Item(1935), new Item(1937)),
+		BOWL(new Item(1923), new Item(1921)),
+		CLAY(new Item(434), new Item(1761), "You mix the clay and water. You now have some soft, workable clay."),
+		WATERING_CAN(new Item(5331), new Item(5340), "You fill the watering can."),
+		WATERING_CAN7(new Item(5339), new Item(5340), "You fill the watering can."),
+		WATERING_CAN6(new Item(5338), new Item(5340), "You fill the watering can."),
+		WATERING_CAN5(new Item(5337), new Item(5340), "You fill the watering can."),
+		WATERING_CAN4(new Item(5336), new Item(5340), "You fill the watering can."),
+		WATERING_CAN3(new Item(5335), new Item(5340), "You fill the watering can."),
+		WATERING_CAN2(new Item(5334), new Item(5340), "You fill the watering can."),
+		WATERING_CAN1(new Item(5333), new Item(5340), "You fill the watering can."),
+		WATER_SKIN0(new Item(1831), new Item(1823), "You fill the waterskin."),
+		WATER_SKIN1(new Item(1829),new Item(1823),"You fill the waterskin."),
+		WATER_SKIN2(new Item(1827), new Item(1823), "You fill the waterskin."),
+		FISHBOWL(new Item(ItemNames.EMPTY_FISHBOWL_6667), new Item(ItemNames.FISHBOWL));
 
 		/**
 		 * Represents the required item.
@@ -99,33 +117,39 @@ public final class WaterSourcePlugin extends UseWithHandler {
 		 * @param player the player.
 		 */
 		public final void handle(final GameObject object, final Player player) {
-			if (object.getId() == 16302) {//Is donator was here unsure
-				player.animate(ANIMATION);
-				player.getPacketDispatch().sendMessage("You fill all the water holders in your inventory!");
-				if (player.getInventory().containsItem(getRequired())) {
-					int amt = player.getInventory().getAmount(getRequired());
-					if (player.getInventory().remove(new Item(getRequired().getId(), amt))) {
-						player.getInventory().add(new Item(getProduct().getId(), amt));
+			if (object.getId() == 11661
+					&& required.getId() == ItemNames.BUCKET_1925
+					&& !player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).isComplete(0,7)) {
+				player.getPulseManager().run(new Pulse(2, player) {
+					@Override
+					public boolean pulse() {
+						if (player.getInventory().remove(getRequired())) {
+							player.animate(ANIMATION);
+							player.getPacketDispatch().sendMessage(getMessage());
+							player.getInventory().add(getProduct());
+							player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).updateTask(player, 0, 7, true);
+						}
+						return !player.getInventory().containsItem(getRequired());
 					}
-				}
-				return;
-			}
-			player.getPulseManager().run(new Pulse(2, player) {
-				@Override
-				public boolean pulse() {
-					if (player.getInventory().remove(getRequired())) {
-						player.animate(ANIMATION);
-						player.getPacketDispatch().sendMessage(getMessage());
-						player.getInventory().add(getProduct());
+				});
+			} else {
+				player.getPulseManager().run(new Pulse(1, player) {
+					@Override
+					public boolean pulse() {
+						if (player.getInventory().remove(getRequired())) {
+							player.animate(ANIMATION);
+							player.getPacketDispatch().sendMessage(getMessage());
+							player.getInventory().add(getProduct());
+						}
+						return !player.getInventory().containsItem(getRequired());
 					}
-					return !player.getInventory().containsItem(getRequired());
-				}
 
-				@Override
-				public void stop() {
-					super.stop();
-				}
-			});
+					@Override
+					public void stop() {
+						super.stop();
+					}
+				});
+			}
 		}
 
 		/**

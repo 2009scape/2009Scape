@@ -5,7 +5,12 @@ import core.cache.def.impl.ObjectDefinition;
 import core.game.component.Component;
 import core.game.component.ComponentDefinition;
 import core.game.component.ComponentPlugin;
+import core.game.node.entity.player.link.diary.DiaryType;
+import core.game.world.map.Location;
+import core.game.world.map.RegionManager;
 import plugin.skill.Skills;
+import plugin.skill.farming.patch.Allotments;
+import plugin.skill.farming.patch.PatchProtection;
 import plugin.skill.farming.pot.Saplings;
 import plugin.skill.farming.tool.PatchTool;
 import plugin.skill.farming.wrapper.PatchWrapper;
@@ -28,7 +33,7 @@ import java.util.List;
 /**
  * Represents the option plugin used to handle farming interactions.
  * @author 'Vexia
- * @versio 1.0
+ * @version 1.0
  */
 @InitializablePlugin
 public final class FarmingPlugin extends OptionHandler {
@@ -61,9 +66,9 @@ public final class FarmingPlugin extends OptionHandler {
 			public boolean handle(Player player, Node node, String option) {
 				if (node.getId() == 6036) {
 					player.getInventory().replace(new Item(229), ((Item) node).getSlot());
-					return true;
+				} else {
+					player.getInventory().replace(new Item(1925), ((Item) node).getSlot());
 				}
-				player.getInventory().replace(new Item(1925), ((Item) node).getSlot());
 				return true;
 			}
 
@@ -379,8 +384,7 @@ public final class FarmingPlugin extends OptionHandler {
 
 	/**
 	 * Represents the component plugin used for the farming store.
-	 * @author 'Vexia
-	 * @version 1.0
+	 * @author afaroutdude
 	 */
 	public final class FarmingEquipmentStore extends ComponentPlugin {
 
@@ -393,108 +397,49 @@ public final class FarmingPlugin extends OptionHandler {
 
 		@Override
 		public boolean handle(final Player player, Component component, int opcode, int button, final int slot, int itemId) {
+			// Opcodes: 155 (store 1), 196 (store 5), 124 (store all), 199 (store X)
+
 			switch (component.getId()) {
-			case 125:
-				if (opcode == 155) {
-					switch (button) {
-					case 33:
-					case 34:
-					case 35:
-					case 36:
-					case 37:
-					case 38:
-					case 39:
-					case 40:
-					case 41:
-						player.getFarmingManager().getEquipment().remove(player, button - 33, 1);
-						break;
-					}
-					break;
-				} else if (opcode != 155) {
-					switch (button) {
-					case 39:
-					case 40:
-					case 41:
-						switch(opcode){
-						case 196:
-							player.getFarmingManager().getEquipment().remove(player, 7 + slot, 5);
-							break;
-						case 124:
-							player.getFarmingManager().getEquipment().remove(player, 7 + slot, 28);
-							break;
-						case 199:
-							final int amount = getAmount(player, slot + 7, opcode);
-							if (amount == -1) {
-								player.setAttribute("runscript", new RunScript() {
-									@Override
-									public boolean handle() {
-										player.getFarmingManager().getEquipment().remove(player, 7 + slot, (int) getValue());
-										return true;
-									}
-								});
-								player.getDialogueInterpreter().sendInput(false,"Enter amount:");
+			case 125: // Component, so player is trying to withdraw
+				switch (opcode) {
+					case 155:
+						return player.getFarmingManager().getEquipment().remove(player, button - 33, 1);
+					case 196:
+						return player.getFarmingManager().getEquipment().remove(player, button - 33, 5);
+					case 124:
+						return player.getFarmingManager().getEquipment().remove(player, button - 33, 28);
+					case 199:
+						player.setAttribute("runscript", new RunScript() {
+							@Override
+							public boolean handle() {
+								player.getFarmingManager().getEquipment().remove(player, button - 33, (int) getValue());
 								return true;
 							}
-							player.getFarmingManager().getEquipment().remove(player, 6 + slot, amount);
-							break;
-						}
-					}
+						});
+						player.getDialogueInterpreter().sendInput(false, "Enter amount:");
+						return true;
 				}
-				break;
-			case 126:
-				if(opcode == 155){
-					switch(button){
-					case 18:
-					case 19:
-					case 20:
-					case 21:
-					case 22:
-					case 23:
-					case 24:
-					case 25:
-					case 26:
-						player.getFarmingManager().getEquipment().store(player, button - 18, 1);
-						break;
-					}
-				} else if (opcode != 155){
-					switch (opcode) {
+			case 126: // Tab, so player is trying to store
+				switch (opcode) {
+					case 155:
+						return player.getFarmingManager().getEquipment().store(player, button - 18, 1);
 					case 196:
-						player.getFarmingManager().getEquipment().store(player, 7 + slot, 5);
-						break;
+						return player.getFarmingManager().getEquipment().store(player, button - 18, 5);
 					case 124:
-						player.getFarmingManager().getEquipment().store(player, 7 + slot, 28);
-						break;
+						return player.getFarmingManager().getEquipment().store(player, button - 18, 28);
 					case 199:
-						final int amount = getAmount(player, slot + 6, opcode);
-						if (amount == -1) {
-							player.setAttribute("runscript", new RunScript() {
-								@Override
-								public boolean handle() {
-									player.getFarmingManager().getEquipment().store(player, 7 + slot, (int) getValue());
-									return true;
-								}
-							});
-							player.getDialogueInterpreter().sendInput(false, "Enter amount:");
-							return true;
-						}
-						player.getFarmingManager().getEquipment().store(player, 6 + slot, amount);
-						break;
-					}	
+						player.setAttribute("runscript", new RunScript() {
+							@Override
+							public boolean handle() {
+								player.getFarmingManager().getEquipment().store(player, button - 18, (int) getValue());
+								return true;
+							}
+						});
+						player.getDialogueInterpreter().sendInput(false, "Enter amount:");
+						return true;
 				}
-				break;
 			}
-			return true;
-		}
-
-		/**
-		 * Gets the amount to store/remove.
-		 * @param player the player.
-		 * @param slot the slot.
-		 * @param opcode the opcode.
-		 * @return the amount.
-		 */
-		private int getAmount(final Player player, int slot, int opcode) {
-			return opcode == 133 ? 1 : opcode == 236 ? 5 : opcode == 157 ? player.getFarmingManager().getEquipment().getInventoryAmount(player, slot) : -1;
+			return false;
 		}
 	}
 
@@ -528,7 +473,28 @@ public final class FarmingPlugin extends OptionHandler {
 		public boolean handle(NodeUsageEvent event) {
 			final Player player = event.getPlayer();
 			final PatchWrapper wrapper = player.getFarmingManager().getPatchWrapper(((GameObject) event.getUsedWith()).getWrapper().getId());
-			wrapper.getInteractor().addScarecrow();
+			if (wrapper.getInteractor().addScarecrow()) {
+				// Achievement diary
+				if (event.getUsedWith().getLocation().equals(PatchProtection.FALADOR.getFlowerLocation())
+						&& !player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).isComplete(1,7)) {
+					// Check for nearby corn
+					Location[] allotmentLocations = PatchProtection.FALADOR.getAllotmentLocations();
+					boolean sweetcorn = false;
+					for (Location allotmentLocation : allotmentLocations) {
+						GameObject allotment = RegionManager.getObject(allotmentLocation);
+						if (allotment == null) { continue; }
+						PatchWrapper allotmentWrapper = player.getFarmingManager().getPatchWrapper(allotment.getWrapper().getId());
+						if (allotmentWrapper == null) { continue; }
+						if (wrapper.getNode() == Allotments.SWEETCORN.getFarmingNode()) {
+							sweetcorn = true;
+							break;
+						}
+					}
+					if (sweetcorn) {
+						player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).updateTask(player, 1, 7, true);
+					}
+				}
+			}
 			return true;
 		}
 

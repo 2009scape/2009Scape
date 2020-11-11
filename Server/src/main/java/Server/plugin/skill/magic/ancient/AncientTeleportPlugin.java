@@ -1,5 +1,6 @@
 package plugin.skill.magic.ancient;
 
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.skill.magic.MagicSpell;
 import plugin.skill.magic.Runes;
 import core.game.node.Node;
@@ -40,7 +41,7 @@ public final class AncientTeleportPlugin extends MagicSpell {
 	 * Constructs a new {@code AncientTeleportPlugin.java} {@code Object}.
 	 * @param level the level.
 	 * @param experience the experience.
-	 * @param animation the animation.
+	 * @param location the location.
 	 * @param items the items.
 	 */
 	public AncientTeleportPlugin(final int level, final double experience, final Location location, final Item... items) {
@@ -57,6 +58,10 @@ public final class AncientTeleportPlugin extends MagicSpell {
 			if (!super.meetsRequirements(entity, true, true)) {
 				entity.getTeleporter().getCurrentTeleport().stop();
 				return false;
+			}
+			// Use the Home Teleport spell in the Ancient Magicks spellbook<br><br>to teleport to Edgeville
+			if (entity.isPlayer() && location.equals(Location.create(3087, 3495, 0))) {
+				entity.asPlayer().getAchievementDiaryManager().finishTask(entity.asPlayer(), DiaryType.VARROCK, 2, 11);
 			}
 			entity.setAttribute("teleport:items", super.runes);
 			entity.setAttribute("magic-delay", GameWorld.getTicks() + 5);

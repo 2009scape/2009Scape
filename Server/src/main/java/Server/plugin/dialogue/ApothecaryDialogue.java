@@ -73,11 +73,11 @@ public final class ApothecaryDialogue extends DialoguePlugin {
 		}
 		if (player.getQuestRepository().getQuest("Romeo & Juliet").getStage(player) == 50) {
 			if (!player.getInventory().contains(753, 1)) {
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Keep searching for those Cadavaberries. They're needed", "for the potion.");
+				npc("Keep searching for those Cadavaberries. They're needed", "for the potion.");
 				stage = 507;
 				return true;
 			} else {
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well done. You have the berries.");
+				npc("Well done. You have the berries.");
 				stage = 637;
 				return true;
 			}
@@ -85,19 +85,19 @@ public final class ApothecaryDialogue extends DialoguePlugin {
 		if (player.getQuestRepository().getQuest("Romeo & Juliet").getStage(player) == 60) {
 			if (!player.getInventory().contains(756, 1) && !player.getBank().contains(756, 1)) {
 				if (player.getInventory().contains(753, 1)) {
-					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well done. You have the berries.");
+					npc("Well done. You have the berries.");
 					stage = 637;
 					return true;
 				} else {
-					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Keep searching for those Cadavaberries. They're needed", "for the potion.");
+					npc("Keep searching for those Cadavaberries. They're needed", "for the potion.");
 					stage = 507;
 					return true;
 				}
 			} else {
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I am the Apothecary. I brew potions.", "Do you need anything specific?");
+				npc("I am the Apothecary. I brew potions.", "Do you need anything specific?");
 			}
 		}
-		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I am the Apothecary. I brew potions.", "Do you need anything specific?");
+		npc("I am the Apothecary. I brew potions.", "Do you need anything specific?");
 		stage = 1;
 		return true;
 	}
@@ -106,25 +106,25 @@ public final class ApothecaryDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 1:
-			interpreter.sendOptions("Select an Option", "Can you make a strength potion?", "Do you know a potion to mame hair fall out?", "Have you got any good potions to give away?", "Can you make a potion that makes it seem like I'm dead?");
+			options("Can you make a strength potion?", "Do you know a potion to mame hair fall out?", "Have you got any good potions to give away?", "Can you make a potion that makes it seem like I'm dead?");
 			stage = 2;
 			break;
 		case 2:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you make a strength potion?");
+				player("Can you make a strength potion?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Do you know a potion to make hair fall out?");
+				player("Do you know a potion to make hair fall out?");
 				stage = 20;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Have you got any good potions to give away?");
+				player("Have you got any good potions to give away?");
 				stage = 140;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you make a potion that makes it seems like I'm dead?");
+				player("Can you make a potion that makes it seems like I'm dead?");
 				stage = 40;
 				break;
 			}
@@ -136,7 +136,7 @@ public final class ApothecaryDialogue extends DialoguePlugin {
 				stage = 50;
 				return true;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Yes, but the ingredients are a little hard to find. If you", "ever get them I will make it for you, for a fee.");
+			npc("Yes, but the ingredients are a little hard to find. If you", "ever get them I will make it for you, for a fee.");
 			stage = 11;
 			break;
 		case 50:
@@ -152,39 +152,37 @@ public final class ApothecaryDialogue extends DialoguePlugin {
 			if (player.getInventory().remove(POTION_ITEMS)) {
 				player.getInventory().add(POTION);
 				end();
-				if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(1, 0)) {
-					player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 1, 0, true);
-				}
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 1, 0);
 			}
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "So what are the ingredients?");
+			player("So what are the ingredients?");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You'll need to find the eggs of the deadly red spider and a", "limpwurt root.");
+			npc("You'll need to find the eggs of the deadly red spider and a", "limpwurt root.");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Oh and you'll have to pay me 5 coins.");
+			npc("Oh and you'll have to pay me 5 coins.");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ok, I'll look out for them.");
+			player("Ok, I'll look out for them.");
 			stage = 15;
 			break;
 		case 15:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I do indeed. I gave it to my mother. That's why I now live", "alone.");
+			npc("I do indeed. I gave it to my mother. That's why I now live", "alone.");
 			stage = 21;
 			break;
 		case 21:
 			end();
 			break;
 		case 30:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ok then. Try this potion.");
+			npc("Ok then. Try this potion.");
 			player.getInventory().add(UNKNOWN_POTION);
 			stage = 31;
 			break;
@@ -192,22 +190,22 @@ public final class ApothecaryDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What a strange and morbid request! I can as it happens.", "The berry of the cadava bush, prepared properly, will", "induce a coma so deep that you will seem to be dead. It's", "very dangerous.");
+			npc("What a strange and morbid request! I can as it happens.", "The berry of the cadava bush, prepared properly, will", "induce a coma so deep that you will seem to be dead. It's", "very dangerous.");
 			stage = 41;
 			break;
 		case 41:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I have the other ingredients, but I'll need you to bring me", "one bunch of cadava berries.");
+			npc("I have the other ingredients, but I'll need you to bring me", "one bunch of cadava berries.");
 			stage = 42;
 			break;
 		case 42:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I'll bear that in mind.");
+			player("I'll bear that in mind.");
 			stage = 43;
 			break;
 		case 43:
 			end();
 			break;
 		case 140:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Sorry, charity is not my strong point.");
+			npc("Sorry, charity is not my strong point.");
 			stage = 141;
 			break;
 		case 141:
@@ -251,7 +249,7 @@ public final class ApothecaryDialogue extends DialoguePlugin {
 			break;
 		case 638:
 			if (player.getInventory().remove(CADAVA_BERRIES)) {
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Phew! Here is what you need.");
+				npc("Phew! Here is what you need.");
 			}
 			stage = 639;
 			break;

@@ -1,5 +1,7 @@
 package plugin.skill.cooking.dairy;
 
+import core.game.node.entity.player.link.diary.DiaryType;
+import core.game.world.map.Location;
 import plugin.skill.SkillPulse;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
@@ -59,7 +61,7 @@ public final class DairyChurnPulse extends SkillPulse<Item> {
 			player.getPacketDispatch().sendMessage("You need a bucket of milk.");
 			return false;
 		}
-		if (player.getInventory().freeSlots() < 2) {
+		if (player.getInventory().freeSlots() < 1) {
 			player.getPacketDispatch().sendMessage("You don't have enough inventory space.");
 			return false;
 		}
@@ -69,9 +71,6 @@ public final class DairyChurnPulse extends SkillPulse<Item> {
 		}
 		if (amount > player.getInventory().getAmount(node)) {
 			amount = player.getInventory().getAmount(node);
-			if (amount == 0) {
-				return false;
-			}
 		}
 		if (amount < 1) {
 			return false;
@@ -96,13 +95,22 @@ public final class DairyChurnPulse extends SkillPulse<Item> {
 				}
 				player.getPacketDispatch().sendMessage("You make " + (StringUtils.isPlusN(dairy.getProduct().getName().toLowerCase()) ? "an" : "a") + " " + dairy.getProduct().getName().toLowerCase() + ".");
 				player.getSkills().addExperience(Skills.COOKING, dairy.getExperience(), true);
+
+				// Seers village diary
+				if (player.getLocation().withinDistance(new Location(2730, 3578, 0))
+						&& !player.getAchievementDiaryManager().getDiary(DiaryType.SEERS_VILLAGE).isComplete(0,8)) {
+					player.getAchievementDiaryManager().getDiary(DiaryType.SEERS_VILLAGE).updateTask(player,0,8,true);
+				}
+
 			}
 		}
-		if (player.getInventory().freeSlots() < 2) {
+
+
+		if (player.getInventory().freeSlots() < 1) {
 			player.getPacketDispatch().sendMessage("You don't have enough inventory space.");
 			return true;
 		}
-		return amount < 1 || player.getInventory().freeSlots() < 2;
+		return amount < 1 || player.getInventory().freeSlots() < 1;
 	}
 
 }

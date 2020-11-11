@@ -41,7 +41,7 @@ public final class EllisDialogue extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Greetings friend I am a manufacturer of leather.");
+		npc("Greetings friend I am a manufacturer of leather.");
 		stage = 0;
 		return true;
 	}
@@ -57,60 +57,60 @@ public final class EllisDialogue extends DialoguePlugin {
 					continue;
 				}
 				if (TanningProduct.forItemId(items[i].getId()) != null) {
-					interpreter.sendDialogues(npc, null, "I see you have brought me some hides.", "Would you like me to tan them for you?");
+					npc("I see you have brought me some hides.", "Would you like me to tan them for you?");
 					stage = 100;
 					return true;
 				}
 			}
-			interpreter.sendOptions("What would you like to say?", "Can I buy some leather?", "Leather is rather weak stuff.");
+			options("Can I buy some leather?", "Leather is rather weak stuff.");
 			stage = 1;
 			break;
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can I buy some leather then?");
+				player("Can I buy some leather then?");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Leather is rather weak stuff.");
+				player("Leather is rather weak stuff.");
 				stage = 3000;
 				break;
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I make leather from animal hides. Bring me some cowhides", "and one gold coin per hide, and I'll tan them into soft", "leather for you.");
+			npc("I make leather from animal hides. Bring me some cowhides", "and one gold coin per hide, and I'll tan them into soft", "leather for you.");
 			stage = 2000;
 			break;
 		case 2000:
 			end();
 			break;
 		case 3000:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Normal leather may be quite weak, but it's very cheap - I", "make it from cowhides for only 1 gp per hide - and it's so", "easy to craft that anyone can work with it.");
+			npc("Normal leather may be quite weak, but it's very cheap - I", "make it from cowhides for only 1 gp per hide - and it's so", "easy to craft that anyone can work with it.");
 			stage = 3001;
 			break;
 		case 3001:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Alernatively you could try hard leather. It's not so easy", "to craft, but I only charge 3 gp per cowhide to prepare it,", "and it makes much sturdier armour.");
+			npc("Alernatively you could try hard leather. It's not so easy", "to craft, but I only charge 3 gp per cowhide to prepare it,", "and it makes much sturdier armour.");
 			stage = 3002;
 			break;
 		case 3002:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Thanks; I'll bear it in mind.");
+			player("Thanks; I'll bear it in mind.");
 			stage = 3003;
 			break;
 		case 3003:
 			end();
 			break;
 		case 100:
-			interpreter.sendOptions("Select an Option", "Yes please.", "No thanks.");
+			options("Yes please.", "No thanks.");
 			stage = 101;
 			break;
 		case 101:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, null, "Yes please.");
+				player("Yes please.");
 				stage = 210;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, null, "No thanks.");
+				player("No thanks.");
 				stage = 200;
 				break;
 			}
@@ -120,7 +120,7 @@ public final class EllisDialogue extends DialoguePlugin {
 			TanningProduct.open(player, 2824);
 			break;
 		case 200:
-			interpreter.sendDialogues(npc, null, "Very well, sir, as you wish.");
+			npc("Very well, sir, as you wish.");
 			stage = 201;
 			break;
 		case 201:

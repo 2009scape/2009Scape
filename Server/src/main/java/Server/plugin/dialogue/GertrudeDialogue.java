@@ -275,13 +275,13 @@ public final class GertrudeDialogue extends DialoguePlugin {
 			stage = 501;
 			break;
 		case 501:
-			interpreter.sendOptions("Select an Option", "I'm fine thanks.", "Do you have any more kittens?");
+			interpreter.sendOptions("Select an Option", "I'm fine, thanks.", "Do you have any more kittens?");
 			stage = 502;
 			break;
 		case 502:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, null, "I'm fine thanks.");
+				interpreter.sendDialogues(player, null, "I'm fine, thanks.");
 				stage = 1000;
 				break;
 			case 2:
@@ -292,7 +292,7 @@ public final class GertrudeDialogue extends DialoguePlugin {
 			break;
 		case 503:
 			boolean has = false;
-			int kittens[] = new int[] { 1555, 1556, 1557, 1558, 1559, 1560, 7583 };
+			int[] kittens = new int[] { 1555, 1556, 1557, 1558, 1559, 1560, 7583 };
 			for (int i : kittens) {
 				// if (player.getFamiliarManager().hasFamiliar()) {TODO:Pet
 				// if

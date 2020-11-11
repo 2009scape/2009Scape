@@ -13,6 +13,7 @@ import core.game.node.entity.npc.AbstractNPC;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.HintIconManager;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
 import core.game.node.object.GameObject;
 import core.game.system.task.Pulse;
@@ -201,7 +202,16 @@ public final class FishingExplosivePlugin extends OptionHandler {
 		@Override
 		public boolean isAttackable(final Entity entity, CombatStyle style) {
 			final Player pl = getAttribute("player", null);
-			return pl == null ? false : pl == entity && super.isAttackable(entity, style);
+			return pl != null && pl == entity && super.isAttackable(entity, style);
+		}
+
+		@Override
+		public void finalizeDeath(final Entity killer) {
+			super.finalizeDeath(killer);
+			if (killer instanceof Player) {
+				final Player player = killer.asPlayer();
+				player.getAchievementDiaryManager().finishTask(player,DiaryType.FALADOR, 2, 7);
+			}
 		}
 
 		@Override

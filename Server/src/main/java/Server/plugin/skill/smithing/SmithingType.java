@@ -1,6 +1,5 @@
 package plugin.skill.smithing;
 
-import plugin.skill.smithing.smelting.Bar;
 import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
 
@@ -58,7 +57,7 @@ public enum SmithingType {
 	/**
 	 * Spit Iron
 	 */
-	TYPE_SPIT_IRON(1, Bar.IRON != null ? 90 : -1, 91, new int[] { 96, 95, 94, 93 }, 1),
+	TYPE_SPIT_IRON(1, 90, 91, new int[] { 96, 95, 94, 93 }, 1),
 	/**
 	 * 
 	 */
@@ -102,7 +101,7 @@ public enum SmithingType {
 	/**
 	 * Latern
 	 */
-	TYPE_LANTERN(1, Bar.IRON != null || Bar.STEEL != null ? 162 : -1, 163, new int[] { 168, 167, 166, 165 }, 1),
+	TYPE_LANTERN(1, 162, 163, new int[] { 168, 167, 166, 165 }, 1),
 
 	/**
 	 * Oil Lantern

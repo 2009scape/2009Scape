@@ -26,18 +26,43 @@ import core.plugin.Plugin;
  * @version 1.0
  */
 @InitializablePlugin
-public final class ElementalNPC extends AbstractNPC {
+public final class SorceressElementalNPC extends AbstractNPC {
 	/**
 	 * Represents the definitions of the elementals.
 	 * @author Sonicforce41
 	 * @version 1.0
 	 */
-	static enum ElementalDefinition {
+	enum ElementalDefinition {
 
 		/**
 		 * The definition values
 		 */
-		ID5533(5533, new Location[] { new Location(2908, 5460, 0), new Location(2898, 5460, 0) }), ID5534(5534, new Location[] { new Location(2900, 5448, 0), new Location(2900, 5455, 0) }), ID5535(5535, new Location[] { new Location(2905, 5449, 0), new Location(2899, 5449, 0) }), ID5536(5536, new Location[] { new Location(2903, 5451, 0), new Location(2903, 5455, 0), new Location(2905, 5455, 0), new Location(2905, 5451, 0) }), ID5537(5537, new Location[] { new Location(2903, 5457, 0), new Location(2917, 5457, 0) }), ID5538(5538, new Location[] { new Location(2908, 5455, 0), new Location(2917, 5455, 0) }), ID5539(5539, new Location[] { new Location(2922, 5471, 0), new Location(2922, 5459, 0) }), ID5540(5540, new Location[] { new Location(2924, 5463, 0), new Location(2928, 5463, 0), new Location(2928, 5461, 0), new Location(2924, 5461, 0) }), ID5541(5541, new Location[] { new Location(2924, 5461, 0), new Location(2926, 5461, 0), new Location(2926, 5458, 0), new Location(2924, 5458, 0) }), ID5542(5542, new Location[] { new Location(2928, 5458, 0), new Location(2928, 5460, 0), new Location(2934, 5460, 0), new Location(2934, 5458, 0) }), ID5543(5543, new Location[] { new Location(2931, 5477, 0), new Location(2931, 5470, 0) }), ID5544(5544, new Location[] { new Location(2935, 5469, 0), new Location(2928, 5469, 0) }), ID5545(5545, new Location[] { new Location(2925, 5464, 0), new Location(2925, 5475, 0) }), ID5546(5546, new Location[] { new Location(2931, 5477, 0), new Location(2931, 5470, 0) }), ID5547(5547, new Location[] { new Location(2907, 5488, 0), new Location(2907, 5482, 0) }), ID5548(5548, new Location[] { new Location(2907, 5490, 0), new Location(2907, 5495, 0) }), ID5549(5549, new Location[] { new Location(2910, 5493, 0), new Location(2910, 5487, 0) }), ID5550(5550, new Location[] { new Location(2918, 5483, 0), new Location(2918, 5485, 0), new Location(2915, 5485, 0), new Location(2915, 5483, 0), new Location(2912, 5483, 0), new Location(2912, 5485, 0), new Location(2915, 5485, 0), new Location(2915, 5483, 0) }), ID5551(5551, new Location[] { new Location(2921, 5486, 0), new Location(2923, 5486, 0), new Location(2923, 5490, 0), new Location(2923, 5486, 0) }), ID5552(5552, new Location[] { new Location(2921, 5491, 0), new Location(2923, 5491, 0), new Location(2923, 5495, 0), new Location(2921, 5495, 0) }), ID5553(5553, new Location[] { new Location(2899, 5466, 0), new Location(2899, 5468, 0), new Location(2897, 5468, 0), new Location(2897, 5466, 0), new Location(2897, 5468, 0), new Location(2899, 5468, 0) }), ID5554(5554, new Location[] { new Location(2897, 5470, 0), new Location(2891, 5470, 0) }), ID5555(5555, new Location[] { new Location(2897, 5471, 0), new Location(2899, 5471, 0), new Location(2899, 5478, 0), new Location(2897, 5478, 0) }), ID5556(5556, new Location[] { new Location(2896, 5483, 0), new Location(2900, 5483, 0), new Location(2900, 5480, 0), new Location(2897, 5480, 0), new Location(2897, 5481, 0), new Location(2896, 5481, 0), new Location(2896, 5482, 0) }), ID5557(5557, new Location[] { new Location(2896, 5483, 0), new Location(2896, 5481, 0), new Location(2891, 5481, 0), new Location(2891, 5483, 0) }), ID5558(5558, new Location[] { new Location(2889, 5485, 0), new Location(2900, 5485, 0) });
+		ID5533(5533, new Location[] { new Location(2908, 5460, 0), new Location(2898, 5460, 0) }),
+		ID5534(5534, new Location[] { new Location(2900, 5448, 0), new Location(2900, 5455, 0) }),
+		ID5535(5535, new Location[] { new Location(2905, 5449, 0), new Location(2899, 5449, 0) }),
+		ID5536(5536, new Location[] { new Location(2903, 5451, 0), new Location(2903, 5455, 0), new Location(2905, 5455, 0), new Location(2905, 5451, 0) }),
+		ID5537(5537, new Location[] { new Location(2903, 5457, 0), new Location(2917, 5457, 0) }),
+		ID5538(5538, new Location[] { new Location(2908, 5455, 0), new Location(2917, 5455, 0) }),
+		ID5539(5539, new Location[] { new Location(2922, 5471, 0), new Location(2922, 5459, 0) }),
+		ID5540(5540, new Location[] { new Location(2924, 5463, 0), new Location(2928, 5463, 0), new Location(2928, 5461, 0), new Location(2924, 5461, 0) }),
+		ID5541(5541, new Location[] { new Location(2924, 5461, 0), new Location(2926, 5461, 0), new Location(2926, 5458, 0), new Location(2924, 5458, 0) }),
+		ID5542(5542, new Location[] { new Location(2928, 5458, 0), new Location(2928, 5460, 0), new Location(2934, 5460, 0), new Location(2934, 5458, 0) }),
+		ID5543(5543, new Location[] { new Location(2931, 5477, 0), new Location(2931, 5470, 0) }),
+		ID5544(5544, new Location[] { new Location(2935, 5469, 0), new Location(2928, 5469, 0) }),
+		ID5545(5545, new Location[] { new Location(2925, 5464, 0), new Location(2925, 5475, 0) }),
+		ID5546(5546, new Location[] { new Location(2931, 5477, 0), new Location(2931, 5470, 0) }),
+		ID5547(5547, new Location[] { new Location(2907, 5488, 0), new Location(2907, 5482, 0) }),
+		ID5548(5548, new Location[] { new Location(2907, 5490, 0), new Location(2907, 5495, 0) }),
+		ID5549(5549, new Location[] { new Location(2910, 5493, 0), new Location(2910, 5487, 0) }),
+		ID5550(5550, new Location[] { new Location(2918, 5483, 0), new Location(2918, 5485, 0), new Location(2915, 5485, 0), new Location(2915, 5483, 0), new Location(2912, 5483, 0), new Location(2912, 5485, 0), new Location(2915, 5485, 0), new Location(2915, 5483, 0) }),
+		ID5551(5551, new Location[] { new Location(2921, 5486, 0), new Location(2923, 5486, 0), new Location(2923, 5490, 0), new Location(2923, 5486, 0) }),
+		ID5552(5552, new Location[] { new Location(2921, 5491, 0), new Location(2923, 5491, 0), new Location(2923, 5495, 0), new Location(2921, 5495, 0) }),
+		ID5553(5553, new Location[] { new Location(2899, 5466, 0), new Location(2899, 5468, 0), new Location(2897, 5468, 0), new Location(2897, 5466, 0), new Location(2897, 5468, 0), new Location(2899, 5468, 0) }),
+		ID5554(5554, new Location[] { new Location(2897, 5470, 0), new Location(2891, 5470, 0) }),
+		ID5555(5555, new Location[] { new Location(2897, 5471, 0), new Location(2899, 5471, 0), new Location(2899, 5478, 0), new Location(2897, 5478, 0) }),
+		ID5556(5556, new Location[] { new Location(2896, 5483, 0), new Location(2900, 5483, 0), new Location(2900, 5480, 0), new Location(2897, 5480, 0), new Location(2897, 5481, 0), new Location(2896, 5481, 0), new Location(2896, 5482, 0) }),
+		ID5557(5557, new Location[] { new Location(2896, 5483, 0), new Location(2896, 5481, 0), new Location(2891, 5481, 0), new Location(2891, 5483, 0) }),
+		ID5558(5558, new Location[] { new Location(2889, 5485, 0), new Location(2900, 5485, 0) });
 		/**
 		 * The NPC id
 		 */
@@ -100,24 +125,24 @@ public final class ElementalNPC extends AbstractNPC {
 	private int tilesIndex = 0;
 
 	/**
-	 * Constructs a new {@code Elementals.java} {@Code Object}.
+	 * Constructs a new Elementals object.
 	 */
-	public ElementalNPC() {
+	public SorceressElementalNPC() {
 		super(5533, null);
 	}
 
 	/**
-	 * Constructs a new {@code Elementals} {@code Object}.
+	 * Constructs a new Elementals object.
 	 * @param id the id.
 	 * @param location the location.
 	 */
-	public ElementalNPC(int id, Location location) {
+	public SorceressElementalNPC(int id, Location location) {
 		super(id, location);
 	}
 
 	/**
 	 * Checks if the entity can teleport.
-	 * @param the entity.
+	 * @param t the entity.
 	 * @return {@code True} if so.
 	 */
 	public boolean canTeleport(Entity t) {
@@ -144,7 +169,7 @@ public final class ElementalNPC extends AbstractNPC {
 
 	@Override
 	public AbstractNPC construct(int id, Location location, Object... objects) {
-		return new ElementalNPC(id, location);
+		return new SorceressElementalNPC(id, location);
 	}
 
 	@Override

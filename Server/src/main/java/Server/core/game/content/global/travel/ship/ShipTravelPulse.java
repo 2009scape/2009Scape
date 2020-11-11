@@ -12,17 +12,17 @@ import core.net.packet.out.MinimapState;
  * Represents a pulse used to travel a player to a location.
  * @author Vexia
  */
-public final class ShipTravellPulse extends Pulse {
+public final class ShipTravelPulse extends Pulse {
 
 	/**
 	 * Represents the player instance.
 	 */
-	private Player player;
+	private final Player player;
 
 	/**
 	 * Represents the ship we're using.
 	 */
-	private Ships ship;
+	private final Ships ship;
 
 	/**
 	 * Represents the current counter.
@@ -30,10 +30,10 @@ public final class ShipTravellPulse extends Pulse {
 	private int counter = 0;
 
 	/**
-	 * Constructs a new {@code ShipTravellPulse.java} {@code Object}.
+	 * Constructs a new {@code ShipTravelPulse.java} {@code Object}.
 	 * @param player the <b>Player</b>.
 	 */
-	public ShipTravellPulse(Player player, Ships ship) {
+	public ShipTravelPulse(Player player, Ships ship) {
 		super(1);
 		this.player = player;
 		this.ship = ship;
@@ -63,7 +63,7 @@ public final class ShipTravellPulse extends Pulse {
 	/**
 	 * Method used to arrive at a location.
 	 */
-	private final void arrive() {
+	private void arrive() {
 		player.unlock();
 		player.getConfigManager().set(75, -1);
 		player.getInterfaceManager().close();
@@ -77,17 +77,22 @@ public final class ShipTravellPulse extends Pulse {
 			player.getInterfaceManager().openOverlay(new Component(544));
 			player.getInterfaceManager().open(new Component(317));
 		}
-		if (ship == Ships.KARAMJAMA_TO_PORT_SARIM && !player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 3)) {
-			player.getAchievementDiaryManager().updateTask(player, DiaryType.KARAMJA, 0, 3, true);
-		} else if (ship == Ships.BRIMHAVEN_TO_ARDOUGNE && !player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 4)) {
-			player.getAchievementDiaryManager().updateTask(player, DiaryType.KARAMJA, 0, 4, true);
+
+		if (ship == Ships.KARAMJAMA_TO_PORT_SARIM) {
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 0, 3);
+		}
+		if (ship == Ships.BRIMHAVEN_TO_ARDOUGNE) {
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 0, 4);
+		}
+		if (ship == Ships.CAIRN_ISLAND_TO_PORT_KHAZARD) {
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 6);
 		}
 	}
 
 	/**
 	 * Method used to prepare the player.
 	 */
-	private final void prepare() {
+	private void prepare() {
 		player.lock(ship.getDelay() + 1);
 		player.getInterfaceManager().open(new Component(299));
 		PacketRepository.send(MinimapState.class, new MinimapStateContext(player, 2));

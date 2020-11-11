@@ -39,9 +39,7 @@ public class MossGiantRopePlugin extends OptionHandler {
 		Location end = node.getId() == 2322 ? Location.create(2704, 3209, 0) : Location.create(2709, 3205, 0);
 		player.getPacketDispatch().sendObjectAnimation(node.asObject(), Animation.create(497), true);
 		AgilityHandler.forceWalk(player, 0, player.getLocation(), end, Animation.create(751), 50, 22, "You skillfully swing across.", 1);
-		if (!player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 1)) {
-			player.getAchievementDiaryManager().updateTask(player, DiaryType.KARAMJA, 0, 1, true);
-		}
+		player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 0, 1);
 		return true;
 	}
 

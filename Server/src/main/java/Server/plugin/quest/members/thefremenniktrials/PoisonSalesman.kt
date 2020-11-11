@@ -14,7 +14,7 @@ class PoisonSalesman(player: Player? = Player(PlayerDetails("",""))) : DialogueP
         return true
     }
     override fun handle(interfaceId: Int, buttonId: Int): Boolean {
-        val fremStage = player?.questRepository?.getStage("Fremennik Trials")
+        val fremStage = player?.questRepository?.getStage("Fremennik Trials") ?: 0
         when(stage){
             0 -> when(buttonId){
                 1 -> {player("Err... nevermind");stage = 1000}
@@ -22,7 +22,7 @@ class PoisonSalesman(player: Player? = Player(PlayerDetails("",""))) : DialogueP
             }
 
             //Fremennik Trials
-            10 -> if(fremStage!! == 0){ npc("Come see me if you ever need low-alcohol beer!"); stage = 1000}
+            10 -> if(fremStage == 0){ npc("Come see me if you ever need low-alcohol beer!"); stage = 1000}
                   else if(fremStage > 30){npc("Thanks for buying out all that low-alcohol beer!"); stage = 1000}
                   else if(fremStage > 0){npc("Howdy! You seem like someone with discerning taste!","Howsabout you try my brand new range of alcohol?");stage++;}
             11 -> {player("Didn't you used to sell poison?");stage++}

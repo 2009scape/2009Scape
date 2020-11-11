@@ -2,6 +2,7 @@ package plugin.skill.prayer;
 
 import core.cache.def.impl.ObjectDefinition;
 import core.game.component.Component;
+import core.game.node.entity.player.link.prayer.PrayerType;
 import plugin.skill.SkillRestoration;
 import plugin.skill.Skills;
 import core.game.interaction.OptionHandler;
@@ -60,9 +61,25 @@ public class PrayerAltarPlugin extends OptionHandler {
 			player.getSkills().getRestoration()[Skills.PRAYER] = new SkillRestoration(Skills.PRAYER);
 			player.getSkills().getRestoration()[Skills.PRAYER].restart();
 		}
-		if (node.getId() == 409 && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(2, 4) && player.getLocation().withinDistance(new Location(3209, 3495, 1))) {
-			player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 2, 4, true);
+		if (node.getId() == 409
+				&& player.getLocation().withinDistance(new Location(3209, 3495, 1))
+				&& player.getPrayer().getActive().contains(PrayerType.SMITE)) {
+			player.getAchievementDiaryManager().finishTask(player,DiaryType.VARROCK,2, 4);
 		}
+		if (node.getId() == 39842
+				&& player.getLocation().withinDistance(new Location(2995, 3177, 0))) {
+			player.getAchievementDiaryManager().finishTask(player,DiaryType.FALADOR,0, 13);
+		}
+		// Seers task can be completed with either of camelot altar or seers church altar
+		if (node.getId() == 19145
+				&& player.getLocation().withinDistance(new Location(2749, 3496, 1))) {
+			player.getAchievementDiaryManager().finishTask(player,DiaryType.SEERS_VILLAGE,0, 10);
+		}
+		if (node.getId() == 409
+				&& player.getLocation().withinDistance(new Location(2694, 3462, 0))) {
+			player.getAchievementDiaryManager().finishTask(player,DiaryType.SEERS_VILLAGE,0, 10);
+		}
+
 		if (node.getLocation().equals(new Location(2571, 9499, 0))) {
 			player.teleport(new Location(2583, 9576, 0));
 			player.sendMessage("It's a trap!");

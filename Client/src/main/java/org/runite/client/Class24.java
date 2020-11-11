@@ -341,7 +341,7 @@ public final class Class24 {
 
    static void method950(RSInterface var0, int var1, int var2, int var3) {
       try {
-         if(2 <= Class3_Sub13_Sub34.anInt3415 || Class164_Sub1.anInt3012 != 0 || GameObject.aBoolean1837) {
+         if(2 <= Unsorted.menuOptionCount || Class164_Sub1.anInt3012 != 0 || GameObject.aBoolean1837) {
             RSString var4 = Class3_Sub28_Sub1.method531();
             if(var0 == null) {
                int var5 = Class168.aClass3_Sub28_Sub17_2096.method683(var4, 4 + var3, var2 - -15, aRandom3088, Class38_Sub1.anInt2618);

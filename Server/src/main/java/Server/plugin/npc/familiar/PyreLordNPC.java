@@ -1,5 +1,6 @@
 package plugin.npc.familiar;
 
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.skill.Skills;
 import plugin.skill.crafting.jewellery.JewelleryCrafting;
 import plugin.skill.firemaking.FireMakingPulse;
@@ -133,6 +134,9 @@ public class PyreLordNPC extends Familiar {
 						player.getSkills().addExperience(Skills.FIREMAKING, log.getXp() + 10);
 						familiar.faceLocation(FaceLocationFlag.getFaceLocation(familiar, object));
 						ObjectBuilder.add(object, log.getLife(), FireMakingPulse.getAsh(player, log, object));
+						if (player.getViewport().getRegion().getId() == 10806) {
+							player.getAchievementDiaryManager().finishTask(player, DiaryType.SEERS_VILLAGE, 1, 9);
+						}
 						return true;
 					}
 				});

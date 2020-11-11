@@ -111,7 +111,7 @@ final class Class3_Sub28_Sub5 extends Node {
    static void method560() {
       try {
          for(int var1 = 0; var1 < 5; ++var1) {
-            Class104.aBooleanArray2169[var1] = false;
+            WaterfallShader.aBooleanArray2169[var1] = false;
          }
 
          Class75.anInt1105 = 0;

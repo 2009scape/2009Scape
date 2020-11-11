@@ -566,7 +566,44 @@ public class TeleportManager {
 				};
 			}
 		},
-		CABBAGE(new TeleportSettings(804, 803, 1731, 1732)) {
+		CABBAGE(new TeleportSettings(9984, 9986, 1731, 1732)) {
+			@Override
+			public Pulse getPulse(final Entity entity, final Location location) {
+				return new Pulse(1) {
+					int delay = 0;
+
+					@Override
+					public boolean pulse() {
+						if (delay == 0) {
+							if (entity instanceof Player) {
+								entity.asPlayer().getAudioManager().send(200);
+							}
+							entity.getAnimator().forceAnimation(new Animation(getSettings().getStartEmote()));
+							entity.graphics(new Graphics(getSettings().getStartGfx()));
+						} else if (delay == 5) {
+							entity.getProperties().setTeleportLocation(Location.create(location));
+							fireRandom(entity, location);
+							if (entity instanceof Player) {
+								entity.asPlayer().getAudioManager().send(201);
+							}
+							entity.getAnimator().forceAnimation(new Animation(getSettings().getEndEmote(), Priority.HIGH));
+							entity.graphics(new Graphics(getSettings().getEndGfx()));
+							return true;
+						}
+						delay++;
+						return false;
+					}
+
+					@Override
+					public void stop() {
+						super.stop();
+						entity.unlock();
+						entity.lock(4);
+					}
+				};
+			}
+		},
+		ENTRANA_MAGIC_DOOR(new TeleportSettings(10100, 9013, 1745, 1747)) { //
 			@Override
 			public Pulse getPulse(final Entity entity, final Location location) {
 				return new Pulse(1) {
@@ -744,7 +781,6 @@ public class TeleportManager {
 		 * @param endAnim the end animation.
 		 * @param startGfx the start graphics.
 		 * @param endGfx the end graphiics.
-		 * @param type the end type.
 		 */
 		public TeleportSettings(int startAnim, int endAnim, int startGfx, int endGfx) {
 			this.startAnim = startAnim;

@@ -23,11 +23,11 @@ public final class HDToolKit {
 
 
 
-   private static String aString1785;
-   private static String aString1786;
+   private static String vendor;
+   private static String renderer;
    private static float aFloat1787;
    private static boolean aBoolean1788 = false;
-   static int anInt1789;
+   static int maxTextureUnits;
    static boolean aBoolean1790;
    static int anInt1791 = 0;
    private static int anInt1792 = 0;
@@ -38,7 +38,7 @@ public final class HDToolKit {
    private static float aFloat1797 = 0.0F;
    static boolean aBoolean1798 = true;
    private static boolean viewportSetup = false;
-   static boolean supportTexture3D;
+   static boolean allows3DTextureMapping;
    private static int anInt1803 = -1;
    private static boolean aBoolean1805 = true;
    public static boolean highDetail = false;
@@ -302,9 +302,9 @@ public final class HDToolKit {
 
    private static int method1840() {
       int var0 = 0;
-      aString1785 = gl.glGetString(7936);
-      aString1786 = gl.glGetString(7937);
-      String var1 = aString1785.toLowerCase();
+      vendor = gl.glGetString(7936);
+      renderer = gl.glGetString(7937);
+      String var1 = vendor.toLowerCase();
       if(var1.contains("microsoft")) {
          var0 |= 1;
       }
@@ -313,8 +313,8 @@ public final class HDToolKit {
          var0 |= 1;
       }
 
-      String var2 = gl.glGetString(7938);
-      String[] var3 = var2.split("[. ]");
+      String versionString = gl.glGetString(7938);
+      String[] var3 = versionString.split("[. ]");
       if(var3.length >= 2) {
          try {
             int var4 = Integer.parseInt(var3[0]);
@@ -341,12 +341,12 @@ public final class HDToolKit {
 
       int[] var12 = new int[1];
       gl.glGetIntegerv('\u84e2', var12, 0);
-      anInt1789 = var12[0];
+      maxTextureUnits = var12[0];
       gl.glGetIntegerv('\u8871', var12, 0);
       int anInt1814 = var12[0];
       gl.glGetIntegerv('\u8872', var12, 0);
       int anInt1806 = var12[0];
-      if(anInt1789 < 2 || anInt1814 < 2 || anInt1806 < 2) {
+      if(maxTextureUnits < 2 || anInt1814 < 2 || anInt1806 < 2) {
          var0 |= 16;
       }
 
@@ -356,25 +356,25 @@ public final class HDToolKit {
          supportMultisample = gl.isExtensionAvailable("GL_ARB_multisample");
          supportTextureCubeMap = gl.isExtensionAvailable("GL_ARB_texture_cube_map");
          supportVertexProgram = gl.isExtensionAvailable("GL_ARB_vertex_program");
-         supportTexture3D = gl.isExtensionAvailable("GL_EXT_texture3D");
-         RSString var13 = method1820(aString1786).toLowercase();
+         allows3DTextureMapping = gl.isExtensionAvailable("GL_EXT_texture3D");
+         RSString var13 = method1820(renderer).toLowercase();
          if(var13.indexOf(aClass94_1819, 57) != -1) {
-            int var6 = 0;
+            int version = 0;
             RSString[] var7 = var13.method1565().method1567(32, (byte)-98);
 
             for (RSString var9 : var7) {
                if (var9.length() >= 4 && var9.substring(0, 4, 0).isInteger()) {
-                  var6 = var9.substring(0, 4, 0).parseInt();
+                  version = var9.substring(0, 4, 0).parseInt();
                   break;
                }
             }
 
-            if(var6 >= 7000 && var6 <= 7999) {
+            if(version >= 7000 && version <= 7999) {
                supportVertexBufferObject = false;
             }
 
-            if(var6 >= 7000 && var6 <= 9250) {
-               supportTexture3D = false;
+            if(version >= 7000 && version <= 9250) {
+               allows3DTextureMapping = false;
             }
 
             aBoolean1817 = supportVertexBufferObject;
@@ -504,18 +504,17 @@ public final class HDToolKit {
 
    static void method1847(int var0) {
       if(var0 != anInt1792) {
+         //sets a texture environment parameter.
+         //TEXTURE_ENV, COMBINE_ALPHA,
          if(var0 == 0) {
-            gl.glTexEnvi(8960, '\u8572', 8448);
+            gl.glTexEnvi(8960, '\u8572', 8448);//MODULATE
          }
-
          if(var0 == 1) {
-            gl.glTexEnvi(8960, '\u8572', 7681);
+            gl.glTexEnvi(8960, '\u8572', 7681);//REPLACE
          }
-
          if(var0 == 2) {
-            gl.glTexEnvi(8960, '\u8572', 260);
+            gl.glTexEnvi(8960, '\u8572', 260);//ADD
          }
-
          anInt1792 = var0;
       }
    }
@@ -544,10 +543,10 @@ public final class HDToolKit {
    }
 
    /**
-    * HDViewportBackgroundColor takes an int of color (can be replaced with whatever color you see fit)
+    * clearScreen takes an int of color (can be replaced with whatever color you see fit)
     * @param color
     */
-   static void HDViewportBackgroundColor(int color) {
+   static void clearScreen(int color) {
       gl.glClearColor((float)(color >> 16 & 255) / 255.0F, (float)(color >> 8 & 255) / 255.0F, (float)(color & 255) / 255.0F, 0.0F);
       gl.glClear(16640);
       gl.glClearColor(0.0F, 0.0F, 0.0F, 0.0F);

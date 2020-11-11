@@ -10,6 +10,7 @@ import core.game.node.entity.player.info.login.SavingModule;
 import core.game.node.item.Item;
 
 import java.nio.ByteBuffer;
+import java.util.Arrays;
 
 /**
  * Manages the achievement diary of a player.
@@ -20,7 +21,14 @@ public class AchievementDiaryManager implements SavingModule {
     /**
      * The achievement diarys.
      */
-    private final AchievementDiary[] diarys = new AchievementDiary[] { new AchievementDiary(DiaryType.KARAMJA), new AchievementDiary(DiaryType.VARROCK), new AchievementDiary(DiaryType.LUMBRIDGE) };
+    private final AchievementDiary[] diarys = new AchievementDiary[] {
+    		new AchievementDiary(DiaryType.KARAMJA),
+			new AchievementDiary(DiaryType.VARROCK),
+			new AchievementDiary(DiaryType.LUMBRIDGE),
+			new AchievementDiary(DiaryType.FALADOR),
+			new AchievementDiary(DiaryType.FREMENNIK),
+			new AchievementDiary(DiaryType.SEERS_VILLAGE)
+    };
 
 	/**
 	 * The player instance.
@@ -46,7 +54,13 @@ public class AchievementDiaryManager implements SavingModule {
 
 	public void parse(JSONArray data){
 		for(int i = 0; i < data.size(); i++){
-			diarys[i].parse((JSONObject) data.get(i));
+			JSONObject diary = (JSONObject) data.get(i);
+			String name = (String) diary.keySet().toArray()[0];
+			for (int ii = 0; ii < diarys.length; ii++) {
+				if (diarys[ii].getType().getName().equalsIgnoreCase(name)) {
+					diarys[ii].parse((JSONObject) diary.get(name));
+				}
+			}
 		}
 	}
 
@@ -87,6 +101,10 @@ public class AchievementDiaryManager implements SavingModule {
 		getDiary(type).updateTask(player, level, index, complete);
 	}
 
+	public void finishTask(Player player, DiaryType type, int level, int index) {
+		getDiary(type).finishTask(player, level, index);
+	}
+
 	/**
 	 * Checks if a task has been completed.
 	 * @param type the diary type.
@@ -104,7 +122,7 @@ public class AchievementDiaryManager implements SavingModule {
 	 * @param level the level.
 	 */
 	public void setStarted(DiaryType type, int level) {
-		getDiary(type).setStarted(level);
+		getDiary(type).setLevelStarted(level);
 	}
 
 	/**
@@ -238,4 +256,25 @@ public class AchievementDiaryManager implements SavingModule {
 		return diarys;
 	}
 
+	/**
+	 * Removes rewards from player
+	 * obtained via old incomplete diaries
+	 */
+	public void resetRewards() {
+		for (AchievementDiary diary: diarys) {
+			for (Item[] axis : diary.getType().getRewards()) {
+				for (Item item : axis) {
+					if (player.getInventory().containsItem(item)) {
+						player.getInventory().remove(item);
+					}
+					if (player.getBank().containsItem(item)) {
+						player.getBank().remove(item);
+					}
+					if (player.getEquipment().containsItem(item)) {
+						player.getEquipment().remove(item);
+					}
+				}
+			}
+		}
+	}
 }

@@ -9860,7 +9860,7 @@
     {
       "id": "1007",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A bright red cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10004,7 +10004,7 @@
     {
       "id": "1019",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A warm black cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10030,7 +10030,7 @@
     {
       "id": "1021",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A thick blue cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10056,7 +10056,7 @@
     {
       "id": "1023",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A thick yellow cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10105,7 +10105,7 @@
     {
       "id": "1027",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A thick green cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10131,7 +10131,7 @@
     {
       "id": "1029",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A thick purple cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -10157,7 +10157,7 @@
     {
       "id": "1031",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "A thick orange cape.",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -49937,21 +49937,21 @@
     {
       "id": "5076",
       "name": "Bird's egg",
-      "examine": "A green/red/blue bird's egg.",
+      "examine": "A red bird's egg.",
       "archery_ticket_price": "0",
       "durability": null
     },
     {
       "id": "5077",
       "name": "Bird's egg",
-      "examine": "A green/red/blue bird's egg.",
+      "examine": "A blue bird's egg.",
       "archery_ticket_price": "0",
       "durability": null
     },
     {
       "id": "5078",
       "name": "Bird's egg",
-      "examine": "A green/red/blue bird's egg.",
+      "examine": "A green bird's egg.",
       "archery_ticket_price": "0",
       "durability": null
     },
@@ -64329,53 +64329,50 @@
     {
       "id": "6668",
       "name": "Fishbowl",
-      "examine": "An empty fishbowl.",
+      "examine": "A fishless fishbowl.",
       "tradeable": "true",
       "grand_exchange_price": "619",
-      "weight": "1.3",
+      "weight": "2.3",
       "archery_ticket_price": "0",
       "durability": null
     },
     {
       "id": "6669",
       "name": "Fishbowl",
-      "examine": "An empty fishbowl.",
+      "examine": "A fishless fishbowl with some seaweed.",
       "tradeable": "true",
       "grand_exchange_price": "619",
-      "weight": "1.3",
+      "weight": "2.3",
       "archery_ticket_price": "0",
       "durability": null
     },
     {
       "id": "6670",
       "name": "Fishbowl",
-      "examine": "An empty fishbowl.",
+      "examine": "A fishbowl with a Tiny Bluefish  in it.",
       "tradeable": "true",
       "grand_exchange_price": "619",
-      "equipment_slot": "3",
-      "weight": "1.3",
+      "weight": "2.3",
       "archery_ticket_price": "0",
       "durability": null
     },
     {
       "id": "6671",
       "name": "Fishbowl",
-      "examine": "An empty fishbowl.",
+      "examine": "A fishbowl with a Tiny Greenfish in it.",
       "tradeable": "true",
       "grand_exchange_price": "619",
-      "equipment_slot": "3",
-      "weight": "1.3",
+      "weight": "2.3",
       "archery_ticket_price": "0",
       "durability": null
     },
     {
       "id": "6672",
       "name": "Fishbowl",
-      "examine": "An empty fishbowl.",
+      "examine": "A fishbowl with a Tiny Spinefish in it.",
       "tradeable": "true",
       "grand_exchange_price": "619",
-      "equipment_slot": "3",
-      "weight": "1.3",
+      "weight": "2.3",
       "archery_ticket_price": "0",
       "durability": null
     },
@@ -64402,7 +64399,7 @@
     {
       "id": "6675",
       "name": "An empty box",
-      "examine": "'Ingredients: Ground Guam and Ground Seaweed. ",
+      "examine": "'Ingredients: Ground Guam and Ground Seaweed.",
       "archery_ticket_price": "0",
       "durability": null
     },
@@ -65325,7 +65322,7 @@
     {
       "id": "6773",
       "name": "Rat pole",
-      "examine": "Empty: A pole for putting rats on. With rats: A pole with (one to six) rat(s) on it.",
+      "examine": "A pole for putting rats on.",
       "stand_anim": "1421",
       "stand_turn_anim": "1426",
       "walk_anim": "1422",
@@ -65346,7 +65343,7 @@
     {
       "id": "6774",
       "name": "Rat pole",
-      "examine": "Empty: A pole for putting rats on. With rats: A pole with (one to six) rat(s) on it.",
+      "examine": "A pole with one rat on it.",
       "stand_anim": "1421",
       "stand_turn_anim": "1426",
       "walk_anim": "1422",
@@ -65367,7 +65364,7 @@
     {
       "id": "6775",
       "name": "Rat pole",
-      "examine": "Empty: A pole for putting rats on. With rats: A pole with (one to six) rat(s) on it.",
+      "examine": "A pole with two rats on it.",
       "stand_anim": "1421",
       "stand_turn_anim": "1426",
       "walk_anim": "1422",
@@ -65388,7 +65385,7 @@
     {
       "id": "6776",
       "name": "Rat pole",
-      "examine": "Empty: A pole for putting rats on. With rats: A pole with (one to six) rat(s) on it.",
+      "examine": "A pole with three rats on it.",
       "stand_anim": "1421",
       "stand_turn_anim": "1426",
       "walk_anim": "1422",
@@ -65409,7 +65406,7 @@
     {
       "id": "6777",
       "name": "Rat pole",
-      "examine": "Empty: A pole for putting rats on. With rats: A pole with (one to six) rat(s) on it.",
+      "examine": "A pole with four rats on it.",
       "stand_anim": "1421",
       "stand_turn_anim": "1426",
       "walk_anim": "1422",
@@ -65430,7 +65427,7 @@
     {
       "id": "6778",
       "name": "Rat pole",
-      "examine": "Empty: A pole for putting rats on. With rats: A pole with (one to six) rat(s) on it.",
+      "examine": "A pole with five rats on it.",
       "stand_anim": "1421",
       "stand_turn_anim": "1426",
       "walk_anim": "1422",
@@ -65451,7 +65448,7 @@
     {
       "id": "6779",
       "name": "Rat pole",
-      "examine": "Empty: A pole for putting rats on. With rats: A pole with (one to six) rat(s) on it.",
+      "examine": "A pole with six rats on it.",
       "stand_anim": "1421",
       "stand_turn_anim": "1426",
       "walk_anim": "1422",
@@ -66922,7 +66919,7 @@
     {
       "id": "6959",
       "name": "Cape",
-      "examine": "A (bright/thick/warm) &lt;colour&gt; cape.",
+      "examine": "Use pink dye on a cape and this is what you get!",
       "tradeable": "true",
       "low_alchemy": "8",
       "high_alchemy": "12",
@@ -112072,7 +112069,7 @@
     {
       "id": "12608",
       "name": "Amulet of farming(1)",
-      "examine": "An amulet of Farming with X charges.",
+      "examine": "An amulet of Farming with 1 charge.",
       "tradeable": "true",
       "low_alchemy": "80",
       "high_alchemy": "120",
@@ -112095,7 +112092,7 @@
     {
       "id": "12610",
       "name": "Amulet of farming(2)",
-      "examine": "An amulet of Farming with X charges.",
+      "examine": "An amulet of Farming with 2 charges.",
       "tradeable": "true",
       "low_alchemy": "80",
       "high_alchemy": "120",
@@ -112115,7 +112112,7 @@
     {
       "id": "12612",
       "name": "Amulet of farming(3)",
-      "examine": "An amulet of Farming with X charges.",
+      "examine": "An amulet of Farming with 3 charges.",
       "tradeable": "true",
       "low_alchemy": "80",
       "high_alchemy": "120",
@@ -112135,7 +112132,7 @@
     {
       "id": "12614",
       "name": "Amulet of farming(4)",
-      "examine": "An amulet of Farming with X charges.",
+      "examine": "An amulet of Farming with 4 charges.",
       "tradeable": "true",
       "low_alchemy": "80",
       "high_alchemy": "120",
@@ -112155,7 +112152,7 @@
     {
       "id": "12616",
       "name": "Amulet of farming(5)",
-      "examine": "An amulet of Farming with X charges.",
+      "examine": "An amulet of Farming with 5 charges.",
       "tradeable": "true",
       "low_alchemy": "80",
       "high_alchemy": "120",
@@ -112175,7 +112172,7 @@
     {
       "id": "12618",
       "name": "Amulet of farming(6)",
-      "examine": "An amulet of Farming with X charges.",
+      "examine": "An amulet of Farming with 6 charges.",
       "tradeable": "true",
       "low_alchemy": "80",
       "high_alchemy": "120",
@@ -112195,7 +112192,7 @@
     {
       "id": "12620",
       "name": "Amulet of farming(7)",
-      "examine": "An amulet of Farming with X charges.",
+      "examine": "An amulet of Farming with 7 charges.",
       "tradeable": "true",
       "low_alchemy": "80",
       "high_alchemy": "120",
@@ -112215,7 +112212,7 @@
     {
       "id": "12622",
       "name": "Amulet of farming(8)",
-      "examine": "An amulet of Farming with X charges.",
+      "examine": "An amulet of Farming with 8 charges.",
       "tradeable": "true",
       "low_alchemy": "80",
       "high_alchemy": "120",
@@ -136743,12 +136740,12 @@
       "low_alchemy": "40",
       "high_alchemy": "60",
       "destroy": "true",
-      "destroy_message": "Destroy",
+      "destroy_message": "You will be able to get a replacement shield from Redbeard the Pirate in Port Sarim.",
       "shop_price": "100",
       "equipment_slot": "5",
       "attack_speed": "4",
       "absorb": "0,0,0",
-      "bonuses": "0,0,0,-8,-2,17,19,18,-1,18,10,0,0,3,0",
+      "bonuses": "0,0,0,-8,-2,17,19,18,-1,18,10,0,3,0,0",
       "archery_ticket_price": "0",
       "durability": null
     },
@@ -136759,12 +136756,12 @@
       "low_alchemy": "80",
       "high_alchemy": "120",
       "destroy": "true",
-      "destroy_message": "You will be able to get replacement shield from the chemist in Rimmington.",
+      "destroy_message": "You will be able to get a replacement shield from the chemist in Rimmington.",
       "shop_price": "200",
       "equipment_slot": "5",
       "attack_speed": "4",
       "absorb": "0,0,0",
-      "bonuses": "0,0,0,-8,-2,18,22,20,-1,20,20,0,0,5,0",
+      "bonuses": "0,0,0,-8,-2,18,22,20,-1,20,20,0,5,0,0",
       "archery_ticket_price": "0",
       "durability": null
     },
@@ -136780,7 +136777,7 @@
       "equipment_slot": "5",
       "attack_speed": "4",
       "absorb": "0,0,0",
-      "bonuses": "0,0,0,-8,-2,27,31,29,-1,29,30,0,0,7,0",
+      "bonuses": "0,0,0,-8,-2,27,31,29,-1,29,30,0,7,0,0",
       "archery_ticket_price": "0",
       "durability": null
     },
@@ -137356,17 +137353,29 @@
     {
       "id": "14632",
       "name": "Enhanced excalibur",
-      "examine": "This used to belong to King Arthur and has since been improved to be held in the offhand.",
+      "examine": "This used to belong to King Arthur and has since been improved.",
       "low_alchemy": "80",
       "high_alchemy": "120",
       "destroy": "true",
       "destroy_message": "You can retrieve the Enhanced Excalibur from the Lady of the Lake for 500 coins.",
       "shop_price": "200",
-      "equipment_slot": "5",
+      "stand_anim": "808",
+      "stand_turn_anim": "823",
+      "walk_anim": "819",
+      "run_anim": "824",
+      "turn180_anim": "820",
+      "turn90cw_anim": "821",
+      "turn90ccw_anim": "822",
+      "render_anim": "1",
+      "equipment_slot": "3",
       "attack_speed": "5",
       "absorb": "0,0,0",
       "bonuses": "38,47,-2,0,0,0,3,2,1,0,0,45,0,0,0",
-      "weapon_interface": "5",
+      "weapon_interface": "6",
+      "attack_anims": "390,390,381,390",
+      "defence_anim": "397",
+      "attack_audios": "2500,2500,2517,2500",
+      "requirements": "{0,30}",
       "has_special": "true",
       "archery_ticket_price": "0",
       "durability": null

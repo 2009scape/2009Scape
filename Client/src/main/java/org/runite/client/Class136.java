@@ -17,7 +17,7 @@ final class Class136 {
       try {
          int var11 = var2 - var4;
          int var13 = -1;
-         if(Class3_Sub28_Sub16.anInt3704 > 0) {
+         if(AbstractSprite.anInt3704 > 0) {
             if(Class3_Sub28_Sub8.anInt3611 <= 10) {
                var13 = 5 * Class3_Sub28_Sub8.anInt3611;
             } else {

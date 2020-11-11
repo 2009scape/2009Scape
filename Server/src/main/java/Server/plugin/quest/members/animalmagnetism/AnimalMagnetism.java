@@ -261,6 +261,12 @@ public final class AnimalMagnetism extends Quest {
 		}
 		int val = stage < 100 && stage > 0 ? 10 : stage >= 100 ? 240 : 0;
 		return new int[] { 939, val };
+		// This config affects object bed in ava's room
+		// multiples of 10
+		// 0 - broken
+		// 170 - still broken
+		// 180 - bed is made
+		// 240 - quest complete
 	}
 
 }

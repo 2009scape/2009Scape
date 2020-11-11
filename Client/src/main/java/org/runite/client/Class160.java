@@ -5,7 +5,7 @@ import com.jogamp.opengl.GL4bc;
 import java.nio.ByteBuffer;
 
 
-final class Class160 implements Interface5 {
+final class Class160 implements ShaderInterface {
 
    private int anInt2187 = -1;
    private boolean aBoolean2188 = false;
@@ -177,7 +177,7 @@ final class Class160 implements Interface5 {
                   var1 = 0;
                }
 
-               if(HDToolKit.anInt1789 < 3) {
+               if(HDToolKit.maxTextureUnits < 3) {
                   var1 /= 5;
                   var2 /= 5;
                   var3 /= 5;
@@ -206,7 +206,7 @@ final class Class160 implements Interface5 {
    }
 
    public Class160() {
-      if(HDToolKit.supportTextureCubeMap && HDToolKit.anInt1789 >= 2) {
+      if(HDToolKit.supportTextureCubeMap && HDToolKit.maxTextureUnits >= 2) {
          this.method2199();
          GL4bc var1 = HDToolKit.gl;
          var1.glBindTexture('\u8513', this.anIntArray2189[0]);
@@ -227,7 +227,7 @@ final class Class160 implements Interface5 {
          var1.glTexParameteri('\u8513', '\u8072', '\u812f');
          var1.glTexParameteri('\u8513', 10242, '\u812f');
          var1.glTexParameteri('\u8513', 10243, '\u812f');
-         this.aBoolean2188 = HDToolKit.anInt1789 < 3;
+         this.aBoolean2188 = HDToolKit.maxTextureUnits < 3;
       }
 
       this.method2198();

@@ -1,5 +1,6 @@
 package plugin.dialogue;
 
+import core.game.container.impl.EquipmentContainer;
 import core.game.content.global.BirdNest;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
@@ -7,7 +8,7 @@ import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
 
 /**
- * Represents the wyson the gardener dialogue.
+ * Represents the Wyson the gardener dialogue.
  * @author 'Vexia
  * @version 1.0
  */
@@ -38,6 +39,7 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 	 * If its a bird nest reward.
 	 */
 	private boolean birdNest;
+	private boolean whiteLily;
 
 	/**
 	 * Constructs a new {@code WysonTheGardenerDialogue} {@code Object}.
@@ -65,12 +67,14 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
 		birdNest = player.getInventory().containsItem(MOLE_CLAW) || player.getInventory().containsItem(MOLE_SKIN);
+		whiteLily = player.getInventory().containsItem(MOLE_SKIN)
+				&& player.getEquipment().getId(EquipmentContainer.SLOT_SHIELD) == 14579;
 		if (birdNest) {
 			npc("If I'm not mistaken, you've got some mole bits there!", "I'll trade 'em for bird nest if ye likes.");
 			stage = 100;
 			return true;
 		}
-		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'm the head gardener around here.", "If you're looking for woad leaves, or if you need help", "with owt, I'm yer man.");
+		npc("I'm the head gardener around here.", "If you're looking for woad leaves, or if you need help", "with owt, I'm yer man.");
 		stage = 0;
 		return true;
 	}
@@ -85,74 +89,67 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 		}
 		switch (stage) {
 		case 0:
-			interpreter.sendOptions("What would you like to say?", "Yes please, I need woad leaves.", "Sorry, but I'm not interested.");
+			options("Yes please, I need woad leaves.", "Sorry, but I'm not interested.");
 			stage = 1;
 			break;
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes please, I need woad leaves.");
+				player("Yes please, I need woad leaves.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Sorry, but I'm not interested.");
+				player("Sorry, but I'm not interested.");
 				stage = 200;
 				break;
 
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "How much are you willing to pay?");
+			npc("How much are you willing to pay?");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendOptions("What would you like to say?", "How about 5 coins?", "How about 10 coins?", "How about 15 coins?", "How about 20 coins?");
+			options("How about 5 coins?", "How about 10 coins?", "How about 15 coins?", "How about 20 coins?");
 			stage = 12;
 			break;
 		case 12:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How about 5 coins?");
+				player("How about 5 coins?");
 				stage = 110;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How about 10 coins?");
-				stage = 120;
+				player("How about 10 coins?");
+				stage = 110;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How about 15 coins?");
+				player("How about 15 coins?");
 				stage = 130;
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How about 20 coins?");
+				player("How about 20 coins?");
 				stage = 140;
 				break;
 
 			}
 			break;
 		case 110:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No no, that's far too little. Woad leaves are hard to get. I", "used to have plenty but someone kept stealing them off", "me.");
+			npc("No no, that's far too little. Woad leaves are hard to get. I", "used to have plenty but someone kept stealing them off", "me.");
 			stage = 111;
 			break;
 		case 111:
 			end();
 			break;
-		case 120:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No no, that's far too little. Woad leaves are hard to get. I", "used to have plenty but someone kept stealing them off", "me.");
-			stage = 111;
-			break;
 		case 130:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Mmmm... ok, that sounds fair.");
+			npc("Mmmm... ok, that sounds fair.");
 			stage = 131;
-			break;
-		case 133:
-			end();
 			break;
 		case 131:
 			if (player.getInventory().contains(995, 15)) {
 				player.getInventory().remove(COINS[0]);
 				player.getInventory().add(WOAD_LEAF);
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Thanks.");
+				player("Thanks.");
 				player.getPacketDispatch().sendMessage("You buy a woad leaf from Wyson.");
 				stage = 132;
 			} else {
@@ -161,11 +158,14 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 			}
 			break;
 		case 132:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I'll be around if you have any more gardening needs.");
+			npc("I'll be around if you have any more gardening needs.");
 			stage = 133;
 			break;
+		case 133:
+			end();
+			break;
 		case 140:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Thanks for being generous", "here's an extra woad leave.");
+			npc("Thanks for being generous", "here's an extra woad leave.");
 			stage = 141;
 			break;
 		case 141:
@@ -174,7 +174,7 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 				for (int i = 0; i < 2; i++) {
 					player.getInventory().add(WOAD_LEAF, player);
 				}
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Thanks.");
+				player("Thanks.");
 				player.getPacketDispatch().sendMessage("You buy two woad leaves from Wyson.");
 				stage = 132;
 			} else {
@@ -183,7 +183,7 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 			}
 			break;
 		case 200:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Fair enough.");
+			npc("Fair enough.");
 			stage = 201;
 			break;
 		case 201:
@@ -221,7 +221,7 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 			}
 			end();
 			player.getInventory().remove(new Item(MOLE_CLAW.getId(), moleClaws));
-			addNests(moleClaws);
+			addRewards(moleClaws);
 			break;
 		case 920:
 			if (!player.getInventory().containsItem(MOLE_SKIN)) {
@@ -231,7 +231,7 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 			}
 			end();
 			player.getInventory().remove(new Item(MOLE_SKIN.getId(), moleSkin));
-			addNests(moleSkin);
+			addRewards(moleSkin);
 			break;
 		case 930:
 			if (!player.getInventory().containsItem(MOLE_CLAW) && !player.getInventory().containsItem(MOLE_SKIN)) {
@@ -242,7 +242,7 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 			int total = moleClaws + moleSkin;
 			player.getInventory().remove(new Item(MOLE_CLAW.getId(), moleClaws));
 			player.getInventory().remove(new Item(MOLE_SKIN.getId(), moleSkin));
-			addNests(total);
+			addRewards(total, moleSkin);
 			end();
 			break;
 		case 999:
@@ -254,10 +254,15 @@ public final class WysonTheGardenerDialogue extends DialoguePlugin {
 
 	/**
 	 * Adds nests.
-	 * @param amount the amount.
+	 * @param nestAmount the amount.
 	 */
-	private void addNests(int amount) {
-		for (int i = 0; i < amount; i++) {
+	private void addRewards(int nestAmount){
+		addRewards(nestAmount, 0);
+	}
+
+	private void addRewards(int nestAmount, int lilyAmount) {
+		player.getInventory().add(new Item(14589, lilyAmount), player);
+		for (int i = 0; i < nestAmount; i++) {
 			player.getInventory().add(new Item(BirdNest.getRandomNest(true).getNest().getId(), 1), player);
 		}
 	}

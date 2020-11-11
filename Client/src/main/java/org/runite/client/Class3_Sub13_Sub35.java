@@ -35,7 +35,7 @@ final class Class3_Sub13_Sub35 extends Class3_Sub13 {
             aClass131_3421 = (Class131)null;
          }
 
-         return ClientCommands.shiftClickEnabled && ObjectDefinition.aBooleanArray1490[81] && 2 < Class3_Sub13_Sub34.anInt3415?Class114.anIntArray1578[-2 + Class3_Sub13_Sub34.anInt3415]:Class114.anIntArray1578[Class3_Sub13_Sub34.anInt3415 - 1];
+         return ClientCommands.shiftClickEnabled && ObjectDefinition.aBooleanArray1490[81] && 2 < Unsorted.menuOptionCount?Class114.anIntArray1578[-2 + Unsorted.menuOptionCount]:Class114.anIntArray1578[Unsorted.menuOptionCount - 1];
       } catch (RuntimeException var2) {
          throw ClientErrorException.clientError(var2, "tb.C(" + var0 + ')');
       }

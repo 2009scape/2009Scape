@@ -1,6 +1,6 @@
 package org.runite.client;
 
-interface Interface5 {
+interface ShaderInterface {
 
    void method21();
 

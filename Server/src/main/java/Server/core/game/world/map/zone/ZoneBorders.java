@@ -51,45 +51,48 @@ public final class ZoneBorders {
 
 	/**
 	 * Constructs a new {@code ZoneBorders} {@code Object}.
-	 * @param southWestX The south west x-coordinate.
-	 * @param southWestY The south west y-coordinate.
-	 * @param northEastX The north east x-coordinate.
-	 * @param northEastY The north east y-coordinate.
+	 * @param x1 The south west x-coordinate.
+	 * @param y1 The south west y-coordinate.
+	 * @param x2 The north east x-coordinate.
+	 * @param y2 The north east y-coordinate.
+	 * Invariant enforced at runtime.
 	 */
-	public ZoneBorders(int southWestX, int southWestY, int northEastX, int northEastY) {
-		this.southWestX = southWestX;
-		this.southWestY = southWestY;
-		this.northEastX = northEastX;
-		this.northEastY = northEastY;
+	public ZoneBorders(int x1, int y1, int x2, int y2) {
+		this.southWestX = Math.min(x1, x2);
+		this.southWestY = Math.min(y1, y2);
+		this.northEastX = Math.max(x1, x2);
+		this.northEastY = Math.max(y1, y2);
 	}
 
 	/**
 	 * Constructs a new {@code ZoneBorders} {@code Object}.
-	 * @param southWestX The south west x-coordinate.
-	 * @param southWestY The south west y-coordinate.
-	 * @param northEastX The north east x-coordinate.
-	 * @param northEastY The north east y-coordinate.
+	 * @param x1 The south west x-coordinate.
+	 * @param y1 The south west y-coordinate.
+	 * @param x2 The north east x-coordinate.
+	 * @param y2 The north east y-coordinate.
+	 * Invariant enforced at runtime.
 	 * @param plane the plane.
 	 */
-	public ZoneBorders(int southWestX, int southWestY, int northEastX, int northEastY, int plane) {
-		this.southWestX = southWestX;
-		this.southWestY = southWestY;
-		this.northEastX = northEastX;
-		this.northEastY = northEastY;
+	public ZoneBorders(int x1, int y1, int x2, int y2, int plane) {
+		this.southWestX = Math.min(x1, x2);
+		this.southWestY = Math.min(y1, y2);
+		this.northEastX = Math.max(x1, x2);
+		this.northEastY = Math.max(y1, y2);
 		this.setPlane(plane);
 	}
 
 	/**
 	 * Constructs a new {@code ZoneBorders} {@code Object}.
-	 * @param southWestX The south west x-coordinate.
-	 * @param southWestY The south west y-coordinate.
-	 * @param northEastX The north east x-coordinate.
-	 * @param northEastY The north east y-coordinate.
+	 * @param x1 The south west x-coordinate.
+	 * @param y1 The south west y-coordinate.
+	 * @param x2 The north east x-coordinate.
+	 * @param y2 The north east y-coordinate.
+	 * Invariant enforced at runtime.
 	 * @param plane the plane.
 	 * @param zeroPlaneCheck the plane check.
 	 */
-	public ZoneBorders(int southWestX, int southWestY, int northEastX, int northEastY, int plane, boolean zeroPlaneCheck) {
-		this(southWestX, southWestY, northEastX, northEastY, plane);
+	public ZoneBorders(int x1, int y1, int x2, int y2, int plane, boolean zeroPlaneCheck) {
+		this(x1, y1, x2, y2, plane);
 		this.zeroPlaneCheck = zeroPlaneCheck;
 	}
 

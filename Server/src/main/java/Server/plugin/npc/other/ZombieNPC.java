@@ -20,7 +20,7 @@ public class ZombieNPC extends AbstractNPC {
 	 * Constructs the {@code ZombieNPC}
 	 */
 	public ZombieNPC() {
-		super(-1, null);
+		super(0, null);
 	}
 	
 	/**
@@ -36,10 +36,10 @@ public class ZombieNPC extends AbstractNPC {
 	public void finalizeDeath(Entity killer) {
 		super.finalizeDeath(killer);
 		if (killer instanceof Player) {
-			Player p = killer.asPlayer();
-			AchievementDiary diary = p.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE);
-			if (!diary.isComplete(0, 5) && (p.getViewport().getRegion().getId() == 12438 || p.getViewport().getRegion().getId() == 12439) ) {
-				diary.updateTask(p, 0, 5, true);
+			Player player = killer.asPlayer();
+			// Defeat a zombie in the sewers under the jail
+			if (player.getViewport().getRegion().getId() == 12438 || player.getViewport().getRegion().getId() == 12439) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 1, 18);
 			}
 		}
 	}
@@ -51,7 +51,7 @@ public class ZombieNPC extends AbstractNPC {
 
 	@Override
 	public int[] getIds() {
-		return new int[] {73};
+		return new int[] {73, 74};
 	}
 
 }

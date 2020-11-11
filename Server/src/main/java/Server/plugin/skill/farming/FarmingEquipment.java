@@ -2,6 +2,7 @@ package plugin.skill.farming;
 
 import core.game.component.CloseEvent;
 import core.game.component.Component;
+import core.game.component.InterfaceType;
 import core.game.container.Container;
 import core.game.container.ContainerType;
 import core.game.content.ItemNames;
@@ -158,7 +159,6 @@ public final class FarmingEquipment implements SavingModule {
 	 */
 	private void update(final Player player) {
 		player.getConfigManager().set(CONFIG, getConfigHash());
-		player.getConfigManager().get(CONFIG);
 	}
 
 	/**
@@ -228,7 +228,7 @@ public final class FarmingEquipment implements SavingModule {
 
 	/**
 	 * Checks if the player has the item.
-	 * @param player the player.two hundred andtwo hundred fifty f
+	 * @param player the player.
 	 * @param slot the slot.
 	 * @param store the store.
 	 * @return {@code True} if so.
@@ -259,7 +259,7 @@ public final class FarmingEquipment implements SavingModule {
 	 * Gets whether stored secateurs are magic or not
 	 */
 	private boolean getSecateursMagic() {
-		return container.get(3) == null ? false : (container.get(3).getId() == ItemNames.MAGIC_SECATEURS_7409);
+		return container.get(3) != null && (container.get(3).getId() == ItemNames.MAGIC_SECATEURS_7409);
 	}
 
 	/**

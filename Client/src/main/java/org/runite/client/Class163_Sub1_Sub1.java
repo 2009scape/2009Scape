@@ -122,7 +122,7 @@ final class Class163_Sub1_Sub1 extends Class163_Sub1 {
                   }
 
                   var1 = Class3_Sub15.activeConnection.readByte() << 8 | Class3_Sub15.activeConnection.readByte();
-                  Class104.method1627(var1, (byte)-16);
+                  WaterfallShader.method1627(var1, (byte)-16);
                   if(CS2Script.anInt2451 == -1) {
                      anInt3375 = 0;
                      Class158.anInt2005 = 6;

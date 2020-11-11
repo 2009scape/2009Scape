@@ -103,8 +103,9 @@ public final class TzhaarFightCaveNPC extends AbstractNPC {
 	public void finalizeDeath(Entity killer) {
 		if (killer.isPlayer()) {
 			Player player = killer.asPlayer();
-			if ((getId() == 2743 || getId() == 2744) && !player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(2, 1)) {
-				player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 2, 1, true);
+			// Successfully kill a Ket-Zek in the Fight Caves
+			if ((getId() == 2743 || getId() == 2744)) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 2, 1);
 			}
 		}
 		super.finalizeDeath(killer);

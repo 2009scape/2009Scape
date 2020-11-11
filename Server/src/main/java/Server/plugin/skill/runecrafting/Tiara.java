@@ -9,7 +9,20 @@ import core.game.node.item.Item;
  * @date 01/11/2013
  */
 public enum Tiara {
-	AIR(new Item(5527), 25), MIND(new Item(5529), 27.5), WATER(new Item(5531), 30), EARTH(new Item(5535), 32.5), FIRE(new Item(5537), 35), BODY(new Item(5533), 37.5), COSMIC(new Item(5539), 40), CHAOS(new Item(5543), 43.5), ASTRAL(new Item(9106), 43.5), NATURE(new Item(5541), 45), LAW(new Item(5545), 47.5), DEATH(new Item(5547), 50), BLOOD(new Item(5549), 52.5), SOUL(new Item(5551), 55);
+	AIR(new Item(5527), 25),
+	MIND(new Item(5529), 27.5),
+	WATER(new Item(5531), 30),
+	EARTH(new Item(5535), 32.5),
+	FIRE(new Item(5537), 35),
+	BODY(new Item(5533), 37.5),
+	COSMIC(new Item(5539), 40),
+	CHAOS(new Item(5543), 43.5),
+	ASTRAL(new Item(9106), 43.5),
+	NATURE(new Item(5541), 45),
+	LAW(new Item(5545), 47.5),
+	DEATH(new Item(5547), 50),
+	BLOOD(new Item(5549), 52.5),
+	SOUL(new Item(5551), 55);
 
 	/**
 	 * Constructs a new {@code Tiara} {@code Object}.

@@ -43,7 +43,7 @@ public final class HeadChefDialogue extends DialoguePlugin {
 		if (args.length == 2)
 			door = (boolean) args[1];
 		if (door) {
-			interpreter.sendDialogues(847, FacialExpression.HALF_GUILTY, "You can't come in here unless you're wearing a chef's", " hat or something like that.");
+			interpreter.sendDialogues(847, FacialExpression.HALF_GUILTY, "You can't come in here unless you're wearing a chef's", "hat or something like that.");
 			stage = 0;
 			return true;
 		}

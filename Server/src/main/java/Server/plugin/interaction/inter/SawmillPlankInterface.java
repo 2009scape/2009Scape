@@ -100,11 +100,13 @@ public class SawmillPlankInterface extends ComponentPlugin {
 			return;
 		}
 		if (player.getInventory().remove(new Item(995, plank.getPrice() * amount))) {
-			if (plank == Plank.WOOD && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 3)) {
-				player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 3, true);
+			// Make a plank at the sawmill
+			if (plank == Plank.WOOD) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 3);
 			}
-			if (plank == Plank.MAHOGANY && amount == 20 && !player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(1, 6)) {
-				player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 1, 6, true);
+			// Buy twenty mahogany planks from the Sawmill Operator in one<br><br>transaction
+			if (plank == Plank.MAHOGANY && amount >= 20) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 1, 15);
 			}
 			Item remove = plank.getLog();
 			remove.setAmount(amount);

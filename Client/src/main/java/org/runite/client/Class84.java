@@ -106,8 +106,8 @@ final class Class84 {
          int var7 = Unsorted.anInt1709;
          int var6 = Class126.anInt1676;
 
-          for(int var8 = 0; var8 < Class3_Sub13_Sub34.anInt3415; ++var8) {
-            int var9 = (-var8 + -1 + Class3_Sub13_Sub34.anInt3415) * 15 + y - -31;
+          for(int var8 = 0; var8 < Unsorted.menuOptionCount; ++var8) {
+            int var9 = (-var8 + -1 + Unsorted.menuOptionCount) * 15 + y - -31;
             int var10 = 16777215;
             if(var6 > x && x - -width > var6 && -13 + var9 < var7 && 3 + var9 > var7) {
                var10 = 16776960;

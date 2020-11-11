@@ -738,7 +738,7 @@ final class Class145 {
 
    static void method2074(int var0, int var1, int var2, int var3, int var4, int var6) {
       try {
-         RSInterface var7 = Class3_Sub28_Sub16.method638(var0, var1);
+         RSInterface var7 = AbstractSprite.method638(var0, var1);
          if(null != var7 && null != var7.anObjectArray203) {
             CS2Script var8 = new CS2Script();
             var8.aClass11_2449 = var7;

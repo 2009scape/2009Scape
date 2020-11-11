@@ -3,6 +3,7 @@ package plugin.interaction.city;
 import core.cache.def.impl.NPCDefinition;
 import core.cache.def.impl.ObjectDefinition;
 import core.game.component.Component;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.object.ObjectBuilder;
 import plugin.activity.ActivityManager;
 import plugin.activity.ActivityPlugin;
@@ -152,8 +153,8 @@ public final class DraynorNodePlugin extends OptionHandler {
 		public void end() {
 			player.getInterfaceManager().close();
 			player.getDialogueInterpreter().open(32389023);
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 1, 17);
 			super.end();
-
 		}
 
 		@Override

@@ -2,7 +2,7 @@ package org.runite.client;
 
 import org.rs09.client.Node;
 
-public abstract class Class3_Sub28_Sub16 extends Node {
+public abstract class AbstractSprite extends Node {
 
    int anInt3696;
    int anInt3697;

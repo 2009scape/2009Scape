@@ -1,5 +1,6 @@
 package plugin.skill.farming;
 
+import core.game.system.SystemLogger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import plugin.skill.farming.compost.CompostManager;
@@ -84,7 +85,7 @@ public final class FarmingManager implements SavingModule {
 			wrapper.getCycle().setGrowthTime(Long.parseLong(cycleData.get("growthTime").toString()));
 			wrapper.getCycle().setHarvestAmount(Integer.parseInt(cycleData.get("harvestAmount").toString()));
 			wrapper.getCycle().setProtection(Boolean.parseBoolean(cycleData.get("protection").toString()));
-			if(cycleData.containsKey("nodeId")) {
+			if(wrapperData.containsKey("nodeId")) {
 				wrapper.setNode(wrapper.getPatch().getNodes()[Integer.parseInt(wrapperData.get("nodeId").toString())]);
 			}
 			patches.add(wrapper);

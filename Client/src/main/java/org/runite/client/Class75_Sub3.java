@@ -7,7 +7,7 @@ final class Class75_Sub3 extends Class75 {
    private final int anInt2652;
    private final int anInt2654;
    private int anInt2655;
-   static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array2656;
+   static AbstractSprite[] aAbstractSpriteArray2656;
    private final int anInt2657;
    static int anInt2658;
    private final int anInt2659;
@@ -100,10 +100,10 @@ final class Class75_Sub3 extends Class75 {
       }
    }
 
-   static Class3_Sub28_Sub16[] method1347(int var0) {
+   static AbstractSprite[] method1347(int var0) {
       try {
          if(var0 == -26802) {
-            Class3_Sub28_Sub16[] var1 = new Class3_Sub28_Sub16[Class95.anInt1338];
+            AbstractSprite[] var1 = new AbstractSprite[Class95.anInt1338];
 
             for(int var2 = 0; Class95.anInt1338 > var2; ++var2) {
                byte[] var4 = Class163_Sub1.aByteArrayArray2987[var2];
@@ -129,7 +129,7 @@ final class Class75_Sub3 extends Class75 {
                   }
 
                   if(HDToolKit.highDetail) {
-                     var1[var2] = new Class3_Sub28_Sub16_Sub1(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[var2], Unsorted.anIntArray2591[var2], Class140_Sub7.anIntArray2931[var2], Unsorted.anIntArray3076[var2], var9);
+                     var1[var2] = new HDSprite(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[var2], Unsorted.anIntArray2591[var2], Class140_Sub7.anIntArray2931[var2], Unsorted.anIntArray3076[var2], var9);
                   } else {
                      var1[var2] = new Class3_Sub28_Sub16_Sub2(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[var2], Unsorted.anIntArray2591[var2], Class140_Sub7.anIntArray2931[var2], Unsorted.anIntArray3076[var2], var9);
                   }
@@ -139,7 +139,7 @@ final class Class75_Sub3 extends Class75 {
             Class39.method1035((byte)106);
             return var1;
          } else {
-            return (Class3_Sub28_Sub16[])null;
+            return (AbstractSprite[])null;
          }
       } catch (RuntimeException var8) {
          throw ClientErrorException.clientError(var8, "re.B(" + var0 + ')');

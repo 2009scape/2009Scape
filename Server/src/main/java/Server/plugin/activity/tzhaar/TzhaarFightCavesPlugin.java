@@ -87,9 +87,7 @@ public final class TzhaarFightCavesPlugin extends ActivityPlugin {
 
 	@Override
 	public boolean start(final Player player, boolean login, Object... args) {
-		if (!player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 8)) {
-			player.getAchievementDiaryManager().updateTask(player, DiaryType.KARAMJA, 0, 8, true);
-		}
+		player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 0, 8);
 		this.player = player;
 		player.lock(3);
 		int offsetX = player.getAttribute("fc_offset", 45 << 8) >> 8;

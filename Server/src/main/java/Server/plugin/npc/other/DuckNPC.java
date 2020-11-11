@@ -1,6 +1,9 @@
 package plugin.npc.other;
 
+import core.game.node.entity.Entity;
 import core.game.node.entity.npc.AbstractNPC;
+import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.world.map.Location;
 import core.plugin.InitializablePlugin;
 import core.tools.RandomFunction;
@@ -26,7 +29,7 @@ public final class DuckNPC extends AbstractNPC {
 	}
 
 	/**
-	 * Constructs a new {@code CowNPC} {@code Object}.
+	 * Constructs a new {@code DuckNPC} {@code Object}.
 	 * @param id the id.
 	 * @param location the location.
 	 */
@@ -45,6 +48,17 @@ public final class DuckNPC extends AbstractNPC {
 	@Override
 	public AbstractNPC construct(int id, Location location, Object... objects) {
 		return new DuckNPC(id, location);
+	}
+
+	@Override
+	public void finalizeDeath(final Entity killer) {
+		super.finalizeDeath(killer);
+		if (killer instanceof Player) {
+			final Player player = killer.asPlayer();
+			if (this.getLocation().withinDistance(new Location(2991,3383,0))) {
+				player.getAchievementDiaryManager().finishTask(player,DiaryType.FALADOR,0, 9);
+			}
+		}
 	}
 
 	@Override

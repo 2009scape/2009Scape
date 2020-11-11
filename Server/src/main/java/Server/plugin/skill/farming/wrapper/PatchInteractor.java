@@ -2,12 +2,14 @@ package plugin.skill.farming.wrapper;
 
 import core.game.component.Component;
 import core.game.container.impl.EquipmentContainer;
+import core.game.world.map.Location;
 import plugin.skill.Skills;
 import plugin.skill.farming.FarmingConstant;
 import plugin.skill.farming.FarmingNode;
 import plugin.skill.farming.FarmingPatch;
 import plugin.skill.farming.patch.Allotments;
 import plugin.skill.farming.patch.Hops;
+import plugin.skill.farming.patch.PatchProtection;
 import plugin.skill.farming.tool.PatchTool;
 import plugin.skill.farming.tool.ToolAction;
 import core.game.node.entity.player.Player;
@@ -105,7 +107,7 @@ public final class PatchInteractor {
 	/**
 	 * Method used to handle the tool interaction with a patch.
 	 * @param command the command.
-	 * @param tool the tool.
+	 * @param item the tool.
 	 */
 	public void handleToolInteraction(final Item item, String command) {
 		if (item.getId() == FarmingConstant.COMPOST.getId() || item.getId() == FarmingConstant.SUPERCOMPOST.getId()) {
@@ -140,7 +142,14 @@ public final class PatchInteractor {
 		final int compostThreshold = wrapper.getCycle().getCompostThreshold();
 		player.animate(COMPOST_ANIMATION);
 		player.getInventory().replace(FarmingConstant.BUCKET, item.getSlot());
-		player.getSkills().addExperience(Skills.FARMING, 18, true);
+		double xp = 18;
+		// Check for falador shield bonus
+		int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
+		if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
+				&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+			xp = xp * 1.1;
+		}
+		player.getSkills().addExperience(Skills.FARMING, xp, true);
 		wrapper.getCycle().setCompostThreshold((regular && (compostThreshold == 2) || !regular && compostThreshold == 1) ? 3 : (regular ? 1 : 2));
 		if (wrapper.getPatch() == FarmingPatch.TREE) {
 			player.getPacketDispatch().sendMessage("You treat the tree patch with " + wrapper.getCycle().getCompostName() + ".");
@@ -197,12 +206,27 @@ public final class PatchInteractor {
 			GameWorld.getPulser().submit(new Pulse(1, player) {
 				@Override
 				public boolean pulse() {
-					player.getSkills().addExperience(Skills.FARMING, node.getExperiences()[0], true);
+					double xp = node.getExperiences()[0];
+					// Check for falador shield bonus
+					int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
+					if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
+							&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+						xp = xp * 1.1;
+					}
+					player.getSkills().addExperience(Skills.FARMING, xp, true);
 					if (!tree) {
 						player.getPacketDispatch().sendMessage("You plant " + seedRequirement + " " + item.getName().toLowerCase() + "" + (wrapper.getPatch().getSeedRequirement() > 1 ? "s" : "") + " in the " + wrapper.getName() + " patch.");
 					} else {
 						player.getPacketDispatch().sendMessage("You plant the " + item.getName().toLowerCase() + " in the tree patch.");
 					}
+
+					// Seers Achievement Diary task
+					if (node == Hops.JUTE.getFarmingNode()
+							&& player.getLocation().withinDistance(new Location(2669,3522,0))
+							&& !player.getAchievementDiaryManager().getDiary(DiaryType.SEERS_VILLAGE).isComplete(0,7)) {
+						player.getAchievementDiaryManager().getDiary(DiaryType.SEERS_VILLAGE).updateTask(player,0,7,true);
+					}
+
 					wrapper.addConfigValue(node.getBase());
 					wrapper.getCycle().getGrowthHandler().setGrowthUpdate();
 					return true;
@@ -236,11 +260,15 @@ public final class PatchInteractor {
 				@Override
 				public boolean pulse() {
 					player.getInventory().add(wrapper.getNode().getProduct(), player);
-					player.getSkills().addExperience(Skills.FARMING, wrapper.getNode().getExperiences()[1], true);
-					wrapper.getCycle().clear(player);
-					if (wrapper.getPatch() == FarmingPatch.BELLADONNA && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(2, 4)) {
-						player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 2, 4, true);
+					double xp = wrapper.getNode().getExperiences()[1];
+					// Check for falador shield bonus
+					int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
+					if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
+							&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+						xp = xp * 1.1;
 					}
+					player.getSkills().addExperience(Skills.FARMING, xp, true);
+					wrapper.getCycle().clear(player);
 					return true;
 				}
 			});
@@ -252,24 +280,26 @@ public final class PatchInteractor {
 	/**
 	 * Method used to add a scarecrow.
 	 */
-	public void addScarecrow() {
+	public boolean addScarecrow() {
 		if (wrapper.getPatch() != FarmingPatch.FLOWER) {
 			player.getPacketDispatch().sendMessage("You can only place a scarecrow in a flower patch.");
-			return;
+			return false;
 		}
 		if (!wrapper.isEmpty() || wrapper.hasScarecrow()) {
 			player.getPacketDispatch().sendMessage("The patch needs to be empty in order to do that.");
-			return;
+			return false;
 		}
 		if (player.getSkills().getLevel(Skills.FARMING) < 23) {
 			player.getPacketDispatch().sendMessage("You need a Farming level of at least 23 to do this.");
-			return;
+			return false;
 		}
 		if (player.getInventory().remove(FarmingConstant.SCARECROW)) {
 			wrapper.addConfigValue(36);
 			wrapper.getCycle().getGrowthHandler().setGrowthUpdate();
 			player.getPacketDispatch().sendMessage("You place the scarecrow in the flower patch.");
+			return true;
 		}
+		return false;
 	}
 
 	/**

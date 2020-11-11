@@ -117,13 +117,13 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
    static void method468() {
       try {
          Class88.method1456();
-         Unsorted.anInterface5Array70 = new Interface5[7];
-         Unsorted.anInterface5Array70[1] = new Class160();
-         Unsorted.anInterface5Array70[2] = new Class125();
-         Unsorted.anInterface5Array70[3] = new Class165();
-         Unsorted.anInterface5Array70[4] = new Class112();
-         Unsorted.anInterface5Array70[5] = new Class104();
-         Unsorted.anInterface5Array70[6] = new Class147();
+         Unsorted.anShaderInterfaceArray70 = new ShaderInterface[7];
+         Unsorted.anShaderInterfaceArray70[1] = new Class160();
+         Unsorted.anShaderInterfaceArray70[2] = new Class125();
+         Unsorted.anShaderInterfaceArray70[3] = new WaterShader();
+         Unsorted.anShaderInterfaceArray70[4] = new WaterMovementShader();
+         Unsorted.anShaderInterfaceArray70[5] = new WaterfallShader();
+         Unsorted.anShaderInterfaceArray70[6] = new Class147();
       } catch (RuntimeException var2) {
          throw ClientErrorException.clientError(var2, "te.T(" + ')');
       }

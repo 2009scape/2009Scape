@@ -69,7 +69,7 @@ public abstract class UseWithHandler implements Plugin<Object> {
      * @param type    The node type (0=item, 1=NPC, 2=object, 3=player).
      * @param handler The handler.
      */
-    public static final void addHandler(int id, int type, UseWithHandler handler) {
+    public static void addHandler(int id, int type, UseWithHandler handler) {
         int key = id | type << 16;
         List<UseWithHandler> handlers = HANDLERS.get(key);
         if (handlers == null) {

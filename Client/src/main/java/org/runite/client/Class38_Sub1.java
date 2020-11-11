@@ -12,7 +12,7 @@ final class Class38_Sub1 extends Class38 {
    static int anInt2618;
 
 
-   static void minimapIcons(RSInterface var0, Class3_Sub28_Sub16 var1, int var2, int var3, int var4, int var6) {
+   static void minimapIcons(RSInterface var0, AbstractSprite var1, int var2, int var3, int var4, int var6) {
       try {
          if(null != var1) {
 
@@ -27,7 +27,7 @@ final class Class38_Sub1 extends Class38 {
                int var12 = var10 * var2 - -(var3 * var11) >> 16;
                int var13 = var11 * var2 + -(var3 * var10) >> 16;
                if(HDToolKit.highDetail) {
-                  ((Class3_Sub28_Sub16_Sub1)var1).drawMinimapIcons(var0.width / 2 + var6 + var12 - var1.anInt3697 / 2, var0.height / 2 + var4 - (var13 + var1.anInt3706 / 2), (Class3_Sub28_Sub16_Sub1)var0.method866(false));
+                  ((HDSprite)var1).drawMinimapIcons(var0.width / 2 + var6 + var12 - var1.anInt3697 / 2, var0.height / 2 + var4 - (var13 + var1.anInt3706 / 2), (HDSprite)var0.method866(false));
                } else {
                   ((Class3_Sub28_Sub16_Sub2)var1).drawMinimapIcons(var0.width / 2 + var6 - -var12 + -(var1.anInt3697 / 2), -(var1.anInt3706 / 2) + var0.height / 2 + var4 + -var13, var0.anIntArray207, var0.anIntArray291);
                }

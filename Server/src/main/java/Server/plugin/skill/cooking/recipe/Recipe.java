@@ -25,7 +25,14 @@ public abstract class Recipe {
 	/**
 	 * Represents the array of active recipes in Keldagrim..
 	 */
-	public static final Recipe[] RECIPES = new Recipe[] { new RedberryPie(), new MeatPie(), new ApplePie(), new MudPie(), new GardenPie(), new FishPie(), new AdmiralPie(), new WildPie(), new SummerPie(), new StewRecipe(), new CurryRecipe(), new PlainPizza(), new MeatPizza(), new AnchovyPizza(), new PineapplePizza(), new ChocolateCake(), new ButterPotato(), new ChilliPotato(), new CheesePotato(), new EggPotato(), new MushroomPotato(), new TunaPotato(), new SpicySauce(), new ChilliConCarne(), new UncookedEgg(), new EggAndTomato(), new MushroomAndOnion(), new ChoppedOnion(), new SlicedMushroom(), new ChoppedTuna(), new TunaAndCorn() };
+	public static final Recipe[] RECIPES = new Recipe[] {
+			new RedberryPie(), new MeatPie(), new ApplePie(), new MudPie(), new GardenPie(), new FishPie(), new AdmiralPie(), new WildPie(), new SummerPie(),
+			new StewRecipe(), new CurryRecipe(),
+			new PlainPizza(), new MeatPizza(), new AnchovyPizza(), new PineapplePizza(),
+			new ChocolateCake(),
+			new ButterPotato(), new ChilliPotato(), new CheesePotato(), new EggPotato(), new MushroomPotato(), new TunaPotato(),
+			new SpicySauce(), new ChilliConCarne(), new UncookedEgg(), new EggAndTomato(), new MushroomAndOnion(), new ChoppedOnion(), new SlicedMushroom(), new ChoppedTuna(), new TunaAndCorn(), new OomlieWrap()
+	};
 
 	/**
 	 * Method used to get the base item.

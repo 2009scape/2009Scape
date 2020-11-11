@@ -1,5 +1,6 @@
 package plugin.skill.farming.wrapper.handler;
 
+import core.game.system.SystemLogger;
 import plugin.skill.farming.wrapper.PatchCycle;
 
 import java.util.concurrent.TimeUnit;

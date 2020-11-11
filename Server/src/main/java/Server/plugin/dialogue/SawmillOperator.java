@@ -29,7 +29,7 @@ public class SawmillOperator extends DialoguePlugin {
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do you want me to make some planks for you? Or", "would you be interested in some other housing supplies?");
+		npc("Do you want me to make some planks for you? Or", "would you be interested in some other housing supplies?");
 		stage = 0;
 		return true;
 	}
@@ -38,17 +38,17 @@ public class SawmillOperator extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 0:
-			interpreter.sendOptions("Select an Option", "Planks please!", "What kind of planks can you make?", "Can I buy some housing supplies?", "Nothing, thanks.");
+			options("Planks please!", "What kind of planks can you make?", "Can I buy some housing supplies?", "Nothing, thanks.");
 			stage = 1;
 			break;
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Planks please!");
+				player("Planks please!");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What kind of planks can you make?");
+				player("What kind of planks can you make?");
 				stage = 20;
 				break;
 			case 3:
@@ -56,17 +56,17 @@ public class SawmillOperator extends DialoguePlugin {
 				npc.openShop(player);
 				break;
 			case 4:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Nothing, thanks.");
+				player("Nothing, thanks.");
 				stage = 40;
 				break;
 			}
 			break;
 		case 40:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well come back when you want some. You can't get", "good quality planks anywhere but here!");
-			stage = 41;
+			npc("Well come back when you want some. You can't get", "good quality planks anywhere but here!");
+			stage = 999;
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "What kind of planks do you want?");
+			npc("What kind of planks do you want?");
 			stage = 11;
 			break;
 		case 11:
@@ -74,17 +74,14 @@ public class SawmillOperator extends DialoguePlugin {
 			player.getInterfaceManager().open(new Component(403));
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I can make planks from wood, oak, teak and mahogany.", "I don't make planks from other woods as they're no", "good for making furniture.");
+			npc("I can make planks from wood, oak, teak and mahogany.", "I don't make planks from other woods as they're no", "good for making furniture.");
 			stage = 21;
 			break;
 		case 21:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Wood and oak are all over the place, but teak and", "mahogany can only be found in a few places like", "Karamja and Etceteria.");
-			stage = 22;
+			npc("Wood and oak are all over the place, but teak and", "mahogany can only be found in a few places like", "Karamja and Etceteria.");
+			stage = 999;
 			break;
-		case 22:
-			end();
-			break;
-		case 41:
+		case 999:
 			end();
 			break;
 		}

@@ -1,6 +1,7 @@
 package core.game.content.global;
 
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
 import core.game.system.task.Pulse;
 import core.game.world.GameWorld;
@@ -137,6 +138,9 @@ public enum EnchantedJewellery {
 						}
 					}
 				}
+			}
+			if (getLocation(index).withinDistance(new Location(2657,3439,0))) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.SEERS_VILLAGE,2,0);
 			}
 		}
 	}

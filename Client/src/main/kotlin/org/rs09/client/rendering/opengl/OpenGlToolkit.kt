@@ -1,7 +1,7 @@
 package org.rs09.client.rendering.opengl
 
+import com.jogamp.opengl.GL
 import org.rs09.client.rendering.Toolkit
-import org.rs09.client.rendering.opengl.enums.GLBeginMode
 import org.runite.client.HDToolKit
 
 class OpenGlToolkit: Toolkit() {
@@ -14,7 +14,7 @@ class OpenGlToolkit: Toolkit() {
         val var9 = var8 - h.toFloat()
         val var10 = HDToolKit.gl
 
-        var10.glBegin(GLBeginMode.TRIANGLE_FAN)
+        var10.glBegin(GL.GL_TRIANGLE_FAN)
         var10.glColor4ub((rgb shr 16).toByte(), (rgb shr 8).toByte(), rgb.toByte(), if (alpha > 255) -1 else alpha.toByte())
         var10.glVertex2f(var6, var8)
         var10.glVertex2f(var6, var9)
@@ -30,7 +30,7 @@ class OpenGlToolkit: Toolkit() {
         val yPos = HDToolKit.viewHeight.toFloat() - (y.toFloat() + 0.3f)
         val gl = HDToolKit.gl
 
-        gl.glBegin(GLBeginMode.LINES)
+        gl.glBegin(GL.GL_LINES)
         gl.glColor3ub((rgb shr 16).toByte(), (rgb shr 8).toByte(), rgb.toByte())
         gl.glVertex2f(startX, yPos)
         gl.glVertex2f(endX, yPos)
@@ -44,7 +44,7 @@ class OpenGlToolkit: Toolkit() {
         val var6 = var5 - h.toFloat()
         val var7 = HDToolKit.gl
 
-        var7.glBegin(GLBeginMode.LINES)
+        var7.glBegin(GL.GL_LINES)
         var7.glColor3ub((rgb shr 16).toByte(), (rgb shr 8).toByte(), rgb.toByte())
         var7.glVertex2f(var4, var5)
         var7.glVertex2f(var4, var6)
@@ -59,7 +59,7 @@ class OpenGlToolkit: Toolkit() {
         val var8 = var7 - (h.toFloat() - 1)
         val var9 = HDToolKit.gl
 
-        var9.glBegin(GLBeginMode.LINE_LOOP)
+        var9.glBegin(GL.GL_LINE_LOOP)
         var9.glColor4ub((rgb shr 16).toByte(), (rgb shr 8).toByte(), rgb.toByte(), if (alpha > 255) -1 else alpha.toByte())
         var9.glVertex2f(var5, var7)
         var9.glVertex2f(var5, var8)
@@ -76,7 +76,7 @@ class OpenGlToolkit: Toolkit() {
         val var8 = var7 - h.toFloat()
         val var9 = HDToolKit.gl
 
-        var9.glBegin(GLBeginMode.TRIANGLE_FAN)
+        var9.glBegin(GL.GL_TRIANGLE_FAN)
         var9.glColor3ub((rgb shr 16).toByte(), (rgb shr 8).toByte(), rgb.toByte())
         var9.glVertex2f(var5, var7)
         var9.glVertex2f(var5, var8)

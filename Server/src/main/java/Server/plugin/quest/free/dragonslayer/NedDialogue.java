@@ -57,6 +57,7 @@ public final class NedDialogue extends DialoguePlugin {
 	 * The achievement diary.
 	 */
 	private AchievementDiary diary;
+	private final int level = 2;
 
 	/**
 	 * Constructs a new {@code NedDialogue} {@code Object}.
@@ -95,7 +96,7 @@ public final class NedDialogue extends DialoguePlugin {
 				stage = 520;
 				return true;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
+			npc("Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
 			stage = 499;
 			return true;
 		}
@@ -109,11 +110,11 @@ public final class NedDialogue extends DialoguePlugin {
 		case 30:
 		case 40:
 		case 50:
-			interpreter.sendOptions("Select an Option", "Ned, could you make other things from wool?", "Yes, I would like some rope.", "No thanks Ned, I don't need any.");
+			options("Ned, could you make other things from wool?", "Yes, I would like some rope.", "No thanks Ned, I don't need any.");
 			stage = 40;
 			break;
 		default:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
+			npc("Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
 			stage = 0;
 			break;
 		}
@@ -132,7 +133,7 @@ public final class NedDialogue extends DialoguePlugin {
 						stage = 520;
 						return true;
 					}
-					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
+					npc("Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
 					stage = 499;
 					return true;
 				}
@@ -149,11 +150,11 @@ public final class NedDialogue extends DialoguePlugin {
 				case 50:
 				case 20:// wig
 				case 30:
-					interpreter.sendOptions("Select an Option", "Ned, could you make other things from wool?", "Yes, I would like some rope.", "No thanks Ned, I don't need any.");
+					options("Ned, could you make other things from wool?", "Yes, I would like some rope.", "No thanks Ned, I don't need any.");
 					stage = 40;
 					break;
 				default:
-					interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
+					npc("Why, hello there, lad. Me friends call me Ned. I was a", "man of the sea, but it's past me now. Could I be", "making or selling you some rope?");
 					stage = 0;
 					break;
 				}
@@ -274,17 +275,17 @@ public final class NedDialogue extends DialoguePlugin {
 		}
 		switch (stage) {
 		case 0:
-			interpreter.sendOptions("Select an Option", "Yes, I would like some rope.", "No thanks Ned, I don't need any.", "Ask about Achievement Diaries");
+			options("Yes, I would like some rope.", "No thanks Ned, I don't need any.", "Ask about Achievement Diaries");
 			stage = 1;
 			break;
 		case 1:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, I would like some rope.");
+				player("Yes, I would like some rope.");
 				stage = 10;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thanks Ned, I don't need any.");
+				player("No thanks Ned, I don't need any.");
 				stage = 20;
 				break;
 			case 3:
@@ -294,46 +295,46 @@ public final class NedDialogue extends DialoguePlugin {
 			}
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, I can sell you some rope for 15 coins. Or I can", "be making you some if you gets me 4 balls of wool. I", "strands them together I does, makes em strong.");
+			npc("Well, I can sell you some rope for 15 coins. Or I can", "be making you some if you gets me 4 balls of wool. I", "strands them together I does, makes em strong.");
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "You make rope from wool?");
+			player("You make rope from wool?");
 			stage = 12;
 			break;
 		case 12:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Of course you can!");
+			npc("Of course you can!");
 			stage = 13;
 			break;
 		case 13:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I thought you needed hemp or jute.");
+			player("I thought you needed hemp or jute.");
 			stage = 14;
 			break;
 		case 14:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do you want some rope or not?");
+			npc("Do you want some rope or not?");
 			stage = 15;
 			break;
 		case 15:
 			if (!player.getInventory().containsItem(WOOL)) {
-				interpreter.sendOptions("Select an Option", "Okay, please sell me some rope.", "That's a little more than I want to pay.", "I will go and get some wool.");
+				options("Okay, please sell me some rope.", "That's a little more than I want to pay.", "I will go and get some wool.");
 				stage = 16;
 			} else {
-				interpreter.sendOptions("Select an Option", "Okay, please sell me some rope.", "I have some balls of wool. Could you make me some rope?", "That's a little more than I want to pay.");
+				options("Okay, please sell me some rope.", "I have some balls of wool. Could you make me some rope?", "That's a little more than I want to pay.");
 				stage = 17;
 			}
 			break;
 		case 17:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Okay, please sell me some rope.");
+				player("Okay, please sell me some rope.");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I have some balls of wool.", "Could you make me some rope?");
+				player("I have some balls of wool.", "Could you make me some rope?");
 				stage = 120;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "That's a little more than I want to pay.");
+				player("That's a little more than I want to pay.");
 				stage = 200;
 				break;
 			}
@@ -341,15 +342,15 @@ public final class NedDialogue extends DialoguePlugin {
 		case 16:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Okay, please sell me some rope.");
+				player("Okay, please sell me some rope.");
 				stage = 100;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "That's a little more than I want to pay.");
+				player("That's a little more than I want to pay.");
 				stage = 200;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "I will go and get some wool.");
+				player("I will go and get some wool.");
 				stage = 300;
 				break;
 			}
@@ -357,97 +358,97 @@ public final class NedDialogue extends DialoguePlugin {
 		case 40:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ned could you make other things from wool?");
+				player("Ned could you make other things from wool?");
 				stage = 41;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, I would like some rope.");
+				player("Yes, I would like some rope.");
 				stage = 10;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No thanks Ned, I don't need any.");
+				player("No thanks Ned, I don't need any.");
 				stage = 20;
 				break;
 			}
 			break;
 		case 41:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I am sure I can. What are you thinking of?");
+			npc("I am sure I can. What are you thinking of?");
 			stage = 42;
 			break;
 		case 42:
-			interpreter.sendOptions("Select an Option", "Could you knit me a sweater?", "How about some sort of wig?", "Could you repair the arrow holes in the back of my shirt?");
+			options("Could you knit me a sweater?", "How about some sort of wig?", "Could you repair the arrow holes in the back of my shirt?");
 			stage = 43;
 			break;
 		case 43:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Could you knit me a sweater?");
+				player("Could you knit me a sweater?");
 				stage = 44;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "How about some sort of wig?");
+				player("How about some sort of wig?");
 				stage = 50;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Could you repair the arrow holes in the", "back of my shirt?");
+				player("Could you repair the arrow holes in the", "back of my shirt?");
 				stage = 4;
 				break;
 			case 4:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Ah yes, it's a tough world these days. There's a few", "brave enough to attack from 10 metres away.");
+				npc("Ah yes, it's a tough world these days. There's a few", "brave enough to attack from 10 metres away.");
 				stage = 47;
 				break;
 			}
 			break;
 		case 44:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Do I look like a member of a sewing circle?", "Be off wi' you. I have fought monsters.", "that would turn your hair blue.");
+			npc("Do I look like a member of a sewing circle?", "Be off wi' you. I have fought monsters.", "that would turn your hair blue.");
 			stage = 45;
 			break;
 		case 45:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I dont't need to be laughted at just 'cos I am getting", "a bit old.");
+			npc("I dont't need to be laughted at just 'cos I am getting", "a bit old.");
 			stage = 46;
 			break;
 		case 46:
 			end();
 			break;
 		case 47:
-			interpreter.sendDialogue("Ned pulls out a nettle and attacks your shirt.");
+			sendDialogue("Ned pulls out a nettle and attacks your shirt.");
 			stage = 48;
 			break;
 		case 48:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "There you go, good as new.");
+			npc("There you go, good as new.");
 			stage = 46;
 			break;
 		case 50:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well... That's an interesting thought. Yes, I think I", "could do something. Give me 3 balls of wool and I", "might be able to do it.");
+			npc("Well... That's an interesting thought. Yes, I think I", "could do something. Give me 3 balls of wool and I", "might be able to do it.");
 			stage = 51;
 			break;
 		case 51:
-			interpreter.sendOptions("Select an Option", "I have that now. Please, make me a wig.", "I will come back when I need you to make me one.");
+			options("I have that now. Please, make me a wig.", "I will come back when I need you to make me one.");
 			stage = 52;
 			break;
 		case 52:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, null, "I have that now. Please, make me a wig.");
+				player("I have that now. Please, make me a wig.");
 				stage = 53;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, null, "I will come back when I need you to make me one.");
+				player("I will come back when I need you to make me one.");
 				stage = 46;
 				break;
 			}
 			break;
 		case 53:
 			if (!player.getInventory().containsItem(WIG_WOOL)) {
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Oh, I seem to have forgotten my wool.");
+				player("Oh, I seem to have forgotten my wool.");
 				stage = 46;
 				return true;
 			}
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Okay, I will have a go.");
+			npc("Okay, I will have a go.");
 			stage = 54;
 			break;
 		case 54:
-			interpreter.sendDialogue("You hand Ned 3 balls of wool. Ned works with the wool", "His hands move with a speed you couldn't imagine.");
+			sendDialogue("You hand Ned 3 balls of wool. Ned works with the wool", "His hands move with a speed you couldn't imagine.");
 			stage = 55;
 			break;
 		case 55:
@@ -456,7 +457,7 @@ public final class NedDialogue extends DialoguePlugin {
 					GroundItemManager.create(WIG, player);
 				}
 			}
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Here you go, how's that for a quick effort?", "Not bad I think!");
+			npc("Here you go, how's that for a quick effort?", "Not bad I think!");
 			stage = 56;
 			break;
 		case 56:
@@ -464,11 +465,11 @@ public final class NedDialogue extends DialoguePlugin {
 			stage = 57;
 			break;
 		case 57:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Thanks Ned, there's more to you than meets the eye.");
+			player("Thanks Ned, there's more to you than meets the eye.");
 			stage = 46;
 			break;
 		case 100:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "There you go, finest rope in " + GameWorld.getSettings().getName() + ".");
+			npc("There you go, finest rope in " + GameWorld.getSettings().getName() + ".");
 			stage = 101;
 			break;
 		case 101:
@@ -500,21 +501,21 @@ public final class NedDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 200:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, if you ever need rope that's the price. Sorry.", "An old sailor needs money for a little drop o' rum.");
+			npc("Well, if you ever need rope that's the price. Sorry.", "An old sailor needs money for a little drop o' rum.");
 			stage = 201;
 			break;
 		case 201:
 			end();
 			break;
 		case 300:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Aye, you do that. Remember, it takes 4 balls of wool to", "make strong rope.");
+			npc("Aye, you do that. Remember, it takes 4 balls of wool to", "make strong rope.");
 			stage = 301;
 			break;
 		case 301:
 			end();
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Well, old Neddy is always here if you do. Tell your", "friends. I can always be using the business.");
+			npc("Well, old Neddy is always here if you do. Tell your", "friends. I can always be using the business.");
 			stage = 21;
 			break;
 		case 21:
@@ -524,12 +525,12 @@ public final class NedDialogue extends DialoguePlugin {
 			if (diary == null) {
 				diary = player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE);
 			}
-			if (diary.isComplete(2) && !diary.hasReward(2)) {
+			if (diary.isComplete(level, true) && !diary.isLevelRewarded(level)) {
 				player("I've done all the hard tasks in my Lumbridge", "Achievement Diary.");
 				stage = 950;
 				break;
 			}
-			if (diary.hasReward(2) && diary.isComplete(2) && !player.hasItem(diary.getType().getRewards(2)[0])) {
+			if (diary.isLevelRewarded(level) && diary.isComplete(level, true) && !player.hasItem(diary.getType().getRewards(level)[0])) {
 				player("I've seemed to have lost my explorer's ring...");
 				stage = 960;
 				break;
@@ -558,7 +559,7 @@ public final class NedDialogue extends DialoguePlugin {
 			}
 			break;
 		case 910:
-			npc("Ah, well it's a diary that helps you keep track of", "particular achievements you've made in the world of", "Keldagrim. In Lumbridge and Draynor i can help you", "discover some very useful things indeed.");
+			npc("Ah, well it's a diary that helps you keep track of", "particular achievements you've made in the world of", "2009Scape. In Lumbridge and Draynor i can help you", "discover some very useful things indeed.");
 			stage++;
 			break;
 		case 911:
@@ -582,7 +583,7 @@ public final class NedDialogue extends DialoguePlugin {
 			stage++;
 			break;
 		case 931:
-			npc("To claim the explorer's ring speak to Bob in Bob's", "Axes in Lumbridge, Ned in Draynor Village or myself.");
+			npc("To claim the explorer's ring speak to Explorer Jack in ", "Lumbridge, Bob in Bob's Axes in Lumbridge, or myself.");
 			stage = 900;
 			break;
 		case 940:
@@ -597,8 +598,8 @@ public final class NedDialogue extends DialoguePlugin {
 			stage++;
 			break;
 		case 952:
-			diary.setRewarded(2);
-			for (Item i : diary.getType().getRewards(2)) {
+			diary.setLevelRewarded(level);
+			for (Item i : diary.getType().getRewards(level)) {
 				player.getInventory().add(i, player);
 			}
 			npc("This ring is a representation of the adventures you", "went on to complete your tasks.");
@@ -609,7 +610,7 @@ public final class NedDialogue extends DialoguePlugin {
 			stage = 900;
 			break;
 		case 960:
-			player.getInventory().add(diary.getType().getRewards(0)[0], player);
+			player.getInventory().add(diary.getType().getRewards(level)[0], player);
 			npc("You better be more careful this time.");
 			stage = 900;
 			break;

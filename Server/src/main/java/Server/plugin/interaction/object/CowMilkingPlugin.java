@@ -9,6 +9,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.item.Item;
 import core.game.node.object.GameObject;
 import core.game.system.task.Pulse;
+import core.game.world.map.Location;
 import core.game.world.update.flag.context.Animation;
 import core.plugin.Plugin;
 import core.plugin.InitializablePlugin;
@@ -53,6 +54,7 @@ public final class CowMilkingPlugin extends OptionHandler {
 			player.getDialogueInterpreter().open(3807, true, true);
 			return true;
 		}
+
 		player.animate(ANIMATION);
 		player.getPulseManager().run(new Pulse(8, player) {
 			@Override

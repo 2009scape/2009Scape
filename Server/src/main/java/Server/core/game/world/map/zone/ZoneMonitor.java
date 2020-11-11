@@ -57,7 +57,6 @@ public final class ZoneMonitor {
 
 	/**
 	 * Checks if the player can logout.
-	 * @param p The player.
 	 * @return {@code True} if so.
 	 */
 	public boolean canLogout() {
@@ -266,19 +265,17 @@ public final class ZoneMonitor {
 
 	/**
 	 * Handles a location update.
-	 * @param entity The entity.
 	 * @param last The last location of the entity.
 	 * @return {@code false} If the entity could not enter/leave a region.
 	 */
 	public boolean updateLocation(Location last) {
-		Location l = entity.getLocation();
 		if(entity instanceof Player && !entity.asPlayer().isArtificial()) {
 			checkMusicZones();
 		}
 		entity.updateLocation(last);
 		for (Iterator<RegionZone> it = zones.iterator(); it.hasNext();) {
 			RegionZone zone = it.next();
-			if (!zone.getBorders().insideBorder(l.getX(), l.getY(), l.getZ())) {
+			if (!zone.getBorders().insideBorder(entity)) {
 				if (zone.getZone().isDynamicZone()) {
 					continue;
 				}
@@ -289,7 +286,7 @@ public final class ZoneMonitor {
 			}
 		}
 		for (RegionZone zone : entity.getViewport().getRegion().getRegionZones()) {
-			if (!zone.getBorders().insideBorder(l.getX(), l.getY(), l.getZ())) {
+			if (!zone.getBorders().insideBorder(entity)) {
 				continue;
 			}
 			boolean alreadyEntered = false;

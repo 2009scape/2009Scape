@@ -3,6 +3,7 @@ package plugin.skill.crafting;
 import core.cache.def.impl.ItemDefinition;
 import core.game.component.Component;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
 
 /**
@@ -11,7 +12,14 @@ import core.game.node.item.Item;
  * @version 1.1
  */
 public enum TanningProduct {
-	SOFT_LEATHER(1, 1739, 1741), HARD_LEATHER(2, 1739, 1743), SNAKESKIN(3, 6287, 6289), SNAKESKIN2(4, 6287, 6289), GREEN_DHIDE(5, 1753, 1745), BLUEDHIDE(6, 1751, 2505), REDDHIDE(7, 1749, 2507), BLACKDHIDE(8, 1747, 2509);
+	SOFT_LEATHER(1, 1739, 1741),
+	HARD_LEATHER(2, 1739, 1743),
+	SNAKESKIN(3, 6287, 6289),
+	SNAKESKIN2(4, 6287, 6289),
+	GREEN_DHIDE(5, 1753, 1745),
+	BLUEDHIDE(6, 1751, 2505),
+	REDDHIDE(7, 1749, 2507),
+	BLACKDHIDE(8, 1747, 2509);
 
 	/**
 	 * The button.
@@ -136,6 +144,9 @@ public enum TanningProduct {
 				player.getPacketDispatch().sendMessage("The tanner tans " + amount + " " + ItemDefinition.forId(def.getItem()).getName().toLowerCase() + "s for you.");
 			} else {
 				player.getPacketDispatch().sendMessage("The tanner tans your " + ItemDefinition.forId(def.getItem()).getName().toLowerCase() + ".");
+			}
+			if (def == SOFT_LEATHER) {
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 1, 2);
 			}
 		} else {
 			player.getPacketDispatch().sendMessage("You don't have enough coins to tan that many.");

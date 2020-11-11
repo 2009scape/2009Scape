@@ -260,7 +260,7 @@ final class Class3_Sub11 extends Linkable {
             this.aByteBuffer2345.position(28);
             var10.glTexCoordPointer(2, 5126, var11, this.aByteBuffer2345);
             if(this.aBoolean2347) {
-               var10.glClientActiveTexture(Class165.method2252());
+               var10.glClientActiveTexture(WaterShader.method2252());
                this.aByteBuffer2345.position(36);
                var10.glTexCoordPointer(1, 5126, var11, this.aByteBuffer2345);
                var10.glClientActiveTexture('\u84c0');
@@ -275,7 +275,7 @@ final class Class3_Sub11 extends Linkable {
 
             var10.glTexCoordPointer(2, 5126, var11, 28L);
             if(this.aBoolean2347) {
-               var10.glClientActiveTexture(Class165.method2252());
+               var10.glClientActiveTexture(WaterShader.method2252());
                var10.glTexCoordPointer(1, 5126, var11, 36L);
                var10.glClientActiveTexture('\u84c0');
             }

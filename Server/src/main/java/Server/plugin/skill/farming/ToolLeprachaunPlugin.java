@@ -43,7 +43,7 @@ public final class ToolLeprachaunPlugin extends OptionHandler {
 			player.getFarmingManager().getEquipment().open(player);
 			break;
 		case "teleport":
-			player.getPacketDispatch().sendMessage("The Leprachaun is not offering teleportation services at the moment.");
+			player.getPacketDispatch().sendMessage("The Leprechaun is not offering teleportation services at the moment.");
 			// player.getTeleporter().send(Location.create(1638, 4709, 0),
 			// TeleportType.NORMAL, 3);
 			break;

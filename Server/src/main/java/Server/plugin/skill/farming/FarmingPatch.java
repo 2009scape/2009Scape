@@ -11,7 +11,17 @@ import java.util.HashMap;
  * @version 1.0
  */
 public enum FarmingPatch {
-	ALLOTMENT("allotment", new int[] { 8550, 8551, 8552, 8553, 8554, 8555, 8556, 8557 }, 3, 3 | 56 << 16, Allotments.getNodes()), HOP("hop", new int[] { 8173, 8174, 8175, 8176 }, 4, 3 | 29 << 16, Hops.getNodes()), TREE("tree", new int[] { 8391, 8390, 8389, 8388, 8387, 8386, 8385, 8384, 19147 }, 1, 1 | 1 << 16, Trees.getNodes()), FRUIT_TREE("fruit tree", new int[] { 7964, 7965, 7962, 7963 }, 1, 1 | 1 << 16, FruitTrees.getNodes()), BUSHES("bush", new int[] { 7579, 7578, 7577, 7580 }, 1, 4 | 4 << 16, Bushes.getNodes()), FLOWER("flower", new int[] { 7847, 7850, 7848, 7849 }, 1, 1 | 1 << 16, Flowers.getNodes()), HERB("herb", new int[] { 8152, 8153, 8150, 8151, 18816 }, 1, 3 | 18 << 16, Herbs.getNodes()), EVIL_TURNIP("evil turnip", new int[] { 23760 }, 1, 1 | 1 << 16, SpecialNode.getNodes()[0]), CACTUS("cactus", new int[] { 7771 }, 1, 1 | 3 << 16, SpecialNode.getNodes()[1]), BELLADONNA("belladonna", new int[] { 7572 }, 1, 1 | 1 << 16, SpecialNode.getNodes()[2]), CALQUAT("calquat", new int[] { 7807 }, 1, 1 | 1 << 16, SpecialNode.getNodes()[3]);
+	ALLOTMENT("allotment", new int[] { 8550, 8551, 8552, 8553, 8554, 8555, 8556, 8557 }, 3, 3 | 56 << 16, Allotments.getNodes()),
+	HOP("hop", new int[] { 8173, 8174, 8175, 8176 }, 4, 3 | 29 << 16, Hops.getNodes()),
+	TREE("tree", new int[] { 8391, 8390, 8389, 8388, 8387, 8386, 8385, 8384, 19147 }, 1, 1 | 1 << 16, Trees.getNodes()),
+	FRUIT_TREE("fruit tree", new int[] { 7964, 7965, 7962, 7963 }, 1, 1 | 1 << 16, FruitTrees.getNodes()),
+	BUSHES("bush", new int[] { 7579, 7578, 7577, 7580 }, 1, 4 | 4 << 16, Bushes.getNodes()),
+	FLOWER("flower", new int[] { 7847, 7850, 7848, 7849 }, 1, 1 | 1 << 16, Flowers.getNodes()),
+	HERB("herb", new int[] { 8152, 8153, 8150, 8151, 18816 }, 1, 3 | 18 << 16, Herbs.getNodes()),
+	EVIL_TURNIP("evil turnip", new int[] { 23760 }, 1, 1 | 1 << 16, SpecialNode.getNodes()[0]),
+	CACTUS("cactus", new int[] { 7771 }, 1, 1 | 3 << 16, SpecialNode.getNodes()[1]),
+	BELLADONNA("belladonna", new int[] { 7572 }, 1, 1 | 1 << 16, SpecialNode.getNodes()[2]),
+	CALQUAT("calquat", new int[] { 7807 }, 1, 1 | 1 << 16, SpecialNode.getNodes()[3]);
 
 
 

@@ -29,9 +29,7 @@ public final class ChampionsGuildDoor extends OptionHandler {
 			if (player.getLocation().getX() == 3191 && player.getLocation().getY() == 3363) {
 				player.getDialogueInterpreter().sendDialogues(198, null, "Greetings bold adventurer. Welcome to the guild of", "Champions.");
 			}
-			if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(1, 1)) {
-				player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 1, 1, true);
-			}
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 1, 1);
 			DoorActionHandler.handleAutowalkDoor(player, (GameObject) node);
 			return true;
 		}

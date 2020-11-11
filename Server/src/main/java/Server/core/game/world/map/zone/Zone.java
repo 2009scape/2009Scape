@@ -13,7 +13,7 @@ public interface Zone {
 	 * @param e The entity.
 	 * @return {@code True} if so.
 	 */
-	public boolean enter(Entity e);
+	boolean enter(Entity e);
 
 	/**
 	 * Called when the entity leaves this map zone.
@@ -21,6 +21,6 @@ public interface Zone {
 	 * @param logout If the entity is logging out.
 	 * @return {@code True} if the entity can leave.
 	 */
-	public boolean leave(Entity e, boolean logout);
+	boolean leave(Entity e, boolean logout);
 
 }

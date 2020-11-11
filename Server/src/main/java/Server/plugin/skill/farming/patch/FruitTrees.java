@@ -19,7 +19,13 @@ public enum FruitTrees {
 		public int getDeathBase() {
 			return 20;
 		}
-	}), BANANA(new FruitTreeNode(new Item(5497), new Item(1963), 35, 6, 160, 33, new double[] { 28, 10.5, 1750.5 }, new Item(5386, 4))), ORANGE(new FruitTreeNode(new Item(5498), new Item(2108), 72, 6, 160, 39, new double[] { 35.5, 13.5, 2470.2 }, new Item(5406, 3))), CURRY(new FruitTreeNode(new Item(5499), new Item(5970), 99, 6, 160, 42, new double[] { 40, 15, 2906.9 }, new Item(5416, 5))), PINEAPPLE(new FruitTreeNode(new Item(5500), new Item(2114), 136, 6, 160, 51, new double[] { 57, 21.5, 4605.7 }, new Item(5982, 10))), PAPAYA(new FruitTreeNode(new Item(5501), new Item(5972), 163, 6, 160, 57, new double[] { 72, 27, 6146.4 }, new Item(2114, 10))), PALM(new FruitTreeNode(new Item(5502), new Item(5974), 200, 6, 160, 68, new double[] { 110.5, 41.5, 10150.1 }, new Item(5972, 15)));
+	}),
+	BANANA(new FruitTreeNode(new Item(5497), new Item(1963), 35, 6, 160, 33, new double[] { 28, 10.5, 1750.5 }, new Item(5386, 4))),
+	ORANGE(new FruitTreeNode(new Item(5498), new Item(2108), 72, 6, 160, 39, new double[] { 35.5, 13.5, 2470.2 }, new Item(5406, 3))),
+	CURRY(new FruitTreeNode(new Item(5499), new Item(5970), 99, 6, 160, 42, new double[] { 40, 15, 2906.9 }, new Item(5416, 5))),
+	PINEAPPLE(new FruitTreeNode(new Item(5500), new Item(2114), 136, 6, 160, 51, new double[] { 57, 21.5, 4605.7 }, new Item(5982, 10))),
+	PAPAYA(new FruitTreeNode(new Item(5501), new Item(5972), 163, 6, 160, 57, new double[] { 72, 27, 6146.4 }, new Item(2114, 10))),
+	PALM(new FruitTreeNode(new Item(5502), new Item(5974), 200, 6, 160, 68, new double[] { 110.5, 41.5, 10150.1 }, new Item(5972, 15)));
 
 	/**
 	 * Represents the farming node.

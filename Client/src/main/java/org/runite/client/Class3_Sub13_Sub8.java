@@ -76,18 +76,18 @@ final class Class3_Sub13_Sub8 extends Class3_Sub13 {
 			if(Unsorted.anInt3660 == 2) {
 				if(Class3_Sub13_Sub39.anInt3460 == NPCDefinition.anInt1297 && Class38_Sub1.anInt2612 == Class168.anInt2099) {
 					Unsorted.anInt3660 = 0;
-					if(ClientCommands.shiftClickEnabled && ObjectDefinition.aBooleanArray1490[81] && Class3_Sub13_Sub34.anInt3415 > 2) {
-						Class3_Sub30_Sub1.method806(Class3_Sub13_Sub34.anInt3415 + -2);
+					if(ClientCommands.shiftClickEnabled && ObjectDefinition.aBooleanArray1490[81] && Unsorted.menuOptionCount > 2) {
+						Class3_Sub30_Sub1.method806(Unsorted.menuOptionCount + -2);
 					} else {
-						Class3_Sub30_Sub1.method806(Class3_Sub13_Sub34.anInt3415 + -1);
+						Class3_Sub30_Sub1.method806(Unsorted.menuOptionCount + -1);
 					}
 				}
 			} else if(NPCDefinition.anInt1297 == Class163_Sub1.anInt2993 && Class38_Sub1.anInt2614 == Class38_Sub1.anInt2612) {
 				Unsorted.anInt3660 = 0;
-				if(ClientCommands.shiftClickEnabled && ObjectDefinition.aBooleanArray1490[81] && Class3_Sub13_Sub34.anInt3415 > 2) {
-					Class3_Sub30_Sub1.method806(Class3_Sub13_Sub34.anInt3415 - 2);
+				if(ClientCommands.shiftClickEnabled && ObjectDefinition.aBooleanArray1490[81] && Unsorted.menuOptionCount > 2) {
+					Class3_Sub30_Sub1.method806(Unsorted.menuOptionCount - 2);
 				} else {
-					Class3_Sub30_Sub1.method806(Class3_Sub13_Sub34.anInt3415 - 1);
+					Class3_Sub30_Sub1.method806(Unsorted.menuOptionCount - 1);
 				}
 			} else {
 				Class168.anInt2099 = Class38_Sub1.anInt2614;

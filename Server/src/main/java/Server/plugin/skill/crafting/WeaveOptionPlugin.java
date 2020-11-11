@@ -1,6 +1,8 @@
 package plugin.skill.crafting;
 
 import core.cache.def.impl.ObjectDefinition;
+import core.game.node.entity.player.link.diary.DiaryType;
+import core.game.world.map.Location;
 import plugin.dialogue.SkillDialogueHandler;
 import plugin.dialogue.SkillDialogueHandler.SkillDialogue;
 import plugin.skill.SkillPulse;
@@ -107,7 +109,15 @@ public final class WeaveOptionPlugin extends OptionHandler {
 			if (player.getInventory().remove(type.getRequired())) {
 				player.getInventory().add(type.getProduct());
 				player.getSkills().addExperience(Skills.CRAFTING, type.getExperience(), true);
-				player.getPacketDispatch().sendMessage("You weave the " + type.getRequired().getName().toLowerCase().replace("ball", "balls") + "" + (type == WeavingItem.SACK ? "s" : type == WeavingItem.CLOTH ? "" : "es") + " into " + (StringUtils.isPlusN(type.getProduct().getName().toLowerCase()) ? "an" : "a") + " " + type.getProduct().getName().toLowerCase() + ".");
+				player.getPacketDispatch().sendMessage("You weave the "
+						+ type.getRequired().getName().toLowerCase().replace("ball", "balls")
+						+ "" + (type == WeavingItem.SACK ? "s" : type == WeavingItem.CLOTH ? "" : "es")
+						+ " into " + (StringUtils.isPlusN(type.getProduct().getName().toLowerCase()) ? "an" : "a")
+						+ " " + type.getProduct().getName().toLowerCase() + ".");
+				if (type == WeavingItem.BASKET && node.getId() == 8717 && player.getLocation().withinDistance(new Location(3039,3287,0))
+					&& !player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).isComplete(1,0)) {
+					player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).updateTask(player,1,0, true);
+				}
 			}
 			amount--;
 			return amount < 1;
@@ -121,7 +131,9 @@ public final class WeaveOptionPlugin extends OptionHandler {
 	 * @version 1.0
 	 */
 	public enum WeavingItem {
-		SACK(new Item(5418), new Item(5931, 4), 21, 38), BASKET(new Item(5376), new Item(5933, 6), 36, 56), CLOTH(new Item(3224), new Item(1759, 4), 10, 12);
+		SACK(new Item(5418), new Item(5931, 4), 21, 38),
+		BASKET(new Item(5376), new Item(5933, 6), 36, 56),
+		CLOTH(new Item(3224), new Item(1759, 4), 10, 12);
 
 		/**
 		 * Represents the product.

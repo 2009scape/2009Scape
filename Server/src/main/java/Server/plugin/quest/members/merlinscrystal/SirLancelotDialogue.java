@@ -1,5 +1,6 @@
 package plugin.quest.members.merlinscrystal;
 
+import core.game.node.entity.player.link.quest.Quest;
 import plugin.dialogue.DialoguePlugin;
 import plugin.dialogue.FacialExpression;
 import core.game.node.entity.npc.NPC;
@@ -35,37 +36,42 @@ public final class SirLancelotDialogue extends DialoguePlugin {
 		return new SirLancelotDialogue(player);
 	}
 
+	private Quest quest;
+	
 	@Override
 	public boolean open(Object... args) {
 		npc = (NPC) args[0];
-		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Greetings! I am Sir Lancelot, the greatest Knight in the", "land! What do you want?");
+		npc("Greetings! I am Sir Lancelot, the greatest Knight in the", "land! What do you want?");
+		
+		quest = player.getQuestRepository().getQuest("Merlin's Crystal");
 		stage = 0;
 		return true;
 	}
 
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
+		// TODO more accurate dialogue https://runescape.wiki/w/Transcript:Merlin%27s_Crystal#Sir_Lancelot
 		switch (stage) {
 		case 0:
-			if (player.getQuestRepository().getQuest("Merlin's Crystal").getStage(player) >= 20 && player.getQuestRepository().getQuest("Merlin's Crystal").getStage(player) < 50) {
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Any idea on how to get into Morgan Le Faye's", "stronghold?");
+			if (quest.getStage(player) >= 20 && quest.getStage(player) < 50) {
+				player("Any idea on how to get into Morgan Le Faye's", "stronghold?");
 				stage = 1;
 			} else {
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "You're a little full of yourself, aren't you?");
+				player("You're a little full of yourself, aren't you?");
 				stage = 16;
 			}
 			break;
 		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "That stronghold is built in a strong defensive position.");
+			npc("That stronghold is built in a strong defensive position.");
 			stage = 2;
 			break;
 		case 2:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "There are two ways in that I know of, the large heavy", "front doors, and the sea entrance, only penetrable by", "boat.");
+			npc("There are two ways in that I know of, the large heavy", "front doors, and the sea entrance, only penetrable by", "boat.");
 			stage = 3;
 			break;
 		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "They take all their deliveries by boat.");
-			player.getQuestRepository().getQuest("Merlin's Crystal").setStage(player, 30);
+			npc("They take all their deliveries by boat.");
+			quest.setStage(player, 30);
 			player.getQuestRepository().syncronizeTab(player);
 			stage = 15;
 			break;
@@ -73,11 +79,11 @@ public final class SirLancelotDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 16:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "I have every right to be proud of myself.");
+			npc("I have every right to be proud of myself.");
 			stage = 17;
 			break;
 		case 17:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "My prowess in battle is world renowned!");
+			npc("My prowess in battle is world renowned!");
 			stage = 15;
 			break;
 		}

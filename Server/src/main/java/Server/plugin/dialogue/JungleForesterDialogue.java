@@ -54,12 +54,12 @@ public class JungleForesterDialogue extends DialoguePlugin {
 			if (diary == null) {
 				diary = player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA);
 			}
-			if (diary.isComplete(2) && !diary.hasReward(2)) {
+			if (diary.isComplete(2) && !diary.isLevelRewarded(2)) {
 				player("I've done all the hard tasks in my Karamja", "Achievement Diary.");
 				stage = 440;
 				break;
 			}
-			if (diary.hasReward(2) && diary.isComplete(2) && !player.hasItem(diary.getType().getRewards(2)[0])) {
+			if (diary.isLevelRewarded(2) && diary.isComplete(2) && !player.hasItem(diary.getType().getRewards(2)[0])) {
 				player("I've seemed to have lost my gloves..");
 				stage = 450;
 				break;
@@ -98,7 +98,7 @@ public class JungleForesterDialogue extends DialoguePlugin {
 			stage++;
 			break;
 		case 442:
-			diary.setRewarded(2);
+			diary.setLevelRewarded(2);
 			for (Item i : diary.getType().getRewards(2)) {
 				player.getInventory().add(i, player);
 			}

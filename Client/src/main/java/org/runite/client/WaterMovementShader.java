@@ -5,12 +5,12 @@ import com.jogamp.opengl.GL4bc;
 import java.nio.ByteBuffer;
 
 
-final class Class112 implements Interface5 {
+final class WaterMovementShader implements ShaderInterface {
 
    private int anInt2177 = -1;
-   private static float[] aFloatArray2178 = new float[]{0.1F, 0.1F, 0.15F, 0.1F};
+   private static float[] color = new float[]{0.1F, 0.1F, 0.15F, 0.1F};
    private final float[] aFloatArray2179 = new float[4];
-   private int anInt2180 = -1;
+   private int textureId = -1;
    private int anInt2181 = -1;
 
 
@@ -24,7 +24,7 @@ final class Class112 implements Interface5 {
       var2.glTexParameteri(3552, 10241, 9729);
       var2.glTexParameteri(3552, 10240, 9729);
       var2.glTexParameteri(3552, 10242, '\u812f');
-      this.anInt2180 = var3[0];
+      this.textureId = var3[0];
    }
 
    private void method1701() {
@@ -53,7 +53,7 @@ final class Class112 implements Interface5 {
 
       var1.glActiveTexture('\u84c1');
       var1.glEnable(3552);
-      var1.glBindTexture(3552, this.anInt2180);
+      var1.glBindTexture(3552, this.textureId);
       var1.glTexEnvi(8960, '\u8571', '\u8575');
       var1.glTexEnvi(8960, '\u8580', '\u8576');
       var1.glTexEnvi(8960, '\u8582', 5890);
@@ -106,8 +106,8 @@ final class Class112 implements Interface5 {
                this.aFloatArray2179[0] = 0.0F;
                this.aFloatArray2179[1] = 0.0F;
                this.aFloatArray2179[2] = 0.0F;
-               this.aFloatArray2179[3] = (float)HDToolKit.anInt1791 * 0.0050F;
-               var2.glTexGenfv(8194, 9473, this.aFloatArray2179, 0);
+               this.aFloatArray2179[3] = (float)HDToolKit.anInt1791 * 0.0050F;//Water moving speed?
+               var2.glTexGenfv(8194, 9473, this.aFloatArray2179, 0);//R, OBJECT_PLANE
                this.anInt2181 = HDToolKit.anInt1791;
             }
          } else {
@@ -141,17 +141,17 @@ final class Class112 implements Interface5 {
       this.aFloatArray2179[1] = 0.0F;
       this.aFloatArray2179[2] = 1.0F / (var2 - 3328.0F);
       this.aFloatArray2179[3] = var2 / (var2 - 3328.0F);
-      var1.glTexGenfv(8192, 9474, this.aFloatArray2179, 0);
+      var1.glTexGenfv(8192, 9474, this.aFloatArray2179, 0);//GL_ENABLE_BIT, GL_EYE_PLANE
       var1.glPopMatrix();
-      var1.glActiveTexture('\u84c0');
-      var1.glTexEnvfv(8960, 8705, aFloatArray2178, 0);
+      var1.glActiveTexture('\u84c0');//GL_TEXTURE0
+      var1.glTexEnvfv(8960, 8705, color, 0);//GL_TEXTURE_ENV, GL_TEXTURE_ENV_COLOR
    }
 
    public final int method24() {
       return 15;
    }
 
-   public Class112() {
+   public WaterMovementShader() {
       this.method1699();
       this.method1701();
    }

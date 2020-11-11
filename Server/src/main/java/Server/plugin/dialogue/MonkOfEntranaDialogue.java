@@ -3,6 +3,7 @@ package plugin.dialogue;
 import core.cache.def.impl.ItemDefinition;
 import core.game.content.global.travel.ship.Ships;
 import core.game.node.entity.npc.NPC;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.plugin.InitializablePlugin;
 import core.game.node.entity.player.Player;
 
@@ -102,6 +103,9 @@ public final class MonkOfEntranaDialogue extends DialoguePlugin {
 		case 25:
 			end();
 			Ships.PORT_SARIM_TO_ENTRANA.sail(player);
+			if (!player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).isComplete(0, 14)) {
+				player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).updateTask(player, 0, 14, true);
+			}
 			break;
 		case 500:
 			interpreter.sendOptions("Select an Option", "Yes, I'm ready to go.", "Not just yet.");

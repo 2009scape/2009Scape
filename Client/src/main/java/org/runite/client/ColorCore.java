@@ -57,9 +57,9 @@ public class ColorCore {
 
     //bank will be orange
     //entity color? Item color?
-    //Class47(items), Class3_Sub30_Sub1, Class3_sub24_Sub4, Class104,
+    //Class47(items), Class3_Sub30_Sub1, Class3_sub24_Sub4, WaterfallShader,
     static RSString ItemInterfaceColor = RSString.parse("<col=ff9040>");//offwhite
-    static RSString GroundItemColor = RSString.parse("<col=ff9040>");//offwhite Class104 //C
+    static RSString GroundItemColor = RSString.parse("<col=ff9040>");//offwhite WaterfallShader //C
     static RSString ItemBackpackColor = RSString.parse("<col=ff9040>");//offwhite Class3_Sub24_Sub4 //C
     static RSString ContextColor2 = RSString.parse("<col=ff9040>");//offwhite
 

@@ -63,7 +63,7 @@ class Class3_Sub13_Sub23 extends Class3_Sub13 {
             if(this.anInt3278 < 0) {
                return false;
             } else {
-               Class3_Sub28_Sub16_Sub2 var3 = Class82.anInt1668 < 0 ? Unsorted.method1537(Class104.aClass153_2172, this.anInt3278):Class40.method1043(this.anInt3278, Class104.aClass153_2172, Class82.anInt1668);
+               Class3_Sub28_Sub16_Sub2 var3 = Class82.anInt1668 < 0 ? Unsorted.method1537(WaterfallShader.aClass153_2172, this.anInt3278):Class40.method1043(this.anInt3278, WaterfallShader.aClass153_2172, Class82.anInt1668);
                Objects.requireNonNull(var3).method665();
                this.anInt3283 = var3.anInt3696;
                this.anInt3280 = var3.anInt3707;

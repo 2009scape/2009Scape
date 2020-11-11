@@ -11,7 +11,7 @@ final class Class166 {
    int anInt2069;
    static Class3_Sub28_Sub5[] aClass3_Sub28_Sub5Array2070 = new Class3_Sub28_Sub5[14];
    int anInt2071;
-   static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array2072;
+   static AbstractSprite[] aAbstractSpriteArray2072;
    static int[] anIntArray2073 = new int[5];
    byte[] aByteArray2076;
    int anInt2077;

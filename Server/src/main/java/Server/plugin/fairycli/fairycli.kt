@@ -8,6 +8,7 @@ import core.game.system.command.CommandSet
 import core.game.world.map.Location
 import core.plugin.InitializablePlugin
 import core.plugin.Plugin
+import plugin.interaction.`object`.FairyRingPlugin
 import plugin.stringtools.shuffle
 import kotlin.math.abs
 
@@ -82,11 +83,7 @@ class fairycli : CommandPlugin() {
                         return true
                     } else {
                         player.sendMessage("Teleporting to: ${ringCode}")
-                        if (ringCode == "DIS") {
-                            if (!player.achievementDiaryManager.getDiary(DiaryType.LUMBRIDGE).isComplete(1, 1)) {
-                                player.achievementDiaryManager.updateTask(player, DiaryType.LUMBRIDGE, 1, 1, true)
-                            }
-                        }
+                        handleAchievements(player, ringCode)
                         player.removeAttribute("fairy-delay")
                         player.removeAttribute("fairy_location_combo")
                         for (i in 0..2) {
@@ -102,5 +99,17 @@ class fairycli : CommandPlugin() {
             }
         }
         return false
+    }
+
+    fun handleAchievements(player: Player, ringCode: String) {
+        if (ringCode == "AIQ") {
+            player.achievementDiaryManager.finishTask(player, DiaryType.FALADOR, 2, 4)
+        }
+        if (ringCode == "ALS") {
+            player.achievementDiaryManager.finishTask(player, DiaryType.SEERS_VILLAGE, 2, 4)
+        }
+        if (ringCode == "DKR") {
+            player.achievementDiaryManager.finishTask(player, DiaryType.VARROCK, 1, 19)
+        }
     }
 }

@@ -170,17 +170,17 @@ final class KeyboardListener implements KeyListener, FocusListener {
       if(var1.isAltDown()){
          if(var1.getKeyChar()=='n'){
             GameConfig.NPC_DEBUG_ENABLED = !GameConfig.NPC_DEBUG_ENABLED;
-            Class3_Sub30_Sub1.addChatMessage(TextCore.clientDebugNotifier, 0, RSString.parse("NPC debug context " + GameConfig.NPC_DEBUG_ENABLED), -1);
+            Class3_Sub30_Sub1.addChatMessage(TextCore.clientDebugNotifier, 0, RSString.parse("NPC debug context " + (GameConfig.NPC_DEBUG_ENABLED ? "enabled." : "disabled.")), -1);
             return;
          }
          if(var1.getKeyChar()=='o'){
             GameConfig.OBJECT_DEBUG_ENABLED = !GameConfig.OBJECT_DEBUG_ENABLED;
-            Class3_Sub30_Sub1.addChatMessage(TextCore.clientDebugNotifier, 0, RSString.parse("Object debug context " + GameConfig.NPC_DEBUG_ENABLED), -1);
+            Class3_Sub30_Sub1.addChatMessage(TextCore.clientDebugNotifier, 0, RSString.parse("Object debug context " + (GameConfig.OBJECT_DEBUG_ENABLED ? "enabled." : "disabled.")), -1);
             return;
          }
          if(var1.getKeyChar()=='i'){
             GameConfig.ITEM_DEBUG_ENABLED = !GameConfig.ITEM_DEBUG_ENABLED;
-            Class3_Sub30_Sub1.addChatMessage(TextCore.clientDebugNotifier, 0, RSString.parse("Item debug context " + GameConfig.NPC_DEBUG_ENABLED), -1);
+            Class3_Sub30_Sub1.addChatMessage(TextCore.clientDebugNotifier, 0, RSString.parse("Item debug context " + (GameConfig.ITEM_DEBUG_ENABLED ? "enabled." : "disabled.")), -1);
             return;
          }
          return;

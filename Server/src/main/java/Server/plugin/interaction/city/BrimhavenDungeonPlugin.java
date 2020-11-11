@@ -77,9 +77,8 @@ public final class BrimhavenDungeonPlugin extends OptionHandler {
 						Location destination = getVineDestination(player, object);
 						player.lock(3);
 						player.getWalkingQueue().reset();
-						if (!player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(1, 8)) {
-							player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 1, 8, true);
-						}
+						// Chop the vines to gain deeper access to Brimhaven Dungeon
+						player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 14);
 						player.getWalkingQueue().addPath(destination.getX(), destination.getY(), true);
 					}
 					return true;
@@ -114,9 +113,7 @@ public final class BrimhavenDungeonPlugin extends OptionHandler {
 						}
 					}
 					if (stage == 6) {
-						if (!player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(1, 9)) {
-							player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 1, 9, true);
-						}
+						player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 15);
 					}
 					AgilityHandler.forceWalk(player, -1, l, l.transform(direction), Animation.create(769), 10, 0, null);
 					return stage == 6;
@@ -131,9 +128,8 @@ public final class BrimhavenDungeonPlugin extends OptionHandler {
 			ClimbActionHandler.climb(player, null, Location.create(2649, 9591, 0));
 			return true;
 		case 5097:
-			if (!player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(1, 10)) {
-				player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 1, 10, true);
-			}
+			// Climb the stairs within Brimhaven Dungeon
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 16);
 			ClimbActionHandler.climb(player, null, Location.create(2636, 9510, 2));
 			return true;
 		case 5098:

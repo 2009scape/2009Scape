@@ -24,7 +24,11 @@ public final class DeadfallSetting extends TrapSetting {
 	 * Constructs a new {@code DeadfallSetting} {@code Object}.
 	 */
 	public DeadfallSetting() {
-		super(new int[] { 28935, 19205 }, new Item[] { new Item(946) }, new int[] { 28937, 19206 }, new int[] { 10138, 6006, 12574, 341, 2132 }, "set-trap", 23, -1, new Animation(5208), new Animation(9726), true);
+		super(new int[] { 28935, 19205 },
+				new Item[] { new Item(946) },
+				new int[] { 28937, 19206 },
+				new int[] { 10138, 6006, 12574, 341, 2132 },
+				"set-trap", 23, -1, new Animation(5208), new Animation(9726), true);
 	}
 
 	@Override

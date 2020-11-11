@@ -45,7 +45,7 @@ public final class StringUtils {
 
 	/**
 	 * Checks if the string contains an invalid character.
-	 * @param nameThe string.
+	 * @param name The string.
 	 * @return {@code True} if so.
 	 */
 	public static boolean containsInvalidCharacter(String name) {

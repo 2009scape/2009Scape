@@ -54,12 +54,12 @@ public class KalebParamaya extends DialoguePlugin {
 			if (diary == null) {
 				diary = player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA);
 			}
-			if (diary.isComplete(1) && !diary.hasReward(1)) {
+			if (diary.isComplete(1) && !diary.isLevelRewarded(1)) {
 				player("I've done all the medium tasks in my Karamja", "Achievement Diary.");
 				stage = 440;
 				break;
 			}
-			if (diary.hasReward(1) && diary.isComplete(1) && !player.hasItem(diary.getType().getRewards(1)[0])) {
+			if (diary.isLevelRewarded(1) && diary.isComplete(1) && !player.hasItem(diary.getType().getRewards(1)[0])) {
 				player("I've seemed to have lost my gloves..");
 				stage = 450;
 				break;
@@ -98,7 +98,7 @@ public class KalebParamaya extends DialoguePlugin {
 			stage++;
 			break;
 		case 442:
-			diary.setRewarded(1);
+			diary.setLevelRewarded(1);
 			for (Item i : diary.getType().getRewards(1)) {
 				player.getInventory().add(i, player);
 			}

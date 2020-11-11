@@ -47,16 +47,16 @@ public final class Cache {
 	 * @param path The cache path.x
 	 * @throws Throwable When an exception occurs.
 	 */
-	public static final void init(String path) throws Throwable {
+	public static void init(String path) throws Throwable {
 		SystemLogger.log("Initializing cache...");
 		byte[] cacheFileBuffer = new byte[520];
-		RandomAccessFile containersInformFile = new RandomAccessFile(path + "/main_file_cache.idx255", "r");
-		RandomAccessFile dataFile = new RandomAccessFile(path + "/main_file_cache.dat2", "r");
+		RandomAccessFile containersInformFile = new RandomAccessFile(path + File.separator + "main_file_cache.idx255", "r");
+		RandomAccessFile dataFile = new RandomAccessFile(path + File.separator + "main_file_cache.dat2", "r");
 		referenceFile = new CacheFile(255, containersInformFile, dataFile, 500000, cacheFileBuffer);
 		int length = (int) (containersInformFile.length() / 6);
 		cacheFileManagers = new CacheFileManager[length];
 		for (int i = 0; i < length; i++) {
-			File f = new File(path + "/main_file_cache.idx" + i);
+			File f = new File(path + File.separator + "main_file_cache.idx" + i);
 			if (f.exists() && f.length() > 0) {
 				CacheFile cacheFile = new CacheFile(i, new RandomAccessFile(f, "r"), dataFile, 1000000, cacheFileBuffer);
 				cacheFileManagers[i] = new CacheFileManager(cacheFile, true);

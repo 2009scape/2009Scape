@@ -171,12 +171,12 @@ class PlayerSaver (val player: Player){
         player.achievementDiaryManager.diarys.map {
             val diary = JSONObject()
             val startedLevels = JSONArray()
-            it.started.map {
+            it.levelStarted.map {
                 startedLevels.add(it)
             }
             diary.put("startedLevels",startedLevels)
             val completedLevels = JSONArray()
-            it.completed.map {
+            it.taskCompleted.map {
                 val level = JSONArray()
                 it.map {
                     level.add(it)
@@ -185,13 +185,15 @@ class PlayerSaver (val player: Player){
             }
             diary.put("completedLevels",completedLevels)
             val rewardedLevels = JSONArray()
-            it.rewarded.map {
+            it.levelRewarded.map {
                 rewardedLevels.add(it)
             }
             diary.put("rewardedLevels",rewardedLevels)
-            achievementData.add(diary)
+            val diaryCollector = JSONObject()
+            diaryCollector.put(it.type.name, diary)
+            achievementData.add(diaryCollector)
         }
-        root.put("achievementData",achievementData)
+        root.put("achievementDiaries",achievementData)
     }
 
     fun saveHouseData(root: JSONObject){
@@ -343,6 +345,7 @@ class PlayerSaver (val player: Player){
             }
             familiar.put("lifepoints",player.familiarManager.familiar.skills.lifepoints)
             familiarManager.put("familiar",familiar)
+
         }
         root.put("familiarManager",familiarManager)
     }
@@ -428,7 +431,6 @@ class PlayerSaver (val player: Player){
             }
             farming.put("wrappers",wrappers)
         }
-
         root.put("farming",farming)
     }
 

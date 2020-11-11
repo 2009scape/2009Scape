@@ -205,11 +205,11 @@ public final class KlarenseDialogue extends DialoguePlugin {
 				stage = 21;
 				break;
 			case 21:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The Lady Lumbridge is an old crandorian fishing ship -", "the last one of her kind, as far as I know. That kind of", "ship was always mightily manoeuvrable, but not too", "tough.");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "The Lady Lumbridge is an old Crandorian fishing ship -", "the last one of her kind, as far as I know. That kind of", "ship was always mightily manoeuvrable, but not too", "tough.");
 				stage = 22;
 				break;
 			case 22:
-				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "She happend to be somewhere else when Crandor was", "destroyed, and she's had serveral owners since then. Not", "all of them have looked after her too well,");
+				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "She happened to be somewhere else when Crandor was", "destroyed, and she's had several owners since then. Not", "all of them have looked after her too well,");
 				stage = 23;
 				break;
 			case 23:

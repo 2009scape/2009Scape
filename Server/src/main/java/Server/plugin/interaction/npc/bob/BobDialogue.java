@@ -36,6 +36,7 @@ public final class BobDialogue extends DialoguePlugin {
 	 * The achievement diary.
 	 */
 	private AchievementDiary diary;
+	private final int level = 1;
 
 	/**
 	 * Constructs a new {@code BobDialogue} {@code Object}.
@@ -58,17 +59,17 @@ public final class BobDialogue extends DialoguePlugin {
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
 		case 754:
-			interpreter.sendOptions("Select an Option", "Yes, please.", "No, thank you.");
+			options("Yes, please.", "No, thank you.");
 			stage = 755;
 			break;
 		case 755:
 			switch (buttonId) {
 			case 1:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Yes, please.");
+				player("Yes, please.");
 				stage = 757;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "No, thank you.");
+				player("No, thank you.");
 				stage = 756;
 				break;
 			}
@@ -140,11 +141,11 @@ public final class BobDialogue extends DialoguePlugin {
 				stage = -5;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Have you anything to sell?");
+				player("Have you anything to sell?");
 				stage = 10;
 				break;
 			case 3:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you repair my items for me?");
+				player("Can you repair my items for me?");
 				stage = 20;
 				break;
 			case 4:
@@ -161,7 +162,7 @@ public final class BobDialogue extends DialoguePlugin {
 			end();
 			break;
 		case 10:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Yes! I buy and sell axes! Take your pick (or axe)!");
+			npc("Yes! I buy and sell axes! Take your pick (or axe)!");
 			stage = 11;
 			break;
 		case 11:
@@ -169,7 +170,7 @@ public final class BobDialogue extends DialoguePlugin {
 			npc.openShop(player);
 			break;
 		case 20:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Of course I'll repair it, though the materials may cost", "you. Just hand me the item and I'll have a look.");
+			npc("Of course I'll repair it, though the materials may cost", "you. Just hand me the item and I'll have a look.");
 			stage = 21;
 			break;
 		case 21:
@@ -179,12 +180,12 @@ public final class BobDialogue extends DialoguePlugin {
 			if (diary == null) {
 				diary = player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE);
 			}
-			if (diary.isComplete(1) && !diary.hasReward(1)) {
+			if (diary.isComplete(level, true) && !diary.isLevelRewarded(level)) {
 				player("I've done all the medium tasks in my Lumbridge", "Achievement Diary.");
 				stage = 150;
 				break;
 			}
-			if (diary.hasReward(1) && diary.isComplete(1) && !player.hasItem(diary.getType().getRewards(1)[0])) {
+			if (diary.isLevelRewarded(1) && diary.isComplete(level, true) && !player.hasItem(diary.getType().getRewards(level)[0])) {
 				player("I've seemed to have lost my explorer's ring...");
 				stage = 160;
 				break;
@@ -233,7 +234,7 @@ public final class BobDialogue extends DialoguePlugin {
 			stage = 30;
 			break;
 		case 130:
-			npc("You need to complete the taks so that they're all ticked", "off then you can claim your reward. Most of them are", "straightforward although you might find some required", "quests to be started, if not finished.");
+			npc("You need to complete the tasks so that they're all ticked", "off, then you can claim your reward. Most of them are", "straightforward although you might find some required", "quests to be started, if not finished.");
 			stage++;
 			break;
 		case 131:
@@ -252,8 +253,8 @@ public final class BobDialogue extends DialoguePlugin {
 			stage++;
 			break;
 		case 152:
-			diary.setRewarded(1);
-			for (Item i : diary.getType().getRewards(1)) {
+			diary.setLevelRewarded(level);
+			for (Item i : diary.getType().getRewards(level)) {
 				player.getInventory().add(i, player);
 			}
 			npc("This ring is a representation of the adventures you", "went on to complete your tasks.");
@@ -264,7 +265,7 @@ public final class BobDialogue extends DialoguePlugin {
 			stage = 30;
 			break;
 		case 160:
-			player.getInventory().add(diary.getType().getRewards(1)[0], player);
+			player.getInventory().add(diary.getType().getRewards(level)[0], player);
 			npc("You better be more careful this time.");
 			stage = -1;
 			break;
@@ -284,12 +285,12 @@ public final class BobDialogue extends DialoguePlugin {
 		boolean repair = false;
 		boolean wrong = false;
 		if (npc.getId() == 3797 && args.length == 1) {
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you repair my items for me?");
+			player("Can you repair my items for me?");
 			stage = 20;
 			return true;
 		}
 		if (args.length == 1) {
-			interpreter.sendOptions("Select an Option", "Give me a quest!", "Have you anything to sell?", "Can you repair my items for me?", "Talk about Achievement Diaries");
+			options("Give me a quest!", "Have you anything to sell?", "Can you repair my items for me?", "Talk about Achievement Diaries");
 			stage = 0;
 			return true;
 		}
@@ -323,12 +324,12 @@ public final class BobDialogue extends DialoguePlugin {
 					cost = String.valueOf(BarrowsEquipment.getFormatedCost(equipment, item) + "gp");
 				}
 			}
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Quite badly damaged, but easy to repair. Would you", "like me to repair it for " + cost + "?");
+			npc("Quite badly damaged, but easy to repair. Would you", "like me to repair it for " + cost + "?");
 			stage = 754;
 			return true;
 		}
 		if (repair == true && wrong == true) {
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Sorry friend, but I can't do anything with that.");
+			npc("Sorry friend, but I can't do anything with that.");
 			stage = 678;
 			return true;
 		}

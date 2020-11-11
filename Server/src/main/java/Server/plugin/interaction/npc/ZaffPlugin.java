@@ -375,7 +375,16 @@ public final class ZaffPlugin extends OptionHandler {
 		 */
 		public int getMaxStaffs() {
 			int level = player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).getLevel();
-			return level == -1 ? 8 : 15 * (level + 2);
+			switch (level) {
+				case 2:
+					return 64;
+				case 1:
+					return 32;
+				case 0:
+					return 16;
+				default:
+					return 8;
+			}
 		}
 
 		@Override

@@ -1,5 +1,6 @@
 package plugin.skill.construction;
 
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.dialogue.DialoguePlugin;
 import plugin.dialogue.FacialExpression;
 import core.game.content.global.Skillcape;
@@ -52,7 +53,7 @@ public final class EstateAgentDialogue extends DialoguePlugin {
     @Override
     public boolean open(Object... args) {
         npc = (NPC) args[0];
-        interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hello. Welcome to the " + GameWorld.getSettings().getName() + " Housing Agency! What", "can I do for you?");
+        npc("Hello. Welcome to the " + GameWorld.getSettings().getName() + " Housing Agency! What", "can I do for you?");
         stage = 0;
         return true;
     }
@@ -62,10 +63,10 @@ public final class EstateAgentDialogue extends DialoguePlugin {
         switch (stage) {
             case 0:
                 if (player.getHouseManager().hasHouse()) {
-                    interpreter.sendOptions("Select an Option", "Can you move my house please?", "Can you redecorate my house please?", "Could I have a Construction guidebook?", "Tell me about houses.", "Tell me about that skillcape you're wearing.");
+                    options("Can you move my house please?", "Can you redecorate my house please?", "Could I have a Construction guidebook?", "Tell me about houses.", "Tell me about that skillcape you're wearing.");
                     stage = 1;
                 } else {
-                    interpreter.sendOptions("Select an Option", "How can I get a house?", "Tell me about houses.");
+                    options("How can I get a house?", "Tell me about houses.");
                     stage = 2;
                 }
                 break;
@@ -74,23 +75,23 @@ public final class EstateAgentDialogue extends DialoguePlugin {
             case 1:
                 switch (buttonId) {
                     case 1:
-                        interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you move my house please?");
+                        player("Can you move my house please?");
                         stage = 10;
                         break;
                     case 2:
-                        interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Can you redecorate my house please?");
+                        player("Can you redecorate my house please?");
                         stage = 30;
                         break;
                     case 3:
-                        interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Could I have a Construction guidebook?");
+                        player("Could I have a Construction guidebook?");
                         stage = 50;
                         break;
                     case 4:
-                        interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Tell me about houses!");
+                        player("Tell me about houses!");
                         stage = 90;
                         break;
                     case 5:
-                        interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Tell me about that skillcape you're wearing!");
+                        player("Tell me about that skillcape you're wearing!");
                         stage = Skillcape.isMaster(player, Skills.CONSTRUCTION) ? 102 : 100;
                         break;
                 }
@@ -182,7 +183,7 @@ public final class EstateAgentDialogue extends DialoguePlugin {
                         break;
                 }
                 break;
-             case 13:
+            case 13:
                 switch (buttonId) {
                     case 1:
                         player("To Brimhaven please!");
@@ -209,7 +210,7 @@ public final class EstateAgentDialogue extends DialoguePlugin {
                 break;
             case 18:
                 configureMove(HouseLocation.RELLEKKA);
-               break;
+                break;
             case 19:
                 configureMove(HouseLocation.BRIMHAVEN);
                 break;
@@ -281,53 +282,61 @@ public final class EstateAgentDialogue extends DialoguePlugin {
                 break;
             case 39:
                 redecorate(HousingStyle.TROPICAL_WOOD);
+                // Give your player-owned house a fancy stone or tropical wood<br><br>finish at the Varrock estate agent's
+                if (player.getLocation().withinDistance(Location.create(3239, 3474, 0))) {
+                    player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 2, 7);
+                }
                 break;
             case 40:
                 redecorate(HousingStyle.FANCY_STONE);
+                // Give your player-owned house a fancy stone or tropical wood<br><br>finish at the Varrock estate agent's
+                if (player.getLocation().withinDistance(Location.create(3239, 3474, 0))) {
+                    player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 2, 7);
+                }
                 break;
 
             //Asking for a Construction Book
             case 50:
                 if (!player.hasItem(BOOK)) {
-                    interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Certainly.");
+                    npc("Certainly.");
                     player.getInventory().add(BOOK);
                     stage = 150;
                     break;
-                }else{
-                    interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "You've already got one!");
+                } else {
+                    npc("You've already got one!");
                     stage = 150;
                     break;
                 }
 
-            //More Information on houses
+                //More Information on houses
             case 60:
-                interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "It all came out of the wizards' experiments. They found", "a way to fold space, so that they could pack many", "acres of land into an area only a foot across.");
+                npc("It all came out of the wizards' experiments. They found", "a way to fold space, so that they could pack many", "acres of land into an area only a foot across.");
                 stage++;
                 break;
             case 61:
-                interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "They created several folded-space regions across", "" + GameWorld.getSettings().getName() + ". Each one contains hundreds of small plots", "where people can build houses.");
+                npc("They created several folded-space regions across", "" + GameWorld.getSettings().getName() + ". Each one contains hundreds of small plots", "where people can build houses.");
                 stage++;
                 break;
             case 62:
-                interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Ah, so that's how everyone can have a house without", "them cluttering up the world!");
+                player("Ah, so that's how everyone can have a house without", "them cluttering up the world!");
                 stage++;
                 break;
             case 63:
-                interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Quite. The wizards didn't want to get bogged down", "in the business side of things so they ", "hired me to sell the houses.");
+                npc("Quite. The wizards didn't want to get bogged down", "in the business side of things so they ", "hired me to sell the houses.");
                 stage++;
                 break;
             case 64:
-                interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "There are various other people across " + GameWorld.getSettings().getName() + " who can", "help you furnish your house. You should start buying", "planks from the sawmill operator in Varrock.");
+                npc("There are various other people across " + GameWorld.getSettings().getName() + " who can", "help you furnish your house. You should start buying", "planks from the sawmill operator in Varrock.");
                 stage = 150;
                 break;
 
             //Skillcape Dialogue for players without Level 99 Construction
             case 100:
-                interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "As you may know, skillcapes are only available to masters", "in a skill. I have spent my entire life building houses and", "now I spend my time selling them! As a sign of my abilites", "I wear this Skillcape of Construction. If you ever have");
+                npc("As you may know, skillcapes are only available to masters", "in a skill. I have spent my entire life building houses and", "now I spend my time selling them! As a sign of my abilites", "I wear this Skillcape of Construction. If you ever have");
                 stage = 101;
                 break;
             case 101:
-                interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "enough skill to build a demonic throne, come and talk to", "me and I'll sell you a skillcape like mine.");
+                npc("enough skill to build a demonic throne, come and talk to", "me and I'll sell you a skillcape like mine.");
                 stage = 150;
                 break;
 
@@ -337,7 +346,7 @@ public final class EstateAgentDialogue extends DialoguePlugin {
                 stage++;
                 break;
             case 103:
-                interpreter.sendOptions("Select an Option", "Yes, I'll pay the 99k", "No thanks, maybe later.");
+                options("Yes, I'll pay the 99k", "No thanks, maybe later.");
                 stage++;
                 break;
             case 104:
@@ -388,6 +397,9 @@ public final class EstateAgentDialogue extends DialoguePlugin {
         player.getHouseManager().setLocation(location);
         npc("Your house has been moved to " + location.getName() + ".");
         stage = 150;
+        if (player.getLocation().withinDistance(Location.create(3239, 3474, 0))) {
+            player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 11);
+        }
     }
 
     /**

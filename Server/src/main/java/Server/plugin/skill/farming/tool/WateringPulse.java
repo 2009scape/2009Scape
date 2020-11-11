@@ -30,7 +30,6 @@ public final class WateringPulse extends ToolAction {
 	 * Constructs a new {@code WateringPulse} {@code Object}.
 	 * @param player the player.
 	 * @param wrapper the wrapper.
-	 * @param delay the delay.
 	 */
 	public WateringPulse(final Player player, final PatchWrapper wrapper, final Item item) {
 		super(player, wrapper, item);
@@ -53,6 +52,8 @@ public final class WateringPulse extends ToolAction {
 		if (wrapper.getCycle().getGrowthHandler().isGrowing()) {
 			wrapper.getCycle().getWaterHandler().setWatered();
 		}
+		player.getInventory().remove(tool);
+		player.getInventory().add(getNextCan());
 		return true;
 	}
 

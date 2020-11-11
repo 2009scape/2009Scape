@@ -7,6 +7,7 @@ public class ClientCommands {
     static boolean fpsOverlayEnabled = false;
     static boolean tweeningEnabled = false;
     static boolean shiftClickEnabled = false;
+    static boolean canDrop = false;
     static boolean renderInfoOverlayEnabled = false;
     /**
      * Removed out of (depreciated)Properties.java
@@ -91,19 +92,13 @@ public class ClientCommands {
             }
 
             if (command.equalsStringIgnoreCase(TextCore.COMMAND_TOGGLE_FPSON)) {
-                fpsOverlayEnabled = true;
+                fpsOverlayEnabled = !fpsOverlayEnabled;
             }
 
-            if (command.equalsStringIgnoreCase(TextCore.COMMAND_TOGGLE_FPSOFF)) {
-                fpsOverlayEnabled = false;
-            }
             if (command.equalsStringIgnoreCase(TextCore.COMMAND_RENDER_INFO)) {
-                renderInfoOverlayEnabled = true;
+                renderInfoOverlayEnabled = !renderInfoOverlayEnabled;
             }
 
-            if (command.equalsStringIgnoreCase(TextCore.COMMAND_RENDER_INFO_OFF)) {
-                renderInfoOverlayEnabled = false;
-            }
             if (command.equalsStringIgnoreCase(TextCore.TOGGLE_FK)) {
                 boolean on = !modernHotkeys;
                 modernHotkeys = true;

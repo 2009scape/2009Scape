@@ -52,11 +52,11 @@ final class Class114 {
       }
    }
 
-   static Class3_Sub28_Sub16 method1707(int var0, int var1, boolean var2, int var3, int var4) {
+   static AbstractSprite method1707(int var0, int var1, boolean var2, int var3, int var4) {
       try {
          int var7 = (!var2?0:65536) + var1 + (var0 << 17) + (var4 << 19);
          long var8 = (long)var7 * 3849834839L + 3147483667L * (long)var3;
-         Class3_Sub28_Sub16 var10 = (Class3_Sub28_Sub16)Class67.aReferenceCache_1013.get(var8);
+         AbstractSprite var10 = (AbstractSprite)Class67.aReferenceCache_1013.get(var8);
          if(var10 == null) {
             Class51.aBoolean837 = false;
             var10 = Unsorted.method1570(var4, (byte)13, false, var1, var2, var0, var3, false);

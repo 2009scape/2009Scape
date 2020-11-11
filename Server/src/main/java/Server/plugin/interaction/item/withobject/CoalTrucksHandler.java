@@ -6,6 +6,7 @@ import core.game.interaction.OptionHandler;
 import core.game.interaction.UseWithHandler;
 import core.game.node.Node;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
 import core.plugin.InitializablePlugin;
 import core.plugin.Plugin;
@@ -39,7 +40,7 @@ public class CoalTrucksHandler extends OptionHandler {
         List<Item> toAdd = new ArrayList<>();
         switch(option){
             case "remove-coal":
-                if(player.getAttribute("coal-truck-inventory",0) == 0) {
+                if(coalInTruck == 0) {
                     player.getDialogueInterpreter().sendDialogue("The coal truck is empty.");
                     return true;
                 }
@@ -54,6 +55,17 @@ public class CoalTrucksHandler extends OptionHandler {
                 }
                 player.getInventory().addList(toAdd);
                 player.setAttribute("/save:coal-truck-inventory", coalInTruck);
+                if (coalInTruck == 0
+                        && !player.getAchievementDiaryManager().hasCompletedTask(DiaryType.SEERS_VILLAGE,1,2)
+                        && player.getViewport().getRegion().getId() == 10806 // region 10294 is at coal truck mine, region 10806 is in seers village
+                        && player.getAttribute("diary:seers:coal-truck-full", false)) {
+                    player.removeAttribute("diary:seers:coal-truck-full");
+                    player.getAchievementDiaryManager().finishTask(player,DiaryType.SEERS_VILLAGE,1,2);
+                }
+                if (!player.getAchievementDiaryManager().hasCompletedTask(DiaryType.SEERS_VILLAGE,1,2)
+                        && player.getViewport().getRegion().getId() == 10294) { // region 10294 is at coal truck mine, region 10806 is in seers village
+                    player.setAttribute("/save:diary:seers:coal-truck-full", false);
+                }
                 break;
             case "investigate":
                 player.getDialogueInterpreter().sendDialogue("There is currently " + coalInTruck + " coal in the truck.","The truck has space for " + (120 - coalInTruck) + " more coal.");
@@ -74,13 +86,19 @@ public class CoalTrucksHandler extends OptionHandler {
 
         @Override
         public boolean handle(NodeUsageEvent event) {
-            int coalInTruck = event.getPlayer().getAttribute("coal-truck-inventory",0);
-            while(event.getPlayer().getInventory().containsItem(COAL)){
-                if(coalInTruck < 120){
+            Player player = event.getPlayer();
+            int coalInTruck = player.getAttribute("coal-truck-inventory",0);
+            while(player.getInventory().containsItem(COAL)){
+                if(coalInTruck < 120) {
                     event.getPlayer().getInventory().remove(COAL);
                     coalInTruck++;
-                } else {
+                }
+                if(coalInTruck >= 120) {
                     event.getPlayer().getPacketDispatch().sendMessage("You have filled up the coal truck.");
+                    if (!player.getAchievementDiaryManager().getDiary(DiaryType.SEERS_VILLAGE).isComplete(1,2)
+                            && player.getViewport().getRegion().getId() == 10294) { // region 10294 is at coal truck mine, region 10806 is in seers village
+                        player.setAttribute("/save:diary:seers:coal-truck-full", true);
+                    }
                     break;
                 }
             }

@@ -400,7 +400,7 @@ public final class AnimationDefinition {
 			Class38_Sub1.anInt2617 = 0;
 			Class3_Sub13_Sub1.outgoingBuffer.index = 0;
 			LinkableRSString.anInt2582 = -1;
-			Class3_Sub28_Sub16.anInt3699 = 0;
+			AbstractSprite.anInt3699 = 0;
 			GraphicDefinition.incomingBuffer.index = 0;
 
 			int var1;
@@ -408,7 +408,7 @@ public final class AnimationDefinition {
 				ClientErrorException.aClass96Array2114[var1] = null;
 			}
 
-			Class3_Sub13_Sub34.anInt3415 = 0;
+			Unsorted.menuOptionCount = 0;
 			Class38_Sub1.aBoolean2615 = false;
 			Class23.method940(119, 0);
 
@@ -488,7 +488,7 @@ public final class AnimationDefinition {
 			Class3_Sub7.method122(-113);
 			Class3_Sub13_Sub7.aClass11_3087 = null;
 			Class38_Sub1.aBoolean2615 = false;
-			Class3_Sub13_Sub34.anInt3415 = 0;
+			Unsorted.menuOptionCount = 0;
 			Unsorted.aClass52_1112.method1161(new int[]{0, 0, 0, 0, 0}, -1, false, (int[])null, -1);
 
 			for(var1 = 0; 8 > var1; ++var1) {

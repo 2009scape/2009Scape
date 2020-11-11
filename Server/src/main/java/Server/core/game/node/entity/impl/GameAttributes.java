@@ -46,7 +46,7 @@ public final class GameAttributes {
 
 	/**
 	 * Writes the attribute data to the player buffer.
-	 * @param buffer The player's data buffer.
+	 * @param file The player's data buffer.
 	 */
 	@Deprecated
 	public void dump(String file) {
@@ -55,7 +55,7 @@ public final class GameAttributes {
 
 	/**
 	 * Parses the saved attributes from the buffer.
-	 * @param buffer The buffer.
+	 * @param file The buffer.
 	 */
 	@Deprecated
 	public void parse(String file) {

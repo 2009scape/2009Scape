@@ -1,6 +1,7 @@
 package plugin.skill.farming;
 
 import core.game.node.entity.player.Player;
+import core.game.system.SystemLogger;
 import core.game.system.task.Pulse;
 import core.game.world.GameWorld;
 import core.game.world.callback.CallBack;
@@ -15,7 +16,7 @@ public final class FarmingPulse extends Pulse implements CallBack {
 	@Override
 	public boolean pulse() {
 		for (Player p : Repository.getPlayers()) {
-			if (p == null) {
+			if (p == null || p.isArtificial()) {
 				continue;
 			}
 			p.getFarmingManager().cycle();

@@ -10,7 +10,7 @@ final class Class65 {
    static int anInt987 = 0;
    static int currentChunkX;
    static int anInt991 = -1;
-    static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array1825;
+    static AbstractSprite[] aAbstractSpriteArray1825;
 
 
     static int[] method1233(int[] var0) {
@@ -48,11 +48,11 @@ final class Class65 {
    static void method1235(int var0, int var1, int var2, int var3) {
       try {
          if(Class36.anInt638 == 1) {
-            aClass3_Sub28_Sub16Array1825[Unsorted.anInt2958 / 100].method643(-8 + Class70.anInt1053, -8 + Unsorted.anInt4062);
+            aAbstractSpriteArray1825[Unsorted.anInt2958 / 100].method643(-8 + Class70.anInt1053, -8 + Unsorted.anInt4062);
          }
 
           if(Class36.anInt638 == 2) {
-            aClass3_Sub28_Sub16Array1825[4 + Unsorted.anInt2958 / 100].method643(Class70.anInt1053 + -8, -8 + Unsorted.anInt4062);
+            aAbstractSpriteArray1825[4 + Unsorted.anInt2958 / 100].method643(Class70.anInt1053 + -8, -8 + Unsorted.anInt4062);
          }
 
          Class3_Sub13_Sub37.method347();
@@ -162,23 +162,23 @@ final class Class65 {
    static void method1240() {
       try {
          Class126.aClass3_Sub28_Sub17_1669 = null;
-         Class75_Sub3.aClass3_Sub28_Sub16Array2656 = null;
-         aClass3_Sub28_Sub16Array1825 = null;
+         Class75_Sub3.aAbstractSpriteArray2656 = null;
+         aAbstractSpriteArray1825 = null;
          Class3_Sub13_Sub22.aClass109Array3270 = null;
          Class157.aClass3_Sub28_Sub17_Sub1_2000 = null;
          Sprites.aClass3_Sub28_Sub16_Sub2Array2140 = null;
-         Class140_Sub4.aClass3_Sub28_Sub16Array2839 = null;
-         Class129_Sub1.aClass3_Sub28_Sub16Array2690 = null;
-         NPC.aClass3_Sub28_Sub16Array3977 = null;
+         Class140_Sub4.aAbstractSpriteArray2839 = null;
+         Class129_Sub1.aAbstractSpriteArray2690 = null;
+         NPC.aAbstractSpriteArray3977 = null;
          Class168.aClass3_Sub28_Sub17_2096 = null;
-         Class57.aClass3_Sub28_Sub16_895 = null;
-         Unsorted.aClass3_Sub28_Sub16Array1136 = null;
+         Class57.aAbstractSprite_895 = null;
+         Unsorted.aAbstractSpriteArray1136 = null;
          Class3_Sub13.aClass3_Sub28_Sub17_2379 = null;
-         Class45.aClass3_Sub28_Sub16_736 = null;
-         Unsorted.aClass3_Sub28_Sub16Array996 = null;
-         Class3_Sub13_Sub39.aClass3_Sub28_Sub16Array3458 = null;
-         Class166.aClass3_Sub28_Sub16Array2072 = null;
-         Class3_Sub13_Sub31.aClass3_Sub28_Sub16Array3373 = null;
+         Class45.aAbstractSprite_736 = null;
+         Unsorted.aAbstractSpriteArray996 = null;
+         Class3_Sub13_Sub39.aAbstractSpriteArray3458 = null;
+         Class166.aAbstractSpriteArray2072 = null;
+         Class3_Sub13_Sub31.aAbstractSpriteArray3373 = null;
          GameObject.aClass109Array1831 = null;
 
       } catch (RuntimeException var2) {

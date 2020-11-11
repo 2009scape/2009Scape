@@ -54,7 +54,6 @@ public abstract class MapZone implements Zone {
 	/**
 	 * Constructs a new {@code MapZone} {@code Object}.
 	 * @param name The name.
-	 * @param members If the map zone is members only.
 	 * @param overlappable If the zone can be overlapped.
 	 */
 	public MapZone(String name, boolean overlappable, ZoneRestriction... restrictions) {

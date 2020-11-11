@@ -14,7 +14,6 @@ public final class MerlinCrystal extends Quest {
 
 	/**
 	 * Constructs a new {@code MerlinCrystal} {@code Object}.
-	 * @param player the player.
 	 */
 	public MerlinCrystal() {
 		super("Merlin's Crystal", 87, 86, 6, 14, 0, 1, 7);
@@ -30,7 +29,7 @@ public final class MerlinCrystal extends Quest {
 		case 10:// after talking to arthur
 			line(player, "<str>I spoke to King Arthur and he said I would be worthy of <n><str>becoming a Knight of the Round Table if I could free Merlin<n><str>from a giant crystal that he has been trapped in.</str>" + "<n><br><br><br><blue> I should ask the <red>other Knights<blue> if they have any <red>advice<blue> for<n><blue>me on how I should go about doing this.", 11);
 			break;
-		case 20:// upon talking to kay/gawain
+		case 20:// upon talking to kay/gawain and learning how merlin got trapped
 			line(player, "<str>I spoke to King Arthur and he said I would be worthy of <n><str>becoming a Knight of the Round Table if I could free Merlin<n><str>from a giant crystal that he has been trapped in.</str>" + "<n><blue>Gawain told me it was the work of <red>Morgan Le Faye<blue>.", 11);
 			break;
 		case 30:// after talking to lancelot
@@ -77,7 +76,21 @@ public final class MerlinCrystal extends Quest {
 
 	@Override
 	public Quest newInstance(Object object) {
-		PluginManager.definePlugins(new CrateCutscenePlugin(), new MerlinCrystalPlugin(), new ArheinShopDialogue(), new BeggarDialogue(), new CandleMakerDialogue(), new KingArthurDialogue(), new MerlinCrystalOptionPlugin(), new SirKayDialogue(), new SirLancelotDialogue(), new SirLucan(), new SirMordredNPC(), new SirPalomedes(), new TheLadyOfTheLake(), new ThrantaxDialogue());
+		PluginManager.definePlugins(new CrateCutscenePlugin(),
+				new MerlinCrystalPlugin(),
+				new ArheinShopDialogue(),
+				new BeggarDialogue(),
+				new CandleMakerDialogue(),
+				new KingArthurDialogue(),
+				new MerlinCrystalOptionPlugin(),
+				new SirKayDialogue(),
+				new SirLancelotDialogue(),
+				new SirLucan(),
+				new SirMordredNPC(),
+				new SirPalomedes(),
+				new TheLadyOfTheLake(),
+				new ThrantaxDialogue(),
+				new RenegadeKnightDialogue());
 		return this;
 	}
 

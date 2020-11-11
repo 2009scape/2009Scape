@@ -135,8 +135,9 @@ public final class TzhaarFightPitsPlugin extends ActivityPlugin {
 				if (!WAR_PLAYERS.isEmpty()) {
 					resetLastVictor();
 					lastVictor = WAR_PLAYERS.get(0);
-					if (lastVictor != null && !lastVictor.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(2, 0)) {
-						lastVictor.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(lastVictor, 2, 0, true);
+					// Become the Champion of the Fight Pits
+					if (lastVictor != null) {
+						lastVictor.getAchievementDiaryManager().finishTask(lastVictor, DiaryType.KARAMJA, 2, 0);
 					}
 					addTokkul(lastVictor);
 					lastVictor.getAppearance().setSkullIcon(SKULL_ID);
@@ -203,9 +204,7 @@ public final class TzhaarFightPitsPlugin extends ActivityPlugin {
 
 	@Override
 	public boolean start(Player player, boolean login, Object... args) {
-		if (!player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 8)) {
-			player.getAchievementDiaryManager().updateTask(player, DiaryType.KARAMJA, 0, 8, true);
-		}
+		player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 0, 8);
 		if (!login) {
 			player.setAttribute("fight_pits", true);
 			ForceMovement.run(player, Location.create(2399, 5177, 0), Location.create(2399, 5175, 0));

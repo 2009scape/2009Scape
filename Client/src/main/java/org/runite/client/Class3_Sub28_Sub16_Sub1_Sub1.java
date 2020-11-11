@@ -5,7 +5,7 @@ import com.jogamp.opengl.GL4bc;
 import java.nio.ByteBuffer;
 
 
-final class Class3_Sub28_Sub16_Sub1_Sub1 extends Class3_Sub28_Sub16_Sub1 {
+final class Class3_Sub28_Sub16_Sub1_Sub1 extends HDSprite {
 
    final void method650(int[] var1) {
       this.anInt4075 = Class95.method1585((byte)111, this.anInt3707);

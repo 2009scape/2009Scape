@@ -46,15 +46,15 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
           }
 
           if(!Class38_Sub1.aBoolean2615) {
-             if(Class3_Sub13_Sub34.anInt3415 < 500) {
-                Class140_Sub7.aClass94Array2935[Class3_Sub13_Sub34.anInt3415] = var7;
-                Class163_Sub2_Sub1.aClass94Array4016[Class3_Sub13_Sub34.anInt3415] = var4;
-                Class114.anIntArray1578[Class3_Sub13_Sub34.anInt3415] = var0 == -1 ?Class3_Sub28_Sub5.anInt3590:var0;
-                Class3_Sub13_Sub7.aShortArray3095[Class3_Sub13_Sub34.anInt3415] = var6;
-                Class3_Sub13_Sub22.aLongArray3271[Class3_Sub13_Sub34.anInt3415] = var1;
-                Class117.anIntArray1613[Class3_Sub13_Sub34.anInt3415] = var5;
-                Class27.anIntArray512[Class3_Sub13_Sub34.anInt3415] = var8;
-                ++Class3_Sub13_Sub34.anInt3415;
+             if(Unsorted.menuOptionCount < 500) {
+                Class140_Sub7.aClass94Array2935[Unsorted.menuOptionCount] = var7;
+                Class163_Sub2_Sub1.aClass94Array4016[Unsorted.menuOptionCount] = var4;
+                Class114.anIntArray1578[Unsorted.menuOptionCount] = var0 == -1 ?Class3_Sub28_Sub5.anInt3590:var0;
+                Class3_Sub13_Sub7.aShortArray3095[Unsorted.menuOptionCount] = var6;
+                Class3_Sub13_Sub22.aLongArray3271[Unsorted.menuOptionCount] = var1;
+                Class117.anIntArray1613[Unsorted.menuOptionCount] = var5;
+                Class27.anIntArray512[Unsorted.menuOptionCount] = var8;
+                ++Unsorted.menuOptionCount;
              }
 
           }
@@ -235,26 +235,15 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
                            }
                         } else {
                            RSString[] inventoryOptions = var10.inventoryOptions;
-//                           System.out.println("inventoryOptions[0] = " + inventoryOptions[4]);
-                           RSString[] var11 = new RSString[var10.inventoryOptions.length];
-                           System.arraycopy(var10.inventoryOptions, 0, var11, 0, var10.inventoryOptions.length);
-						if (MouseWheel.shiftDown) {
-							var11[0] = var11[4];
-						}
                            if(Class123.aBoolean1656) {
                               inventoryOptions = Class3_Sub31.optionsArrayStringConstructor(inventoryOptions);
                            }
+                           
                            int var12;
                            byte var13;
-                           final boolean bool_0 = MouseWheel.shiftDown;
                            if(var9.method99()) {
                               for(var12 = 4; var12 >= 3; --var12) {
-                                 if(null != inventoryOptions[var12]) {
-                                    if (bool_0) {
-                                       var12 = var10.getShiftClickActionIndex();
-                                       inventoryOptions[var12] = inventoryOptions[4];
-
-                                    }
+                                 if(null != inventoryOptions && null != inventoryOptions[var12]) {
                                     if(var12 == 3) {
                                        var13 = 35;
                                     } else {
@@ -1199,7 +1188,7 @@ final class Class3_Sub24_Sub4 extends Class3_Sub24 {
       try {
          Class8.anInt101 = var1;
          Class3_Sub28_Sub8.anInt3611 = 20;
-         Class3_Sub28_Sub16.anInt3704 = 3;
+         AbstractSprite.anInt3704 = 3;
       } catch (RuntimeException var3) {
          throw ClientErrorException.clientError(var3, "va.FA(" + (byte) -53 + ',' + var1 + ')');
       }

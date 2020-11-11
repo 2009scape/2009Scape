@@ -561,7 +561,7 @@ final class CS2Script extends Linkable {
                         iStackCounter -= 2;
                         int k6 = ItemDefinition.intsStack[iStackCounter];
                         int j44 = ItemDefinition.intsStack[iStackCounter - -1];
-                        RSInterface class11_19 = Class3_Sub28_Sub16.method638(k6, j44);
+                        RSInterface class11_19 = AbstractSprite.method638(k6, j44);
                         if (null == class11_19 || j44 == -1) {
                            ItemDefinition.intsStack[iStackCounter++] = 0;
                         } else {
@@ -694,7 +694,7 @@ final class CS2Script extends Linkable {
                                     iStackCounter -= 2;
                                     int j67 = ItemDefinition.intsStack[1 + iStackCounter];
                                     int j45 = ItemDefinition.intsStack[iStackCounter];
-                                    class11_3.aClass11_302 = Class3_Sub28_Sub16.method638(j45, j67);
+                                    class11_3.aClass11_302 = AbstractSprite.method638(j45, j67);
                                     continue;
                               }
                               if (opcode == 1302) {
@@ -2937,7 +2937,7 @@ final class CS2Script extends Linkable {
                                                                                     if (Class143.loadingStage != 10 || Class163_Sub1_Sub1.anInt3375 != 0 || LoginHandler.loginStage != 0 || Unsorted.registryStage != 0)
                                                                                        ItemDefinition.intsStack[iStackCounter++] = 0;
                                                                                     else
-                                                                                       ItemDefinition.intsStack[iStackCounter++] = Class104.method1627(i37, (byte) -7) ? 1 : 0;
+                                                                                       ItemDefinition.intsStack[iStackCounter++] = WaterfallShader.method1627(i37, (byte) -7) ? 1 : 0;
                                                                                     continue;
                                                                               }
                                                                               if (opcode == 6504) {

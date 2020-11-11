@@ -5,13 +5,39 @@ import com.jogamp.opengl.GL4bc;
 import java.nio.ByteBuffer;
 
 
-final class Class165 implements Interface5 {
+final class WaterShader implements ShaderInterface {
 
-    static int anInt3285 = 128;
-    private final float[] aFloatArray2190 = new float[4];
+   static int anInt3285 = 128;
+   private final float[] aFloatArray2190 = new float[4];
    private static boolean aBoolean2191 = false;
    private int anInt2192 = -1;
    private int anInt2193 = -1;
+
+
+   public WaterShader() {
+      if(HDToolKit.maxTextureUnits >= 2) {
+         int[] textures = new int[1];
+         byte[] pixels = new byte[8];
+         int pixelsPos = 0;
+         while (pixelsPos < 8) {
+            pixels[pixelsPos] = (byte) (96 + ++pixelsPos * 159 / 8);
+         }
+//         for(int var3 = 0; var3 < 8; pixels[var3++] = (byte)(96 + var3 * 159 / 8)) {
+//         }
+         GL4bc var4 = HDToolKit.gl;
+         var4.glGenTextures(1, textures, 0);
+         var4.glBindTexture(3552, textures[0]);//TEXTURE_1D
+         //                TEXTURE_1D, level0, ALPHA, width8, border0, ALPHA, UNSIGNED_BYTE, pixels.
+         var4.glTexImage1D(3552, 0, 6406, 8, 0, 6406, 5121, ByteBuffer.wrap(pixels));
+         var4.glTexParameteri(3552, 10241, 9729);//TEXTURE_1D, TEXTURE_MIN_FILTER, LINEAR
+         var4.glTexParameteri(3552, 10240, 9729);//TEXTURE_1D, TEXTURE_MAG_FILTER, LINEAR
+         var4.glTexParameteri(3552, 10242, '\u812f');//TEXTURE_1D, TEXTURE_WRAP_S, CLAMP_TO_EDGE
+         this.anInt2192 = textures[0];
+         aBoolean2191 = HDToolKit.maxTextureUnits > 2 && HDToolKit.allows3DTextureMapping;
+         this.method2251();
+      }
+
+   }
 
 
    private void method2251() {
@@ -159,26 +185,6 @@ final class Class165 implements Interface5 {
       var2.glActiveTexture('\u84c0');
    }
 
-   public Class165() {
-      if(HDToolKit.anInt1789 >= 2) {
-         int[] var1 = new int[1];
-         byte[] var2 = new byte[8];
 
-         for(int var3 = 0; var3 < 8; var2[var3++] = (byte)(96 + var3 * 159 / 8)) {
-         }
-
-         GL4bc var4 = HDToolKit.gl;
-         var4.glGenTextures(1, var1, 0);
-         var4.glBindTexture(3552, var1[0]);
-         var4.glTexImage1D(3552, 0, 6406, 8, 0, 6406, 5121, ByteBuffer.wrap(var2));
-         var4.glTexParameteri(3552, 10241, 9729);
-         var4.glTexParameteri(3552, 10240, 9729);
-         var4.glTexParameteri(3552, 10242, '\u812f');
-         this.anInt2192 = var1[0];
-         aBoolean2191 = HDToolKit.anInt1789 > 2 && HDToolKit.supportTexture3D;
-         this.method2251();
-      }
-
-   }
 
 }

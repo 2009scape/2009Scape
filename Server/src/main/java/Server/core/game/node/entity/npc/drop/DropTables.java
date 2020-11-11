@@ -280,7 +280,7 @@ public enum DropTables {
                     new Item(ItemNames.RAW_BEAR_MEAT)},
             new ChanceItem[]{},
             new WeightedChanceItem[]{}),
-    BIRDS(new int[]{1475, 5120, 5121, 5122, 5123, 5133, 1475, 1476, 41, 951, 1017, 1401, 1402, 2313, 2314, 2315, 1016, 1550, 147, 1180, 1754, 1755, 1756, 2252, 4570, 4571, 1911, 6114, 46, 2693, 6113, 6112, 146, 149, 150, 450, 451, 1179, 1322, 1323, 1324, 1325, 1400, 2726, 2727, 3197, 138, 48, 4373, 4374, 4535, 139, 1751, 148, 1181, 6382, 2459, 2460, 2461, 2462, 2707, 2708, 6115, 6116, 3296, 6378, 1996, 3675, 3676, 6792}, 0, 0, 0, 0, 0, 0, 0, 0,
+    BIRDS(new int[]{1475, 5120, 5121, 5122, 5123, 5133, 1475, 1476, 41, 951, 1017, 1401, 1402, 2313, 2314, 2315, 1016, 1550, 147, 1180, 1754, 1755, 1756, 2252, 4570, 4571, 1911, 6114, 46, 2693, 6113, 6112, 146, 149, 150, 450, 451, 1179, 1322, 1323, 1324, 1325, 1400, 2726, 2727, 3197, 138, 4373, 4374, 4535, 139, 1751, 148, 1181, 6382, 2459, 2460, 2461, 2462, 2707, 2708, 6115, 6116, 3296, 6378, 1996, 3675, 3676, 6792}, 0, 0, 0, 0, 0, 0, 0, 0,
             new Item[]{new Item(ItemNames.BONES), new Item(ItemNames.FEATHER, 2)},
             new ChanceItem[]{},
             new WeightedChanceItem[]{}),
@@ -709,7 +709,11 @@ public enum DropTables {
                     new WeightedChanceItem(ItemNames.RAW_TUNA_359,1,4),
                     new WeightedChanceItem(ItemNames.SEAWEED,10,4),
                     new WeightedChanceItem(ItemNames.OYSTER_PEARL,1,2,1)
-            });
+            }),
+    OOMLIE_BIRD(new int[]{48}, 0, 0, 0, 0, 0, 0, 0, 0,
+            new Item[]{new Item(ItemNames.BONES), new Item(ItemNames.RAW_OOMLIE_2337)},
+            new ChanceItem[]{},
+            new WeightedChanceItem[]{});
     //WARPED_TERROR_BIRDS(new int[]{6285, 6286, 6287, 6288, 6289, 6290, 6291, 6292, 6293, 6294, 6295, 6322, 6323, 6324, 6325, 6326, 6327, 6328, 6329, 6330, 6331, 6332})
     //UNDEAD_CHICKEN(new int[]{1692})
     //map our npc ids to their drop table

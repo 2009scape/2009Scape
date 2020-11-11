@@ -49,9 +49,7 @@ public class FenceJumpShortcut extends AgilityShortcut {
 			@Override
 			public boolean pulse() {
 				player.animate(JUMP_ANIM);
-				if (!player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).isComplete(0, 5)) {
-					player.getAchievementDiaryManager().getDiary(DiaryType.VARROCK).updateTask(player, 0, 5, true);
-				}
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 5);
 				return true;
 			}
 		});

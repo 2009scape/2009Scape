@@ -72,14 +72,12 @@ object EssenceTeleport {
                             location
                         }
                         player.properties.teleportLocation = loc
+
                         if (npc.id == 553) {
-                            if (!player.achievementDiaryManager.getDiary(DiaryType.VARROCK).isComplete(0, 1)) {
-                                player.achievementDiaryManager.getDiary(DiaryType.VARROCK).updateTask(player, 0, 1, true)
-                            }
-                        } else if (npc.id == 300) {
-                            if (!player.achievementDiaryManager.getDiary(DiaryType.LUMBRIDGE).isComplete(0, 1)) {
-                                player.achievementDiaryManager.getDiary(DiaryType.LUMBRIDGE).updateTask(player, 0, 1, true)
-                            }
+                            player.achievementDiaryManager.finishTask(player, DiaryType.VARROCK, 0, 1)
+                        }
+                        if (npc.id == 300) {
+                            player.achievementDiaryManager.finishTask(player, DiaryType.LUMBRIDGE, 1, 14)
                         }
                     }
                     3 -> {
@@ -144,7 +142,10 @@ object EssenceTeleport {
              * Represents the returining location.
              */
             val location: Location) {
-        AUBURY(553, 0x2, Location(3253, 3401, 0)), SEDRIDOR(300, 0x4, Location(3107, 9573, 0)), DISTENTOR(462, 0x8, Location(2591, 3085, 0)), CROMPERTY(2328, 0x12, Location.create(2682, 3323, 0));
+        AUBURY(553, 0x2, Location(3253, 3401, 0)),
+        SEDRIDOR(300, 0x4, Location(3107, 9573, 0)),
+        DISTENTOR(462, 0x8, Location(2591, 3085, 0)),
+        CROMPERTY(2328, 0x12, Location.create(2682, 3323, 0));
 
         /**
          * Gets the npc.

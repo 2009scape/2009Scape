@@ -110,7 +110,7 @@ abstract class Class146 {
             Class3_Sub22.method403();
             Class3_Sub28_Sub4.method551(-1, 3);
             Class3_Sub13_Sub17.aBoolean3207 = true;
-            Class165.method2254();
+            WaterShader.method2254();
             Unsorted.anInt1244 = -1;
             Class145.anInt3072 = -1;
 
@@ -126,7 +126,7 @@ abstract class Class146 {
                var28.method149(Class75_Sub2.aClass3_Sub2ArrayArrayArray2638, var26, false);
             }
 
-            Class165.method2253();
+            WaterShader.method2253();
          } else {
             for(var14 = Class3_Sub13_Sub35.anInt3419; var14 < Class3_Sub17.anInt2456; ++var14) {
                for(var15 = 0; var15 < Class3_Sub23.aClass3_Sub11ArrayArray2542[var14].length; ++var15) {

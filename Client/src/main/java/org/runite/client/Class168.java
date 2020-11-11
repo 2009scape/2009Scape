@@ -900,7 +900,7 @@ final class Class168 {
             while (!var1) {
                 var1 = true;
 
-                for (int var2 = 0; -1 + Class3_Sub13_Sub34.anInt3415 > var2; ++var2) {
+                for (int var2 = 0; -1 + Unsorted.menuOptionCount > var2; ++var2) {
                     if (Class3_Sub13_Sub7.aShortArray3095[var2] < 1000 && Class3_Sub13_Sub7.aShortArray3095[1 + var2] > 1000) {
                         RSString var3 = Class163_Sub2_Sub1.aClass94Array4016[var2];
                         var1 = false;

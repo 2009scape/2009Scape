@@ -164,9 +164,6 @@ public final class CookingPulse extends Pulse {
 			return false;
 		}
 		//lumbridge diary
-		if (object.getId() == 114 && player.getViewport().getRegion().getId() == 12850 && !player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(0, 7)) {
-			player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 0, 7, true);
-		}
 		if (CookableItems.forId(food) != null && player.getInventory().remove(item)) {
 			if (!burned) {
 				player.getInventory().add(CookableItems.getCooked(food));

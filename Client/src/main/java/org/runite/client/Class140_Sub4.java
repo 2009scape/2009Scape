@@ -87,7 +87,7 @@ abstract class Class140_Sub4 extends GameObject {
    int[] anIntArray2836 = new int[4];
    int textColor = 0;
    int anInt2838 = 0;
-   static Class3_Sub28_Sub16[] aClass3_Sub28_Sub16Array2839;
+   static AbstractSprite[] aAbstractSpriteArray2839;
    int anInt2840;
    int anInt2842 = -1;
 

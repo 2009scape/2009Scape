@@ -2,8 +2,11 @@ package plugin.dialogue;
 
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.player.link.diary.DiaryType;
+import core.game.world.map.Location;
 import core.plugin.InitializablePlugin;
 import core.game.node.item.Item;
+import plugin.skill.firemaking.Log;
 
 /**
  * Represents the kaylee dialogue plugin.
@@ -119,6 +122,7 @@ public final class KayleeDialogue extends DialoguePlugin {
 		case 100:
 			if (!player.getInventory().containsItem(COINS)) {
 				end();
+				player.getPacketDispatch().sendMessage("You need 3 gold coins to buy ale.");
 				return true;
 			}
 			if (player.getInventory().remove(COINS)) {
@@ -133,6 +137,7 @@ public final class KayleeDialogue extends DialoguePlugin {
 			break;
 		case 101:
 			end();
+			player.getAchievementDiaryManager().finishTask(player,DiaryType.FALADOR, 0, 1);
 			break;
 		case 120:
 			if (player.getInventory().remove(COINS)) {

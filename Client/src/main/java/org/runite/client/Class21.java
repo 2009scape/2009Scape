@@ -17,13 +17,13 @@ final class Class21 {
          Class38_Sub1.aBoolean2615 = false;
          Unsorted.incomingPacketLength = 0;
          Class65.anInt987 = 0;
-         Class3_Sub13_Sub34.anInt3415 = 0;
+         Unsorted.menuOptionCount = 0;
          LinkableRSString.anInt2582 = -1;
          Class161.anInt2028 = 0;
          Class38_Sub1.anInt2617 = 0;
          Class24.anInt469 = -1;
          GraphicDefinition.incomingBuffer.index = 0;
-         Class3_Sub28_Sub16.anInt3699 = 0;
+         AbstractSprite.anInt3699 = 0;
          Unsorted.incomingOpcode = -1;
 
          int var1;
@@ -84,7 +84,7 @@ final class Class21 {
             Class3_Sub13_Sub7.aClass11_3087 = null;
          }
 
-         int var6 = Class3_Sub13_Sub34.anInt3415;
+         int var6 = Unsorted.menuOptionCount;
 
          int var7;
          for(var7 = 0; var6 > var7; ++var7) {
@@ -93,14 +93,14 @@ final class Class21 {
             }
          }
 
-         if(1 == Class3_Sub13_Sub34.anInt3415) {
+         if(1 == Unsorted.menuOptionCount) {
             Class38_Sub1.aBoolean2615 = false;
             Class75.method1340(AbstractIndexedSprite.anInt1462, Class3_Sub28_Sub3.anInt3552, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537);
          } else {
             Class75.method1340(AbstractIndexedSprite.anInt1462, Class3_Sub28_Sub3.anInt3552, Class3_Sub13_Sub33.anInt3395, Class3_Sub28_Sub1.anInt3537);
             var7 = Class168.aClass3_Sub28_Sub17_2096.method682(RSString.parse(GameConfig.RCM_TITLE));
 
-            for(int var8 = 0; Class3_Sub13_Sub34.anInt3415 > var8; ++var8) {
+            for(int var8 = 0; Unsorted.menuOptionCount > var8; ++var8) {
                int var9 = Class168.aClass3_Sub28_Sub17_2096.method682(Unsorted.method802(var8));
                if(var7 < var9) {
                   var7 = var9;
@@ -108,7 +108,7 @@ final class Class21 {
             }
 
             Class3_Sub28_Sub3.anInt3552 = 8 + var7;
-            Class3_Sub28_Sub1.anInt3537 = 15 * Class3_Sub13_Sub34.anInt3415 + (!Unsorted.aBoolean1951?22:26);
+            Class3_Sub28_Sub1.anInt3537 = 15 * Unsorted.menuOptionCount + (!Unsorted.aBoolean1951?22:26);
          }
 
          if(var5 != null) {

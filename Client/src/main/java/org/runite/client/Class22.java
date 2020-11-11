@@ -1,12 +1,13 @@
 package org.runite.client;
 
+import com.jogamp.opengl.GL;
 import com.jogamp.opengl.GL4bc;
 
 import java.nio.IntBuffer;
 
 public final class Class22 {
 
-   static Class3_Sub28_Sub16_Sub1 aClass3_Sub28_Sub16_Sub1_447 = null;
+   static HDSprite aHDSprite_447 = null;
    static int anInt448 = 0;
    static int anInt449 = 0;
    private static int anInt450 = 0;
@@ -14,7 +15,7 @@ public final class Class22 {
 
 
    static void method921() {
-      aClass3_Sub28_Sub16_Sub1_447 = null;
+      aHDSprite_447 = null;
    }
 
    public static void resetClipping() {
@@ -47,7 +48,7 @@ public final class Class22 {
       float var8 = (float)HDToolKit.viewHeight - ((float)var1 + 0.3F);
       float var9 = var8 - (float)(var3 - 1);
       GL4bc var10 = HDToolKit.gl;
-      var10.glBegin(2);
+      var10.glBegin(GL.GL_LINE_LOOP);
       var10.glColor4ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4, var5 > 255?-1:(byte)var5);
       var10.glVertex2f(var6, var8);
       var10.glVertex2f(var6, var9);
@@ -90,7 +91,7 @@ public final class Class22 {
          HDToolKit.method1835();
          GL4bc var25 = HDToolKit.gl;
          var25.glColor3ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4);
-         var25.glBegin(6);
+         var25.glBegin(GL.GL_TRIANGLE_FAN);
          if(var12 <= var11) {
             var25.glVertex2f((float)var20, (float)(HDToolKit.viewHeight - var24));
             var25.glVertex2f((float)var19, (float)(HDToolKit.viewHeight - var23));
@@ -146,7 +147,7 @@ public final class Class22 {
       float var7 = (float)HDToolKit.viewHeight - ((float)var1 + 0.3F);
       float var8 = (float)HDToolKit.viewHeight - ((float)var3 + 0.3F);
       GL4bc var9 = HDToolKit.gl;
-      var9.glBegin(2);
+      var9.glBegin(GL.GL_LINE_LOOP);
       var9.glColor3ub((byte)(var4 >> 16), (byte)(var4 >> 8), (byte)var4);
       var9.glVertex2f(var5, var7);
       var9.glVertex2f(var6, var8);
@@ -185,9 +186,9 @@ public final class Class22 {
       method921();
    }
 
-   static void method936(Class3_Sub28_Sub16_Sub1 var0) {
+   static void method936(HDSprite var0) {
       if(var0.anInt3696 == anInt451 - anInt448) {
-         aClass3_Sub28_Sub16_Sub1_447 = var0;
+         aHDSprite_447 = var0;
       } else {
          throw new IllegalArgumentException();
       }

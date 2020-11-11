@@ -1,5 +1,6 @@
 package plugin.skill.agility.shortcuts;
 
+import core.game.node.entity.player.link.diary.DiaryType;
 import plugin.skill.agility.AgilityShortcut;
 import core.game.node.Node;
 import core.game.node.entity.impl.ForceMovement;
@@ -92,6 +93,9 @@ public class TunnelShortcut extends AgilityShortcut {
 					break;
 				case 6:
 					player.animate(ForceMovement.WALK_ANIMATION);
+					if ((object.getId() == 9309 || object.getId() == 9310) && !player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).isComplete(1,1)) {
+						player.getAchievementDiaryManager().getDiary(DiaryType.FALADOR).updateTask(player, 1, 1, true);
+					}
 					return true;
 				}
 				return false;

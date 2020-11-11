@@ -728,9 +728,6 @@ public final class AvaDialogue extends DialoguePlugin {
 		}
 		if (upgrade) {
 			player.getInventory().remove(new Item(886, 75));
-			if (!player.getAchievementDiaryManager().getDiary(DiaryType.LUMBRIDGE).isComplete(1, 0)) {
-				player.getAchievementDiaryManager().updateTask(player, DiaryType.LUMBRIDGE, 1, 0, true);
-			}
 		}
 		removeAll(player, item, upgrade ? AnimalMagnetism.AVAS_ATTRACTOR : AnimalMagnetism.AVAS_ACCUMULATOR);
 		player.getInventory().remove(coins);

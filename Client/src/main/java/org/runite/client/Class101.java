@@ -73,7 +73,7 @@ final class Class101 {
 
    static void method1609() {
       try {
-         Unsorted.anInterface5Array70 = null;
+         Unsorted.anShaderInterfaceArray70 = null;
 
           Class88.method1455();
       } catch (RuntimeException var2) {

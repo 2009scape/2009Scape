@@ -1,5 +1,7 @@
 package plugin.skill.farming.patch;
 
+import core.game.container.impl.EquipmentContainer;
+import core.game.world.map.Location;
 import plugin.skill.Skills;
 import plugin.skill.farming.FarmingNode;
 import plugin.skill.farming.wrapper.PatchCycle;
@@ -54,9 +56,17 @@ public class PickingNode extends FarmingNode {
 
 	@Override
 	public void checkHealth(final PatchCycle cycle) {
+		final Player player = cycle.getPlayer();
 		cycle.addConfigValue(getPickedBase(maxPick));
-		cycle.getPlayer().getSkills().addExperience(Skills.FARMING, getExperiences()[2], true);
-		cycle.getPlayer().getPacketDispatch().sendMessage("You examine the " + cycle.getWrapper().getName() + " for signs of disease and find that it's in perfect health.");
+		double xp = getExperiences()[2];
+		// Check for falador shield bonus
+		int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
+		if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
+				&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+			xp = xp * 1.1;
+		}
+		player.getSkills().addExperience(Skills.FARMING, xp, true);
+		player.getPacketDispatch().sendMessage("You examine the " + cycle.getWrapper().getName() + " for signs of disease and find that it's in perfect health.");
 	}
 
 	@Override
@@ -65,10 +75,18 @@ public class PickingNode extends FarmingNode {
 		cycle.getGrowthHandler().setGrowthUpdate();
 		cycle.addConfigValue(getPickedBase(getProductAmount(cycle.getState()) - 1));
 		player.getInventory().add(getProduct());
-		player.getSkills().addExperience(Skills.FARMING, getExperiences()[1], true);
+		double xp = getExperiences()[1];
+		// Check for falador shield bonus
+		int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
+		if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
+				&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+			xp = xp * 1.1;
+		}
+		player.getSkills().addExperience(Skills.FARMING, xp, true);
 		if (cycle.getWrapper().getName().contains("tree")) {
-			if (this instanceof FruitTreeNode && !player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).isComplete(1, 7)) {
-				player.getAchievementDiaryManager().getDiary(DiaryType.KARAMJA).updateTask(player, 1, 7, true);
+			if (this instanceof FruitTreeNode
+					&& player.getLocation().withinDistance(new Location(2764,3212,0), 10)) { // check player is near brimhaven fruit tree patch
+				player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 12);
 			}
 			player.getPacketDispatch().sendMessage("You pick " + (StringUtils.isPlusN(getProduct().getName().toLowerCase()) ? "an" : "a") + " " + getProduct().getName().toLowerCase() + ".");
 		} else {

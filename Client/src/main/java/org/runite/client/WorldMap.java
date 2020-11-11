@@ -260,11 +260,11 @@ final class WorldMap extends Node {
                     Class3_Sub5.method111((byte) -100, var0, var2, var15, var0 - -var4, var8, var6, var7, var3 + var2);
                 }
 
-                if (0 < Class3_Sub28_Sub16.anInt3704) {
+                if (0 < AbstractSprite.anInt3704) {
                     --Class3_Sub28_Sub8.anInt3611;
                     if (Class3_Sub28_Sub8.anInt3611 == 0) {
                         Class3_Sub28_Sub8.anInt3611 = 20;
-                        --Class3_Sub28_Sub16.anInt3704;
+                        --AbstractSprite.anInt3704;
                     }
                 }
 

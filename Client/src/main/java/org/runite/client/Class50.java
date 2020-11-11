@@ -5,7 +5,7 @@ final class Class50 {
 	static int anInt820 = 0;
 	int anInt821;
 	int anInt823;
-	static Class3_Sub28_Sub16 aClass3_Sub28_Sub16_824;
+	static AbstractSprite aAbstractSprite_824;
 	static long[] aLongArray826 = new long[200];
 	static int anInt828 = 0;
 	int anInt830;

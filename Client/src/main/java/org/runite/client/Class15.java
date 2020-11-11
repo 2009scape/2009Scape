@@ -226,9 +226,9 @@ final class Class15 implements Runnable {
       }
    }
 
-   static Class3_Sub28_Sub16[] method891(int var0) {
+   static AbstractSprite[] method891(int var0) {
       try {
-         Class3_Sub28_Sub16[] var1 = new Class3_Sub28_Sub16[Class95.anInt1338];
+         AbstractSprite[] var1 = new AbstractSprite[Class95.anInt1338];
          if(var0 != -5) {
             method894(113L);
          }
@@ -243,7 +243,7 @@ final class Class15 implements Runnable {
             }
 
             if(HDToolKit.highDetail) {
-               var1[var2] = new Class3_Sub28_Sub16_Sub1(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[var2], Unsorted.anIntArray2591[var2], Class140_Sub7.anIntArray2931[var2], Unsorted.anIntArray3076[var2], var5);
+               var1[var2] = new HDSprite(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[var2], Unsorted.anIntArray2591[var2], Class140_Sub7.anIntArray2931[var2], Unsorted.anIntArray3076[var2], var5);
             } else {
                var1[var2] = new Class3_Sub28_Sub16_Sub2(Class3_Sub15.anInt2426, Class133.anInt1748, Class164.anIntArray2048[var2], Unsorted.anIntArray2591[var2], Class140_Sub7.anIntArray2931[var2], Unsorted.anIntArray3076[var2], var5);
             }

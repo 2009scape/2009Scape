@@ -28,6 +28,7 @@ public class TreeNode extends FarmingNode {
 	@Override
 	public void checkHealth(final PatchCycle cycle) {
 		cycle.addConfigValue(getCheckHealthBase(cycle));
+		// don't need to wory about falador shield because it doesn't apply to any tree nodes
 		cycle.getPlayer().getSkills().addExperience(Skills.FARMING, getExperiences()[1], true);
 		cycle.getPlayer().getPacketDispatch().sendMessage("You examine the " + cycle.getWrapper().getName() + " for signs of disease and find that it's in perfect health.");
 	}

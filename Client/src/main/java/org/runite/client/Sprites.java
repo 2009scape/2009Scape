@@ -39,15 +39,15 @@ final class Sprites {
    static void method887(CacheIndex index8) {
       try {
          aClass3_Sub28_Sub16_Sub2Array2140 = Class157.method2176(mapFunctionSpriteArchive, index8);
-         Class75_Sub3.aClass3_Sub28_Sub16Array2656 = Class140_Sub6.getSprites(hitmarkSpriteArchive, index8);
-         Unsorted.aClass3_Sub28_Sub16Array996 = Class140_Sub6.getSprites(hitbarDefaultSpriteArchive, index8);
-         Class3_Sub13_Sub31.aClass3_Sub28_Sub16Array3373 = Class140_Sub6.getSprites(headiconsPkSpriteArchive, index8);
-         NPC.aClass3_Sub28_Sub16Array3977 = Class140_Sub6.getSprites(headiconsPrayerSpriteArchive, index8);
-         Class166.aClass3_Sub28_Sub16Array2072 = Class140_Sub6.getSprites(headiconsHintSpriteArchive, index8);
-         Class129_Sub1.aClass3_Sub28_Sub16Array2690 = Class140_Sub6.getSprites(hintMapMarkersSpriteArchive, index8);
-         Class45.aClass3_Sub28_Sub16_736 = Unsorted.method602(mapFlagSpriteArchive, index8);
-         Class65.aClass3_Sub28_Sub16Array1825 = Class3_Sub13_Sub23_Sub1.method286(crossSpriteArchive, index8);
-         Unsorted.aClass3_Sub28_Sub16Array1136 = Class3_Sub13_Sub23_Sub1.method286(mapDotsSpriteArchive, index8);
+         Class75_Sub3.aAbstractSpriteArray2656 = Class140_Sub6.getSprites(hitmarkSpriteArchive, index8);
+         Unsorted.aAbstractSpriteArray996 = Class140_Sub6.getSprites(hitbarDefaultSpriteArchive, index8);
+         Class3_Sub13_Sub31.aAbstractSpriteArray3373 = Class140_Sub6.getSprites(headiconsPkSpriteArchive, index8);
+         NPC.aAbstractSpriteArray3977 = Class140_Sub6.getSprites(headiconsPrayerSpriteArchive, index8);
+         Class166.aAbstractSpriteArray2072 = Class140_Sub6.getSprites(headiconsHintSpriteArchive, index8);
+         Class129_Sub1.aAbstractSpriteArray2690 = Class140_Sub6.getSprites(hintMapMarkersSpriteArchive, index8);
+         Class45.aAbstractSprite_736 = Unsorted.method602(mapFlagSpriteArchive, index8);
+         Class65.aAbstractSpriteArray1825 = Class3_Sub13_Sub23_Sub1.method286(crossSpriteArchive, index8);
+         Unsorted.aAbstractSpriteArray1136 = Class3_Sub13_Sub23_Sub1.method286(mapDotsSpriteArchive, index8);
          GameObject.aClass109Array1831 = Class85.method1424(index8, scrollbarSpriteArchive);
          Class3_Sub13_Sub22.aClass109Array3270 = Class85.method1424(index8, nameIconsSpriteArchive);
          Class3_Sub13.aClass3_Sub28_Sub17_2379.method697(Class3_Sub13_Sub22.aClass109Array3270, (int[])null);
@@ -64,9 +64,9 @@ final class Sprites {
          Class3_Sub28_Sub16_Sub2 var10 = Class40.method1043(0, index8, compassSpriteArchive);
          Objects.requireNonNull(var10).method665();
          if(HDToolKit.highDetail) {
-            Class57.aClass3_Sub28_Sub16_895 = new Class3_Sub28_Sub16_Sub1(var10);
+            Class57.aAbstractSprite_895 = new HDSprite(var10);
          } else {
-            Class57.aClass3_Sub28_Sub16_895 = var10;
+            Class57.aAbstractSprite_895 = var10;
          }
 
          Class3_Sub28_Sub16_Sub2[] var3 = Class157.method2176(hintMapEdgeSpriteArchive, index8);
@@ -77,13 +77,13 @@ final class Sprites {
          }
 
          if(HDToolKit.highDetail) {
-            Class3_Sub13_Sub39.aClass3_Sub28_Sub16Array3458 = new Class3_Sub28_Sub16[var3.length];
+            Class3_Sub13_Sub39.aAbstractSpriteArray3458 = new AbstractSprite[var3.length];
 
             for(var4 = 0; var4 < var3.length; ++var4) {
-               Class3_Sub13_Sub39.aClass3_Sub28_Sub16Array3458[var4] = new Class3_Sub28_Sub16_Sub1(var3[var4]);
+               Class3_Sub13_Sub39.aAbstractSpriteArray3458[var4] = new HDSprite(var3[var4]);
             }
          } else {
-            Class3_Sub13_Sub39.aClass3_Sub28_Sub16Array3458 = var3;
+            Class3_Sub13_Sub39.aAbstractSpriteArray3458 = var3;
          }
 
          int var5 = (int)((double) 21 * Math.random()) - 10;
@@ -97,13 +97,13 @@ final class Sprites {
          }
 
          if(HDToolKit.highDetail) {
-            Class140_Sub4.aClass3_Sub28_Sub16Array2839 = new Class3_Sub28_Sub16[aClass3_Sub28_Sub16_Sub2Array2140.length];
+            Class140_Sub4.aAbstractSpriteArray2839 = new AbstractSprite[aClass3_Sub28_Sub16_Sub2Array2140.length];
 
             for(var8 = 0; var8 < aClass3_Sub28_Sub16_Sub2Array2140.length; ++var8) {
-               Class140_Sub4.aClass3_Sub28_Sub16Array2839[var8] = new Class3_Sub28_Sub16_Sub1(aClass3_Sub28_Sub16_Sub2Array2140[var8]);
+               Class140_Sub4.aAbstractSpriteArray2839[var8] = new HDSprite(aClass3_Sub28_Sub16_Sub2Array2140[var8]);
             }
          } else {
-            Class140_Sub4.aClass3_Sub28_Sub16Array2839 = aClass3_Sub28_Sub16_Sub2Array2140;
+            Class140_Sub4.aAbstractSpriteArray2839 = aClass3_Sub28_Sub16_Sub2Array2140;
          }
 
       } catch (RuntimeException var9) {
