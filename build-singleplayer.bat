@@ -24,10 +24,10 @@ copy /Y "Server\build\libs\server-1.0.0.jar" "Single-Player\server.jar"
 echo.
 
 echo Copying server data...
-del Single-Player/data
+del /S /Q "Single-Player/data"
 xcopy /E /I /Y "Server\data" "Single-Player\data"
 xcopy /E /I /Y "Server\db_exports\*.sql" "Single-Player\data"
-del Single-Player/worldprops
+del /S /Q "Single-Player/worldprops"
 xcopy /E /I /Y "Server\worldprops" "Single-Player\worldprops"
 : Set Debug/Dev mode to false on single player server config
 powershell -Command "(gc Single-Player\worldprops\default.json) -replace '\"debug\": true', '\"debug\": false' -replace '\"dev\": true', '\"dev\": false' | Out-File -Encoding Default Single-Player\worldprops\default.json"
