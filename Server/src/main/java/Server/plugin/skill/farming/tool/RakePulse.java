@@ -57,10 +57,8 @@ public final class RakePulse extends ToolAction {
 			if (player.getInventory().add(FarmingConstant.WEEDS)) {
 				wrapper.addConfigValue(wrapper.getState() + 1);
 				double xp = 4;
-				// Check for falador shield bonus
-				int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
-				if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
-						&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+				// Check for Falador shield bonus
+				if (hasFaladorShield(player) && player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
 					xp = xp * 1.1;
 				}
 				player.getSkills().addExperience(Skills.FARMING, xp, true);
@@ -89,4 +87,8 @@ public final class RakePulse extends ToolAction {
 		return true;
 	}
 
+	boolean hasFaladorShield(Player player) {
+		Item shield = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD);
+		return shield != null && (shield.getId() == 14577 || shield.getId() == 14580);
+	}
 }

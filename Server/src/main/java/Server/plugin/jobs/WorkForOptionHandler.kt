@@ -7,6 +7,7 @@ import core.game.interaction.OptionHandler
 import core.game.node.Node
 import core.game.node.entity.npc.NPC
 import core.game.node.entity.player.Player
+import core.game.node.entity.player.link.diary.DiaryType
 import core.game.node.item.Item
 import core.plugin.InitializablePlugin
 import core.plugin.Plugin
@@ -95,6 +96,9 @@ class WorkForOptionHandler : OptionHandler() {
             0 -> {
                 val job = GatheringJobs.values()[jobId]
                 player.dialogueInterpreter.sendItemMessage(job.itemId,"You are assigned to gather $amount ${Item(job.itemId).name.toLowerCase()}")
+
+                // Have the Fishing Tutor send you on an errand
+                if (node.id == 4901) player.achievementDiaryManager.finishTask(player, DiaryType.LUMBRIDGE, 0, 14);
             }
             1 -> {
                 val job = SlayingJob.values()[jobId]

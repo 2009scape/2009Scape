@@ -45,7 +45,9 @@ public class LumbridgeSwampGiantRatNPC extends AbstractNPC {
     @Override
     public void finalizeDeath(final Entity killer) {
         super.finalizeDeath(killer);
-        if (killer instanceof Player && killer.getViewport().getRegion().getId() == 12593) {
+
+        // Kill a giant rat in Lumbridge Swamp
+        if (killer instanceof Player && (killer.getViewport().getRegion().getId() == 12593 || killer.getViewport().getRegion().getId() == 12849)) {
             killer.asPlayer().getAchievementDiaryManager().finishTask(killer.asPlayer(), DiaryType.LUMBRIDGE, 1, 7);
         }
     }

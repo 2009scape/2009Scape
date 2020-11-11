@@ -140,12 +140,13 @@ public final class FireMakingPulse extends SkillPulse<Item> {
 		}
 		player.getSkills().addExperience(Skills.FIREMAKING,fire.getXp());
 
+		int playerRegion = player.getViewport().getRegion().getId();
 
-		if (fire == Log.MAGIC && player.getLocation().getRegionId() == 10806) {
+		if (fire == Log.MAGIC && playerRegion == 10806) {
 			player.getAchievementDiaryManager().finishTask(player,DiaryType.SEERS_VILLAGE,2, 5);
 		}
 		// Light a campfire from normal logs in Lumbridge Swamp
-		if (fire == Log.NORMAL && player.getViewport().getRegion().getId() == 12593) {
+		if (fire == Log.NORMAL && (playerRegion == 12593 || playerRegion == 12849)) {
 			player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 1, 9);
 		}
 		// Light a willow log fire in Lumbridge Castle courtyard

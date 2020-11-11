@@ -147,10 +147,8 @@ public final class SpadePulse extends ToolAction {
 					if (wrapper.getPatch() == FarmingPatch.TREE) {
 						double xp = 6;
 
-						// Check for falador shield bonus
-						int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD) == null ? 0 : player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
-						if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
-								&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+						// Check for Falador shield bonus
+						if (hasFaladorShield(player) && player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
 							xp = xp * 1.1;
 						}
 						player.getSkills().addExperience(Skills.FARMING, xp, true);
@@ -185,10 +183,8 @@ public final class SpadePulse extends ToolAction {
 		final Item item = wrapper.getNode().getProduct();
 	    player.getInventory().add(item);
 		double xp = wrapper.getNode().getExperiences()[1];
-		// Check for falador shield bonus
-		int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD) == null ? 0 : player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
-		if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
-				&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+		// Check for Falador shield bonus
+		if (hasFaladorShield(player) && player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
 			xp = xp * 1.1;
 		}
 		player.getSkills().addExperience(Skills.FARMING, xp, true);
@@ -259,4 +255,8 @@ public final class SpadePulse extends ToolAction {
 		return true;
 	}
 
+	boolean hasFaladorShield(Player player) {
+		Item shield = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD);
+		return shield != null && (shield.getId() == 14577 || shield.getId() == 14580);
+	}
 }

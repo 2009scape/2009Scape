@@ -103,6 +103,7 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
                         GroundItemManager.create(DragonSlayer.SHIELD, player);
                     }
                     interpreter.sendItemMessage(DragonSlayer.SHIELD, "The Duke hands you a heavy orange shield.");
+                    // Obtain an Anti-dragonbreath shield from Duke Horacio
                     player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 2, 5);
                     stage = 412;
                     break;
@@ -259,6 +260,8 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 		npc = (NPC) args[0];
 		interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Greetings. Welcome to my castle.");
 		stage = 0;
+        // Speak to the Duke of Lumbridge
+        player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 0, 2);
 		return true;
 	}
 
@@ -285,6 +288,8 @@ public final class DukeHoracioDialogue extends DialoguePlugin {
 				GroundItemManager.create(DragonSlayer.SHIELD, player);
 			}
 			interpreter.sendItemMessage(DragonSlayer.SHIELD, "The Duke hands you the shield.");
+            // Obtain an Anti-dragonbreath shield from Duke Horacio
+            player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 2, 5);
 			stage = 805;
 			break;
 		case 805:

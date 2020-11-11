@@ -54,15 +54,18 @@ public class PickingNode extends FarmingNode {
 		return super.getNextStage(cycle);
 	}
 
+	boolean hasFaladorShield(Player player) {
+		Item shield = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD);
+		return shield != null && (shield.getId() == 14577 || shield.getId() == 14580);
+	}
+
 	@Override
 	public void checkHealth(final PatchCycle cycle) {
 		final Player player = cycle.getPlayer();
 		cycle.addConfigValue(getPickedBase(maxPick));
 		double xp = getExperiences()[2];
-		// Check for falador shield bonus
-		int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
-		if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
-				&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+		// Check for Falador shield bonus
+		if (hasFaladorShield(player) && player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
 			xp = xp * 1.1;
 		}
 		player.getSkills().addExperience(Skills.FARMING, xp, true);
@@ -77,9 +80,7 @@ public class PickingNode extends FarmingNode {
 		player.getInventory().add(getProduct());
 		double xp = getExperiences()[1];
 		// Check for falador shield bonus
-		int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
-		if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
-				&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+		if (hasFaladorShield(player) && player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
 			xp = xp * 1.1;
 		}
 		player.getSkills().addExperience(Skills.FARMING, xp, true);

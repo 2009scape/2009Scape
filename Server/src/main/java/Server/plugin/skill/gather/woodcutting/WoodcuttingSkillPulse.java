@@ -260,11 +260,13 @@ public class WoodcuttingSkillPulse extends Pulse {
             player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 8);
         }
 
+        int playerRegion = player.getViewport().getRegion().getId();
+
         // Chop down a dying tree in the Lumber Yard
-        if (node.getId() == 24168 && player.getViewport().getRegion().getId() == 13110) {
+        if (node.getId() == 24168 && playerRegion == 13110) {
             player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 0, 6);
         }
-        if (resource == WoodcuttingNode.YEW && player.getViewport().getRegion().getId() == 10806) {
+        if (resource == WoodcuttingNode.YEW && playerRegion == 10806) {
             if (!player.getAchievementDiaryManager().hasCompletedTask(DiaryType.SEERS_VILLAGE, 2, 1)) {
                 player.setAttribute("/save:diary:seers:cut-yew", player.getAttribute("diary:seers:cut-yew", 0) + 1);
             }
@@ -285,12 +287,12 @@ public class WoodcuttingSkillPulse extends Pulse {
         }
 
         // Cut down a dead tree in Lumbridge Swamp
-        if (resource.name().toLowerCase().startsWith("dead") && player.getViewport().getRegion().getId() == 12593) {
+        if (resource.name().toLowerCase().startsWith("dead") && (playerRegion == 12593 || playerRegion == 12849)) {
             player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 1, 8);
         }
 
         // Cut a willow tree, east of Lumbridge Castle
-        if (resource.name().toLowerCase().startsWith("willow") && player.getViewport().getRegion().getId() == 12850) {
+        if (resource.name().toLowerCase().startsWith("willow") && playerRegion == 12850) {
             player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 2, 6);
         }
     }

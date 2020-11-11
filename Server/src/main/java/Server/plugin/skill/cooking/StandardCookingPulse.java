@@ -171,15 +171,17 @@ public class StandardCookingPulse extends Pulse {
                 player.getInventory().add(productItem);
                 player.getSkills().addExperience(Skills.COOKING, experience, true);
 
+                int playerRegion = player.getViewport().getRegion().getId();
+
                 // Achievement Diary Handling
                 if (productItem.getId() == ItemNames.BASS
-                        && player.getViewport().getRegion().getId() == 11317
+                        && playerRegion == 11317
                         && player.getAttribute("diary:seers:bass-caught", false)) {
                     player.getAchievementDiaryManager().finishTask(player, DiaryType.SEERS_VILLAGE, 1, 11);
                 }
 
                 if (productItem.getId() == ItemNames.SHARK
-                        && player.getViewport().getRegion().getId() == 11317
+                        && playerRegion == 11317
                         && player.getEquipment().get(EquipmentContainer.SLOT_HANDS).getId() == ItemNames.COOKING_GAUNTLETS_775
                         && !player.getAchievementDiaryManager().hasCompletedTask(DiaryType.SEERS_VILLAGE, 2, 8)) {
                     player.setAttribute("/save:diary:seers:cooked-shark", 1 + player.getAttribute("diary:seers:cooked-shark", 0));
@@ -190,7 +192,7 @@ public class StandardCookingPulse extends Pulse {
 
                 // Cook some rat meat on a campfire in Lumbridge Swamp
                 System.out.println(object.getName());
-                if (initialItem.getId() == ItemNames.RAW_RAT_MEAT && object.getName().toLowerCase().contains("fire") && player.getViewport().getRegion().getId() == 12593) {
+                if (initialItem.getId() == ItemNames.RAW_RAT_MEAT && object.getName().toLowerCase().contains("fire") && (playerRegion == 12593 || playerRegion == 12849)) {
                     player.getAchievementDiaryManager().finishTask(player, DiaryType.LUMBRIDGE, 1, 10);
                 }
 

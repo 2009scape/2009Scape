@@ -121,6 +121,11 @@ public final class PatchInteractor {
 		player.getPulseManager().run(action);
 	}
 
+	boolean hasFaladorShield(Player player) {
+		Item shield = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD);
+		return shield != null && (shield.getId() == 14577 || shield.getId() == 14580);
+	}
+
 	/**
 	 * Method used to apply compost to a patch.
 	 * @param item the item.
@@ -143,10 +148,8 @@ public final class PatchInteractor {
 		player.animate(COMPOST_ANIMATION);
 		player.getInventory().replace(FarmingConstant.BUCKET, item.getSlot());
 		double xp = 18;
-		// Check for falador shield bonus
-		int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
-		if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
-				&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+		// Check for Falador shield bonus
+		if (hasFaladorShield(player) && player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
 			xp = xp * 1.1;
 		}
 		player.getSkills().addExperience(Skills.FARMING, xp, true);
@@ -207,10 +210,8 @@ public final class PatchInteractor {
 				@Override
 				public boolean pulse() {
 					double xp = node.getExperiences()[0];
-					// Check for falador shield bonus
-					int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
-					if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
-							&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+					// Check for Falador shield bonus
+					if (hasFaladorShield(player) && player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
 						xp = xp * 1.1;
 					}
 					player.getSkills().addExperience(Skills.FARMING, xp, true);
@@ -261,10 +262,8 @@ public final class PatchInteractor {
 				public boolean pulse() {
 					player.getInventory().add(wrapper.getNode().getProduct(), player);
 					double xp = wrapper.getNode().getExperiences()[1];
-					// Check for falador shield bonus
-					int shieldId = player.getEquipment().get(EquipmentContainer.SLOT_SHIELD).getId();
-					if ((shieldId == DiaryType.FALADOR.getRewards(1)[0].getId() || shieldId==DiaryType.FALADOR.getRewards(2)[0].getId())
-							&& player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
+					// Check for Falador shield bonus
+					if (hasFaladorShield(player) && player.getLocation().withinDistance(PatchProtection.FALADOR.getFlowerLocation(), 20)) {
 						xp = xp * 1.1;
 					}
 					player.getSkills().addExperience(Skills.FARMING, xp, true);

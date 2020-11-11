@@ -243,6 +243,10 @@ public final class BalloonManager extends OptionHandler {
 			ObjectBuilder.add(popped);
 			getBalloons().remove(object);
 			player.animate(Animation.create(10017));
+
+			// Pop a party balloon
+			player.getAchievementDiaryManager().finishTask(player, DiaryType.FALADOR, 0, 12);
+
 			GameWorld.getPulser().submit(new Pulse(1) {
 				int counter;
 
@@ -257,7 +261,6 @@ public final class BalloonManager extends OptionHandler {
 								GroundItemManager.create(ground);
 								PartyRoomPlugin.getPartyChest().shift();
 								PartyRoomPlugin.update();
-								player.getAchievementDiaryManager().finishTask(player,DiaryType.FALADOR, 0, 12);
 							}
 						}
 						return true;
