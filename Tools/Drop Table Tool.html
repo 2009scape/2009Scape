@@ -86,10 +86,13 @@
                                 <button class="button is-primary" @click="findMissingDropTables">Find Missing Drop Tables</button>
                             </div>
                             <div class="control">
-                                <button class="button is-primary" @click="findDupes">Find Dupes</button>
+                                <button class="button is-primary" @click="findDupes">Find Duplicate NPC drops</button>
                             </div>
                             <div class="control">
                                 <button class="button is-primary" @click="findUnknownItems">Find Unknown Items</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-primary" @click="findUnknownNPCs">Find Unknown NPCs</button>
                             </div>
                         </div>
                     </div>
@@ -153,7 +156,7 @@
                             <ul>
                                 <li v-for="id in results.ids.split(',')">
                                     <a @click="inspectModal = npc_configs.find(x => x.id == id)">
-                                        {{ id }} - {{ npc_configs.find(x => x.id == id).name }}
+                                        {{ id }} - {{ npc_configs.find(x => x.id == id)?.name || 'UNKNOWN NAME' }}
                                     </a>
                                 </li>
                             </ul>
@@ -237,6 +240,11 @@
                     try {
                         result = ''
                         table = this.drop_tables.find(x =>  x.ids.split(',').includes(this.selectedNPC))
+                        if (!table) {
+                            this.results = 'MISSING DROP TABLE!'
+                            this.resultsType = 'plain'
+                            return
+                        }
                         table.weights = {}
                         for (section of ['main', 'charm', 'default']) {
                             weight = 0
@@ -249,6 +257,7 @@
                         this.resultsType = 'droptable'
                     } catch (e) {
                         this.results = result + '\n' + e
+                        this.resultsType = 'plain'
                     }
                 },
                 findDupes() {
@@ -257,7 +266,7 @@
                     for (table of this.drop_tables) {
                         ids = table.ids.split(',')
                         for (id of ids) {
-                            if (id in found_ids) result += (`DUPE ID: ${id}\n`)
+                            if (id in found_ids) result += (`DUPLICATE NPC ID: ${id}\n`)
                             else found_ids.push(id)
                         }
                     }
@@ -295,9 +304,19 @@
                         for (section of ['main', 'charm', 'default']) {
                             for (item of table[section]) {
                                 if (item.id == 31) continue
-                                found = this.item_configs.find(x => x.id == item.id)
-                                if (!found) result += (`UNKNOWN ITEM ID: ${item.id}\n`)
+                                if (!this.item_configs.find(x => x.id == item.id)) result += (`UNKNOWN ITEM ID: ${item.id}\n`)
                             }
+                        }
+                    }
+                    this.results = result
+                    this.resultsType = 'plain'
+                },
+                findUnknownNPCs() {
+                    result = ''
+                    for (table of this.drop_tables) {
+                        npcs = table.ids.split(',')
+                        for (npc of npcs) {
+                            if (!this.npc_configs.find(x => x.id == npc)) result += (`UNKNOWN NPC ID: ${npc}\n`)
                         }
                     }
                     this.results = result
