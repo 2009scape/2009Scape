@@ -64,6 +64,10 @@ public final class PestControlSession {
 	private NPC squire;
 
 	/**
+	 * List of attackable portals
+	 */
+	private final List<NPC> aportals = new ArrayList<>();
+	/**
 	 * The portals.
 	 */
 	private final NPC[] portals = new NPC[4];
@@ -108,7 +112,8 @@ public final class PestControlSession {
 		case 100: // Drop second portal shield
 		case 150: // Drop third portal shield
 		case 200: // Drop fourth portal shield
-			removePortalShield(ids[(ticks / 50) - 1]);
+			int index = (ticks / 50) -1;
+			removePortalShield(ids[index]);
 			return false;
 		case 20_00: // End game.
 			activity.end(this, true);
@@ -197,7 +202,10 @@ public final class PestControlSession {
 			}
 		}
 		squire.sendChat(message);
-		portals[index].reTransform();
+		NPC portal = portals[index];
+
+		portal.reTransform();
+		aportals.add(portal);
 	}
 
 	/**
@@ -338,6 +346,16 @@ public final class PestControlSession {
 	public NPC[] getPortals() {
 		return portals;
 	}
+
+	/**
+	 * Get portals that can be attacked.
+	 * @return Attackable portals
+	 */
+
+	public List<NPC> getAportals() {
+		return aportals;
+	}
+
 
 	/**
 	 * Gets the active.

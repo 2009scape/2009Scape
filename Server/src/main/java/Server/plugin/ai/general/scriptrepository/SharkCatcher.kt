@@ -82,8 +82,8 @@ class SharkCatcher : Script() {
                 val botAmount = bot.bank.getAmount(383)
                 var amount = 0
                 GEOfferDispatch.offerMapping.values.filter { it.itemId == 383 && it.isSell}.map{amount += it.amount}
-                if(amount + botAmount >= limit && myCounter++ >= 60){
-                        Thread.sleep(600000)
+                if(amount + botAmount >= limit && myCounter++ >= 300){
+                        bot.randomWalk(5,5)
                         State.STOP
                     } else {
                         State.TELE_FISH

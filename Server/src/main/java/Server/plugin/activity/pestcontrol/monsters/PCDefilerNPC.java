@@ -33,7 +33,7 @@ public final class PCDefilerNPC extends AbstractNPC {
 			if (!isProjectileClipped(entity, victim, false)) {
 				return InteractionType.NO_INTERACT;
 			}
-			if (victim.getCenterLocation().withinDistance(entity.getCenterLocation(), 15) && isAttackable(entity, victim) != InteractionType.NO_INTERACT) {
+			if (victim.getCenterLocation().withinDistance(entity.getCenterLocation(), 8) && isAttackable(entity, victim) != InteractionType.NO_INTERACT) {
 				if (victim.getLocation().withinDistance(entity.getLocation(), MapDistance.RENDERING.getDistance() / 2)) {
 					entity.getWalkingQueue().reset();
 				}
@@ -63,7 +63,7 @@ public final class PCDefilerNPC extends AbstractNPC {
 	public void init() {
 		super.setAggressive(true);
 		super.init();
-		super.getDefinition().setCombatDistance(15);
+		super.getDefinition().setCombatDistance(10);
 		super.walkRadius = 64;
 		getProperties().getCombatPulse().setStyle(CombatStyle.RANGE);
 		session = getExtension(PestControlSession.class);

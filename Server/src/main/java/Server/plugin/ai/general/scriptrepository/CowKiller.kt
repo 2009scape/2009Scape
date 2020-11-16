@@ -15,7 +15,7 @@ import plugin.ai.pvmbots.CombatBotAssembler
 import java.net.Proxy
 
 class CowKiller : Script() {
-    var state = State.TELE_GE
+    var state = State.KILLING
     var spawnZone = ZoneBorders(3254,3255,3264,3281)
     var cowZone = ZoneBorders(3242, 3254,3265, 3296)
     val bankZone = ZoneBorders(3208, 3217,3210, 3220)

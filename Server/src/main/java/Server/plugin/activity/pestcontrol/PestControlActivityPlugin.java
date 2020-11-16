@@ -2,7 +2,11 @@ package plugin.activity.pestcontrol;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
+import plugin.ai.AIPlayer;
+import plugin.ai.pvmbots.CombatBotAssembler;
+import plugin.ai.AIPlayer.*;
 import core.ServerConstants;
 import core.game.component.Component;
 import plugin.activity.ActivityManager;
@@ -28,6 +32,10 @@ import core.tools.RandomFunction;
 import core.plugin.InitializablePlugin;
 import core.tools.StringUtils;
 import plugin.activity.pestcontrol.monsters.*;
+import plugin.ai.minigamebots.pestcontrol.PestControlTestBot;
+import plugin.ai.minigamebots.pestcontrol.PestControlTestBot2;
+
+
 
 /**
  * Handles the Pest Control activity.
@@ -119,7 +127,8 @@ public final class PestControlActivityPlugin extends ActivityPlugin {
 		for (final Player p : session.getRegion().getPlanes()[0].getPlayers()) {
 			p.getProperties().setTeleportLocation(getLeaveLocation());
 			if (!success) {
-				p.getDialogueInterpreter().open(3781, true, 0, true);// default,
+				p.getDialogueInterpreter().open(3781, true, 0, true);
+				// default,
 				// type,
 				// default
 			} else if (success && p.getAttribute("pc_zeal", 0) >= 50) {
@@ -340,7 +349,7 @@ public final class PestControlActivityPlugin extends ActivityPlugin {
 		 * Constructs a new {@code BoatType} {@code Object}.
 		 * @param requirement The combat level requirement.
 		 */
-		private BoatType(int requirement) {
+		BoatType(int requirement) {
 			this.requirement = requirement;
 		}
 

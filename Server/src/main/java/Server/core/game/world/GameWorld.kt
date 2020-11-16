@@ -50,7 +50,10 @@ object GameWorld {
     private val configParser = ConfigParser()
     @JvmStatic
     var PCBotsSpawned = false
-
+    @JvmStatic
+    var PCnBotsSpawned = false
+    @JvmStatic
+    var PCiBotsSpawned = false
     /**
      * The game settings to use.
      */

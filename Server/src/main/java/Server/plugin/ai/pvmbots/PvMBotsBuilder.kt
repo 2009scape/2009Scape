@@ -10,6 +10,7 @@ import core.game.world.map.Location
 import core.tools.RandomFunction
 import plugin.ai.AIPlayer
 import plugin.ai.minigamebots.pestcontrol.PestControlTestBot
+import plugin.ai.minigamebots.pestcontrol.PestControlTestBot2
 import plugin.skill.Skills
 import java.util.*
 import java.util.concurrent.Executors
@@ -25,11 +26,6 @@ class PvMBotsBuilder {
 
     companion object {
         var botsSpawned = 0
-        @JvmStatic
-		fun createPestControlTestBot(l: Location?): PestControlTestBot {
-            botsSpawned++
-            return PestControlTestBot(l)
-        }
 
         fun create(l: Location?): PvMBots {
             botsSpawned++
@@ -409,7 +405,7 @@ class PvMBotsBuilder {
         }
 
         @JvmStatic
-		fun immersiveSpawns() {
+        fun immersiveSpawns() {
             Executors.newSingleThreadExecutor().execute {
                 /*//Lumbridge
 		//GOBLINS
@@ -438,10 +434,10 @@ class PvMBotsBuilder {
 		spawnNoob(new Location(3224, 3186));
 		spawnNoob(new Location(3217, 3177));
 		spawnNoob(new Location(3209, 3191));
-		
+
 		//Edge
 		spawnLowest(new Location(3096, 3509));
-		
+
 		//Edge dungeon
 		//Hill giants
 		spawnLowest(new Location(3118, 9848));
@@ -451,27 +447,27 @@ class PvMBotsBuilder {
 		spawnLowest(new Location(3099, 9834));
 		//brass key room
 		spawnLowest(new Location(3127, 9863));
-		
+
 		//Dark wizzards
 		spawnLowest(new Location(3226, 3367));
 		spawnLowest(new Location(3226, 3368));
 		spawnLowest(new Location(3230, 3373));
 		spawnLowest(new Location(3209, 3378));
-		
+
 		//Varrock palace
 		spawnLowest(new Location(3218, 3465));
 		spawnLowest(new Location(3209, 3462));
-		
+
 		//Varrock Sewers
 		spawnLowest(new Location(3235, 9868));
 		spawnLowest(new Location(3242, 9915));
 		spawnLowest(new Location(3176, 9883));
-		
+
 		//Dragons Wilderness
 		//WEST
 		spawnDragonKiller(new Location(2977, 3614));
 		spawnDragonKiller(new Location(2987, 3619));
-		
+
 		//Burthrope Dungeon
 		//Blue dragons
 		spawnDragonKiller(new Location(2901, 9799));
@@ -482,7 +478,7 @@ class PvMBotsBuilder {
 		spawnNoob(new Location(3293, 3170));
 		spawnNoob(new Location(3286, 3171));
 		spawnNoob(new Location(3289, 3169));
-		
+
 		//Slayer Tower
 		spawnLowest(new Location(3412, 3173));
 		spawnNoob(new Location(3412, 3539));
@@ -503,5 +499,17 @@ class PvMBotsBuilder {
 		spawnDragonKiller(new Location(2704, 9450));*/println("[" + GameWorld.settings?.name + "]: PvMBotsBuilder: Spawned " + botsSpawned + " bots.")
             }
         }
+
+        @JvmStatic
+        fun createPestControlTestBot2(l: Location?): PestControlTestBot2 {
+            botsSpawned++
+            return PestControlTestBot2(l!!)
+        }
+        @JvmStatic
+        fun createPestControlTestBot(l: Location?): PestControlTestBot {
+            botsSpawned++
+            return PestControlTestBot(l!!)
+        }
+
     }
 }

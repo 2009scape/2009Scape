@@ -42,7 +42,7 @@ public final class CyclopesRoom extends MapZone implements Plugin<Object> {
 	/**
 	 * The defenders.
 	 */
-	private static final int[] DEFENDERS = { 8844, 8845, 8846, 8847, 8848, 8849, 8850, 14767 };
+	private static final int[] DEFENDERS = { 8844, 8845, 8846, 8847, 8848, 8849, 8850};
 
 	/**
 	 * The players in the room.

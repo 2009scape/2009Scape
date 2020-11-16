@@ -21,7 +21,7 @@ import core.game.world.update.flag.context.Graphics
 import core.tools.ItemNames
 import core.tools.RandomFunction
 import plugin.ai.AIRepository
-import plugin.ai.pvp.PVPAIPActions
+import plugin.barbtraining.fishing.getNewLoc
 import plugin.consumable.Consumable
 import plugin.consumable.Consumables
 import plugin.consumable.Food
@@ -269,6 +269,23 @@ class ScriptAPI(private val bot: Player) {
     }
 
     /**
+     * @param loc the location to walk to.
+     * @param radius tiles around the location the bot could walk to.
+     * @author Kermit
+     */
+
+    fun randomWalkTo(loc: Location, radius: Int) {
+        if(!bot.walkingQueue.isMoving) {
+            Executors.newSingleThreadExecutor().execute {
+                var newloc = loc.transform(RandomFunction.random(radius,-radius),
+                        RandomFunction.random(radius,-radius), 0)
+                walkToIterator(newloc)
+            }
+        }
+    }
+
+
+    /**
      * The iterator for long-distance walking. Limited by doors and large obstacles like mountains.
      * @param loc the location to find a path to.
      * @author Ceikry
@@ -400,7 +417,6 @@ class ScriptAPI(private val bot: Player) {
                 BotGrandExchange.sellOnGE(id, offeredValue, itemAmt)
                 bot.bank.remove(Item(id, itemAmt))
                 bot.bank.refresh()
-                SystemLogger.log("Banked fish: " + bot.bank.getAmount(ItemNames.RAW_LOBSTER))
                 return true
             }
         }
