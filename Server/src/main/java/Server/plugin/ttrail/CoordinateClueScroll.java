@@ -61,7 +61,7 @@ public abstract class CoordinateClueScroll extends MapClueScroll {
 
 	@Override
 	public void dig(Player player) {
-		int killed = player.getAttribute("killed-wizard", -1);
+		/*int killed = player.getAttribute("killed-wizard", -1);
 		if (getLevel() == ClueLevel.HARD && killed == -1) {
 			NPC wizard = player.getAttribute("t-wizard", null);
 			if (wizard != null && wizard.isActive()) {
@@ -69,9 +69,9 @@ public abstract class CoordinateClueScroll extends MapClueScroll {
 			}
 			spawnWizard(player);
 			return;
-		}
+		}*/
 		super.dig(player);
-		player.removeAttribute("killed-wizard");
+		//player.removeAttribute("killed-wizard");
 	}
 
 	/**

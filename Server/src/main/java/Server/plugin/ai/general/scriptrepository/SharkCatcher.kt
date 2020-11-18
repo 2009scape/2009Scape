@@ -79,11 +79,13 @@ class SharkCatcher : Script() {
             }
 
             State.STOP -> {
+                var mycount2 = 0
                 val botAmount = bot.bank.getAmount(383)
                 var amount = 0
                 GEOfferDispatch.offerMapping.values.filter { it.itemId == 383 && it.isSell}.map{amount += it.amount}
-                if(amount + botAmount >= limit && myCounter++ >= 300){
+                if(amount + botAmount >= limit && mycount2++ == 300){
                         bot.randomWalk(5,5)
+                        mycount2 = 0
                         State.STOP
                     } else {
                         State.TELE_FISH
@@ -96,6 +98,7 @@ class SharkCatcher : Script() {
                     state = State.FIND_SPOT
                 }
                 else if(myCounter++ >= RandomFunction.random(1,25)){
+                        myCounter = 0
                         state = State.FIND_SPOT
                     }
                 }

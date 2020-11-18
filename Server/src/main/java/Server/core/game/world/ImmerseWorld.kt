@@ -21,9 +21,18 @@ object ImmerseWorld {
             immerseWilderness()
             immerseFalador()
             immerseFishingGuild()
+            immerseAdventurer()
            // immerseSlayer()
         }
     }
+    fun immerseAdventurer(){
+        for(i in (0..50)){
+            GeneralBotCreator(Adventurer(CombatStyle.MELEE), assembler.MeleeAdventurer(CombatBotAssembler.Tier.LOW,Location.create(3221, 3219, 0)))
+            GeneralBotCreator(Adventurer(CombatStyle.MELEE), assembler.MeleeAdventurer(CombatBotAssembler.Tier.MED,Location.create(3221, 3219, 0)))
+            GeneralBotCreator(Adventurer(CombatStyle.RANGE), assembler.RangeAdventurer(CombatBotAssembler.Tier.MED,Location.create(3221, 3219, 0)))
+        }
+    }
+
     fun immerseFishingGuild(){
         GeneralBotCreator(Location.create(2604, 3421, 0), SharkCatcher())
         GeneralBotCreator(Location.create(2604, 3421, 0), SharkCatcher())

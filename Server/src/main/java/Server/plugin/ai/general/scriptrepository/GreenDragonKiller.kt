@@ -142,7 +142,7 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
                     override fun pulse(): Boolean {
                         for(item in bot.inventory.toArray()){
                             item ?: continue
-                            if(item.name.toLowerCase().contains("lobster") || item.name.toLowerCase().contains("swordfish")) continue
+                            if(item.name.toLowerCase().contains("lobster") || item.name.toLowerCase().contains("swordfish") || item.name.toLowerCase().contains("shark")) continue
                             if(item.id == 995) continue
                             bot.bank.add(item)
                             SystemLogger.log("Banked ${item.name}")

@@ -45,6 +45,10 @@ public class AIPlayer extends Player {
      */
     private static int currentUID = 0x1;
 
+    private static List<String> botNames = new ArrayList<String>();
+
+    private static List<String> usedNames = new ArrayList<String>();
+
     /**
      * The active Artificial intelligent players mapping.
      */
@@ -88,8 +92,12 @@ public class AIPlayer extends Player {
      *
      * @param l The location.
      */
+    static {
+        loadNames("botnames.txt");
+    }
+
     public AIPlayer(Location l) {
-        this(retrieveRandomName(), l, null);
+        this(getRandomName(), l, null);
     }
 
     public AIPlayer(String fileName, Location l) {
@@ -116,8 +124,6 @@ public class AIPlayer extends Player {
         this.getAppearance().setGender(RandomFunction.random(5) == 1 ? Gender.FEMALE : Gender.MALE);
         int setTo = RandomFunction.random(0,10);
         CharacterDesign.randomize(this,true);
-
-        setLevels();
         this.setDirection(Direction.values()[new Random().nextInt(Direction.values().length)]); //Random facing dir
         this.getSkills().updateCombatLevel();
         this.getAppearance().sync();
@@ -181,6 +187,31 @@ public class AIPlayer extends Player {
         if (e.getId() != 0)
             getEquipment().replace(e, slot);
 
+    }
+
+    /**
+     * Load a list of bot names into memory
+     */
+    public static void loadNames(String fileName){
+        try {
+            Scanner sc = new Scanner(new File(ServerConstants.BOT_DATA_PATH + fileName));
+            while(sc.hasNextLine()){
+                botNames.add(sc.next());
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public static String getRandomName(){
+        int index = (RandomFunction.random(botNames.size()));
+        String name = botNames.get(index);
+        while(usedNames.contains(name)){
+            index = (RandomFunction.random(botNames.size()));
+            name = botNames.get(index);
+        }
+        usedNames.add(name);
+        return name;
     }
 
     /**

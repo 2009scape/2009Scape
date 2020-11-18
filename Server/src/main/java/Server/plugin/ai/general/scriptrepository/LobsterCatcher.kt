@@ -137,7 +137,7 @@ class LobsterCatcher : Script() {
                 val botAmount = bot.bank.getAmount(377)
                 var amount = 0
                 GEOfferDispatch.offerMapping.values.filter { it.itemId == 377 && it.isSell}.map{amount += it.amount}
-                if(amount + botAmount >= limit && myCounter++ >= 300){
+                if(amount + botAmount >= limit){
                         bot.randomWalk(5,5)
                         State.STOP
                     } else {

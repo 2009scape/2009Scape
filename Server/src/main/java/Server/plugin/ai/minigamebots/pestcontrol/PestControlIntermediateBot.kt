@@ -155,7 +155,7 @@ class PestControlTestBot2(l: Location) : PvMBots(legitimizeLocation(l)) {
         }
         val test = getClosestNodeWithEntry(15, myBoat.ladderId)
         test ?: randomWalk(1,1)
-        test.interaction.handle(this, test.interaction[0])
+        test?.interaction?.handle(this, test.interaction[0])
         insideBoatWalks = 3
     }
 

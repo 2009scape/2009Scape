@@ -79,21 +79,25 @@ class CombatBotAssembler {
      * @param tier the tier of the bot, specifying levels and gear.
      * @param location the spawn and respawn location of the bot.
      * @return a CombatBot suited for killing dragons.
-     * @author Ceikry
+     * @author Kermit
      */
     fun MeleeAdventurer(tier: Tier, location: Location): CombatBot{
         val bot = CombatBot(location)
         var max = 0
-        val level = RandomFunction.random(30, 70).also {max = 75 }
+        val level = RandomFunction.random(35, 65).also {max = 99 }
         generateStats(bot,tier,Skills.ATTACK, Skills.STRENGTH, Skills.DEFENCE)
         bot.skills.setStaticLevel(Skills.HITPOINTS, level)
+        bot.skills.setStaticLevel(Skills.STRENGTH, level)
         bot.skills.setLevel(Skills.HITPOINTS, level)
+        bot.skills.setLevel(Skills.STRENGTH, level)
         bot.skills.updateCombatLevel()
-        equipHighest(bot, MELEE_HELMS, 50)
-        equipHighest(bot, MELEE_TOP, 40)
-        equipHighest(bot, MELEE_LEG, 40)
-        equipHighest(bot, MELEE_WEP, 60)
+        equipHighest(bot, MELEE_HELMS)
+        equipHighest(bot, MELEE_TOP)
+        equipHighest(bot, MELEE_LEG)
+        equipHighest(bot, MELEE_WEP)
+        equipHighest(bot, MELEE_SHIELD)
         equipHighest(bot, CAPE)
+        equipHighest(bot, NNECK)
         equipHighest(bot, NGLOVES)
         equipHighest(bot, NBOOTS)
         bot.equipment.refresh()
@@ -105,23 +109,31 @@ class CombatBotAssembler {
      * @param tier the tier of the bot, specifying levels and gear.
      * @param location the spawn and respawn location of the bot.
      * @return a CombatBot suited for killing dragons.
-     * @author Ceikry
+     * @author Kermit
      */
     fun RangeAdventurer(tier: Tier, location: Location): CombatBot{
         val bot = CombatBot(location)
         var max = 0
-        val level = RandomFunction.random(30, 70).also {max = 75 }
-        generateStats(bot,tier,Skills.ATTACK, Skills.STRENGTH, Skills.DEFENCE)
+        val level = RandomFunction.random(30, 65).also {max = 75 }
+        generateStats(bot,tier,Skills.ATTACK, Skills.STRENGTH)
         bot.skills.setStaticLevel(Skills.HITPOINTS, level)
+        bot.skills.setStaticLevel(Skills.DEFENCE, level)
+        bot.skills.setStaticLevel(Skills.RANGE, level)
         bot.skills.setLevel(Skills.HITPOINTS, level)
+        bot.skills.setLevel(Skills.DEFENCE, level)
+        bot.skills.setLevel(Skills.RANGE, level)
         bot.skills.updateCombatLevel()
-        equipHighest(bot, MELEE_HELMS, 50)
-        equipHighest(bot, MELEE_TOP, 40)
-        equipHighest(bot, MELEE_LEG, 40)
-        equipHighest(bot, MELEE_WEP, 60)
+        equipHighest(bot,RANGE_HELMS,65)
+        equipHighest(bot,RANGE_TOPS,65)
+        equipHighest(bot,RANGE_LEGS,65)
+        equipHighest(bot,CROSSBOWS,50)
         equipHighest(bot, CAPE)
+        equipHighest(bot, NRANGENECK)
+        equipHighest(bot, NRANGESHIELD)
+        equipHighest(bot, PCRANGE_BACK)
         equipHighest(bot, NGLOVES)
-        equipHighest(bot, NBOOTS)
+        equipHighest(bot, NRBOOTS)
+        bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,100000),13,false,false)
         bot.equipment.refresh()
         return bot
     }
@@ -164,7 +176,7 @@ class CombatBotAssembler {
         equipHighest(bot,CROSSBOWS,50)
         equipHighest(bot, CAPE)
         equipHighest(bot, NGLOVES)
-        equipHighest(bot, NBOOTS)
+        equipHighest(bot, NRBOOTS)
         bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,100000),13,false,false)
         bot.equipment.refresh()
         return bot
@@ -182,7 +194,7 @@ class CombatBotAssembler {
         equipHighest(bot, RANGE_LEGS)
         equipHighest(bot, CAPE)
         equipHighest(bot, NGLOVES)
-        equipHighest(bot, NBOOTS)
+        equipHighest(bot, NRBOOTS)
         if(crossbow == true) { equipHighest(bot,CROSSBOWS); equipHighest(bot,MELEE_SHIELD); bot.equipment.add(Item(ItemNames.BRONZE_BOLTS,Integer.MAX_VALUE),13,false,false) }
         else {equipHighest(bot, BOWS); bot.equipment.add(Item(ItemNames.BRONZE_ARROW,Integer.MAX_VALUE),13,false,false) }
         bot.equipment.refresh()
@@ -478,8 +490,8 @@ class CombatBotAssembler {
 
 
     val RANGE_HELMS = arrayOf(1167,4732,3749)
-    val RANGE_TOPS = arrayOf(1129,1131,1135,2503)
-    val RANGE_LEGS = arrayOf(1095,1097,1099,2497)
+    val RANGE_TOPS = arrayOf(1129,1131,1135,2499,2501,2503)
+    val RANGE_LEGS = arrayOf(1095,1097,1099,2493,2495,2497)
     val BOWS = arrayOf(841,843,847,853)
     val CROSSBOWS  = arrayOf(9185,9174,9177,9176,9179,9181,9183)
 
@@ -495,9 +507,12 @@ class CombatBotAssembler {
     val MELEE_LEG = arrayOf(1081,1083,1085,1087,1089,1091,1093,4759,1067,1069,1071,1073,1075,1077,1079,4722,4751,4722,4751)
     val MELEE_SHIELD = arrayOf(1171,1173,1175,1177,1179,1181,1183,1185,1187,1189,1191,1193,1195,1197,1199,1201)
     val MELEE_WEP = arrayOf(1277,1279,1281,1283,1285,1287,1289,1291,1293,1295,1297,1299,1301,1303,1305,1321,1323,1325,1327,1329,1331,1333,4587,4151,1363,1365,1367,1369,1371,1373,1375,1377)
-    val NGLOVES = arrayOf(1059)
-    val NBOOTS = arrayOf(1061)
-
+    val NGLOVES = arrayOf(1059,2922,2912,2902,2932,2942,3799)
+    val NBOOTS = arrayOf(4121,4123,4125,4127,4129,4131,1061,1837,2579,9005)
+    val NRBOOTS = arrayOf(9006,626,628,630,632,634)
+    val NNECK = arrayOf(1704,1725,1729,1731)
+    val NRANGENECK = arrayOf(1478,1704)
+    val NRANGESHIELD = arrayOf(1191,1193,1195,1197,1199,1201)
 
     val PCMELEE_HELMS = arrayOf(1137,1139, 1141, 6621, 1143,1145,1147,1149,1151,1153, 6623, 1159,1163,1165,3748, 3751, 10828, 11335, 3753, 4716,4724, 4745, 4753, 3751)
     val PCMELEE_TOP = arrayOf(1101,1103,1105,1107,1109,1111,1113,2513,1115,1117,1119,1121,1123,1125,1127,4720,4728,4749,4749,11724,14479,2513)
@@ -511,6 +526,6 @@ class CombatBotAssembler {
     val BOOTS = arrayOf(1061,4131,11732,11728,4131)
     val RING_BERS = arrayOf(6737)
     val RING_ARCH = arrayOf(6733)
-//gay
+
     val RICH_MELEE_HELMS = arrayOf(2587,2595,2605,2613,2619,2627,2657,2665,2673,3486,1149,10828,4716,4724,4753)
 }

@@ -389,6 +389,8 @@ class ScriptAPI(private val bot: Player) {
                 for(item in bot.bank.toArray()) {
                     item ?: continue
                     if (item.id == ItemNames.LOBSTER) continue
+                    if (item.id == ItemNames.SWORDFISH) continue
+                    if (item.id == ItemNames.SHARK) continue
                     if(!item.definition.isTradeable) {continue}
                     val itemAmt = item.amount
                     val offeredValue = checkPriceOverrides(item.id) ?: item.definition.value
