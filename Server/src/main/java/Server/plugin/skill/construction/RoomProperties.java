@@ -424,7 +424,8 @@ public enum RoomProperties {
 	/**
 	 * Chapel room.
 	 */
-	CHAPEL(50000, 45, 0, 2, 5, Room.CHAMBER, new Hotspot(BuildHotspot.ALTAR, 3, 5),
+	CHAPEL(50000, 45, 0, 2, 5, Room.CHAMBER,
+			new Hotspot(BuildHotspot.ALTAR, 3, 5),
 			new Hotspot(BuildHotspot.STATUE, 7, 0),
 			new Hotspot(BuildHotspot.STATUE, 0, 0),
 			new Hotspot(BuildHotspot.ICON, 3, 7),
@@ -443,7 +444,6 @@ public enum RoomProperties {
 			new Hotspot(BuildHotspot.CHAPEL_RUG2, 4, 4),
 			new Hotspot(BuildHotspot.CHAPEL_WINDOW, 0, 2),
 			new Hotspot(BuildHotspot.CHAPEL_WINDOW, 0, 5),
-			new Hotspot(BuildHotspot.CHAPEL_WINDOW, 0, 2),
 			new Hotspot(BuildHotspot.CHAPEL_WINDOW, 2, 7),
 			new Hotspot(BuildHotspot.CHAPEL_WINDOW, 5, 7),
 			new Hotspot(BuildHotspot.CHAPEL_WINDOW, 7, 5),

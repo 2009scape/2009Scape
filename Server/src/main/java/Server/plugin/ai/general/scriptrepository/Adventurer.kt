@@ -11,12 +11,15 @@ import core.game.node.entity.combat.InteractionType
 import core.game.node.entity.combat.handlers.MagicSwingHandler
 import core.game.node.entity.combat.handlers.MeleeSwingHandler
 import core.game.node.entity.combat.handlers.RangeSwingHandler
+import core.game.node.entity.impl.PulseManager
 import core.game.node.entity.player.Player
 import core.game.node.item.Item
 import core.game.system.SystemLogger
 import core.game.system.task.Pulse
+import core.game.world.GameWorld
 import core.game.world.map.Location
 import core.game.world.map.RegionManager
+import core.game.world.map.zone.ZoneBorders
 import core.tools.ItemNames
 import core.tools.RandomFunction
 import plugin.ai.AIPlayer
@@ -44,12 +47,12 @@ class Adventurer (val style: CombatStyle): Script() {
     val ardougne: Location = Location.create(2662,3304,0)
     val seers: Location = Location.create(2726,3485,0)
     val edgeville: Location = Location.create(3088, 3486, 0)
-    val ge: Location = Location.create(3169, 3486, 0)
-    val ge2: Location = Location.create(3160, 3494, 0)
+    val ge: Location = Location.create(3168, 3487, 0)
+    val ge2: Location = Location.create(3161, 3493, 0)
     val catherby: Location = Location.create(2809,3435,0)
     val falador: Location = Location.create(2965,3380,0)
     val varrock: Location = Location.create(3213,3428,0)
-    val draynor: Location = Location.create(3083,3244,0)
+    val draynor: Location = Location.create(3080, 3250, 0)
     val rimmington: Location = Location.create(2956,3220,0)
     val lumbridge: Location = Location.create(3222,3219,0)
     var city: Location = lumbridge
@@ -236,8 +239,19 @@ class Adventurer (val style: CombatStyle): Script() {
             "I need to go to the GE",
             "Do you have a ge tele i can have?",
             "lol shut up",
+            "Where are teak trees?",
+            "How do i make planks?",
+            "Idk about that scraggley ass alex guy.",
+            "Rusty? More like Crusty af lmfao.",
+            "I need to sell some stuff on the ge",
+            "I have so many logs to sell lol",
             "nah",
             "yes",
+            "Where can i mine iron?",
+            "Where can i mine tin?",
+            "Where can i mine copper?",
+            "Where can i mine clay?",
+            "Where can i mine coal?",
             "no",
             "why",
             "why",
@@ -255,11 +269,28 @@ class Adventurer (val style: CombatStyle): Script() {
     var citygroupA = listOf(falador,varrock,draynor,rimmington,lumbridge,ge,ge2,edgeville)
     var citygroupB = listOf(yanille,ardougne,seers,catherby)
 
+    var bankMap = hashMapOf<Location, ZoneBorders>(
+            falador to ZoneBorders(2950,3374,2943,3368),
+            varrock to ZoneBorders(3182,3435,3189,3446),
+            draynor to ZoneBorders(3092, 3240,3095,3246),
+            edgeville to ZoneBorders(3093,3498,3092,3489),
+            yanille to ZoneBorders(2610,3089,2613,3095),
+            ardougne to ZoneBorders(2649,3281,2655,3286),
+            seers to ZoneBorders(2729,3493,2722,3490),
+            catherby to ZoneBorders(2807,3438,2811,3441)
+    )
+
     var handler1: CombatSwingHandler? = null
 
     var freshspawn = true
     var new_city = false
+    val badedge = ZoneBorders(3094,3494,3096,3497)
     var sold = false
+    val geloc: Location = if (Random.nextBoolean()){
+        Location.create(3165, 3487, 0)
+    }else{
+        Location.create(3164, 3492, 0)
+    }
 
     var counter: Int = 0
     var random: Int = (5..30).random()
@@ -271,11 +302,7 @@ class Adventurer (val style: CombatStyle): Script() {
     }
 
     init {
-        handler1 = when(style){
-            CombatStyle.MELEE -> MeleeSwingerAdv(this)
-            CombatStyle.MAGIC -> MageSwingerAdv(this)
-            CombatStyle.RANGE -> RangeSwingerAdv(this)
-        }
+
         skills[Skills.AGILITY] = 99
         inventory.add(Item(1357))//Addy Axe
         skills[Skills.WOODCUTTING] = 50
@@ -293,34 +320,51 @@ class Adventurer (val style: CombatStyle): Script() {
     }
 
     fun immerse() {
+        //NEW LINE
+        if (counter++ == 120) {state = State.TELEPORTING}
         val items = AIRepository.groundItems[bot]
-        city = getRandomCity()
         if (Random.nextBoolean()) {
             if (items.isNullOrEmpty()) {
-                scriptAPI.attackNpcsInRadius(bot, 7)
+                scriptAPI.attackNpcsInRadius(bot, 8)
                 state = State.LOOT_DELAY
             }
             if (bot.inventory.isFull) {
-                scriptAPI.teleport(city)
-                state = State.FIND_BANK
+                if(bankMap[city] == null){
+                    scriptAPI.teleport(getRandomCity().also{city = it})
+                } else {
+                    if(bankMap[city]?.insideBorder(bot) == true){
+                        state = State.FIND_BANK
+                    } else {
+                        scriptAPI.walkTo(bankMap[city]?.randomLoc ?: Location(0,0,0))
+                    }
+                }
             }
 
         } else {
             if (bot.inventory.isFull){
-                scriptAPI.teleport(city)
-                state = State.FIND_BANK
+                if(bankMap[city] == null){
+                    scriptAPI.teleport(getRandomCity().also{city = it})
+                } else {
+                    if(bankMap[city]?.insideBorder(bot) == true){
+                        state = State.FIND_BANK
+                    } else {
+                        scriptAPI.walkTo(bankMap[city]?.randomLoc ?: Location(0,0,0))
+                    }
+                }
             } else {
-                val oak = scriptAPI.getNearestNode("Oak",true)
-                val tree = scriptAPI.getNearestNode("Tree",true)
-                val willow = scriptAPI.getNearestNode("Willow",true)
-                val rock = scriptAPI.getNearestNode("Rocks",true)
-                val star = scriptAPI.getNearestNode("Crashed star",true)
+                val oak: Node? = scriptAPI.getNearestNode("Oak",true)
+                val tree: Node? = scriptAPI.getNearestNode("Tree",true)
+                val willow: Node? = scriptAPI.getNearestNode("Willow",true)
+                val rock: Node? = scriptAPI.getNearestNode("Rocks",true)
+                val star: Node? = scriptAPI.getNearestNode("Crashed star",true)
                 val node = listOf(oak,tree,willow,rock,star).random()
                 try {
                     node?.interaction?.handle(bot, node.interaction[0])
                 } catch (e: Exception){}
             }
         }
+        //state = State.EXPLORE.also { println("[WARNING]Ejected out of function() {${bot.name}}") }
+        //return
     }
 
     override fun tick() {
@@ -350,28 +394,29 @@ class Adventurer (val style: CombatStyle): Script() {
             }
 
             State.START -> {
-                if (counter++ == random && freshspawn) {
+                if (freshspawn) {
                     freshspawn = false
                     scriptAPI.randomWalkTo(lumbridge, 20)
-                    counter = 0
-                    return
                 } else {
-                    state = State.TELEPORTING
                     city = getRandomCity()
+                    state = State.TELEPORTING
                 }
             }
 
             State.TELEPORTING -> {
+                counter = 0
                 if(bot.location != city) {
                     scriptAPI.teleport(city)
                 } else {
-                    scriptAPI.randomWalkTo(city, 5)
                     state = State.EXPLORE
                 }
             }
 
             State.EXPLORE -> {
-                var random = (60..300).random()
+                //Perma Idler Check
+                //NEW LINE
+                if (counter++ == 300) {state = State.TELEPORTING.also { println("[WARNING]I got stuck in explore ${bot.name}") }}
+
                 if (RandomFunction.random(1000) <= 10){
                     val nearbyPlayers = RegionManager.getLocalPlayers(bot)
                     if(nearbyPlayers.isNotEmpty()){
@@ -380,22 +425,26 @@ class Adventurer (val style: CombatStyle): Script() {
                 }
 
                 if (RandomFunction.random(1000)  <= 150) {
-                    var roamDistance = if(city == ge || city == ge2) 10 else 200
+                    var roamDistance = if(city == ge || city == ge2) 5 else 200
                     if((city == ge || city == ge2) && RandomFunction.random(100) < 85){
+                        if(!bot.bank.isEmpty){
+                            state = State.FIND_GE
+                        }
                         return
                     }
                     scriptAPI.randomWalkTo(city, roamDistance)
                     return
                 }
 
-                if(RandomFunction.random(1000) <= 40){
+                if(RandomFunction.random(1000) <= 50){
                     immerse()
                     return
                 }
 
-                if(counter++ >= random && RandomFunction.random(1000) % 33 == 0){
+                if(counter++ >= 180 && RandomFunction.random(100) >= 5){
                     city = getRandomCity()
                     if(RandomFunction.random(100) % 2 == 0) {
+                        counter = 0
                         state = State.TELEPORTING
                     } else {
                         if(citygroupA.contains(city)){
@@ -403,47 +452,30 @@ class Adventurer (val style: CombatStyle): Script() {
                         } else {
                             city = citygroupB.random()
                         }
+                        counter = 0
                         state = State.FIND_CITY
                     }
-                    counter = 0
-                    return
-                }
-
-                if(counter++ >= random && RandomFunction.random(1000) < 100){
-                    state = State.FIND_BANK
                     counter = 0
                     return
                 }
             }
 
             State.GE -> {
-                var random = (15..120).random()
-                if((city == ge || city == ge2) && !sold) {
-                    if (counter++ == random) {
+                if (!sold) {
+                    if (counter++ >= 15) {
                         sold = true
                         counter = 0
                         scriptAPI.sellAllOnGe()
-                    } else if (sold && counter++ == random) {
-                        counter = 0
-                        state = State.TELEPORTING
+                        state = State.EXPLORE
                     }
-                }else if ((counter++ == random) && sold){
-                    counter = 0
-                    state = State.TELEPORTING
                 }
             }
 
-            State.FIND_BANK -> {
-                val ge: GameObject? = scriptAPI.getNearestGameObject(bot.location, 28089)
-                val bank: GameObject? = scriptAPI.getNearestGameObject(bot.location, 2213)
-                if (bank == null || ge == null) state = State.EXPLORE
-                class BankingPulse : MovementPulse(bot, bank, DestinationFlag.OBJECT) {
-                    override fun pulse(): Boolean {
-                        bot.faceLocation(bank?.location)
-                        state = State.IDLE_BANKS
-                        return true
-                    }
-                }
+            State.FIND_GE -> {
+                sold = false
+                counter = 0
+                val ge: GameObject? = scriptAPI.getNearestNode("Desk",true) as GameObject?
+                if (ge == null) state = State.EXPLORE
                 class GEPulse : MovementPulse(bot, ge, DestinationFlag.OBJECT) {
                     override fun pulse(): Boolean {
                         bot.faceLocation(ge?.location)
@@ -451,12 +483,25 @@ class Adventurer (val style: CombatStyle): Script() {
                         return true
                     }
                 }
+                if (ge != null){
+                    scriptAPI.randomWalkTo(geloc,3)
+                    GameWorld.Pulser.submit(GEPulse())
+                }
+            }
+
+            State.FIND_BANK -> {
+                val bank: GameObject? = scriptAPI.getNearestNode("Bank booth",true) as GameObject?
+                if (badedge.insideBorder(bot)) {bot.randomWalk(5,5)}
+                if (bank == null) state = State.EXPLORE
+                class BankingPulse : MovementPulse(bot, bank, DestinationFlag.OBJECT) {
+                    override fun pulse(): Boolean {
+                        bot.faceLocation(bank?.location)
+                        state = State.IDLE_BANKS
+                        return true
+                    }
+                }
                 if (bank != null) {
                     bot.pulseManager.run(BankingPulse())
-                }
-                if (ge != null){
-                    sold = false
-                    bot.pulseManager.run(GEPulse())
                 }
             }
 
@@ -470,17 +515,16 @@ class Adventurer (val style: CombatStyle): Script() {
                         bot.bank.add(item)
                         bot.inventory.remove(item)
                     }
-                    state = State.EXPLORE
                     counter = 0
+                    state = State.EXPLORE
                 }
             }
 
             State.FIND_CITY -> {
-                var random = (600..900).random()
-                if(counter++ >= random){
-                    scriptAPI.teleport(city)
-                    state = State.EXPLORE
+                if(counter++ >= 300){
                     counter = 0
+                    scriptAPI.teleport(getRandomCity().also { city = it })
+                    state = State.EXPLORE
                 }
                 if(bot.location.equals(city)){
                     state = State.EXPLORE
@@ -492,12 +536,10 @@ class Adventurer (val style: CombatStyle): Script() {
             State.IDLE_CITY -> {
                 var random = (120..300).random()
                 if (counter++ == random && RandomFunction.random(1000) % 33 == 0){
-                    state = State.EXPLORE
                     counter = 0
+                    state = State.EXPLORE
                 }
             }
-
-            else -> State.START
         }
 
     }
@@ -509,14 +551,14 @@ class Adventurer (val style: CombatStyle): Script() {
         IDLE_BANKS,
         FIND_CITY,
         IDLE_CITY,
-        IDLE,
         GE,
         TELEPORTING,
         LOOT,
-        LOOT_DELAY
+        LOOT_DELAY,
+        FIND_GE
     }
 
-    class RespawnPulse(val script: Script) : Pulse(20) {
+    class RespawnPulse1(val script: Script) : Pulse(20) {
         override fun pulse(): Boolean {
             AIPlayer.deregister(script.bot.uid)
             script.bot.clear()
@@ -528,44 +570,11 @@ class Adventurer (val style: CombatStyle): Script() {
     override fun newInstance(): Script {
         val script = Adventurer(style)
         script.state = State.START
-
-        val tier = CombatBotAssembler.Tier.HIGH
-        if(type == CombatBotAssembler.Type.RANGE)
-            script.bot = CombatBotAssembler().RangeAdventurer(tier,bot.startLocation)
+        val tier = CombatBotAssembler.Tier.MED
+        if (type == CombatBotAssembler.Type.RANGE)
+            script.bot = CombatBotAssembler().RangeAdventurer(tier, bot.startLocation)
         else
             script.bot = CombatBotAssembler().MeleeAdventurer(tier, bot.startLocation)
         return script
-    }
-
-    internal class MeleeSwingerAdv(val script: Adventurer) : MeleeSwingHandler() {
-        override fun canSwing(entity: Entity, victim: Entity): InteractionType? {
-            if(script.state == State.IDLE_BANKS) {script.bot.pulseManager.current.stop()}
-            if(script.state == State.FIND_BANK) {script.bot.pulseManager.current.stop()}
-            if(script.state == State.IDLE_CITY) {script.bot.pulseManager.current.stop()}
-            if(script.state == State.FIND_CITY) {script.bot.pulseManager.current.stop()}
-            if(victim is Player) {script.state = State.EXPLORE; script.bot.pulseManager.current.stop()}
-            return super.canSwing(entity, victim)
-        }
-    }
-
-    internal class MageSwingerAdv(val script: Adventurer) : MagicSwingHandler() {
-        override fun canSwing(entity: Entity, victim: Entity): InteractionType? {
-            if(script.state == State.IDLE_BANKS) {script.bot.pulseManager.current.stop()}
-            if(script.state == State.FIND_BANK) {script.bot.pulseManager.current.stop()}
-            if(script.state == State.IDLE_CITY) {script.bot.pulseManager.current.stop()}
-            if(script.state == State.FIND_CITY) {script.bot.pulseManager.current.stop()}
-            if(victim is Player) {script.state = State.EXPLORE; script.bot.pulseManager.current.stop()}
-            return super.canSwing(entity, victim)
-        }
-    }
-
-    internal class RangeSwingerAdv(val script: Adventurer) : RangeSwingHandler() {
-        override fun canSwing(entity: Entity, victim: Entity): InteractionType? {
-            if(script.state == State.IDLE_BANKS) {script.bot.pulseManager.current.stop()}
-            if(script.state == State.FIND_BANK) {script.bot.pulseManager.current.stop()}
-            if(script.state == State.IDLE_CITY) {script.bot.pulseManager.current.stop()}
-            if(script.state == State.FIND_CITY) {script.bot.pulseManager.current.stop()}
-            return super.canSwing(entity, victim)
-        }
     }
 }

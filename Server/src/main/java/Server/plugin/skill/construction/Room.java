@@ -238,6 +238,7 @@ public final class Room {
 			houseExit =  false;
 		}
 		int replaceId = object.getId() % 2 != 0 ? house.getStyle().getDoorId() : house.getStyle().getSecondDoorId();
+		houseExit = false;
 		if (z != 0 && houseExit) {
 			r = house.getRooms()[z][chunkX][chunkY];
 			if (r.getProperties().isDungeon()) {

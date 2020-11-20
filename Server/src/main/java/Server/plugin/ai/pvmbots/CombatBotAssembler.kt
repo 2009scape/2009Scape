@@ -84,12 +84,14 @@ class CombatBotAssembler {
     fun MeleeAdventurer(tier: Tier, location: Location): CombatBot{
         val bot = CombatBot(location)
         var max = 0
-        val level = RandomFunction.random(35, 65).also {max = 99 }
+        val level = RandomFunction.random(25, 65).also {max = 99 }
         generateStats(bot,tier,Skills.ATTACK, Skills.STRENGTH, Skills.DEFENCE)
         bot.skills.setStaticLevel(Skills.HITPOINTS, level)
-        bot.skills.setStaticLevel(Skills.STRENGTH, level)
+        bot.skills.setStaticLevel(Skills.ATTACK, level + 5)
+        bot.skills.setStaticLevel(Skills.STRENGTH, level + 5)
         bot.skills.setLevel(Skills.HITPOINTS, level)
-        bot.skills.setLevel(Skills.STRENGTH, level)
+        bot.skills.setLevel(Skills.ATTACK, level + 5)
+        bot.skills.setLevel(Skills.STRENGTH, level + 5)
         bot.skills.updateCombatLevel()
         equipHighest(bot, MELEE_HELMS)
         equipHighest(bot, MELEE_TOP)
@@ -114,14 +116,14 @@ class CombatBotAssembler {
     fun RangeAdventurer(tier: Tier, location: Location): CombatBot{
         val bot = CombatBot(location)
         var max = 0
-        val level = RandomFunction.random(30, 65).also {max = 75 }
+        val level = RandomFunction.random(35, 65).also {max = 75 }
         generateStats(bot,tier,Skills.ATTACK, Skills.STRENGTH)
         bot.skills.setStaticLevel(Skills.HITPOINTS, level)
         bot.skills.setStaticLevel(Skills.DEFENCE, level)
-        bot.skills.setStaticLevel(Skills.RANGE, level)
+        bot.skills.setStaticLevel(Skills.RANGE, level + 10)
         bot.skills.setLevel(Skills.HITPOINTS, level)
         bot.skills.setLevel(Skills.DEFENCE, level)
-        bot.skills.setLevel(Skills.RANGE, level)
+        bot.skills.setLevel(Skills.RANGE, level + 10)
         bot.skills.updateCombatLevel()
         equipHighest(bot,RANGE_HELMS,65)
         equipHighest(bot,RANGE_TOPS,65)

@@ -578,6 +578,15 @@
 588	kr_picklock
 589	clanjoin
 590	clansetup
+591 Thessalias Makeovers
+592 Hairdressers salon
+593 Reinalds Smithing Emporium
+594 Thessalias Makeovers
+595 Reinalds Smithing Emporium
+596 Hairdressers salon
+597 godwars kill count
+598 godwars kill count
+599 godwars kill count
 600	cws_warning_25
 601	godwars_overlay
 602 nothing

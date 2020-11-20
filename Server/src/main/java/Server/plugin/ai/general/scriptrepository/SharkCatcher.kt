@@ -67,11 +67,12 @@ class SharkCatcher : Script() {
     private var tick = 0
 
     override fun tick() {
+        val botAmount = bot.bank.getAmount(383)
         when(state){
 
             State.BANKING -> {
                 scriptAPI.bankItem(ItemNames.RAW_SHARK)
-                state = if(bot.bank.getAmount(ItemNames.RAW_SHARK) > 100){
+                state = if(bot.bank.getAmount(ItemNames.RAW_SHARK) > 500){
                     State.TELEPORT_GE
                 } else {
                     State.FIND_SPOT
@@ -79,17 +80,17 @@ class SharkCatcher : Script() {
             }
 
             State.STOP -> {
-                var mycount2 = 0
-                val botAmount = bot.bank.getAmount(383)
                 var amount = 0
                 GEOfferDispatch.offerMapping.values.filter { it.itemId == 383 && it.isSell}.map{amount += it.amount}
-                if(amount + botAmount >= limit && mycount2++ == 300){
+                if((amount + botAmount) >= limit && myCounter++ == 300){
                         bot.randomWalk(5,5)
-                        mycount2 = 0
-                        State.STOP
+                        myCounter = 0
+                        return
                     } else {
+                        myCounter = 0
                         State.TELE_FISH
                     }
+                return
 
             }
 
@@ -121,7 +122,6 @@ class SharkCatcher : Script() {
                     bot.walkingQueue.reset()
                     state = State.FISHING
                 } else {
-                    //if (bot.location.x < 2597 || bot.location.x > 2612 || bot.location.y < 3410 ||bot.location.y > 3426) {
                     if(bot.location.x < 2591) {
                         scriptAPI.walkTo(Location.create(2604, 3421, 0))
                     } else {
@@ -158,10 +158,9 @@ class SharkCatcher : Script() {
             }
 
             State.SELL_GE -> {
-                val botAmount = bot.bank.getAmount(383)
                 var amount = 0
                 GEOfferDispatch.offerMapping.values.filter { it.itemId == 383 && it.isSell}.map{amount += it.amount}
-                if(amount + botAmount >= limit){
+                if((amount + botAmount) >= limit){
                         state = State.STOP
                     } else{
                         scriptAPI.walkTo(Location.create(3164, 3487, 0))

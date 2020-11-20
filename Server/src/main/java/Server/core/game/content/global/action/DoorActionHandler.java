@@ -435,16 +435,16 @@ public final class DoorActionHandler {
         Location l = object.getLocation();
         Player player = entity instanceof Player ? (Player) entity : null;
         GameObject o = null;
-        if ((o = RegionManager.getObject(l.transform(-1, 0, 0))) != null && o.getChild(player).getName().equals(object.getName())) {
+        if ((o = RegionManager.getObject(l.transform(-1, 0, 0))) != null && o.getName().equals(object.getName())) {
             return o;
         }
-        if ((o = RegionManager.getObject(l.transform(1, 0, 0))) != null && o.getChild(player).getName().equals(object.getName())) {
+        if ((o = RegionManager.getObject(l.transform(1, 0, 0))) != null && o.getName().equals(object.getName())) {
             return o;
         }
-        if ((o = RegionManager.getObject(l.transform(0, -1, 0))) != null && o.getChild(player).getName().equals(object.getName())) {
+        if ((o = RegionManager.getObject(l.transform(0, -1, 0))) != null && o.getName().equals(object.getName())) {
             return o;
         }
-        if ((o = RegionManager.getObject(l.transform(0, 1, 0))) != null && o.getChild(player).getName().equals(object.getName())) {
+        if ((o = RegionManager.getObject(l.transform(0, 1, 0))) != null && o.getName().equals(object.getName())) {
             return o;
         }
         return null;
