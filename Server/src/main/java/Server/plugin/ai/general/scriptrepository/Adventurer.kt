@@ -24,6 +24,7 @@ import core.tools.ItemNames
 import core.tools.RandomFunction
 import plugin.ai.AIPlayer
 import plugin.ai.AIRepository
+import plugin.ai.general.GeneralBotCreator
 import plugin.ai.general.ScriptAPI
 import plugin.ai.pvmbots.CombatBotAssembler
 import plugin.skill.Skills
@@ -282,9 +283,13 @@ class Adventurer (val style: CombatStyle): Script() {
 
     var handler1: CombatSwingHandler? = null
 
+    var ticks = 0
     var freshspawn = true
     var new_city = false
     val badedge = ZoneBorders(3094,3494,3096,3497)
+    val badedge2 = Location.create(3094, 3492, 0)
+    val badedge3 = Location.create(3094, 3490, 0)
+    val badedge4 = Location.create(3094, 3494, 0)
     var sold = false
     val geloc: Location = if (Random.nextBoolean()){
         Location.create(3165, 3487, 0)
@@ -320,8 +325,7 @@ class Adventurer (val style: CombatStyle): Script() {
     }
 
     fun immerse() {
-        //NEW LINE
-        if (counter++ == 120) {state = State.TELEPORTING}
+        if (counter++ == 180) {state = State.TELEPORTING}
         val items = AIRepository.groundItems[bot]
         if (Random.nextBoolean()) {
             if (items.isNullOrEmpty()) {
@@ -363,19 +367,31 @@ class Adventurer (val style: CombatStyle): Script() {
                 } catch (e: Exception){}
             }
         }
-        //state = State.EXPLORE.also { println("[WARNING]Ejected out of function() {${bot.name}}") }
-        //return
+        return
+    }
+
+    fun refresh() {
+        scriptAPI.teleport(lumbridge)
+        freshspawn = true
+        state = State.START
     }
 
     override fun tick() {
+
+        if (ticks++ >= 500) {
+            ticks = 0
+            refresh()
+            return
+        }
+
         when(state){
 
             State.LOOT_DELAY -> {
                 bot.pulseManager.run(object: Pulse(){
-                    var counter = 0
+                    var counter1 = 0
                     override fun pulse(): Boolean {
-                        when(counter++){
-                            3 -> return true.also {state = State.LOOT}
+                        when(counter1++){
+                            4 -> return true.also {state = State.LOOT}
                         }
                         return false
                     }
@@ -404,6 +420,7 @@ class Adventurer (val style: CombatStyle): Script() {
             }
 
             State.TELEPORTING -> {
+                ticks = 0
                 counter = 0
                 if(bot.location != city) {
                     scriptAPI.teleport(city)
@@ -413,20 +430,19 @@ class Adventurer (val style: CombatStyle): Script() {
             }
 
             State.EXPLORE -> {
-                //Perma Idler Check
-                //NEW LINE
-                if (counter++ == 300) {state = State.TELEPORTING.also { println("[WARNING]I got stuck in explore ${bot.name}") }}
+                if (counter++ == 300) {state = State.TELEPORTING}
 
                 if (RandomFunction.random(1000) <= 10){
                     val nearbyPlayers = RegionManager.getLocalPlayers(bot)
                     if(nearbyPlayers.isNotEmpty()){
+                        ticks = 0
                         bot.sendChat(dialogue.random())
                     }
                 }
 
                 if (RandomFunction.random(1000)  <= 150) {
-                    var roamDistance = if(city == ge || city == ge2) 5 else 200
-                    if((city == ge || city == ge2) && RandomFunction.random(100) < 85){
+                    var roamDistance = if(city != ge && city != ge2) 200 else 6
+                    if((city == ge || city == ge2) && RandomFunction.random(100) < 90){
                         if(!bot.bank.isEmpty){
                             state = State.FIND_GE
                         }
@@ -437,14 +453,19 @@ class Adventurer (val style: CombatStyle): Script() {
                 }
 
                 if(RandomFunction.random(1000) <= 50){
-                    immerse()
-                    return
+                    if (city != ge && city != ge2) {
+                        immerse()
+                        return
+                    }else{
+                        return
+                    }
                 }
 
                 if(counter++ >= 180 && RandomFunction.random(100) >= 5){
                     city = getRandomCity()
                     if(RandomFunction.random(100) % 2 == 0) {
                         counter = 0
+                        ticks = 0
                         state = State.TELEPORTING
                     } else {
                         if(citygroupA.contains(city)){
@@ -453,27 +474,32 @@ class Adventurer (val style: CombatStyle): Script() {
                             city = citygroupB.random()
                         }
                         counter = 0
+                        ticks = 0
                         state = State.FIND_CITY
                     }
                     counter = 0
                     return
                 }
+                return
             }
 
             State.GE -> {
+                if (counter++ == 300) {state = State.TELEPORTING}
                 if (!sold) {
                     if (counter++ >= 15) {
                         sold = true
                         counter = 0
                         scriptAPI.sellAllOnGe()
+                        ticks = 0
                         state = State.EXPLORE
                     }
                 }
+                return
             }
 
             State.FIND_GE -> {
+                if (counter++ == 300) {state = State.TELEPORTING}
                 sold = false
-                counter = 0
                 val ge: GameObject? = scriptAPI.getNearestNode("Desk",true) as GameObject?
                 if (ge == null) state = State.EXPLORE
                 class GEPulse : MovementPulse(bot, ge, DestinationFlag.OBJECT) {
@@ -484,14 +510,17 @@ class Adventurer (val style: CombatStyle): Script() {
                     }
                 }
                 if (ge != null){
+                    counter = 0
                     scriptAPI.randomWalkTo(geloc,3)
                     GameWorld.Pulser.submit(GEPulse())
                 }
+                return
             }
 
             State.FIND_BANK -> {
+                if (counter++ == 300) {state = State.TELEPORTING}
                 val bank: GameObject? = scriptAPI.getNearestNode("Bank booth",true) as GameObject?
-                if (badedge.insideBorder(bot)) {bot.randomWalk(5,5)}
+                if (badedge.insideBorder(bot) || bot.location == badedge2 || bot.location == badedge3 || bot.location == badedge4) {bot.randomWalk(5,5)}
                 if (bank == null) state = State.EXPLORE
                 class BankingPulse : MovementPulse(bot, bank, DestinationFlag.OBJECT) {
                     override fun pulse(): Boolean {
@@ -503,9 +532,11 @@ class Adventurer (val style: CombatStyle): Script() {
                 if (bank != null) {
                     bot.pulseManager.run(BankingPulse())
                 }
+                return
             }
 
             State.IDLE_BANKS -> {
+                if (counter++ == 300) {state = State.TELEPORTING}
                 if (RandomFunction.random(1000) < 100){
                     for(item in bot.inventory.toArray()){
                         item ?: continue
@@ -518,10 +549,11 @@ class Adventurer (val style: CombatStyle): Script() {
                     counter = 0
                     state = State.EXPLORE
                 }
+                return
             }
 
             State.FIND_CITY -> {
-                if(counter++ >= 300){
+                if(counter++ >= 600){
                     counter = 0
                     scriptAPI.teleport(getRandomCity().also { city = it })
                     state = State.EXPLORE
@@ -531,14 +563,17 @@ class Adventurer (val style: CombatStyle): Script() {
                 } else {
                     scriptAPI.randomWalkTo(city,5)
                 }
+                return
             }
 
             State.IDLE_CITY -> {
+                if (counter++ == 300) {state = State.TELEPORTING}
                 var random = (120..300).random()
                 if (counter++ == random && RandomFunction.random(1000) % 33 == 0){
                     counter = 0
                     state = State.EXPLORE
                 }
+                return
             }
         }
 
@@ -558,7 +593,7 @@ class Adventurer (val style: CombatStyle): Script() {
         FIND_GE
     }
 
-    class RespawnPulse1(val script: Script) : Pulse(20) {
+    class RespawnPulse(val script: Script) : Pulse(20) {
         override fun pulse(): Boolean {
             AIPlayer.deregister(script.bot.uid)
             script.bot.clear()
