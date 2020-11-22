@@ -35,10 +35,10 @@ object ImmerseWorld {
     }
 
     fun immerseFishingGuild(){
-        GeneralBotCreator(Location.create(2604, 3421, 0), SharkCatcher())
-        GeneralBotCreator(Location.create(2604, 3421, 0), SharkCatcher())
-        GeneralBotCreator(Location.create(2604, 3421, 0), SharkCatcher())
-
+        val fishingGuild = Location.create(2604, 3421, 0)
+        for (i in (0..4)) {
+            GeneralBotCreator(fishingGuild, SharkCatcher())
+        }
     }
 
     fun immerseSeersAndCatherby(){
