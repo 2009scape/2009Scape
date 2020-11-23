@@ -90,7 +90,7 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 			stage = 11;
 			break;
 		case 11:
-			interpreter.sendOptions("Select an Option", "Why?", "Search way, I have nothing to hide.", "You're not putting your hands on my things!");
+			interpreter.sendOptions("Select an Option", "Why?", "Search away, I have nothing to hide.", "You're not putting your hands on my things!");
 			stage = 12;
 			break;
 		case 12:
@@ -100,7 +100,7 @@ public final class CustomsOfficerDialogue extends DialoguePlugin {
 				stage = 110;
 				break;
 			case 2:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Search waway, I have nothing to hide.");
+				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Search away, I have nothing to hide.");
 				stage = 120;
 				break;
 			case 3:
