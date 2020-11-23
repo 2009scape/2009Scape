@@ -81,17 +81,3 @@ class ConstructionDoorPlugin : OptionHandler() {
         )
     }
 }
-
-/*
-java.lang.NullPointerException: second must not be null
-	at plugin.skill.construction.decoration.ConstructionDoorPlugin.handle(ConstructionDoorPlugin.kt:46)
-	at core.game.interaction.Interaction$3.pulse(Interaction.java:165)
-	at core.game.interaction.MovementPulse.update(MovementPulse.java:187)
-	at core.worker.MajorUpdateWorker$start$1$1.invokeSuspend(MajorUpdateWorker.kt:28)
-	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
-	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:56)
-	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:571)
-	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:738)
-	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:678)
-	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:665)
- */
