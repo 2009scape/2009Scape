@@ -76,11 +76,12 @@ object ImmerseWorld {
     }
 
     fun immerseWilderness(){
-        GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.HIGH,Location.create(2979, 3603, 0)))
-        GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.MED,Location.create(2979, 3603, 0)))
-        GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.HIGH,Location.create(2979, 3603, 0)))
-        GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.MED,Location.create(2979, 3603, 0)))
-        GeneralBotCreator(GreenDragonKiller(CombatStyle.RANGE), assembler.assembleRangedBot(CombatBotAssembler.Tier.HIGH,Location.create(2979, 3603, 0)))
+        val wilderness = Location.create(2979, 3603, 0)
+        for (i in (0..1)) {
+            GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.HIGH,wilderness))
+            GeneralBotCreator(GreenDragonKiller(CombatStyle.MELEE), assembler.assembleMeleeDragonBot(CombatBotAssembler.Tier.MED,wilderness))
+            GeneralBotCreator(GreenDragonKiller(CombatStyle.RANGE), assembler.assembleRangedBot(CombatBotAssembler.Tier.HIGH,wilderness))
+        }
     }
 
     fun immerseFalador(){

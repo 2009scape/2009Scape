@@ -376,6 +376,7 @@ class Adventurer (val style: CombatStyle): Script() {
         state = State.START
     }
 
+    //Adventure Bots v1.3.0
     override fun tick() {
 
         if (ticks++ >= 500) {
