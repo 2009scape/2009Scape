@@ -94,7 +94,7 @@ public final class BarrowsActivityPlugin extends ActivityPlugin {
 						Graphics.send(Graphics.create(405), p.getLocation());
 					}
 				}
-				if (p.getLocks().isLocked("barrow:drain")) {
+				if (p.getLocks().isLocked("barrow:drain") || RandomFunction.random(100) % 2 == 0) {
 					continue;
 				}
 				int drain = 8;
