@@ -124,9 +124,7 @@ public class WitchsDiaryBook extends Book {
 
     @Override
     public void finish() {
-//        if (player.getQuestRepository().getQuest("Shield of Arrav").getStage(player) == 10) {
-//            player.getQuestRepository().getQuest("Shield of Arrav").setStage(player, 20);
-//        }
+
     }
 
     @Override
@@ -144,9 +142,9 @@ public class WitchsDiaryBook extends Book {
                 player.getPacketDispatch().sendString(line.getMessage(), getInterface().getId(), line.getChild());
             }
         }
-        player.getPacketDispatch().sendInterfaceConfig(getInterface().getId(), 51, index < 1 ? true : false);
+        player.getPacketDispatch().sendInterfaceConfig(getInterface().getId(), 51, index < 1);
         boolean lastPage = index == sets.length - 1;
-        player.getPacketDispatch().sendInterfaceConfig(getInterface().getId(), 53, lastPage ? true : false);
+        player.getPacketDispatch().sendInterfaceConfig(getInterface().getId(), 53, lastPage);
         if (lastPage) {
             finish();
         }

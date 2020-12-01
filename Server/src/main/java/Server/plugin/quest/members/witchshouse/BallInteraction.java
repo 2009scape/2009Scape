@@ -19,7 +19,7 @@ public class BallInteraction extends PluginInteraction {
     private boolean handled;
     @Override
     public Plugin<Object> newInstance(Object arg) throws Throwable {
-        SpellBlocks.register(TelekineticGrabSpell.SPELL_ID, (Node) new Item(2407));
+        SpellBlocks.register(TelekineticGrabSpell.SPELL_ID, new Item(2407));
         setIds(new int[]{2407});
         PluginInteractionManager.register(this, PluginInteractionManager.InteractionType.ITEM);
         return this;
