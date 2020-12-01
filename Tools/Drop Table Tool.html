@@ -11,7 +11,7 @@
 <div id="app">
     <div class="block container">
         <div class="box">
-            <h1 class="title">Import Files</h1>
+            <h1 class="title is-5">Import Files</h1>
 
             <div class="field is-grouped">
                 <div class="file control has-name">
@@ -66,7 +66,7 @@
             <div class="columns">
                 <div class="column">
                     <div class="box">
-                        <h1 class="title">Functions</h1>
+                        <h1 class="title is-5">Functions</h1>
 
                         <div class="field has-addons">
                             <div class="control select">
@@ -99,13 +99,13 @@
                 </div>
                 <div class="column">
                     <div class="box">
-                        <h1 class="title">NPCs</h1>
+                        <h1 class="title is-5">NPCs</h1>
                         <textarea class="textarea" :value="npcList"></textarea>
                     </div>
                 </div>
                 <div class="column">
                     <div class="box">
-                        <h1 class="title">Items</h1>
+                        <h1 class="title is-5">Items</h1>
                         <textarea class="textarea" :value="itemList"></textarea>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
 
         <div v-if="results" class="block container">
             <div class="box">
-                <h1 class="title">Results &nbsp;&nbsp;
+                <h1 class="title is-4">Results &nbsp;&nbsp;
                     <a class="subtitle is-6" @click="inspectModal = results">View JSON</a>
                 </h1>
                 <pre v-if="resultsType == 'plain'">{{ results }}</pre>
@@ -210,9 +210,6 @@
             },
             methods: {
                 readFiles() {
-                    this.drop_tables = undefined
-                    this.item_configs = undefined
-                    this.npc_configs = undefined
                     this.results = ''
                     this.resultsType = ''
                     this.files = document.getElementById('files').files
@@ -231,7 +228,7 @@
                 injestFile(file, variable, status) {
                     var fr = new FileReader()
                     fr.onload = () => {
-                      this[variable] = JSON.parse(fr.result)
+                      this.$set(this, variable, JSON.parse(fr.result))
                     }
                     fr.readAsText(file)
                     document.getElementById('app').style = ''
@@ -327,5 +324,11 @@
 </script>
 
 </body>
+</html>
 
-</html> 
+<style>
+    .input, .select select, .textarea {
+        background-color: #262b2b;
+        color: #fff;
+    }
+</style>

@@ -1,0 +1,151 @@
+<html>
+<head>
+    <title>💰 GE Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/darkly/bulmaswatch.min.css">
+</head>
+
+<body>
+<div id="app">
+    <div class="block container">
+        <div class="box">
+            <h1 class="title is-5">Import Files</h1>
+
+            <div class="field is-grouped">
+                <div class="file control has-name">
+                    <label class="file-label">
+                        <input id="files" class="file-input" type="file" name="files" accept=".json" multiple @change="readFiles">
+                        <span class="file-cta">
+                      <span class="file-label">
+                        Select all the JSON config files
+                      </span>
+                    </span>
+                        <span class="file-name">
+                      {{ files ? `${files.length} files selected` : 'No files selected' }}
+                    </span>
+                    </label>
+                </div>
+
+                <div class="control">
+                    <button class="button is-info" title="Last selected files will auto-refresh" @click="readFiles">Reload JSON</button>
+                </div>
+            </div>
+
+            <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag">item_configs.json	</span>
+                        <span v-if="item_configs" class="tag is-success">YES</span>
+                        <span v-else class="tag is-danger">NO</span>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag">offer_dispatch.json</span>
+                        <span v-if="offer_dispatch" class="tag is-success">YES</span>
+                        <span v-else class="tag is-danger">NO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div v-if="jsonLoaded" id="functionality">
+        <div class="block container">
+            <div class="box">
+                <h1 class="title">Offers</h1>
+                <div class="field">
+                  <div class="control">
+                    <label>Filter:</label>
+                    <input class="input is-small" type="text" placeholder="Small input" v-model="nameFilter">
+                  </div>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Item ID</td>
+                            <td>Name</td>
+                            <td>Price</td>
+                            <td>Amount</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-if="!nameFilter || offer.name.toLowerCase().includes(nameFilter.toLowerCase())"
+                            v-for="(offer, itemId) in offers">
+                            <td>{{ itemId }}</td>
+                            <td>{{ offer.name }}</td>
+                            <td>{{ offer.value }} gp</td>
+                            <td>{{ offer.amount }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    new Vue({
+            el: '#app',
+            data: {
+                autoRefresh: false,
+                files: undefined,
+                item_configs: undefined,
+                offer_dispatch: undefined,
+                nameFilter: ''
+            },
+            computed: {
+                jsonLoaded() {
+                    loaded = this.item_configs && this.offer_dispatch
+                    if (loaded && !this.autoRefresh) this.autoRefresh = setInterval(this.readFiles, 30000)
+                    return loaded
+                },
+                offers() {
+                    if (!this.offer_dispatch) return {}
+                    offers = {}
+                    for (offer of this.offer_dispatch.offers) {
+                        offers[offer.itemId] = offers[offer.itemId] 
+                            || {amount: 0, name: this.item_configs.find(x => x.id == offer.itemId).name, value: 0}
+                        offers[offer.itemId].amount = (offer.amount - offer.completedAmount)
+                        if (offer.offeredValue > offers[offer.itemId].value)
+                            offers[offer.itemId].value = offer.offeredValue
+                    }
+                    return offers
+                }
+            },
+            methods: {
+                readFiles() {
+                    this.files = document.getElementById('files').files
+                    for (file of this.files) {
+                        if (file.name == 'offer_dispatch.json') {
+                            this.injestFile(file, 'offer_dispatch', 'status_dispatch')
+                        }
+                        if (file.name == 'item_configs.json') {
+                            this.injestFile(file, 'item_configs', 'status_item')
+                        }
+                    }
+                },
+                injestFile(file, variable, status) {
+                    var fr = new FileReader()
+                    fr.onload = () => {
+                      this.$set(this, variable, JSON.parse(fr.result))
+                    }
+                    fr.readAsText(file)
+                    document.getElementById('app').style = ''
+                }
+            }
+        })
+</script>
+
+</body>
+</html>
+
+<style>
+    .input, .select select, .textarea {
+        background-color: #262b2b;
+        color: #fff;
+    }
+</style>
