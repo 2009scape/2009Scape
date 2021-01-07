@@ -1,6 +1,7 @@
 package core.game.node.entity.player.link.emote;
 
 import core.game.container.impl.EquipmentContainer;
+import core.game.node.entity.player.info.Rights;
 import core.game.world.map.Direction;
 import core.game.world.map.Location;
 import core.tools.Items;
@@ -298,6 +299,12 @@ public enum Emotes {
             return;
         }
         if (!player.getEmoteManager().isUnlocked(emote)) {
+            if(player.getRights().equals(Rights.ADMINISTRATOR)){
+                player.getEmoteManager().unlock(emote);
+                player.getPulseManager().clear();
+                emote.play(player);
+                return;
+            }
             String message = emote.getLockedMessage();
             if (message == null) {
                 message = "You can't use this emote.";
