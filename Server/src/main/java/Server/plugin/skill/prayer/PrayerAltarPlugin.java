@@ -59,7 +59,7 @@ public class PrayerAltarPlugin extends OptionHandler {
 		if (node.getId() == 2640) {
 			player.getSkills().setLevel(Skills.PRAYER, player.getSkills().getStaticLevel(Skills.PRAYER) + 2);
 			player.getSkills().getRestoration()[Skills.PRAYER] = new SkillRestoration(Skills.PRAYER);
-			player.getSkills().getRestoration()[Skills.PRAYER].restart();
+			player.getSkills().getRestoration()[Skills.PRAYER].restartHpSummPray(false);
 		}
 		if (node.getId() == 409
 				&& player.getLocation().withinDistance(new Location(3209, 3495, 1))

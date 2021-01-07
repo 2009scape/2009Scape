@@ -593,7 +593,8 @@ public final class Skills {
 		}
 		dynamicLevels[slot] = level;
 		if (restoration[slot] != null) {
-			restoration[slot].restart();
+			restoration[slot].restartHpSummPray(false);
+			restoration[slot].restartStat(false);
 		}
 		if (entity instanceof Player) {
 			PacketRepository.send(SkillLevel.class, new SkillContext((Player) entity, slot));
@@ -801,7 +802,8 @@ public final class Skills {
 			dynamicLevels[skill] = maximum;
 		}
 		if (restoration[skill] != null) {
-			restoration[skill].restart();
+			restoration[skill].restartHpSummPray(false);
+			restoration[skill].restartStat(false);
 		}
 		if (entity instanceof Player) {
 			PacketRepository.send(SkillLevel.class, new SkillContext((Player) entity, skill));

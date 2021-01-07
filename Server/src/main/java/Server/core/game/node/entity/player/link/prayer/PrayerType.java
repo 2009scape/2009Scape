@@ -1,6 +1,7 @@
 package core.game.node.entity.player.link.prayer;
 
 import plugin.skill.SkillBonus;
+import plugin.skill.SkillRestoration;
 import plugin.skill.Skills;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.audio.Audio;
@@ -23,8 +24,26 @@ public enum PrayerType {
 	ROCK_SKIN(10, 6, 86, 15, PrayerCategory.BABY_BLUE, 2684, new SkillBonus(Skills.DEFENCE, 0.1)), 
 	SUPERHUMAN_STRENGTH(13, 6, 87, 17, PrayerCategory.GREEN, 2689, new SkillBonus(Skills.STRENGTH, 0.1)), 
 	IMPROVED_REFLEXES(16, 6, 88, 19, PrayerCategory.PINK, 2662, new SkillBonus(Skills.ATTACK, 0.1)),
-	RAPID_RESTORE(19, 26, 89, 21, PrayerCategory.PURPLE, 2679), 
-	RAPID_HEAL(22, 18, 90, 23, PrayerCategory.PURPLE, 2678), 
+	RAPID_RESTORE(19, 26, 89, 21, PrayerCategory.PURPLE, 2679){
+		@Override
+		public boolean toggle(Player player, boolean on) {
+			for(SkillRestoration restore : player.getSkills().getRestoration()){
+				if(restore == null) continue;
+				restore.restartStat(on);
+			}
+			return super.toggle(player, on);
+		}
+	},
+	RAPID_HEAL(22, 18, 90, 23, PrayerCategory.PURPLE, 2678){
+		@Override
+		public boolean toggle(Player player, boolean on) {
+			for(SkillRestoration restore : player.getSkills().getRestoration()){
+				if(restore == null) continue;
+				restore.restartHpSummPray(on);
+			}
+			return super.toggle(player, on);
+		}
+	},
 	PROTECT_ITEMS(25, 18, 91, 25, PrayerCategory.DARK_GREEN, 1982), 
 	HAWK_EYE(26, 6, 864, 27, PrayerCategory.LIME_GREEN, 2666, new SkillBonus(Skills.RANGE, 0.1)), 
 	MYSTIC_LORE(27, 6, 865, 29, PrayerCategory.LIME_GREEN, 2668, new SkillBonus(Skills.MAGIC, 0.1)), 
