@@ -263,7 +263,6 @@ public final class CharacterDesign {
 	private static void changeColor(Player player, int index, int[] array, int startId, int buttonId) {
 		int col = array[Math.abs(buttonId - startId)];
 		player.setAttribute("color-val:" + index, array[Math.abs(buttonId - startId)]);
-		SystemLogger.log(col+ "");
 	}
 
 	/**

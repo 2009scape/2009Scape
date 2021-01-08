@@ -161,7 +161,6 @@ public final class AntiMacroHandler implements SavingModule {
 		if(!player.isArtificial() && !isDisabled) {
 			System.out.println("Anti-Macro: Initialized anti-macro handler for " + player.getUsername());
 		}
-		SystemLogger.log("Monitors: " + monitors.length);
 	}
 
 	/**

@@ -62,7 +62,6 @@ public final class MessageContext implements Context {
 		this.player = player;
 		this.other = other.getName();
 		this.chatIcon = Rights.getChatIcon(other);
-		SystemLogger.log("" + chatIcon + " E");
 		this.opcode = opcode;
 		this.message = message;
 	}

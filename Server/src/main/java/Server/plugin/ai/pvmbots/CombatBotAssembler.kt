@@ -425,7 +425,6 @@ class CombatBotAssembler {
         }
 
         bot.skills.addExperience(Skills.HITPOINTS, (totalXPAdd / skillAmt) * 0.2)
-        SystemLogger.log("hp: ${(totalXPAdd / skillAmt) * 0.2}")
         val new_hp = bot.skills.levelFromXP((totalXPAdd / skillAmt) * 0.2)
         bot.skills.setStaticLevel(Skills.HITPOINTS,10 + new_hp)
         bot.skills.updateCombatLevel()

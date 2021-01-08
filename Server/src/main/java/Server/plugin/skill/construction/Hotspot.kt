@@ -54,7 +54,6 @@ class Hotspot (val hotspot: BuildHotspot,val chunkX: Int,val chunkY: Int,var chu
      * @param chunkY The chunk y-coordinate.
      */
     init {
-        log("CONSTRUCTED WITH ADDITIONAL CHUNK INFO -0-----------------------------------------------------------------------------")
         currentX = chunkX
         currentY = chunkY
     }
