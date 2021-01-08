@@ -5,6 +5,7 @@ import core.cache.def.impl.ItemDefinition
 import core.cache.def.impl.NPCDefinition
 import core.cache.misc.buffer.ByteBufferUtils
 import core.game.node.entity.player.Player
+import core.net.packet.`in`.QCPacketType
 import plugin.skill.Skills
 import plugin.stringtools.colorize
 import java.nio.ByteBuffer
@@ -46,24 +47,30 @@ object QCRepository {
     )
 
     private val quickChatIndex = Cache.getIndexes()[24]
-    private val qcSize = quickChatIndex.getFilesSize(1)
 
+    /**
+     * The entry method that connects to the other more specific methods
+     */
     @JvmStatic
-    fun sendQC(player: Player?, type: Int?, id: Int?, searchId: Int? = -1) {
-        id ?: return
-        type ?: return
+    fun sendQC(player: Player?, multiplier: Int?, offset: Int?, packetType: QCPacketType, selection_a_index: Int, selection_b_index: Int){
+        val index = getIndex(offset,multiplier)
+        when(packetType){
+            QCPacketType.SINGLE -> sendSingleQC(player,index,selection_a_index)
+            QCPacketType.DOUBLE -> sendDoubleQC(player,index,selection_a_index,selection_b_index)
+            QCPacketType.STANDARD -> sendStandardQC(player,index)
+        }
+    }
 
-        var index = if(id > 0) {
-            (256 * type) + id
-        }else {
-            if(type == 0) 256 + id else 512 + id
-        } //for some reason it subtracts only from 512 if it's negative (Jagex idk) or 256 if type is 0 but not from 768 if type is 3?
-
-        var qcString = ByteBufferUtils.getString(ByteBuffer.wrap(quickChatIndex.getFileData(1, index)))
-
+    /**
+     * For standard quick chat messages with no string replacements
+     */
+    @JvmStatic
+    fun sendStandardQC(player: Player?, index: Int){
+        var qcString = getQCString(index)
+        
         //XP to next level
         if (qcString.contains("to get my next")) {
-            val skillName = skillIDs[id - 103]
+            val skillName = skillIDs[index - 103]
             val skill = Skills.getSkillByName(skillName?.toUpperCase())
             val playerXP = player?.skills?.getExperience(skill)
             val playerLevel = player?.skills?.getStaticLevel(skill)
@@ -79,181 +86,235 @@ object QCRepository {
             qcString = qcString.replace("<", level.toString())
         }
 
+        //My current slayer assignment is
+        else if(qcString.contains("My current Slayer assignment is")){
+            val amount = player?.slayer?.amount
+            val taskName = NPCDefinition.forId(player?.slayer?.task?.ids?.get(0) ?: 0).name.toLowerCase()
+            if(amount ?: 0 > 0){
+                qcString = qcString.replace("complete","$amount $taskName")
+            }
+        }
+        
+        player?.sendChat(qcString)
+    }
+
+
+    /**
+     * For Single-replacement quick chat messages with one replacement selection
+     */
+    @JvmStatic
+    fun sendSingleQC(player: Player?, index: Int, selectionIndex: Int){
+        var qcString = getQCString(index)
+
         //Messages that include items
-        else if ((qcString.contains("item") || qcString.contains("Can I buy your") || qcString.contains("What is the best world to buy") || qcString.contains("What is the best world to sell") || qcString.contains("Would you like to borrow") || qcString.contains("Could I please borrow")  ) && qcString.contains("<") ){
-            val itemName = ItemDefinition.forId(searchId ?: 0).name
+        if ((qcString.contains("item") || qcString.contains("Can I buy your") || qcString.contains("What is the best world to buy") || qcString.contains("What is the best world to sell") || qcString.contains("Would you like to borrow") || qcString.contains("Could I please borrow")  ) && qcString.contains("<") ){
+            val itemName = ItemDefinition.forId(selectionIndex).name
             qcString = qcString.replace("<",itemName)
         }
 
         //Loan duration
         else if (qcString.contains("I'd like the loan duration to be")){
-           qcString = when(searchId){
-               0 -> qcString.replace("<","just until one of us logs out")
-               else -> qcString.replace("<","${searchId} hours")
-           }
+            qcString = when(selectionIndex){
+                0 -> qcString.replace("<","just until one of us logs out")
+                else -> qcString.replace("<","${selectionIndex} hours")
+            }
         }
 
         //Go to agility course / Try training your agility at
         else if (qcString.contains("Let's go to Agility course:") || qcString.contains("Try training your Agility at:")){
-            qcString = qcString.replace("<", AGILITY_COURSES[searchId ?: 0])
+            qcString = qcString.replace("<", AGILITY_COURSES[selectionIndex])
         }
 
         //Try training on
         else if(qcString.contains("Try training on")){
-            qcString = qcString.replace("<", TRAIN_MELEE_NPCS[searchId ?: 0])
+            qcString = qcString.replace("<", TRAIN_MELEE_NPCS[selectionIndex])
         }
 
         //Try ranging
         else if(qcString.contains("Try ranging")){
-            qcString = qcString.replace("<", TRAIN_RANGE_NPCS[searchId ?: 0])
+            qcString = qcString.replace("<", TRAIN_RANGE_NPCS[selectionIndex])
         }
 
         //flat-pack
         else if(qcString.contains("flat-pack")){
-            qcString = qcString.replace("<", FLATPAKS[searchId ?: 0])
+            qcString = qcString.replace("<", FLATPAKS[selectionIndex])
         }
 
         //Cooking
         else if(qcString.contains("I'm cooking") || qcString.contains("Would you please cook me") || qcString.contains("Try cooking")){
-            qcString = qcString.replace("<", COOK_ITEMS[searchId ?: 0])
+            qcString = qcString.replace("<", COOK_ITEMS[selectionIndex])
         }
 
         //Crafting
         else if(qcString.contains("I am crafting") || qcString.contains("Try crafting") || qcString.contains("Would you please craft me")){
-            qcString = qcString.replace("<", CRAFT_ITEMS[searchId ?: 0])
+            qcString = qcString.replace("<", CRAFT_ITEMS[selectionIndex])
         }
 
         //Farming
         else if(qcString.contains("I'm growing crop") || qcString.contains("Try growing crop")){
-            qcString = qcString.replace("<", FARM_CROPS[searchId ?: 0])
+            qcString = qcString.replace("<", FARM_CROPS[selectionIndex])
         }
 
         //I'm burning logs...
         else if(qcString.contains("I'm burning logs")){
-            qcString = qcString.replace("<", FM_LOGS[searchId ?: 0])
+            qcString = qcString.replace("<", FM_LOGS[selectionIndex])
         }
 
         //Try burning logs at
         else if(qcString.contains("Try burning logs at")){
-            qcString = qcString.replace("<", FM_LOCATIONS[searchId ?: 0])
+            qcString = qcString.replace("<", FM_LOCATIONS[selectionIndex])
         }
 
         //Fishing
         else if(qcString.contains("I'm fishing") || qcString.contains("Would you please fish me") || qcString.contains("Try fishing for")){
-            qcString = qcString.replace("<", FISH[searchId ?: 0])
+            qcString = qcString.replace("<", FISH[selectionIndex])
         }
 
-       //Fletching
-       else if(qcString.contains("I'm fletching") || qcString.contains("Try fletching") || qcString.contains("Would you please fetch me")){
-           qcString = qcString.replace("<", FLETCH_ITEMS[searchId ?: 0])
+        //Fletching
+        else if(qcString.contains("I'm fletching") || qcString.contains("Try fletching") || qcString.contains("Would you please fetch me")){
+            qcString = qcString.replace("<", FLETCH_ITEMS[selectionIndex])
         }
 
         //Herblore
         else if(qcString.contains("I'm mixing potion") || qcString.contains("Would you please mix me a potion") || qcString.contains("Try mixing potion")){
-            qcString = qcString.replace("<", HERB_POTIONS[searchId ?: 0])
+            qcString = qcString.replace("<", HERB_POTIONS[selectionIndex])
         }
 
         //Herblore secondaries
         else if(qcString.contains("Where can I get the secondary ingredient")){
-            qcString = qcString.replace("<", HERB_SECONDARIES[searchId ?: 0])
+            qcString = qcString.replace("<", HERB_SECONDARIES[selectionIndex])
         }
 
         //Hunter
         else if(qcString.contains("Would you please hunt me") || qcString.contains("Try hunting")){
-            qcString = qcString.replace("<", HUNTER_ANIMALS[searchId ?: 0])
+            qcString = qcString.replace("<", HUNTER_ANIMALS[selectionIndex])
         }
 
         //Casting spell
         else if(qcString.contains("I'm casting spell") || qcString.contains("Would you please cast")){
-            qcString = qcString.replace("<", MAGIC_SPELLS[searchId ?: 0])
+            qcString = qcString.replace("<", MAGIC_SPELLS[selectionIndex])
         }
 
         //Spellbook
         else if(qcString.contains("I am on spell book")){
-            qcString = qcString.replace("<", MAGIC_BOOKS[searchId ?: 0])
+            qcString = qcString.replace("<", MAGIC_BOOKS[selectionIndex])
         }
 
         //Mining ore
         else if(qcString.contains("I'm mining ore")){
-            qcString = qcString.replace("<", ORES[searchId ?: 0])
+            qcString = qcString.replace("<", ORES[selectionIndex])
         }
 
         //Pickaxe using
         else if(qcString.contains("I'm using a pick")){
-            qcString = qcString.replace("<", PICKAXE_TYPES[searchId ?: 0])
+            qcString = qcString.replace("<", PICKAXE_TYPES[selectionIndex])
         }
 
         //Try mining at
         else if(qcString.contains("Try mining at")){
-            qcString = qcString.replace("<", MINING_LOCATIONS[searchId ?: 0])
+            qcString = qcString.replace("<", MINING_LOCATIONS[selectionIndex])
         }
 
         //Use your prayer
         else if(qcString.contains("Use your prayer")){
-            qcString = qcString.replace("<", PRAYERS[searchId ?: 0])
+            qcString = qcString.replace("<", PRAYERS[selectionIndex])
         }
 
         //i'm going to craft rune
         else if(qcString.contains("I'm going to craft rune")){
-            qcString = qcString.replace("<", RUNES[searchId ?: 0])
+            qcString = qcString.replace("<", RUNES[selectionIndex])
         }
 
         //try crafting runes at
         else if(qcString.contains("Try crafting runes at")){
-            qcString = qcString.replace("<", RC_LOCATIONS[searchId ?: 0])
+            qcString = qcString.replace("<", RC_LOCATIONS[selectionIndex])
         }
 
         //Slayer master in
         else if(qcString.contains("You should use the Slayer master in")){
-            qcString = qcString.replace("<", SLAYER_LOCATIONS[searchId ?: 0])
-        }
-
-        //My current slayer assignment is
-        else if(qcString.contains("My current Slayer assignment is")){
-            val amount = player?.slayer?.amount ?: 0
-            val taskName = NPCDefinition.forId(player?.slayer?.task?.ids?.get(0) ?: 0).name.toLowerCase()
-            if(amount > 0){
-                qcString = qcString.replace("complete","$amount $taskName")
-            }
+            qcString = qcString.replace("<", SLAYER_LOCATIONS[selectionIndex])
         }
 
         //Spare slayer equipment
         else if(qcString.contains("Do you have spare Slayer equipment")){
-            qcString = qcString.replace("<", SLAYER_EQUIPMENT[searchId ?: 0])
-        }
-
-        //Smithing TODO: Implement Smithing menu (I got tired of this shit -Ceikry)
-        else if(qcString.contains("I am smithing") || qcString.contains("Try smithing") || qcString.contains("Would you please smith me")){
-            player?.sendMessage(colorize("%RThis Quick Chat is not yet implemented."))
-            return
+            qcString = qcString.replace("<", SLAYER_EQUIPMENT[selectionIndex])
         }
 
         //familiars
         else if(qcString.contains("I like the familiar") || qcString.contains("I can summon up to")){
-            qcString = qcString.replace("<", FAMILIARS[searchId ?: 0])
+            qcString = qcString.replace("<", FAMILIARS[selectionIndex])
         }
 
         //charm droppers
         else if(qcString.contains("Good charm droppers are")){
-            qcString = qcString.replace("<", CHARM_DROPPERS[searchId ?: 0])
+            qcString = qcString.replace("<", CHARM_DROPPERS[selectionIndex])
         }
 
         //Thieving
         else if(qcString.contains("Try thieving from")){
-            qcString = qcString.replace("<", THIEVE_TARGETS[searchId ?: 0])
+            qcString = qcString.replace("<", THIEVE_TARGETS[selectionIndex])
         }
 
         //Axe made of
         else if(qcString.contains("I'm using a woodcutting axe made")){
-            qcString = qcString.replace("<", AXE_TYPES[searchId ?: 0])
+            qcString = qcString.replace("<", AXE_TYPES[selectionIndex])
         }
 
         //Try training woodcutting at
         else if(qcString.contains("Try training Woodcutting at")){
-            qcString = qcString.replace("<", WOODCUTTING_LOCATIONS[searchId ?: 0])
+            qcString = qcString.replace("<", WOODCUTTING_LOCATIONS[selectionIndex])
+        }
+
+        //Nice level in
+        else if(qcString.contains("Nice level in")){
+            qcString = qcString.replace("<", SKILL_NAMES[selectionIndex])
+        }
+
+
+        player?.sendChat(qcString)
+    }
+
+
+    /**
+     * For Double-replacement quick chat messages with 2 selection replacements.
+     */
+    @JvmStatic
+    fun sendDoubleQC(player: Player?, index: Int, selection_a_index: Int, selection_b_index: Int){
+        var qcString = getQCString(index)
+
+        //Giving directions: That is _ of _
+        if(qcString.contains("That is < of <")){
+            qcString = qcString.replaceFirst("<", DIRECTIONS[selection_a_index])
+            qcString = qcString.replaceFirst("<", DIR_LOCATIONS[selection_b_index])
+        }
+
+        //Smithing
+        else if(qcString.contains("I am smithing") || qcString.contains("Try smithing") || qcString.contains("Would you please smith me")){
+            qcString = qcString.replaceFirst("<", SMITHING_BARTYPES[selection_a_index])
+            qcString = qcString.replaceFirst("<", SMITHING_PRODUCTS[selection_b_index])
         }
 
         player?.sendChat(qcString)
+    }
+
+    private fun getIndex(offset: Int?, multiplier: Int?): Int{
+        offset ?: return 0
+        multiplier ?: return 0
+        //for some reason it subtracts only from 512 if it's negative (Jagex idk) or 256 if type is 0 but not from 768 if type is 3?
+        return if(offset >= 0) {
+            (256 * multiplier) + offset
+        }else {
+            when(multiplier){
+                0 -> 256 + offset
+                1 -> 512 + offset
+                2 -> 768 + offset
+                else -> 1024 + offset
+            }
+        }
+    }
+
+    private fun getQCString(index: Int): String{
+        return ByteBufferUtils.getString(ByteBuffer.wrap(QCRepository.quickChatIndex.getFileData(1, index)))
     }
 }
 
@@ -286,3 +347,8 @@ private val PICKAXE_TYPES: Array<String> = arrayOf("adamant","bronze","iron","mi
 private val AXE_TYPES: Array<String> = arrayOf("adamant","black","bronze","dragon","iron","mithril","rune","steel")
 private val WOODCUTTING_LOCATIONS: Array<String> = arrayOf("Ape Atoll","Draynor","Edgeville","Gnome Stronghold","Isafdar","Kharazi Jungle","Mage Training Area","Neitiznot","Piscatoris","Seers' Village","Seers' Village cemetery","Sinclair Mansion","Sorcerer's Tower","South of Castle Wars","South of Falador","South of the Lumberyard","Tai Bwo Bwannai","Uzer","Varrock Palace","West of Barbarian Assault","West of Catherby","West of Lumbridge Castle","West of Oo'glog")
 private val SLAYER_EQUIPMENT: Array<String> = arrayOf("a bug lantern","a crystal chime","a face mask","a mirror shield","a nosepeg","a Slayer bell","a spiny helmet","a witchwood icon","an enchanted gem","bags of salt","broad arrows","earmuffs","Fishing explosives","fungicide spray","ice coolers","insulated boots","leaf-bladed spear","rock hammers","Slayer gloves","Slayer staff","super fishing explosive")
+private val DIRECTIONS: Array<String> = arrayOf("north","south","east","west","north-east","north-west","south-east","south-west")
+private val DIR_LOCATIONS: Array<String> = arrayOf("Al Kharid","Ape Atoll","Ardougne (East)","Ardougne (West)","Barbarian Village","Braindeath Island","Brimhaven","BUrdh de Rott","Burthorpe","Camelot","Canifis","Catherby","Crandor","Dorgesh-Kaan","Draynor Manor","Draynor Village","Edgeville","Entrana","Etceteria","Falador","Goblin Village","God Wars Dungeon","Grand Exchange","Gu'Tanoth","Harmony Island","Hemenster","Isafdar","Jatizso","Kalphite Lair","Karamja","Keldagrim","Lletya","Lumbridge","Lunar Isle","Meiyerditch","Miscellania","Mort'ton","Mos Le Harmless","Nardah","Neitiznot","Oo'glog","Paterdomus","Piscatoris","Pollnivneach","Port Khazard","Port Phasmatys","Port Sarim","Rellekka","Rimmington","Seers' Village","Shilo Village","Sophanem","Tai Bwo Wannai Village","Taverley","Tree Gnome Stronghold","Tree Gnome Village","Troll Stronghold","TzHaar city","Varrock","Waterbirth Island","Witchaven","Yanille","Zanaris")
+private val SKILL_NAMES: Array<String> = arrayOf("Agility","Attack","Construction","Cooking","Crafting","Defence","Farming","Firemaking","Fishing","Fletching","Herblore","Hitpoints","Hunter","Magic","Mining","Prayer","Ranged","Runecrafting","Slayer","Smithing","Strength","Summoning","Thieving","Woodcutting")
+private val SMITHING_BARTYPES: Array<String> = arrayOf("adamant","blurite","bronze","iron","item","mithril","rune","steel")
+private val SMITHING_PRODUCTS: Array<String> = arrayOf("arrow tips","axes","battleaxes","bolts","bullseye lantern frames","cannonballs","chainbodies","claws","crossbow limbs","daggers","dart tips","full helms","grapple tips","hastae","kite shields","longswords","maces","medium helms","nails","oil lantern frames","pickaxes","platebodies","platelegs","plateskirts","scimitars","short swords","spears","spits","square shields","studs","throwing knives","two-handed swords","warhammers","wire")
