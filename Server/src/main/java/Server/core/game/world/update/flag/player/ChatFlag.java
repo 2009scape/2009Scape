@@ -29,7 +29,11 @@ public class ChatFlag extends UpdateFlag<ChatMessage> {
 		buffer.putLEShort(context.getEffects()); // 0x8000 does something (you'd
 													// need to send something
 													// extra.
-		buffer.put((byte) Rights.getChatIcon(context.getPlayer()));
+		if(context.isQuickChat){
+			buffer.put((byte) 4);
+		} else {
+			buffer.put((byte) Rights.getChatIcon(context.getPlayer()));
+		}
 		buffer.put(offset + 1);
 		buffer.putReverse(chatStr, 0, offset);
 	}

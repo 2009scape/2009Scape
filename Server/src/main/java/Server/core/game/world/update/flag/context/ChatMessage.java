@@ -28,6 +28,8 @@ public class ChatMessage {
 	 */
 	private int numChars;
 
+	public boolean isQuickChat = false;
+
 	/**
 	 * Constructs a new {@code ChatMessage} {@code Object}.
 	 * @param player The player.
