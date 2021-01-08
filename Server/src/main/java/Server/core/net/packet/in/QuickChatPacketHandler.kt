@@ -13,10 +13,10 @@ import core.net.packet.IoBuffer
  */
 /**
  * There's different varieties of the quick chat packet.
- * Standard, which is only 3 bytes and has no string replacement.
+ * Standard, which is only 3 (sometimes 4) bytes and has no string replacement selections.
  * Single-replacement, which is 5 bytes and has one string replacement. The last 3 bytes can and should be converted to a Short.
  * Double-replacement, which is 7 bytes and has two string replacements.
- * It ALWAYS sends a 0 as the first byte in a packet, so it can be discarded.
+ * The first byte is whether or not the message is intended for your clan. 0 = public chat, 1 = clan chat
  * The second byte will either be 0,1,2,3. This is the number 256 is to be multiplied by.
  * The third byte is the index. This can be negative. This number is added to the multiple of 256 determined by the previous byte to get the actual id of the cache file holding the quick chat message.
  * In a single replacement, you then have a short (which is 3 bytes in length) that will tell you either the item ID or the index of the selection on the menu.
@@ -34,7 +34,7 @@ class QuickChatPacketHandler : IncomingPacket {
                 else -> QCPacketType.UNHANDLED.also { SystemLogger.log("UNHANDLED QC PACKET TYPE~~~~~~~~~~~~~~~~~~~~~~~~~~") }
         }
 
-        buffer.get() //always 0, discarded
+        val forClan = (buffer.get() and 0xFF) == 1
         val multiplier: Int = buffer.get()
         val offset: Int = buffer.get()
         var selection_a_index = -1
@@ -58,14 +58,14 @@ class QuickChatPacketHandler : IncomingPacket {
         //If the world is in dev mode
         if(GameWorld.settings?.isDevMode == true) {
             SystemLogger.log("Begin QuickChat Packet Buffer Dump---------")
-            SystemLogger.log("Packet Type: ${packetType.name}")
+            SystemLogger.log("Packet Type: ${packetType.name} Chat Type: ${if(forClan) "Clan" else "Public"}")
             x?.array()?.forEach {
                 SystemLogger.log("$it")
             }
             SystemLogger.log("End QuickChat Packet Buffer Dump-----------")
         }
 
-        QCRepository.sendQC(player,multiplier,offset,packetType,selection_a_index,selection_b_index)
+        QCRepository.sendQC(player,multiplier,offset,packetType,selection_a_index,selection_b_index,forClan)
     }
 }
 

@@ -9,6 +9,8 @@ import core.game.system.task.Pulse
 import core.game.world.GameWorld.Pulser
 import core.game.world.update.flag.context.ChatMessage
 import core.game.world.update.flag.player.ChatFlag
+import core.net.amsc.MSPacketRepository
+import core.net.amsc.WorldCommunicator
 import core.net.packet.`in`.QCPacketType
 import plugin.skill.Skills
 import java.nio.ByteBuffer
@@ -55,7 +57,7 @@ object QCRepository {
      * The entry method that connects to the other more specific methods
      */
     @JvmStatic
-    fun sendQC(player: Player?, multiplier: Int?, offset: Int?, packetType: QCPacketType, selection_a_index: Int, selection_b_index: Int){
+    fun sendQC(player: Player?, multiplier: Int?, offset: Int?, packetType: QCPacketType, selection_a_index: Int, selection_b_index: Int, forClan: Boolean){
         val index = getIndex(offset, multiplier)
         player?.setAttribute("qc_offset", offset) //Slapping this in an attribute because it's only useful for one or two messages
         val qcString = when(packetType){
@@ -66,14 +68,22 @@ object QCRepository {
         }
 
 
-        val ctx = ChatMessage(player, qcString, 0, qcString.length)
-        ctx.isQuickChat = true
-        Pulser.submit(object : Pulse(0, player) {
-            override fun pulse(): Boolean {
-                player!!.updateMasks.register(ChatFlag(ctx))
-                return true
+        if(forClan) {
+            if (WorldCommunicator.isEnabled()) {
+                MSPacketRepository.sendClanMessage(player, qcString)
+            } else {
+                player?.communication?.clan?.message(player, qcString)
             }
-        })
+        } else {
+            val ctx = ChatMessage(player, qcString, 0, qcString.length)
+            ctx.isQuickChat = true
+            Pulser.submit(object : Pulse(0, player) {
+                override fun pulse(): Boolean {
+                    player!!.updateMasks.register(ChatFlag(ctx))
+                    return true
+                }
+            })
+        }
     }
 
     /**
