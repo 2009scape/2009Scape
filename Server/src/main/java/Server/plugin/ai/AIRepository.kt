@@ -2,6 +2,7 @@ package plugin.ai
 
 import core.game.node.entity.player.Player
 import core.game.node.item.GroundItem
+import plugin.ai.general.GeneralBotCreator
 import plugin.ge.GrandExchangeOffer
 
 /**
@@ -12,6 +13,9 @@ class AIRepository {
     companion object {
         val groundItems = HashMap<Player,ArrayList<GroundItem>>()
         val GEOffers = HashMap<Player,GrandExchangeOffer>()
+
+        @JvmStatic
+        val PulseRepository = ArrayList<GeneralBotCreator.BotScriptPulse>()
 
         @JvmStatic
         fun addItem(item: GroundItem){

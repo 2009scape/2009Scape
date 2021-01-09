@@ -91,6 +91,13 @@ class DisconnectionQueue {
         }
         queue.clear()
     }
+
+    fun safeClear(){
+        for(entry in queue.values){
+            finish(entry,false)
+        }
+        queue.clear()
+    }
     /**
      * Adds a player to the disconnection queue.
      * @param player The player.

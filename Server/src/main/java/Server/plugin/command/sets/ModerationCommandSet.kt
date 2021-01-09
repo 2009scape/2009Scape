@@ -10,6 +10,10 @@ import plugin.command.CommandSet
 import java.util.concurrent.TimeUnit
 
 @InitializablePlugin
+/**
+ * Moderation commands
+ * @author Ceikry
+ */
 class ModerationCommandSet : CommandSet(Command.Privilege.MODERATOR){
     override fun defineCommands() {
         val MAX_JAIL_TIME = 1800 //Max jail time (in seconds)
@@ -47,10 +51,10 @@ class ModerationCommandSet : CommandSet(Command.Privilege.MODERATOR){
                 override fun pulse(): Boolean {
                     val done = System.currentTimeMillis() >= releaseTime
                     if(otherPlayer.location != Location.create(3228, 3407, 0)){
-                        player.properties.teleportLocation = Location.create(3228, 3407, 0)
+                        otherPlayer.properties.teleportLocation = Location.create(3228, 3407, 0)
                     }
                     if(done){
-                        player.properties.teleportLocation = originalLoc
+                        otherPlayer.properties.teleportLocation = originalLoc
                     }
                     return done
                 }

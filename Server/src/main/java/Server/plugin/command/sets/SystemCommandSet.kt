@@ -2,9 +2,11 @@ package plugin.command.sets
 
 import core.game.node.entity.player.info.login.Response
 import core.game.node.entity.player.info.portal.PlayerSQLManager
+import core.game.node.item.Item
 import core.game.system.SystemManager
 import core.game.system.SystemState
 import core.plugin.InitializablePlugin
+import core.tools.Items
 import plugin.command.Command
 import plugin.command.CommandSet
 
@@ -65,6 +67,10 @@ class SystemCommandSet : CommandSet(Command.Privilege.ADMIN){
             newPass = SystemManager.getEncryption().hashPassword(newPass)
             PlayerSQLManager.updatePassword(player.username.toLowerCase().replace(" ","_"),newPass)
             reject(player,"Password updated successfully.")
+        }
+
+        define("potato"){player,_ ->
+            player.inventory.add(Item(Items.ROTTEN_POTATO_5733))
         }
 
     }
