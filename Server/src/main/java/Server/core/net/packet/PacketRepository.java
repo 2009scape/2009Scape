@@ -134,9 +134,9 @@ public final class PacketRepository {
 		INCOMING_PACKETS.put(72, packet = new ExaminePacket());
 		INCOMING_PACKETS.put(92, packet);
 		INCOMING_PACKETS.put(94, packet);
-		INCOMING_PACKETS.put(57, packet);
+		/*INCOMING_PACKETS.put(57, packet);
 		INCOMING_PACKETS.put(34, packet);
-		INCOMING_PACKETS.put(213, packet);
+		INCOMING_PACKETS.put(213, packet);*/
 		//INCOMING_PACKETS.put(69, packet);
 		//packet 98 - 530 settings interface
 		INCOMING_PACKETS.put(104, packet = new ClanPacketHandler());
