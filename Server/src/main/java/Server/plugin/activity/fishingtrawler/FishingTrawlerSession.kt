@@ -130,16 +130,24 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
     }
 
     fun initHoles(){
-        maxHoles = ceil((players.size / 4.0)).toInt()
+        maxHoles = players.size
         if(maxHoles > 16) maxHoles = 16
         if(maxHoles < 5) maxHoles = 5
-        var tempLocationList = ArrayList<Location>()
+        val tempLocationList = ArrayList<Location>()
         while(tempLocationList.size < maxHoles){
             val x = HOLE_X_COORDS.random()
             val y = if(Random.nextBoolean()) HOLE_NORTH_Y else HOLE_SOUTH_Y
             val loc = Location.create(x,y,0)
-            if(tempLocationList.contains(loc)) continue
-            tempLocationList.add(base.transform(loc.x,loc.y,0))
+            var alreadyHas = false
+            for(location in tempLocationList){
+                if(location.equals(loc)) {
+                    alreadyHas = true
+                    break
+                }
+            }
+            if(!alreadyHas) {
+                tempLocationList.add(base.transform(loc.x, loc.y, 0))
+            }
         }
         hole_locations.addAll(tempLocationList)
     }

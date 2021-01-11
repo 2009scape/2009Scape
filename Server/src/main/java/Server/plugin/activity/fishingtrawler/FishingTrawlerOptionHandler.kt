@@ -87,18 +87,20 @@ class FishingTrawlerOptionHandler : OptionHandler() {
             583 -> { //bail-with bucket
                 val session: FishingTrawlerSession? = player.getAttribute("ft-session",null)
                 session ?: return false
-                if(session.waterAmount > 0){
-                    session.waterAmount -= 3
-                    if(session.waterAmount < 0) session.waterAmount = 0
-                    player.inventory.remove(node.asItem())
-                    player.inventory.add(Item(Items.BAILING_BUCKET_585))
-                } else {
-                    player.sendMessage("There's no water to remove.")
+                if(player.inventory.remove(node.asItem())) {
+                    if (session.waterAmount > 0) {
+                        session.waterAmount -= 3
+                        if (session.waterAmount < 0) session.waterAmount = 0
+                        player.inventory.add(Item(Items.BAILING_BUCKET_585))
+                    } else {
+                        player.sendMessage("There's no water to remove.")
+                        player.inventory.add(node.asItem())
+                    }
                 }
             }
             585 -> { //Empty bailing bucket
-                player.inventory.remove(node.asItem())
-                player.inventory.add(Item(Items.BAILING_BUCKET_583))
+                if(player.inventory.remove(node.asItem()))
+                    player.inventory.add(Item(Items.BAILING_BUCKET_583))
             }
         }
         return true
