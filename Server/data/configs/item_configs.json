@@ -27727,7 +27727,7 @@
       "id": "2572",
       "name": "Ring of wealth",
       "examine": "An enchanted ring.",
-      "tradeable": "false",
+      "tradeable": "true",
       "low_alchemy": "7050",
       "high_alchemy": "10575",
       "equipment_slot": "12",
@@ -27737,7 +27737,7 @@
     {
       "id": "2573",
       "name": "Ring of wealth",
-      "tradeable": "false",
+      "tradeable": "true",
       "archery_ticket_price": "0",
       "durability": null
     },
