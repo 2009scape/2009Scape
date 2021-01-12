@@ -9,7 +9,8 @@ import core.game.node.entity.player.Player;
  * @author Vexia
  */
 @InitializablePlugin
-public final class ShopkeeperDialogue extends DialoguePlugin {
+public final class
+ShopkeeperDialogue extends DialoguePlugin {
 
 	/**
 	 * Constructs a new {@code ShopkeeperDialogue} {@code Object}.
@@ -73,6 +74,6 @@ public final class ShopkeeperDialogue extends DialoguePlugin {
 
 	@Override
 	public int[] getIds() {
-		return new int[] { 523, 522, 520, 521, 1699 };
+		return new int[] { 523, 522, 520, 521, 1699,555 };
 	}
 }

@@ -17,7 +17,7 @@ import plugin.stringtools.colorize
  * Handles the fishing trawler "waiting room"
  * @author Ceikry
  */
-private val WAIT_TIME = if(GameWorld.settings?.isDevMode == true) 10 else 500
+private val WAIT_TIME = if(GameWorld.settings?.isDevMode == true) 10 else 203
 private val waitingPlayers = ArrayList<Player>()
 private val sessions = ArrayList<FishingTrawlerSession>()
 private var activity: FishingTrawlerActivity? = null

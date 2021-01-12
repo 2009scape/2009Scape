@@ -296,11 +296,11 @@ public class Shop {
         if (item == null) {
             return;
         }
-        if (item.getAmount() < 1) {
+        if (item.getAmount() == 0) {
             player.getPacketDispatch().sendMessage("There is no stock of that item at the moment.");
             return;
         }
-        if (amount > item.getAmount()) {
+        if (amount > item.getAmount() && !(item.getAmount() == -1)) {
             amount = item.getAmount();
         }
         final Item add = new Item(item.getId(), amount);
@@ -326,7 +326,8 @@ public class Shop {
                 decrementPoints(player, price);
             }
             if (tabIndex == 0) {
-                container.replace(new Item(item.getId(), container.getAmount(item) - add.getAmount()), slot, true);
+                if(!(container.getAmount(item) == -1))
+                    container.replace(new Item(item.getId(), container.getAmount(item) - add.getAmount()), slot, true);
             } else {
                 container.remove(add);
                 container.shift();
@@ -394,7 +395,7 @@ public class Shop {
             if (!add.getDefinition().isUnnoted()) {
                 add = new Item(add.getNoteChange(), add.getAmount());
             }
-            if (container.add(add)) {
+            if (container.getAmount(add.getId()) == -1 || container.add(add)) {
                 if (currency.getAmount() > 0) {
                     player.debug("Adding coins to inventory");
                     player.getInventory().add(currency);

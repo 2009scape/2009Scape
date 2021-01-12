@@ -2005,5 +2005,14 @@
     "npcs": "578",
     "currency": "995",
     "high_alch": "0"
+  },
+  {
+    "id": "225",
+    "title": "Port Khazard General Store",
+    "general_store": "false",
+    "stock": "{1941,inf}-{954,inf}-{583,inf}",
+    "npcs": "555",
+    "currency": "995",
+    "high_alch": "0"
   }
 ]

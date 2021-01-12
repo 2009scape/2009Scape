@@ -60,7 +60,10 @@ class ShopParser{
         }
         stock.split('-').map {
             val tokens = it.replace("{", "").replace("}", "").split(",".toRegex()).toTypedArray()
-            items.add(Item(tokens[0].trim().toInt(),tokens[1].trim().toInt()))
+            var amount = tokens[1].trim()
+            if(amount == "inf")
+                amount = "-1"
+            items.add(Item(tokens[0].trim().toInt(),amount.toInt()))
         }
         return items
     }
