@@ -12,6 +12,7 @@ import core.game.world.map.build.DynamicRegion
 import core.game.world.repository.Repository
 import core.plugin.InitializablePlugin
 import core.tools.StringUtils
+import plugin.activity.fishingtrawler.TrawlerLoot
 import plugin.command.Command
 import plugin.command.CommandMapping
 import plugin.command.CommandSet
@@ -271,6 +272,15 @@ class MiscCommandSet : CommandSet(Command.Privilege.ADMIN){
 
             log.clear()
             player.setAttribute("loc-log",log)
+        }
+
+        define("rolltrawlerloot"){player,args ->
+            val rolls = if(args.size < 2){
+                100
+            } else {
+                args[1].toString().toInt()
+            }
+            player.bank.add(*TrawlerLoot.getLoot(rolls,false).toTypedArray())
         }
 
     }

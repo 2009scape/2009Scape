@@ -7,15 +7,17 @@ import core.game.world.map.Location
 import core.game.world.map.build.DynamicRegion
 import core.game.world.map.zone.ZoneRestriction
 import core.plugin.InitializablePlugin
+import core.tools.ticksToSeconds
 import plugin.activity.ActivityManager
 import plugin.activity.ActivityPlugin
+import plugin.stringtools.colorize
 
 
 /**
  * Handles the fishing trawler "waiting room"
  * @author Ceikry
  */
-private val WAIT_TIME = 10
+private val WAIT_TIME = if(GameWorld.settings?.isDevMode == true) 10 else 500
 private val waitingPlayers = ArrayList<Player>()
 private val sessions = ArrayList<FishingTrawlerSession>()
 private var activity: FishingTrawlerActivity? = null
@@ -30,6 +32,11 @@ class FishingTrawlerActivity : ActivityPlugin("fishing trawler",false,false,true
         GameWorld.Pulser.submit(
         object  : Pulse(1){
             override fun pulse(): Boolean {
+                if((nextStart - GameWorld.ticks) % 100 == 0){
+                    for(player in waitingPlayers) {
+                        player.sendMessage (colorize("%R${ticksToSeconds(nextStart - GameWorld.ticks) / 60} minutes until next game."))
+                    }
+                }
                 if(GameWorld.ticks >= nextStart && waitingPlayers.isNotEmpty()){
                     val session = FishingTrawlerSession(DynamicRegion.create(8011), activity!!)
                     session.start(waitingPlayers)

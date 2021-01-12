@@ -95,7 +95,6 @@ public class Interaction {
 	 */
 	public void handleItemOption(final Player player, final Option option, final Container container) {
 		if (player.getLocks().isInteractionLocked()) {
-			SystemLogger.log("Interaction locked");
 			return;
 		}
 		player.getPulseManager().clear("interaction:" + option.getName() + ":" + node.hashCode());
@@ -104,7 +103,6 @@ public class Interaction {
 			public boolean pulse() {
 				try {
 					if (player.getLocks().isInteractionLocked() || player.getZoneMonitor().interact(node, option)) {
-						SystemLogger.log("Interaction locked");
 						return true;
 					}
 					if (option.getHandler() == null || !option.getHandler().handle(player, node, option.getName().toLowerCase())) {

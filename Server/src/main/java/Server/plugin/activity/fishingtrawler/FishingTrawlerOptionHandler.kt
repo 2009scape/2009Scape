@@ -9,7 +9,9 @@ import core.game.node.entity.player.info.stats.FISHING_TRAWLER_LEAKS_PATCHED
 import core.game.node.entity.player.info.stats.STATS_BASE
 import core.game.node.item.GroundItemManager
 import core.game.node.item.Item
+import core.game.system.task.Pulse
 import core.game.world.map.Location
+import core.game.world.update.flag.context.Animation
 import core.plugin.InitializablePlugin
 import core.plugin.Plugin
 import core.tools.Items
@@ -53,8 +55,18 @@ class FishingTrawlerOptionHandler : OptionHandler() {
             2167 -> { //Fill hole
                 val session: FishingTrawlerSession? = player.getAttribute("ft-session",null)
                 session ?: return false
-                session.repairHole(player,node.asObject())
-                player.incrementAttribute("/save:$STATS_BASE:$FISHING_TRAWLER_LEAKS_PATCHED")
+                player.lock()
+                player.pulseManager.run(object : Pulse(){
+                    var counter = 0
+                    override fun pulse(): Boolean {
+                        when(counter++){
+                            0 -> player.animator.animate(Animation(827)).also { player.lock() }
+                            1 -> session.repairHole(player,node.asObject()).also { player.incrementAttribute("/save:$STATS_BASE:$FISHING_TRAWLER_LEAKS_PATCHED"); player.unlock() }
+                            2 -> return true
+                        }
+                        return false
+                    }
+                })
             }
             2164,2165 -> { //inspect net
                 player.dialogueInterpreter.open(18237583)
@@ -65,18 +77,14 @@ class FishingTrawlerOptionHandler : OptionHandler() {
                 if(session.boatSank){
                     return false
                 }
-                val loot = TrawlerLoot.getLoot(ceil(session.fishAmount / session.players.size.toDouble()).toInt())
-                loot.forEach {
-                    if(!player.bank.add(it)){
-                        GroundItemManager.create(it,player)
-                    }
-                }
-                player.sendMessage(colorize("%RYour reward has been sent to your bank."))
-                player.skills.addExperience(Skills.FISHING,(((0.015 * player.skills.getLevel(Skills.FISHING))) * player.skills.getLevel(Skills.FISHING)) * loot.size)
+                player.dialogueInterpreter.open(18237582)
             }
             2179 -> { //plank from boat to dock
                 player.properties.teleportLocation = Location.create(2676, 3170, 0)
                 (ActivityManager.getActivity("fishing trawler") as FishingTrawlerActivity).removePlayer(player)
+                val session: FishingTrawlerSession? = player.getAttribute("ft-session",null)
+                session?.players?.remove(player)
+                player.logoutPlugins.clear()
             }
             2159,2160 -> {  //barrel
                 player.properties.teleportLocation = Location.create(2666, 3162, 0)
@@ -87,23 +95,94 @@ class FishingTrawlerOptionHandler : OptionHandler() {
             583 -> { //bail-with bucket
                 val session: FishingTrawlerSession? = player.getAttribute("ft-session",null)
                 session ?: return false
-                if(player.inventory.remove(node.asItem())) {
-                    if (session.waterAmount > 0) {
-                        session.waterAmount -= 3
-                        if (session.waterAmount < 0) session.waterAmount = 0
-                        player.inventory.add(Item(Items.BAILING_BUCKET_585))
-                    } else {
-                        player.sendMessage("There's no water to remove.")
-                        player.inventory.add(node.asItem())
-                    }
+                if(!session.isActive){
+                    return false
                 }
+                player.lock()
+                player.pulseManager.run(
+                        object : Pulse(){
+                            var counter = 0
+                            override fun pulse(): Boolean {
+                                when(counter++){
+                                    0 -> player.animator.animate(Animation(4471))
+                                    1 -> if(player.inventory.remove(node.asItem())) {
+                                            if (session.waterAmount > 0) {
+                                                session.waterAmount -= 20
+                                                if (session.waterAmount < 0) session.waterAmount = 0
+                                                player.inventory.add(Item(Items.BAILING_BUCKET_585))
+                                            } else {
+                                                player.sendMessage("There's no water to remove.")
+                                                player.inventory.add(node.asItem())
+                                            }
+                                    }
+                                    2 -> player.unlock().also { return true }
+                                }
+                                return false
+                            }
+                        }
+                )
             }
             585 -> { //Empty bailing bucket
-                if(player.inventory.remove(node.asItem()))
-                    player.inventory.add(Item(Items.BAILING_BUCKET_583))
+                player.lock()
+                player.pulseManager.run(
+                        object : Pulse(){
+                            var counter = 0
+                            override fun pulse(): Boolean {
+                                when(counter++){
+                                    0 -> player.animator.animate(Animation(2450))
+                                    1 -> {
+                                        if(player.inventory.remove(node.asItem()))
+                                            player.inventory.add(Item(Items.BAILING_BUCKET_583))
+                                        player.unlock()
+                                        return true
+                                    }
+                                }
+                                return false
+                            }
+                        }
+                )
             }
         }
         return true
+    }
+
+}
+
+@InitializablePlugin
+class NetLootDialogue(player: Player? = null): DialoguePlugin(player){
+    var session: FishingTrawlerSession? = null
+    var rolls = 0
+    override fun newInstance(player: Player?): DialoguePlugin {
+        return NetLootDialogue(player)
+    }
+
+    override fun open(vararg args: Any?): Boolean {
+        session = player.getAttribute("ft-session",null)
+        if(session == null) return false
+        rolls = ceil(session!!.fishAmount / session!!.players.size.toDouble()).toInt()
+        player.dialogueInterpreter.sendOptions("Skip Junk Items?","Yes","No")
+        stage = 0
+        return true
+    }
+
+    override fun handle(interfaceId: Int, buttonId: Int): Boolean {
+        when(buttonId){
+            1 -> TrawlerLoot.getLoot(rolls,true).forEach {
+                if(!player.bank.add(it)) GroundItemManager.create(it,player)
+            }
+            2 -> TrawlerLoot.getLoot(rolls,false).forEach {
+                if(!player.bank.add(it)) GroundItemManager.create(it,player)
+            }
+        }
+        player.sendMessage(colorize("%RYour reward has been sent to your bank."))
+        player.skills.addExperience(Skills.FISHING,(((0.015 * player.skills.getLevel(Skills.FISHING))) * player.skills.getLevel(Skills.FISHING)) * rolls)
+        player.removeAttribute("ft-session")
+        end()
+        return true
+    }
+
+    override fun getIds(): IntArray {
+        return intArrayOf(18237582)
     }
 
 }

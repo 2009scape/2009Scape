@@ -5,9 +5,12 @@ import core.game.interaction.NodeUsageEvent;
 import core.game.interaction.UseWithHandler;
 import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
+import core.game.node.item.GroundItem;
+import core.game.node.item.GroundItemManager;
 import core.game.node.item.Item;
 import core.game.node.object.GameObject;
 import core.game.system.SystemLogger;
+import core.game.world.map.Location;
 import core.game.world.map.RegionManager;
 import core.game.world.repository.Repository;
 import core.net.packet.IncomingPacket;
@@ -18,6 +21,8 @@ import core.net.packet.out.ClearMinimapFlag;
 import core.tools.Items;
 import plugin.command.rottenpotato.RottenPotatoUseWithHandler;
 import plugin.quest.PluginInteractionManager;
+
+import java.nio.ByteBuffer;
 
 /**
  * The incoming item reward packet.
@@ -174,7 +179,8 @@ public class ItemActionPacket implements IncomingPacket {
 				UseWithHandler.run(event);
 			} catch (Exception e){
 				e.printStackTrace();
-			}			return;
+			}
+			return;
 		default:
 			SystemLogger.error("Error in Item Action Packet! Unhandled opcode = " + buffer.opcode());
 			return;

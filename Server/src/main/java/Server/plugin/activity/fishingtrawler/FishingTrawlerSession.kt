@@ -7,6 +7,7 @@ import core.game.node.entity.player.Player
 import core.game.node.entity.player.info.stats.FISHING_TRAWLER_GAMES_WON
 import core.game.node.entity.player.info.stats.FISHING_TRAWLER_SHIPS_SANK
 import core.game.node.entity.player.info.stats.STATS_BASE
+import core.game.node.entity.state.EntityState
 import core.game.node.item.Item
 import core.game.system.SystemLogger
 import core.game.system.task.Pulse
@@ -60,6 +61,7 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
             player.properties.teleportLocation = base.transform(36,24,0)
             player.setAttribute("ft-session",this)
             player.logoutPlugins.add(TrawlerLogoutPlugin())
+            player.stateManager.set(EntityState.TELEBLOCK,timeLeft)
         }
     }
 
@@ -79,6 +81,7 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
                 player.appearance.setAnimations(Animation(188))
                 player.properties.teleportLocation = session.base.transform(36,24,0)
                 player.incrementAttribute("/save:$STATS_BASE:$FISHING_TRAWLER_SHIPS_SANK")
+                player.stateManager.remove(EntityState.TELEBLOCK)
             }
             return true
         }
@@ -108,7 +111,7 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
                 session.swapBoatType(7755)
             }
 
-            if(RandomFunction.random(100) <= 10){
+            if(RandomFunction.random(100) <= 9){
                 session.spawnHole()
             }
 
@@ -155,7 +158,6 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
     fun spawnHole(){
         if(hole_locations.isEmpty() && used_locations.isEmpty()) return
         val holeLocation = hole_locations.random().also { hole_locations.remove(it) }
-        SystemLogger.log(holeLocation.toString())
         if(!ObjectBuilder.replace(GameObject(PATCHED_ID, holeLocation), GameObject(LEAKING_ID, holeLocation, if (holeLocation.y == HOLE_NORTH_Y) 1 else 3)) && !ObjectBuilder.replace(GameObject(2177, holeLocation), GameObject(LEAKING_ID, holeLocation, if (holeLocation.y == HOLE_NORTH_Y) 1 else 3))) {
             maxHoles -= 1
         }
