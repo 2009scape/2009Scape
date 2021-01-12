@@ -98,6 +98,10 @@ class FishingTrawlerOptionHandler : OptionHandler() {
                 if(!session.isActive){
                     return false
                 }
+                if(player.location.y > 0){
+                    player.sendMessage("You cant scoop water out up here.")
+                    return true
+                }
                 player.lock()
                 player.pulseManager.run(
                         object : Pulse(){
