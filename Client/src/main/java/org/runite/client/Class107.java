@@ -44,7 +44,7 @@ final class Class107 {
    static void method1649(int var0, int var1) {
       try {
          if(var1 <= -65) {
-            Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(10, var0);
+            InterfaceWidget var2 = Class3_Sub24_Sub3.getWidget(10, var0);
             var2.a();
          }
       } catch (RuntimeException var3) {

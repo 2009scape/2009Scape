@@ -124,8 +124,8 @@ final class Class84 {
 
    static void method1420(int var0, int var1, int var2, int var3, byte var4) {
       try {
-         Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(10, var0);
-         var5.g();
+         InterfaceWidget var5 = Class3_Sub24_Sub3.getWidget(10, var0);
+         var5.flagUpdate();
          var5.anInt3597 = var2;
          var5.anInt3598 = var3;
          var5.anInt3596 = var1;

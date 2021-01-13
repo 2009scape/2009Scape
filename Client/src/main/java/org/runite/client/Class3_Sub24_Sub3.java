@@ -84,11 +84,11 @@ final class Class3_Sub24_Sub3 extends Class3_Sub24 {
       }
    }
 
-   static Class3_Sub28_Sub6 method466(int var1, int var2) {
+   static InterfaceWidget getWidget(int var1, int var2) {
       try {
-         Class3_Sub28_Sub6 var3 = (Class3_Sub28_Sub6)Client.aHashTable_2194.get((long)var2 | (long)var1 << 32);
+         InterfaceWidget var3 = (InterfaceWidget)Client.aHashTable_2194.get((long)var2 | (long)var1 << 32);
          if(null == var3) {
-            var3 = new Class3_Sub28_Sub6(var1, var2);
+            var3 = new InterfaceWidget(var1, var2);
             Client.aHashTable_2194.put(var3.linkableKey, var3);
          }
 

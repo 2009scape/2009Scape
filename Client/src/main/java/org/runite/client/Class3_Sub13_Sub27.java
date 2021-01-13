@@ -13,10 +13,10 @@ final class Class3_Sub13_Sub27 extends Class3_Sub13 {
 
    static void method295(RSString var0, int var2) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(2, var2);
+         InterfaceWidget var3 = Class3_Sub24_Sub3.getWidget(2, var2);
 
-         var3.g();
-         var3.aClass94_3599 = var0;
+         var3.flagUpdate();
+         var3.text = var0;
       } catch (RuntimeException var4) {
          throw ClientErrorException.clientError(var4, "pi.B(" + (var0 != null?"{...}":"null") + ',' + (byte) 40 + ',' + var2 + ')');
       }

@@ -2450,12 +2450,12 @@ public class Unsorted {
         }
     }
 
-    public static Class3_Sub28_Sub6 method1302() {
+    public static InterfaceWidget method1302() {
         try {
-            Class3_Sub28_Sub6 var1 = (Class3_Sub28_Sub6) Class126.aClass13_1666.getFront();
+            InterfaceWidget var1 = (InterfaceWidget) Class126.aClass13_1666.getFront();
             if (var1 == null) {
                 do {
-                    var1 = (Class3_Sub28_Sub6) Class81.aClass13_1139.getFront();
+                    var1 = (InterfaceWidget) Class81.aClass13_1139.getFront();
                     if (var1 == null) {
                         return null;
                     }
@@ -2545,8 +2545,8 @@ public class Unsorted {
 
     public static void method2143(byte var0, int var1, int var2, int var3, int var4) {
         try {
-            Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(8, var2);
-            var5.g();
+            InterfaceWidget var5 = Class3_Sub24_Sub3.getWidget(8, var2);
+            var5.flagUpdate();
             var5.anInt3596 = var1;
             if (var0 >= -120) {
                 anInt1950 = -14;
@@ -2729,7 +2729,7 @@ public class Unsorted {
     }
 
     static void method56(int var0) {
-        Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(6, var0);
+        InterfaceWidget var2 = Class3_Sub24_Sub3.getWidget(6, var0);
         var2.a();
     }
 
@@ -4950,7 +4950,7 @@ public class Unsorted {
 
     public static void method1516(int var0, int var1) {
         try {
-            Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(3, var0);
+            InterfaceWidget var2 = Class3_Sub24_Sub3.getWidget(3, var0);
             var2.a();
             if (var1 < 87) {
                 TextCore.aClass94_1326 = (RSString) null;
@@ -5127,10 +5127,9 @@ public class Unsorted {
 
     public static void method566(RSString var0, int var2) {
        try {
-          Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(3, var2);
-          var3.g();
-
-          var3.aClass94_3599 = var0;
+          InterfaceWidget var3 = Class3_Sub24_Sub3.getWidget(3, var2);
+          var3.flagUpdate();
+          var3.text = var0;
        } catch (RuntimeException var4) {
           throw ClientErrorException.clientError(var4, "gf.P(" + (var0 != null?"{...}":"null") + ',' + 0 + ',' + var2 + ')');
        }
@@ -5138,7 +5137,7 @@ public class Unsorted {
 
     public static void method569(int var1) {
        try {
-          Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(7, var1);
+          InterfaceWidget var2 = Class3_Sub24_Sub3.getWidget(7, var1);
           var2.a();
        } catch (RuntimeException var3) {
           throw ClientErrorException.clientError(var3, "he.C(" + -82 + ',' + var1 + ')');

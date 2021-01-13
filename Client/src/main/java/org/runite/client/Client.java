@@ -565,7 +565,7 @@ public final class Client extends GameShell {
                 if (Class133.anInt1753 == 2) {
                     CS2Script.method379();
                 } else {
-                    Class3_Sub28_Sub6.d('\uffff');
+                    InterfaceWidget.d('\uffff');
                 }
 
                 if (14 > NPC.anInt3995 >> 7 || NPC.anInt3995 >> 7 >= 90 || 14 > Class77.anInt1111 >> 7 || Class77.anInt1111 >> 7 >= 90) {
@@ -926,7 +926,7 @@ public final class Client extends GameShell {
                         }
 
                         if (var18) {
-                            Class3_Sub28_Sub6.a(Class38_Sub1.anInt2614 - var11, Class163_Sub1.anInt2993 - var10, 97, inter);
+                            InterfaceWidget.a(Class38_Sub1.anInt2614 - var11, Class163_Sub1.anInt2993 - var10, 97, inter);
                         }
 
                         if (Class56.aClass11_886 != null && Class56.aClass11_886 != inter && var26 && (method44(inter).method98() || (inter.componentHash == 49938505 && Class56.aClass11_886.componentHash == 49938505))) {

@@ -273,7 +273,7 @@ final class Class83 {
                               var26 = 16383 & var25;
                               if(var26 != 0) {
                                  var28 = ('\ud228' & var25) >> 14;
-                                 Class2 var47 = Class3_Sub28_Sub6.c(-1 + var26);
+                                 Class2 var47 = InterfaceWidget.c(-1 + var26);
                                  LDIndexedSprite var48 = var47.getSprite(var28);
                                  if(var48 != null) {
                                     var31 = var22 * var48.height / 4;

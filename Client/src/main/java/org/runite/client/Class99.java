@@ -20,7 +20,7 @@ final class Class99 {
          }
 
          if(var2) {
-            if(HDToolKit.highDetail && Class3_Sub28_Sub6.aBoolean3594) {
+            if(HDToolKit.highDetail && InterfaceWidget.aBoolean3594) {
                try {
                   Class42.method1056(Class38.aClass87_665.applet, new Object[]{var0.method1547(LinkableRSString.anApplet_Sub1_2588.getCodeBase()).toString()});
                   return;

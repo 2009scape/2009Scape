@@ -94,7 +94,7 @@ final class WorldListEntry extends Class44 {
                         }
                     }
                 } else {
-                    Toolkit.getActiveToolkit().fillRect(var1, var2, var3, 20, Class3_Sub28_Sub6.anInt3600, -Unsorted.anInt963 + 256);
+                    Toolkit.getActiveToolkit().fillRect(var1, var2, var3, 20, InterfaceWidget.anInt3600, -Unsorted.anInt963 + 256);
                 }
             }
 
@@ -112,7 +112,7 @@ final class WorldListEntry extends Class44 {
             }
 
             Class168.aClass3_Sub28_Sub17_2096.method681(RSString.parse(GameConfig.RCM_TITLE), var1 - -3, 14 + var2, anInt3351, -1);
-            Toolkit.getActiveToolkit().fillRect(var1, 20 + var2, var3, var4 - 20, Class3_Sub28_Sub6.anInt3600, -Unsorted.anInt963 + 256);
+            Toolkit.getActiveToolkit().fillRect(var1, 20 + var2, var3, var4 - 20, InterfaceWidget.anInt3600, -Unsorted.anInt963 + 256);
 
             var6 = Unsorted.anInt1709;
             var5 = Class126.anInt1676;

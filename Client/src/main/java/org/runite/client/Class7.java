@@ -13,7 +13,7 @@ public final class Class7 implements Interface4 {
 
 
    static void method831(String var1) {
-      System.out.println("Error: " + Class3_Sub28_Sub6.a("%0a", "\n", var1));
+      System.out.println("Error: " + InterfaceWidget.a("%0a", "\n", var1));
    }
 
    public static RSInterface getRSInterface(int interfaceHash) {

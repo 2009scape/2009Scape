@@ -66,8 +66,8 @@ final class Class3_Sub13_Sub18 extends Class3_Sub13 {
 
    static void method255(int var0, int var1, int var2) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(var2, var0);
-         var3.g();
+         InterfaceWidget var3 = Class3_Sub24_Sub3.getWidget(var2, var0);
+         var3.flagUpdate();
          var3.anInt3598 = var1;
       } catch (RuntimeException var4) {
          throw ClientErrorException.clientError(var4, "ke.Q(" + var0 + ',' + var1 + ',' + var2 + ')');

@@ -18,7 +18,7 @@ final class Class15 implements Runnable {
 
    static boolean method888(int var0, ObjectDefinition var1, int var3, int var4, int var5, int var6) {
       try {
-         Class2 var7 = Class3_Sub28_Sub6.c(var1.anInt1516);
+         Class2 var7 = InterfaceWidget.c(var1.anInt1516);
          if(var7.sprite == -1) {
             return false;
          } else {

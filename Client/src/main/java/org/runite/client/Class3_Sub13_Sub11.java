@@ -87,7 +87,7 @@ final class Class3_Sub13_Sub11 extends Class3_Sub13 {
                NPC.anInt3995 = Unsorted.anInt30 << 7;
                Class77.anInt1111 = Class146.anInt1904 << 7;
             } else {
-               Class3_Sub28_Sub6.d(3000 ^ '\uf447');
+               InterfaceWidget.d(3000 ^ '\uf447');
             }
 
             Class3_Sub13_Sub14.method236();

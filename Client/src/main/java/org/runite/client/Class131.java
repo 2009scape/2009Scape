@@ -107,8 +107,8 @@ final class Class131 {
 
    static void method1790(int var0, int var1) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(5, var0);
-         var3.g();
+         InterfaceWidget var3 = Class3_Sub24_Sub3.getWidget(5, var0);
+         var3.flagUpdate();
          var3.anInt3598 = var1;
       } catch (RuntimeException var4) {
          throw ClientErrorException.clientError(var4, "se.B(" + var0 + ',' + var1 + ',' + 95 + ')');

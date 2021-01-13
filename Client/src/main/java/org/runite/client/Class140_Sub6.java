@@ -199,8 +199,8 @@ final class Class140_Sub6 extends GameObject {
 
    static void method2026(int interfaceHash, int amount, int itemId) {
       try {
-          Class3_Sub28_Sub6 var4 = Class3_Sub24_Sub3.method466(9, interfaceHash);
-          var4.g();
+          InterfaceWidget var4 = Class3_Sub24_Sub3.getWidget(9, interfaceHash);
+          var4.flagUpdate();
           var4.anInt3598 = itemId;
           var4.anInt3597 = amount;
       } catch (RuntimeException var5) {

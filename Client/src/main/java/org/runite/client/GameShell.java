@@ -519,7 +519,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
                 Class140_Sub7.anInt2934 = 503;
                 Class70.anInt1047 = 503;
                 String var6 = this.getParameter("openwinjs");
-                Class3_Sub28_Sub6.aBoolean3594 = var6 != null && var6.equals("1");
+                InterfaceWidget.aBoolean3594 = var6 != null && var6.equals("1");
 
                 if (null == Class38.aClass87_665) {
                     Class3_Sub13_Sub10.aClass87_3125 = Class38.aClass87_665 = new Signlink(this, var3, null, 0);

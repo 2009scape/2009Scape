@@ -42,7 +42,7 @@ final class Class162 {
 
    static void method2206(int var1) {
       try {
-         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(4, var1);
+         InterfaceWidget var2 = Class3_Sub24_Sub3.getWidget(4, var1);
          var2.a();
       } catch (RuntimeException var3) {
          throw ClientErrorException.clientError(var3, "wc.A(" + true + ',' + var1 + ')');

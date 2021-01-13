@@ -12,8 +12,8 @@ final class Class79 {
 
    static void method1385(int var0, int var1) {
       try {
-         Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(6, var1);
-         var3.g();
+         InterfaceWidget var3 = Class3_Sub24_Sub3.getWidget(6, var1);
+         var3.flagUpdate();
          var3.anInt3598 = var0;
       } catch (RuntimeException var4) {
          throw ClientErrorException.clientError(var4, "kk.E(" + var0 + ',' + var1 + ',' + (byte) -127 + ')');

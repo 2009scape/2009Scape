@@ -1,9 +1,11 @@
 package plugin.command.sets
 
+import core.ServerConstants
 import core.cache.def.impl.ItemDefinition
 import core.game.component.Component
 import core.game.node.entity.player.info.Rights
 import core.game.node.entity.player.link.RunScript
+import core.game.node.item.Item
 import core.game.system.SystemLogger
 import core.game.system.communication.CommunicationInfo
 import core.game.world.GameWorld
@@ -281,6 +283,27 @@ class MiscCommandSet : CommandSet(Command.Privilege.ADMIN){
                 args[1].toString().toInt()
             }
             player.bank.add(*TrawlerLoot.getLoot(rolls,false).toTypedArray())
+        }
+
+        define("fillbank"){player,_ ->
+            for(i in 0 until ServerConstants.BANK_SIZE){
+                player.bank.add(Item(i))
+            }
+        }
+
+        define("emptybank"){player,_ ->
+            player.bank.clear()
+            player.bank.update()
+        }
+
+        define("setconfig"){player,args ->
+            if(args.size < 3){
+                reject(player,"Syntax: ::setconfig configID value")
+                return@define
+            }
+            val configID = args[1].toString().toInt()
+            val configValue = args[2].toString().toInt()
+            player.configManager.set(configID,configValue,false)
         }
 
     }

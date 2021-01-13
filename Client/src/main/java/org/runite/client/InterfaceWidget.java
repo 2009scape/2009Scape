@@ -3,7 +3,7 @@ package org.runite.client;
 import org.rs09.client.Node;
 import org.rs09.client.config.GameConfig;
 
-final class Class3_Sub28_Sub6 extends Node {
+final class InterfaceWidget extends Node {
 
    static boolean aBoolean3594;
    static boolean aBoolean3668 = false;
@@ -12,7 +12,7 @@ final class Class3_Sub28_Sub6 extends Node {
     int anInt3596;
    int anInt3597;
    int anInt3598;
-   RSString aClass94_3599;
+   RSString text;
    static int anInt3600;
 
 
@@ -208,7 +208,7 @@ final class Class3_Sub28_Sub6 extends Node {
       }
    }
 
-   final void g() {
+   final void flagUpdate() {
       try {
          this.nodeKey |= Long.MIN_VALUE;
          if(this.b() == 0) {
@@ -220,7 +220,7 @@ final class Class3_Sub28_Sub6 extends Node {
       }
    }
 
-   Class3_Sub28_Sub6(int var1, int var2) {
+   InterfaceWidget(int var1, int var2) {
       try {
          this.linkableKey = (long)var1 << 32 | (long)var2;
       } catch (RuntimeException var4) {

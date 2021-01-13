@@ -1,5 +1,7 @@
 package core.game.container.impl;
 
+import core.Server;
+import core.ServerConstants;
 import core.game.component.CloseEvent;
 import core.game.component.Component;
 import core.game.container.*;
@@ -8,6 +10,7 @@ import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.IronmanMode;
 import core.game.node.entity.player.link.diary.DiaryType;
 import core.game.node.item.Item;
+import core.game.system.SystemLogger;
 import core.game.system.config.ItemConfigParser;
 import core.game.world.GameWorld;
 import core.game.world.map.Location;
@@ -26,7 +29,7 @@ public final class BankContainer extends Container {
 	/**
 	 * The bank container size.
 	 */
-	public static final int SIZE = 496;
+	public static final int SIZE = ServerConstants.BANK_SIZE;
 	
 	/**
 	 * The maximum amount of bank tabs
@@ -106,7 +109,7 @@ public final class BankContainer extends Container {
 		player.getInventory().getListeners().add(listener);
 		player.getInventory().refresh();
 		player.getConfigManager().set(1249, lastAmountX);
-		player.getPacketDispatch().sendAccessMask(1278, 73, 762, 0, 496);
+		player.getPacketDispatch().sendAccessMask(1278, 73, 762, 0, ServerConstants.BANK_SIZE);
 		BitregisterAssembler assembly = new BitregisterAssembler(0, 1, 2, 3, 4, 5);
 		assembly.enableExamineOption();
 		assembly.enableSlotSwitch();
@@ -114,6 +117,7 @@ public final class BankContainer extends Container {
 		player.getPacketDispatch().sendRunScript(1451, "");
 		open = true;
 		setTabConfigurations();
+		sendBankSpace();
 	}
 	
 	public void open(Player player) {
@@ -357,6 +361,8 @@ public final class BankContainer extends Container {
 	 * Sends the bank space values on the interface.
 	 */
 	public void sendBankSpace() {
+		SystemLogger.log("Sending " + (capacity() - freeSlots()));
+		SystemLogger.log("Sending " + capacity());
 		player.getPacketDispatch().sendString(Integer.toString(capacity() - freeSlots()), 762, 97);
 		player.getPacketDispatch().sendString(Integer.toString(capacity()), 762, 98);
 	}

@@ -102,7 +102,7 @@ public final class Class3_Sub13_Sub36 extends Class3_Sub13 {
             float var17 = (float)Class139.anInt1823 * 0.17578125F;
             float var16 = 0.17578125F * (float)Class3_Sub13_Sub25.anInt3315;
             if(Class133.anInt1753 == 3) {
-               var17 = 360.0F * Class3_Sub28_Sub6.aFloat1169 / 6.2831855F;
+               var17 = 360.0F * InterfaceWidget.aFloat1169 / 6.2831855F;
                var16 = Class45.aFloat730 * 360.0F / 6.2831855F;
             }
 

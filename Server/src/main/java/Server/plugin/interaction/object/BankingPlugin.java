@@ -305,6 +305,12 @@ public final class BankingPlugin extends OptionHandler {
         }
 
         @Override
+        public void open(Player player, Component component) {
+            super.open(player, component);
+            player.getBank().sendBankSpace();
+        }
+
+        @Override
         public boolean handle(final Player p, Component component, int opcode, int button, final int slot, int itemId) {
             final Item item = component.getId() == 762 ? p.getBank().get(slot) : p.getInventory().get(slot);
             switch (component.getId()) {

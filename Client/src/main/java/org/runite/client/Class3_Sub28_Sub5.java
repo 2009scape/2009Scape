@@ -117,7 +117,7 @@ final class Class3_Sub28_Sub5 extends Node {
          Class75.anInt1105 = 0;
          Class163_Sub2_Sub1.anInt4014 = 0;
          NPCDefinition.anInt1252 = -1;
-         Class3_Sub28_Sub6.anInt2293 = -1;
+         InterfaceWidget.anInt2293 = -1;
          Class133.anInt1753 = 1;
       } catch (RuntimeException var2) {
          throw ClientErrorException.clientError(var2, "cl.A(" + -21556 + ')');

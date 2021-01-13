@@ -51,7 +51,7 @@ final class Class108 {
             int var2 = Class140_Sub7.anInt2934;
             int var3 = var2 * 956 / 503;
             Objects.requireNonNull(Class40.aAbstractSprite_680).method639((Class23.anInt454 + -var3) / 2, 0, var3, var2);
-            SequenceDefinition.aClass109_1856 = Class3_Sub28_Sub6.a(Class79.anInt1124, var0);
+            SequenceDefinition.aClass109_1856 = InterfaceWidget.a(Class79.anInt1124, var0);
             Objects.requireNonNull(SequenceDefinition.aClass109_1856).method1667(Class23.anInt454 / 2 + -(SequenceDefinition.aClass109_1856.width / 2), 18);
             Class140_Sub2.aBoolean2713 = true;
             if(var1 > -50) {
@@ -66,7 +66,7 @@ final class Class108 {
 
    static void method1657(int var0) {
       try {
-         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(5, var0);
+         InterfaceWidget var2 = Class3_Sub24_Sub3.getWidget(5, var0);
          var2.a();
 
       } catch (RuntimeException var3) {

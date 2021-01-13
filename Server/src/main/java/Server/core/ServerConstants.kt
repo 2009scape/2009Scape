@@ -93,6 +93,9 @@ class ServerConstants {
 		@JvmField
 		var WRITE_LOGS: Boolean = false
 
+		@JvmField
+		var BANK_SIZE: Int = 496
+
 		//location names for the ::to command.
 		val TELEPORT_DESTINATIONS = arrayOf(
 				arrayOf(Location.create(2974, 4383, 2), "corp", "corporal", "corporeal"),

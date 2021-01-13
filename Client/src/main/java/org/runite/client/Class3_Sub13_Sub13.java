@@ -447,21 +447,21 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                      }
 
                      int nodeModelID;
-                     for(Class3_Sub28_Sub6 var16 = Unsorted.method1302(); var16 != null; var16 = Unsorted.method1302()) {
+                     for(InterfaceWidget var16 = Unsorted.method1302(); var16 != null; var16 = Unsorted.method1302()) {
                         var3 = var16.e();
                         var4 = var16.f();
                         if(1 == var3) {
                            NPCDefinition.anIntArray1277[var4] = var16.anInt3598;
                            NPC.anIntArray3986[Unsorted.bitwiseAnd(31, PacketParser.anInt87++)] = var4;
                         } else if(var3 == 2) {
-                           Class132.aClass94Array1739[var4] = var16.aClass94_3599;
+                           Class132.aClass94Array1739[var4] = var16.text;
                            Class163_Sub2_Sub1.anIntArray4025[Unsorted.bitwiseAnd(31, Client.anInt2317++)] = var4;
                         } else {
                            RSInterface var20;
                            if(var3 == 3) {
                               var20 = Class7.getRSInterface(var4);
-                              if(!var16.aClass94_3599.equalsString(Objects.requireNonNull(var20).text)) {
-                                 var20.text = var16.aClass94_3599;
+                              if(!var16.text.equalsString(Objects.requireNonNull(var20).text)) {
+                                 var20.text = var16.text;
                                  Class20.method909(var20);
                               }
                            } else if (var3 == 4) {
@@ -776,7 +776,7 @@ final class Class3_Sub13_Sub13 extends Class3_Sub13 {
                                        } else if(Class133.anInt1753 == 2) {
                                           CS2Script.method379();
                                        } else {
-                                          Class3_Sub28_Sub6.d('\uffff');
+                                          InterfaceWidget.d('\uffff');
                                        }
 
                                        for(var5 = 0; var5 < 5; ++var5) {

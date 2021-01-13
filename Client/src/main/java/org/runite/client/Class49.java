@@ -148,10 +148,10 @@ final class Class49 {
          }
 
          Class7.method831(var3);
-         var3 = Class3_Sub28_Sub6.a(":", "%3a", var3);
-         var3 = Class3_Sub28_Sub6.a("@", "%40", var3);
-         var3 = Class3_Sub28_Sub6.a("&", "%26", var3);
-         var3 = Class3_Sub28_Sub6.a("#", "%23", var3);
+         var3 = InterfaceWidget.a(":", "%3a", var3);
+         var3 = InterfaceWidget.a("@", "%40", var3);
+         var3 = InterfaceWidget.a("&", "%26", var3);
+         var3 = InterfaceWidget.a("#", "%23", var3);
          if(Class3_Sub13_Sub10.aClass87_3125.applet == null) {
             return;
          }
@@ -174,7 +174,7 @@ final class Class49 {
 
    static void method1126(int var1) {
       try {
-         Class3_Sub28_Sub6 var2 = Class3_Sub24_Sub3.method466(2, var1);
+         InterfaceWidget var2 = Class3_Sub24_Sub3.getWidget(2, var1);
          var2.a();
       } catch (RuntimeException var4) {
          throw ClientErrorException.clientError(var4, "ha.I(" + -94 + ',' + var1 + ')');

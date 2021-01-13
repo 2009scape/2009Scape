@@ -41,7 +41,7 @@ public final class PacketParser {
 
     static void method825(int var1) {
         try {
-            Class3_Sub28_Sub6 var3 = Class3_Sub24_Sub3.method466(1, var1);
+            InterfaceWidget var3 = Class3_Sub24_Sub3.getWidget(1, var1);
             var3.a();
         } catch (RuntimeException var4) {
             throw ClientErrorException.clientError(var4, "ac.D(" + (byte) 92 + ',' + var1 + ')');
@@ -1809,8 +1809,8 @@ public final class PacketParser {
 
     static void method256(int var0, int var1, int var2, int var4) {
        try {
-          Class3_Sub28_Sub6 var5 = Class3_Sub24_Sub3.method466(4, var2);
-          var5.g();
+          InterfaceWidget var5 = Class3_Sub24_Sub3.getWidget(4, var2);
+          var5.flagUpdate();
           var5.anInt3597 = var4;
           var5.anInt3596 = var0;
           var5.anInt3598 = var1;
