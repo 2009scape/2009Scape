@@ -103,6 +103,10 @@ public abstract class Pathfinder {
 		return find(mover.getLocation(), mover.size(), destination, near, finder, RegionManager::getClippingFlag);
 	}
 
+	public static Path findWater(Entity mover, Node destination, boolean near, Pathfinder finder){
+		return find(mover.getLocation(),mover.size(),destination,near,finder, RegionManager::getWaterClipFlag);
+	}
+
 	public static Path find(Entity mover, Node destination, boolean near, Pathfinder finder, ClipMaskSupplier clipMaskSupplier) {
 		return find(mover.getLocation(), mover.size(), destination, near, finder, clipMaskSupplier);
 	}

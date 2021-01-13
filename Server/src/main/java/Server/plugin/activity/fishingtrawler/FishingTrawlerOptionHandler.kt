@@ -17,6 +17,7 @@ import core.plugin.Plugin
 import core.tools.Items
 import plugin.activity.ActivityManager
 import plugin.dialogue.DialoguePlugin
+import plugin.dialogue.FacialExpression
 import plugin.skill.Skills
 import plugin.stringtools.colorize
 import kotlin.math.ceil
@@ -36,6 +37,7 @@ class FishingTrawlerOptionHandler : OptionHandler() {
         ObjectDefinition.forId(2160).handlers["option:climb-on"] = this
         ObjectDefinition.forId(2159).handlers["option:climb-on"] = this
         ObjectDefinition.forId(2179).handlers["option:cross"] = this
+        ObjectDefinition.forId(255).handlers["option:operate"] = this
         ItemDefinition.forId(583).handlers["option:bail-with"] = this
         ItemDefinition.forId(585).handlers["option:empty"] = this
         return this
@@ -73,9 +75,9 @@ class FishingTrawlerOptionHandler : OptionHandler() {
             }
             2166 -> { //inspect reward net
                 val session: FishingTrawlerSession? = player.getAttribute("ft-session",null)
-                session ?: return false
-                if(session.boatSank){
-                    return false
+                if(session == null || session.boatSank){
+                    player.dialogueInterpreter.sendDialogues(player, FacialExpression.GUILTY,"I'd better not go stealing other people's fish.")
+                    return true
                 }
                 player.dialogueInterpreter.open(18237582)
             }
@@ -87,7 +89,8 @@ class FishingTrawlerOptionHandler : OptionHandler() {
                 player.logoutPlugins.clear()
             }
             2159,2160 -> {  //barrel
-                player.properties.teleportLocation = Location.create(2666, 3162, 0)
+                player.properties.teleportLocation = Location.create(2672, 3222, 0)
+                player.dialogueInterpreter.sendDialogue("You climb onto the floating barrel and begin to kick your way to the","shore.","You make it to the shore tired and weary.")
                 player.logoutPlugins.clear()
                 player.appearance.setDefaultAnimations()
                 player.appearance.sync()
@@ -99,7 +102,7 @@ class FishingTrawlerOptionHandler : OptionHandler() {
                     return false
                 }
                 if(player.location.y > 0){
-                    player.sendMessage("You cant scoop water out up here.")
+                    player.sendMessage("You can't scoop water out up here.")
                     return true
                 }
                 player.lock()
@@ -145,6 +148,9 @@ class FishingTrawlerOptionHandler : OptionHandler() {
                             }
                         }
                 )
+            }
+            255 -> {//operate winch
+                player.sendMessage("It seems the winch is jammed - I can't move it.")
             }
         }
         return true

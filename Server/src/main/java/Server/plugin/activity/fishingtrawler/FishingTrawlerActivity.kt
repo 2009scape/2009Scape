@@ -1,6 +1,7 @@
 package plugin.activity.fishingtrawler
 
 import core.game.node.entity.player.Player
+import core.game.system.SystemLogger
 import core.game.system.task.Pulse
 import core.game.world.GameWorld
 import core.game.world.map.Location
@@ -44,6 +45,17 @@ class FishingTrawlerActivity : ActivityPlugin("fishing trawler",false,false,true
                     waitingPlayers.clear()
                     nextStart = GameWorld.ticks + WAIT_TIME
                 }
+                sessions.removeIf { session ->
+                    if(!session.isActive && session.inactiveTicks >= 100){
+                        session.clearNPCs()
+                        true
+                    } else {
+                        if(!session.isActive) {
+                            session.inactiveTicks++
+                        }
+                        false
+                    }
+                }
                 return false
             }
         })
@@ -56,8 +68,10 @@ class FishingTrawlerActivity : ActivityPlugin("fishing trawler",false,false,true
     }
 
     fun addPlayer(player: Player){
-        if(waitingPlayers.isEmpty())
+        if(waitingPlayers.isEmpty()) {
             nextStart = GameWorld.ticks + WAIT_TIME
+            player.dialogueInterpreter.sendDialogue("Trawler will leave in 2 minutes.","If you have a team get them on board now!")
+        }
         waitingPlayers.add(player)
     }
 

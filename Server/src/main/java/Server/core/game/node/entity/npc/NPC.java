@@ -458,7 +458,11 @@ public class NPC extends Entity {
 					setNextWalk();
 					Location l = getMovementDestination();
 					if (canMove(l)) {
-						Pathfinder.find(this, l, true, Pathfinder.DUMB).walk(this);
+						if((Boolean) definition.getHandlers().getOrDefault("water_npc",false)){
+							Pathfinder.findWater(this,l,true,Pathfinder.DUMB).walk(this);
+						} else {
+							Pathfinder.find(this, l, true, Pathfinder.DUMB).walk(this);
+						}
 					}
 				}
 			}

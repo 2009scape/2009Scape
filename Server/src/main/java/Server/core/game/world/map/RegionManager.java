@@ -82,6 +82,19 @@ public final class RegionManager {
 	}
 
 	/**
+	 * Gets the water variant of a tile's clipping flag
+	 * Essentially strips the landscape flag off a tile and keeps other flags, and makes normally walkable tiles unwalkable.
+	 * @author Ceikry
+	 */
+	public static int getWaterClipFlag(int z, int x, int y){
+		int flag = getClippingFlag(z,x,y);
+		if(!isClipped(z,x,y)){
+			return flag | 0x100;
+		}
+		return flag & (~0x200000);
+	}
+
+	/**
 	 * Checks if the tile is part of the landscape.
 	 * @param l The location.
 	 * @return {@code True} if so.

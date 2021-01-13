@@ -3,13 +3,13 @@ package plugin.activity.fishingtrawler
 import core.game.component.Component
 import core.game.node.`object`.GameObject
 import core.game.node.`object`.ObjectBuilder
+import core.game.node.entity.npc.NPC
 import core.game.node.entity.player.Player
 import core.game.node.entity.player.info.stats.FISHING_TRAWLER_GAMES_WON
 import core.game.node.entity.player.info.stats.FISHING_TRAWLER_SHIPS_SANK
 import core.game.node.entity.player.info.stats.STATS_BASE
 import core.game.node.entity.state.EntityState
 import core.game.node.item.Item
-import core.game.system.SystemLogger
 import core.game.system.task.Pulse
 import core.game.world.GameWorld
 import core.game.world.map.Location
@@ -21,7 +21,6 @@ import core.tools.RandomFunction
 import core.tools.secondsToTicks
 import core.tools.ticksToSeconds
 import java.util.concurrent.TimeUnit
-import kotlin.math.ceil
 import kotlin.random.Random
 
 
@@ -48,11 +47,17 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
     var used_locations = ArrayList<Location>()
     var maxHoles = 0
     var waterAmount = 0
+    var murphy: NPC? = null
+    val murphyLocations = ArrayList<Location>()
+    val npcs = ArrayList<NPC>()
+    var inactiveTicks = 0
 
     fun start(pl: ArrayList<Player>){
         this.players.addAll(pl)
         isActive = true
         initHoles()
+        initMurphy(29,25)
+        initGulls()
         GameWorld.Pulser.submit(TrawlerPulse(this))
         for(player in pl){
             player.interfaceManager.openOverlay(Component(OVERLAY_ID))
@@ -72,11 +77,14 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
 
     class SwapBoatPulse(val playerList: ArrayList<Player>,val newRegion: DynamicRegion) : Pulse(3){
         override fun pulse(): Boolean {
+            val session: FishingTrawlerSession? = playerList[0].getAttribute("ft-session",null)
+            session ?: return true
+            session.region = newRegion
+            session.base = newRegion.baseLocation
+            session.clearNPCs()
+            session.initMurphy(26,26)
+            session.initGulls()
             for(player in playerList){
-                val session: FishingTrawlerSession? = player.getAttribute("ft-session",null)
-                session ?: return true
-                session.region = newRegion
-                session.base = newRegion.baseLocation
                 player.interfaceManager.closeOverlay()
                 player.appearance.setAnimations(Animation(188))
                 player.properties.teleportLocation = session.base.transform(36,24,0)
@@ -94,12 +102,14 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
             session.timeLeft--
 
             if(session.boatSank){
+                session.tickMurphy()
                 return true
             }
 
             if(ticks % 15 == 0 && !session.netRipped){
                 if(RandomFunction.random(100) <= 10){
                     session.ripNet()
+                    session.murphy?.sendChat("Arrh! Check that net!")
                 } else {
                     session.fishAmount += 3
                 }
@@ -108,6 +118,7 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
             session.waterAmount += (session.getLeakingHoles())
             if(session.waterAmount >= 500){
                 session.boatSank = true
+                session.isActive = false
                 session.swapBoatType(7755)
             }
 
@@ -128,6 +139,7 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
             for(player in session.players){
                 session.updateOverlay(player)
             }
+            session.tickMurphy()
             return !session.isActive
         }
     }
@@ -155,6 +167,60 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
         hole_locations.addAll(tempLocationList)
     }
 
+    fun initMurphy(localX: Int, localY: Int){
+        murphy = NPC(463)
+        murphy?.isWalks = false
+        murphy?.isPathBoundMovement = true
+        //29,25 -> 36,25
+        murphy?.location = base.transform(localX,localY,0)
+        murphy?.isRespawn = false
+        for(i in 29..36){
+            murphyLocations.add(Location.create(base.transform(i,25,0)))
+        }
+        murphy?.init()
+        npcs.add(murphy!!)
+    }
+
+    fun clearNPCs(){
+        npcs.forEach {
+            it.clear()
+        }
+        npcs.clear()
+    }
+
+    fun tickMurphy(){
+        var phrase = if(boatSank){
+            arrayOf("No fishes for you today!","Keep your head above water, shipmate.", "Arrrgh! We sunk!","You'll be joining Davy Jones!").random()
+        } else if(waterAmount < 200){
+            arrayOf("Blistering barnacles!","Let's get a net full of fishes!").random()
+        } else {
+            arrayOf("We'll all end up in a watery grave!","My mother could bail better than that!","It's a fierce sea today traveller.").random()
+        }
+        if(getLeakingHoles() > 0 && RandomFunction.random(100) <= 15){
+            phrase = "The water is coming in matey!"
+        }
+        if(RandomFunction.random(100) <= 10){
+            murphy?.sendChat(phrase)
+        }
+        if(RandomFunction.random(100) <= 6){
+            val dest = murphyLocations.random()
+            murphy?.walkingQueue?.reset()
+            murphy?.walkingQueue?.addPath(dest.x,dest.y,true)
+        }
+    }
+
+    fun initGulls(){
+        for(loc in arrayOf(base.transform(38,17,0),base.transform(33,18,0),base.transform(28,16,0),base.transform(28,30,0),base.transform(34,32,0))){
+            val npc = NPC(1179)
+            npc.location = loc
+            npcs.add(npc)
+            npc.isRespawn = false
+            npc.isWalks = true
+            npc.walkRadius = 6
+            npc.init()
+        }
+    }
+
     fun spawnHole(){
         if(hole_locations.isEmpty() && used_locations.isEmpty()) return
         val holeLocation = hole_locations.random().also { hole_locations.remove(it) }
@@ -171,6 +237,9 @@ class FishingTrawlerSession(var region: DynamicRegion, val activity: FishingTraw
         if(player.inventory.remove(Item(Items.SWAMP_PASTE_1941))){
             ObjectBuilder.replace(obj,GameObject(PATCHED_ID,obj.location,obj.rotation))
             hole_locations.add(obj.location)
+            if(RandomFunction.random(100) <= 30){
+                murphy?.sendChat("That's the stuff! Fill those holes!")
+            }
         } else {
             player.dialogueInterpreter.sendDialogue("You need swamp paste to repair this.")
         }

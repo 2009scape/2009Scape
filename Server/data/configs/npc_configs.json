@@ -838,6 +838,7 @@
     "range_animation": "0",
     "weakness": "8",
     "slayer_task": "7",
+    "water_npc": "true",
     "safespot": null
   },
   {
@@ -26578,6 +26579,7 @@
     "range_animation": "0",
     "weakness": "8",
     "slayer_task": "7",
+    "water_npc": "true",
     "safespot": null
   },
   {
@@ -26597,6 +26599,7 @@
     "weakness": "8",
     "slayer_task": "7",
     "aggressive": "true",
+    "water_npc": "true",,
     "safespot": null
   },
   {
@@ -53936,6 +53939,7 @@
     "range_animation": "0",
     "slayer_task": "7",
     "aggressive": "true",
+    "water_npc": "true",
     "safespot": null
   },
   {
@@ -74460,5 +74464,23 @@
     "aggressive": "true",
     "protect_style": "1",
     "safespot": "true"
+  },
+  {
+    "id": "1179",
+    "name": "Gull",
+    "examine": "Flappy bird.",
+    "water_npc": "true"
+  },
+  {
+    "id": "450",
+    "name": "Gull",
+    "examine": "Flappy bird.",
+    "water_npc": "true"
+  },
+  {
+    "id": "451",
+    "name": "Gull",
+    "examine": "Flappy bird.",
+    "water_npc": "true"
   }
 ]
