@@ -1,5 +1,6 @@
 package plugin.activity.pyramidplunder;
 import core.game.content.global.action.ClimbActionHandler;
+import core.game.system.SystemLogger;
 import plugin.skill.Skills;
 import core.game.interaction.Option;
 import core.game.node.Node;
@@ -23,25 +24,6 @@ import core.tools.RandomFunction;
 /**
  * Defines the zones for the pyramid plunder rooms and their interactions
  * @author ceik
- */
-
-/**
- * PlunderZones defines zones for pyramid plunder
- * Copyright (C) 2020  2009scape, et. al
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the modified GNU General Public License
- * as published by the Free Software Foundation and included in this repository; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
 @InitializablePlugin
@@ -123,9 +105,18 @@ public class PlunderZones implements Plugin<Object> {
             if(e instanceof Player && ((Player) e).getLocation().getZ() == 0) {
                 e.asPlayer().getPacketDispatch().sendMessage("<col=7f03ff>Room: " + (roomnum) + " Level required: " + (21 + ((roomnum - 1) * 10)));
                 e.asPlayer().getPlunderObjectManager().resetObjectsFor(e.asPlayer());
+                PlunderSession session = e.asPlayer().getAttribute("plunder-session",null);
+                if(session != null){
+                    session.resetVars();
+                }
                 e.asPlayer().addExtension(LogoutTask.class, new LocationLogoutTask(12, Location.create(3288, 2801, 0)));
+                updateRoomVarp(e.asPlayer());
             }
             return true;
+        }
+
+        public void updateRoomVarp(Player player){
+            player.getConfigManager().set(822, room.reqLevel | (roomnum << 9));
         }
 
         public boolean checkRequirements(Player player, PyramidPlunderRoom room){
@@ -205,7 +196,11 @@ public class PlunderZones implements Plugin<Object> {
             PlunderObjectManager manager = player.getPlunderObjectManager();
             boolean alreadyOpened = manager.openedMap.getOrDefault(object.getLocation(),false);
             boolean charmed = manager.charmedMap.getOrDefault(object.getLocation(),false);
-            boolean success = success(player, Skills.THIEVING);           
+            boolean success = success(player, Skills.THIEVING);
+            PlunderSession session = player.getAttribute("plunder-session",null);
+            if(session == null){
+                return false;
+            }
             switch (object.getId()) {
                 case 16517: //Spear trap
                     if(!checkRequirements(player,room)){
@@ -294,8 +289,10 @@ public class PlunderZones implements Plugin<Object> {
                         } else {
                             reward(player,object.getId());
                         }
+                        session.setChestOpen(true);
+                        session.updateOverlay();
                         manager.registerOpened(object);
-                        ObjectBuilder.replace(target.asObject(), target.asObject().transform(object.openId), 5);
+                        //ObjectBuilder.replace(target.asObject(), target.asObject().transform(object.openId), 5);
                     }
                     break;
                 case 16495: //Sarcophagus
@@ -320,8 +317,10 @@ public class PlunderZones implements Plugin<Object> {
                         } else {
                             reward(player,object.getId());
                         }
+                        session.setCoffinOpen(true);
+                        session.updateOverlay();
                         manager.registerOpened(object);
-                        ObjectBuilder.replace(target.asObject(), target.asObject().transform(object.openId), 5);
+                        //ObjectBuilder.replace(target.asObject(), target.asObject().transform(object.openId), 5);
                     }
                     break;
                 case 16475: //doors
@@ -336,13 +335,22 @@ public class PlunderZones implements Plugin<Object> {
                         if (doesOpen) {
                             PyramidPlunderRoom nextRoom = PyramidPlunderRoom.forRoomNum(roomnum + 1);
                             player.getPacketDispatch().sendMessage("The door opens!");
-                            player.getProperties().setTeleportLocation(nextRoom.entrance);
+                            int index = room.doorLocations.indexOf(object.getLocation());
+                            if(session.getCorrectDoorIndex() == index){
+                                player.getProperties().setTeleportLocation(nextRoom.entrance);
+                            } else {
+                                session.setDoorOpen(index);
+                                session.updateOverlay();
+                            }
                         } else {
                             player.getPacketDispatch().sendMessage("You fail to unlock the door.");
                         }
                     } else if(roomnum == 8) {
                         ClimbActionHandler.climb(player, ClimbActionHandler.CLIMB_UP, Location.create(3288, 2801, 0));
                     }
+                    break;
+                case 16476:
+                    player.getDialogueInterpreter().sendDialogue("This door doesn't seem to lead","anywhere.");
                     break;
                 default:
                     return super.interact(e, target, option);

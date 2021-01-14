@@ -25,8 +25,7 @@ class MajorUpdateWorker {
 
             //run our pulses
             for(pulse in list) {
-                pulse ?: continue
-                if (pulse.update()) rmlist.add(pulse)
+                if (pulse == null || pulse.update()) rmlist.add(pulse)
             }
 
             //remove all null or finished pulses from the list

@@ -17,11 +17,6 @@ import core.plugin.PluginManager;
 public final class PyramidPlunderActivity extends ActivityPlugin {
 
 	/**
-	 * The overlay.
-	 */
-	private static final Component OVERLAY = new Component(428);
-
-	/**
 	 * The room locations.
 	 */
 	public static Location[] ROOM_LOCATIONS = { Location.create(1927, 4477, 0) };
@@ -46,15 +41,7 @@ public final class PyramidPlunderActivity extends ActivityPlugin {
 
 	@Override
 	public boolean enter(Entity e) {
-		if (e instanceof Player && e.getLocation().getZ() == 0) {
-			((Player) e).getInterfaceManager().openOverlay(OVERLAY);
-		}
 		return super.enter(e);
-	}
-
-	public void sendRoomConfiguration(Player player, int room, int level) {
-		player.getConfigManager().set(822, level | (room << 9));
-		player.getConfigManager().set(821, level | (room << 9));
 	}
 
 	@Override
@@ -74,9 +61,9 @@ public final class PyramidPlunderActivity extends ActivityPlugin {
 	public void register() {
 		PluginManager.definePlugin(new GuardMummyDialogue());
 		PluginManager.definePlugin(new PyramidOptionHandler());
-		registerRegion(7749);
 		mummy = NPC.create(4476, Location.create(1968, 4427, 2));
 		mummy.init();
+		registerRegion(7749);
 	}
 
 	@Override
@@ -96,6 +83,7 @@ public final class PyramidPlunderActivity extends ActivityPlugin {
 	public void enterRoom(Player player, int index) {
 		player.lock(1);
 		player.getProperties().setTeleportLocation(ROOM_LOCATIONS[index]);
+		new PlunderSession(player).init();
 	}
 
 }

@@ -303,7 +303,7 @@ class MiscCommandSet : CommandSet(Command.Privilege.ADMIN){
             }
             val configID = args[1].toString().toInt()
             val configValue = args[2].toString().toInt()
-            player.configManager.set(configID,configValue,false)
+            player.configManager.forceSet(configID,configValue,false)
         }
 
     }
