@@ -39,7 +39,6 @@ public class GWDZilyanaSwingHandler extends CombatSwingHandler {
 
 	/**
 	 * Constructs a new {@code ZilyanaSwingHandler} {@Code Object}.
-	 * @param type The combat style.
 	 */
 	public GWDZilyanaSwingHandler() {
 		super(CombatStyle.MAGIC);

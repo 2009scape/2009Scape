@@ -26,8 +26,7 @@ public final class TreeSpiritRandomNPC extends AntiMacroNPC {
 	 * @param location the location.
 	 * @param event the event.
 	 * @param player the player.
-	 * @param quotes the quotes.
-	 */
+     */
 	public TreeSpiritRandomNPC(int id, Location location, AntiMacroEvent event, Player player) {
 		super(id, location, event, player);
 	}

@@ -493,7 +493,7 @@ public final class AgilityPyramidCourse extends AgilityCourse {
 	/**
 	 * Sets the config id.
 	 * @param player the player.
-	 * @param object the object.
+	 * @param objectId the object.
 	 * @param value the value.
 	 */
 	public static void addConfig(final Player player, final int objectId, final int value, boolean save) {

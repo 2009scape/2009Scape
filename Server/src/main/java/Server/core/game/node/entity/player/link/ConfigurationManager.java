@@ -96,7 +96,6 @@ public final class ConfigurationManager implements SavingModule {
 
 	/**
 	 * Sets a configuration.
-	 * @param config The configuration.
 	 * @param value The value.
 	 */
 	public void set(int id, boolean value) {

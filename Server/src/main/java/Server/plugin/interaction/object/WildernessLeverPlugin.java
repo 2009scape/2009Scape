@@ -130,7 +130,6 @@ public final class WildernessLeverPlugin extends OptionHandler {
 		/**
 		 * Constructs a new {@code LeverSets} {@code Object}.
 		 * @param ids the ids.
-		 * @param location the location.
 		 */
 		private LeverSets(String name, int[] ids, Location... locations) {
 			this.name = name;

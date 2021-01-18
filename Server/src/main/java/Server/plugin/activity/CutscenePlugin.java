@@ -53,7 +53,7 @@ public abstract class CutscenePlugin extends ActivityPlugin {
 	/**
 	 * Constructs a new {@code CutscenePlugin} {@code Object}.
 	 * @param name the name of the cutscene/mapzone.
-	 * @param fading in or not.
+	 * @param fade fading in or not.
 	 */
 	public CutscenePlugin(String name, final boolean fade) {
 		super(name, true, false, true);
@@ -113,7 +113,7 @@ public abstract class CutscenePlugin extends ActivityPlugin {
 
 	/**
 	 * Method used to stop the cutscene.
-	 * @param if we should use a fade cutout.
+	 * @param fade if we should use a fade cutout.
 	 */
 	public void stop(boolean fade) {
 		if (fade) {

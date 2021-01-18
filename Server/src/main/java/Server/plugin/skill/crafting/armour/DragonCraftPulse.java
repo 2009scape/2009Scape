@@ -39,7 +39,6 @@ public final class DragonCraftPulse extends SkillPulse<Item> {
 	 * Constructs a new {@code DragonCraftPulse} {@code Object}.
 	 * @param player the player.
 	 * @param node the node.
-	 * @param soft the soft.
 	 * @param amount the amount.
 	 */
 	public DragonCraftPulse(Player player, Item node, DragonHide hide, int amount) {

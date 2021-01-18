@@ -1,24 +1,13 @@
 package plugin.ai.general.scriptrepository
 
-import com.google.common.collect.Range
-import com.google.common.collect.RangeMap
 import core.game.interaction.DestinationFlag
 import core.game.interaction.MovementPulse
 import core.game.node.item.Item
-import core.game.system.script.context.ItemMessageInstruction
-import core.game.system.task.Pulse
-import core.game.world.GameWorld
 import core.game.world.map.Location
-import core.game.world.map.path.Pathfinder
-import core.game.world.map.zone.ZoneBorders
-import core.game.world.update.flag.context.Animation
-import core.game.world.update.flag.context.Graphics
 import core.tools.Items
 import core.tools.RandomFunction
-import kotlinx.coroutines.delay
 import plugin.ai.AIPlayer
-import plugin.ge.GEOfferDispatch
-import plugin.ge.BotGrandExchange
+import plugin.ge.OfferManager
 import plugin.skill.Skills
 import kotlin.random.Random
 
@@ -45,6 +34,7 @@ if (offer.itemId == 383 && offer.amount >= 1000) {
  * @param limit is the number of Raw Sharks in the GE the bots will sleep at.
  * @author Sir Kermit
  * Training Wheel Manufacturer @Ceikry
+ * Very slight ge modifications by @Angle
  */
 class SharkCatcher : Script() {
     //val shark = Items.RAW_SHARK
@@ -85,10 +75,9 @@ class SharkCatcher : Script() {
 
             State.STOP -> {
                 val botAmount = bot.bank.getAmount(Items.RAW_SHARK_383) + 1
-                var ge_amount = 0 + 1
-                GEOfferDispatch.offerMapping.values.filter{it.itemId == Items.RAW_SHARK_383}.filter{it.isSell}.map{ge_amount += it.amount}
-                val total_amount = (ge_amount + botAmount) + 1
-                    if((total_amount > limit) && myCounter++ == 300){
+                var geAmount = OfferManager.getQuantitySoldForItem(Items.RAW_SHARK_383)
+                val totalAmount = (geAmount + botAmount) + 1
+                    if((totalAmount > limit) && myCounter++ == 300){
                         bot.randomWalk(5,5)
                         myCounter = 0
                         return
@@ -165,10 +154,11 @@ class SharkCatcher : Script() {
 
             State.SELL_GE -> {
                 val botAmount = bot.bank.getAmount(Items.RAW_SHARK_383) + 1
-                var ge_amount = 0 + 1
-                GEOfferDispatch.offerMapping.values.filter{it.itemId == Items.RAW_SHARK_383}.filter{it.isSell}.map{ge_amount += it.amount}
-                val total_amount = (ge_amount + botAmount) + 1
-                if(total_amount > limit){
+                var geAmount = OfferManager.getQuantitySoldForItem(Items.RAW_SHARK_383)
+                val totalAmount = (geAmount + botAmount) + 1
+                if(totalAmount > limit){
+                    scriptAPI.walkTo(Location.create(3164, 3487, 0))
+                    scriptAPI.sellOnGE(Items.RAW_SHARK_383)
                     state = State.STOP//.also { println("STOPPING") }
                 } else {
                     scriptAPI.walkTo(Location.create(3164, 3487, 0))

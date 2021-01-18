@@ -12,7 +12,6 @@ import core.game.world.update.flag.context.Graphics
 import core.tools.Items
 import core.tools.RandomFunction
 import plugin.ai.AIPlayer
-import plugin.ge.GEOfferDispatch
 
 import plugin.skill.Skills
 import kotlin.random.Random

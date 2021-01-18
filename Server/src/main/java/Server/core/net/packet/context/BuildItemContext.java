@@ -29,7 +29,7 @@ public final class BuildItemContext implements Context {
 	/**
 	 * Constructs a new {@code BuildObjectContext} {@code Object}.
 	 * @param player The player
-	 * @param items The item to send.
+	 * @param item The item to send.
 	 */
 	public BuildItemContext(Player player, Item item) {
 		this(player, item, 0);
@@ -38,7 +38,7 @@ public final class BuildItemContext implements Context {
 	/**
 	 * Constructs a new {@code BuildObjectContext} {@code Object}.
 	 * @param player The player
-	 * @param items The item to send.
+	 * @param item The item to send.
 	 * @param oldAmount The old item amount.
 	 */
 	public BuildItemContext(Player player, Item item, int oldAmount) {

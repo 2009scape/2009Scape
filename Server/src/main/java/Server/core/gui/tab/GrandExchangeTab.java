@@ -2,7 +2,6 @@ package core.gui.tab;
 
 
 import plugin.ge.GEOfferDispatch;
-import plugin.ge.GrandExchangeOffer;
 import core.game.node.entity.player.Player;
 import core.gui.ConsoleFrame;
 import core.gui.ConsoleTab;

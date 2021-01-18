@@ -75,9 +75,7 @@ public final class RemoteViewer {
 
 	/**
 	 * Starts viewing an area.
-	 * @param player the player.
-	 * @param type the type.
-	 */
+     */
 	public void startViewing() {
 		player.lock();
 		familiar.animate(animation);
@@ -93,10 +91,7 @@ public final class RemoteViewer {
 
 	/**
 	 * Views the area from the view type.
-	 * @param player the player.
-	 * @param familiar the familiar.
-	 * @param type the type.
-	 */
+     */
 	private void view() {
 		if (!canView()) {
 			return;

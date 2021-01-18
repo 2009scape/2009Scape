@@ -40,7 +40,6 @@ public final class GWDGraardorSwingHandler extends CombatSwingHandler {
 
 	/**
 	 * Constructs a new {@code GWDGraardorSwingHandler} {@Code Object}.
-	 * @param type The combat style.
 	 */
 	public GWDGraardorSwingHandler() {
 		super(CombatStyle.MELEE);

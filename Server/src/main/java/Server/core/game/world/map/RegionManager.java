@@ -565,7 +565,6 @@ public final class RegionManager {
 	/**
 	 * Gets a random teleport location in the radius around the given location.
 	 * @param location The centre location.
-	 * @param radius The radius.
 	 * @return A random teleport location.
 	 */
 	public static Location getTeleportLocation(Location location, int areaX, int areaY) {
@@ -687,7 +686,6 @@ public final class RegionManager {
 	
 	/**
 	 * Gets an npc near the entity.
-	 * @param entity the entity.
 	 * @param id the id,
 	 * @param distance the dinstance.
 	 * @return the npc.

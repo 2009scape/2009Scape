@@ -79,7 +79,6 @@ public final class GrandExchangeEntry {
 
 	/**
 	 * Influences the price of this item.
-	 * @param player The player exchanging this item.
 	 * @param value The value offered in the exchange.
 	 */
 	public void influenceValue(int value) {

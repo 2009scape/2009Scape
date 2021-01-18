@@ -92,7 +92,7 @@ public final class DiseaseStatePulse extends StatePulse {
 
 	/**
 	 * Sets the value.
-	 * @param damage The value to set.
+	 * @param value The value to set.
 	 */
 	public void setValue(int value) {
 		this.value = value;

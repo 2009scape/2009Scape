@@ -31,7 +31,6 @@ public final class HardCraftPulse extends SkillPulse<Item> {
 	 * Constructs a new {@code HardCraftPulse} {@code Object}.
 	 * @param player the player.
 	 * @param node the node.
-	 * @param soft the soft.
 	 * @param amount the amount.
 	 */
 	public HardCraftPulse(Player player, Item node, int amount) {

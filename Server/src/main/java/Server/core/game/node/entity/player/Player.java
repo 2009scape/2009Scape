@@ -12,15 +12,13 @@ import core.game.container.impl.BankContainer;
 import core.game.container.impl.EquipmentContainer;
 import core.game.container.impl.InventoryListener;
 import core.game.node.entity.combat.equipment.EquipmentDegrader;
-import core.game.system.SystemLogger;
 import core.game.system.task.Pulse;
 import core.game.world.update.flag.context.Animation;
 import core.game.world.update.flag.context.Graphics;
-import core.game.world.update.flag.player.GraphicFlag;
 import core.tools.TickUtilsKt;
 import plugin.ame.AntiMacroHandler;
 import plugin.dialogue.DialogueInterpreter;
-import plugin.ge.GrandExchange;
+import plugin.ge.PlayerGrandExchange;
 import plugin.skill.runecrafting.PouchManager;
 import plugin.ttrail.TreasureTrailManager;
 import plugin.skill.Skills;
@@ -226,9 +224,9 @@ public class Player extends Entity {
 	private final GraveManager graveManager = new GraveManager(this);
 
 	/**
-	 * The grand exchange manager.
+	 * The new grand exchange interface manager.
 	 */
-	private final GrandExchange grandExchange = new GrandExchange(this);
+	private final PlayerGrandExchange playerGrandExchange = new PlayerGrandExchange(this);
 
 	/**
 	 * The familiar manager.
@@ -1113,13 +1111,6 @@ public class Player extends Entity {
 	}
 
 	/**
-	 * @return the grandExchange.
-	 */
-	public GrandExchange getGrandExchange() {
-		return grandExchange;
-	}
-
-	/**
 	 * @return the familiarManager.
 	 */
 	public FamiliarManager getFamiliarManager() {
@@ -1373,4 +1364,5 @@ public class Player extends Entity {
 
 	public BrawlingGlovesManager getBrawlingGlovesManager() { return brawlingGlovesManager;}
 
+	public PlayerGrandExchange getPlayerGrandExchange() { return playerGrandExchange; }
 }

@@ -48,7 +48,6 @@ public final class GWDKreeArraSwingHandler extends CombatSwingHandler {
 
 	/**
 	 * Constructs a new {@code GWDKreeArraSwingHandler} {@Code Object}.
-	 * @param type The combat style.
 	 */
 	public GWDKreeArraSwingHandler() {
 		super(CombatStyle.RANGE);

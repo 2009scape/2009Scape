@@ -294,7 +294,6 @@ public final class ImpactHandler {
 
 	/**
 	 * Sets the disabledTicks.
-	 * @param disabledTicks The amount of ticks to disable impacts for..
 	 */
 	public void setDisabledTicks(int ticks) {
 		this.disabledTicks = GameWorld.getTicks() + ticks;

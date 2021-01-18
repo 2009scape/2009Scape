@@ -44,8 +44,7 @@ public final class PulseManager {
 
 	/**
 	 * Clears the pulses.
-	 * @param pulse The pulses
-	 */
+     */
 	public boolean clear(String... pulseType) {
 		if (current != null && current.isRunning()) {
 			if (pulseType.length > 0) {
@@ -116,7 +115,6 @@ public final class PulseManager {
 
 	/**
 	 * Sets the current pulse.
-	 * @param pulse The pulse to set.
 	 * @deprecated This should only be used by death pulse, use
 	 * {@link #run(Pulse, String...)} instead.
 	 */

@@ -41,8 +41,7 @@ public class RovingElves extends Quest {
 
 	/**
 	 * Constructs a new {@Code RovingElves} {@Code Object}
-	 * @param player the player.
-	 */
+     */
 	public RovingElves() {
 		super("Roving Elves", 105, 104, 1, 402, 0, 1, 6);
 	}

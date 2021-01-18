@@ -91,7 +91,6 @@ public class FirelighterPlugin extends UseWithHandler {
 
 		/**
 		 * Gets the fire lighter from the lighter used.
-		 * @param lighter the lighter.
 		 * @return the fire lighter data.
 		 */
 		public static FireLighter forLighter(final Item item) {

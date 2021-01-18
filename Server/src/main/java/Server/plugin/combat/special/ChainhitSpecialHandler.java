@@ -126,7 +126,6 @@ public final class ChainhitSpecialHandler extends RangeSwingHandler implements P
 	 * @param victim The victim.
 	 * @param player The player.
 	 * @param state The battle state.
-	 * @param hit The hit.
 	 */
 	public void handleHit(final Entity entity, final Entity victim, final Player player, final BattleState state) {
 		GameWorld.getPulser().submit(new Pulse(1, player, victim) {

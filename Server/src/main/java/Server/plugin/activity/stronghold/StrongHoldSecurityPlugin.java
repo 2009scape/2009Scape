@@ -185,8 +185,7 @@ public final class StrongHoldSecurityPlugin extends MapZone implements Plugin<Ob
 	/**
 	 * Handles a portal.
 	 * @param player the player.
-	 * @param objet the object.
-	 */
+     */
 	private void handlePortal(final Player player, final GameObject object) {
 		final int index = getPortalIndex(object.getId());
 		if (!player.getSavedData().getGlobalData().hasStrongholdReward(index + 1)) {

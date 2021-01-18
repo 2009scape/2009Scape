@@ -159,7 +159,6 @@ public class Projectile {
 
 	/**
 	 * Creates a new projectile.
-	 * @param source The source node.
 	 * @param destination The victim.
 	 * @param projectileId The projectile's gfx id;
 	 * @param startHeight The starting height.
@@ -243,7 +242,6 @@ public class Projectile {
 	/**
 	 * Constructs a new {@code Projectile} {@code Object}.
 	 * @param start The start location.
-	 * @param victim The victim.
 	 * @param projectileId The projectile id.
 	 * @param startHeight The start height.
 	 * @param endHeight The end height.

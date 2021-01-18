@@ -1,4 +1,4 @@
-package plugin.dialogue;
+package plugin.quest.free.therestlessghost;
 
 import core.game.component.Component;
 import core.game.container.access.BitregisterAssembler;
@@ -6,6 +6,7 @@ import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.link.diary.DiaryType;
 import core.plugin.InitializablePlugin;
 import core.game.node.entity.player.Player;
+import plugin.dialogue.DialoguePlugin;
 import plugin.quest.free.therestlessghost.RestlessGhost;
 
 

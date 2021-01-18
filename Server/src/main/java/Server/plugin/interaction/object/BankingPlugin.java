@@ -169,7 +169,7 @@ public final class BankingPlugin extends OptionHandler {
                 return true;
             }
             interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, "Good day, How may I help you?");
-            for (GrandExchangeOffer o : player.getGrandExchange().getOffers()) {
+            for (GrandExchangeOffer o : player.getPlayerGrandExchange().getOffers()) {
                 if (o != null && (o.getWithdraw()[0] != null || o.getWithdraw()[1] != null)) {
                     stage = -1;
                     break;

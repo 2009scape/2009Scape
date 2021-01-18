@@ -36,7 +36,6 @@ public enum PotteryItem {
 
 	/**
 	 * Constructs a new {@code PotteryItem} {@code Object}.
-	 * @param button the button.
 	 * @param unfinished the unfinished.
 	 * @param product the product.
 	 * @param level the level.

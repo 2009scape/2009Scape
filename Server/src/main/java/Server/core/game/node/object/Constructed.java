@@ -75,7 +75,6 @@ public class Constructed extends GameObject {
 	/**
 	 * Constructs a new {@code Constructed} {@code Object}.
 	 * @param id The object id.
-	 * @param nodeType The nodeType.
 	 * @param location The location.
 	 * @param type The object type.
 	 * @param rotation The rotation.

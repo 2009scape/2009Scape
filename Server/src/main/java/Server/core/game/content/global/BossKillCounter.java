@@ -52,7 +52,6 @@ public enum BossKillCounter {
 	/**
 	 * Constructs a new {@code BossKillCounter} {@code Object}.
 	 * @param npc the npc.
-	 * @param data the attribute data
 	 * @param name the npc's string name
 	 */
 	BossKillCounter(final int[] npc, final String name, final int petId) {

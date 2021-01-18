@@ -442,8 +442,7 @@ public final class WeaponInterface extends Component {
 
 	/**
 	 * Opens the autocast select.
-	 * @param p The player.
-	 */
+     */
 	public void openAutocastSelect() {
 		if (current != WeaponInterfaces.STAFF) {
 			return;

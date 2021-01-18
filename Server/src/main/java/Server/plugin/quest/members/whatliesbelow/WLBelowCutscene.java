@@ -248,8 +248,6 @@ public class WLBelowCutscene extends CutscenePlugin {
 
 	/**
 	 * Sends a camera.
-	 * @param x the x.
-	 * @param y the y.
 	 * @param height the height.
 	 * @param speed the speed.
 	 */

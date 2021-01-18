@@ -181,7 +181,6 @@ public final class ErnestTheChickenPlugin extends OptionHandler {
 
 		/**
 		 * Method used to update the players config states.
-		 * @param player the player.
 		 */
 		public final void updateConfigs() {
 			player.getConfigManager().set(LEVER_CONFIG, calculateLeverConfig());
@@ -480,7 +479,6 @@ public final class ErnestTheChickenPlugin extends OptionHandler {
 		/**
 		 * Constructs a new {@code ErnestTheChickenPlugin.java} {@code Object}.
 		 * @param objectId
-		 * @param configData
 		 */
 		Lever(final int... objectId) {
 			this.objectIds = objectId;

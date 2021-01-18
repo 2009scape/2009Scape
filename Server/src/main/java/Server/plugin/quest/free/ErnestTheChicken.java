@@ -38,7 +38,6 @@ public final class ErnestTheChicken extends Quest {
 
 	/**
 	 * Constructs a new {@code ErnestTheChicken} {@code Object}.
-	 * @param player the player.
 	 */
 	public ErnestTheChicken() {
 		super("Ernest the Chicken", 19, 18, 4, 32, 0, 1, 3);

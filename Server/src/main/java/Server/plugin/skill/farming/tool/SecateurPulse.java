@@ -29,8 +29,7 @@ public final class SecateurPulse extends ToolAction {
 	 * Constructs a new {@code SecateurPulse} {@code Object}.
 	 * @param player the player.
 	 * @param wrapper the wrapper.
-	 * @param delay the delay.
-	 */
+     */
 	public SecateurPulse(final Player player, final PatchWrapper wrapper, final Item item) {
 		super(player, wrapper, item);
 	}

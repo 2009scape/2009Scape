@@ -24,8 +24,7 @@ public final class ZombieAmeNPC extends AntiMacroNPC {
 	 * @param location the location.
 	 * @param event the event.
 	 * @param player the player.
-	 * @param quotes the quotes.
-	 */
+     */
 	public ZombieAmeNPC(int id, Location location, AntiMacroEvent event, Player player) {
 		super(id, location, event, player);
 	}

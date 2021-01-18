@@ -12,8 +12,6 @@ public final class AnimationFlag extends UpdateFlag<Animation> {
 
 	/**
 	 * Constructs a new {@code AnimationFlag} {@code Object}.
-	 * @param id The animation id.
-	 * @param delay The animation delay.
 	 */
 	public AnimationFlag(Animation context) {
 		super(context);

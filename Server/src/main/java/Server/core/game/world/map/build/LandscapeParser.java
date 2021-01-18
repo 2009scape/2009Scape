@@ -21,7 +21,6 @@ public final class LandscapeParser {
 	 * Parses the landscape.
 	 * @param r The region.
 	 * @param mapscape The mapscape data.
-	 * @param stream The buffer.
 	 * @param storeObjects If all objects should be stored (rather than just the objects with options).
 	 */
 	public static void parse(Region r, byte[][][] mapscape, ByteBuffer buffer, boolean storeObjects) {
@@ -160,7 +159,6 @@ public final class LandscapeParser {
 
 	/**
 	 * Removes a game object.
-	 * @param plane The plane.
 	 * @param object The object.
 	 * @return The removed game object.
 	 */

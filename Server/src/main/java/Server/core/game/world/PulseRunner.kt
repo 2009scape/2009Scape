@@ -9,7 +9,7 @@ import kotlin.math.floor
 
 /** new way of running pulses that multithreads based on core count automatically, should improve performance drastically.
  * @author ceik
- * @author eli
+ * @author angle
  */
 
 class PulseRunner {

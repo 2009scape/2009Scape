@@ -49,8 +49,6 @@ public final class CockatriceFamiliarNPC implements Plugin<Object> {
 	 * Handles a petrified gaze.
 	 * @param familiar the familiar.
 	 * @param special the special.
-	 * @param bonus the bonus.
-	 * @param maxHit the maxHit.
 	 * @return {@code True} if so.
 	 */
 	public boolean petrifyingGaze(final Familiar familiar, final FamiliarSpecial special, final int skill) {

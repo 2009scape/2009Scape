@@ -41,7 +41,6 @@ public class DwarfCannon extends Quest {
 
 	/**
 	 * Constructs a new {@Code DwarfCannon} {@Code Object}
-	 * @param player the player.
 	 */
 	public DwarfCannon() {
 		super(NAME, 49, 48, 1);

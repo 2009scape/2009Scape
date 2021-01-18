@@ -50,7 +50,6 @@ public class NodeList<E extends Node> implements Collection<E>, Iterable<E> {
 
 	/**
 	 * Gets the index of an Node.
-	 * @param Node The Node.
 	 * @return The index in the list.
 	 */
 	public int indexOf(Node node) {

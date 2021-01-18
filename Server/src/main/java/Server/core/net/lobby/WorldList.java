@@ -133,9 +133,6 @@ public final class WorldList {
 
 	/**
 	 * Gets the packet to update the world list in the lobby.
-	 * @param player The player.
-	 * @param worldConfiguration If the configuration should be added.
-	 * @param worldStatus If the status should be added.
 	 * @return The {@code OutgoingPacket} to write.
 	 */
 	public static void sendUpdate(IoSession session, int updateStamp) {
@@ -210,8 +207,7 @@ public final class WorldList {
 
 	/**
 	 * Sets the baupdateStamp.
-	 * @param updateStamp the updateStamp to set.
-	 */
+     */
 	public static void flagUpdate() {
 		WorldList.updateStamp = GameWorld.getTicks();
 	}

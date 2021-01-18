@@ -155,7 +155,6 @@ public final class InteractionPacket implements IncomingPacket {
 	/**
 	 * Handles the NPC interaction.
 	 * @param player the player.
-	 * @param optionIndexthe option index.
 	 * @param index the index.
 	 */
 	public static void handleNPCInteraction(Player player, int optionIndex, final int index) {

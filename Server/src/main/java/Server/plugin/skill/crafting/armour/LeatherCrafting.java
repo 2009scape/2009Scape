@@ -55,8 +55,7 @@ public final class LeatherCrafting {
 
 	/**
 	 * Method used to decay thread.
-	 * @param thread the thread.
-	 */
+     */
 	public static void decayThread(final Player player) {
 		final Item thread = getThread(player);
 		if (thread == null) {
@@ -69,8 +68,7 @@ public final class LeatherCrafting {
 	/**
 	 * Method used to remove thread.
 	 * @param player the player.
-	 * @param item the item.
-	 */
+     */
 	public static void removeThread(final Player player) {
 		if (player.getInventory().remove(THREAD)) {
 			player.getPacketDispatch().sendMessage("You use a reel of your thread.");

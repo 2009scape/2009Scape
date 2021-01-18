@@ -16,8 +16,7 @@ public class SheepShearer extends Quest {
 
 	/**
 	 * Constructs a new {@code SheepShearer} {@code Object}.
-	 * @param player The player to construct the class for.
-	 */
+     */
 	public SheepShearer() {
 		super("Sheep Shearer", 28, 27, 1, 179, 0, 20, 21);
 	}

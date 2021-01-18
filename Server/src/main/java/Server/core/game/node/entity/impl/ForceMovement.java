@@ -82,7 +82,6 @@ public class ForceMovement extends Pulse {
 	 * @param startAnim The start animation.
 	 * @param animation The animation
 	 * @param direction The direction.
-	 * @param ticks The amount of ticks.
 	 */
 	public ForceMovement(Entity e, Location start, Location destination, Animation startAnim, Animation animation, Direction direction, int commenceSpeed, int pathSpeed) {
 		super(1, e);
@@ -121,7 +120,6 @@ public class ForceMovement extends Pulse {
 
 	/**
 	 * Constructs a new {@code ForceMovement} {@code Object}.
-	 * @param e the entity.
 	 * @param start the start loc.
 	 * @param destination the destination.
 	 * @param animation the animation.
@@ -182,8 +180,6 @@ public class ForceMovement extends Pulse {
 	 * @param start The start location.
 	 * @param destination The destination location.
 	 * @param animation The animation.
-	 * @param direction The direction.
-	 * @param speed The speed (in ticks).
 	 * @return The created ForceMovement object.
 	 */
 	public static ForceMovement run(Entity e, Location start, Location destination, Animation startAnim, Animation animation) {
@@ -197,7 +193,6 @@ public class ForceMovement extends Pulse {
 	 * @param destination The destination location.
 	 * @param animation The animation.
 	 * @param direction The direction.
-	 * @param speed The speed (in ticks).
 	 * @return The created ForceMovement object.
 	 */
 	public static ForceMovement run(Entity e, Location start, Location destination, Animation startAnim, Animation animation, Direction direction) {
@@ -225,7 +220,6 @@ public class ForceMovement extends Pulse {
 	 * @param destination The destination location.
 	 * @param animation The animation.
 	 * @param direction The direction.
-	 * @param speed The speed (in ticks).
 	 * @return The created ForceMovement object.
 	 */
 	public static ForceMovement run(Entity e, Location start, Location destination, Animation startAnim, Animation animation, Direction direction, int commenceSpeed, int pathSpeed) {

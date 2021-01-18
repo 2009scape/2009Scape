@@ -25,9 +25,7 @@ public class AnimateObjectContext implements Context {
 	/**
 	 * Constructs a new {@code AnimateObjectContext} {@code Object}.
 	 * @param player the player.
-	 * @param object the object.
 	 * @param animation the animation.
-	 * @param global if it is global.
 	 */
 	public AnimateObjectContext(Player player, Animation animation) {
 		this.player = player;

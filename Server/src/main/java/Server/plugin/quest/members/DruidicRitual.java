@@ -18,7 +18,6 @@ public class DruidicRitual extends Quest {
 
 	/**
 	 * Constructs a new {@code DruidicRitual} {@code Object}.
-	 * @param player The player to construct the class for.
 	 */
 	public DruidicRitual() {
 		super("Druidic Ritual", 48, 47, 4, 80, 0, 3, 4);

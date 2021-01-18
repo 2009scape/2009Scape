@@ -1,0 +1,69 @@
+{
+  "offers": [
+    {
+        "__comment" : "coal",
+        "item" : "453",
+        "qty" : "1000"
+    },
+    {
+        "__comment" : "vial",
+        "item" : "227",
+        "qty" : "10000"
+    },
+    {
+        "__comment" : "water vial",
+        "item" : "229",
+        "qty" : "10000"
+    },
+    {
+        "__comment" : "cooked lobster",
+        "item" : "379",
+        "qty" : "10000"
+    },
+    {
+        "__comment" : "Ashes",
+        "item" : "592",
+        "qty" : "1000"
+    },
+    {
+        "__comment" : "Mort myre fungi",
+        "item" : "2970",
+        "qty" : "1000"
+    },
+    {
+        "__comment" : "Poison ivy berries",
+        "item" : "6018",
+        "qty" : "1000"
+    },
+    {
+        "__comment" : "Potato cactus",
+        "item" : "3138",
+        "qty" : "1000"
+    },
+    {
+        "__comment" : "Unicorn horn",
+        "item" : "237",
+        "qty" : "1000"
+    },
+    {
+        "__comment" : "Red spider eggs",
+        "item" : "223",
+        "qty" : "1000"
+    },
+    {
+        "__comment" : "Bird nest",
+        "item" : "6693",
+        "qty" : "1000"
+    },
+    {
+        "__comment" : "Chocolate dust",
+        "item" : "1975",
+        "qty" : "1000"
+    },
+    {
+        "__comment" : "Limpwurt root",
+        "item" : "225",
+        "qty" : "10000"
+    }
+    ]
+}

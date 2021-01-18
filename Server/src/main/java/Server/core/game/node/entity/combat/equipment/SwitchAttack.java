@@ -74,8 +74,7 @@ public class SwitchAttack {
 	 * @param animation The animation.
 	 * @param startGraphic The start graphic.
 	 * @param endGraphic The end graphic.
-	 * @param projectile The projectile.
-	 */
+     */
 	public SwitchAttack(CombatSwingHandler handler, Animation animation, Graphics startGraphic, Graphics endGraphic) {
 		this(handler, animation, startGraphic, endGraphic, null);
 	}

@@ -152,7 +152,7 @@ public abstract class AntiMacroEvent extends ActivityPlugin implements SavingMod
 
 	/**
 	 * Gets the gender prefix.
-	 * @param if male.
+	 * @param male if male.
 	 * @return the prefix.
 	 */
 	public String getGenderPrefix(boolean male) {

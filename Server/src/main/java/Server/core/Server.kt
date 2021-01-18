@@ -9,7 +9,6 @@ import core.gui.ConsoleFrame
 import core.net.NioReactor
 import core.net.amsc.WorldCommunicator
 import core.tools.TimeStamp
-import plugin.ge.BotGrandExchange
 import plugin.ge.GEAutoStock
 import java.io.File
 import java.net.BindException
@@ -76,8 +75,8 @@ object Server {
         WorldCommunicator.connect()
         SystemLogger.log(GameWorld.settings?.name + " flags " + GameWorld.settings?.toString())
         SystemLogger.log(GameWorld.settings?.name + " started in " + t.duration(false, "") + " milliseconds.")
-        GEAutoStock.parse(ServerConstants.GRAND_EXCHANGE_DATA_PATH + "itemstostock.xml")
-        BotGrandExchange.loadOffersFromDB()
+
+        GEAutoStock.autostock()
         // TODO Run the eco kick starter 1 time for the live server then comment it out
 //		ResourceManager.kickStartEconomy();
     }

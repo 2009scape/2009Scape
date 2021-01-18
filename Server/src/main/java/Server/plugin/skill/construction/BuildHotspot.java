@@ -414,7 +414,7 @@ public enum BuildHotspot {
 	
 	/**
 	 * Constructs a new {@code BuildHotspot} {@code Object}.
-	 * @param objectId The objects id.
+	 * @param objectIds The objects ids.
 	 * @param buildingAnimation The building animation.
 	 * @param decorations The decoration.
 	 */

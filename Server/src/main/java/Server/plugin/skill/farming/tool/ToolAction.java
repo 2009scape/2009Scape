@@ -57,7 +57,6 @@ public abstract class ToolAction extends Pulse {
 	 * Creates a new instance of the pulse.
 	 * @param player the player.
 	 * @param wrapper the wrapper.
-	 * @param delay the delay.
 	 * @return the instance.
 	 */
 	public abstract ToolAction newInstance(final Player player, final PatchWrapper wrapper, final Item tool);

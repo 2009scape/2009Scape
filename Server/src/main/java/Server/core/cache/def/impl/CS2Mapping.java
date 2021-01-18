@@ -114,7 +114,7 @@ public final class CS2Mapping {
 
 	/**
 	 * Loads the mapping data.
-	 * @param stream The buffer to read the data from.
+	 * @param buffer The buffer to read the data from.
 	 */
 	private void load(ByteBuffer buffer) {
 		int opcode;

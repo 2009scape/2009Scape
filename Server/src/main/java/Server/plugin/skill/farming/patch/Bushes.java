@@ -29,7 +29,7 @@ public enum Bushes {
 
 	/**
 	 * Constructs a new {@code FarmingNodes} {@code Object}.
-	 * @param node the node.
+	 * @param allotment the farming allotment node.
 	 */
 	Bushes(final FarmingNode allotment) {
 		this.node = allotment;

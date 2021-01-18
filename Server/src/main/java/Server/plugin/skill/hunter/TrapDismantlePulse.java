@@ -31,8 +31,7 @@ public final class TrapDismantlePulse extends SkillPulse<GameObject> {
 	 * Constructs a new {@code TrapDismantlePulse} {@code Object}.
 	 * @param player the player.
 	 * @param node the node.
-	 * @param trap the trap.
-	 */
+     */
 	public TrapDismantlePulse(Player player, GameObject node, final TrapWrapper wrapper) {
 		super(player, node);
 		this.trap = wrapper.getType();

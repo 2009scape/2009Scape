@@ -57,7 +57,7 @@ public final class AggressiveHandler {
 	/**
 	 * Constructs a new {@code AggressiveHandler} {@code Object}.
 	 * @param entity The entity.
-	 * @param behaviour The aggressive behavior.
+	 * @param behavior The aggressive behavior.
 	 */
 	public AggressiveHandler(Entity entity, AggressiveBehavior behavior) {
 		this.entity = entity;

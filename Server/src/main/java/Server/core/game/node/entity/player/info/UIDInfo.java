@@ -66,7 +66,6 @@ public class UIDInfo {
 
 	/**
 	 * Converts a to string in format mode for an admin or mod.
-	 * @param admin the admin.
 	 * @return the string.
 	 */
 	public String toString(Player player, Player target) {

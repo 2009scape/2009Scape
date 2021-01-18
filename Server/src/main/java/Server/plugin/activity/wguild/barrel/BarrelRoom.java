@@ -162,7 +162,6 @@ public final class BarrelRoom extends MapZone implements Plugin<Object> {
 	/**
 	 * Removes the barrels from the player's head.
 	 * @param player The player.
-	 * @param force If the barrels are being removed due to leaving the area.
 	 */
 	private static void removeBarrels(Player player) {
 		if (player.getLocks().getEquipmentLock() != null) {

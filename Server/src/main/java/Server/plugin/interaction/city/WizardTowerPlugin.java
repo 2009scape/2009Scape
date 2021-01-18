@@ -959,7 +959,6 @@ public final class WizardTowerPlugin extends OptionHandler {
             /**
              * Method used to get the splitbark armour.
              *
-             * @param button the button.
              * @return the split bark.
              */
             public static SplitBark forButton(final int buttonId) {

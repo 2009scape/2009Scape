@@ -131,8 +131,7 @@ public final class Viewport {
 
 	/**
 	 * Sets the viewingPlanes.
-	 * @param viewingPlanes The viewingPlanes to set.
-	 */
+     */
 	public void setViewingPlanes(List<RegionPlane> regions) {
 		this.viewingPlanes = regions;
 	}

@@ -148,8 +148,7 @@ public final class TrapWrapper {
 
 	/**
 	 * Baits the trap.
-	 * @param item the item.
-	 */
+     */
 	public void bait(Item bait) {
 		if (baited) {
 			player.sendMessage("This trap has already been baited.");

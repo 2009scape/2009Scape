@@ -48,8 +48,7 @@ public final class RegionFlags {
 	 * Constructs a new {@code RegionFlags} {@code Object}.
 	 * @param x  The base x-coordinate (absolute).
 	 * @param y The base y-coordinate (absolute).
-	 * @param regionId The region id.
-	 */
+     */
 	public RegionFlags(int plane, int x, int y) {
 		this(plane, x, y, false);
 	}
@@ -58,8 +57,7 @@ public final class RegionFlags {
 	 * Constructs a new {@code RegionFlags} {@code Object}.
 	 * @param x  The base x-coordinate (absolute).
 	 * @param y The base y-coordinate (absolute).
-	 * @param regionId The region id.
-	 */
+     */
 	public RegionFlags(int plane, int x, int y, boolean projectile) {
 		this.plane = plane;
 		this.baseX = x;

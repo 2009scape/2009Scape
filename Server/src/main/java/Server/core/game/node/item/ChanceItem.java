@@ -53,7 +53,7 @@ public final class ChanceItem extends Item {
 	 * Constructs a new {@code ChanceItem} {@code Object}.
 	 * @param id The item id.
 	 * @param minimumAmount The minimum amount.
-	 * @param chanceRatio The chance rate.
+	 * @param chanceRate The chance rate.
 	 */
 	public ChanceItem(int id, int minimumAmount, double chanceRate) {
 		this(id, minimumAmount, minimumAmount, 1000, chanceRate);
@@ -64,7 +64,7 @@ public final class ChanceItem extends Item {
 	 * @param id The item id.
 	 * @param minimumAmount The minimum amount.
 	 * @param maximumAmount The maximum amount.
-	 * @param chanceRatio The chance rate.
+	 * @param chanceRate The chance rate.
 	 */
 	public ChanceItem(int id, int minimumAmount, int maximumAmount, double chanceRate) {
 		this(id, minimumAmount, maximumAmount, 1000, chanceRate);
@@ -89,7 +89,7 @@ public final class ChanceItem extends Item {
 	 * @param charge The charge.		if(frequency == DropFrequency.ALWAYS){
 
 		}
-	 * @param chanceRatio The chance rate.
+	 * @param chanceRate The chance rate.
 	 */
 	public ChanceItem(int id, int minimumAmount, int maximumAmount, int charge, double chanceRate) {
 		this(id, minimumAmount, maximumAmount, charge, chanceRate, DropFrequency.UNCOMMON);
@@ -102,7 +102,7 @@ public final class ChanceItem extends Item {
 	 * @param maximumAmount The maximum amount.
 	 * @param charge The charge.
 	 * @param frequency The drop frequency.
-	 * @param chanceRatio The chance rate.
+	 * @param chanceRate The chance rate.
 	 */
 	public ChanceItem(int id, int minimumAmount, int maximumAmount, int charge, double chanceRate, DropFrequency frequency) {
 		this(id, minimumAmount, maximumAmount, charge, chanceRate, frequency, -1);
@@ -115,8 +115,8 @@ public final class ChanceItem extends Item {
 	 * @param maximumAmount The maximum amount.
 	 * @param charge The charge.
 	 * @param frequency The drop frequency.
-	 * @param chanceRatio The chance rate.
-	 * @param set rate the rate.
+	 * @param chanceRate The chance rate.
+	 * @param setRate the set rate.
 	 */
 	public ChanceItem(int id, int minimumAmount, int maximumAmount, int charge, double chanceRate, DropFrequency frequency, int setRate) {
 		super(id, minimumAmount, charge);

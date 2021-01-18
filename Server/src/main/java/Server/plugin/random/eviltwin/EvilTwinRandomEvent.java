@@ -349,8 +349,6 @@ public final class EvilTwinRandomEvent extends AntiMacroEvent {
 	 * Method used to handle the camera.
 	 * @param x the x offset.
 	 * @param y the y offset.
-	 * @param xRot the xRotation.
-	 * @param yRot the yRotation.
 	 * @Param height the height.
 	 */
 	private void updateCraneCam(int x, int y) {
@@ -457,8 +455,6 @@ public final class EvilTwinRandomEvent extends AntiMacroEvent {
 
 	/**
 	 * Gets the current NPC id for Molly.
-	 * @param color The clothing color.
-	 * @param type The type (looks).
 	 * @return The NPC id.
 	 */
 	public static int getMollyId(int hash) {

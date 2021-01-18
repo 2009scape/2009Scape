@@ -21,8 +21,7 @@ public class WaterFall extends Quest {
 
 	/**
 	 * Constructs a new {@code WaterFall} {@code Object}.
-	 * @param player The player to construct the class for.
-	 */
+     */
 	public WaterFall() {
 		super("Waterfall", 65, 64, 1, 65, 0, 1, 10);
 	}

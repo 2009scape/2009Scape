@@ -42,7 +42,6 @@ public final class GWDTsutsarothSwingHandler extends CombatSwingHandler {
 
 	/**
 	 * Constructs a new {@code GWDTsutsarothSwingHandler} {@Code Object}.
-	 * @param type The combat style.
 	 */
 	public GWDTsutsarothSwingHandler() {
 		super(CombatStyle.MELEE);

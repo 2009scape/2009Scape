@@ -17,19 +17,18 @@ import core.game.world.GameWorld
 import core.game.world.map.Location
 import core.game.world.map.RegionManager
 import core.game.world.map.path.Pathfinder
+import core.game.world.repository.Repository
 import core.game.world.update.flag.context.Animation
 import core.game.world.update.flag.context.Graphics
 import core.tools.Items
 import core.tools.RandomFunction
 import plugin.ai.AIRepository
-import plugin.barbtraining.fishing.getNewLoc
 import plugin.consumable.Consumable
 import plugin.consumable.Consumables
 import plugin.consumable.Food
 import plugin.consumable.effects.HealingEffect
-import plugin.ge.BotGrandExchange
-import plugin.ge.GEOfferDispatch
 import plugin.ge.GrandExchangeOffer
+import plugin.ge.OfferManager
 import plugin.skill.Skills
 import java.util.*
 import java.util.concurrent.CountDownLatch
@@ -362,18 +361,21 @@ class ScriptAPI(private val bot: Player) {
      * A function for selling a given item on the GE.
      * @param id the ID of the item to sell on the GE. Pulls from the bot's bank.
      * @author Ceikry
+     * @author Angle
      */
     fun sellOnGE(id: Int){
         class toCounterPulse : MovementPulse(bot, Location.create(3165, 3487, 0)){
             override fun pulse(): Boolean {
                 var actualId = id
                 val itemAmt = bot.bank.getAmount(id)
-                val offeredValue = checkPriceOverrides(id) ?: ItemDefinition.forId(id).value
-                if(ItemDefinition.forId(id).noteId == id){
+                if (ItemDefinition.forId(id).noteId == id){
                     actualId = Item(id).noteChange
                 }
-                BotGrandExchange.sellOnGE(actualId, offeredValue, itemAmt)
-                SystemLogger.log("Offered $itemAmt")
+                val canSell = OfferManager.addBotOffer(actualId, itemAmt)
+                if (canSell) {
+                    SystemLogger.log("Offered $itemAmt")
+                    Repository.sendNews("2009Scape just offered " + itemAmt + " " + ItemDefinition.forId(actualId).name.toLowerCase() + " on the GE.")
+                }
                 bot.bank.remove(Item(id, itemAmt))
                 bot.bank.refresh()
                 SystemLogger.log("Banked fish: " + bot.bank.getAmount(Items.RAW_SWORDFISH_371))
@@ -398,8 +400,14 @@ class ScriptAPI(private val bot: Player) {
                     if (item.id == Items.SHARK_385) continue
                     if(!item.definition.isTradeable) {continue}
                     val itemAmt = item.amount
-                    val offeredValue = checkPriceOverrides(item.id) ?: item.definition.value
-                    BotGrandExchange.sellOnGE(item.id, offeredValue, itemAmt)
+                    var actualId = item.id
+                    if (ItemDefinition.forId(actualId).noteId == actualId){
+                        actualId = Item(actualId).noteChange
+                    }
+                    val canSell = OfferManager.addBotOffer(actualId, itemAmt)
+                    if (canSell) {
+                        Repository.sendNews("2009Scape just offered " + itemAmt + " " + ItemDefinition.forId(actualId).name.toLowerCase() + " on the GE.")
+                    }
                     bot.bank.remove(item)
                     bot.bank.refresh()
                 }
@@ -421,8 +429,14 @@ class ScriptAPI(private val bot: Player) {
                     item ?: continue
                     if(!item.definition.isTradeable) {continue}
                     val itemAmt = item.amount
-                    val offeredValue = checkPriceOverrides(item.id) ?: item.definition.value
-                    BotGrandExchange.sellOnGE(item.id, offeredValue, itemAmt)
+                    var actualId = item.id
+                    if (ItemDefinition.forId(actualId).noteId == actualId){
+                        actualId = Item(actualId).noteChange
+                    }
+                    val canSell = OfferManager.addBotOffer(actualId, itemAmt)
+                    if (canSell) {
+                        Repository.sendNews("2009Scape just offered " + itemAmt + " " + ItemDefinition.forId(actualId).name.toLowerCase() + " on the GE.")
+                    }
                     bot.bank.remove(item)
                     bot.bank.refresh()
                 }
@@ -517,10 +531,12 @@ class ScriptAPI(private val bot: Player) {
      */
     fun buyFromGE(itemID: Int, amount: Int){
         Executors.newSingleThreadExecutor().execute{
-            val offer = GrandExchangeOffer(itemID, false)
+            val offer = GrandExchangeOffer()
+            offer.itemID = itemID
+            offer.sell = false
             offer.offeredValue = checkPriceOverrides(itemID) ?: ItemDefinition.forId(itemID).value
             offer.amount = amount
-            GEOfferDispatch.dispatch(bot, offer)
+            OfferManager.dispatch(bot, offer)
             var bought: Boolean = false
             val latch = CountDownLatch(1)
             bot.pulseManager.run(object : Pulse(5) {
@@ -532,7 +548,7 @@ class ScriptAPI(private val bot: Player) {
             })
             latch.await()
             if(bought){
-                bot.bank.add(Item(offer.itemId, offer.completedAmount))
+                bot.bank.add(Item(offer.itemID, offer.completedAmount))
                 bot.bank.refresh()
             }
         }

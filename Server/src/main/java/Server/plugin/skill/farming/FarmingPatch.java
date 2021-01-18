@@ -154,7 +154,6 @@ public enum FarmingPatch {
 
 	/**
 	 * Gets the farming patch by the object.
-	 * @param object the object.
 	 * @return {@code FarmingPatch} {@code Object}.
 	 */
 	public static FarmingPatch forObject(final int id) {

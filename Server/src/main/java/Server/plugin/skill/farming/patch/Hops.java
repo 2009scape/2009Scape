@@ -26,7 +26,6 @@ public enum Hops {
     /**
      * Constructs a new {@code FarmingNodes} {@code Object}.
      *
-     * @param node the node.
      */
     Hops(final FarmingNode allotment) {
         this.node = allotment;

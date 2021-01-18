@@ -1032,7 +1032,6 @@ public final class GardenObjectsPlugin extends OptionHandler {
 
 		/**
 		 * Method used to handle the sqirk juice dials.
-		 * @param stage the stage.
 		 * @param buttonId the buttonId.
 		 */
 		public void handleSqirks(int buttonId) {

@@ -131,7 +131,6 @@ public class PickableDoorHandler extends OptionHandler {
 
         /**
          * Constructs a new {@code PickableDoor} {@code Object}.
-         * @param location the locations.
          * @param level the level.
          * @param experience the experience.
          */

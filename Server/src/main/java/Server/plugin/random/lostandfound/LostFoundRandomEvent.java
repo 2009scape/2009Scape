@@ -168,7 +168,6 @@ public final class LostFoundRandomEvent extends AntiMacroEvent {
 			/**
 			 * Checks if the object was the player's odd appendage.
 			 * @param player The player.
-			 * @param objectId The object id.
 			 * @return {@code True} if the odd appendage was operated.
 			 */
 			private boolean isOddAppendage(Player player, GameObject object) {

@@ -225,7 +225,6 @@ public final class ScriptCompiler {
 	 * @param line The first line the parse.
 	 * @param rawScript The script data queue.
 	 * @param script The main script context.
-	 * @param method If the script is being parsed for a method.
 	 * @throws IOException When an I/O exception occurs.
 	 */
 	private static ScriptContext parseScript(String line, Queue<String> rawScript, ScriptEntry script, ScriptContext previous) throws Throwable {
@@ -565,7 +564,6 @@ public final class ScriptCompiler {
 
 	/**
 	 * Formats an argument.
-	 * @param sb The argument string.
 	 * @return The formatted argument.
 	 */
 	public static StringBuilder formatArgument(String string) {

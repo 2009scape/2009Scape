@@ -20,7 +20,6 @@ public final class GuardMummyDialogue extends DialoguePlugin {
 
 	/**
 	 * Constructs a new {@code GuardMummyDialogue} {@code Object}.
-	 * @param player The player.
 	 */
 	public GuardMummyDialogue() {super();}
 	public GuardMummyDialogue(Player player) {

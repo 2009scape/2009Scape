@@ -29,8 +29,7 @@ public final class ServerSocketConnection {
 	 * Constructs a new {@code ServerSocketConnection} {@code Object}.
 	 * @param selector The selector.
 	 * @param channel The channel.
-	 * @param handler The event handler.
-	 */
+     */
 	public ServerSocketConnection(Selector selector, ServerSocketChannel channel) {
 		this.selector = selector;
 		this.channel = channel;
@@ -42,8 +41,7 @@ public final class ServerSocketConnection {
 	 * Object}
 	 * @param selector The selector.
 	 * @param channel The channel.
-	 * @param handler The event handler.
-	 */
+     */
 	public ServerSocketConnection(Selector selector, SocketChannel channel) {
 		this.selector = selector;
 		this.socket = channel;

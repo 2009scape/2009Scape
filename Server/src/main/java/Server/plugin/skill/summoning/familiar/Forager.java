@@ -29,7 +29,6 @@ public abstract class Forager extends BurdenBeast {
 	 * @param ticks the ticks.
 	 * @param pouchId the pouch id.
 	 * @param specialCost the special cost.
-	 * @param containerSize the container size.
 	 */
 	public Forager(Player owner, int id, int ticks, int pouchId, int specialCost, int attackStyle, final Item... items) {
 		super(owner, id, ticks, pouchId, specialCost, 30, attackStyle);
@@ -44,7 +43,6 @@ public abstract class Forager extends BurdenBeast {
 	 * @param ticks the ticks.
 	 * @param pouchId the pouch id.
 	 * @param specialCost the special cost.
-	 * @param containerSize the container size.
 	 */
 	public Forager(Player owner, int id, int ticks, int pouchId, int specialCost, final Item... items) {
 		this(owner, id, ticks, pouchId, specialCost, WeaponInterface.STYLE_DEFENSIVE, items);

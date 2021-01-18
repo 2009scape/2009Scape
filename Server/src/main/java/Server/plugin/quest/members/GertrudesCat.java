@@ -17,7 +17,6 @@ public class GertrudesCat extends Quest {
 
 	/**
 	 * Constructs a new {@code GertrudesCat} {@code Object}.
-	 * @param player The player to construct the class for.
 	 */
 	public GertrudesCat() {
 		super("Gertrude's Cat", 67, 66, 1, 180, 0, 1, 100);

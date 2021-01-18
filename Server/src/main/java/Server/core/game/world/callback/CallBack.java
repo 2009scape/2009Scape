@@ -2,7 +2,7 @@ package core.game.world.callback;
 
 /**
  * Represents a call back which is used in {@link CallbackHub} to load any
- * neccesary details used on the starting of a {@link World}.
+ * neccesary details used on the starting of a world.
  * @author 'Vexia
  */
 public interface CallBack {

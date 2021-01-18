@@ -66,7 +66,7 @@ public abstract class AntiMacroDialogue extends DialoguePlugin {
 
 	/**
 	 * Waves the npc good bye.
-	 * @param animation the wave animation.
+	 * @param wave the wave animation.
 	 */
 	public void wave(Animation wave) {
 		end();

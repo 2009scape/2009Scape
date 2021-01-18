@@ -20,7 +20,6 @@ public final class BoxTrapNode extends TrapNode {
 	 * @param npcIds the npc ids.
 	 * @param level the level.
 	 * @param experience the experience.
-	 * @param objectIds the objectids.
 	 * @param rewards the rewards.
 	 */
 	public BoxTrapNode(int[] npcIds, int level, double experience, Item[] rewards, final int summoningLevel) {
