@@ -393,21 +393,24 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
         sendConfiguration(temporaryOffer, true)
     }
 
-    /**
-     * Gets the total amount of this item in the inventory (including noted
-     * version).
-     *
-     * @param player The player.
-     * @param itemId the item id.
-     * @return The amount of items + notes in the inventory.
-     */
-    fun getInventoryAmount(player: Player, itemId: Int): Int {
-        val item = Item(itemId)
-        var amount = player.inventory.getAmount(item)
-        if (item.definition.noteId > -1) {
-            amount += player.inventory.getAmount(Item(item.definition.noteId))
+    companion object {
+        /**
+         * Gets the total amount of this item in the inventory (including noted
+         * version).
+         *
+         * @param player The player.
+         * @param itemId the item id.
+         * @return The amount of items + notes in the inventory.
+         */
+        @JvmStatic
+        fun getInventoryAmount(player: Player, itemId: Int): Int {
+            val item = Item(itemId)
+            var amount = player.inventory.getAmount(item)
+            if (item.definition.noteId > -1) {
+                amount += player.inventory.getAmount(Item(item.definition.noteId))
+            }
+            return amount
         }
-        return amount
     }
 
     /**
