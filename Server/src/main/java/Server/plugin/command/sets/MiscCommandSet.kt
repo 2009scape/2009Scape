@@ -2,6 +2,8 @@ package plugin.command.sets
 
 import core.ServerConstants
 import core.cache.def.impl.ItemDefinition
+import core.cache.def.impl.ObjectDefinition
+import core.cache.def.impl.VarbitDefinition
 import core.game.component.Component
 import core.game.node.entity.player.info.Rights
 import core.game.node.entity.player.link.RunScript
@@ -314,6 +316,15 @@ class MiscCommandSet : CommandSet(Command.Privilege.ADMIN){
             val configID = args[1].toString().toInt()
             val configValue = args[2].toString().toInt()
             player.configManager.forceSet(configID,configValue,false)
+        }
+
+        define("getobjectvarp"){player,args ->
+            if(args.size < 2){
+                reject(player,"Syntax: ::getobjectvarp objectid")
+                return@define
+            }
+            val objectID = args[1].toInt()
+            player.sendMessage("${VarbitDefinition.forObjectID(ObjectDefinition.forId(objectID).varbitID).configId}")
         }
 
     }

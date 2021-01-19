@@ -144,6 +144,7 @@ public final class LoginConfiguration {
         if(player.getGlobalData().getTestStage() == 3 && !player.getEmoteManager().isUnlocked(Emotes.SAFETY_FIRST)){
             player.getEmoteManager().unlock(Emotes.SAFETY_FIRST);
         }
+        player.varpManager.sendAllVarps();
 		/*if (GameWorld.getSettings().isPvp()) {
 			player.getPacketDispatch().sendString("", 226, 1);
 		}*/

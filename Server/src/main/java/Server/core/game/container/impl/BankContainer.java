@@ -108,7 +108,7 @@ public final class BankContainer extends Container {
 		super.refresh();
 		player.getInventory().getListeners().add(listener);
 		player.getInventory().refresh();
-		player.getConfigManager().set(1249, lastAmountX);
+		player.varpManager.get(1249).setVarbit(0,lastAmountX).send(player);
 		player.getPacketDispatch().sendAccessMask(1278, 73, 762, 0, ServerConstants.BANK_SIZE);
 		BitregisterAssembler assembly = new BitregisterAssembler(0, 1, 2, 3, 4, 5);
 		assembly.enableExamineOption();
@@ -139,7 +139,7 @@ public final class BankContainer extends Container {
 		player.getInterfaceManager().openSingleTab(new Component(763));
 		player.getInventory().getListeners().add(player.getBank().listener);
 		player.getInventory().refresh();
-		player.getConfigManager().set(1249, lastAmountX);
+		player.varpManager.get(1249).setVarbit(0,lastAmountX).send(player);
 		player.getPacketDispatch().sendAccessMask(1278, 73, 762, 0, SIZE);
 		BitregisterAssembler assembly = new BitregisterAssembler(0, 1, 2, 3, 4, 5);
 		assembly.enableExamineOption();
@@ -294,7 +294,7 @@ public final class BankContainer extends Container {
 	 */
 	public void updateLastAmountX(int amount) {
 		this.lastAmountX = amount;
-		player.getConfigManager().set(1249, amount);
+		player.varpManager.get(1249).setVarbit(0,amount).send(player);
 	}
 	
 	/**

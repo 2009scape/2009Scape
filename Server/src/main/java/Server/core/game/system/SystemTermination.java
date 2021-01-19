@@ -69,6 +69,13 @@ public final class SystemTermination {
 					p.clear();
 					PlayerParser.save(p);
 					p.getDetails().save();
+					p.getLogoutPlugins().forEach(playerPlugin -> {
+						try {
+							playerPlugin.newInstance(p);
+						} catch (Throwable throwable) {
+							throwable.printStackTrace();
+						}
+					});
 				}
 			} catch (Throwable t) {
 				t.printStackTrace();

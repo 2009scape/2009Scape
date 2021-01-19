@@ -1,6 +1,8 @@
 package core.net.packet.in;
 
 import core.ServerConstants;
+import core.cache.def.impl.ObjectDefinition;
+import core.cache.def.impl.VarbitDefinition;
 import core.game.interaction.Interaction;
 import core.game.interaction.MovementPulse;
 import core.game.interaction.Option;
@@ -182,6 +184,7 @@ public final class InteractionPacket implements IncomingPacket {
 		player.debug("NPC Interacting with \"" + shown.getUsername() + "\" [index=" + index + ", renderable=" + npc.isRenderable() + "]");
 		player.debug("option=" + option.getName() + ", slot=" + option.getIndex() + ", id=" + shown.getId() + " original=" + npc.getId() + ", location=" + npc.getLocation() + "");
 		player.debug("spawn=" + npc.getProperties().getSpawnLocation() + ".");
+		player.debug("Varp ID= " + npc.getDefinition().getConfigId() + " Offset=" + npc.getDefinition().getVarbitOffset() + " Size=" + npc.getDefinition().getVarbitSize());
 		handleAIPLegion(player, 0, optionIndex, index);
 		if(PluginInteractionManager.handle(player,shown,option)){
 			return;
@@ -257,6 +260,8 @@ public final class InteractionPacket implements IncomingPacket {
 		}
 		player.debug(object + ", original=" + objectId + ", option=" + option.getName() + "");
 		player.debug("dir=" + object.getDirection());
+		VarbitDefinition def = VarbitDefinition.forObjectID(ObjectDefinition.forId(objectId).getVarbitID());
+		player.debug("Varp ID=" + def.getConfigId() + " Offset=" + def.getBitShift() + " Size=" + def.getBitSize());
 		if (option.getHandler() != null) {
 			player.debug("Object handler: " + option.getHandler().getClass().getSimpleName());
 		}

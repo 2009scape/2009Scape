@@ -239,7 +239,7 @@ public final class NPCDefinition extends Definition<NPC> {
 		int configValue = -1;
 		if (player != null) {
 			if (configFileId != -1) {
-				configValue = ConfigFileDefinition.forId(configFileId).getValue(player);
+				configValue = VarbitDefinition.forNPCID(configFileId).getValue(player);
 			} else if (configId != -1) {
 				configValue = player.getConfigManager().get(configId);
 			}
@@ -914,7 +914,23 @@ public final class NPCDefinition extends Definition<NPC> {
 	 * @return The configId.
 	 */
 	public int getConfigId() {
-		return configId;
+		if(configFileId != -1) {
+			return VarbitDefinition.forNPCID(configFileId).getConfigId();
+		} else return configFileId;
+	}
+
+	public int getVarbitOffset() {
+		if(configFileId != -1){
+			return VarbitDefinition.forNPCID(configFileId).getBitShift();
+		}
+		return -1;
+	}
+
+	public int getVarbitSize() {
+		if(configFileId != -1){
+			return VarbitDefinition.forNPCID(configFileId).getBitSize() - VarbitDefinition.forNPCID(configFileId).getBitShift();
+		}
+		return -1;
 	}
 
 	/**

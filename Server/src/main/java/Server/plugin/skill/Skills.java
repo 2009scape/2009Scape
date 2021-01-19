@@ -2,6 +2,7 @@ package plugin.skill;
 
 import core.game.content.global.SkillcapePerks;
 import core.game.world.GameWorld;
+import core.tools.Items;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import plugin.CorePluginTypes.XPGainPlugins;
@@ -229,6 +230,16 @@ public final class Skills {
 			if(gloves != null && player.getEquipment().containsItem(gloves)){
 				experienceAdd += experienceAdd * player.getBrawlingGlovesManager().getExperienceBonus();
 				player.getBrawlingGlovesManager().updateCharges(gloves.getId(),1);
+			}
+		}
+		//Check for Flame Gloves and Ring of Fire
+		if(player.getEquipment().containsItem(new Item(Items.FLAME_GLOVES_13660)) || player.getEquipment().containsItem(new Item(Items.RING_OF_FIRE_13659))){
+			if(slot == Skills.FIREMAKING){
+				int count = 0;
+				if(player.getEquipment().containsItem(new Item(Items.FLAME_GLOVES_13660))) count += 1;
+				if(player.getEquipment().containsItem(new Item(Items.RING_OF_FIRE_13659))) count += 1;
+				if(count == 2) experienceAdd += (0.05 * experienceAdd);
+				else experienceAdd += (0.02 * experienceAdd);
 			}
 		}
 		this.experience[slot] += experienceAdd;

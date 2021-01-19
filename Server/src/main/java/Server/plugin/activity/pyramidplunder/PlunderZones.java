@@ -1,4 +1,5 @@
 package plugin.activity.pyramidplunder;
+import core.game.Varp;
 import core.game.content.global.action.ClimbActionHandler;
 import core.game.system.SystemLogger;
 import plugin.skill.Skills;
@@ -116,7 +117,10 @@ public class PlunderZones implements Plugin<Object> {
         }
 
         public void updateRoomVarp(Player player){
-            player.getConfigManager().set(822, room.reqLevel | (roomnum << 9));
+            Varp varp = player.varpManager.get(822);
+            varp.setVarbit(0,room.reqLevel);
+            varp.setVarbit(9,roomnum);
+            player.getPacketDispatch().sendVarp(varp);
         }
 
         public boolean checkRequirements(Player player, PyramidPlunderRoom room){

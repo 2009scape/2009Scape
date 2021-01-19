@@ -203,9 +203,11 @@ public class ActionButtonPacket implements IncomingPacket {
 			}
 			if (componentId == 49) {
 				if (player.getDialogueInterpreter().getDialogue() == null && player.getDialogueInterpreter().getDialogueStage() == null) {
+					player.setAttribute("chatbox-buttonid",buttonId);
 					player.getInterfaceManager().closeChatbox();
 					return null;
 				}
+				player.setAttribute("chatbox-buttonid",buttonId);
 				player.getDialogueInterpreter().getDialogue().handle(componentId, buttonId);
 			}
 			break;

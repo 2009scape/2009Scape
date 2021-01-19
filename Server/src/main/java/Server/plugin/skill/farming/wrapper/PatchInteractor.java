@@ -101,7 +101,7 @@ public final class PatchInteractor {
 			if (wrapper.getPatch().ordinal() > 7) {
 				ordinal = 7;
 			}
-			player.getConfigManager().set(965, 21 + (10 + ordinal - 10) * 1024);
+			player.varpManager.get(965).setVarbit(0,21).setVarbit(10,ordinal).send(player);
 		}
 	}
 

@@ -872,7 +872,7 @@ public class ObjectDefinition extends Definition<GameObject> {
 		int configValue = -1;
 		if (player != null) {
 			if (configFileId != -1) {
-				ConfigFileDefinition def = ConfigFileDefinition.forId(configFileId);
+				VarbitDefinition def = VarbitDefinition.forObjectID(configFileId);
 				if (def != null) {
 					configValue = def.getValue(player);
 				}
@@ -896,9 +896,9 @@ public class ObjectDefinition extends Definition<GameObject> {
 	 * Gets the config file definition.
 	 * @return The config file definition.
 	 */
-	public ConfigFileDefinition getConfigFile() {
+	public VarbitDefinition getConfigFile() {
 		if (configFileId != -1) {
-			return ConfigFileDefinition.forId(configFileId);
+			return VarbitDefinition.forObjectID(configFileId);
 		}
 		return null;
 	}
@@ -1155,7 +1155,7 @@ public class ObjectDefinition extends Definition<GameObject> {
 	 * Get the configFileId.
 	 * @return the configFileId
 	 */
-	public int getConfigFileId() {
+	public int getVarbitID() {
 		return configFileId;
 	}
 

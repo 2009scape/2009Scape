@@ -1,6 +1,6 @@
 package core.game.node.object;
 
-import core.cache.def.impl.ConfigFileDefinition;
+import core.cache.def.impl.VarbitDefinition;
 import core.cache.def.impl.ObjectDefinition;
 import core.game.interaction.DestinationFlag;
 import core.game.interaction.Interaction;
@@ -221,15 +221,13 @@ public class GameObject extends Node {
 		if (childs == null && wrapper != null) {
 			def = wrapper.getDefinition();
 		}
-		if (def.getConfigFileId() > -1) {
-			ConfigFileDefinition config = def.getConfigFile();
+		if (def.getVarbitID() > -1) {
+			VarbitDefinition config = def.getConfigFile();
 			if (config != null) {
-				int value = player.getConfigManager().get(config.getConfigId());
-				value |= index << config.getBitShift();
-				player.getConfigManager().set(config.getConfigId(), value);
+				player.varpManager.get(config.getConfigId()).setVarbit(config.getBitShift(),index).send(player);
 			}
 		} else if (def.getConfigId() > -1) {
-			player.getConfigManager().set(def.getConfigId(), index);
+			player.varpManager.get(def.getConfigId()).setVarbit(0,index);
 		}
 	}
 

@@ -4,6 +4,7 @@ import core.cache.Cache;
 import core.cache.def.impl.ItemDefinition;
 import core.cache.def.impl.NPCDefinition;
 import core.cache.def.impl.ObjectDefinition;
+import core.cache.def.impl.VarbitDefinition;
 import core.game.node.entity.player.Player;
 import core.net.packet.IncomingPacket;
 import core.net.packet.IoBuffer;
@@ -28,7 +29,8 @@ public final class ExaminePacket implements IncomingPacket {
 			ObjectDefinition d = ObjectDefinition.forId(id);
 			name = d.getExamine();
 			//String coords = id + ", " + player.getLocation().getX() + ", " + player.getLocation().getY() + ", " + player.getLocation().getZ();
-			player.debug("Object id: " + id + ", models: " + (d.getModelIds() != null ? Arrays.toString(d.getModelIds()) : null) + ", anim: " + d.animationId + ", config: " + (d.getConfigFileId() != -1 ? d.getConfigFileId() + " (file)" : d.getConfigId()) + ".");
+			player.debug("Object id: " + id + ", models: " + (d.getModelIds() != null ? Arrays.toString(d.getModelIds()) : null) + ", anim: " + d.animationId + ", config: " + (d.getVarbitID() != -1 ? d.getVarbitID() + " (file)" : d.getConfigId()) + ".");
+			player.debug("Varp config index: " + VarbitDefinition.forObjectID(d.getVarbitID()).getConfigId());
 			player.getPacketDispatch().sendMessage(""+name+"");
 			/*if {
 				Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection("LandscapeParser.removeGameObject(new GameObject("+coords+"));//"+ d.getName() ), null);

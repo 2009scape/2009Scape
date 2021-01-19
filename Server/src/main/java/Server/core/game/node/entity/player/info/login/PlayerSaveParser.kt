@@ -53,6 +53,7 @@ class PlayerSaveParser(val player: Player) {
                 parseQuests()
                 parseAppearance()
                 parseGrave()
+                parseVarps()
             }
             launch {
                 parseSpellbook()
@@ -84,6 +85,11 @@ class PlayerSaveParser(val player: Player) {
             }
             parsePouches()
         }
+    }
+
+    fun parseVarps(){
+        if(saveFile!!.containsKey("varps"))
+            player.varpManager.parse(saveFile!!["varps"] as JSONArray)
     }
 
     fun parsePouches() {

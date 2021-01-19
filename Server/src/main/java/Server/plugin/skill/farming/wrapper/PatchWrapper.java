@@ -1,6 +1,6 @@
 package plugin.skill.farming.wrapper;
 
-import core.cache.def.impl.ConfigFileDefinition;
+import core.cache.def.impl.VarbitDefinition;
 import core.cache.def.impl.ObjectDefinition;
 import plugin.skill.farming.FarmingNode;
 import plugin.skill.farming.FarmingPatch;
@@ -131,6 +131,7 @@ public final class PatchWrapper implements SavingModule {
 	 * @param value the value.
 	 */
 	public void addConfigValue(final int value) {
+		player.varpManager.get(getConfigId()).setVarbit(getBitShift(),value);
 		player.getConfigManager().set(getConfigId(), (player.getConfigManager().get(getConfigId()) - getConfigValue()) + (value << getBitShift()), true);
 	}
 
@@ -147,7 +148,7 @@ public final class PatchWrapper implements SavingModule {
 	 * @return {@code True} if so.
 	 */
 	public int getState() {
-		ConfigFileDefinition def = ConfigFileDefinition.forId(ObjectDefinition.forId(wrapperId).getConfigFileId());
+		VarbitDefinition def = VarbitDefinition.forObjectID(ObjectDefinition.forId(wrapperId).getVarbitID());
 		if (def == null) {
 			return 0;
 		}
@@ -159,7 +160,7 @@ public final class PatchWrapper implements SavingModule {
 	 * @return the id.
 	 */
 	public int getConfigId() {
-		return ConfigFileDefinition.forId(ObjectDefinition.forId(wrapperId).getConfigFileId()).getConfigId();
+		return VarbitDefinition.forObjectID(ObjectDefinition.forId(wrapperId).getVarbitID()).getConfigId();
 	}
 
 	/**
@@ -167,7 +168,7 @@ public final class PatchWrapper implements SavingModule {
 	 * @return the bitshift.
 	 */
 	public int getBitShift() {
-		return ConfigFileDefinition.forId(ObjectDefinition.forId(wrapperId).getConfigFileId()).getBitShift();
+		return VarbitDefinition.forObjectID(ObjectDefinition.forId(wrapperId).getVarbitID()).getBitShift();
 	}
 
 	/**

@@ -49,7 +49,7 @@ public final class GliderPulse extends Pulse {
     public boolean pulse() {
         final boolean crash = glider == Gliders.LEMANTO_ADRA;
         if (count == 1) {
-            player.getConfigManager().set(153, glider.getConfig());
+            player.varpManager.get(153).setVarbit(0,glider.getConfig()).send(player);
             PacketRepository.send(MinimapState.class, new MinimapStateContext(player, 2));
         } else if (count == 2 && crash) {
             PacketRepository.send(CameraViewPacket.class, new CameraContext(player, CameraType.SHAKE, 4, 4, 1200, 4, 4));
@@ -68,7 +68,7 @@ public final class GliderPulse extends Pulse {
             player.getInterfaceManager().closeOverlay();
             player.getInterfaceManager().close();
             PacketRepository.send(MinimapState.class, new MinimapStateContext(player, 0));
-            player.getConfigManager().set(0, glider.getConfig());
+            player.varpManager.get(153).setVarbit(0,0).send(player);
             // Use the gnome glider to travel to Karamja
             if (!crash && glider == Gliders.GANDIUS) {
                 player.getAchievementDiaryManager().finishTask(player, DiaryType.KARAMJA, 1, 11);

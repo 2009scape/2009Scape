@@ -107,7 +107,7 @@ object EssenceTeleport {
      * @return the stage.
      */
     fun getStage(player: Player): Int {
-        return player.configManager[492]
+        return player.varpManager.get(492).getValue()
     }
 
     /**

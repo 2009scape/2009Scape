@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Objects;
 
 import core.ServerConstants;
+import core.game.VarpManager;
 import core.game.component.Component;
 import core.game.container.Container;
 import core.game.container.impl.BankContainer;
@@ -132,6 +133,8 @@ public class Player extends Entity {
 	public EquipmentDegrader degrader = new EquipmentDegrader();
 
 	public PouchManager pouchManager = new PouchManager(this);
+
+	public VarpManager varpManager = new VarpManager(this);
 
 	/**
 	 * The inventory.

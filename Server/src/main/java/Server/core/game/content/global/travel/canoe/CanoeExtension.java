@@ -125,6 +125,7 @@ public final class CanoeExtension {
 			extension = new CanoeExtension(player);
 			player.addExtension(CanoeExtension.class, extension);
 		}
+		player.varpManager.flagSave(674);
 		return extension;
 	}
 
@@ -145,13 +146,13 @@ public final class CanoeExtension {
 		}
 		player.lock(3);
 		player.animate(axe.getAnimation());
-		player.getConfigManager().set(675, (station.ordinal() + 1) << 17);
+		player.varpManager.get(675).setVarbit(17, station.ordinal() + 1).send(player);
+		player.varpManager.get(674).setVarbit(station.ordinal() * 8, CONFIGS[0]).send(player);
 		GameWorld.getPulser().submit(new Pulse(4, player) {
 			@Override
 			public boolean pulse() {
 				player.animate(new Animation(-1, Priority.HIGH));
-				player.getConfigManager().set(674, CONFIGS[0] << (station.ordinal() * 8));
-				player.getConfigManager().set(674, CONFIGS[1] << (station.ordinal() * 8));
+				player.varpManager.get(674).setVarbit(station.ordinal() * 8, CONFIGS[1]).send(player);
 				player.getPacketDispatch().sendObjectAnimation(object, FALL, false);
 				setCurrentStation(station);
 				setStage(1);
@@ -198,8 +199,10 @@ public final class CanoeExtension {
 					if (currentStation == CanoeStation.EDGEVILLE && canoe == Canoe.WAKA) {
 						player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 2, 10);
 					}
-					player.getConfigManager().set(674, currentStation == CanoeStation.BARBARIAN_VILLAGE ? currentStation.getCraftConfig(canoe, false) : (CONFIGS[2] << (currentStation.ordinal() * 8)) + currentStation.getCraftConfig(canoe, false));
-					player.getConfigManager().set(675, (currentStation.ordinal() + 1) << 17);
+					player.varpManager.get(674)
+							.setVarbit(currentStation.ordinal() * 8, currentStation == CanoeStation.BARBARIAN_VILLAGE ? currentStation.getCraftConfig(canoe,false) : CONFIGS[2] + currentStation.getCraftConfig(canoe,false))
+							.send(player);
+					player.varpManager.get(675).setVarbit(17, currentStation.ordinal() + 1).send(player);
 					player.getSkills().addExperience(Skills.WOODCUTTING, canoe.getExperience());
 					setCanoe(canoe);
 					setStage(2);
@@ -225,7 +228,9 @@ public final class CanoeExtension {
 	 */
 	public final void setAfloat(final GameObject object) {
 		player.animate(PUSH);
-		player.getConfigManager().set(674, (CONFIGS[3] << (currentStation.ordinal() * 8)) + currentStation.getCraftConfig(canoe, true));
+		player.varpManager.get(674)
+				.setVarbit(currentStation.ordinal() * 8, CONFIGS[3] + currentStation.getCraftConfig(canoe,true))
+				.send(player);
 		GameWorld.getPulser().submit(new Pulse(1) {
 			int counter = 0;
 
@@ -233,7 +238,9 @@ public final class CanoeExtension {
 			public boolean pulse() {
 				if (counter == 1) {
 					player.getPacketDispatch().sendObjectAnimation(object, FLOAT, false);
-					player.getConfigManager().set(674, (CONFIGS[4] << (currentStation.ordinal() * 8)) + currentStation.getFloatConfig(canoe));
+					player.varpManager.get(674)
+							.setVarbit(currentStation.ordinal() * 8, CONFIGS[4] + currentStation.getFloatConfig(canoe))
+							.send(player);
 					setStage(3);
 				}
 				counter += 1;
@@ -280,10 +287,10 @@ public final class CanoeExtension {
 						player.getPacketDispatch().sendMessage("walking back.");
 					}
 					setCanoe(null);
+					player.varpManager.get(674).setVarbit(currentStation.ordinal() * 8,0).send(player);
 					setCurrentStation(null);
 					setStage(0);
 					player.unlock();
-					player.getConfigManager().set(674, 0);
 					player.getInterfaceManager().closeOverlay();
 					return true;
 				}

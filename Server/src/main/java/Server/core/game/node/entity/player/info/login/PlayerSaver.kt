@@ -37,6 +37,7 @@ class PlayerSaver (val player: Player){
             saveQuests(saveFile)
             saveAppearance(saveFile)
             saveSpellbook(saveFile)
+            saveVarps(saveFile)
         }
         val b = launch {
             saveGraveType(saveFile)
@@ -89,6 +90,10 @@ class PlayerSaver (val player: Player){
         }
 
         player.gameAttributes.dump(player.name + ".xml")
+    }
+
+    fun saveVarps(root: JSONObject){
+        player.varpManager.save(root)
     }
 
     fun savePouches(root: JSONObject){

@@ -7,19 +7,6 @@ import plugin.command.CommandSet
 @InitializablePlugin
 class ConfigCommandSet : CommandSet(Command.Privilege.ADMIN){
     override fun defineCommands() {
-        /**
-         * Sets a config to a value (not saved)
-         */
-        define("sconfig"){player, args ->
-            if (args.size < 3) {
-                reject(player, "usage: sconfig id value")
-                return@define
-            }
-            val id = args[1].toIntOrNull() ?: return@define
-            val value = args[2].toIntOrNull() ?: return@define
-            player.configManager.set(id, value)
-            player.packetDispatch.sendMessage("Config: $id value: $value")
-        }
 
         /**
          * Sets a range of configs to a maximum value

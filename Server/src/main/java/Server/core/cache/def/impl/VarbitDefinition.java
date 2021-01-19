@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import core.cache.Cache;
+import core.game.Varbit;
 import core.game.node.entity.player.Player;
 import core.game.world.GameWorld;
 
@@ -12,12 +13,12 @@ import core.game.world.GameWorld;
  * Handles config definition reading.
  * @author Emperor
  */
-public final class ConfigFileDefinition {
+public final class VarbitDefinition {
 
 	/**
 	 * The config definitions mapping.
 	 */
-	private static final Map<Integer, ConfigFileDefinition> MAPPING = new HashMap<>();
+	private static final Map<Integer, VarbitDefinition> MAPPING = new HashMap<>();
 
 	/**
 	 * The bit size flags.
@@ -48,7 +49,7 @@ public final class ConfigFileDefinition {
 	 * Constructs a new {@code ConfigFileDefinition} {@code Object}.
 	 * @param id The file id.
 	 */
-	public ConfigFileDefinition(int id) {
+	public VarbitDefinition(int id) {
 		this.id = id;
 	}
 
@@ -68,13 +69,26 @@ public final class ConfigFileDefinition {
 	 * @param id The file id.
 	 * @return The definition.
 	 */
-	public static ConfigFileDefinition forId(int id) {
-		ConfigFileDefinition def = MAPPING.get(id);
+	public static VarbitDefinition forObjectID(int id) {
+		return forId(id,10);
+	}
+
+	public static VarbitDefinition forNPCID(int id){
+		return forId(id,10);
+	}
+
+	public static VarbitDefinition forItemID(int id){
+		return forId(id,30);
+	}
+
+	public static VarbitDefinition forId(int id, int shiftAmount){
+		/*VarbitDefinition def = MAPPING.get(id);
 		if (def != null) {
 			return def;
-		}
-		def = new ConfigFileDefinition(id);
-		byte[] bs = Cache.getIndexes()[22].getFileData(id >>> 1416501898, id & 0x3ff);
+		}*/
+		VarbitDefinition def;
+		def = new VarbitDefinition(id);
+		byte[] bs = Cache.getIndexes()[22].getFileData(id >>> 10, id & 0x3ff);
 		if (bs != null) {
 			ByteBuffer buffer = ByteBuffer.wrap(bs);
 			int opcode = 0;
@@ -93,7 +107,7 @@ public final class ConfigFileDefinition {
 	public static void main(String... args) throws Throwable {
 		GameWorld.prompt(false);
 		for (int i = 0; i < 15000; i++) {
-			ConfigFileDefinition def = forId(i);
+			VarbitDefinition def = forObjectID(i);
 			if (def != null && def.configId == 33) {
 				System.out.println("Config file [id=" + i + ", shift=" + def.bitShift + "]!");
 			}
@@ -106,6 +120,10 @@ public final class ConfigFileDefinition {
 	 * @return The config value.
 	 */
 	public int getValue(Player player) {
+		Varbit bit = player.varpManager.get(getConfigId()).getVarbit(getBitShift());
+		if(bit != null){
+			return bit.getValue();
+		}
 		int size = BITS[bitSize - bitShift];
 		return size & player.getConfigManager().get(configId) >> bitShift;
 	}
@@ -114,7 +132,7 @@ public final class ConfigFileDefinition {
 	 * Gets the mapping.
 	 * @return The mapping.
 	 */
-	public static Map<Integer, ConfigFileDefinition> getMapping() {
+	public static Map<Integer, VarbitDefinition> getMapping() {
 		return MAPPING;
 	}
 

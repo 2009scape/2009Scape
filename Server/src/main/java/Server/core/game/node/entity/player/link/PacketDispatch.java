@@ -1,5 +1,6 @@
 package core.game.node.entity.player.link;
 
+import core.game.Varp;
 import plugin.quest.tutorials.tutorialisland.TutorialSession;
 import core.game.node.entity.player.Player;
 import core.game.node.object.GameObject;
@@ -41,6 +42,10 @@ public final class PacketDispatch {
 	public PacketDispatch(Player player) {
 		this.player = player;
 		this.context = new PlayerContext(player);
+	}
+
+	public void sendVarp(Varp varp){
+		PacketRepository.send(Config.class, new ConfigContext(player, varp.getIndex(), varp.getValue()));
 	}
 
 	/**

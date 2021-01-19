@@ -1,6 +1,6 @@
 package plugin.skill.agility.pyramid;
 
-import core.cache.def.impl.ConfigFileDefinition;
+import core.cache.def.impl.VarbitDefinition;
 import core.cache.def.impl.ObjectDefinition;
 import core.game.content.global.action.ClimbActionHandler;
 import plugin.skill.Skills;
@@ -497,7 +497,7 @@ public final class AgilityPyramidCourse extends AgilityCourse {
 	 * @param value the value.
 	 */
 	public static void addConfig(final Player player, final int objectId, final int value, boolean save) {
-		final ConfigFileDefinition definition = ConfigFileDefinition.forId(ObjectDefinition.forId(objectId).getConfigFileId());
+		final VarbitDefinition definition = VarbitDefinition.forObjectID(ObjectDefinition.forId(objectId).getVarbitID());
 		final int oldVal = (definition.getValue(player) << definition.getBitShift());
 		final int newVal = (value << definition.getBitShift());
 		player.getConfigManager().set(CONFIG_ID, (player.getConfigManager().get(CONFIG_ID) - oldVal) + newVal, save);

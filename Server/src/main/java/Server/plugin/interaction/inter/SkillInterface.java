@@ -23,7 +23,9 @@ public final class SkillInterface extends ComponentPlugin {
 
 	@Override
 	public boolean handle(Player player, Component component, int opcode, int button, int slot, int itemId) {
-		player.getConfigManager().set(965, (Integer) player.getAttribute("skillMenu", -1) + (button - 10) * 1024);
+		player.varpManager.get(965)
+				.setVarbit(0,player.getAttribute("skillMenu",-1))
+				.setVarbit(10, button - 10).send(player);
 		return true;
 	}
 }

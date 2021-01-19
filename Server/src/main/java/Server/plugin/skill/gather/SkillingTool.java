@@ -167,7 +167,9 @@ public enum SkillingTool {
 		} else if (checkTool(player, Skills.WOODCUTTING, SkillingTool.BRONZE_AXE)) {
 			tool = SkillingTool.BRONZE_AXE;
 		} else if (checkTool(player, Skills.WOODCUTTING, SkillingTool.INFERNO_ADZE)) {
-			tool = SkillingTool.INFERNO_ADZE;
+			if(player.getSkills().getLevel(Skills.FIREMAKING) >= 92) {
+				tool = SkillingTool.INFERNO_ADZE;
+			}
 		}
 		return tool;
 	}
@@ -180,7 +182,9 @@ public enum SkillingTool {
 	public static SkillingTool getPickaxe(Player player) {
 		SkillingTool tool = null;
 		if (checkTool(player, Skills.MINING, SkillingTool.INFERNO_ADZE2)) {
-			tool = SkillingTool.INFERNO_ADZE2;
+			if(player.getSkills().getLevel(Skills.FIREMAKING) >= 92) {
+				tool = SkillingTool.INFERNO_ADZE2;
+			}
 		} else if (checkTool(player, Skills.MINING, SkillingTool.DRAGON_PICKAXE)) {
 			tool = SkillingTool.DRAGON_PICKAXE;
 		} else if (checkTool(player, Skills.MINING, SkillingTool.RUNE_PICKAXE)) {

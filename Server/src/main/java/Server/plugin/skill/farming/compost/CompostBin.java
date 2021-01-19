@@ -1,6 +1,6 @@
 package plugin.skill.farming.compost;
 
-import core.cache.def.impl.ConfigFileDefinition;
+import core.cache.def.impl.VarbitDefinition;
 import core.cache.def.impl.ObjectDefinition;
 import core.game.container.Container;
 import plugin.skill.Skills;
@@ -256,7 +256,7 @@ public final class CompostBin {
 	 * @return {@code True} if so.
 	 */
 	public int getState(final Player player) {
-		ConfigFileDefinition def = ConfigFileDefinition.forId(ObjectDefinition.forId(wrapperId).getConfigFileId());
+		VarbitDefinition def = VarbitDefinition.forObjectID(ObjectDefinition.forId(wrapperId).getVarbitID());
 		if (def == null) {
 			return 0;
 		}
@@ -276,7 +276,7 @@ public final class CompostBin {
 	 * @return the id.
 	 */
 	public int getConfigId() {
-		return ConfigFileDefinition.forId(ObjectDefinition.forId(wrapperId).getConfigFileId()).getConfigId();
+		return VarbitDefinition.forObjectID(ObjectDefinition.forId(wrapperId).getVarbitID()).getConfigId();
 	}
 
 	/**
@@ -284,7 +284,7 @@ public final class CompostBin {
 	 * @return the bitshift.
 	 */
 	public int getBitShift() {
-		ConfigFileDefinition def = ConfigFileDefinition.forId(ObjectDefinition.forId(wrapperId).getConfigFileId());
+		VarbitDefinition def = VarbitDefinition.forObjectID(ObjectDefinition.forId(wrapperId).getVarbitID());
 		if (def == null) {
 			return 0;
 		}

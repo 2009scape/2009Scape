@@ -170,6 +170,7 @@ public final class DialogueInterpreter {
             }
             return;
         }
+        player.setAttribute("chatbox-buttonid",buttonId);
         player.getDialogueInterpreter().getDialogue().handle(componentId, buttonId - 1);//here
     }
 
@@ -508,10 +509,10 @@ public final class DialogueInterpreter {
      * @param title The title.
      * @param options The options.
      */
-    public void sendOptions(Object title, String... options) {
+    public Component sendOptions(Object title, String... options) {
         int interfaceId = 224 + (2 * options.length);
         if (options.length < 2 || options.length > 5) {
-            return;
+            return null;
         }
         if (title != null) {
             player.getPacketDispatch().sendString(title.toString(), interfaceId, 1);
@@ -522,6 +523,7 @@ public final class DialogueInterpreter {
         if (player.getAttributes().containsKey("tut-island")) {
         }
         player.getInterfaceManager().openChatbox(interfaceId);
+        return player.getInterfaceManager().getChatbox();
     }
 
     /**

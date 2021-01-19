@@ -124,10 +124,19 @@ public final class QuestRepository implements SavingModule {
     public void syncronizeTab(Player player) {
         player.getConfigManager().set(101, points);
         int[] config = null;
-        for (Quest quest : QUESTS.values()) {
-            config = quest.getConfig(player, getStage(quest));
-            player.getConfigManager().set(config[0], config[1]);
+        if(!player.getAttribute("quest-varps-converted",false)) {
+            for (Quest quest : QUESTS.values()) {
+                config = quest.getConfig(player, getStage(quest));
+                player.varpManager.get(config[0]).setVarbit(0,config[1]).send(player);
+                player.varpManager.flagSave(config[0]);
+                player.setAttribute("/save:quest-varps-converted",true);
 //            System.out.println(quest.getName() + " - > stage =  " + getStage(quest) + " - configs = { " + config[0] + " " + config[1] + " }");
+            }
+        } else {
+            for(Quest quest : QUESTS.values()){
+                config = quest.getConfig(player,getStage(quest));
+                player.varpManager.get(config[0]).setVarbit(0,config[1]).send(player);
+            }
         }
     }
 

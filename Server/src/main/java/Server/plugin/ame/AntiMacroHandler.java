@@ -122,7 +122,7 @@ public final class AntiMacroHandler implements SavingModule {
 		if (GameWorld.getTicks() < nextPulse) {
 			return;
 		}
-		if (!player.getLocks().isInteractionLocked() && !player.getLocks().isTeleportLocked() && !player.getLocks().isMovementLocked() && !isDisabled) {
+		if (!player.getLocks().isInteractionLocked() && !player.getLocks().isTeleportLocked() && !player.getLocks().isMovementLocked() && !isDisabled && !player.isArtificial()) {
 			int roll = RandomFunction.random(0,CHANCE);
 			int neededRoll = 1 + (CHANCE - RandomFunction.random(CHANCE - 10));
 			boolean spawnEvent = roll ==  neededRoll; //checks if the chance is hit this tick

@@ -1,6 +1,7 @@
 package plugin.command.oldsys
 
 import core.cache.Cache
+import core.game.container.access.InterfaceContainer
 import core.game.node.`object`.GameObject
 import core.game.node.`object`.ObjectBuilder
 import core.game.node.entity.combat.ImpactHandler.HitsplatType
@@ -9,6 +10,7 @@ import core.game.node.entity.npc.NPC
 import core.game.node.entity.player.Player
 import core.game.node.entity.player.link.IronmanMode
 import core.game.node.entity.player.link.audio.Audio
+import core.game.node.item.Item
 import core.game.system.command.CommandPlugin
 import core.game.system.command.CommandSet
 import core.game.system.task.Pulse
@@ -213,17 +215,17 @@ class VisualCommand : CommandPlugin() {
                 player.packetDispatch.sendMessage("Interface child (id=" + args[1] + ", child=" + args[2] + ") is " + if (hidden) "hidden." else "visible.")
                 return true
             }
-            "saveconfig", "config" -> {
-                if (args!!.size < 2) {
-                    player!!.debug("syntax error: config-id (optional) value")
-                    return true
-                }
-                if (name == "saveconfig") {
-                    player!!.configManager[toInteger(args[1]!!), if (args.size > 2) toInteger(args[2]!!) else 0] = true
-                } else {
-                    player!!.configManager.send(toInteger(args[1]!!), if (args.size > 2) toInteger(args[2]!!) else 0)
-                }
-                return true
+            "loop_varposition" -> {
+                val value = (args!![1]!!.toString().toInt()) ?: 0
+                val config_index = (args!![2]!!.toString().toInt())
+                GameWorld.Pulser.submit(object : Pulse(3, player) {
+                    var pos = 0
+                    override fun pulse(): Boolean {
+					    player?.configManager?.forceSet(config_index, value shl pos,false)
+                        player?.sendMessage("$pos")
+                        return pos++ >= 32
+                    }
+                })
             }
             "loop_inter" -> {
                 val st = toInteger(args!![1]!!)
@@ -256,12 +258,14 @@ class VisualCommand : CommandPlugin() {
             "loop_itemoni" -> {
                 val st = toInteger(args!![1]!!)
                 val en = if (args.size > 2) toInteger(args[2]!!) else 740
-                GameWorld.Pulser.submit(object : Pulse(3, player) {
+                GameWorld.Pulser.submit(object : Pulse(1, player) {
                     var id = 0
                     override fun pulse(): Boolean {
 //					PacketRepository.send(Interface.class, new InterfaceContext(player, 548, 77, id, false));
-                        player!!.packetDispatch.sendPlayerOnInterface(st,id)
-                        player.debug("child id: $id")
+                       InterfaceContainer.generateItems(player, arrayOf(Item(4151),Item(410)), arrayOf("E"),367,id,5,4)
+                        player?.packetDispatch?.sendInterfaceConfig(st,id,true)
+                        //player?.packetDispatch?.sendString("ASDASDASD",st,id)
+                        player?.debug("child id: $id")
                         return ++id >= en
                     }
                 })
@@ -417,6 +421,16 @@ class VisualCommand : CommandPlugin() {
                 o?.ironmanManager?.mode = IronmanMode.NONE
                 player!!.sendMessage("done...")
                 o?.sendMessage("<col=FF0000>You are no longer an ironman. Log out to see the ironman icon disappear.</col>")
+            }
+            "tryinfinity" -> {
+                GameWorld.Pulser.submit(object : Pulse(1, player) {
+                    var id = 0
+                    override fun pulse(): Boolean {
+                        player?.configManager?.set(532,id)
+                        player?.debug("Child: $id")
+                        return ++id == 999
+                    }
+                })
             }
             "clearpatches" -> {
                 if (args!!.size > 1) {

@@ -132,8 +132,8 @@ public class WoodcuttingSkillPulse extends Pulse {
         }
 
         // 20% chance to auto burn logs when using "inferno adze" item
-        if (SkillingTool.getHatchet(player).getId() == 13661 && RandomFunction.random(100) < 20) {
-            player.sendMessage("Your chop some logs. The heat of the inferno adze incinerates them.");
+        if (SkillingTool.getHatchet(player).getId() == 13661 && RandomFunction.random(100) < 25) {
+            player.sendMessage("You chop some logs. The heat of the inferno adze incinerates them.");
             Projectile.create(player, null, 1776, 35, 30, 20, 25).transform(player, new Location(player.getLocation().getX() + 2, player.getLocation().getY()), true, 25, 25).send();
             player.getSkills().addExperience(Skills.WOODCUTTING, resource.getExperience());
             player.getSkills().addExperience(Skills.FIREMAKING, resource.getExperience());
