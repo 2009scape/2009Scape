@@ -536,6 +536,7 @@ class ScriptAPI(private val bot: Player) {
             offer.sell = false
             offer.offeredValue = checkPriceOverrides(itemID) ?: ItemDefinition.forId(itemID).value
             offer.amount = amount
+            offer.player = bot
             OfferManager.dispatch(bot, offer)
             AIRepository.addOffer(bot, offer)
             var bought: Boolean = false

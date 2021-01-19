@@ -2,6 +2,14 @@ package plugin.ge
 
 import core.game.node.entity.player.Player
 import core.game.node.item.Item
+import java.util.Arrays
+
+import core.game.system.SystemManager.state
+
+import core.cache.def.impl.ItemDefinition
+
+
+
 
 /**
  * A struct holding all the data for grand exchange offers as stored in json database.
@@ -9,7 +17,7 @@ import core.game.node.item.Item
  * @author Angle
  */
 
-class GrandExchangeOffer {
+class GrandExchangeOffer() {
     var itemID = 0
     var amount = 0
     var completedAmount = 0
@@ -45,4 +53,8 @@ class GrandExchangeOffer {
      */
     val isActive: Boolean
         get() = offerState != OfferState.ABORTED && offerState != OfferState.PENDING && offerState != OfferState.COMPLETED && offerState != OfferState.REMOVED
+
+    override fun toString(): String {
+        return "[name=" + ItemDefinition.forId(itemID).name + ", itemId=" + itemID + ", amount=" + amount + ", completedAmount=" + completedAmount + ", offeredValue=" + offeredValue + ", index=" + index + ", sell=" + sell + ", state=" + offerState + ", withdraw=" + withdraw.contentToString() + ", totalCoinExchange=" + totalCoinExchange + ", playerUID=" + playerUID + "]"
+    }
 }

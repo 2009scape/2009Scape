@@ -48,12 +48,12 @@ class OfferManager : Pulse(), CallBack {
     override fun pulse(): Boolean {
         // TODO: Update offers code
         if (GameWorld.ticks % RESET_BUYING_LIMIT_INTERVAL == 0) {
-            BuyingLimitation.clear()
             for (offer in OFFER_MAPPING.values) {
                 if (offer.isActive && offer.isLimitation) {
                     updateOffer(offer)
                 }
             }
+            BuyingLimitation.clear()
         }
 
         if (dumpDatabase && (GameWorld.ticks % SAVE_EVERY == 0)) {
@@ -95,7 +95,6 @@ class OfferManager : Pulse(), CallBack {
          */
         val OFFER_MAPPING: MutableMap<Long, GrandExchangeOffer> = HashMap()
         val OFFERS_BY_ITEMID: MutableMap<Int, MutableList<GrandExchangeOffer>> = HashMap()
-        val OFFERS_BY_PLAYER: MutableMap<Int, MutableList<GrandExchangeOffer>> = HashMap()
         private val GE_OFFER_LOCK = ReentrantLock()
 
         /**
@@ -238,7 +237,6 @@ class OfferManager : Pulse(), CallBack {
             }
             OFFER_MAPPING.remove(offer.uid)
             OFFERS_BY_ITEMID[offer.itemID]!!.remove(offer)
-            OFFERS_BY_PLAYER[offer.playerUID]!!.remove(offer)
             GE_OFFER_LOCK.unlock()
             return true
         }
@@ -250,11 +248,7 @@ class OfferManager : Pulse(), CallBack {
             if (!OFFERS_BY_ITEMID.containsKey(offer.itemID)) {
                 OFFERS_BY_ITEMID[offer.itemID] = mutableListOf()
             }
-            if (!OFFERS_BY_PLAYER.containsKey(offer.playerUID)) {
-                OFFERS_BY_PLAYER[offer.playerUID] = mutableListOf()
-            }
             OFFERS_BY_ITEMID[offer.itemID]!!.add(offer)
-            OFFERS_BY_PLAYER[offer.playerUID]!!.add(offer)
             GE_OFFER_LOCK.unlock()
         }
 
@@ -284,7 +278,7 @@ class OfferManager : Pulse(), CallBack {
 
             for(entry in OFFER_MAPPING){
                 val offer = entry.value
-                if (offer.offerState == OfferState.REMOVED) {
+                if (offer.offerState == OfferState.REMOVED || entry.value.playerUID == PlayerDetails.getDetails("2009scape").uid) {
                     continue
                 }
                 val o = JSONObject()
@@ -384,7 +378,6 @@ class OfferManager : Pulse(), CallBack {
             if (offer.sell) {
                 Repository.sendNews(player.username + " just offered " + offer.amount + " " + ItemDefinition.forId(offer.itemID).name.toLowerCase() + " on the GE.")
             }
-            updateOffer(offer)
             dumpDatabase = true
             return true
         }
@@ -408,6 +401,7 @@ class OfferManager : Pulse(), CallBack {
                     }
                 }
             }
+            buyFromBots(offer)
             GE_OFFER_LOCK.unlock()
         }
 
@@ -476,7 +470,7 @@ class OfferManager : Pulse(), CallBack {
             offer.player?.packetDispatch?.sendMessage(UPDATE_NOTIFICATION)
             o.player?.packetDispatch?.sendMessage(UPDATE_NOTIFICATION)
             o.player?.playerGrandExchange?.update(o)
-            offer.player?.playerGrandExchange?.update(o)
+            offer.player?.playerGrandExchange?.update(offer)
             dumpDatabase = true
         }
 
@@ -511,7 +505,6 @@ class OfferManager : Pulse(), CallBack {
                 }
             }
             if (offer.player != null) {
-                println("idx is ${offer.index}")
                 PacketRepository.send(
                     ContainerPacket::class.java,
                     ContainerContext(offer.player, -1, -1757, 523 + offer.index, offer.withdraw, false)

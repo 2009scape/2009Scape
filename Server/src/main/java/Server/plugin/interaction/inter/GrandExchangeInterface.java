@@ -322,7 +322,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 			return true;
 		case 168: // 1000 / sell all
 			if (offer != null && offer.getSell()) {
-				setOfferAmount(player, offer, player.getPlayerGrandExchange().getInventoryAmount(player, offer.getItemID()));
+				setOfferAmount(player, offer, PlayerGrandExchange.getInventoryAmount(player, offer.getItemID()));
 				return true;
 			}
 			setOfferAmount(player, offer, amount + 1000);

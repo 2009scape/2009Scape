@@ -105,7 +105,6 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
         player.packetDispatch.sendAccessMask(6, 52, 109, 0, 2)
         for (offer in offers) {
             if (offer != null) {
-                println("idx2 is ${offer.index}")
                 PacketRepository.send(
                     ContainerPacket::class.java,
                     ContainerContext(player, -1, -1757, 523 + offer.index, offer.withdraw, false)
@@ -568,7 +567,6 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
                         foundOffers.add(o.offeredValue)
                         foundAmounts.add(o.amountLeft)
                         count++
-                        println(o.toString())
                     }
                 }
                 val botSales = OfferManager.amtBotsSelling(offer.itemID)
@@ -599,7 +597,6 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
         PacketRepository.send(Config::class.java, ConfigContext(player, 1110, offer?.amount ?: 0))
         PacketRepository.send(Config::class.java, ConfigContext(player, 1111, offer?.offeredValue ?: 0))
         if (offer != null) {
-            println("idx3 is ${offer.index}")
             PacketRepository.send(
                 ContainerPacket::class.java,
                 ContainerContext(player, -1, -1757, 523 + offer.index, offer.withdraw, false)
@@ -670,7 +667,6 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
             remove(offer.index)
         }
         player.audioManager.send(Audio(4040, 1, 1))
-        println("idx4 is ${offer.index}")
         PacketRepository.send(
             ContainerPacket::class.java,
             ContainerContext(player, -1, -1757, 523 + offer.index, offer.withdraw, false)
