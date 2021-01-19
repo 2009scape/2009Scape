@@ -112,6 +112,7 @@ class OfferManager : Pulse(), CallBack {
          * Initializes the Grand Exchange.
          */
         fun init() {
+            GE_OFFER_LOCK.lock()
             val file = File(DB_PATH)
             if (!file.exists()) {
                 return
@@ -164,6 +165,7 @@ class OfferManager : Pulse(), CallBack {
             } catch (e: IOException) {
                 println("ERROR, unable to load bot offers. Perhaps it doesn't exist yet.")
             }
+            GE_OFFER_LOCK.unlock()
         }
 
         fun buyFromBots(offer: GrandExchangeOffer) {
@@ -273,6 +275,7 @@ class OfferManager : Pulse(), CallBack {
 
         @JvmStatic
         fun save(){
+            GE_OFFER_LOCK.lock()
             val root = JSONObject()
             val offers = JSONArray()
 
@@ -340,6 +343,7 @@ class OfferManager : Pulse(), CallBack {
             } catch (e: IOException) {
                 e.printStackTrace()
             }
+            GE_OFFER_LOCK.unlock()
         }
 
         /**
