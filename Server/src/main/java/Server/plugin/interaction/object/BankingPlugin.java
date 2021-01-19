@@ -87,7 +87,7 @@ public final class BankingPlugin extends OptionHandler {
                     checkAchievements(player);
                     return true;
                 case "collect":
-                    player.getGrandExchange().openCollectionBox();
+                    player.getPlayerGrandExchange().openCollectionBox();
                     return true;
                 case "deposit":
                     openDepositBox(player);
@@ -572,7 +572,7 @@ public final class BankingPlugin extends OptionHandler {
                 player.getBank().open();
                 checkAchievements(player);
             } else {
-                player.getGrandExchange().openCollectionBox();
+                player.getPlayerGrandExchange().openCollectionBox();
             }
             return true;
         }

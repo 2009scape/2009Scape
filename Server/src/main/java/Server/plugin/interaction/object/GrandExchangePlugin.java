@@ -56,17 +56,17 @@ public final class GrandExchangePlugin extends OptionHandler {
 				player.getDialogueInterpreter().sendDialogue("The Grand Exchange desk seems to be closed...");
 				break;
 			}
-			player.getGrandExchange().open();
+			player.getPlayerGrandExchange().open();
 			break;
 		case "history":
-			player.getGrandExchange().openHistoryLog(player);
+			player.getPlayerGrandExchange().openHistoryLog(player);
 			break;
 		case "collect":
 			if (!GrandExchangeDatabase.hasInitialized()) {
 				player.getDialogueInterpreter().sendDialogue("The Grand Exchange desk seems to be closed...");
 				break;
 			}
-			player.getGrandExchange().openCollectionBox();
+			player.getPlayerGrandExchange().openCollectionBox();
 			break;
 		case "info-logs":
 			GEGuidePrice.open(player, GuideType.LOGS);
@@ -84,7 +84,7 @@ public final class GrandExchangePlugin extends OptionHandler {
 			GEGuidePrice.open(player, GuideType.WEAPONS_AND_ARMOUR);
 			break;
 		case "sets":
-			player.getGrandExchange().openItemSets();
+			player.getPlayerGrandExchange().openItemSets();
 			break;
 		}
 		return true;
@@ -137,7 +137,7 @@ public final class GrandExchangePlugin extends OptionHandler {
 				player.getBank().open();
 				break;
 			case "collect":
-				player.getGrandExchange().openCollectionBox();
+				player.getPlayerGrandExchange().openCollectionBox();
 				break;
 			}
 			return true;

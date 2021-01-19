@@ -291,7 +291,7 @@ class PlayerSaveParser(val player: Player) {
         val geData: Any? = saveFile!!["grand_exchange"]
         var ge: JSONObject? = null
         if (geData != null) {
-            ge = geData as JSONObject; player.grandExchange.parse(ge)
+            ge = geData as JSONObject; player.playerGrandExchange.parse(ge)
         }
 
     }

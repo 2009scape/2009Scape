@@ -24,6 +24,7 @@ import java.io.FileWriter
 import java.io.IOException
 import java.lang.Integer.min
 import java.util.HashMap
+import java.util.concurrent.locks.ReentrantLock
 import javax.script.ScriptEngineManager
 
 class OfferManager : Pulse(), CallBack {
@@ -80,7 +81,6 @@ class OfferManager : Pulse(), CallBack {
          */
         private val BOT_DB_PATH = "data" + File.separator + "eco" + File.separator + "bot_offers.json"
 
-
         /**
          * The offset of the offer UIDs.
          */
@@ -93,9 +93,10 @@ class OfferManager : Pulse(), CallBack {
          * Second is itemID, offsetID, Offer
          * Final is playerID, offsetID, Offer
          */
-        private val OFFER_MAPPING: MutableMap<Long, GrandExchangeOffer> = HashMap()
-        public val OFFERS_BY_ITEMID: MutableMap<Int, MutableList<GrandExchangeOffer>> = HashMap()
-        public val OFFERS_BY_PLAYER: MutableMap<Int, MutableList<GrandExchangeOffer>> = HashMap()
+        val OFFER_MAPPING: MutableMap<Long, GrandExchangeOffer> = HashMap()
+        val OFFERS_BY_ITEMID: MutableMap<Int, MutableList<GrandExchangeOffer>> = HashMap()
+        val OFFERS_BY_PLAYER: MutableMap<Int, MutableList<GrandExchangeOffer>> = HashMap()
+        private val GE_OFFER_LOCK = ReentrantLock()
 
         /**
          * Bot offers are sorted by itemID.
@@ -151,14 +152,18 @@ class OfferManager : Pulse(), CallBack {
                 }
             }
 
-            val botReader: FileReader? = FileReader(BOT_DB_PATH)
-            val botSave = parser.parse(botReader) as JSONObject
-            if (botSave.containsKey("offers")) {
-                val offers = botSave["offers"] as JSONArray
-                for (offer in offers) {
-                    val o = offer as JSONObject
-                    addBotOffer(o["item"].toString().toInt(), o["qty"].toString().toInt())
+            try {
+                val botReader: FileReader? = FileReader(BOT_DB_PATH)
+                val botSave = parser.parse(botReader) as JSONObject
+                if (botSave.containsKey("offers")) {
+                    val offers = botSave["offers"] as JSONArray
+                    for (offer in offers) {
+                        val o = offer as JSONObject
+                        addBotOffer(o["item"].toString().toInt(), o["qty"].toString().toInt())
+                    }
                 }
+            } catch (e: IOException) {
+                println("ERROR, unable to load bot offers. Perhaps it doesn't exist yet.")
             }
         }
 
@@ -225,16 +230,22 @@ class OfferManager : Pulse(), CallBack {
         }
 
         fun removeEntry(offer: GrandExchangeOffer): Boolean{
+            println("REMOVING ENTRY of ID " + offer.itemID)
+            GE_OFFER_LOCK.lock()
             if (!OFFER_MAPPING.containsKey(offer.uid)){
+                GE_OFFER_LOCK.unlock()
                 return false
             }
             OFFER_MAPPING.remove(offer.uid)
             OFFERS_BY_ITEMID[offer.itemID]!!.remove(offer)
             OFFERS_BY_PLAYER[offer.playerUID]!!.remove(offer)
+            GE_OFFER_LOCK.unlock()
             return true
         }
 
         fun addEntry(offer: GrandExchangeOffer){
+            println("ADDING ENTRY of ID " + offer.itemID)
+            GE_OFFER_LOCK.lock()
             OFFER_MAPPING[offer.uid] = offer
             if (!OFFERS_BY_ITEMID.containsKey(offer.itemID)) {
                 OFFERS_BY_ITEMID[offer.itemID] = mutableListOf()
@@ -244,6 +255,7 @@ class OfferManager : Pulse(), CallBack {
             }
             OFFERS_BY_ITEMID[offer.itemID]!!.add(offer)
             OFFERS_BY_PLAYER[offer.playerUID]!!.add(offer)
+            GE_OFFER_LOCK.unlock()
         }
 
         fun getQuantitySoldForItem(item: Int): Int {
@@ -371,9 +383,8 @@ class OfferManager : Pulse(), CallBack {
             player.playerGrandExchange.update(offer)
             if (offer.sell) {
                 Repository.sendNews(player.username + " just offered " + offer.amount + " " + ItemDefinition.forId(offer.itemID).name.toLowerCase() + " on the GE.")
-            } else {
-                updateOffer(offer)
             }
+            updateOffer(offer)
             dumpDatabase = true
             return true
         }
@@ -387,6 +398,8 @@ class OfferManager : Pulse(), CallBack {
             if (!offer.isActive) {
                 return
             }
+            println("Doing update on offer UID: " + offer.uid)
+            GE_OFFER_LOCK.lock()
             for (o in OFFERS_BY_ITEMID[offer.itemID]!!) {
                 if (o.sell != offer.sell && o.isActive) {
                     exchange(offer, o)
@@ -395,6 +408,7 @@ class OfferManager : Pulse(), CallBack {
                     }
                 }
             }
+            GE_OFFER_LOCK.unlock()
         }
 
         private fun getBuylimitAmount(offer: GrandExchangeOffer): Int {
@@ -497,6 +511,7 @@ class OfferManager : Pulse(), CallBack {
                 }
             }
             if (offer.player != null) {
+                println("idx is ${offer.index}")
                 PacketRepository.send(
                     ContainerPacket::class.java,
                     ContainerContext(offer.player, -1, -1757, 523 + offer.index, offer.withdraw, false)

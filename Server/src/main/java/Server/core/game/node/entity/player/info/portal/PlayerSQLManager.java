@@ -108,7 +108,7 @@ public final class PlayerSQLManager {
 		table.getColumn("credits").updateValue(player.getDetails().credits);
 		table.getColumn("bank").updateValue(player.getBank().format());
 		table.getColumn("lastLogin").updateValue(player.getDetails().getLastLogin());
-		table.getColumn("ge").updateValue(player.getGrandExchange().format());
+		table.getColumn("ge").updateValue(player.getPlayerGrandExchange().format());
 		table.getColumn("inventory").updateValue(player.getInventory().format());
 		table.getColumn("equipment").updateValue(player.getEquipment().format());
 		table.getColumn("netWorth").updateValue(player.getMonitor().getNetworth());

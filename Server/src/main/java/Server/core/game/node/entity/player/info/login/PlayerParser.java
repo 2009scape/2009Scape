@@ -95,7 +95,7 @@ public final class PlayerParser {
 						player.getSpellBookManager().parse(buffer);
 						break;
 					case 26:
-						player.getGrandExchange().parse(buffer);
+						player.getPlayerGrandExchange().parse(buffer);
 						break;
 					case 27:
 						player.getSavedData().parse(buffer);

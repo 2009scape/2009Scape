@@ -162,7 +162,7 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
             State.BUYING_FOOD -> {
                     if(!offerMade)
                     {
-                        scriptAPI.buyFromGE(food, 100)
+                        scriptAPI.buyFromGE(bot, food, 100)
                         offerMade = true
                     } else
                     {

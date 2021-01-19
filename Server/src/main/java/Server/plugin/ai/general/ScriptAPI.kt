@@ -529,7 +529,7 @@ class ScriptAPI(private val bot: Player) {
      * @param amount the amount to buy.
      * @return true if item was successfully bought, false if not.
      */
-    fun buyFromGE(itemID: Int, amount: Int){
+    fun buyFromGE(bot: Player, itemID: Int, amount: Int){
         Executors.newSingleThreadExecutor().execute{
             val offer = GrandExchangeOffer()
             offer.itemID = itemID
@@ -537,6 +537,7 @@ class ScriptAPI(private val bot: Player) {
             offer.offeredValue = checkPriceOverrides(itemID) ?: ItemDefinition.forId(itemID).value
             offer.amount = amount
             OfferManager.dispatch(bot, offer)
+            AIRepository.addOffer(bot, offer)
             var bought: Boolean = false
             val latch = CountDownLatch(1)
             bot.pulseManager.run(object : Pulse(5) {

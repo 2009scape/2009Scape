@@ -59,7 +59,7 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
 
     private var openedIndex = -1
 
-    public var temporaryOffer: GrandExchangeOffer = GrandExchangeOffer()
+    public var temporaryOffer: GrandExchangeOffer? = null
 
     /**
      * Opens the Grand Exchange menu.
@@ -76,7 +76,7 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
         }
         player.interfaceManager.open(Component(105)).closeEvent =
             CloseEvent { player, _ ->
-                temporaryOffer = GrandExchangeOffer()
+                temporaryOffer = null
                 player.packetDispatch.sendRunScript(571, "")
                 player.interfaceManager.closeChatbox()
                 player.interfaceManager.closeSingleTab()
@@ -105,6 +105,7 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
         player.packetDispatch.sendAccessMask(6, 52, 109, 0, 2)
         for (offer in offers) {
             if (offer != null) {
+                println("idx2 is ${offer.index}")
                 PacketRepository.send(
                     ContainerPacket::class.java,
                     ContainerContext(player, -1, -1757, 523 + offer.index, offer.withdraw, false)
@@ -345,16 +346,17 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
             return
         }
         temporaryOffer = GrandExchangeOffer()
-        temporaryOffer.itemID = itemId
-        temporaryOffer.sell = false
+        temporaryOffer!!.itemID = itemId
+        temporaryOffer!!.sell = false
         var itemDb = GrandExchangeDatabase.getDatabase()[itemId]
         if (itemDb == null) {
             player.packetDispatch.sendMessage("This item has been blacklisted from the Grand Exchange.")
             return
         }
-        temporaryOffer.player = player
-        temporaryOffer.amount = 1
-        temporaryOffer.offeredValue = itemDb.value
+        temporaryOffer!!.player = player
+        temporaryOffer!!.amount = 1
+        temporaryOffer!!.offeredValue = itemDb.value
+        temporaryOffer!!.index = openedIndex
         sendConfiguration(temporaryOffer, false)
     }
 
@@ -383,11 +385,12 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
             return
         }
         temporaryOffer = GrandExchangeOffer()
-        temporaryOffer.itemID = id
-        temporaryOffer.sell = false
-        temporaryOffer.player = player
-        temporaryOffer.offeredValue = itemDb.value
-        temporaryOffer.amount = item.amount
+        temporaryOffer!!.itemID = id
+        temporaryOffer!!.sell = true
+        temporaryOffer!!.player = player
+        temporaryOffer!!.offeredValue = itemDb.value
+        temporaryOffer!!.amount = item.amount
+        temporaryOffer!!.index = openedIndex
         sendConfiguration(temporaryOffer, true)
     }
 
@@ -412,23 +415,23 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
      * Confirms the current offer.
      */
     fun confirmOffer() {
-        if (openedIndex < 0 || temporaryOffer.amount == 0) {
+        if (openedIndex < 0 || temporaryOffer == null || temporaryOffer!!.amount == 0) {
             return
         }
-        if (temporaryOffer.offeredValue < 1) {
+        if (temporaryOffer!!.offeredValue < 1) {
             player.audioManager.send(Audio(4039, 1, 1))
             player.packetDispatch.sendMessage("You can't make an offer for 0 coins.")
             return
         }
-        if (temporaryOffer.amount > Int.MAX_VALUE / temporaryOffer.offeredValue) {
+        if (temporaryOffer!!.amount > Int.MAX_VALUE / temporaryOffer!!.offeredValue) {
             player.audioManager.send(Audio(4039, 1, 1))
-            player.packetDispatch.sendMessage("You can't " + (if (temporaryOffer.sell) "sell " else "buy ") + " this much!")
+            player.packetDispatch.sendMessage("You can't " + (if (temporaryOffer!!.sell) "sell " else "buy ") + " this much!")
             return
         }
-        temporaryOffer.index = openedIndex
-        if (temporaryOffer.sell) {
-            val maxAmount = getInventoryAmount(player, temporaryOffer.itemID)
-            if (temporaryOffer.amount > maxAmount) {
+        temporaryOffer!!.index = openedIndex
+        if (temporaryOffer!!.sell) {
+            val maxAmount = getInventoryAmount(player, temporaryOffer!!.itemID)
+            if (temporaryOffer!!.amount > maxAmount) {
                 player.audioManager.send(Audio(4039, 1, 1))
                 player.packetDispatch.sendMessage("You do not have enough of this item in your inventory to cover the")
                 player.packetDispatch.sendMessage("offer.")
@@ -436,8 +439,8 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
             }
             var item: Item
             val amountLeft: Int =
-                temporaryOffer.amount - player.inventory.getAmount(Item(temporaryOffer.itemID))
-            val remove = player.inventory.remove(Item(temporaryOffer.itemID, temporaryOffer.amount).also {
+                temporaryOffer!!.amount - player.inventory.getAmount(Item(temporaryOffer!!.itemID))
+            val remove = player.inventory.remove(Item(temporaryOffer!!.itemID, temporaryOffer!!.amount).also {
                 item = it
             })
             var note: Int
@@ -445,35 +448,35 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
                 if (item.noteChange.also { note = it } > 0) {
                     player.inventory.remove(Item(note, amountLeft))
                 } else if (remove) {
-                    player.inventory.add(Item(temporaryOffer.itemID, temporaryOffer.amount - amountLeft))
+                    player.inventory.add(Item(temporaryOffer!!.itemID, temporaryOffer!!.amount - amountLeft))
                     return
                 }
             }
-            if (dispatch(player, temporaryOffer)) {
+            if (dispatch(player, temporaryOffer!!)) {
                 offers[openedIndex] = temporaryOffer
-                updateOffer(temporaryOffer)
+                updateOffer(temporaryOffer!!)
             }
         } else {
-            val total: Int = temporaryOffer.amount * temporaryOffer.offeredValue
+            val total: Int = temporaryOffer!!.amount * temporaryOffer!!.offeredValue
             if (total > player.inventory.getAmount(Item(995))) {
                 player.audioManager.send(Audio(4039, 1, 1))
                 player.packetDispatch.sendMessage("You do not have enough coins to cover the offer.")
                 return
             }
-            if (dispatch(player, temporaryOffer) && player.inventory.remove(Item(995, total))) {
+            if (dispatch(player, temporaryOffer!!) && player.inventory.remove(Item(995, total))) {
                 offers[openedIndex] = temporaryOffer
-                updateOffer(temporaryOffer)
+                updateOffer(temporaryOffer!!)
             }
         }
         player.monitor.log(
-            (if (temporaryOffer.sell) "selling" else "buying") + " offer => item => " + ItemDefinition.forId(
-                temporaryOffer.itemID
-            ).name + " => amount => " + temporaryOffer.amount + " => price => " + temporaryOffer.offeredValue,
+            (if (temporaryOffer!!.sell) "selling" else "buying") + " offer => item => " + ItemDefinition.forId(
+                temporaryOffer!!.itemID
+            ).name + " => amount => " + temporaryOffer!!.amount + " => price => " + temporaryOffer!!.offeredValue,
             PlayerMonitor.GRAND_EXCHANGE_LOG
         )
         toMainInterface()
         player.audioManager.send(Audio(4043, 1, 1))
-        temporaryOffer = GrandExchangeOffer()
+        temporaryOffer = null
     }
 
     /**
@@ -588,14 +591,15 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
         }
         player.packetDispatch.sendString(if (offer != null && !offer.sell) text.toString() else examine, 105, 142)
         PacketRepository.send(Config::class.java, ConfigContext(player, 1114, entry?.value ?: 0))
-        PacketRepository.send(Config::class.java, ConfigContext(player, 1115, (if (entry == null) 0 else entry.value * 0.95) as Int))
-        PacketRepository.send(Config::class.java, ConfigContext(player, 1116, (if (entry == null) 0 else entry.value * 1.05) as Int))
+        PacketRepository.send(Config::class.java, ConfigContext(player, 1115, (if (entry == null) 0 else entry.value * 0.95).toInt()))
+        PacketRepository.send(Config::class.java, ConfigContext(player, 1116, (if (entry == null) 0 else entry.value * 1.05).toInt()))
         PacketRepository.send(Config::class.java, ConfigContext(player, 1112, openedIndex))
         PacketRepository.send(Config::class.java, ConfigContext(player, 1113, if (sell) 1 else 0))
         PacketRepository.send(Config::class.java, ConfigContext(player, 1109, offer?.itemID ?: -1))
         PacketRepository.send(Config::class.java, ConfigContext(player, 1110, offer?.amount ?: 0))
         PacketRepository.send(Config::class.java, ConfigContext(player, 1111, offer?.offeredValue ?: 0))
         if (offer != null) {
+            println("idx3 is ${offer.index}")
             PacketRepository.send(
                 ContainerPacket::class.java,
                 ContainerContext(player, -1, -1757, 523 + offer.index, offer.withdraw, false)
@@ -666,6 +670,7 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
             remove(offer.index)
         }
         player.audioManager.send(Audio(4040, 1, 1))
+        println("idx4 is ${offer.index}")
         PacketRepository.send(
             ContainerPacket::class.java,
             ContainerContext(player, -1, -1757, 523 + offer.index, offer.withdraw, false)
@@ -696,5 +701,24 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
         openedIndex = index
         sendConfiguration(offers[index], false)
     }
+
+    /**
+     * Formats the grand exchange.
+     *
+     * @return the formatted offer for the SQL database.
+     */
+    fun format(): String? {
+        var log = ""
+        for (offer in offers) {
+            if (offer != null) {
+                log += offer.itemID.toString() + "," + offer.amount + "," + offer.sell + "|"
+            }
+        }
+        if (log.isNotEmpty() && log[log.length - 1] == '|') {
+            log = log.substring(0, log.length - 1)
+        }
+        return log
+    }
+
 
 }

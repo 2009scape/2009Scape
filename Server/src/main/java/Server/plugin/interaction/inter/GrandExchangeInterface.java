@@ -266,6 +266,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 			return true;
 		case 190:
 			player.getPlayerGrandExchange().confirmOffer();
+			player.getPlayerGrandExchange().setTemporaryOffer(null);
 			return true;
 		case 194:
 			player.getPlayerGrandExchange().openSearch();
@@ -321,7 +322,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 			return true;
 		case 168: // 1000 / sell all
 			if (offer != null && offer.getSell()) {
-				setOfferAmount(player, offer, GrandExchange.getInventoryAmount(player, offer.getItemID()));
+				setOfferAmount(player, offer, player.getPlayerGrandExchange().getInventoryAmount(player, offer.getItemID()));
 				return true;
 			}
 			setOfferAmount(player, offer, amount + 1000);
@@ -380,7 +381,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 			player.getInterfaceManager().close();
 			return true;
 		case 127:
-			player.getPlayerGrandExchange().setTemporaryOffer(new GrandExchangeOffer());
+			player.getPlayerGrandExchange().setTemporaryOffer(null);
 			player.getInterfaceManager().closeSingleTab();
 			player.getInterfaceManager().closeChatbox();
 			return true;
