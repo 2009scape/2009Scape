@@ -63,7 +63,7 @@ public class Interaction {
 	 */
 	public void handle(final Player player, final Option option) {
 		try {
-			if (player.getLocks().isInteractionLocked()) {
+			if (player.getLocks().isInteractionLocked() || option == null) {
 				return;
 			}
 			player.debug("Received interaction request " + option.getName());
