@@ -370,7 +370,7 @@ class OfferManager : Pulse(), CallBack {
             }
             if (player.isArtificial) {
                 offer.playerUID = PlayerDetails.getDetails("2009scape").uid
-                Repository.sendNews("2009scape wants " + offer.amount + " " + ItemDefinition.forId(offer.itemID).name.toLowerCase() + " for " + offer.offeredValue + "each.")
+                // Repository.sendNews("2009scape wants " + offer.amount + " " + ItemDefinition.forId(offer.itemID).name.toLowerCase() + " for " + offer.offeredValue + "each.")
             } else {
                 offer.playerUID = player.details.uid
             }
