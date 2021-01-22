@@ -19831,7 +19831,7 @@
       "low_alchemy": "4",
       "high_alchemy": "6",
       "grand_exchange_price": "223",
-      "ge_buy_limit": "1000",
+      "ge_buy_limit": "10000",
       "archery_ticket_price": "0",
       "durability": null
     },
@@ -19840,7 +19840,7 @@
       "name": "Bow string",
       "tradeable": "true",
       "grand_exchange_price": "223",
-      "ge_buy_limit": "1000",
+      "ge_buy_limit": "10000",
       "archery_ticket_price": "0",
       "durability": null
     },

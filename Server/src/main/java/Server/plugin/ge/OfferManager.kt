@@ -48,12 +48,12 @@ class OfferManager : Pulse(), CallBack {
     override fun pulse(): Boolean {
         // TODO: Update offers code
         if (GameWorld.ticks % RESET_BUYING_LIMIT_INTERVAL == 0) {
+            BuyingLimitation.clear()
             for (offer in OFFER_MAPPING.values) {
                 if (offer.isActive && offer.isLimitation) {
                     updateOffer(offer)
                 }
             }
-            BuyingLimitation.clear()
         }
 
         if (dumpDatabase && (GameWorld.ticks % SAVE_EVERY == 0)) {
