@@ -591,14 +591,20 @@ class PlayerGrandExchange(private val player: Player) : SavingModule {
             }
         }
         player.packetDispatch.sendString(if (offer != null && !offer.sell) text.toString() else examine, 105, 142)
+        var lowPrice = 0
+        var highPrice = 0
+        if (entry != null) {
+            lowPrice = (entry.value * 0.95).toInt()
+            highPrice = (entry.value * 1.05).toInt()
+        }
         player.varpManager.get(1109).setVarbit(0, offer?.itemID ?: -1).send(player)
         player.varpManager.get(1110).setVarbit(0, offer?.amount ?: 0).send(player)
         player.varpManager.get(1111).setVarbit(0, offer?.offeredValue ?: 0).send(player)
         player.varpManager.get(1112).setVarbit(0, openedIndex).send(player)
         player.varpManager.get(1113).setVarbit(0, if (sell) 1 else 0).send(player)
         player.varpManager.get(1114).setVarbit(0, entry?.value ?: 0).send(player)
-        player.varpManager.get(1115).setVarbit(0, (if (entry == null) 0 else entry.value * 0.95).toInt()).send(player)
-        player.varpManager.get(1116).setVarbit(0, (if (entry == null) 0 else entry.value * 1.05).toInt()).send(player)
+        player.varpManager.get(1115).setVarbit(0, lowPrice).send(player)
+        player.varpManager.get(1116).setVarbit(0, highPrice).send(player)
         if (offer != null) {
             PacketRepository.send(
                 ContainerPacket::class.java,
