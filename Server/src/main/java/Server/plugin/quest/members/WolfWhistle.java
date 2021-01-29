@@ -20,8 +20,7 @@ public class WolfWhistle extends Quest {
 
 	/**
 	 * Constructs a new {@code WolfWhistle} {@code Object}.
-	 * @param player The player to construct the class for.
-	 */
+     */
 	public WolfWhistle() {
 		super("Wolf Whistle", 146, 145, 1);
 	}

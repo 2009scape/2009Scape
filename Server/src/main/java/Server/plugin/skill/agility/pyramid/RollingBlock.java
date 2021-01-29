@@ -71,7 +71,6 @@ public final class RollingBlock implements MovementHook {
 	 * Checks if the player is going backwards.
 	 * @param direction the object dir.
 	 * @param dir the player dir.
-	 * @param rotation the rotation of the object.
 	 * @return {@code True} if so.
 	 */
 	public boolean isBackwards(Direction direction, Direction dir, int rot) {

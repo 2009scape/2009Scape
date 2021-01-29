@@ -13,8 +13,7 @@ public enum Talisman {
 
 	/**
 	 * Constructs a new {@code Talisman} {@code Object}.
-	 * @param talsiman
-	 */
+     */
 	Talisman(final Item talisman, MysteriousRuin ruin) {
 		this.talisman = talisman;
 		this.ruin = ruin;
@@ -109,7 +108,6 @@ public enum Talisman {
 
 	/**
 	 * Method used to get the <code>Talisman</code> by the item.
-	 * @param item the item.
 	 * @return the <code>Talisman</code> or <code>Null</code>.
 	 */
 	public static Talisman forName(final String name) {

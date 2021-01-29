@@ -117,8 +117,7 @@ public final class KingBlackDragonNPC extends AbstractNPC {
 
 		/**
 		 * Constructs a new {@code KBDCombatSwingHandler} {@Code Object}.
-		 * @param type The combat style.
-		 */
+         */
 		public KBDCombatSwingHandler() {
 			super(CombatStyle.RANGE);
 		}

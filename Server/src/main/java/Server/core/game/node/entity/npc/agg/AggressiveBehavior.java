@@ -55,7 +55,7 @@ public class AggressiveBehavior {
 
 	/**
 	 * Checks if the NPC is aggressive towards the entity.
-	 * @param e The timed entry.
+	 * @param entity The timed entry.
 	 * @return {@code True} if the NPC can select the entity as a target.
 	 */
 	public boolean canSelectTarget(Entity entity, Entity target) {

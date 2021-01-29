@@ -631,31 +631,32 @@ class PlayerSaver (val player: Player){
 
     fun saveGrandExchangeData(root: JSONObject){
         val grandExchange = JSONObject()
-        if(player.grandExchange.hasActiveOffer()){
+        if(player.playerGrandExchange.hasActiveOffer()){
+            SystemLogger.log("Active offer found...")
             val offers = JSONArray()
-            player.grandExchange.offers.map {
+            player.playerGrandExchange.offers.map {
                 if(it != null){
                     val offer = JSONObject()
-                    offer.put("offerIndex",it.index.toString())
-                    offer.put("offerUID",it.uid.toString())
+                    offer["offerIndex"] = it.index.toString()
+                    offer["offerUID"] = it.uid.toString()
                     offers.add(offer)
                 }
             }
-            val history = JSONArray()
-            player.grandExchange.history.map {
-                if(it != null){
-                    val historyEntry = JSONObject()
-                    historyEntry.put("isSell",it.isSell)
-                    historyEntry.put("itemId",it.itemId.toString())
-                    historyEntry.put("totalCoinExchange",it.totalCoinExchange.toString())
-                    historyEntry.put("completedAmount",it.completedAmount.toString())
-                    history.add(historyEntry)
-                }
-            }
-            grandExchange.put("offers",offers)
-            grandExchange.put("history",history)
-            root.put("grand_exchange",grandExchange)
+            grandExchange["offers"] = offers
         }
+        val history = JSONArray()
+        player.playerGrandExchange.history.map {
+            if(it != null){
+                val historyEntry = JSONObject()
+                historyEntry["isSell"] = it.sell
+                historyEntry["itemId"] = it.itemID.toString()
+                historyEntry["totalCoinExchange"] = it.totalCoinExchange.toString()
+                historyEntry["completedAmount"] = it.completedAmount.toString()
+                history.add(historyEntry)
+            }
+        }
+        grandExchange["history"] = history
+        root["grand_exchange"] = grandExchange
     }
 
     fun saveGraveType(root: JSONObject){

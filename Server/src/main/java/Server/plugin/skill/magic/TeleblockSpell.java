@@ -51,7 +51,6 @@ public final class TeleblockSpell extends CombatSpell {
 	
 	/**
 	 * Constructs a new {@code TeleblockSpell} {@code Object}.
-	 * @param Type - the type of spell; Modern/Ancients/Lunar
 	 * @param level - the level needed to cast this spell
 	 * @param baseExperience - the base amount of experience we need to give
 	 * @param impactSound -the sound played on successful impact

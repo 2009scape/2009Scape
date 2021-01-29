@@ -81,7 +81,7 @@ public class ActionButtonPacket implements IncomingPacket {
 
 	/**
 	 * Gets the arguments for the reward button.
-	 * @param playerThe player.
+	 * @param player The player.
 	 * @param buffer The buffer.
 	 * @return The arguments [component, button, slot, item]
 	 */
@@ -303,9 +303,9 @@ public class ActionButtonPacket implements IncomingPacket {
 
 	/**
 	 * Handles an item interaction.
-	 * @param playerThe player.
-	 * @param opcodeThe opcode.
-	 * @param item The item.
+	 * @param player The player.
+	 * @param opcode The opcode.
+	 * @param itemId The item.
 	 */
 	private static void handleItemInteraction(Player player, int opcode, int itemId, int slot, Container container) {
 		if (slot < 0 || slot >= container.capacity()) {

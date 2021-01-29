@@ -3,7 +3,6 @@ package plugin.ai.general.scriptrepository
 import core.game.interaction.DestinationFlag
 import core.game.interaction.MovementPulse
 import core.game.node.entity.Entity
-import core.game.node.entity.combat.BattleState
 import core.game.node.entity.combat.CombatStyle
 import core.game.node.entity.combat.CombatSwingHandler
 import core.game.node.entity.combat.InteractionType
@@ -25,7 +24,6 @@ import plugin.ai.AIRepository
 import plugin.ai.pvmbots.CombatBotAssembler
 import plugin.ge.OfferState
 import plugin.skill.Skills
-import plugin.zone.WildernessAreaZone
 import kotlin.random.Random
 
 /**
@@ -164,7 +162,7 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
             State.BUYING_FOOD -> {
                     if(!offerMade)
                     {
-                        scriptAPI.buyFromGE(food, 100)
+                        scriptAPI.buyFromGE(bot, food, 100)
                         offerMade = true
                     } else
                     {
@@ -174,8 +172,8 @@ class GreenDragonKiller(val style: CombatStyle, area: ZoneBorders? = null) : Scr
                         } else {
                             if (offer.completedAmount == offer.amount) {
                                 state = State.TO_DRAGONS
-                                offer.state = OfferState.REMOVED
-                                bot.bank.add(Item(offer.itemId, offer.completedAmount))
+                                offer.offerState = OfferState.REMOVED
+                                bot.bank.add(Item(offer.itemID, offer.completedAmount))
                                 bot.bank.refresh()
                                 scriptAPI.withdraw(food, 10)
                             }

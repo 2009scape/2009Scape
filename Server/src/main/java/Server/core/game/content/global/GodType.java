@@ -49,8 +49,6 @@ public enum GodType {
 	 * @param cape the cape.
 	 * @param staff the staff.
 	 * @param statueId the id.
-	 * @param npc id the id.
-	 * @param drop message the drop message.
 	 */
 	private GodType(Item cape, Item staff, int statueId, int npcId, String dropMessage) {
 		this.cape = cape;
@@ -114,7 +112,7 @@ public enum GodType {
 	/**
 	 * Checks if they have a god cape & which one.
 	 * @param player the player.
-	 * @param if invy check only.
+	 * @param invyOnly if invy check only.
 	 * @return {@code GodCape} the cape.
 	 */
 	public static GodType getCape(Player player, boolean invyOnly) {

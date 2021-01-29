@@ -92,7 +92,7 @@ public final class GrandExchangeClerk extends DialoguePlugin {
 			break;
 		case 11:
 			end();
-			player.getGrandExchange().open();
+			player.getPlayerGrandExchange().open();
 			break;
 		case 20:
 			npc("As you wish, sir.");
@@ -100,7 +100,7 @@ public final class GrandExchangeClerk extends DialoguePlugin {
 			break;
 		case 21:
 			end();
-			player.getGrandExchange().openCollectionBox();
+			player.getPlayerGrandExchange().openCollectionBox();
 			break;
 		case 30:
 			npc("If that is your wish.");
@@ -108,7 +108,7 @@ public final class GrandExchangeClerk extends DialoguePlugin {
 			break;
 		case 31:
 			end();
-			player.getGrandExchange().openHistoryLog(player);
+			player.getPlayerGrandExchange().openHistoryLog(player);
 			break;
 		case 40:
 			npc("It would be my pleasure, sir.");
@@ -116,7 +116,7 @@ public final class GrandExchangeClerk extends DialoguePlugin {
 			break;
 		case 41:
 			end();
-			player.getGrandExchange().openItemSets();
+			player.getPlayerGrandExchange().openItemSets();
 			break;
 		case 50:
 			npc("If you say so, sir.");

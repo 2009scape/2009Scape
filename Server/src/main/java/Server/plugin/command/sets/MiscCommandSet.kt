@@ -22,7 +22,7 @@ import plugin.command.Command
 import plugin.command.CommandMapping
 import plugin.command.CommandSet
 import plugin.creditshop.CreditShop
-import plugin.ge.GEOfferDispatch
+import plugin.ge.OfferManager
 import plugin.ge.OfferState
 import plugin.skill.Skills
 import java.awt.Toolkit
@@ -124,14 +124,24 @@ class MiscCommandSet : CommandSet(Command.Privilege.ADMIN){
          */
         define("ge",Command.Privilege.STANDARD) { player, _ ->
             val offers = HashMap<Int,Int>()
-            for(offer in GEOfferDispatch.offerMapping.values){
-                if(offer.state != OfferState.PENDING) continue
-                val item = offer.itemId
-                val amount = offer.amount - offer.completedAmount
-                if(offers[item] == null){
-                    offers[item] = amount
-                } else {
-                    offers[item] = offers[item]!!.plus(amount)
+            for (offerIDs in OfferManager.OFFERS_BY_ITEMID) {
+                var totalOffered = 0
+                for (offer in offerIDs.value) {
+                    if (offer.offerState != OfferState.PENDING && offer.sell) {
+                        totalOffered += offer.amountLeft
+                    }
+                }
+                if (totalOffered != 0) {
+                    offers[offerIDs.key] = totalOffered
+                }
+            }
+            for (offerIDs in OfferManager.BOT_OFFERS) {
+                if (offerIDs.value > 0) {
+                    if (offers[offerIDs.key] == null) {
+                        offers[offerIDs.key] = offerIDs.value
+                    } else {
+                        offers[offerIDs.key] = offers[offerIDs.key]!! + offerIDs.value
+                    }
                 }
             }
             for (i in 0..310) {

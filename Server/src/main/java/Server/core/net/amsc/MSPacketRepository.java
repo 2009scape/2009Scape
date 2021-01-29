@@ -32,8 +32,7 @@ public final class MSPacketRepository {
 	/**
 	 * Handles a player info update.
 	 *
-	 * @param parser the player.
-	 */
+     */
 	public static void sendInfoUpdate(Player player) {
 		IoBuffer buffer = new IoBuffer(14, PacketHeader.BYTE);
 		buffer.putString(player.getName());

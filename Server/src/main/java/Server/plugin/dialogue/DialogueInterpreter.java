@@ -424,7 +424,6 @@ public final class DialogueInterpreter {
 
     /**
      * Send dialogues based on the amount of specified messages.
-     * @param npcId The npc id.
      * @param expression The entity's facial expression.
      * @param messages The messages.
      * @param hide the continue.
@@ -438,7 +437,6 @@ public final class DialogueInterpreter {
 
     /**
      * Send dialogues based on the amount of specified messages.
-     * @param npcId The npc id.
      * @param expression The entity's facial expression.
      * @param messages The messages.
      * @param hide the continue.
@@ -452,7 +450,6 @@ public final class DialogueInterpreter {
 
     /**
      * Send dialogues based on the amount of specified messages.
-     * @param entity The entity.
      * @param expression The entity's facial expression.
      * @param messages The messages.
      * @return The chatbox component.

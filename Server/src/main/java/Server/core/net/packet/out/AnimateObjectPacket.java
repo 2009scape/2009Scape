@@ -18,7 +18,6 @@ public class AnimateObjectPacket implements OutgoingPacket<AnimateObjectContext>
 	/**
 	 * Writes the packet.
 	 * @param buffer The buffer.
-	 * @param item The item.
 	 */
 	public static IoBuffer write(IoBuffer buffer, Animation animation) {
 		GameObject object = animation.getObject();

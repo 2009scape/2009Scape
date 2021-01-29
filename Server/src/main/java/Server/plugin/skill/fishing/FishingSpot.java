@@ -48,7 +48,6 @@ public enum FishingSpot {
 	/**
 	 * Constructs a new {@code FishingSpot} {@code Object}.
 	 * @param ids The NPC ids.
-	 * @param option The fishing option.
 	 */
 	private FishingSpot(int[] ids, FishingOption... options) {
 		this.ids = ids;

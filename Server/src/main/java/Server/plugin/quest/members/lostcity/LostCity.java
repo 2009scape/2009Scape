@@ -32,8 +32,7 @@ public class LostCity extends Quest {
 
 	/**
 	 * Constructs a new {@code LostCity} {@code Object}.
-	 * @param player The player to construct the class for.
-	 */
+     */
 	public LostCity() {
 		super("Lost City", 83, 82, 3, 147, 0, 1, 6);
 	}

@@ -34,7 +34,6 @@ public enum FruitTrees {
 
 	/**
 	 * Constructs a new {@code FarmingNodes} {@code Object}.
-	 * @param node the node.
 	 */
 	FruitTrees(final FarmingNode allotment) {
 		this.node = allotment;

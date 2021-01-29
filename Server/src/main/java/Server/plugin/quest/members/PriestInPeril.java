@@ -16,8 +16,7 @@ public class PriestInPeril extends Quest {
 
 	/**
 	 * Constructs a new {@code PriestInPeril} {@code Object}.
-	 * @param player The player to construct the class for.
-	 */
+     */
 	public PriestInPeril() {
 		super("Priest in Peril", 99, 98, 1, 302, 0, 1, 100);
 	}

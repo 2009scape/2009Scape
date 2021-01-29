@@ -14,8 +14,7 @@ public class VampireSlayer extends Quest {
 
 	/**
 	 * Constructs a new {@code VampireSlayer} {@code Object}.
-	 * @param player The player to construct the class for.
-	 */
+     */
 	public VampireSlayer() {
 		super("Vampire Slayer", 30, 29, 3, 178, 0, 1, 3);
 	}

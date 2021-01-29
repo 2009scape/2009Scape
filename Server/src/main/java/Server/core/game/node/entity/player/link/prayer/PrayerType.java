@@ -293,8 +293,7 @@ public enum PrayerType {
 
 	/**
 	 * Method used to iconify the player.
-	 * @param active the active list.
-	 */
+     */
 	public boolean iconify(final Player player, final int icon) {
 		if (icon == -1) {
 			return false;
@@ -328,7 +327,6 @@ public enum PrayerType {
 
 	/**
 	 * Method used to get the icon value.
-	 * @param active the list prayers active.
 	 * @return the icon.
 	 */
 	public int getIcon(final Player player, final PrayerType type) {

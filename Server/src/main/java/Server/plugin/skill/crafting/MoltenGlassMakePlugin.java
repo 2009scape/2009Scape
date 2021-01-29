@@ -80,8 +80,7 @@ public final class MoltenGlassMakePlugin extends UseWithHandler {
 		 * Constructs a new {@code MoltenGlassPulse} {@code Object}.
 		 * @param player the player.
 		 * @param node the node.
-		 * @param amount the amount.
-		 */
+         */
 		public MoltenGlassPulse(Player player, Item node) {
 			super(player, node);
 		}

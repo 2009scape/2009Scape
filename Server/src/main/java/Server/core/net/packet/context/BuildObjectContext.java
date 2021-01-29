@@ -24,7 +24,7 @@ public final class BuildObjectContext implements Context {
 	/**
 	 * Constructs a new {@code BuildObjectContext} {@code Object}.
 	 * @param player The player
-	 * @param gameObjects The list of game objects to send.
+	 * @param gameObject the game object to send.
 	 */
 	public BuildObjectContext(Player player, GameObject gameObject) {
 		this.player = player;

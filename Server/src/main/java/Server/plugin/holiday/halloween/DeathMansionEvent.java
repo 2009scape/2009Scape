@@ -789,7 +789,7 @@ public class DeathMansionEvent extends HolidayEvent {
 
 		/**
 		 * Constructs a new {@code GrimItem} {@code Object}
-		 * @param objectId the object id.
+		 * @param objectIds the object ids.
 		 * @param item the item.
 		 * @param foundText the found text.
 		 * @param returnText the returning text.

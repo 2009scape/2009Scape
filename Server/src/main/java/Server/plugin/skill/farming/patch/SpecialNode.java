@@ -62,8 +62,7 @@ public enum SpecialNode {
 
 	/**
 	 * Constructs a new {@code FarmingNodes} {@code Object}.
-	 * @param node the node.
-	 */
+     */
 	SpecialNode(final FarmingNode allotment) {
 		this.node = allotment;
 	}

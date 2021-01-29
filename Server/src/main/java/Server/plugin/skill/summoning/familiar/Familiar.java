@@ -115,7 +115,6 @@ public abstract class Familiar extends NPC implements Plugin<Object> {
 	 * Constructs a new {@code Familiar} {@code Object}.
 	 * @param owner The owner.
 	 * @param id The NPC id.
-	 * @param location The location.
 	 * @param ticks The ticks left.
 	 * @param pouchId The pouch.
 	 * @param specialCost The special move cost.
@@ -136,7 +135,6 @@ public abstract class Familiar extends NPC implements Plugin<Object> {
 	 * Constructs a new {@code Familiar} {@code Object}.
 	 * @param owner The owner.
 	 * @param id The NPC id.
-	 * @param location The location.
 	 * @param ticks The ticks left.
 	 * @param pouchId The pouch.
 	 * @param specialCost The special move cost.

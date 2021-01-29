@@ -318,7 +318,7 @@ public class GodBookPlugin extends OptionHandler {
 
 	/**
 	 * Gets the number name.
-	 * @param the integer to check.
+	 * @param i the integer to check.
 	 * @return the number name.
 	 */
 	private String getNumberName(int i) {

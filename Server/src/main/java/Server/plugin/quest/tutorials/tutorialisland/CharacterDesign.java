@@ -160,8 +160,6 @@ public final class CharacterDesign {
 
 	/**
 	 * Handles the buttons.
-	 * @param opcode the opcode.
-	 * @param button the button.
 	 */
 	public static boolean handleButtons(Player player, int buttonId) {
 		switch (buttonId) {
@@ -303,7 +301,7 @@ public final class CharacterDesign {
 	/**
 	 * Confirms the character screen.
 	 * @param player The player.
-	 * @param If we should close the interface.
+	 * @param close If we should close the interface.
 	 */
 	private static void confirm(Player player, boolean close) {
 		if (close) {

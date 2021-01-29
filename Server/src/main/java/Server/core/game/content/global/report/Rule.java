@@ -24,7 +24,6 @@ public enum Rule {
 
 	/**
 	 * Represents if the rule is relative to the sequences that has happend.
-	 * @param player the <b>Player</b>.
 	 * @return {@code True} if so.
 	 */
 	public boolean canRequest(Player target) {

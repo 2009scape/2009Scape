@@ -40,7 +40,6 @@ public enum GodBook {
 	 * @param book the book.
 	 * @param damagedBook the damged book.
 	 * @param name the name of the book.
-	 * @param blessItem the item.
 	 * @param pages the pages.
 	 */
 	private GodBook(String name, Item book, Item damagedBook, Item[] blessedItems, Item... pages) {

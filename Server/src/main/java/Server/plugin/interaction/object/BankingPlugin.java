@@ -87,7 +87,7 @@ public final class BankingPlugin extends OptionHandler {
                     checkAchievements(player);
                     return true;
                 case "collect":
-                    player.getGrandExchange().openCollectionBox();
+                    player.getPlayerGrandExchange().openCollectionBox();
                     return true;
                 case "deposit":
                     openDepositBox(player);
@@ -169,7 +169,7 @@ public final class BankingPlugin extends OptionHandler {
                 return true;
             }
             interpreter.sendDialogues(id, FacialExpression.HALF_GUILTY, "Good day, How may I help you?");
-            for (GrandExchangeOffer o : player.getGrandExchange().getOffers()) {
+            for (GrandExchangeOffer o : player.getPlayerGrandExchange().getOffers()) {
                 if (o != null && (o.getWithdraw()[0] != null || o.getWithdraw()[1] != null)) {
                     stage = -1;
                     break;
@@ -572,7 +572,7 @@ public final class BankingPlugin extends OptionHandler {
                 player.getBank().open();
                 checkAchievements(player);
             } else {
-                player.getGrandExchange().openCollectionBox();
+                player.getPlayerGrandExchange().openCollectionBox();
             }
             return true;
         }

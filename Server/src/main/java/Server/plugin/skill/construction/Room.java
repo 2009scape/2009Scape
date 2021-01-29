@@ -122,10 +122,7 @@ public final class Room {
 	 * Loads all the decorations.
 	 * @param housePlane The plane.
 	 * @param chunk The chunk used in the dynamic region.
-	 * @param buildingMode If building mode is enabled.
-	 * @param style The housing style (for windows)
-	 * @param doors The door placement information.
-	 */
+     */
 	public void loadDecorations(int housePlane, BuildRegionChunk chunk, HouseManager house) {
 		for (int i = 0; i < hotspots.length; i++) {
 			Hotspot spot = hotspots[i];

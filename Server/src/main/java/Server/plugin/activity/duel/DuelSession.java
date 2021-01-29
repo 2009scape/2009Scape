@@ -742,7 +742,6 @@ public final class DuelSession extends ComponentPlugin {
 
 	/**
 	 * Resets the accept state.
-	 * @param player the player.
 	 */
 	public void resetAccept() {
 		setAcceptState(getAcceptState() < 3 ? 0 : 4);
@@ -763,7 +762,6 @@ public final class DuelSession extends ComponentPlugin {
 	/**
 	 * Updates the tool tip message.
 	 * @param player the player.
-	 * @param child the child.
 	 * @param message the message.
 	 */
 	private void updateToolTip(Player player, String message) {

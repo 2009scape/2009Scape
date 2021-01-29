@@ -132,7 +132,7 @@ object GameWorld {
      * @throws Throwable When an exception occurs.
      */
     @Throws(Throwable::class)
-    fun prompt(run: Boolean, directory: String?) = GlobalScope.launch {
+    fun prompt(run: Boolean, directory: String?){
         log("Prompting ${settings?.name} Game World...")
         Cache.init(ServerConstants.CACHE_PATH)
         ServerStore.init(ServerConstants.STORE_PATH)
@@ -157,11 +157,9 @@ object GameWorld {
         if (run) {
             SystemManager.flag(if (settings?.isDevMode == true) SystemState.PRIVATE else SystemState.ACTIVE)
         }
+        ObjectDefinition.getDefinitions().values.forEach(Consumer { obj: ObjectDefinition -> obj.examine })
         System.gc()
         log("185")
-        launch {
-            ObjectDefinition.getDefinitions().values.forEach(Consumer { obj: ObjectDefinition -> obj.examine })
-        }
         log("188")
     }
 

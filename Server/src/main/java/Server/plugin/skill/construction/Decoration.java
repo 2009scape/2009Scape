@@ -1180,7 +1180,6 @@ public enum Decoration {
 	/**
 	 * Gets the decoration on the given location.
 	 * @param player The player.
-	 * @param l The location.
 	 * @return The decoration.
 	 */
 	public static Decoration getDecoration(Player player, GameObject object) {

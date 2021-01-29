@@ -101,7 +101,6 @@ public final class AnimalMagnetism extends Quest {
 
 	/**
 	 * Constructs a new {@code AnimalMagnetism} {@code Object}.
-	 * @param player the player.
 	 */
 	public AnimalMagnetism() {
 		super("Animal Magnetism", 33, 32, 1);

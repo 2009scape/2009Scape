@@ -1,6 +1,5 @@
 package core.net.packet.context;
 
-import plugin.ge.GrandExchangeOffer;
 import core.game.node.entity.player.Player;
 import core.net.packet.Context;
 
@@ -15,32 +14,39 @@ public class GrandExchangeContext implements Context {
 	 */
 	private final Player player;
 
-	/**
-	 * The offer to update.
-	 */
-	private final GrandExchangeOffer offer;
+	public final byte idx;
+	public final byte state;
+	public final short itemID;
+	public final boolean isSell;
+	public final int value;
+	public final int amt;
+	public final int completedAmt;
+	public final int totalCoinsExchanged;
 
 	/**
 	 * Constructs a new {@code GrandExchangeContext} {@code Object}.
 	 * @param player The player.
-	 * @param offer The grand exchange offer to update.
+	 * @param state
+	 * @param itemID
+	 * @param value
+	 * @param amt
+	 * @param completedAmt
+	 * @param totalCoinsExchanged
 	 */
-	public GrandExchangeContext(Player player, GrandExchangeOffer offer) {
+	public GrandExchangeContext(Player player, byte idx, byte state, short itemID, boolean isSell, int value, int amt, int completedAmt, int totalCoinsExchanged) {
 		this.player = player;
-		this.offer = offer;
+		this.idx = idx;
+		this.state = state;
+		this.itemID = itemID;
+		this.isSell = isSell;
+		this.value = value;
+		this.amt = amt;
+		this.completedAmt = completedAmt;
+		this.totalCoinsExchanged = totalCoinsExchanged;
 	}
 
 	@Override
 	public Player getPlayer() {
 		return player;
 	}
-
-	/**
-	 * Gets the offer.
-	 * @return The offer.
-	 */
-	public GrandExchangeOffer getOffer() {
-		return offer;
-	}
-
 }

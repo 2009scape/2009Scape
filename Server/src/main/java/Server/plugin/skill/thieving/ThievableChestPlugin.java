@@ -95,7 +95,6 @@ public final class ThievableChestPlugin extends OptionHandler {
 
 		/**
 		 * Constructs a new {@code Chest} {@code Object}.
-		 * @param objectId the object id.
 		 * @param level the level.
 		 * @param experience the experience.
 		 * @param rewards the rewards.

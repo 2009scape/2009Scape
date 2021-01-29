@@ -13,7 +13,7 @@ public class GrandExchangePacket implements IncomingPacket {
 	@Override
 	public void decode(Player player, int opcode, IoBuffer buffer) {
 		int itemId = buffer.getShort();
-		player.getGrandExchange().constructBuy(itemId);
+		player.getPlayerGrandExchange().constructBuy(itemId);
 		player.getInterfaceManager().closeChatbox();
 	}
 

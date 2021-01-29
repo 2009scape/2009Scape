@@ -51,7 +51,6 @@ public final class LunarTeleportPlugin extends MagicSpell {
 	 * Constructs a new {@code LunarTeleportPlugin} {@code Object}.
 	 * @param level the level.
 	 * @param experience the experience.
-	 * @param animation the animation.
 	 * @param items the items.
 	 */
 	public LunarTeleportPlugin(final int level, final double experience, final Location location, boolean group, final Item... items) {

@@ -21,8 +21,7 @@ public class TheKnightsSword extends Quest {
 
 	/**
 	 * Constructs a new {@code TheKnightsSword} {@code Object}.
-	 * @param player The player.
-	 */
+     */
 	public TheKnightsSword() {
 		super("The Knight's Sword", 22, 21, 1, 122, 0, 1, 7);
 	}

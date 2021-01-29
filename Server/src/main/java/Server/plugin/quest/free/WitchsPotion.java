@@ -14,8 +14,7 @@ public class WitchsPotion extends Quest {
 
 	/**
 	 * Constructs a new {@code WitchsPotion} {@code Object}.
-	 * @param player The player to construct the class for.
-	 */
+     */
 	public WitchsPotion() {
 		super("Witch's Potion", 31, 30, 1, 67, 0, 1, 3);
 	}

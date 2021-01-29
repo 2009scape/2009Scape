@@ -63,7 +63,7 @@ public class Interaction {
 	 */
 	public void handle(final Player player, final Option option) {
 		try {
-			if (player.getLocks().isInteractionLocked()) {
+			if (player.getLocks().isInteractionLocked() || option == null) {
 				return;
 			}
 			player.debug("Received interaction request " + option.getName());
@@ -271,7 +271,6 @@ public class Interaction {
 
 	/**
 	 * Sets a new option.
-	 * @param index The option index.
 	 * @param option The option.
 	 */
 	public void set(Option option) {
@@ -281,7 +280,6 @@ public class Interaction {
 
 	/**
 	 * Removes an option.
-	 * @param index The index.
 	 * @return {@code True} if the option got removed, {@code false} if the
 	 * option wasn't set.
 	 */

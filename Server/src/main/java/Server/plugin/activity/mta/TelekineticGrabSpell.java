@@ -117,8 +117,6 @@ public final class TelekineticGrabSpell extends MagicSpell {
 	/**
 	 * Method used to get the grab pulse.
 	 * @param entity the entity.
-	 * @param item the item.
-	 * @param delay the delay.
 	 * @return the {@code Pulse}.
 	 */
 	public Pulse getGrabPulse(final Entity entity, final GroundItem ground) {

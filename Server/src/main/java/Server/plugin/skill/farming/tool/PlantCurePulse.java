@@ -34,8 +34,7 @@ public final class PlantCurePulse extends ToolAction {
 	 * Constructs a new {@code PlantCurePulse} {@code Object}.
 	 * @param player the player.
 	 * @param wrapper the wrapper.
-	 * @param delay the delay.
-	 */
+     */
 	public PlantCurePulse(final Player player, final PatchWrapper wrapper, final Item item) {
 		super(player, wrapper, item);
 	}

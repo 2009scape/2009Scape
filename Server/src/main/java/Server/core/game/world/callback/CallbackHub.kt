@@ -2,10 +2,10 @@ package core.game.world.callback
 
 import core.game.system.SystemLogger.error
 import core.game.world.map.zone.ZoneBuilder
-import plugin.ge.GEOfferDispatch
 import plugin.skill.farming.FarmingPulse
 import plugin.skill.hunter.ImpetuousImpulses
 import core.game.world.GameWorld
+import plugin.ge.OfferManager
 import plugin.skill.farming.pot.SeedlingPulse
 import java.util.ArrayList
 
@@ -18,7 +18,7 @@ object CallbackHub {
 
     fun call(): Boolean {
         calls.add(ZoneBuilder())
-        calls.add(GEOfferDispatch())
+        calls.add(OfferManager())
         calls.add(FarmingPulse())
         calls.add(ImpetuousImpulses())
         GameWorld.Pulser.submit(SeedlingPulse())

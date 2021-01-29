@@ -100,7 +100,6 @@ public class DisplayModelContext implements Context {
 	 * @param player The player reference.
 	 * @param type The model type.
 	 * @param nodeId The node id to display.
-	 * @param amount The amount.
 	 * @param interfaceId The interface id.
 	 * @param childId The child id.
 	 */

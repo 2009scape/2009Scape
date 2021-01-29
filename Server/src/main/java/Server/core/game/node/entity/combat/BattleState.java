@@ -142,7 +142,6 @@ public final class BattleState {
 	/**
 	 * Sets the estimated hit.
 	 * @param estimatedHit The estimated hit to set.
-	 * @param format If we should format the estimated hit.
 	 */
 	public void setEstimatedHit(int estimatedHit) {
 		this.estimatedHit = estimatedHit;

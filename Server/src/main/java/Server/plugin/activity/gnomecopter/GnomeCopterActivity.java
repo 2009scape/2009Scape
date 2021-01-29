@@ -148,7 +148,6 @@ public final class GnomeCopterActivity extends ActivityPlugin {
 	/**
 	 * Lands the gnomecopter.
 	 * @param player The player.
-	 * @param object The object.
 	 */
 	private void landGnomeCopter(final Player player) {
 		int index = 0;

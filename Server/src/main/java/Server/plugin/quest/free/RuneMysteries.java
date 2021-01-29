@@ -13,8 +13,7 @@ public class RuneMysteries extends Quest {
 
 	/**
 	 * Constructs a new {@code RuneMysteries} {@code Object}.
-	 * @param player The player to construct the class for.
-	 */
+     */
 	public RuneMysteries() {
 		super("Rune Mysteries", 27, 26, 1, 63, 0, 1, 6);
 	}

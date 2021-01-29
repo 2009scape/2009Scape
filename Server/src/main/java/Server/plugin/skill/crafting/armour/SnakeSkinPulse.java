@@ -36,7 +36,6 @@ public final class SnakeSkinPulse extends SkillPulse<Item> {
 	 * Constructs a new {@code HardCraftPulse} {@code Object}.
 	 * @param player the player.
 	 * @param node the node.
-	 * @param soft the soft.
 	 * @param amount the amount.
 	 */
 	public SnakeSkinPulse(Player player, Item node, int amount, SnakeSkin skin) {

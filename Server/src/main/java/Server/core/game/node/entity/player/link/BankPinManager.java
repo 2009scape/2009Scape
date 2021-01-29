@@ -245,9 +245,9 @@ public class BankPinManager implements SavingModule {
 				player.getBank().open();
 			}
 		} else if (buttonId == 3) {
-			player.getGrandExchange().openCollectionBox();
+			player.getPlayerGrandExchange().openCollectionBox();
 		} else if (buttonId == 4) {
-			player.getGrandExchange().open();
+			player.getPlayerGrandExchange().open();
 		}
 	}
 
@@ -491,7 +491,6 @@ public class BankPinManager implements SavingModule {
 
 	/**
 	 * Sets the pin.
-	 * @param args
 	 */
 	private void setPin() {
 		status = PinStatus.PENDING;
@@ -591,7 +590,7 @@ public class BankPinManager implements SavingModule {
 
 	/**
 	 * Sets the chaning pin.
-	 * @param changing the changing.
+	 * @param state the changing state.
 	 */
 	public void setChangingState(int state) {
 		this.changeState = state;

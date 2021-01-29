@@ -28,8 +28,7 @@ public class ItemMessageInstruction extends ScriptContext {
 
 	/**
 	 * Constructs a new {@code PlainMessageInstruction} {@code Object}.
-	 * @param messages the messages.
-	 */
+     */
 	public ItemMessageInstruction(int id, final String message) {
 		super("itemmessage");
 		super.setInstant(false);

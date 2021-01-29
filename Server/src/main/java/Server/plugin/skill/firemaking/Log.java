@@ -68,8 +68,7 @@ public enum Log {
 	 * @param life the life.
 	 * @param fireId the fire id.
 	 * @param xp the experience.
-	 * @param time the time.
-	 */
+     */
 	Log(int logId, int level, int life, int fireId, double xp) {
 		this.logId = logId;
 		this.level = level;

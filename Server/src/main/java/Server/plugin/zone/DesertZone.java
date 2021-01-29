@@ -82,7 +82,7 @@ public final class DesertZone extends MapZone implements Plugin<Object> {
 
     /**
      * Method used to evaporate the water vessils in the inventory.
-     * @param player the <code>Player</code>
+     * @param p the <code>Player</code>
      */
     public static void evaporate(Player p) {
         for (int i = 0; i < VESSILS.length; i++) {

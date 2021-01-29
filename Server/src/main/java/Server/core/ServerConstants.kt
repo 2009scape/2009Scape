@@ -3,6 +3,7 @@ package core
 import core.game.system.mysql.SQLManager
 import core.game.world.map.Location
 import core.tools.mysql.Database
+import core.tools.secondsToTicks
 import org.json.simple.JSONObject
 import java.io.File
 import java.math.BigInteger
@@ -95,6 +96,12 @@ class ServerConstants {
 
 		@JvmField
 		var BANK_SIZE: Int = 496
+
+		@JvmField
+		var GE_AUTOSAVE_FREQUENCY = secondsToTicks(3600) //1 hour
+
+		@JvmField
+		var GE_AUTOSTOCK_ENABLED = false
 
 		//location names for the ::to command.
 		val TELEPORT_DESTINATIONS = arrayOf(

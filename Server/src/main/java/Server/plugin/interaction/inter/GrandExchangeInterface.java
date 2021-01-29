@@ -5,11 +5,7 @@ import core.cache.def.impl.ItemDefinition;
 import core.game.component.Component;
 import core.game.component.ComponentDefinition;
 import core.game.component.ComponentPlugin;
-import plugin.ge.GEGuidePrice;
-import plugin.ge.GEItemSet;
-import plugin.ge.GrandExchange;
-import plugin.ge.GrandExchangeOffer;
-import plugin.ge.OfferState;
+import plugin.ge.*;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.link.RunScript;
 import core.game.node.entity.player.link.audio.Audio;
@@ -50,7 +46,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 	 */
 	@SuppressWarnings("deprecation")
 	private void setOfferAmount(Player player, GrandExchangeOffer offer, int amount) {
-		if (offer == null || amount < 0 || offer.getState() != OfferState.PENDING) {
+		if (offer == null || amount < 0 || offer.getOfferState() != OfferState.PENDING) {
 			return;
 		}
 		offer.setAmount(amount);
@@ -60,14 +56,13 @@ public class GrandExchangeInterface extends ComponentPlugin {
 	/**
 	 * Increments the opened grand exchange offer amount.
 	 * @param player The player.
-	 * @param amount The amount to increment.
 	 */
 	@SuppressWarnings("deprecation")
 	private void setOfferValue(Player player, GrandExchangeOffer offer, int value) {
-		if (offer == null || value < 1 || offer.getState() != OfferState.PENDING) {
+		if (offer == null || value < 1 || offer.getOfferState() != OfferState.PENDING) {
 			return;
 		}
-		if (value == offer.getEntry().getValue()) {
+		if (value == GrandExchangeDatabase.getDatabase().get(offer.getItemID()).getValue()) {
 			player.getAudioManager().send(new Audio(4043, 1, 1));
 		} else if (value > offer.getOfferedValue()) {
 			player.getAudioManager().send(new Audio(4041, 1, 1));
@@ -148,7 +143,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 			player.getPacketDispatch().sendMessage(item.getDefinition().getExamine());
 			return true;
 		case 155:
-			player.getGrandExchange().constructSale(item);
+			player.getPlayerGrandExchange().constructSale(item);
 			return true;
 		}
 		return false;
@@ -178,8 +173,8 @@ public class GrandExchangeInterface extends ComponentPlugin {
 			break;
 		}
 		GrandExchangeOffer offer;
-		if (index > -1 && (offer = player.getGrandExchange().getOffers()[index]) != null) {
-			player.getGrandExchange().withdraw(offer, slot >> 1);
+		if (index > -1 && (offer = player.getPlayerGrandExchange().getOffers()[index]) != null) {
+			player.getPlayerGrandExchange().withdraw(offer, slot >> 1);
 		}
 		return true;
 	}
@@ -258,8 +253,8 @@ public class GrandExchangeInterface extends ComponentPlugin {
 	 * @return {@code true} if the option got handled.
 	 */
 	public boolean handleMainInterface(final Player player, int opcode, int button, int slot, int itemId) {
-		final GrandExchangeOffer offer = player.getGrandExchange().getTemporaryOffer();
-		final GrandExchangeOffer opened = player.getGrandExchange().getOpenedOffer();
+		final GrandExchangeOffer offer = player.getPlayerGrandExchange().getTemporaryOffer();
+		final GrandExchangeOffer opened = player.getPlayerGrandExchange().getOpenedOffer();
 		int amount = offer == null ? 0 : offer.getAmount();
 		switch (button) {
 		case 209:
@@ -267,19 +262,20 @@ public class GrandExchangeInterface extends ComponentPlugin {
 			if (opened == null) {
 				return false;
 			}
-			player.getGrandExchange().withdraw(opened, (button - 209) >> 1);
+			player.getPlayerGrandExchange().withdraw(opened, (button - 209) >> 1);
 			return true;
 		case 190:
-			player.getGrandExchange().confirmOffer();
+			player.getPlayerGrandExchange().confirmOffer();
+			player.getPlayerGrandExchange().setTemporaryOffer(null);
 			return true;
 		case 194:
-			player.getGrandExchange().openSearch();
+			player.getPlayerGrandExchange().openSearch();
 			return true;
 		case 203:
 			if (opened == null) {
 				return false;
 			}
-			player.getGrandExchange().abort(opened.getIndex());
+			player.getPlayerGrandExchange().abort(opened.getIndex());
 			return true;
 		case 18:
 		case 34:
@@ -288,10 +284,10 @@ public class GrandExchangeInterface extends ComponentPlugin {
 		case 88:
 		case 107:
 			if (opcode == 205) {
-				player.getGrandExchange().abort((button - 18) >> 4);
+				player.getPlayerGrandExchange().abort((button - 18) >> 4);
 				return true;
 			}
-			player.getGrandExchange().view((button - 18) >> 4);
+			player.getPlayerGrandExchange().view((button - 18) >> 4);
 			return true;
 		case 30:
 		case 46:
@@ -299,7 +295,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 		case 81:
 		case 100:
 		case 119:
-			player.getGrandExchange().openBuy((button - 30) >> 4);
+			player.getPlayerGrandExchange().openBuy((button - 30) >> 4);
 			return true;
 		case 31:
 		case 47:
@@ -307,7 +303,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 		case 82:
 		case 101:
 		case 120:
-			player.getGrandExchange().openSell((button - 31) >> 4);
+			player.getPlayerGrandExchange().openSell((button - 31) >> 4);
 			return true;
 		case 157: // -1
 			setOfferAmount(player, offer, amount - 1);
@@ -316,17 +312,17 @@ public class GrandExchangeInterface extends ComponentPlugin {
 			setOfferAmount(player, offer, amount + 1);
 			return true;
 		case 162: // 1
-			setOfferAmount(player, offer, offer != null && offer.isSell() ? 1 : amount + 1);
+			setOfferAmount(player, offer, offer != null && offer.getSell() ? 1 : amount + 1);
 			return true;
 		case 164: // 10
-			setOfferAmount(player, offer, offer != null && offer.isSell() ? 10 : amount + 10);
+			setOfferAmount(player, offer, offer != null && offer.getSell() ? 10 : amount + 10);
 			return true;
 		case 166: // 100
-			setOfferAmount(player, offer, offer != null && offer.isSell() ? 100 : amount + 100);
+			setOfferAmount(player, offer, offer != null && offer.getSell() ? 100 : amount + 100);
 			return true;
 		case 168: // 1000 / sell all
-			if (offer != null && offer.isSell()) {
-				setOfferAmount(player, offer, GrandExchange.getInventoryAmount(player, offer.getItemId()));
+			if (offer != null && offer.getSell()) {
+				setOfferAmount(player, offer, PlayerGrandExchange.getInventoryAmount(player, offer.getItemID()));
 				return true;
 			}
 			setOfferAmount(player, offer, amount + 1000);
@@ -336,7 +332,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 				@Override
 				public boolean handle() {
 					if (player.getInterfaceManager().getChatbox().getId() == 389) {
-						player.getGrandExchange().openSearch();
+						player.getPlayerGrandExchange().openSearch();
 					}
 					setOfferAmount(player, offer, (int) value);
 					return true;
@@ -346,14 +342,14 @@ public class GrandExchangeInterface extends ComponentPlugin {
 			return false;
 		case 180:
 			if (offer != null) {
-				setOfferValue(player, offer, offer.getEntry().getValue());
+				setOfferValue(player, offer, GrandExchangeDatabase.getDatabase().get(offer.getItemID()).getValue());
 				return true;
 			}
 			return false;
 		case 177: // mid - 5% value
 		case 183: // mid + 5% value
 			if (offer != null) {
-				setOfferValue(player, offer, (int) (offer.getEntry().getValue() * (button == 177 ? 0.95 : 1.05)));
+				setOfferValue(player, offer, (int) (GrandExchangeDatabase.getDatabase().get(offer.getItemID()).getValue() * (button == 177 ? 0.95 : 1.05)));
 				return true;
 			}
 			return false;
@@ -373,7 +369,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 				@Override
 				public boolean handle() {
 					if (player.getInterfaceManager().getChatbox().getId() == 389) {
-						player.getGrandExchange().openSearch();
+						player.getPlayerGrandExchange().openSearch();
 					}
 					setOfferValue(player, offer, (int) value);
 					return true;
@@ -385,7 +381,7 @@ public class GrandExchangeInterface extends ComponentPlugin {
 			player.getInterfaceManager().close();
 			return true;
 		case 127:
-			player.getGrandExchange().setTemporaryOffer(null);
+			player.getPlayerGrandExchange().setTemporaryOffer(null);
 			player.getInterfaceManager().closeSingleTab();
 			player.getInterfaceManager().closeChatbox();
 			return true;

@@ -16,7 +16,7 @@ public final class ClearObject implements OutgoingPacket<BuildObjectContext> {
 	/**
 	 * Writes the packet.
 	 * @param buffer The buffer.
-	 * @param objects The objects.
+	 * @param object The object.
 	 */
 	public static IoBuffer write(IoBuffer buffer, GameObject object) {
 		Location l = object.getLocation();

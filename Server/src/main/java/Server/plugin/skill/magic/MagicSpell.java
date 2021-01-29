@@ -27,7 +27,6 @@ import java.util.List;
 /**
  * Represents a magic spell.
  * @author Emperor
- * @param <T> The node type to cast this spell on.
  */
 public abstract class MagicSpell implements Plugin<SpellType> {
 
@@ -100,7 +99,6 @@ public abstract class MagicSpell implements Plugin<SpellType> {
 	/**
 	 * Casts a spell.
 	 * @param p The player casting the spell.
-	 * @param spell The spell.
 	 * @param target The target.
 	 */
 	public static boolean castSpell(final Player p, SpellBook book, int spellId, Node target) {
@@ -152,9 +150,7 @@ public abstract class MagicSpell implements Plugin<SpellType> {
 	/**
 	 * Starts the effect of this spell (if any).
 	 * @param entity The entity.
-	 * @param victim The victim.
-	 * @param state The battle state.
-	 */
+     */
 	public abstract boolean cast(Entity entity, Node target);
 
 	/**
@@ -337,7 +333,7 @@ public abstract class MagicSpell implements Plugin<SpellType> {
 
 	/**
 	 * Sends the Audio packet for all players to hear (in a distance specified
-	 * by {@link MapDistance#Audio#getDistance()}).
+	 * by ).
 	 * @param entity The entity from where this Audio comes from.
 	 */
 	public void sendAudio(Entity entity) {
@@ -346,7 +342,7 @@ public abstract class MagicSpell implements Plugin<SpellType> {
 
 	/**
 	 * Sends the Audio packet for all players to hear (in a distance specified
-	 * by {@link MapDistance#Audio#getDistance()}).
+	 * by ).
 	 * @param entity The entity from where this Audio comes from.
 	 * @param audio The Audio to send.
 	 */

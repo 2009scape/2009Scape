@@ -72,7 +72,6 @@ public final class BarrowsCrypt {
 
 	/**
 	 * Constructs a new {@code BarrowsCrypt} {@code Object}.
-	 * @param name The name.
 	 * @param location The location to teleport to when entering the crypt.
 	 * @param exitLocation The location to teleport to when leaving the crypt.
 	 */

@@ -1,12 +1,11 @@
 package core.game.system;
 
 import core.ServerConstants;
-import core.cache.def.impl.ItemDefinition;
-import plugin.ge.GEOfferDispatch;
 import plugin.ge.GrandExchangeDatabase;
 import core.game.node.entity.player.Player;
 import core.game.node.entity.player.info.login.PlayerParser;
 import core.game.world.repository.Repository;
+import plugin.ge.OfferManager;
 import plugin.interaction.object.dmc.DMCHandler;
 
 import java.io.File;
@@ -42,6 +41,7 @@ public final class SystemTermination {
 				}
 			}
 			save(ServerConstants.DATA_PATH);
+			System.exit(0);
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
@@ -59,7 +59,7 @@ public final class SystemTermination {
 			file.mkdir();
 		}
 		GrandExchangeDatabase.save();
-		GEOfferDispatch.dump();
+		OfferManager.save();
 		SystemLogger.log("[SystemTerminator] Saved Grand Exchange databases!");
 		Repository.getDisconnectionQueue().clear();
 		for (Iterator<Player> it = Repository.getPlayers().iterator(); it.hasNext();) {

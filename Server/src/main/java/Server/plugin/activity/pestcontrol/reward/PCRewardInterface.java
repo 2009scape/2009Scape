@@ -188,7 +188,6 @@ public final class PCRewardInterface extends ComponentPlugin {
 	 * Method used to calculate the experience the player can recieve in this
 	 * skill.
 	 * @param player the player.
-	 * @param skill the skill.
 	 * @return the experience as an integer.
 	 */
 	public static double calculateExperience(final Player player, final int skillId) {
@@ -434,8 +433,7 @@ public final class PCRewardInterface extends ComponentPlugin {
 		/**
 		 * Constructs a new {@code PCRewardInterface} {@code Object}.
 		 * @param childs the childs.
-		 * @param buttons the buttons.
-		 */
+         */
 		Reward(final int[] childs) {
 			this.childs = childs;
 		}
@@ -454,7 +452,6 @@ public final class PCRewardInterface extends ComponentPlugin {
 		 * Constructs a new {@code PCRewardInterfacce} {@code Object}.
 		 * @param name the name.
 		 * @param points the points.
-		 * @param rewards the rewards.
 		 * @param childs the childs.
 		 */
 		Reward(String name, int points, final Item[] reward, final int[] childs) {
@@ -589,7 +586,6 @@ public final class PCRewardInterface extends ComponentPlugin {
 
 		/**
 		 * Gets the amt of required points.
-		 * @param options the options.
 		 * @return the points.
 		 */
 		public int getPoints(final int option) {

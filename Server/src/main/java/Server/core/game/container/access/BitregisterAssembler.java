@@ -48,7 +48,6 @@ public final class BitregisterAssembler {
 	
 	/**
 	 * Constructs a new {@code BitregisterAssembler} {@code Object}.
-	 * @param permissions The permissions.
 	 */
 	public BitregisterAssembler(String[] options) {
 		enableOptions(options);

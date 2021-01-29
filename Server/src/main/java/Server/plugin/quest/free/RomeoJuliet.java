@@ -13,8 +13,7 @@ public class RomeoJuliet extends Quest {
 
 	/**
 	 * Constructs a new {@code RomeoJuliet} {@code Object}.
-	 * @param player The player to construct the class for.
-	 */
+     */
 	public RomeoJuliet() {
 		super("Romeo & Juliet", 26, 25, 5, 144, 0, 1, 100);
 	}

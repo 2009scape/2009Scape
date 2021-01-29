@@ -206,8 +206,6 @@ public final class QuizMasterEvent extends AntiMacroEvent {
 
 	/**
 	 * Gets the transformed location.
-	 * @param xOff the xOff.
-	 * @param yOff the yOff.
 	 * @return the location.
 	 */
 	/*

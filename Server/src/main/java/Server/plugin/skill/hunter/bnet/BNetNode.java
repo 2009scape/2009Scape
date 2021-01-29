@@ -55,7 +55,6 @@ public class BNetNode {
 	 * @param levels the levels.
 	 * @param experience the experience.
 	 * @param graphics the graphics.
-	 * @param rewards the rewards.
 	 */
 	public BNetNode(int[] npcs, int[] levels, double[] experience, Graphics[] graphics, Item reward) {
 		this.npcs = npcs;

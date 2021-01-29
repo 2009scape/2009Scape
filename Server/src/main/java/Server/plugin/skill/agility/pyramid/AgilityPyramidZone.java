@@ -27,9 +27,6 @@ public final class AgilityPyramidZone extends MapZone implements Plugin<Object> 
 
 	/**
 	 * Constructs a new {@code AgilityPyramid} {@code Object}.
-	 * @param name the name.
-	 * @param overlappable if overlappable.
-	 * @param restrictions the restrictions.
 	 */
 	public AgilityPyramidZone() {
 		super("agility pyramid", true);

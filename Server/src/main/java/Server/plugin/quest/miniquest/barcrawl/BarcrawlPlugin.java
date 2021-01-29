@@ -263,7 +263,6 @@ public final class BarcrawlPlugin extends OptionHandler {
 		 * Constructs a new {@code BarcrawlType} {@code Object}.
 		 * @param npc the npc.
 		 * @param coins the coins.
-		 * @param dialogue the dialogue.
 		 */
 		private BarcrawlType(int npc, int coins, final String name, String[] first, String[] second) {
 			this.npc = new int[] { npc };
@@ -290,7 +289,6 @@ public final class BarcrawlPlugin extends OptionHandler {
 		 * Constructs a new {@code BarcrawlType} {@code Object}.
 		 * @param npc the npc.
 		 * @param coins the coins.
-		 * @param dialogue the dialogue.
 		 */
 		private BarcrawlType(int npc, int coins, String name, String[] first) {
 			this.npc = new int[] { npc };

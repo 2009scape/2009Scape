@@ -12,7 +12,7 @@ import plugin.ge.GrandExchangeOffer
 class AIRepository {
     companion object {
         val groundItems = HashMap<Player,ArrayList<GroundItem>>()
-        val GEOffers = HashMap<Player,GrandExchangeOffer>()
+        val GEOffers = HashMap<Player, GrandExchangeOffer>()
 
         @JvmStatic
         val PulseRepository = ArrayList<GeneralBotCreator.BotScriptPulse>()
@@ -35,7 +35,7 @@ class AIRepository {
 
         @JvmStatic
         fun addOffer(player: Player, offer: GrandExchangeOffer){
-            GEOffers.put(player,offer)
+            GEOffers[player] = offer
         }
 
         @JvmStatic

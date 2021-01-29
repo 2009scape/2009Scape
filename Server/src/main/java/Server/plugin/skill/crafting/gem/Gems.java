@@ -61,7 +61,6 @@ public enum Gems {
 
 	/**
 	 * Gets the gem by the id.
-	 * @param id the id.
 	 * @return the gem.
 	 */
 	public static Gems forId(final Item item) {

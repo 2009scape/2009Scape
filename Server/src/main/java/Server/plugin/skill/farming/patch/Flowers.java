@@ -22,7 +22,6 @@ public enum Flowers {
 
 	/**
 	 * Constructs a new {@code FarmingNodes} {@code Object}.
-	 * @param node the node.
 	 */
 	Flowers(final FarmingNode allotment) {
 		this.node = allotment;

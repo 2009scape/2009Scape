@@ -109,8 +109,7 @@ public final class TouristTrap extends Quest {
 
 	/**
 	 * Constructs a new {@code TouristTrap} {@code Object}.
-	 * @param player The player to construct the class for.
-	 */
+     */
 	public TouristTrap() {
 		super(NAME, 123, 122, 2, 197, 0, 1, 30);
 	}
@@ -252,8 +251,7 @@ public final class TouristTrap extends Quest {
 	/**
 	 * Adds a config value pertaining to this quest.
 	 * @param player the player.
-	 * @param the value.
-	 */
+     */
 	public static void addConfig(final Player player, final int value) {
 		player.getConfigManager().set(CONFIG_ID, value, true);
 	}

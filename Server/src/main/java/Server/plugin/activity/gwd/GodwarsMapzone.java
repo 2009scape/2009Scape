@@ -260,7 +260,6 @@ public final class GodwarsMapzone extends MapZone implements Plugin<Object> {
 	/**
 	 * Handles the climbing of a rope.
 	 * @param player The player.
-	 * @param object The rope object.
 	 */
 	private void handleRopeClimb(final Player player, final Location destination) {
 		player.lock(2);
