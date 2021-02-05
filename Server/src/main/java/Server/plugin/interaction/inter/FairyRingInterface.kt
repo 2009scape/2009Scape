@@ -160,6 +160,8 @@ enum class FairyRing(val tile: Location?, val tip: String = "", val childId: Int
     BKP(Location.create(2385, 3035, 0), "Feldip Hills: South of Castle Wars", 38),
     BKQ(Location.create(3041, 4532, 0), "Other realms: Enchanted Valley", 39),
     BKR(Location.create(3469, 3431, 0), "Morytania: Mort Myre, south of Canifis", 40),
+    BLP(Location.create(2437, 5126, 0), "Dungeons: TzHaar area", 42),
+    BLQ(null, "Yu'biusk", 43),//Location.create(2229, 4244, 1)
     BLR(Location.create(2740, 3351, 0), "Kandarin: Legends' Guild", 44),
     CIP(null, "Islands: Miscellania", 46), //Location.create(2513, 3884, 0)
     CIQ(Location.create(2528, 3127, 0), "Kandarin: North-west of Yanille", 47),
