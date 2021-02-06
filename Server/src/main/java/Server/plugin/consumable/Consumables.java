@@ -82,9 +82,9 @@ public enum Consumables {
 	SUMMER_PIE(new HalfableFood(new int[] {7218, 7220, 2313}, new MultiEffect(new HealingEffect(11), new SkillEffect(Skills.AGILITY, 5, 0), new EnergyEffect(10)))),
 
 	/** Stews */
-	STEW(new Food(new int[] {1923, 2003}, new HealingEffect(11))),
-	SPICY_STEW(new Food(new int[] {7479, 2003}, new HealingEffect(11))),
-	CURRY(new Food(new int[] {2011, 2003}, new HealingEffect(19))),
+	STEW(new Food(new int[] {2003, 1923}, new HealingEffect(11))),
+	SPICY_STEW(new Food(new int[] {7479, 1923}, new HealingEffect(11))),
+	CURRY(new Food(new int[] {2011, 1923}, new HealingEffect(19))),
 
 	/** Pizzas */
 	PLAIN_PIZZA(new HalfableFood(new int[] {2289, 2291}, new HealingEffect(7))),
@@ -287,6 +287,7 @@ public enum Consumables {
 	TCHIKI_MONKEY_NUTS(new Food(new int[] {7573}, new HealingEffect(5), "You eat the Tchiki monkey nuts. They taste nutty.")),
 	TCHIKI_MONKEY_PASTE(new Food(new int[] {7575}, new HealingEffect(5), "You eat the Tchiki monkey nut paste. It sticks to the roof of your mouth.")),
 	OOMLIE_WRAP(new Food(new int[] {Items.COOKED_OOMLIE_WRAP_2343}, new MultiEffect(new HealingEffect(14), new AchievementEffect(DiaryType.KARAMJA, 2, 2)))),
+	ROE(new Food(new int[]{11324}, new HealingEffect(3))),
 
 	/** Special Events */
 	PUMPKIN(new Food(new int[] {1959}, new HealingEffect(14))),

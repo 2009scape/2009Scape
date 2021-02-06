@@ -89,6 +89,10 @@ public class StandardCookingPulse extends Pulse {
         if (amount < 1) {
             return false;
         }
+
+        if(!object.isActive()){
+            return false;
+        }
         return true;
     }
 
