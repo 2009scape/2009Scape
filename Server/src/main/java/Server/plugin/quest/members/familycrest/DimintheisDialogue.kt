@@ -6,6 +6,7 @@ import core.game.node.entity.player.Player
 import core.plugin.InitializablePlugin
 import plugin.dialogue.DialoguePlugin
 import plugin.dialogue.FacialExpression
+import plugin.skill.Skills
 
 
 @InitializablePlugin
@@ -25,7 +26,8 @@ class DimintheisDialogue(player: Player? = null): DialoguePlugin(player) {
         when(qstage) {
             0 -> npc("Hello. My name is Dimintheis, ",
                     "of the noble family Fitzharmon.").also { stage = 1 }
-            10 ->npc("Yo, Angelo").also { stage = 1000}
+            10 -> player("Where did you say I could find your son Caleb again?").also { stage = 3000 }
+
         }
         return true
     }
@@ -105,10 +107,20 @@ class DimintheisDialogue(player: Player? = null): DialoguePlugin(player) {
                 1 -> npc("I thank you greatly adventurer!").also { stage++}
                 2 -> npc("I realise it was a lot to ask of a stranger.").also { stage  = 1000}
             }
-            2013 -> npc ("If you find Caleb, or my other sons... please... " ,
-                    "let them know their father still loves them...").also { stage = 1000 }.also{player.questRepository.getQuest("Family Crest").start(player)}.also{ player.questRepository.syncronizeTab(player) }
+            2013 -> if(player.skills.getLevel(Skills.CRAFTING) >= 40 &&
+                    player.skills.getLevel(Skills.SMITHING) >= 40 &&
+                    player.skills.getLevel(Skills.MINING) >= 40 &&
+                    player.skills.getLevel(Skills.MAGIC) >= 59) {
+                npc("If you find Caleb, or my other sons... please... ",
+                        "let them know their father still loves them...").also { stage = 1000 }.also { player.questRepository.getQuest("Family Crest").start(player) }.also { player.questRepository.syncronizeTab(player) }
+            }else{
+                npc("But im sorry, but you cannot help me right now").also{stage = 1000}
+            }
 
-
+            3000 ->npc("The only thing I have heard of my son Caleb ",
+                    "is that he is trying to earn his fortune as a great fish chef.").also{stage++}
+            3001 ->npc("I believe he is staying with a friend ",
+                    "who lives just outside the west gates of Varrock.").also{stage = 1000}
 
             1000 -> end()
 
@@ -117,15 +129,7 @@ class DimintheisDialogue(player: Player? = null): DialoguePlugin(player) {
 
         return true;
     }
-    fun OpeningDialogueHandler(){
 
-
-    }
-
-    fun QuestDialogueHandler(){
-
-
-    }
     override fun getIds(): IntArray {
         return intArrayOf(8171)
     }

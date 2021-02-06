@@ -34,8 +34,9 @@ class FamilyCrest: Quest("Family Crest", 59, 58, 1) {
             line(player, "!!40 Mining??", line++, player.skills.getLevel(Skills.MINING) >= 40)
             line(player, "!!59 Magic??", line++, player.skills.getLevel(Skills.MAGIC) >= 59)
         }
-        if(stage ==10){
-
+        if(stage == 10){
+            line(player, "I have agreed to restore Dimintheis' family crest to him.", line++)
+            line(player, "He has asked me to find his son Caleb for him", line++)
         }
     }
 
