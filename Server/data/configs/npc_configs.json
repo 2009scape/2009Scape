@@ -74533,4 +74533,21 @@
     "range_animation": "422",
     "safespot": "0"
   }
+      {
+    "id": "668",
+    "name": "Jonathon",
+    "examine": "A well-dressed nobleman.",
+    "lifepoints": "12",
+    "attack_level": "1",
+    "strength_level": "1",
+    "defence_level": "1",
+    "range_level": "1",
+    "attack_speed": "5",
+    "melee_animation": "422",
+    "defence_animation": "404",
+    "death_animation": "9055",
+    "magic_animation": "422",
+    "range_animation": "422",
+    "safespot": "0"
+  }
 ]

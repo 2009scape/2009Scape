@@ -9,7 +9,7 @@ import plugin.dialogue.DialoguePlugin
 @InitializablePlugin
 class AvanDialogue (player: Player? = null): DialoguePlugin(player) {
 
-    val CREST_PIECE_AVAN: Item = Item(780)
+    val CREST_PIECE_AVAN: Item = Item(779)
 
     override fun newInstance(player: Player?): DialoguePlugin {
         return AvanDialogue(player);
@@ -27,6 +27,9 @@ class AvanDialogue (player: Player? = null): DialoguePlugin(player) {
                 14 -> npc("So how are you doing getting me my perfect gold jewelry?").also{stage = 100}
                 15 -> npc("So how are you doing getting me my perfect gold jewelry?").also{stage = 200}
                 16 -> player("Where did you say I could find your brother Johnathon again?").also{stage = 304}
+                17 ->  npc("Greetings again, adventurer. How are you doing on retrieving the crest pieces?").also{stage = 400}
+                18 ->  npc("Greetings again, adventurer. How are you doing on retrieving the crest pieces?").also{stage = 400}
+                19 ->  npc("Greetings again, adventurer. How are you doing on retrieving the crest pieces?").also{stage = 400}
             }
         }
 
@@ -142,7 +145,27 @@ class AvanDialogue (player: Player? = null): DialoguePlugin(player) {
 
             305 -> player("Thanks Avan.").also { stage = 1000 }
 
+            400 -> player("I am still working on it.").also{stage++}
 
+            401 -> npc("I hope you succeed for my father's sake.").also{
+                if(player.inventory.containItems(CREST_PIECE_AVAN.id) || player.bank.containItems(CREST_PIECE_AVAN.id)){
+                    stage = 1000
+                }
+                else{
+                    stage++
+                }
+            }
+
+            402 -> player("I have lost the fragment you gave me...").also{stage++}
+            403 -> npc("I have a confession myself adventurer... " ,
+                    "I did not fully trust you with the actual part ",
+                    "of my family's crest before, and gave you a " ,
+                    "worthless replica before... ").also{stage++}
+            404-> npc("In hindsight, it seems I was right. " ,
+                    "I will give you the real piece now, ",
+                    "but please try not to lose it; " ,
+                    "it is a priceless family heirloom.").also{stage = 1000
+                    player.inventory.add(CREST_PIECE_AVAN)}
             1000 -> end()
         }
 

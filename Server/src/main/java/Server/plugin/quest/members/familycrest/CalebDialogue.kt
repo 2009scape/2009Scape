@@ -5,14 +5,11 @@ import core.game.node.entity.player.Player
 import core.game.node.item.Item
 import core.plugin.InitializablePlugin
 import plugin.dialogue.DialoguePlugin
-import plugin.dialogue.FacialExpression
-import plugin.skill.Skills
-import core.tools.Items
 
 @InitializablePlugin
 class CalebDialogue (player: Player? = null): DialoguePlugin(player) {
 
-    val CREST_PIECE: Item = Item(779)
+    val CREST_PIECE: Item = Item(780)
 
     override fun newInstance(player: Player?): DialoguePlugin {
         return CalebDialogue(player)
@@ -35,6 +32,12 @@ class CalebDialogue (player: Player? = null): DialoguePlugin(player) {
             14 -> player("Where did you say I could find Avan again?").also{stage = 400}
 
             15 -> player("Where did you say I could find Avan again?").also{stage = 400}
+            16 -> player("How are you doing getting the crest pieces?").also{stage = 402}
+            17 -> player("How are you doing getting the crest pieces?").also{stage = 402}
+            18 -> player("How are you doing getting the crest pieces?").also{stage = 402}
+            19 -> player("How are you doing getting the crest pieces?").also{stage = 402}
+
+
         }
         return true
     }
