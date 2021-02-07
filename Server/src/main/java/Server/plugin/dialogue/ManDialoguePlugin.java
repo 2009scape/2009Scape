@@ -20,7 +20,7 @@ public class ManDialoguePlugin extends DialoguePlugin {
     /**
      * The NPC ids that use this dialogue plugin.
      */
-    private static final int[] NPC_IDS = {1, 2, 3, 4, 5, 6, 16, 24, 25, 170, 351, 352, 353, 354, 359, 360, 361, 362, 363, 663, 726, 727, 728, 729, 730, 1086, 2675, 2776, 3224, 3225, 3227, 5923, 5924,};
+    private static final int[] NPC_IDS = {1, 2, 3, 4, 5, 6, 16, 24, 25, 170, 351, 352, 353, 354, 359, 360, 361, 362, 363, 726, 727, 728, 729, 730, 1086, 2675, 2776, 3224, 3225, 3227, 5923, 5924,};
 
     public ManDialoguePlugin() {
     }

@@ -29,6 +29,10 @@ class CalebDialogue (player: Player? = null): DialoguePlugin(player) {
             11 -> npc("How is the fish collecting going?").also{stage = 300}
 
             12 -> player("Where did you say I could find Avan again?").also{stage = 400}
+
+            13 -> player("Where did you say I could find Avan again?").also{stage = 400}
+
+            14 -> player("Where did you say I could find Avan again?").also{stage = 400}
         }
         return true
     }

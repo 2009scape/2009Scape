@@ -29,6 +29,8 @@ class DimintheisDialogue(player: Player? = null): DialoguePlugin(player) {
             10 -> player("Where did you say I could find your son Caleb again?").also { stage = 3000 }
             11 -> player("Where did you say I could find your son Caleb again?").also { stage = 3000 }
             12 -> npc("Have you found my crest yet?").also{stage = 4000}
+            13 -> npc("Have you found my crest yet?").also{stage = 4000}
+            14 -> npc("Have you found my crest yet?").also{stage = 4000}
         }
         return true
     }
