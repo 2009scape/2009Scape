@@ -1,5 +1,6 @@
 package plugin.skill.crafting;
 
+import plugin.quest.members.familycrest.PerfectJewelryHandler;
 import plugin.skill.crafting.jewellery.JewelleryCrafting;
 import core.game.interaction.NodeUsageEvent;
 import core.game.interaction.UseWithHandler;
@@ -23,7 +24,7 @@ public final class JewelleryCraftPlugin extends UseWithHandler {
 	 * Constructs a new {@code JewelleryCraftPlugin} {@code Object}.
 	 */
 	public JewelleryCraftPlugin() {
-		super(2357);
+		super(2357, 2365);
 	}
 
 	@Override
@@ -36,6 +37,11 @@ public final class JewelleryCraftPlugin extends UseWithHandler {
 
 	@Override
 	public boolean handle(final NodeUsageEvent event) {
+		//handles perfect jewelry
+		if(event.getUsedItem().getId() == 2365){
+			event.getPlayer().getDialogueInterpreter().open("perfect-jewelry");
+			return true;
+		}
 		JewelleryCrafting.open(event.getPlayer());
 		return true;
 	}

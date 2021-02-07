@@ -16,7 +16,8 @@ public enum Bar {
 	GOLD(40, 22.5, new Item(2357, 1), new Item(444, 1)), 
 	MITHRIL(50, 30, new Item(2359, 1), new Item(447, 1), new Item(453, 4)), 
 	ADAMANT(70, 37.5, new Item(2361, 1), new Item(449, 1), new Item(453, 6)), 
-	RUNITE(85, 50, new Item(2363, 1), new Item(451, 1), new Item(453, 8));
+	RUNITE(85, 50, new Item(2363, 1), new Item(451, 1), new Item(453, 8)),
+	PERFECT_GOLD(40, 22.5,  new Item(2365, 1) ,new Item(446, 1));
 
 	/**
 	 * The ore required.

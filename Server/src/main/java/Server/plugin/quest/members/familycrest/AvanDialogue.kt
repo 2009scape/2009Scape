@@ -8,6 +8,9 @@ import plugin.dialogue.DialoguePlugin
 
 @InitializablePlugin
 class AvanDialogue (player: Player? = null): DialoguePlugin(player) {
+
+    val CREST_PIECE_AVAN: Item = Item(780)
+
     override fun newInstance(player: Player?): DialoguePlugin {
         return AvanDialogue(player);
     }
@@ -23,6 +26,7 @@ class AvanDialogue (player: Player? = null): DialoguePlugin(player) {
                 13 -> options("Why are you lurking around a scorpion pit?", "I'm looking for a man... his name is Avan Fitzharmon.").also{stage = 2}
                 14 -> npc("So how are you doing getting me my perfect gold jewelry?").also{stage = 100}
                 15 -> npc("So how are you doing getting me my perfect gold jewelry?").also{stage = 200}
+                16 -> player("Where did you say I could find your brother Johnathon again?").also{stage = 304}
             }
         }
 
@@ -99,12 +103,46 @@ class AvanDialogue (player: Player? = null): DialoguePlugin(player) {
                     "some time back, but unfortunately for me," ,
                     " he has returned to his mountain home, which I cannot find.").also { stage = 1000}
 
-            200 -> player("I have spoken to Boot the dwarf about the location " ,
-                    "of 'perfect gold', " ,
-                    "but haven't managed to make you your jewelry yet.").also { stage++ }
+            200 -> if(!player.inventory.containItems(774,773)){
+                        npc("I have spoken to Boot the dwarf about the location " ,
+                                      "of 'perfect gold', " ,
+                                       "but haven't managed to make you your jewelry yet.").also { stage++ }
+            }
+            else{
+                player("I have the ring and necklace right here.")
+                stage = 300;
+            }
             201 -> npc("Well, I won't entrust you with my piece of the crest " ,
                     "until you have brought me a necklace of perfect gold " ,
                     "with a red precious stone, and a perfect gold ring to match.").also { stage = 1000 }
+
+            300 -> sendDialogue("You hand Avan the perfect gold ring and necklace.").also{
+                player.questRepository.getQuest("Family Crest").setStage(player, 16)
+                player.inventory.remove(Item(774), Item(773))
+                player.inventory.add(CREST_PIECE_AVAN)
+                stage++
+            }
+            301 -> npc("These... these are exquisite! E" ,
+                    "XACTLY what I was searching for all of this time! " ,
+                    "Please, take my crest fragment!").also { stage++ }
+
+            302 -> npc("Now, I suppose you will be wanting to find my brother " ,
+                    "Johnathon who is in possession of the " ,
+                    "final piece of the family's crest?").also { stage++ }
+
+            303 -> player("That's correct.").also{stage++}
+
+            304 -> npc("Well, the last I heard of my brother Johnathon," ,
+                    " he was studying the magical arts, " ,
+                    "and trying to hunt some demon or other out in The Wilderness.").also{stage++}
+            304 -> npc("Unsurprisingly, I do not believe he is doing a particularly good job of things, ",
+                    "and spends most of his time recovering from his injuries " ,
+                    "in some tavern or other near the eastern edge of The Wilderness. " ,
+                    "You'll probably find him still there.").also{stage++}
+
+            305 -> player("Thanks Avan.").also { stage = 1000 }
+
+
             1000 -> end()
         }
 

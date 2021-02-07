@@ -141,6 +141,25 @@ public final class FurnaceOptionPlugin extends OptionHandler {
 				event.getPlayer().sendMessage("You need to have completed the easy tasks in the Varrock Diary in order to use this.");
 				return true;
 			}
+
+			//Handles perfect gold smelting
+			if(event.getUsedItem().getId() == 446){
+				event.getPlayer().animate(ANIMATION);
+				GameWorld.getPulser().submit(new Pulse(2, event.getPlayer()) {
+					@Override
+					public boolean pulse() {
+						event.getPlayer().getInventory().remove(Bar.PERFECT_GOLD.getOres());
+						event.getPlayer().getInventory().add(Bar.PERFECT_GOLD.getProduct());
+						event.getPlayer().getSkills().addExperience(Skills.SMITHING, Bar.PERFECT_GOLD.getExperience());
+						return true;
+					}
+
+				});
+
+
+				return true;
+			}
+
 			show(event.getPlayer());
 			return true;
 		}
