@@ -22,6 +22,7 @@ class AvanDialogue (player: Player? = null): DialoguePlugin(player) {
             when(qstage){
                 13 -> options("Why are you lurking around a scorpion pit?", "I'm looking for a man... his name is Avan Fitzharmon.").also{stage = 2}
                 14 -> npc("So how are you doing getting me my perfect gold jewelry?").also{stage = 100}
+                15 -> npc("So how are you doing getting me my perfect gold jewelry?").also{stage = 200}
             }
         }
 
@@ -97,6 +98,13 @@ class AvanDialogue (player: Player? = null): DialoguePlugin(player) {
             102 -> npc("when I heard talk of a dwarven expert on gold named Boot " ,
                     "some time back, but unfortunately for me," ,
                     " he has returned to his mountain home, which I cannot find.").also { stage = 1000}
+
+            200 -> player("I have spoken to Boot the dwarf about the location " ,
+                    "of 'perfect gold', " ,
+                    "but haven't managed to make you your jewelry yet.").also { stage++ }
+            201 -> npc("Well, I won't entrust you with my piece of the crest " ,
+                    "until you have brought me a necklace of perfect gold " ,
+                    "with a red precious stone, and a perfect gold ring to match.").also { stage = 1000 }
             1000 -> end()
         }
 

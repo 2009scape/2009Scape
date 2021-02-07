@@ -275,7 +275,7 @@ public enum MiningNode{
         COAL_49(42035,452,   (byte) 8),
 
         //Gold
-        GOLD_ORE_0( 2099, 452,   (byte) 9),
+        GOLD_ORE_0( 2099, 452,   (byte) 20),
         GOLD_ORE_1( 2098, 450,   (byte) 9),
         GOLD_ORE_2( 2611, 21298, (byte) 9),
         GOLD_ORE_3( 2610, 21297, (byte) 9),
@@ -568,6 +568,13 @@ public enum MiningNode{
                     rate = 0.6;
                     reward = 12630;
                     level = 46;
+                    break;
+                case 20:
+                        respawnRate = 100 | 200 << 16;
+                        experience = 65.0;
+                        rate = 0.6;
+                        reward = 446;
+                        level = 40;
             }
         }
         private static HashMap<Integer, MiningNode> NODE_MAP = new HashMap<>();

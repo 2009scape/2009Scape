@@ -33,6 +33,8 @@ class CalebDialogue (player: Player? = null): DialoguePlugin(player) {
             13 -> player("Where did you say I could find Avan again?").also{stage = 400}
 
             14 -> player("Where did you say I could find Avan again?").also{stage = 400}
+
+            15 -> player("Where did you say I could find Avan again?").also{stage = 400}
         }
         return true
     }

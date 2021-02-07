@@ -31,6 +31,7 @@ class DimintheisDialogue(player: Player? = null): DialoguePlugin(player) {
             12 -> npc("Have you found my crest yet?").also{stage = 4000}
             13 -> npc("Have you found my crest yet?").also{stage = 4000}
             14 -> npc("Have you found my crest yet?").also{stage = 4000}
+            15 -> npc("Have you found my crest yet?").also{stage = 4000}
         }
         return true
     }
