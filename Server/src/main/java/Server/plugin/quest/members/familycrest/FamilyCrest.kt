@@ -43,6 +43,7 @@ class FamilyCrest: Quest("Family Crest", 59, 58, 1) {
 
 
         }
+
     }
 
     override fun getConfig(player: Player?, stage: Int): IntArray {
