@@ -38,6 +38,11 @@ class FamilyCrest: Quest("Family Crest", 59, 58, 1) {
             line(player, "I have agreed to restore Dimintheis' family crest to him.", line++)
             line(player, "He has asked me to find his son Caleb for him", line++)
         }
+
+        if(stage == 11){
+
+
+        }
     }
 
     override fun getConfig(player: Player?, stage: Int): IntArray {

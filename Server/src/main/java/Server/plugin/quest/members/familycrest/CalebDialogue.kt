@@ -2,13 +2,17 @@
 
 import core.game.node.entity.npc.NPC
 import core.game.node.entity.player.Player
+import core.game.node.item.Item
 import core.plugin.InitializablePlugin
 import plugin.dialogue.DialoguePlugin
 import plugin.dialogue.FacialExpression
 import plugin.skill.Skills
+import core.tools.Items
 
 @InitializablePlugin
 class CalebDialogue (player: Player? = null): DialoguePlugin(player) {
+
+    val CREST_PIECE: Item = Item(779)
 
     override fun newInstance(player: Player?): DialoguePlugin {
         return CalebDialogue(player)
@@ -21,6 +25,10 @@ class CalebDialogue (player: Player? = null): DialoguePlugin(player) {
             0-> npc("Who are you? What are you after?").also{stage = 2}
 
             10 -> npc("Who are you? What are you after?").also{stage = 1}
+
+            11 -> npc("How is the fish collecting going?").also{stage = 300}
+
+            12 -> player("Where did you say I could find Avan again?").also{stage = 400}
         }
         return true
     }
@@ -94,13 +102,92 @@ class CalebDialogue (player: Player? = null): DialoguePlugin(player) {
             206 -> options("Ok, I will get those.", "Why don't you just give me the crest?").also{stage++}
 
             207 -> when(buttonId){
-                1 -> npc("You will? It would help me a lot!").also{stage = 1000}
+                1 -> npc("You will? It would help me a lot!").also{stage = 1000}.also{
+                    player.questRepository.getQuest("Family Crest").setStage(player, 11)
+                }
+
                 2 -> npc("It's a valuable family heirloom. " ,
                         "I think the least you can do is prove you're worthy " ,
                         "of it before I hand it over.").also{stage = 206}
 
             }
+
+            300 -> if(player.inventory.containItems(315, 329, 361, 365, 373)){
+                player("Got them all with me.").also{stage++}
+
+            }else{
+                player("I didn't manage to get them all yet...").also{stage = 320}
+            }
+
+            301 -> sendDialogue("You exchange the fish for Caleb's piece of the crest.").also{stage++}.also{
+                player.inventory.remove(Item(315),Item(329), Item(361), Item(365), Item(373))
+                player.inventory.add(CREST_PIECE)
+                player.questRepository.getQuest("Family Crest").setStage(player, 12);
+            }
+
+            302 -> options("Uh... what happened to the rest of it?" , "Thank you very much!").also{stage++}
+            303 -> when(buttonId){
+                1 -> npc("Well... my brothers and I had a slight disagreement about it... ",
+                        "we all wanted to be the heir of my father's lands ",
+                        "and we each ended up with a piece of the crest.").also{stage++}
+                2 -> npc("You're welcome.").also{stage = 1000}
+            }
+
+            304 -> npc("None of us wanted to give up our rights to our brothers," ,
+                    "so we didn't want to give up our pieces of the crest, " ,
+                    "but none of us wanted to face our father " ,
+                    "by returning to him with an incomplete crest.").also{stage ++}
+
+            305 -> npc("We each went our separate ways many years past,",
+                    "none of us seeing our father or willing to",
+                    "give up our fragments.").also{stage++}
+
+            306 -> player("So do you know where I could find any of your brothers?").also{stage++}
+
+            307 -> npc("Well, we haven't really kept in touch... ",
+                    "what with the dispute over the crest and all...",
+                    "I did hear from my brother Avan a while ago though..").also{stage++}
+
+            308 -> npc("He said he was on some kind of search for treasure,",
+                    "or gold, or something out near Al Kharid somewhere. ",
+                    "Avan always had expensive tastes, so you might try",
+                    "asking the gem trader for his wherebouts.").also{stage ++}
+
+            309 -> npc("Be warned though. Avan is quite greedy, ",
+                    "and you may find he is not prepared to hand over " ,
+                    "his crest piece to you as easily as I have.").also{stage = 1000}
+
+            320 -> npc("Remember, I want the following cooked fish: ",
+                    "Swordfish, Bass, Tuna, Salmon and Shrimp.").also{stage = 1000}
+
+            400 -> npc("Last I heard he was on some " ,
+                    "stupid treasure hunt out in the desert somewhere. " ,
+                    "Your best bet is asking around there.").also{stage++}
+            401 -> npc("How are you doing getting the crest pieces?").also{stage++}
+
+            402 -> player("I am still working on it.").also{stage++}
+
+            403 ->
+                if(player.inventory.containItems(779) || player.bank.containItems(779)) {
+                        npc("Then why are you wasting your time here?")
+                        stage = 1000;
+                    }
+                else{
+                        player("I have lost the fragment that you gave me...")
+                        stage++;
+                    }
+            404 -> npc("I have some good news for you then. " ,
+                    "One of my customers found this on their travels " ,
+                    "and recognised it as mine and returned it to me here.").also{stage++}
+            405 -> sendDialogue("Caleb hands over his crest piece to you again.").also{
+                stage++
+                player.inventory.add(CREST_PIECE)
+            }
+            406 -> npc("I suggest you be less careless in the future. ",
+                    "The crest is extremely valuable, and utterly irreplacable.").also{stage = 1000}
+
             1000 -> end()
+
         }
         return true
     }

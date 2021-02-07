@@ -27,7 +27,8 @@ class DimintheisDialogue(player: Player? = null): DialoguePlugin(player) {
             0 -> npc("Hello. My name is Dimintheis, ",
                     "of the noble family Fitzharmon.").also { stage = 1 }
             10 -> player("Where did you say I could find your son Caleb again?").also { stage = 3000 }
-
+            11 -> player("Where did you say I could find your son Caleb again?").also { stage = 3000 }
+            12 -> npc("Have you found my crest yet?").also{stage = 4000}
         }
         return true
     }
@@ -121,6 +122,8 @@ class DimintheisDialogue(player: Player? = null): DialoguePlugin(player) {
                     "is that he is trying to earn his fortune as a great fish chef.").also{stage++}
             3001 ->npc("I believe he is staying with a friend ",
                     "who lives just outside the west gates of Varrock.").also{stage = 1000}
+
+            4000 -> player("I'm still looking for it").also{stage = 1000}
 
             1000 -> end()
 
