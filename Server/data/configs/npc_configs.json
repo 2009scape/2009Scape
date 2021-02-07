@@ -17941,6 +17941,7 @@
     "magic_animation": "1516",
     "range_animation": "1516",
     "slayer_exp": "105",
+    "aggressive": "true",	
     "clue_level": "2",
     "safespot": null
   },
@@ -20486,6 +20487,7 @@
     "magic_animation": "1516",
     "range_animation": "1516",
     "slayer_exp": "105",
+    "aggressive": "true",	
     "clue_level": "2",
     "safespot": null
   },
@@ -37964,6 +37966,7 @@
     "weakness": "6",
     "slayer_task": "17",
     "slayer_exp": "55",
+    "aggressive": "true",	
     "clue_level": "2",
     "safespot": null
   },
@@ -37988,6 +37991,7 @@
     "weakness": "6",
     "slayer_task": "17",
     "slayer_exp": "55",
+    "aggressive": "true",	
     "clue_level": "2",
     "safespot": null
   },
@@ -38012,6 +38016,7 @@
     "weakness": "6",
     "slayer_task": "17",
     "slayer_exp": "55",
+    "aggressive": "true",	
     "clue_level": "2",
     "safespot": null
   },
@@ -38036,6 +38041,7 @@
     "weakness": "6",
     "slayer_task": "17",
     "slayer_exp": "55",
+    "aggressive": "true",	
     "clue_level": "2",
     "safespot": null
   },
@@ -38060,6 +38066,7 @@
     "weakness": "6",
     "slayer_task": "17",
     "slayer_exp": "55",
+    "aggressive": "true",	
     "clue_level": "2",
     "safespot": null
   },
@@ -57633,6 +57640,7 @@
     "magic_animation": "1516",
     "range_animation": "1516",
     "slayer_exp": "105",
+    "aggressive": "true",	
     "clue_level": "2",
     "safespot": null
   },
