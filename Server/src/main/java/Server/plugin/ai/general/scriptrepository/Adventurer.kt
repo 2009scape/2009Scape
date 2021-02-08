@@ -6,6 +6,7 @@ import core.game.node.Node
 import core.game.node.`object`.GameObject
 import core.game.node.entity.combat.CombatStyle
 import core.game.node.entity.combat.CombatSwingHandler
+import core.game.node.entity.skill.Skills
 import core.game.node.item.Item
 import core.game.system.task.Pulse
 import core.game.world.GameWorld
@@ -13,13 +14,16 @@ import core.game.world.map.Location
 import core.game.world.map.RegionManager
 import core.game.world.map.zone.ZoneBorders
 import core.game.world.repository.Repository.sendNews
+import core.game.world.update.flag.*
 import core.game.world.update.flag.context.Animation
+import core.game.world.update.flag.context.ChatMessage
 import core.game.world.update.flag.context.Graphics
+import core.game.world.update.flag.player.ChatFlag
 import core.tools.RandomFunction
 import plugin.ai.AIPlayer
 import plugin.ai.AIRepository
 import plugin.ai.pvmbots.CombatBotAssembler
-import core.game.node.entity.skill.Skills
+import plugin.ai.pvp.PVPAIPActions
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import kotlin.random.Random
@@ -348,7 +352,7 @@ class Adventurer(val style: CombatStyle): Script() {
                 "Anyway, I should get going ${real.username}",
                 "I can’t help you there ${real.username}",
                 "I agree 100% ${real.username}"
-                )
+        )
         val current = LocalDateTime.now()
 
         //val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")
@@ -491,7 +495,7 @@ class Adventurer(val style: CombatStyle): Script() {
                 "New Years Eve party orrr?",
                 "We should do something for New Years eve today ${real.username}!",
                 "Happy New Years Eve ${real.username}",
-                "1 More day left in 2020 thank god",
+                "1 More day left in 2021 thank god",
                 "What's your New Years resolution ${real.username}?"
         )
 
@@ -499,8 +503,8 @@ class Adventurer(val style: CombatStyle): Script() {
                 "Happy New Years ${real.username}!!!",
                 "It's New Years Day ${real.username}!",
                 "HAPPY NEW YEAR ${real.username}!!!",
-                "2021 let's fucking gooooooo",
-                "What are your goals for 2021 ${real.username}?"
+                "2022 let's fucking gooooooo",
+                "What are your goals for 2022 ${real.username}?"
         )
 
         when {
@@ -508,64 +512,90 @@ class Adventurer(val style: CombatStyle): Script() {
             //Celebrates lead up to Christmas!
             until in 2..24 -> {
                 if (Random.nextBoolean()){
-                    bot.sendChat(Leading2Christmas.random())
+                    val chat = Leading2Christmas.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                 }else{
-                    bot.sendChat(dialogue.random())
+                    val chat = dialogue.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                 }
             }
 
             //Celebrates Christmas Day!
-            formatted.contentEquals("2020-12-25") -> {
+            formatted.contentEquals("2021-12-25") -> {
                 if (celebrate in 0..60){
                     if (celebrate == 0) sendNews("MERRY CHRISTMAS HEAD TO THE GE!!!")
-                    bot.sendChat(Christmas.random()).also { println() }
+                    val chat = Christmas.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                     if (Random.nextBoolean()) scriptAPI.teleport(ge) else scriptAPI.teleport(ge2)
                     city = if (Random.nextBoolean()) ge else ge2
                     if (Random.nextBoolean()) state = State.EXPLORE else bot.animator.animate(Animation.create(11044), Graphics.create(1973))
                 }
                 else if (Random.nextBoolean()) {
-                    bot.sendChat(Christmas.random())
+                    val chat = Christmas.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                 }else{
-                    bot.sendChat(dialogue.random())
+                    val chat = dialogue.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                 }
             }
 
             //Celebrates Christmas Eve
-            formatted.contentEquals("2020-12-24") -> {
+            formatted.contentEquals("2021-12-24") -> {
                 if (Random.nextBoolean()) {
-                    bot.sendChat(ChristmasEve.random())
+                    val chat = ChristmasEve.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                 }else{
-                    bot.sendChat(dialogue.random())
+                    val chat = dialogue.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                 }
             }
 
             //Celebrates New Years Eve
-            formatted.contentEquals("2020-12-31") -> {
+            formatted.contentEquals("2021-12-31") -> {
                 if (Random.nextBoolean()) {
-                    bot.sendChat(NewYearsEve.random())
+                    val chat = NewYearsEve.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                 }else{
-                    bot.sendChat(dialogue.random())
+                    val chat = dialogue.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                 }
             }
 
             //Celebrates New Years Day!!!
-            formatted.contentEquals("2021-01-01") -> {
+            formatted.contentEquals("2022-01-01") -> {
                 if (celebrate in 0..60){
                     if (celebrate == 0) sendNews("HAPPY NEW YEAR HEAD TO THE GE!!!")
-                    bot.sendChat(NewYears.random())
+                    val chat = NewYears.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                     if (Random.nextBoolean()) scriptAPI.teleport(ge) else scriptAPI.teleport(ge2)
                     city = if (Random.nextBoolean()) ge else ge2
                     state = State.EXPLORE
                 }
                 else if (Random.nextBoolean()) {
-                    bot.sendChat(NewYears.random())
+                    val chat = NewYears.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                 }else{
-                    bot.sendChat(dialogue.random())
+                    val chat = dialogue.random()
+                    bot.sendChat(chat)
+                    bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
                 }
             }
 
             else -> {
-                bot.sendChat(dialogue.random())
+                val chat = dialogue.random()
+                bot.sendChat(chat)
+                bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
             }
         }
     }
@@ -679,7 +709,7 @@ class Adventurer(val style: CombatStyle): Script() {
         state = State.START
     }
 
-    //Adventure Bots v2.0.0 -Holidays Edition-
+    //Adventure Bots v3.0.1 -Chat Edition-
     override fun tick() {
         ticks++
         if (ticks++ >= 800) {
@@ -738,12 +768,13 @@ class Adventurer(val style: CombatStyle): Script() {
                     state = State.TELEPORTING
                 }
 
-                if (RandomFunction.random(1000) <= 10) {
-                    val nearbyPlayers = RegionManager.getLocalPlayers(bot)
-                    if (nearbyPlayers.isNotEmpty()) {
-                        ticks = 0
-                        dialogue()
-                    }
+                var chance = if (city == ge || city == ge2) 5000 else 2500
+                if (RandomFunction.random(chance) <= 10) {
+                        val nearbyPlayers = RegionManager.getLocalPlayers(bot)
+                        if (nearbyPlayers.isNotEmpty()) {
+                            ticks = 0
+                            dialogue()
+                        }
                 }
 
                 if (RandomFunction.random(1000) <= 150) {
@@ -767,13 +798,13 @@ class Adventurer(val style: CombatStyle): Script() {
                     }
                 }
 
-                if ((city == ge || city == ge2) && RandomFunction.random(1000) >= 999){
+                if ((city == ge || city == ge2) && RandomFunction.random(1000) >= 999) {
                     ticks = 0
                     city = getRandomCity()
                     state = State.TELEPORTING
                 }
 
-                if (city == ge || city == ge2){
+                if (city == ge || city == ge2) {
                     return
                 }
 
@@ -813,7 +844,7 @@ class Adventurer(val style: CombatStyle): Script() {
                         scriptAPI.sellAllOnGeAdv()
                         return
                     }
-                }else if (ge && sold){
+                } else if (ge && sold) {
                     ge = false
                     city = getRandomCity()
                     state = State.TELEPORTING
@@ -849,9 +880,7 @@ class Adventurer(val style: CombatStyle): Script() {
                 }
                 val bank: GameObject? = scriptAPI.getNearestNode("Bank booth", true) as GameObject?
                 if (badedge.insideBorder(bot) || bot.location == badedge2 || bot.location == badedge3 || bot.location == badedge4) {
-                    if(bot is AIPlayer) {
-                        (bot as AIPlayer).randomWalk(5, 5)
-                    }
+                    bot.randomWalk(5, 5)
                 }
                 if (bank == null) state = State.EXPLORE
                 class BankingPulse : MovementPulse(bot, bank, DestinationFlag.OBJECT) {
