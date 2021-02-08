@@ -27,6 +27,13 @@ class MistagDialogue (player: Player? = null) : DialoguePlugin(player){
             stage = 100
             return true
         }
+        if(player.questRepository.getQuest("Death to the Dorgeshuun").hasRequirements(player)){
+            npc("It is good to see you again! The Dorgeshuun Council " ,
+                    "would like to ask a favour of you, if you are interested.")
+            stage = 200
+            return true
+        }
+
         if(!player.getAttribute("mistag-greeted",false)){
             npc("Who...who are you? How did you get in here?")
             stage = -100
@@ -42,6 +49,7 @@ class MistagDialogue (player: Player? = null) : DialoguePlugin(player){
             stage = 150
             return true
         }
+
         npc("Hello friend!").also { stage = 0 }
         return true
     }
@@ -84,6 +92,18 @@ class MistagDialogue (player: Player? = null) : DialoguePlugin(player){
                 ActivityManager.start(player,"Lost Tribe Cutscene",false)
             }
 
+            200 -> options("What is this favour?",
+                    "Can I sell you some ore?",
+                    "Why do the Dorgeshuun live underground?",
+                    "What happened to your arm?",
+                    "Can you show me the way out of the mines?").also{stage++}
+            201-> when(buttonId){
+                1 -> stage = 1000
+                2 -> stage = 1000
+                3 -> stage = 1000
+                4 -> stage = 1000
+                5 -> stage = 20
+            }
             1000 -> end()
 
         }
