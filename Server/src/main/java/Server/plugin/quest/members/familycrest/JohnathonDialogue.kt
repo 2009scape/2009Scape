@@ -17,6 +17,13 @@ class JohnathonDialogue(player: Player? = null): DialoguePlugin(player)  {
     override fun open(vararg args: Any?): Boolean {
         npc = (args[0] as NPC).getShownNPC(player)
         val qstage = player?.questRepository?.getStage("Family Crest") ?: -1
+
+        if(qstage == 100){
+            options("Can you enchant these gauntlets for me?", "Nevermind")
+            stage = 6000
+            return true
+        }
+
         if(qstage < 16){
             npc("I dont feel so well... maybe we can talk later")
             stage = 1000;
@@ -82,11 +89,41 @@ class JohnathonDialogue(player: Player? = null): DialoguePlugin(player)  {
                 4 -> npc("My thanks for the assistance adventure").also{stage = 1000}
 
             }
+            6000 -> when(buttonId){
+                1-> if(DoMissingGuantletCheck() != -1){
+                    var gauntletID = DoMissingGuantletCheck()
+
+                    if(gauntletID == 777){
+                        npc("You already have the Chaos Guantlets.")
+                        stage = 1000
+                    }
+                    else{
+                        npc("Here you go")
+                        player.inventory.remove(Item(gauntletID))
+                        player.inventory.add(Item(777))
+                        stage = 1000
+                    }
+                }
+                else{
+                    npc("You do not have the guantlets with you in your inventory")
+                    stage = 1000
+                }
+                2-> player("Never mind").also{stage = 1000}
+            }
 
 
             1000 -> end()
         }
         return true;
+    }
+
+    private fun DoMissingGuantletCheck(): Int{
+        var itemsToCheck = listOf(775, 776, 777, 778)
+        for(item in itemsToCheck){
+            if(player.inventory.containItems(item))
+                return item
+        }
+        return -1
     }
 
     override fun getIds(): IntArray {

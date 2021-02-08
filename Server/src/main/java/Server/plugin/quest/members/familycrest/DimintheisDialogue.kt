@@ -3,6 +3,7 @@ package plugin.quest.members.familycrest
 
 import core.game.node.entity.npc.NPC
 import core.game.node.entity.player.Player
+import core.game.node.item.Item
 import core.plugin.InitializablePlugin
 import plugin.dialogue.DialoguePlugin
 import plugin.dialogue.FacialExpression
@@ -23,6 +24,24 @@ class DimintheisDialogue(player: Player? = null): DialoguePlugin(player) {
     override fun open(vararg args: Any?): Boolean {
         npc = (args[0] as NPC).getShownNPC(player)
         val qstage = player?.questRepository?.getStage("Family Crest") ?: -1
+
+        if(qstage == 100 && !DoMissingGuantletCheck()){
+            npc("Thank you for saving our family honour,  ",
+                    "We will never forget you")
+            stage = 1000
+            return true
+        }
+
+        if(qstage == 100 && DoMissingGuantletCheck()){
+            player("I've lost the guantlets you gave me")
+            stage = 6000
+        }
+
+        if(qstage == 19 && player.inventory.containItems(782)){
+            player("I have retrieved your crest.").also{stage = 5000}
+            return true;
+        }
+
         when(qstage) {
             0 -> npc("Hello. My name is Dimintheis, ",
                     "of the noble family Fitzharmon.").also { stage = 1 }
@@ -132,6 +151,34 @@ class DimintheisDialogue(player: Player? = null): DialoguePlugin(player) {
 
             4000 -> player("I'm still looking for it").also{stage = 1000}
 
+
+            5000 -> npc("Adventurer... I can only thank you for your kindness, " ,
+                    "although the words are insufficient " ,
+                    "to express the gratitude I feel!").also{stage++}
+            5001 -> npc("You are truly a hero in every sense, " ,
+                    "and perhaps your efforts can begin to " ,
+                    "patch the wounds that have torn this family apart...").also{stage++}
+            5002 -> npc("I know not how I can adequately reward you for your efforts... " ,
+                    "although I do have these mystical gauntlets, " ,
+                    "a family heirloom that through some power unknown to me, " ,
+                    "have always returned to the head of the family whenever lost,").also{stage++}
+
+            5003 -> npc(" or if the owner has died. " ,
+                    "I will pledge these to you, " ,
+                    "and if you should lose them return to me, " ,
+                    "and they will be here.").also{stage++
+                    }
+            5004  -> npc("They can also be granted extra powers. " ,
+                    "Take them to one of my sons, " ,
+                    "they should be able to imbue them with a skill for you.").also{stage = 1000
+                    player.questRepository.getQuest("Family Crest").finish(player)
+                    player.questRepository.getQuest("Family Crest").setStage(player, 100)
+                    }
+
+            6000 -> npc("Not to worry, here they are").also{
+                stage = 1000
+                player.inventory.add(Item(778))
+            }
             1000 -> end()
 
         }
@@ -140,6 +187,16 @@ class DimintheisDialogue(player: Player? = null): DialoguePlugin(player) {
         return true;
     }
 
+    private fun DoMissingGuantletCheck(): Boolean{
+        var itemsToCheck = listOf(775, 776, 777, 778)
+        for(item in itemsToCheck){
+            if(player.inventory.containItems(item))
+                return true
+            if(player.bank.containItems(item))
+                return true
+        }
+        return false
+    }
     override fun getIds(): IntArray {
         return intArrayOf(8171)
     }

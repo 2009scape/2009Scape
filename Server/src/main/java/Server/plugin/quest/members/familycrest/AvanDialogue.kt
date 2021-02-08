@@ -18,6 +18,13 @@ class AvanDialogue (player: Player? = null): DialoguePlugin(player) {
     override fun open(vararg args: Any?): Boolean {
         npc = (args[0] as NPC).getShownNPC(player)
         val qstage = player?.questRepository?.getStage("Family Crest") ?: -1
+
+        if(qstage == 100){
+            options("Can you enchant these gauntlets for me?", "Nevermind")
+            stage = 6000
+            return true
+        }
+
         if(qstage < 13){
             npc("What? Can't you see I'm busy?")
             stage = 1;
@@ -148,7 +155,7 @@ class AvanDialogue (player: Player? = null): DialoguePlugin(player) {
             400 -> player("I am still working on it.").also{stage++}
 
             401 -> npc("I hope you succeed for my father's sake.").also{
-                if(player.inventory.containItems(CREST_PIECE_AVAN.id) || player.bank.containItems(CREST_PIECE_AVAN.id)){
+                if(player.inventory.containItems(CREST_PIECE_AVAN.id, 782) || player.bank.containItems(CREST_PIECE_AVAN.id, 782)){
                     stage = 1000
                 }
                 else{
@@ -166,10 +173,41 @@ class AvanDialogue (player: Player? = null): DialoguePlugin(player) {
                     "but please try not to lose it; " ,
                     "it is a priceless family heirloom.").also{stage = 1000
                     player.inventory.add(CREST_PIECE_AVAN)}
+
+            6000 -> when(buttonId){
+                1-> if(DoMissingGuantletCheck() != -1){
+                    var gauntletID = DoMissingGuantletCheck()
+
+                    if(gauntletID == 776){
+                        npc("You already have the Goldsmith guantlets.")
+                        stage = 1000
+                    }
+                    else{
+                        npc("Here you go")
+                        player.inventory.remove(Item(gauntletID))
+                        player.inventory.add(Item(776))
+                        stage = 1000
+                    }
+                }
+                else{
+                    npc("You do not have the guantlets with you in your inventory")
+                    stage = 1000
+                }
+                2-> player("Never mind").also{stage = 1000}
+            }
             1000 -> end()
         }
 
         return true
+    }
+
+    private fun DoMissingGuantletCheck(): Int{
+        var itemsToCheck = listOf(775, 776, 777, 778)
+        for(item in itemsToCheck){
+            if(player.inventory.containItems(item))
+                return item
+        }
+        return -1
     }
 
     override fun getIds(): IntArray {
