@@ -47,38 +47,12 @@ public final class DelMontyDialogue extends DialoguePlugin {
 	@Override
 	public boolean handle(int interfaceId, int buttonId) {
 		switch (stage) {
-		case 0:
-			end();
-			break;
-		case 1:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "No thanks, I'm too stressed out.", "The stocks on nokia went way down", " and I'm losing money.");
-			stage = 2;
-			break;
-		case 2:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Oh, well isn't it still your job to help me out?");
-			stage = 3;
-			break;
-		case 3:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Like I give a flying fuck about you...", "I just need my money back.");
-			stage = 4;
-			break;
-		case 4:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Listen here you stupid fucking cat... I need fucking", "EXP, and if you're not willing to teach me,", "I'll burn you like I did to the Jews.");
-			stage = 5;
-			break;
-		case 5:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Fuck off kid, I DO WHATEVER I WANT AND", "I DON'T GIVE A DAMN ABOUT YOU NOR", "ANYONE ELSE.");
-			stage = 6;
-			break;
-		case 6:
-			interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Have fun killing yourself when", "you realized your investment lost your life.");
-			stage = 7;
-			break;
-		case 7:
-			end();
-			break;
 		case 100:
-			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Hiss!");
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Meow.");
+			stage = 0;
+			break;
+		default:
+			interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "\"Meow.\"");
 			stage = 0;
 			break;
 		}

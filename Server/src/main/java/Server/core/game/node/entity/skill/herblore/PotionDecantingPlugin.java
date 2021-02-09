@@ -316,7 +316,7 @@ public final class PotionDecantingPlugin extends UseWithHandler {
 	 * If an item is oldschool... add an extra space.
 	 * @param name
 	 * @return
-	 * @author Jagex being retarded
+	 * @author Jagex
 	 */
 	private static boolean oldSchool(String name){
 		if(name.contains("xtended") || name.contains("uper rangin") || name.contains("uper magic") || name.contains("verload")){

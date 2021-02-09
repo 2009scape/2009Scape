@@ -264,42 +264,42 @@ public final class TrollheimPlugin extends OptionHandler {
 			final GameObject object = ((GameObject) node);
 			switch (id) {
 			case 3723:
-				retardBandaid(player, player.getLocation(), object.getLocation().transform(0, 2, 0), CLIMB_UP);
+				bandaid(player, player.getLocation(), object.getLocation().transform(0, 2, 0), CLIMB_UP);
 				break;
 			case 3722:
-				retardBandaid(player, player.getLocation(), object.getLocation().transform(0, -3, 0), CLIMB_DOWN, CLIMB_DOWN, object.getDirection());
+				bandaid(player, player.getLocation(), object.getLocation().transform(0, -3, 0), CLIMB_DOWN, CLIMB_DOWN, object.getDirection());
 				break;
 			case 3790:// rock scalling.
 				xOffset = player.getLocation().getX() < loc.getX() ? 2 : -2;
 				direction = getOpposite(ForceMovement.direction(player.getLocation(), object.getLocation().transform(xOffset, yOffset, 0)));
-				//retardBandaid(player, player.getLocation(), object.getLocation().transform(xOffset, yOffset, 0), CLIMB_DOWN, CLIMB_DOWN, direction);
+				//bandaid(player, player.getLocation(), object.getLocation().transform(xOffset, yOffset, 0), CLIMB_DOWN, CLIMB_DOWN, direction);
 				player.getProperties().setTeleportLocation(object.getLocation().transform(xOffset, yOffset, 0));
 				break;
 			case 3791:// rock scalling.
 				xOffset = player.getLocation().getX() < loc.getX() ? 2 : -2;
-				//retardBandaid(player, player.getLocation(), object.getLocation().transform(xOffset, yOffset, 0), CLIMB_UP);
+				//bandaid(player, player.getLocation(), object.getLocation().transform(xOffset, yOffset, 0), CLIMB_UP);
 				player.getProperties().setTeleportLocation(object.getLocation().transform(xOffset, yOffset, 0));
 				break;
 			case 3748:
 				player.getPacketDispatch().sendMessage("You climb onto the rock...");
 				if (loc.equals(new Location(2821, 3635, 0))) {
-					retardBandaid(player, player.getLocation(), loc.transform(player.getLocation().getX() > loc.getX() ? -1 : 1, 0, 0), JUMP);
+					bandaid(player, player.getLocation(), loc.transform(player.getLocation().getX() > loc.getX() ? -1 : 1, 0, 0), JUMP);
 				} else if (loc.equals(new Location(2910, 3687, 0)) || loc.equals(new Location(2910, 3686, 0))) {
 					if (player.getSkills().getLevel(Skills.AGILITY) < 43) {
 						player.getPacketDispatch().sendMessage("You need an Agility level of 43 in order to climb this mountain side.");
 						return true;
 					}
 					if (player.getLocation().equals(Location.create(2911, 3687, 0))) {
-						retardBandaid(player, player.getLocation(), Location.create(2909, 3687, 0), JUMP);
+						bandaid(player, player.getLocation(), Location.create(2909, 3687, 0), JUMP);
 					} else if (player.getLocation().equals(new Location(2909, 3687, 0))) {
-						retardBandaid(player, player.getLocation(), Location.create(2911, 3687, 0), JUMP);
+						bandaid(player, player.getLocation(), Location.create(2911, 3687, 0), JUMP);
 					} else if (player.getLocation().equals(Location.create(2911, 3686, 0))) {
-						retardBandaid(player, player.getLocation(), Location.create(2909, 3686, 0), JUMP);
+						bandaid(player, player.getLocation(), Location.create(2909, 3686, 0), JUMP);
 					} else {
-						retardBandaid(player, player.getLocation(), Location.create(2911, 3686, 0), JUMP);
+						bandaid(player, player.getLocation(), Location.create(2911, 3686, 0), JUMP);
 					}
 				} else {
-					retardBandaid(player, player.getLocation(), player.getLocation().getY() < object.getLocation().getY() ? player.getLocation().transform(0, 2, 0) : player.getLocation().transform(0, -2, 0), JUMP);
+					bandaid(player, player.getLocation(), player.getLocation().getY() < object.getLocation().getY() ? player.getLocation().transform(0, 2, 0) : player.getLocation().transform(0, -2, 0), JUMP);
 				}
 				player.getPacketDispatch().sendMessage("...and step down the other side.");
 				break;
@@ -310,17 +310,17 @@ public final class TrollheimPlugin extends OptionHandler {
 					return true;
 				}
 				if (player.getLocation().equals(Location.create(2884, 3684, 0))) {
-					retardBandaid(player, player.getLocation(), Location.create(2886, 3684, 0), CLIMB_UP);
+					bandaid(player, player.getLocation(), Location.create(2886, 3684, 0), CLIMB_UP);
 				} else if (player.getLocation().equals(Location.create(2884, 3683, 0))) {
-					retardBandaid(player, player.getLocation(), Location.create(2886, 3683, 0), CLIMB_UP);
+					bandaid(player, player.getLocation(), Location.create(2886, 3683, 0), CLIMB_UP);
 				} else if (player.getLocation().equals(Location.create(2886, 3683, 0))) {
-					retardBandaid(player, player.getLocation(), Location.create(2884, 3683, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.EAST);
+					bandaid(player, player.getLocation(), Location.create(2884, 3683, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.EAST);
 				} else if (player.getLocation().equals(Location.create(2888, 3660, 0)) || player.getLocation().equals(Location.create(2887, 3660, 0))) {
-					retardBandaid(player, player.getLocation(), player.getLocation().transform(0, 2, 0), CLIMB_UP);
+					bandaid(player, player.getLocation(), player.getLocation().transform(0, 2, 0), CLIMB_UP);
 				} else if (player.getLocation().equals(Location.create(2888, 3662, 0)) || player.getLocation().equals(Location.create(2887, 3662, 0))) {
-					retardBandaid(player, player.getLocation(), player.getLocation().transform(0, -2, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.NORTH);
+					bandaid(player, player.getLocation(), player.getLocation().transform(0, -2, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.NORTH);
 				} else {
-					retardBandaid(player, player.getLocation(), Location.create(2884, 3684, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.EAST);
+					bandaid(player, player.getLocation(), Location.create(2884, 3684, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.EAST);
 				}
 				break;
 			case 9306:
@@ -329,9 +329,9 @@ public final class TrollheimPlugin extends OptionHandler {
 					return true;
 				}
 				if (player.getLocation().equals(Location.create(2903, 3680, 0))) {
-					retardBandaid(player, player.getLocation(), Location.create(2900, 3680, 0), CLIMB_UP);
+					bandaid(player, player.getLocation(), Location.create(2900, 3680, 0), CLIMB_UP);
 				} else {
-					retardBandaid(player, player.getLocation(), Location.create(2903, 3680, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.WEST);
+					bandaid(player, player.getLocation(), Location.create(2903, 3680, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.WEST);
 				}
 				break;
 			case 9303:
@@ -340,9 +340,9 @@ public final class TrollheimPlugin extends OptionHandler {
 					return true;
 				}
 				if (player.getLocation().getX() > loc.getX()) {
-					retardBandaid(player, player.getLocation(), object.getLocation().transform(-2, 0, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.EAST);
+					bandaid(player, player.getLocation(), object.getLocation().transform(-2, 0, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.EAST);
 				} else {
-					retardBandaid(player, player.getLocation(), object.getLocation().transform(2, 0, 0), CLIMB_UP);
+					bandaid(player, player.getLocation(), object.getLocation().transform(2, 0, 0), CLIMB_UP);
 				}
 				break;
 			case 9304:
@@ -351,9 +351,9 @@ public final class TrollheimPlugin extends OptionHandler {
 					return true;
 				}
 				if (player.getLocation().equals(Location.create(2878, 3665, 0))) {
-					retardBandaid(player, player.getLocation(), new Location(2878, 3668, 0), CLIMB_UP);
+					bandaid(player, player.getLocation(), new Location(2878, 3668, 0), CLIMB_UP);
 				} else {
-					retardBandaid(player, player.getLocation(), new Location(2878, 3665, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.NORTH);
+					bandaid(player, player.getLocation(), new Location(2878, 3665, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.NORTH);
 				}
 				break;
 			case 9305:
@@ -362,9 +362,9 @@ public final class TrollheimPlugin extends OptionHandler {
 					return true;
 				}
 				if (player.getLocation().equals(new Location(2909, 3684, 0))) {
-					retardBandaid(player, player.getLocation(), Location.create(2907, 3682, 0), CLIMB_UP, CLIMB_UP, Direction.SOUTH);
+					bandaid(player, player.getLocation(), Location.create(2907, 3682, 0), CLIMB_UP, CLIMB_UP, Direction.SOUTH);
 				} else {
-					retardBandaid(player, player.getLocation(), Location.create(2909, 3684, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.SOUTH);
+					bandaid(player, player.getLocation(), Location.create(2909, 3684, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.SOUTH);
 
 				}
 				break;
@@ -374,13 +374,13 @@ public final class TrollheimPlugin extends OptionHandler {
 					return true;
 				}
 				if (object.getLocation().equals(new Location(2916, 3672, 0))) {
-					retardBandaid(player, player.getLocation(), Location.create(2918, 3672, 0), CLIMB_UP);
+					bandaid(player, player.getLocation(), Location.create(2918, 3672, 0), CLIMB_UP);
 				} else if (object.getLocation().equals(new Location(2917, 3672, 0))) {
-					retardBandaid(player, player.getLocation(), Location.create(2915, 3672, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.EAST);
+					bandaid(player, player.getLocation(), Location.create(2915, 3672, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.EAST);
 				} else if (object.getLocation().equals(new Location(2923, 3673, 0))) {
-					retardBandaid(player, player.getLocation(), Location.create(2921, 3672, 0), CLIMB_UP);
+					bandaid(player, player.getLocation(), Location.create(2921, 3672, 0), CLIMB_UP);
 				} else if (object.getLocation().equals(new Location(2922, 3672, 0))) {
-					retardBandaid(player, player.getLocation(), Location.create(2924, 3673, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.WEST);
+					bandaid(player, player.getLocation(), Location.create(2924, 3673, 0), CLIMB_DOWN, CLIMB_DOWN, Direction.WEST);
 				}
 				break;
 			}
@@ -389,11 +389,11 @@ public final class TrollheimPlugin extends OptionHandler {
 		return true;
 	}
 
-	public void retardBandaid(Player player, Location l, Location e, Animation a){
+	public void bandaid(Player player, Location l, Location e, Animation a){
 		player.getProperties().setTeleportLocation(e);
 	}
 
-	public void retardBandaid(Player player,Location l, Location e, Animation a, Animation b, Direction d){
+	public void bandaid(Player player, Location l, Location e, Animation a, Animation b, Direction d){
 		player.getProperties().setTeleportLocation(e);
 	}
 
