@@ -14,7 +14,7 @@ import core.plugin.Plugin;
  * @date 20.11.2013
  */
 @Initializable
-public class RunescapeInstructorPlugin extends OptionHandler {
+public class GameInstructorPlugin extends OptionHandler {
 
 	@Override
 	public Plugin<Object> newInstance(Object arg) throws Throwable {
