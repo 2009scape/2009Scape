@@ -40,6 +40,8 @@ import kotlin.random.Random
  * @author Sir Kermit
  * @author Ceikry
  */
+
+//Adventure Bots v3.1.0 -Valentines Edition-
 class Adventurer(val style: CombatStyle): Script() {
 
     val yanille: Location = Location.create(2615, 3104, 0)
@@ -74,17 +76,23 @@ class Adventurer(val style: CombatStyle): Script() {
                 "How do i get to Yanille ${real.username}?",
                 "How do i get to Catherby ${real.username}?",
                 "Gotta go srry.",
+                "wiggle wiggle wiggle yeah",
+                "${real.username} lookin goofy",
+                "${real.username} lookin stoopid",
+                "${real.username} lookin like a red bracket",
+                "${real.username} get yo weasel lookin ass outta here",
+                "${real.username} lookin like some sort of twocan sam",
                 " /hop world 1 got a noob here!",
                 "woot",
-                "How's your day been ${real.username}?",
+                "Hows your day been ${real.username}?",
                 "heyy ${real.username} :)",
                 "gtg srry",
-                "I won't answer your questions ${real.username}",
+                "I wont answer your questions ${real.username}",
                 "Stop asking questions ${real.username}",
                 "Roflmao",
                 "Can you stop following me ${real.username}?",
                 "I swear ${real.username} is following me.",
-                "${real.username}'s gear could really use an upgrade lol",
+                "${real.username}s gear could really use an upgrade lol",
                 "Quack!",
                 "Sit.",
                 "Doubling gold trade me ${real.username}",
@@ -112,22 +120,22 @@ class Adventurer(val style: CombatStyle): Script() {
                 "apparently ${real.username} bots",
                 "${real.username} hates kermit",
                 "There are no mods on to help you",
-                "Report me, you won't",
-                "Yes, I'm botting. And?",
+                "Report me, you wont",
+                "Yes, Im botting. And?",
                 "ERROR: BOTSCRIPT 404. REPORT TO BOT OWNER (Evilwaffles)",
                 "flash2:wave: FUCK",
                 "I love 2009Scape!",
                 "Ja Ja Ja Ja",
                 "This is fun!",
-                "Ironman or you're a scrub ${real.username}.",
+                "Ironman or youre a scrub ${real.username}.",
                 "Who even trains hunter ${real.username}?",
                 "Where do i get rune armor ${real.username}?",
                 "How do i get to the ge ${real.username}?",
-                "Don't come to falador tomorrow ${real.username}...",
+                "Dont come to falador tomorrow ${real.username}...",
                 "Woah!",
                 " /where are you??",
                 "How did i even get here ${real.username}",
-                "Why don't they add warding ${real.username}?",
+                "Why dont they add warding ${real.username}?",
                 "Where do i start dragon slayer ${real.username}?",
                 "I love this server!",
                 "How do i change my xp rate ${real.username}?",
@@ -135,14 +143,14 @@ class Adventurer(val style: CombatStyle): Script() {
                 "Are you a real player ${real.username}?",
                 "Are you real ${real.username}?",
                 "Are you a bot ${real.username}?",
-                "I'm real lol",
-                "Why don't you respond to me ${real.username}?",
-                "Why can't i talk in clan chat ${real.username}?",
+                "Im real lol",
+                "Why dont you respond to me ${real.username}?",
+                "Why cant i talk in clan chat ${real.username}?",
                 "I love Kermit",
                 "Add me as a friend ${real.username} :)",
-                "I'm a player lol",
-                "I'm a player lol",
-                "I'm a player lol",
+                "Im a player lol",
+                "Im a player lol",
+                "Im a player lol",
                 "Hey ${real.username} :)",
                 "HEY ${real.username}",
                 "Hey ${real.username}!!!!",
@@ -161,7 +169,7 @@ class Adventurer(val style: CombatStyle): Script() {
                 "Where do i find dragon weapons ${real.username}?",
                 "Can i have some free stuff ${real.username}?",
                 "Wyd here ${real.username}?",
-                "Didn't know anyone was on rn",
+                "Didnt know anyone was on rn",
                 "I see ${real.username} all the time",
                 "How many times have i seen you",
                 "I see you a lot",
@@ -179,8 +187,8 @@ class Adventurer(val style: CombatStyle): Script() {
                 "Same as you",
                 "Me too",
                 "I knew ${real.username} was a bot lol",
-                "I'm not a bot",
-                "Nah I'm a real person",
+                "Im not a bot",
+                "Nah Im a real person",
                 "Bruh are you even a real person lol?",
                 "e",
                 "Hellooooo ${real.username}",
@@ -201,7 +209,7 @@ class Adventurer(val style: CombatStyle): Script() {
                 "pot calling the kettle black etc",
                 "ooh, a piece of candy",
                 "I love woodcutting",
-                "I'm going to go level up later",
+                "Im going to go level up later",
                 "I love mining shooting stars",
                 " /this ${real.username} looks dumb",
                 "AAAAAAAAAAAAAAAAAAAAAAAAHHHHHH!!!",
@@ -239,10 +247,10 @@ class Adventurer(val style: CombatStyle): Script() {
                 "red bracket stinky",
                 "ra ra rasputin",
                 "lover of the russian queen",
-                "When's the next update coming out?",
+                "Whens the next update coming out?",
                 "How many players are maxed?",
-                "I don't use discord ${real.username}",
-                "I don't use the CC ${real.username}",
+                "I dont use discord ${real.username}",
+                "I dont use the CC ${real.username}",
                 "Why should i use discord?",
                 "2009Scape is life",
                 "brb gotta make dinner",
@@ -263,10 +271,10 @@ class Adventurer(val style: CombatStyle): Script() {
                 "Where can i mine clay?",
                 "Where can i mine coal?",
                 "no",
-                "We're no strangers to love",
+                "We are no strangers to love",
                 "You know the rules and so do I",
-                "A full commitment's what I'm thinking of",
-                "You wouldn't get this from any other guy",
+                "A full commitments what Im thinking of",
+                "You wouldnt get this from any other guy",
                 "Never gonna give you up",
                 "Never gonna let you down",
                 "why",
@@ -280,10 +288,10 @@ class Adventurer(val style: CombatStyle): Script() {
                 "When did you start playing ${real.username}?",
                 "When did you start on this server ${real.username}?",
                 "When did you first get here ${real.username}?",
-                "russia's greatest love machine",
+                "russias greatest love machine",
                 "Never gonna run around and desert you",
-                "Two things are infinite: the universe & ${real.username}'s stupidity",
-                "If you tell the truth, you don't have to remember anything.",
+                "Two things are infinite: the universe & ${real.username}s stupidity",
+                "If you tell the truth, you dont have to remember anything.",
                 "We accept the love we think we deserve.",
                 "Without music, life would be a mistake.",
                 "Self esteem, motivation ${real.username}",
@@ -316,21 +324,21 @@ class Adventurer(val style: CombatStyle): Script() {
                 "What time is our meeting ${real.username}?",
                 "Excellent ${real.username}",
                 "Good idea ${real.username}",
-                "He's very annoying.",
+                "Hes very annoying.",
                 "How are you?",
-                "I can't hear you.",
-                "I'd like to go for a walk.",
-                "I don't know how to use it.",
-                "I don't like him ${real.username}",
-                "I don't like it ${real.username}",
-                "I'm an American.",
-                "I'm going to leave.",
-                "I'm happy ${real.username}",
-                "I'm not ready yet ${real.username}",
-                "I'm very busy. I don't have time now.",
+                "I cant hear you.",
+                "Id like to go for a walk.",
+                "I dont know how to use it.",
+                "I dont like him ${real.username}",
+                "I dont like it ${real.username}",
+                "Im an American.",
+                "Im going to leave.",
+                "Im happy ${real.username}",
+                "Im not ready yet ${real.username}",
+                "Im very busy. I dont have time now.",
                 "Is that enough ${real.username}?",
                 "I thought the clothes were cheaper ${real.username}",
-                "I've been here for two days ${real.username}.",
+                "Ive been here for two days ${real.username}.",
                 "Let me think about it",
                 "Never mind ${real.username}",
                 "Nonsense ${real.username}",
@@ -338,7 +346,7 @@ class Adventurer(val style: CombatStyle): Script() {
                 "Take it outside ${real.username}",
                 "Thanks for your help",
                 "Thank you very much ${real.username}",
-                "That's not right ${real.username}",
+                "Thats not right ${real.username}",
                 "Very good, thanks ${real.username}",
                 "Your things are all here i think?",
                 "Long time no see ${real.username}",
@@ -375,16 +383,16 @@ class Adventurer(val style: CombatStyle): Script() {
         val Leading2Christmas = listOf(
                 "Only $until days left till christmas!",
                 "$until days till christmas ${real.username}!!!",
-                "I can't believe theres only $until days left till christmas",
-                "Isn't there $until days left till christmas??",
+                "I cant believe theres only $until days left till christmas",
+                "Isnt there $until days left till christmas??",
                 "I am so excited for christmas ${real.username}!",
-                "Guess what's in $until days ${real.username}?",
-                "I'm so excited for christmas in $until days!",
-                "I can't believe it's December already ${real.username}!",
+                "Guess whats in $until days ${real.username}?",
+                "Im so excited for christmas in $until days!",
+                "I cant believe its December already ${real.username}!",
                 "Do you like christmas ${real.username}?",
-                "I love december it's my favourite month ${real.username}",
+                "I love december its my favourite month ${real.username}",
                 "I love winter so much ${real.username}",
-                "I hate when it's cold outside ${real.username}",
+                "I hate when its cold outside ${real.username}",
                 "You need to put some warm clothes on ${real.username}",
                 "Wanna build a snowman ${real.username}?",
                 "Frozen is a terrible movie ${real.username}",
@@ -416,7 +424,7 @@ class Adventurer(val style: CombatStyle): Script() {
                 "Rusty = the grinch, ${real.username} = santa",
                 "${real.username} the red nose reindeer",
                 "Put one foot in front of the other",
-                "and soon you'll be walking out the doooor",
+                "and soon you will be walking out the doooor",
                 "Elf on the shelf time",
                 "${real.username} loves pinecones",
                 "I love the smell of pinecones",
@@ -444,10 +452,10 @@ class Adventurer(val style: CombatStyle): Script() {
                 "I want a hippopotamus for christmas",
                 "Only a hippopotamus will do",
                 "I want a hippopotamus",
-                "I don't want a lot for Christmas",
+                "I dont want a lot for Christmas",
                 "All I Want for Christmas Is You",
-                "I really can't stay, Baby it's cold outside",
-                "Christmas isn't a season. It's a feeling",
+                "I really cant stay, Baby its cold outside",
+                "Christmas isnt a season. Its a feeling",
                 "Christmas is doing a little something extra for someone",
                 "There is nothing cozier than a Christmas tree all lit up",
                 "Christmas is a necessity",
@@ -458,17 +466,17 @@ class Adventurer(val style: CombatStyle): Script() {
                 "Here comes santa claus, here comes santa claus",
                 "I saw mommy kissing santaaaa claus",
                 "I saw Kermit kissing santaaaa claus",
-                "You're a mean one, Mr. Grinch",
+                "You are a mean one, Mr. Grinch",
                 "Deck the hallsss",
                 "ITS BEGINNING TO LOOK A LOT LIKE CHRISTAAMASSSSS"
 
         )
 
         val ChristmasEve = listOf(
-                "I can't wait for christmas tomorrow ${real.username}!!",
-                "It's almost christmas!!!",
+                "I cant wait for christmas tomorrow ${real.username}!!",
+                "Its almost christmas!!!",
                 "1 more day!!!!!",
-                "Don't forget to put cookies and milk out tonight!!",
+                "Dont forget to put cookies and milk out tonight!!",
                 "${real.username} do you like christmas??",
                 "Happy Christmas eve ${real.username} :)"
         )
@@ -479,12 +487,12 @@ class Adventurer(val style: CombatStyle): Script() {
                 "ITS CHRISTMASSSS!!!",
                 "Christmas party time!!",
                 "${real.username} vibing with the christmas spirit",
-                "Can't believe it's christmas!!",
+                "Cant believe its christmas!!",
                 "We need to have a christmas party ${real.username}!!",
                 "Merry christmas ${real.username} :))",
-                "Hope you're having an amazing christmas ${real.username} :)",
+                "Hope youre having an amazing christmas ${real.username} :)",
                 "I love winter so much ${real.username}",
-                "I hate when it's cold outside ${real.username}",
+                "I hate when its cold outside ${real.username}",
                 "You need to put some warm clothes on ${real.username}",
                 "Wanna build a snowman ${real.username}?",
                 "Do you like christmas ${real.username}?"
@@ -496,15 +504,52 @@ class Adventurer(val style: CombatStyle): Script() {
                 "We should do something for New Years eve today ${real.username}!",
                 "Happy New Years Eve ${real.username}",
                 "1 More day left in 2021 thank god",
-                "What's your New Years resolution ${real.username}?"
+                "Whats your New Years resolution ${real.username}?"
         )
 
         val NewYears = listOf(
                 "Happy New Years ${real.username}!!!",
-                "It's New Years Day ${real.username}!",
+                "Its New Years Day ${real.username}!",
                 "HAPPY NEW YEAR ${real.username}!!!",
-                "2022 let's fucking gooooooo",
+                "2022 lets fucking gooooooo",
                 "What are your goals for 2022 ${real.username}?"
+        )
+
+        val Valentines = listOf(
+                "Will you be my valentine ${real.username}?",
+                "I am so fucking horny rn",
+                "God i am so lonely",
+                "I am Ceikrys illegitimate child",
+                "Be my valentine!",
+                "Lets sneak off somewhere and makeout ${real.username}",
+                "What are you doing for valentines day ${real.username}",
+                "Woah and Ceikry be fuckin lowkey",
+                "In for a peg ${real.username}?",
+                "Woah got those roofies strapped",
+                "Why is my drink cloudy?",
+                "${real.username} and woah be fukin",
+                "bekky want sum fuk?",
+                "Damn ${real.username} you got an ass",
+                "Is that a footlong in your pants or are you happy to see me?",
+                "${real.username} so hot i gotta change my pants",
+                "${real.username} is a sex god",
+                "bruh we horny today",
+                "dont be silly wrap the willy ${real.username}!",
+                "wrap it before you smack it ${real.username}",
+                "can i get a reeeeee ${real.username}?",
+                "valentines day is the best day",
+                "${real.username} shut up before i smack you with my crusty sock",
+                "Valentines day, more like me and my hand day smh",
+                "If you think these quotes are bad just wait ${real.username}",
+                "All im saying is we have never seen ${real.username} and biden in the same room",
+                "red rocket, red rocket!",
+                "Woahs favourite game is red rocket",
+                "${real.username} sexy af today",
+                "Happy Valentines day ${real.username}!!!",
+                "Happy Valentines day ${real.username}!!!",
+                "Happy Valentines day ${real.username}!!!",
+                "Happy Valentines day ${real.username}!!!",
+                "Happy Valentines day ${real.username}!!!"
         )
 
         when {
@@ -592,7 +637,20 @@ class Adventurer(val style: CombatStyle): Script() {
                 }
             }
 
-            else -> {
+            //Celebrates Valentines day!!!
+            formatted.contentEquals("2021-02-14") ->{
+                    if (Random.nextBoolean()) {
+                         val chat = Valentines.random()
+                         bot.sendChat(chat)
+                         bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
+                    }else{
+                         val chat = dialogue.random()
+                         bot.sendChat(chat)
+                         bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
+                    }
+            }
+
+                else -> {
                 val chat = dialogue.random()
                 bot.sendChat(chat)
                 bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))
@@ -657,6 +715,7 @@ class Adventurer(val style: CombatStyle): Script() {
                 draynor, rimmington, lumbridge, ge, ge2, edgeville).random()
     }
 
+        //TODO: Optimise and adjust how bots handle picking up ground items.
     fun immerse() {
         if (counter++ == 180) {state = State.TELEPORTING}
         val items = AIRepository.groundItems[bot]
@@ -709,7 +768,7 @@ class Adventurer(val style: CombatStyle): Script() {
         state = State.START
     }
 
-    //Adventure Bots v3.0.1 -Chat Edition-
+        //Adventure Bots Actual Code STARTS HERE!!!
     override fun tick() {
         ticks++
         if (ticks++ >= 800) {
