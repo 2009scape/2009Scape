@@ -67,6 +67,16 @@ public final class DialogueInterpreter {
     private final Player player;
 
     /**
+     * Id-sets for the sword components in the "Choose an Option"-interfaces.
+     */
+    private static int[][] SWORD_COMPONENT_IDS =
+            {
+                    new int[] {6, 9},
+                    new int[] {7, 10},
+                    new int[] {8, 9},
+            };
+
+    /**
      * Constructs a new {@code DialogueInterpreter} {@code Object}.
      * @param player The player.
      */
@@ -516,6 +526,9 @@ public final class DialogueInterpreter {
             return null;
         }
         if (title != null) {
+            boolean longTitle = title.toString().length() > 22;
+            player.getPacketDispatch().sendInterfaceConfig(interfaceId, SWORD_COMPONENT_IDS[options.length - 2][0], longTitle);
+            player.getPacketDispatch().sendInterfaceConfig(interfaceId, SWORD_COMPONENT_IDS[options.length - 2][1], !longTitle);
             player.getPacketDispatch().sendString(title.toString(), interfaceId, 1);
         }
         for (int i = 0; i < options.length; i++) {
