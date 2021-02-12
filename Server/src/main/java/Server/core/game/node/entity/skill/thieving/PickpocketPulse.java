@@ -78,7 +78,7 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
             player.getPacketDispatch().sendMessage("You need to be a level " + type.getLevel() + " thief in order to pick this pocket.");
             return false;
         }
-        if (player.getInventory().isFull()) {
+        if (!hasInventorySpace()) {
             player.getPacketDispatch().sendMessage("You do not have enough space in your inventory to pick this pocket.");
             return false;
         }
@@ -158,7 +158,7 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
         } else if (player.inCombat()) {
             player.getPacketDispatch().sendMessage("You can't pickpocket during combat.");
             return false;
-        } else if (player.getInventory().freeSlots() == 0) {
+        } else if (!hasInventorySpace()) {
             player.getPacketDispatch().sendMessage("You don't have enough inventory space.");
             return false;
         }
@@ -182,6 +182,20 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
             return true;
         }
         return false;
+    }
+
+    /**
+     * Checks if player has enough inventory space to pickpocket npc.
+     * @return {@code True} if player has enough inventory space.
+     */
+    private boolean hasInventorySpace() {
+        if (player.getInventory().isFull() && type.getLoot().length > 0) {
+            if (!(type.getLoot().length == 1 && player.getInventory().hasSpaceFor(
+                    new Item(type.getLoot()[0].getId(), type.getLoot()[0].getMaximumAmount())))) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
