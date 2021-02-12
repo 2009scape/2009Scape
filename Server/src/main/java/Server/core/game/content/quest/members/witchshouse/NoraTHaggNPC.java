@@ -135,7 +135,6 @@ public class NoraTHaggNPC extends AbstractNPC {
             }
             animate(new Animation(5803));
             sendTeleport(player);
-            player.getPacketDispatch().sendMessage("" + getLocation() + " matches? " + (getLocation().getX() == 2904));
         }
         if (location.getX() != 2930 && walkdir) {
             this.getWalkingQueue().reset();
