@@ -1113,7 +1113,7 @@
     "weakness": "2",
     "slayer_task": "76",
     "slayer_exp": "5",
-    "aggressive": "true",
+    "aggressive": "false",
     "combat_audio": "537,539,538",
     "safespot": null
   },
