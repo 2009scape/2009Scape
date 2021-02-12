@@ -35,7 +35,13 @@ class CoalMiner() : Script() {
                 overlay!!.setTitle("Mining")
                 overlay!!.setTaskLabel("Coal Mined:")
                 overlay!!.setAmount(0)
-                state = State.TO_MINE
+
+                if (mine.insideBorder(bot)){
+                    ladderSwitch = false
+                    state = State.MINING
+                } else {
+                    state = State.TO_MINE
+                }
             }
 
             State.MINING -> {

@@ -35,7 +35,7 @@ public class SchoolchildMuseumDialogue extends DialoguePlugin {
 
     @Override
     public int[] getIds() {
-        return new int[]{5984, 5946};
+        return new int[]{5984, 5945, 5946, 10};
     }
 
     @Override

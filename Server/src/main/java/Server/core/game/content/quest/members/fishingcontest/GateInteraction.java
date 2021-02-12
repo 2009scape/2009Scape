@@ -11,9 +11,9 @@ import core.game.content.quest.PluginInteractionManager;
 
 @Initializable
 public class GateInteraction extends PluginInteraction {
+
     @Override
     public boolean handle(Player player, Node node) {
-        player.sendMessage("Attempting to handle " + node.getId());
         switch(node.getId()){
             case 47:
             case 48:

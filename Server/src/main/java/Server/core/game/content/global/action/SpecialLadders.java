@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public enum SpecialLadders implements LadderAchievementCheck {
+    HAM_STORAGE_UP(new Location(2567,5185,0), new Location(3166,9623,0)),
     GEM_MINE(new Location(2821,2996,0), new Location(2838,9387,0)),
     GEM_MINE_UP(new Location(2838,9388,0), new Location(2820, 2996, 0)),
     BEAR_CAGE_UP(Location.create(3230, 9904, 0),Location.create(3231, 3504, 0)),

@@ -420,7 +420,6 @@ class Adventurer(val style: CombatStyle): Script() {
                 "Oopsie looks like me and ${real.username} are under a mistletoe",
                 "I need ideas for stocking stuffers",
                 "I have $until days left to fill our stockings",
-                "Fuck the grinches bitch ass",
                 "Rusty = the grinch, ${real.username} = santa",
                 "${real.username} the red nose reindeer",
                 "Put one foot in front of the other",
@@ -651,6 +650,7 @@ class Adventurer(val style: CombatStyle): Script() {
             }
 
                 else -> {
+                  
                 val chat = dialogue.random()
                 bot.sendChat(chat)
                 bot.updateMasks.register(ChatFlag(ChatMessage(bot, chat, 0, 0)))

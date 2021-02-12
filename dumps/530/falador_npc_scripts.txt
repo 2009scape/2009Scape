@@ -248,12 +248,12 @@ It's a good thing I have level - mining. (excited)
 //Find low persons response
  - - -
 
-Yes, that's pretty good. Did you want anything else?(smiley cunt)
+Yes, that's pretty good. Did you want anything else?(smiley)
 
 ---
 
 
-What do you dwarves do with the ore you mine? (smiley cunt)
+What do you dwarves do with the ore you mine? (smiley)
 
 
 No thanks, I'm fine.
@@ -280,7 +280,7 @@ so much easier. There are plenty of dwarven traders
 working in Keldagrim. Anyway, can I help you with anything 
 else?
 
-(smiley cunt)
+(smiley)
 
 //FINISHed
 
@@ -339,7 +339,7 @@ It'd be fun to speak to you.
 Perhaps I should go now.
 
 - - -
-Yes, please go away now. (sad, looks like he got cock blocked)
+Yes, please go away now. (sad)
 
 
 _____________________________________________________________________

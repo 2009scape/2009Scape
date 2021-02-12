@@ -58,7 +58,7 @@ class QuestCommandSet : CommandSet(Command.Privilege.ADMIN){
         }
         var lineId = 11
         player.packetDispatch.sendString("<col=ecf0f1>" + "Available Quests" + "</col>", 275, 2)
-        for (q in QuestRepository.getQuests().values) {
+        for (q in QuestRepository.getQuests().toSortedMap().values) {
             // Add a space to beginning and end of string for the strikethrough
             player.packetDispatch.sendString("<col=ecf0f1>" + (if (q.isCompleted(player)) "<str> " else "") + q.name + " ", 275, lineId++)
         }
