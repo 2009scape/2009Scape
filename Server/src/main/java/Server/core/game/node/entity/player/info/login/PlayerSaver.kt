@@ -696,8 +696,10 @@ class PlayerSaver (val player: Player){
     fun saveSlayer(root: JSONObject){
         val slayer = JSONObject()
         val slayerManager = player.slayer
-        if(slayerManager.hasTask()){
+        if(slayerManager.hasStarted()){
             slayer.put("master",slayerManager.master.npc.toString())
+        }
+        if(slayerManager.hasTask()){
             slayer.put("taskId",slayerManager.task.ordinal.toString())
             slayer.put("taskAmount",slayerManager.amount.toString())
         }
