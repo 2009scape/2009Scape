@@ -71,7 +71,7 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
 
     @Override
     public boolean checkRequirements() {
-        if (!interactable()) {
+        if (!interactable() && !player.getLocks().isInteractionLocked()) {
             return false;
         }
         if (player.getSkills().getLevel(Skills.THIEVING) < type.getLevel()) {
@@ -82,7 +82,7 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
             player.getPacketDispatch().sendMessage("You do not have enough space in your inventory to pick this pocket.");
             return false;
         }
-        player.lock(1);
+        player.getLocks().lockInteractions(2);
         player.faceTemporary(node, 2);
         node.getWalkingQueue().reset();
         node.getLocks().lockMovement(1);
@@ -98,7 +98,7 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
         if (ticks == 0) {
             player.animate(ANIMATION);
         }
-        if (++ticks % 4 != 0) {
+        if (++ticks % 2 != 0) {
             return false;
         }
         final boolean success = success();
@@ -118,6 +118,7 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
                     && new ZoneBorders(3202, 3459, 3224, 3470, 0).insideBorder(player)) {
                 player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 1, 12);
             }
+            player.getLocks().unlockInteraction();
         } else {
             node.animate(NPC_ANIM);
             node.faceTemporary(player, 1);
