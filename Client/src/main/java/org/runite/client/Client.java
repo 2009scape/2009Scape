@@ -144,8 +144,10 @@ public final class Client extends GameShell {
                     }
                 }
                 if (Class143.loadingStage == 0) {
-                    // Discord
-                    Discord.InitalizeDiscord();
+                    // Don't load Discord on ARM
+		    if (!System.getProperty("os.arch").contains("aarch64")) {
+                        Discord.InitalizeDiscord();
+                    }
                     Class3_Sub28_Sub1.updateLoadingBar((Color) null, var10, Class3_Sub17.aClass94_2464, LoadingStageNumber);
                 } else if (5 == Class143.loadingStage) {
                     Class3_Sub23.method406((byte) 117, false, Class168.aClass3_Sub28_Sub17_2096);
