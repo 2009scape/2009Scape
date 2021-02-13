@@ -15,3 +15,9 @@ Management-Server/org/
 Server/data/eco/grand_exchange_db.emp
 Single-Player/*
 Single-Player/
+docker
+.gradle
+gradle
+.idea
+gradlew.bat
+
