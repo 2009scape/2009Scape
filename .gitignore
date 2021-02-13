@@ -19,5 +19,4 @@ docker
 .gradle
 gradle
 .idea
-gradlew.bat
 
