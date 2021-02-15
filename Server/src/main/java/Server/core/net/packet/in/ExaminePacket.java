@@ -71,6 +71,7 @@ public final class ExaminePacket implements IncomingPacket {
 		if (ItemDefinition.forId(id).getExamine().length() == 255) {
 			return "A set of instructions to be followed.";
 		}
-		return ItemDefinition.forId(id).getExamine();
+		ItemDefinition itemDefinition = ItemDefinition.forId(id);
+		return itemDefinition.isUnnoted() ? itemDefinition.getExamine() : "Swap this note at any bank for the equivalent item.";
 	}
 }
