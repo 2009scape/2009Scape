@@ -80935,7 +80935,7 @@
     {
       "id": "8901",
       "name": "Black mask (10)",
-      "examine": "Charged: A magic cave horror mask.Uncharged: An inert-seeming cave horror mask.",
+      "examine": "A magic cave horror mask.",
       "tradeable": "true",
       "low_alchemy": "1200",
       "high_alchemy": "1800",
@@ -80960,7 +80960,7 @@
     {
       "id": "8903",
       "name": "Black mask (9)",
-      "examine": "Charged: A magic cave horror mask.Uncharged: An inert-seeming cave horror mask.",
+      "examine": "A magic cave horror mask.",
       "tradeable": "true",
       "low_alchemy": "1200",
       "high_alchemy": "1800",
@@ -80982,7 +80982,7 @@
     {
       "id": "8905",
       "name": "Black mask (8)",
-      "examine": "Charged: A magic cave horror mask.Uncharged: An inert-seeming cave horror mask.",
+      "examine": "A magic cave horror mask.",
       "tradeable": "true",
       "low_alchemy": "1200",
       "high_alchemy": "1800",
@@ -81004,7 +81004,7 @@
     {
       "id": "8907",
       "name": "Black mask (7)",
-      "examine": "Charged: A magic cave horror mask.Uncharged: An inert-seeming cave horror mask.",
+      "examine": "A magic cave horror mask.",
       "tradeable": "true",
       "low_alchemy": "1200",
       "high_alchemy": "1800",
@@ -81026,7 +81026,7 @@
     {
       "id": "8909",
       "name": "Black mask (6)",
-      "examine": "Charged: A magic cave horror mask.Uncharged: An inert-seeming cave horror mask.",
+      "examine": "A magic cave horror mask.",
       "tradeable": "true",
       "low_alchemy": "1200",
       "high_alchemy": "1800",
@@ -81048,7 +81048,7 @@
     {
       "id": "8911",
       "name": "Black mask (5)",
-      "examine": "Charged: A magic cave horror mask.Uncharged: An inert-seeming cave horror mask.",
+      "examine": "A magic cave horror mask.",
       "tradeable": "true",
       "low_alchemy": "1200",
       "high_alchemy": "1800",
@@ -81070,7 +81070,7 @@
     {
       "id": "8913",
       "name": "Black mask (4)",
-      "examine": "Charged: A magic cave horror mask.Uncharged: An inert-seeming cave horror mask.",
+      "examine": "A magic cave horror mask.",
       "tradeable": "true",
       "low_alchemy": "1200",
       "high_alchemy": "1800",
@@ -81092,7 +81092,7 @@
     {
       "id": "8915",
       "name": "Black mask (3)",
-      "examine": "Charged: A magic cave horror mask.Uncharged: An inert-seeming cave horror mask.",
+      "examine": "A magic cave horror mask.",
       "tradeable": "true",
       "low_alchemy": "1200",
       "high_alchemy": "1800",
@@ -81114,7 +81114,7 @@
     {
       "id": "8917",
       "name": "Black mask (2)",
-      "examine": "Charged: A magic cave horror mask.Uncharged: An inert-seeming cave horror mask.",
+      "examine": "A magic cave horror mask.",
       "tradeable": "true",
       "low_alchemy": "1200",
       "high_alchemy": "1800",
@@ -81136,7 +81136,7 @@
     {
       "id": "8919",
       "name": "Black mask (1)",
-      "examine": "Charged: A magic cave horror mask.Uncharged: An inert-seeming cave horror mask.",
+      "examine": "A magic cave horror mask.",
       "tradeable": "true",
       "low_alchemy": "1200",
       "high_alchemy": "1800",
@@ -81158,7 +81158,7 @@
     {
       "id": "8921",
       "name": "Black mask",
-      "examine": "Charged: A magic cave horror mask.Uncharged: An inert-seeming cave horror mask.",
+      "examine": "An inert-seeming cave horror mask.",
       "tradeable": "true",
       "low_alchemy": "1200",
       "high_alchemy": "1800",
