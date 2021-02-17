@@ -33,7 +33,6 @@ public class ThievingOptionPlugin extends OptionHandler {
 		case "pick-pocket":
 		case "pickpocket":
 			player.getPulseManager().run(new PickpocketPulse(player, (NPC) node, Pickpocket.forNPC((NPC) node)));
-			player.getLocks().lockInteractions(6);
 			break;
 		case "steal-from":
 		case "steal from":

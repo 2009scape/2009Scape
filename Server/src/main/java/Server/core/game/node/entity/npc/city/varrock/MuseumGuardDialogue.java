@@ -1,5 +1,7 @@
-package core.game.content.dialogue;
+package core.game.node.entity.npc.city.varrock;
 
+import core.game.content.dialogue.DialoguePlugin;
+import core.game.content.dialogue.FacialExpression;
 import core.game.content.global.action.DoorActionHandler;
 import core.game.node.entity.player.Player;
 import core.game.world.map.Location;

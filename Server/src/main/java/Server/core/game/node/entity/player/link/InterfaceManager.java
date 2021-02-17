@@ -438,7 +438,9 @@ public final class InterfaceManager {
 		//Energy orb
 		PacketRepository.send(Interface.class, new InterfaceContext(player, getWindowPaneId(), isResizable() ? 15 : 72, TOPSTAT_RUN_750, true));
 		//Summoning bar
-		PacketRepository.send(Interface.class, new InterfaceContext(player, getWindowPaneId(), isResizable() ? 16 : 73, TOPSTAT_LORE_747, true));
+		if (player.getQuestRepository().isComplete("Wolf Whistle")) {
+			PacketRepository.send(Interface.class, new InterfaceContext(player, getWindowPaneId(), isResizable() ? 16 : 73, TOPSTAT_LORE_747, true));
+		}
 		//Split PM
 		PacketRepository.send(Interface.class, new InterfaceContext(player, getWindowPaneId(), isResizable() ? 71 : 10, PMCHAT_754, true));
 	}

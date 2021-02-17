@@ -189,13 +189,13 @@ public final class RellekkaZone extends MapZone implements Plugin<Object> {
 					break;
 				}
 				break;
-				case "enter":
-					switch(node.getId()){
-						case 5008:
-							player.getProperties().setTeleportLocation(Location.create(2773, 10162, 0));
-							break;
-					}
-					break;
+			case "enter":
+				switch(node.getId()){
+					case 5008:
+						player.getProperties().setTeleportLocation(Location.create(2773, 10162, 0));
+						break;
+				}
+				break;
 			}
 			return true;
 		}

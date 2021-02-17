@@ -4,8 +4,12 @@ archivesBaseName = 'client'
 
 mainClassName = 'org.rs09.client.GameLaunch'
 
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
 dependencies {
-    implementation 'com.github.Vatuu:discord-rpc:1.6.2'
+    implementation 'com.github.Vatuu:discord-rpc:1f829371af'
     implementation 'com.googlecode.json-simple:json-simple:1.1.1'
 
     implementation files('libs/clientlibs.jar')

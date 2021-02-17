@@ -52,7 +52,7 @@ public class WoodcuttingSkillPulse extends Pulse {
 
     public void message(int type) {
         if (type == 0) {
-            player.getPacketDispatch().sendMessage("You swing your axe at the tree...");
+            player.getPacketDispatch().sendMessage("You swing your axe at the tree.");
             if (TutorialSession.getExtension(player).getStage() == 6) {
                 player.lock(7);
                 TutorialStage.load(player, 7, false);

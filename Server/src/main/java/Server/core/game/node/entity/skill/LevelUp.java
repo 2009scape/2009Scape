@@ -9,6 +9,7 @@ import core.game.world.repository.Repository;
 import core.net.packet.PacketRepository;
 import core.net.packet.context.MusicContext;
 import core.net.packet.out.MusicPacket;
+import core.tools.StringUtils;
 
 /**
  * Represents a leveling up reward.
@@ -123,11 +124,12 @@ public final class LevelUp {
 		if (soundId > -1) {
 			PacketRepository.send(MusicPacket.class, new MusicContext(player, soundId, true));
 		}
+		String skillName = Skills.SKILL_NAME[slot];
 		handleMilestones(player, slot, amount);
 		player.getPacketDispatch().sendGraphic(199);
-		player.getPacketDispatch().sendString("<col=00008B>Congratulations, you've just advanced a " + Skills.SKILL_NAME[slot] + " level!", 740, 0);
-		player.getPacketDispatch().sendString("Your " + Skills.SKILL_NAME[slot] + " level is now " + player.getSkills().getStaticLevel(slot) + ".", 740, 1);
-		player.getPacketDispatch().sendMessage("You've just advanced a " + Skills.SKILL_NAME[slot] + " level! You have reached level " + player.getSkills().getStaticLevel(slot) + ".");
+		player.getPacketDispatch().sendString("Congratulations! You've just advanced " + (StringUtils.isPlusN(skillName) ? "an" : "a") + " " + skillName + " level!", 740, 0);
+		player.getPacketDispatch().sendString("You have now reached level " + player.getSkills().getStaticLevel(slot) + "!", 740, 1);
+		player.getPacketDispatch().sendMessage("You've just advanced " + (StringUtils.isPlusN(skillName) ? "an" : "a") + " " + skillName + " level! You have reached level " + player.getSkills().getStaticLevel(slot) + ".");
 		if (slot == Skills.PRAYER) {
 			player.getSkills().incrementPrayerPoints(1);
 		}

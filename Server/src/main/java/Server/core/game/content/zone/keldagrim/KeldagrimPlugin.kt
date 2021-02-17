@@ -30,7 +30,8 @@ class KeldagrimOptionHandlers : OptionHandler() {
         when(option){
             "go-through" -> {
                 when (node.id) {
-                    5973 -> player.properties.teleportLocation = Location.create(2838,10125)
+                    5973 -> player.properties.teleportLocation = Location.create(2838, 10125)
+                    5998 -> player.properties.teleportLocation = Location.create(2780, 10161)
                 }
             }
             "climb-up" -> {
@@ -48,15 +49,22 @@ class KeldagrimOptionHandlers : OptionHandler() {
                     28094 -> player.dialogueInterpreter.open(GETrapdoorDialogueID)
                 }
             }
+            "enter" -> {
+                when(node.id){
+                    5014 -> player.properties.teleportLocation = Location.create(2730, 3713, 0)
+                }
+            }
         }
         return true
     }
 
     override fun newInstance(arg: Any?): Plugin<Any> {
         ObjectDefinition.forId(5973).handlers["option:go-through"] = this
+        ObjectDefinition.forId(5998).handlers["option:go-through"] = this
         ObjectDefinition.forId(9084).handlers["option:climb-down"] = this
         ObjectDefinition.forId(9138).handlers["option:climb-up"] = this
         ObjectDefinition.forId(28094).handlers["option:open"] = this
+        ObjectDefinition.forId(5014).handlers["option:enter"] = this
         return this
     }
 }

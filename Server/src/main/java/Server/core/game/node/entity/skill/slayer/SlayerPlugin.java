@@ -29,7 +29,6 @@ public class SlayerPlugin extends OptionHandler {
 		ObjectDefinition.forId(8785).getHandlers().put("option:climb-up", this);
 		ObjectDefinition.forId(23158).getHandlers().put("option:exit", this);
 		ObjectDefinition.forId(23157).getHandlers().put("option:exit", this);
-		ObjectDefinition.forId(5008).getHandlers().put("option:enter", this);
 		ObjectDefinition.forId(15767).getHandlers().put("option:enter", this);
 		ObjectDefinition.forId(15811).getHandlers().put("option:exit", this);
 		ObjectDefinition.forId(15812).getHandlers().put("option:exit", this);
@@ -60,9 +59,6 @@ public class SlayerPlugin extends OptionHandler {
 		case 23158:
 		case 23157:
 			player.teleport(new Location(2729, 3733, 0));
-			break;
-		case 5008:
-			//player.teleport(Location.create(2808, 10002, 0));
 			break;
 		case 15767:
 			player.teleport(new Location(3748, 9373, 0));
