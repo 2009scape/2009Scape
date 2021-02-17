@@ -1113,7 +1113,7 @@
     "weakness": "2",
     "slayer_task": "76",
     "slayer_exp": "5",
-    "aggressive": "true",
+    "aggressive": "false",
     "combat_audio": "537,539,538",
     "safespot": null
   },
@@ -3231,6 +3231,7 @@
     "projectile": "106",
     "end_gfx": "107",
     "weakness": "3",
+    "aggressive": "true",
     "safespot": null
   },
   {
@@ -10069,6 +10070,7 @@
   {
     "id": "997",
     "name": "Kalrag",
+    "examine": "A giant spider.",
     "lifepoints": "91",
     "attack_level": "1",
     "strength_level": "1",
@@ -10084,6 +10086,7 @@
   {
     "id": "998",
     "name": "Othainian",
+    "examine": "One of the guardians of Iban.",
     "lifepoints": "90",
     "attack_level": "1",
     "strength_level": "1",
@@ -10100,6 +10103,7 @@
   {
     "id": "999",
     "name": "Doomion",
+    "examine": "One of the guardians of Iban.",
     "lifepoints": "90",
     "attack_level": "1",
     "strength_level": "1",
@@ -10115,6 +10119,7 @@
   },
   {
     "id": "1000",
+    "examine": "One of the guardians of Iban.",
     "name": "Holthion",
     "lifepoints": "90",
     "attack_level": "1",
@@ -12303,6 +12308,7 @@
   {
     "id": "1201",
     "name": "Elf warrior",
+    "examine": "I don't want to get on the wrong side of him.",
     "lifepoints": "105",
     "attack_level": "1",
     "strength_level": "1",
@@ -12321,6 +12327,7 @@
   {
     "id": "1203",
     "name": "Tyras guard",
+    "examine": "One of King Tyras's men.",
     "lifepoints": "112",
     "attack_level": "1",
     "strength_level": "1",
@@ -12336,6 +12343,7 @@
   {
     "id": "1204",
     "name": "Tyras guard",
+    "examine": "One of King Tyras's men.",
     "lifepoints": "112",
     "attack_level": "1",
     "strength_level": "1",
@@ -13825,6 +13833,7 @@
   {
     "id": "1327",
     "name": "Bear Cub",
+    "examine": "Cute. But deadly.",
     "lifepoints": "20",
     "attack_level": "1",
     "strength_level": "1",
@@ -13920,6 +13929,7 @@
   {
     "id": "1339",
     "name": "Dagannoth",
+    "examine": "A horror from the ocean depths...",
     "lifepoints": "70",
     "attack_level": "1",
     "strength_level": "1",
@@ -13938,6 +13948,7 @@
   {
     "id": "1340",
     "name": "Dagannoth",
+    "examine": "A horror from the ocean depths...",
     "lifepoints": "70",
     "attack_level": "1",
     "strength_level": "1",
@@ -13956,6 +13967,7 @@
   {
     "id": "1341",
     "name": "Dagannoth",
+    "examine": "A horror from the ocean depths...",
     "lifepoints": "120",
     "attack_level": "1",
     "strength_level": "1",
@@ -13972,6 +13984,7 @@
   {
     "id": "1342",
     "name": "Dagannoth",
+    "examine": "A horror from the ocean depths...",
     "lifepoints": "120",
     "attack_level": "1",
     "strength_level": "1",
@@ -13988,6 +14001,7 @@
   {
     "id": "1343",
     "name": "Dagannoth",
+    "examine": "A horror from the ocean depths...",
     "lifepoints": "120",
     "attack_level": "1",
     "strength_level": "1",
@@ -14004,6 +14018,7 @@
   {
     "id": "1344",
     "name": "Dagannoth",
+    "examine": "A horror from the ocean depths...",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -14015,6 +14030,7 @@
   {
     "id": "1345",
     "name": "Dagannoth",
+    "examine": "A horror from the ocean depths...",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -14026,6 +14042,7 @@
   {
     "id": "1346",
     "name": "Dagannoth",
+    "examine": "A horror from the ocean depths...",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -14037,6 +14054,7 @@
   {
     "id": "1347",
     "name": "Dagannoth",
+    "examine": "A horror from the ocean depths...",
     "lifepoints": "10",
     "attack_level": "1",
     "strength_level": "1",
@@ -14048,7 +14066,7 @@
   {
     "id": "1351",
     "name": "Dagannoth mother",
-    "examine": "A horror from the ocean depths...",
+    "examine": "A horror from the ocean depths.",
     "lifepoints": "128",
     "attack_level": "60",
     "strength_level": "60",
@@ -14069,6 +14087,7 @@
   {
     "id": "1352",
     "name": "Dagannoth mother",
+    "examine": "A horror from the ocean depths.",
     "lifepoints": "100",
     "attack_level": "1",
     "strength_level": "1",
@@ -14084,6 +14103,7 @@
   {
     "id": "1353",
     "name": "Dagannoth mother",
+    "examine": "A horror from the ocean depths.",
     "lifepoints": "100",
     "attack_level": "1",
     "strength_level": "1",
@@ -14099,6 +14119,7 @@
   {
     "id": "1354",
     "name": "Dagannoth mother",
+    "examine": "A horror from the ocean depths.",
     "lifepoints": "100",
     "attack_level": "1",
     "strength_level": "1",
@@ -14114,6 +14135,7 @@
   {
     "id": "1355",
     "name": "Dagannoth mother",
+    "examine": "A horror from the ocean depths.",
     "lifepoints": "100",
     "attack_level": "1",
     "strength_level": "1",
@@ -14129,6 +14151,7 @@
   {
     "id": "1356",
     "name": "Dagannoth mother",
+    "examine": "A horror from the ocean depths.",
     "lifepoints": "100",
     "attack_level": "1",
     "strength_level": "1",
@@ -72801,5 +72824,221 @@
     "name": "Gull",
     "examine": "Flappy bird.",
     "water_npc": "true"
+  },
+  {
+    "id": "957",
+    "name": "Mubariz",
+    "examine": "Tough-looking combat type."
+  },
+  {
+    "id": "958",
+    "name": "Fadli",
+    "examine": "Looks kinda bored."
+  },
+  {
+    "id": "959",
+    "name": "A'abla",
+    "examine": "Trained to deal with all sorts of injuries."
+  },
+  {
+    "id": "960",
+    "name": "Sabreen",
+    "examine": "Wow! She's made a statement with that hair!"
+  },
+  {
+    "id": "962",
+    "name": "Jaraah",
+    "examine": "Has the messy job of putting players back together again."
+  },
+  {
+    "id": "963",
+    "name": "Zahwa",
+    "examine": "Battle-scarred."
+  },
+  {
+    "id": "964",
+    "name": "Ima",
+    "examine": "A citizen of Al Kharid"
+  },
+  {
+    "id": "965",
+    "name": "Sabeil",
+    "examine": "A citizen of Al Kharid"
+  },
+  {
+    "id": "966",
+    "name": "Jadid",
+    "examine": "A citizen of Al Kharid"
+  },
+  {
+    "id": "967",
+    "name": "Dalal",
+    "examine": "A citizen of Al Kharid"
+  },
+  {
+    "id": "968",
+    "name": "Afrah",
+    "examine": "A citizen of Al Kharid"
+  },
+  {
+    "id": "969",
+    "name": "Jeed",
+    "examine": "A citizen of Al Kharid"
+  },
+  {
+    "id": "970",
+    "name": "Diango",
+    "examine": "He smells funny."
+  },
+  {
+    "id": "971",
+    "name": "Chadwell",
+    "examine": "Shopkeeper."
+  },
+  {
+    "id": "972",
+    "name": "Koftik",
+    "examine": "The cave guide."
+  },
+  {
+    "id": "973",
+    "name": "Koftik",
+    "examine": "The cave guide."
+  },
+  {
+    "id": "974",
+    "name": "Koftik",
+    "examine": "The cave guide."
+  },
+  {
+    "id": "975",
+    "name": "Koftik",
+    "examine": "The cave guide."
+  },
+  {
+    "id": "976",
+    "name": "Koftik",
+    "examine": "The cave guide."
+  },
+  {
+    "id": "996",
+    "name": "Kamen",
+    "examine": "This dwarf looks intoxicated."
+  },
+  {
+    "id": "995",
+    "name": "Klank",
+    "examine": "A dwarven maker of gauntlets."
+  },
+  {
+    "id": "1206",
+    "name": "Tyras guard",
+    "examine": "One of King Tyras's men."
+  },
+  {
+    "id": "1209",
+    "name": "Koftik",
+    "examine": "The cave guide."
+  },
+  {
+    "id": "1210",
+    "name": "Kings messenger",
+    "examine": "One of King Lathas' messengers."
+  },
+  {
+    "id": "1212",
+    "name":"Will o' the wisp",
+    "examine": "Mysterious swamp lights..."
+  },
+  {
+    "id": "1213",
+    "name": "Tegid",
+    "examine": "He's washing his clothes in the lake."
+  },
+  {
+    "id": "1214",
+    "name": "Thistle",
+    "examine": "A plant."
+  },
+  {
+    "id": "1215",
+    "name": "Parrots",
+    "examine": "What a colourful bunch of parrots!"
+  },
+  {
+    "id": "639",
+    "name": "Romeo",
+    "examine": "Rather dense and soppy looking."
+  },
+  {
+    "id": "5925",
+    "name": "Benny",
+    "examine": "Newspaper seller."
+  },
+  {
+    "id": "783",
+    "name": "Wilough",
+    "examine": "One of Gertrude's Sons."
+  },
+  {
+    "id": "882",
+    "name": "Gypsy Aris",
+    "examine": "An old gypsy lady."
+  },
+  {
+    "id": "548",
+    "name": "Thessalia",
+    "examine": "Interesting assortment of clothes on offer..."
+  },
+  {
+    "id": "546",
+    "name": "Zaff",
+    "examine": "Sells superior staffs."
+  },
+  {
+    "id": "756",
+    "name": "Dr Harlow",
+    "examine": "A retired vampyre hunter."
+  },
+  {
+    "id": "733",
+    "name": "Bartender",
+    "examine": "I could get a beer from him."
+  },
+  {
+    "id": "6522",
+    "examine": "Director of the Grand Exchange."
+  },
+  {
+    "id": "6535",
+    "examine": "He can look after my money. Good with money."
+  },
+  {
+    "id": "6532",
+    "examine": "She can look after my money. Good with money."
+  },
+  {
+    "id": "6530",
+    "examine": "There to help me make my bids."
+  },
+  {
+    "id": "6528",
+    "examine": "There to help me make my bids."
+  },
+  {
+    "id": "6534",
+    "examine": "He can look after my money. Good with money."
+  },
+  {
+    "id": "6533",
+    "examine": "She can look after my money. Good with money."
+  },
+  {
+    "id": "6531",
+    "examine": "There to help me make my bids."
+  },
+  {
+    "id": "6529",
+    "examine": "There to help me make my bids."
   }
 ]

@@ -113,17 +113,13 @@ public class ProfessorOddensteinPlugin extends DialoguePlugin {
 				switch (buttonId) {
 				case 1:
 					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What does this machine do?");
-					stage = 10;
+					stage = 11;
 					break;
 				case 2:
 					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Is this your house?");
 					stage = 20;
 					break;
 				}
-				break;
-			case 10:
-				interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What does this machine do?");
-				stage = 11;
 				break;
 			case 11:
 				interpreter.sendDialogues(npc, FacialExpression.HALF_GUILTY, "Nothing at the moment... It's broken. It's meant to be", "a transmutation machine.");
@@ -159,7 +155,7 @@ public class ProfessorOddensteinPlugin extends DialoguePlugin {
 					break;
 				case 2:
 					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "What does this machine do?");
-					stage = 10;
+					stage = 11;
 					break;
 				case 3:
 					interpreter.sendDialogues(player, FacialExpression.HALF_GUILTY, "Is this your house?");

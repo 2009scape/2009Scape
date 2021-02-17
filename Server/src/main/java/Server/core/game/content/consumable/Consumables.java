@@ -85,6 +85,7 @@ public enum Consumables {
 	STEW(new Food(new int[] {2003, 1923}, new HealingEffect(11))),
 	SPICY_STEW(new Food(new int[] {7479, 1923}, new HealingEffect(11))),
 	CURRY(new Food(new int[] {2011, 1923}, new HealingEffect(19))),
+	BANANA_STEW(new Food(new int[] {4016}, new HealingEffect(11))),
 
 	/** Pizzas */
 	PLAIN_PIZZA(new HalfableFood(new int[] {2289, 2291}, new HealingEffect(7))),
@@ -187,6 +188,8 @@ public enum Consumables {
 	PREMADE_TTL(new Food(new int[] {2231}, new HealingEffect(15))),
 	CHOCOLATE_BOMB(new Food(new int[] {2195}, new HealingEffect(15))),
 	PREMADE_CHOC_BOMB(new Food(new int[] {2229}, new HealingEffect(15))),
+	TOAD_LEGS(new Food(new int[] {2152}, new HealingEffect(3))),
+	KING_WORM(new Food(new int[] {2162}, new HealingEffect(2))),
 
 	/** Ales */
 	ASGOLDIAN_ALE(new FakeConsumable(7508, new String[] {"I don't think I'd like gold in beer thanks. Leave it for the dwarves."})),
@@ -288,6 +291,8 @@ public enum Consumables {
 	TCHIKI_MONKEY_PASTE(new Food(new int[] {7575}, new HealingEffect(5), "You eat the Tchiki monkey nut paste. It sticks to the roof of your mouth.")),
 	OOMLIE_WRAP(new Food(new int[] {Items.COOKED_OOMLIE_WRAP_2343}, new MultiEffect(new HealingEffect(14), new AchievementEffect(DiaryType.KARAMJA, 2, 2)))),
 	ROE(new Food(new int[]{11324}, new HealingEffect(3))),
+	EQUA_LEAVES(new Food(new int[]{2128}, new HealingEffect(1))),
+	CHOC_ICE(new Food(new int[]{6794}, new HealingEffect(6))),
 
 	/** Special Events */
 	PUMPKIN(new Food(new int[] {1959}, new HealingEffect(14))),
