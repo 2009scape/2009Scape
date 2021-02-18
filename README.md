@@ -113,7 +113,7 @@ First follow the [Github-Setup](#github-setup). After you have forked over your 
     * Download and install like any normal application
     
 3. Install <a href="https://gradle.org/">Gradle</a>
-    * Click on "Install Gradle" https://creativecommons.org/licenses/by-nc-sa/4.0/
+    * Click on "Install Gradle" 
     * Scroll down to "Installing manually" 
     * Download "Binary-only"
     * Scroll down until you see "Microsoft Windows users"
