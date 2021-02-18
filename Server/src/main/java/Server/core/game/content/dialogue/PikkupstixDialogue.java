@@ -13,7 +13,7 @@ import core.game.node.item.Item;
  * @author Splinter
  * @version 1.1
  * @notice Modified March 2nd, 2015 to allow the bulk buying of shards.
- * @notice The previous notice is a fucking lie and whoever claimed that is a retard
+ * @notice The previous notice is dubious
  * @notice Spirit shard packs were released 9 September 2009, outside of 530. Option removed.
  */
 @Initializable

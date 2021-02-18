@@ -21,8 +21,8 @@ import core.plugin.PluginManager;
 public class StrongHoldOfPlayerSafetyPlugin implements Plugin<Object> {
 
 	/**
-	 * Yo tyler nigga, when u pull back the poster and the dialogue pops up you
-	 * get teleported to this map tile: [3140, 4230, 2]
+	 * when u pull back the poster and the dialogue pops up
+	 * you get teleported to this map tile: [3140, 4230, 2]
 	 */
 
 	/**

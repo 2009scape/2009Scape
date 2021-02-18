@@ -122,7 +122,7 @@ public final class MakeDoughPlugin extends UseWithHandler {
 		@Override
 		public boolean open(Object... args) {
 			waterData = (Item[]) args[0];
-			interpreter.sendOptions("What do you wish to make?", "Bread dough.", "Pastry dough.", "Pizza dough.", "Pitta dough.");
+			interpreter.sendOptions("What sort of dough do you wish to make?", "Bread dough.", "Pastry dough.", "Pizza dough.", "Pitta dough.");
 			return true;
 		}
 

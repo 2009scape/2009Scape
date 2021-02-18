@@ -382,7 +382,7 @@ class ScriptAPI(private val bot: Player) {
                     actualId = Item(id).noteChange
                 }
                 val canSell = OfferManager.addBotOffer(actualId, itemAmt)
-                if (canSell) {
+                if (canSell && saleIsBigNews(actualId, itemAmt)) {
                     SystemLogger.log("Offered $itemAmt")
                     Repository.sendNews("2009Scape just offered " + itemAmt + " " + ItemDefinition.forId(actualId).name.toLowerCase() + " on the GE.")
                 }
@@ -415,7 +415,7 @@ class ScriptAPI(private val bot: Player) {
                         actualId = Item(actualId).noteChange
                     }
                     val canSell = OfferManager.addBotOffer(actualId, itemAmt)
-                    if (canSell) {
+                    if (canSell && saleIsBigNews(actualId, itemAmt)) {
                         Repository.sendNews("2009Scape just offered " + itemAmt + " " + ItemDefinition.forId(actualId).name.toLowerCase() + " on the GE.")
                     }
                     bot.bank.remove(item)
@@ -444,7 +444,7 @@ class ScriptAPI(private val bot: Player) {
                         actualId = Item(actualId).noteChange
                     }
                     val canSell = OfferManager.addBotOffer(actualId, itemAmt)
-                    if (canSell) {
+                    if (canSell && saleIsBigNews(actualId, itemAmt)) {
                         Repository.sendNews("2009Scape just offered " + itemAmt + " " + ItemDefinition.forId(actualId).name.toLowerCase() + " on the GE.")
                     }
                     bot.bank.remove(item)
@@ -454,6 +454,17 @@ class ScriptAPI(private val bot: Player) {
             }
         }
         bot.pulseManager.run(toCounterPulseAll())
+    }
+
+    /**
+     * Function to determine whether or not to bother everyone on the server
+     * with the big news that a bot is selling something to the GE, based on item value
+     * @param itemID
+     * @param amount
+     * @author Gexja
+     */
+    fun saleIsBigNews(itemID: Int, amount: Int): Boolean {
+        return ItemDefinition.forId(itemID).getAlchemyValue(true) * amount >= 500
     }
 
     /**

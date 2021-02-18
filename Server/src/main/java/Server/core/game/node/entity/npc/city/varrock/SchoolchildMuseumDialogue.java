@@ -1,5 +1,7 @@
-package core.game.content.dialogue;
+package core.game.node.entity.npc.city.varrock;
 
+import core.game.content.dialogue.DialoguePlugin;
+import core.game.content.dialogue.FacialExpression;
 import core.game.node.entity.npc.NPC;
 import core.plugin.Initializable;
 import core.game.node.entity.player.Player;
@@ -35,7 +37,7 @@ public class SchoolchildMuseumDialogue extends DialoguePlugin {
 
     @Override
     public int[] getIds() {
-        return new int[]{5984, 5946};
+        return new int[]{5984, 5945, 5946, 10};
     }
 
     @Override

@@ -43,9 +43,9 @@ public enum CountryFlag {
 	AUSTRALIA(16),
 	
 	/**
-	 * America (JewSA)
+	 * America (USA)
 	 */
-	JEWSA(225),
+	UNITED_STATES_OF_AMERICA(225),
 	
 	/**
 	 * Norway

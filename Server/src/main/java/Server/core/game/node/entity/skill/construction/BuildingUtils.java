@@ -2,8 +2,8 @@ package core.game.node.entity.skill.construction;
 
 import core.cache.def.impl.ItemDefinition;
 import core.game.component.Component;
-import core.game.node.entity.skill.Skills;
 import core.game.node.entity.player.Player;
+import core.game.node.entity.skill.Skills;
 import core.game.node.item.Item;
 import core.game.node.object.GameObject;
 import core.game.node.object.ObjectBuilder;
@@ -16,7 +16,9 @@ import core.game.world.update.flag.context.Animation;
 import core.net.packet.PacketRepository;
 import core.net.packet.context.ContainerContext;
 import core.net.packet.out.ContainerPacket;
+import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -205,9 +207,30 @@ public final class BuildingUtils {
 				if (player.getInventory().remove(deco.getItems()) || player.isAdmin()) {
 					setDecoration(player, r, room, hotspot, object, deco);
 					player.getSkills().addExperience(Skills.CONSTRUCTION, deco.getExperience(), true);
+
+					if (getObjectIdsThatGiveFarmingExperience().contains(deco.getObjectId())) {
+						player.getSkills().addExperience(Skills.FARMING, deco.getExperience(), true);
+					}
 					player.unlock();
 				}
 				return true;
+			}
+
+			@NotNull
+			private ArrayList<Integer> getObjectIdsThatGiveFarmingExperience() {
+				return new ArrayList<>(
+						// Garden big tree decorations.
+						Arrays.asList(13411, 13412, 13413, 13414, 13415, 13416, 13417,
+								// Garden tree decorations.
+								13418, 13419, 13420, 13421, 13422, 13423, 13424,
+								// Garden big plant 1 decorations.
+								13425, 13426, 13427,
+								// Garden big plant 2 decorations.
+								13428, 13429, 13430,
+								// Garden small plant 1 decorations.
+								13431, 13432, 13433,
+								// Garden small plant 2 decorations.
+								13434, 13435, 13436));
 			}
 		});
 	}

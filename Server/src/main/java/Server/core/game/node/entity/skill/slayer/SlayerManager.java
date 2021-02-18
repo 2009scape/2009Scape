@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * Manages the players slayer task.
  * @author Vexia
- * 
+ *
  */
 public final class SlayerManager implements SavingModule {
 
@@ -82,13 +82,14 @@ public final class SlayerManager implements SavingModule {
 
 	public void parse(JSONObject slayerData){
 		Object m = slayerData.get("master");
-		if(m != null) {
-			int master = Integer.parseInt( m.toString());
-			int taskId = Integer.parseInt(slayerData.get("taskId").toString());
-				this.master = Master.forId(master);
-				task = Tasks.values()[taskId];
-				amount = Integer.parseInt(slayerData.get("taskAmount").toString());
-		}
+		if(m != null)
+			this.master = Master.forId(Integer.parseInt(m.toString()));
+		Object t = slayerData.get("taskId");
+		if(t != null)
+			task = Tasks.values()[Integer.parseInt(t.toString())];
+		Object a = slayerData.get("taskAmount");
+		if(a != null)
+			amount = Integer.parseInt(a.toString());
 		slayerPoints = Integer.parseInt( slayerData.get("points").toString());
 		taskCount = Integer.parseInt( slayerData.get("taskStreak").toString());
 		JSONArray learnedArray = (JSONArray) slayerData.get("learned_rewards");

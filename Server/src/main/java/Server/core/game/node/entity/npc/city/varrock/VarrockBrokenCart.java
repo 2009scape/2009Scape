@@ -1,4 +1,4 @@
-package core.game.content.dialogue;
+package core.game.node.entity.npc.city.varrock;
 
 import core.cache.def.impl.ObjectDefinition;
 import core.game.interaction.OptionHandler;

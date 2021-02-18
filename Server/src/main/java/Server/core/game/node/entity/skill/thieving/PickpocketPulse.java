@@ -71,18 +71,18 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
 
     @Override
     public boolean checkRequirements() {
-        if (!interactable()) {
+        if (!interactable() && !player.getLocks().isInteractionLocked()) {
             return false;
         }
         if (player.getSkills().getLevel(Skills.THIEVING) < type.getLevel()) {
             player.getPacketDispatch().sendMessage("You need to be a level " + type.getLevel() + " thief in order to pick this pocket.");
             return false;
         }
-        if (player.getInventory().isFull()) {
+        if (!hasInventorySpace()) {
             player.getPacketDispatch().sendMessage("You do not have enough space in your inventory to pick this pocket.");
             return false;
         }
-        player.lock(1);
+        player.getLocks().lockInteractions(2);
         player.faceTemporary(node, 2);
         node.getWalkingQueue().reset();
         node.getLocks().lockMovement(1);
@@ -98,7 +98,7 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
         if (ticks == 0) {
             player.animate(ANIMATION);
         }
-        if (++ticks % 4 != 0) {
+        if (++ticks % 2 != 0) {
             return false;
         }
         final boolean success = success();
@@ -118,6 +118,7 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
                     && new ZoneBorders(3202, 3459, 3224, 3470, 0).insideBorder(player)) {
                 player.getAchievementDiaryManager().finishTask(player, DiaryType.VARROCK, 1, 12);
             }
+            player.getLocks().unlockInteraction();
         } else {
             node.animate(NPC_ANIM);
             node.faceTemporary(player, 1);
@@ -158,7 +159,7 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
         } else if (player.inCombat()) {
             player.getPacketDispatch().sendMessage("You can't pickpocket during combat.");
             return false;
-        } else if (player.getInventory().freeSlots() == 0) {
+        } else if (!hasInventorySpace()) {
             player.getPacketDispatch().sendMessage("You don't have enough inventory space.");
             return false;
         }
@@ -182,6 +183,20 @@ public final class PickpocketPulse extends SkillPulse<NPC> {
             return true;
         }
         return false;
+    }
+
+    /**
+     * Checks if player has enough inventory space to pickpocket npc.
+     * @return {@code True} if player has enough inventory space.
+     */
+    private boolean hasInventorySpace() {
+        if (player.getInventory().isFull() && type.getLoot().length > 0) {
+            if (!(type.getLoot().length == 1 && player.getInventory().hasSpaceFor(
+                    new Item(type.getLoot()[0].getId(), type.getLoot()[0].getMaximumAmount())))) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
