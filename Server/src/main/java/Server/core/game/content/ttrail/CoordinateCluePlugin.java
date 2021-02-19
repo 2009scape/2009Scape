@@ -86,7 +86,7 @@ public final class CoordinateCluePlugin extends CoordinateClueScroll {
 		register(new CoordinateCluePlugin("level-35-wildy-coord", 3510, ClueLevel.HARD, new Location(3244, 3792, 0), "19 degrees 43 minutes north<br>25 degrees 07 minutes east"));
 		register(new CoordinateCluePlugin("level-36-wildy-coord", 3512, ClueLevel.HARD, new Location(3139, 3803, 0), "20 degrees 05 minutes north<br>21 degrees 52 minutes east"));
 		register(new CoordinateCluePlugin("kbd-wildy-coord", 3513, ClueLevel.HARD, new Location(3014, 3847, 0), "21 degrees 24 minutes north<br>17 degrees 54 minutes east"));
-		register(new CoordinateCluePlugin("chaos-temple-wildy-coord", 3514, ClueLevel.HARD, new Location(2946, 3818, 0), "20 degrees 33 minutes north<br>15 degrees 48 minutes east"));
+		register(new CoordinateCluePlugin("chaos-temple-wildy-coord", 3514, ClueLevel.HARD, new Location(2946, 3819, 0), "20 degrees 33 minutes north<br>15 degrees 48 minutes east"));
 		register(new CoordinateCluePlugin("rune-rocks-wildy-coord", 3515, ClueLevel.HARD, new Location(3059, 3884, 0), "22 degrees 35 minutes north<br>19 degrees 18 minutes east"));
 		register(new CoordinateCluePlugin("demonic-ruins-wildy-coord", 3516, ClueLevel.HARD, new Location(3290, 3889, 0), "22 degrees 45 minutes north<br>26 degrees 33 minutes east"));
 		register(new CoordinateCluePlugin("rogues-castle-coord", 3518, ClueLevel.HARD, new Location(3285, 3943, 0), "24 degrees 24 minutes north<br>26 degrees 24 minutes east"));
