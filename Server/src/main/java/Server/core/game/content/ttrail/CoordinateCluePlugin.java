@@ -91,7 +91,7 @@ public final class CoordinateCluePlugin extends CoordinateClueScroll {
 		register(new CoordinateCluePlugin("demonic-ruins-wildy-coord", 3516, ClueLevel.HARD, new Location(3290, 3889, 0), "22 degrees 45 minutes north<br>26 degrees 33 minutes east"));
 		register(new CoordinateCluePlugin("rogues-castle-coord", 3518, ClueLevel.HARD, new Location(3285, 3943, 0), "24 degrees 24 minutes north<br>26 degrees 24 minutes east"));
 		register(new CoordinateCluePlugin("wildy-lever-coord", 3520, ClueLevel.HARD, new Location(3158, 3958, 0), "24 degrees 56 minutes north<br>22 degrees 28 minutes east"));
-		register(new CoordinateCluePlugin("pirates-hideout-coord", 3522, ClueLevel.HARD, new Location(3040, 3961, 0), "24 degrees 58 minutes north<br>18 degrees 43 minutes east"));
+		register(new CoordinateCluePlugin("pirates-hideout-coord", 3522, ClueLevel.HARD, new Location(3039, 3960, 0), "24 degrees 58 minutes north<br>18 degrees 43 minutes east"));
 		register(new CoordinateCluePlugin("agility-wildy-coord", 3524, ClueLevel.HARD, new Location(2987, 3964, 0), "25 degrees 03 minutes north<br>17 degrees 05 minutes east"));
 		register(new CoordinateCluePlugin("axe-hut-coord", 3525, ClueLevel.HARD, new Location(3190, 3963, 0), "25 degrees 03 minutes north<br>23 degrees 24 minutes east"));
 		return this;
