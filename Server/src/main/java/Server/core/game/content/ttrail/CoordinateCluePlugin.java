@@ -76,7 +76,7 @@ public final class CoordinateCluePlugin extends CoordinateClueScroll {
 		register(new CoordinateCluePlugin("trollheim-coord", 3501, ClueLevel.HARD, new Location(2892, 3674, 0), "16 degrees 03 minutes north<br>14 degrees 07 minutes east"));
 		register(new CoordinateCluePlugin("graveyard-wildy-coord", 3502, ClueLevel.HARD, new Location(3229, 3687, 0), "16 degrees 07 minutes north<br>22 degrees 45 minutes east"));
 		// not sure if this is accessible
-		register(new CoordinateCluePlugin("troll-stronghold-coord", 3503, ClueLevel.HARD, new Location(2853, 3689, 0), "16 degrees 31 minutes north<br>12 degrees 54 minutes east"));
+		register(new CoordinateCluePlugin("troll-stronghold-coord", 3503, ClueLevel.HARD, new Location(2853, 3690, 0), "16 degrees 31 minutes north<br>12 degrees 54 minutes east"));
 		register(new CoordinateCluePlugin("level-22-wildy-coord", 3504, ClueLevel.HARD, new Location(3304, 3692, 0), "16 degrees 35 minutes north<br>27 degrees 01 minutes east"));
 		register(new CoordinateCluePlugin("bandit-camp-coord", 3505, ClueLevel.HARD, new Location(3055, 3696, 0), "16 degrees 43 minutes north<br>19 degrees 13 minutes east"));
 		register(new CoordinateCluePlugin("level-23-wildy-coord", 3506, ClueLevel.HARD, new Location(3302, 3696, 0), "16 degrees 43 minutes north<br>26 degrees 56 minutes east"));
