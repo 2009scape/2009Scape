@@ -22,7 +22,7 @@ public enum Stall {
 	FISH_STALL(new Integer[]{4277, 4705, 4707}, new Integer[] { 634 }, 42, new Item[]{new Item(331, 1), new Item(359, 1), new Item(377, 1)}, 42, 27,"fish"),
 	CROSSBOW_STALL(new Integer[]{17031}, new Integer[] { 6984 }, 49, new Item[]{new Item(877, 3), new Item(9420, 1), new Item(9440, 1)}, 52, 19,"equipment"),
 	SILVER_STALL(new Integer[]{2565, 6164, 34382}, new Integer[] { 634, 6984, 34381}, 50, new Item[]{new Item(442, 1)}, 54, 50,"jewellery"),
-	SPICE_STALL(new Integer[]{6166}, new Integer[] { 6984 }, 65, new Item[]{new Item(2007, 1)}, 16, 134,"spices"),
+	SPICE_STALL(new Integer[]{6166, 34386}, new Integer[] { 6984 }, 65, new Item[]{new Item(2007, 1)}, 16, 134,"spices"),
 	GEM_STALL(new Integer[]{2562, 6162, 34385}, new Integer[] { 634, 6984, 34381 }, 75, new Item[]{new Item(1623, 1), new Item(1605, 1), new Item(1603, 1), new Item(1601, 1)}, 160, 300,"gems"),
 	//Ape Atoll Stalls
 	SCIMITAR_STALL(new Integer[]{4878}, new Integer[] { 4797 }, 65, new Item[]{new Item(1323, 1)}, 100, 134,"equipment"),
