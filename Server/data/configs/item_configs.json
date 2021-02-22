@@ -61916,7 +61916,8 @@
       "equipment_slot": "0",
       "ge_buy_limit": "100",
       "archery_ticket_price": "0",
-      "durability": null
+      "durability": null,
+      "remove_head": true
     },
     {
       "id": "6383",
