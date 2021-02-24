@@ -14,6 +14,7 @@ public abstract class Script {
     public ArrayList<Item> inventory = new ArrayList<>();
     public ArrayList<Item> equipment = new ArrayList<>();
     public Map<Integer, Integer> skills = new HashMap<>();
+    public ArrayList<String> arguments = new ArrayList<>();
 
 
     public Player bot;

@@ -49,7 +49,14 @@ class BottingCommandSet : CommandSet(Command.Privilege.STANDARD) {
                 return@define
             }
             player.interfaceManager.close()
-            GeneralBotCreator(script.clazz.newInstance() as Script,player,true)
+            // Store any extra args the player can pass so the script can use them.
+            var scriptArgs = arrayListOf<String>()
+            for (i in 2 until args.size) {
+                scriptArgs.add(args[i])
+            }
+            val scr = script.clazz.newInstance() as Script
+            scr.arguments = scriptArgs
+            GeneralBotCreator(scr,player,true)
             player.sendMessage(colorize("%RStarting script..."))
             player.sendMessage(colorize("%RTo stop the script, do ::stopscript or log out."))
 
