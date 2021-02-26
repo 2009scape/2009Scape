@@ -76,6 +76,6 @@ class SoulsBaneLaunaDialogue(player: Player? = null) : DialoguePlugin(player) {
     }
 
     override fun getIds(): IntArray {
-        return intArrayOf(3638, 3639, 3640)
+        return intArrayOf(3639, 3640, 3638)
     }
 }

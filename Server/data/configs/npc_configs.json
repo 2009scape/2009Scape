@@ -32680,6 +32680,11 @@
     "safespot": null
   },
   {
+    "id": "3639",
+    "name": "Launa",
+    "examine": "She looks worried."
+  },
+  {
     "id": "3645",
     "name": "Angry bear",
     "examine": "He looks a little on the cross side!",
