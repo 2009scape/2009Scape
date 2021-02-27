@@ -4,6 +4,7 @@ import core.game.node.entity.player.Player
 import core.game.node.entity.player.link.quest.Quest
 import core.game.content.dialogue.DialoguePlugin
 import core.game.content.dialogue.FacialExpression
+import core.game.node.entity.npc.NPC
 
 /**
  * Launa
@@ -16,6 +17,7 @@ class SoulsBaneLaunaDialogue(player: Player? = null) : DialoguePlugin(player) {
         player?.let {
             player("Hi there.")
             quest = it.questRepository.getQuest(ASoulsBane.NAME)
+            npc = (args[0] as NPC).getShownNPC(player)
             //quest = it.questRepository.getQuest(ASoulsBane.NAME)
             when (quest.getStage(player)) {
                 0 -> {
@@ -76,6 +78,6 @@ class SoulsBaneLaunaDialogue(player: Player? = null) : DialoguePlugin(player) {
     }
 
     override fun getIds(): IntArray {
-        return intArrayOf(3639, 3640, 3638)
+        return intArrayOf(3638, 3639, 3640)
     }
 }
