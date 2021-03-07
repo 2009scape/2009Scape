@@ -979,10 +979,10 @@
         "maxAmount": "2"
       },
       {
-        "minAmount": "4510",
+        "minAmount": "5",
         "weight": "25",
         "id": "558",
-        "maxAmount": "4510"
+        "maxAmount": "5"
       },
       {
         "minAmount": "5",
@@ -2122,8 +2122,14 @@
     "main": [
       {
         "minAmount": "1",
-        "weight": "25",
+        "weight": "12",
         "id": "2727",
+        "maxAmount": "1"
+      },
+      {
+        "minAmount": "1",
+        "weight": "88",
+        "id": "0",
         "maxAmount": "1"
       }
     ],
