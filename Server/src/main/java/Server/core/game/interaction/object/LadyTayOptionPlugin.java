@@ -6,6 +6,7 @@ import core.game.component.Component;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
 import core.game.node.item.Item;
+import core.game.node.entity.npc.NPC;
 import core.game.node.entity.player.Player;
 import core.game.node.object.GameObject;
 import core.plugin.Initializable;
