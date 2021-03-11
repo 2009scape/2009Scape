@@ -24,6 +24,7 @@ public class LadyTayOptionPlugin extends OptionHandler {
     public Plugin<Object> newInstance(Object arg) throws Throwable {
         /* the tar barrels on the lower deck of the Lady Zay */
         ObjectDefinition.forId(16860).getHandlers().put("option:take-from", this);
+        return this;
     }
 
     @Override
