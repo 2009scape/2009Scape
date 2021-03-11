@@ -123,6 +123,7 @@ public final class DesertZone extends MapZone implements Plugin<Object> {
      */
     private static int getDelay(Player player) {
         int delay = 116;
+        /* Desert shirt/robe/boots */
         if (player.getEquipment().contains(1833, 1)) {
             delay += 17;
         }
@@ -130,6 +131,22 @@ public final class DesertZone extends MapZone implements Plugin<Object> {
             delay += 17;
         }
         if (player.getEquipment().contains(1837, 1)) {
+            delay += 17;
+        }
+        /* menaphite headgear */
+        if (player.getEquipment().contains(6392, 1)) {
+            delay += 17; /* headgear has same delay as 1837, boots */
+        }
+        /* menaphite top */
+        if (player.getEquipment().contains(6394, 1)) {
+            delay += 17;
+        }
+        /* menaphite robe */
+        if (player.getEquipment().contains(6396, 1)) {
+            delay += 17;
+        }
+        /* menaphite kilt */
+        if (player.getEquipment().contains(6398, 1)) {
             delay += 17;
         }
         return delay;
