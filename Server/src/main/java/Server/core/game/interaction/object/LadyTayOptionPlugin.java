@@ -5,6 +5,7 @@ import core.cache.def.impl.ObjectDefinition;
 import core.game.component.Component;
 import core.game.interaction.OptionHandler;
 import core.game.node.Node;
+import core.game.node.item.Item;
 import core.game.node.entity.player.Player;
 import core.game.node.object.GameObject;
 import core.plugin.Initializable;
@@ -15,7 +16,7 @@ import core.plugin.Plugin;
  * @author f00b
  */
 @Initializable
-public class LadyTayOptionsPlugin extends OptionHandler {
+public class LadyTayOptionPlugin extends OptionHandler {
 
     @Override
     public Plugin<Object> newInstance(Object arg) throws Throwable {
@@ -30,7 +31,7 @@ public class LadyTayOptionsPlugin extends OptionHandler {
         switch (option) {
         case "take-from":
             if (id == 16860) {
-                if (!player.getInventory.hasSpaceFor(add)) {
+                if (!player.getInventory.hasSpaceFor(tar)) {
                     player.getPacketDispatch().sendMessage("Not enough space in your inventory!");
                     return true;
                 }
