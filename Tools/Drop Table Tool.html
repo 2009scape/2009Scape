@@ -121,7 +121,7 @@
                 <div v-else-if="resultsType == 'droptable'">
                     <p><strong>Table Description:</strong> {{ results.description }}</p>
                     <br>
-                    <template v-for="section in ['main', 'charms', 'default']">
+                    <template v-for="section in ['main', 'charm', 'default']">
                         <h1 class="subtitle">{{ section.toUpperCase() }}</h1>
                         Total Weight: {{ results.weights[section] }}
                         <table class="table">
