@@ -31,7 +31,7 @@ public class LadyTayOptionPlugin extends OptionHandler {
         switch (option) {
         case "take-from":
             if (id == 16860) {
-                if (!player.getInventory.hasSpaceFor(tar)) {
+                if (!player.getInventory().hasSpaceFor(tar)) {
                     player.getPacketDispatch().sendMessage("Not enough space in your inventory!");
                     return true;
                 }
