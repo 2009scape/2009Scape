@@ -18,6 +18,7 @@ import core.plugin.Plugin;
 @Initializable
 public class LadyTayOptionPlugin extends OptionHandler {
 
+
     @Override
     public Plugin<Object> newInstance(Object arg) throws Throwable {
         /* the tar barrels on the lower deck of the Lady Zay */

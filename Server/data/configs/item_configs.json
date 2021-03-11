@@ -28599,7 +28599,8 @@
       "equipment_slot": "0",
       "ge_buy_limit": "2",
       "archery_ticket_price": "0",
-      "durability": null
+      "durability": null,
+      "remove_head": true
     },
     {
       "id": "2640",
@@ -28622,7 +28623,8 @@
       "equipment_slot": "0",
       "ge_buy_limit": "2",
       "archery_ticket_price": "0",
-      "durability": null
+      "durability": null,
+      "remove_head": true
     },
     {
       "id": "2642",
@@ -28645,7 +28647,8 @@
       "equipment_slot": "0",
       "ge_buy_limit": "2",
       "archery_ticket_price": "0",
-      "durability": null
+      "durability": null,
+      "remove_head": true
     },
     {
       "id": "2644",
