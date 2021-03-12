@@ -3,6 +3,7 @@ import json
 import argparse
 import os
 import re
+from collections import defaultdict
 
 source_files = "../Server/data/configs/{npc_configs,item_configs,drop_tables}.json"
 
@@ -207,13 +208,18 @@ class LookupStorage:
             for table in self.droptables for _id in table.npcs
         }
 
-        self.item_name_to_item = {item['name'] : Item(item)
-            for item in self.item_configs
-                if 'name' in item
-        }
+        self.item_name_to_items = defaultdict(list)
+        for item in self.item_configs:
+            if 'name' in item:
+                self.item_name_to_items[item['name']].append(Item(item))
 
         # Maps from name->ID for cross referencing
         self.npc_name_to_id = {npc['name'] : npc['id']
+            for npc in self.npc_configs
+                if 'name' in npc
+        }
+
+        self.npc_id_to_name = {npc['id'] : npc['name']
             for npc in self.npc_configs
                 if 'name' in npc
         }
@@ -236,7 +242,8 @@ class LookupStorage:
             ('addy', 'adamant'),
             ('mith', 'mithril'),
             (' legs', ' platelegs'),
-            (' skirt', ' plateskirt')
+            (' skirt', ' plateskirt'),
+            (' kite', ' kiteshield'),
             
         ]
         orig = fuzzy[:] # make a copy of the original string and try both
@@ -258,6 +265,7 @@ class LookupStorage:
             self.fuzzyname_to_name(fuzzy, self.npc_names)
             , None
         )
+
     def droptable_from_npc_name(self, name, name_is_fuzzy=True):
         # we have this kwarg because if you don't, even for NPCs with a name
         # that's easy to look up, it will calculate the DL edit distance
@@ -306,6 +314,18 @@ class LookupStorage:
 
         # Average alchable gp per kill
         return int(total_alch / total_weight) if total_weight else 0
+    
+    def who_drops(self, name):
+        name = self.fuzzyname_to_name(name, self.item_names)
+        item_ids = set(item.id for item in self.item_name_to_items.get(name, None))
+        dropping_npcs = set()
+        for table in self.droptables:
+            if item_ids.intersection(set(drop.item.id for drop in table.drops)):
+                npc_names = set(self.npc_id_to_name.get(_id, f"ID {_id}") for _id in table.npcs)
+                dropping_npcs = dropping_npcs.union(npc_names)
+
+        for npc in dropping_npcs:
+            print(npc, "drops", name)
 
     def top_alch_values(self, candidates=None, count=10, **kwargs):
         if candidates is None:
@@ -332,10 +352,16 @@ class LookupStorage:
 
         print(tester.calc_alch_value("Dark beast", verbose=True), "alchable gp per dark beast kill!")
 
+        tester.who_drops("abby whip")
+        tester.who_drops("rune kite")
+
+        '''
         print("Monster        Average value of drops if alched")
         for name, gp in tester.top_alch_values(count=50):
             print(f"{name.ljust(20, ' ')} {gp}gp")
-        
+        '''
+
+
 LookupStorage.test()
 
             
