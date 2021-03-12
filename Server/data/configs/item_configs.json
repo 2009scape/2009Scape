@@ -295,6 +295,15 @@
       "archery_ticket_price": "0",
       "durability": null
     },
+		{
+		  "id": "31",
+			"name": "Tinderbox",
+			"examine": "Useful for lighting a fire.",
+			"low_alchemy": "0",
+			"high_alchemy": "0",
+			"weight": "0.1",
+			"durability": null
+		},
     {
       "id": "32",
       "name": "Lit black candle",
