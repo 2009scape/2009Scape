@@ -258,12 +258,24 @@ class LookupStorage:
             self.fuzzyname_to_name(fuzzy, self.npc_names)
             , None
         )
-    def droptable_from_npc_name(self, name):
-        npcid = self.fuzzyname_to_npc_id(name)
+    def droptable_from_npc_name(self, name, name_is_fuzzy=True):
+        # we have this kwarg because if you don't, even for NPCs with a name
+        # that's easy to look up, it will calculate the DL edit distance
+        # and you easily end up with an O(n^3)
+
+        # you could also look in the map first and call the fuzzyname if you dont find it
+        if name_is_fuzzy:
+            npcid = self.fuzzyname_to_npc_id(name)
+        else:
+            npcid = self.npc_name_to_id.get(name, None)
         table = self.npc_id_to_droptable.get(npcid, None)
         return table
 
-    def calc_alch_value(storage, name, include_rare=False, min_alch_value=1500, verbose=True):
+    def calc_alch_value(storage, name
+        , include_rare=False
+        , min_alch_value=1500
+        , name_is_fuzzy=False
+        , verbose=False):
         '''Find alch value of drop table of a given monster
         
         Sum up everything in name's drop table that alchs for more than min_alch_value
@@ -276,7 +288,9 @@ class LookupStorage:
 
         total_alch = 0
         total_weight = 0
-        table = storage.droptable_from_npc_name(name)
+        table = storage.droptable_from_npc_name(name, name_is_fuzzy)
+        if table is None:
+            return -1
         for drop in table.drops:
             weight = int(drop.weight)
             total_weight = total_weight + weight
@@ -287,11 +301,24 @@ class LookupStorage:
                 if gp < min_alch_value:
                     continue
                 if verbose:
-                    print(f"Found alchable in table: {drop.item.name} for {gp}gp")
+                    print(f"Found alchable in {name}'s table: {drop.item.name} for {gp}gp")
                 total_alch = total_alch + weight * gp
 
         # Average alchable gp per kill
-        return int(total_alch / total_weight)
+        return int(total_alch / total_weight) if total_weight else 0
+
+    def top_alch_values(self, candidates=None, count=10, **kwargs):
+        if candidates is None:
+            candidates = self.npc_names
+        
+        # use a set so duplicates arent counted
+        alchs = {
+            (name, self.calc_alch_value(name, **kwargs)) 
+            for name in candidates
+        }
+        alchs = list(alchs)
+        alchs.sort(key=(lambda x: x[1]), reverse=True)
+        return alchs[:count]
 
     @staticmethod
     def test():
@@ -303,7 +330,11 @@ class LookupStorage:
         assert tester.fuzzyname_to_name("Abby demon", tester.npc_names) == "Abyssal demon"
         assert tester.fuzzyname_to_name("Mith Legs", tester.item_names) == "Mithril platelegs"
 
-        print(tester.calc_alch_value("Dark beast"), "alchable gp per dark beast kill!")
+        print(tester.calc_alch_value("Dark beast", verbose=True), "alchable gp per dark beast kill!")
+
+        print("Monster        Average value of drops if alched")
+        for name, gp in tester.top_alch_values(count=50):
+            print(f"{name.ljust(20, ' ')} {gp}gp")
         
 LookupStorage.test()
 
