@@ -5,15 +5,9 @@ import os
 import re
 from collections import defaultdict
 
-source_files = "../Server/data/configs/{npc_configs,item_configs,drop_tables}.json"
-
-def json_root_name(path):
-    '''Given a path to a json file path, 
-    return the string before '.json' and after the last "/"
-    '''
-    return os.path.basename(os.path.splitext(path)[0])
-
-assert json_root_name("../Server/data/configs/item_configs.json") == "item_configs", "Failed to parse out root object name from JSON path"
+# Command line options, with safe defaults
+options = lambda:None
+options.fuzzy = False
 
 """
 Compute the Damerau-Levenshtein distance between two given
@@ -253,19 +247,31 @@ class LookupStorage:
 
         # Replace common abbreviations with something closer to what we'll find
         replacements = [ 
-            ('abby', 'abyssal'), 
-            ('addy', 'adamant'),
-            ('mith', 'mithril'),
-            (' legs', ' platelegs'),
-            (' skirt', ' plateskirt'),
-            (' kite', ' kiteshield'),
-            ('dh ', 'dharok'),
-            ('kree', "kree'arra")
-            
+            ('abby', 'abyssal', None) 
+            , ('addy', 'adamant', None)
+            , ('mith', 'mithril', None)
+            , (' legs', ' platelegs', fuzzy.endswith)
+            , (' skirt', ' plateskirt', fuzzy.endswith)
+            , (' kite', ' kiteshield', fuzzy.endswith)
+            , ('dh ', 'dharok', fuzzy.startswith)
+            , ('kree', "kree'arra", fuzzy.__eq__)
+            , (' sq', ' sq shield', fuzzy.endswith)
+            , (' drag', ' dragon', fuzzy.endswith)
+            , ('visage', 'draconic visage', fuzzy.__eq__)
         ]
         orig = fuzzy[:] # make a copy of the original string and try both
-        for common, real in replacements:
+        for common, real, test in replacements:
+            if test is not None:
+                if not test(common):
+                    continue
             fuzzy = fuzzy.replace(common, real)
+
+        # User does not want us to use DL distance
+        if not options.fuzzy:
+            for name in candidates:
+                if name.lower() == fuzzy:
+                    return name
+            return None
 
         min_string = None
         min_distance = 10000
@@ -283,23 +289,17 @@ class LookupStorage:
             , None
         )
 
-    def droptable_from_npc_name(self, name, name_is_fuzzy=True):
-        # we have this kwarg because if you don't, even for NPCs with a name
-        # that's easy to look up, it will calculate the DL edit distance
-        # and you easily end up with an O(n^3)
+    def droptable_from_npc_name(self, name):
 
-        # you could also look in the map first and call the fuzzyname if you dont find it
-        if name_is_fuzzy:
+        npcid = self.npc_name_to_id.get(name, None)
+        if npcid is None:
             npcid = self.fuzzyname_to_npc_id(name)
-        else:
-            npcid = self.npc_name_to_id.get(name, None)
         table = self.npc_id_to_droptable.get(npcid, None)
         return table
 
     def calc_alch_value(storage, name
         , include_rare=False
         , min_alch_value=1500
-        , name_is_fuzzy=False
         , verbose=False):
         '''Find alch value of drop table of a given monster
         
@@ -312,7 +312,7 @@ class LookupStorage:
         '''
 
         total_alch = 0
-        table = storage.droptable_from_npc_name(name, name_is_fuzzy)
+        table = storage.droptable_from_npc_name(name)
         if table is None:
             return -1
         for drop in table.drops:
@@ -339,14 +339,17 @@ class LookupStorage:
         If NPC doesn't have a name, print its ID, prefixed by "ID "
         '''
         
-        name = self.fuzzyname_to_name(name, self.item_names)
+        query = self.fuzzyname_to_name(name, self.item_names)
 
         # One item name (eg Abyssal whip) can have multiple IDs for, eg, cosmetic
         # variants. By keeping a list of the IDs in a dictionary we can keep
         # track of all variants, and also make sure variants with higher
         # IDs don't overwrite the earlier versions of the item (which are more likely
         # to be widely used in game anyways).
-        item_ids = set(item.id for item in self.item_name_to_items.get(name, None))
+        if (items := self.item_name_to_items.get(query, None)) is None:
+            raise ValueError(f"Couldn't find item named {name}")
+
+        item_ids = set(item.id for item in items)
         dropping_npcs = set()
 
         for table in self.droptables:
@@ -355,7 +358,7 @@ class LookupStorage:
                 dropping_npcs = dropping_npcs.union(npc_names)
 
         for npc in dropping_npcs:
-            print(npc, "drops", name)
+            print(npc, "drops", query)
 
     def drop_table(self, name):
         '''In tabular form, print the drop table for the given NPC.
@@ -369,8 +372,14 @@ class LookupStorage:
         def percentage(weight_string):
             return f"{100.0*int(weight_string)/total_weight:.2f}%"
         
+        def amount(drop):
+            if drop.minAmount == drop.maxAmount:
+                return drop.maxAmount
+            return f"{drop.minAmount}-{drop.maxAmount}"
+
         # For items that don't have a listed alchemy value, assume 0
         rows = [(drop.item.name
+                , amount(drop)
                 , drop.item.high_alchemy if drop.item.high_alchemy else 0
                 , drop.weight
                 , percentage(drop.weight)
@@ -380,11 +389,11 @@ class LookupStorage:
 
         # sort by alchemy value, descending. Arbitrary choice, feel free
         # to choose otherwise
-        rows.sort(key=(lambda x: int(x[1])), reverse=True)
+        rows.sort(key=(lambda x: int(x[2])), reverse=True)
 
         # Pad the headers a little bit so that long item names print aligned
         reporter = Reporter()
-        reporter.print_headers(["Item", " Hi Alch Value ", "Weight", "Percentage"])
+        reporter.print_headers(["Item", "Amount", " Hi Alch Value ", "Weight", "Percentage"])
         
         for row in rows:
             reporter.print_row(row)
@@ -402,6 +411,9 @@ class LookupStorage:
         alchs.sort(key=(lambda x: x[1]), reverse=True)
         return alchs[:count]
 
+    def print_alch_value(self, name, **kwargs):
+        print(self.calc_alch_value(name, verbose=True, **kwargs), f"alchable gp per {name} kill!")
+    
     @staticmethod
     def test():
         tester = LookupStorage()
@@ -412,7 +424,7 @@ class LookupStorage:
         assert tester.fuzzyname_to_name("Abby demon", tester.npc_names) == "Abyssal demon"
         assert tester.fuzzyname_to_name("Mith Legs", tester.item_names) == "Mithril platelegs"
 
-        print(tester.calc_alch_value("Dark beast", verbose=True), "alchable gp per dark beast kill!")
+        tester.print_alch_value("Dark beast")
 
         tester.who_drops("abby whip")
         tester.who_drops("rune kite")
@@ -427,8 +439,81 @@ class LookupStorage:
         '''
 
 
-LookupStorage.test()
+def readable_dir(prospective_dir):
+    '''A directory type for argparse, from here: https://stackoverflow.com/q/11415570'''
+    if not os.path.isdir(prospective_dir):
+        raise argparse.ArgumentTypeError("readable_dir:{0} is not a valid path".format(prospective_dir))
+    if os.access(prospective_dir, os.R_OK):
+        return prospective_dir
+    else:
+        raise argparse.ArgumentTypeError("readable_dir:{0} is not a readable dir".format(prospective_dir))
 
-            
-   # table = DropTable(
+
+def main(*args, **kwargs):
+    
+    # Yes, globals are bad. We do it this way for convenience of access to CLI args.
+    # Because CLI args are read-only and there's no concurrency, this is an ok practice.
+    global options
+
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
+    parser.add_argument("-f", "--fuzzy", action="store_true"
+        , help="Attempt to search for your query using the closest possible NPC or item name (as calculated by Damerau-Levenshtein edit distance. This may SIGNIFICANTLY slow down your query!"
+    )
+    parser.add_argument("-p", "--root-path"
+        , help="Path to directory where all the JSON files are stored. By default assumes we're running from the Tools/ directory"
+        , type=readable_dir
+        , default=None
+    )
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument("-w", "--who_drops"
+        , help="Print the names of all NPCs who drop a given item"
+        , default=None
+    )
+    group.add_argument("-d", "--drop-table"
+        , help="Print the drop table of the given NPC"
+        , default=None
+    )
+    group.add_argument("-a", "--average-alch"
+        , help="Print the average alch value of drops of the given NPC. Use with --min-alch-value and --include-rare"
+        , default=None
+    )
+
+    parser.add_argument("-m", "--min-alch-value"
+        , help="The minimum high alchemy value of an item required to be included in the alch value of an average drop"
+        , default=1500
+        , type=int
+    )
+    parser.add_argument("-r", "--include-rare"
+        , help="Include rare items in alch value (but are you really gonna alch a whip, you monster?)"
+        , action="store_true"
+    ) 
+
+    parser.add_argument("--test"
+        , help="Run the built in tests"
+        , action="store_true"
+    )
+
+    options = parser.parse_args(args)
+
+    storage = LookupStorage(root_path=options.root_path)
+
+    if options.who_drops:
+        storage.who_drops(options.who_drops)
+
+    if options.drop_table:
+        storage.drop_table(options.drop_table)
+
+    if options.average_alch:
+        storage.print_alch_value(options.average_alch
+            , min_alch_value=options.min_alch_value
+            , include_rare=options.include_rare
+        )
+    
+    if options.test:
+        LookupStorage.test()
+
+if __name__ == '__main__':
+    main(*sys.argv[1:]) 
     
