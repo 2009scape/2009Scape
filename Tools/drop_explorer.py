@@ -94,6 +94,11 @@ class Item:
                 else:
                     raise AttributeError(f"Unhandled item attribute '{attribute}'")
             self.__dict__[attribute] = value
+    def __repr__(self):
+        from pprint import pprint
+        attributes = { k : v for k, v in self.__dict__.items() if v is not None }
+        pprint(attributes)
+        return ""
 
 
 class Drop:
@@ -224,9 +229,17 @@ class LookupStorage:
         }
 
         self.item_name_to_items = defaultdict(list)
-        for item in self.item_configs:
-            if 'name' in item:
-                self.item_name_to_items[item['name']].append(Item(item))
+        for item_dict in self.item_configs:
+            if 'name' in item_dict:
+                item = Item(item_dict)
+                self.item_name_to_items[item.name].append(item)
+
+                # handle potions
+                # Anything that ends in ' (number)'
+                regex = "[\s]*\([\d]+\)$"
+                if re.findall(regex, item.name):
+                    base_name = re.sub(regex, "", item.name)
+                    self.item_name_to_items[base_name].append(item)
 
         # Maps from name->ID for cross referencing
         self.npc_name_to_id = {npc['name'] : npc['id']
@@ -246,8 +259,19 @@ class LookupStorage:
             return res
         raise AttributeError
 
-    def fuzzyname_to_name(self, fuzzy, candidates):
-        '''Implement an approximate string matching strategy to guess which name the user means'''
+    def fuzzyname_to_name(self, *args):
+        return list(self.fuzzyname_to_names(*args))[0]
+
+    def fuzzyname_to_names(self, fuzzy, candidates):
+        '''Implement an approximate string matching strategy to guess which name the user means
+        
+        One 'fuzzy name' can map onto many actual item names in the case of, eg potions.
+        We want 'super attack' to map onto ['Super attack(1)', 'Super attack(2)', ...] 
+        '''
+        # First check if we already have a key for this in the item lookup dict
+        if fuzzy in self.item_name_to_items:
+            return fuzzy
+
         # making everything lower case makes it easier to work with!
         fuzzy = fuzzy.lower()
 
@@ -275,8 +299,8 @@ class LookupStorage:
         # User does not want us to use DL distance
         if not options.fuzzy:
             for name in candidates:
-                if name.lower() == fuzzy:
-                    return name
+                if fuzzy in name.lower():
+                    yield name
             return None
 
         min_string = None
@@ -287,7 +311,7 @@ class LookupStorage:
                     min_distance = distance
                     min_string = name
 
-        return min_string
+        yield min_string
 
     def fuzzyname_to_npc_id(self, fuzzy):
         return self.npc_name_to_id.get(
@@ -345,26 +369,34 @@ class LookupStorage:
         If NPC doesn't have a name, print its ID, prefixed by "ID "
         '''
         
-        query = self.fuzzyname_to_name(name, self.item_names)
+        queries = self.fuzzyname_to_names(name, self.item_names)
 
         # One item name (eg Abyssal whip) can have multiple IDs for, eg, cosmetic
         # variants. By keeping a list of the IDs in a dictionary we can keep
         # track of all variants, and also make sure variants with higher
         # IDs don't overwrite the earlier versions of the item (which are more likely
         # to be widely used in game anyways).
-        if (items := self.item_name_to_items.get(query, None)) is None:
-            raise ValueError(f"Couldn't find item named {name}")
+        items = []
+        for query in queries:
+            if (result := self.item_name_to_items.get(query, None)) is None:
+                raise ValueError(f"Couldn't find item named {name} (used {query})")
+            items.extend(result)
 
         item_ids = set(item.id for item in items)
         dropping_npcs = set()
 
         for table in self.droptables:
-            if item_ids.intersection(set(drop.item.id for drop in table.drops)):
-                npc_names = set(self.npc_id_to_name.get(_id, f"ID {_id}") for _id in table.npcs)
-                dropping_npcs = dropping_npcs.union(npc_names)
+            common_ids = item_ids.intersection(set(drop.item.id for drop in table.drops))
+            if common_ids:
+                item = self.item_id_to_item.get(common_ids.pop(), None)
+                npc_and_item_names = set(
+                    (self.npc_id_to_name.get(_id, f"ID {_id}"), item.name)
+                     for _id in table.npcs
+                )
+                dropping_npcs = dropping_npcs.union(npc_and_item_names)
 
-        for npc in dropping_npcs:
-            print(npc, "drops", query)
+        for npc, item_name in dropping_npcs:
+            print(npc, "drops", item_name)
 
     def drop_table(self, name):
         '''In tabular form, print the drop table for the given NPC.
@@ -442,6 +474,8 @@ class LookupStorage:
 
         tester.drop_table("Goblin")
         tester.drop_table("kree")
+
+        print(tester.item_name_to_items["Super attack"])
 
         '''
         print("Monster        Average value of drops if alched")
