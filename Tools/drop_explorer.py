@@ -149,6 +149,7 @@ class DropTable:
         self.drops = [Drop(drop, storage, reporter) 
             for drop in self.main
         ]
+        self.total_weight = sum(int(drop.weight) for drop in self.drops)
 
 class Reporter:
     def __init__(self):
@@ -157,6 +158,20 @@ class Reporter:
         self.cache.add(item)
     def __repr__(self):
         return str(self.cache)
+
+    def print_headers(self, headers):
+        self.row_format = f"{{:>{3+max(len(_) for _ in headers)}}}" * len(headers)
+        print(self.row_format.format(*headers))
+
+    def print_row(self, row):
+        print(self.row_format.format(*row))
+
+    @staticmethod
+    def print_table(headers, data):
+        row_format = f"{{:>{3+max(len(_) for _ in headers)}}}" * len(headers)
+        print(row_format.format(*headers))
+        for row in data:
+            print(row_format.format(*row))
 
 class LookupStorage:
     '''Simple object to parse and store the parsed JSON dictionaries as attributes'''
@@ -244,6 +259,8 @@ class LookupStorage:
             (' legs', ' platelegs'),
             (' skirt', ' plateskirt'),
             (' kite', ' kiteshield'),
+            ('dh ', 'dharok'),
+            ('kree', "kree'arra")
             
         ]
         orig = fuzzy[:] # make a copy of the original string and try both
@@ -295,13 +312,11 @@ class LookupStorage:
         '''
 
         total_alch = 0
-        total_weight = 0
         table = storage.droptable_from_npc_name(name, name_is_fuzzy)
         if table is None:
             return -1
         for drop in table.drops:
             weight = int(drop.weight)
-            total_weight = total_weight + weight
             if (gp := drop.item.high_alchemy):
                 gp = int(gp)
                 if not include_rare and bool(drop.item.rare_item):
@@ -312,13 +327,28 @@ class LookupStorage:
                     print(f"Found alchable in {name}'s table: {drop.item.name} for {gp}gp")
                 total_alch = total_alch + weight * gp
 
+        total_weight = table.total_weight
+
         # Average alchable gp per kill
         return int(total_alch / total_weight) if total_weight else 0
     
     def who_drops(self, name):
+        '''Find out which NPC drops a given item name
+        
+        Use a set to prevent duplicate NPCs from being printed.
+        If NPC doesn't have a name, print its ID, prefixed by "ID "
+        '''
+        
         name = self.fuzzyname_to_name(name, self.item_names)
+
+        # One item name (eg Abyssal whip) can have multiple IDs for, eg, cosmetic
+        # variants. By keeping a list of the IDs in a dictionary we can keep
+        # track of all variants, and also make sure variants with higher
+        # IDs don't overwrite the earlier versions of the item (which are more likely
+        # to be widely used in game anyways).
         item_ids = set(item.id for item in self.item_name_to_items.get(name, None))
         dropping_npcs = set()
+
         for table in self.droptables:
             if item_ids.intersection(set(drop.item.id for drop in table.drops)):
                 npc_names = set(self.npc_id_to_name.get(_id, f"ID {_id}") for _id in table.npcs)
@@ -326,6 +356,38 @@ class LookupStorage:
 
         for npc in dropping_npcs:
             print(npc, "drops", name)
+
+    def drop_table(self, name):
+        '''In tabular form, print the drop table for the given NPC.
+        Sort by alch value, descending (though it can be sorted in many ways)
+        '''
+        table = self.droptable_from_npc_name(name)
+        if table is None:
+            raise ValueError(f"No drop table identified for '{name}'")
+        total_weight = table.total_weight 
+
+        def percentage(weight_string):
+            return f"{100.0*int(weight_string)/total_weight:.2f}%"
+        
+        # For items that don't have a listed alchemy value, assume 0
+        rows = [(drop.item.name
+                , drop.item.high_alchemy if drop.item.high_alchemy else 0
+                , drop.weight
+                , percentage(drop.weight)
+            )
+            for drop in table.drops
+        ]
+
+        # sort by alchemy value, descending. Arbitrary choice, feel free
+        # to choose otherwise
+        rows.sort(key=(lambda x: int(x[1])), reverse=True)
+
+        # Pad the headers a little bit so that long item names print aligned
+        reporter = Reporter()
+        reporter.print_headers(["Item", " Hi Alch Value ", "Weight", "Percentage"])
+        
+        for row in rows:
+            reporter.print_row(row)
 
     def top_alch_values(self, candidates=None, count=10, **kwargs):
         if candidates is None:
@@ -354,6 +416,9 @@ class LookupStorage:
 
         tester.who_drops("abby whip")
         tester.who_drops("rune kite")
+
+        tester.drop_table("Goblin")
+        tester.drop_table("kree")
 
         '''
         print("Monster        Average value of drops if alched")
