@@ -182,15 +182,21 @@ class LookupStorage:
             try:
                 with open(filename, 'r') as f:
                     self.attributes[lookup] = json.load(f)
-            except OSError:
-                print(f"Unable to find file {filename}, are you sure you have the right path?"
-                    , file=sys.stderr
-                )
-                raise
             except json.JSONDecodeError:
                 print(f"Error parsing {filename}, is it a valid JSON object?"
                     , file=sys.stderr
                 )
+                raise
+            except FileNotFoundError:
+                print(f"Couldn't find JSON files at expected location, are you running the script from the Tools/ directory? If not, try supplying --root-path as an argument"
+                    , file=sys.stderr
+                )
+                raise
+            except OSError:
+                print(f"Unable to find file {filename}, are you sure you have the right --root-path?"
+                    , file=sys.stderr
+                )
+                raise
 
         # setup fuzzy search table
         self.npc_names = [npc['name'] 
@@ -364,7 +370,8 @@ class LookupStorage:
         '''In tabular form, print the drop table for the given NPC.
         Sort by alch value, descending (though it can be sorted in many ways)
         '''
-        table = self.droptable_from_npc_name(name)
+        query = self.fuzzyname_to_name(name, self.npc_names)
+        table = self.droptable_from_npc_name(query)
         if table is None:
             raise ValueError(f"No drop table identified for '{name}'")
         total_weight = table.total_weight 
@@ -390,6 +397,10 @@ class LookupStorage:
         # sort by alchemy value, descending. Arbitrary choice, feel free
         # to choose otherwise
         rows.sort(key=(lambda x: int(x[2])), reverse=True)
+
+        # Give this a nice title
+        print("")
+        print(30*" " + f" ==== {query} drop table ====")
 
         # Pad the headers a little bit so that long item names print aligned
         reporter = Reporter()
