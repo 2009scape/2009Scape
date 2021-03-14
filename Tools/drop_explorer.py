@@ -149,6 +149,9 @@ class DropTable:
             for drop in self.main
         ]
         self.total_weight = sum(int(drop.weight) for drop in self.drops)
+        for drop in self.drops:
+            drop.percentage = 100.0*int(drop.weight) / self.total_weight if self.total_weight else 0
+
 
 class Reporter:
     def __init__(self):
@@ -389,14 +392,18 @@ class LookupStorage:
             common_ids = item_ids.intersection(set(drop.item.id for drop in table.drops))
             if common_ids:
                 item = self.item_id_to_item.get(common_ids.pop(), None)
+                drop = [drop for drop in table.drops if drop.item.id == item.id][0]
                 npc_and_item_names = set(
-                    (self.npc_id_to_name.get(_id, f"ID {_id}"), item.name)
+                    (self.npc_id_to_name.get(_id, f"ID {_id}"), drop)
                      for _id in table.npcs
                 )
                 dropping_npcs = dropping_npcs.union(npc_and_item_names)
 
-        for npc, item_name in dropping_npcs:
-            print(npc, "drops", item_name)
+        drop_list = list(dropping_npcs)
+        drop_list.sort(key=lambda x: x[1].percentage, reverse=True)
+
+        for npc, drop in drop_list:
+            print(npc, "drops", drop.item.name, f"@ {drop.percentage:.2f}%")
 
     def drop_table(self, name):
         '''In tabular form, print the drop table for the given NPC.
@@ -406,10 +413,9 @@ class LookupStorage:
         table = self.droptable_from_npc_name(query)
         if table is None:
             raise ValueError(f"No drop table identified for '{name}'")
-        total_weight = table.total_weight 
 
-        def percentage(weight_string):
-            return f"{100.0*int(weight_string)/total_weight:.2f}%"
+        def percentage(drop):
+            return f"{drop.percentage:.2f}%"
         
         def amount(drop):
             if drop.minAmount == drop.maxAmount:
@@ -421,7 +427,7 @@ class LookupStorage:
                 , amount(drop)
                 , drop.item.high_alchemy if drop.item.high_alchemy else 0
                 , drop.weight
-                , percentage(drop.weight)
+                , percentage(drop)
             )
             for drop in table.drops
         ]
