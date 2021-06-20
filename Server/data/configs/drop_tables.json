@@ -2116,19 +2116,25 @@
     "main": [
       {
         "minAmount": "1",
-        "weight": "33.0",
+        "weight": "25.0",
         "id": "0",
         "maxAmount": "1"
       },
       {
-        "minAmount": "1",
-        "weight": "33.0",
+        "minAmount": "5",
+        "weight": "25.0",
         "id": "314",
-        "maxAmount": "6"
+        "maxAmount": "5"
+      },
+      {
+        "minAmount": "10",
+        "weight": "25.0",
+        "id": "314",
+        "maxAmount": "10"
       },
       {
         "minAmount": "15",
-        "weight": "33.0",
+        "weight": "25.0",
         "id": "314",
         "maxAmount": "15"
       }
