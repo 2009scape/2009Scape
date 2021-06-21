@@ -54265,7 +54265,7 @@
     "melee_animation": "7060",
     "range_animation": "7060",
     "attack_speed": "6",
-    "magic_level": "80",
+    "magic_level": "280",
     "respawn_delay": "120",
     "defence_animation": "7061",
     "weakness": "10",
@@ -54280,7 +54280,7 @@
     "strength_level": "350",
     "id": "6260",
     "aggressive": "true",
-    "bonuses": "120,120,120,0,100,90,90,90,298,90,0,43,0,0,0",
+    "bonuses": "120,120,120,0,100,90,90,90,65,90,0,43,0,0,0",
     "clue_level": "2",
     "range_level": "350",
     "attack_level": "280"
