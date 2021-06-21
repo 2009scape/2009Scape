@@ -1,5 +1,7 @@
 package core.game.node.entity.skill.smithing.smelting;
 
+import api.ContentAPI;
+import api.EquipmentSlot;
 import core.game.container.impl.EquipmentContainer;
 import org.rs09.consts.Items;
 import core.game.world.map.Location;
@@ -187,6 +189,15 @@ public class SmeltingPulse extends SkillPulse<Item> {
     public boolean success(Player player) {
         if (bar == Bar.IRON && !superHeat) {
             if (hasForgingRing(player)) {
+                Item ring = ContentAPI.getItemFromEquipment(player, EquipmentSlot.RING);
+                if(ring != null){
+                    if(ContentAPI.getCharge(ring) == 1000) ContentAPI.setCharge(ring, 140);
+                    ContentAPI.adjustCharge(ring, -1);
+                    if(ContentAPI.getCharge(ring) == 0){
+                        player.getEquipment().remove(ring);
+                        ContentAPI.sendMessage(player, "Your ring of forging uses up its last charge and disintegrates.");
+                    }
+                }
                 return true;
             } else {
                 return RandomFunction.getRandom(100) <= (player.getSkills().getLevel(Skills.SMITHING) >= 45 ? 80 : 50);
